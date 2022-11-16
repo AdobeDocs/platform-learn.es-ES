@@ -1,0 +1,222 @@
+---
+title: Creación de elementos de datos
+description: Obtenga información sobre cómo crear un objeto XDM y asignar elementos de datos a él en etiquetas. Esta lección forma parte del tutorial Implementar Adobe Experience Cloud con SDK web .
+feature: Tags
+exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
+source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+workflow-type: tm+mt
+source-wordcount: '1228'
+ht-degree: 5%
+
+---
+
+# Creación de elementos de datos
+
+Aprenda a crear los elementos de datos esenciales necesarios para capturar datos con el SDK web de Experience Platform. Capturar los datos de contenido e identidad en la variable [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Aprenda a utilizar el esquema XDM que creó anteriormente para recopilar datos mediante el SDK web de Platform a través de un nuevo elemento de datos llamado Objeto XDM.
+
+>[!NOTE]
+>
+> Para fines de demostración, los ejercicios de esta lección se basan en el ejemplo utilizado durante [Configuración de un esquema](configure-schemas.md) paso; creación de objetos XDM de ejemplo que capturan el contenido visualizado y las identidades de los usuarios en la variable [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
+
+>[!IMPORTANT]
+>
+>Los datos de esta lección proceden del `[!UICONTROL digitalData]` capa de datos en el sitio de Luma. Para ver la capa de datos, abra la consola del desarrollador y escriba `[!UICONTROL digitalData]` para ver la capa de datos completa disponible.![capa de datos digitalData](assets/data-element-data-layer.png)
+
+
+Independientemente del SDK web de Platform, debe seguir creando elementos de datos dentro de la propiedad tag que se asignen a variables de recopilación de datos de su sitio web, como una capa de datos, un atributo de HTML u otros. Una vez creados estos elementos de datos, debe asignarlos al esquema XDM que creó durante la [configurar esquemas](configure-schemas.md) lección. Para ello, la extensión web SDK de Platform pone a disposición un nuevo tipo de elemento de datos denominado objeto XDM. Por lo tanto, la creación de elementos de datos consta de dos acciones:
+
+1. Asignación de variables de sitio web a elementos de datos, y
+1. Asignación de esos elementos de datos a un objeto XDM
+
+Para el paso 1, seguirá asignando la capa de datos a los elementos de datos del modo actual, utilizando cualquiera de los tipos de elementos de datos de la extensión de etiqueta principal. Para el paso 2, la extensión web SDK de Platform crea un conjunto de nuevos tipos de elementos de datos que no están disponibles anteriormente:
+
+* ID de combinación de eventos
+* Mapa de identidad
+* Objeto XDM
+
+Esta lección se centra en los tipos de elementos de datos de objeto XDM y mapa de identidad. Puede crear objetos XDM para capturar la actividad de los visitantes de Luma y el estado de autenticación.
+
+## Objetivos de aprendizaje
+
+Al final de esta lección, puede:
+
+* Creación de elementos de datos para capturar contenido y datos de ID de inicio de sesión del usuario
+* Crear un elemento de datos de mapa de identidad
+* Asignación de elementos de datos a un elemento de datos de objeto XDM
+
+
+## Requisitos previos
+
+Conozca qué es una capa de datos, familiarícese con el [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;} y sepa hacer referencia a los elementos de datos en las etiquetas. Debe haber completado los siguientes pasos anteriores en el tutorial
+
+* [Configure los permisos](configure-permissions.md)
+* [Configuración de un esquema XDM](configure-schemas.md)
+* [Configuración de un área de nombres de identidad](configure-identities.md)
+* [Configurar un conjunto de datos](configure-datastream.md)
+* [Extensión del SDK web instalada en la propiedad tag](install-web-sdk.md)
+
+>[!IMPORTANT]
+>
+>La variable [Extensión del servicio de ID de Experience Cloud](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) no es necesario al implementar el SDK web de Adobe Experience Platform, ya que la funcionalidad del servicio de ID está integrada en el SDK web de Platform.
+
+## Creación de elementos de datos para capturar la capa de datos
+
+Antes de empezar a crear el objeto XDM, cree el siguiente conjunto de elementos de datos asignando a la variable [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;} capa de datos:
+
+1. Vaya a **[!UICONTROL Elementos de datos]** y seleccione **[!UICONTROL Añadir elemento de datos]** (o **[!UICONTROL Crear nuevo elemento de datos]** (si no hay elementos de datos existentes en la propiedad tag)
+
+   ![Crear elemento de datos](assets/data-element-create.jpg)
+
+1. Asigne un nombre al elemento de datos `page.pageInfo.pageName`.
+1. Utilice la variable **[!UICONTROL Variable JavaScript]** **[!UICONTROL Tipo de elemento de datos]** para señalar a un valor de la capa de datos de Luma: `digitalData.page.pageInfo.pageName`
+
+1. Marque las casillas de **[!UICONTROL Forzar valor en minúsculas]** y **[!UICONTROL Limpiar texto]** para estandarizar el caso y eliminar espacios superfluos.
+
+1. Leave `None` como el **[!UICONTROL Duración del almacenamiento]** ya que este valor es diferente en cada página
+
+1. Seleccione **[!UICONTROL Guardar]**
+
+   ![Elemento de datos Nombre de página](assets/data-element-pageName.jpg)
+
+Siga los mismos pasos para crear estos cuatro elementos de datos adicionales:
+
+* **`page.pageInfo.server`**  asignado a
+   `digitalData.page.pageInfo.server`
+
+* **`page.pageInfo.hierarchie1`**  asignado a
+   `digitalData.page.pageInfo.hierarchie1`
+
+* **`user.profile.attributes.username`**  asignado a
+   `digitalData.user.0.profile.0.attributes.username`
+
+* **`user.profile.attributes.loggedIn`** asignado a
+   `digitalData.user.0.profile.0.attributes.loggedIn`
+
+* **`cart.orderId`** asignado a `digitalData.cart.orderId` (utilizará esto durante el [Configuración de Analytics](setup-analytics.md) lección)
+
+
+>[!CAUTION]
+>
+>La variable [!UICONTROL Variable JavaScript] el tipo de elemento de datos trata las referencias de matriz como puntos en lugar de corchetes, por lo que hace referencia al elemento de datos del nombre de usuario como `digitalData.user[0].profile[0].attributes.username` **no funcionará**.
+
+## Crear elemento de datos de mapa de identidad
+
+A continuación, puede crear el elemento de datos del mapa de identidad:
+
+1. Vaya a **[!UICONTROL Elementos de datos]** y seleccione **[!UICONTROL Añadir elemento de datos]**
+
+1. **[!UICONTROL Nombre]** el elemento de datos `identityMap.loginID`
+
+1. Como **[!UICONTROL Extensión]**, seleccione `Adobe Experience Platform Web SDK`
+
+1. Como **[!UICONTROL Tipo de elemento de datos]**, seleccione `Identity map`
+
+1. Esto muestra un área de pantalla a la derecha dentro del **[!UICONTROL Interfaz de recopilación de datos]** para configurar la identidad:
+
+   ![Interfaz de recopilación de datos](assets/identity-identityMap-setup.png)
+
+1. Como  **[!UICONTROL Área de nombres]**, seleccione `Luma CRM Id` área de nombres que creó anteriormente en [Configurar identidades](configure-identities.md) lección.
+
+   >[!NOTE]
+   >
+   >    Si no ve su `Luma CRM Id` , compruebe que también lo ha creado en el entorno limitado de producción predeterminado. En la lista desplegable de área de nombres solo se muestran las áreas de nombres creadas en el entorno limitado de producción predeterminado.
+
+1. Después de la **[!UICONTROL Área de nombres]** está seleccionada, se debe establecer un ID. Seleccione el `user.profile.attributes.username` elemento de datos creado anteriormente en esta lección, que captura un ID cuando los usuarios inician sesión en el sitio de Luma.
+
+<!--  >[!TIP]
+   >
+   >You can verify the **[!UICONTROL Luma CRM ID]** is collected in a data element on the web property by going to the [Luma Demo site](https://luma.enablementadobe.com/content/luma/us/en.html), logging in, [switching the tag environment](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property) to your own, and typing `_satellite.getVar("user.profile.attributes.username")` in the web browser developer console.
+   >
+   >   ![Data Element  ID ](assets/identity-data-element-customer-id.png)
+-->
+
+1. Como **[!UICONTROL Estado autenticado]**, seleccione **[!UICONTROL Autenticado]**
+
+1. Seleccione **[!UICONTROL Guardar]**
+
+   ![Interfaz de recopilación de datos](assets/identity-id-namespace.png)
+
+>[!WARNING]
+>
+>La identidad principal es necesaria en todos los registros enviados a Adobe Experience Platform. De forma predeterminada, el ID de Experience Cloud (ECID) se utiliza como identidad principal del SDK web de la plataforma. Nunca querría usar algo como el `Luma CRM ID` como identidad principal con el SDK web, ya que solo existe después de que el usuario se autentique y, por lo tanto, no estaría disponible en todos los registros.
+
+<!--
+1. Once the data element is configured in **[!UICONTROL Data Collection interface]**, it can be tested on the Luma web property like any other Data Element. Enter the following script in the browser developer console
+   
+   
+   ```
+   _satellite.getVar('identityMap.loginID')
+   ```  
+
+   ![Data Collection interface](assets/identity-consoleIdentityDataElement.png)
+   
+   >[!NOTE]
+   >
+   >ECID identifier will NOT populate in the Data Element, as this is configured already with Platform Web SDK.   
+-->
+
+## Asignación de elementos de datos a objetos XDM
+
+Todos los elementos de datos que cree deben asignarse a un objeto XDM. Este objeto debe ajustarse al esquema XDM que creó durante el [Configuración de un esquema](configure-schemas.md) lección.
+
+Existen diferentes maneras de asignar elementos de datos a campos de objeto XDM. Puede asignar elementos de datos individuales a campos XDM individuales o asignar elementos de datos a objetos XDM completos siempre que el elemento de datos coincida con el esquema del par clave-valor presente en el objeto XDM. En esta lección, se capturarán los datos de contenido mediante la asignación a campos individuales. Aprenderá a [asignar un elemento de datos a un objeto XDM completo](setup-analytics.md#Map-an-entire-array-to-an-XDM-Object) en el [Configuración de Analytics](setup-analytics.md) lección.
+
+Cree un objeto XDM para capturar datos de contenido:
+
+1. En el panel de navegación izquierdo, seleccione **[!UICONTROL Elementos de datos]**
+1. Seleccione **[!UICONTROL Agregar elemento de datos]**
+1. **** Asigne un nombre al elemento de datos . **`xdm.content`**
+1. Como **[!UICONTROL Extensión]** select `Adobe Experience Platform Web SDK`
+1. Como **[!UICONTROL Tipo de elemento de datos]** select `XDM object`
+1. Seleccione la plataforma **[!UICONTROL Sandbox]** en el que creó el esquema XDM durante el [Configuración de un esquema XDM](configure-schemas.md) lección, en este ejemplo `DEVELOPMENT Mobile and Web SDK Courses`
+1. Como **[!UICONTROL Esquema]**, seleccione `Luma Web Event Data` esquema:
+
+   ![Objeto XDM](assets/data-element-xdm.content-fields.png)
+
+   >[!NOTE]
+   >
+   >El simulador de pruebas corresponde al simulador de pruebas del Experience Platform en el que se creó el esquema. Puede haber varios entornos limitados disponibles en la instancia de Experience Platform, por lo que asegúrese de seleccionar el correcto. Siempre trabaje primero en desarrollo y luego en producción.
+
+1. Desplácese hacia abajo hasta que alcance la variable **`web`** object
+1. Seleccione para abrirlo
+
+   ![Objeto web](assets/data-element-pageviews-xdm-object.png)
+
+
+1. Asignación de las siguientes variables XDM web a elementos de datos
+
+   * **`web.webPageDetials.name`** a `%page.pageInfo.pageName%`
+   * **`web.webPageDetials.server`** a `%page.pageInfo.server%`
+   * **`web.webPageDetials.siteSection`** a `%page.pageInfo.hierarchie1%`
+
+   ![Objeto XDM](assets/data-element-xdm.content.png)
+
+1. A continuación, busque la `identityMap` en el esquema y selecciónelo
+
+1. Asigne a `identityMap.loginID` elemento de datos
+
+1. Seleccione **[!UICONTROL Guardar]**
+
+   ![Interfaz de recopilación de datos](assets/identity-dataElements-xdmContent-LumaSchema-identityMapSelect3.png)
+
+
+
+
+Al final de estos pasos, debe tener los siguientes elementos de datos creados:
+
+| Elementos de datos de extensión principal | Elementos de datos del SDK web de plataforma |
+-----------------------------|-------------------------------
+| `cart.orderId` | `identityMap.loginID` |
+| `page.pageInfo.hierarchie1` | `xdm.content` |
+| `page.pageInfo.pageName` |  |
+| `page.pageInfo.server` |  |
+| `user.profile.attributes.loggedIn` |  |
+| `user.profile.attributes.username` |  |
+
+Con estos elementos de datos en su lugar, está listo para empezar a enviar datos a Platform Edge Network a través del objeto XDM creando una regla en etiquetas.
+
+[Siguiente: ](create-tag-rule.md)
+
+>[!NOTE]
+>
+>Gracias por invertir su tiempo en obtener información sobre el SDK web de Adobe Experience Platform. Si tiene alguna pregunta, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Experience League de debate de la comunidad](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
