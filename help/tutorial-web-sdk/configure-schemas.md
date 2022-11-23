@@ -3,9 +3,9 @@ title: Creación de un esquema XDM para datos web
 description: Aprenda a crear un esquema XDM para datos web en la interfaz de recopilación de datos. Esta lección forma parte del tutorial Implementar Adobe Experience Cloud con SDK web .
 feature: Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: f493b0d53bba223f78683551a1a43e25bf43ee8d
+source-git-commit: fc0567823039f8a2005aa64a3f10c5a2564cbf64
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1125'
 ht-degree: 5%
 
 ---
@@ -47,7 +47,7 @@ En este ejercicio, creará un esquema XDM utilizando los grupos de campos de lí
 
    >[!NOTE]
    >
-   >Si es cliente de una aplicación basada en Platform como CDP en tiempo real, recomendamos utilizar un entorno limitado de desarrollo para este tutorial.
+   >Si es cliente de una aplicación basada en Platform como CDP en tiempo real, recomendamos utilizar un entorno limitado de desarrollo para este tutorial. Si no lo está, use el **[!UICONTROL Prod]** simulador de pruebas.
 
 1. Vaya a **[!UICONTROL Esquemas]** en la navegación izquierda
 1. Seleccione el **[!UICONTROL Crear esquema]** en la parte superior derecha
@@ -63,10 +63,10 @@ Cuando sea posible, se recomienda utilizar grupos de campos existentes y adherir
 
 >[!TIP]
 > 
->En este ejercicio, se agregan los grupos de campos predefinidos recomendados para la recopilación de datos web: _**[!UICONTROL Mezcla de ExperienceEvent del SDK web de AEP]**_ y _**[!UICONTROL Evento de experiencia del consumidor]**_.
+>En este ejercicio, se agregan los grupos de campos predefinidos recomendados para la recopilación de datos web: _**[!UICONTROL ExperienceEvent del SDK web de AEP]**_ y _**[!UICONTROL Evento de experiencia del consumidor]**_.
 
-1. Keep **[!UICONTROL Usar grupo de campos existente]** botón de radio seleccionado
-1. Buscar [!UICONTROL `AEP Web SDK ExperienceEvent Mixin`]
+1. En el **[!UICONTROL Grupos de campo]** , seleccione **[!UICONTROL Agregar]**
+1. Buscar [!UICONTROL `AEP Web SDK ExperienceEvent`]
 1. Marque la casilla .
 1. Buscar [!UICONTROL `Consumer Experience Event`]
 1. Marque la casilla .
@@ -83,7 +83,7 @@ Con los grupos de campos seleccionados, está listo para asignar un nombre al es
 
 ![Datos de evento web de Luma](assets/schema-luma-web-event-data.png)
 
-Con ambos grupos de campos, observe que tiene acceso a los pares de clave-valor más utilizados y requeridos para la recopilación de datos en la web. Al hacer clic en cualquier nombre de grupo de campos, la interfaz resalta qué agrupaciones de pares clave-valor pertenecen a él. En el ejemplo siguiente, puede ver a qué grupos pertenecen **[!UICONTROL Evento de experiencia del consumidor]**.
+Con ambos grupos de campos, observe que tiene acceso a los pares de clave-valor más utilizados y requeridos para la recopilación de datos en la web. La variable [!UICONTROL nombre para mostrar] de cada campo aparece para los especialistas en marketing en la interfaz del generador de segmentos de aplicaciones basadas en plataforma y puede cambiar el nombre para mostrar de los campos estándar para adaptarlos a sus necesidades. También puede quitar campos que no desee. Al hacer clic en cualquier nombre de grupo de campos, la interfaz resalta qué agrupaciones de pares clave-valor pertenecen a él. En el ejemplo siguiente, puede ver a qué grupos pertenecen **[!UICONTROL Evento de experiencia del consumidor]**.
 
 ![Grupos de campos de esquema](assets/schema-consumer-experience-event.jpg)
 

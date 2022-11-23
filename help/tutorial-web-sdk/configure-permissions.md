@@ -3,9 +3,9 @@ title: Configuración de permisos para el tutorial
 description: Obtenga información sobre cómo solicitar acceso al SDK web de Experience Platform y configurar el permiso necesario para completar el tutorial Implementación de Adobe Experience Cloud con SDK web .
 feature: Access Control
 exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 7377d87394d52bc9ed1f35f071a57bc341d5f969
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '415'
 ht-degree: 6%
 
 ---
@@ -16,14 +16,14 @@ Obtenga información sobre cómo solicitar acceso al SDK web de Experience Platf
 
 ## Recopilación de datos
 
-* Tener permiso para **[!UICONTROL Desarrollo]**, **[!UICONTROL Editar]**, **[!UICONTROL Aprobar]**, **[!UICONTROL Publicación]**, **[!UICONTROL Administrar extensiones]** y **[!UICONTROL Administrar entornos]** propiedades de la etiqueta. Para obtener más información sobre los permisos de etiquetas, consulte [la documentación](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+* Tener permiso para **[!UICONTROL Desarrollo]**, **[!UICONTROL Editar]**, **[!UICONTROL Aprobar]**, **[!UICONTROL Publicación]**, **[!UICONTROL Administrar extensiones]**, **[!UICONTROL Administrar entornos]** y **[!UICONTROL Administrar propiedades]**. Para obtener más información sobre los permisos de etiquetas, consulte [la documentación](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
 * Si va a completar la lección de reenvío de eventos opcional, tenga una licencia de producto que incluya reenvío de perímetro y elemento de permiso **[!UICONTROL Plataformas]** > **[!UICONTROL Edge]**
 
 ## Experience Platform
 
 Estas funciones deberían estar disponibles para todos los clientes Experience Cloud, incluso si no es cliente de una aplicación basada en Platform como CDP en tiempo real.
 
-* Acceso a **producción predeterminada** simulador de pruebas.
+* Acceso a **producción predeterminada**, **&quot;Prod&quot;** entorno limitado (.
 * Acceso a **[!UICONTROL Administrar esquemas]** y **[!UICONTROL Esquemas de vista]** under **[!UICONTROL Modelado de datos]**
 * Acceso a **[!UICONTROL Administrar áreas de nombres de identidad]** y **[!UICONTROL Ver áreas de nombres de identidad]** under **[!UICONTROL Identity Management]**
 * Acceso a **[!UICONTROL Administrar almacenes de datos]** y **[!UICONTROL Ver almacenes de datos]** under **[!UICONTROL Recopilación de datos]**
