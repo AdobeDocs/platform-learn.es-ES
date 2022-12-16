@@ -3,9 +3,9 @@ title: Crear una regla de etiqueta
 description: Obtenga información sobre cómo enviar un evento a la red perimetral de plataforma con el objeto XDM mediante una regla de etiqueta. Esta lección forma parte del tutorial Implementar Adobe Experience Cloud con SDK web .
 feature: Tags
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 7b978e1d98aa539c98b7f11ae33432729ac33bea
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '849'
 ht-degree: 5%
 
 ---
@@ -54,6 +54,8 @@ donde;
 
 ## Crear regla de etiqueta
 
+En las etiquetas , las reglas se utilizan para ejecutar acciones (llamadas de activación) bajo distintas condiciones. Utilizará esta primera regla para enviar el objeto XDM a la red perimetral mediante el SDK web [!UICONTROL Enviar evento] acción. Más adelante en este tutorial, enviará diferentes versiones del objeto XDM en función del tipo de página en la que se encuentre el visitante. Por ese motivo, utilizará condiciones de regla para excluir esos otros tipos de páginas.
+
 Para crear una regla de etiqueta:
 
 1. Abra la propiedad tag que esté utilizando para este tutorial.
@@ -84,7 +86,7 @@ Para crear una regla de etiqueta:
 1. Añada tres excepciones más para las siguientes rutas URL
 
    * **`Core - checkout page`** for `/content/luma/us/en/user/checkout.html`
-   * **`Core - thank you page`** para `/content/luma/us/en/user/checkout/order/thank-you.html`
+   * **`Core - thank you page`** for `/content/luma/us/en/user/checkout/order/thank-you.html`
    * **`Core - product page`** para `/products/` con el interruptor Regex activado
 
    ![Añadir condiciones](assets/rule-condition-exception-all.png)
