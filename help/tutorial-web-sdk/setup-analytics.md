@@ -3,9 +3,9 @@ title: Configuración de Adobe Analytics mediante el SDK web de Experience Platf
 description: Obtenga información sobre cómo configurar Adobe Analytics mediante el SDK web de Experience Platform. Esta lección forma parte del tutorial Implementar Adobe Experience Cloud con SDK web .
 solution: Data Collection, Analytics
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: eb635ea8befa6a908df5bed1c05b48deaf164cb6
 workflow-type: tm+mt
-source-wordcount: '3500'
+source-wordcount: '3554'
 ht-degree: 2%
 
 ---
@@ -121,7 +121,7 @@ A continuación, capture datos adicionales de la capa de datos de Luma y envíel
 
 ### Creación de elementos de datos de comercio electrónico
 
-Durante la lección Crear elementos de datos, usted [creación de elementos de datos de JavaScript](create-data-elements.md#create-data-elements-to-capture-the-data-layer) que capturaron detalles de contenido e identidad. Ahora creará elementos de datos adicionales para capturar datos de comercio electrónico. Porque la variable [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;} utiliza diferentes estructuras de capa de datos para las páginas de detalles del producto y los productos del carro de compras. Debe crear elementos de datos para cada escenario. Utilice los siguientes fragmentos de código:
+Durante la lección Crear elementos de datos, usted [creación de elementos de datos de JavaScript](create-data-elements.md#create-data-elements-to-capture-the-data-layer) que capturaron detalles de contenido e identidad. Ahora creará elementos de datos adicionales para capturar datos de comercio electrónico. Porque la variable [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;} utiliza diferentes estructuras de capa de datos para las páginas de detalles del producto y los productos del carro de compras. Debe crear elementos de datos para cada escenario. Tendrá que crear algunos elementos de datos de código personalizado para obtener lo que necesita de la capa de datos de Luma, lo que puede ser o no necesario al implementar en su propio sitio. En este caso, debe recorrer en bucle una matriz de artículos del carro de compras para obtener detalles específicos de cada producto. Utilice los siguientes fragmentos de código:
 
 1. Abra la propiedad tag que esté utilizando para el tutorial.
 1. Vaya a **[!UICONTROL Elementos de datos]**
