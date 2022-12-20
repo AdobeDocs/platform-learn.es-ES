@@ -1,12 +1,12 @@
 ---
 title: Ingesta de datos mediante el conector de datos de Adobe Audience Manager
-description: A medida que reconfigura sus procesos y su personal para que pasen de Adobe Audience Manager a Real-time Customer Data Platform, puede utilizar el conector de datos de Audience Manager para introducir características y segmentos de AAM en la plataforma, combinarlos con otros datos enriquecidos (incluida la PII) y enviarlos a los socios de destino. Este vídeo lo acompaña durante la configuración del conector de datos AAM para CDP en tiempo real.
+description: A medida que reconfigura sus procesos y su personal para que pasen de Adobe Audience Manager a Real-time Customer Data Platform, puede utilizar el conector de datos de Audience Manager para introducir características y segmentos de AAM en la plataforma, combinarlos con otros datos enriquecidos (incluida la PII) y enviarlos a los socios de destino. Este vídeo lo acompaña durante la configuración del conector de datos AAM para Real-Time CDP.
 role: Data Engineer, Data Architect
 feature: Sources
 thumbnail: 331214.jpg
 kt: 7111
 exl-id: 43688e44-c0ea-4107-ba74-1e630990f732
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 4%
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 # Ingesta de datos mediante el conector de datos de Adobe Audience Manager
 
-A medida que reconfigura sus procesos y su personal para que pasen de Adobe Audience Manager a Real-time Customer Data Platform (CDP en tiempo real), puede utilizar el conector de datos del Audience Manager para incorporar características y segmentos de AAM a la plataforma, combinarlos con otros datos enriquecidos (incluida la PII) y enviarlos a los socios de destino. Este vídeo lo acompaña durante la configuración del conector de datos AAM para CDP en tiempo real.
+A medida que reconfigura sus procesos y su personal para que pasen de Adobe Audience Manager a Real-time Customer Data Platform (Real-Time CDP), puede utilizar el conector de datos del Audience Manager para introducir rasgos y segmentos de AAM a la plataforma, combinarlos con otros datos enriquecidos (incluida la PII) y enviarlos a los socios de destino. Este vídeo lo acompaña durante la configuración del conector de datos AAM para Real-Time CDP.
 
 >[!VIDEO](https://video.tv.adobe.com/v/331214/?quality=12&learn=on)
 

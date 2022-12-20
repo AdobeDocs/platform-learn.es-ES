@@ -1,32 +1,32 @@
 ---
 title: Habilitar perfiles de cliente en tiempo real
-seo-title: Enable Real-time Customer Profiles | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+seo-title: Enable Real-Time Customer Profiles | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Habilitar perfiles de cliente en tiempo real
-description: En esta lección, debe habilitar sus esquemas y conjuntos de datos para el Perfil del cliente en tiempo real.
+description: En esta lección, debe habilitar sus esquemas y conjuntos de datos para el perfil del cliente en tiempo real.
 role: Data Architect
 feature: Profiles
 kt: 4348
 thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1123'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
 # Habilitar perfiles de cliente en tiempo real
 
 <!-- 15min-->
-En esta lección, debe habilitar sus esquemas y conjuntos de datos para el Perfil del cliente en tiempo real.
+En esta lección, debe habilitar sus esquemas y conjuntos de datos para el perfil del cliente en tiempo real.
 
 Bueno, mentí cuando dije que la lección de conjuntos de datos era la lección más corta en este tutorial, ¡este debería tomar incluso menos tiempo! Literalmente, todo lo que vas a hacer es voltear un montón de toggles. Pero lo que sucede cuando se voltean estas gafas es _real_ importante, así que quería dedicarle una página entera.
 
-Con Perfil del cliente en tiempo real, puede ver una vista holística de cada cliente individual que combina datos de varios canales, incluidos datos en línea, sin conexión, CRM y de terceros. El perfil le permite consolidar sus diferentes datos de clientes en una vista unificada que ofrece una cuenta procesable con marca de tiempo de cada interacción con los clientes.
+Con Perfil del cliente en tiempo real, puede ver una vista completa de cada cliente individual que combina datos de varios canales, incluidos datos en línea, sin conexión, CRM y de terceros. El perfil le permite consolidar sus diferentes datos de clientes en una vista unificada que ofrece una cuenta procesable con marca de tiempo de cada interacción con los clientes.
 
 Por increíble que suene todo eso, no necesita activarse *todos sus datos* para perfil. De hecho, solo debe habilitar los datos necesarios para los casos de uso de activación. Habilite los datos que desee utilizar para casos de uso de marketing, integraciones de centros de llamadas, etc., donde necesite un acceso rápido a un perfil de cliente sólido. Si está cargando datos solo para análisis, probablemente no debería habilitarse para el perfil.
 
-Hay [protecciones para datos de Perfil del cliente en tiempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) que debe revisar al decidir cuál de sus propios datos debe habilitar para el perfil.
+Hay [protecciones para datos del perfil del cliente en tiempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) que debe revisar al decidir cuál de sus propios datos debe habilitar para el perfil.
 
 <!--is this accurate. Are there other considerations to point out? -->
 

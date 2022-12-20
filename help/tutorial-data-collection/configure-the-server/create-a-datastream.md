@@ -2,7 +2,7 @@
 title: Crear un flujo de datos
 description: Crear un flujo de datos
 exl-id: 4a33a7f3-8bd8-4d28-9ae4-a0609444485f
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 1%
@@ -34,7 +34,7 @@ La siguiente pantalla le permite añadir qué productos y servicios de Adobe deb
 
 Las empresas suelen tener una ruta de promoción para cualquier actualización del sitio web. Alguien de la empresa (un especialista en marketing o ingeniero, según los cambios) suele probar sus cambios en un entorno de desarrollo que solo esa persona está utilizando. Una vez que se sientan cómodos con los cambios, los cambios se convierten en un entorno de ensayo en el que reciben más pruebas. Finalmente, los cambios se publican en el sitio web de producción que ven los usuarios. Los conjuntos de datos admiten este patrón de promoción.
 
-Si admite aplicaciones basadas en Platform como CDP en tiempo real, Journey Optimizer o Customer Journey Analytics, se deben crear conjuntos de datos adicionales en los entornos limitados de Platform independientes que se correspondan con estos entornos.
+Si admite aplicaciones basadas en Platform como Real-Time CDP, Journey Optimizer o Customer Journey Analytics, se deben crear conjuntos de datos adicionales en los entornos limitados de Platform independientes que se correspondan con estos entornos.
 
 Si no es cliente de Platform, puede crear varios conjuntos de datos en un solo simulador de pruebas y utilizar la función de copia del conjunto de datos para duplicar la configuración.
 

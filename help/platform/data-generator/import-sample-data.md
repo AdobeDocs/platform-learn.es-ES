@@ -6,7 +6,7 @@ feature: API
 kt: 7349
 thumbnail: 7349.jpg
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1620'
 ht-degree: 4%
@@ -159,7 +159,7 @@ Ahora puede preparar e importar los datos en el simulador para pruebas de Platfo
 
 ## Validación
 
-Los datos de ejemplo se han diseñado para que, cuando se hayan ejecutado las colecciones, se creen perfiles del cliente en tiempo real que combinen datos de varios sistemas. Un buen ejemplo de esto es el primer registro de los conjuntos de datos de compra sin conexión, CRM y de fidelidad. Busque ese perfil para confirmar que se han introducido los datos. En el [Interfaz de Adobe Experience Platform](https://platform.adobe.com/):
+Los datos de ejemplo se han diseñado para que, cuando se hayan ejecutado las colecciones, se creen perfiles de cliente en tiempo real que combinen datos de varios sistemas. Un buen ejemplo de esto es el primer registro de los conjuntos de datos de compra sin conexión, CRM y de fidelidad. Busque ese perfil para confirmar que se han introducido los datos. En el [Interfaz de Adobe Experience Platform](https://platform.adobe.com/):
 
 1. Vaya a **[!UICONTROL Perfiles]** > **[!UICONTROL Examinar]**
 1. Select `Luma Loyalty Id` como el **[!UICONTROL Área de nombres de identidad]**
@@ -176,10 +176,10 @@ Explorando los datos del **[!UICONTROL Atributos]** y **[!UICONTROL Eventos]** ,
 Si desea obtener información sobre las políticas de combinación, el control de datos, el servicio de consultas y el generador de segmentos, vaya a [lección 11 del tutorial Introducción a los arquitectos de datos y a los ingenieros de datos](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en). Las lecciones anteriores de este otro tutorial le permiten crear manualmente todo lo que acaba de completar estas colecciones de Postman: ¡disfrute del inicio inicial!
 
 Si desea crear una implementación de SDK web de muestra para vincularla a este entorno limitado, consulte
-[Tutorial de implementación de Adobe Experience Cloud con SDK web](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html). Después de configurar las lecciones de &quot;Configuración inicial&quot;, &quot;Configuración de etiquetas&quot; y &quot;Configurar Experience Platform&quot; del tutorial del SDK web, inicie sesión en el sitio web de Luma con las diez primeras direcciones de correo electrónico de la `luma-crm.json` archivo con la contraseña `test` para ver cómo se combinan los fragmentos de perfil con los datos cargados en este tutorial.
+[Tutorial de implementación de Adobe Experience Cloud con SDK web](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=es). Después de configurar las lecciones de &quot;Configuración inicial&quot;, &quot;Configuración de etiquetas&quot; y &quot;Configurar Experience Platform&quot; del tutorial del SDK web, inicie sesión en el sitio web de Luma con las diez primeras direcciones de correo electrónico de la `luma-crm.json` archivo con la contraseña `test` para ver cómo se combinan los fragmentos de perfil con los datos cargados en este tutorial.
 
 Si desea crear una implementación de SDK móvil de ejemplo para vincular a este entorno limitado, consulte
-[Tutorial sobre implementación de Adobe Experience Cloud en aplicaciones móviles](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html). Después de configurar las lecciones de &quot;Configuración inicial&quot;, &quot;Implementación de aplicación&quot; y &quot;Experience Platform&quot; del tutorial del SDK web, inicie sesión en el sitio web de Luma con las primeras direcciones de correo electrónico de la `luma-crm.json` para ver una combinación de fragmentos de perfil con datos cargados en este tutorial.
+[Tutorial sobre implementación de Adobe Experience Cloud en aplicaciones móviles](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=es). Después de configurar las lecciones de &quot;Configuración inicial&quot;, &quot;Implementación de aplicación&quot; y &quot;Experience Platform&quot; del tutorial del SDK web, inicie sesión en el sitio web de Luma con las primeras direcciones de correo electrónico de la `luma-crm.json` para ver una combinación de fragmentos de perfil con datos cargados en este tutorial.
 
 ## Restablecer entorno de espacio aislado {#reset-sandbox}
 

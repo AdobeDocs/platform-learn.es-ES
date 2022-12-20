@@ -2,7 +2,7 @@
 title: Transmisión de datos a Adobe Experience Platform con SDK web
 description: Obtenga información sobre cómo transmitir datos web a Adobe Experience Platform con el SDK web. Esta lección forma parte del tutorial Implementar Adobe Experience Cloud con SDK web .
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1608'
 ht-degree: 5%
@@ -154,7 +154,7 @@ Para confirmar que los datos han llegado al lago de datos de Platform, una opci�
 >El servicio de consulta de Adobe Experience Platform es un método más robusto para validar los datos en el lago, pero está fuera del alcance de este tutorial. Para obtener más información, consulte [Explorar datos](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/explore-data.html?lang=es) en la sección Tutoriales de Platform .
 
 
-## Habilitar el conjunto de datos y el esquema para el perfil del cliente en tiempo real
+## Habilitar el conjunto de datos y el esquema para el perfil de cliente en tiempo real
 
 El siguiente paso es habilitar el conjunto de datos y el esquema para el perfil del cliente en tiempo real. La transmisión de datos desde el SDK web será una de las muchas fuentes de datos que ingresan a Platform y desea unir sus datos web con otras fuentes de datos para crear perfiles de clientes de 360 grados. Para obtener más información sobre el Perfil del cliente en tiempo real, vea este breve vídeo:
 
@@ -235,7 +235,7 @@ Primero debe generar más datos de muestra. Repita los pasos anteriores en esta 
 
    ![Perfil del cliente](assets/experience-platform-validate-dataset-custProfile.png)
 
-Ya ha habilitado Platform Web SDK para Experience Platform (y CDP en tiempo real) ¡Y Customer Journey Analytics! ¡Y Journey Optimizer!)
+Ya ha habilitado Platform Web SDK para Experience Platform (y Real-Time CDP! ¡Y Customer Journey Analytics! ¡Y Journey Optimizer!)
 
 
 [Siguiente: ](setup-analytics.md)

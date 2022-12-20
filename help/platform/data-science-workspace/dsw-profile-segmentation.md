@@ -1,12 +1,12 @@
 ---
 title: Utilizar resultados de aprendizaje automático en la segmentación
-description: Descubra cómo se pueden utilizar las salidas del modelo de Data Science Workspace en tiempo real en la segmentación y el perfil del cliente.
+description: Descubra cómo se pueden utilizar las salidas del modelo de Data Science Workspace en tiempo real para la segmentación y el perfil del cliente.
 role: User
 feature: Data Science Workspace
 kt: 7296
 thumbnail: 333711.jpg
 exl-id: 9a909023-47d2-474a-a562-b60799094b89
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '87'
 ht-degree: 12%
@@ -15,7 +15,7 @@ ht-degree: 12%
 
 # Utilizar resultados de aprendizaje automático en la segmentación
 
-Descubra cómo se pueden utilizar las salidas del modelo de Data Science Workspace en tiempo real en la segmentación y el perfil del cliente.
+Descubra cómo se pueden utilizar las salidas del modelo de Data Science Workspace en tiempo real para la segmentación y el perfil del cliente.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333711)
 

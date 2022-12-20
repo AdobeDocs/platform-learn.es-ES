@@ -1,15 +1,15 @@
 ---
-title: Explicación del perfil de cliente en tiempo real
+title: Explicación del perfil del cliente en tiempo real
 description: Este vídeo explica cómo Adobe Experience Platform organiza y actualiza los Perfiles de clientes en tiempo real, y cómo puede acceder a ellos y utilizarlos.
 role: Data Architect, Data Engineer
 feature: Profiles
 kt: 2701
 thumbnail: 27251.jpg
 exl-id: 6ef5b589-f874-4687-bee3-9650c993f383
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '94'
-ht-degree: 61%
+ht-degree: 57%
 
 ---
 

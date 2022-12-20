@@ -3,7 +3,7 @@ title: Configuración de Adobe Analytics mediante el SDK web de Experience Platf
 description: Obtenga información sobre cómo configurar Adobe Analytics mediante el SDK web de Experience Platform. Esta lección forma parte del tutorial Implementar Adobe Experience Cloud con SDK web .
 solution: Data Collection, Analytics
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: eb635ea8befa6a908df5bed1c05b48deaf164cb6
+source-git-commit: 17b87daf399b11fb698d34bd6f1b93fa8cbaa1d4
 workflow-type: tm+mt
 source-wordcount: '3554'
 ht-degree: 2%
@@ -335,7 +335,7 @@ Hay pasos adicionales para capturar el `purchase` evento:
 
    >[!TIP]
    >
-   >Esto equivale a configurar `s.purcahseID` y `s.currencyCode` en Analytics
+   >Esto equivale a configurar `s.purcahseID` y `s.currencyCode` variables en Analytics
 
 1. Seleccione para abrir el `purchases` objeto y conjunto `value` a `1`
    >[!TIP]

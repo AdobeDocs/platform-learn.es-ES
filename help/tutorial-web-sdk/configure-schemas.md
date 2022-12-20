@@ -3,7 +3,7 @@ title: Creación de un esquema XDM para datos web
 description: Aprenda a crear un esquema XDM para datos web en la interfaz de recopilación de datos. Esta lección forma parte del tutorial Implementar Adobe Experience Cloud con SDK web .
 feature: Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: fc0567823039f8a2005aa64a3f10c5a2564cbf64
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1125'
 ht-degree: 5%
@@ -47,7 +47,7 @@ En este ejercicio, creará un esquema XDM utilizando los grupos de campos de lí
 
    >[!NOTE]
    >
-   >Si es cliente de una aplicación basada en Platform como CDP en tiempo real, recomendamos utilizar un entorno limitado de desarrollo para este tutorial. Si no lo está, use el **[!UICONTROL Prod]** simulador de pruebas.
+   >Si es cliente de una aplicación basada en Platform como Real-Time CDP, recomendamos utilizar un entorno limitado de desarrollo para este tutorial. Si no lo está, use el **[!UICONTROL Prod]** simulador de pruebas.
 
 1. Vaya a **[!UICONTROL Esquemas]** en la navegación izquierda
 1. Seleccione el **[!UICONTROL Crear esquema]** en la parte superior derecha

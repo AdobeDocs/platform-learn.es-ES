@@ -3,7 +3,7 @@ title: Configurar un conjunto de datos
 description: Obtenga información sobre cómo habilitar un conjunto de datos y configurar soluciones de Experience Cloud. Esta lección forma parte del tutorial Implementar Adobe Experience Cloud con SDK web .
 feature: Datastreams
 exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
-source-git-commit: 762195148f7594e30b361546941dfcd8076ab7b1
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 6%
@@ -43,7 +43,7 @@ Ahora puede crear un conjunto de datos para indicar a Platform Edge Network dón
 
    >[!NOTE]
    >
-   >Si es cliente de una aplicación basada en Platform como CDP en tiempo real, recomendamos utilizar un entorno limitado de desarrollo para este tutorial. Si no lo está, use el **[!UICONTROL Prod]** simulador de pruebas.
+   >Si es cliente de una aplicación basada en Platform como Real-Time CDP, recomendamos utilizar un entorno limitado de desarrollo para este tutorial. Si no lo está, use el **[!UICONTROL Prod]** simulador de pruebas.
 
 1. Vaya a **[!UICONTROL Datastreams]** en la navegación izquierda
 1. Select **[!UICONTROL Nuevo conjunto de datos]** a la derecha de la pantalla.

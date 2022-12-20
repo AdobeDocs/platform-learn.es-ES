@@ -2,7 +2,7 @@
 title: Creación de un esquema XDM
 description: Obtenga información sobre cómo crear un esquema XDM para eventos de aplicaciones móviles.
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 6%
@@ -53,7 +53,7 @@ En esta lección:
 
    >[!NOTE]
    >
-   > Los clientes de aplicaciones basadas en plataformas como CDP en tiempo real deben utilizar un entorno limitado de desarrollo para este tutorial. Otros clientes utilizarán el entorno limitado de producción predeterminado.
+   > Los clientes de aplicaciones basadas en Platform como Real-Time CDP deben utilizar un entorno limitado de desarrollo para este tutorial. Otros clientes utilizarán el entorno limitado de producción predeterminado.
 
 
 1. Select **[!UICONTROL Esquemas]** under **[!UICONTROL Gestión de datos]**.
@@ -66,7 +66,7 @@ Ahora se encuentra en la página de esquemas principales y se le presenta una li
 * **Clases** defina los aspectos de comportamiento de los datos que contiene el esquema. Por ejemplo: `XDM ExperienceEvent` captura series temporales, datos de eventos y `XDM Individual Profile` captura datos de atributos sobre un individuo.
 * **Tipos de datos** se utilizan como tipos de campos de referencia en clases o grupos de campos de la misma manera que los campos literales básicos.
 
-Las descripciones anteriores son una descripción general de alto nivel. Para obtener más información, consulte la [Componentes básicos del esquema](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schema-building-blocks.html?lang=es) vídeo o lectura [Aspectos básicos de la composición del esquema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en) en la documentación del producto.
+Las descripciones anteriores son una descripción general de alto nivel. Para obtener más información, consulte la [Componentes básicos del esquema](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schema-building-blocks.html?lang=es) vídeo o lectura [Aspectos básicos de la composición del esquema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=es) en la documentación del producto.
 
 En este tutorial, se utiliza el grupo de campos Evento de experiencia del consumidor y se crea uno personalizado para mostrar el proceso.
 

@@ -7,7 +7,7 @@ kt: 10360
 thumbnail: 344949.jpeg
 last-substantial-update: 2022-07-27T00:00:00Z
 exl-id: 8a0c825a-68d2-4885-8cb6-981a79994327
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Obtenga información sobre la función de higiene de datos de Adobe Experience Platform.
 
-La higiene de los datos permite eliminar consumidores y conjuntos de datos completos de todos los almacenes de Experience Platform, como el lago de datos, el servicio de perfil y el servicio de identidad. No es necesario preocuparse por dónde Adobe almacena los datos en el back-end a medida que depura los datos de manera eficiente para todas las aplicaciones basadas en Platform, como Customer Journey Analytics, Journey Optimizer y CDP en tiempo real. Para obtener más información, visite [documentación de higiene de datos](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html).
+La higiene de los datos permite eliminar consumidores y conjuntos de datos completos de todos los almacenes de Experience Platform, como el lago de datos, el servicio de perfil y el servicio de identidad. No es necesario preocuparse por dónde Adobe almacena los datos en el backend a medida que depura los datos de forma eficiente para todas las aplicaciones basadas en Platform como Customer Journey Analytics, Journey Optimizer y Real-Time CDP. Para obtener más información, visite [documentación de higiene de datos](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/344949?quality=12&learn=on)
 

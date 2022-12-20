@@ -8,16 +8,16 @@ feature: Integrations,Segments,Web SDK,Destinations,Datastreams,Audiences,Experi
 kt: 9629
 thumbnail: 340091.jpg
 exl-id: 08568a37-1450-4fdc-ba58-37ea026028c7
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2d4f4f933650ef1a0ac98d47b28d0d750ae0e908
 workflow-type: tm+mt
 source-wordcount: '99'
-ht-degree: 32%
+ht-degree: 0%
 
 ---
 
 # Personalización de próxima visita con Real-Time CDP y Adobe Target
 
-Obtenga información sobre cómo personalizar la siguiente visita con Real-time Customer Data Platform y Adobe Target. El destino de Adobe Target en CDP en tiempo real le permite utilizar segmentos de Experience Platform en Adobe Target para la misma página y personalización de página siguiente con control y compatibilidad con la privacidad.
+Aprenda a personalizar la siguiente visita con Real-time Customer Data Platform y Adobe Target. El destino de Adobe Target en Real-Time CDP le permite utilizar segmentos de Experience Platform en Adobe Target para la misma página y personalización de página siguiente con control y compatibilidad con la privacidad.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340091?quality=12&learn=on)
 

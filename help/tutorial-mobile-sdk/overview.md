@@ -3,7 +3,7 @@ title: Información general sobre la implementación de Adobe Experience Cloud e
 description: Obtenga información sobre cómo implementar las aplicaciones móviles de Adobe Experience Cloud. Este tutorial le guía a través de la implementación de aplicaciones Experience Cloud en una aplicación Swift de ejemplo.
 recommendation: noDisplay,catalog
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 10%
@@ -61,7 +61,7 @@ En estas lecciones, se da por hecho que dispone de un Adobe ID y de los permisos
    * **[!UICONTROL Identity Management]**: elementos de permiso para administrar y ver áreas de nombres de identidad.
    * **[!UICONTROL Recopilación de datos]**: elementos de permiso para administrar y ver conjuntos de datos.
 
-   * Si es cliente de una aplicación basada en Platform como CDP en tiempo real, Journey Optimizer o Customer Journey Analytics, también debe tener:
+   * Si es cliente de una aplicación basada en Platform como Real-Time CDP, Journey Optimizer o Customer Journey Analytics, también debería tener:
       * **[!UICONTROL Gestión de datos]**: elementos de permiso para administrar y ver conjuntos de datos para completar la variable _ejercicios opcionales de plataforma_ (requiere una licencia para una aplicación basada en Platform ).
       * Un desarrollo **entorno limitado** que puede utilizar para este tutorial.
 * Para Adobe Analytics, debe saber cuál **grupos de informes** puede utilizar para completar este tutorial.

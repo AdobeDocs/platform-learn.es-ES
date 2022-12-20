@@ -1,13 +1,13 @@
 ---
 title: Configuración del almacenamiento en la nube basado en archivos o destinos de marketing por correo electrónico
-description: Obtenga sugerencias durante una introducción a la configuración de un destino basado en archivos en CDP en tiempo real de Adobe. Esto se aplica a los destinos de almacenamiento en la nube (por ejemplo, S3 o SFTP) y también a los destinos de marketing por correo electrónico.
+description: Obtenga sugerencias durante un tutorial sobre la configuración de un destino basado en archivos en Real-Time CDP de Adobe. Esto se aplica a los destinos de almacenamiento en la nube (por ejemplo, S3 o SFTP) y también a los destinos de marketing por correo electrónico.
 solution: Real-time Customer Data Platform
 role: User
 feature: Destinations
 kt: 6624
 thumbnail: 328175.jpg
 exl-id: fda985ad-5d56-4e61-871f-2f29a2e79b17
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2d4f4f933650ef1a0ac98d47b28d0d750ae0e908
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 5%

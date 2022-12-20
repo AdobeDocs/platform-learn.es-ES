@@ -3,7 +3,7 @@ title: Configuración de un área de nombres de identidad
 description: Obtenga información sobre cómo configurar áreas de nombres de identidad para utilizarlas con el SDK web de Adobe Experience Platform. Esta lección forma parte del tutorial Implementar Adobe Experience Cloud con SDK web .
 feature: Identities
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 2b5013ea01bf4e2388a6e1fc046b1685945be238
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '695'
 ht-degree: 6%
@@ -55,7 +55,7 @@ Ahora, cree un área de nombres para el ID de Luma CRM:
 
    >[!NOTE]
    >
-   >Si es cliente de una aplicación basada en Platform como CDP en tiempo real, recomendamos utilizar un entorno limitado de desarrollo para este tutorial. Si no lo está, use el **[!UICONTROL Prod]** simulador de pruebas.
+   >Si es cliente de una aplicación basada en Platform como Real-Time CDP, recomendamos utilizar un entorno limitado de desarrollo para este tutorial. Si no lo está, use el **[!UICONTROL Prod]** simulador de pruebas.
 
 1. Select **[!UICONTROL Identidades]** en la navegación izquierda
 1. Select **[!UICONTROL Examinar]**

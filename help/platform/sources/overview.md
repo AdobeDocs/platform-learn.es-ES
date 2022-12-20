@@ -1,21 +1,21 @@
 ---
 title: Resumen de fuentes
-description: Aprenda a ingerir fácilmente datos de aplicaciones de Adobe, propias y de terceros en el perfil del cliente en tiempo real y el lago de datos de Platform.
+description: Aprenda a ingerir fácilmente datos de aplicaciones de Adobe, de origen y de terceros en el Perfil del cliente en tiempo real y el lago de datos de Platform.
 role: Data Engineer, Data Architect
 feature: Sources
 kt: 3800
 thumbnail: 29694.jpg
 exl-id: e38d643a-27ea-49f4-87c4-eccdb860ea92
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '100'
-ht-degree: 31%
+ht-degree: 11%
 
 ---
 
 # Resumen de fuentes
 
-Aprenda a utilizar fuentes o conectores de origen en la interfaz de Adobe Experience Platform. Las fuentes son integraciones fácilmente configurables que le permiten introducir datos de aplicaciones de Adobe, de origen y de terceros en el Perfil del cliente en tiempo real y el lago de datos de Platform.
+Aprenda a utilizar fuentes o conectores de origen en la interfaz de Adobe Experience Platform. Las fuentes son integraciones fácilmente configurables que permiten introducir datos de aplicaciones de Adobe, de origen y de terceros en el perfil del cliente en tiempo real y el lago de datos de Platform.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29694?quality=12&learn=on)
 

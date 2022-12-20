@@ -1,12 +1,12 @@
 ---
 title: Ingesta de datos mediante conectores de origen de CRM
-description: Este vídeo muestra cómo incorporar fácilmente por lotes datos de fuentes CRM en el Perfil del cliente en tiempo real y el lago de datos de Adobe Experience Platform, de una manera fácil y escalable.
+description: Este vídeo muestra cómo incorporar fácilmente por lotes datos de fuentes CRM al Perfil del cliente en tiempo real y al lago de datos de Adobe Experience Platform, de una manera fácil y escalable.
 role: Data Engineer, Data Architect
 feature: Sources
 kt: 3826
 thumbnail: 29711.jpg
 exl-id: 2a0caa84-dca6-4ba9-9ebf-bdf38dfc3cb2
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 # Ingesta de datos mediante conectores de origen de CRM
 
-Este vídeo muestra cómo incorporar fácilmente por lotes datos de fuentes CRM en el Perfil del cliente en tiempo real y el lago de datos de Adobe Experience Platform, de una manera fácil y escalable. Para obtener documentación del producto más detallada, consulte [administración de la relación con los clientes (CRM)](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#access-control-for-sources-in-data-ingestion) en la página de información general de conectores de origen .
+Este vídeo muestra cómo incorporar fácilmente por lotes datos de fuentes CRM al Perfil del cliente en tiempo real y al lago de datos de Adobe Experience Platform, de una manera fácil y escalable. Para obtener documentación del producto más detallada, consulte [administración de la relación con los clientes (CRM)](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#access-control-for-sources-in-data-ingestion) en la página de información general de conectores de origen .
 
 >[!VIDEO](https://video.tv.adobe.com/v/29711?quality=12&learn=on)
 

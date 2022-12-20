@@ -3,7 +3,7 @@ title: Instalación y configuración de la extensión de etiqueta del SDK web de
 description: Obtenga información sobre cómo instalar y configurar la extensión de etiqueta del SDK web de plataforma en la interfaz de recopilación de datos. Esta lección forma parte del tutorial Implementar Adobe Experience Cloud con SDK web .
 feature: Web SDK
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 13%
