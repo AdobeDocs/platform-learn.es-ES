@@ -2,7 +2,7 @@
 title: Procesar actividades de VEC | Migración de Target de at.js 2.x al SDK web
 description: Obtenga información sobre cómo recuperar y aplicar actividades del compositor de experiencias visuales con una implementación de SDK web de Adobe Target.
 feature: Visual Experience Composer (VEC),Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 72eaefe62bc84c81bee4930218854ec1d83e99ab
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -183,27 +183,6 @@ La implementación básica del SDK web de Platform ya ha finalizado. Nuestra pá
 >[!TIP]
 >
 > Al utilizar la función de etiquetas (anteriormente Launch) para implementar el SDK web, el código incrustado de etiquetas sustituye las secciones &quot;Platform Web SDK base code&quot;, &quot;Platform Web SDK loaded asíncronamente&quot; y &quot;Configure Platform Web SDK&quot; anteriores. El comando &#39;sendEvent&#39; se realiza en una regla que usa la variable [!UICONTROL Enviar evento] tipo de acción con la variable [!UICONTROL Procesar decisiones de personalización visual] seleccionada.
-
-## Creación de actividades con la extensión del explorador Visual Editing Helper
-
-La extensión del explorador Adobe Experience Cloud Visual Editing Helper para Google Chrome permite cargar sitios web de forma fiable dentro del Compositor de experiencias visuales (VEC) de Adobe Target para crear y realizar controles de calidad de experiencias rápidamente.
-
-La extensión del explorador de Visual Editing Helper funciona con sitios web que utilizan at.js o Platform Web SDK.
-
->[!IMPORTANT]
->
->La nueva extensión de ayuda de edición visual sustituye a la anterior [Extensión de explorador de VEC Helper de Target](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html). Si está instalada la extensión anterior de VEC Helper, debe eliminarse o deshabilitarse antes de utilizar la extensión de Visual Editing Helper.
-
-### Obtenga e instale el Asistente de edición visual
-
-1. Vaya a la [Extensión del explorador Adobe Experience Cloud Visual Editing Helper en Chrome Web Store](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca).
-1. Haga clic en Agregar a **Chrome** > **Agregar extensión**.
-1. Abra el VEC en Target.
-1. Para utilizar la extensión, haga clic en el icono de la extensión del explorador Ayuda de edición visual (icono de Extensión de edición visual) en la barra de herramientas del explorador Chrome mientras está en VEC o en modo control de calidad.
-
-El Asistente de edición visual se habilita automáticamente cuando se abre un sitio web en el VEC de Target para admitir la creación. La extensión no tiene ninguna configuración condicional. La extensión gestiona todas las configuraciones automáticamente, incluida la configuración de cookies de SameSite.
-
-Consulte la documentación dedicada para obtener más información sobre la [Extensión de Visual Editing Helper](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html) y [solución de problemas del Compositor de experiencias visuales](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html).
 
 A continuación, aprenda a solicitar y [procesar actividades de Target basadas en formularios](render-form-based-activities.md).
 
