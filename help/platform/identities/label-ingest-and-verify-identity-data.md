@@ -15,7 +15,7 @@ ht-degree: 59%
 
 # Etiquetado, ingesta y verificación de datos de identidad
 
-Obtenga información sobre cómo etiquetar campos de datos como identidades, ingerir datos de identidad y verificar los datos en el gráfico privado del servicio de Adobe Experience Platform Identity. Para obtener más información, visite [documentación del servicio de identidad](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=es)
+Obtenga información sobre cómo etiquetar campos de datos como identidades, ingerir datos de identidad y verificar los datos en el gráfico privado del servicio de Adobe Experience Platform Identity. Para obtener más información, visite [documentación del servicio de identidad](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=es)
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/28167?quality=12&learn=on)

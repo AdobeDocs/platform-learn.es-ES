@@ -7,7 +7,7 @@ recommendations: noDisplay,noCatalog
 source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
 workflow-type: tm+mt
 source-wordcount: '81'
-ht-degree: 34%
+ht-degree: 38%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 34%
    + [Configuración del Experience Platform](setup-experience-platform.md)
    + [Configuración de Adobe Analytics](setup-analytics.md)
    + [Configuración del Audience Manager](setup-audience-manager.md)
-   + [Configuración de Target](setup-target.md)
+   + [Configurar Target](setup-target.md)
 
 + Gestión del consentimiento {#consent-management}
    + [Configuración del consentimiento](setup-consent.md)

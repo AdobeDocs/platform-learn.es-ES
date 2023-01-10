@@ -26,11 +26,11 @@ ht-degree: 34%
    + [Usuarios y permisos](tags/users-and-permissions.md)
    + [Implementar en sitios web con SDK web](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=es){target=&quot;_blank&quot;}
    + [Implementar en sitios web con SDK de soluciones](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target=&quot;_blank&quot;}
-   + [Implementar en aplicaciones móviles](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html){target=&quot;_blank&quot;}
+   + [Implementar en aplicaciones móviles](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=es){target=&quot;_blank&quot;}
 + SDK web{#web-sdk}
    + [Información general](web-sdk/overview.md)
    + [Demostración](web-sdk/demo.md)
-   + [Tutorial de implementación (con etiquetas)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target=&quot;_blank&quot;}
+   + [Tutorial de implementación (con etiquetas)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=es){target=&quot;_blank&quot;}
    + Consentimiento{#consent}
       + [Información general](web-sdk/consent/overview.md)
       + [Definir valores de consentimiento con el estándar de Adobe](web-sdk/consent/set-consent-adobe.md)
@@ -41,7 +41,7 @@ ht-degree: 34%
    + [Información general](mobile-sdk/overview.md)
    + [Crear propiedades móviles](mobile-sdk/create-mobile-properties.md)
    + [Usar administradores de dependencias](mobile-sdk/use-dependency-managers.md)
-   + [Implementar en aplicaciones móviles](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html){target=&quot;_blank&quot;}
+   + [Implementar en aplicaciones móviles](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=es){target=&quot;_blank&quot;}
 + API de servidor{#server-api}
    + [Información general](server-api/overview.md)
    + [Aspectos básicos de las API](server-api/introduction.md)
