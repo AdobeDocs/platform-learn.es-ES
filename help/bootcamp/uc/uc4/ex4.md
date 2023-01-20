@@ -6,10 +6,10 @@ audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
 exl-id: 6a9fc1a4-9a6a-43f2-9393-815f9dc2cb4e
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: bc872b4fe440106475668eeb790242e1862875aa
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 10%
+source-wordcount: '755'
+ht-degree: 9%
 
 ---
 
@@ -48,9 +48,7 @@ A continuación, verá un proyecto vacío.
 
 ![demostración](./images/premptyprojects.png)
 
-En primer lugar, asegúrese de seleccionar la vista de datos correcta en la esquina superior derecha de la pantalla. En este ejemplo, la vista de datos que se va a seleccionar es `vangeluwe - Omnichannel Data View`.
-
-![demostración](./images/prdv.png)
+En primer lugar, asegúrese de seleccionar la vista de datos correcta en la esquina superior derecha de la pantalla. En este ejemplo, la vista de datos que se va a seleccionar es `CJA Bootcamp - Omnichannel Data View`.
 
 A continuación, guardará el proyecto y le dará un nombre. Puede utilizar el siguiente comando para guardar:
 
@@ -113,7 +111,7 @@ Finalmente, cambie el nombre y la descripción de la métrica calculada:
 
 | Título | Descripción |
 | ----------------- |-------------| 
-| Tasa de conversión | Tasa de conversión |
+| yourLastName - Tasa de conversión | yourLastName - Tasa de conversión |
 
 Tendrá algo así en la pantalla:
 
