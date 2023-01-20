@@ -5,10 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: e634876c-2b1c-4f7f-99e5-1940f6c87d80
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: 402e032fe150745893528ffbd6a01533f30fb5d6
 workflow-type: tm+mt
-source-wordcount: '1608'
+source-wordcount: '1615'
 ht-degree: 2%
 
 ---
@@ -175,6 +174,8 @@ A continuación, tendrá que configurar una gran cantidad de Dimension y métric
 | El ID de transacción | El ID de transacción |  |
 | URL (web.webPageDetails.URL) | URL |  |
 | Agente de usuario | Agente de usuario | Más reciente, sesión |
+| nivel | Nivel de fidelidad |  |
+| points | Valor de duración del cliente |  |
 
 ### MÉTRICAS
 
