@@ -3,9 +3,9 @@ title: Bootcamp de Experience Manager
 description: Punto de partida para los participantes del Bootcamp de Experience Makers
 doc-type: multipage-overview
 exl-id: 400bd9f1-229c-4016-b06b-8fc033f7dbf2
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: f2af156bd09ed90e5f65e3e7730a20a7e799dccb
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '716'
 ht-degree: 0%
 
 ---
@@ -28,41 +28,45 @@ La personalización a escala comienza con la comprensión de lo que se puede mej
 
 10.00 - 10.30: Kickoff e Introducciones
 
-10.30 - 11.15: Sesión de pizarra: &quot;Personalización 1-1, caza de fricciones, silos, Adobe POV&quot;
+10.30 a 11.00 horas: &quot;Demostración del Recorrido del cliente: Arte de lo posible&quot;
 
-11.15 - 11.30: Salto
+11.00 - 11.45: Sesión de pizarra: &quot;Personalización 1-1, caza de fricciones, silos, Adobe POV&quot;
 
-11.30 a 12.00 horas: &quot;Demostración del Recorrido del cliente: Arte de lo posible&quot;
+11.45 - 12.00 horas: Salto
 
-12.00 - 12.45: Sesión de pizarra: &quot;Desglose de la arquitectura de la solución&quot;
+12.00 - 13.00: Sesión de pizarra: &quot;Desglose de la arquitectura de la solución&quot;
 
-12.45 - 13.45: Salto
+13.00 - 14.00: Almuerzo
 
-13.45 a 15.00 horas: Flujo de usuario 1: Ejercicio práctico de &quot;adquisición&quot;
+14.00 - 15.30: Flujo de usuario 1: Ejercicio práctico de &quot;adquisición&quot;
 
 15.00 - 15.15: Salto
 
 15.15 a 17.00 horas: Flujo de usuario 2: Ejercicio práctico &quot;Registro e incorporación&quot;
 
+18.00 - 19.00: Experiencia &quot;Competencia de creación de cócteles&quot;
+
+19.00 - 22.00: Disfrute de la cena
+
 ### Día 2
 
-8.00 - 9.30: Sesión de desayuno: &quot;Introducción al envío basado en Recorridos de usuario, estructura de equipo, retrasos en la entrega&quot;
+9.00 - 9.30: &quot;Introducción al envío basado en Recorridos de usuario, estructura de equipo, retrasos en la entrega&quot;
 
 9.30 - 9.45: Salto
 
-9.45 - 11.15: Flujo de usuario 3: Ejercicio práctico &quot;combinado físico y digital&quot;
+9.45 - 11.15: Flujo de usuario 4: Ejercicio práctico de &quot;Análisis del cliente&quot;
 
 11.15 - 11.30: Salto
 
-11.30 - 12.30: Flujo de usuario 3 continuado
+11.30 - 12.30: &quot;Introducción al envío basado en Recorridos de usuario, estructura de equipo, retrasos en la entrega&quot;
 
 12.30 - 13.30: Almuerzo
 
-13.30 - 14.30: Flujo de usuario 4: Ejercicio práctico de &quot;Análisis del cliente&quot;
+13.30 - 14.30: Personalización a escala: cómo hacerlo realidad
 
 14.30 a 15.00 horas: Conclusión, resumen y pasos siguientes
 
-15:30: Parada
+15.00: Aplazamiento
 
 ## Requisitos previos
 
