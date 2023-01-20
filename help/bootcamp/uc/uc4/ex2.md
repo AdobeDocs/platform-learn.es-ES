@@ -5,10 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: 47e02021-019c-4ea4-a7a8-003deef7c9e5
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: f63a92b9477b47edbf6a3fee162299491399ea56
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '674'
 ht-degree: 3%
 
 ---
@@ -60,7 +59,7 @@ Buscar el conjunto de datos `Demo System - Event Dataset for Website (Global v1.
 
 ![demostración](./images/cja7.png)
 
-Ahora busque y marque las casillas de verificación `Demo System - Event Dataset for Voice Assistants (Global v1.1)` y `Demo System - Event Dataset for Call Center (Global v1.1)`.
+Ahora busque y marque las casillas de verificación `Demo System - Profile Dataset for Loyalty (Global v1.1)` y `Demo System - Event Dataset for Call Center (Global v1.1)`.
 
 Entonces tendrás esto. Haga clic en **Siguiente**.
 
@@ -84,7 +83,7 @@ Sin embargo, aún puede influir en qué identificador se utilizará para unir co
 
 Como se ha mencionado, puede establecer distintos ID de persona para cada conjunto de datos. Esto le permite unir diferentes conjuntos de datos de varios orígenes en CJA. Imaginen traer datos de NPS o encuestas que serían muy interesantes y útiles para entender el contexto y por qué algo ha pasado.
 
-El nombre del campo ID de persona no es importante, siempre y cuando el valor de los campos ID de persona se corresponda. Digamos que tenemos `email` en un conjunto de datos y `emailAddress` en otro conjunto de datos definido como ID de persona. If `delaigle@adobe.com` es el mismo valor para el campo ID de persona en ambos conjuntos de datos, CJA podrá unir los datos.
+El nombre del campo ID de persona no es importante, siempre y cuando el valor de los campos ID de persona se corresponda. Por ejemplo, si el ID de persona es `email` en un conjunto de datos y `emailAddress` en otro, y `dnb-bootcamp@adobe.com` es el mismo valor para el campo ID de persona en ambos conjuntos de datos, CJA podrá unir los datos.
 
 Actualmente hay otras limitaciones como unir el comportamiento anónimo a conocido. Consulte las preguntas frecuentes aquí: [Preguntas frecuentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=es).
 
@@ -107,7 +106,7 @@ Una vez que haya vinculado los tres conjuntos de datos, estaremos listos para co
 | Conjunto de datos | ID de la persona |
 | ----------------- |-------------| 
 | Sistema de demostración: conjunto de datos de evento para sitio web (Global v1.1) | email |
-| Sistema de demostración: conjunto de datos de evento para asistentes de voz (Global v1.1) | email |
+| Sistema de demostración: conjunto de datos de perfil para fidelidad (Global v1.1) | email |
 | Sistema de demostración: conjunto de datos de evento para el centro de llamadas (Global v1.1) | email |
 
 También debe asegurarse de que para cada conjunto de datos, estas opciones estén habilitadas:
