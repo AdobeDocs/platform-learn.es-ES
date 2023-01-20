@@ -5,10 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: 051b5b91-56c4-414e-a4c4-74aa67219551
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: b44d2a7ad44dd113889a7f996d7e33da46402b4a
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1497'
 ht-degree: 2%
 
 ---
@@ -31,7 +30,7 @@ Usemos el proyecto que ha creado en [4.4 Preparación de datos en Analysis Works
 
 Abra su proyecto `yourLastName - Omnichannel Analysis`.
 
-Con el proyecto abierto y la vista de datos `yourLastName - Omnichannel Analysis` seleccionado, está listo para empezar a crear sus primeras visualizaciones.
+Con el proyecto abierto y la vista de datos `CJA Bootcamp - Omnichannel Data View` seleccionado, está listo para empezar a crear sus primeras visualizaciones.
 
 ![demostración](./images/prodataView1.png)
 
@@ -41,7 +40,7 @@ En primer lugar, es necesario seleccionar las fechas adecuadas para analizar los
 
 >[!IMPORTANT]
 >
->Seleccione un intervalo de fechas como **Esta semana** o **Este mes**. Los datos disponibles más recientes se han incorporado el 19 de septiembre de 2022.
+>Los datos disponibles más recientes se han introducido el 09/19/2022. Seleccione un intervalo de fechas que incluya esta fecha.
 
 ![demostración](./images/pro1.png)
 
@@ -77,9 +76,9 @@ A continuación, haga clic en **Bloquear selección** y seleccione **Elementos s
 
 ![demostración](./images/pro7b.png)
 
-## Principales 5 productos vistos
+## Principales 4 productos vistos
 
-¿Cuáles son los cinco productos principales vistos?
+¿Cuáles son los cuatro productos más vistos?
 
 Recuerde guardar el proyecto de vez en cuando.
 
@@ -88,7 +87,7 @@ Recuerde guardar el proyecto de vez en cuando.
 | Windows | Control + S |
 | Mac | Comando +S |
 
-Empecemos a encontrar los 5 productos más vistos. En el menú de la izquierda, busque la **Nombre del producto** - Dimension.
+Empecemos a encontrar los 4 productos más vistos. En el menú de la izquierda, busque la **Nombre del producto** - Dimension.
 
 ![demostración](./images/pro8.png)
 
@@ -102,7 +101,7 @@ A continuación, intente desglosar uno de los productos por nombre de marca. Bus
 
 ![demostración](./images/pro13.png)
 
-A continuación, realice un desglose utilizando el agente de usuario. Buscar **Agente de usuario** y arrástrela bajo el nombre de la marca.
+A continuación, realice un desglose utilizando el nivel de lealtad. Buscar **Nivel de fidelidad** y arrástrela bajo el nombre de la marca.
 
 ![demostración](./images/pro15.png)
 
@@ -114,7 +113,7 @@ Por último, puede añadir más visualizaciones. En el lado izquierdo, en visual
 
 ![demostración](./images/pro18.png)
 
-A continuación, en Tabla, seleccione las primeras 5 **Agente de usuario**  filas del desglose que hicimos en **Smartphone negro Google Pixel XL de 32 GB** > **Señal Citi**. Mientras selecciona las 5 filas, mantenga presionada la variable **CTRL** (en Windows) o **Comando** (en Mac).
+A continuación, en Tabla, seleccione los 3 **Nivel de fidelidad**  filas del desglose que hicimos en **Smartphone negro Google Pixel XL de 32 GB** > **Señal Citi**. Mientras selecciona las 3 filas, mantenga presionada la variable **CTRL** (en Windows) o **Comando** (en Mac).
 
 ![demostración](./images/pro20.png)
 
@@ -154,7 +153,7 @@ Haga clic en la visualización **Visita en el orden previsto**.
 
 Seleccione el mismo intervalo de fechas que en el ejercicio anterior.
 
-![demostración](./images/prodatef.png)
+![demostración](./images/pro1.png)
 
 Entonces verás esto.
 
@@ -216,7 +215,7 @@ Verá esto:
 
 Seleccione el mismo intervalo de fechas que en el ejercicio anterior.
 
-![demostración](./images/pro0b.png)
+![demostración](./images/pro1.png)
 
 Buscar la dimensión **Nombre de la página** debajo de los componentes en el lado izquierdo:
 
@@ -297,7 +296,7 @@ Ahora agregue un nuevo panel en blanco haciendo clic en **+ Agregar panel en bla
 
 Seleccione el mismo intervalo de fechas que en el ejercicio anterior.
 
-![demostración](./images/pro24d.png)
+![demostración](./images/pro1.png)
 
 Haga clic en **Tabla improvisada**.
 
