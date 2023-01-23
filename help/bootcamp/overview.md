@@ -3,7 +3,7 @@ title: Bootcamp de Experience Manager
 description: Punto de partida para los participantes del Bootcamp de Experience Makers
 doc-type: multipage-overview
 exl-id: 400bd9f1-229c-4016-b06b-8fc033f7dbf2
-source-git-commit: f2af156bd09ed90e5f65e3e7730a20a7e799dccb
+source-git-commit: 9658437fec6208e2688fc7857f13adcc52660caa
 workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 0%
@@ -40,9 +40,9 @@ La personalización a escala comienza con la comprensión de lo que se puede mej
 
 14.00 - 15.30: Flujo de usuario 1: Ejercicio práctico de &quot;adquisición&quot;
 
-15.00 - 15.15: Salto
+15.30 - 15.45: Salto
 
-15.15 a 17.00 horas: Flujo de usuario 2: Ejercicio práctico &quot;Registro e incorporación&quot;
+15.45 - 17.00 horas: Flujo de usuario 2: Ejercicio práctico &quot;Registro e incorporación&quot;
 
 18.00 - 19.00: Experiencia &quot;Competencia de creación de cócteles&quot;
 
