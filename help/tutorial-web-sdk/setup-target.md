@@ -3,9 +3,9 @@ title: Configuración de Adobe Target con el SDK web de Platform
 description: Obtenga información sobre cómo implementar Adobe Target mediante el SDK web de Platform. Esta lección forma parte del tutorial Implementar Adobe Experience Cloud con SDK web .
 solution: Data Collection, Target
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: edbc433e9bd72dfa9b9025063fc90c7fdc2c2774
 workflow-type: tm+mt
-source-wordcount: '3783'
+source-wordcount: '3779'
 ht-degree: 1%
 
 ---
@@ -117,7 +117,7 @@ Target debe estar habilitado en la configuración del conjunto de datos para que
 
 Para configurar Target en el conjunto de datos:
 
-1. Vaya a [Recopilación de datos](https://experience.adobe.com/#/data-collection)Interfaz de {target=&quot;blank&quot;}
+1. Vaya a [Recopilación de datos](https://experience.adobe.com/#/data-collection){target="blank"} interfaz
 1. En el panel de navegación izquierdo, seleccione **[!UICONTROL Datastreams]**
 1. Seleccione el `Luma Web SDK` datastream
 
@@ -184,7 +184,7 @@ En primer lugar, debe comprender la terminología utilizada en las interfaces de
 
 Las decisiones de personalización visual de Target las entrega el SDK web de la plataforma, si Target está habilitado en el conjunto de datos. Sin embargo, _no se renderizan automáticamente_. Debe modificar la regla de carga de página global para habilitar el procesamiento automático.
 
-1. En el [Recopilación de datos](https://experience.adobe.com/#/data-collection)Interfaz de {target=&quot;blank&quot;}, abra la propiedad tag que está utilizando para este tutorial.
+1. En el [Recopilación de datos](https://experience.adobe.com/#/data-collection){target="blank"} , abra la propiedad tag que está utilizando para este tutorial.
 1. Abra el `all pages - library load - AA & AT` regla
 1. Seleccione el `Adobe Experience Platform Web SDK - Send event` acción
 1. Habilitar **[!UICONTROL Procesar decisiones de personalización visual]** con la casilla de verificación
@@ -334,7 +334,7 @@ Ahora que ha configurado el SDK web de Platform para solicitar contenido para el
    // Send a "display" event 
    alloy("sendEvent", {
       xdm: {
-         eventType: "display",
+         eventType: "propositionDisplay",
          _experience: {
             decisioning: {
                propositions: [
