@@ -1,9 +1,9 @@
 ---
 title: Enviar parámetros | Migración de Target de at.js 2.x al SDK web
 description: Obtenga información sobre cómo enviar parámetros de mbox, perfil y entidad a Adobe Target mediante el SDK web de Experience Platform.
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 43740912bc5a941aa21c5f38ed2c1aac74abffbc
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1294'
 ht-degree: 0%
 
 ---
@@ -11,6 +11,10 @@ ht-degree: 0%
 # Envío de parámetros a Target mediante el SDK web de plataforma
 
 Las implementaciones de Target difieren de un sitio a otro debido a la arquitectura del sitio, los requisitos comerciales y las características utilizadas. La mayoría de las implementaciones de Target incluyen el paso de varios parámetros para información contextual, audiencias y recomendaciones de contenido.
+
+>[!WARNING]
+>
+> Es posible que las implementaciones de Platform Web SDK que se inicien después del 1 de octubre de 2022 deban utilizar la variable [solución de recuperación previa](prefetch-workaround.md) para pasar correctamente los parámetros descritos en esta página.
 
 Vamos a usar una sencilla página de detalles del producto y una página de confirmación de pedidos para demostrar las diferencias entre las bibliotecas al pasar parámetros a Target.
 
@@ -57,17 +61,17 @@ Detalles del producto:
 </html>
 ```
 
-<!--
 
-Order Confirmation:
+
+Confirmación del pedido:
 
 ```HTML
 <!doctype html>
 <html>
 <head>
   <title>Order Confirmation</title>-->
-<!--Target parameters -->
-<!--  <script>
+  <!--Target parameters -->
+  <script>
     targetPageParams = function() {
       return {
         // Property token
@@ -80,9 +84,9 @@ Order Confirmation:
         "mbox3rdPartyId": "TT8675309",
       };
     };
-  </script>-->
-<!--Target at.js library loaded asynchonously-->
-<!--  <script src="/libraries/at.js" async></script>
+  </script>
+  <!--Target at.js library loaded asynchonously-->
+  <script src="/libraries/at.js" async></script>
 </head>
 <body>
   <h1 id="title">Order Confirmation</h1>
@@ -90,7 +94,6 @@ Order Confirmation:
 </body>
 </html>
 ```
--->
 
 
 ## Resumen de asignación de parámetros
@@ -125,15 +128,12 @@ La tabla siguiente describe cómo se reasignarán los parámetros de ejemplo med
 | `cartIds` | `data.__adobe.target.cartIds` | Se utiliza para los algoritmos de recomendaciones basadas en el carro de compras de Target. |
 | `excludedIds` | `data.__adobe.target.excludedIds` | Se utiliza para evitar que los ID de entidad específicos se devuelvan en un diseño de recomendaciones. |
 | `mbox3rdPartyId` | Se establece en el mapa de identidad. Consulte [Sincronización de perfiles con un ID de cliente](#synching-profiles-with-a-customer-id) | Se utiliza para sincronizar perfiles de Target entre dispositivos y atributos del cliente. El espacio de nombres que se va a usar para el ID de cliente debe especificarse en la variable [Configuración de destino del conjunto de datos](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
+| `orderId` | `xdm.commerce.order.purchaseID` | Se utiliza para identificar un pedido único para el seguimiento de conversión de Target. |
+| `orderTotal` | `xdm.commerce.order.priceTotal` | Se utiliza para rastrear totales de pedidos para los objetivos de optimización y conversión de Target. |
+| `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>OR<br> `xdm.productListItems[0-n].SKU` | Se utiliza para el seguimiento de conversión de Target y los algoritmos de recomendaciones. Consulte la [parámetros de entidad](#entity-parameters) para obtener más información. |
+| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | Se usa para la variable [puntuación personalizada](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html) objetivo de la actividad. |
 
 {style=&quot;table-layout:auto&quot;}
-
-<!--
-| `orderId` | `xdm.commerce.order.purchaseID` | Used for identifying a unique order for Target conversion tracking. | 
-| `orderTotal` | `xdm.commerce.order.priceTotal` | Used for tracking order totals for Target conversion and optimization goals. | 
-| `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>OR<br> `xdm.productListItems[0-n].SKU` | Used for Target conversion tracking and recommendations algorithms. Refer to the [entity parameters](#entity-parameters) section below for details. | 
-| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | Used for the [custom scoring](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html) activity goal. | -->
-
 
 ## Parámetros personalizados
 
@@ -245,12 +245,12 @@ Todo [parámetros de entidad](https://experienceleague.adobe.com/docs/target/usi
 >
 >Si la variable `commerce` se utiliza el grupo de campos y la variable `productListItems` matriz se incluye en la carga útil XDM y luego en la primera `SKU` en esta matriz se asigna a `entity.id` para incrementar una vista de producto.
 
-<!-- 
-## Purchase parameters
 
-Purchase parameters are passed on an order confirmation page after a successful order and are used for Target conversion and optimization goals. With a Platform Web SDK implementation, these parameters and are automatically mapped from XDM data passed as part of the `commerce` field group.
+## Parámetros de compra
 
-at.js example using `targetPageParams()`:
+Los parámetros de compra se pasan en una página de confirmación de pedido después de un pedido correcto y se utilizan para los objetivos de conversión y optimización de Target. Con una implementación del SDK web de Platform, estos parámetros y se asignan automáticamente a partir de datos XDM pasados como parte del `commerce` grupo de campos.
+
+Ejemplo de at.js con `targetPageParams()`:
 
 ```JavaScript
 targetPageParams = function() {
@@ -262,9 +262,9 @@ targetPageParams = function() {
 };
 ```
 
-Purchase information is passed to Target when the `commerce` field group has `puchases.value` set to `1`. The order ID and order total are automatically mapped from the `order` object. If the `productListItems` array is present, then the `SKU` values are use for `productPurchasedId`.
+La información de compra se pasa a Target cuando la variable `commerce` el grupo de campos tiene `puchases.value` configure como `1`. El ID de pedido y el total del pedido se asignan automáticamente desde la variable `order` objeto. Si la variable `productListItems` la matriz está presente, luego la variable `SKU` los valores se usan para `productPurchasedId`.
 
-Platform Web SDK example using `sendEvent` command:
+Ejemplo de SDK web de plataforma mediante `sendEvent` comando:
 
 ```JavaScript
 alloy("sendEvent", {
@@ -289,9 +289,8 @@ alloy("sendEvent", {
 
 >[!NOTE]
 >
->The `productPurchasedId` value can also be passed as a comma-separated list of entity IDs under the `data` object.
+>La variable `productPurchasedId` también se puede pasar como una lista de ID de entidad separados por comas en la sección `data` objeto.
 
--->
 
 ## Sincronización de perfiles con un ID de cliente
 
@@ -413,8 +412,8 @@ Detalles del producto:
 </html>
 ```
 
-<!--
-Order Confirmation:
+
+Confirmación del pedido:
 
 ```HTML
 <!doctype html>
@@ -422,9 +421,9 @@ Order Confirmation:
 <head>
   <title>Order Confirmation</title>
 
--->
-<!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
-<!--
+
+  <!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
+
   <script>
     !function(e,a,n,t){var i=e.head;if(i){
     if (a) return;
@@ -432,21 +431,20 @@ Order Confirmation:
     o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
     (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
   </script>
--->
-<!--Platform Web SDK base code-->
-<!--
+
+  <!--Platform Web SDK base code-->
+
   <script>
     !function(n,o){o.forEach(function(o){n[o]||((n.__alloyNS=n.__alloyNS||
     []).push(o),n[o]=function(){var u=arguments;return new Promise(
     function(i,l){n[o].q.push([i,l,u])})},n[o].q=[])})}
     (window,["alloy"]);
   </script>
--->
-<!--Platform Web SDK loaded asynchonously. Change the src to use the latest supported version.-->
-<!--  <script src="https://cdn1.adoberesources.net/alloy/2.6.4/alloy.min.js" async></script>
--->
-<!--Configure Platform Web SDK and send event-->
-<!--  <script>
+  <!--Platform Web SDK loaded asynchonously. Change the src to use the latest supported version.-->
+  <script src="https://cdn1.adoberesources.net/alloy/2.6.4/alloy.min.js" async></script>
+
+  <!--Configure Platform Web SDK and send event-->
+  <script>
     alloy("configure", {
       "edgeConfigId": "ebebf826-a01f-4458-8cec-ef61de241c93",
       "orgId":"ADB3LETTERSANDNUMBERS@AdobeOrg"
@@ -483,7 +481,6 @@ Order Confirmation:
 </body>
 </html>
 ```
--->
 
 A continuación, aprenda a [seguimiento de eventos de conversión de Target](track-events.md) con el SDK web de Platform.
 

@@ -11,10 +11,10 @@ doc-type: tutorial
 recommendations: catalog,noDisplay
 hide: true
 kt: 11159
-source-git-commit: 04fb22faf26eb69b916570e3990cc0c760cb7d4d
+source-git-commit: 43740912bc5a941aa21c5f38ed2c1aac74abffbc
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '89'
+ht-degree: 5%
 
 ---
 
@@ -48,3 +48,5 @@ ht-degree: 0%
 + [Validar la implementación](validate.md)
 
 + [Depurar Target](debugging.md)
+
++ [Solución de recuperación previa](prefetch-workaround.md)
