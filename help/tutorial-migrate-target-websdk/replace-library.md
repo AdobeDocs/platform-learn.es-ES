@@ -1,10 +1,10 @@
 ---
 title: Reemplazar la biblioteca | Migración de Target de at.js 2.x al SDK web
 description: Obtenga información sobre cómo migrar una implementación de Adobe Target de at.js 2.x al SDK web de Adobe Experience Platform. Los temas incluyen descripción general de la biblioteca, diferencias de implementación y otras llamadas importantes.
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 8d41e5d6434dabff0443e932be842b37553d72a9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1708'
+ht-degree: 1%
 
 ---
 
@@ -207,6 +207,12 @@ Para obtener más información sobre cómo el SDK web de Platform puede administ
 
 El SDK web de Platform debe configurarse en cada carga de página. La variable `configure` siempre debe ser el primer comando de SDK llamado . El siguiente ejemplo supone que todo el sitio se está actualizando al SDK web de Platform en una sola implementación:
 
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
+
+La variable `edgeConfigId` es la variable [!UICONTROL ID de almacén de datos]
+
 ```JavaScript
 alloy("configure", {
   "edgeConfigId": "ebebf826-a01f-4458-8cec-ef61de241c93",
@@ -214,7 +220,19 @@ alloy("configure", {
 });
 ```
 
+>[!TAB etiquetas]
+
+En las implementaciones de etiquetas, muchos campos se rellenan automáticamente o se pueden seleccionar desde los menús desplegables. Tenga en cuenta que diferentes plataformas [!UICONTROL entornos limitados] y [!UICONTROL datastreams] se puede seleccionar para cada entorno. El conjunto de datos cambiará según el estado de la biblioteca de etiquetas en el proceso de publicación.
+
+![configuración de la extensión de etiqueta de SDK web](assets/tags-config.png)
+>[!ENDTABS]
+
 Si planea migrar de at.js al SDK web de plataforma página por página, se necesitan las siguientes opciones de configuración:
+
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```JavaScript
 alloy("configure", {
@@ -224,6 +242,11 @@ alloy("configure", {
   "idMigrationEnabled":true
 });
 ```
+
+>[!TAB etiquetas]
+
+![configuración de las opciones de migración de la extensión de etiqueta SDK web](assets/tags-config-migration.png)
+>[!ENDTABS]
 
 A continuación se describen las opciones de configuración importantes relacionadas con Target:
 
