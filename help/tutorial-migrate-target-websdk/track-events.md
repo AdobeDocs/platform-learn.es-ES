@@ -1,9 +1,9 @@
 ---
 title: Seguimiento de eventos | Migración de Target de at.js 2.x al SDK web
 description: Obtenga información sobre cómo rastrear eventos de conversión de Adobe Target mediante el SDK web de Experience Platform.
-source-git-commit: 43740912bc5a941aa21c5f38ed2c1aac74abffbc
+source-git-commit: 8209b13b745dbea418003b133a6834825947950e
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '654'
 ht-degree: 1%
 
 ---
@@ -16,10 +16,6 @@ Los eventos de conversión para Target se pueden rastrear con el SDK web de Plat
 * Eventos rastreados automáticamente que no requieren ninguna configuración
 * Eventos de conversión de compra que deben ajustarse para una implementación de SDK web de Platform recomendada
 * Eventos de conversión que no son de compra y que requieren actualizaciones de código
-
->[!WARNING]
->
-> Es posible que las implementaciones de Platform Web SDK que se inicien después del 1 de octubre de 2022 deban utilizar la variable [solución de recuperación previa](prefetch-workaround.md) para rastrear correctamente algunos de los eventos descritos en esta página.
 
 ## Comparación de seguimiento de objetivos
 

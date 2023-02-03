@@ -1,9 +1,9 @@
 ---
 title: Actualización de audiencias y scripts de perfil | Migración de Target de at.js 2.x al SDK web
 description: Obtenga información sobre cómo actualizar las audiencias y los scripts de perfil de Adobe Target para su compatibilidad con el SDK web de Experience Platform.
-source-git-commit: 43740912bc5a941aa21c5f38ed2c1aac74abffbc
+source-git-commit: 8209b13b745dbea418003b133a6834825947950e
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '495'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,6 @@ Todos los parámetros de mbox de Target deben pasarse en formato XDM con una imp
 * Actualizar audiencias que utilicen parámetros de mbox
 * Actualización de scripts de perfil que utilizan parámetros de mbox
 * Actualice cualquier oferta y actividad que utilice el reemplazo del token del parámetro de mbox (por ejemplo, `${mbox.parameter_name}`)
-
-
->[!WARNING]
->
-> Es posible que las implementaciones de Platform Web SDK que se inicien después del 1 de octubre de 2022 deban utilizar la variable [solución de recuperación previa](prefetch-workaround.md) para utilizar correctamente algunas de las funciones descritas en esta página.
 
 ## Ajustar audiencias
 

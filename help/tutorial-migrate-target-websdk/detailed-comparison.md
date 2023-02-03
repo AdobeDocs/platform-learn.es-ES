@@ -1,9 +1,9 @@
 ---
 title: Comparación de at.js 2.x con el SDK web | Migración de Target de at.js 2.x al SDK web
 description: Obtenga información sobre las diferencias entre at.js 2.x y el SDK web de Platform, incluidas las funciones, la configuración y el flujo de datos.
-source-git-commit: f690664b187c5b09f1243ce46877da6fad38efa3
+source-git-commit: 8209b13b745dbea418003b133a6834825947950e
 workflow-type: tm+mt
-source-wordcount: '2164'
+source-wordcount: '2154'
 ht-degree: 8%
 
 ---
@@ -43,8 +43,8 @@ Si es nuevo en el SDK web de Platform, no se preocupe: los elementos siguientes 
 | Ofertas remotas | Admitido | Admitido |
 | Ofertas de redireccionamiento | Admitido | Admitido. Sin embargo, no se admite la redirección de una página con el SDK web de Platform a una página con at.js (y en la dirección opuesta). |
 | Toma de decisiones en el dispositivo | Admitido | No admitido actualmente |
-| Recuperación previa de mboxes | Admitido | Parcialmente compatible. Póngase en contacto con el servicio de atención al cliente para habilitar esta función, ya que altera el comportamiento de recuperación previa de la actividad. |
-| Eventos personalizados | Admitido | No admitido. Consulte la [hoja de ruta pública](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target=&quot;_blank&quot;}) para el estado actual. |
+| Recuperación previa de mboxes | Admitido | Habilitado de forma predeterminada en todas las migraciones nuevas iniciadas después del 1 de octubre de 2022 |
+| Eventos personalizados | Admitido | No admitido. Consulte la [hoja de ruta pública](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target="_blank"}) para el estado actual. |
 | Tokens de respuesta | Admitido | Admitido. Consulte la [documentación dedicada de tokens de respuesta](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) para ver ejemplos de código y diferencias entre at.js y el SDK web de plataforma |
 | Proveedores de datos   | Admitido | No admitido. Se puede utilizar código personalizado para almacenar en déclencheur un SDK web de plataforma `sendEvent` después de recuperar los datos de otro proveedor. |
 
@@ -79,7 +79,7 @@ Muchas funciones de at.js tienen un enfoque equivalente mediante el SDK web de P
 | `trackEvent()` y `sendNotifications()` | Utilice la variable `sendEvent` con un [específico `eventType`](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/web-sdk-atjs-comparison.html#how-to-track-events) configurado:<br><br>`decisioning.propositionDisplay` indica la renderización de una actividad<br><br>`decisioning.propositionInteract` indica la interacción del usuario con una actividad, como un clic del ratón. |
 | `targetGlobalSettings()` | Sin equivalente directo. Consulte la [Comparación de la configuración de Target](detailed-comparison.md) para obtener más información. |
 | `targetPageParams()` y `targetPageParamsAll()` | Todos los datos pasados a la `xdm` de `sendEvent` está asignado a los parámetros de mbox de Target. Dado que los parámetros de mbox reciben notación de puntos serializada, la migración al SDK web de Platform puede requerir que actualice las audiencias y actividades existentes para que utilicen los nuevos nombres de parámetros de mbox. <br><br>Datos pasados como parte de `data.__adobe.target` del `sendEvent` está asignado a [Perfil de Target y parámetros específicos de Recommendations](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html#single-profile-update). |
-| Eventos personalizados de at.js | No admitido. Consulte la [hoja de ruta pública](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target=&quot;_blank&quot;}) para el estado actual. [Tokens de respuesta](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/accessing-response-tokens.html) se exponen como parte del `propositions` en respuesta a la `sendEvent` llamada a . |
+| Eventos personalizados de at.js | No admitido. Consulte la [hoja de ruta pública](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target="_blank"}) para el estado actual. [Tokens de respuesta](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/accessing-response-tokens.html) se exponen como parte del `propositions` en respuesta a la `sendEvent` llamada a . |
 
 ## Configuración de at.js y equivalentes del SDK web de plataforma
 
