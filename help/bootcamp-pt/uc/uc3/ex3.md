@@ -5,137 +5,137 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
 workflow-type: tm+mt
-source-wordcount: '834'
-ht-degree: 3%
+source-wordcount: '842'
+ht-degree: 2%
 
 ---
 
-# 3.3 Crear el recorrido y las notificaciones push
+# 3.3 Criar durante la jornada e notificação push
 
-En este ejercicio, debe configurar el recorrido y el mensaje que deben activarse cuando alguien introduce una señalización mediante la aplicación móvil.
+Neste exercício, você irá configurar una jornada e a mensagem que ser acionada alguém inserir ma sinalização (baliza) quo aplicativo móvel.
 
-Inicie sesión en Adobe Journey Optimizer desde [Adobe Experience Cloud](https://experience.adobe.com). Haga clic en **Journey Optimizer**.
+Inicio de sesión en Facebook en Adobe Journey Optimizer access a [Adobe Experience Cloud](https://experience.adobe.com). Clique **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
-Se le redirigirá al **Página principal**  en Journey Optimizer. En primer lugar, asegúrese de que está utilizando el simulador para pruebas correcto. El entorno limitado que se va a usar se denomina `Bootcamp`. Para cambiar de un simulador de pruebas a otro, haga clic en **Prod** y seleccione el simulador de pruebas de la lista. En este ejemplo, el simulador de pruebas recibe el nombre **Bootcamp**. Entonces estará en el **Página principal** vista del entorno limitado `Bootcamp`.
+Você será redireasí para una visualización **Página principal** sin Journey Optimizer. Primeiro verifique se você está está o sandbox correto. O nome do sandbox que deve ser usado `Bootcamp`. Para alternar de um sandbox para outro, clique em **Prod** e selecione o sandbox na lista. Neste exemplo o nome do sandbox é **Bootcamp**. Você estará na visualização da **Página principal**  do seu sandbox `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
-## 3.3.1 Crear su recorrido
+## 3.3.1 Criar a una superjornada
 
-En el menú de la izquierda, haga clic en **Recorridos**. A continuación, haga clic en **Crear Recorrido** para crear un nuevo recorrido.
+No menú à esquerda, clique em **Recorridos**. Em seguida, clique em **Crear Recorrido** para criar uma nova jornada.
 
 ![ACOP](./images/createjourney.png)
 
-A continuación, verá una pantalla de recorrido vacía.
+Você será uma tela de vana jornada.
 
 ![ACOP](./images/journeyempty.png)
 
-En el ejercicio anterior, creó una **Evento**. Lo llamaste así `yourLastNameBeaconEntryEvent` y sustituido `yourLastName` con su apellido. Este fue el resultado de la creación del evento:
+No exercício anterior, você criou um novo **Evento**. Você nomeou o evento `yourLastNameBeaconEntryEvent` e substituiu `yourLastName` pelo seu sobrenome. Este foi o resultado da criação do Evento:
 
 ![ACOP](./images/eventdone.png)
 
-Ahora debe tomar este evento como el inicio de este Recorrido. Para ello, vaya a la izquierda de la pantalla y busque el evento en la lista de eventos.
+Agora você deve considerar este evento como o início desta Jornada. Você pode fazer es indo para o lado esquerdo da tela e procurando pelo seu evento na lista de eventos.
 
 ![ACOP](./images/eventlist.png)
 
-Seleccione el evento, arrástrelo y suéltelo en el lienzo del recorrido. Tu recorrido ahora se ve así. Haga clic en **Ok** para guardar los cambios.
+Selecione seu, de evento, organiza e solte o evento na tela de jornada completa. Sua jornada agora deve ser semelhante ao seguinte. Clique **Ok** para salvar suas alterações.
 
 ![ACOP](./images/journeyevent.png)
 
-Como segundo paso en el recorrido, debe agregar una **Push** acción. Vaya al lado izquierdo de la pantalla para **Acciones**, seleccione **Push** a continuación, arrástrela y colóquela en el segundo nodo del recorrido.
+Como segunda etapa jornada, você deve adiuma ação **Push**. Vá para o lado esquerdo **Acciones**, selecione a ação **Push** e arraste e solte a ação no segundo nó da sua jornada.
 
 ![ACOP](./images/journeyactions.png)
 
-A la derecha de la pantalla, debe crear la notificación push.
+No lado direito da tela, agora você deve criar sua notificação push.
 
-Configure las variables **Categoría** a **Marketing** y seleccione una superficie push que le permita enviar notificaciones push. En este caso, la superficie push que se va a seleccionar es **mmeeewis-app-mobile-bootcamp**.
+Defina a **Categoría** como **Marketing** e selecione empuja a las autoridades para que cumplan con las notificaciones. Nesse caso, un superfície empuja a un ser selecionada **mmeeewis-app-mobile-bootcamp**.
 
 ![ACOP](./images/journeyactions1.png)
 
-## 3.3.2 Crear su mensaje
+## 3.3.2 Criar a sua mensagem
 
-Haga clic en **Editar contenido**.
+Clique **Editar contenido**.
 
 ![ACOP](./images/emptymsg.png)
 
-Verá esto:
+Em seguida, una tela abaixo será exbida:
 
 ![ACOP](./images/emailmsglist.png)
 
-Definamos el contenido de la notificación push.
+Vamos definir o conteúdo da notificação push.
 
-Haga clic en el **Título** campo de texto.
+Clique no campo de texto **Título**.
 
 ![Journey Optimizer](./images/msg5.png)
 
-En el área de texto empiece a escribir **Hi**. Haga clic en el icono de personalización.
+Na área de texto, orden de inclusión **Olá**. Clique no ícone de personação.
 
 ![Journey Optimizer](./images/msg6.png)
 
-Ahora necesita introducir el token de personalización para el campo **Nombre** que se almacenan en `profile.person.name.firstName`. En el menú de la izquierda, seleccione **Atributos de perfil**, desplácese hacia abajo o navegue hasta encontrar la variable **Persona** y haga clic en la flecha para ir un nivel más profundo hasta que alcance el campo `profile.person.name.firstName`. Haga clic en el **+** para añadir el campo al lienzo. Haga clic en **Guardar**.
+Agora você precisa trazer o token de personação para o campo **Nombre** que está armazencadem `profile.person.name.firstName`. No hay menú a esquerda, selecione **Atributos de perfil**, función para baixo/navegación para encontrar o elemento **Persona** e clique na seta para avançar um nível até chegar ao campo `profile.person.name.firstName`. Clique no ícone **+** para adicionar o campo à tela. Clique **Guardar**.
 
 ![Journey Optimizer](./images/msg7.png)
 
-Volverás aquí. Haga clic en el icono de personalización situado junto al campo . **Cuerpo**.
+Então, você irá retornar para esta tela. Clique no ícone de personação ao lado do campo **Cuerpo**.
 
 ![Journey Optimizer](./images/msg11.png)
 
-En el área de texto, escriba `Welcome at the `.
+Na área de texto, escreva `Bem-vindo(a)`.
 
 ![Journey Optimizer](./images/msg12.png)
 
-A continuación, haga clic en **Atributos contextuales** y luego **Journey Orchestration**.
+Em seguida, clique em  **Atributos contextuales** y luego **Journey Orchestration**.
 
 ![ACOP](./images/jomsg3.png)
 
-Haga clic en **Eventos**.
+Clique **Eventos**.
 
 ![ACOP](./images/jomsg4.png)
 
-Haga clic en el nombre del evento, que debería tener este aspecto: **yourLastNameBeaconEntryEvent**.
+Clique no nome do seu evento, que deve ser semelhante ao seguía: **yourLastNameBeaconEntryEvent**.
 
 ![ACOP](./images/jomsg5.png)
 
-Haga clic en **Contexto del lugar**.
+Clique **Contexto del lugar**.
 
 ![ACOP](./images/jomsg6.png)
 
-Haga clic en **Interacción de puntos de interés**.
+Clique **Interacción de puntos de interés**.
 
 ![ACOP](./images/jomsg7.png)
 
-Haga clic en **Detalle del punto de interés**.
+Clique **Detalle del punto de interés**.
 
 ![ACOP](./images/jomsg8.png)
 
-Haga clic en el **+** icono **Nombre de punto de interés**.
-Entonces verás esto. Haga clic en **Guardar**.
+Clique no **+** icono no **Nombre de punto de interés**.
+Em seguida, o seguinte será exibido. Clique **Guardar**.
 
 ![ACOP](./images/jomsg9.png)
 
-El mensaje ya está listo. Haga clic en la flecha situada en la esquina superior izquierda para volver al recorrido.
+Sua mensagem agora está pronta. Clique na seta no canto superior esquerdo para tornar à sua jornada.
 
 ![ACOP](./images/jomsg11.png)
 
-Haga clic en **Ok**.
+Clique **Ok**.
 
 ![ACOP](./images/jomsg14.png)
 
-## 3.3.2 Enviar un mensaje a una pantalla
+## 3.3.2 Envie uma mensagem para uma tela
 
-Como tercer paso en el recorrido, debe agregar una **sendMessageToScreen** acción. Vaya al lado izquierdo de la pantalla para **Acciones**, seleccione **sendMessageToScreen** a continuación, arrástrela y suéltela en el tercer nodo del recorrido. Entonces verás esto.
+Como terceira etapa da jornada, você deve adiuma ação  **sendMessageToScreen** acción. Vá para o lado esquerdo **Acciones**, selecione a ação **sendMessageToScreen** e arraste e solte a ação no terceiro nó da sua jornada. Em seguida, você verá a tela abaixo.
 
 ![ACOP](./images/jomsg15.png)
 
-La variable **sendMessageToScreen** es una acción personalizada que publica un mensaje en el extremo que usa la visualización en la tienda. La variable **sendMessageToScreen** action espera que se definan varias variables. Para ver estas variables, desplácese hacia abajo hasta que vea **Parámetros de acción**.
+**sendMessageToScreen** é uma ação personalizada que irá publicar uma mensagem no ponto de extremidade usado pela exibição na loja. A ação **sendMessageToScreen** espera que múlti plas variáveis sejam definidas. Você pode visualizar essas variáveis rolando para baixo até ver **Parámetros de acción**.
 
 ![ACOP](./images/jomsg16.png)
 
-Ahora debe establecer los valores para cada parámetro de acción. Siga esta tabla para comprender qué valores se requieren.
+Agora você precisa definir os para cada parâmetro de ação. Siga tabela para entender quais são necesarios ários e onde.
 
 | Parámetro | valor |
 |:-------------:| :---------------:|
@@ -151,29 +151,29 @@ Ahora debe establecer los valores para cada parámetro de acción. Siga esta tab
 
 {style=&quot;table-layout:auto&quot;}
 
-Para establecer estos valores, haga clic en el botón **Editar** icono.
+Para definir dice: **Editar**.
 
 ![ACOP](./images/jomsg17.png)
 
-A continuación, seleccione **Modo avanzado**.
+Em seguida, selecione **Modo avanzado**.
 
 ![ACOP](./images/jomsg18.png)
 
-A continuación, pegue el valor en función de la tabla anterior. Haga clic en **Ok**.
+Em seguida, cole o valor com base na tabela acima. Clique **Ok**.
 
 ![ACOP](./images/jomsg19.png)
 
-Repita este proceso para añadir valores para cada campo.
+Repita se processo para adiita para campo.
 
 >[!IMPORTANT]
 >
->Para el campo ECID, hay una referencia al evento `yourLastNameBeaconEntryEvent`. Asegúrese de reemplazar `yourLastName` por su apellido.
+>Para o campo ECID, há uma referência ao evento`yourLastNameBeaconEntryEvent`. Lembre-se-substituir  `yourLastName` pelo seu sobrenome.
 
-El resultado final debería tener este aspecto:
+O resultado deve ser semelhante ao seguenció:
 
 ![ACOP](./images/jomsg20.png)
 
-Desplácese hacia arriba y haga clic en **Ok**.
+Rol para cima e clique em **Ok**.
 
 ![ACOP](./images/jomsg21.png)
 
@@ -181,28 +181,28 @@ Aún necesita darle un Nombre a su recorrido. Para ello, haga clic en el botón 
 
 ![ACOP](./images/journeyname.png)
 
-A continuación, puede introducir el nombre del recorrido aquí. Utilice `yourLastName - Beacon Entry Journey`. Haga clic en **OK** para guardar los cambios.
+Você pode inserir en nome da durante la jornada. En su lugar, utilice `yourLastName - Beacon Entry Journey`. Clique **OK** para salvar suas alterações.
 
 ![ACOP](./images/journeyname1.png)
 
-Ahora puede publicar el recorrido haciendo clic en **Publicación**.
+Agora você podo publicar sua jornada **Publicación**.
 
 ![ACOP](./images/publishjourney.png)
 
-Haga clic en **Publicación** de nuevo.
+Clique **Publicación** novamente.
 
 ![ACOP](./images/publish1.png)
 
-A continuación, verá una barra de confirmación verde que indica que su recorrido se ha publicado.
+Você uma barra de confirmación verde informando que sua agora está Publicada.
 
 ![ACOP](./images/published.png)
 
-El recorrido ya está activo y se puede activar.
+Sua jornada agora está ativa e pode ser acionada.
 
-Ya has terminado este ejercicio.
+Você terminou este exercício.
 
-Paso siguiente: [3.4 Probar el recorrido](./ex4.md)
+Próxima etapa: [3.4 Sesión de prueba](./ex4.md)
 
-[Volver al flujo de usuario 3](./uc3.md)
+[Retornar para Fluxo de Usuário 3](./uc3.md)
 
-[Volver a todos los módulos](../../overview.md)
+[Retornar para Todos los Módulos](../../overview.md)

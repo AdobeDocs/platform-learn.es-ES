@@ -5,51 +5,51 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 1%
+source-wordcount: '219'
+ht-degree: 0%
 
 ---
 
-# 2. Registro e incorporación
+# 2. objetivos aprendizados
 
 ## Objetivos de aprendizaje
 
-## Requisitos previos
+## Pré-requisitos
 
-- Acceso a Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Acceso a la recopilación de datos de Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Acceso al sitio web de demostración
+- Acesso à Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Acesso à coleta de dados da Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Acesso ao site de demostração
 
 >[!IMPORTANT]
 >
->Este tutorial se creó para facilitar un formato de bootcamp determinado. Utiliza sistemas y cuentas específicos a los que es posible que no tenga acceso. Incluso sin acceso, creemos que aún puede aprender mucho leyendo este contenido muy detallado. Si usted es participante en uno de los bootcamp y necesita sus credenciales de acceso, póngase en contacto con su representante de Adobe para que le proporcione la información necesaria.
+>Este tutorial foi criado para facilitar um específico de bootcamp. Sistemas e contiene específicos tutorial de caos quais você pode não ter acesso são neste. Mesmo sem acesso, ê ainda podrido de Muito com a leitura deste conteúdo detal hado. Se você é um participante de um bootcamp e precisa das credenciais de acesso, entre em contato com seu representante da Adobe para receber como informações necesarios.
 
-## Ejercicios
+## Exercícios
 
-[2.1 Visite el sitio web y cree su cuenta](./ex1.md)
+[2.1 Visita al sitio e crie sua conta](./ex1.md)
 
-En este ejercicio, aprenderá a configurar un evento.
+Ncoscício, você va exercomo configurar um evento.
 
-[2.2 Crear su evento](./ex2.md)
+[2.2 Crimen de evento](./ex2.md)
 
-En este ejercicio, aprenderá a configurar un evento.
+Ncoscício, você va exercomo configurar um evento.
 
-[2.3 Crear el recorrido y el mensaje de correo electrónico](./ex3.md)
+[2.3 Crie sua durante e mensagem de e-mail](./ex3.md)
 
-En este ejercicio, aprenderá a configurar un recorrido y un mensaje de correo electrónico.
+Ncício, você va exerma configurar uma jornada e mensagem de e-mail.
 
-[2.4 Probar el recorrido](./ex4.md)
+[2.4 Sesión de prueba](./ex4.md)
 
-En este ejercicio, probará el recorrido que acaba de crear.
+Neste exercício, você irá va estar una jornada que você criou.
 
-[2.5 Instalación y uso de la aplicación móvil](./ex5.md)
+[2.5 Instale uso de aplicativo móvel](./ex5.md)
 
-En este ejercicio, instalará la aplicación móvil.
+Neste exercício, você irá instalar del aplicativo móvel.
 
-[2.6 Personalización en el centro de llamadas](./ex6.md)
+[2.6 Personalización sin centro de llamadas](./ex6.md)
 
-En este ejercicio, verá cómo se puede optimizar una experiencia de centro de llamadas en función de la inteligencia de Adobe Experience Platform.
+Neste exercício, você como uma experiência de call center pode ser otimizada com base na intelgência da Adobe Experience Platform.
 
-[Volver a todos los módulos](../../overview.md)
+[Retornar para Todos los Módulos](../../overview.md)

@@ -5,69 +5,69 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '368'
 ht-degree: 2%
 
 ---
 
-# 2.1 Visite el sitio web y cree su cuenta
+# 2.1 Visita al sitio e crie sua conta
 
 ## Contexto
 
-El recorrido de desconocido a conocido es uno de los temas más importantes entre las marcas en estos días, al igual que el recorrido del cliente desde la adquisición hasta la retención.
+Una jornada de desconhecido ao conhecido é um dos tópicos mais importantes para las marcas atualmente, assim como a todo cliente, da aquisição à retenção.
 
-Adobe Experience Platform juega un papel enorme en este recorrido. La plataforma es el cerebro de la comunicación, la **sistema de registro de experiencias**.
+Un Adobe Experience Platform desemha um papel de gran parte nessa jornada. A plataforma é o cérebro da comunicação, o **sistema de registro de experiencias**.
 
-Platform es un entorno en el que la palabra cliente es más amplia que solo los clientes conocidos. Un visitante desconocido en el sitio web también es cliente desde la perspectiva de Platform y, como tal, todo el comportamiento como visitante desconocido también se envía a Platform. Gracias a este enfoque, cuando este visitante finalmente se convierte en un cliente conocido, una marca también puede visualizar lo que sucedió antes de ese momento. Esto ayuda desde la perspectiva de la atribución y la optimización de la experiencia.
+Plataforma é ambiente em que a palavra cliente engloba mais do clientes conhecidos. Um visitante desconhecido no site também é um cliente ponto de vista da Plataforma, como tal, todo o comportamiento de um visitante desconhecido também é enviado à Plataforma. Graças a essa abord agem, quando esse visitante eventualmente torna um cliente hecido, uma marca também pode visualizar o que aconteceu antes daquele recuerdo. Isso ajuda a partir de uma perspectiva de otimização de atribuição e experiência.
 
-## Flujo de recorrido del cliente
+## Fluxe da jornada do cliente
 
-Vaya a [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Haga clic en **Permitir todo**. Según el comportamiento de navegación en el flujo de usuarios anterior, verá que la personalización se produce en la página principal del sitio web.
+Aceses [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Clique **Permitir todo**. Com base no seu comportamiento de navegación ação no fluxo de usuário anterior, você a personação acontecer na página inicial do site.
 
 ![DSN](./images/web8.png)
 
-Haga clic en el icono del logotipo de Adobe en la esquina superior izquierda de la pantalla para abrir el Visor de perfiles. Consulte el panel Visualizador de perfiles y el perfil del cliente en tiempo real con el **ID de Experience Cloud** como identificador principal para este cliente actualmente desconocido.
+Clique no ícone do Adobe no canto a superior esquerdo da tela para respetar las opiniones de las poblaciones. Verifique o el dolor del Visualizador de perfil e Perfil no es el cliente tempo real com o **ID de Experience Cloud** como o identificador del ário para este cliente ainda é desconheire.
 
 ![Demostración](./images/pv1.png)
 
-También puede ver todos los eventos de experiencias que se recopilaron en función del comportamiento del cliente.
+Você também pode ver todos os Eventos de experiência coletados com base no comportamiento do cliente.
 
 ![Demostración](./images/pv3.png)
 
-Haga clic en el **Perfil** en la esquina superior derecha de la pantalla.
+Clique no ícone **Perfil** no canto superior direito da tela.
 
 ![Demostración](./images/pv4.png)
 
-Haga clic en **Crear una cuenta**.
+Clique **Crear una cuenta**.
 
 ![Demostración](./images/pv5.png)
 
-Rellene todos los campos del formulario. Utilice un valor real para la dirección de correo electrónico y el número de teléfono, ya que se utilizará en ejercicios posteriores para el envío de correos electrónicos y SMS.
+Preencha todos os campos do formulário. Use um valor real para endereço de e-mail e number de telefone, pois usado em exercícios posteriores para envio de e-mail SMS.
 
 ![Demostración](./images/pv7.png)
 
-Desplácese hacia abajo y haga clic en **Registro**.
+Rol para baixo e clique em **Registro**.
 
 ![Demostración](./images/pv8.png)
 
-Entonces verás esto.
+Em seguida, o seguinte será exibido.
 
 ![Demostración](./images/pv9.png)
 
-También recibirá este correo electrónico:
+Você também receberá o seguinte e-mail:
 
 ![Demostración](./images/pv10.png)
 
-Y un par de minutos después, también recibirás este correo electrónico:
+E alguns depois, você também recebo seguinte e-mail:
 
 ![Demostración](./images/pv11.png)
 
-Veamos cómo se configuró este recorrido de incorporación a continuación.
+Vamos conferencia a seguir como essa de configurada en la incorporación de foi.
 
-Paso siguiente: [2.2 Crear su evento](./ex2.md)
+Próxima etapa [2.2 Crimen de evento](./ex2.md)
 
-[Volver al flujo de usuario 2](./uc2.md)
+[Retornar para Fluxo de Usuário 2](./uc2.md)
 
-[Volver a todos los módulos](../../overview.md)
+[Retornar para Todos los Módulos](../../overview.md)

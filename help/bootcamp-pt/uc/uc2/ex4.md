@@ -5,55 +5,56 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '223'
 ht-degree: 2%
 
 ---
 
-# 2.4 Probar el recorrido
+# 2.4 Sesión de prueba
 
-## Flujo de recorrido del cliente
+## Fluxe da jornada do cliente
 
-Abra una ventana nueva, limpia y de incógnito del navegador y vaya a [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Haga clic en **Permitir todo**. Según el comportamiento de navegación en el flujo de usuarios anterior, verá que la personalización se produce en la página principal del sitio web.
+Abra uma nova janela e anônima do navegador e vá para [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Clique **Permitir todo**. Com base no seu comportamiento de navegación ação no fluxo de usuário anterior, você a personação acontecer na página inicial do site.
 
 ![DSN](./images/web8a.png)
 
-Haga clic en el **Perfil** en la esquina superior derecha de la pantalla.
+Clique no ícone **Perfil** no canto superior direito da tela.
 
 ![Demostración](./images/web8b.png)
 
-Haga clic en **Crear una cuenta**.
+Clique **Crear una cuenta**.
 
 ![Demostración](./images/pv5.png)
 
-Rellene todos los campos del formulario. Utilice un valor real para la dirección de correo electrónico y el número de teléfono, ya que se utilizará en ejercicios posteriores para el envío de correos electrónicos y SMS.
+Preencha todos os campos do formulário. Use um valor real para endereço de e-mail e number de telefone, pois usado em exercícios posteriores para envio de e-mail SMS.
 
 ![Demostración](./images/pv7a.png)
 
-Desplácese hacia abajo. Ahora necesita introducir el eventID del evento personalizado que ha creado en el ejercicio 2.2. Puede encontrarlo aquí:
+Función para baixo. Agora você deve inserir o eventID do seu evento personalizado que você criou no exercício 2.2. Você pode encontrá-lo aquí:
 
 ![ACOP](./images/payloadeventID.png)
 
-El ID de evento es lo que debe enviarse a Adobe Experience Platform para almacenar en déclencheur el recorrido que ha generado. Este es el eventID de este ejemplo: `19cab7852cdef99d25b6d5f1b6503da39d1f486b1d585743f97ed2d1e6b6c74f`
+O eventID é o que precisa ser enviado à Adobe Experience Platform para acionar una jornada que você construcción. Este é o eventID neste ejemplo:
+`19cab7852cdef99d25b6d5f1b6503da39d1f486b1d585743f97ed2d1e6b6c74f`
 
-Complete el eventID en el campo **Su ID de evento de creación de cuenta** y haga clic en **Registro**.
+Preencha o eventID sin campo **Su ID de evento de creación de cuenta** e clique em **Registro**.
 
 ![Demostración](./images/pv8a.png)
 
-Entonces verás esto.
+Em seguida, una tela abaixo será exbida:
 
 ![Demostración](./images/pv9.png)
 
-También recibirá este correo electrónico, que es el que usted mismo creó como parte de este ejercicio.
+Você também receberá este e-mail, que é o e-mail que você mesmo criou como parte del ejercício.
 
 ![Demostración](./images/pv10a.png)
 
-Ya has terminado este ejercicio.
+Você terminou este exercício.
 
-Paso siguiente: [2.5 Instalación y uso de la aplicación móvil](./ex5.md)
+Próxima etapa: [2.5 Instale uso de aplicativo móvel](./ex5.md)
 
-[Volver al flujo de usuario 2](./uc2.md)
+[Retornar para Fluxo de Usuário 2](./uc2.md)
 
-[Volver a todos los módulos](../../overview.md)
+[Retornar para Todos los Módulos](../../overview.md)

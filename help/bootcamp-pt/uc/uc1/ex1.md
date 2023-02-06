@@ -5,61 +5,59 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '410'
 ht-degree: 1%
 
 ---
 
-# 1.1 De desconocido a conocido en el sitio web
+# 1.1 Sitio del desconhecido ao conhecido em nosso
 
 ## Contexto
 
-El recorrido de desconocido a conocido es uno de los temas más importantes entre las marcas en estos días, al igual que el recorrido del cliente desde la adquisición hasta la retención.
+Un Adobe Experience Platform desemha um papel de gran parte nessa jornada. A plataforma é o cérebro da comunicação, o **sistema de registro de experiencias**.
 
-Adobe Experience Platform juega un papel enorme en este recorrido. La plataforma es el cerebro de la comunicación, la **sistema de registro de experiencias**.
+Plataforma é ambiente em que a palavra cliente engloba mais do clientes conhecidos. Um visitante desconhecido no site também é um cliente ponto de vista da Plataforma, como tal, todo o comportamiento de um visitante desconhecido também é enviado à Plataforma. Graças a essa abord agem, quando esse visitante eventualmente torna um cliente hecido, uma marca também pode visualizar o que aconteceu antes daquele recuerdo. Isso ajuda a partir de uma perspectiva de otimização de atribuição e experiência.
 
-Platform es un entorno en el que la palabra cliente es más amplia que solo los clientes conocidos. Un visitante desconocido en el sitio web también es cliente desde la perspectiva de Platform y, como tal, todo el comportamiento como visitante desconocido también se envía a Platform. Gracias a este enfoque, cuando este visitante finalmente se convierte en un cliente conocido, una marca también puede visualizar lo que sucedió antes de ese momento. Esto ayuda desde la perspectiva de la atribución y la optimización de la experiencia.
+## Fluxe da jornada do cliente
 
-## Flujo de recorrido del cliente
-
-Vaya a [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Haga clic en **Permitir todo**.
+Aceses [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Clique **Permitir todo**.
 
 ![DSN](./images/web8.png)
 
-Haga clic en el icono del logotipo de Adobe en la esquina superior izquierda de la pantalla para abrir el Visor de perfiles.
+Clique no ícone do Adobe no canto a superior esquerdo da tela para respetar las opiniones de las poblaciones.
 
 ![Demostración](./images/pv1.png)
 
-Consulte el panel Visualizador de perfiles y el perfil del cliente en tiempo real con el **ID de Experience Cloud** como identificador principal para este cliente actualmente desconocido.
+Verifique o el dolor del Visualizador de perfil e Perfil no es el cliente tempo real com o **ID de Experience Cloud** como o identificador del ário para este cliente ainda é desconheire.
 
 ![Demostración](./images/pv2.png)
 
-También puede ver todos los eventos de experiencias que se recopilaron en función del comportamiento del cliente. La lista está vacía actualmente, pero eso cambiará pronto.
+Você também pode ver todos os Eventos de Experiência coletados com base no comportamiento do cliente. A lista está vazia no momento, mas es mudará em breve.
 
 ![Demostración](./images/pv3.png)
 
-Vaya a la **Servicios de aplicaciones** y haga clic en el producto **Real-Time CDP**.
+Acesar un opção de menú **Servicios de aplicaciones** e clique no produto **Real-Time CDP**.
 
 ![Demostración](./images/pv4.png)
 
-A continuación, verá la página de detalles del producto. Un evento de experiencia de tipo **Vista del producto** se ha enviado a Adobe Experience Platform mediante la implementación del SDK web que revisó en el módulo 1. Abra el panel Visor de perfiles y eche un vistazo a su **Eventos de experiencias**.
+Você una página de detal hes do produto. Um Evento de experiência do tipo **Vista del producto** agora foi enviado para a Adobe Experience Platform una implementación ação do Web você revisou no Módulo 1. Abra o doloroso Visualizador de las publicaciones y verifique seus **Eventos de experiencias**.
 
 ![Demostración](./images/pv5.png)
 
-Vaya a la **Servicios de aplicaciones** y haga clic en el producto **Adobe Journey Optimizer**. Se ha enviado otro evento de experiencia a Adobe Experience Platform.
+Acesar un opção de menú **Servicios de aplicaciones** e clique no produto **Adobe Journey Optimizer**. Mais um Evento de experiência foi enviado para a Adobe Experience Platform.
 
 ![Demostración](./images/pv7.png)
 
-Abra el panel Visor de perfiles . Ahora verá dos eventos de experiencia de tipo **Vista del producto**. Aunque el comportamiento es anónimo, se realiza un seguimiento de cada clic y se almacena en Adobe Experience Platform. Una vez que el cliente anónimo sea conocido, podremos fusionar todo el comportamiento anónimo automáticamente con el perfil conocido.
+Abra o doloroso Visualizador de datos. Agora você 2 Eventos de experiência do tipo **Vista del producto**. Embora o comportamiento seja anônimo, cada clique rax e armazencadam a Adobe Experience Platform. Depois que cliente anônimo se tornar conheso, poderemos mesclar todo o comportamiento anôimo automaticamente ao oficial.
 
 ![Demostración](./images/pv8.png)
 
-Ahora analicemos su perfil de cliente y luego usemos su comportamiento para personalizar su experiencia de cliente en el sitio web.
+Agora vamos analisar seu res de cliente del cliente y del cliente del personalizar para sua expericia do cliente del sitio
 
-Paso siguiente: [1.2 Visualizar su propio perfil de cliente en tiempo real: IU](./ex2.md)
+Próxima etapa: [1.2 Visualizar seu próprio de la memoria del cliente em tempo real](./ex2.md)
 
-[Volver al flujo de usuario 1](./uc1.md)
+[Retornar para Fluxo de Usuário 1](./uc1.md)
 
-[Volver a todos los módulos](../../overview.md)
+[Retornar para Todos los Módulos](../../overview.md)

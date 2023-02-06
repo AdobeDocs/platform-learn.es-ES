@@ -5,54 +5,54 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 1%
+source-wordcount: '194'
+ht-degree: 0%
 
 ---
 
-# 3.4 Probar el recorrido
+# 3.4 Sesión de prueba
 
-Para probar el recorrido, deberá utilizar el ID de evento del evento que creó en el ejercicio 3.2, que tiene este aspecto.
+Para testar sua jornada, você deve usar o eventID criado no exercício 3.2, que deve ser semelhante ao seguinte.
 
 ![ACOP](./images/payloadeventID.png)
 
-El ID de evento es lo que debe enviarse a Adobe Experience Platform para almacenar en déclencheur el recorrido. En este ejemplo, eventID es:
+O eventID é o que precisa ser enviado à Adobe Experience Platform para acionar una jornada. Neste ejemplo, o eventID é:
 `e76c0bf0c77c3517e5b6f4c457a0754ebaf5f1f6b9357d74e0d8e13ae517c3d5`.
 
-Abra la aplicación móvil y vaya a la página principal. Haga clic en el icono **Configuración**.
+Abra o aplicativo móvel e vá para a página inicial. Clique no ícone de **Configuração**.
 
 ![DSN](./images/appsett.png)
 
-Pegar el eventID en el campo **ID de evento de señalización** y haga clic en **Guardar**.
+Cole seu eventID sin campo **ID de evento de señalización** e clique em **Guardar**.
 
 ![DSN](./images/beacon1.png)
 
-Antes de continuar, abra esta página web en su equipo: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
+Antes de continuar, abra esta página da Web em seu computador: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
 
-Verá esto:
+Em seguida, Será exibida a tela:
 
 ![DSN](./images/screen1.png)
 
-A continuación, vuelva a la página principal. Haga clic en el **señalización** icono.
+Retorne para una página inicial. Clique no ícone do **señalización**.
 
 ![DSN](./images/app23.png)
 
-Entonces verás esto. Primero, seleccione **Señalización de pantalla de Bootcamp** y, a continuación, haga clic en la **entrada** botón. Esto le permite simular una entrada de señalización.
+Primeiro, selecione **Señalización de pantalla de Bootcamp** e clique no botão de **entrada** botón. Isso permitirá que você simule uma entrada do beacon.
 
 ![DSN](./images/app21.png)
 
-Ahora, echen un vistazo a la pantalla de la tienda. Verá que el último producto que vio aparece allí en 5 segundos.
+Agora confira a tela da loja. Você o último produto visualizado aparecer nessa tela em 5 segundos.
 
 ![DSN](./images/beacon3.png)
 
-También habrá recibido la notificación push.
+Você também terá recebido sua notificação push.
 
 ![DSN](./images/beacon2.png)
 
-Ya has terminado este ejercicio.
+Você terminou este exercício.
 
-[Volver al flujo de usuario 3](./uc3.md)
+[Retornar para Fluxo de Usuário 3](./uc3.md)
 
-[Volver a todos los módulos](../../overview.md)
+[Retornar para Todos los Módulos](../../overview.md)

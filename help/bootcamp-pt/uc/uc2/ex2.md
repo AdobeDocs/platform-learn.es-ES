@@ -5,93 +5,93 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '463'
 ht-degree: 0%
 
 ---
 
-# 2.2 Crear su evento
+# 2.2 Crimen de evento
 
-Inicie sesión en Adobe Journey Optimizer desde [Adobe Experience Cloud](https://experience.adobe.com). Haga clic en **Journey Optimizer**.
+Inicio de sesión en Facebook en Adobe Journey Optimizer access a [Adobe Experience Cloud](https://experience.adobe.com). Clique **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
-Se le redirigirá al **Página principal**  en Journey Optimizer. En primer lugar, asegúrese de que está utilizando el simulador para pruebas correcto. El entorno limitado que se va a usar se denomina `Bootcamp`. Para cambiar de un simulador de pruebas a otro, haga clic en **Prod** y seleccione el simulador de pruebas de la lista. En este ejemplo, el simulador de pruebas recibe el nombre **Bootcamp**. Entonces estará en el **Página principal** vista del entorno limitado `Bootcamp`.
+Você será redireasí para una visualización **Página principal** sin Journey Optimizer. Primeiro verifique se você está está o sandbox correto. O nome do sandbox que deve ser usado `Bootcamp`. Para alternar de um sandbox para outro, clique em Prod e selecione o sandbox na lista. Neste exemplo o nome do sandbox é **Bootcamp**. Você estará na visualização da **Página principal** do seu sandbox `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
-En el menú de la izquierda, desplácese hacia abajo y haga clic en **Configuraciones**. A continuación, haga clic en el **Administrar** botón debajo de **Eventos**.
+No menú à esquerda, rol para baixo e clique em **Configuraciones**. Em seguida, clique no botão **Administrar** abaixo de **Eventos**.
 
 ![ACOP](./images/acopmenu.png)
 
-A continuación, verá una descripción general de todos los eventos disponibles. Haga clic en **Crear evento** para comenzar a crear su propio evento.
+Você para uma visão geral de todos los eventos disponíveis. Clique **Crear evento** para cómplice a criar seu próprio evento.
 
 ![ACOP](./images/emptyevent.png)
 
-A continuación, aparece una nueva ventana de evento vacía.
+Uma nova janela de evento vazia irá aparecer.
 
 ![ACOP](./images/emptyevent1.png)
 
-En primer lugar, asigne un nombre al evento de esta manera: `yourLastNameAccountCreationEvent` y añada una descripción como esta `Account Creation Event`.
+Em primeiro lugar, dê um nome ao seu evento como, por ejemplo: `yourLastNameAccountCreationEvent` e adicione uma describe ção como, por ejemplo: `Account Creation Event`.
 
 ![ACOP](./images/eventdescription.png)
 
-A continuación, asegúrese de que la variable **Tipo** está configurado como **Unitario** y para la variable **Tipo de ID de evento** selección, seleccionar **Sistema generado**.
+Em seguida, certificfique-se de que **Tipo** está definido **Unitario** e, para a seleção de **Tipo de ID de evento**, selecione **Sistema generado**.
 
 ![ACOP](./images/eventidtype.png)
 
-A continuación, se muestra la selección de Esquema. Se preparó un esquema para este ejercicio. Utilice el esquema `Demo System - Event Schema for Website (Global v1.1) v.1`.
+Un etapa seguido é un seleção do schema. Um schema foi preparado para este exercício. Uso de esquema `Demo System - Event Schema for Website (Global v1.1) v.1`.
 
 ![ACOP](./images/eventschema.png)
 
-Después de seleccionar el esquema, verá una serie de campos seleccionados en el **Campos** para obtener más información. Ahora debe pasar el ratón por encima del **Campos** y verá 3 iconos emergentes. Haga clic en el **Editar** icono.
+Depois de seleo Schema, você vários campos sendo seleAsentadores na seção **Campos**. Agora você deve passar o mouse sobre un seção **Campos** e três ícones pop-up serão exibidos. Clique no ícone **Editar**.
 
 ![ACOP](./images/eventpayload.png)
 
-Verá un **Campos** ventana emergente, en la que debe seleccionar algunos de los campos que necesitamos para personalizar el correo electrónico.  Más adelante, elegiremos otros atributos de perfil, utilizando los datos que ya están en Adobe Experience Platform.
+Você yuma janela pop-up de **Campos**, onde você deve selecionar s dos campos que precisamos personalizar e-mail. Escolheremos outros atributos de posteriormente, utilizando os dados já existentes un Adobe Experience Platform.
 
 ![ACOP](./images/eventfields.png)
 
-En el objeto `_experienceplatform.demoEnvironment`, asegúrese de seleccionar los campos **brandLogo** y **brandName**.
+Sin objeto `_experienceplatform.demoEnvironment`, pcertificfique-se de selecionar os campos **brandLogo** e **brandName**.
 
 ![ACOP](./images/eventpayloadbr.png)
 
-En el objeto `_experienceplatform.identification.core`, asegúrese de seleccionar el campo **email**.
+Sin objeto `_experienceplatform.identification.core`, certifica-se de seleedico campo **email**.
 
 ![ACOP](./images/eventpayloadbrid.png)
 
-Haga clic en **Ok** para guardar los cambios.
+Clique **Ok** a para salvar suas alterações.
 
 ![ACOP](./images/saveok.png)
 
-Debería ver esto. Haga clic en **Guardar** una vez más para guardar los cambios.
+Em seguida, una tela abaixo deve ser exibida. Clique **Guardar**  mais uma vez para salvar suas alterações..
 
 ![ACOP](./images/eventsave.png)
 
-El evento ahora está configurado y guardado.
+Seu evento agora está configurado e salvo.
 
 ![ACOP](./images/eventdone.png)
 
-Vuelva a hacer clic en el evento para abrir el **Editar evento** de nuevo. Pase el ratón **Campos** para volver a ver los 3 iconos. Haga clic en el **Ver carga útil** icono.
+Clique no seu evento novamente para que el abrique es uma vez a tela **Editar evento**. Pasar el ratón sobre **Campos** para ver os 3 ícones outra vez. Clique no ícone **Ver carga útil**.
 
 ![ACOP](./images/viewevent.png)
 
-Ahora verá un ejemplo de la carga útil esperada.
-Su evento tiene un eventID de orquestación único que puede encontrar desplazándose hacia abajo en esa carga hasta que vea `_experience.campaign.orchestration.eventID`.
+Agora vocvea ê um exemplo da carga útil.
+Seu evento tem umID de orquestração único, que você pode encontrar rolando baixo nessa útil carga útil até visualiza `_experience.campaign.orchestration.eventID`.
 
 ![ACOP](./images/payloadeventID.png)
 
-El ID de evento es lo que debe enviarse a Adobe Experience Platform para almacenar en déclencheur el recorrido que creará en uno de los próximos ejercicios. Recuerde este eventID, ya que puede que lo necesite más adelante.
+O eventID é que deve ser enviado à Adobe Experience Platform para acionar a una jornada que você irá em dos próximos exercícios. Lembre-se deste eventID, você pode precisar dele posteriormente.
 `"eventID": "19cab7852cdef99d25b6d5f1b6503da39d1f486b1d585743f97ed2d1e6b6c74f"`
 
-Haga clic en **Ok**, seguido de hacer clic en **Cancelar**.
+Clique **Ok** e, em seguida, clique em **Cancelar**.
 
-Ya has terminado este ejercicio.
+Agora você terminou este exercício.
 
-Paso siguiente: [2.3 Crear su mensaje de correo electrónico](./ex3.md)
+Próxima etapa: [ 2.3 Crie sua mensagem de e-mail](./ex3.md)
 
-[Volver al flujo de usuario 2](./uc2.md)
+[Retornar para Fluxo de Usuário 2](./uc2.md)
 
-[Volver a todos los módulos](../../overview.md)
+[Retornar para Todos los Módulos](../../overview.md)

@@ -5,88 +5,89 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 1%
+source-wordcount: '269'
+ht-degree: 0%
 
 ---
 
-# 2.5 Instalación y uso de la aplicación móvil
+# 2.5 Instale uso de aplicativo móvel
 
 
-## Instalación de la aplicación móvil
+## Instale del aplicativo móvel
 
-Antes de instalar la aplicación, debe activar **Seguimiento** en su dispositivo iOS. Para ello, vaya a **Configuración** > **Privacidad y seguridad** > **Seguimiento** y asegúrese de que la opción **Permitir que las aplicaciones soliciten rastrear**.
+Antes de instalar o aplicativo, é necesariamente ário habilitar Rastreamento no seu iOS. Para isso, acesse Configurações > Privacidade e segurança > Rastreamento e confirme una opção Permitir que os aplicativos solicitem o amento.
 
 ![DSN](./../uc3/images/app4.png)
 
-Vaya a Apple App Store y busque `aepmobile-bootcamp`. Haga clic en **Instalar** o **Descargar**.
+Acesar a App Store da Apple e pesquise `aepmobile-bootcamp`.\
+Clique **Instalar** ou **Descargar**.
 
 ![DSN](./../uc3/images/app1.png)
 
-Una vez instalada la aplicación, haga clic en **Apertura**.
+Depois que o aplicativo estiver instalado, clique em **Abrir**.
 
 ![DSN](./../uc3/images/app2.png)
 
-Haga clic en **Aceptar**.
+Clique **OK**.
 
 ![DSN](./../uc3/images/app9.png)
 
-Haga clic en **Permitir**.
+Clique **Permitir**.
 
 ![DSN](./../uc3/images/app3.png)
 
-Haga clic en **Estoy de acuerdo**.
+Clique **Concordo**.
 
 ![DSN](./../uc3/images/app7.png)
 
-Haga clic en **Permitir al usar la aplicación**.
+Clique **Permitir enquanto uso o app**.
 
 ![DSN](./../uc3/images/app8.png)
 
-Haga clic en **Permitir**.
+Clique **Permitir**.
 
 ![DSN](./../uc3/images/app5.png)
 
-Ahora está en la aplicación, en la página principal, listo para pasar por el recorrido del cliente.
+Agora você no aplicativo, na  inicial, pronto(a) para verificar toda una jornada do cliente.
 
 ![DSN](./../uc3/images/app12.png)
 
-## Flujo de recorrido del cliente
+## Fluxe da jornada do cliente
 
-En primer lugar, debe iniciar sesión. Haga clic en **Login**.
+Primeiramente, é necesario río fazer para iniciar sesión. Clique **Inicio de sesión**.
 
 ![DSN](./../uc3/images/app13.png)
 
-Después de crear su cuenta en ejercicios anteriores, lo vio en el sitio web. Ahora necesita reutilizar la dirección de correo electrónico de la cuenta creada en la aplicación para iniciar sesión.
+Depois de criar sua nos exercícios anteriores, es é exibido no sitio. Agora é necesariamente ário reutilizar o endereço de e-mail da conta que você criou no aplicativo para fazer de inicio de sesión.
 
 ![Demostración](./../uc3/images/pv1.png)
 
-Escriba la dirección de correo electrónico que utilizó en el sitio web aquí y haga clic en **Inicio de sesión**.
+Digite o endereço de e-mail que você usou no site e clique em **Inicio de sesión**.
 
 ![DSN](./../uc3/images/app14.png)
 
-Recibirá una confirmación de que ha iniciado sesión y recibirá una notificación push.
+Você receberá uma confirmação de que está conectado e receberá uma notificação push.
 
 ![DSN](./../uc3/images/app15.png)
 
-Vuelva a la página principal de la aplicación y verá que aparecen funciones adicionales.
+Retorne para la página inicial do aplicativo e os adicionais irão aparecer.
 
 ![DSN](./../uc3/images/app17.png)
 
-Vaya a **Productos**. Haga clic en cualquier producto, en este ejemplo **Café para ir**.
+Aceses **Productos**. Clique em qualquer produto, neste exemplo: **Café para ir**.
 
 ![DSN](./images/app19.png)
 
-Verá el **Café para ir** página del producto en la aplicación. Haga clic en **Buy**.
+Você una página do produto **Café para ir** no aplicativo. Clique **Buy**.
 
 ![DSN](./images/app20.png)
 
-Ya ha terminado este ejercicio y está listo para los próximos ejercicios.
+Agora você terminou este exercício e está pronto para como próximas actividades.
 
-Paso siguiente: [2.6 Personalización en el centro de llamadas](./ex6.md)
+Próxima etapa: [ 2.6 Personalización sin centro de llamadas](./ex6.md)
 
-[Volver al flujo de usuario 2](./uc2.md)
+[Retornar para Fluxo de Usuário 2](./uc2.md)
 
-[Volver a todos los módulos](../../overview.md)
+[Retornar para Todos los Módulos](../../overview.md)

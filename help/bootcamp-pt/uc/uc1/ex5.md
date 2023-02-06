@@ -5,57 +5,57 @@ kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 3%
+source-wordcount: '293'
+ht-degree: 1%
 
 ---
 
-# 1.5 Acción: enviar el segmento a Facebook
+# 1.5 Ação: envie seu segmento para o Facebook
 
-Vaya a [Adobe Experience Platform](https://experience.adobe.com/platform). Después de iniciar sesión, llegará a la página principal de Adobe Experience Platform.
+Aceses [Adobe Experience Platform](https://experience.adobe.com/platform). Inicio de sesión en Depois de fazer, você irá acessar a post inicial da Adobe Experience Platform.
 
 ![Ingesta de datos](./images/home.png)
 
-Antes de continuar, debe seleccionar un **entorno limitado**. El nombre del simulador de pruebas que se va a seleccionar es ``Bootcamp``. Para ello, haga clic en el texto **[!UICONTROL Producción]** en la línea azul de la parte superior de la pantalla. Después de seleccionar los elementos adecuados [!UICONTROL entorno limitado], verá el cambio de pantalla y ahora estará en su [!UICONTROL entorno limitado].
+precisa selecionar um de continuar, você **entorno limitado**. O nome do sandbox a ser seledado é Bootcamp. É possível fazer isso clicando no texto **[!UICONTROL Producción]** na linha azul na parte superior da tela. Depoes de seleê o sandbox apropiado, vocalista: una tela mutela e agora você está em seu [!UICONTROL entorno limitado] dedicado.
 
 ![Ingesta de datos](./images/sb1.png)
 
-En el menú de la izquierda, vaya a **Destinos** y vaya a **Catálogo**. Verá el **Catálogo de destinos**. En **Destinos**, haga clic en **Activar segmentos** en el **Audiencia personalizada de facebook** tarjeta.
+No hay menú à esquerda, vá para **Destinos** e, em seguida, vá para **Catálogo**. Você **Catálogo de destinos**. Em **Destinos**, clique em **Activar segmentos** no cartão **Audiencia personalizada de facebook**.
 
 ![RTCDP](./images/rtcdpgoogleseg.png)
 
-Seleccione el destino **bootcamp-facebook** y haga clic en **Siguiente**.
+Selecione o **bootcamp-facebook** e clique em **Siguiente**.
 
 ![RTCDP](./images/rtcdpcreatedest2.png)
 
-En la lista de segmentos disponibles, seleccione el segmento que creó en el ejercicio anterior. Haga clic en **Siguiente**.
+Na lista de segmentos disponíveis, selecione o segmento que você criou no exercício anterior. Clique **Siguiente**.
 
 ![RTCDP](./images/rtcdpcreatedest3.png)
 
-En el **Asignación** asegúrese de que la variable **Aplicar transformación** está activada. Haga clic en **Siguiente**.
+Na página **Asignación**, verifique que una caixa de seleção **Aplicar transformación** está marcado. Clique **Siguiente**.
 
 ![RTCDP](./images/rtcdpcreatedest4a.png)
 
-En el **Programación de segmentos** seleccione **Origen de la audiencia** y configúrelo en **Directamente de los clientes**. Haga clic en **Siguiente**.
+Na página **Programación de segmentos**, seleccione a **Origen de la audiencia** e defina como **Directamente de los clientes**. Clique **Siguiente**.
 
 ![RTCDP](./images/rtcdpcreatedest4.png)
 
-Por último, en la **Consulte** página, haga clic en **Finalizar**.
+Por fim, un sitio **Consulte**, clique em **Finalizar**.
 
 ![RTCDP](./images/rtcdpcreatedest5.png)
 
-El segmento ahora está vinculado a Audiencias personalizadas de Facebook. Cada vez que un cliente se califica para este segmento, se envía una señal al servidor de Facebook para incluir a ese cliente en la Audiencia personalizada en Facebook.
+Seu segmento agora está vinculado aos Públicos Personalizados do Facebook. Ssiempre que el cliente se califica para esse segmento, um sinal enviado ao lado do servidor (del lado del servidor) do Facebook para incluir esse cliente no Personalizado no Lado do Facebook.
 
-En Facebook, encontrará el segmento de Adobe Experience Platform en Audiencias personalizadas :
+Sin Facebook, você encontrará seu segmento da Adobe Experience Platform em Públicos Personalizados
 
 ![RTCDP](./images/rtcdpcreatedest5b.png)
 
-Ahora puede ver que su audiencia personalizada aparece en Facebook:
+Agora você pode ver seu público personalizado no aparecer Facebook:
 
 ![RTCDP](./images/rtcdpcreatedest5a.png)
 
-[Volver al flujo de usuario 1](./uc1.md)
+[Retornar para Fluxo de Usuário 1](./uc1.md)
 
-[Volver a todos los módulos](../../overview.md)
+[Retornar para Todos los Módulos](../../overview.md)

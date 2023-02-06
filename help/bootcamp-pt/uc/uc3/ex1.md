@@ -5,34 +5,36 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '601'
 ht-degree: 0%
 
 ---
 
-# 3.1 Uso de la aplicación móvil y déclencheur de una entrada de señalización
+# 3.1 Uso de la señalización de aplicación móvel e acione um
 
-## Instalación de la aplicación móvil
+## Instale del aplicativo móvel
 
 Antes de instalar la aplicación, debe activar **Seguimiento** en su dispositivo iOS. Para ello, vaya a **Configuración** > **Privacidad y seguridad** > **Seguimiento** y asegúrese de que la opción **Permitir que las aplicaciones soliciten rastrear**.
 
+Antes de instalar o aplicativo, é necesariamente ário habilitar **Rastreamento** no hay iOS seguro. Para isso, acesse **Configurações** > **Privacidade e segurança** > **Rastreamento** e verifique una opção **Permitir los aplicativos solicitem o raamento**.
+
 ![DSN](./../uc3/images/app4.png)
 
-Vaya a Apple App Store y busque `aepmobile-bootcamp`. Haga clic en **Instalar** o **Descargar**.
+Acesar a App Store da Apple e pesquise `aepmobile-bootcamp`. Clique **Instalar** ou **Descargar**.
 
 ![DSN](./../uc3/images/app1.png)
 
-Una vez instalada la aplicación, haga clic en **Apertura**.
+Depois que o aplicativo estiver instalado, clique em **Apertura**.
 
 ![DSN](./../uc3/images/app2.png)
 
-Haga clic en **Aceptar**.
+Clique **OK**.
 
 ![DSN](./../uc3/images/app9.png)
 
-Haga clic en **Permitir**.
+Clique **Permitir**.
 
 ![DSN](./../uc3/images/app3.png)
 
@@ -40,92 +42,93 @@ Haga clic en **Estoy de acuerdo**.
 
 ![DSN](./../uc3/images/app7.png)
 
-Haga clic en **Permitir al usar la aplicación**.
+Clique **Permitir enquanto usa o aplicativo**.
 
 ![DSN](./../uc3/images/app8.png)
 
-Haga clic en **Permitir**.
+Clique **Permitir**.
 
 ![DSN](./../uc3/images/app5.png)
 
-Ahora está en la aplicación, en la página principal, listo para pasar por el recorrido del cliente.
+Agora você no aplicativo, na  inicial, pronto(a) para verificar toda una jornada do cliente.
 
 ![DSN](./../uc3/images/app12.png)
 
-## Flujo de recorrido del cliente
+## Fluxe da jornada do cliente
 
-En primer lugar, debe iniciar sesión. Haga clic en **Login**.
+Primeiramente, é necesario río fazer para iniciar sesión. Clique **Inicio de sesión**.
 
 ![DSN](./images/app13.png)
 
-Después de crear su cuenta en ejercicios anteriores, lo vio en el sitio web. Ahora necesita reutilizar la dirección de correo electrónico de la cuenta creada en la aplicación para iniciar sesión.
+Depois de criar sua nos exercícios anteriores, es é exibido no sitio. Agora é necesariamente ário reutilizar o endereço de e-mail da conta que você criou no aplicativo para fazer de inicio de sesión.
 
 ![Demostración](./images/pv1.png)
 
-Escriba la dirección de correo electrónico que utilizó en el sitio web aquí y haga clic en **Inicio de sesión**.
+Digite o endereço de e-mail que você usou no site e clique em **Inicio de sesión**.
 
 ![DSN](./images/app14.png)
 
-Recibirá una confirmación de que ha iniciado sesión y recibirá una notificación push.
+Você receberá uma confirmação de que está conectado e receberá uma notificação push.
 
 ![DSN](./images/app15.png)
 
-Vuelva a la página principal de la aplicación y verá que aparecen funciones adicionales.
+Retorne para la página inicial do aplicativo e os adicionais irão aparecer.
 
 ![DSN](./images/app17.png)
 
-En primer lugar, vaya a **Productos**. Haga clic en cualquier producto, en este ejemplo **Café para ir**.
+Primeiro, caso **Productos**. Clique em qualquer produto, neste exemplo: **Café para ir**.
 
 ![DSN](./images/app19.png)
 
-Verá el **Café para ir** página del producto en la aplicación.
+Você una página do produto **Café para ir** no aplicativo.
 
 ![DSN](./images/app20.png)
 
-Ahora simulará un evento de entrada de señalización en una ubicación de tienda sin conexión. El objetivo de simular esto es personalizar la experiencia del cliente en las pantallas de las tiendas. Para visualizar la experiencia en la tienda, se ha creado una página que mostrará dinámicamente la información relevante para el cliente que acaba de entrar en la tienda.
+Agora você irá simula evento de sinalização (baliza) em um local de armazenamento fuera de línea. O da simulação personalizar a experiência do cliente telas da loja. Para visualizar a experiência na loja, foi criada uada que mostrará de forma âmica como informaões relevantes para o hilo noa noja.
 
-Antes de continuar, abra esta página web en su equipo: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
+Antes de continuar, abra esta página da Web em seu computador: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
 
-Verá esto:
+Em seguida, una tela abaixo será exbida:
 
 ![DSN](./images/screen1.png)
 
-A continuación, vuelva a la página principal. Haga clic en el **señalización** icono.
+Em seguida, retorne para una página inicial. Clique no ícone do **señalización**.
 
 ![DSN](./images/app23.png)
 
 Entonces verás esto. Primero, seleccione **Señalización de pantalla de Bootcamp** y, a continuación, haga clic en la **entrada** botón. Esto le permite simular una entrada de señalización.
+Após essa etapa, o seguinte será exibido. Primeiro, selecione **Señalización de pantalla de Bootcamp** e clique no botão de **entrada**. Señalización Isso permitirá que você simule uma entrada de sinalização com.
 
 ![DSN](./images/app21.png)
 
-Ahora, echen un vistazo a la pantalla de la tienda. Verá que el último producto que vio aparece allí en 5 segundos.
+Agora confira a tela da loja. Você o último produto visualizado aparecer nessa tela em 5 segundos.
 
 ![DSN](./images/screen2.png)
 
-A continuación, vuelva a **Productos**. Haga clic en cualquier producto, en este ejemplo **Manta de playa Tan**.
+Em seguida, réplica para **Productos**. Clique em qualquer produto, neste exemplo: **Manta de playa Tan**.
 
 ![DSN](./images/app22.png)
 
-A continuación, vuelva a la página principal. Haga clic en el **señalización** icono.
+Em seguida, retorne para una página inicial. Clique no ícone do **señalización**.
 
 ![DSN](./images/app23.png)
 
-Entonces verás esto. Primero, seleccione **Señalización de pantalla de Bootcamp** y, a continuación, haga clic en la **entrada** de nuevo. Esto le permite simular una entrada de señalización.
+Em seguida, selecione **Señalización de pantalla de Bootcamp** e clique no botão de **Entrada** novamente. Isso permitirá que você simule uma entrada de sinalização (baliza).
 
 ![DSN](./images/app21.png)
 
-Ahora, eche un vistazo a la pantalla de la tienda de nuevo. Verá que el último producto que vio aparece allí en 5 segundos.
+Agora, confira a tela da loja novamente. Você o último produto visualizado aparecer nessa tela em 5 segundos.
 
 ![DSN](./images/screen3.png)
 
-Ahora, echemos un vistazo a su Visor de Perfil en el sitio web. Verá muchos eventos que se agregaron allí, solo para mostrar que cualquier interacción con un cliente se recopila y almacena en Adobe Experience Platform.
+Ágora, vamos verificar também o seu Visualizador de Perfil no sitio. Você muitos eventos que foram adiObserve, para mostrar que qualquer interação com um cliente coletada e armazenada na Adobe Experience Platform.
 
 ![DSN](./images/screen4.png)
 
-En los próximos ejercicios, configurará y probará su propio recorrido de entrada de señalización.
+Nos próximos exercícios, você irá configurar e estar sua própria durante la entrada do beacon.
 
-Paso siguiente: [3.2 Crear un evento](./ex2.md)
+Próxima etapa: [3.2 Crimen de evento](./ex2.md)
 
-[Volver al flujo de usuario 3](./uc3.md)
+[Retornar para Fluxo de Usuário 3](./uc3.md)
 
-[Volver a todos los módulos](../../overview.md)
+[Retornar para Todos los Módulos](../../overview.md)

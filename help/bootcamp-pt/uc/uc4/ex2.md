@@ -5,103 +5,104 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '679'
-ht-degree: 3%
+source-wordcount: '701'
+ht-degree: 2%
 
 ---
 
-# 4.2 Conectar conjuntos de datos de Adobe Experience Platform en Customer Journey Analytics
+# 4.2 Conecte conjuntos de datos da Adobe Experience Platform no es Customer Journey Analytics
 
-## Objetivos
+## ones
 
-- Explicación de la interfaz de usuario de conexión de datos
-- Incluir datos de Adobe Experience Platform en CJA
-- Comprensión del ID de persona y la vinculación de datos
-- Descubra el concepto de transmisión de datos en Customer Journey Analytics
+- Preparación de una interfaz de usuario de conexão de datos
+- Traga os dados da Adobe Experience Platform para CJA
+- Entenda a ID da pessoa e a compilação de dados
+- Recorrido del cliente sobre el modo de concebir de streaming de dados
 
-## Conexión 4.2.1
+## 4.2.1 Conexão
 
-Vaya a [analytics.adobe.com](https://analytics.adobe.com) para acceder al Customer Journey Analytics.
+Aceses [analytics.adobe.com](https://analytics.adobe.com) para el Customer Journey Analytics.
 
-En la página de inicio del Customer Journey Analytics, vaya a **Conexiones**.
+Na inicial do Customer Journey Analytics, acesso **Conexiones**.
 
 ![demostración](./images/cja2.png)
 
-Aquí puede ver las diferentes conexiones hechas entre CJA y Platform. Estas conexiones tienen el mismo objetivo que los grupos de informes de Adobe Analytics. Sin embargo, la recopilación de los datos es totalmente diferente. Todos los datos proceden de conjuntos de datos de Adobe Experience Platform.
+Aqui você pode ver y todas como diferentes conexões feitas entre o CJA e a Plataforma. Essas conexõm o mesog. dos piezas de relacionórios No entanto, una coleta dos están en orden diferente. Todos os dados vêm de datasets de Adobe Experience Platform.
 
-Vamos a crear su primera conexión. Haga clic en **Crear nueva conexión**.
+Vamos criar sua primeira conexão. Clique **Crear nueva conexión**.
 
 ![demostración](./images/cja4.png)
 
-Verá el **Crear conexión** IU.
+Você representará una interfaz de usuario **Crear conexión** IU.
 
 ![demostración](./images/cja5.png)
 
-Ahora puede asignar un nombre a la conexión.
+Agora você pode dar um nome à sua conexão.
 
-Utilice esta convención de nombres: `yourLastName – Omnichannel Data Connection`.
+Use este modelo de nomenclatura: `yourLastName – Omnichannel Data Connection`.
 
 Ejemplo: `vangeluw - Omnichannel Data Connection`
 
-También debe seleccionar el simulador de pruebas correcto para utilizarlo. En el menú del simulador de pruebas, seleccione el simulador de pruebas, que debería `Bootcamp`. En este ejemplo, el simulador de pruebas que se va a usar es **Bootcamp**. Y también es necesario configurar la variable **Cantidad promedio de eventos diarios** a **menos de 1 millón**.
+Você ém deve selecionar o sandbox correto para usar. No hay espacio aislado para menús, selecione seu sandbox, que deve ser `Bootcamp`. Neste exemplo o sandbox a ser usado é o **Bootcamp**. E você também deve definir o **Cantidad promedio de eventos diarios** a **menos de 1 millón**.
 
 ![demostración](./images/cjasb.png)
 
-Después de seleccionar el simulador para pruebas, puede empezar a agregar conjuntos de datos a esta conexión. Haga clic en **Agregar conjuntos de datos**.
+Após selecionar seu sandbox, você pode cómçar a adiecionar datasets a esta conexão. Clique **Agregar conjuntos de datos**.
 
 ![demostración](./images/cjasb1.png)
 
-## 4.2.2 Seleccionar conjuntos de datos de Adobe Experience Platform
+## 4.2.2 Conjuntos de datos de Selecione da Adobe Experience Platform
 
-Buscar el conjunto de datos `Demo System - Event Dataset for Website (Global v1.1)`. Haga clic en **+** para agregar el conjunto de datos a esta conexión.
+Personalización de un conjunto de datos `Demo System - Event Dataset for Website (Global v1.1)`. Clique **+** para adicionar un conjunto de datos a esta conexão.
 
 ![demostración](./images/cja7.png)
 
-Ahora busque y marque las casillas de verificación `Demo System - Event Dataset for Voice Assistants (Global v1.1)` y `Demo System - Event Dataset for Call Center (Global v1.1)`.
+Agora pesquise e marque caixas de seleção `Demo System - Event Dataset for Voice Assistants (Global v1.1)` y `Demo System - Event Dataset for Call Center (Global v1.1)`.
 
-Entonces tendrás esto. Haga clic en **Siguiente**.
+Em seguida, você verá a tela abaixo. Clique **Siguiente**.
 
 ![demostración](./images/cja9.png)
 
-## 4.2.3 ID de persona y configuración de datos
+## 4.2.3 ID da pessoa e compilação de dados
 
-### ID de la persona
+### ID da pessoa
 
-El objetivo ahora es unir estos conjuntos de datos. Para cada conjunto de datos seleccionado, verá un campo llamado **ID de persona**. Cada conjunto de datos tiene su propio campo de ID de persona .
+O agets é juntar. Para cada dataset seleestudia, você y campo chamado **ID de persona**. Cada conjunto de datos tem seu próprio campo de ID de pessoa.
 
 ![demostración](./images/cja11.png)
 
-Como puede verse, la mayoría de ellos tienen el ID de persona seleccionado automáticamente. Esto se debe a que se selecciona un identificador principal en cada esquema de Adobe Experience Platform. A modo de ejemplo, este es el esquema de `Demo System - Event Schema for Call Center (Global v1.1)`, donde puede ver que el identificador principal está establecido en `phoneNumber`.
+Como você pode ver, una maioria se trata de ellos o ID da pessoa seleestudiamente automáticamente. Isso ocore em gingius principal é seleestudiada esquema un Adobe Experience Platform. Como exemplo, aquí está o esquema para `Demo System - Event Schema for Call Center (Global v1.1)`, onda você podo ver que o Identificador Primário está definido como `phoneNumber`.
 
 ![demostración](./images/cja13.png)
 
-Sin embargo, aún puede influir en qué identificador se utilizará para unir conjuntos de datos para la conexión. Puede utilizar cualquier identificador que esté configurado en el esquema vinculado al conjunto de datos. Haga clic en el menú desplegable para explorar los ID disponibles en cada conjunto de datos.
+No entanto, você ainda pode influenciar qual indicio usado será para compilar conjuntos de datos para sua conexão. Você pode usar qualquer configurado identificador no esquema vinculado ao seu dataset. Haga clic en el menú suspenso para explorar de los ID de os disponíveis em cada conjunto de datos.
 
 ![demostración](./images/cja14.png)
 
-Como se ha mencionado, puede establecer distintos ID de persona para cada conjunto de datos. Esto le permite unir diferentes conjuntos de datos de varios orígenes en CJA. Imaginen traer datos de NPS o encuestas que serían muy interesantes y útiles para entender el contexto y por qué algo ha pasado.
+Conforme mencionado, você pode definir diferentes IDs de pessoa para cada conjunto de datos. Isso reunir conjuntos diferentes de datos de múlti plas no CJA. Imaginen al trazador NPS ou pesqu dados de isa que serimuito interessantes e úteis para compreder o contexto de um aconteci mento.
 
-El nombre del campo ID de persona no es importante, siempre y cuando el valor de los campos ID de persona se corresponda. Digamos que tenemos `email` en un conjunto de datos y `emailAddress` en otro conjunto de datos definido como ID de persona. If `delaigle@adobe.com` es el mismo valor para el campo ID de persona en ambos conjuntos de datos, CJA podrá unir los datos.
+O nome do da pessoa não é importante, desde que el campo de campos ID da pessocampo a. Digamos que temos `email` conjunto de datos em um e `emailAddress` conjunto de datos em outro definido como ID da pessoa. Se `delaigle@adobe.com` tiver o mesmo valor para o campo ID da pessoa em ambos datasets, o CJA poderá compilar os dados.
 
-Actualmente hay otras limitaciones como unir el comportamiento anónimo a conocido. Consulte las preguntas frecuentes aquí: [Preguntas frecuentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=es).
+Atualmente, exstem algumas outras limitações, como compilar o comportamiento anônimo para conhecido. Consultar como perguntas frecuentes aqui: [Preguntas frecuentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=es).
 
-### Vinculación de datos mediante el ID de persona
 
-Ahora que comprende el concepto de vincular conjuntos de datos con el ID de persona, vamos a elegir `email` como ID de persona para cada conjunto de datos.
+### Compilando os hijos de la ID da pessoa
+
+Agora que compreende de compilar datos y que el voco de la persona escolher `email` como ID da pessoa para cada conjunto de datos.
 
 ![demostración](./images/cja15.png)
 
-Vaya a cada conjunto de datos para actualizar el ID de persona.
+Acesse cada dataset para atualizar o ID da pessoa.
 
 ![demostración](./images/cja12a.png)
 
-Rellene el campo ID de persona que elige la variable `email` en la lista desplegable.
+Agora preencha o campo ID da pessoa escolhendo o `email` na lista suspensa.
 
 ![demostración](./images/cja17.png)
 
-Una vez que haya vinculado los tres conjuntos de datos, estaremos listos para continuar.
+Depois de compilar os três datasets, estamos prontos para continuar.
 
 | Conjunto de datos | ID de la persona |
 | ----------------- |-------------| 
@@ -109,22 +110,21 @@ Una vez que haya vinculado los tres conjuntos de datos, estaremos listos para co
 | Sistema de demostración: conjunto de datos de evento para asistentes de voz (Global v1.1) | email |
 | Sistema de demostración: conjunto de datos de evento para el centro de llamadas (Global v1.1) | email |
 
-También debe asegurarse de que para cada conjunto de datos, estas opciones estén habilitadas:
+Você também precisa garantir que, para cada dataset, essas opções estejam habilitadas:
 
-- Importar todos los datos nuevos
-- Rellenar datos existentes
+- Importar todos los novos:
+- El presidente existentes
 
-Haga clic en **Agregar conjuntos de datos**.
+Clique **Agregar conjuntos de datos**.
 
 ![demostración](./images/cja16.png)
 
-Haga clic en **Guardar** y vaya al siguiente ejercicio.
-Después de crear el **Conexión** puede tardar unas horas en que los datos estén disponibles en CJA.
+Clique **Guardar** e vá para o próximo exercício. Depois de criar sua **Conexión**, pode levar algumas horas até que seus dados estejam disponíveis no CJA.
 
 ![demostración](./images/cja20.png)
 
-Paso siguiente: [4.3 Crear una vista de datos](./ex3.md)
+Próxima etapa: [4.3 Crie uma Visualização de Dados](./ex3.md)
 
-[Volver al flujo de usuario 4](./uc4.md)
+[Retornar para Fluxo de Usuário 4](./uc4.md)
 
-[Volver a todos los módulos](./../../overview.md)
+[Retornar para Todos los Módulos](./../../overview.md)
