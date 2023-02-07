@@ -6,9 +6,9 @@ audience: all/bootcamp-pt/
 index: false
 hide: true
 doc-type: multipage
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '160'
 ht-degree: 3%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 3%
    + [2.4 Sesión de prueba](/help/bootcamp-pt/uc/uc2/ex4.md)
    + [2.5 Instale uso de aplicativo móvel](/help/bootcamp-pt/uc/uc2/ex5.md)
    + [2.6 Personalización sin centro de llamadas](/help/bootcamp-pt/uc/uc2/ex6.md)
-+ 3 - Desarrollo digital digital {#uc3}
++ 3 -  digital {#uc3}
    + [Información general](/help/bootcamp-pt/uc/uc3/uc3.md)
    + [3.1 Uso de la señalización de aplicación móvel e acione um](/help/bootcamp-pt/uc/uc3/ex1.md)
    + [3.2 Crimen de evento](/help/bootcamp-pt/uc/uc3/ex2.md)

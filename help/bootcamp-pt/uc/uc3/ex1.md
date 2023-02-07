@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,7 @@ ht-degree: 0%
 
 ## Instale del aplicativo móvel
 
-Antes de instalar la aplicación, debe activar **Seguimiento** en su dispositivo iOS. Para ello, vaya a **Configuración** > **Privacidad y seguridad** > **Seguimiento** y asegúrese de que la opción **Permitir que las aplicaciones soliciten rastrear**.
-
-Antes de instalar o aplicativo, é necesariamente ário habilitar **Rastreamento** no hay iOS seguro. Para isso, acesse **Configurações** > **Privacidade e segurança** > **Rastreamento** e verifique una opção **Permitir los aplicativos solicitem o raamento**.
+Antes de instalar o aplicativo, é necesariamente ário habilitar o **Rastreamento** no hay iOS seguro. Para isso, acesse **Configurações** > **Privacidade e segurança** > **Rastreamento** e verifique una opção **Permitir los aplicativos solicitem o raamento**.
 
 ![DSN](./../uc3/images/app4.png)
 
@@ -26,7 +24,7 @@ Acesar a App Store da Apple e pesquise `aepmobile-bootcamp`. Clique **Instal
 
 ![DSN](./../uc3/images/app1.png)
 
-Depois que o aplicativo estiver instalado, clique em **Apertura**.
+Depois que o aplicativo estiver instalado, clique em **Abrir**.
 
 ![DSN](./../uc3/images/app2.png)
 
@@ -84,7 +82,7 @@ Você una página do produto **Café para ir** no aplicativo.
 
 ![DSN](./images/app20.png)
 
-Agora você irá simula evento de sinalização (baliza) em um local de armazenamento fuera de línea. O da simulação personalizar a experiência do cliente telas da loja. Para visualizar a experiência na loja, foi criada uada que mostrará de forma âmica como informaões relevantes para o hilo noa noja.
+Agora você irá simula evento de sinalização (baliza) em uma loja fuera de línea. O da simulação personalizar a experiência do cliente telas da loja. Para visualizar a experiência na loja, foi criada uada que mostrará de forma âmica como informaões relevantes para o hilo noa noja.
 
 Antes de continuar, abra esta página da Web em seu computador: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
 
@@ -96,7 +94,6 @@ Em seguida, retorne para una página inicial. Clique no ícone do **señalizaci�
 
 ![DSN](./images/app23.png)
 
-Entonces verás esto. Primero, seleccione **Señalización de pantalla de Bootcamp** y, a continuación, haga clic en la **entrada** botón. Esto le permite simular una entrada de señalización.
 Após essa etapa, o seguinte será exibido. Primeiro, selecione **Señalización de pantalla de Bootcamp** e clique no botão de **entrada**. Señalización Isso permitirá que você simule uma entrada de sinalização com.
 
 ![DSN](./images/app21.png)

@@ -5,7 +5,7 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Uma nova janela de evento vazia irá aparecer.
 
 ![ACOP](./images/emptyevent1.png)
 
-Em primeiro lugar, dê um nome ao seu evento como, por ejemplo: `yourLastNameAccountCreationEvent` e adicione uma describe ção como, por ejemplo: `Account Creation Event`.
+Em primeiro lugar, dê um nome ao seu evento como, por ejemplo: `seuSobrenomeAccountCreationEvent` e adicione uma describe ção como, por ejemplo: `Account Creation Event`.
 
 ![ACOP](./images/eventdescription.png)
 
@@ -79,7 +79,7 @@ Clique no seu evento novamente para que el abrique es uma vez a tela **Editar 
 ![ACOP](./images/viewevent.png)
 
 Agora vocvea ê um exemplo da carga útil.
-Seu evento tem umID de orquestração único, que você pode encontrar rolando baixo nessa útil carga útil até visualiza `_experience.campaign.orchestration.eventID`.
+Seu evento tem umID de orquestração único, que você pode encontrar rolando baixo nessa carga útil até visualizar `_experience.campaign.orchestration.eventID`.
 
 ![ACOP](./images/payloadeventID.png)
 

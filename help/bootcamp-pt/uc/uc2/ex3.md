@@ -5,9 +5,9 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '934'
 ht-degree: 3%
 
 ---
@@ -34,7 +34,7 @@ Você será uma tela de vana jornada.
 
 ![ACOP](./images/journeyempty.png)
 
-No exercício anterior, você criou um novo **Evento**. Você nomeou o evento `yourLastNameAccountCreationEvent` e substituiu `yourLastName` pelo seu sobrenome. Este foi o resultado da criação do Evento:
+No exercício anterior, você criou um novo **Evento**. Você nomeou o evento `seuSobrenomeAccountCreationEvent` e substituiu `seuSobrenome` pelo seu sobrenome. Este foi o resultado da criação do Evento:
 
 ![ACOP](./images/eventdone.png)
 
@@ -60,9 +60,7 @@ Como terceira etapa da jornada, você deve adiuma ação **Correo electrónico**
 
 ![ACOP](./images/journeyactions.png)
 
-Configure las variables **Categoría** a **Marketing** y seleccione una superficie de correo electrónico que le permita enviar correos electrónicos. En este caso, la superficie de correo electrónico que se va a seleccionar es **Correo electrónico**. Asegúrese de que las casillas de verificación de **Clics en correos electrónicos** y **aperturas por correo electrónico** están activadas.
-
-Defina a **Categoría** como **Marketing** e selecione uma superfície de e-mail que permita o envio de e-mail. Nesse caso, un superfície e-mail a ser selecionada e-mail. Certifique-se de que as caixas de seleção **Clics en correos electrónicos** e **aperturas por correo electrónico** estejam marcadas.
+Defina a **Categoría** como **Marketing** e selecione uma **superficie de correo electrónico** que permita envio de correo electrónico. Nesse caso, **superficie de correo electrónico** un usuario selecionada e-mail. Certifique-se de que as caixas de seleção **Clics en correos electrónicos** e **aperturas por correo electrónico** estejam marcadas.
 
 ![ACOP](./images/journeyactions1.png)
 
@@ -88,11 +86,11 @@ Na área de texto, orden de inclusión **Olá**
 
 ![Journey Optimizer](./images/msg6.png)
 
-A linha de assunto ainda não está pronta. Em seguida, você precisa trazer o token de personação para o **Nombre** que está armazencadem `profile.person.name.firstName`. No menú à esquerda, rol para baixo para encontrar o elemento **Persona** e clique na seta um nível mais para la pena.
+A linha de assunto ainda não está pronta. Em seguida, você precisa trazer o token de personação para o **Nombre** que está armazencadem `profile.person.name.firstName`. No menú à esquerda, rol para baixo para encontrar o elemento **Persona** e clique na seta para visualizar mais campos
 
 ![Journey Optimizer](./images/msg7.png)
 
-Agora encontre o elemento **Nombre completo** e clique na seta um nível mais para la pena.
+Agora encontre o elemento **Nombre completo** e clique na seta para visualizar mais campos.
 
 ![Journey Optimizer](./images/msg8.png)
 
@@ -100,7 +98,7 @@ Por fim, localiza a campo **Nombre** e clique no **+**  ao lado dele. Você pa
 
 ![Journey Optimizer](./images/msg9.png)
 
-Em seguida, adicione o texto **¡agradecemos a sua inscrição!** Clique em Salvar. . Clique **Guardar**.
+Em seguida, adicione o texto **¡agradecemos a sua inscrição!**. Clique **Guardar**.
 
 ![Journey Optimizer](./images/msg10.png)
 
@@ -118,7 +116,7 @@ Clique **Importar HTML**.
 
 ![Journey Optimizer](./images/msg12.png)
 
-Arquivo **mailtemplatebootcamp.html**, que você pode baixa [here](../../assets/html/mailtemplatebootcamp.html.zip). Clique em Importar.
+Arquivo **mailtemplatebootcamp.html**, que você pode baixa [aqui](../../assets/html/mailtemplatebootcamp.html.zip). Clique em Importar.
 
 ![Journey Optimizer](./images/msg13.png)
 
@@ -130,7 +128,7 @@ Vamos personalizar correo electrónico. Clique ao lado do texto **Olá** e, em s
 
 ![Journey Optimizer](./images/msg35.png)
 
-Em seguida, você precisa trazer o token de personação **Nombre** que está armazencadem `profile.person.name.firstName`. Sin menú, localice o elemento **Persona**, faça uma busca detal no elemento **Nombre completo** e clique no ícone **+** párr. **Nombre** ao editor de expresión.
+Em seguida, você precisa trazer o token de personação **Nombre** que está armazencadem `profile.person.name.firstName`. Sin menú, localice o elemento **Persona**, faça uma busca detal no elemento **Nombre completo** e clique no ícone **+** párr. **Nombre** editor ao.
 
 Clique **Guardar**.
 
@@ -162,7 +160,7 @@ Você ainda precisa dar um Nome en una jornada parcial. Você pode fazer isso cl
 
 ![ACOP](./images/journeyname.png)
 
-Você ainda precisa dar um Nome en una jornada parcial. Você pode fazer isso clicando no ícone `yourLastName - Account Creation Journey`. Clique **OK** para salvar como mudanças.
+Você pode fazer isso clicando no elemento click ningún elemento &quot;Nombre&quot; e inserindo o seguinte nome `yourLastName - Account Creation Journey`. Clique **OK** para salvar como mudanças.
 
 ![ACOP](./images/journeyname1.png)
 

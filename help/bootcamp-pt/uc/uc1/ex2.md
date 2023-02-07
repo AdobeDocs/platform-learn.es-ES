@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '537'
 ht-degree: 2%
 
 ---
@@ -38,7 +38,7 @@ No hay dolor Visualizador de las páginas web del consejo, vocero pode encontrar
 
 ![Perfil del cliente](./images/identities.png)
 
-No hay dolor Visualizador de la memoria agora você pode ver esta identidade:
+No hay dolor Visualizador de las opiniones de agora você pode ver ser identidade a seguidor:
 
 | Área de nombres | Identidad |
 |:-------------:| :---------------:|

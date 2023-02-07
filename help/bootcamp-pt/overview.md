@@ -2,9 +2,9 @@
 title: Bootcamp de Experience Makers - Brasil
 description: Punto de partida para los participantes del Bootcamp de Experience Makers
 doc-type: multipage-overview
-source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '777'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Muitas empresas não cientes do atrito que existe na durante una jornada de clientes, consecuencias de uma abord fragmentada e não ao orquestrar a comunicão com com o cliente. Dados, perfil e conteúdo precisam estar perfeitamente alinhados para projetar e oferecer experiênais ao consumidor.
 
-Participe en el Botcamp para uma abord agem baseada em plataforma pode ajudar na obtenção dos insights necessary para identificar e remover pontos de atrito para aprimorar a una jornada do seu cliente.
+Participe en el Botcamp para uma agem baseada em Experience Platform pode ajudar obtenção dos ideas necesarias para identificar y remover pontos de atrimorar a una jornada abord sida cliente.
 
-A personação em el elemento cómça com a compreensão do pode ser morado e, para isso, uma visão em tempo real do seu cliente essencial. Información sobre el levam à ação, o que leva a mais. Un abord agem exclusiva da Adobe focada na plataforma fornece como ferramentas para, além de impulsos avanços tecnológicos, impactar sua organização, sua equipe sua capacidade de oferecer uma experiência holística ao cliente em uma experiência do específica por canal.
+A personação em el elemento cómça com a compreensão do pode ser morado e, para isso, uma visão em tempo real do seu cliente essencial. Información sobre el levam à ação, o que leva a mais. Un abord agem exclusiva da Adobe focada na Experience Platform fornece ferramentas para, além de impulsos avanços tecnológicos, impactar sua organização, sua equipe sua capacidade de oferecer uma experiência holística ao canal em uma experiência do específica por.
 
 >[!VIDEO](https://video.tv.adobe.com/v/344962?quality=12&enable=on)
 

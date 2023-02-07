@@ -5,9 +5,9 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Inicio de sesión en Facebook en Adobe Journey Optimizer access a [Adobe Exper
 
 ![ACOP](./images/acophome.png)
 
-Você será rediredeterminado para a **Página principal** sin Journey Optimizer. Primeiro verifique se você está está o sandbox correto. O nome do sandbox que deve ser usado `Bootcamp`. Para alternar de um sandbox para outro, clique em **Prod** e selecione o sandbox na lista. Neste exemplo o nome do sandbox é **Bootcamp2**. Você estará na visualização da **Página principal** do seu sandbox `Bootcamp`.
+Você será rediredeterminado para a **Página principal** sin Journey Optimizer. Primeiro verifique se você está está o sandbox correto. O nome do sandbox que deve ser usado `Bootcamp`. Para alternar de um sandbox para outro, clique em **Prod** e selecione o sandbox na lista. Neste exemplo o nome do sandbox é **Bootcamp**. Você estará na visualização da **Página principal** do seu sandbox `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
@@ -68,7 +68,7 @@ Clique no seu evento novamente para la protección de la información **Editar
 
 ![ACOP](./images/viewevent.png)
 
-Agora vocvea ê um exemplo da carga útil.
+Agora vocserá um exemplo do payload anticipado.
 Seu evento tem umID de orquestração único, que você pode encontrar rolando baixo nessa utilidad útil visual `_experience.campaign.orchestration.eventID`.
 
 ![ACOP](./images/payloadeventID.png)
