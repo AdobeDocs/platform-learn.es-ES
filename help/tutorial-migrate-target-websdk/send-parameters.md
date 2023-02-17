@@ -1,7 +1,7 @@
 ---
 title: Enviar parámetros | Migración de Target de at.js 2.x al SDK web
 description: Obtenga información sobre cómo enviar parámetros de mbox, perfil y entidad a Adobe Target mediante el SDK web de Experience Platform.
-source-git-commit: 8209b13b745dbea418003b133a6834825947950e
+source-git-commit: cc958fdbf438943ba4fd5ca8974a8408b2bf624f
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 0%
@@ -118,7 +118,7 @@ La tabla siguiente describe cómo se reasignarán los parámetros de ejemplo med
 | `siteSection` | `xdm.web.webPageDetails.siteSection` | Todos los parámetros de mbox de Target deben pasarse como parte del `xdm` y se ajustan a un esquema utilizando la clase XDM ExperienceEvent . Los parámetros de mbox no se pueden pasar como parte del `data` objeto. |
 | `profile.gender` | `data.__adobe.target.profile.gender` | Todos los parámetros de perfil de Target deben pasarse como parte del `data` con el prefijo `profile.` para que se asigne correctamente. |
 | `user.categoryId` | `data.__adobe.target.user.categoryId` | Parámetro reservado utilizado para la función de afinidad de la categoría de Target que debe pasarse como parte del `data` objeto. |
-| `entity.id` | `data.__adobe.target.entity.id` <br>OR<br> `xdm.productListItems[0].SKU` | Los ID de entidad se utilizan para los contadores de comportamiento de Recommendations de Target. Estos ID de entidad se pueden pasar como parte del `data` o se asigna automáticamente desde el primer elemento del `xdm.productListItems` matriz si su implementación utiliza ese grupo de campos. |
+| `entity.id` | `data.__adobe.target.entity.id` <br>O<br> `xdm.productListItems[0].SKU` | Los ID de entidad se utilizan para los contadores de comportamiento de Recommendations de Target. Estos ID de entidad se pueden pasar como parte del `data` o se asigna automáticamente desde el primer elemento del `xdm.productListItems` matriz si su implementación utiliza ese grupo de campos. |
 | `entity.categoryId` | `data.__adobe.target.entity.categoryId` | Los ID de categoría de entidad se pueden pasar como parte del `data` objeto. |
 | `entity.customEntity` | `data.__adobe.target.entity.customEntity` | Los parámetros de entidad personalizados se utilizan para actualizar el catálogo de productos de Recommendations. Estos parámetros personalizados deben pasarse como parte del `data` objeto. |
 | `cartIds` | `data.__adobe.target.cartIds` | Se utiliza para los algoritmos de recomendaciones basadas en el carro de compras de Target. |
@@ -126,7 +126,7 @@ La tabla siguiente describe cómo se reasignarán los parámetros de ejemplo med
 | `mbox3rdPartyId` | Se establece en el mapa de identidad. Consulte [Sincronización de perfiles con un ID de cliente](#synching-profiles-with-a-customer-id) | Se utiliza para sincronizar perfiles de Target entre dispositivos y atributos del cliente. El espacio de nombres que se va a usar para el ID de cliente debe especificarse en la variable [Configuración de destino del conjunto de datos](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
 | `orderId` | `xdm.commerce.order.purchaseID` | Se utiliza para identificar un pedido único para el seguimiento de conversión de Target. |
 | `orderTotal` | `xdm.commerce.order.priceTotal` | Se utiliza para rastrear totales de pedidos para los objetivos de optimización y conversión de Target. |
-| `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>OR<br> `xdm.productListItems[0-n].SKU` | Se utiliza para el seguimiento de conversión de Target y los algoritmos de recomendaciones. Consulte la [parámetros de entidad](#entity-parameters) para obtener más información. |
+| `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>O<br> `xdm.productListItems[0-n].SKU` | Se utiliza para el seguimiento de conversión de Target y los algoritmos de recomendaciones. Consulte la [parámetros de entidad](#entity-parameters) para obtener más información. |
 | `mboxPageValue` | `data.__adobe.target.mboxPageValue` | Se usa para la variable [puntuación personalizada](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html) objetivo de la actividad. |
 
 {style=&quot;table-layout:auto&quot;}
@@ -225,7 +225,7 @@ alloy("sendEvent", {
     "__adobe": {
       "target": {
         "entity.id": "SKU-00001-LARGE",
-        "entity.categoryId": "clothing,shirts"
+        "entity.categoryId": "clothing,shirts",
         "entity.customEntity": "some value",
         "cartIds": "SKU-00002,SKU-00003",
         "excludedIds": "SKU-00001-SMALL"
