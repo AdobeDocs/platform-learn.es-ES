@@ -1,9 +1,9 @@
 ---
 title: Actualización de audiencias y scripts de perfil | Migración de Target de at.js 2.x al SDK web
 description: Obtenga información sobre cómo actualizar las audiencias y los scripts de perfil de Adobe Target para su compatibilidad con el SDK web de Experience Platform.
-source-git-commit: 8209b13b745dbea418003b133a6834825947950e
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Todas las audiencias que utilicen parámetros de mbox personalizados deben actua
 
 Un método para garantizar la compatibilidad con at.js y con el SDK web de plataforma es actualizar cualquier audiencia relevante para que `OR` se utilizan las condiciones siguientes:
 
-![Cómo ver la actualización de una audiencia de Target para la compatibilidad con el SDK web de la plataforma](assets/target-audience-update.png)
+![Cómo ver la actualización de una audiencia de Target para la compatibilidad con el SDK web de la plataforma](assets/target-audience-update.png){zoomable=&quot;yes&quot;}
 
 ## Edición de scripts de perfil
 

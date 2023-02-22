@@ -2,9 +2,9 @@
 title: Procesar actividades de VEC | Migración de Target de at.js 2.x al SDK web
 description: Obtenga información sobre cómo recuperar y aplicar actividades del compositor de experiencias visuales con una implementación de SDK web de Adobe Target.
 feature: Visual Experience Composer (VEC),Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
-source-git-commit: 7e6aa296429844552ad164ba209a504ddc908571
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '812'
 ht-degree: 5%
 
 ---
@@ -32,7 +32,7 @@ La extensión del explorador de Visual Editing Helper funciona con sitios web qu
 1. Vaya a la [Extensión del explorador Adobe Experience Cloud Visual Editing Helper en Chrome Web Store](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca).
 1. Haga clic en Agregar a **Chrome** > **Agregar extensión**.
 1. Abra el VEC en Target.
-1. Para utilizar la extensión, haga clic en el icono de extensión del explorador de Visual Editing Helper ![Icono de extensión de edición visual](assets/VEC-Helper.png) en la barra de herramientas del explorador Chrome mientras está en el modo VEC o QA.
+1. Para utilizar la extensión, haga clic en el icono de extensión del explorador de Visual Editing Helper ![Icono de extensión de edición visual](assets/VEC-Helper.png){zoomable=&quot;yes&quot;} en la barra de herramientas del explorador Chrome mientras está en modo VEC o QA.
 
 La Ayuda de edición visual se activa automáticamente cuando se abre un sitio web en el VEC de Target para la creación de contenido. La extensión no tiene ninguna configuración condicional. La extensión gestiona todas las configuraciones automáticamente, incluida la configuración de cookies de SameSite.
 
@@ -44,25 +44,35 @@ Una vez configurado el SDK web de Platform en la página, puede solicitar conten
 
 Si la implementación de at.js tiene la variable `pageLoadEnabled` configurar como `true` que habilita el procesamiento automático de actividades basadas en VEC, entonces se ejecuta lo siguiente `sendEvent` con el SDK web de Platform:
 
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
+
 ```Javascript
 alloy("sendEvent", {
   "renderDecisions": true
 });
 ```
 
->[!TIP]
->
-> Al utilizar la función de etiquetas (anteriormente Launch) para implementar el SDK web, los comandos &quot;sendEvent&quot; para las actividades del VEC se pueden implementar en una regla mediante la función [!UICONTROL Enviar evento] tipo de acción con la variable [!UICONTROL Procesar decisiones de personalización visual] seleccionada.
+>[!TAB Etiquetas]
 
-Cuando el SDK web de Platform procesa una actividad en la página con `renderDecisions` configure como `true`, se activa automáticamente una llamada de notificación adicional para incrementar una impresión y atribuir al visitante a la actividad. Esta llamada utiliza un tipo de evento con el valor `decisioning.propositionDisplay`.
+En las etiquetas , use la variable [!UICONTROL Enviar evento] tipo de acción con la variable [!UICONTROL Procesar decisiones de personalización visual] opción seleccionada:
 
-![Llamada del SDK web de plataforma que incrementa una impresión de Target](assets/target-impression-call.png)
+![Enviar un evento con Personalizaciones de renderización configuradas como true en etiquetas](assets/vec-sendEvent-renderTrue.png){zoomable=&quot;yes&quot;}
+
+>[!ENDTABS]
+
+<!--
+When the Platform Web SDK renders an activity to the page with `renderDecisions` set to `true`, an additional notification call fires automatically to increment an impression and attribute the visitor to the activity. This call uses an event type with the value `decisioning.propositionDisplay`.
+
+![Platform Web SDK call incrementing a Target impression](assets/target-impression-call.png){zoomable="yes"}
+-->
 
 ## Solicitar y aplicar contenido bajo demanda
 
-Algunas implementaciones de Target at.js pueden tener `pageLoadEnabled` configure como `false` y, en su lugar, utilice el `getOffers()` para ejecutar una función `pageLoad` solicitud. Este tipo de configuración se utiliza si la implementación requiere un procesamiento adicional de la variable `getOffers()` antes de aplicar contenido a la página o para solicitar contenido para varias ubicaciones en una sola llamada.
+Algunas implementaciones de Target requieren cierto procesamiento personalizado de las ofertas de VEC antes de aplicarlas a la página. O bien, solicitan varias ubicaciones en una sola llamada. En una implementación de at.js, esto se puede hacer estableciendo `pageLoadEnabled` a `false` y utilizando `getOffers()` para ejecutar una función `pageLoad` solicitud.
 
-El siguiente código utiliza `getOffers()` y `applyOffers()` para aplicar actividades basadas en VEC bajo demanda en lugar de automáticamente al cargar la biblioteca.
++++ Ejemplo de at.js con `getOffers()` y `applyOffers()` para procesar manualmente actividades basadas en VEC
 
 ```JavaScript
 adobe.target.getOffers({
@@ -75,7 +85,11 @@ adobe.target.getOffers({
 then(response => adobe.target.applyOffers({ response: response }));
 ```
 
-El SDK web de Platform no tiene un `pageLoad` evento. Todas las solicitudes de contenido de Target se controlan con la variable `decisionScopes` con la opción `sendEvent` comando. La variable `__view__` el ámbito de aplicación cumple el objetivo del `pageLoad` solicitud. SDK web de plataforma equivalente `sendEvent` sería:
++++
+
+El SDK web de Platform no tiene un `pageLoad` evento. Todas las solicitudes de contenido de Target se controlan con la variable `decisionScopes` con la opción `sendEvent` comando. La variable `__view__` el ámbito de aplicación cumple el objetivo del `pageLoad` solicitud.
+
++++ SDK web de plataforma equivalente `sendEvent` enfoque:
 
 1. Ejecutar un `sendEvent` que incluye el comando `__view__` ámbito de decisión
 1. Aplique el contenido devuelto a la página con la variable `applyPropositions` command
@@ -110,6 +124,8 @@ alloy("sendEvent", {
 });
 ```
 
++++
+
 >[!NOTE]
 >
 >Es posible [modificaciones de renderización manual](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html#manually-rendering-content) realizado en el Compositor de experiencias visuales. El procesamiento manual de modificaciones basadas en VEC no es común. Compruebe si la implementación de at.js utiliza la variable `getOffers()` para ejecutar manualmente un Target `pageLoad` solicitud sin usar `applyOffers()` para aplicar el contenido a la página.
@@ -118,7 +134,9 @@ El SDK web de Platform ofrece a los desarrolladores una buena flexibilidad para 
 
 ## Ejemplo de implementación
 
-La implementación básica del SDK web de Platform ya ha finalizado. Nuestra página de ejemplo básica con el procesamiento automático de contenido de Target habilitado debería tener este aspecto:
+La implementación básica del SDK web de Platform ya ha finalizado.
+
++++Página de ejemplo del SDK web con representación automática del contenido de Target:
 
 ```HTML
 <!doctype html>
@@ -179,6 +197,8 @@ La implementación básica del SDK web de Platform ya ha finalizado. Nuestra pá
 </body>
 </html>
 ```
+
++++
 
 >[!TIP]
 >

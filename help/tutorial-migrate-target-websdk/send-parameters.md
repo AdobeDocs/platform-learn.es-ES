@@ -1,9 +1,9 @@
 ---
 title: Enviar parámetros | Migración de Target de at.js 2.x al SDK web
 description: Obtenga información sobre cómo enviar parámetros de mbox, perfil y entidad a Adobe Target mediante el SDK web de Experience Platform.
-source-git-commit: 10dbc8ecbfee511a97e64cb571c43dbf05e3076c
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '1663'
+source-wordcount: '1652'
 ht-degree: 1%
 
 ---
@@ -124,7 +124,7 @@ La tabla siguiente describe cómo se reasignarán los parámetros de ejemplo med
 | `entity.customEntity` | `data.__adobe.target.entity.customEntity` | Los parámetros de entidad personalizados se utilizan para actualizar el catálogo de productos de Recommendations. Estos parámetros personalizados deben pasarse como parte del `data` objeto. |
 | `cartIds` | `data.__adobe.target.cartIds` | Se utiliza para los algoritmos de recomendaciones basadas en el carro de compras de Target. |
 | `excludedIds` | `data.__adobe.target.excludedIds` | Se utiliza para evitar que los ID de entidad específicos se devuelvan en un diseño de recomendaciones. |
-| `mbox3rdPartyId` | Se establece en el mapa de identidad. Consulte [Sincronización de perfiles con un ID de cliente](#synching-profiles-with-a-customer-id) | Se utiliza para sincronizar perfiles de Target entre dispositivos y atributos del cliente. El espacio de nombres que se va a usar para el ID de cliente debe especificarse en la variable [Configuración de destino del conjunto de datos](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
+| `mbox3rdPartyId` | Se establece en el mapa de identidad. | Se utiliza para sincronizar perfiles de Target entre dispositivos y atributos del cliente. El espacio de nombres que se va a usar para el ID de cliente debe especificarse en la variable [Configuración de destino del conjunto de datos](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
 | `orderId` | `xdm.commerce.order.purchaseID` | Se utiliza para identificar un pedido único para el seguimiento de conversión de Target. |
 | `orderTotal` | `xdm.commerce.order.priceTotal` | Se utiliza para rastrear totales de pedidos para los objetivos de optimización y conversión de Target. |
 | `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>O<br> `xdm.productListItems[0-n].SKU` | Se utiliza para el seguimiento de conversión de Target y los algoritmos de recomendaciones. Consulte la [parámetros de entidad](#entity-parameters) para obtener más información. |
@@ -134,7 +134,7 @@ La tabla siguiente describe cómo se reasignarán los parámetros de ejemplo med
 
 ## Parámetros personalizados
 
-Todos los parámetros personalizados de mbox deben pasarse como datos XDM con la variable `sendEvent` comando. Es importante asegurarse de que el esquema XDM incluya todos los puntos de datos necesarios para la implementación de Target.
+Los parámetros de mbox personalizados deben pasarse como datos XDM con la variable `sendEvent` comando. Es importante asegurarse de que el esquema XDM incluya todos los campos necesarios para la implementación de Target.
 
 Ejemplo de at.js con `targetPageParams()`:
 
@@ -359,9 +359,9 @@ E incluya su [!UICONTROL Objeto XDM] en su [!UICONTROL Enviar evento] [!UICONTRO
 >La variable `productPurchasedId` también se puede pasar como una lista de ID de entidad separados por comas en la sección `data` objeto.
 
 
-## Sincronización de perfiles con un ID de cliente
+## ID de cliente (mbox3rdPartyId)
 
-Target permite sincronizar perfiles entre dispositivos y sistemas con un solo ID de cliente. Con at.js, esto podría establecerse como el `mbox3rdPartyId` en la solicitud de Target o como el primer ID de cliente enviado al servicio de ID de Experience Cloud. A diferencia de at.js, una implementación del SDK web de plataforma le permite especificar qué ID de cliente utilizar como `mbox3rdPartyId` si hay varios. Por ejemplo, si su empresa tiene un ID de cliente global y un ID de cliente independiente para diferentes líneas de negocio, puede configurar qué ID debe utilizar Target.
+Target permite sincronizar perfiles entre dispositivos y sistemas utilizando un solo ID de cliente. Con at.js, esto podría establecerse como el `mbox3rdPartyId` en la solicitud de Target o como el primer ID de cliente enviado al servicio de ID de Experience Cloud. A diferencia de at.js, una implementación del SDK web de plataforma le permite especificar qué ID de cliente utilizar como `mbox3rdPartyId` si hay varios. Por ejemplo, si su empresa tiene un ID de cliente global y un ID de cliente independiente para diferentes líneas de negocio, puede configurar qué ID debe utilizar Target.
 
 Hay que seguir algunos pasos para configurar la sincronización de ID para los casos de uso de Target entre dispositivos y Atributos del cliente:
 
@@ -411,7 +411,7 @@ La variable [!UICONTROL Objeto XDM] luego se incluye en la variable [!UICONTROL 
 
 ![Inclusión de un elemento de datos de objeto XDM en un evento Send](assets/params-tags-sendEvent-xdm.png){zoomable=&quot;yes&quot;}
 
-En el servicio Adobe Target de su almacén de datos, asegúrese de establecer la variable [!UICONTROL Espacio de nombres de ID de terceros de Target] al mismo espacio de nombres utilizado en la variable [!UICONTROL Mapa de identidad] elemento de datos
+En el servicio Adobe Target de su almacén de datos, asegúrese de establecer la variable [!UICONTROL Espacio de nombres de ID de terceros de Target] al mismo espacio de nombres utilizado en la variable [!UICONTROL Mapa de identidad] elemento de datos:
 ![Establezca el área de nombres del ID de terceros de Target en el conjunto de datos](assets/params-tags-customerIdNamespaceInDatastream.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]

@@ -1,9 +1,9 @@
 ---
 title: Reemplazar la biblioteca | Migración de Target de at.js 2.x al SDK web
 description: Obtenga información sobre cómo migrar una implementación de Adobe Target de at.js 2.x al SDK web de Adobe Experience Platform. Los temas incluyen descripción general de la biblioteca, diferencias de implementación y otras llamadas importantes.
-source-git-commit: 51958a425c946fc806d38209ac4b0b4fa17945e8
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1646'
 ht-degree: 1%
 
 ---
@@ -64,7 +64,7 @@ Supongamos que tenemos una implementación de Target sencilla con at.js:
 * Un fragmento de preocultación para mitigar el parpadeo
 * La biblioteca at.js de Target se carga asincrónicamente con la configuración predeterminada para solicitar y procesar automáticamente actividades:
 
-+++Véase ejemplo de código HTML de un at.js
++++Ejemplo de at.js en una implementación de una página de HTML
 
 ```HTML
 <!doctype html>
@@ -201,21 +201,17 @@ Adobe recomienda implementar el SDK web de Platform asincrónicamente para obten
 
 El estilo de preocultación para implementaciones sincrónicas se puede configurar usando la variable [`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#prehidingStyle) . La configuración del SDK web de plataforma se explica en la siguiente sección.
 
->[!TIP]
->
-> Al utilizar la función de etiquetas (anteriormente Launch) para implementar el SDK web, el estilo de preocultación se puede editar en la configuración de la extensión del SDK web de Adobe Experience Platform.
-
 Para obtener más información sobre cómo el SDK web de Platform puede administrar el parpadeo, consulte la sección de la guía:  [gestión del parpadeo para experiencias personalizadas](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/manage-flicker.html)
 
 ## Configuración del SDK web de Platform
 
-El SDK web de Platform debe configurarse en cada carga de página. La variable `configure` siempre debe ser el primer comando de SDK llamado . El siguiente ejemplo supone que todo el sitio se está actualizando al SDK web de Platform en una sola implementación:
+El SDK web de Platform debe configurarse en cada carga de página. El siguiente ejemplo supone que todo el sitio se está actualizando al SDK web de Platform en una sola implementación:
 
 >[!BEGINTABS]
 
 >[!TAB JavaScript]
 
-La variable `edgeConfigId` es la variable [!UICONTROL ID de almacén de datos]
+La variable `configure` siempre debe ser el primer comando de SDK llamado . La variable `edgeConfigId` es la variable [!UICONTROL ID de almacén de datos]
 
 ```JavaScript
 alloy("configure", {
@@ -228,7 +224,7 @@ alloy("configure", {
 
 En las implementaciones de etiquetas, muchos campos se rellenan automáticamente o se pueden seleccionar desde los menús desplegables. Tenga en cuenta que diferentes plataformas [!UICONTROL entornos limitados] y [!UICONTROL datastreams] se puede seleccionar para cada entorno. El conjunto de datos cambiará según el estado de la biblioteca de etiquetas en el proceso de publicación.
 
-![configuración de la extensión de etiqueta de SDK web](assets/tags-config.png)
+![configuración de la extensión de etiqueta de SDK web](assets/tags-config.png){zoomable=&quot;yes&quot;}
 >[!ENDTABS]
 
 Si planea migrar de at.js al SDK web de plataforma página por página, se necesitan las siguientes opciones de configuración:
@@ -247,9 +243,9 @@ alloy("configure", {
 });
 ```
 
->[!TAB etiquetas]
+>[!TAB Etiquetas]
 
-![configuración de las opciones de migración de la extensión de etiqueta SDK web](assets/tags-config-migration.png)
+![configuración de las opciones de migración de la extensión de etiqueta SDK web](assets/tags-config-migration.png){zoomable=&quot;yes&quot;}
 >[!ENDTABS]
 
 A continuación se describen las opciones de configuración importantes relacionadas con Target:
@@ -263,19 +259,15 @@ A continuación se describen las opciones de configuración importantes relacion
 | `thirdPartyCookiesEnabled` | Habilita la configuración de cookies de terceros de Adobe. El SDK puede mantener el ID de visitante en un contexto de terceros para permitir que se use el mismo ID de visitante en todos los sitios. Utilice esta opción si tiene varios sitios; sin embargo, a veces esta opción no es deseada por motivos de privacidad. | `true` |
 | `prehidingStyle` | Se utiliza para crear una definición de estilo CSS que oculte áreas de contenido de su página web mientras se carga contenido personalizado desde el servidor. Esto solo se utiliza con implementaciones sincrónicas del SDK. | `body { opacity: 0 !important }` |
 
->[!NOTE]
->
->`thirdPartyCookiesEnabled` se puede configurar como `true` para mantener un perfil de visitante de Target coherente en varios dominios. Esta opción debe configurarse como `false` o se omite a menos que sea necesaria la persistencia del perfil del visitante de varios dominios.
-
->[!TIP]
->
-> Al utilizar la función de etiquetas (anteriormente Launch) para implementar el SDK web, estas configuraciones se pueden administrar en la configuración de la extensión del SDK web de Adobe Experience Platform.
-
 Para obtener una lista completa de las opciones, consulte la [configuración del SDK web de Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=es) guía.
 
 ## Ejemplo de implementación
 
 Una vez que el SDK web de Platform esté correctamente colocado, la página de ejemplo tendría este aspecto.
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```HTML
 <!doctype html>
@@ -332,9 +324,61 @@ Una vez que el SDK web de Platform esté correctamente colocado, la página de e
 </html>
 ```
 
->[!TIP]
->
-> Al utilizar la función de etiquetas (anteriormente Launch) para implementar el SDK web, el código incrustado de etiquetas sustituye las secciones &quot;Platform Web SDK base code&quot;, &quot;Platform Web SDK loaded asíncronamente&quot; y &quot;Configure Platform Web SDK&quot; anteriores.
+>[!TAB Etiquetas]
+
+Código de página:
+
+```HTML
+<!doctype html>
+<html>
+<head>
+  <title>Example page</title>
+  <!--Data Layer to enable rich data collection and targeting-->
+  <script>
+    var digitalData = { 
+      // Data layer information goes here
+    };
+  </script>
+
+  <!--Third party libraries that may be used by Target offers and modifications-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
+  <script>
+    !function(e,a,n,t){var i=e.head;if(i){
+    if (a) return;
+    var o=e.createElement("style");
+    o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
+    (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
+  </script>
+
+    <!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN DEVELOPMENT ENVIRONMENT-->
+    <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
+    <!--/Tags Header Embed Code-->
+</head>
+<body>
+  <h1 id="title">Home Page</h1><br><br>
+  <p id="bodyText">Navigation</p><br><br>
+  <a id="home" class="navigationLink" href="#">Home</a><br>
+  <a id="pageA" class="navigationLink" href="#">Page A</a><br>
+  <a id="pageB" class="navigationLink" href="#">Page B</a><br>
+  <a id="pageC" class="navigationLink" href="#">Page C</a><br>
+  <div id="homepage-hero">Homepage Hero Banner Content</div>
+</body>
+</html>
+```
+
+En las etiquetas , agregue la extensión web SDK de Adobe Experience Platform:
+
+![Añadir la extensión del SDK web de Adobe Experience Platform](assets/library-tags-addExtension.png){zoomable=&quot;yes&quot;}
+
+Y agregue las configuraciones deseadas:
+![configuración de las opciones de migración de la extensión de etiqueta SDK web](assets/tags-config-migration.png){zoomable=&quot;yes&quot;}
+
+
+>[!ENDTABS]
+
+
 
 Es importante tener en cuenta que, al incluir y configurar la biblioteca del SDK web de la plataforma como se muestra arriba, no se ejecuta ninguna llamada de red a la red de Adobe Edge.
 

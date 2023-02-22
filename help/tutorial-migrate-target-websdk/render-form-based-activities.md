@@ -1,10 +1,10 @@
 ---
 title: Migración de Target de at.js 2.x al SDK web
 description: Obtenga información sobre cómo migrar una implementación de Adobe Target de at.js 2.x al SDK web de Adobe Experience Platform. Los temas incluyen descripción general de la biblioteca, diferencias de implementación y otras llamadas importantes.
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '411'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +19,8 @@ Algunas implementaciones de Target pueden utilizar mboxes regionales (ahora cono
 
 Las actividades creadas con el compositor basado en formularios de Target y entregadas a mboxes regionales no se pueden procesar automáticamente con el SDK web de Platform. Al igual que at.js, las ofertas entregadas a ubicaciones de Target específicas deben procesarse bajo demanda.
 
-Ejemplo de at.js con `getOffer()` y `applyOffer()`:
+
++++Ejemplo de at.js con `getOffer()` y `applyOffer()`:
 
 1. Ejecutar `getOffer()` para solicitar una oferta para una ubicación
 1. Ejecutar `applyOffer()` representar la oferta en un selector especificado
@@ -45,7 +46,9 @@ adobe.target.getOffer({
 });
 ```
 
-Equivalente de SDK web de plataforma con `applyPropositions` comando:
++++
+
++++El SDK web de plataforma equivalente con el uso de `applyPropositions` comando:
 
 1. Ejecutar `sendEvent` para solicitar ofertas (propuestas) para una o más ubicaciones (ámbitos)
 1. Ejecutar `applyPropositions` con el objeto metadata que proporciona instrucciones sobre cómo aplicar contenido a la página para cada ámbito
@@ -86,6 +89,8 @@ alloy("sendEvent", {
 });
 ```
 
++++
+
 El SDK web de Platform ofrece bueno control para aplicar actividades basadas en formularios a la página mediante el uso de `applyPropositions` con un `actionType` especificado:
 
 | `actionType` | Descripción | at.js `applyOffer()` | SDK web de Platform `applyPropositions` |
@@ -99,6 +104,8 @@ Consulte la [documentación dedicada](https://experienceleague.adobe.com/docs/ex
 ## Ejemplo de implementación
 
 La página de ejemplo siguiente se basa en la implementación descrita en la sección anterior, solo que agrega ámbitos adicionales al `sendEvent` comando.
+
+++Ejemplo de SDK web de plataforma con varios ámbitos
 
 ```HTML
 <!doctype html>

@@ -1,10 +1,10 @@
 ---
 title: Depuración | Migración de Target de at.js 2.x al SDK web
 description: Obtenga información sobre cómo depurar una implementación de Adobe Target mediante el SDK web de Adobe Experience Platform. Los temas incluyen opciones de depuración, extensiones de explorador y diferencias entre at.js y el SDK web de Platform.
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1534'
+ht-degree: 3%
 
 ---
 
@@ -120,7 +120,7 @@ Para ver los seguimientos de Platform Web SDK Target con Adobe Experience Platfo
 1. Vuelva a cargar la página y el registro debe rellenarse con información detallada sobre las interacciones de red perimetral
 1. Céntrese en las entradas de registro que comienzan con &quot;Rastreos de destino&quot; en la descripción y seleccione **[!UICONTROL Ver]** para ver los detalles de seguimiento de Target
 
-![Ver los seguimientos de Target con Adobe Experience Platform Debugger](assets/target-trace-debugger.png)
+![Ver los seguimientos de Target con Adobe Experience Platform Debugger](assets/target-trace-debugger.png){zoomable=&quot;yes&quot;}
 
 Después de seleccionar **[!UICONTROL Ver]**, aparecerá una superposición que le permitirá ver la siguiente información relacionada con la solicitud:
 
@@ -142,7 +142,7 @@ La información de seguimiento de Target se puede ver tanto en la extensión del
 1. Seleccione una entrada de registro con el tipo `com.adobe.target.trace`
 1. Expanda los detalles de la carga útil y vea la información en `context > targetTrace`
 
-![Ver los seguimientos de Target con Assurance](assets/target-trace-assurance.png)
+![Ver los seguimientos de Target con Assurance](assets/target-trace-assurance.png){zoomable=&quot;yes&quot;}
 
 ## Examinar la solicitud y la respuesta de red
 
@@ -150,7 +150,7 @@ Carga útil de la solicitud y respuesta del SDK web de Platform `sendEvent` Las 
 
 ### Carga útil de solicitud de contenido
 
-![Segmente elementos específicos de la carga útil del SDK web de Platform](assets/target-payload.png)
+![Segmente elementos específicos de la carga útil del SDK web de Platform](assets/target-payload.png){zoomable=&quot;yes&quot;}
 
 - Los parámetros de perfil, entidad y otros que no son de mbox se pasan en la matriz de eventos en `data.__adobe.target`
 - Los ámbitos de decisión se encuentran en la matriz de eventos de `query.personalization.decisionScopes`
@@ -158,7 +158,7 @@ Carga útil de la solicitud y respuesta del SDK web de Platform `sendEvent` Las 
 
 ### Cuerpo de respuesta de contenido
 
-![Segmente elementos específicos del cuerpo de respuesta del SDK web de Platform](assets/target-response.png)
+![Segmente elementos específicos del cuerpo de respuesta del SDK web de Platform](assets/target-response.png){zoomable=&quot;yes&quot;}
 
 - El SDK web de Platform devuelve acciones para todas las aplicaciones de Adobe en la sección `handle` object
 - La variable `personalization:decisions` significa una respuesta de Target o offer decisioning
@@ -169,7 +169,7 @@ Carga útil de la solicitud y respuesta del SDK web de Platform `sendEvent` Las 
 
 ### Carga útil de evento de propuesta
 
-![Ejemplo de evento de propuesta de destino](assets/target-proposition-event.png)
+![Ejemplo de evento de propuesta de destino](assets/target-proposition-event.png){zoomable=&quot;yes&quot;}
 
 - Los eventos de SDK específicos de Target son: `decisioning.propositionDisplay` para una impresión o `decisioning.propositionInteract` para una interacción, como un clic
 - Los detalles del evento de propuesta se encuentran en la matriz de eventos debajo de `xdm._experience.decisioning`
