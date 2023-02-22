@@ -1,10 +1,10 @@
 ---
 title: Enviar parámetros | Migración de Target de at.js 2.x al SDK web
 description: Obtenga información sobre cómo enviar parámetros de mbox, perfil y entidad a Adobe Target mediante el SDK web de Experience Platform.
-source-git-commit: cc958fdbf438943ba4fd5ca8974a8408b2bf624f
+source-git-commit: ff43774a0b36c5cd7fcefc7008e9f710abc059f7
 workflow-type: tm+mt
-source-wordcount: '1269'
-ht-degree: 0%
+source-wordcount: '1652'
+ht-degree: 1%
 
 ---
 
@@ -14,11 +14,9 @@ Las implementaciones de Target difieren de un sitio a otro debido a la arquitect
 
 Vamos a usar una sencilla página de detalles del producto y una página de confirmación de pedidos para demostrar las diferencias entre las bibliotecas al pasar parámetros a Target.
 
-Supongamos que la siguiente página de ejemplo utiliza at.js:
+Supongamos que tenemos los dos ejemplos siguientes de páginas con at.js:
 
-<!--Assume the following two example pages using at.js:-->
-
-Detalles del producto:
++++at.js en una página Detalles del producto:
 
 ```HTML
 <!doctype html>
@@ -57,9 +55,10 @@ Detalles del producto:
 </html>
 ```
 
++++
 
 
-Confirmación del pedido:
++++at.js en una página de confirmación de pedido:
 
 ```HTML
 <!doctype html>
@@ -90,6 +89,8 @@ Confirmación del pedido:
 </body>
 </html>
 ```
+
++++
 
 
 ## Resumen de asignación de parámetros
@@ -140,12 +141,16 @@ Ejemplo de at.js con `targetPageParams()`:
 ```JavaScript
 targetPageParams = function() {
   return {
-    "siteSection": "product detail"
+    "pageName": "product detail"
   };
 };
 ```
 
-Ejemplo de SDK web de plataforma mediante `sendEvent` comando:
+Ejemplos de JavaScript del SDK web de plataforma que utilizan `sendEvent` comando:
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```JavaScript
 alloy("sendEvent", {
@@ -153,12 +158,25 @@ alloy("sendEvent", {
     "web": {
       "webPageDetails": {
         // Other attributes included according to xdm schema
-        "siteSection": "product detail"
+        "name": "product detail"
       }
     }
   }
 });
 ```
+
+>[!TAB Etiquetas]
+
+En las etiquetas , utilice primero un [!UICONTROL Objeto XDM] elemento de datos para asignar al campo XDM:
+
+![Asignación a un campo XDM en un elemento de datos de objeto XDM](assets/params-tags-pageName.png)
+
+E incluya su [!UICONTROL Objeto XDM] en su [!UICONTROL Enviar evento] [!UICONTROL acción] (múltiple [!UICONTROL Objetos XDM] can [combinado](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+
+![Inclusión de un elemento de datos de objeto XDM en un evento Send](assets/params-tags-sendEvent.png)
+
+>[!ENDTABS]
+
 
 >[!NOTE]
 >
@@ -182,7 +200,11 @@ targetPageParams = function() {
 };
 ```
 
-Ejemplo de SDK web de plataforma mediante `sendEvent` comando:
+Ejemplos de SDK web de Platform que utilizan `sendEvent` comando:
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```JavaScript
 alloy("sendEvent", {
@@ -196,6 +218,18 @@ alloy("sendEvent", {
   }
 });
 ```
+
+>[!TAB Etiquetas]
+
+En las etiquetas , cree primero un elemento de datos para definir la variable `data.__adobe.target` objeto:
+
+![Definición del objeto de datos en un elemento de datos](assets/params-tags-dataObject.png)
+
+A continuación, incluya el objeto de datos en su [!UICONTROL Enviar evento] [!UICONTROL acción] (múltiple [!UICONTROL objetos] can [combinado](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+
+![Inclusión de un objeto de datos en un evento Send](assets/params-tags-sendEvent-withData.png)
+
+>[!ENDTABS]
 
 ## Parámetros de entidad
 
@@ -217,7 +251,11 @@ targetPageParams = function() {
 };
 ```
 
-Ejemplo de SDK web de plataforma mediante `sendEvent` comando:
+Ejemplos de SDK web de Platform que utilizan `sendEvent` comando:
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```JavaScript
 alloy("sendEvent", {
@@ -234,6 +272,22 @@ alloy("sendEvent", {
   }
 });
 ```
+
+>[!TAB Etiquetas]
+
+En las etiquetas , cree primero un elemento de datos para definir la variable `data.__adobe.target` objeto:
+
+![Definición del objeto de datos en un elemento de datos](assets/params-tags-dataObject-entities.png)
+
+A continuación, incluya el objeto de datos en su [!UICONTROL Enviar evento] [!UICONTROL acción] (múltiple [!UICONTROL objetos] can [combinado](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+
+![Inclusión de un objeto de datos en un evento Send](assets/params-tags-sendEvent-withData.png)
+
+>[!ENDTABS]
+
+
+
+
 
 Todo [parámetros de entidad](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) at.js también es compatible con el SDK web de Platform.
 
@@ -258,9 +312,13 @@ targetPageParams = function() {
 };
 ```
 
-La información de compra se pasa a Target cuando la variable `commerce` el grupo de campos tiene `puchases.value` configure como `1`. El ID de pedido y el total del pedido se asignan automáticamente desde la variable `order` objeto. Si la variable `productListItems` la matriz está presente, luego la variable `SKU` los valores se usan para `productPurchasedId`.
+La información de compra se pasa a Target cuando la variable `commerce` el grupo de campos tiene `purchases.value` configure como `1`. El ID de pedido y el total del pedido se asignan automáticamente desde la variable `order` objeto. Si la variable `productListItems` la matriz está presente, luego la variable `SKU` los valores se usan para `productPurchasedId`.
 
-Ejemplo de SDK web de plataforma mediante `sendEvent` comando:
+Ejemplos de SDK web de Platform que utilizan `sendEvent` comando:
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```JavaScript
 alloy("sendEvent", {
@@ -282,6 +340,19 @@ alloy("sendEvent", {
   }
 });
 ```
+
+>[!TAB Etiquetas]
+
+En las etiquetas , utilice primero un [!UICONTROL Objeto XDM] elemento de datos para asignar a los campos XDM:
+
+![Asignación a un campo XDM en un elemento de datos de objeto XDM](assets/params-tags-purchase.png)
+
+E incluya su [!UICONTROL Objeto XDM] en su [!UICONTROL Enviar evento] [!UICONTROL acción] (múltiple [!UICONTROL Objetos XDM] can [combinado](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+
+![Inclusión de un elemento de datos de objeto XDM en un evento Send](assets/params-tags-sendEvent.png)
+
+>[!ENDTABS]
+
 
 >[!NOTE]
 >
@@ -309,7 +380,11 @@ targetPageParams = function() {
 };
 ```
 
-Ejemplo de SDK web de plataforma mediante `sendEvent` comando:
+Ejemplos de SDK web de Platform que utilizan `sendEvent` comando:
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```JavaScript
 alloy("sendEvent", {
@@ -324,6 +399,22 @@ alloy("sendEvent", {
 });
 ```
 
+>[!TAB Etiquetas]
+
+La variable [!UICONTROL ID] valor, [!UICONTROL Estado autenticado] y [!UICONTROL Área de nombres] se capturan en un [!UICONTROL Mapa de identidad] elemento de datos:
+![Elemento de datos del mapa de identidad que captura el ID de cliente](assets/params-tags-customerIdDataElement.png)
+
+La variable [!UICONTROL Mapa de identidad] a continuación, se utiliza el elemento de datos para establecer la variable [!UICONTROL identityMap] en el campo [!UICONTROL Objeto XDM] elemento de datos:
+![Elemento de datos del mapa de identidad utilizado en el elemento de datos del objeto XDM](assets/params-tags-customerIdInXDMObject.png)
+
+La variable [!UICONTROL Objeto XDM] luego se incluye en la variable [!UICONTROL Enviar evento] acción de una regla:
+
+![Inclusión de un elemento de datos de objeto XDM en un evento Send](assets/params-tags-sendEvent.png)
+
+En el servicio Adobe Target de su almacén de datos, asegúrese de establecer la variable [!UICONTROL Espacio de nombres de ID de terceros de Target] al mismo espacio de nombres utilizado en la variable [!UICONTROL Mapa de identidad] elemento de datos
+![Establezca el área de nombres del ID de terceros de Target en el conjunto de datos](assets/params-tags-customerIdNamespaceInDatastream.png)
+
+>[!ENDTABS]
 
 ## Ejemplo de SDK web de plataforma
 
@@ -335,7 +426,7 @@ Ahora que comprende cómo se asignan los distintos parámetros de Target mediant
 - A `configure` para inicializar la biblioteca
 - A `sendEvent` para enviar datos y solicitar que se procese el contenido de Target
 
-Detalles del producto:
++++SDK web en una página de detalles del producto:
 
 ```HTML
 <!doctype html>
@@ -408,8 +499,9 @@ Detalles del producto:
 </html>
 ```
 
++++
 
-Confirmación del pedido:
++++SDK web en una página de confirmación de pedido:
 
 ```HTML
 <!doctype html>
@@ -477,6 +569,8 @@ Confirmación del pedido:
 </body>
 </html>
 ```
+
++++
 
 A continuación, aprenda a [seguimiento de eventos de conversión de Target](track-events.md) con el SDK web de Platform.
 

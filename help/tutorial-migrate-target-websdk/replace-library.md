@@ -1,9 +1,9 @@
 ---
 title: Reemplazar la biblioteca | Migración de Target de at.js 2.x al SDK web
 description: Obtenga información sobre cómo migrar una implementación de Adobe Target de at.js 2.x al SDK web de Adobe Experience Platform. Los temas incluyen descripción general de la biblioteca, diferencias de implementación y otras llamadas importantes.
-source-git-commit: 8d41e5d6434dabff0443e932be842b37553d72a9
+source-git-commit: 51958a425c946fc806d38209ac4b0b4fa17945e8
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1715'
 ht-degree: 1%
 
 ---
@@ -63,6 +63,8 @@ Supongamos que tenemos una implementación de Target sencilla con at.js:
 * Una o más bibliotecas de ayuda de terceros cuyas capacidades se puedan usar en actividades de Target (por ejemplo, jQuery)
 * Un fragmento de preocultación para mitigar el parpadeo
 * La biblioteca at.js de Target se carga asincrónicamente con la configuración predeterminada para solicitar y procesar automáticamente actividades:
+
++++Véase ejemplo de código HTML de un at.js
 
 ```HTML
 <!doctype html>
@@ -126,6 +128,8 @@ Supongamos que tenemos una implementación de Target sencilla con at.js:
 </body>
 </html>
 ```
+
++++
 
 Para actualizar Target para que utilice el SDK web de plataforma, elimine primero at.js:
 
@@ -220,7 +224,7 @@ alloy("configure", {
 });
 ```
 
->[!TAB etiquetas]
+>[!TAB Etiquetas]
 
 En las implementaciones de etiquetas, muchos campos se rellenan automáticamente o se pueden seleccionar desde los menús desplegables. Tenga en cuenta que diferentes plataformas [!UICONTROL entornos limitados] y [!UICONTROL datastreams] se puede seleccionar para cada entorno. El conjunto de datos cambiará según el estado de la biblioteca de etiquetas en el proceso de publicación.
 
