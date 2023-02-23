@@ -1,8 +1,7 @@
 ---
 title: Procesar actividades de VEC | Migración de Target de at.js 2.x al SDK web
 description: Obtenga información sobre cómo recuperar y aplicar actividades del compositor de experiencias visuales con una implementación de SDK web de Adobe Target.
-feature: Visual Experience Composer (VEC),Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
-source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
+source-git-commit: 4b695b4578f0e725fc3fe1e455aa4886b9cc0669
 workflow-type: tm+mt
 source-wordcount: '824'
 ht-degree: 5%

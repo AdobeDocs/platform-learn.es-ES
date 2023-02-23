@@ -3,9 +3,9 @@ title: Configuración de Adobe Target con el SDK web de Platform
 description: Obtenga información sobre cómo implementar Adobe Target mediante el SDK web de Platform. Esta lección forma parte del tutorial Implementar Adobe Experience Cloud con SDK web .
 solution: Data Collection, Target
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: edbc433e9bd72dfa9b9025063fc90c7fdc2c2774
+source-git-commit: 13f2c87d7c4cfe21f04a945b9e11dc64e9bf6e0c
 workflow-type: tm+mt
-source-wordcount: '3779'
+source-wordcount: '3801'
 ht-degree: 1%
 
 ---
@@ -15,6 +15,7 @@ ht-degree: 1%
 Obtenga información sobre cómo implementar Adobe Target mediante el SDK web de Platform. Obtenga información sobre cómo ofrecer experiencias y cómo pasar parámetros adicionales a Target.
 
 [Adobe Target](https://docs.adobe.com/content/help/es-ES/experience-cloud/user-guides/home.translate.html) es la aplicación de Adobe Experience Cloud que le proporciona todo lo necesario para adaptar y personalizar la experiencia de sus clientes con el fin de maximizar los ingresos de sus sitios web, aplicaciones y otros canales digitales, tanto para PC como para móviles.
+
 
 ## Objetivos de aprendizaje
 
@@ -26,6 +27,10 @@ Al final de esta lección, debe poder:
 * Pasar datos XDM a Target y comprender la asignación a los parámetros de Target
 * Pasar datos personalizados a Target, como parámetros de perfil y entidad
 * Validación de una implementación de Target con Platform Web SDK
+
+>[!TIP]
+>
+>Consulte nuestra [Migración de Target de at.js 2.x al SDK web de plataforma](/help/tutorial-migrate-target-websdk/introduction.md) tutorial para ver una guía paso a paso sobre la migración de la implementación de at.js existente.
 
 
 ## Requisitos previos
@@ -123,7 +128,7 @@ Para configurar Target en el conjunto de datos:
 
    ![Seleccione el conjunto de datos del SDK web de Luma](assets/datastream-luma-web-sdk.png)
 
-1. Select **[!UICONTROL Añadir servicio]**
+1. Seleccione **[!UICONTROL Agregar servicio]**
 
    ![Añadir un servicio al conjunto de datos](assets/target-datastream-addService.png)
 1. Select **[!UICONTROL Adobe Target]** como el **[!UICONTROL Servicio]**

@@ -1,8 +1,8 @@
 ---
 title: Introducción | Migración de Target de at.js 2.x al SDK web
 description: Obtenga información sobre cómo migrar una implementación de Adobe Target de at.js 2.x al SDK web de Adobe Experience Platform. Los temas incluyen la carga de la biblioteca JavaScript, el envío de parámetros, el procesamiento de actividades y otras llamadas importantes.
-recommendations: catalog,noDisplay
-source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
+last-substantial-update: 2023-02-23T00:00:00Z
+source-git-commit: 4b695b4578f0e725fc3fe1e455aa4886b9cc0669
 workflow-type: tm+mt
 source-wordcount: '617'
 ht-degree: 6%
