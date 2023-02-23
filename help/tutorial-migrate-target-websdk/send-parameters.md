@@ -1,9 +1,9 @@
 ---
 title: Enviar parámetros | Migración de Target de at.js 2.x al SDK web
 description: Obtenga información sobre cómo enviar parámetros de mbox, perfil y entidad a Adobe Target mediante el SDK web de Experience Platform.
-source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
+source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1646'
 ht-degree: 1%
 
 ---
@@ -97,19 +97,16 @@ Supongamos que tenemos los dos ejemplos siguientes de páginas con at.js:
 
 Los parámetros de Target para estas páginas se envían de forma diferente mediante el SDK web de Platform. Existen varias formas de pasar parámetros a Target mediante at.js:
 
-- Configure con `targetPageParams()` para el evento de carga de página
+- Configure con `targetPageParams()` para el evento de carga de página (utilizado en los ejemplos de esta página)
 - Configure con `targetPageParamsAll()` para todas las solicitudes de Target de la página
 - Envíe los parámetros directamente con la variable `getOffer()` para una sola ubicación
 - Envíe los parámetros directamente con la variable `getOffers()` para una o más ubicaciones
 
-Para estos ejemplos, la variable `targetPageParams()` se utiliza.
 
-El SDK web de Platform proporciona una única forma coherente de enviar datos sin necesidad de funciones adicionales. Todos los parámetros deben pasarse en la carga útil con la variable `sendEvent` comando.
+El SDK web de Platform proporciona una única forma coherente de enviar datos sin necesidad de funciones adicionales. Todos los parámetros deben pasarse en la carga útil con la variable `sendEvent` y caen en dos categorías:
 
-Parámetros pasados con el SDK web de Platform `sendEvent` la carga útil se clasifica en dos categorías:
-
-1. Se asigna automáticamente desde la variable `xdm` object
-1. Se transfiere manualmente mediante la variable `data.__adobe.target` object
+- Se asigna automáticamente desde la variable `xdm` object
+- Se transfiere manualmente mediante la variable `data.__adobe.target` object
 
 La tabla siguiente describe cómo se reasignarán los parámetros de ejemplo mediante el SDK web de Platform:
 
@@ -124,7 +121,7 @@ La tabla siguiente describe cómo se reasignarán los parámetros de ejemplo med
 | `entity.customEntity` | `data.__adobe.target.entity.customEntity` | Los parámetros de entidad personalizados se utilizan para actualizar el catálogo de productos de Recommendations. Estos parámetros personalizados deben pasarse como parte del `data` objeto. |
 | `cartIds` | `data.__adobe.target.cartIds` | Se utiliza para los algoritmos de recomendaciones basadas en el carro de compras de Target. |
 | `excludedIds` | `data.__adobe.target.excludedIds` | Se utiliza para evitar que los ID de entidad específicos se devuelvan en un diseño de recomendaciones. |
-| `mbox3rdPartyId` | Se establece en el mapa de identidad. | Se utiliza para sincronizar perfiles de Target entre dispositivos y atributos del cliente. El espacio de nombres que se va a usar para el ID de cliente debe especificarse en la variable [Configuración de destino del conjunto de datos](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
+| `mbox3rdPartyId` | Configure en la variable `xdm.identityMap` object | Se utiliza para sincronizar perfiles de Target entre dispositivos y atributos del cliente. El espacio de nombres que se va a usar para el ID de cliente debe especificarse en la variable [Configuración de destino del conjunto de datos](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
 | `orderId` | `xdm.commerce.order.purchaseID` | Se utiliza para identificar un pedido único para el seguimiento de conversión de Target. |
 | `orderTotal` | `xdm.commerce.order.priceTotal` | Se utiliza para rastrear totales de pedidos para los objetivos de optimización y conversión de Target. |
 | `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>O<br> `xdm.productListItems[0-n].SKU` | Se utiliza para el seguimiento de conversión de Target y los algoritmos de recomendaciones. Consulte la [parámetros de entidad](#entity-parameters) para obtener más información. |
@@ -233,7 +230,7 @@ A continuación, incluya el objeto de datos en su [!UICONTROL Enviar evento] [!U
 
 ## Parámetros de entidad
 
-Los parámetros de entidad se utilizan para pasar datos de comportamiento e información de catálogo suplementaria para Target Recommendations. De forma similar a los parámetros de perfil, todos los parámetros de entidad deben pasarse bajo la categoría `data.__adobe.target` en el SDK web de Platform `sendEvent` carga útil del comando.
+Los parámetros de entidad se utilizan para pasar datos de comportamiento e información de catálogo suplementaria para Target Recommendations. Todo [parámetros de entidad](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) at.js también es compatible con el SDK web de Platform. De forma similar a los parámetros de perfil, todos los parámetros de entidad deben pasarse bajo la categoría `data.__adobe.target` en el SDK web de Platform `sendEvent` carga útil del comando.
 
 Los parámetros de entidad para un elemento específico deben tener el prefijo `entity.` para una captura de datos adecuada. El `cartIds` y `excludedIds` los parámetros de los algoritmos de recomendaciones no deben tener prefijo, y el valor de cada uno debe contener una lista de ID de entidad separados por comas.
 
@@ -284,12 +281,6 @@ A continuación, incluya el objeto de datos en su [!UICONTROL Enviar evento] [!U
 ![Inclusión de un objeto de datos en un evento Send](assets/params-tags-sendEvent-withData.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]
-
-
-
-
-
-Todo [parámetros de entidad](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) at.js también es compatible con el SDK web de Platform.
 
 >[!NOTE]
 >
@@ -576,4 +567,4 @@ A continuación, aprenda a [seguimiento de eventos de conversión de Target](tra
 
 >[!NOTE]
 >
->Estamos comprometidos a ayudarle a llevar a cabo correctamente la migración de Target de at.js al SDK web. Si encuentra obstáculos con su migración o cree que falta información crítica en esta guía, indíquenoslo publicando en [esta discusión comunitaria](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>Estamos comprometidos a ayudarle a llevar a cabo correctamente la migración de Target de at.js al SDK web. Si encuentra obstáculos con su migración o cree que falta información crítica en esta guía, indíquenoslo publicando en [esta discusión comunitaria](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

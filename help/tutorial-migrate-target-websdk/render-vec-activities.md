@@ -2,9 +2,9 @@
 title: Procesar actividades de VEC | Migración de Target de at.js 2.x al SDK web
 description: Obtenga información sobre cómo recuperar y aplicar actividades del compositor de experiencias visuales con una implementación de SDK web de Adobe Target.
 feature: Visual Experience Composer (VEC),Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
-source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
+source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '824'
 ht-degree: 5%
 
 ---
@@ -58,7 +58,7 @@ alloy("sendEvent", {
 
 En las etiquetas , use la variable [!UICONTROL Enviar evento] tipo de acción con la variable [!UICONTROL Procesar decisiones de personalización visual] opción seleccionada:
 
-![Enviar un evento con Personalizaciones de renderización configuradas como true en etiquetas](assets/vec-sendEvent-renderTrue.png){zoomable=&quot;yes&quot;}
+![Enviar un evento con Renderizar decisiones de personalización visual seleccionadas en etiquetas](assets/vec-sendEvent-renderTrue.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]
 
@@ -136,7 +136,11 @@ El SDK web de Platform ofrece a los desarrolladores una buena flexibilidad para 
 
 La implementación básica del SDK web de Platform ya ha finalizado.
 
-+++Página de ejemplo del SDK web con representación automática del contenido de Target:
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
+
+Ejemplo de JavaScript con representación automática del contenido de Target:
 
 ```HTML
 <!doctype html>
@@ -198,14 +202,65 @@ La implementación básica del SDK web de Platform ya ha finalizado.
 </html>
 ```
 
-+++
 
->[!TIP]
->
-> Al utilizar la función de etiquetas (anteriormente Launch) para implementar el SDK web, el código incrustado de etiquetas sustituye las secciones &quot;Platform Web SDK base code&quot;, &quot;Platform Web SDK loaded asíncronamente&quot; y &quot;Configure Platform Web SDK&quot; anteriores. El comando &#39;sendEvent&#39; se realiza en una regla que usa la variable [!UICONTROL Enviar evento] tipo de acción con la variable [!UICONTROL Procesar decisiones de personalización visual] seleccionada.
+>[!TAB Etiquetas]
+
+Página de ejemplo de etiquetas con representación automática de contenido de Target:
+
+
+```HTML
+<!doctype html>
+<html>
+<head>
+  <title>Example page</title>
+  <!--Data Layer to enable rich data collection and targeting-->
+  <script>
+    var digitalData = { 
+      // Data layer information goes here
+    };
+  </script>
+
+  <!--Third party libraries that may be used by Target offers and modifications-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
+  <script>
+    !function(e,a,n,t){var i=e.head;if(i){
+    if (a) return;
+    var o=e.createElement("style");
+    o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
+    (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
+  </script>
+
+    <!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN ENVIRONMENT-->
+    <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
+</head>
+<body>
+  <h1 id="title">Home Page</h1><br><br>
+  <p id="bodyText">Navigation</p><br><br>
+  <a id="home" class="navigationLink" href="#">Home</a><br>
+  <a id="pageA" class="navigationLink" href="#">Page A</a><br>
+  <a id="pageB" class="navigationLink" href="#">Page B</a><br>
+  <a id="pageC" class="navigationLink" href="#">Page C</a><br>
+  <div id="homepage-hero">Homepage Hero Banner Content</div>
+</body>
+</html>
+```
+
+En las etiquetas , agregue la extensión web SDK de Adobe Experience Platform:
+
+![Añadir la extensión del SDK web de Adobe Experience Platform](assets/library-tags-addExtension.png){zoomable=&quot;yes&quot;}
+
+Añada las configuraciones deseadas:
+![configuración de las opciones de migración de la extensión de etiqueta SDK web](assets/tags-config-migration.png){zoomable=&quot;yes&quot;}
+
+Cree una regla con un [!UICONTROL Enviar evento] acción y [!UICONTROL Procesar decisiones de personalización visual] seleccionados:
+![Enviar un evento con Personalizaciones de procesamiento seleccionadas en etiquetas](assets/vec-sendEvent-renderTrue.png){zoomable=&quot;yes&quot;}
+
+>[!ENDTABS]
 
 A continuación, aprenda a solicitar y [procesar actividades de Target basadas en formularios](render-form-based-activities.md).
 
 >[!NOTE]
 >
->Estamos comprometidos a ayudarle a llevar a cabo correctamente la migración de Target de at.js al SDK web. Si encuentra obstáculos con su migración o cree que falta información crítica en esta guía, indíquenoslo publicando en [esta discusión comunitaria](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>Estamos comprometidos a ayudarle a llevar a cabo correctamente la migración de Target de at.js al SDK web. Si encuentra obstáculos con su migración o cree que falta información crítica en esta guía, indíquenoslo publicando en [esta discusión comunitaria](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
