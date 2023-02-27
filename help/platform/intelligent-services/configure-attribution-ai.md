@@ -1,13 +1,12 @@
 ---
 title: Configuración de Attribution AI
 description: Descubra cómo crear una instancia de Attribution AI para comprender el impacto de sus canales y campañas de marketing.
-role: User
-solution: Intelligent Services
 feature: Attribution AI
+role: User
 kt: 4174
 thumbnail: 32668.jpg
 exl-id: ea64175d-c2b4-4fcb-bbac-9ef30416f868
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: e2bc058bac9dc5f95587655420ef254e896eba3b
 workflow-type: tm+mt
 source-wordcount: '85'
 ht-degree: 51%

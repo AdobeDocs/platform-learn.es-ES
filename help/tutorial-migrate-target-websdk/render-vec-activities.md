@@ -1,10 +1,10 @@
 ---
 title: Procesar actividades de VEC | Migración de Target de at.js 2.x al SDK web
 description: Obtenga información sobre cómo recuperar y aplicar actividades del compositor de experiencias visuales con una implementación de SDK web de Adobe Target.
-source-git-commit: 4b695b4578f0e725fc3fe1e455aa4886b9cc0669
+source-git-commit: ca2fade972a2f7f84134ee4ef9c0f24c5ab1c5c6
 workflow-type: tm+mt
-source-wordcount: '824'
-ht-degree: 5%
+source-wordcount: '830'
+ht-degree: 6%
 
 ---
 
@@ -22,10 +22,6 @@ La extensión del explorador Adobe Experience Cloud Visual Editing Helper para G
 
 La extensión del explorador de Visual Editing Helper funciona con sitios web que utilizan at.js o Platform Web SDK.
 
->[!IMPORTANT]
->
->La nueva extensión de ayuda de edición visual sustituye a la anterior [Extensión de explorador de VEC Helper de Target](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html). Si está instalada la extensión anterior de VEC Helper, debe eliminarse o deshabilitarse antes de utilizar la extensión de Visual Editing Helper.
-
 ### Obtenga e instale el Asistente de edición visual
 
 1. Vaya a la [Extensión del explorador Adobe Experience Cloud Visual Editing Helper en Chrome Web Store](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca).
@@ -36,6 +32,10 @@ La extensión del explorador de Visual Editing Helper funciona con sitios web qu
 La Ayuda de edición visual se activa automáticamente cuando se abre un sitio web en el VEC de Target para la creación de contenido. La extensión no tiene ninguna configuración condicional. La extensión gestiona todas las configuraciones automáticamente, incluida la configuración de cookies de SameSite.
 
 Consulte la documentación dedicada para obtener más información sobre la [Extensión de Visual Editing Helper](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html) y [solución de problemas del Compositor de experiencias visuales](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html).
+
+>[!IMPORTANT]
+>
+>El nuevo [Extensión de Visual Editing Helper](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca) reemplaza al anterior [Extensión de explorador de VEC Helper de Target](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html). Si está instalada la extensión anterior de VEC Helper, debe eliminarse o deshabilitarse antes de utilizar la extensión de Visual Editing Helper.
 
 ## Solicitar y aplicar contenido automáticamente
 
