@@ -8,7 +8,7 @@ recommendation: noDisplay,noCatalog
 source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
 workflow-type: tm+mt
 source-wordcount: '69'
-ht-degree: 78%
+ht-degree: 81%
 
 ---
 
@@ -32,5 +32,5 @@ ht-degree: 78%
 + Experience Cloud {#experience-cloud}
    + [Analytics](analytics.md)
    + [Experience Platform](platform.md)
-   + [Mensajería push de Journey Optimizer](journey-optimizer-push.md)
+   + [Journey Optimizer mensajería push](journey-optimizer-push.md)
 + [Conclusión](conclusion.md)

@@ -21,6 +21,6 @@ Experience Data Model (XDM) es el modelo de datos estándar para describir las e
 
 >[!INFO]
 >
-> Este vídeo es parte de un curso, [Modelar los datos de la experiencia del cliente con XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm), disponible de forma gratuita en Experience League!
+> Este vídeo es parte de un curso, [Modelar los datos de la experiencia del cliente con XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=es), disponible de forma gratuita en Experience League!
 
 Para obtener más información, visite [documentación de esquemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=es).

@@ -147,7 +147,7 @@ ht-degree: 32%
    + [Creación de tipos de datos](/help/platform/schemas/create-data-types.md)
    + [Configuración de relaciones entre esquemas](/help/platform/schemas/configure-relationships-between-schemas.md)
    + [Uso de campos enumerados y valores sugeridos](/help/platform/schemas/use-enumerated-fields.md)
-   + [Copiado de esquemas entre entornos de pruebas](/help/platform/schemas/copy-schemas-between-sandboxes.md)
+   + [Copiado de esquemas entre zonas protegidas](/help/platform/schemas/copy-schemas-between-sandboxes.md)
    + [Actualización de esquemas](/help/platform/schemas/update-schemas.md)
    + [Crear un esquema ad hoc](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
 + Segmentos {#segments}
