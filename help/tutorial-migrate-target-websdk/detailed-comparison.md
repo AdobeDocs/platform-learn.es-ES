@@ -1,9 +1,9 @@
 ---
 title: Comparación de at.js 2.x con el SDK web | Migración de Target de at.js 2.x al SDK web
 description: Obtenga información sobre las diferencias entre at.js 2.x y el SDK web de Platform, incluidas las funciones, la configuración y el flujo de datos.
-source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
+source-git-commit: 28a88e6865211d7d39c18bd48b95070ae0ba259b
 workflow-type: tm+mt
-source-wordcount: '2157'
+source-wordcount: '2159'
 ht-degree: 8%
 
 ---
@@ -43,7 +43,7 @@ Si es nuevo en el SDK web de Platform, no se preocupe: los elementos siguientes 
 | Ofertas remotas | Admitido | Admitido |
 | Ofertas de redireccionamiento | Admitido | Admitido. Sin embargo, no se admite la redirección de una página con el SDK web de Platform a una página con at.js (y en la dirección opuesta). |
 | Toma de decisiones en el dispositivo | Admitido | No admitido actualmente |
-| Recuperación previa de mboxes | Admitido | Habilitado de forma predeterminada en todas las migraciones nuevas iniciadas después del 1 de octubre de 2022 |
+| Recuperación previa de mboxes | Compatible con ámbitos personalizados y SPA VEC | Actualmente no es compatible con el VEC normal |
 | Eventos personalizados | Admitido | No admitido. Consulte la [hoja de ruta pública](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target="_blank"}) para el estado actual. |
 | Tokens de respuesta | Admitido | Admitido. Consulte la [documentación dedicada de tokens de respuesta](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) para ver ejemplos de código y diferencias entre at.js y el SDK web de plataforma |
 | Proveedores de datos   | Admitido | No admitido. Se puede utilizar código personalizado para almacenar en déclencheur un SDK web de plataforma `sendEvent` después de recuperar los datos de otro proveedor. |
