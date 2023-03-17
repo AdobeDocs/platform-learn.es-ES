@@ -7,9 +7,9 @@ kt: 10363
 thumbnail: 345641.jpeg
 last-substantial-update: 2022-07-28T00:00:00Z
 exl-id: 170676e6-d9fb-4a45-aa32-b1b27e8533f4
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: f19d3851c5d8e8c54823aa115cc7068f91776da6
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '127'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,10 @@ ht-degree: 0%
 Obtenga información sobre cómo configurar el control de acceso basado en atributos para limitar el acceso a recursos de Experience Platform específicos. Para obtener más información, visite [documentación de control de acceso](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/overview.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/345641?quality=12&learn=on)
+
+>[!NOTE]
+>
+> La función de creación de políticas que se muestra en este vídeo no está totalmente disponible, pero la directiva predeterminada en las cuentas de cliente se configura de forma similar a la que se muestra.
 
 >[!IMPORTANT]
 >
