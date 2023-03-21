@@ -6,9 +6,9 @@ audience: developer
 doc-type: tutorial
 activity: develop
 exl-id: 138a70fa-fe50-4585-b47f-150db4770c3d
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: f018e3aae714879de0cccb3a47b1f2242b57abc1
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '938'
 ht-degree: 4%
 
 ---
@@ -113,11 +113,11 @@ En la siguiente pantalla, se le solicitarán 3 métodos diferentes para proporci
 - **Codifique sus propios**: Cree su propia plantilla de correo electrónico codificándola con HTML
 - **Importar HTML**: Importe una plantilla de HTML existente, que podrá editar.
 
-Haga clic en **Importar HTML**.
+Haga clic en **Importar HTML**. También puede hacer clic en **Plantillas guardadas** y seleccione la plantilla **Bootcamp: plantilla de correo electrónico**.
 
 ![Journey Optimizer](./images/msg12.png)
 
-Arrastre y suelte el archivo **mailtemplatebootcamp.html**, que puede descargar [here](../../assets/html/mailtemplatebootcamp.html.zip). Haga clic en Importar.
+Si ha seleccionado **Importar HTML**, ahora puede arrastrar y soltar el archivo **mailtemplatebootcamp.html**, que puede descargar [here](../../assets/html/mailtemplatebootcamp.html.zip). Haga clic en Importar.
 
 ![Journey Optimizer](./images/msg13.png)
 

@@ -3,10 +3,10 @@ title: Bootcamp de Experience Manager
 description: Punto de partida para los participantes del Bootcamp de Experience Makers
 doc-type: multipage-overview
 exl-id: 400bd9f1-229c-4016-b06b-8fc033f7dbf2
-source-git-commit: 9658437fec6208e2688fc7857f13adcc52660caa
+source-git-commit: 3a16967ead0bf86daaf69cf920586318a5866492
 workflow-type: tm+mt
 source-wordcount: '716'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -26,47 +26,12 @@ La personalización a escala comienza con la comprensión de lo que se puede mej
 
 ### Día 1
 
-10.00 - 10.30: Kickoff e Introducciones
 
-10.30 a 11.00 horas: &quot;Demostración del Recorrido del cliente: Arte de lo posible&quot;
-
-11.00 - 11.45: Sesión de pizarra: &quot;Personalización 1-1, caza de fricciones, silos, Adobe POV&quot;
-
-11.45 - 12.00 horas: Salto
-
-12.00 - 13.00: Sesión de pizarra: &quot;Desglose de la arquitectura de la solución&quot;
-
-13.00 - 14.00: Almuerzo
-
-14.00 - 15.30: Flujo de usuario 1: Ejercicio práctico de &quot;adquisición&quot;
-
-15.30 - 15.45: Salto
-
-15.45 - 17.00 horas: Flujo de usuario 2: Ejercicio práctico &quot;Registro e incorporación&quot;
-
-18.00 - 19.00: Experiencia &quot;Competencia de creación de cócteles&quot;
-
-19.00 - 22.00: Disfrute de la cena
+10:00: Kickoff 10:30: Demostración del Recorrido del cliente: Arte de los posibles 11:00: Personalización 1-1, caza de fricciones, silos, Adobe POV (pizarra) 11:45: Desglose 12:00: Desglose de la arquitectura de la solución (pizarra) 13:00: Almuerzo 14:00: Flujo de usuario 1 Registro e incorporación: tutorial (por qué y cómo) 15:30: Desglose 16:00: Flujo de usuario 2 Fusión física y digital - tutorial y buceo directo/profundo 18:00: Desglose 18:30: Caminar hasta el restaurante 19:00: Cena
 
 ### Día 2
 
-9.00 - 9.30: &quot;Introducción al envío basado en Recorridos de usuario, estructura de equipo, retrasos en la entrega&quot;
-
-9.30 - 9.45: Salto
-
-9.45 - 11.15: Flujo de usuario 4: Ejercicio práctico de &quot;Análisis del cliente&quot;
-
-11.15 - 11.30: Salto
-
-11.30 - 12.30: &quot;Introducción al envío basado en Recorridos de usuario, estructura de equipo, retrasos en la entrega&quot;
-
-12.30 - 13.30: Almuerzo
-
-13.30 - 14.30: Personalización a escala: cómo hacerlo realidad
-
-14.30 a 15.00 horas: Conclusión, resumen y pasos siguientes
-
-15.00: Aplazamiento
+08:00: Desayuno 08:30: Introducción a la entrega basada en el Recorrido del usuario, estructura del equipo, retraso en la entrega 09.45: Flujo de usuario 3 Fusión física y digital - Recorrido con ejercicio práctico 11.15: Desglose 11.30: Resumen de los flujos de usuario: (donde-cuando) 12:00: Grupo Presentations 12.30: Almuerzo 13.30: Flujo de usuario 4: Análisis del cliente: versión 14.30 profunda: Conclusión, resumen y pasos siguientes 15.00: Bebidas y suspensión
 
 ## Requisitos previos
 
@@ -100,7 +65,7 @@ Puede encontrar más vídeos interesantes [en nuestro canal YouTube](https://www
 
 ## Flujos de usuario
 
-[1. Adquisición](./uc/uc1/uc1.md)
+[1. Adquisición ](./uc/uc1/uc1.md)
 
 En este flujo de usuarios, comprenderá todos los elementos que necesita para implementar casos de uso centrados en la adquisición para usuarios desconocidos y no autenticados junto con usuarios conocidos y autenticados mediante Real-Time CDP.
 
@@ -112,6 +77,6 @@ En este flujo de usuarios, comprenderá todos los elementos que necesite para im
 
 En este flujo de usuarios, personalizará la experiencia del cliente en los canales en línea y sin conexión de forma coherente, mediante Real-Time CDP y Adobe Journey Optimizer.
 
-[4. Análisis del Recorrido de los clientes](./uc/uc4/uc4.md)
+[4. Análisis del Recorrido del cliente](./uc/uc4/uc4.md)
 
 En este flujo de usuarios, se familiarizará con el Customer Journey Analytics y obtendrá perspectivas sobre cómo evolucionan los clientes de un canal a otro, de línea a sin conexión a callcenter y más.
