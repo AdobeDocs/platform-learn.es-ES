@@ -6,10 +6,10 @@ feature: API
 kt: 7349
 thumbnail: 7349.jpg
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: 6a501b3ee36bc2be21816547e01efa0a862a63ba
+source-git-commit: a04bd682ff8d16981700598d9eef8db94c0ea568
 workflow-type: tm+mt
-source-wordcount: '1650'
-ht-degree: 4%
+source-wordcount: '1752'
+ht-degree: 5%
 
 ---
 
@@ -25,7 +25,7 @@ Este tutorial se centra en una marca comercial ficticia llamada Luma. Invierten 
 
 >[!NOTE]
 >
->El resultado final de este tutorial es un simulador de pruebas que contiene los mismos datos de ejemplo que el [Tutorial Introducción a Adobe Experience Platform para arquitectos de datos e ingenieros de datos](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html).
+>El resultado final de este tutorial es un simulador de pruebas que contiene datos similares a los de [Tutorial Introducción a Adobe Experience Platform para arquitectos de datos e ingenieros de datos](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html). Se actualizó en abril de 2023 para admitir la variable [Desafíos de Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=es).
 
 
 ## Requisitos previos
@@ -48,9 +48,9 @@ Antes de seguir los pasos, asegúrese de haber descargado el [Postman](https://w
    >
    >Los datos de usuario contenidos en la variable [platform-utils-main.zip](../assets/data-generator/platform-utils-main.zip) es ficticio y debe utilizarse únicamente con fines de demostración.
 
-1. Desde la carpeta de descargas, mueva la variable `platform-utils-main.zip` en la ubicación deseada del equipo y descomprima el archivo.
-1. En el `luma-data` carpeta, abra todas las `json` archivos en un editor de texto y reemplazar todas las instancias de `_techmarketingdemos` con su propio id de inquilino, precedido por un guion bajo.
-1. Apertura `luma-offline-purchases.json` en un editor de texto y actualice todas las marcas de tiempo para que los eventos se produzcan en el último mes (por ejemplo, busque `"timestamp":"2022-06` y reemplace el año y el mes)
+1. Desde la carpeta de descargas, mueva el archivo `platform-utils-main.zip` a la ubicación deseada en el equipo y descomprímalo.
+1. En el `luma-data` carpeta, abra todas las `json` archivos en un editor de texto y reemplazar todas las instancias de `_yourOrganizationID` con su propio id de inquilino, precedido por un guion bajo.
+1. Apertura `luma-offline-purchases.json` y `luma-web-events.json` en un editor de texto y actualice todas las marcas de tiempo para que los eventos se produzcan en el último mes (por ejemplo, busque `"timestamp":"2022-11` y reemplace el año y el mes)
 1. Tenga en cuenta la ubicación de la carpeta descomprimida, ya que la necesita más adelante al configurar la variable `FILE_PATH` Variable de entorno de Postman:
 
    >[!NOTE]
@@ -113,6 +113,9 @@ A continuación, debe importar las colecciones en Postman.
    * `2-Luma-CRM-Data.postman_collection.json`
    * `3-Luma-Product-Catalog.postman_collection.json`
    * `4-Luma-Offline-Purchase-Events.postman_collection.json`
+   * `5-Luma-Product-Inventory-Events.postman_collection.json`
+   * `6-Luma-Test-Profiles.postman_collection.json`
+   * `7-Luma-Web-Events.postman_collection.json`
 
    ![Importación de colecciones](../assets/data-generator/images/collection-files.png)
 
@@ -158,6 +161,11 @@ Ahora puede preparar e importar los datos en el simulador para pruebas de Platfo
    * `3-Luma-Product-Catalog.postman_collection.json` crea un esquema y un conjunto de datos rellenado para la información del catálogo de productos. El esquema se basa en una clase de catálogo de productos personalizada y utiliza un grupo de campos de catálogo de productos personalizado.
    * `4-Luma-Offline-Purchase-Events.postman_collection.json` crea un esquema y rellena un conjunto de datos para los datos de evento de compra sin conexión de los clientes. El esquema se basa en la clase XDM ExperienceEvent y consta de una identidad personalizada y de grupos de campos de Detalles comerciales .
 
+   * `5-Luma-Product-Inventory-Events.postman_collection.json` crea un esquema y un conjunto de datos rellenado para eventos relacionados con productos que entran y salen de existencias. El esquema se basa en una clase de evento empresarial personalizada y un grupo de campos personalizado.
+   * `6-Luma-Test-Profiles.postman_collection.json` crea un esquema y rellena un conjunto de datos con perfiles de prueba para usar en Adobe Journey Optimizer
+   * `7-Luma-Web-Events.postman_collection.json` crea un esquema y rellena un conjunto de datos con datos web históricos simples.
+
+
 ## Validación
 
 Los datos de ejemplo se han diseñado para que, cuando se hayan ejecutado las colecciones, se creen perfiles de cliente en tiempo real que combinen datos de varios sistemas. Un buen ejemplo de esto es el primer registro de los conjuntos de datos de compra sin conexión, CRM y de fidelidad. Busque ese perfil para confirmar que se han introducido los datos. En el [Interfaz de Adobe Experience Platform](https://platform.adobe.com/):
@@ -173,6 +181,8 @@ Explorando los datos del **[!UICONTROL Atributos]** y **[!UICONTROL Eventos]** ,
 ![Datos de eventos del archivo de eventos de compra sin conexión](../assets/data-generator/images/validation-profile-events.png)
 
 ## Pasos siguientes
+
+Si desea obtener más información sobre Adobe Journey Optimizer, este simulador para pruebas contiene todo lo que necesita para tomar el [Desafíos de Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=es)
 
 Si desea obtener información sobre las políticas de combinación, el control de datos, el servicio de consultas y el generador de segmentos, vaya a [lección 11 del tutorial Introducción a los arquitectos de datos y a los ingenieros de datos](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en). Las lecciones anteriores de este otro tutorial le permiten crear manualmente todo lo que acaba de completar estas colecciones de Postman: ¡disfrute del inicio inicial!
 
