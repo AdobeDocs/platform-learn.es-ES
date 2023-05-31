@@ -1,27 +1,23 @@
 ---
-title: Copiado de esquemas entre entornos de pruebas
-description: Este vídeo muestra cómo copiar un esquema de un simulador de pruebas a otro en Adobe Experience Platform mediante la API de esquema de exportación e importación.
+title: Copiado de esquemas entre zonas protegidas
+description: Este vídeo muestra cómo copiar un esquema de una zona protegida a otra en Adobe Experience Platform mediante la API Export/Import Schema.
 role: Data Architect
 feature: Schemas
 kt: 7939
 thumbnail: 333592.jpg
 exl-id: d0d23739-3a3a-4938-a400-684f36b0ae82
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '107'
+source-wordcount: '82'
 ht-degree: 17%
 
 ---
 
-# Copiado de esquemas entre entornos de pruebas
+# Copiado de esquemas entre zonas protegidas
 
-Este vídeo muestra cómo copiar un esquema de un simulador de pruebas a otro en Adobe Experience Platform mediante la API de esquema de exportación e importación. Cree y pruebe los esquemas en entornos limitados de desarrollo y, a continuación, cópielos en producción.
+Este vídeo muestra cómo copiar un esquema de una zona protegida a otra en Adobe Experience Platform mediante la API Export/Import Schema. Genere y pruebe los esquemas en entornos limitados de desarrollo y, a continuación, cópielos en producción.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333592?quality=12&learn=on)
 
->[!INFO]
->
-> Este vídeo es parte de un curso, [Modelar los datos de la experiencia del cliente con XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm), disponible de forma gratuita en Experience League!
-
-Para obtener más información, visite [documentación de esquemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=es).
+Para obtener más información, visite la [documentación de esquemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=es).
 

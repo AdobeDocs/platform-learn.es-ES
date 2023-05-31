@@ -1,27 +1,23 @@
 ---
-title: Diagrama general del perfil del cliente en tiempo real
-description: Este vídeo lo acompaña durante un diagrama de información general que ilustra la capacidad del Perfil del cliente en tiempo real de Adobe Experience Platform.
+title: Diagrama de Visión General del Perfil del Cliente en Tiempo Real
+description: Este vídeo le guía a través de un diagrama de información general que ilustra la capacidad Perfil del cliente en tiempo real de Adobe Experience Platform.
 role: Data Architect, Data Engineer
 feature: Profiles
 kt: 4943
 thumbnail: 33600.jpg
 exl-id: 1cff5492-82bb-484c-a96a-3417288d4766
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 11%
+source-wordcount: '64'
+ht-degree: 9%
 
 ---
 
-# Diagrama general del perfil del cliente en tiempo real
+# Diagrama general del Perfil del cliente en tiempo real
 
-Este vídeo lo acompaña durante un diagrama de información general que ilustra la capacidad del Perfil del cliente en tiempo real de Adobe Experience Platform.
+Este vídeo le guía a través de un diagrama de información general que ilustra la capacidad Perfil del cliente en tiempo real de Adobe Experience Platform.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33600?quality=12&learn=on)
 
->[!INFO]
->
-> Este vídeo es parte de un curso [Introducción a Adobe Experience Platform para ingenieros de datos](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.2), disponible de forma gratuita en Experience League!
-
-Para obtener más información, visite [Documentación del perfil del cliente en tiempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=es).
+Para obtener más información, visite la [Documentación del Perfil del cliente en tiempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=es).
 

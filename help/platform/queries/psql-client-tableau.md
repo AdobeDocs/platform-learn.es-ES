@@ -1,25 +1,21 @@
 ---
 title: Conexión de Tableau con el servicio de consultas
-description: Aprenda a conectar con el servicio de consulta desde varias aplicaciones de cliente de escritorio compatibles con el protocolo PostgreSQL y a utilizar las herramientas y controladores PostgreSQL para conectar y escribir consultas.
+description: Obtenga información sobre cómo conectarse al servicio de consultas desde una variedad de aplicaciones cliente de escritorio que admiten el protocolo PostgreSQL y cómo utilizar las herramientas y los controladores PostgreSQL para conectarse y escribir consultas.
 feature: Queries
 kt: 7688
 thumbnail: 333702.jpg
 exl-id: c81e669e-af61-4b6b-8eb6-a516731b6529
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 19%
+source-wordcount: '87'
+ht-degree: 18%
 
 ---
 
 # Conexión de Tableau con el servicio de consultas
 
-Aprenda a conectar con el servicio de consulta desde varias aplicaciones de cliente de escritorio compatibles con el protocolo PostgreSQL y a utilizar las herramientas y controladores PostgreSQL para conectar y escribir consultas.
+Obtenga información sobre cómo conectarse al servicio de consultas desde una variedad de aplicaciones cliente de escritorio que admiten el protocolo PostgreSQL y cómo utilizar las herramientas y los controladores PostgreSQL para conectarse y escribir consultas.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333702?quality=12&learn=on)
 
->[!INFO]
->
-> Este vídeo es parte de un curso [Creación de tableros mediante el servicio de consulta](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.qsvc.dash), disponible de forma gratuita en Experience League!
-
-Para obtener más información, visite [Documentación del servicio de consultas](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=es).
+Para obtener más información, visite la [Documentación del servicio de consultas](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=es).
