@@ -2,7 +2,7 @@
 title: Consentimiento
 description: Obtenga información sobre cómo implementar el consentimiento en una aplicación móvil.
 exl-id: 08042569-e16e-4ed9-9b5a-864d8b7f0216
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 7%
@@ -13,26 +13,26 @@ ht-degree: 7%
 
 Obtenga información sobre cómo implementar el consentimiento en una aplicación móvil.
 
-La extensión móvil de consentimiento de Adobe Experience Platform habilita la recopilación de preferencias de consentimiento de la aplicación móvil al utilizar el SDK móvil de Adobe Experience Platform y la extensión de red perimetral. Obtenga más información sobre [Extensión de consentimiento](https://aep-sdks.gitbook.io/docs/foundation-extensions/consent-for-edge-network), en la documentación.
+La extensión móvil Adobe Experience Platform Consent habilita la recopilación de preferencias de consentimiento de su aplicación móvil al utilizar el SDK móvil de Adobe Experience Platform y la extensión de red perimetral. Obtenga más información acerca de [Extensión de consentimiento](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/), en la documentación.
 
 ## Requisitos previos
 
-* La aplicación se ha creado y ejecutado correctamente con SDK instalados y configurados.
+* La aplicación se ha creado y ejecutado correctamente con los SDK instalados y configurados.
 
 ## Objetivos de aprendizaje
 
-En esta lección:
+En esta lección, deberá hacer lo siguiente:
 
-* Solicite el consentimiento al usuario.
+* Solicitar el consentimiento al usuario.
 * Actualice la extensión en función de la respuesta del usuario.
 * Obtenga información sobre cómo obtener el estado de consentimiento actual.
 
-## Solicitar consentimiento
+## Pedir consentimiento
 
-Si ha seguido el tutorial desde el principio, recuerde configurar la variable **[!UICONTROL Nivel de consentimiento predeterminado]** a &quot;Pendiente&quot;. Para empezar a recopilar datos, debe obtener el consentimiento del usuario. En este tutorial, consiga el consentimiento simplemente preguntando con una alerta, en una aplicación real querrá consultar las prácticas recomendadas de consentimiento para su región.
+Si ha seguido el tutorial desde el principio, recordará haber configurado la variable **[!UICONTROL Nivel de consentimiento predeterminado]** a &quot;Pendiente&quot;. Para empezar a recopilar datos, debe obtener el consentimiento del usuario. En este tutorial, obtenga el consentimiento simplemente preguntando con una alerta; en una aplicación del mundo real, querrá consultar las prácticas recomendadas de consentimiento para su región.
 
 1. Solo desea preguntar al usuario una vez. Una forma sencilla de gestionarlo es simplemente utilizando `UserDefaults`.
-1. Vaya a `Home.swift`.
+1. Navegue hasta `Home.swift`.
 1. Añada el siguiente código a `viewDidLoad()`.
 
    ```swift
@@ -68,9 +68,9 @@ Si ha seguido el tutorial desde el principio, recuerde configurar la variable **
 
 ## Obtener estado de consentimiento actual
 
-La extensión móvil de consentimiento suprime, penetra/permite automáticamente el seguimiento en función del valor de consentimiento actual. También puede acceder al estado de consentimiento actual por su cuenta:
+La extensión móvil de consentimiento suprimirá/anulará/permitirá automáticamente el seguimiento en función del valor de consentimiento actual. También puede acceder al estado de consentimiento actual usted mismo:
 
-1. Vaya a `Home.swift`.
+1. Navegue hasta `Home.swift`.
 1. Añada el siguiente código a `viewDidLoad()`.
 
 ```swift
@@ -82,20 +82,20 @@ Consent.getConsents{ consents, error in
 }
 ```
 
-En el ejemplo anterior, simplemente está imprimiendo el estado de consentimiento en la consola. En un escenario real, puede utilizarlo para modificar los menús u opciones que se muestran al usuario.
+En el ejemplo anterior, simplemente imprime el estado de consentimiento en la consola. En un escenario real, puede usarlo para modificar qué menús u opciones se muestran al usuario.
 
 ## Validar con Assurance
 
-1. Consulte la [Garantía](assurance.md) lección.
+1. Revise la [Assurance](assurance.md) lección.
 1. Instale la aplicación.
-1. Inicie la aplicación con la URL generada por Assurance.
-1. Si agregó el código anterior correctamente, se le pedirá que proporcione el consentimiento. Select **Sí**.
+1. Inicie la aplicación mediante la URL generada por Assurance.
+1. Si agregó el código anterior correctamente, se le solicitará que proporcione consentimiento. Seleccionar **Sí**.
    ![ventana emergente de consentimiento](assets/mobile-consent-validate.png)
-1. Debería ver un **[!UICONTROL Preferencias de consentimiento actualizadas]** en la interfaz de usuario de Assurance.
-   ![validar consentimiento](assets/mobile-consent-update.png)
+1. Debería ver una **[!UICONTROL Preferencias de consentimiento actualizadas]** en la interfaz de usuario de Assurance.
+   ![validación del consentimiento](assets/mobile-consent-update.png)
 
 Siguiente: **[Recopilar datos del ciclo vital](lifecycle-data.md)**
 
 >[!NOTE]
 >
->Gracias por invertir su tiempo en obtener información sobre el SDK de Adobe Experience Platform Mobile. Si tiene alguna pregunta, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Experience League de debate de la comunidad](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

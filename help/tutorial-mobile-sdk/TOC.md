@@ -4,8 +4,8 @@ breadcrumb-title: Tutorial de aplicación móvil
 user-guide-description: Obtenga información sobre cómo implementar aplicaciones de Adobe Experience Cloud en aplicaciones móviles con el SDK móvil de Experience Platform.
 solution: Data Collection
 kt: 6987
-recommendation: noDisplay,noCatalog
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+recommendations: noDisplay,noCatalog
+source-git-commit: 4bccc95ff94e9377b65771268e82b1900c003fc1
 workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 81%

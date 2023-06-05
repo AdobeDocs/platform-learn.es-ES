@@ -2,7 +2,7 @@
 title: Perfil
 description: Obtenga información sobre cómo recopilar datos de perfil en una aplicación móvil.
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 2%
@@ -13,18 +13,18 @@ ht-degree: 2%
 
 Obtenga información sobre cómo recopilar datos de perfil en una aplicación móvil.
 
-Puede utilizar la extensión de perfil para almacenar atributos sobre el usuario en el cliente. Esta información se puede utilizar más adelante para dirigir y personalizar mensajes durante situaciones en línea o sin conexión, sin tener que conectarse a un servidor para obtener un rendimiento óptimo. La extensión de perfil administra el perfil de operación del lado del cliente (CSOP), proporciona una forma de reaccionar a las API, actualiza los atributos del perfil del usuario y comparte los atributos del perfil del usuario con el resto del sistema como un evento generado.
+Puede utilizar la extensión de perfil para almacenar atributos sobre el usuario en el cliente. Esta información se puede utilizar posteriormente para dirigir y personalizar mensajes durante escenarios en línea o sin conexión, sin tener que conectarse a un servidor para obtener un rendimiento óptimo. La extensión de perfil administra el perfil de operación del lado del cliente (CSOP), proporciona una forma de reaccionar a las API, actualiza los atributos del perfil de usuario y comparte los atributos del perfil de usuario con el resto del sistema como un evento generado.
 
-Otras extensiones utilizan los datos de perfil para realizar acciones relacionadas con perfiles. Un ejemplo es la extensión del motor de reglas que consume los datos de perfil y ejecuta reglas basadas en los datos de perfil. Obtenga más información sobre [Extensión de perfil](https://aep-sdks.gitbook.io/docs/foundation-extensions/profile) en la documentación
+Otras extensiones utilizan los datos del perfil para realizar acciones relacionadas con el perfil. Un ejemplo es la extensión del motor de reglas, que consume los datos del perfil y ejecuta reglas basadas en los datos del perfil. Obtenga más información acerca de [Extensión de perfil](https://developer.adobe.com/client-sdks/documentation/profile/) en la documentación de
 
 >[!IMPORTANT]
 >
->La funcionalidad Perfil descrita en esta lección es independiente de la funcionalidad Perfil del cliente en tiempo real de las aplicaciones basadas en Adobe Experience Platform y en Platform.
+>La funcionalidad de perfil que se describe en esta lección es independiente de la funcionalidad de perfil del cliente en tiempo real de las aplicaciones basadas en Adobe Experience Platform y en Platform.
 
 
 ## Requisitos previos
 
-* La aplicación se ha creado y ejecutado correctamente con SDK instalados y configurados.
+* La aplicación se ha creado y ejecutado correctamente con los SDK instalados y configurados.
 * Se ha importado el SDK de perfil.
 
    ```swift
@@ -33,19 +33,19 @@ Otras extensiones utilizan los datos de perfil para realizar acciones relacionad
 
 ## Objetivos de aprendizaje
 
-En esta lección:
+En esta lección, deberá hacer lo siguiente:
 
-* Establezca o actualice los atributos de usuario.
-* Recupere atributos de usuario.
+* Establecer o actualizar atributos de usuario.
+* Recuperar atributos de usuario.
 
 
-## Establecer y actualizar
+## Configurar y actualizar
 
-Sería útil para la segmentación o personalización saber rápidamente si un usuario ha realizado compras en la aplicación anteriormente. Vamos a configurar eso en la aplicación Luma.
+Sería útil que, al segmentar o personalizar, se supiera rápidamente si un usuario ya había realizado alguna compra en la aplicación anteriormente. Vamos a configurarlo en la aplicación de Luma.
 
-1. Vaya a `Cart.swift`
+1. Navegue hasta `Cart.swift`
 
-1. Agregue el código siguiente al `processOrder() `función.
+1. Agregue el siguiente código a la `processOrder() `función.
 
    ```swift
    var profileMap = [String: Any]()
@@ -53,11 +53,11 @@ Sería útil para la segmentación o personalización saber rápidamente si un u
    UserProfile.updateUserAttributes(attributeDict: profileMap)
    ```
 
-Es posible que el equipo de personalización también desee segmentar según el nivel de lealtad del usuario. Vamos a configurar eso en la aplicación Luma.
+Es posible que el equipo de personalización también desee segmentar según el nivel de lealtad del usuario. Vamos a configurarlo en la aplicación de Luma.
 
-1. Vaya a `Account.swift`
+1. Navegue hasta `Account.swift`
 
-1. Agregue el código siguiente al `showUserInfo()` función.
+1. Agregue el siguiente código a la `showUserInfo()` función.
 
    ```swift
    var profileMap = [String: Any]()
@@ -65,7 +65,7 @@ Es posible que el equipo de personalización también desee segmentar según el 
    UserProfile.updateUserAttributes(attributeDict: profileMap)
    ```
 
-Adicional `updateUserAttributes` se puede encontrar documentación [here](https://aep-sdks.gitbook.io/docs/foundation-extensions/profile/profile-api-references#update-user-attributes).
+Adicional `updateUserAttributes` se puede encontrar la documentación [aquí](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattribute).
 
 ## Obtenga
 
@@ -78,20 +78,20 @@ UserProfile.getUserAttributes(attributeNames: ["isPaidUser","loyaltyLevel"]){
 }
 ```
 
-Adicional `getUserAttributes` se puede encontrar documentación [here](https://aep-sdks.gitbook.io/docs/foundation-extensions/profile/profile-api-references#get-user-attributes).
+Adicional `getUserAttributes` se puede encontrar la documentación [aquí](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
 
 ## Validar con Assurance
 
-1. Consulte la [instrucciones de configuración](assurance.md) para obtener más información.
+1. Revise la [instrucciones de configuración](assurance.md) sección.
 1. Instale la aplicación.
-1. Inicie la aplicación con la URL generada por Assurance.
-1. Seleccione el icono Cuenta y, a continuación, Inicio de sesión. Nota: no tiene credenciales proporcionadas.
-1. Cierre los menús de inicio de sesión y, a continuación, seleccione de nuevo el icono Cuenta . Esto le lleva a la pantalla de detalles de la cuenta donde `loyaltyLevel` está configurado.
-1. Debería ver un **[!UICONTROL UserProfileUpdate]** en la interfaz de usuario de Assurance con la actualización `profileMap` valor.
+1. Inicie la aplicación mediante la URL generada por Assurance.
+1. Seleccione el icono Cuenta y, a continuación, Iniciar sesión. Nota: no ha proporcionado ninguna credencial.
+1. Cierre los menús de inicio de sesión y, a continuación, vuelva a seleccionar el icono Cuenta. Esto le lleva a la pantalla de detalles de la cuenta, donde `loyaltyLevel` está configurado.
+1. Debería ver una **[!UICONTROL UserProfileUpdate]** en la interfaz de usuario de Assurance con el evento actualizado `profileMap` valor.
    ![validar perfil](assets/mobile-profile-validate.png)
 
 Siguiente: **[Asignación de datos a Adobe Analytics](analytics.md)**
 
 >[!NOTE]
 >
->Gracias por invertir su tiempo en obtener información sobre el SDK de Adobe Experience Platform Mobile. Si tiene alguna pregunta, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Experience League de debate de la comunidad](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
