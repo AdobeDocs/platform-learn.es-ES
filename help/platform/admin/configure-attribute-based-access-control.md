@@ -1,5 +1,5 @@
 ---
-title: Configuración del control de acceso basado en atributos
+title: Configurar el control de acceso basado en atributos
 description: Obtenga información sobre cómo configurar el control de acceso basado en atributos para controlar el acceso a recursos de Experience Platform específicos.
 role: Admin, User
 feature: Access Control
@@ -7,23 +7,19 @@ kt: 10363
 thumbnail: 345641.jpeg
 last-substantial-update: 2022-07-28T00:00:00Z
 exl-id: 170676e6-d9fb-4a45-aa32-b1b27e8533f4
-source-git-commit: f19d3851c5d8e8c54823aa115cc7068f91776da6
+source-git-commit: 3df5214a445cbf4c9862bb82cd32a9f243228539
 workflow-type: tm+mt
-source-wordcount: '127'
+source-wordcount: '79'
 ht-degree: 0%
 
 ---
 
-# Configuración del control de acceso basado en atributos
+# Configurar el control de acceso basado en atributos
 
-Obtenga información sobre cómo configurar el control de acceso basado en atributos para limitar el acceso a recursos de Experience Platform específicos. Para obtener más información, visite [documentación de control de acceso](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/overview.html).
+Obtenga información sobre cómo configurar el control de acceso basado en atributos para limitar el acceso a recursos de Experience Platform específicos. Para obtener más información, visite la [documentación de control de acceso](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/overview.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/345641?quality=12&learn=on)
 
 >[!NOTE]
 >
-> La función de creación de políticas que se muestra en este vídeo no está totalmente disponible, pero la directiva predeterminada en las cuentas de cliente se configura de forma similar a la que se muestra.
-
->[!IMPORTANT]
->
-> El control de acceso basado en atributos actualmente está disponible en una versión limitada para clientes de asistencia médica basados en EE. UU. Esta capacidad estará disponible para todos los clientes de Real-time Customer Data Platform una vez que se haya lanzado completamente. Además, la etiqueta de datos de salud regulados utilizada en este vídeo solo está permitida para los clientes del Escudo de la salud.
+> La función de creación de directivas que se muestra en este vídeo no está disponible por completo, pero la directiva predeterminada de las cuentas de cliente se configura de forma similar a la que se muestra.
