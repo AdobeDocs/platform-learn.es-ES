@@ -2,34 +2,34 @@
 title: Configuración de Developer Console y Postman
 seo-title: Set up Developer Console and Postman | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Configuración de Developer Console y Postman
-description: En esta lección, debe configurar un proyecto en la consola de Adobe Developer y proporcionarle [!DNL Postman] Colecciones para que pueda empezar a usar las API de Platform.
+description: En esta lección, debe configurar un proyecto en la consola de Adobe Developer y proporcionarle lo siguiente [!DNL Postman] Colecciones para que pueda empezar a utilizar las API de Platform.
 role: Data Architect, Data Engineer
 feature: API
 kt: 4348
 thumbnail: 4348-set-up-developer-console-and-postman.jpg
 exl-id: 72b541fa-3ea1-4352-b82b-c5b79ff98491
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 35242a037bc79f18e90399c47e47064634d26a37
 workflow-type: tm+mt
-source-wordcount: '1588'
+source-wordcount: '1320'
 ht-degree: 1%
 
 ---
 
-# Configure Developer Console y [!DNL Postman]
+# Configurar Developer Console y [!DNL Postman]
 
 <!--30min-->
 
-En esta lección, debe configurar un proyecto en la consola de Adobe Developer y descargar [!DNL Postman] colecciones para que pueda empezar a usar las API de Platform.
+En esta lección, debe configurar un proyecto en la consola de Adobe Developer y descargar [!DNL Postman] para que pueda empezar a utilizar las API de Platform.
 
-Para completar los ejercicios de API en este tutorial, [descargue la aplicación de Postman para su sistema operativo.](https://www.postman.com/downloads/) Aunque no es necesario para utilizar las API de Experience Platform, Postman facilita los flujos de trabajo de la API y Adobe Experience Platform proporciona decenas de colecciones de Postman para ayudarle a ejecutar llamadas de API y aprender a funcionar. El resto de este tutorial asume algunos conocimientos prácticos de Postman. Para obtener ayuda, consulte la [Documentación de Postman](https://learning.postman.com/).
+Para completar los ejercicios de API de este tutorial, haga lo siguiente: [descargue la aplicación de Postman para su sistema operativo.](https://www.postman.com/downloads/) Aunque no es necesario para utilizar las API de Experience Platform, Postman facilita los flujos de trabajo de las API y Adobe Experience Platform proporciona decenas de colecciones de Postman para ayudarle a ejecutar llamadas de API y aprender cómo funcionan. El resto de este tutorial supone algunos conocimientos prácticos de Postman. Para obtener ayuda, consulte la [Documentación de Postman](https://learning.postman.com/).
 
-Platform es la API creada primero. Aunque también existen opciones de interfaz para todas las tareas principales, es posible que desee utilizar la API de plataforma en algún momento. Por ejemplo, para ingerir datos, mueva elementos entre entornos limitados, automatice tareas rutinarias o utilice nuevas funciones de Platform antes de crear la interfaz de usuario.
+Platform se crea primero según la API. Aunque también existen opciones de interfaz para todas las tareas principales, es posible que desee utilizar la API de Platform en algún momento. Por ejemplo, para introducir datos, mover elementos entre entornos limitados, automatizar tareas rutinarias o utilizar nuevas funciones de Platform antes de crear la interfaz de usuario.
 
-**Arquitectos de datos** y **Ingenieros de datos** puede que necesite utilizar la API de plataforma fuera de este tutorial.
+**Arquitectos de datos** y **Ingenieros de datos** puede que necesite utilizar la API de Platform fuera de este tutorial.
 
 ## Permisos necesarios
 
-En el [Configuración de permisos](configure-permissions.md) , configure todos los controles de acceso necesarios para completar esta lección.
+En el [Configuración de permisos](configure-permissions.md) Esta lección, ha configurado todos los controles de acceso necesarios para completar esta lección.
 
 <!--
 * Permission item Sandboxes > `Luma Tutorial`
@@ -38,173 +38,164 @@ En el [Configuración de permisos](configure-permissions.md) , configure todos l
 
 ## Configuración de la consola de Adobe Developer
 
-Adobe Developer Console es el destino de desarrollador para acceder a las API y los SDK de Adobe, escuchar eventos casi en tiempo real, ejecutar funciones en tiempo de ejecución o crear complementos o aplicaciones de App Builder. La usará para acceder a la API de Experience Platform. Para obtener más información, consulte la [Documentación de la consola de Adobe Developer](https://www.adobe.io/apis/experienceplatform/console/docs.html)
+La consola de Adobe Developer es el destino del desarrollador para acceder a las API y SDK de Adobe, escuchar eventos casi en tiempo real, ejecutar funciones en tiempo de ejecución o crear complementos o aplicaciones de App Builder. Lo utilizará para acceder a la API de Experience Platform. Para obtener más información, consulte la [Documentación de la consola Adobe Developer](https://www.adobe.io/apis/experienceplatform/console/docs.html)
 
 1. Cree una carpeta en el equipo local con el nombre `Luma Tutorial Assets` para archivos utilizados en el tutorial.
 
-1. Abra el [Consola de Adobe Developer](https://console.adobe.io)
+1. Abra el [Consola de Adobe Developer](https://console.adobe.io){target="_blank"}
 
 1. Inicie sesión y confirme que se encuentra en la organización correcta
 
-1. Select **[!UICONTROL Crear nuevo proyecto]** en [!UICONTROL Inicio rápido] para abrir el Navegador.
+1. Seleccionar **[!UICONTROL Crear nuevo proyecto]** in [!UICONTROL Inicio rápido] menú.
 
    ![Crear nuevo proyecto](assets/adobeio-createNewProject.png)
 
-1. En el proyecto recién creado, seleccione la opción **[!UICONTROL Agregar a proyecto]** y, a continuación, seleccione **[!UICONTROL API]**
 
-   ![Configuración de la API del proyecto de la consola de Adobe Developer](assets/adobeio-addAPI.png)
+1. En el proyecto recién creado, seleccione **[!UICONTROL Editar proyecto]** botón
+1. Cambie el **[!UICONTROL Título del proyecto]** hasta `Luma Tutorial API Project` (añada su nombre al final, si varias personas de su compañía realizan este tutorial)
+1. Seleccione **[!UICONTROL Guardar]**
+
+   ![Configuración de API del proyecto de la consola Adobe Developer](assets/adobeio-renameProject.png)
+
+
+1. Seleccionar **[!UICONTROL Añadir API]**
+
+   ![Configuración de API del proyecto de la consola Adobe Developer](assets/adobeio-addAPI.png)
 
 1. Filtre la lista seleccionando **[!UICONTROL Adobe Experience Platform]**
 
 1. En la lista de API disponibles, seleccione **[!UICONTROL API de Experience Platform]** y seleccione **[!UICONTROL Siguiente]**.
 
-   ![Configuración de la API del proyecto de la consola de Adobe Developer](assets/adobeio-AEPAPI.png)
+   ![Configuración de API del proyecto de la consola Adobe Developer](assets/adobeio-AEPAPI.png)
 
-1. Para la autenticación de sistemas externos como [!DNL Postman], se requiere un par de claves pública y privada. Para generar un nuevo par de claves, seleccione **[!UICONTROL Opción 1]**  y presione la tecla **[!UICONTROL Generar par de teclas]** botón
+1. Seleccionar **[!UICONTROL Servidor a servidor OAuth]** como credencial y seleccione **[!UICONTROL Siguiente]**.
+   ![Seleccionar servidor a servidor OAuth](assets/adobeio-choose-auth.png)
 
-   ![Configuración de la API del proyecto de la consola de Adobe Developer](assets/adobeio-keypair.png)
-
-1. Una vez que las claves estén listas, es posible que se le pida que las descargue en su equipo local. Guarde las claves empaquetadas en `config.zip` a la carpeta `Luma Tutorial Assets`. Los necesitaremos en el próximo ejercicio.
-
-
-1. Una vez generada la clave, la clave pública se agregará automáticamente al proyecto como se muestra en la captura de pantalla. Seleccione el **[!UICONTROL Siguiente]** botón.
-
-   ![ Ver después de la clave se genera y se selecciona](assets/adobeio-afterKeyIsGenerated.png)
-
-1. Seleccione el `Luma Tutorial Platform` perfil de producto y seleccione el **[!UICONTROL Guardar API configurada]** botón
+1. Seleccione el `AEP-Default-All-Users` perfil de producto y seleccione **[!UICONTROL Guardar API configurada]**
 
    ![Seleccionar perfil de producto](assets/adobeio-selectProductProfile.png)
 
-1. Ahora se ha creado el proyecto de Developer Console.
+1. Ahora se ha creado su proyecto de Developer Console.
 
-1. En el **[!UICONTROL Pruébelo]** de la página, seleccione **[!UICONTROL Descargar para Postman]** y, a continuación, seleccione **[!UICONTROL Cuenta de servicio (JWT)]** para descargar el [!DNL Postman] archivo json de entorno. Guarde el `service.postman_environment.json` en su `Luma Tutorial Assets` carpeta.
+1. En el **[!UICONTROL Pruébelo.]** de la página, seleccione **[!UICONTROL Descargar para Postman]** y luego seleccione **[!UICONTROL Servidor a servidor OAuth]** para descargar [!DNL Postman] archivo json de entorno. Guarde el `oauth_server_to_server.postman_environment.json` en su `Luma Tutorial Assets` carpeta.
 
 
-   ![Configuración de la API del proyecto de la consola de Adobe Developer](assets/adobeio-io-api.png)
+   ![Configuración de API del proyecto de la consola Adobe Developer](assets/adobeio-io-api.png)
 
-   >[!NOTE]
-   >
-   >Los administradores del sistema de su organización pueden ver el proyecto como una &quot;credencial de API&quot; en el perfil del producto en el Admin Console
-   >
-   >![Configuración de la API del proyecto de la consola de Adobe Developer](assets/adobeio-io-integrationInAdminConsole.png)
+## Pida a un administrador del sistema que añada la credencial de la API a la función
 
-Puede que haya notado que al proyecto se le asignó un número, por ejemplo, &quot;Proyecto 12&quot;:
+Para utilizar la credencial de la API e interactuar con el Experience Platform, un administrador del sistema deberá asignar las credenciales de la API a la función creada en la lección anterior.  Si no es administrador del sistema, envíeles lo siguiente:
 
-1. Seleccione el número de proyecto en la ruta
-1. Seleccione el **[!UICONTROL Editar proyecto]** botón
-1. Cambie el **[!UICONTROL Título del proyecto]** a `Luma Tutorial API Project` (añada su nombre al final, si varias personas de su empresa están tomando este tutorial)
-1. Seleccione el botón **[!UICONTROL Guardar]**
+1. El [!UICONTROL Nombre] de su credencial de API (`Credential in Luma Tutorial API Project`)
+1. El [!UICONTROL Correo electrónico de cuenta técnica] de sus credenciales (esto ayudará al administrador del sistema a encontrar las credenciales)
 
-   ![Configuración de la API del proyecto de la consola de Adobe Developer](assets/adobeio-renameProject.png)
+   ![[!UICONTROL Nombre] y [!UICONTROL Correo electrónico de cuenta técnica] de su credencial](assets/postman-credentialDetails.png)
 
+Estas son las instrucciones para el administrador del sistema:
+
+1. Iniciar sesión en [Adobe Experience Platform](https://platform.adobe.com)
+1. Seleccionar **[!UICONTROL Permisos]** en la navegación de la izquierda, que le llevará a la [!UICONTROL Funciones] pantalla
+1. Abra el `Luma Tutorial Platform` función
+   ![Abra la función](assets/postman-openRole.png)
+1. Seleccione el **[!UICONTROL Credenciales de API]** pestaña
+1. Seleccionar **[!UICONTROL Añadir credenciales de API]**
+   ![Añadir credencial](assets/postman-addCredential.png)
+1. Busque el `Credential in Luma Tutorial API Project` credencial, filtrar con la variable [!UICONTROL Correo electrónico de cuenta técnica] proporcionada por el participante del tutorial, si la lista es larga
+1. Seleccione la credencial
+1. Seleccione **[!UICONTROL Guardar]**
+
+
+   ![Añadir credencial](assets/postman-findCredential.png)
 
 ## Configuración de Postman
 
 >[!CAUTION]
 >
->La interfaz de Postman se actualiza regularmente. Las capturas de pantalla de este tutorial se tomaron con Postman v9.0.5 para Mac, pero las opciones de la interfaz pueden haber cambiado.
+>La interfaz de Postman se actualiza regularmente. Las capturas de pantalla de este tutorial se tomaron con Postman v10.15.1 para Mac, pero las opciones de la interfaz pueden haber cambiado.
 
 
 1. Descargar e instalar [[!DNL Postman]](https://www.postman.com/downloads/)
-1. Apertura [!DNL Postman] e importe el archivo de entorno json descargado, `service.postman_environment.json`
-   ![Entorno de importación](assets/postman-importEnvironment.png)
-1. En [!DNL Postman], seleccione el entorno en la lista desplegable
+1. Abrir [!DNL Postman] y cree un espacio de trabajo
+   ![Importar entorno](assets/postman-createWorkspace.png)
+
+1. Importe el archivo de entorno json descargado, `oauth_server_to_server.postman_environment.json`
+   ![Importar entorno](assets/postman-importEnvironment.png)
+1. Entrada [!DNL Postman], seleccione su entorno en la lista desplegable
+
+1. Seleccione el icono para ver las variables de entorno:
 
    ![Cambiar entorno](assets/postman-changeEnvironment.png)
-1. Seleccione el **ojo** para ver las variables de entorno:
 
-   ![Configuración de la API del proyecto de la consola de Adobe Developer](assets/postman-PostmanEnvironment.png)
 
-### Actualizar el nombre del entorno
+### Añadir el nombre y el ID de inquilino de la zona protegida
 
-Dado que el nombre exportado del entorno desde Developer Console se genera aleatoriamente, asígnele un nombre más descriptivo para que no confunda los entornos más adelante cuando empiece a trabajar en la implementación real de Platform:
+El `SANDBOX_NAME` y `TENANT_ID` y `CONTAINER_ID` Las variables de no se incluyen en la exportación de la consola de Adobe Developer, por lo que se añaden manualmente:
 
-1. Con la pantalla de variables de entorno aún abierta, seleccione **Editar** en la parte superior derecha
-1. Actualice el **Nombre del entorno** a `Luma Tutorial`
-1. Leave **Administrar entornos** abrir modal en modo de edición, ya que lo editaremos más adelante en el siguiente paso
-
-   ![Actualizar el nombre del entorno de Postman](assets/postman-updateEnvName.png)
-
-### Adición de la clave privada
-
-Ahora es el momento de agregar el valor PRIVATE_KEY al entorno de Postman.
-
-1. Extraiga el `config.zip` que se generó en el ejercicio anterior al crear el proyecto de Developer Console. Este zip contiene dos archivos:
-   * `private.key`
-   * `certificate_pub.crt`
-1. Abra el `private.key` en un editor de texto y copie el contenido.
-1. En Postman, en la **Administrar entornos** > **Editar** modal que sigue abierto desde el último ejercicio, pegue los valores copiados delante de **PRIVATE_KEY** en el **Valor inicial** y **Valor actual** columnas.
-1. Seleccione **Guardar**
-
-   ![Clave privada pegada en Postman](assets/postman-privateKey.png)
-
-### Añadir el JWT y los tokens de acceso
-
-Adobe proporciona un completo conjunto de [!DNL Postman] colecciones para ayudarle a explorar la API de Experience Platform. Estas colecciones se encuentran en la [Adobe Experience Platform Postman muestra el repositorio de GitHub](https://github.com/adobe/experience-platform-postman-samples). Debe marcar este repositorio, ya que lo usará varias veces a lo largo de este tutorial y más tarde, al implementar Experience Platform para su propia empresa.
-
-La primera colección funciona con las API del servicio Identity Management de Adobe (IMS). Es una forma cómoda de rellenar JWT_TOKEN y ACCESS_TOKEN desde Postman *destinados a usos distintos de la producción* como completar este tutorial en el simulador de pruebas. Alternativamente, el token de JWT se puede generar en la consola de Adobe Developer. Sin embargo, dado que caduca con regularidad, el uso de esta colección le permite actualizarla sin necesidad de volver a visitar la consola de Adobe Developer mientras completa este tutorial.
-
->[!WARNING]
->
->Como se indica en la [LÉAME de las API del servicio Identity Management de Adobe](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims), los métodos de generación mencionados son adecuados para usos que no sean de producción. La firma local carga una biblioteca JavaScript desde un host de terceros, y la firma remota envía la clave privada a un servicio web administrado por un Adobe. Aunque Adobe no almacena esta clave privada, las claves de producción nunca deben compartirse con nadie.
-
-Para generar los tokens:
-
-1. Descargue el [Colección de generación de tokens de acceso de Developer Console](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/ims/Identity%20Management%20Service.postman_collection.json) a su `Luma Tutorial Assets` carpeta
-1. Importar la colección en [!DNL Postman]
-1. Seleccione la solicitud **IMS: Generación + autenticación de JWT mediante token de usuario** y seleccione **Enviar**
-
-   ![Solicitar los tokens](assets/postman-requestToken.png)
-1. La variable **JWT_TOKEN** y **ACCESS_TOKEN** rellenado automático en las variables de entorno de [!DNL Postman].
-
-   ![Postman](assets/postman-config.png)
-
-### Agregar el nombre del espacio aislado y el ID del inquilino
-
-La variable `SANDBOX_NAME` y `TENANT_ID` y `CONTAINER_ID` no se incluyen en la exportación de la consola de Adobe Developer, por lo que se añaden manualmente:
-
-1. En [!DNL Postman], abra el **Variables de entorno**
+1. Entrada [!DNL Postman], abra el **Variables de entorno**
 1. Seleccione el **Editar** vínculo a la derecha del nombre del entorno
-1. En el **Añadir nuevo campo de variable**, introduzca `SANDBOX_NAME`
-1. En ambos campos de valor, introduzca `luma-tutorial`, el nombre que le dimos a nuestro simulador de pruebas en la lección anterior. Si ha utilizado un nombre diferente para el entorno limitado, por ejemplo, luma-tutorial-ignatiusjreilly, asegúrese de utilizar ese valor.
-1. En el **Añadir nuevo campo de variable**, introduzca `TENANT_ID`
-1. Cambie al explorador web y busque el ID de inquilino de su empresa. Para ello, vaya a la interfaz de Experience Platform y extraiga la parte de la URL *después del signo @*. Por ejemplo, mi id de inquilino es `techmarketingdemos` pero el suyo es diferente:
+1. En el **Agregar nuevo campo de variable**, introduzca `SANDBOX_NAME`
+1. En ambos campos de valor, introduzca `luma-tutorial`, el nombre que le dimos a nuestra zona protegida en la lección anterior. Si ha utilizado un nombre diferente para la zona protegida, por ejemplo, luma-tutorial-ignatiusjreilly, asegúrese de utilizar ese valor.
+1. En el **Agregar nuevo campo de variable**, introduzca `TENANT_ID`
+1. Cambie al explorador web y busque el ID de inquilino de su empresa en la interfaz de Experience Platform y extraiga la parte de la dirección URL *después del signo @*. Por ejemplo, mi ID de inquilino es `techmarketingdemos` pero el tuyo es diferente:
 
    ![Obtención del ID de inquilino desde la URL de la interfaz de Platform](assets/postman-getTenantId.png)
 
 1. Copie este valor y vuelva a la [!DNL Postman] Pantalla Administrar entornos
-1. Pegar el ID de inquilino en ambos campos de valor
-1. En el **Añadir nuevo campo de variable**, introduzca `CONTAINER_ID`
+1. Pegue su ID de inquilino en ambos campos de valor
+1. En el **Agregar nuevo campo de variable**, introduzca `CONTAINER_ID`
 1. Entrar `global` en ambos campos de valor
 
    >[!NOTE]
    >
-   >`CONTAINER_ID` es un campo cuyo valor cambiamos varias veces durante el tutorial. When `global` se utiliza, la API interactúa con los elementos proporcionados por el Adobe en su cuenta de Platform. When `tenant` , la API interactúa con sus propios elementos personalizados.
+   >`CONTAINER_ID` es un campo cuyo valor cambiamos varias veces durante el tutorial. Cuándo `global` , la API interactúa con los elementos proporcionados por el Adobe en su cuenta de Platform. Cuándo `tenant` , la API interactúa con sus propios elementos personalizados.
 
 1. Seleccione **Guardar**
 
-   ![Campos SANDBOX_NAME, TENANT_ID y CONTAINER_ID añadidos como variables de entorno](assets/postman-addEnvFields.png)
+   ![Los campos SANDBOX_NAME, TENANT_ID y CONTAINER_ID se han añadido como variables de entorno](assets/postman-addEnvFields.png)
 
 
-## Realizar una llamada de API de plataforma
 
-Ahora hagamos una llamada a la API de Platform para confirmar que hemos configurado todo correctamente.
+## Realizar llamadas de API
 
-Abra el [Experience Platform [!DNL Postman] colecciones en GitHub](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform). Hay muchas colecciones en esta página para varias API de plataforma. Recomiendo encarecidamente que lo marque como marcador.
+### Recuperación de un token de acceso
 
-Ahora, hagamos nuestra primera llamada de API:
+El Adobe proporciona un conjunto completo de [!DNL Postman] colecciones para ayudarle a explorar la API de Experience Platform. Estas colecciones se encuentran en la [Adobe Experience Platform Postman Ejemplos Repositorio de GitHub](https://github.com/adobe/experience-platform-postman-samples). Debe marcar este repositorio, ya que lo utilizará varias veces a lo largo de este tutorial y más tarde al implementar Experience Platform para su propia compañía.
 
-1. Descargue el [Recopilación de la API del Registro de esquemas](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Schema%20Registry%20API.postman_collection.json) a su `Luma Tutorial Assets` carpeta
+La primera colección funciona con las API del servicio Identity Management de Adobe (IMS). Es una forma cómoda de recuperar un token de acceso desde Postman.
+
+Para generar el token de acceso:
+
+1. Descargue la [Recopilación de API del servicio Identity Management](https://github.com/adobe/experience-platform-postman-samples/blob/master/apis/ims/Identity%20Management%20Service.postman_collection.json) a su `Luma Tutorial Assets` carpeta
+1. Importe la colección en [!DNL Postman]
+1. Seleccione la solicitud **oAuth: Solicitar token de acceso** solicitar y seleccionar **Enviar**
+1. Usted debe conseguir una `200 OK` respuesta con un token de acceso en la respuesta
+
+   ![Solicitar los tokens](assets/postman-requestToken.png)
+
+1. El token de acceso debe almacenarse automáticamente como **ACCESS_TOKEN** variable de entorno de su [!DNL Postman] entorno.
+
+   ![Postman](assets/postman-config.png)
+
+
+### Interacción con una API de Platform
+
+Ahora vamos a hacer una llamada a la API de Platform para confirmar que hemos configurado todo correctamente.
+
+Abra el [Experience Platform [!DNL Postman] colecciones en GitHub](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform). Hay muchas colecciones en esta página para varias API de plataforma. Recomiendo encarecidamente marcarlo como favorito.
+
+Ahora, vamos a hacer nuestra primera llamada de API:
+
+1. Descargue la [Colección de API de Registro de esquemas](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Schema%20Registry%20API.postman_collection.json) a su `Luma Tutorial Assets` carpeta
 1. Importarlo en [!DNL Postman]
-1. Apertura **API del Registro de Esquemas > Clases > Clases de lista**
-1. Observe el **Parámetros** y **Encabezados** y observe cómo incluyen algunas de las variables de entorno que ingresamos anteriormente.
-1. Tenga en cuenta que **Encabezados > Campo Accept value** está configurado como `application/vnd.adobe.xed-id+json`. Las API del Registro de esquemas requieren una de estas [Aceptar valores de encabezado especificados](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#accept) que proporcionan diferentes formatos en la respuesta.
-1. Select **Enviar** para realizar su primera llamada de API de Platform!
+1. Abrir **API de Registro de Esquemas > Esquemas > Enumerar esquemas**
+1. Consulte la **Parámetros** y **Encabezados** y observe cómo incluyen algunas de las variables de entorno que ingresamos anteriormente.
+1. Tenga en cuenta que la variable **Encabezados > Aceptar campo de valor** se establece en `application/vnd.adobe.xed-id+json`. Las API de Registro de esquemas requieren uno de estos elementos [valores de encabezado Aceptar especificados](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#accept) que proporcionan diferentes formatos en la respuesta.
+1. Seleccionar **Enviar** para realizar su primera llamada a la API de Platform.
 
-Espero que tengas éxito `200 OK` que contiene una lista de las clases XDM estándar disponibles en el simulador de pruebas, como se muestra a continuación.
+Espero que tengas éxito `200 OK` Respuesta que contiene una lista de los esquemas XDM disponibles proporcionados por el Adobe en la zona protegida, como se muestra a continuación.
 
 ![Primera llamada de API en Postman](assets/postman-firstAPICall.png)
 
-Si la llamada no se ha realizado correctamente, dedique un momento a la depuración utilizando los detalles de respuesta de error de la llamada de API y revise los pasos anteriores. Si se queda atascado, solicite ayuda en el [Foro de la comunidad](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform/ct-p/adobe-experience-platform-community?profile.language=es) o use el enlace en el lado derecho de esta página para &quot;Registrar un problema&quot;.
+Si la llamada no se realizó correctamente, dedique un momento a la depuración utilizando los detalles de respuesta de error de la llamada de API y revise los pasos anteriores. Si se queda atascado, por favor solicite ayuda en el [Foro de la comunidad](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform/ct-p/adobe-experience-platform-community?profile.language=es) o utilice el enlace de la derecha de esta página para &quot;Registrar un problema&quot;.
 
-Con los permisos de Platform, el simulador de pruebas y [!DNL Postman] configurado, está listo para [datos de modelo en esquemas](model-data-in-schemas.md)!
+Con los permisos de Platform, la zona protegida y [!DNL Postman] configurado, está listo para [datos de modelo en esquemas](model-data-in-schemas.md)!

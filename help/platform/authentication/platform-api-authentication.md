@@ -5,50 +5,50 @@ role: Developer
 feature: API
 kt: 3688
 thumbnail: 28832.jpeg
+last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: c1774670-436e-46dd-9c9b-177bfee5f749
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 60f509ef55ce121f572466a8f13953dba982a0ce
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 10%
+source-wordcount: '260'
+ht-degree: 15%
 
 ---
 
-# Autenticar y acceder [!DNL Experience Platform] API
+# Autenticación y acceso [!DNL Experience Platform] API
 
-Para realizar llamadas a las API de Adobe Experience Platform, primero debe obtener acceso a una cuenta de desarrollador de Experience Platform.
+Para realizar solicitudes a las API de Adobe Experience Platform, debe tener una cuenta de desarrollador de Experience Platform.
 
-Para obtener instrucciones paso a paso que describan cómo obtener acceso a una cuenta de desarrollador, visite el [Tutorial de autenticación de API de Experience Platform](https://www.adobe.com/go/platform-api-authentication-en).
+## Cree un proyecto en la consola de Adobe Developer y exporte un entorno de Postman
 
-## Creación y exportación de la API de Experience Platform a Postman
+[[!DNL Postman]](https://www.postman.com/) es una herramienta que permite a los desarrolladores interactuar rápida y fácilmente con las API de Adobe Experience Platform.
 
-[Postman](https://www.getpostman.com/) es una herramienta que permite a los desarrolladores interactuar rápida y fácilmente con las API de Adobe Experience Platform.
-
-La consola de Adobe Developer **Detalles de exportación para Postman** ofrece una forma sencilla de exportar todos los detalles de la cuenta necesarios para acceder e interactuar con una API de Experience Platform en un único archivo de entorno de Postman, lo que elimina la necesidad de copiar y pegar valores de la consola de Adobe Developer en Postman.
+La consola de Adobe Developer **Detalles de exportación para Postman** Esta funcionalidad proporciona una forma sencilla de exportar todos los detalles de la cuenta necesarios para acceder a una API de Experience Platform e interactuar con ella en un solo archivo de entorno de Postman, lo que elimina la necesidad de copiar y pegar valores de la consola de Adobe Developer en Postman.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28832/?quality=12&learn=on)
 
-## Generar un token de acceso con Postman
+>[!IMPORTANT]
+>
+>Después de crear la credencial de la API, un administrador del sistema de su empresa debe asociar la credencial con una función de Experience Platform.
 
-Utilice la variable [API del servicio Identity Management de Adobe](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims) para obtener un token de acceso para acceder a las API de Adobe Experience Platform para uso no productivo
+
+## Generación de un token de acceso con Postman
+
+Utilice el [API del servicio Identity Management de Adobe](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims) para obtener un token de acceso y acceder a las API de Adobe Experience Platform.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29698/?quality=12&learn=on)
 
->[!WARNING]
->
-> Como se indica en la colección Postman de generación de tokens de acceso a Adobe I/O, los métodos de generación indicados son adecuados para usos que no sean de producción. La firma local carga una biblioteca JavaScript desde un host de terceros, y la firma remota envía la clave privada a un servicio web administrado por un Adobe. Aunque Adobe no almacena esta clave privada, las claves de producción nunca deben compartirse con nadie.
 
-## Interacción con las API de Adobe I/O mediante Postman
+## Interacción con las API de Experience Platform mediante Postman
 
-Explore la interacción con las API de Adobe I/O mediante el [Colecciones Postman de la API de Experience Platform proporcionadas por el Adobe](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform), basándose en el [Variables de entorno de Adobe I/O](#export-adobe-io-integration-details-to-postman) y [token de acceso generado](#generate-an-access-token-with-postman).
+Explore la interacción con las API de Adobe Experience Platform mediante [Colecciones de Postman de API de Experience Platform proporcionadas por el Adobe](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform), sobre la base de [Variables de entorno de la consola Adobe Developer](#export-adobe-io-integration-details-to-postman) y [token de acceso generado](#generate-an-access-token-with-postman).
 
 >[!VIDEO](https://video.tv.adobe.com/v/29704/?quality=12&learn=on)
 
-Tenga en cuenta que las colecciones de Postman proporcionadas por el Adobe pueden no existir para cada API de Adobe I/O, pero se proporciona el valor [Colecciones Postman de la API de Experience Platform](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform) se puede utilizar como guía para definir sus propias colecciones de Postman para estos casos de uso.
 
 ## Recursos adicionales
 
-* [Consola Adobe I/O](https://console.adobe.io)
+* [Consola de desarrollador de Adobe](https://developer.adobe.com/console/home)
 * [Muestras de Adobe Experience Platform Postman](https://github.com/adobe/experience-platform-postman-samples)
-   * [Recopilación de Postman de generación de tokens de acceso a Adobes I/O](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims)
-   * [Colecciones de Postman de las API de Adobe Experience Platform](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform)
-* [Descargar Postman](https://www.getpostman.com/)
+   * [Recopilación de Postman del sistema de Identity Management para generar tokens de acceso](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims)
+   * [Colecciones Postman de API de Adobe Experience Platform](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform)
+* [Descargar Postman](https://www.postman.com/)
