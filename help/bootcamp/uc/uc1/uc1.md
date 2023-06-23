@@ -1,12 +1,12 @@
 ---
 title: 'Bootcamp: adquisición'
 description: 'Bootcamp: adquisición'
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
 exl-id: 4500dc9b-cc1a-4de8-aa39-7d4e849d65c4
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 1%
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Este tutorial se creó para facilitar un formato de bootcamp determinado. Utiliza sistemas y cuentas específicos a los que es posible que no tenga acceso. Incluso sin acceso, creemos que aún puede aprender mucho leyendo este contenido muy detallado. Si usted es participante en uno de los bootcamp y necesita sus credenciales de acceso, póngase en contacto con su representante de Adobe para que le proporcione la información necesaria.
+>Este tutorial se ha creado para facilitar un formato de bootcamp concreto. Utiliza sistemas y cuentas específicos a los que podría no tener acceso. Incluso sin acceso, creemos que aún puede aprender mucho leyendo este contenido tan detallado. Si usted es un participante en uno de los bootcamp y necesita sus credenciales de acceso, por favor póngase en contacto con su representante de Adobe que le proporcionará la información requerida.
 
 ## Ejercicios
 
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 En este ejercicio, seguirá un script y recorrerá el sitio web.
 
-[1.2 Visualizar su propio perfil de cliente en tiempo real: IU](./ex2.md)
+[1.2 Visualice su propio perfil de cliente en tiempo real: IU](./ex2.md)
 
 En este ejercicio, iniciará sesión en Adobe Experience Platform y verá su propio perfil de cliente en tiempo real en la interfaz de usuario.
 
@@ -41,12 +41,12 @@ En este ejercicio, iniciará sesión en Adobe Experience Platform y verá su pro
 
 En este ejercicio, creará un segmento utilizando el Generador de segmentos de Adobe Experience Platform.
 
-[1.4 Acción: enviar el segmento a Adobe Target](./ex4.md)
+[1.4 Tomar medidas: enviar el segmento a Adobe Target](./ex4.md)
 
-Utilice el segmento que creó en el ejercicio 1.1 para configurar una actividad de segmentación de experiencias en Adobe Target.
+Utilice el segmento creado en el ejercicio 1.1 para configurar una actividad de segmentación de experiencias en Adobe Target.
 
-[1.5 Acción: enviar el segmento a Facebook](./ex5.md)
+[1.5 Tomar medidas: enviar el segmento a Facebook](./ex5.md)
 
-Conecte el segmento que creó en el ejercicio 1.1 al Facebook de destino.
+Conecte el segmento que creó en el ejercicio 1.1 a Facebook de destino.
 
 [Volver a todos los módulos](../../overview.md)

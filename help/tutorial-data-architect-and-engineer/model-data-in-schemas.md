@@ -5,10 +5,10 @@ breadcrumb-title: Datos de modelo en esquemas
 description: En esta lección, modelará los datos de Luma en esquemas. Esta es una de las lecciones más largas del tutorial, ¡así que toma un vaso de agua y abróchate!
 role: Data Architect
 feature: Schemas
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: 0b13a4fa625cd29cc98c319b81fcb2a278b7b19a
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '2485'
 ht-degree: 5%

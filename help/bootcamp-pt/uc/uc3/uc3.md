@@ -1,11 +1,12 @@
 ---
-title: Bootcamp - Combinando física y digital - Brasil
-description: Bootcamp - Combinando física y digital - Brasil
-kt: 5342
+title: Bootcamp - Fusión física y digital - Brasil
+description: Bootcamp - Fusión física y digital - Brasil
+jira: KT-5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
+exl-id: 145ffaea-c630-4ec3-a12d-69661ce26f49
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 0%
@@ -14,34 +15,34 @@ ht-degree: 0%
 
 # 3. Retornar para Todos los Módulos
 
-## objetivo aprendizado
+## Objetivos de aprendizaje
 
-## Pré-requisitos
+## Requisitos previos
 
-- Acesso à Adobe Experience Platform:  [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Acesso à coleta de dados da Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Acesso ao site de demostração
+- Acceso a Adobe Experience Platform:  [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Acceso a la colección de datos de Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Acesso ao site de demostración
 
 >[!IMPORTANT]
 >
->Este tutorial foi criado para facilitar um específico de bootcamp. Sistemas e contiene específicos tutorial de caos quais você pode não ter acesso são neste. Mesmo sem acesso, ê ainda podrido de Muito com a leitura deste conteúdo detal hado. Se você é um participante de um bootcamp e precisa das credenciais de acesso, entre em contato com seu representante da Adobe para receber como informações necesarios.
+>Este tutorial para crear un formato específico de bootcamp. Sistemas e contas específicos aos quais você pode não ter acesso são usado neste tutorial. Mesmo sem acesso, você ainda pode aprender muito com a leitura deste conteúdo detallado. Se você é um de um bootcamp e precisa das credenciais de acesso, entre em contato com seu representante da Adobe para receber as informações necesárias.
 
-## Exercícios
+## Ejercicios
 
-[3.1 Uso de aplicativo móvel e acione sinalizador beacon](./ex1.md)
+[3.1 Uso de la baliza aplicativa móvel e acione sinalizador](./ex1.md)
 
-Ncoscício, você va exercomo configurar um evento.
+Neste exercício, você irá aprender como configurar um evento.
 
-[3.2 Crimen de evento](./ex2.md)
+[3.2 Cría de eventos](./ex2.md)
 
-Ncoscício, você va exercomo configurar um evento.
+Neste exercício, você irá aprender como configurar um evento.
 
-[3.3 Criar durante la jornada e notificação push](./ex3.md)
+[3.3 Crie sua jornada e notificação push](./ex3.md)
 
-Ncosmécio, você va vincular uma configurar uma jornada e notificação push e como seu e evento mensagem para una jornada.
+Neste exercício, você irá a aprender como configurar uma jornada e uma notificação push e como se ha organizado un evento de mensajería para una jornada.
 
-[3.4 Sesión de prueba](./ex4.md)
+[3.4 Prueba de la jornada](./ex4.md)
 
-Ncoscício, você va exervaya configurar uma jornada como seu evento e mensagem para a.
+Neste exercício, você irá como configurar uma jornada e como evento e mensagem para a jornada.
 
 [Retornar para Todos los Módulos](../../overview.md)

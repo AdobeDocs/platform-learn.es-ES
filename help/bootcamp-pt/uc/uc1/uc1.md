@@ -1,51 +1,52 @@
 ---
-title: Bootcamp - Acquisition - Brasil
-description: Bootcamp - Acquisition - Brasil
-kt: 5342
+title: Bootcamp - Adquisición - Brasil
+description: Bootcamp - Adquisición - Brasil
+jira: KT-5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
+exl-id: 4392bdc2-ec43-4f2d-99af-719e9979f0c5
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 0%
 
 ---
 
-# 1. Aquisição
+# 1. Adquisición
 
-## objetivo aprendizado
+## Objetivos de aprendizaje
 
-## Pré-requisitos
+## Requisitos previos
 
-- Acesso à Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Acesso à coleta de dados da Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Acesso ao site de demostração
+- Acceso a Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Acceso a la colección de datos de Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Acesso ao site de demostración
 
 >[!IMPORTANT]
 >
->Este tutorial foi criado para facilitar um específico de Bootcamp. Sistemas e contiene específicos tutorial de caos quais você pode não ter acesso são neste. Mesmo sem acesso, ê ainda podrido de Muito com a leitura deste conteúdo detal hado. Se você é um participante de um Bootcamp e precisa das credenciais de acesso, entre em contato com seu representante da Adobe para receber como informações necesarios.
+>Este tutorial para la creación de un formato específico de Bootcamp. Sistemas e contas específicos aos quais você pode não ter acesso são usado neste tutorial. Mesmo sem acesso, você ainda pode aprender muito com a leitura deste conteúdo detallado. Se você é um de um Bootcamp e precisa das credenciais de acesso, entre em contato com seu representante da Adobe para receber as informações necesárias.
 
-## Exercícios
+## Ejercicios
 
-[1.1 Visita al sitio](./ex1.md)
+[1.1 Visite el sitio](./ex1.md)
 
-Neste exercício, você será aplicado um roteiro e gol.
+Neste exercício, você irá seguir um roteiro e percorrer en el sitio.
 
-[1.2 Visualizar seu próprio de la memoria del cliente em tempo real](./ex2.md)
+[1.2 Visualiza tu perfil de cliente en tiempo real - UI](./ex2.md)
 
-Neste exercício, você irá fazer login en Adobe Experience Platform e seu próprio Perfil de cliente em tempo real na UI.
+Neste exercício, você irá fazer Iniciar sesión en Adobe Experience Platform e iniciar sesión en un perfil de cliente en tiempo real en la interfaz de usuario.
 
-[1.3 segmento de ámbito: IU](./ex3.md)
+[1.3 Crie um: interfaz de usuario de la](./ex3.md)
 
-Neste exercício, você irá criar um segmento umentos o Adobe Experience Platform.
+Neste exercício, você irá criar um Construtor de Segmentos da Adobe Experience Platform.
 
-[1.4 Ação: envie seu segmento para o Adobe Target](./ex4.md)
+[1.4 Ação: envie seu para o Adobe Target](./ex4.md)
 
-Uso segmento construir no exercício 1.1 para configurar uma Atividade de segmentação por experiência no Adobe Target.
+Use o construído no exercício 1.1 para configurar uma Atividade de segmentação por experiência no Adobe Target.
 
-[1.5 Ação: envie seu segmento para o Facebook](./ex5.md)
+[1.5 Ação: envie seu para o Facebook](./ex5.md)
 
-Conecte o segmento que você criou no exercício 1.1 ao destino Facebook.
+Enviar por correo electrónico Enviar por correo electrónico Enviar por correo electrónico Enviar por correo electrónico un mensaje de correo electrónico a Facebook 1.1
 
-[Retornar para Todos os módulos](../../overview.md)
+[Todos los hoteles de Todos los días](../../overview.md)

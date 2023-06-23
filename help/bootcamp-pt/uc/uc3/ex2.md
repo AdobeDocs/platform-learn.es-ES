@@ -1,87 +1,88 @@
 ---
-title: Bootcamp - Fusión física y digital - Journey Optimizer Crear su evento - Brasil
-description: Bootcamp - Fusión física y digital - Journey Optimizer Crear su evento - Brasil
-kt: 5342
+title: Bootcamp - Fusión física y digital - Journey Optimizer Cree su evento - Argentina
+description: Bootcamp - Fusión física y digital - Journey Optimizer Cree su evento - Argentina
+jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
+exl-id: 2133b560-09d8-419d-bb99-05d0f3df52cc
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 0%
 
 ---
 
-# 3.2 Crimen de evento
+# 3.2 Cría de eventos
 
-Inicio de sesión en Facebook en Adobe Journey Optimizer access a [Adobe Experience Cloud]. Clique **Journey Optimizer**.
+Iniciar sesión en Adobe Journey Optimizer acessando a [Adobe Experience Cloud]. Clique em **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
-Você será rediredeterminado para a **Página principal** sin Journey Optimizer. Primeiro verifique se você está está o sandbox correto. O nome do sandbox que deve ser usado `Bootcamp`. Para alternar de um sandbox para outro, clique em **Prod** e selecione o sandbox na lista. Neste exemplo o nome do sandbox é **Bootcamp**. Você estará na visualização da **Página principal** do seu sandbox `Bootcamp`.
+Você será reorientado para a **Inicio** no hay Journey Optimizer. Primeiro, verifique se você está usando sandbox correto. O nome do sandbox que deve ser usado é `Bootcamp`. Para alternar de um sandbox para outro, clique em **Prod** e selecione o sandbox na lista. Neste ejemplo, o nome do sandbox é **Bootcamp**. Você estará en visualización da **Inicio** zona protegida de do seu `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
-No menú à esquerda, rol para baixo e clique em **Configuraciones**. Em seguida, clique no botão **Administrar** em Eventos.
+No menu à esquerda, role para baixo e clique em **Configuraciones**. Em, grupo no botão **Administrar** em Eventos.
 
 ![ACOP](./images/acopmenu.png)
 
-Você para uma visão geral de todos los eventos disponíveis. Clique **Crear evento** para cómplice a criar seu próprio evento.
+Você verá uma visão geral de todos los eventos disponíveis. Clique em **Crear evento** para venir a criar seu próprio evento.
 
 ![ACOP](./images/emptyevent.png)
 
-Uma nova janela de evento vazia irá aparecer.
+Uma nova janela de evento vazia.
 
-Em primeiro lugar, dê um nome ao seu evento como, por ejemplo: `yourLastNameBeaconEntryEvent` e adicione uma describe ção como, por ejemplo: `Beacon Entry Event`.
+Em primeiro lugar, dê um nome ao seu evento como, por ejemplo: `yourLastNameBeaconEntryEvent` e adicione uma descripción como, por ejemplo: `Beacon Entry Event`.
 
 ![ACOP](./images/eventdescription.png)
 
-Em seguida, certificfique-se de que **Tipo** está definido **Unitario** e, para a seleção de **Tipo de ID de evento**, selecione **Sistema generado**.
+Em, certifica-se de que **Tipo** está definido como **Unitario** e, para a seleção de **Tipo de ID de evento**, selecione **Sistema generado**.
 
 ![ACOP](./images/eventidtype.png)
 
-Un etapa seguido é un seleção do schema. Um schema foi preparado para este exercício. Uso de esquema `Demo System - Event Schema for Mobile App (Global v1.1) v.1`.
+Una etapa seguinte é a seleção do schema. Um esquema para preparar este ejercicio. Uso del esquema `Demo System - Event Schema for Mobile App (Global v1.1) v.1`.
 
 ![ACOP](./images/eventschema.png)
 
-Depois de seleo Schema, você vários campos sendo seleAsentadores na seção **Campos**. Agora você deve passar o mouse sobre un seção **Campos** e três ícones pop-up serão exibidos. Clique no ícone de **Editar**.
+Depois de selecionar o Schema, você verá vários campos sendo selecionados na seção **Campos**. Agora você deve passar o mouse sobre a seção **Campos** e três ícones pop-up serão exibidos. Categoría no disponible de **Editar**.
 
 ![ACOP](./images/eventpayload.png)
 
-Você yuma janela pop-up de **Campos**, onde você deve selecionar s dos campos que precisamos personalizar una jornada. Escolheremos outros atributos de posteriormente, utilizando os dados já existentes na Adobe Experience Platform
+Você va uma janela pop-up de **Campos**, onde você deve selecionar algunos s dos campos que precisamos para personalizar una jornada. Escolheremos outros de perfil, os dados já existe na Adobe Experience Platform
 
 ![ACOP](./images/eventfields.png)
 
-Función para baixo até ver to objeto `Place context` e marque a caixa de seleção. Com es, todo contexto da localização do cliente disponibilidad para una jornada. Clique **Ok** para salvar suas alterações.
+Role para baixo até ver o objeto `Place context` e marque a caixa de seleção. Com isso, todo o contexto da localização do cliente será disponibilizado para a jornada. Clique em **Ok** para salvar sus alteraciones.
 
 ![ACOP](./images/eventpayloadbr.png)
 
-Em seguida, você devolverá a una tela abaixo. Clique **Guardar** mais uma vez para salvar suas alterações.
+Em, el você deverá ver a tela abaixo. Clique em **Guardar** mais uma vez para salvar suas alterações.
 
 ![ACOP](./images/eventsave.png)
 
-Seu evento agora está configurado e salvo.
+Seu evento agora está e salvo.
 
 ![ACOP](./images/eventdone.png)
 
-Clique no seu evento novamente para la protección de la información **Editar evento** mais uma vez. Pasar el ratón sobre **Campos** para ver os 3 íconos. Clique no ícone **Ver**.
+Clique no seu evento novamente para abrir una tela **Editar evento** mais uma vez. Pasa el ratón sobre **Campos** para ver os 3 ícones. Clique no ícone **Ver**.
 
 ![ACOP](./images/viewevent.png)
 
-Agora vocserá um exemplo do payload anticipado.
-Seu evento tem umID de orquestração único, que você pode encontrar rolando baixo nessa utilidad útil visual `_experience.campaign.orchestration.eventID`.
+Ágora você verá um ejemplo do payload esperando.
+Seu evento tem um eventID de orquestração único, que você pode encontrar rolando para baixo nessa carga útil até visualiza `_experience.campaign.orchestration.eventID`.
 
 ![ACOP](./images/payloadeventID.png)
 
-O eventID é que deve ser enviado à Adobe Experience Platform para acionar a una jornada que você irá em dos próximos exercícios. Lembre-se deste eventID, você pode precisar dele posteriormente.
+O eventID é o que deve ser publicado à Adobe Experience Platform para acionar a jornada que você construir em um dos próximos exercícios. Lembre-se deste eventID, você pode precisar dele posteriormente.
 `"eventID": "e76c0bf0c77c3517e5b6f4c457a0754ebaf5f1f6b9357d74e0d8e13ae517c3d5"`
 
-Clique **Ok** e, em seguida, clique em **Cancelar**.
+Clique em **Ok** e, em, clique em **Cancelar**.
 
-Você terminou este exercício.
+Você terminou este ejercicio.
 
-Próxima etapa: [3.3 Criar durante la jornada e notificação push](./ex3.md)
+Próxima etapa: [3.3 Crie sua jornada e notificação push](./ex3.md)
 
-[Retornar para Fluxo de Usuário 3](./uc3.md)
+[Hoteles cerca de Fluxo de Usuário 3](./uc3.md)
 
 [Retornar para Todos los Módulos](../../overview.md)

@@ -4,10 +4,10 @@ breadcrumb-title: Tutoriales
 user-guide-description: Descubra los muchos componentes de Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: 13a1983f0706686d53c9d218cde0b583bd44578d
+source-git-commit: e9ac0c059a896e552fd14e6456f121a70254bca0
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 32%
+source-wordcount: '937'
+ht-degree: 33%
 
 ---
 
@@ -203,7 +203,7 @@ ht-degree: 32%
    + [Personalización de próxima visita con Adobe Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
 + Integraciones de Experience Cloud {#experience-cloud}
    + [Magento](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)
-   + [Organización de campañas con Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
+   + [Organización de campañas con Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
 + Tendencias del sector {#industry}
    + [El futuro de la administración de datos y el entorno cambiante](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
    + [Una historia de dos percepciones: marcas frente a consumidores](/help/platform/industry/brands-vs-consumers.md)

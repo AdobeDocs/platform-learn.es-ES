@@ -1,33 +1,33 @@
 ---
-title: Bootcamp - Fusión física y digital - Journey Optimizer Cree su recorrido y notificaciones push
-description: Bootcamp - Fusión física y digital - Journey Optimizer Cree su recorrido y notificaciones push
-kt: 5342
+title: Bootcamp - Fusión física y digital - Journey Optimizer Cree su recorrido y notificación push
+description: Bootcamp - Fusión física y digital - Journey Optimizer Cree su recorrido y notificación push
+jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
 exl-id: be8c23ec-c5f8-4abc-849f-994446072a84
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
-source-wordcount: '834'
-ht-degree: 3%
+source-wordcount: '831'
+ht-degree: 2%
 
 ---
 
 # 3.3 Crear el recorrido y las notificaciones push
 
-En este ejercicio, debe configurar el recorrido y el mensaje que deben activarse cuando alguien introduce una señalización mediante la aplicación móvil.
+En este ejercicio, configurará el recorrido y el mensaje que deben activarse cuando alguien entre en una señalización mediante la aplicación móvil.
 
-Inicie sesión en Adobe Journey Optimizer desde [Adobe Experience Cloud](https://experience.adobe.com). Haga clic en **Journey Optimizer**.
+Inicie sesión en Adobe Journey Optimizer accediendo a [Adobe Experience Cloud](https://experience.adobe.com). Clic **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
-Se le redirigirá al **Página principal**  en Journey Optimizer. En primer lugar, asegúrese de que está utilizando el simulador para pruebas correcto. El entorno limitado que se va a usar se denomina `Bootcamp`. Para cambiar de un simulador de pruebas a otro, haga clic en **Prod** y seleccione el simulador de pruebas de la lista. En este ejemplo, el simulador de pruebas recibe el nombre **Bootcamp**. Entonces estará en el **Página principal** vista del entorno limitado `Bootcamp`.
+Se le redirigirá a la variable **Inicio**  ver en Journey Optimizer. Primero, asegúrese de que está usando la zona protegida correcta. Se llama a la zona protegida que se va a utilizar `Bootcamp`. Para cambiar de una zona protegida a otra, haga clic en **Prod** y seleccione la zona protegida de la lista. En este ejemplo, la zona protegida se denomina **Bootcamp**. Entonces estarás en el... **Inicio** vista de la zona protegida `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
-## 3.3.1 Crear su recorrido
+## 3.3.1 Creación de un recorrido
 
-En el menú de la izquierda, haga clic en **Recorridos**. A continuación, haga clic en **Crear Recorrido** para crear un nuevo recorrido.
+En el menú izquierdo, haga clic en **Recorridos**. A continuación, haga clic en **Crear Recorrido** para crear un nuevo recorrido.
 
 ![ACOP](./images/createjourney.png)
 
@@ -35,53 +35,53 @@ A continuación, verá una pantalla de recorrido vacía.
 
 ![ACOP](./images/journeyempty.png)
 
-En el ejercicio anterior, creó una **Evento**. Lo llamaste así `yourLastNameBeaconEntryEvent` y sustituido `yourLastName` con su apellido. Este fue el resultado de la creación del evento:
+En el ejercicio anterior creó un nuevo **Evento**. Lo llamaste así `yourLastNameBeaconEntryEvent` y reemplazado `yourLastName` con tu apellido. Este fue el resultado de la creación del Evento:
 
 ![ACOP](./images/eventdone.png)
 
-Ahora debe tomar este evento como el inicio de este Recorrido. Para ello, vaya a la izquierda de la pantalla y busque el evento en la lista de eventos.
+Ahora debe tomar este evento como inicio de este Recorrido. Para ello, vaya al lado izquierdo de la pantalla y busque el evento en la lista de eventos.
 
 ![ACOP](./images/eventlist.png)
 
-Seleccione el evento, arrástrelo y suéltelo en el lienzo del recorrido. Tu recorrido ahora se ve así. Haga clic en **Ok** para guardar los cambios.
+Seleccione el evento, arrástrelo y suéltelo en el lienzo de recorrido. Su recorrido ahora tiene este aspecto. Clic **Ok** para guardar los cambios.
 
 ![ACOP](./images/journeyevent.png)
 
-Como segundo paso en el recorrido, debe agregar una **Push** acción. Vaya al lado izquierdo de la pantalla para **Acciones**, seleccione **Push** a continuación, arrástrela y colóquela en el segundo nodo del recorrido.
+Como segundo paso en el recorrido, debe agregar un **Push** acción. Vaya al lado izquierdo de la pantalla para **Acciones**, seleccione la **Push** acción y, a continuación, arrástrela y suéltela en el segundo nodo del recorrido.
 
 ![ACOP](./images/journeyactions.png)
 
 A la derecha de la pantalla, debe crear la notificación push.
 
-Configure las variables **Categoría** a **Marketing** y seleccione una superficie push que le permita enviar notificaciones push. En este caso, la superficie push que se va a seleccionar es **mmeeewis-app-mobile-bootcamp**.
+Configure las variables **Categoría** hasta **Marketing** y seleccione una superficie push que le permita enviar notificaciones push. En este caso, la superficie de inserción que se va a seleccionar es **mmeewis-app-mobile-bootcamp**.
 
 ![ACOP](./images/journeyactions1.png)
 
-## 3.3.2 Crear su mensaje
+## 3.3.2 Crear el mensaje
 
-Haga clic en **Editar contenido**.
+Clic **Editar contenido**.
 
 ![ACOP](./images/emptymsg.png)
 
-Verá esto:
+A continuación, verá esto:
 
 ![ACOP](./images/emailmsglist.png)
 
 Definamos el contenido de la notificación push.
 
-Haga clic en el **Título** campo de texto.
+Haga clic en **Título** campo de texto.
 
 ![Journey Optimizer](./images/msg5.png)
 
-En el área de texto empiece a escribir **Hi**. Haga clic en el icono de personalización.
+En el área de texto, empiece a escribir **Hola**. Haga clic en el icono de personalización.
 
 ![Journey Optimizer](./images/msg6.png)
 
-Ahora necesita introducir el token de personalización para el campo **Nombre** que se almacenan en `profile.person.name.firstName`. En el menú de la izquierda, seleccione **Atributos de perfil**, desplácese hacia abajo o navegue hasta encontrar la variable **Persona** y haga clic en la flecha para ir un nivel más profundo hasta que alcance el campo `profile.person.name.firstName`. Haga clic en el **+** para añadir el campo al lienzo. Haga clic en **Guardar**.
+Ahora debe introducir el token de personalización para el campo **Nombre** que se almacena en `profile.person.name.firstName`. En el menú izquierdo, seleccione **Atributos de perfil**, desplácese hacia abajo/navegue hasta encontrar la **Persona** y haga clic en la flecha para profundizar hasta llegar al campo `profile.person.name.firstName`. Haga clic en **+** para añadir el campo al lienzo. Haga clic en **Guardar**.
 
 ![Journey Optimizer](./images/msg7.png)
 
-Volverás aquí. Haga clic en el icono de personalización situado junto al campo . **Cuerpo**.
+Entonces volverás a estar aquí. Haga clic en el icono de personalización junto al campo **Cuerpo**.
 
 ![Journey Optimizer](./images/msg11.png)
 
@@ -93,7 +93,7 @@ A continuación, haga clic en **Atributos contextuales** y luego **Journey Orche
 
 ![ACOP](./images/jomsg3.png)
 
-Haga clic en **Eventos**.
+Clic **Eventos**.
 
 ![ACOP](./images/jomsg4.png)
 
@@ -101,24 +101,24 @@ Haga clic en el nombre del evento, que debería tener este aspecto: **yourLastNa
 
 ![ACOP](./images/jomsg5.png)
 
-Haga clic en **Contexto del lugar**.
+Clic **Contexto del lugar**.
 
 ![ACOP](./images/jomsg6.png)
 
-Haga clic en **Interacción de puntos de interés**.
+Clic **Interacción del PDI**.
 
 ![ACOP](./images/jomsg7.png)
 
-Haga clic en **Detalle del punto de interés**.
+Clic **Detalles del PDI**.
 
 ![ACOP](./images/jomsg8.png)
 
-Haga clic en el **+** icono **Nombre de punto de interés**.
-Entonces verás esto. Haga clic en **Guardar**.
+Haga clic en **+** icono en **Nombre del PDI**.
+Entonces verá esto... Haga clic en **Guardar**.
 
 ![ACOP](./images/jomsg9.png)
 
-El mensaje ya está listo. Haga clic en la flecha situada en la esquina superior izquierda para volver al recorrido.
+El mensaje ya está listo. Haga clic en la flecha de la esquina superior izquierda para volver al recorrido.
 
 ![ACOP](./images/jomsg11.png)
 
@@ -128,31 +128,31 @@ Haga clic en **Ok**.
 
 ## 3.3.2 Enviar un mensaje a una pantalla
 
-Como tercer paso en el recorrido, debe agregar una **sendMessageToScreen** acción. Vaya al lado izquierdo de la pantalla para **Acciones**, seleccione **sendMessageToScreen** a continuación, arrástrela y suéltela en el tercer nodo del recorrido. Entonces verás esto.
+Como tercer paso del recorrido, debe agregar una **sendMessageToScreen** acción. Vaya al lado izquierdo de la pantalla para **Acciones**, seleccione la **sendMessageToScreen** acción y, a continuación, arrástrela y suéltela en el tercer nodo del recorrido. Entonces verá esto...
 
 ![ACOP](./images/jomsg15.png)
 
-La variable **sendMessageToScreen** es una acción personalizada que publica un mensaje en el extremo que usa la visualización en la tienda. La variable **sendMessageToScreen** action espera que se definan varias variables. Para ver estas variables, desplácese hacia abajo hasta que vea **Parámetros de acción**.
+El **sendMessageToScreen** acción es una acción personalizada que publicará un mensaje en el extremo que utiliza la visualización en tienda. El **sendMessageToScreen** action espera que se definan varias variables. Puede ver esas variables desplazándose hacia abajo hasta que vea **Parámetros de acción**.
 
 ![ACOP](./images/jomsg16.png)
 
-Ahora debe establecer los valores para cada parámetro de acción. Siga esta tabla para comprender qué valores se requieren.
+Ahora debe establecer los valores de cada parámetro de acción. Siga esta tabla para comprender qué valores se requieren dónde.
 
 | Parámetro | valor |
 |:-------------:| :---------------:|
-| ENTREGA | `'image'` |
+| ENVÍO | `'image'` |
 | ECID | `@{yourLastNameBeaconEntryEvent._experienceplatform.identification.core.ecid}` |
 | NOMBRE | `#{ExperiencePlatform.ProfileFieldGroup.profile.person.name.firstName}` |
 | EVENTSUBJECT | `#{ExperiencePlatform.ProductListItems.experienceevent.first(currentDataPackField.eventType == "commerce.productViews").productListItems.first().name}` |
 | EVENTSUBJECTURL | `#{ExperiencePlatform.ProductListItems.experienceevent.first(currentDataPackField.eventType == "commerce.productViews").productListItems.first()._experienceplatform.core.imageURL}` |
-| SANDBOX | `'bootcamp'` |
+| ZONA PROTEGIDA | `'bootcamp'` |
 | CONTAINERID | `''` |
 | ACTIVITYID | `''` |
 | PLACEMENTID | `''` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-Para establecer estos valores, haga clic en el botón **Editar** icono.
+Para definir estos valores, haga clic en **Editar** icono.
 
 ![ACOP](./images/jomsg17.png)
 
@@ -164,43 +164,43 @@ A continuación, pegue el valor en función de la tabla anterior. Haga clic en *
 
 ![ACOP](./images/jomsg19.png)
 
-Repita este proceso para añadir valores para cada campo.
+Repita este proceso para agregar valores a cada campo.
 
 >[!IMPORTANT]
 >
->Para el campo ECID, hay una referencia al evento `yourLastNameBeaconEntryEvent`. Asegúrese de reemplazar `yourLastName` por su apellido.
+>Para el ECID de campo, hay una referencia al evento `yourLastNameBeaconEntryEvent`. Asegúrese de reemplazar `yourLastName` por tu apellido.
 
-El resultado final debería tener este aspecto:
+El resultado final debería ser similar al siguiente:
 
 ![ACOP](./images/jomsg20.png)
 
-Desplácese hacia arriba y haga clic en **Ok**.
+Desplazarse arriba y hacer clic **Ok**.
 
 ![ACOP](./images/jomsg21.png)
 
-Aún necesita darle un Nombre a su recorrido. Para ello, haga clic en el botón **Propiedades** en la parte superior derecha de la pantalla.
+Aún necesita darle un Nombre a su recorrido. Para ello, haga clic en el icono **Propiedades** en la parte superior derecha de la pantalla.
 
 ![ACOP](./images/journeyname.png)
 
-A continuación, puede introducir el nombre del recorrido aquí. Utilice `yourLastName - Beacon Entry Journey`. Haga clic en **OK** para guardar los cambios.
+A continuación, puede introducir el nombre del recorrido aquí. Utilice `yourLastName - Beacon Entry Journey`. Clic **OK** para guardar los cambios.
 
 ![ACOP](./images/journeyname1.png)
 
-Ahora puede publicar el recorrido haciendo clic en **Publicación**.
+Ahora puede publicar el recorrido haciendo clic en **Publish**.
 
 ![ACOP](./images/publishjourney.png)
 
-Haga clic en **Publicación** de nuevo.
+Clic **Publish** otra vez.
 
 ![ACOP](./images/publish1.png)
 
-A continuación, verá una barra de confirmación verde que indica que su recorrido se ha publicado.
+A continuación, verá una barra de confirmación verde que indica que el recorrido se ha publicado.
 
 ![ACOP](./images/published.png)
 
 El recorrido ya está activo y se puede activar.
 
-Ya has terminado este ejercicio.
+Ya ha terminado este ejercicio.
 
 Paso siguiente: [3.4 Probar el recorrido](./ex4.md)
 

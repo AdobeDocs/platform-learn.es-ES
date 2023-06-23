@@ -3,10 +3,10 @@ title: Información general sobre Adobe Experience Platform Web SDK y Edge Netwo
 description: Descubra cómo el SDK web de Adobe Experience Platform y la red perimetral permiten a los clientes utilizar una biblioteca JavaScript y una señalización para enviar datos a aplicaciones de Adobe y destinos de terceros.
 landing-page-description: Obtenga información general sobre el SDK web y la red perimetral.
 short-description: Obtenga información general sobre el SDK web y la red perimetral.
-kt: 5205
+jira: KT-5205
 thumbnail: 34141.jpg
 exl-id: cd010977-9ff1-47ea-8aa1-d9b913ba846b
-source-git-commit: 8c602618cee3b0167d4d864b24b936d719d730a6
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 41%
@@ -21,13 +21,13 @@ Descubra cómo el SDK web de Adobe Experience Platform y la red perimetral permi
 
 >[!NOTE]
 >
->Este vídeo es un extracto de la sesión de Adobe Summit 2020 *[Cumplir con Alloy.js y no volver a etiquetar para un eVar o mbox](https://business.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*.
+>Este vídeo es un extracto de la sesión de Adobe Summit 2020 *[Conozca Alloy.js y no vuelva a etiquetar para un eVar o Mbox](https://business.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*.
 >
->La funcionalidad de reenvío del lado del servidor que se describe en este vídeo ahora está disponible para todos los clientes con licencia. Consulte la [Documentación del reenvío de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)
+>La capacidad de reenvío del lado del servidor que se describe en este vídeo ya está disponible de forma general para todos los clientes con licencia. Consulte la [Documentación del reenvío de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)
 
 ## Recursos adicionales
 
 * [Documentación del SDK web de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=es)
-* [Simplificación de los flujos de trabajo del cliente con la publicación de blog del SDK web de Adobe Experience Platform](https://medium.com/adobetech/simplifying-customer-workflows-with-adobe-experience-platform-web-sdk-4e54fe134f4a)
-* [Optimización de las integraciones de cliente-servidor con la publicación de blog de Adobe Experience Platform Experience Edge](https://medium.com/adobetech/streamlining-client-server-integrations-with-adobe-experience-platform-experience-edge-1caaef887172)
-* [Unificar sus servicios de Adobe Experience Platform con una publicación de blog del SDK web de Adobe Experience Platform](https://medium.com/adobetech/unify-your-adobe-experience-platform-services-with-adobe-experience-platform-web-sdk-75cf6851a9fc)
+* [Simplificación de los flujos de trabajo de clientes con la publicación de blog del SDK web de Adobe Experience Platform](https://medium.com/adobetech/simplifying-customer-workflows-with-adobe-experience-platform-web-sdk-4e54fe134f4a)
+* [Optimización de las integraciones cliente-servidor con la publicación de blog de Adobe Experience Platform Experience Edge](https://medium.com/adobetech/streamlining-client-server-integrations-with-adobe-experience-platform-experience-edge-1caaef887172)
+* [Unificar los servicios de Adobe Experience Platform con la publicación del blog del SDK web de Adobe Experience Platform](https://medium.com/adobetech/unify-your-adobe-experience-platform-services-with-adobe-experience-platform-web-sdk-75cf6851a9fc)

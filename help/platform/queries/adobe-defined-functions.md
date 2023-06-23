@@ -2,10 +2,10 @@
 title: Funciones definidas por Adobe
 description: Aprenda a utilizar funciones definidas por Adobe en el Servicio de consultas de Adobe Experience Platform para realizar tareas comunes relacionadas con la empresa en los datos de Experience Event.
 feature: Queries
-kt: 7685
+jira: KT-7685
 thumbnail: 333701.jpg
 exl-id: 81976285-5cb2-4e0f-94f7-1b408408bf2b
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '63'
 ht-degree: 85%

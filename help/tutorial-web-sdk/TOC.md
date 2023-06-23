@@ -2,12 +2,12 @@
 user-guide-title: Tutorial de implementación de Adobe Experience Cloud con SDK web
 breadcrumb-title: Tutorial de SDK web
 solution: Data Collection
-kt: 6953
+jira: KT-6953
 recommendations: noDisplay,noCatalog
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '81'
-ht-degree: 38%
+ht-degree: 41%
 
 ---
 
@@ -19,18 +19,18 @@ ht-degree: 38%
    + [Configure los permisos](configure-permissions.md)
    + [Configuración de un esquema XDM](configure-schemas.md)
    + [Configuración de un área de nombres de identidad](configure-identities.md)
-   + [Configurar un conjunto de datos](configure-datastream.md)
+   + [Configurar una secuencia de datos](configure-datastream.md)
 
 + Configuración de etiquetas {#tags-configuration}
    + [Instalación de la extensión del SDK web](install-web-sdk.md)
    + [Creación de elementos de datos](create-data-elements.md)
-   + [Crear una regla de etiqueta](create-tag-rule.md)
-   + [Validación con Debugger](validate-with-debugger.md)
+   + [Creación de una regla de etiqueta](create-tag-rule.md)
+   + [Validar con Debugger](validate-with-debugger.md)
 
 + Configuración de aplicaciones {#applications-setup}
-   + [Configuración del Experience Platform](setup-experience-platform.md)
+   + [Configurar Experience Platform](setup-experience-platform.md)
    + [Configuración de Adobe Analytics](setup-analytics.md)
-   + [Configuración del Audience Manager](setup-audience-manager.md)
+   + [Configurar Audience Manager](setup-audience-manager.md)
    + [Configurar Target](setup-target.md)
 
 + Gestión del consentimiento {#consent-management}

@@ -1,12 +1,12 @@
 ---
 title: Creación de segmentos de varias entidades
-description: Este vídeo le muestra cómo crear segmentos de varias entidades en el Generador de segmentos de Adobe Experience Platform.  La segmentación de varias entidades o la segmentación entre clases le permite generar segmentos que combinan datos basados en varias clases XDM.
+description: Este vídeo muestra cómo crear segmentos de varias entidades en el Generador de segmentos de Adobe Experience Platform.  La segmentación de varias entidades, o segmentación entre clases, permite crear segmentos que combinan datos basados en varias clases XDM.
 role: User
 feature: Segments
-kt: 3697
+jira: KT-3697
 thumbnail: 32179.jpg
 exl-id: cace814d-7124-432c-91fb-896725b701a4
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 # Creación de segmentos de varias entidades
 
-Este vídeo le muestra cómo crear segmentos de varias entidades en el Generador de segmentos de Adobe Experience Platform.  La segmentación de varias entidades o la segmentación entre clases le permite generar segmentos que combinan datos basados en *varias clases XDM*. Por ejemplo, podría tener un conjunto de datos basado en la clase XDM ExperienceEvent que capture los ID de producto cuando los clientes realizan una compra y otro conjunto de datos creado en una clase de producto personalizada, que contenga los detalles del catálogo de cada ID de producto (por ejemplo, color, tamaño, categoría, etc.). Si establece una relación entre los esquemas, puede generar segmentos basados en campos existentes en ambos esquemas (por ejemplo, personas que compraron chaquetas).
+Este vídeo muestra cómo crear segmentos de varias entidades en el Generador de segmentos de Adobe Experience Platform.  La segmentación de varias entidades, o segmentación entre clases, le permite crear segmentos que combinen datos basados en *varias clases XDM*. Por ejemplo, puede tener un conjunto de datos creado en la clase XDM ExperienceEvent que capture los ID de producto cuando los clientes realicen una compra y otro conjunto de datos creado en una clase de producto personalizada, que contenga los detalles de catálogo de cada ID de producto (por ejemplo: color, tamaño, categoría, etc.). Si establece una relación entre los esquemas, puede generar segmentos basados en campos existentes en ambos esquemas (por ejemplo, personas que compraron chaquetas).
 
 <!--Segment context (segment payload) allows you to provide key contextual details, such as a visitor's abandoned cart contents, in your segment definition so you can send personalized messages.-->
 

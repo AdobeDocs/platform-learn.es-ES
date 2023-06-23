@@ -3,10 +3,10 @@ title: Programar formación y puntuación automatizadas para un servicio
 description: Aprenda a configurar la formación y la puntuación automatizadas para un servicio en Data Science Workspace.
 role: User
 feature: Data Science Workspace
-kt: 7293
+jira: KT-7293
 thumbnail: 333596.jpg
 exl-id: de24de28-d632-4fa5-b5b7-71f638a523ac
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 6%

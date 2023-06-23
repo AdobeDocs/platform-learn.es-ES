@@ -1,30 +1,29 @@
 ---
-title: Crear una propiedad de reenvío de eventos
+title: Creación de una propiedad de reenvío de eventos
 description: Obtenga información sobre cómo crear una propiedad de reenvío de eventos en la recopilación de datos.
 feature: Event Forwarding
-kt: 6420
+jira: KT-6420
 thumbnail: 331938.jpeg
 exl-id: 63a578d3-1220-4588-b289-7310f4905d52
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 17%
 
 ---
 
-# Crear una propiedad de reenvío de eventos
+# Creación de una propiedad de reenvío de eventos
 
 Obtenga información sobre cómo crear una propiedad de reenvío de eventos en la recopilación de datos.
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch se está integrando en Adobe Experience Platform como un conjunto de tecnologías de recopilación de datos. Se han implementado varios cambios terminológicos en la interfaz que debe tener en cuenta al usar este contenido:
+>Adobe Experience Platform Launch se está integrando en Adobe Experience Platform como un conjunto de tecnologías de recopilación de datos. Se han implementado varios cambios terminológicos en la interfaz que debe tener en cuenta al utilizar este contenido:
 >
-> * El platform launch (lado del cliente) ya está **[!DNL tags]**
-> * El servidor de platform launch está ahora **[!DNL event forwarding]**
-> * Las configuraciones de Edge ahora **[!DNL datastreams]**
-
+> * El platform launch (lado del cliente) ahora es **[!DNL tags]**
+> * El lado del servidor de platform launch ahora es **[!DNL event forwarding]**
+> * Las configuraciones de Edge ahora son **[!DNL datastreams]**
 
 >[!VIDEO](https://video.tv.adobe.com/v/331938?quality=12&learn=on)
 
-Para obtener más información, visite [Creación de una documentación de propiedad de reenvío de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-an-event-forwarding-property).
+Para obtener más información, visite la [Creación de una documentación de propiedades de reenvío de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-an-event-forwarding-property).

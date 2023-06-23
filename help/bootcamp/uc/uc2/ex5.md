@@ -1,32 +1,32 @@
 ---
-title: 'Bootcamp: Instalar y usar la aplicación móvil'
-description: 'Bootcamp: Instalar y usar la aplicación móvil'
-kt: 5342
+title: Bootcamp - Instalar y utilizar la aplicación móvil
+description: Bootcamp - Instalar y utilizar la aplicación móvil
+jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
 exl-id: c1f007b4-e28a-412c-9352-e38579a2fc71
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 1%
 
 ---
 
-# 2.5 Instalación y uso de la aplicación móvil
+# 2.5 Instalar y utilizar la aplicación móvil
 
 
 ## Instalación de la aplicación móvil
 
-Antes de instalar la aplicación, debe activar **Seguimiento** en su dispositivo iOS. Para ello, vaya a **Configuración** > **Privacidad y seguridad** > **Seguimiento** y asegúrese de que la opción **Permitir que las aplicaciones soliciten rastrear**.
+Antes de instalar la aplicación, debe habilitar **Seguimiento** en el dispositivo iOS. Para ello, vaya a **Configuración** > **Privacidad y seguridad** > **Seguimiento** y asegúrese de que la opción **Permitir que las aplicaciones soliciten seguimiento**.
 
 ![DSN](./../uc3/images/app4.png)
 
-Vaya a Apple App Store y busque `aepmobile-bootcamp`. Haga clic en **Instalar** o **Descargar**.
+Vaya a la App Store de Apple y busque `aepmobile-bootcamp`. Clic **Instalar** o **Descargar**.
 
 ![DSN](./../uc3/images/app1.png)
 
-Una vez instalada la aplicación, haga clic en **Apertura**.
+Una vez instalada la aplicación, haga clic en **Abrir**.
 
 ![DSN](./../uc3/images/app2.png)
 
@@ -34,19 +34,19 @@ Haga clic en **Aceptar**.
 
 ![DSN](./../uc3/images/app9.png)
 
-Haga clic en **Permitir**.
+Clic **Permitir**.
 
 ![DSN](./../uc3/images/app3.png)
 
-Haga clic en **Estoy de acuerdo**.
+Clic **Estoy de acuerdo**.
 
 ![DSN](./../uc3/images/app7.png)
 
-Haga clic en **Permitir al usar la aplicación**.
+Clic **Permitir mientras se utiliza la aplicación**.
 
 ![DSN](./../uc3/images/app8.png)
 
-Haga clic en **Permitir**.
+Clic **Permitir**.
 
 ![DSN](./../uc3/images/app5.png)
 
@@ -60,15 +60,15 @@ En primer lugar, debe iniciar sesión. Haga clic en **Login**.
 
 ![DSN](./../uc3/images/app13.png)
 
-Después de crear su cuenta en ejercicios anteriores, lo vio en el sitio web. Ahora necesita reutilizar la dirección de correo electrónico de la cuenta creada en la aplicación para iniciar sesión.
+Después de crear la cuenta en los ejercicios anteriores, lo vio en el sitio web. Ahora debe reutilizar la dirección de correo electrónico de la cuenta que creó en la aplicación para iniciar sesión.
 
 ![Demostración](./../uc3/images/pv1.png)
 
-Escriba la dirección de correo electrónico que utilizó en el sitio web aquí y haga clic en **Inicio de sesión**.
+Introduzca aquí la dirección de correo electrónico que utilizó en el sitio web y haga clic en **Iniciar sesión**.
 
 ![DSN](./../uc3/images/app14.png)
 
-Recibirá una confirmación de que ha iniciado sesión y recibirá una notificación push.
+A continuación, recibirá una confirmación de que ha iniciado sesión y una notificación push.
 
 ![DSN](./../uc3/images/app15.png)
 
@@ -76,15 +76,15 @@ Vuelva a la página principal de la aplicación y verá que aparecen funciones a
 
 ![DSN](./../uc3/images/app17.png)
 
-Vaya a **Productos**. Haga clic en cualquier producto, en este ejemplo **Café para ir**.
+Ir a **Productos**. En este ejemplo, haga clic en cualquier producto **Café para llevar**.
 
 ![DSN](./images/app19.png)
 
-Verá el **Café para ir** página del producto en la aplicación. Haga clic en **Buy**.
+Verá el... **Café para llevar** página de producto en la aplicación. Clic **Buy**.
 
 ![DSN](./images/app20.png)
 
-Ya ha terminado este ejercicio y está listo para los próximos ejercicios.
+Ahora ha terminado este ejercicio y está listo para los siguientes ejercicios.
 
 Paso siguiente: [2.6 Personalización en el centro de llamadas](./ex6.md)
 

@@ -1,12 +1,12 @@
 ---
 title: Bootcamp - Registro e incorporación
 description: Bootcamp - Registro e incorporación
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
 exl-id: 31f2bbcc-3fd5-4448-a9aa-b79a82e13809
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 1%
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Este tutorial se creó para facilitar un formato de bootcamp determinado. Utiliza sistemas y cuentas específicos a los que es posible que no tenga acceso. Incluso sin acceso, creemos que aún puede aprender mucho leyendo este contenido muy detallado. Si usted es participante en uno de los bootcamp y necesita sus credenciales de acceso, póngase en contacto con su representante de Adobe para que le proporcione la información necesaria.
+>Este tutorial se ha creado para facilitar un formato de bootcamp concreto. Utiliza sistemas y cuentas específicos a los que podría no tener acceso. Incluso sin acceso, creemos que aún puede aprender mucho leyendo este contenido tan detallado. Si usted es un participante en uno de los bootcamp y necesita sus credenciales de acceso, por favor póngase en contacto con su representante de Adobe que le proporcionará la información requerida.
 
 ## Ejercicios
 
@@ -45,12 +45,12 @@ En este ejercicio, aprenderá a configurar un recorrido y un mensaje de correo e
 
 En este ejercicio, probará el recorrido que acaba de crear.
 
-[2.5 Instalación y uso de la aplicación móvil](./ex5.md)
+[2.5 Instalar y utilizar la aplicación móvil](./ex5.md)
 
-En este ejercicio, instalará la aplicación móvil.
+En este ejercicio, debe instalar la aplicación móvil.
 
 [2.6 Personalización en el centro de llamadas](./ex6.md)
 
-En este ejercicio, verá cómo se puede optimizar una experiencia de centro de llamadas en función de la inteligencia de Adobe Experience Platform.
+En este ejercicio, verá cómo se puede optimizar la experiencia de un centro de llamadas en función de la inteligencia de Adobe Experience Platform.
 
 [Volver a todos los módulos](../../overview.md)

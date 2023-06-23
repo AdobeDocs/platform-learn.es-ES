@@ -1,28 +1,29 @@
 ---
-title: Bootcamp - Instalar y usar la aplicación móvil - Brasil
-description: Bootcamp - Instalar y usar la aplicación móvil - Brasil
-kt: 5342
+title: Bootcamp - Instalar y utilizar la aplicación móvil - Brasil
+description: Bootcamp - Instalar y utilizar la aplicación móvil - Brasil
+jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+exl-id: e3b920b1-e5e6-4fcc-b707-29c5943acec8
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 0%
 
 ---
 
-# 2.5 Instale uso de aplicativo móvel
+# 2.5 e use o aplicativo móvel
 
 
-## Instale del aplicativo móvel
+## o aplicación móvil
 
-Antes de instalar o aplicativo, é necesariamente ário habilitar Rastreamento no seu iOS. Para isso, acesse Configurações > Privacidade e segurança > Rastreamento e confirme una opção Permitir que os aplicativos solicitem o amento.
+Antes de instalar o aplicativo, é necesario activar Rastreamento no seu dispositivo iOS. Para isso, acesse Configurações > Privacidade e segurança > Rastreamento e confirme a opção que os aplicativos solicitem o rastreamento.
 
 ![DSN](./../uc3/images/app4.png)
 
-Acesar a App Store da Apple e pesquise `aepmobile-bootcamp`.\
-Clique **Instalar** ou **Descargar**.
+Accede a App Store da Apple e pesquise `aepmobile-bootcamp`.\
+Clique em **Instalar** ou **Descargar**.
 
 ![DSN](./../uc3/images/app1.png)
 
@@ -30,41 +31,41 @@ Depois que o aplicativo estiver instalado, clique em **Abrir**.
 
 ![DSN](./../uc3/images/app2.png)
 
-Clique **OK**.
+Clique em **OK**.
 
 ![DSN](./../uc3/images/app9.png)
 
-Clique **Permitir**.
+Clique em ****.
 
 ![DSN](./../uc3/images/app3.png)
 
-Clique **Concordo**.
+Clique em **Concordia**.
 
 ![DSN](./../uc3/images/app7.png)
 
-Clique **Permitir enquanto uso o app**.
+Clique em **quanto uso en la aplicación**.
 
 ![DSN](./../uc3/images/app8.png)
 
-Clique **Permitir**.
+Clique em ****.
 
 ![DSN](./../uc3/images/app5.png)
 
-Agora você no aplicativo, na  inicial, pronto(a) para verificar toda una jornada do cliente.
+Agora você no aplicativo, na página inicial, pronto(a) para hoy a jornada do cliente.
 
 ![DSN](./../uc3/images/app12.png)
 
-## Fluxe da jornada do cliente
+## Fluxo da jornada do cliente
 
-Primeiramente, é necesario río fazer para iniciar sesión. Clique **Inicio de sesión**.
+Primeiramente, é necesário fazer o login. Clique em **Iniciar sesión**.
 
 ![DSN](./../uc3/images/app13.png)
 
-Depois de criar sua nos exercícios anteriores, es é exibido no sitio. Agora é necesariamente ário reutilizar o endereço de e-mail da conta que você criou no aplicativo para fazer de inicio de sesión.
+Depois de criar sua conta nos exercícios anteriores, isso é exibido en el sitio. Agora é necesário reutilizar o endereço de e-mail da conta que você criou no aplicativo para fazer o login.
 
 ![Demostración](./../uc3/images/pv1.png)
 
-Digite o endereço de e-mail que você usou no site e clique em **Inicio de sesión**.
+Digite o endereço de e-mail que você usou no site e clique em **Iniciar sesión**.
 
 ![DSN](./../uc3/images/app14.png)
 
@@ -72,22 +73,22 @@ Você receberá uma confirmação de que está conectado e receberá uma notific
 
 ![DSN](./../uc3/images/app15.png)
 
-Retorne para la página inicial do aplicativo e os adicionais irão aparecer.
+Retorne para a página inicial do aplicativo e os recursos adicionais irão.
 
 ![DSN](./../uc3/images/app17.png)
 
-Aceses **Productos**. Clique em qualquer produto, neste exemplo: **Café para ir**.
+Acceso **Productos**. Clique em qualquer produto, ejemplo anidado: **Café para llevar**.
 
 ![DSN](./images/app19.png)
 
-Você una página do produto **Café para ir** no aplicativo. Clique **Buy**.
+Você verá una página de producto **Café para llevar** no aplicativo. Clique em **Buy**.
 
 ![DSN](./images/app20.png)
 
-Agora você terminou este exercício e está pronto para como próximas actividades.
+Agora você terminou este exercício e está pronto para as a las actividades de la.
 
 Próxima etapa: [ 2.6 Personalización sin centro de llamadas](./ex6.md)
 
-[Retornar para Fluxo de Usuário 2](./uc2.md)
+[Hoteles cerca de Fluxo de Usuário 2](./uc2.md)
 
 [Retornar para Todos los Módulos](../../overview.md)

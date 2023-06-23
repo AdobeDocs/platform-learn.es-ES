@@ -3,10 +3,10 @@ title: Información general de gobernanza de datos
 description: Aprenda a tomar el control completo de los datos desde el punto en el que se recopilan en las fuentes de datos hasta el momento en el que se asocian a destinos fuera de Adobe Experience Platform.
 role: Data Architect
 feature: Data Governance
-kt: 3991
+jira: KT-3991
 thumbnail: 29708.jpg
 exl-id: 3a02aee4-a23c-4757-b910-d61a9e871774
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 5%
