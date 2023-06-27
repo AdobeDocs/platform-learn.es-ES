@@ -8,9 +8,9 @@ thumbnail: 4348-overview.jpg
 recommendations: catalog, noDisplay
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: fabbc591-840b-40dc-89af-305626a16338
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: e640a7e5c3a5f745462aa0d4e9d5f5c0b34ca8d7
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '777'
 ht-degree: 1%
 
 ---
@@ -73,5 +73,10 @@ Platform se crea primero según la API. Aunque los flujos de trabajo de la inter
 ### Tecnologías de terceros
 
 Aunque utilizará varias tecnologías en este tutorial, permanecerá casi completamente dentro del ecosistema de Adobe. En su propia implementación de Platform, probablemente integrará Platform con tecnologías de terceros específicas. Para mantener este tutorial relevante para todos los clientes, utilizaremos una implementación más genérica.
+
+## Actualizaciones del tutorial
+
+* Junio de 2023: actualizado para incluir un nuevo flujo de trabajo de permisos y para utilizar la credencial de la API de servidor a servidor OAuth
+
 
 Ahora pasemos a la primera lección...[configuración de permisos](configure-permissions.md).
