@@ -4,9 +4,9 @@ breadcrumb-title: Tutoriales
 user-guide-description: Descubra los muchos componentes de Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: e9ac0c059a896e552fd14e6456f121a70254bca0
+source-git-commit: 8bd3dd0cddcc7daec1b1af582b28e2dd844cc7ae
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '943'
 ht-degree: 33%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 33%
 + Administración {#admin}
    + [Uso de alertas](/help/platform/admin/use-alerts.md)
    + [Usar zonas protegidas](/help/platform/admin/use-sandboxes.md)
-   + [Configurar el control de acceso basado en atributos](/help/platform/admin/configure-attribute-based-access-control.md)
+   + [Configuración del control de acceso basado en atributos](/help/platform/admin/configure-attribute-based-access-control.md)
    + [Admin Console](/help/platform/admin/admin-console.md)
    + [Administración de perfiles de producto](/help/platform/admin/managing-product-profiles.md)
 + [Registros de auditoría](/help/platform/governance/audit-logs.md)
@@ -130,6 +130,7 @@ ht-degree: 33%
    + [Ver perfiles de cuenta](/help/platform/profiles/view-account-profiles.md)
    + [Crear políticas de combinación](/help/platform/profiles/create-merge-policies.md)
    + [Información general sobre los esquemas de unión](/help/platform/profiles/union-schemas-overview.md)
+   + [Actualizar un atributo específico mediante upsert](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + Privacidad y seguridad {#privacy}
    + [Introducción a Privacy Service](/help/platform/privacy/introduction-to-privacy-services.md)
    + [Datos de identidad en solicitudes de privacidad](/help/platform/privacy/identity-data-in-privacy-requests.md)
