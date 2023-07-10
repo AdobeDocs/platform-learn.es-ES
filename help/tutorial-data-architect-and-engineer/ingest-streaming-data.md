@@ -8,9 +8,9 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '3346'
+source-wordcount: '3344'
 ht-degree: 2%
 
 ---
@@ -30,6 +30,7 @@ Hay dos tareas principales que debemos completar en la interfaz de recopilación
 **Ingenieros de datos** deberá ingerir datos de flujo continuo fuera de este tutorial. Al implementar los SDK web o móvil de Adobe Experience Platform, normalmente un desarrollador web o móvil participa en la creación de la capa de datos y en la configuración de las propiedades de etiquetas.
 
 Antes de comenzar los ejercicios, vea estos dos vídeos cortos para obtener más información acerca de la ingesta de datos de flujo continuo y el SDK web:
+
 >[!VIDEO](https://video.tv.adobe.com/v/28425?quality=12&learn=on)
 
 >[!VIDEO](https://video.tv.adobe.com/v/34141?quality=12&learn=on)
@@ -245,7 +246,7 @@ Como puede ver en el [!UICONTROL Flujo de publicación] En la pantalla de, hay m
 
 ## Validar los datos de la solicitud
 
-### Añadir Adobe Experience Platform Debugger
+### Añadir el Adobe Experience Platform Debugger
 
 Experience Platform Debugger es una extensión disponible para los navegadores Chrome y Firefox que permite ver la tecnología de Adobe implementada en las páginas web. Descargue la versión para su navegador preferido:
 
@@ -454,7 +455,7 @@ Para validar que el SDK web ahora envía el ID de CRM:
 
 * [Implementación de Adobe Experience Cloud con SDK web](/help/tutorial-web-sdk/overview.md)
 * [Documentación de ingesta de streaming](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=es)
-* [Referencia de API de ingesta de streaming](https://www.adobe.io/experience-platform-apis/references/data-ingestion/#tag/Streaming-Ingestion)
+* [Referencia de API de ingesta de streaming](https://developer.adobe.com/experience-platform-apis/references/streaming-ingestion/)
 
 ¡Buen trabajo! Se trataba de mucha información sobre el SDK web y Launch. Hay mucho más involucrado en una implementación completa, pero estos son los conceptos básicos para ayudarle a empezar y ver los resultados en Platform.
 

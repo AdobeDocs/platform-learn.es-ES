@@ -1,9 +1,9 @@
 ---
 title: Configuración de permisos para el tutorial
-description: Obtenga información sobre cómo solicitar acceso al SDK web de Experience Platform y configurar el permiso necesario para completar el tutorial Implementación de Adobe Experience Cloud con SDK web .
-feature: Access Control
+description: Obtenga información sobre cómo solicitar acceso al SDK web de Experience Platform y configurar los permisos necesarios para completar el tutorial Implementar Adobe Experience Cloud con SDK web.
+feature: Web SDK,Tags,Access Control
 exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: 4eaa7ae1cf4c4c1478484eaeb877733a43c6fdf5
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 6%
@@ -12,31 +12,31 @@ ht-degree: 6%
 
 # Configuración de permisos para el tutorial
 
-Obtenga información sobre cómo solicitar acceso al SDK web de Experience Platform y configurar el permiso necesario para completar este tutorial. Para implementar el SDK web de Platform mediante etiquetas en la interfaz de recopilación de datos, debe tener los permisos de usuario adecuados configurados en [Admin Console](https://adminconsole.adobe.com).
+Obtenga información sobre cómo solicitar acceso al SDK web de Experience Platform y configurar los permisos necesarios para completar este tutorial. Para implementar el SDK web de Platform mediante etiquetas en la interfaz de recopilación de datos, debe tener configurados los permisos de usuario adecuados en [Admin Console](https://adminconsole.adobe.com).
 
 ## Recopilación de datos
 
-* Tener permiso para **[!UICONTROL Desarrollo]**, **[!UICONTROL Editar]**, **[!UICONTROL Aprobar]**, **[!UICONTROL Publicación]**, **[!UICONTROL Administrar extensiones]**, **[!UICONTROL Administrar entornos]** y **[!UICONTROL Administrar propiedades]**. Para obtener más información sobre los permisos de etiquetas, consulte [la documentación](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
-* Si va a completar la lección de reenvío de eventos opcional, tenga una licencia de producto que incluya reenvío de perímetro y elemento de permiso **[!UICONTROL Plataformas]** > **[!UICONTROL Edge]**
+* Tener permiso para **[!UICONTROL Desarrollar]**, **[!UICONTROL Editar]**, **[!UICONTROL Aprobar]**, **[!UICONTROL Publish]**, **[!UICONTROL Administración de extensiones]**, **[!UICONTROL Administrar entornos]**, y **[!UICONTROL Administrar propiedades]**. Para obtener más información sobre los permisos de etiquetas, consulte [la documentación](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+* Si va a completar la lección opcional de reenvío de eventos, tenga una licencia de producto que incluya el reenvío de Edge y un elemento de permiso **[!UICONTROL Plataformas]** > **[!UICONTROL Edge]**
 
 ## Experience Platform
 
-Estas funciones deben estar disponibles para todos los clientes Experience Cloud, incluso si no es cliente de una aplicación basada en Platform como Real-Time CDP.
+Estas funciones deben estar disponibles para todos los clientes de Experience Cloud, incluso si no es cliente de una aplicación basada en Platform como Real-Time CDP.
 
-* Acceso a **producción predeterminada**, **&quot;Prod&quot;** simulador de pruebas.
-* Acceso a **[!UICONTROL Administrar esquemas]** y **[!UICONTROL Esquemas de vista]** under **[!UICONTROL Modelado de datos]**
-* Acceso a **[!UICONTROL Administrar áreas de nombres de identidad]** y **[!UICONTROL Ver áreas de nombres de identidad]** under **[!UICONTROL Identity Management]**
-* Acceso a **[!UICONTROL Administrar almacenes de datos]** y **[!UICONTROL Ver almacenes de datos]** under **[!UICONTROL Recopilación de datos]**
-* Si es cliente de una aplicación basada en Platform y va a completar la [Configuración del Experience Platform](setup-experience-platform.md) También debe tener:
-   * Acceso a un **desarrollo** simulador de pruebas.
-   * Todos los elementos de permiso de **[!UICONTROL Gestión de datos]** y **[!UICONTROL Administración de perfiles]**:
+* Acceso a la **producción predeterminada**, **&quot;Prod&quot;** zona protegida.
+* Acceso a **[!UICONTROL Administrar esquemas]** y **[!UICONTROL Esquemas de vista]** bajo **[!UICONTROL Modelado de datos]**
+* Acceso a **[!UICONTROL Administrar áreas de nombres de identidad]** y **[!UICONTROL Ver áreas de nombres de identidad]** bajo **[!UICONTROL Identity Management]**
+* Acceso a **[!UICONTROL Administrar flujos de datos]** y **[!UICONTROL Ver flujos de datos]** bajo **[!UICONTROL Recopilación de datos]**
+* Si es cliente de una aplicación basada en Platform y va a completar el [Configurar Experience Platform](setup-experience-platform.md) lección, también debe tener:
+   * Acceso a un **desarrollo** zona protegida.
+   * Todos los elementos de permiso de **[!UICONTROL Administración de datos]**, y **[!UICONTROL Administración de perfiles]**:
 
 
-Para obtener más información sobre el control de acceso de Platform, consulte [la documentación](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=es).
+Para obtener más información sobre el control de acceso a la plataforma, consulte [la documentación](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=es).
 
 ## Adobe Analytics
 
-Para la lección opcional de Adobe Analytics, debe tener [acceso de administrador a la configuración del grupo de informes, las reglas de procesamiento y Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=es)
+Para la lección opcional de Adobe Analytics, debe tener [acceso de administrador a Configuración del grupo de informes, Reglas de procesamiento y Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=es)
 
 ## Adobe Target
 
@@ -44,12 +44,12 @@ Para la lección opcional de Adobe Target, debe tener [Editor o aprobador](https
 
 ## Adobe Audience Manager
 
-* Para la lección de Audience Manager opcional, debe tener acceso para crear, leer y escribir características, segmentos y destinos. Para obtener más información, consulte el tutorial en [Control de acceso basado en roles del Audience Manager](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control.html?lang=en).
+* Para la lección opcional de Audience Manager, debe tener acceso para crear, leer y escribir características, segmentos y destinos. Para obtener más información, consulte el tutorial sobre [Control de acceso basado en roles de Audience Manager](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control.html?lang=en).
 
-Ahora está listo para iniciar los pasos iniciales de configuración.
+Ahora está listo para iniciar los pasos de configuración iniciales.
 
 [Siguiente: ](configure-schemas.md)
 
 >[!NOTE]
 >
->Gracias por invertir su tiempo en obtener información sobre el SDK web de Adobe Experience Platform. Si tiene alguna pregunta, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Experience League de debate de la comunidad](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Gracias por dedicar su tiempo a conocer el SDK web de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

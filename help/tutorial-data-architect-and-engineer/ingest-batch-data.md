@@ -8,9 +8,9 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '2528'
+source-wordcount: '2526'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,7 @@ La ingesta de datos por lotes le permite introducir una gran cantidad de datos e
 **Ingenieros de datos** deberá introducir datos por lotes fuera de este tutorial.
 
 Antes de comenzar los ejercicios, vea este breve vídeo para obtener más información sobre la ingesta de datos:
+
 >[!VIDEO](https://video.tv.adobe.com/v/27106?quality=12&learn=on)
 
 
@@ -341,6 +342,6 @@ Adobe se asocia con varios proveedores de ETL para admitir la ingesta de datos e
 ## Recursos adicionales
 
 * [Documentación de ingesta por lotes](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html)
-* [Referencia de API de ingesta por lotes](https://www.adobe.io/experience-platform-apis/references/data-ingestion/#tag/Batch-Ingestion)
+* [Referencia de API de ingesta por lotes](https://developer.adobe.com/experience-platform-apis/references/batch-ingestion/)
 
 Ahora vamos a... [transmitir datos mediante el SDK web](ingest-streaming-data.md)

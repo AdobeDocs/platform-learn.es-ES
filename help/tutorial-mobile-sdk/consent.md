@@ -1,8 +1,9 @@
 ---
 title: Consentimiento
 description: Obtenga información sobre cómo implementar el consentimiento en una aplicación móvil.
+feature: Mobile SDK,Consent
 exl-id: 08042569-e16e-4ed9-9b5a-864d8b7f0216
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 7%

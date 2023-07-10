@@ -6,10 +6,10 @@ description: En esta lección, debe configurar los permisos de usuario de Adobe 
 role: Data Architect, Data Engineer
 jira: KT-4348
 exl-id: 73abe4bd-57cb-4acf-98f6-253b01fd79ff
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '426'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -47,7 +47,7 @@ Le sugiero que lo conserve y lo utilice para una mayor experimentación con Plat
 
 Los recursos clave:
 
-* [Tutoriales de Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/overview.html)
+* [Tutoriales de Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/overview.html?lang=es)
 * [Documentación de Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=es)
 * [cursos de Experience League](https://experienceleague.adobe.com/?lang=es#dashboard/learning)
 

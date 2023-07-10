@@ -1,8 +1,9 @@
 ---
 title: Configurar Assurance
 description: Obtenga información sobre cómo implementar la extensión Assurance en una aplicación móvil.
+feature: Mobile SDK,Assurance
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 2%
@@ -90,9 +91,9 @@ Assurance funciona abriendo una dirección URL, ya sea mediante explorador o có
    ![pin del centro de garantía](assets/mobile-assurance-enter-pin.png)
 1. Si la conexión se ha realizado correctamente, verá eventos en la interfaz de usuario web de Assurance y un icono flotante de Assurance en la aplicación.
    * Icono de garantía flotante.
-      ![modo de garantía](assets/mobile-assurance-modal.png)
+     ![modo de garantía](assets/mobile-assurance-modal.png)
    * Eventos del Experience Cloud que llegan a través de la IU web.
-      ![eventos de garantía](assets/mobile-assurance-events.png)
+     ![eventos de garantía](assets/mobile-assurance-events.png)
 
 Si tiene algún problema, consulte la [técnico](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
 

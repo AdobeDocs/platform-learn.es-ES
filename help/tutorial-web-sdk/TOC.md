@@ -2,9 +2,12 @@
 user-guide-title: Tutorial de implementación de Adobe Experience Cloud con SDK web
 breadcrumb-title: Tutorial de SDK web
 solution: Data Collection
+feature: Web SDK,Tags
+role: Data Engineer
+level: Beginner,Intermediate
 jira: KT-6953
 recommendations: noDisplay,noCatalog
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '81'
 ht-degree: 41%

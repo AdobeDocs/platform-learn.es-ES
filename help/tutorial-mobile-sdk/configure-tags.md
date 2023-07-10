@@ -1,8 +1,9 @@
 ---
 title: Configuración de una propiedad de etiqueta
 description: Obtenga información sobre cómo configurar una propiedad de etiqueta en la [!UICONTROL Recopilación de datos] interfaz.
+feature: Mobile SDK,Tags
 exl-id: 0c4b00cc-34e3-4d08-945e-3fd2bc1b6ccf
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 11%
@@ -35,7 +36,6 @@ En esta lección, deberá hacer lo siguiente:
 1. Cree una nueva propiedad de etiqueta móvil:
    1. En el [Interfaz de recopilación de datos](https://experience.adobe.com/data-collection/){target="_blank"}, seleccione **[!UICONTROL Etiquetas]** en el panel de navegación izquierdo
    1. Seleccione **[!UICONTROL Nueva propiedad]**
-
       ![crear una propiedad de etiqueta](assets/mobile-tags-new-property.png).
    1. Para el **[!UICONTROL Nombre]**, introduzca `Mobile SDK Course`.
    1. Para el **[!UICONTROL Plataforma]**, seleccione **[!UICONTROL Móvil]**.

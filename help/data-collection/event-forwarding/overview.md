@@ -2,10 +2,12 @@
 title: Información general sobre el reenvío de eventos
 description: Descubra cómo el reenvío de eventos centraliza la recopilación de datos, reduce la cantidad de código requerido en sus aplicaciones web y móviles y transmite datos a soluciones que no son de Adobe a través de Adobe Experience Platform Edge Network.
 feature: Event Forwarding
+role: Data Engineer
+level: Beginner
 jira: KT-6419
 thumbnail: 331937.jpeg
 exl-id: bd1a7414-b232-4ae3-98e8-b0ec1c60361b
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 62%

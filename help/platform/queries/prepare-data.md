@@ -2,10 +2,11 @@
 title: Preparación de datos
 description: Aprenda a limpiar, preparar y combinar datos de varios conjuntos de datos para crear uno nuevo mediante CTAS (Crear tabla AS) y las funciones SQL de Creative Cloud Express para informes y tableros.
 feature: Queries
+role: Data Engineer
 jira: KT-8005
 thumbnail: 333699.jpg
 exl-id: c4f36725-19dd-47da-aaa8-a925b7baca24
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 12%

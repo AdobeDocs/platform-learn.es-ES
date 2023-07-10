@@ -3,10 +3,13 @@ title: Información general sobre Adobe Experience Platform Web SDK y Edge Netwo
 description: Descubra cómo el SDK web de Adobe Experience Platform y la red perimetral permiten a los clientes utilizar una biblioteca JavaScript y una señalización para enviar datos a aplicaciones de Adobe y destinos de terceros.
 landing-page-description: Obtenga información general sobre el SDK web y la red perimetral.
 short-description: Obtenga información general sobre el SDK web y la red perimetral.
+feature: Web SDK
+role: Developer
+level: Beginner
 jira: KT-5205
 thumbnail: 34141.jpg
 exl-id: cd010977-9ff1-47ea-8aa1-d9b913ba846b
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 41%

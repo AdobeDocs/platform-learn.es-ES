@@ -1,12 +1,12 @@
 ---
 title: Ejecutar consultas con el servicio de consultas
 description: Este vídeo muestra cómo ejecutar consultas en la interfaz de Adobe Experience Platform y en un cliente SQL. Además, se muestra el uso de propiedades individuales en un objeto XDM, el uso de funciones definidas por el Adobe y el uso de CREATE TABLE AS SELECT (CTAS).
-role: Data Engineer,User
 feature: Queries
+role: Data Engineer
 jira: KT-3140
 thumbnail: 29796.jpg
 exl-id: 7b264733-a0e0-44cd-a2c0-680a473f8cf6
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 11%
