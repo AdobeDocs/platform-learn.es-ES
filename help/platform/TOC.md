@@ -4,10 +4,10 @@ breadcrumb-title: Tutoriales
 user-guide-description: Descubra los muchos componentes de Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: 8bd3dd0cddcc7daec1b1af582b28e2dd844cc7ae
+source-git-commit: 88a876834089348a2eb0be92ca2bd03e91d49caf
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 33%
+source-wordcount: '955'
+ht-degree: 32%
 
 ---
 
@@ -41,6 +41,26 @@ ht-degree: 33%
    + [Configuración del control de acceso basado en atributos](/help/platform/admin/configure-attribute-based-access-control.md)
    + [Admin Console](/help/platform/admin/admin-console.md)
    + [Administración de perfiles de producto](/help/platform/admin/managing-product-profiles.md)
++ Audiencias y segmentación {#audiences}
+   + [Introducción a Audience Portal y Composición](audiences/introduction-to-audience-portal-and-composition.md)
+   + [Cargar audiencias](audiences/upload-audiences.md)
+   + [Resumen del generador de reglas para audiencias](audiences/audience-rule-builder-overview.md)
+   + [Crear audiencias](audiences/create-audiences.md)
+   + [Crear audiencias basadas en contenido](audiences/create-content-based-audiences.md)
+   + [Crear audiencias de conversión](audiences/create-conversion-audiences.md)
+   + [Crear audiencias a partir de audiencias existentes](audiences/create-audiences-from-existing-audiences.md)
+   + [Crear audiencias secuenciales](audiences/create-sequential-audiences.md)
+   + [Crear audiencias dinámicas](audiences/create-dynamic-audiences.md)
+   + [Creación de audiencias de varias entidades](audiences/create-multi-entity-audiences.md)
+   + [Creación de audiencias con datos B2B](audiences/create-audiences-with-b2b-data.md)
+   + [Demostración de la segmentación de streaming](/help/platform/audiences/streaming-segmentation-demo.md)
+   + [Evaluar una regla de audiencia](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
+   + [Creación de un conjunto de datos para exportar datos](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
+   + [Configuración de conexión de coincidencia de segmentos](/help/platform/segments/segment-match-connection-setup.md)
+   + [Control de datos de coincidencias de segmentos](/help/platform/segments/segment-match-data-governance.md)
+   + [Flujo de configuración de coincidencia de segmentos](/help/platform/segments/segment-match-configuration-flow.md)
+   + [Perspectivas previas al uso compartido de coincidencias de segmentos](/help/platform/segments/segment-match-pre-share-insights.md)
+   + [Coincidencia de segmentos recibiendo datos](/help/platform/segments/segment-match-receiving-data.md)
 + [Registros de auditoría](/help/platform/governance/audit-logs.md)
 + [Recopilación de datos](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=es){target="_blank"}
 + Tableros {#dashboards}
@@ -173,24 +193,6 @@ ht-degree: 33%
    + [Copiado de esquemas entre zonas protegidas](/help/platform/schemas/copy-schemas-between-sandboxes.md)
    + [Actualización de esquemas](/help/platform/schemas/update-schemas.md)
    + [Creación de un esquema ad hoc](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
-+ Segmentos {#segments}
-   + [Vista general del Generador de segmentos](/help/platform/segments/segment-builder-overview.md)
-   + [Creación de segmentos](/help/platform/segments/create-segments.md)
-   + [Creación de segmentos basados en contenido](/help/platform/segments/create-content-based-segments.md)
-   + [Creación de segmentos de conversión](/help/platform/segments/create-conversion-segments.md)
-   + [Creación de segmentos a partir de segmentos existentes](/help/platform/segments/create-segments-from-existing-segments.md)
-   + [Creación de segmentos secuenciales](/help/platform/segments/create-sequential-segments.md)
-   + [Creación de segmentos dinámicos](/help/platform/segments/create-dynamic-segments.md)
-   + [Creación de segmentos de varias entidades](/help/platform/segments/create-multi-entity-segments.md)
-   + [Creación de segmentos con datos B2B](/help/platform/segments/create-segments-with-b2b-data.md)
-   + [Demostración de la segmentación de streaming](/help/platform/segments/streaming-segmentation-demo.md)
-   + [Evaluación de un segmento](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
-   + [Creación de un conjunto de datos para exportar datos](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
-   + [Configuración de conexión de coincidencia de segmentos](/help/platform/segments/segment-match-connection-setup.md)
-   + [Control de datos de coincidencias de segmentos](/help/platform/segments/segment-match-data-governance.md)
-   + [Flujo de configuración de coincidencia de segmentos](/help/platform/segments/segment-match-configuration-flow.md)
-   + [Perspectivas previas al uso compartido de coincidencias de segmentos](/help/platform/segments/segment-match-pre-share-insights.md)
-   + [Coincidencia de segmentos recibiendo datos](/help/platform/segments/segment-match-receiving-data.md)
 + Fuentes {#sources}
    + [Resumen de orígenes](/help/platform/sources/overview.md)
    + [Ingesta de datos desde Adobe Analytics](/help/platform/sources/ingest-data-from-adobe-analytics.md)
