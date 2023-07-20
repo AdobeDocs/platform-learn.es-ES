@@ -8,16 +8,20 @@ doc-type: feature video
 thumbnail: 333302.jpg
 jira: KT-7889
 exl-id: bafe275e-19f3-4b86-9fcd-0516fada55ec
-source-git-commit: 4767adf8daee2ba9f432ffbb3a30468504c12694
+source-git-commit: 63edf327306054ffbcd4a842961a67fea6e85ff9
 workflow-type: tm+mt
-source-wordcount: '56'
-ht-degree: 12%
+source-wordcount: '79'
+ht-degree: 8%
 
 ---
 
 # Crear audiencias basadas en contenido
 
 Conozca los conceptos básicos sobre la creación de una audiencia de afinidad de contenido en el generador de reglas de audiencia en Experience Platform.
+
+>[!NOTE]
+>
+> &quot;[!UICONTROL Segmentos]&quot; se han renombrado &quot;[!UICONTROL Audiencias]&quot; en la interfaz de Platform. Seleccionar **[!UICONTROL Crear audiencia]** > **[!UICONTROL Generar regla]** para entrar al generador de reglas que se muestra en este vídeo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333302/?quality=12&learn=on)
 

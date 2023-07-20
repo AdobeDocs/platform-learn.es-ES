@@ -9,13 +9,13 @@ level: Intermediate
 doc-type: Feature Video
 last-substantial-update: 2023-05-19T00:00:00Z
 jira: KT-13142
-source-git-commit: 7195ef3b361424079069202f4835728c265b12f1
+exl-id: 33ecac25-ada3-427c-b197-adcb661139fa
+source-git-commit: c25b0b613618401d51463a108dde8e4a6d3393b1
 workflow-type: tm+mt
-source-wordcount: '97'
+source-wordcount: '79'
 ht-degree: 0%
 
 ---
-
 
 # Uso de atributos de perfil de Real-Time CDP en Adobe Target
 
@@ -23,6 +23,3 @@ Aprenda a utilizar los atributos de perfil de Adobe Real-time Customer Data Plat
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419318/?learn=on)
 
->[!IMPORTANT]
->
->La función de atributos de perfil de Real-Time CDP está en versión beta y solo está disponible para un número determinado de clientes.

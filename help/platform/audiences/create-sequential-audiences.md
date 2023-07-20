@@ -8,16 +8,20 @@ doc-type: feature video
 thumbnail: 333305.jpg
 jira: KT-7892
 exl-id: b7b5111c-4e30-4a69-bde1-d75df03fbf86
-source-git-commit: 4767adf8daee2ba9f432ffbb3a30468504c12694
+source-git-commit: 63edf327306054ffbcd4a842961a67fea6e85ff9
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 7%
+source-wordcount: '115'
+ht-degree: 6%
 
 ---
 
 # Crear audiencias secuenciales
 
 En este vídeo, aprenderá a añadir eventos de experiencia a una cronología de la audiencia para crear una audiencia que haya realizado acciones en un orden determinado en una cantidad de tiempo determinada.
+
+>[!NOTE]
+>
+> &quot;[!UICONTROL Segmentos]&quot; se han renombrado &quot;[!UICONTROL Audiencias]&quot; en la interfaz de Platform. Seleccionar **[!UICONTROL Crear audiencia]** > **[!UICONTROL Generar regla]** para entrar al generador de reglas que se muestra en este vídeo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333305/?quality=12&learn=on)
 
