@@ -1,12 +1,12 @@
 ---
 title: Organización de campañas con Marketo Engage y Real-time Customer Data Platform, edición B2B
 description: Aprenda a organizar campañas con Marketo Engage y Real-time Customer Data Platform (CDP), edición B2B.
-solution: Real-time Customer Data Platform
+solution: Real-Time Customer Data Platform
 role: User
 jira: KT-9263
 thumbnail: 338254.jpg
 exl-id: 1e5b951a-2b14-4e28-a2f2-818db7a8b376
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 19656b66225e827769d01e65fd52504b33a4b649
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 0%
