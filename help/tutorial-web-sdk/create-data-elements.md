@@ -3,7 +3,7 @@ title: Creación de elementos de datos
 description: Obtenga información sobre cómo crear un objeto XDM y asignarle elementos de datos en etiquetas. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 0c9c8c679c2c0b3446e802bf52028194b08e6644
+source-git-commit: e1c7ab68d0292edaaa3a93ae8da8cd49d8b4874c
 workflow-type: tm+mt
 source-wordcount: '1206'
 ht-degree: 5%
@@ -141,7 +141,7 @@ A continuación, puede crear el elemento de datos del mapa de identidad:
 >
 > El Adobe recomienda enviar identidades que representen a una persona, como `Luma CRM Id`, como el [!UICONTROL principal] identidad.
 >
-> Si el mapa de identidad contiene ambos `Luma CRM Id` y ECID, y luego el `Luma CRM Id` se convierte en [!UICONTROL principal] identidad. Si el mapa de identidad solo contiene ECID, este se convierte en el [!UICONTROL principal] identidad.
+> Si el mapa de identidad contiene el identificador de persona (por ejemplo, el ID de Luma CRM), el identificador de persona se convertirá en [!UICONTROL principal] identidad. De lo contrario, ECID se convierte en [!UICONTROL principal] identidad.
 
 
 
