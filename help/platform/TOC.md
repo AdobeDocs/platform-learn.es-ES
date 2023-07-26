@@ -4,10 +4,10 @@ breadcrumb-title: Tutoriales
 user-guide-description: Descubra los muchos componentes de Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: 9d27093463ecf1af8ed90412475e4fd34d231265
+source-git-commit: b0d1506f538e39a519351e0325cec0f0e5ee9121
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 33%
+source-wordcount: '975'
+ht-degree: 35%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 33%
    + [Integraciones con aplicaciones Experience Cloud](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
    + [Casos de uso clave](/help/platform/intro-to-platform/key-use-cases.md)
    + [Arquitectura básica](/help/platform/intro-to-platform/basic-architecture.md)
-   + [Uso de la interfaz de usuario de Platform](/help/platform/intro-to-platform/interface-tour.md)
+   + [Interfaz de usuario](/help/platform/intro-to-platform/interface-tour.md)
    + [Funciones y fases del proyecto](/help/platform/intro-to-platform/roles-and-project-phases.md)
 + Introducción a Real-Time CDP {#rtcdp}
    + [Información general](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
@@ -63,7 +63,7 @@ ht-degree: 33%
    + [Coincidencia de segmentos recibiendo datos](/help/platform/segments/segment-match-receiving-data.md)
 + [Registros de auditoría](/help/platform/governance/audit-logs.md)
 + [Recopilación de datos](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=es){target="_blank"}
-+ Tableros {#dashboards}
++ Paneles {#dashboards}
    + [Crear un tablero](/help/platform/dashboards/create-a-dashboard.md)
 + Control de datos {#data-governance}
    + [Información general](/help/platform/governance/understanding-data-governance.md)
@@ -80,7 +80,7 @@ ht-degree: 33%
    + [Resumen de ingesta por lotes](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [Crear y rellenar un conjunto de datos](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
    + [Asignación de un archivo CSV a XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html?lang=es){target="_blank"}
-   + [Resumen de orígenes](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
+   + [Información general de fuentes](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
    + [Ingesta de datos desde Adobe Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=es)
    + [Ingesta de datos desde el Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
    + [Ingesta de datos desde el almacenamiento en la nube](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html?lang=es)
@@ -194,7 +194,7 @@ ht-degree: 33%
    + [Actualización de esquemas](/help/platform/schemas/update-schemas.md)
    + [Creación de un esquema ad hoc](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
 + Fuentes {#sources}
-   + [Resumen de orígenes](/help/platform/sources/overview.md)
+   + [Información general de fuentes](/help/platform/sources/overview.md)
    + [Ingesta de datos desde Adobe Analytics](/help/platform/sources/ingest-data-from-adobe-analytics.md)
    + [Ingesta de datos desde el Audience Manager](/help/platform/sources/ingest-data-from-aam.md)
    + [Ingesta de datos desde Marketo](/help/platform/sources/ingest-data-from-marketo.md)
