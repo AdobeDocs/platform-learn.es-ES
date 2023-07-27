@@ -4,9 +4,9 @@ breadcrumb-title: Tutoriales
 user-guide-description: Descubra los muchos componentes de Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: 839fc42ebad3b9091e8f9bdebd66f7d7afdebaa8
+source-git-commit: eb2940e28607313b385e721a6f7185baa644b9c1
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '970'
 ht-degree: 35%
 
 ---
@@ -178,6 +178,7 @@ ht-degree: 35%
    + [Creación de paneles con herramientas de BI](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
    + [Recargar los datos de clientes](/help/platform/queries/recharge-your-customer-data.md)
    + [Conectar clientes al servicio de consultas](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
+   + [Validación de datos en el lago de datos](/help/platform/queries/validate-data-in-the-datalake.md)
 + Esquemas {#schemas}
    + [Información general](/help/platform/schemas/schemas-and-experience-data-model.md)
    + [Componentes](/help/platform/schemas/schema-building-blocks.md)
