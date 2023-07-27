@@ -4,9 +4,9 @@ breadcrumb-title: Tutoriales
 user-guide-description: Descubra los muchos componentes de Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: eb2940e28607313b385e721a6f7185baa644b9c1
+source-git-commit: 6969ffb934783dc5e9b448ad28738b56084114cf
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '969'
 ht-degree: 35%
 
 ---
@@ -217,4 +217,3 @@ ht-degree: 35%
    + [La evolución de su centro de excelencia de audiencia](/help/platform/industry/evolving-your-audience-center-of-excellence.md)
    + [Creación de mejores experiencias con perfiles de clientes](/help/platform/industry/building-better-experiences-with-customer-profiles.md)
    + [Colaboración de datos en el contexto de datos de origen](/help/platform/industry/data-collaboration-in-the-first-party-data-context.md)
-   + [Traducir](translate.md)
