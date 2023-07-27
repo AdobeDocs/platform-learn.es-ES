@@ -3,10 +3,11 @@ title: Uso de puntuaciones e información de Attribution AI
 description: Aprenda a utilizar la página de perspectivas de Attribution AI para comprender el ROI de los canales y campañas de marketing
 feature: Attribution AI
 role: User
+level: Beginner
 jira: KT-4173
 thumbnail: 32669.jpg
 exl-id: 3e3ede4b-baf4-4118-921a-6661d37f1a33
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 75%

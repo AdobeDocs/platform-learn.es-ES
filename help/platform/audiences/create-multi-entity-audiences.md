@@ -1,12 +1,13 @@
 ---
 title: Creación de audiencias de varias entidades
 description: Este vídeo muestra cómo crear audiencias de varias entidades en el generador de reglas de audiencia de Adobe Experience Platform.  La segmentación de varias entidades, o segmentación entre clases, permite crear audiencias que combinen datos basados en varias clases XDM.
-role: User
 feature: Segments
+role: User
+level: Intermediate
 jira: KT-3697
 thumbnail: 32179.jpg
 exl-id: cace814d-7124-432c-91fb-896725b701a4
-source-git-commit: 63edf327306054ffbcd4a842961a67fea6e85ff9
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 0%

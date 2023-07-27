@@ -2,9 +2,10 @@
 title: Crear elementos de datos de etiquetas (anteriormente elementos de datos de Launch)
 description: Obtenga información sobre cómo crear elementos de datos para almacenar valores extraídos de la capa de datos y ponerlos a disposición de reglas y extensiones en la propiedad de etiquetas.
 feature: Tags
+level: Beginner
 jira: KT-3529
 exl-id: 0be71b74-758e-4952-ab77-55deb8a02eda
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '66'
 ht-degree: 0%

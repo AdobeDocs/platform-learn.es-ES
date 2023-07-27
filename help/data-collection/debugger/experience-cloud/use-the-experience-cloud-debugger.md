@@ -5,11 +5,10 @@ landing-page-description: Aprenda a utilizar Experience Cloud Debugger para solu
 short-description: Aprenda a utilizar Experience Cloud Debugger para solucionar problemas de implementaciones. Comprenda qué soluciones de Adobe se implementan y qué llamadas realizan.
 original-url: https://experienceleague.adobe.com/docs/core-services-learn/tutorials/debugger/use-the-experience-cloud-debugger.html
 feature: Debugger
-role: Data Engineer
 level: Beginner
 thumbnail: 23114.jpeg
 exl-id: 6428ce8e-8a99-4b0b-83d8-02795447179f
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 50%

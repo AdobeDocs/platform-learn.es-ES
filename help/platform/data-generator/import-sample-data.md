@@ -1,16 +1,17 @@
 ---
 title: Importación de datos de muestra en Adobe Experience Platform
 description: Aprenda a configurar un entorno de zona protegida de Experience Platform con algunos datos de ejemplo.
-role: Developer
 feature: API
+role: Developer
+level: Experienced
 jira: KT-7349
 thumbnail: 7349.jpg
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '1831'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -26,7 +27,7 @@ Este tutorial se centra en una marca comercial ficticia llamada Luma. Invierten 
 
 >[!NOTE]
 >
->El resultado final de este tutorial es una zona protegida que contiene datos similares a los de [Tutorial de introducción a Adobe Experience Platform para arquitectos e ingenieros de datos](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html). Se actualizó en abril de 2023 para admitir la [Retos de Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=es). Se actualizó en junio de 2023 para cambiar el método de autenticación a OAuth.
+>El resultado final de este tutorial es una zona protegida que contiene datos similares a los de [Tutorial de introducción a Adobe Experience Platform para arquitectos e ingenieros de datos](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=es). Se actualizó en abril de 2023 para admitir la [Retos de Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=es). Se actualizó en junio de 2023 para cambiar el método de autenticación a OAuth.
 
 
 ## Requisitos previos

@@ -2,10 +2,10 @@
 title: Implementación del consentimiento con una plataforma de administración de consentimiento (CMP)
 description: Obtenga información sobre cómo implementar y activar los datos de consentimiento obtenidos de una plataforma de administración de consentimiento (CMP) mediante la extensión SDK para web de Adobe Experience Platform en la recopilación de datos.
 feature: Web SDK, Tags
-role: Developer, Data Engineer
+level: Intermediate
 doc-type: tutorial
 exl-id: bee792c3-17b7-41fb-a422-289ca018097d
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '3321'
 ht-degree: 2%

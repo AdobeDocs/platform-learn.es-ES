@@ -3,12 +3,11 @@ title: Crear audiencias a partir de audiencias existentes
 description: El generador de reglas de audiencia en Experience Platform le permite utilizar audiencias existentes como parte de una nueva definición de regla de audiencias. Vea este vídeo para ver sugerencias sobre cómo hacerlo.
 feature: Segments
 role: User
-level: Beginner
-doc-type: feature video
-thumbnail: 333304.jpg
+level: Intermediate
 jira: KT-7891
+thumbnail: 333304.jpg
 exl-id: a98e43e1-4b5e-42fa-8806-aab702947da5
-source-git-commit: 63edf327306054ffbcd4a842961a67fea6e85ff9
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 6%

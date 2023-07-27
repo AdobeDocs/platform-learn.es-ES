@@ -1,12 +1,13 @@
 ---
 title: Auditoría de los datos personales almacenados
 description: Aprenda conceptos y decisiones clave relacionados con la auditoría de datos personales y la preparación según las necesidades de privacidad de la empresa.
-role: Data Engineer, Data Architect
 feature: Privacy
+role: Data Engineer, Data Architect, Developer
+level: Beginner
 jira: KT-7717
 thumbnail: 336076.png
 exl-id: c5533831-5bba-45c6-8ff8-eb38accf0d42
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '65'
 ht-degree: 9%

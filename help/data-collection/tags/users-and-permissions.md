@@ -3,9 +3,10 @@ title: Usuarios y permisos (anteriormente permisos de Launch)
 description: Aprenda a utilizar Adobe Admin Console para controlar los permisos en las etiquetas, de modo que los empleados de su empresa tengan el acceso que necesitan para realizar sus trabajos.
 role: Admin
 feature: Tags
+level: Beginner
 jira: KT-3532
 exl-id: 8db9d937-289f-4570-b602-5656abc75295
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '68'
 ht-degree: 0%

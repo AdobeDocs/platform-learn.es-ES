@@ -1,12 +1,13 @@
 ---
 title: Información general sobre los esquemas de unión
 description: El Perfil de cliente en tiempo real permite la personalización en varios canales a escala en cada fase del recorrido del cliente. Los datos de lote o flujo se pueden habilitar para el perfil del cliente en tiempo real habilitando el esquema y el conjunto de datos correspondiente.
-role: Data Architect, Data Engineer
 feature: Profiles
+role: Data Engineer, Data Architect, Developer, User
+level: Beginner
 jira: KT-6754
 thumbnail: 329940.jpg
 exl-id: 6e6512c2-2d8e-4b56-b8b8-d318b98f3627
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '111'
 ht-degree: 19%

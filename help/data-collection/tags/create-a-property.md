@@ -3,9 +3,10 @@ title: Información general sobre las etiquetas y creación de una propiedad (an
 description: Obtenga información general rápida sobre las etiquetas en la recopilación de datos y aprenda a crear propiedades para albergar el código de su sitio.
 original-url: https://experienceleague.adobe.com/docs/core-services-learn/tutorials/launch-web/launch-overview-and-creating-properties.html
 feature: Tags
+level: Beginner
 jira: KT-3524
 exl-id: db2e1818-81bb-4d4c-b6ee-b537b48d3b21
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '61'
 ht-degree: 72%

@@ -1,12 +1,13 @@
 ---
 title: Ingesta de datos mediante conectores de origen de almacenamiento en la nube
 description: Este vídeo muestra cómo realizar fácilmente una ingesta por lotes de datos desde servicios de almacenamiento en la nube en el Perfil del cliente en tiempo real y el lago de datos de Adobe Experience Platform, de una manera sencilla y escalable.
-role: Data Engineer, Data Architect
 feature: Sources
+role: Data Engineer, Data Architect, Developer
+level: Intermediate
 jira: KT-3827
 thumbnail: 29695.jpg
 exl-id: 406b4545-8977-43fa-85b2-2069bba9f15a
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 8%

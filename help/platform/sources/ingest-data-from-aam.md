@@ -1,12 +1,13 @@
 ---
 title: Ingesta de datos mediante el conector de datos de Adobe Audience Manager
 description: A medida que reconfigura los procesos y el personal para que se traslade de Adobe Audience Manager a Real-time Customer Data Platform, puede utilizar el conector de datos del Audience Manager AAM para incorporar características y segmentos de a la plataforma, combinarlos con otros datos enriquecidos (incluido PII) y enviarlos a socios de destino. AAM Este vídeo lo acompaña durante la configuración del conector de datos de la para Real-Time CDP.
-role: Data Engineer, Data Architect
 feature: Sources
+role: Data Engineer, Data Architect, Developer
+level: Intermediate
 thumbnail: 331214.jpg
 jira: KT-7111
 exl-id: 43688e44-c0ea-4107-ba74-1e630990f732
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 2%

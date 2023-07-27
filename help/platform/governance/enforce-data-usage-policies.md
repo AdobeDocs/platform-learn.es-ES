@@ -1,12 +1,13 @@
 ---
 title: Aplicar políticas de uso de datos
 description: Obtenga información sobre cómo aplicar políticas de uso de datos al activar una audiencia en un destino. Obtenga información sobre cómo añadir acciones de marketing a destinos, cómo analizar una infracción de directiva durante la activación y cómo utilizar el linaje de datos para comprender y remediar infracciones de directiva.
-role: Data Architect, User
 feature: Data Governance
+role: User, Developer, Data Architect, Admin
+level: Beginner
 jira: KT-4380
 thumbnail: 33631.jpg
 exl-id: 9372f240-73a0-4262-8c23-122007786ea5
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 0%

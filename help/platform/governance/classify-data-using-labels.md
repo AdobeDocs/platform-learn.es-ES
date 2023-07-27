@@ -1,13 +1,14 @@
 ---
 title: Clasificación de datos mediante etiquetas
 description: Aprenda a aplicar etiquetas a los esquemas y conjuntos de datos.
-role: Data Architect
 feature: Data Governance, Consent, Access Control
+role: Data Architect, Admin
+level: Beginner
 jira: KT-3992
-last-substantial-update: 2023-05-24T00:00:00Z
 thumbnail: 29709.jpg
+last-substantial-update: 2023-05-24T00:00:00Z
 exl-id: 96ef86eb-458a-4fc3-a62a-b3d5202942c8
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 31%

@@ -1,19 +1,20 @@
 ---
-title: Resumen de orígenes
+title: Información general de fuentes
 description: Aprenda a ingerir fácilmente datos de aplicaciones de Adobe, propias y de terceros en el perfil del cliente en tiempo real y el lago de datos de Platform.
-role: Data Engineer, Data Architect
 feature: Sources
+role: Data Engineer, Data Architect, Developer
+level: Beginner
 jira: KT-3800
 thumbnail: 29694.jpg
 exl-id: e38d643a-27ea-49f4-87c4-eccdb860ea92
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '77'
-ht-degree: 33%
+ht-degree: 38%
 
 ---
 
-# Resumen de orígenes
+# Información general de fuentes
 
 Aprenda a utilizar fuentes o conectores de fuente en la interfaz de Adobe Experience Platform. Las fuentes son integraciones fácilmente configurables que le permiten ingerir datos de aplicaciones de Adobe, propias y de terceros en el perfil del cliente en tiempo real y el lago de datos de Platform.
 
