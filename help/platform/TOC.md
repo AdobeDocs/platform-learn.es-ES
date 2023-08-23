@@ -4,7 +4,7 @@ breadcrumb-title: Tutoriales
 user-guide-description: Descubra los muchos componentes de Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: 8441913e61137d97e25dc098bb1cdbdec6a1282e
+source-git-commit: 78b5ee6e1bcda449d8adf453088ddba6f0e42f36
 workflow-type: tm+mt
 source-wordcount: '989'
 ht-degree: 34%
@@ -143,10 +143,10 @@ ht-degree: 34%
    + [Monitorizar activación de segmentos](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
    + [Monitorización de flujos de datos](/help/platform/monitoring/data-monitoring.md)
 + Asistencia de datos de socios {#partner-data-support}
-   + [Resumen de soporte de datos de socios](/platform/partner-data-support/partner-data-support-overview.md)
-   + [Apoyo a la prospección fuera del sitio](/platform/partner-data-support/offsite-prospecting-partner-data.md)
-   + [Añadir atributos de socio a perfiles](/platform/partner-data-support/partner-enrichment-partner-data.md)
-   + [Personalizar en el sitio para visitantes desconocidos](/platform/partner-data-support/unknown-visitor-personalization-partner-data.md)
+   + [Resumen de soporte de datos de socios](/help/platform/partner-data-support/partner-data-support-overview.md)
+   + [Apoyo a la prospección fuera del sitio](/help/platform/partner-data-support/offsite-prospecting-partner-data.md)
+   + [Añadir atributos de socio a perfiles](/help/platform/partner-data-support/partner-enrichment-partner-data.md)
+   + [Personalizar en el sitio para visitantes desconocidos](/help/platform/partner-data-support/unknown-visitor-personalization-partner-data.md)
 + Perfiles {#profiles}
    + [Explicación del perfil del cliente en tiempo real](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [Diagrama de información general de perfil](/help/platform/profiles/overview-diagram.md)
