@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo configurar una propiedad de etique
 feature: Mobile SDK,Tags
 hide: true
 hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: a7d20a6de8eb9bae62494ff5e71f47ed672e4681
 workflow-type: tm+mt
-source-wordcount: '1002'
-ht-degree: 9%
+source-wordcount: '1015'
+ht-degree: 8%
 
 ---
 
@@ -23,7 +23,7 @@ Para completar la lección, debe tener permiso para crear una propiedad de etiqu
 
 >[!NOTE]
 >
-> El platform launch (lado del cliente) ahora es [etiquetas](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=es)
+> El platform launch (lado del cliente) ahora es [Etiquetas](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=es)
 
 ## Objetivos de aprendizaje
 
@@ -136,7 +136,12 @@ La biblioteca se ha creado para las nuevas extensiones y configuraciones. Una co
 
    Las instrucciones de instalación le proporcionan un buen punto de partida para la implementación. Puede encontrar información adicional [aquí](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
-1. Seleccione el **[!UICONTROL Swift]** pestaña siguiente **[!UICONTROL Añadir código de inicialización]**. Este bloque de código muestra cómo importar los SDK necesarios y registrar las extensiones en el inicio.
+   >[!INFO]
+   >
+   >Para el resto de este tutorial, **no** utilice las instrucciones CocoaPods, pero en su lugar utilice una configuración nativa basada en Swift Package Manager (SPM).
+   >
+
+1. Seleccione el **[!UICONTROL Swift]** pestaña siguiente **[!UICONTROL Añadir código de inicialización]**. Este bloque de código muestra cómo importar los SDK necesarios y registrar las extensiones en el inicio. Esto se tratará en más detalles en [Instalación de SDK](install-sdks.md).
 
 1. Copiar ![Copiar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) el **[!UICONTROL Identificador de archivo de entorno]** y guárdelo en un lugar en el que lo necesite más tarde. Este ID único apunta a su entorno de desarrollo de. Cada entorno (producción, ensayo y desarrollo) tiene su propio valor de ID único.
 
@@ -145,11 +150,6 @@ La biblioteca se ha creado para las nuevas extensiones y configuraciones. Una co
 >[!NOTE]
 >
 >Las instrucciones de instalación deben considerarse un punto de partida y no una documentación definitiva. Las últimas versiones del SDK y ejemplos de código se encuentran en el [documentación](https://developer.adobe.com/client-sdks/documentation/).
-
->[!INFO]
->
->Para el resto de este tutorial, se **no** siguiendo las instrucciones de CocoaPods, pero observe una configuración nativa basada en paquetes de Swift.
-
 
 ## Arquitectura de etiquetas móviles
 
