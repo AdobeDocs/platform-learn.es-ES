@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo crear mensajes en la aplicación p
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 hide: true
-source-git-commit: c3c12d63762f439faa9c45d27e66468455774b43
+source-git-commit: 7de7c7e13ea6d02f1193620e0cc35299e07d59e5
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 3%
@@ -123,6 +123,7 @@ Dispone de todos los ingredientes para enviar un mensaje en la aplicación. Lo q
 1. Vaya a la **[!UICONTROL Configuración]** pestaña.
 
 1. Tocar **[!UICONTROL Mensaje en la aplicación]**. Verá que el mensaje en la aplicación aparece en la aplicación.
+
    <img src="assets/ajo-in-app-message.png" width="300" />
 
 

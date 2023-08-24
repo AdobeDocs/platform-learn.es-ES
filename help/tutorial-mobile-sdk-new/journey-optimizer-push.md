@@ -5,7 +5,7 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 2f9298a140c7bd483c8c533427f0e90d90d14af0
 workflow-type: tm+mt
 source-wordcount: '1899'
 ht-degree: 3%
@@ -97,8 +97,8 @@ Puede obtenerse documentación adicional [encontrado aquí](https://help.apple.c
 1. En el **[!UICONTROL Instalar extensión]** diálogo
    1. Seleccione un entorno, por ejemplo **[!UICONTROL Desarrollo]**.
    1. Seleccione el **[!UICONTROL Conjunto de datos de evento de experiencia de seguimiento push AJO]** conjunto de datos del **[!UICONTROL Conjunto de datos de evento]** lista desplegable.
-      ![Configuración de extensión de AJO](assets/push-tags-ajo.png)
    1. Seleccionar **[!UICONTROL Guardar en biblioteca y crear]**.
+      ![Configuración de extensión de AJO](assets/push-tags-ajo.png)
 
 >[!NOTE]
 >
@@ -189,7 +189,7 @@ Para crear su propia notificación push, debe definir un evento en Journey Optim
    1. Proporcione un **[!UICONTROL Descripción]**, por ejemplo `Test event to trigger push notifications in Luma app`.
 
    1. Seleccione el esquema del evento de experiencia de la aplicación móvil creado anteriormente en [Creación de un esquema XDM](create-schema.md) desde el **[!UICONTROL Esquema]** , por ejemplo **[!UICONTROL Esquema de evento de aplicación móvil de Luma v.1]**.
-   1. Seleccionar ![Editar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) situado junto a la lista Campos.
+   1. Seleccionar ![Editar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) junto al **[!UICONTROL Campos]** lista.
 
       ![Editar paso de evento 1](assets/ajo-edit-event1.png)
 
