@@ -2,10 +2,9 @@
 title: Instalación de SDK de Adobe Experience Platform Mobile
 description: Obtenga información sobre cómo implementar el SDK de Adobe Experience Platform Mobile en una aplicación móvil.
 hide: true
-hidefromtoc: true
-source-git-commit: a7d20a6de8eb9bae62494ff5e71f47ed672e4681
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '927'
 ht-degree: 1%
 
 ---
@@ -58,9 +57,10 @@ Una vez instalados todos los paquetes, su Xcode **[!UICONTROL Dependencias del p
 
 ## Importar extensiones
 
-En Xcode, en el origen de **[!UICONTROL AppDelegate]** y **[!UICONTROL MobileSDK]**, agregue las siguientes importaciones.
+En Xcode, vaya a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** y agregue las siguientes importaciones.
 
 ```swift
+// import AEP MobileSDK libraries
 import AEPCore
 import AEPServices
 import AEPIdentity
@@ -76,9 +76,11 @@ import AEPOptimize
 import AEPAssurance
 ```
 
+Haga lo mismo para **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]**.
+
 ## Actualizar AppDelegate
 
-Entrada **AppDelegate**,
+Vaya a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **AppDelegate** en el navegador del proyecto Xcode.
 
 1. Configure las variables `@AppStorage` valor de `environmentFileId` al valor de ID de archivo del entorno de desarrollo que recuperó de las etiquetas en el paso 6 en [Generar instrucciones de instalación del SDK](configure-tags.md#generate-sdk-install-instructions).
 

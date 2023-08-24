@@ -2,11 +2,10 @@
 title: Eventos
 description: Obtenga información sobre cómo recopilar datos de eventos en una aplicación móvil.
 hide: true
-hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '1121'
-ht-degree: 0%
+source-wordcount: '1156'
+ht-degree: 1%
 
 ---
 
@@ -63,7 +62,7 @@ Para los grupos de campos estándar, el proceso tiene este aspecto:
 
 * Para construir un objeto que contenga los datos del evento de experiencia en la aplicación, utilice un código como el siguiente:
 
-  ```swift {highlight="2-8"}
+  ```swift
   var xdmData: [String: Any] = [
       "eventType": "commerce.productViews",
       "commerce": [
@@ -79,14 +78,14 @@ Para los grupos de campos estándar, el proceso tiene este aspecto:
    * `commerce.productViews.id`: un valor de cadena que representa el SKU del producto
    * `commerce.productViews.value`: proporcione el valor numérico del evento. Si es booleano (o &quot;contador&quot; en Adobe Analytics), el valor siempre se establece en 1. Si es un evento numérico o de moneda, el valor puede ser > 1.
 
-* En el esquema, identifique cualquier dato adicional asociado con el evento de vista de producto de comercio. En este ejemplo, incluya `productListItems` que es un conjunto estándar de campos utilizados con cualquier evento relacionado con el comercio:
+* En el esquema, identifique cualquier dato adicional asociado con el evento de vista de producto de comercio. En este ejemplo, incluya **[!UICONTROL productListItem]** que es un conjunto estándar de campos utilizados con cualquier evento relacionado con el comercio:
 
   ![esquema de elementos de lista de productos](assets/datacollection-prodListItems-schema.png)
-   * Observe que `productListItems` es una matriz para poder proporcionar varios productos.
+   * Observe que **[!UICONTROL productListItems]** es una matriz para poder proporcionar varios productos.
 
 * Para agregar estos datos, expanda su `xdmData` objeto para incluir datos suplementarios:
 
-```swift {highlight="9-16"}
+```swift
 var xdmData: [String: Any] = [
     "eventType": "commerce.productViews",
         "commerce": [
@@ -106,119 +105,84 @@ var xdmData: [String: Any] = [
 ]
 ```
 
-* A continuación, utilice la estructura de datos para crear un `ExperienceEvent`:
+* Ahora puede utilizar esta estructura de datos para crear un `ExperienceEvent`:
 
   ```swift
   let productViewEvent = ExperienceEvent(xdm: xdmData)
   ```
 
-* Y envíe el evento y los datos a Platform Edge Network mediante la API sendEvent:
+* Y envíe el evento y los datos a Platform Edge Network mediante el `sendEvent` API:
 
   ```swift
   Edge.sendEvent(experienceEvent: productViewEvent)
   ```
 
-Ahora, vamos a implementar este código en su proyecto Xcode.
-Tiene diferentes acciones comerciales relacionadas con productos (ver, agregar al carro, guardar para más tarde, comprar) en la aplicación y desea enviar eventos basados en estas acciones según lo realizado por el usuario.
+Ahora va a implementar realmente este código en su proyecto Xcode.
+Tiene diferentes acciones comerciales relacionadas con productos en la aplicación y desea enviar eventos basados en estas acciones realizadas por el usuario:
 
-1. Para estructurar el envío de eventos de experiencia, vaya a `MobileSDK`y agregue lo siguiente a `sendCommerceExperienceEvent` función. Esta función toma el evento de experiencia de comercio y el producto como parámetros:
+* vista: se produce cuando los usuarios ven un producto específico,
+* añadir al carro: cuando el usuario pulse <img src="assets/addtocart.png" width="20" /> en una pantalla de detalles del producto,
+* guardar para más tarde: cuando el usuario pulse <img src="assets/saveforlater.png" width="15" /> en la pantalla de detalles del producto,
+* compra: cuando el usuario pulse el botón <img src="assets/purchase.png" width="20" /> en la pantalla de detalles del producto.
 
-   ```swift {highlight="2-22"}
-   func sendCommerceExperienceEvent(commerceEventType: String, product: Product) {
-     let xdmData: [String: Any] = [
-         "eventType": "commerce." + commerceEventType,
-         "commerce": [
-             commerceEventType: [
-                 "id": product.sku,
-                 "value": 1
-             ]
-         ],
-         "productListItems": [
-             [
-                 "name": product.name,
-                 "priceTotal": product.price,
-                 "SKU": product.sku
-             ]
-         ]
-     ]
+Para estructurar el envío de eventos de experiencia:
+
+1. Vaya a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** en el navegador del proyecto Xcode y agregue lo siguiente a la `func sendCommerceExperienceEvent(commerceEventType: String, product: Product)` función. Esta función toma el evento de experiencia de comercio y el producto como parámetros:
+
+   ```swift
+   let xdmData: [String: Any] = [
+       "eventType": "commerce." + commerceEventType,
+       "commerce": [
+           commerceEventType: [
+               "id": product.sku,
+               "value": 1
+           ]
+       ],
+       "productListItems": [
+           [
+               "name": product.name,
+               "priceTotal": product.price,
+               "SKU": product.sku
+           ]
+       ]
+   ]
    
-     Logger.viewCycle.info("About to send commerce experience event of type  \(commerceEventType)..."
-     let commerceExperienceEvent = ExperienceEvent(xdm: xdmData)
-     Edge.sendEvent(experienceEvent: commerceExperienceEvent)
-   }
+   Logger.viewCycle.info("About to send commerce experience event of type  \(commerceEventType)..."
+   let commerceExperienceEvent = ExperienceEvent(xdm: xdmData)
+   Edge.sendEvent(experienceEvent: commerceExperienceEvent)
    ```
 
-1. Entrada `ProductView` agregar varias llamadas a `sendCommerceExperienceEvent` función:
+1. Vaya a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Vistas]** > **[!UICONTROL Productos]** > **[!UICONTROL ProductView]** y agregue varias llamadas a `sendCommerceExperienceEvent` función:
 
-   1. En el `.task` modificador en el `ATTrackingManager.trackingAuthorizationStatus` cierre. El `.task` se llama al modificador cuando se inicializa y se muestra la vista de producto, por lo que desea enviar un evento de vista de producto en ese momento específico.
+   1. En el `.task` modificador, dentro de `ATTrackingManager.trackingAuthorizationStatus` cierre. Esta `.task` se llama al modificador cuando se inicializa y se muestra la vista de producto, por lo que desea enviar un evento de vista de producto en ese momento específico.
 
-      ```swift {highlight="4-5"}
-      .task {
-          if ATTrackingManager.trackingAuthorizationStatus == .authorized {
-               // Send commerce experience event
-              MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productView", product: product)
-          }
-      }
+      ```swift
+      // Send commerce experience event
+      MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productView", product: product)
       ```
 
-   1. Para cada uno de los botones (Guardado para más adelante, Añadir al carro y Comprar) de la barra de herramientas, disponible en la Vista de producto, agregue la llamada correspondiente.
+   1. Para cada uno de los botones (<img src="assets/saveforlater.png" width="15" />, <img src="assets/addtocart.png" width="20" /> y <img src="assets/purchase.png" width="20" />) en la barra de herramientas, añada la llamada correspondiente dentro de la variable `ATTrackingManager.trackingAuthorizationStatus == .authorized` cierre:
 
-      * Guardar para más tarde / Añadir a la lista de deseos:
+      1. Para  <img src="assets/saveforlater.png" width="15" />
 
-        ```swift {highlight="5-6"}
-        Button {
-            Task {
-                if ATTrackingManager.trackingAuthorizationStatus == .authorized {
-                // Send saveForLater commerce experience event
-                    MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "saveForLaters", product: product)
-                }
-            }
-            showSaveForLaterDialog.toggle()
-        } label: {
-            Label("", systemImage: "heart")
-        }
-        .alert(isPresented: $showSaveForLaterDialog, content: {
-            Alert(title: Text( "Saved for later"), message: Text("The selected item is saved to your wishlist…"))
-        })
-        ```
+         ```swift
+         // Send saveForLater commerce experience event
+         MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "saveForLaters", product: product)
+         ```
 
-      * Para Agregar Al Carro:
+      1. Para  <img src="assets/addtocart.png" width="20" />
 
-        ```swift {highlight="5-6"}
-        Button {
-            Task {
-                if ATTrackingManager.trackingAuthorizationStatus == .authorized {
-                    // Send productListAdds commerce experience event
-                    MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productListAdds", product: product)
-                }
-            }
-            showAddToCartDialog.toggle()
-        } label: {
-                Label("", systemImage: "cart.badge.plus")
-        }
-        alert(isPresented: $showAddToCartDialog, content: {
-            Alert(title: Text( "Added to basket"), message: Text("The selected item is added to your basket…"))
-        })
-        ```
+         ```swift
+         // Send productListAdds commerce experience event
+         MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productListAdds", product: product)
+         ```
 
-      * Para la compra:
+      1. Para  <img src="assets/purchase.png" width="20" />
 
-        ```swift {highlight="5-6"}
-        Button {
-            Task {
-                if ATTrackingManager.trackingAuthorizationStatus == .authorized {
-                    // Send purchase commerce experience event
-                    MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "purchases", product: product)
-                }
-            }
-            showPurchaseDialog.toggle()
-        } label: {
-            Label("", systemImage: "creditcard")
-        }
-        .alert(isPresented: $showPurchaseDialog, content: {
-            Alert(title: Text( "Purchases"), message: Text("The selected item is purchased…"))
-        })
-        ```
+         ```swift
+         // Send purchase commerce experience event
+         MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "purchases", product: product)
+         ```
 
 ### Grupos de campos personalizados
 
@@ -231,9 +195,9 @@ Imagine que desea rastrear las vistas de pantalla y las interacciones en la prop
 
   >[!NOTE]
   >
-  >  Los grupos de campos estándar siempre comienzan en la raíz del objeto.
+  >* Los grupos de campos estándar siempre comienzan en la raíz del objeto.
   >
-  >  Los grupos de campos personalizados siempre comienzan con un objeto único de su organización de Experience Cloud, `_techmarketingdemos` en este ejemplo.
+  >* Los grupos de campos personalizados siempre comienzan con un objeto único de su organización de Experience Cloud, `_techmarketingdemos` en este ejemplo.
 
   Para el evento de interacción de la aplicación, construiría un objeto como:
 
@@ -273,7 +237,7 @@ Imagine que desea rastrear las vistas de pantalla y las interacciones en la prop
   ```
 
 
-* A continuación, la estructura de datos para crear una `ExperienceEvent`.
+* Ahora puede utilizar esta estructura de datos para crear un `ExperienceEvent`.
 
   ```swift
   let event = ExperienceEvent(xdm: xdmData)
@@ -288,34 +252,31 @@ Imagine que desea rastrear las vistas de pantalla y las interacciones en la prop
 
 De nuevo, vamos a implementar este código en su proyecto Xcode.
 
-1. Para mayor comodidad, puede definir dos funciones en `MobileSDK`.
+1. Para mayor comodidad, puede definir dos funciones en **[!UICONTROL MobileSDK]**. Vaya a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** en el navegador del proyecto Xcode.
 
-   Uno para las interacciones entre aplicaciones. Añada el código resaltado a `sendAppInteractionEvent(actionName)` función en **[!UICONTROL MobileSDK]**:
+   1. Uno para las interacciones entre aplicaciones. Añada este código a `func sendAppInteractionEvent(actionName: String)` función:
 
-   ```swift {highlight="2-16"}
-   func sendAppInteractionEvent(actionName: String) {
-        let xdmData: [String: Any] = [
-           "eventType": "application.interaction",
-           tenant : [
-               "appInformation": [
-                   "appInteraction": [
-                       "name": actionName,
-                       "appAction": [
-                           "value": 1
-                       ]
-                   ]
-               ]
-           ]
-       ]
-       let appInteractionEvent = ExperienceEvent(xdm: xdmData)
-       Edge.sendEvent(experienceEvent: appInteractionEvent)
-   }
-   ```
+      ```swift
+      let xdmData: [String: Any] = [
+          "eventType": "application.interaction",
+          tenant : [
+              "appInformation": [
+                  "appInteraction": [
+                      "name": actionName,
+                      "appAction": [
+                          "value": 1
+                      ]
+                  ]
+              ]
+          ]
+      ]
+      let appInteractionEvent = ExperienceEvent(xdm: xdmData)
+      Edge.sendEvent(experienceEvent: appInteractionEvent)
+      ```
 
-   Y uno para el seguimiento de pantalla. Añada el código resaltado en `sendTrackScreenEvent(stateName)` función en **[!UICONTROL MobileSDK]**:
+   1. Y uno para el seguimiento de pantalla. Añada este código a `func sendTrackScreenEvent(stateName: String) ` función:
 
-   ```swift {highlight="2-17"}
-   func sendTrackScreenEvent(stateName: String) {
+      ```swift
       let xdmData: [String: Any] = [
           "eventType": "application.scene",
           tenant : [
@@ -332,40 +293,24 @@ De nuevo, vamos a implementar este código en su proyecto Xcode.
       ]
       let trackScreenEvent = ExperienceEvent(xdm: xdmData)
       Edge.sendEvent(experienceEvent: trackScreenEvent)
-   }
-   ```
+      ```
 
-1. Vaya a **[!UICONTROL LoginSheet]**.
+1. Vaya a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Vistas]** > **[!UICONTROL General]** > **[!UICONTROL LoginSheet]**.
 
-   * Agregue el siguiente código resaltado al cierre del botón Inicio de sesión:
+   1. Agregue el siguiente código resaltado al cierre del botón Inicio de sesión:
 
-     ```swift {highlight="3"}
-     Button("Login") {                               
-        // Send app interaction event
-        MobileSDK.shared.sendAppInteractionEvent(actionName: "login")
-        dismiss()
-     }
-     .disabled(currentEmailId.isValidEmail == false)
-     .buttonStyle(.bordered)
-     ```
+      ```swift
+      // Send app interaction event
+      MobileSDK.shared.sendAppInteractionEvent(actionName: "login")
+      dismiss()
+      ```
 
-   * Agregue el siguiente código resaltado a `onAppear` modificador:
+   1. Agregue el siguiente código resaltado a `onAppear` modificador:
 
-     ```swift {highlight="13"}
-     .onAppear {
-        Task {
-            if currentEmailId == "testUser@gmail.com" || currentEmailId.isValidEmail == false {
-                // still allow to log in
-                disableLogin = false
-            }
-            else {
-                disableLogin = true
-            }
-        }
-        // Send track screen event
-        MobileSDK.shared.sendTrackScreenEvent(stateName: "luma: content: ios: us: en: login")
-     }
-     ```
+      ```swift
+      // Send track screen event
+      MobileSDK.shared.sendTrackScreenEvent(stateName: "luma: content: ios: us: en: login")
+      ```
 
 ### Validación
 
@@ -374,19 +319,19 @@ De nuevo, vamos a implementar este código en su proyecto Xcode.
 
    1. Mueva el icono Garantía a la izquierda.
    1. Seleccionar **[!UICONTROL Inicio]** en la barra de pestañas.
-   1. Seleccione el **[!UICONTROL Iniciar sesión]** para abrir la hoja Inicio de sesión.
-   1. Seleccione el **[!UICONTROL A|]** para insertar un correo electrónico aleatorio y un id de cliente.
+   1. Seleccione el <img src="assets/login.png" width="15" /> para abrir la hoja Inicio de sesión.
+   1. Seleccione el <img src="assets/insert.png" width="15" /> para insertar un correo electrónico aleatorio y un id de cliente.
    1. Seleccionar **[!UICONTROL Iniciar sesión]**.
    1. Seleccionar **[!UICONTROL Productos]** en la barra de pestañas.
    1. Seleccione un producto.
-   1. Seleccionar **[!UICONTROL Guardar para más tarde]**.
-   1. Seleccionar **[!UICONTROL Añadir al carro]**.
-   1. Seleccionar **[!UICONTROL Comprar]**.
+   1. Seleccionar <img src="assets/saveforlater.png" width="15" />.
+   1. Seleccionar <img src="assets/addtocart.png" width="20" />.
+   1. Seleccionar <img src="assets/purchase.png" width="15" />.
 
       <img src="./assets/mobile-app-events-1.png" width="200"> <img src="./assets/mobile-app-events-2.png" width="200"> <img src="./assets/mobile-app-events-3.png" width="200">
 
 
-1. Busque la variable **[!UICONTROL hitReceived]** eventos de la **[!UICONTROL com.adobe.edge.konductor]** proveedor.
+1. En la interfaz de usuario de Assurance, busque **[!UICONTROL hitReceived]** eventos de la **[!UICONTROL com.adobe.edge.konductor]** proveedor.
 1. Seleccione el evento y revise los datos XDM en la **[!UICONTROL messages]** objeto.
    ![validación de recopilación de datos](assets/datacollection-validation.png)
 
@@ -396,8 +341,8 @@ De nuevo, vamos a implementar este código en su proyecto Xcode.
 Ahora debe tener todas las herramientas para empezar a añadir recopilación de datos a la aplicación de Luma. Puede añadir más inteligencia a la forma en que el usuario interactúa con los productos y puede añadir más interacciones de aplicaciones y llamadas de seguimiento de pantalla a la aplicación:
 
 * Implemente las funciones de pedido, cierre de compra, cesta vacía y otras a la aplicación, y agregue eventos de experiencia comercial relevantes a esta funcionalidad.
-* Repita la llamada a `sendAppInteractionEvent` con el parámetro adecuado para rastrear otras interacciones de la aplicación en la aplicación por parte del usuario.
-* Repita la llamada a `sendTrackScreenEvent` con el parámetro adecuado para rastrear cada pantalla vista por el usuario en la aplicación.
+* Repita la llamada a `sendAppInteractionEvent` con el parámetro adecuado para rastrear otras interacciones de la aplicación por parte del usuario.
+* Repita la llamada a `sendTrackScreenEvent` con el parámetro adecuado para hacer un seguimiento de las pantallas visualizadas por el usuario en la aplicación.
 
 >[!TIP]
 >

@@ -3,10 +3,9 @@ title: Asignación de Analytics
 description: Obtenga información sobre cómo recopilar datos para Adobe Analytics en una aplicación móvil.
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '653'
 ht-degree: 2%
 
 ---
@@ -174,9 +173,9 @@ a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
 
 Este es el aspecto que podría tener una regla de procesamiento que utilice estos datos:
 
-* Va a sobrescribir el valor de `App Screen Name (eVar2)` (1) con el valor de `a.x._techmarketingdemo.appinformation.appstatedetails.screenname` (2) si `a.x._techmarketingdemo.appinformation.appstatedetails.screenname` está configurado.
+* Usted **[!UICONTROL Sobrescribir el valor de]** (1) **[!UICONTROL Nombre de pantalla de la aplicación (eVar 2)]** (2) con el valor de **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (3) si **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (4) **[!UICONTROL se ha establecido]** (5).
 
-* Usted establece `Add to Wishlist (Event 3)` hasta `a.x.commerce.saveForLaters.value(Context)` if `a.x.commerce.saveForLaters.value(Context)` está configurado.
+* Usted **[!UICONTROL Definir evento]** (6) **[!UICONTROL Añadir a la lista de deseos (evento 3)]** (7) a **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (8) Si **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (9) **[!UICONTROL se ha establecido]** (10).
 
 ![reglas de procesamiento de analytics](assets/analytics-processing-rules.png)
 

@@ -3,8 +3,7 @@ title: Configurar una secuencia de datos
 description: Obtenga información sobre cómo crear una secuencia de datos en Experience Platform.
 feature: Mobile SDK,Datastreams
 hide: true
-hidefromtoc: true
-source-git-commit: 45481ca81f2ee4119bc900a0dd2652818269df6b
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 9%
@@ -88,7 +87,7 @@ También es posible que desee habilitar el servicio Adobe Experience Platform.
 >
 >Al habilitar cada uno de los servicios que utiliza su organización, se garantiza que los datos recopilados en la aplicación móvil se puedan utilizar en todas partes. Para obtener más información sobre la configuración del flujo de datos, consulte la documentación [aquí](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html#adobe-experience-platform-settings).
 
-Al implementar el SDK de Platform Mobile en su propio sitio web, debe crear tres flujos de datos para asignarlos a sus tres entornos de etiquetas (desarrollo, fase y producción). Si utiliza el SDK de Platform Mobile con aplicaciones basadas en Platform, como Adobe Real-time Customer Data Platform o Adobe Journey Optimizer, debe asegurarse de crear dichos flujos de datos en los entornos limitados de Platform correspondientes.
+Al implementar el SDK de Platform Mobile en su propia aplicación, debe crear tres flujos de datos para asignarlos a sus tres entornos de etiquetas (desarrollo, fase y producción). Si utiliza el SDK de Platform Mobile con aplicaciones basadas en Platform, como Adobe Real-time Customer Data Platform o Adobe Journey Optimizer, debe asegurarse de crear dichos flujos de datos en los entornos limitados de Platform correspondientes.
 
 >[!SUCCESS]
 >
