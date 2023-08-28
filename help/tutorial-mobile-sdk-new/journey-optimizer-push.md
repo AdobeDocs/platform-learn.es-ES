@@ -5,10 +5,10 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: 2f9298a140c7bd483c8c533427f0e90d90d14af0
+source-git-commit: 35b38e7491a3751d21afe4a7b998e5dc2292ba27
 workflow-type: tm+mt
-source-wordcount: '1899'
-ht-degree: 3%
+source-wordcount: '2005'
+ht-degree: 2%
 
 ---
 
@@ -36,7 +36,7 @@ Journey Optimizer le permite crear sus recorridos y enviar mensajes a audiencias
 
 ## Objetivos de aprendizaje
 
-En esta lección, deberá hacer lo siguiente:
+En esta lección, debe
 
 * Registre el ID de la aplicación con el servicio de notificaciones push de Apple (APN).
 * Crear un **[!UICONTROL Superficie de aplicación]** en AJO.
@@ -81,8 +81,8 @@ Puede obtenerse documentación adicional [encontrado aquí](https://help.apple.c
 1. Introduzca el ID del paquete de la aplicación móvil en el campo ID de aplicación (ID de paquete de iOS). Si está siguiendo junto con la aplicación de Luma, ese valor es `com.adobe.luma.tutorial.swiftui`.
 1. Encienda el **[!UICONTROL Credenciales push]** para añadir sus credenciales.
 1. Arrastre y suelte su `.p8` **Clave de autenticación de notificación push de Apple** archivo.
-1. Proporcione el **[!UICONTROL ID de clave]**, una cadena de 10 caracteres asignada durante la creación de `p8` clave de autenticación. Se encuentra en **[!UICONTROL Claves]** pestaña en **Certificados, identificadores y perfiles** de las páginas del portal para desarrolladores de Apple.
-1. Proporcione el **[!UICONTROL Identificador de equipo]**. El identificador de equipo es un valor que se encuentra en **Suscripción** o en la parte superior de las páginas del portal para desarrolladores de Apple.
+1. Proporcione el **[!UICONTROL ID de clave]**, una cadena de 10 caracteres asignada durante la creación de `p8` clave de autenticación. Se encuentra en la sección **[!UICONTROL Claves]** en la pestaña **Certificados, identificadores y perfiles** de las páginas del portal para desarrolladores de Apple.
+1. Proporcione el **[!UICONTROL Identificador de equipo]**. El identificador de equipo es un valor que se encuentra en **Suscripción** o en la parte superior de la página de Apple Developer portal.
 1. Seleccione **[!UICONTROL Guardar]**.
 
    ![configuración de superficie de aplicación](assets/push-app-surface-config.png)
@@ -105,7 +105,7 @@ Puede obtenerse documentación adicional [encontrado aquí](https://help.apple.c
 >Si no lo ve... `AJO Push Tracking Experience Event Dataset` como opción, póngase en contacto con el servicio de atención al cliente.
 >
 
-## Implementar Adobe Journey Optimizer en la aplicación
+## Implementar Journey Optimizer en la aplicación
 
 Como se ha explicado en lecciones anteriores, la instalación de una extensión de etiqueta móvil solo proporciona la configuración. A continuación, debe instalar y registrar el SDK de mensajería. Si estos pasos no están claros, revise la [Instalación de SDK](install-sdks.md) sección.
 
@@ -175,6 +175,20 @@ Como se ha explicado en lecciones anteriores, la instalación de una extensión 
 
 Para crear su propia notificación push, debe definir un evento en Journey Optimizer que almacene en déclencheur un recorrido que se encargue de enviar una notificación push.
 
+### Actualizar esquema
+
+Va a definir un nuevo tipo de evento que aún no está disponible como parte de la lista de eventos definida en el esquema.
+
+1. En la IU de Journey Optimizer, seleccione **[!UICONTROL Esquemas]** desde el carril izquierdo.
+1. Seleccionar **[!UICONTROL Examinar]** en la barra de pestañas.
+1. Seleccione el esquema, por ejemplo **[!UICONTROL Esquema de evento de aplicación móvil de Luma]** para abrirlo.
+1. En el Editor de esquemas:
+   1. Seleccione el **[!UICONTROL eventType]** field.
+   1. En el **[!UICONTROL Propiedades del campo]** , desplácese hacia abajo para ver la lista de valores posibles para el tipo de evento. Seleccionar **[!UICONTROL Añadir fila]** y agregue. `application.test` como el **[!UICONTROL VALOR]** y **[!UICONTROL Evento de prueba para notificación push]** como el `DISPLAY NAME`.
+   1. Seleccione **[!UICONTROL Aplicar]**.
+   1. Seleccione **[!UICONTROL Guardar]**.
+      ![Añadir valor a los tipos de eventos](assets/ajo-update-schema-eventtype-enum.png)
+
 ### Definición de un evento
 
 1. En la IU de Journey Optimizer, seleccione **[!UICONTROL Configuraciones]** desde el carril izquierdo.
@@ -193,7 +207,7 @@ Para crear su propia notificación push, debe definir un evento en Journey Optim
 
       ![Editar paso de evento 1](assets/ajo-edit-event1.png)
 
-      En el **[!UICONTROL Campos]** , asegúrese de que los siguientes campos están seleccionados (sobre los campos predeterminados que siempre están seleccionados (_id, id y marca de tiempo)). Mediante la lista desplegable, puede alternar entre **[!UICONTROL Seleccionado]**, **[!UICONTROL Todo]** y **[!UICONTROL Principal]** o use el ![Buscar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) field.
+      En el **[!UICONTROL Campos]** , asegúrese de que los siguientes campos están seleccionados (sobre los campos predeterminados que siempre están seleccionados (**[!UICONTROL _id]**, **[!UICONTROL id]**, y **[!UICONTROL timestamp]**)). Mediante la lista desplegable, puede alternar entre **[!UICONTROL Seleccionado]**, **[!UICONTROL Todo]** y **[!UICONTROL Principal]** o use el ![Buscar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) field.
 
       * **[!UICONTROL Aplicación identificada (id)]**,
       * **[!UICONTROL Tipo de evento (eventType)]**,
@@ -205,9 +219,8 @@ Para crear su propia notificación push, debe definir un evento en Journey Optim
 
    1. Seleccionar ![Editar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) junto al **[!UICONTROL Condición de ID de evento]** field.
 
-      1. En el **[!UICONTROL Añadir una condición de ID de evento]** diálogo, arrastrar y soltar **[!UICONTROL Identificador de aplicación (id)]** debajo **[!UICONTROL Aplicación (aplicación)]** en a **[!UICONTROL Arrastre y suelte un elemento aquí]**.
-      1. En la ventana emergente, introduzca el identificador de paquete desde Xcode, por ejemplo `com.adobe.luma.tutorial.swiftui` en el campo situado junto a **[!UICONTROL igual a]**.
-      1. Haga clic en **[!UICONTROL Ok]**.
+      1. En el **[!UICONTROL Añadir una condición de ID de evento]** diálogo, arrastrar y soltar **[!UICONTROL Tipo de evento (eventType)]** en a **[!UICONTROL Arrastre y suelte un elemento aquí]**.
+      1. En la ventana emergente, desplácese hasta la parte inferior y seleccione **[!UICONTROL application.test]**. A continuación, desplácese hacia arriba y seleccione **[!UICONTROL Ok]**.
       1. Haga clic en **[!UICONTROL Ok]**.
          ![Editar condición de evento](assets/ajo-edit-condition.png)
 
