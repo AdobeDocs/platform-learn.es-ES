@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: 35b38e7491a3751d21afe4a7b998e5dc2292ba27
+source-git-commit: 78cbdc441a470448a0bc91ec4d1670ebbf251a8d
 workflow-type: tm+mt
-source-wordcount: '2305'
+source-wordcount: '2309'
 ht-degree: 2%
 
 ---
@@ -40,8 +40,8 @@ En esta lección, debe
 * Actualice la propiedad de etiquetas con la extensión Journey Optimizer - Decisioning.
 * Actualice el esquema para capturar eventos de propuesta.
 * Valide la configuración en Assurance.
-* Cree una prueba A/B sencilla en Target.
-* Actualice la aplicación para incluir la extensión Optimize.
+* Cree una decisión de oferta basada en ofertas de Journey Optimizer - Gestión de decisiones.
+* Actualice la aplicación para incluir la extensión de Optimizer.
 * Implemente ofertas de Administración de decisiones en la aplicación.
 
 
@@ -283,7 +283,7 @@ Como se ha explicado en lecciones anteriores, la instalación de una extensión 
 
    * configura un diccionario XDM `xdmData`, que contiene el ECID para identificar el perfil para el que debe presentar las ofertas.
    * define `decisionScope`, un objeto que determina la ubicación, la colección que se va a utilizar, la fórmula de clasificación y las reglas de idoneidad, tal como ha definido en la interfaz de usuario de Journey Optimizer - Gestión de decisiones.
-   * llama a dos API de: [`Optimizer.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  y [`Optimizer.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).   Estas funciones borran todas las propuestas almacenadas en caché y actualizan las propuestas de este perfil. La aplicación de Luma utiliza un archivo de configuración (`decisions.json`) que recupera los parámetros de ámbito en función del siguiente formato JSON:
+   * llama a dos API de: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  y [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).   Estas funciones borran todas las propuestas almacenadas en caché y actualizan las propuestas de este perfil. La aplicación de Luma utiliza un archivo de configuración (`decisions.json`) que recupera los parámetros de ámbito en función del siguiente formato JSON:
 
      ```swift
      "scopes": [
@@ -298,7 +298,7 @@ Como se ha explicado en lecciones anteriores, la instalación de una extensión 
 
      Sin embargo, puede utilizar cualquier tipo de implementación para asegurarse de que las API de Optimizer no obtienen los parámetros adecuados (`activityId`, `placementId` y, `itemCount`), para construir un válido [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) para su implementación.
 
-1. Vaya a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Vistas]** > **[!UICONTROL Personalización]** > **[!UICONTROL EdgeOffersView]** en el navegador del proyecto Xcode. Busque el `func getPropositionOD(activityId: String, placementId: String, itemCount: Int) async` e inspeccione el código de esta función. La parte más importante de esta función es la  [`Optimizer.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) Llamada de API, que
+1. Vaya a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Vistas]** > **[!UICONTROL Personalización]** > **[!UICONTROL EdgeOffersView]** en el navegador del proyecto Xcode. Busque el `func getPropositionOD(activityId: String, placementId: String, itemCount: Int) async` e inspeccione el código de esta función. La parte más importante de esta función es la  [`Optimize.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) Llamada de API, que
 
    * recupera las propuestas del perfil actual en función del ámbito de decisión (que ha definido en Journey Optimizer, Gestión de decisiones) y
    * desajusta el resultado en contenido que se pueda mostrar correctamente en la aplicación.
