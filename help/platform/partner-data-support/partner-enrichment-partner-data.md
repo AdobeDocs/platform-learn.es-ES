@@ -1,5 +1,5 @@
 ---
-title: Añadir atributos de socio a perfiles de origen en [!DNL Real-time CDP]
+title: Añadir atributos de socio a perfiles de origen en [!DNL Real-Time CDP]
 description: Aprenda a añadir atributos de socio a los perfiles de origen para ampliar el alcance a través de canales adicionales en la [!DNL Real-Time CDP].
 feature: Integrations
 topic: Integrations
@@ -8,14 +8,14 @@ level: Intermediate
 jira: KT-13830
 thumbnail: 3423075.jpg
 last-substantial-update: 2023-08-23T00:00:00Z
-source-git-commit: 8441913e61137d97e25dc098bb1cdbdec6a1282e
+source-git-commit: 2b4f50e114f07da72048fa863c551eaa3223f4cd
 workflow-type: tm+mt
 source-wordcount: '75'
 ht-degree: 0%
 
 ---
 
-# Añadir atributos de socio a perfiles de origen en [!DNL Real-time CDP]
+# Añadir atributos de socio a perfiles de origen en [!DNL Real-Time CDP]
 
 Aprenda a añadir atributos de socio a los perfiles de origen para ampliar el alcance a través de canales adicionales en la [!DNL Real-Time CDP].
 
