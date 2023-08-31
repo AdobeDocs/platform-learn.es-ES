@@ -5,9 +5,9 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 78cbdc441a470448a0bc91ec4d1670ebbf251a8d
+source-git-commit: 593dcce7d1216652bb0439985ec3e7a45fc811de
 workflow-type: tm+mt
-source-wordcount: '1394'
+source-wordcount: '1418'
 ht-degree: 2%
 
 ---
@@ -19,11 +19,11 @@ Obtenga información sobre cómo realizar pruebas A/B en sus aplicaciones móvil
 
 Target proporciona todo lo que debe adaptar y personalizar las experiencias de los clientes. Target le ayuda a maximizar los ingresos de sus sitios web y móviles, aplicaciones, medios sociales y otros canales digitales. Este tutorial se centra en la funcionalidad de prueba A/B de Target. Consulte la [Información general sobre las pruebas A/B](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=en) para obtener más información.
 
-Antes de poder realizar pruebas A/B con Target Premium, debe asegurarse de que se han implementado las configuraciones y las integraciones adecuadas.
+Antes de poder realizar pruebas A/B con Target, debe asegurarse de que las configuraciones y integraciones adecuadas estén implementadas.
 
 >[!NOTE]
 >
->Esta lección es opcional y solo se aplica a los usuarios de Adobe Target Premium que buscan realizar pruebas A/B.
+>Esta lección es opcional y solo se aplica a los usuarios de Adobe Target que buscan realizar pruebas A/B.
 
 
 ## Requisitos previos
@@ -47,7 +47,13 @@ En esta lección, debe
 * Valide la implementación en Assurance.
 
 
-## Actualizar configuración de Edge
+## Configure la aplicación
+
+>[!TIP]
+>
+>Si ya ha configurado la aplicación como parte de la [Ofertas de Journey Optimizer](journey-optimizer-offers.md) tutorial,
+
+### Actualizar configuración de Edge
 
 Para garantizar que los datos enviados desde la aplicación móvil a la red perimetral se reenvíen a Adobe Target, debe actualizar la configuración de Experience Edge.
 
@@ -62,7 +68,7 @@ Para garantizar que los datos enviados desde la aplicación móvil a la red peri
    ![Añadir Target al conjunto de datos](assets/edge-datastream-target.png)
 
 
-## Instalación de Adobe Journey Optimizer: extensión de etiquetas de Decisioning
+### Instalación de Adobe Journey Optimizer: extensión de etiquetas de Decisioning
 
 1. Vaya a **[!UICONTROL Etiquetas]** y busque la propiedad de etiquetas móviles y ábrala.
 1. Seleccionar **[!UICONTROL Extensiones]**.
@@ -73,7 +79,7 @@ Para garantizar que los datos enviados desde la aplicación móvil a la red peri
    ![Añadir extensión de Decisioning](assets/tag-add-decisioning-extension.png)
 
 
-## Actualizar el esquema
+### Actualizar el esquema
 
 1. Vaya a la interfaz de usuario de recopilación de datos y seleccione Esquemas en el carril izquierdo.
 1. Seleccionar **[!UICONTROL Examinar]** desde la barra superior.
@@ -84,7 +90,7 @@ Para garantizar que los datos enviados desde la aplicación móvil a la red peri
 1. para guardar los cambios en el esquema, seleccione **[!UICONTROL Guardar]** .
 
 
-## Validar la configuración en Assurance
+### Validar la configuración en Assurance
 
 Para validar la configuración en Assurance:
 
@@ -161,12 +167,12 @@ Como se ha explicado en lecciones anteriores, la instalación de una extensión 
 
 >[!NOTE]
 >
->Si ha completado la [Instalación de SDK](install-sdks.md) , el SDK ya está instalado y puede pasar al paso #7.
+>Si ha completado la [Instalación de SDK](install-sdks.md) , el SDK ya está instalado y puede omitir este paso.
 >
 
 1. En Xcode, asegúrese de que [Optimización de AEP](https://github.com/adobe/aepsdk-messaging-ios.git) se añade a la lista de paquetes en Dependencias del paquete. Consulte [Administrador De Paquetes Swift](install-sdks.md#swift-package-manager).
-1. Vaya a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]**.
-1. Asegurar `AEPMessaging` forma parte de su lista de importaciones.
+1. Vaya a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** en el navegador del proyecto Xcode.
+1. Asegurar `AEPOptimize` forma parte de su lista de importaciones.
 
    `import AEPOptimize`
 
@@ -239,17 +245,17 @@ Para validar la prueba A/B en Assurance:
 1. Seleccionar **[!UICONTROL Configurar]** en el carril izquierdo y seleccione ![Añadir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) junto a **[!UICONTROL Revisar y simular]** debajo **[!UICONTROL ADOBE JOURNEY OPTIMIZER DECISIONING]**.
 1. Seleccione **[!UICONTROL Guardar]**.
 1. Seleccionar **[!UICONTROL Revisar y simular]** en el carril izquierdo. Tanto la configuración del flujo de datos como la configuración del SDK se validan en la aplicación.
-1. Seleccionar **[!UICONTROL Solicitudes]** en la barra superior. Verá sus solicitudes de Target.
+1. Seleccionar **[!UICONTROL Solicitudes]** en la barra superior. Ya ve su **[!UICONTROL Target]** solicitudes.
    ![Validación de AJO Decisioning](assets/assurance-decisioning-requests.png)
 
 1. Puede explorar las pestañas Simular y Lista de eventos para obtener más funcionalidad al comprobar la configuración de las ofertas de Target.
 
-## Implemente en la aplicación
+## Pasos siguientes
 
-Ahora debe tener todas las herramientas para empezar a agregar más pruebas A/B u otras actividades de Target, cuando corresponda y corresponda, a la aplicación de Luma.
+Ahora debe tener todas las herramientas necesarias para empezar a añadir más pruebas A/B u otras actividades de Target (como Segmentación de experiencias o Prueba multivariable), cuando corresponda y corresponda, a la aplicación de Luma.
 
 >[!SUCCESS]
 >
->Ahora ha habilitado la aplicación para pruebas A/B y ha mostrado los resultados de una prueba A/B con Adobe Target y la extensión Adobe Journey Optimizer - Decisioning para el SDK de Adobe Experience Platform Mobile.<br/>Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Ha habilitado la aplicación para pruebas A/B y ha mostrado los resultados de una prueba A/B con Adobe Target y la extensión Adobe Journey Optimizer - Decisioning para el SDK de Adobe Experience Platform Mobile.<br/>Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Siguiente: **[Conclusión y pasos siguientes](conclusion.md)**
