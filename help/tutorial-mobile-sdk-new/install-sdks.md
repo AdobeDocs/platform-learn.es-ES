@@ -2,9 +2,9 @@
 title: Instalación de SDK de Adobe Experience Platform Mobile
 description: Obtenga información sobre cómo implementar el SDK de Adobe Experience Platform Mobile en una aplicación móvil.
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 6cc58d3d40112b14b1c1b8664c5e7aeb0880b59c
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '928'
 ht-degree: 1%
 
 ---
@@ -17,8 +17,8 @@ Obtenga información sobre cómo implementar el SDK de Adobe Experience Platform
 
 * La biblioteca de etiquetas se ha creado correctamente con las extensiones descritas en la [lección anterior](configure-tags.md).
 * ID de archivo del entorno de desarrollo de [Instrucciones de instalación de Mobile](configure-tags.md#generate-sdk-install-instructions).
-* Descargado, vacío [aplicación de ejemplo](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App{target="_blank"}).
-* Experiencia con [XCode](https://developer.apple.com/xcode/{target="_blank"}).
+* Descargado, vacío [aplicación de ejemplo](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}.
+* Experiencia con [XCode](https://developer.apple.com/xcode/){target="_blank"}.
 
 ## Objetivos de aprendizaje
 

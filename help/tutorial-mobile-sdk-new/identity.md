@@ -3,9 +3,9 @@ title: Identidad
 description: Obtenga información sobre cómo recopilar datos de identidad en una aplicación móvil.
 feature: Mobile SDK,Identities
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '656'
 ht-degree: 6%
 
 ---
@@ -144,7 +144,7 @@ Puede utilizar `removeIdentity` para eliminar la identidad del mapa de identidad
       <img src="./assets/identity1.png" width="300"> <img src="./assets/identity2.png" width="300">
 
 
-1. Busque la ** en la interfaz de usuario web de Assurance[!UICONTROL Identidades de actualización de identidad de Edge]**evento desde el **[!UICONTROL com.adobe.griffon.mobile]** proveedor.
+1. Busque en la interfaz de usuario web de Assurance **[!UICONTROL Identidades de actualización de identidad de Edge]** evento de la **[!UICONTROL com.adobe.griffon.mobile]** proveedor.
 1. Seleccione el evento y revise los datos en la **[!UICONTROL ACPExtensionEventData]** objeto. Debería ver las identidades que ha actualizado.
    ![validar actualización de identidades](assets/identity-validate-assurance.png)
 

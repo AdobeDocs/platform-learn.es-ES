@@ -2,9 +2,9 @@
 title: Perfil
 description: Obtenga información sobre cómo recopilar datos de perfil en una aplicación móvil.
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '594'
 ht-degree: 2%
 
 ---
@@ -43,7 +43,7 @@ En esta lección, deberá hacer lo siguiente:
 
 Sería útil que, al segmentar o personalizar, se supiera rápidamente si un usuario ya había realizado alguna compra en la aplicación anteriormente. Vamos a configurarlo en la aplicación de Luma.
 
-1. Vaya a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** >  **[!UICONTROL MobileSDK]** y busque el `func updateUserAttribute(attributeName: String, attributeValue: String)` función. Añada el siguiente código:
+1. Vaya a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** >  **[!UICONTROL MobileSDK]** en el navegador del proyecto Xcode y busque la variable `func updateUserAttribute(attributeName: String, attributeValue: String)` función. Añada el siguiente código:
 
    ```swift
    // Create a profile map
@@ -113,9 +113,13 @@ Se puede encontrar documentación adicional [aquí](https://developer.adobe.com/
    1. Seleccionar <img src="assets/saveforlater.png" width="15" />.
    1. Seleccionar <img src="assets/addtocart.png" width="20" />.
    1. Seleccionar <img src="assets/purchase.png" width="15" />.
-   1. Volver atrás a **[!UICONTROL Inicio]** pantalla. Debería ver los valores actualizados de **[!UICONTROL Correo electrónico]** y **[!UICONTROL ID de CRM]**.
 
-      <img src="./assets/mobile-app-events-1.png" width="200"> <img src="./assets/mobile-app-events-2.png" width="200"> <img src="./assets/mobile-app-events-3.png" width="200"> <img src="./assets/personbadges.png" width="200">
+      <img src="./assets/mobile-app-events-1.png" width="200"> <img src="./assets/mobile-app-events-2.png" width="200"> <img src="./assets/mobile-app-events-3.png" width="200">
+   1. Volver atrás a **[!UICONTROL Inicio]** pantalla. Debería ver una insignia añadida <img src="assets/person-badge-icon.png" width="15" />.
+
+      <img src="./assets/personbadges.png" width="200">
+
+
 
 1. En la interfaz de usuario de Assurance, debería ver un **[!UICONTROL UserProfileUpdate]** y **[!UICONTROL getUserAttributes]** eventos con el actualizado `profileMap` valor.
    ![validar perfil](assets/profile-validate.png)
