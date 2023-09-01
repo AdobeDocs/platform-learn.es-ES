@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
 hide: true
-source-git-commit: 5f0fa0b524cd4a12aaab8c8c0cd560a31003fbd8
+source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
 workflow-type: tm+mt
-source-wordcount: '1607'
+source-wordcount: '1605'
 ht-degree: 2%
 
 ---
@@ -48,11 +48,11 @@ En esta lección, debe
 * Defina su propia experiencia de campaña y mensaje en la aplicación en Journey Optimizer.
 * Envíe su propio mensaje en la aplicación desde la aplicación.
 
-## Configure la aplicación
+## Configuración
 
 >[!TIP]
 >
->Si ya ha configurado la aplicación como parte de la [mensajería push de Journey Optimizer](journey-optimizer-push.md) tutorial, puede omitir esta sección.
+>Si ya ha configurado su entorno como parte de la [mensajería push de Journey Optimizer](journey-optimizer-push.md) tutorial, puede omitir esta sección.
 
 ### Registro del ID de la aplicación con APNS
 

@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: 5f0fa0b524cd4a12aaab8c8c0cd560a31003fbd8
+source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
 workflow-type: tm+mt
-source-wordcount: '2344'
+source-wordcount: '2342'
 ht-degree: 3%
 
 ---
@@ -45,11 +45,11 @@ En esta lección, debe
 * Implemente ofertas de Administración de decisiones en la aplicación.
 
 
-## Configure la aplicación
+## Configuración
 
 >[!TIP]
 >
->Si ya ha configurado la aplicación como parte de la [Configuración de pruebas A/B con Target](target.md) tutorial, puede omitir [Instalación de Adobe Journey Optimizer: extensión de etiquetas de Decisioning](#install-adobe-journey-optimizer---decisioning-tags-extension) y [Actualizar el esquema](#update-your-schema).
+>Si ya ha configurado su entorno como parte de la [Configuración de pruebas A/B con Target](target.md) tutorial, puede omitir [Instalación de Adobe Journey Optimizer: extensión de etiquetas de Decisioning](#install-adobe-journey-optimizer---decisioning-tags-extension) y [Actualizar el esquema](#update-your-schema).
 
 ### Actualizar configuración de Edge
 
@@ -368,7 +368,7 @@ Ahora debería tener todas las herramientas para empezar a añadir más funciona
 
 * aplique parámetros diferentes a las ofertas (por ejemplo, prioridad o límite)
 * recopilar atributos de perfil en la aplicación (consulte [Perfil](profile.md)) y utilice estos atributos de perfil para crear audiencias. A continuación, utilice estas audiencias como parte de las reglas de idoneidad en su decisión.
-* combinar varios ámbitos de decisión
+* combinar varios ámbitos de decisión.
 
 >[!SUCCESS]
 >

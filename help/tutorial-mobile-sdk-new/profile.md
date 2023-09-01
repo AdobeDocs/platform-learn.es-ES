@@ -2,9 +2,9 @@
 title: Perfil
 description: Obtenga información sobre cómo recopilar datos de perfil en una aplicación móvil.
 hide: true
-source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
+source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '592'
 ht-degree: 2%
 
 ---
@@ -128,4 +128,4 @@ Se puede encontrar documentación adicional [aquí](https://developer.adobe.com/
 >
 >Ahora ha configurado la aplicación para actualizar los atributos de los perfiles de la red perimetral y (cuando está configurada) con Adobe Experience Platform.<br/>Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Siguiente: **[Asignación de datos a Adobe Analytics](analytics.md)**
+Siguiente: **[Uso de servicios de geolocalización](places.md)**
