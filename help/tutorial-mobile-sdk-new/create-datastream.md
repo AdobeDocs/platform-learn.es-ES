@@ -3,9 +3,9 @@ title: Configurar una secuencia de datos
 description: Obtenga información sobre cómo crear una secuencia de datos en Experience Platform.
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: 7de7c7e13ea6d02f1193620e0cc35299e07d59e5
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '546'
 ht-degree: 9%
 
 ---
@@ -19,7 +19,7 @@ Un conjunto de datos es una configuración del lado del servidor en Platform Edg
 
 ## Requisitos previos
 
-Para crear una secuencia de datos, su organización debe estar aprovisionada para esta función en la interfaz de recopilación de datos (anteriormente, [!UICONTROL Launch]) y debe tener permisos de usuario para [!UICONTROL Experience Platform] > [!UICONTROL Recopilación de datos] > **[!UICONTROL Administrar flujos de datos]** y **[!UICONTROL Ver flujos de datos]**.
+Para crear una secuencia de datos, su organización debe estar aprovisionada para esta función en la interfaz de recopilación de datos (anteriormente, [!UICONTROL Launch]) y debe tener permisos de usuario para administrar y ver flujos de datos.
 
 ## Objetivos de aprendizaje
 
@@ -74,7 +74,7 @@ También es posible que desee habilitar el servicio Adobe Experience Platform.
 
 1. Habilitar el servicio cambiando **[!UICONTROL Habilitado]** en.
 
-1. Seleccione el **[!UICONTROL Conjunto de datos de evento]** que ha creado como parte de [Crear un conjunto de datos](platform.md#create-a-dataset) instrucción, por ejemplo **Conjunto de datos de evento de aplicación móvil Luma**
+1. Seleccione el **[!UICONTROL Conjunto de datos de evento]** que ha creado como parte de [Crear un conjunto de datos](platform.md#create-a-dataset) instrucciones, por ejemplo **Conjunto de datos de evento de aplicación móvil Luma**
 
 1. Seleccione **[!UICONTROL Guardar]**.
 
@@ -88,7 +88,7 @@ También es posible que desee habilitar el servicio Adobe Experience Platform.
 >
 >Al habilitar cada uno de los servicios que utiliza su organización, se garantiza que los datos recopilados en la aplicación móvil se puedan utilizar en todas partes. Para obtener más información sobre la configuración del flujo de datos, consulte la documentación [aquí](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html#adobe-experience-platform-settings).
 
-Al implementar el SDK de Platform Mobile en su propia aplicación, debe crear tres flujos de datos para asignarlos a sus tres entornos de etiquetas (desarrollo, fase y producción). Si utiliza el SDK de Platform Mobile con aplicaciones basadas en Platform, como Adobe Real-time Customer Data Platform o Adobe Journey Optimizer, debe asegurarse de crear dichos flujos de datos en los entornos limitados de Platform correspondientes.
+Al implementar el SDK de Platform Mobile en su propia aplicación, debe crear tres flujos de datos para asignarlos a sus tres entornos de etiquetas (desarrollo, fase y producción). Si utiliza el SDK móvil de Platform con aplicaciones basadas en Platform como Adobe Real-time Customer Data Platform o Adobe Journey Optimizer, debe asegurarse de crear esos flujos de datos en los entornos limitados adecuados.
 
 >[!SUCCESS]
 >

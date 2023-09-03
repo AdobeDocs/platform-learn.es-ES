@@ -2,9 +2,9 @@
 title: Datos del ciclo vital
 description: Obtenga información sobre cómo recopilar datos del ciclo vital en una aplicación móvil.
 hide: true
-source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '613'
 ht-degree: 3%
 
 ---
@@ -102,7 +102,8 @@ El ejercicio anterior envía los eventos en primer y segundo plano al SDK de Ado
    1. Seleccionar **[!UICONTROL Fondo]** como el **[!UICONTROL Tipo de evento]**.
    1. Seleccione **[!UICONTROL Conservar cambios]**.
       ![Configuración de eventos de regla](assets/rule-event-configuration-background.png)
-      ![Acción de agregar regla](assets/rule-action-button.png)
+1. De nuevo en **[!UICONTROL Crear regla]** pantalla, seleccione ![Añadir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Añadir]** debajo **[!UICONTROL ACCIONES]**.
+   ![Acción de agregar regla](assets/rule-action-button.png)
 1. En el **[!UICONTROL Configuración de acción]** paso:
    1. Seleccionar **[!UICONTROL Adobe Experience Edge Network]** como el **[!UICONTROL Extensión]**.
    1. Seleccionar **[!UICONTROL Reenviar evento a Edge Network]** como el **[!UICONTROL Tipo de acción]**.

@@ -3,9 +3,9 @@ title: Asignación de Analytics
 description: Obtenga información sobre cómo recopilar datos para Adobe Analytics en una aplicación móvil.
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '641'
 ht-degree: 2%
 
 ---
@@ -35,7 +35,7 @@ Muchos de los campos XDM estándar se asignan automáticamente a variables de An
 
 ### Ejemplo de #1: s.products
 
-Un buen ejemplo es el [variable products](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=en) que no se pueden rellenar con reglas de procesamiento. Con una implementación XDM, se pasan todos los datos necesarios en productListItems y s.products se rellenan automáticamente mediante la asignación de Analytics.
+Un buen ejemplo es el [variable products](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=en) que no se pueden rellenar con reglas de procesamiento. Con una implementación de XDM, se pasan todos los datos necesarios en `productListItems` y `s.products` se rellenan automáticamente mediante la asignación de Analytics.
 
 Este objeto:
 
@@ -56,7 +56,7 @@ Este objeto:
 ]
 ```
 
-Daría como resultado lo siguiente:
+resultados en:
 
 ```
 s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
@@ -65,6 +65,7 @@ s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
 >[!NOTE]
 >
 >Actualmente `productListItems[N].SKU` es ignorado por la asignación automática.
+
 
 ### Ejemplo de #2 - scAdd
 
@@ -80,7 +81,7 @@ Este objeto:
 }
 ```
 
-Daría como resultado lo siguiente:
+resultados en:
 
 ```
 s.events = "scAdd"
@@ -97,7 +98,7 @@ Este objeto:
 }
 ```
 
-Daría como resultado lo siguiente:
+resultados en:
 
 ```
 s.events = "scAdd:321435"
@@ -105,7 +106,7 @@ s.events = "scAdd:321435"
 
 ## Validar con Assurance
 
-Uso del [Herramienta de control de calidad Assurance](assurance.md) Puede confirmar que está enviando un ExperienceEvent, que los datos XDM son correctos y que la asignación de Analytics se está produciendo según lo esperado. Por ejemplo:
+Uso del [Assurance](assurance.md) Puede confirmar que está enviando un evento de experiencia, que los datos XDM son correctos y que la asignación de Analytics se produce según lo esperado. Por ejemplo:
 
 1. Envíe un evento productListAdds.
 
@@ -157,10 +158,10 @@ a.x.[xdm path]
 Por ejemplo:
 
 ```
-//Standard Field
+// Standard Field
 a.x.commerce.saveforlaters.value
 
-//Custom Field
+// Custom Field
 a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
 ```
 
@@ -192,7 +193,7 @@ Se puede encontrar información adicional acerca de reglas de procesamiento y da
 
 >[!TIP]
 >
->A diferencia de las implementaciones de aplicaciones móviles anteriores, no hay distinción entre vistas de página o pantalla y otros eventos. En su lugar, puede incrementar el **[!UICONTROL Vista de página]** estableciendo la variable **[!UICONTROL Nombre de página]** dimensión en una regla de procesamiento. Dado que está recopilando la información personalizada `screenName` en el tutorial, se recomienda encarecidamente asignar el nombre de pantalla a **[!UICONTROL Nombre de página]** en una regla de procesamiento.
+>A diferencia de las implementaciones de aplicaciones móviles anteriores, no hay distinción entre una página o vistas de pantalla y otros eventos. En su lugar, puede incrementar el **[!UICONTROL Vista de página]** estableciendo la variable **[!UICONTROL Nombre de página]** dimensión en una regla de procesamiento. Dado que está recopilando la información personalizada `screenName` en el tutorial, se recomienda encarecidamente asignar el nombre de pantalla a **[!UICONTROL Nombre de página]** en una regla de procesamiento.
 
 >[!SUCCESS]
 >

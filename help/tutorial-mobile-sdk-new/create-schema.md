@@ -3,9 +3,9 @@ title: Creación de un esquema XDM
 description: Obtenga información sobre cómo crear un esquema XDM para eventos de aplicaciones móviles.
 feature: Mobile SDK,Schemas
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1416'
 ht-degree: 7%
 
 ---
@@ -100,7 +100,7 @@ Para fines de aprendizaje, utiliza grupos de campos creados previamente y person
 
    ![Selección del ExperienceEvent de la lista desplegable](assets/schema-create.png)
 
-1. Seleccionar ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Añadir** junto a [!UICONTROL Grupos de campos].
+1. Seleccionar ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Añadir** junto a **[!UICONTROL Grupos de campos]**.
 
    ![Agregar grupo de campos](assets/add-field-group.png)
 
@@ -116,7 +116,7 @@ Para fines de aprendizaje, utiliza grupos de campos creados previamente y person
 
    Volverá a la pantalla de composición del esquema principal, donde podrá ver todos los campos disponibles.
 
-1. Asigne un nombre al esquema seleccionando **[!UICONTROL Esquema sin título]** desde la parte superior izquierda y, a continuación, proporcione un **[!UICONTROL Nombre para mostrar]** &amp; **[!UICONTROL Descripción]**, por ejemplo `Luma Mobile App Event Schema` y `Schema for Luma mobile app experience events.`
+1. Asigne un nombre al esquema seleccionando **[!UICONTROL Esquema sin título]** desde el **[!UICONTROL Composición]** panel (debajo) **[!UICONTROL Esquema]**) y proporciona un **[!UICONTROL Nombre para mostrar]** &amp; **[!UICONTROL Descripción]**, por ejemplo `Luma Mobile App Event Schema` y `Schema for Luma mobile app experience events.`
 
 1. Seleccione **[!UICONTROL Guardar]**.
 
@@ -125,8 +125,8 @@ Para fines de aprendizaje, utiliza grupos de campos creados previamente y person
 >[!NOTE]
 >
 >Tenga en cuenta que no tiene que utilizar todos los campos de un grupo. Si resulta útil, puede considerar un esquema como una capa de datos vacía. En la aplicación, rellene los valores relevantes en el momento adecuado.
->
->El `Consumer Experience Event` tiene un tipo de datos llamado `Web information`, que describe eventos como la vista de página y los clics en vínculos. En el momento de escribir este artículo, esta función no tiene paridad de aplicación móvil, por lo que va a crear la suya propia.
+
+El [!UICONTROL Evento de experiencia del consumidor] el grupo de campos tiene un tipo de datos llamado [!UICONTROL Información web], que describe eventos como la vista de página y los clics en vínculos. En el momento de escribir este artículo, esta función no tiene paridad de aplicación móvil, por lo que va a crear la suya propia.
 
 ## Creación de un tipo de datos personalizado
 
@@ -152,9 +152,8 @@ Para empezar, cree un tipo de datos personalizado que describa los dos eventos:
 
 1. Para añadir un campo, seleccione la ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) botón.
 
-   Este campo es un objeto contenedor para la interacción de la aplicación.
 
-1. Proporcione un maletín de camello **[!UICONTROL Nombre de campo]** `appInteraction`, **[!UICONTROL Nombre para mostrar]** `App Interaction`y seleccione `Object` desde el **[!UICONTROL Tipo]** lista.
+1. Este campo es un objeto contenedor para la interacción con la aplicación., por lo que debe utilizarse un tipo de minúscula **[!UICONTROL Nombre de campo]** `appInteraction`, **[!UICONTROL Nombre para mostrar]** `App Interaction`y seleccione `Object` desde el **[!UICONTROL Tipo]** lista.
 
 1. Seleccione **[!UICONTROL Aplicar]**.
 
@@ -180,7 +179,7 @@ Para empezar, cree un tipo de datos personalizado que describa los dos eventos:
 
 1. Desplácese hasta la parte inferior del carril derecho y seleccione **[!UICONTROL Aplicar]**.
 
-1. Para crear un `appStateDetails` objeto que contiene un **[!UICONTROL Medida]** campo llamado `screenView` y dos **[!UICONTROL Cadena]** campos llamados `screenName` y `screenType` siga los mismos pasos que hizo al crear el **[!UICONTROL appInteraction]** objeto.
+1. Para crear un `appStateDetails` objeto que contiene un **[!UICONTROL Medida]** campo llamado `screenView` y dos **[!UICONTROL Cadena]** campos llamados `screenName` y `screenType`, siga los mismos pasos que hizo al crear el **[!UICONTROL appInteraction]** objeto.
 
 1. Seleccione **[!UICONTROL Guardar]**.
 
@@ -196,7 +195,7 @@ Ahora añada un grupo de campos personalizados con su tipo de datos personalizad
 
    ![Adición de un nuevo grupo de campos](assets/schema-fieldgroup-add.png)
 
-1. Cree un grupo de campos personalizados seleccionando la variable **[!UICONTROL Crear nuevo grupo de campos]** botón de radio cerca de la parte superior.
+1. Seleccione **[!UICONTROL Crear nuevo grupo de campo]**.
 
 1. Proporcione un **[!UICONTROL Nombre para mostrar]** y **[!UICONTROL Descripción]**, por ejemplo, `App Interactions` y `Fields for app interactions`.
 
@@ -210,7 +209,7 @@ Ahora añada un grupo de campos personalizados con su tipo de datos personalizad
 
 1. En el carril derecho, proporcione un **[!UICONTROL Nombre de campo]** de `appInformation`, a **[!UICONTROL Nombre para mostrar]** de `App Information`, y a **[!UICONTROL Tipo]** de `App Information`.
 
-1. Seleccionar **[!UICONTROL Interacciones de aplicación]** desde el **[!UICONTROL Tipo]** , que es el tipo de datos que creó en el ejercicio anterior.
+1. Seleccionar **[!UICONTROL Interacciones de aplicación]** desde el **[!UICONTROL Tipo]** , que es el tipo de datos personalizados que creó en el ejercicio anterior.
 
 1. Seleccione **[!UICONTROL Aplicar]**.
 
@@ -220,7 +219,7 @@ Ahora añada un grupo de campos personalizados con su tipo de datos personalizad
 
 >[!NOTE]
 >
->Los grupos de campos personalizados siempre se colocan bajo el identificador de organización de Experience Cloud. Entonces `_techmarketingdemos` se sustituye por el valor único de su organización.
+>Los grupos de campos personalizados siempre se colocan bajo el identificador de organización de Experience Cloud. Entonces `_techmarketingdemos`, utilizado en las capturas de pantalla, se sustituye por el valor único de su organización.
 
 
 >[!SUCCESS]

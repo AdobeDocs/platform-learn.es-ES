@@ -3,7 +3,7 @@ title: Configuración de una propiedad de etiqueta
 description: Obtenga información sobre cómo configurar una propiedad de etiqueta en la [!UICONTROL Recopilación de datos] interfaz.
 feature: Mobile SDK,Tags
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
 source-wordcount: '1015'
 ht-degree: 8%
@@ -129,7 +129,7 @@ La biblioteca se ha creado para las nuevas extensiones y configuraciones. Una co
 
    ![pantalla de inicio de entornos](assets/tags-environments.png)
 
-1. En el [!UICONTROL Instrucciones de instalación de Mobile] , seleccione la **[!UICONTROL iOS]** pestaña.
+1. En el **[!UICONTROL Instrucciones de instalación de Mobile]** , seleccione la **[!UICONTROL iOS]** pestaña.
 
 1. Puede copiar ![Copiar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) Siga las instrucciones para configurar el proyecto mediante CocoaPods. Los CocoaPods se utilizan para administrar las versiones y descargas del SDK. Para obtener más información, consulte la [documentación](https://cocoapods.org/).
 
