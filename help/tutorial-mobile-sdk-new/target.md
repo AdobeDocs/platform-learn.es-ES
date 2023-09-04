@@ -5,9 +5,9 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 593dcce7d1216652bb0439985ec3e7a45fc811de
+source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1434'
 ht-degree: 2%
 
 ---
@@ -51,7 +51,7 @@ En esta lección, debe
 
 >[!TIP]
 >
->Si ya ha configurado la aplicación como parte de la [Ofertas de Journey Optimizer](journey-optimizer-offers.md) tutorial,
+>Si ya ha configurado la aplicación como parte de la [Ofertas de Journey Optimizer](journey-optimizer-offers.md) tutorial, puede omitir [Instalación de Adobe Journey Optimizer: extensión de etiquetas de Decisioning](#install-adobe-journey-optimizer---decisioning-tags-extension) y [Actualizar el esquema](#update-your-schema).
 
 ### Actualizar configuración de Edge
 
@@ -104,13 +104,13 @@ Para validar la configuración en Assurance:
 
 1. En la IU de Target, seleccione **[!UICONTROL Actividades]** desde la barra superior.
 1. Seleccionar **[!UICONTROL Crear actividad]** y **[!UICONTROL Prueba A/B]** en el menú contextual.
-1. En el **[!UICONTROL Crear actividad de prueba A/B]** modal, seleccione **[!UICONTROL Móvil]** como el **[!UICONTROL Tipo]**, seleccione un espacio de trabajo del **[!UICONTROL Elija Workspace]** y seleccione su propiedad en la lista **[!UICONTROL Elegir propiedad]** lista.
+1. En el **[!UICONTROL Crear actividad de prueba A/B]** diálogo, seleccione **[!UICONTROL Móvil]** como el **[!UICONTROL Tipo]**, seleccione un espacio de trabajo del **[!UICONTROL Elija Workspace]** y seleccione su propiedad en la lista **[!UICONTROL Elegir propiedad]** lista.
 1. Seleccione **[!UICONTROL Crear]**.
    ![Crear actividad de Target](assets/target-create-activity1.png)
 
 1. En el **[!UICONTROL Actividad sin título]** pantalla, en el **[!UICONTROL Experiencias]** paso:
 
-   1. Entrar `luma-mobileapp-abtest` in **[!UICONTROL Seleccionar ubicación]** debajo de L**[!UICONTROL UBICACIÓN 1]**.
+   1. Entrar `luma-mobileapp-abtest` in **[!UICONTROL Seleccionar ubicación]** debajo **[!UICONTROL UBICACIÓN 1]**.
    1. Seleccionar ![Corchete hacia abajo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) junto a **[!UICONTROL Contenido predeterminado]** y seleccione **[!UICONTROL Crear oferta JSON]** en el menú contextual.
    1. Copie el siguiente JSON en **[!UICONTROL Introduzca un objeto JSON válido]**.
 
@@ -194,9 +194,23 @@ Como se ha explicado en lecciones anteriores, la instalación de una extensión 
    ]
    ```
 
-1. Vaya a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** en el navegador del proyecto Xcode. Busque el ` func updatePropositionAT(ecid: String, location: String) async` función. Inspect el código que configura
-   * Crear un diccionario XDM `xdmData`, que contiene el ECID para identificar el perfil para el que debe presentar la prueba A/B, y
-   * el `decisionScope`, una matriz de ubicaciones sobre dónde presentar la prueba A/B.
+1. Vaya a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** en el navegador del proyecto Xcode. Busque el ` func updatePropositionAT(ecid: String, location: String) async` función. Añada el siguiente código:
+
+   ```swift
+   Task {
+       let ecid = ["ECID" : ["id" : ecid, "primary" : true] as [String : Any]]
+       let identityMap = ["identityMap" : ecid]
+       let xdmData = ["xdm" : identityMap]
+       let decisionScope = DecisionScope(name: location)
+       Optimize.clearCachedPropositions()
+       Optimize.updatePropositions(for: [decisionScope], withXdm: xdmData)
+   }
+   ```
+
+   Esta función
+
+   * configura un diccionario XDM `xdmData`, que contiene el ECID para identificar el perfil para el que debe presentar la prueba A/B, y
+   * define un `decisionScope`, una matriz de ubicaciones sobre dónde presentar la prueba A/B.
 
    A continuación, la función llama a dos API: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  y [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). Estas funciones borran todas las propuestas almacenadas en caché y actualizan las propuestas de este perfil.
 

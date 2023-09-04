@@ -3,10 +3,10 @@ title: Configurar una secuencia de datos
 description: Obtenga información sobre cómo crear una secuencia de datos en Experience Platform.
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 9%
+source-wordcount: '551'
+ht-degree: 10%
 
 ---
 
@@ -50,6 +50,8 @@ Las secuencias de datos se pueden crear en la variable [!UICONTROL Recopilación
 
 A continuación, conecte los servicios de Experience Cloud a la secuencia de datos. Cuando el SDK de Platform Mobile envía datos a Edge Network, el conjunto de datos envía los datos a estos servicios:
 
+### Adobe Analytics
+
 1. Seleccione **[!UICONTROL Agregar servicio]**.
 
 1. Añadir **[!UICONTROL Adobe Analytics]** desde el [!UICONTROL Servicio] lista,
@@ -61,6 +63,9 @@ A continuación, conecte los servicios de Experience Cloud a la secuencia de dat
 1. Seleccione **[!UICONTROL Guardar]**.
 
    ![Añadir Adobe Analytics como servicio de flujo de datos](assets/datastream-service-aa.png)
+
+
+### Adobe Experience Platform
 
 También es posible que desee habilitar el servicio Adobe Experience Platform.
 
