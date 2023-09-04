@@ -5,9 +5,9 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: 7435a2758bdd8340416b70faf8337e33167a7193
 workflow-type: tm+mt
-source-wordcount: '1434'
+source-wordcount: '1433'
 ht-degree: 2%
 
 ---
@@ -218,7 +218,7 @@ Como se ha explicado en lecciones anteriores, la instalación de una extensión 
    * recupera las propuestas del perfil actual en función del ámbito de decisión (que es la ubicación definida en la prueba A/B) y
    * desajusta el resultado en contenido que se pueda mostrar correctamente en la aplicación.
 
-1. Sigue en **[!UICONTROL TargetOffersView]**, busque la f`unc updatePropositions(location: String) async` y agregue el siguiente código:
+1. Sigue en **[!UICONTROL TargetOffersView]**, busque la variable `func updatePropositions(location: String) async` y agregue el siguiente código:
 
    ```swift
        Task {
