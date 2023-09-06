@@ -6,12 +6,12 @@ role: Admin, User
 level: Beginner
 jira: KT-10363
 thumbnail: 345641.jpeg
-last-substantial-update: 2022-07-28T00:00:00Z
+last-substantial-update: 2023-09-06T00:00:00Z
 exl-id: 170676e6-d9fb-4a45-aa32-b1b27e8533f4
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 996a241dca2b7d622524d4a9259f253113a835f3
 workflow-type: tm+mt
-source-wordcount: '79'
-ht-degree: 10%
+source-wordcount: '54'
+ht-degree: 14%
 
 ---
 
@@ -19,8 +19,4 @@ ht-degree: 10%
 
 Obtenga información sobre cómo configurar el control de acceso basado en atributos para limitar el acceso a recursos de Experience Platform específicos. Para obtener más información, visite la [documentación de control de acceso](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/overview.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/345641?quality=12&learn=on)
-
->[!NOTE]
->
-> La función de creación de directivas que se muestra en este vídeo no está disponible por completo, pero la directiva predeterminada de las cuentas de cliente se configura de forma similar a la que se muestra.
+>[!VIDEO](https://video.tv.adobe.com/v/345641?learn=on)
