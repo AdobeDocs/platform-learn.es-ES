@@ -3,9 +3,9 @@ title: Creación de un esquema XDM para datos web
 description: Obtenga información sobre cómo crear un esquema XDM para datos web en la interfaz de recopilación de datos. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK,Tags,Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 3b57d20410dda5dc44dfbb806f6637b0fd4f4f04
 workflow-type: tm+mt
-source-wordcount: '1121'
+source-wordcount: '1122'
 ht-degree: 6%
 
 ---
@@ -106,7 +106,7 @@ Es un objeto que se debe tener para cualquier recopilación de datos relacionado
 >Esta configuración se analiza más en la [Experience Platform de instalación](setup-experience-platform.md) lección.
 >![Esquema de perfil](assets/schema-profile.png)
 
-Ahora puede hacer referencia a este esquema cuando agrega la extensión del SDK web a la propiedad de etiqueta.
+Ahora puede hacer referencia a este esquema al agregar la extensión del SDK web a la propiedad de etiqueta.
 
 
 [Siguiente: ](configure-identities.md)
