@@ -8,7 +8,7 @@ feature: Sandboxes
 jira: KT-4348
 thumbnail: 4348-create-a-sandbox.jpg
 exl-id: a04afada-52a1-4812-8fa2-14be72e68614
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: fc1c25d9fa4e78dfabb33bc9cb4a2e3779d940c9
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 2%
@@ -62,13 +62,13 @@ Las zonas protegidas tardan aproximadamente 30 segundos en crearse, tiempo duran
 
 Espere hasta que su zona protegida sea &quot;[!UICONTROL Activo]&quot; antes de continuar con el siguiente ejercicio.
 
-## Añadir la nueva zona protegida al perfil del producto
+## Agregar la nueva zona protegida a su función
 
 Una vez que la zona protegida esté activa, debe incluirla en su función para poder utilizarla. Para agregarlo a su función (requiere privilegios de administrador del sistema o administrador de productos):
 
 1. Vaya a la [!UICONTROL Permisos] pantalla
 1. Abra el `Luma Tutorial Platform` función
-1. _Eliminar_ el `Prod` zona protegida de la función
+1. Opcionalmente _quitar_ el `Prod` zona protegida de la función
 1. Añada el `Luma Tutorial` espacio aislado
 1. Seleccione **[!UICONTROL Guardar]**
 1. En el [!UICONTROL Zonas protegidas] fila, seleccione **[!UICONTROL Editar]**
@@ -80,4 +80,4 @@ Una vez que la zona protegida esté activa, debe incluirla en su función para p
 
    ![Confirmar zona protegida](assets/sandbox-confirmDropdown.png)
 
-Bueno, ha creado su zona protegida y está listo para lo siguiente [Configuración de Developer Console y Postman](set-up-developer-console-and-postman.md)!
+Genial. Ha creado su zona protegida y está listo para lo siguiente [Configuración de Developer Console y Postman](set-up-developer-console-and-postman.md)!
