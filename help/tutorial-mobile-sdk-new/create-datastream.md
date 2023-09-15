@@ -1,11 +1,11 @@
 ---
-title: Configurar una secuencia de datos
+title: Configuración de una secuencia de datos
 description: Obtenga información sobre cómo crear una secuencia de datos en Experience Platform.
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '598'
 ht-degree: 10%
 
 ---
@@ -17,6 +17,8 @@ Obtenga información sobre cómo crear una secuencia de datos en Experience Plat
 
 Un conjunto de datos es una configuración del lado del servidor en Platform Edge Network. La secuencia de datos garantiza que los datos entrantes en la red perimetral de Platform se enruten correctamente a las aplicaciones y servicios de Adobe Experience Cloud. Para obtener más información, consulte la [documentación](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=es) o esto [video](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html?lang=es).
 
+![Arquitectura](assets/architecture.png)
+
 ## Requisitos previos
 
 Para crear una secuencia de datos, su organización debe estar aprovisionada para esta función en la interfaz de recopilación de datos (anteriormente, [!UICONTROL Launch]) y debe tener permisos de usuario para administrar y ver flujos de datos.
@@ -27,19 +29,24 @@ En esta lección, deberá hacer lo siguiente:
 
 * Saber cuándo utilizar un conjunto de datos.
 * Crear un flujo de datos.
-* Configurar una secuencia de datos.
+* Configuración de una secuencia de datos.
 
 ## Crear un flujo de datos
 
 Las secuencias de datos se pueden crear en la variable [!UICONTROL Recopilación de datos] interfaz con el [!UICONTROL Datastream] herramienta de configuración. Para crear una secuencia de datos:
 
-1. Asegúrese de que está en el entorno limitado del Experience Platform correcto, ya que las secuencias de datos se definen en un nivel de entorno limitado.
+1. Asegúrese de que está en el entorno limitado del Experience Platform correcto, ya que los flujos de datos se definen en un nivel de entorno limitado.
 1. Seleccionar **[!UICONTROL Datastreams]** en el carril izquierdo.
 1. Seleccione **[!UICONTROL Nueva secuencia de datos]**.
 
    ![inicio de flujos de datos](assets/datastream-new.png)
 
 1. Proporcione un **[!UICONTROL Nombre]**, por ejemplo `Luma Mobile App` y una **[!UICONTROL Descripción]**, por ejemplo `Datastream for Luma Mobile App`.
+
+   >[!NOTE]
+   >
+   >Recordatorio final: si va a seguir este tutorial con varias personas en una sola zona protegida o utiliza una cuenta compartida, considere la posibilidad de añadir o anteponer una identificación como parte de las convenciones de nomenclatura. Por ejemplo, en lugar de `Luma Mobile App Event Dataset`, utilice `Luma Mobile App Event Dataset - Joe Smith`. Consulte también la nota en [Información general](overview.md).
+
 1. Seleccione el esquema que ha creado en la lección anterior en la **Esquema del evento** una lista.
 1. Seleccione **[!UICONTROL Guardar]**.
 
@@ -83,7 +90,7 @@ También es posible que desee habilitar el servicio Adobe Experience Platform.
 
 1. Seleccione **[!UICONTROL Guardar]**.
 
-   ![Añadir el servicio Adobe Experience Platform as a Datastream](assets/datastream-service-aep.png)
+   ![Añadir Adobe Experience Platform como servicio de flujo de datos](assets/datastream-service-aep.png)
 1. La configuración final debería tener un aspecto similar al siguiente.
 
    ![configuración de secuencia de datos](assets/datastream-settings.png)

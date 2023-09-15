@@ -3,7 +3,7 @@ title: Asignación de Analytics
 description: Obtenga información sobre cómo recopilar datos para Adobe Analytics en una aplicación móvil.
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
 source-wordcount: '641'
 ht-degree: 2%
@@ -15,6 +15,8 @@ ht-degree: 2%
 Obtenga información sobre cómo asignar datos móviles a Adobe Analytics.
 
 El [evento](events.md) Los datos que ha recopilado y enviado a Platform Edge Network en lecciones anteriores se reenvían a los servicios configurados en su conjunto de datos, incluido Adobe Analytics. Los datos se asignan a las variables correctas del grupo de informes.
+
+![Arquitectura](assets/architecture-aa.png)
 
 ## Requisitos previos
 
@@ -186,7 +188,7 @@ Este es el aspecto que podría tener una regla de procesamiento que utilice esto
 >Es posible que algunas de las variables asignadas automáticamente no estén disponibles para su uso en reglas de procesamiento.
 >
 >
->La primera vez que se asigna a una regla de procesamiento, la IU no muestra las variables de datos de contexto del objeto XDM. Para corregir que, seleccione cualquier valor, haga clic en Guardar y vuelva a editar. Ahora deberían aparecer todas las variables XDM.
+>La primera vez que se asigna a una regla de procesamiento, la interfaz no muestra las variables de datos de contexto del objeto XDM. Para corregir que, seleccione cualquier valor, haga clic en Guardar y vuelva a editar. Ahora deberían aparecer todas las variables XDM.
 
 
 Se puede encontrar información adicional acerca de reglas de procesamiento y datos de contexto [aquí](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en).

@@ -2,7 +2,7 @@
 title: Places
 description: Aprenda a utilizar el servicio de localización geográfica Places en su aplicación móvil.
 hide: true
-source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
 source-wordcount: '1754'
 ht-degree: 3%
@@ -31,7 +31,7 @@ En esta lección, debe
 * Actualice la propiedad de etiqueta con la extensión Places.
 * Actualice el esquema para capturar los eventos de geolocalización.
 * Valide la configuración en Assurance.
-* Actualice la aplicación para incluir la extensión Places.
+* Actualice la aplicación para registrar la extensión Places.
 * Implemente el seguimiento de ubicación geográfica desde el servicio Places en la aplicación.
 
 
@@ -49,7 +49,7 @@ En esta lección, debe
 * Actualice el esquema para capturar eventos de propuesta.
 * Valide la configuración en Assurance.
 * Cree una decisión de oferta basada en ofertas de Journey Optimizer - Gestión de decisiones.
-* Actualice la aplicación para incluir la extensión de Optimizer.
+* Actualice la aplicación para registrar la extensión de Optimizer.
 * Implemente ofertas de Administración de decisiones en la aplicación.
 
 
@@ -106,7 +106,7 @@ Puede definir algunos puntos de interés en el servicio Places.
 
 Compruebe si el esquema, tal como se define en [Crear esquema](create-schema.md), incorpora los grupos de campos y las clases necesarios para recopilar los datos de puntos de interés y geolocalización.
 
-1. Vaya a la IU de recopilación de datos y seleccione **[!UICONTROL Esquemas]** desde el carril izquierdo.
+1. Vaya a la interfaz de recopilación de datos y seleccione **[!UICONTROL Esquemas]** desde el carril izquierdo.
 1. Seleccionar **[!UICONTROL Examinar]** desde la barra superior.
 1. Seleccione el esquema para abrirlo.
 1. En el editor de esquemas, seleccione **[!UICONTROL Evento de experiencia del consumidor]**.
@@ -258,7 +258,7 @@ Para validar la configuración en Assurance:
    ![Validación de AJO Decisioning](assets/places-events.png)
 
 
-## Implementar lugares en la aplicación
+## Implementar Places en la aplicación
 
 Como se ha explicado en lecciones anteriores, la instalación de una extensión de etiqueta móvil solo proporciona la configuración. A continuación, debe instalar y registrar el SDK de Places. Si estos pasos no están claros, revise la [Instalación de SDK](install-sdks.md) sección.
 
@@ -320,7 +320,7 @@ Como se ha explicado en lecciones anteriores, la instalación de una extensión 
    }
    ```
 
-En este tutorial no se trata solo de explicar los detalles sobre la implementación del administrador de ubicación en iOS.
+Explicar detalles sobre la implementación del administrador de ubicación en iOS va más allá del tema de esta lección.
 
 
 ## Validar con la aplicación

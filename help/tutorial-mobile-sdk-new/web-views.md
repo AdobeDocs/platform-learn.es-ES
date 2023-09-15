@@ -3,9 +3,9 @@ title: Administrar vistas web
 description: Obtenga información sobre cómo gestionar la recopilación de datos con WebViews en una aplicación móvil.
 jira: KT-6987
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '459'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ Si envía datos desde la parte nativa de la aplicación y desde un WebView dentr
 
 Para solucionar esta situación no deseada, es importante pasar el ECID del usuario desde la parte nativa de la aplicación a un WebView que pueda querer utilizar en la aplicación.
 
-La extensión JavaScript del servicio de ID de Experience Cloud en WebView extrae el ECID de la URL, en lugar de enviar una solicitud al Adobe para obtener un nuevo ID. El servicio de ID utiliza este ECID para rastrear al visitante.
+La extensión de identidad de Edge de AEP utilizada dentro de WebView recopila el ECID actual y lo añade a la dirección URL en lugar de enviar una solicitud al Adobe para obtener un nuevo ID. A continuación, la implementación utiliza este ECID para solicitar la dirección URL.
 
 ## Implementación
 

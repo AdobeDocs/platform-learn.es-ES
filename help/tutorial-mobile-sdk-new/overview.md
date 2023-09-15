@@ -3,10 +3,10 @@ title: 'Tutorial de implementación de Adobe Experience Cloud en aplicaciones m�
 description: Obtenga información sobre cómo implementar las aplicaciones móviles de Adobe Experience Cloud. Este tutorial le guía a través de una implementación de aplicaciones Experience Cloud en una aplicación Swift de ejemplo.
 recommendations: noDisplay,catalog
 hide: true
-source-git-commit: 4f4bb2fdb1db4d9af8466c4e6d8c61e094bf6a1c
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '725'
-ht-degree: 10%
+source-wordcount: '873'
+ht-degree: 9%
 
 ---
 
@@ -16,7 +16,7 @@ Obtenga información sobre cómo implementar aplicaciones de Adobe Experience Cl
 
 El SDK de Experience Platform Mobile es un SDK del lado del cliente que permite a los clientes de Adobe Experience Cloud interactuar con aplicaciones de Adobe y servicios de terceros a través de Adobe Experience Platform Edge Network. Consulte la [Documentación del SDK de Adobe Experience Platform Mobile](https://developer.adobe.com/client-sdks/documentation/) para obtener información más detallada.
 
-![configuración de compilación](assets/data-collection-mobile-sdk.png)
+![Arquitectura](assets/architecture.png)
 
 
 Este tutorial le guía a través de la implementación del SDK de Platform Mobile en una aplicación de venta minorista de ejemplo llamada Luma. El [Aplicación Luma](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) tiene una funcionalidad que le permite crear una implementación realista. Después de completar este tutorial, debe estar preparado para empezar a implementar todas las soluciones de marketing mediante el SDK de Experience Platform Mobile en sus propias aplicaciones móviles.
@@ -35,7 +35,6 @@ Después de completar este tutorial, debe ser capaz de:
 * Añada las siguientes aplicaciones/extensiones de Adobe Experience Cloud:
    * [Adobe Experience Platform Edge (XDM)](events.md)
    * [Recopilación de datos del ciclo vital](lifecycle-data.md)
-   * [Adobe Analytics mediante XDM](analytics.md)
    * [Consentimiento](consent.md)
    * [Identidad](identity.md)
    * [Perfil](profile.md)
@@ -43,7 +42,7 @@ Después de completar este tutorial, debe ser capaz de:
    * [Analytics](analytics.md)
    * [Adobe Experience Platform](platform.md)
    * [Mensajería push con Journey Optimizer](journey-optimizer-push.md)
-   * [Mensajería Im-app con Journey Optimizer](journey-optimizer-inapp.md)
+   * [Mensajería en la aplicación con Journey Optimizer](journey-optimizer-inapp.md)
    * [Ofertas con Journey Optimizer](journey-optimizer-offers.md)
    * [Pruebas A/B con Target](target.md)
 
@@ -70,13 +69,19 @@ En estas lecciones, se da por hecho que dispone de un Adobe ID y de los permisos
    * Si es cliente de una aplicación basada en Platform, como Real-Time CDP, Journey Optimizer o Customer Journey Analytics, también debe tener:
       * **[!UICONTROL Administración de datos]**: elementos de permiso para administrar y ver conjuntos de datos para completar la _ejercicios de Platform opcionales_ (requiere una licencia para una aplicación basada en Platform ).
       * Un desarrollo **espacio aislado** que puede utilizar para este tutorial.
+
 * Para Adobe Analytics, debe saber cuál **grupos de informes** puede utilizar para completar este tutorial.
+
+* Para Adobe Target, debe tener permisos correctamente configurados **funciones**, **workspaces**, y **propiedades** como se describe [aquí](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=es).
+
+* Para Adobe Journey Optimizer, debe tener permisos suficientes para configurar la variable **servicio de notificaciones push** y para crear un **superficie de aplicación**, a **recorrido**, a **message** y **ajustes preestablecidos de mensaje**. Para la administración de decisiones, necesita los permisos adecuados para **administrar ofertas** y **decisiones** como se describe [aquí](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
 
 Todos los clientes de Experience Cloud deben tener acceso a las funciones necesarias para implementar el SDK móvil.
 
+
 >[!NOTE]
 >
->Utilizará iOS como plataforma,. [!DNL Swift] como lenguaje de programación, [!DNL SwiftUI] como marco de la interfaz de usuario y [!DNL Xcode] como entorno de desarrollo integrado (IDE). Sin embargo, muchos de los conceptos de implementación explicados son similares para otras plataformas de desarrollo. Se supone que está algo familiarizado con [!DNL Swift] y [!DNL SwiftUI]. No necesita ser un experto para completar las lecciones, pero obtiene más información si puede leer y comprender el código con comodidad.
+>Como parte de este tutorial, creará esquemas, conjuntos de datos, identidades, etc. Si va a seguir este tutorial con varias personas en una sola zona protegida o utiliza una cuenta compartida, considere la posibilidad de añadir o anteponer una identificación como parte de las convenciones de nomenclatura al crear estos objetos. Por ejemplo, añada ` - <your name or initials>` al nombre del objeto que debe crear.
 
 
 ## Descargar la aplicación de Luma
@@ -86,6 +91,11 @@ Hay dos versiones de la aplicación de ejemplo disponibles para descargar. Ambas
 
 1. [Inicio](https://git.corp.adobe.com/rmaur/Luma){target="_blank"}: un proyecto sin código o con código de marcador de posición para la mayoría del código del SDK de Experience Platform Mobile que necesita utilizar para completar los ejercicios prácticos de este tutorial.
 1. [Finalizar](https://git.corp.adobe.com/Luma){target="_blank"}: una versión con la implementación completa como referencia.
+
+>[!NOTE]
+>
+>Utilizará iOS como plataforma,. [!DNL Swift] como lenguaje de programación, [!DNL SwiftUI] como marco de la interfaz de usuario y [!DNL Xcode] como entorno de desarrollo integrado (IDE). Sin embargo, muchos de los conceptos de implementación explicados son similares para otras plataformas de desarrollo. Y muchos ya han completado correctamente este tutorial con poca o ninguna experiencia previa de iOS/Swift (IU). No necesita ser un experto para completar las lecciones, pero obtiene más información si puede leer y comprender el código con comodidad.
+
 
 ¡Empecemos!
 

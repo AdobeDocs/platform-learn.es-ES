@@ -2,9 +2,9 @@
 title: Eventos
 description: Obtenga información sobre cómo recopilar datos de eventos en una aplicación móvil.
 hide: true
-source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1321'
 ht-degree: 1%
 
 ---
@@ -78,7 +78,7 @@ Para los grupos de campos estándar, el proceso tiene este aspecto:
    * `commerce.productViews.id`: un valor de cadena que representa el SKU del producto
    * `commerce.productViews.value`: el valor numérico o booleano del evento. Si es booleano (o &quot;contador&quot; en Adobe Analytics), el valor siempre se establece en 1. Si es un evento numérico o de moneda, el valor puede ser > 1.
 
-* En el esquema, identifique cualquier dato adicional asociado con el evento de vista de producto de comercio. En este ejemplo, incluya **[!UICONTROL productListItem]** que es un conjunto estándar de campos utilizados con cualquier evento relacionado con el comercio:
+* En el esquema, identifique cualquier dato adicional asociado con el evento de vista de producto de comercio. En este ejemplo, incluya **[!UICONTROL productListItems]** que es un conjunto estándar de campos utilizados con cualquier evento relacionado con el comercio:
 
   ![esquema de elementos de lista de productos](assets/datacollection-prodListItems-schema.png)
    * Observe que **[!UICONTROL productListItems]** es una matriz para poder proporcionar varios productos.
@@ -189,6 +189,11 @@ Para implementar el envío de eventos de experiencia relacionados con el comerci
          // Send purchases commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "purchases", product: product)
          ```
+
+>[!TIP]
+>
+>Si está desarrollando para Android, utilice Map (`java.util.Map`) como interfaz fundamental para construir la carga útil XDM.
+
 
 ### Grupos de campos personalizados
 
@@ -339,15 +344,7 @@ De nuevo, vamos a implementar este código en su proyecto Xcode.
 1. Ejecute la aplicación, inicie sesión e interactúe con un producto.
 
    1. Mueva el icono Garantía a la izquierda.
-   1. Seleccionar **[!UICONTROL Inicio]** en la barra de pestañas.
-   1. Seleccione el <img src="assets/login.png" width="15" /> para abrir la hoja Inicio de sesión.
-
-      <img src="./assets/mobile-app-events-1.png" width="300">
-
-   1. Seleccione el <img src="assets/insert.png" width="15" /> para insertar un correo electrónico aleatorio y un id de cliente.
-   1. Seleccionar **[!UICONTROL Iniciar sesión]**.
-
-      <img src="./assets/mobile-app-events-2.png" width="300">
+   1. Seleccionar **[!UICONTROL Inicio]** en la barra de pestañas y compruebe que ve un **[!UICONTROL ECID]**, **[!UICONTROL Correo electrónico]** y **[!UICONTROL ID de CRM]** en la pantalla Inicio.
    1. Seleccionar **[!UICONTROL Productos]** en la barra de pestañas.
    1. Seleccione un producto.
    1. Seleccionar <img src="assets/saveforlater.png" width="15" />.

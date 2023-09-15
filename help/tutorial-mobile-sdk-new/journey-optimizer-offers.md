@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: a49311ffc7791621b360ea7fe4f945669d0d0990
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '2412'
+source-wordcount: '2467'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,11 @@ Obtenga información sobre cómo mostrar ofertas de Administración de decisione
 
 Administración de decisiones de Journey Optimizer le ayuda a ofrecer la mejor oferta y experiencia a sus clientes en todos los puntos de contacto y en el momento adecuado. Una vez diseñada, la audiencia debe segmentarse con ofertas personalizadas.
 
+![Arquitectura](assets/architecture-od.png)
+
 La administración de decisiones facilita la personalización con una biblioteca central de ofertas de marketing y un motor de decisión que aplica reglas y restricciones a perfiles enriquecidos en tiempo real creados por Adobe Experience Platform. Como resultado, le permite enviar a sus clientes la oferta correcta en el momento adecuado. Consulte [Acerca de Administración de decisiones](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=en) para obtener más información.
+
+
 
 
 >[!NOTE]
@@ -29,6 +33,7 @@ La administración de decisiones facilita la personalización con una biblioteca
 ## Requisitos previos
 
 * La aplicación se ha creado y ejecutado correctamente con los SDK instalados y configurados.
+* Configure la aplicación para Adobe Experience Platform.
 * Acceso a Journey Optimizer: Administración de decisiones con los permisos adecuados para administrar ofertas y decisiones según se describe [aquí](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
 
 
@@ -41,7 +46,7 @@ En esta lección, debe
 * Actualice el esquema para capturar eventos de propuesta.
 * Valide la configuración en Assurance.
 * Cree una decisión de oferta basada en ofertas de Journey Optimizer - Gestión de decisiones.
-* Actualice la aplicación para incluir la extensión de Optimizer.
+* Actualice la aplicación para registrar la extensión de Optimizer.
 * Implemente ofertas de Administración de decisiones en la aplicación.
 
 
@@ -51,7 +56,7 @@ En esta lección, debe
 >
 >Si ya ha configurado su entorno como parte de la [Configuración de pruebas A/B con Target](target.md) tutorial, puede omitir [Instalación de Adobe Journey Optimizer: extensión de etiquetas de Decisioning](#install-adobe-journey-optimizer---decisioning-tags-extension) y [Actualizar el esquema](#update-your-schema).
 
-### Actualizar configuración de Edge
+### Actualizar configuración de secuencia de datos
 
 Para garantizar que los datos enviados desde su aplicación móvil a la red perimetral se reenvíen a Journey Optimizer - Gestión de decisiones, actualice la configuración de Experience Edge
 
@@ -76,11 +81,11 @@ Para garantizar que los datos enviados desde su aplicación móvil a la red peri
 
 ### Actualizar el esquema
 
-1. Vaya a la IU de recopilación de datos y seleccione **[!UICONTROL Esquemas]** desde el carril izquierdo.
+1. Vaya a la interfaz de recopilación de datos y seleccione **[!UICONTROL Esquemas]** desde el carril izquierdo.
 1. Seleccionar **[!UICONTROL Examinar]** desde la barra superior.
 1. Seleccione el esquema para abrirlo.
 1. En el editor de esquemas, seleccione ![Añadir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Añadir]** junto a Grupos de campos.
-1. En el **[!UICONTROL Adición de campos y grupos]** diálogo, ![Buscar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) buscar `proposition`, seleccione **[!UICONTROL Evento de experiencia: interacciones de propuesta]** y seleccione **[!UICONTROL Adición de grupos de campos]**.
+1. En el **[!UICONTROL Adición de campos y grupos]** diálogo, ![Buscar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) buscar `proposition`, seleccione **[!UICONTROL Evento de experiencia: interacciones de propuesta]** y seleccione **[!UICONTROL Adición de grupos de campos]**. Este grupo de campos recopila los datos de evento de experiencia relevantes para las ofertas: qué oferta se presenta, como parte de qué recopilación, decisión y otros parámetros (consulte más adelante en esta lección). Pero también lo que está pasando con la oferta: se muestra, interactúa, se descarta, etc.
    ![Proposición](assets/schema-fieldgroup-proposition.png)
 1. Seleccionar **[!UICONTROL Guardar]** para guardar los cambios en el esquema.
 
@@ -211,7 +216,7 @@ Un criterio de evaluación es la combinación de
 * reglas de elegibilidad: por ejemplo, ¿la oferta solo está disponible para una audiencia específica,
 * un método de clasificación: cuando hay varias ofertas disponibles para elegir, qué método se utiliza para clasificarlas (por ejemplo, por prioridad de oferta, mediante una fórmula o un modelo de IA).
 
-Consulte [Pasos clave para crear y administrar ofertas](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=en) si desea comprender mejor cómo interactúan y se relacionan entre sí las ubicaciones, las reglas, las clasificaciones, las ofertas, las representaciones, las colecciones, las decisiones, etc. Este tutorial se centra únicamente en el uso del resultado de una decisión, en lugar de en la flexibilidad para definir decisiones en Journey Optimizer: Gestión de decisiones.
+Consulte [Pasos clave para crear y administrar ofertas](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=en) si desea comprender mejor cómo interactúan y se relacionan entre sí las ubicaciones, las reglas, las clasificaciones, las ofertas, las representaciones, las colecciones, las decisiones, etc. Esta lección se centra únicamente en el uso del resultado de una decisión, en lugar de en la flexibilidad para definir decisiones dentro de Journey Optimizer: Gestión de decisiones.
 
 1. En la IU de Journey Optimizer, seleccione **[!UICONTROL Ofertas]** desde el carril izquierdo.
 1. Seleccionar **[!UICONTROL Decisiones]** desde la barra superior.
@@ -304,7 +309,7 @@ Como se ha explicado en lecciones anteriores, la instalación de una extensión 
    Esta función:
 
    * configura un diccionario XDM `xdmData`, que contiene el ECID para identificar el perfil para el que debe presentar las ofertas.
-   * define `decisionScope`: un objeto que se basa en la decisión que ha definido en la interfaz de usuario de Journey Optimizer - Gestión de decisiones y se define mediante el ámbito de decisión copiado de [Crear una decisión](#create-a-decision).  La aplicación de Luma utiliza un archivo de configuración (`decisions.json`) que recupera los parámetros de ámbito en función del siguiente formato JSON:
+   * define `decisionScope`: un objeto que se basa en la decisión que ha definido en la interfaz de Journey Optimizer - Gestión de decisiones y se define mediante el ámbito de decisión copiado de [Crear una decisión](#create-a-decision).  La aplicación de Luma utiliza un archivo de configuración (`decisions.json`) que recupera los parámetros de ámbito en función del siguiente formato JSON:
 
      ```swift
      "scopes": [
@@ -318,7 +323,7 @@ Como se ha explicado en lecciones anteriores, la instalación de una extensión 
      ```
 
      Sin embargo, puede utilizar cualquier tipo de implementación para asegurarse de que las API de optimización no obtienen los parámetros adecuados (`activityId`, `placementId` y, `itemCount`), para construir un válido [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) para su implementación.
-   * llama a dos API de: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  y [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).  Estas funciones borran todas las propuestas almacenadas en caché y actualizan las propuestas de este perfil.
+   * llama a dos API: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  y [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).  Estas funciones borran todas las propuestas almacenadas en caché y actualizan las propuestas de este perfil.
 
 1. Vaya a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Vistas]** > **[!UICONTROL Personalización]** > **[!UICONTROL EdgeOffersView]** en el navegador del proyecto Xcode. Busque el `func onPropositionsUpdateOD(activityId: String, placementId: String, itemCount: Int) async` e inspeccione el código de esta función. La parte más importante de esta función es la [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) Llamada de API, que
 

@@ -2,9 +2,9 @@
 title: Datos del ciclo vital
 description: Obtenga información sobre cómo recopilar datos del ciclo vital en una aplicación móvil.
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '630'
 ht-degree: 3%
 
 ---
@@ -18,7 +18,7 @@ La extensión Adobe Experience Platform Mobile SDK Lifecycle permite la recopila
 
 ## Requisitos previos
 
-* La aplicación se ha creado y ejecutado correctamente con los SDK instalados y configurados.
+* La aplicación se ha creado y ejecutado correctamente con los SDK instalados y configurados. Como parte de esta lección, ya ha iniciado la supervisión del ciclo vital. Consulte [Instalación de SDK: actualizar AppDelegate](install-sdks.md#update-appdelegate) para revisar.
 * Registre la extensión de Assurance como se describe en la [lección anterior](install-sdks.md).
 
 ## Objetivos de aprendizaje

@@ -5,10 +5,10 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '1569'
-ht-degree: 2%
+source-wordcount: '1689'
+ht-degree: 3%
 
 ---
 
@@ -16,7 +16,11 @@ ht-degree: 2%
 
 Obtenga información sobre cómo crear mensajes en la aplicación para aplicaciones móviles con el SDK móvil de Experience Platform y Journey Optimizer.
 
-Journey Optimizer le permite crear campañas para enviar mensajes en la aplicación a audiencias de destino. Antes de enviar mensajes en la aplicación con Journey Optimizer, debe asegurarse de que las configuraciones y integraciones adecuadas estén implementadas. Para comprender el flujo de datos de mensajería en la aplicación en Journey Optimizer, consulte [la documentación](https://experienceleague.adobe.com/docs/journey-optimizer/using/in-app/inapp-configuration.html?lang=en).
+Journey Optimizer le permite crear campañas para enviar mensajes en la aplicación a audiencias de destino. Las campañas en Journey Optimizer se utilizan para entregar contenido único a una audiencia específica mediante varios canales. Con las campañas, las acciones se realizan simultáneamente, ya sea de forma inmediata o en función de una programación especificada. Cuando utilice recorridos (consulte la [Notificaciones push de Journey Optimizer](journey-optimizer-push.md) lección), las acciones se ejecutan de forma secuencial.
+
+![Arquitectura](assets/architecture-ajo.png)
+
+Antes de enviar mensajes en la aplicación con Journey Optimizer, debe asegurarse de que las configuraciones y integraciones adecuadas estén implementadas. Para comprender el flujo de datos de mensajería en la aplicación en Journey Optimizer, consulte [la documentación](https://experienceleague.adobe.com/docs/journey-optimizer/using/in-app/inapp-configuration.html?lang=en).
 
 >[!NOTE]
 >
@@ -26,6 +30,7 @@ Journey Optimizer le permite crear campañas para enviar mensajes en la aplicaci
 ## Requisitos previos
 
 * La aplicación se ha creado y ejecutado correctamente con los SDK instalados y configurados.
+* Configure la aplicación para Adobe Experience Platform.
 * Acceso a Journey Optimizer y permisos suficientes, tal como se describe [aquí](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). Además, necesita permisos suficientes para las siguientes funciones de Journey Optimizer.
    * Administrar campañas.
 * Cuenta de desarrollador de Apple de pago con acceso suficiente para crear certificados, identificadores y claves.
@@ -43,7 +48,7 @@ En esta lección, debe
 * Registre el ID de la aplicación con el servicio de notificaciones push de Apple (APN).
 * Crear una superficie de aplicación en AJO.
 * Instale y configure la extensión de etiquetas de Journey Optimizer.
-* Actualice la aplicación para incluir la extensión de etiqueta de Journey Optimizer.
+* Actualice la aplicación para registrar la extensión de etiqueta de Journey Optimizer.
 * Valide la configuración en Assurance.
 * Defina su propia experiencia de campaña y mensaje en la aplicación en Journey Optimizer.
 * Envíe su propio mensaje en la aplicación desde la aplicación.
@@ -96,7 +101,7 @@ Puede obtenerse documentación adicional [encontrado aquí](https://help.apple.c
 
 Para que la aplicación funcione con Journey Optimizer, debe actualizar la propiedad de etiquetas.
 
-1. Vaya a **[!UICONTROL Etiquetas]** > **[!UICONTROL Extensiones]** > **[!UICONTROL Catálogo]**,
+1. Vaya a **[!UICONTROL Etiquetas]** > **[!UICONTROL Extensiones]** > **[!UICONTROL Catálogo]**.
 1. Abra la propiedad, por ejemplo **[!UICONTROL Tutorial de aplicación móvil de Luma]**.
 1. Seleccionar **[!UICONTROL Catálogo]**.
 1. Busque la variable **[!UICONTROL Adobe Journey Optimizer]** extensión.
@@ -171,7 +176,8 @@ Para crear su propio mensaje en la aplicación, debe definir una campaña en Jou
 * eventos del ciclo vital de la aplicación, como inicio, instalación, actualización, cierre o bloqueo,
 * eventos de geolocalización, como entrar o salir de un punto de interés.
 
-En este tutorial, va a utilizar las API principales genéricas e independientes de la extensión de Mobile para facilitar el seguimiento de eventos de pantallas de usuario, acciones y datos PII. Los eventos generados por estas API se publican en el centro de eventos del SDK y las extensiones los pueden utilizar. Por ejemplo, cuando se instala la extensión de Analytics, todas las acciones del usuario y los datos de evento de las pantallas de la aplicación se envían a los extremos de los informes de Analytics correspondientes.
+En este tutorial, va a utilizar las API principales genéricas e independientes de la extensión de Mobile (consulte [API genéricas principales de Mobile](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis)) para facilitar el seguimiento de eventos de pantallas de usuario, acciones y datos PII. Los eventos generados por estas API se publican en el centro de eventos del SDK y las extensiones los pueden utilizar. El centro de eventos del SDK proporciona la estructura de datos principal vinculada a todas las extensiones del SDK móvil de AEP, y mantiene una lista de extensiones registradas y módulos internos, una lista de detectores de eventos registrados y una base de datos de estado compartido.
+El centro de eventos del SDK publica y recibe datos de eventos de extensiones registradas para simplificar las integraciones con soluciones de Adobe y de terceros. Por ejemplo, cuando se instala la extensión Optimize, todas las solicitudes e interacciones con el motor de ofertas de Journey Optimizer - Gestión de decisiones se gestionan mediante el centro de eventos.
 
 1. En la IU de Journey Optimizer, seleccione **[!UICONTROL Campañas]** desde el carril izquierdo.
 1. Seleccionar **[!UICONTROL Crear campaña]**.
@@ -252,7 +258,7 @@ Puede validar los mensajes en la aplicación en la interfaz de usuario de Assura
 
 ## Pasos siguientes
 
-Ahora debe tener todas las herramientas para empezar a añadir mensajes en la aplicación, cuando corresponda y sea relevante, a la aplicación de Luma. Por ejemplo, promocionar productos en función de interacciones específicas que haya rastreado en la aplicación.
+Ahora debe tener todas las herramientas para empezar a añadir mensajes en la aplicación, cuando corresponda.  Por ejemplo, promocionar productos en función de interacciones específicas que esté rastreando en la aplicación.
 
 >[!SUCCESS]
 >

@@ -3,9 +3,9 @@ title: Configurar Assurance
 description: Obtenga información sobre cómo implementar la extensión Assurance en una aplicación móvil.
 feature: Mobile SDK,Assurance
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '754'
 ht-degree: 10%
 
 ---
@@ -34,11 +34,7 @@ En esta lección, deberá hacer lo siguiente:
 
 ## Confirmar acceso
 
-Confirme que su organización tiene acceso a Assurance completando los siguientes pasos:
-
-1. Visita [https://experience.adobe.com/assurance](https://experience.adobe.com/assurance){target="_blank"}.
-1. Inicie sesión con sus credenciales de Adobe ID para Experience Cloud.
-1. Si ve el **[!UICONTROL Sesiones]** y, a continuación, tiene acceso a. Si ve la página de acceso (beta), seleccione **[!UICONTROL Registrar]** para registrarse.
+Confirme que su organización tiene acceso a Assurance. Usted, como usuario, debe añadirse al perfil de Adobe Experience Platform. Consulte [Acceso de usuario](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html?lang=en) en la Guía de Assurance para obtener más información.
 
 ## Implementación
 
@@ -70,7 +66,7 @@ Antes de ejecutar la aplicación por primera vez en Xcode, asegúrese de actuali
 1. Seleccione el **Firma y capacidades** pestaña.
 1. Configurar **[!UICONTROL Administrar firma automáticamente]**, **[!UICONTROL Equipo]**, y **[!UICONTROL Identificador de paquete]** o use los detalles específicos de aprovisionamiento de desarrollo de Apple.
 
-   ![Funcionalidades de firma de Xcode](assets/xcode-signing-capabilities.png)
+   ![Funcionalidades de firma de Xcode](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
 
 ## Configuración de una dirección URL base
 

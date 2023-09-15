@@ -3,9 +3,9 @@ title: Configuración de una propiedad de etiqueta
 description: Obtenga información sobre cómo configurar una propiedad de etiqueta en la [!UICONTROL Recopilación de datos] interfaz.
 feature: Mobile SDK,Tags
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1095'
 ht-degree: 8%
 
 ---
@@ -45,7 +45,7 @@ En esta lección, deberá hacer lo siguiente:
 
       >[!NOTE]
       >
-      > La configuración de consentimiento predeterminada para las implementaciones de SDK móvil basadas en Edge como la que está haciendo en este tutorial proviene del [!UICONTROL Extensión de consentimiento] y no el [!UICONTROL Privacidad] en la configuración de la propiedad etiqueta. Puede añadir y configurar la extensión de consentimiento más adelante en esta lección. Para obtener más información, consulte [la documentación](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
+      > La configuración de consentimiento predeterminada para las implementaciones de SDK móvil basadas en Edge, como la que está haciendo en esta lección, proviene del [!UICONTROL Extensión de consentimiento] y no el [!UICONTROL Privacidad] en la configuración de la propiedad etiqueta. Puede añadir y configurar la extensión de consentimiento más adelante en esta lección. Para obtener más información, consulte [la documentación](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
 
 
 1. Abra la nueva propiedad.
@@ -112,13 +112,13 @@ En esta lección, deberá hacer lo siguiente:
 
    1. Entrada **[!UICONTROL Datastreams]** seleccione el **[!UICONTROL Datastream]** que creó en la [paso anterior](create-datastream.md) para cada uno de los entornos, por ejemplo **[!UICONTROL Aplicación móvil de Luma]**.
 
-   1. Especifique el **[!UICONTROL Dominio de red perimetral]** dentro **[!UICONTROL Configuración del dominio]**. El dominio de red perimetral es el nombre de su zona protegida, seguido de `data.adobedc.net`, por ejemplo `techmarketingdemos.data.adobedc.net`.
+   1. Especifique el **[!UICONTROL Dominio de red perimetral]** dentro **[!UICONTROL Configuración del dominio]**. El dominio de red perimetral es el nombre de su organización, seguido de `data.adobedc.net`, por ejemplo `techmarketingdemos.data.adobedc.net`.
 
    1. Desde el **[!UICONTROL Guardar en biblioteca]** menú, seleccione **[!UICONTROL Guardar en biblioteca y crear]**.
 
       ![configuración de red perimetral](assets/tags-extension-edge.png)
 
-La biblioteca se ha creado para las nuevas extensiones y configuraciones. Una compilación correcta se indica mediante una <span style="color:green">●</span> en el **[!UICONTROL Compilación inicial]** botón.
+La biblioteca se crea para las nuevas extensiones y configuraciones. Una compilación correcta se indica mediante una <span style="color:green">●</span> en el **[!UICONTROL Compilación inicial]** botón.
 
 
 ## Generar instrucciones de instalación del SDK
@@ -131,7 +131,7 @@ La biblioteca se ha creado para las nuevas extensiones y configuraciones. Una co
 
 1. En el **[!UICONTROL Instrucciones de instalación de Mobile]** , seleccione la **[!UICONTROL iOS]** pestaña.
 
-1. Puede copiar ![Copiar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) Siga las instrucciones para configurar el proyecto mediante CocoaPods. Los CocoaPods se utilizan para administrar las versiones y descargas del SDK. Para obtener más información, consulte la [documentación](https://cocoapods.org/).
+1. Puede copiar ![Copiar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) Siga las instrucciones para configurar el proyecto mediante CocoaPods. Los CocoaPods se utilizan para administrar las versiones y descargas del SDK. Para obtener más información, consulte la [Documentación de Cocoapods](https://cocoapods.org/). Si utiliza Android como plataforma de desarrollo, Gradle es la herramienta para administrar la versión, las descargas y las dependencias del SDK. Para obtener más información, consulte la [Documentación de Gradle](https://gradle.org/)
 
    Las instrucciones de instalación le proporcionan un buen punto de partida para la implementación. Puede encontrar información adicional [aquí](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
@@ -156,7 +156,7 @@ Si está familiarizado con la versión web de las etiquetas, anteriormente Launc
 
 * En la web, se procesa una propiedad de etiqueta en JavaScript que luego (normalmente) se aloja en la nube. Se hace referencia a ese archivo JavaScript directamente en el sitio web.
 
-* En una propiedad de etiqueta móvil, las reglas y configuraciones se representan en archivos JSON alojados en la nube. La extensión principal de Mobile descarga y lee los archivos JSON en la aplicación móvil. Las extensiones son SDK independientes que funcionan juntos. Si agrega una extensión a la propiedad de etiquetas, también debe actualizar la aplicación. Si cambia una configuración de extensión o crea una regla, esos cambios se reflejarán en la aplicación una vez que publique la biblioteca de etiquetas actualizada.
+* En una propiedad de etiqueta móvil, las reglas y configuraciones se representan en archivos JSON alojados en la nube. La extensión principal de Mobile descarga y lee los archivos JSON en la aplicación móvil. Las extensiones son SDK independientes que funcionan juntos. Si agrega una extensión a la propiedad de etiquetas, también debe actualizar la aplicación. Si cambia una configuración de extensión o crea una regla, esos cambios se reflejarán en la aplicación una vez que publique la biblioteca de etiquetas actualizada. Esa flexibilidad le permite modificar la configuración (como el ID del grupo de informes de Adobe Analytics) o incluso cambiar el comportamiento de la aplicación (mediante elementos de datos y reglas, como verá en lecciones posteriores) sin tener que cambiar el código en la aplicación y tener que volver a enviar la aplicación a la tienda de aplicaciones.
 
 >[!SUCCESS]
 >

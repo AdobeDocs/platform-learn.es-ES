@@ -5,9 +5,9 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 2e70022313faac2b6d965a838c03fc6f55806506
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '1519'
+source-wordcount: '1601'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,9 @@ ht-degree: 2%
 
 Obtenga información sobre cómo realizar pruebas A/B en sus aplicaciones móviles con el SDK móvil de Platform y Adobe Target.
 
-Target proporciona todo lo que debe adaptar y personalizar las experiencias de los clientes. Target le ayuda a maximizar los ingresos de sus sitios web y móviles, aplicaciones, medios sociales y otros canales digitales. Este tutorial se centra en la funcionalidad de prueba A/B de Target. Consulte la [Información general sobre las pruebas A/B](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=en) para obtener más información.
+Target proporciona todo lo que debe adaptar y personalizar las experiencias de los clientes. Target le ayuda a maximizar los ingresos de sus sitios web y móviles, aplicaciones, medios sociales y otros canales digitales. Target puede realizar pruebas A/B y multivariadas, recomendar productos y contenido, segmentar contenido, personalizar automáticamente el contenido con IA y mucho más. Esta lección se centra en la funcionalidad de prueba A/B de Target.  Consulte la [Información general sobre las pruebas A/B](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=en) para obtener más información.
+
+![Arquitectura](assets/architecture-at.png)
 
 Antes de poder realizar pruebas A/B con Target, debe asegurarse de que las configuraciones y integraciones adecuadas estén implementadas.
 
@@ -29,20 +31,19 @@ Antes de poder realizar pruebas A/B con Target, debe asegurarse de que las confi
 ## Requisitos previos
 
 * La aplicación se ha creado y ejecutado correctamente con los SDK instalados y configurados.
-* Acceso a Adobe Target Premium con permisos, funciones correctamente configuradas, espacios de trabajo y propiedades como se describe a continuación [aquí](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=es).
-También puede utilizar Target Standard, pero el tutorial utiliza algunos conceptos avanzados (por ejemplo, propiedades de Target) que son únicos en Target Premium.
+* Acceso a Adobe Target con permisos, funciones, espacios de trabajo y propiedades correctamente configurados, tal como se describe [aquí](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=es).
 
 
 ## Objetivos de aprendizaje
 
 En esta lección, debe
 
-* Actualice la configuración de Edge para la integración de Target.
+* Actualice la secuencia de datos para la integración con Target.
 * Actualice la propiedad de etiquetas con la extensión Journey Optimizer - Decisioning.
 * Actualice el esquema para capturar eventos de propuesta.
 * Valide la configuración en Assurance.
 * Cree una prueba A/B sencilla en Target.
-* Actualice la aplicación para incluir la extensión de Optimizer.
+* Actualice la aplicación para registrar la extensión de Optimizer.
 * Implemente la prueba A/B en la aplicación.
 * Valide la implementación en Assurance.
 
@@ -51,15 +52,15 @@ En esta lección, debe
 
 >[!TIP]
 >
->Si ya ha configurado la aplicación como parte de la [Ofertas de Journey Optimizer](journey-optimizer-offers.md) tutorial, puede omitir [Instalación de Adobe Journey Optimizer: extensión de etiquetas de Decisioning](#install-adobe-journey-optimizer---decisioning-tags-extension) y [Actualizar el esquema](#update-your-schema).
+>Si ya ha configurado la aplicación como parte de la [Ofertas de Journey Optimizer](journey-optimizer-offers.md) lección, puede omitir ambas [Instalación de Adobe Journey Optimizer: extensión de etiquetas de Decisioning](#install-adobe-journey-optimizer---decisioning-tags-extension) y [Actualizar el esquema](#update-your-schema).
 
-### Actualizar configuración de Edge
+### Actualizar configuración de secuencia de datos
 
-Para garantizar que los datos enviados desde la aplicación móvil a la red perimetral se reenvíen a Adobe Target, debe actualizar la configuración de Experience Edge.
+Para garantizar que los datos enviados desde su aplicación móvil a Experience Platform Edge Network se reenvíen a Adobe Target, debe actualizar la configuración de su flujo de datos.
 
 1. En la IU de recopilación de datos, seleccione **[!UICONTROL Datastreams]** y seleccione la secuencia de datos, por ejemplo **[!UICONTROL Aplicación móvil de Luma]**.
 1. Seleccionar **[!UICONTROL Añadir servicio]** y seleccione **[!UICONTROL Adobe Target]** desde el **[!UICONTROL Servicio]** lista.
-1. Introduzca el objetivo **[!UICONTROL Token de propiedad]** que desee utilizar para esta integración.
+1. Si es cliente de Target Premium y desea utilizar tokens de propiedad de, introduzca el Target **[!UICONTROL Token de propiedad]** que desee utilizar para esta integración. Los usuarios de Target Standard pueden omitir este paso.
 
    Puede encontrar sus propiedades en la interfaz de usuario de Target, en **[!UICONTROL Administration]** > **[!UICONTROL Propiedades]**. Seleccionar ![Código](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) para mostrar el token de propiedad de la propiedad que desea utilizar. El token de propiedad tiene un formato similar a `"at_property": "xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"`; sólo debe introducir el valor `xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx`.
 
@@ -70,7 +71,7 @@ Para garantizar que los datos enviados desde la aplicación móvil a la red peri
 
 ### Instalación de Adobe Journey Optimizer: extensión de etiquetas de Decisioning
 
-1. Vaya a **[!UICONTROL Etiquetas]** y busque la propiedad de etiquetas móviles y ábrala.
+1. Vaya a **[!UICONTROL Etiquetas]**, busque la propiedad de etiquetas móviles y abra la propiedad.
 1. Seleccionar **[!UICONTROL Extensiones]**.
 1. Seleccionar **[!UICONTROL Catálogo]**.
 1. Busque la variable **[!UICONTROL Adobe Journey Optimizer - Toma de decisiones]** extensión.
@@ -81,13 +82,13 @@ Para garantizar que los datos enviados desde la aplicación móvil a la red peri
 
 ### Actualizar el esquema
 
-1. Vaya a la interfaz de usuario de recopilación de datos y seleccione Esquemas en el carril izquierdo.
+1. Vaya a la interfaz de recopilación de datos y seleccione **[!UICONTROL Esquemas]** desde el carril izquierdo.
 1. Seleccionar **[!UICONTROL Examinar]** desde la barra superior.
 1. Seleccione el esquema para abrirlo.
 1. En el editor de esquemas, seleccione ![Añadir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Añadir]** junto a **[!UICONTROL Grupos de campos]**.
 1. En el cuadro de diálogo Agregar grupos de campos, busque `proposition`, seleccione **[!UICONTROL Evento de experiencia: interacciones de propuesta]** y seleccione **[!UICONTROL Adición de grupos de campos]**.
    ![Proposición](assets/schema-fieldgroup-proposition.png)
-1. para guardar los cambios en el esquema, seleccione **[!UICONTROL Guardar]** .
+1. Para guardar los cambios en el esquema, seleccione **[!UICONTROL Guardar]**.
 
 
 ### Validar la configuración en Assurance
@@ -102,15 +103,17 @@ Para validar la configuración en Assurance:
 
 ## Crear una prueba A/B
 
+Existen muchos tipos de actividades que puede crear en Adobe Target e implementar en una aplicación móvil, como se menciona en la introducción. Para esta lección, se centrará en la creación y la implementación de una prueba A/B.
+
 1. En la IU de Target, seleccione **[!UICONTROL Actividades]** desde la barra superior.
 1. Seleccionar **[!UICONTROL Crear actividad]** y **[!UICONTROL Prueba A/B]** en el menú contextual.
-1. En el **[!UICONTROL Crear actividad de prueba A/B]** diálogo, seleccione **[!UICONTROL Móvil]** como el **[!UICONTROL Tipo]**, seleccione un espacio de trabajo del **[!UICONTROL Elija Workspace]** y seleccione su propiedad en la lista **[!UICONTROL Elegir propiedad]** lista.
+1. En el **[!UICONTROL Crear actividad de prueba A/B]** diálogo, seleccione **[!UICONTROL Móvil]** como el **[!UICONTROL Tipo]**, seleccione un espacio de trabajo del **[!UICONTROL Elija Workspace]** y seleccione su propiedad en la lista **[!UICONTROL Elegir propiedad]** lista si es cliente de Target Premium y ha especificado un token de propiedad en el conjunto de datos.
 1. Seleccione **[!UICONTROL Crear]**.
    ![Crear actividad de Target](assets/target-create-activity1.png)
 
 1. En el **[!UICONTROL Actividad sin título]** pantalla, en el **[!UICONTROL Experiencias]** paso:
 
-   1. Entrar `luma-mobileapp-abtest` in **[!UICONTROL Seleccionar ubicación]** debajo **[!UICONTROL UBICACIÓN 1]**.
+   1. Entrar `luma-mobileapp-abtest` in **[!UICONTROL Seleccionar ubicación]** debajo **[!UICONTROL UBICACIÓN 1]**. Este nombre de ubicación (denominada con frecuencia como mbox) se utiliza más adelante en la implementación de la aplicación.
    1. Seleccionar ![Corchete hacia abajo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) junto a **[!UICONTROL Contenido predeterminado]** y seleccione **[!UICONTROL Crear oferta JSON]** en el menú contextual.
    1. Copie el siguiente JSON en **[!UICONTROL Introduzca un objeto JSON válido]**.
 
@@ -207,14 +210,14 @@ Como se ha explicado en lecciones anteriores, la instalación de una extensión 
    }
    ```
 
-   Esta función
+   Esta función:
 
    * configura un diccionario XDM `xdmData`, que contiene el ECID para identificar el perfil para el que debe presentar la prueba A/B, y
    * define un `decisionScope`, una matriz de ubicaciones sobre dónde presentar la prueba A/B.
 
    A continuación, la función llama a dos API: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  y [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). Estas funciones borran todas las propuestas almacenadas en caché y actualizan las propuestas de este perfil.
 
-1. Vaya a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Vistas]** > **[!UICONTROL Personalización]** > **[!UICONTROL TargetOffersView]** en el navegador del proyecto Xcode. Busque el `func onPropositionsUpdateAT(location: String) async {` e inspeccione el código de esta función. La parte más importante de esta función es la  [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) Llamada de API, que
+1. Vaya a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Vistas]** > **[!UICONTROL Personalización]** > **[!UICONTROL TargetOffersView]** en el navegador del proyecto Xcode. Busque el `func onPropositionsUpdateAT(location: String) async {` e inspeccione el código de esta función. La parte más importante de esta función es la  [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) Llamada de API, que:
    * recupera las propuestas del perfil actual en función del ámbito de decisión (que es la ubicación definida en la prueba A/B),
    * recupera la oferta de la propuesta,
    * desajusta el contenido de la oferta para que se pueda mostrar correctamente en la aplicación, y
@@ -264,7 +267,7 @@ Para validar la prueba A/B en Assurance:
 
 ## Pasos siguientes
 
-Ahora debe tener todas las herramientas necesarias para empezar a añadir más pruebas A/B u otras actividades de Target (como Segmentación de experiencias o Prueba multivariable), cuando corresponda y corresponda, a la aplicación de Luma. Hay información más detallada disponible en el [Repositorio de Github para la extensión Optimize](https://github.com/adobe/aepsdk-optimize-ios) donde también puede encontrar un vínculo a un [tutorial](https://opensource.adobe.com/aepsdk-optimize-ios/#/tutorials/README) sobre cómo rastrear ofertas de Adobe Target.
+Ahora debe tener todas las herramientas para empezar a agregar más pruebas A/B u otras actividades de Target (como Segmentación de experiencias o Prueba multivariable), cuando corresponda y corresponda, a la aplicación. Hay información más detallada disponible en el [Repositorio de Github para la extensión Optimize](https://github.com/adobe/aepsdk-optimize-ios) donde también puede encontrar un vínculo a un [tutorial](https://opensource.adobe.com/aepsdk-optimize-ios/#/tutorials/README) sobre cómo rastrear ofertas de Adobe Target.
 
 >[!SUCCESS]
 >
