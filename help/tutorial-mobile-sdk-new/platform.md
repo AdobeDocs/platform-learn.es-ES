@@ -1,17 +1,17 @@
 ---
-title: Envío de datos a Adobe Experience Platform
-description: Obtenga información sobre cómo enviar datos a Adobe Experience Platform.
+title: Envío de datos al Experience Platform
+description: Obtenga información sobre cómo enviar datos al Experience Platform.
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1052'
 ht-degree: 5%
 
 ---
 
-# Envío de datos a Adobe Experience Platform
+# Envío de datos al Experience Platform
 
 Obtenga información sobre cómo enviar datos de aplicaciones móviles a Adobe Experience Platform.
 
@@ -170,4 +170,4 @@ Los especialistas en marketing y análisis pueden hacer mucho más con los datos
 >
 >Ahora ha configurado la aplicación para enviar datos no solo a la red perimetral, sino también a Adobe Experience Platform.<br>Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Siguiente: **[Mensajería push con Journey Optimizer](journey-optimizer-push.md)**
+Siguiente: **[Creación y notificaciones push](journey-optimizer-push.md)**

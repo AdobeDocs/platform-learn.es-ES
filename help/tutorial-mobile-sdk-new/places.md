@@ -1,15 +1,15 @@
 ---
-title: Usar servicios de localización geográfica
-description: Aprenda a utilizar el servicio de localización geográfica Places en su aplicación móvil.
+title: Uso de servicios de geolocalización
+description: Aprenda a utilizar el servicio de geolocalización de Places en su aplicación móvil.
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '1745'
+source-wordcount: '1669'
 ht-degree: 3%
 
 ---
 
-# Usar servicios de localización geográfica
+# Uso de servicios de geolocalización
 
 Aprenda a utilizar el servicio de localización geográfica en la aplicación.
 
@@ -33,24 +33,6 @@ En esta lección, debe
 * Valide la configuración en Assurance.
 * Actualice la aplicación para registrar la extensión Places.
 * Implemente el seguimiento de ubicación geográfica desde el servicio Places en la aplicación.
-
-
-## Requisitos previos
-
-* La aplicación se ha creado y ejecutado correctamente con los SDK adecuados instalados y configurados.
-
-
-## Objetivos de aprendizaje
-
-En esta lección, debe
-
-* Actualice la configuración de Edge para Administración de decisiones.
-* Actualice la propiedad de etiquetas con la extensión Journey Optimizer - Decisioning.
-* Actualice el esquema para capturar eventos de propuesta.
-* Valide la configuración en Assurance.
-* Cree una decisión de oferta basada en ofertas de Journey Optimizer - Gestión de decisiones.
-* Actualice la aplicación para registrar la extensión de Optimizer.
-* Implemente ofertas de Administración de decisiones en la aplicación.
 
 
 ## Configuración

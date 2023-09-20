@@ -1,15 +1,15 @@
 ---
-title: Recopilación de datos de evento
-description: Obtenga información sobre cómo recopilar datos de eventos en una aplicación móvil.
+title: Seguimiento de datos de eventos
+description: Obtenga información sobre cómo rastrear datos de evento en una aplicación móvil.
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '1309'
+source-wordcount: '1310'
 ht-degree: 1%
 
 ---
 
-# Recopilación de datos de evento
+# Seguimiento de datos de eventos
 
 Obtenga información sobre cómo rastrear eventos en una aplicación móvil.
 
@@ -380,4 +380,4 @@ Ahora que ha recopilado los eventos y los ha enviado a Platform Edge Network, se
 >
 >Ahora ha configurado la aplicación para rastrear eventos de comercio, interacción de aplicaciones y seguimiento de pantalla en Adobe Experience Platform Edge Network y todos los servicios definidos en el flujo de datos.<br/>Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Siguiente: **[WebViews](web-views.md)**
+Siguiente: **[Administrar vistas web](web-views.md)**
