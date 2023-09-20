@@ -2,9 +2,9 @@
 title: Instalación de SDK de Adobe Experience Platform Mobile
 description: Obtenga información sobre cómo implementar el SDK de Adobe Experience Platform Mobile en una aplicación móvil.
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '948'
 ht-degree: 1%
 
 ---
@@ -33,9 +33,12 @@ En esta lección, deberá hacer lo siguiente:
 
 ## Administrador De Paquetes Swift
 
-En lugar de utilizar CocoaPods y un archivo Pod (como se describe en las Instrucciones de instalación móvil, consulte ) [Generar instrucciones de instalación del SDK](./configure-tags.md#generate-sdk-install-instructions)), puede agregar paquetes individuales utilizando el gestor de paquetes Swift nativo de Xcode.
+En lugar de utilizar CocoaPods y un archivo Pod (como se describe en las Instrucciones de instalación móvil, consulte ) [Generar instrucciones de instalación del SDK](./configure-tags.md#generate-sdk-install-instructions)), puede agregar paquetes individuales utilizando el gestor de paquetes Swift nativo de Xcode. El proyecto Xcode ya tiene todas las dependencias de paquetes agregadas para usted. El Xcode **[!UICONTROL Dependencias del paquete]** La pantalla debería tener un aspecto similar al siguiente:
 
-En Xcode, utilice **[!UICONTROL Archivo]** > **[!UICONTROL Agregar paquetes...]** e instale todos los paquetes enumerados en la tabla siguiente. Seleccione el vínculo del paquete en la tabla para obtener la URL completa del paquete específico.
+![Dependencias del paquete Xcode](assets/xcode-package-dependencies.png){zoomable=&quot;yes&quot;}
+
+
+En Xcode, puede utilizar **[!UICONTROL Archivo]** > **[!UICONTROL Agregar paquetes...]** para agregar paquetes. La siguiente tabla proporciona vínculos a las direcciones URL que utilizaría para agregar paquetes. Los vínculos también le dirigen a más información sobre cada paquete específico.
 
 | Paquete | Descripción |
 |---|---|
@@ -50,14 +53,9 @@ En Xcode, utilice **[!UICONTROL Archivo]** > **[!UICONTROL Agregar paquetes...]*
 | [AEP Assurance](https://github.com/adobe/aepsdk-assurance-ios.git) | Assurance (también conocido como proyecto Griffon) es una nueva e innovadora extensión (`AEPAssurance`) para ayudarle a inspeccionar, probar, simular y validar la forma en que recopila datos o sirve experiencias en su aplicación móvil. Esta extensión habilita la aplicación para Assurance. |
 
 
-Una vez instalados todos los paquetes, su Xcode **[!UICONTROL Dependencias del paquete]** La pantalla debería tener un aspecto similar al siguiente:
-
-![Dependencias del paquete Xcode](assets/xcode-package-dependencies.png){zoomable=&quot;yes&quot;}
-
-
 ## Importar extensiones
 
-En Xcode, vaya a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** y asegúrese de que las siguientes importaciones formen parte de este archivo de origen.
+En Xcode, vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** y asegúrese de que las siguientes importaciones formen parte de este archivo de origen.
 
 ```swift
 // import AEP MobileSDK libraries
@@ -76,16 +74,16 @@ import AEPOptimize
 import AEPAssurance
 ```
 
-Haga lo mismo para **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]**.
+Haga lo mismo para **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]**.
 
 ## Actualizar AppDelegate
 
-Vaya a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **AppDelegate** en el navegador del proyecto Xcode.
+Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **AppDelegate** en el navegador del proyecto Xcode.
 
-1. Configure las variables `@AppStorage` valor de `environmentFileId` al valor de ID de archivo del entorno de desarrollo que recuperó de las etiquetas en el paso 6 en [Generar instrucciones de instalación del SDK](configure-tags.md#generate-sdk-install-instructions).
+1. Reemplace el `@AppStorage` valor `YOUR_ENVIRONMENT_ID_GOES_HERE` para `environmentFileId` al valor de ID de archivo del entorno de desarrollo que recuperó de las etiquetas en el paso 6 en [Generar instrucciones de instalación del SDK](configure-tags.md#generate-sdk-install-instructions).
 
    ```swift
-   @AppStorage("environmentFileId") private var environmentFileId = "b5cbd1a1220e/1857ef6cacb5/launch-2594f26b23cd-development"
+   @AppStorage("environmentFileId") private var environmentFileId = "YOUR_ENVIRONMENT_ID_GOES_HERE"
    ```
 
 1. Añada el siguiente código a `application(_, didFinishLaunchingWithOptions)` función.

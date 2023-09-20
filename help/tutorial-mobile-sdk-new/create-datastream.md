@@ -3,9 +3,9 @@ title: Configuración de una secuencia de datos
 description: Obtenga información sobre cómo crear una secuencia de datos en Experience Platform.
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '615'
 ht-degree: 10%
 
 ---
@@ -47,7 +47,7 @@ Las secuencias de datos se pueden crear en la variable [!UICONTROL Recopilación
    >
    >Recordatorio final: si va a seguir este tutorial con varias personas en una sola zona protegida o utiliza una cuenta compartida, considere la posibilidad de añadir o anteponer una identificación como parte de las convenciones de nomenclatura. Por ejemplo, en lugar de `Luma Mobile App Event Dataset`, utilice `Luma Mobile App Event Dataset - Joe Smith`. Consulte también la nota en [Información general](overview.md).
 
-1. Seleccione el esquema que ha creado en la lección anterior en la **Esquema del evento** una lista.
+1. Seleccione el esquema que ha creado en la lección anterior en la **Esquema de evento** lista.
 1. Seleccione **[!UICONTROL Guardar]**.
 
    ![nuevos flujos de datos](assets/datastream-name.png)
@@ -55,7 +55,7 @@ Las secuencias de datos se pueden crear en la variable [!UICONTROL Recopilación
 
 ## Agregar servicios
 
-A continuación, conecte los servicios de Experience Cloud a la secuencia de datos. Cuando el SDK de Platform Mobile envía datos a Edge Network, el conjunto de datos envía los datos a estos servicios:
+Cuando esté pasando por el (opcional) [Analytics](analytics.md) y [Experience Platform](platform.md) En este tutorial, se explican las lecciones aprendidas al añadir servicios al conjunto de datos para garantizar que, cuando el SDK de Platform Mobile envíe datos a la red perimetral, el conjunto de datos reenvíe esos datos a los servicios configurados.
 
 ### Adobe Analytics
 

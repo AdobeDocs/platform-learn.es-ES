@@ -3,9 +3,9 @@ title: Administrar vistas web
 description: Obtenga información sobre cómo gestionar la recopilación de datos con WebViews en una aplicación móvil.
 jira: KT-6987
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '477'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ La extensión de identidad de Edge de AEP utilizada dentro de WebView recopila e
 
 ## Implementación
 
-Vaya a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Vistas]** > **[!UICONTROL Información]** > **[!UICONTROL TermsOfServiceSheet]** y busque el `func loadUrl()` función en la `final class SwiftUIWebViewModel: ObservableObject` clase. Agregue la siguiente llamada para administrar el visor web:
+Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Info]** > **[!DNL TermsOfServiceSheet]** y busque el `func loadUrl()` función en la `final class SwiftUIWebViewModel: ObservableObject` clase. Agregue la siguiente llamada para administrar el visor web:
 
 ```swift
 // Handle web view
@@ -63,12 +63,12 @@ El [`AEPEdgeIdentity.Identity.getUrlVariables`](https://developer.adobe.com/clie
 
 Puede obtener más información sobre `Identity.getUrlVariables` API en [Guía de referencia de API de extensión de identidad para red perimetral](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables).
 
-## Validación
+## Validación 
 
 Para ejecutar el código:
 
 1. Vaya a la **[!UICONTROL Configuración]** en la aplicación
-1. Pulse el botón **[!UICONTROL Ver...]** para mostrar el **[!UICONTROL Condiciones de uso]**.
+1. Pulse el botón **[!DNL View...]** para mostrar el **[!DNL Terms of Use]**.
 
    <img src="./assets/tou1.png" width="300" /> <img src="./assets/tou2.png" width="300" />
 
@@ -90,6 +90,8 @@ Para ejecutar el código:
      ```html
      adobe_mc=TS=1636526122|MCMID=79076670946787530005526183384271520749|MCORGID=7ABB3E6A5A7491460A495D61@AdobeOrg
      ```
+
+Lamentablemente, la depuración de la sesión web es limitada; no puede utilizar el Adobe Experience Platform Debugger del explorador, por ejemplo, para continuar depurando la sesión de webview.
 
 >[!NOTE]
 >

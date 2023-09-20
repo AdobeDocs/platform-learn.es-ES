@@ -1,16 +1,16 @@
 ---
-title: Consentimiento
+title: Implementación del consentimiento
 description: Obtenga información sobre cómo implementar el consentimiento en una aplicación móvil.
 feature: Mobile SDK,Consent
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '523'
 ht-degree: 2%
 
 ---
 
-# Consentimiento
+# Implementación del consentimiento
 
 Obtenga información sobre cómo implementar el consentimiento en una aplicación móvil.
 
@@ -36,7 +36,7 @@ Para empezar a recopilar datos, debe obtener el consentimiento del usuario. En e
 
 1. Solo desea preguntar al usuario una vez. Por lo tanto, desea combinar el consentimiento del SDK móvil con las autorizaciones necesarias para el seguimiento mediante el de Apple [Marco de transparencia de seguimiento de aplicaciones](https://developer.apple.com/documentation/apptrackingtransparency). En esta aplicación, se da por hecho que, cuando el usuario autoriza el seguimiento, también consiente la recopilación de eventos.
 
-1. Vaya a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** en el navegador del proyecto Xcode.
+1. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** en el navegador del proyecto Xcode.
 
    Añada este código a `updateConsent` función.
 
@@ -48,7 +48,7 @@ Para empezar a recopilar datos, debe obtener el consentimiento del usuario. En e
    MobileCore.updateConfigurationWith(configDict: currentConsents)
    ```
 
-1. Vaya a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Vistas]** > **[!UICONTROL General]** > **[!UICONTROL DisclaimerView]** en el navegador de proyectos de Xcode, que es la vista que se muestra después de instalar o reinstalar la aplicación e iniciar la aplicación por primera vez. Se solicita al usuario que autorice el seguimiento según el de Apple [Marco de transparencia de seguimiento de aplicaciones](https://developer.apple.com/documentation/apptrackingtransparency). Si el usuario lo autoriza, también debe actualizar el consentimiento.
+1. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL DisclaimerView]** en el navegador de proyectos de Xcode, que es la vista que se muestra después de instalar o reinstalar la aplicación e iniciar la aplicación por primera vez. Se solicita al usuario que autorice el seguimiento según el de Apple [Marco de transparencia de seguimiento de aplicaciones](https://developer.apple.com/documentation/apptrackingtransparency). Si el usuario lo autoriza, también debe actualizar el consentimiento.
 
    Añada el siguiente código a `ATTrackingManager.requestTrackingAuthorization { status in` cierre.
 
@@ -68,7 +68,7 @@ Para empezar a recopilar datos, debe obtener el consentimiento del usuario. En e
 
 La extensión móvil de consentimiento suprime automáticamente / suspende / permite el seguimiento en función del valor de consentimiento actual. También puede acceder al estado de consentimiento actual usted mismo:
 
-1. Vaya a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** en el navegador de proyectos de Xcode.
+1. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** en el navegador de proyectos de Xcode.
 
    Añada el siguiente código a `getConsents` función:
 
@@ -82,7 +82,7 @@ La extensión móvil de consentimiento suprime automáticamente / suspende / per
    }
    ```
 
-2. Vaya a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Vistas]** > **[!UICONTROL General]** > **[!UICONTROL HomeView]** en el navegador de proyectos de Xcode.
+2. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL HomeView]** en el navegador de proyectos de Xcode.
 
    Añada el siguiente código a `.task` modificador:
 

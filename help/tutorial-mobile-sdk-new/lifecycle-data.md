@@ -1,15 +1,15 @@
 ---
-title: Datos del ciclo vital
+title: Recopilar datos del ciclo vital
 description: Obtenga información sobre cómo recopilar datos del ciclo vital en una aplicación móvil.
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 3%
 
 ---
 
-# Datos del ciclo vital
+# Recopilar datos del ciclo vital
 
 Obtenga información sobre cómo recopilar datos del ciclo vital en una aplicación móvil.
 
@@ -52,7 +52,7 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 Ahora puede actualizar el proyecto para registrar los eventos de ciclo vital.
 
-1. Vaya a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL SceneDelegate]** en el navegador del proyecto Xcode.
+1. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL SceneDelegate]** en el navegador del proyecto Xcode.
 
 1. Cuando se inicia, si la aplicación se reanuda desde un estado en segundo plano, iOS puede llamar a su `sceneWillEnterForeground:` método delegado y aquí es donde desea almacenar en déclencheur un evento de inicio del ciclo vital. Añadir este código a `func sceneWillEnterForeground(_ scene: UIScene)`:
 

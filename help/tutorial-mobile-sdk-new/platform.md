@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo enviar datos a Adobe Experience Pl
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '1056'
 ht-degree: 5%
 
 ---
@@ -33,6 +33,7 @@ Si no tiene acceso, puede hacer lo siguiente [omitir esta lección](install-sdks
 En esta lección, deberá hacer lo siguiente:
 
 * Cree un conjunto de datos de Experience Platform.
+* Configure la secuencia de datos para reenviar datos al Experience Platform.
 * Valide los datos del conjunto de datos.
 * Habilite el esquema y el conjunto de datos para el Perfil del cliente en tiempo real.
 * Validar datos en el perfil del cliente en tiempo real.
@@ -54,7 +55,7 @@ Todos los datos que se incorporan correctamente a Adobe Experience Platform se c
    ![inicio del conjunto de datos](assets/dataset-create.png)
 
 1. Busque su esquema. por ejemplo, usar `Luma Mobile` en el campo de búsqueda.
-1. Seleccione el esquema, por ejemplo **[!UICONTROL Esquema de evento de aplicación móvil de Luma]**.
+1. Seleccione el esquema, por ejemplo **[!DNL Luma Mobile App Event Schema]**.
 
 1. Seleccione **[!UICONTROL Siguiente]**.
    ![conjunto de datos configurar](assets/dataset-configure.png)
@@ -64,9 +65,32 @@ Todos los datos que se incorporan correctamente a Adobe Experience Platform se c
 1. Seleccione **[!UICONTROL Finalizar]**.
    ![fin de conjunto de datos](assets/dataset-finish.png)
 
-## Actualizar la secuencia de datos
 
-Una vez creado el conjunto de datos, asegúrese de lo siguiente [actualizar la secuencia de datos](create-datastream.md#adobe-experience-platform) para añadir Adobe Experience Platform. Esta actualización garantiza que los datos fluyan a Platform.
+## Añadir el servicio de flujo de datos de Adobe Experience Platform
+
+Para enviar los datos XDM de la red perimetral a Adobe Experience Platform, configure el servicio Adobe Experience Platform en el conjunto de datos que ha configurado como parte de [Creación de una secuencia de datos](create-datastream.md).
+
+>[!IMPORTANT]
+>
+>Solo puede habilitar el servicio Adobe Experience Platform cuando haya creado un conjunto de datos de evento.
+
+1. En la IU de recopilación de datos, seleccione **[!UICONTROL Datastreams]** y su secuencia de datos.
+
+1. A continuación seleccione ![Añadir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Añadir servicio]**.
+
+1. Seleccione **[!UICONTROL Adobe Experience Platform]** en la lista [!UICONTROL Servicio].
+
+1. Habilitar el servicio cambiando **[!UICONTROL Habilitado]** en.
+
+1. Seleccione el **[!UICONTROL Conjunto de datos de evento]** que creó anteriormente , por ejemplo **[!DNL Luma Mobile App Event Dataset]**.
+
+1. Seleccione **[!UICONTROL Guardar]**.
+
+   ![Añadir Adobe Experience Platform como servicio de flujo de datos](assets/datastream-service-aep.png)
+1. La configuración final debería tener un aspecto similar al siguiente.
+
+   ![configuración de secuencia de datos](assets/datastream-settings.png)
+
 
 ## Validación de datos en el conjunto de datos
 
@@ -89,7 +113,7 @@ El perfil del cliente en tiempo real de Experience Platform le permite crear una
 
 ### Habilitar el esquema
 
-1. Abra el esquema, por ejemplo **[!UICONTROL Esquema de evento de aplicación móvil de Luma]**.
+1. Abra el esquema, por ejemplo **[!DNL Luma Mobile App Event Schema]**.
 1. Activar **[!UICONTROL Perfil]**.
 1. Seleccionar **[!UICONTROL Los datos de este esquema contienen una identidad principal en el campo identityMap.]** en el cuadro de diálogo.
 1. **[!UICONTROL Guardar]** el esquema.
@@ -98,7 +122,7 @@ El perfil del cliente en tiempo real de Experience Platform le permite crear una
 
 ### Habilitar el conjunto de datos
 
-1. Abra el conjunto de datos, por ejemplo **[!UICONTROL Conjunto de datos de evento de aplicación móvil Luma]**.
+1. Abra el conjunto de datos, por ejemplo **[!DNL Luma Mobile App Event Dataset]**.
 1. Activar **[!UICONTROL Perfil]**.
 
    ![habilitar el conjunto de datos para el perfil](assets/platform-profile-dataset.png)

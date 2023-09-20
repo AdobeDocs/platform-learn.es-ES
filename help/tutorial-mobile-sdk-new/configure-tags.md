@@ -3,9 +3,9 @@ title: Configuración de una propiedad de etiqueta
 description: Obtenga información sobre cómo configurar una propiedad de etiqueta en la [!UICONTROL Recopilación de datos] interfaz.
 feature: Mobile SDK,Tags
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1096'
 ht-degree: 8%
 
 ---
@@ -110,9 +110,9 @@ En esta lección, deberá hacer lo siguiente:
 
 1. Utilice el ![Buscar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Buscar]** para buscar e instalar el **Adobe Experience Platform Edge Network** extensión.
 
-   1. Entrada **[!UICONTROL Datastreams]** seleccione el **[!UICONTROL Datastream]** que creó en la [paso anterior](create-datastream.md) para cada uno de los entornos, por ejemplo **[!UICONTROL Aplicación móvil de Luma]**.
+   1. Entrada **[!UICONTROL Datastreams]** seleccione el **[!UICONTROL Datastream]** que creó en la [paso anterior](create-datastream.md) para cada uno de los entornos, por ejemplo **[!DNL Luma Mobile App]**.
 
-   1. Especifique el **[!UICONTROL Dominio de red perimetral]** dentro **[!UICONTROL Configuración del dominio]**. El dominio de red perimetral es el nombre de su organización, seguido de `data.adobedc.net`, por ejemplo `techmarketingdemos.data.adobedc.net`.
+   1. Si aún no se ha rellenado, especifique el **[!UICONTROL Dominio de red perimetral]** dentro **[!UICONTROL Configuración del dominio]**. El dominio de red perimetral es el nombre de su organización, seguido de `data.adobedc.net`, por ejemplo `techmarketingdemos.data.adobedc.net`.
 
    1. Desde el **[!UICONTROL Guardar en biblioteca]** menú, seleccione **[!UICONTROL Guardar en biblioteca y crear]**.
 
