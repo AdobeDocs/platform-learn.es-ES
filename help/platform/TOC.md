@@ -4,9 +4,9 @@ breadcrumb-title: Tutoriales
 user-guide-description: Descubra los muchos componentes de Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: 78b5ee6e1bcda449d8adf453088ddba6f0e42f36
+source-git-commit: c61d9d10c25cba92136d1dca635e12cbf222b947
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '994'
 ht-degree: 34%
 
 ---
@@ -112,6 +112,7 @@ ht-degree: 34%
    + [Conexión a destinos](/help/platform/destinations/connecting-to-destinations.md)
    + [Creación de destinos y activación de datos](/help/platform/destinations/create-destinations-and-activate-data.md)
    + [Activación de perfiles y segmentos en un destino](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
+   + [Configuración de un destino de exportación de conjunto de datos](/help/platform/destinations/configure-dataset-export-destination.md)
    + [Integración con Customer Match de Google](/help/platform/destinations/integrate-with-google-customer-match.md)
    + [Configurar el destino de Azure Blob](/help/platform/destinations/configure-the-azure-blob-destination.md)
    + [Configuración del destino de Marketo](/help/platform/destinations/configure-the-marketo-destination.md)
