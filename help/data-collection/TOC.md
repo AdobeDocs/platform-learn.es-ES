@@ -5,10 +5,10 @@ user-guide-description: Vídeos y tutoriales prácticos para convertirse en un u
 solution: Data Collection,Experience Platform
 doc-type: video
 role: Developer, Data Engineer
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: e3ef25638384554bf21a50dc57db3152805bfac2
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 40%
+source-wordcount: '242'
+ht-degree: 39%
 
 ---
 
@@ -53,6 +53,7 @@ ht-degree: 40%
    + [Configurar una secuencia de datos](event-forwarding/set-up-a-datastream.md)
    + [Añadir una extensión](event-forwarding/add-an-extension.md)
    + [Crear una regla](event-forwarding/create-a-rule.md)
+   + [Flujos de trabajo de inicio rápido](event-forwarding/quick-start-workflows.md)
    + [Monitorización del reenvío de eventos](event-forwarding/monitor.md)
    + [Mover etiquetas del lado del cliente](event-forwarding/consider-moving-tags.md)
    + [Configuración de conversiones mejoradas de Google Ads](event-forwarding/set-up-google-ads-enhanced-conversions.md)
