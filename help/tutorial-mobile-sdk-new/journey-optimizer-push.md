@@ -5,7 +5,7 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+source-git-commit: 7f77a26dfae71c2f0e643deba6c72a8ecdb0de02
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 3%
@@ -153,7 +153,7 @@ Para que la aplicación funcione con Journey Optimizer, debe actualizar la propi
    <img src="assets/luma-app-push.png" width="300" />
 
 
-### Añadir funciones de notificaciones push a la aplicación
+## Añadir funciones de notificaciones push a la aplicación
 
 >[!IMPORTANT]
 >
@@ -172,7 +172,7 @@ Ahora debería tener una extensión de notificación push agregada a la aplicaci
 ![Extensión de notificaciones push](assets/xcode-signing-capabilities-pushnotifications.png)
 
 
-### Implementar Journey Optimizer en la aplicación
+## Implementar Journey Optimizer en la aplicación
 
 Como se ha explicado en lecciones anteriores, la instalación de una extensión de etiqueta móvil solo proporciona la configuración. A continuación, debe instalar y registrar el SDK de mensajería. Si estos pasos no están claros, revise la [Instalación de SDK](install-sdks.md) sección.
 
@@ -205,7 +205,7 @@ Como se ha explicado en lecciones anteriores, la instalación de una extensión 
    ]
    ```
 
-### Registrar token de dispositivo para notificaciones push
+## Registrar token de dispositivo para notificaciones push
 
 1. Añada el [`MobileCore.setPushIdentifier`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#setpushidentifier) API para `func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)` función.
 
@@ -318,7 +318,7 @@ El siguiente paso es crear el recorrido que almacene en déclencheur el envío d
    ![Recorrido finalizado](assets/ajo-journey-finished.png)
 
 
-## Activación de la notificación push
+## Déclencheur de la notificación push
 
 Tiene todos los ingredientes para enviar una notificación push. Lo que queda es cómo almacenar en déclencheur esta notificación push. En esencia, es lo mismo que ha visto antes: simplemente envíe un evento de experiencia con la carga útil adecuada (como en el [Eventos](events.md)).
 
