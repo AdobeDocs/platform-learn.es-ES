@@ -8,7 +8,7 @@ level: Intermediate
 jira: KT-6624
 thumbnail: 328175.jpg
 exl-id: fda985ad-5d56-4e61-871f-2f29a2e79b17
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 10%
@@ -22,4 +22,4 @@ Obtenga sugerencias durante un tutorial sobre la configuración de un destino ba
 * [Activar datos de audiencia en destinos de exportación de perfiles por lotes](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations.html?lang=es) para obtener instrucciones sobre cómo activar los datos en destinos de marketing por lotes o por correo electrónico mediante la interfaz de usuario de Experience Platform
 * [Conéctese a destinos por lotes y active los datos mediante la API de Flow Service](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/connect-activate-batch-destinations.html) para obtener instrucciones sobre cómo activar los datos en destinos de marketing por lotes o por correo electrónico mediante la API de Flow Service
 
->[!VIDEO](https://video.tv.adobe.com/v/328175/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/328175/?learn=on)

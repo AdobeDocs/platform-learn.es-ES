@@ -8,7 +8,7 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '3344'
 ht-degree: 2%
@@ -31,9 +31,9 @@ Hay dos tareas principales que debemos completar en la interfaz de recopilación
 
 Antes de comenzar los ejercicios, vea estos dos vídeos cortos para obtener más información acerca de la ingesta de datos de flujo continuo y el SDK web:
 
->[!VIDEO](https://video.tv.adobe.com/v/28425?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on)
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on)
 
 >[!NOTE]
 >
@@ -255,7 +255,7 @@ Experience Platform Debugger es una extensión disponible para los navegadores C
 
 Si nunca antes ha utilizado Debugger (y este es diferente del antiguo Adobe Experience Cloud Debugger), puede que desee ver este vídeo de información general de cinco minutos:
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
 
 ### Abra el sitio web de Luma.
 
@@ -332,7 +332,7 @@ También puede confirmar que se muestra el nuevo perfil:
 1. Ahora, vaya a **[!UICONTROL Elementos de datos]** en el panel de navegación izquierdo
 1. Seleccione el **[!UICONTROL Crear nuevo elemento de datos]** botón
 
-   ![Creación de un nuevo elemento de datos](assets/websdk-property-createNewDataElement.png)
+   ![Crear un nuevo elemento de datos](assets/websdk-property-createNewDataElement.png)
 1. Como el **[!UICONTROL Nombre]**, introduzca `Page Name`
 1. Como el **[!UICONTROL Tipo de elemento de datos]**, seleccione `JavaScript Variable`
 1. Como el **[!UICONTROL Nombre de variable JavaScript]**, introduzca `digitalData.page.pageInfo.pageName`
@@ -352,7 +352,7 @@ Ahora asignaremos el nombre de página al SDK web.
 
 En el **[!UICONTROL Elementos de datos]** página:
 
-1. Creación de un nuevo elemento de datos
+1. Crear un nuevo elemento de datos
 1. Como el **[!UICONTROL Nombre]**, introduzca `XDM Object`
 1. Como el **[!UICONTROL Extensión]**, seleccione `Adobe Experience Platform Web SDK`
 1. Como el **[!UICONTROL Tipo de elemento de datos]**, seleccione `XDM object`
@@ -464,6 +464,6 @@ Para validar que el SDK web ahora envía el ID de CRM:
 >Ahora que ha terminado la lección Ingesta de flujo continuo, puede eliminar la [!UICONTROL Prod] zona protegida de su `Luma Tutorial Platform` perfil de producto
 
 
-Ingenieros de datos, si lo desea, puede pasar directamente al [lección ejecutar consultas](run-queries.md).
+Ingenieros de datos, si lo desea, puede pasar al [lección ejecutar consultas](run-queries.md).
 
 Arquitectos de datos, puede pasar a [políticas de combinación](create-merge-policies.md)!

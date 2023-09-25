@@ -8,7 +8,7 @@ jira: KT-3688
 thumbnail: 28832.jpeg
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: c1774670-436e-46dd-9c9b-177bfee5f749
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 18%
@@ -31,23 +31,20 @@ Obtenga información sobre cómo empezar a usar las API de Adobe Experience Plat
 >
 > Después de crear la credencial de la API, un administrador del sistema debe asociarla con una función en el Experience Platform.
 
->[!VIDEO](https://video.tv.adobe.com/v/28832/?quality=12&learn=on)
-
-
-
+>[!VIDEO](https://video.tv.adobe.com/v/28832/?learn=on)
 
 ## Generación de un token de acceso con Postman{#generate-an-access-token-with-postman}
 
 Utilice el [API del servicio Identity Management de Adobe](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims) para obtener un token de acceso y acceder a las API de Adobe Experience Platform.
 
->[!VIDEO](https://video.tv.adobe.com/v/29698/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29698/?learn=on)
 
 
 ## Interacción con las API de Experience Platform mediante Postman
 
 Explore la interacción con las API de Adobe Experience Platform mediante [Colecciones de Postman de API de Experience Platform proporcionadas por el Adobe](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform), sobre la base de [Variables de entorno de la consola Adobe Developer](#export-integration-details-to-postman) y [token de acceso generado](#generate-an-access-token-with-postman).
 
->[!VIDEO](https://video.tv.adobe.com/v/29704/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29704/?learn=on)
 
 
 ## Recursos a los que se hace referencia en estos vídeos

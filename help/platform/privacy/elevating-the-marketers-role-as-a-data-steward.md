@@ -9,7 +9,7 @@ thumbnail: 338292.jpg
 jira: KT-9301
 type: Event
 exl-id: 12c258c5-cf91-4403-99bd-6322a92aabfe
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 18%
@@ -24,4 +24,4 @@ El papel del ‘administrador de datos’ abarca varias disciplinas y se ha conv
 * Cómo incorporar estrategias basadas en el consentimiento que aporten confianza al consumidor e integren sin problemas en el recorrido del consumidor.
 * Responsabilidades de administración de datos dentro del papel del experto en marketing con eficiencia y confianza
 
->[!VIDEO](https://video.tv.adobe.com/v/338292/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338292/?learn=on)

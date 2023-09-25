@@ -8,7 +8,7 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '2526'
 ht-degree: 0%
@@ -26,7 +26,7 @@ La ingesta de datos por lotes le permite introducir una gran cantidad de datos e
 
 Antes de comenzar los ejercicios, vea este breve vídeo para obtener más información sobre la ingesta de datos:
 
->[!VIDEO](https://video.tv.adobe.com/v/27106?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on)
 
 
 ## Permisos necesarios
@@ -237,7 +237,7 @@ Veamos otra forma de cargar los datos. La función de flujos de trabajo permite 
 1. Ya debería haber descargado y descomprimido [luma-data.zip](assets/luma-data.zip) en su `Luma Tutorial Assets` carpeta.
 1. Confirme que dispone de`luma-products.csv`
 
-### Creación de un flujo de trabajo
+### Crear un flujo de trabajo
 
 Ahora vamos a configurar el flujo de trabajo:
 
@@ -312,7 +312,7 @@ Muchos de los orígenes tienen un flujo de trabajo de configuración similar, en
 
 1. En el **[!UICONTROL Asignación]** paso, seleccione su `Luma Offline Purchase Events Dataset` y seleccione la **[!UICONTROL Siguiente]** botón. Tenga en cuenta en el mensaje que, como los datos que estamos ingiriendo son un archivo JSON, no hay ningún paso de asignación en el que asignemos el campo de origen al campo de destino. Los datos JSON ya deben estar en XDM. Si estuviera introduciendo un CSV, vería la interfaz de usuario de asignación completa en este paso:
    ![Seleccione el conjunto de datos](assets/ingestion-offline-mapping.png)
-1. En el **[!UICONTROL Programación]** , elija la frecuencia con la que desea volver a introducir los datos desde el origen. Dedique un momento a ver las opciones. Solo vamos a hacer una ingesta única, así que deje el **[!UICONTROL Frecuencia]** el **[!UICONTROL Una]** y seleccione la **[!UICONTROL Siguiente]** botón:
+1. En el **[!UICONTROL Programación]** , elija la frecuencia con la que desea volver a ingerir los datos del origen. Dedique un momento a ver las opciones. Solo vamos a hacer una ingesta única, así que deje el **[!UICONTROL Frecuencia]** el **[!UICONTROL Una]** y seleccione la **[!UICONTROL Siguiente]** botón:
    ![Programar el flujo de datos](assets/ingestion-offline-scheduling.png)
 1. En el **[!UICONTROL Detalles del flujo de datos]** paso a paso, puede elegir un nombre para el flujo de datos, introducir una descripción opcional, activar los diagnósticos de error y la ingesta parcial. Deje la configuración tal cual y seleccione **[!UICONTROL Siguiente]** botón:
    ![Editar detalles del flujo de datos](assets/ingestion-offline-detail.png)

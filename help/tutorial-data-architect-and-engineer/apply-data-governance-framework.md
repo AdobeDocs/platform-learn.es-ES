@@ -8,7 +8,7 @@ feature: Data Governance
 jira: KT-4348
 thumbnail: 4348-apply-data-governance-framework.jpg
 exl-id: 3cc3c794-5ffd-41bf-95d8-be5bca2e3a0f
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 2%
@@ -24,9 +24,9 @@ En esta lección, aplicará el marco de trabajo de control de datos a los datos 
 Administración de datos de Adobe Experience Platform le permite administrar los datos de los clientes y garantizar el cumplimiento de las regulaciones, restricciones y políticas aplicables al uso de los datos. Desempeña un papel clave dentro del Experience Platform en varios niveles, incluido el control del uso de los datos.
 
 Antes de comenzar los ejercicios, vea estos vídeos cortos sobre la gobernanza de datos:
->[!VIDEO](https://video.tv.adobe.com/v/36653?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36653?learn=on)
 
->[!VIDEO](https://video.tv.adobe.com/v/29708?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on)
 
 <!--
 ## Permissions required

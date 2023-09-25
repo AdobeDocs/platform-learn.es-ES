@@ -8,10 +8,10 @@ doc-type: Event
 thumbnail: 337665.jpg
 jira: KT-9145
 exl-id: 84d900c4-662e-486c-97c9-38c55fd5bf28
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '163'
-ht-degree: 27%
+ht-degree: 34%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 27%
 
 Entrega de la promesa de experiencia, con acceso a menos datos. Tanto si es un anunciante, editor o agencia, este seminario web le ayudará a desbloquear las oportunidades de colaboración de datos en un futuro sin cookies de terceros.
 
->[!VIDEO](https://video.tv.adobe.com/v/337665/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/337665/?learn=on)
 
 ## Principales conclusiones:
 
@@ -33,4 +33,4 @@ Entrega de la promesa de experiencia, con acceso a menos datos. Tanto si es un a
 
 [Audience Marketplace para compradores de datos](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/audience-marketplace/audience-marketplace-for-data-buyers/marketplace-data-buyers.html?lang=en)
 
-[People-Based Destinations](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/people-based/people-based-destinations-overview.html?lang=en)
+[People-Based Destinations](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/people-based/people-based-destinations-overview.html?lang=es)

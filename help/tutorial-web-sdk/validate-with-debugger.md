@@ -3,10 +3,10 @@ title: Validación de implementaciones de SDK web con Experience Platform Debugg
 description: Obtenga información sobre cómo validar la implementación del SDK web de Platform con Adobe Experience Platform Debugger. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK,Tags,Debugger
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '1073'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -21,7 +21,7 @@ Experience Platform Debugger es una extensión disponible para los navegadores C
 
 Si nunca antes ha utilizado Debugger (y este es diferente del antiguo Adobe Experience Cloud Debugger), puede que desee ver este vídeo de información general de cinco minutos:
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
 
 En esta lección, debe usar el [Extensión de Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) para reemplazar la propiedad de etiqueta codificada en la variable [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html) con su propia propiedad.
 
@@ -41,7 +41,7 @@ Está familiarizado con las etiquetas de recopilación de datos y las [Sitio de 
 * [Configure los permisos](configure-permissions.md)
 * [Configuración de un esquema XDM](configure-schemas.md)
 * [Configuración de un área de nombres de identidad](configure-identities.md)
-* [Configurar una secuencia de datos](configure-datastream.md)
+* [Configuración de una secuencia de datos](configure-datastream.md)
 * [Extensión del SDK web instalada en la propiedad de etiqueta](install-web-sdk.md)
 * [Creación de elementos de datos](create-data-elements.md)
 * [Creación de una regla de etiqueta](create-tag-rule.md)

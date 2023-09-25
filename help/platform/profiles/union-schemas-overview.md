@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-6754
 thumbnail: 329940.jpg
 exl-id: 6e6512c2-2d8e-4b56-b8b8-d318b98f3627
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '111'
 ht-degree: 19%
@@ -16,9 +16,6 @@ ht-degree: 19%
 
 # Información general sobre los esquemas de unión
 
-Este vídeo le ofrece una descripción general de los esquemas de unión utilizados por el Perfil del cliente en tiempo real de Adobe Experience Platform. Los esquemas de unión permiten ver una amalgamación de todos los campos contenidos en esquemas que comparten la misma clase. El perfil del cliente en tiempo real utiliza los esquemas de unión para crear una vista holística de cada cliente individual.
+Este vídeo le ofrece una descripción general de los esquemas de unión utilizados por el Perfil del cliente en tiempo real de Adobe Experience Platform. Los esquemas de unión permiten ver una amalgamación de todos los campos contenidos en esquemas que comparten la misma clase. El perfil del cliente en tiempo real utiliza los esquemas de unión para crear una vista holística de cada cliente individual. Para obtener más información, visite la [documentación del esquema de unión](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/329940?quality=12&learn=on)
-
-Para obtener más información, visite la [documentación del esquema de unión](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html).
-
+>[!VIDEO](https://video.tv.adobe.com/v/329940?learn=on)

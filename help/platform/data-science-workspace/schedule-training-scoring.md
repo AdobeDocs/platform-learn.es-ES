@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-7293
 thumbnail: 333596.jpg
 exl-id: de24de28-d632-4fa5-b5b7-71f638a523ac
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 6%
@@ -16,8 +16,6 @@ ht-degree: 6%
 
 # Programar formación y puntuación automatizadas para un servicio
 
-El espacio de trabajo de ciencia de datos de Adobe Experience Platform le permite configurar ejecuciones de puntuación y formación programadas en un servicio de aprendizaje automático. La automatización del proceso de formación y puntuación puede ayudar a mantener y mejorar la eficacia de un servicio a lo largo del tiempo, al estar al día con los diferentes patrones de los datos.
+El espacio de trabajo de ciencia de datos de Adobe Experience Platform le permite configurar ejecuciones de puntuación y formación programadas en un servicio de aprendizaje automático. La automatización del proceso de formación y puntuación puede ayudar a mantener y mejorar la eficacia de un servicio a lo largo del tiempo, al estar al día con los diferentes patrones de los datos. Para obtener más información, visite la [Documentación de Data Science Workspace](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/333596?quality=12&learn=on)
-
-Para obtener más información, visite la [Documentación de Data Science Workspace](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html?lang=es).
+>[!VIDEO](https://video.tv.adobe.com/v/333596?learn=on)

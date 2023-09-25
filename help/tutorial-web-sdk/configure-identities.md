@@ -3,7 +3,7 @@ title: Configuración de un área de nombres de identidad
 description: Obtenga información sobre cómo configurar áreas de nombres de identidad para utilizarlas con el SDK web de Adobe Experience Platform. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK,Tags,Identities
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '693'
 ht-degree: 12%
@@ -46,7 +46,7 @@ Ya debe haber completado las lecciones anteriores:
 En este ejercicio, se crea un área de nombres de identidad para el campo de identidad personalizado de Luma, `lumaCrmId`. Las áreas de nombres de identidad desempeñan un papel esencial en la creación de perfiles de clientes en tiempo real, ya que dos valores coincidentes en la misma área de nombres permiten que dos fuentes de datos formen un gráfico de identidad.
 
 Antes de comenzar los ejercicios, vea este breve vídeo para obtener más información sobre la identidad en Adobe Experience Platform:
->[!VIDEO](https://video.tv.adobe.com/v/27841?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on)
 
 Ahora, cree un área de nombres para el ID de Luma CRM:
 

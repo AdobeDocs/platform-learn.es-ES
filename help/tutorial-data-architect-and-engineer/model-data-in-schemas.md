@@ -8,7 +8,7 @@ feature: Schemas
 jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '2485'
 ht-degree: 5%
@@ -43,7 +43,7 @@ Key terms:
 **Arquitectos de datos** deberá crear esquemas fuera de este tutorial, pero **Ingenieros de datos** trabajará estrechamente con los esquemas creados por el arquitecto de datos.
 
 Antes de comenzar los ejercicios, vea este breve vídeo para obtener más información sobre los esquemas y el modelo de datos de experiencia (XDM):
->[!VIDEO](https://video.tv.adobe.com/v/27105?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on)
 
 >[!TIP]
 >
@@ -311,8 +311,8 @@ Ahora vamos a crear un esquema más para los datos del sitio web de Luma. En est
 | Propiedad | Valor |
 |---------------|-----------------|
 | Clase | ExperienceEvent de XDM |
-| Grupo de campos | Mezcla de ExperienceEvent del SDK web de AEP |
-| Grupo de campos | Evento de experiencia del consumidor |
+| Grupo de campo | Mezcla de ExperienceEvent del SDK web de AEP |
+| Grupo de campo | Evento de experiencia del consumidor |
 | Nombre del esquema | Esquema de eventos web de Luma |
 
 Seleccione el **[!UICONTROL Evento de experiencia del consumidor]** grupo de campos. Este grupo de campos contiene los objetos commerce y productListItems que también estaban en [!UICONTROL Detalles de comercio]. De hecho [!UICONTROL Evento de experiencia del consumidor] es una combinación de otros grupos de campos estándar que también están disponibles por separado. [!UICONTROL Mezcla de ExperienceEvent del SDK web de AEP] el grupo de campos también contiene otros grupos de campos, incluidos algunos de los mismos en [!UICONTROL Evento de experiencia del consumidor]. Afortunadamente, se mezclan sin problemas.

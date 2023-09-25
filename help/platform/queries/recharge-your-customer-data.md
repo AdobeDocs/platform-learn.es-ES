@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-10323
 thumbnail: 342533.jpeg
 exl-id: 30574cc5-66fa-4ab8-83ed-7af710294dbf
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 3%
@@ -17,13 +17,14 @@ ht-degree: 3%
 # Recargue los datos de sus clientes para ofrecer experiencias electrizantes
 
 Los datos omnicanal son un ingrediente crítico para impulsar perfiles de clientes procesables utilizados por los especialistas en marketing para organizar la activación y medir los recorridos de clientes resultantes. Sin embargo, las organizaciones se enfrentan a desafíos en la administración de la calidad, la escala y la variedad de estos datos. Requieren soluciones optimizadas para mitigar el impacto de los datos de baja calidad, reducir el tiempo de respuesta al valor y multiplicar el retorno de la inversión utilizando los mismos datos para multitud de casos de uso.
+Para obtener más información, visite la [Documentación del servicio de consultas](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=es).
 
 Este vídeo explora:
 
 * Funciones de preparación de datos de Adobe Experience Platform que puede aprovechar
 * Aumento del ROI de Adobe Real-Time CDP, Adobe Journey Optimizer y Customer Journey Analytics
 
->[!VIDEO](https://video.tv.adobe.com/v/342533?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342533?learn=on)
 
 ## Ejemplo de SQL
 
@@ -45,8 +46,6 @@ AND timestamp > current_date - interval '4 day'
 GROUP BY customerId,sku
 order by price desc)D;
 ```
-
-Para obtener más información, visite la [Documentación del servicio de consultas](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=es).
 
 >[!NOTE]
 >
