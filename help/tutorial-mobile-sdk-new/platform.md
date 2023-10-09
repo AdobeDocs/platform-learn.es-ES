@@ -4,9 +4,10 @@ description: Obtenga información sobre cómo enviar datos al Experience Platfor
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: 841b2274-b7a4-4203-9eb4-a2a3783d3f02
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1069'
 ht-degree: 5%
 
 ---
@@ -98,7 +99,7 @@ Ahora que ha creado un conjunto de datos y ha actualizado el conjunto de datos p
 
 Abra la aplicación y vaya a las pantallas donde realiza el seguimiento de eventos. También puede almacenar en déclencheur las métricas del ciclo vital.
 
-Abra el conjunto de datos en la interfaz de Platform. Debería ver los datos que llegan en lotes al conjunto de datos
+Abra el conjunto de datos en la interfaz de Platform. Debería ver los datos que llegan en lotes al conjunto de datos. Los datos suelen llegar en microlotes cada 15 minutos, por lo que es posible que no vea los datos inmediatamente.
 
 ![validar lotes de conjuntos de datos de Platform de aterrizaje de datos](assets/platform-dataset-batches.png)
 
@@ -170,4 +171,4 @@ Los especialistas en marketing y análisis pueden hacer mucho más con los datos
 >
 >Ahora ha configurado la aplicación para enviar datos no solo a la red perimetral, sino también a Adobe Experience Platform.<br>Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Siguiente: **[Creación y notificaciones push](journey-optimizer-push.md)**
+Siguiente: **[Creación y envío de notificaciones push](journey-optimizer-push.md)**

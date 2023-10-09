@@ -1,19 +1,20 @@
 ---
-title: Uso de servicios de geolocalización
+title: Usar lugares
 description: Aprenda a utilizar el servicio de geolocalización de Places en su aplicación móvil.
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1669'
+source-wordcount: '1666'
 ht-degree: 3%
 
 ---
 
-# Uso de servicios de geolocalización
+# Usar lugares
 
-Aprenda a utilizar el servicio de localización geográfica en la aplicación.
+Aprenda a utilizar el servicio de geolocalización de Places en su aplicación.
 
-El servicio de lugares de recopilación de datos de Adobe Experience Platform es un servicio de ubicación geográfica que permite a las aplicaciones móviles con conocimiento de ubicación comprender el contexto de la ubicación. El servicio utiliza interfaces de SDK enriquecidas y fáciles de usar, acompañadas de una base de datos flexible de puntos de interés (POI).
+El servicio de lugares de recopilación de datos de Adobe Experience Platform es un servicio de geolocalización que permite a las aplicaciones móviles con conocimiento de ubicación comprender el contexto de la ubicación. El servicio utiliza interfaces de SDK enriquecidas y fáciles de usar, acompañadas de una base de datos flexible de puntos de interés (POI).
 
 ## Requisitos previos
 
@@ -32,7 +33,7 @@ En esta lección, debe
 * Actualice el esquema para capturar los eventos de geolocalización.
 * Valide la configuración en Assurance.
 * Actualice la aplicación para registrar la extensión Places.
-* Implemente el seguimiento de ubicación geográfica desde el servicio Places en la aplicación.
+* Implemente el seguimiento de geolocalización desde el servicio Places en la aplicación.
 
 
 ## Configuración
@@ -81,7 +82,7 @@ Puede definir algunos puntos de interés en el servicio Places.
    1. Seleccionar **[!UICONTROL Guardar en biblioteca y crear]** de **[!UICONTROL Guardar en biblioteca]**.
       ![Instalar extensión Places](assets/places-install-extension.png).
 
-1. Se está reconstruyendo su biblioteca.
+1. Se volverá a crear su biblioteca.
 
 
 ### Verificar el esquema
@@ -96,7 +97,7 @@ Compruebe si el esquema, tal como se define en [Crear esquema](create-schema.md)
    ![Lugares del esquema](assets/schema-places-context.png).
 
 
-### Actualice la etiqueta
+### Actualizar la propiedad de etiquetas
 
 La extensión Places para etiquetas proporciona funcionalidad para supervisar eventos de geolocalización y permite almacenar en déclencheur acciones basadas en estos eventos. Puede utilizar esta funcionalidad para minimizar la codificación de la API que debe implementar en la aplicación.
 
@@ -132,7 +133,7 @@ Primero se crean varios elementos de datos.
 
 A continuación, va a definir reglas para trabajar con estos elementos de datos.
 
-1. En la propiedad de etiquetas. select **[!UICONTROL Reglas]** desde el carril izquierdo.
+1. En la propiedad de etiquetas, seleccione **[!UICONTROL Reglas]** desde el carril izquierdo.
 1. Seleccionar **[!UICONTROL Agregar regla]**.
 1. En el **[!UICONTROL Crear regla]** , introduzca un nombre para la regla, por ejemplo `POI - Entry`.
 1. Seleccionar ![Añadir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) debajo **[!UICONTROL EVENTOS]**.
@@ -215,6 +216,10 @@ Vamos a crear otra regla
 1. Seleccionar ![Añadir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) junto al **[!UICONTROL Mobile Core - Adjuntar datos]** acción.
    1. Seleccionar **[!UICONTROL Adobe Experience Platform Edge Network]** desde el **[!UICONTROL Extensión]** lista y seleccione **[!UICONTROL Reenviar evento a Edge Network]**.
    1. Seleccione **[!UICONTROL Conservar cambios]**.
+
+1. Para guardar la regla, seleccione **[!UICONTROL Guardar en biblioteca]**.
+
+   ![Regla](assets/tags-rule-poi-exit.png)
 
 
 Para asegurarse de que se publican todos los cambios en la etiqueta
@@ -302,18 +307,15 @@ Como se ha explicado en lecciones anteriores, la instalación de una extensión 
    }
    ```
 
-Explicar detalles sobre la implementación del administrador de ubicación en iOS va más allá del tema de esta lección.
-
-
 ## Validar con la aplicación
 
 1. Abra la aplicación en un dispositivo o en el simulador.
 
 1. Vaya a la **[!UICONTROL Ubicación]** pestaña.
 
-1. Mueva el mapa para asegurarse de que el círculo azul en el medio esté encima de uno de sus puntos de interés, por ejemplo, Londres.
+1. Mueva (arrastre) el mapa para asegurarse de que el círculo central azul esté encima de uno de sus puntos de interés, por ejemplo Londres.
 
-1. Toque <img src="assets/geobutton.png" width="20" /> repetidamente hasta que vea la categoría y el nombre en la parte inferior derecha.
+1. Toque <img src="assets/geobutton.png" width="20" /> hasta que vea que la categoría y el nombre aparecen en la etiqueta en la ubicación roja con el pin.
 
 1. Pulse la etiqueta del punto de interés, que abre el **[!UICONTROL Punto de interés cercano]** hoja.
 

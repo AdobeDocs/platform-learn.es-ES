@@ -2,9 +2,10 @@
 title: Seguimiento de datos de eventos
 description: Obtenga información sobre cómo rastrear datos de evento en una aplicación móvil.
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: b926480b-b431-4db8-835c-fa1db6436a93
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1390'
 ht-degree: 1%
 
 ---
@@ -67,7 +68,6 @@ Para los grupos de campos estándar, el proceso tiene este aspecto:
       "eventType": "commerce.productViews",
       "commerce": [
           "productViews": [
-            "id": sku,
             "value": 1
           ]
       ]
@@ -75,7 +75,6 @@ Para los grupos de campos estándar, el proceso tiene este aspecto:
   ```
 
    * `eventType`: Describe el evento que se produjo, use un [valor conocido](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) cuando sea posible.
-   * `commerce.productViews.id`: un valor de cadena que representa el SKU del producto
    * `commerce.productViews.value`: el valor numérico o booleano del evento. Si es booleano (o &quot;contador&quot; en Adobe Analytics), el valor siempre se establece en 1. Si es un evento numérico o de moneda, el valor puede ser > 1.
 
 * En el esquema, identifique cualquier dato adicional asociado con el evento de vista de producto de comercio. En este ejemplo, incluya **[!UICONTROL productListItems]** que es un conjunto estándar de campos utilizados con cualquier evento relacionado con el comercio:
@@ -85,25 +84,24 @@ Para los grupos de campos estándar, el proceso tiene este aspecto:
 
 * Para agregar estos datos, expanda su `xdmData` objeto para incluir datos suplementarios:
 
-```swift
-var xdmData: [String: Any] = [
-    "eventType": "commerce.productViews",
-        "commerce": [
-        "productViews": [
-            "id": sku,
-            "value": 1
-        ]
-    ],
-    "productListItems": [
-        [
-            "name":  productName,
-            "SKU": sku,
-            "priceTotal": priceString,
-            "quantity": 1
-        ]
-    ]
-]
-```
+  ```swift
+  var xdmData: [String: Any] = [
+      "eventType": "commerce.productViews",
+          "commerce": [
+          "productViews": [
+              "value": 1
+          ]
+      ],
+      "productListItems": [
+          [
+              "name":  productName,
+              "SKU": sku,
+              "priceTotal": priceString,
+              "quantity": 1
+          ]
+      ]
+  ]
+  ```
 
 * Ahora puede utilizar esta estructura de datos para crear un `ExperienceEvent`:
 
@@ -116,6 +114,8 @@ var xdmData: [String: Any] = [
   ```swift
   Edge.sendEvent(experienceEvent: productViewEvent)
   ```
+
+El [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API es el SDK de AEP Mobile equivalente a [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) y [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackstate) Llamadas de API. Consulte [Migración de la extensión móvil de Analytics a Adobe Experience Platform Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-analytics/migrate-to-edge-network/) para obtener más información.
 
 Ahora va a implementar realmente este código en su proyecto Xcode.
 Tiene diferentes acciones comerciales relacionadas con productos en la aplicación y quiere enviar eventos, según estas acciones realizadas por el usuario:
@@ -135,7 +135,6 @@ Para implementar el envío de eventos de experiencia relacionados con el comerci
        "eventType": "commerce." + commerceEventType,
        "commerce": [
            commerceEventType: [
-               "id": product.sku,
                "value": 1
            ]
        ],
@@ -328,7 +327,6 @@ De nuevo, vamos a implementar este código en su proyecto Xcode.
       ```swift
       // Send app interaction event
       MobileSDK.shared.sendAppInteractionEvent(actionName: "login")
-      dismiss()
       ```
 
    1. Agregue el siguiente código resaltado a `onAppear` modificador:
@@ -340,8 +338,7 @@ De nuevo, vamos a implementar este código en su proyecto Xcode.
 
 ## Validación
 
-1. Revise la [instrucciones de configuración](assurance.md) y conecte el simulador o dispositivo a Assurance.
-1. Ejecute la aplicación, inicie sesión e interactúe con un producto.
+1. Revise la [instrucciones de configuración](assurance.md#connecting-to-a-session) para conectar el simulador o dispositivo a Assurance.
 
    1. Mueva el icono Garantía a la izquierda.
    1. Seleccionar **[!UICONTROL Inicio]** en la barra de pestañas y compruebe que ve un **[!UICONTROL ECID]**, **[!UICONTROL Correo electrónico]** y **[!UICONTROL ID de CRM]** en la pantalla Inicio.
@@ -355,7 +352,8 @@ De nuevo, vamos a implementar este código en su proyecto Xcode.
 
 
 1. En la interfaz de usuario de Assurance, busque **[!UICONTROL hitReceived]** eventos de la **[!UICONTROL com.adobe.edge.konductor]** proveedor.
-1. Seleccione el evento y revise los datos XDM en la **[!UICONTROL messages]** objeto.
+1. Seleccione el evento y revise los datos XDM en la **[!UICONTROL messages]** objeto. Como alternativa, puede utilizar ![Copiar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL Copiar evento sin procesar]** y utilice un editor de texto o código de su preferencia para pegar e inspeccionar el evento.
+
    ![validación de recopilación de datos](assets/datacollection-validation.png)
 
 
@@ -374,7 +372,7 @@ Ahora debe tener todas las herramientas para empezar a añadir recopilación de 
 
 ## Envío de eventos a Analytics y Platform
 
-Ahora que ha recopilado los eventos y los ha enviado a Platform Edge Network, se envían a las aplicaciones y servicios configurados en su [secuencia de datos](create-datastream.md). En lecciones posteriores, puede asignar estos datos a [Adobe Analytics](analytics.md) y [Adobe Experience Platform](platform.md).
+Ahora que ha recopilado los eventos y los ha enviado a Platform Edge Network, se envían a las aplicaciones y servicios configurados en su [secuencia de datos](create-datastream.md). En lecciones posteriores, puede asignar estos datos a [Adobe Analytics](analytics.md), [Adobe Experience Platform](platform.md) y otras soluciones de Adobe Experience Cloud como [Adobe Target](target.md) y Adobe Journey Optimizer.
 
 >[!SUCCESS]
 >

@@ -5,9 +5,10 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1546'
+source-wordcount: '1563'
 ht-degree: 4%
 
 ---
@@ -32,7 +33,7 @@ Antes de enviar mensajes en la aplicación con Journey Optimizer, debe asegurars
 * La aplicación se ha creado y ejecutado correctamente con los SDK instalados y configurados.
 * Configure la aplicación para Adobe Experience Platform.
 * Acceso a Journey Optimizer y permisos suficientes, tal como se describe [aquí](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). Además, necesita permisos suficientes para las siguientes funciones de Journey Optimizer.
-   * Administrar campañas.
+   * Administración de campañas.
 * Cuenta de desarrollador de Apple de pago con acceso suficiente para crear certificados, identificadores y claves.
 * Dispositivo o simulador físico de iOS para realizar pruebas.
 
@@ -136,9 +137,7 @@ Como se ha explicado en lecciones anteriores, la instalación de una extensión 
 
 ## Validar la configuración con Assurance
 
-1. Revise la [instrucciones de configuración](assurance.md) sección.
-1. Instale la aplicación en su dispositivo físico o en el simulador.
-1. Inicie la aplicación mediante la URL generada por Assurance.
+1. Revise la [instrucciones de configuración](assurance.md#connecting-to-a-session) para conectar el simulador o dispositivo a Assurance.
 1. En la IU de Assurance, seleccione **[!UICONTROL Configurar]**.
    ![configurar clic](assets/push-validate-config.png)
 1. Seleccione el ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) botón situado junto a **[!UICONTROL Mensajería en la aplicación]**.
@@ -159,7 +158,8 @@ Para crear su propio mensaje en la aplicación, debe definir una campaña en Jou
 * eventos del ciclo vital de la aplicación, como inicio, instalación, actualización, cierre o bloqueo,
 * eventos de geolocalización, como entrar o salir de un punto de interés.
 
-En este tutorial, va a utilizar las API principales genéricas e independientes de la extensión de Mobile (consulte [API genéricas principales de Mobile](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis)) para facilitar el seguimiento de eventos de pantallas de usuario, acciones y datos PII. Los eventos generados por estas API se publican en el centro de eventos del SDK y las extensiones los pueden utilizar. El centro de eventos del SDK proporciona la estructura de datos principal vinculada a todas las extensiones del SDK móvil de AEP, y mantiene una lista de extensiones registradas y módulos internos, una lista de detectores de eventos registrados y una base de datos de estado compartido.
+En este tutorial, va a utilizar las API principales genéricas e independientes de la extensión de Mobile (consulte [API genéricas principales de Mobile](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis)) para facilitar el seguimiento de eventos de pantallas de usuario, acciones y datos PII. Los eventos generados por estas API se publican en el centro de eventos del SDK y las extensiones los pueden utilizar. El centro de eventos del SDK proporciona la estructura de datos principal vinculada a todas las extensiones del SDK de la plataforma móvil y mantiene una lista de extensiones registradas y módulos internos, una lista de detectores de eventos registrados y una base de datos de estado compartida.
+
 El centro de eventos del SDK publica y recibe datos de eventos de extensiones registradas para simplificar las integraciones con soluciones de Adobe y de terceros. Por ejemplo, cuando se instala la extensión Optimize, todas las solicitudes e interacciones con el motor de ofertas de Journey Optimizer - Gestión de decisiones se gestionan mediante el centro de eventos.
 
 1. En la IU de Journey Optimizer, seleccione **[!UICONTROL Campañas]** desde el carril izquierdo.
@@ -219,7 +219,7 @@ Dispone de todos los ingredientes para enviar un mensaje en la aplicación. Lo q
 
 ## Validar con la aplicación
 
-1. Abra la aplicación en un dispositivo o en el simulador.
+1. Vuelva a compilar y ejecute la aplicación en el simulador o en un dispositivo físico desde Xcode mediante ![Reproducir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
 1. Vaya a la **[!UICONTROL Configuración]** pestaña.
 
@@ -232,6 +232,7 @@ Dispone de todos los ingredientes para enviar un mensaje en la aplicación. Lo q
 
 Puede validar los mensajes en la aplicación en la interfaz de usuario de Assurance.
 
+1. Revise la [instrucciones de configuración](assurance.md#connecting-to-a-session) para conectar el simulador o dispositivo a Assurance.
 1. Seleccionar **[!UICONTROL Mensajería en la aplicación]**.
 1. Seleccionar **[!UICONTROL Lista de eventos]**.
 1. Seleccione una **[!UICONTROL Mostrar mensaje]** entrada.

@@ -5,17 +5,17 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: 87546baa-2d8a-4cce-b531-bec3782d2e90
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1769'
+source-wordcount: '1921'
 ht-degree: 3%
 
 ---
 
+# Optimización y personalización con Adobe Target
 
-# Realizar pruebas A/B
-
-Obtenga información sobre cómo realizar pruebas A/B en sus aplicaciones móviles con el SDK móvil de Platform y Adobe Target.
+Obtenga información sobre cómo optimizar y personalizar las experiencias en sus aplicaciones móviles con el SDK móvil de Platform y Adobe Target.
 
 Target proporciona todo lo que debe adaptar y personalizar las experiencias de los clientes. Target le ayuda a maximizar los ingresos de sus sitios web y móviles, aplicaciones, medios sociales y otros canales digitales. Target puede realizar pruebas A/B y multivariadas, recomendar productos y contenido, segmentar contenido, personalizar automáticamente el contenido con IA y mucho más. Esta lección se centra en la funcionalidad de prueba A/B de Target.  Consulte la [Información general sobre las pruebas A/B](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=en) para obtener más información.
 
@@ -36,7 +36,7 @@ Antes de poder realizar pruebas A/B con Target, debe asegurarse de que las confi
 
 ## Objetivos de aprendizaje
 
-En esta lección, debe
+En esta lección, deberá hacer lo siguiente:
 
 * Actualice la secuencia de datos para la integración con Target.
 * Actualice la propiedad de etiquetas con la extensión Journey Optimizer - Decisioning.
@@ -56,7 +56,7 @@ En esta lección, debe
 
 ### Actualizar configuración de secuencia de datos
 
-### Adobe Target
+#### Adobe Target
 
 Para garantizar que los datos enviados desde su aplicación móvil a Experience Platform Edge Network se reenvíen a Adobe Target, debe actualizar la configuración de su flujo de datos.
 
@@ -66,6 +66,10 @@ Para garantizar que los datos enviados desde su aplicación móvil a Experience 
 
    Puede encontrar sus propiedades en la interfaz de usuario de Target, en **[!UICONTROL Administration]** > **[!UICONTROL Propiedades]**. Seleccionar ![Código](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) para mostrar el token de propiedad de la propiedad que desea utilizar. El token de propiedad tiene un formato similar a `"at_property": "xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"`; sólo debe introducir el valor `xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx`.
 
+   De forma opcional, puede especificar un ID de entorno de destino. Target utiliza entornos para organizar sus sitios y entornos de preproducción para facilitar la administración y la creación de informes separados. Los entornos preestablecidos incluyen Producción, Ensayo y Desarrollo. Consulte [Entornos](https://experienceleague.adobe.com/docs/target/using/administer/environments.html?lang=en) y [ID de entorno de destino](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=en#target-environment-id) para obtener más información.
+
+   De forma opcional, puede especificar un área de nombres de ID de terceros de Target para admitir la sincronización de perfiles en un área de nombres de identidad (por ejemplo, ID de CRM). Consulte [Área de nombres de ID de terceros de Target](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=en#target-third-party-id-namespace) para obtener más información.
+
 1. Seleccione **[!UICONTROL Guardar]**.
 
    ![Añadir Target al conjunto de datos](assets/edge-datastream-target.png)
@@ -73,7 +77,7 @@ Para garantizar que los datos enviados desde su aplicación móvil a Experience 
 
 #### Adobe Journey Optimizer
 
-Para garantizar que los datos enviados desde su aplicación móvil a la red perimetral se reenvíen a Journey Optimizer - Gestión de decisiones, actualice la configuración de Experience Edge
+Para garantizar que los datos enviados desde su aplicación móvil a la red perimetral se reenvíen a Journey Optimizer - Gestión de decisiones, actualice la configuración de la secuencia de datos.
 
 1. En la IU de recopilación de datos, seleccione **[!UICONTROL Datastreams]** y seleccione la secuencia de datos, por ejemplo **[!DNL Luma Mobile App]**.
 1. Seleccionar ![Más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) para **[!UICONTROL Experience Platform]** y seleccione ![Editar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Editar]** en el menú contextual.
@@ -214,6 +218,7 @@ Como se ha explicado en lecciones anteriores, la instalación de una extensión 
 1. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!DNL MobileSDK]** en el navegador del proyecto Xcode. Busque el ` func updatePropositionAT(ecid: String, location: String) async` función. Añada el siguiente código:
 
    ```swift
+   // set up the XDM dictionary, define decision scope and call update proposition API
    Task {
        let ecid = ["ECID" : ["id" : ecid, "primary" : true] as [String : Any]]
        let identityMap = ["identityMap" : ecid]
@@ -229,7 +234,7 @@ Como se ha explicado en lecciones anteriores, la instalación de una extensión 
    * configura un diccionario XDM `xdmData`, que contiene el ECID para identificar el perfil para el que debe presentar la prueba A/B, y
    * define un `decisionScope`, una matriz de ubicaciones sobre dónde presentar la prueba A/B.
 
-   A continuación, la función llama a dos API: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  y [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). Estas funciones borran todas las propuestas almacenadas en caché y actualizan las propuestas de este perfil.
+   A continuación, la función llama a dos API: [`Optimize.clearCachedPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#clearpropositions) y [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). Estas funciones borran todas las propuestas almacenadas en caché y actualizan las propuestas de este perfil. Una propuesta en este contexto es la experiencia (oferta) seleccionada en la actividad de Target (su prueba A/B) y que ha definido en [Creación de una prueba A/B](#create-an-ab-test).
 
 1. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Personalization]** > **[!DNL TargetOffersView]** en el navegador del proyecto Xcode. Busque el `func onPropositionsUpdateAT(location: String) async {` e inspeccione el código de esta función. La parte más importante de esta función es la  [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) Llamada de API, que:
    * recupera las propuestas del perfil actual en función del ámbito de decisión (que es la ubicación definida en la prueba A/B),
@@ -258,11 +263,9 @@ Puede enviar parámetros de Target adicionales (como parámetros de mbox, perfil
 
 ## Validación mediante la aplicación
 
-1. Abra la aplicación en un dispositivo o en el simulador.
+1. Vuelva a compilar y ejecute la aplicación en el simulador o en un dispositivo físico desde Xcode mediante ![Reproducir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
 1. Vaya a la **[!UICONTROL Personalización]** pestaña.
-
-1. Seleccionar **[!UICONTROL Personalización de Edge]**.
 
 1. Desplácese hacia abajo hasta la parte inferior y verá una de las dos ofertas definidas en la prueba A/B en la **[!UICONTROL DESTINO]** mosaico.
 
@@ -273,7 +276,7 @@ Puede enviar parámetros de Target adicionales (como parámetros de mbox, perfil
 
 Para validar la prueba A/B en Assurance:
 
-1. Vaya a la interfaz de usuario de Assurance.
+1. Revise la [instrucciones de configuración](assurance.md#connecting-to-a-session) para conectar el simulador o dispositivo a Assurance.
 1. Seleccionar **[!UICONTROL Configurar]** en el carril izquierdo y seleccione ![Añadir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) junto a **[!UICONTROL Revisar y simular]** debajo **[!UICONTROL ADOBE JOURNEY OPTIMIZER DECISIONING]**.
 1. Seleccione **[!UICONTROL Guardar]**.
 1. Seleccionar **[!UICONTROL Revisar y simular]** en el carril izquierdo. Tanto la configuración del flujo de datos como la configuración del SDK se validan en la aplicación.

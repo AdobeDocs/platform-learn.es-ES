@@ -3,9 +3,10 @@ title: Creación de un esquema XDM
 description: Obtenga información sobre cómo crear un esquema XDM para eventos de aplicaciones móviles.
 feature: Mobile SDK,Schemas
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+exl-id: 66a3c062-93e5-4183-8fb4-1f72cacb6552
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1482'
+source-wordcount: '1506'
 ht-degree: 8%
 
 ---
@@ -96,9 +97,22 @@ Para fines de aprendizaje, utiliza grupos de campos creados previamente y person
 
 1. Seleccionar **[!UICONTROL Crear esquema]**.
 
-1. Seleccionar **[!UICONTROL ExperienceEvent de XDM]** en el menú.
+1. En el **[!UICONTROL Seleccione una clase]** paso del **[!UICONTROL Crear esquema]** asistente, seleccione **[!UICONTROL Evento de experiencia]** debajo **[!UICONTROL Seleccione una clase base para este esquema]**.
 
-   ![Selección del ExperienceEvent de la lista desplegable](assets/schema-create.png)
+1. Seleccione **[!UICONTROL Siguiente]**.
+
+   ![Clase base del Asistente para esquemas](assets/schema-wizard-base-class.png)
+
+1. En el **[!UICONTROL Nombre y revisión]** paso del **[!UICONTROL Crear esquema]** asistente, introduzca un **[!UICONTROL Nombre para mostrar del esquema]**, por ejemplo `Luma Mobile Event Schema` y una [!UICONTROL Descripción], por ejemplo `Schema for Luma mobile app experience events`.
+
+   >[!NOTE]
+   >
+   >Si va a seguir este tutorial con varias personas en una sola zona protegida o utiliza una cuenta compartida, considere anexar o anteponer una identificación como parte de las convenciones de nomenclatura. Por ejemplo, en lugar de `Luma Mobile App Event Schema`, utilice `Luma Mobile App Event Schema - Joe Smith`. Consulte también la nota en [Información general](overview.md).
+
+1. Seleccionar **[!UICONTROL Finalizar]** para finalizar el asistente.
+
+   ![Nombre y revisión del esquema](assets/schema-wizard-name-and-review.png)
+
 
 1. Seleccionar ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Añadir** junto a **[!UICONTROL Grupos de campos]**.
 
@@ -116,16 +130,7 @@ Para fines de aprendizaje, utiliza grupos de campos creados previamente y person
 
    Volverá a la pantalla de composición del esquema principal, donde podrá ver todos los campos disponibles.
 
-1. Asigne un nombre al esquema seleccionando **[!UICONTROL Esquema sin título]** desde el **[!UICONTROL Composición]** panel (debajo) **[!UICONTROL Esquema]**) y proporciona un **[!UICONTROL Nombre para mostrar]** &amp; **[!UICONTROL Descripción]**, por ejemplo `Luma Mobile App Event Schema` y `Schema for Luma mobile app experience events.`
-
-   >[!NOTE]
-   >
-   >Si va a seguir este tutorial con varias personas en una sola zona protegida o utiliza una cuenta compartida, considere anexar o anteponer una identificación como parte de las convenciones de nomenclatura. Por ejemplo, en lugar de `Luma Mobile App Event Schema`, utilice `Luma Mobile App Event Schema - Joe Smith`. Consulte también la nota en [Información general](overview.md).
-
-
 1. Seleccione **[!UICONTROL Guardar]**.
-
-   ![Selección de aplicar](assets/schema-name-save.png)
 
 >[!NOTE]
 >

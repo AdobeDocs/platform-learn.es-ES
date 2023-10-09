@@ -2,9 +2,10 @@
 title: Recopilación de datos de perfil
 description: Obtenga información sobre cómo recopilar datos de perfil en una aplicación móvil.
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '597'
 ht-degree: 1%
 
 ---
@@ -64,7 +65,7 @@ Sería útil que la segmentación o personalización en la aplicación supiera r
 
    ```swift
    // Update attributes
-   MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
+   MobileSDK.shared.updateUserAttribute(attributeName: "isPaidUser", attributeValue: "yes")
    ```
 
 
@@ -95,9 +96,7 @@ Se puede encontrar documentación adicional [aquí](https://developer.adobe.com/
 
 ## Validar con Assurance
 
-1. Revise la [instrucciones de configuración](assurance.md) sección.
-1. Instale la aplicación.
-1. Inicie la aplicación mediante la URL generada por Assurance.
+1. Revise la [instrucciones de configuración](assurance.md#connecting-to-a-session) para conectar el simulador o dispositivo a Assurance.
 1. Ejecute la aplicación para iniciar sesión e interactuar con un producto.
 
    1. Mueva el icono Garantía a la izquierda.
@@ -132,4 +131,4 @@ Se puede encontrar documentación adicional [aquí](https://developer.adobe.com/
 >
 >Ahora ha configurado la aplicación para actualizar los atributos de los perfiles de la red perimetral y (cuando está configurada) con Adobe Experience Platform.<br/>Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Siguiente: **[Uso de servicios de geolocalización](places.md)**
+Siguiente: **[Usar lugares](places.md)**

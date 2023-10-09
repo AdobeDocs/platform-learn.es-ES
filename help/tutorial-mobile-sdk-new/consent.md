@@ -3,10 +3,11 @@ title: Implementación del consentimiento
 description: Obtenga información sobre cómo implementar el consentimiento en una aplicación móvil.
 feature: Mobile SDK,Consent
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+exl-id: 83f240ea-ea18-4986-9e89-5110a56167ce
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 2%
+source-wordcount: '558'
+ht-degree: 1%
 
 ---
 
@@ -32,9 +33,9 @@ En esta lección, deberá hacer lo siguiente:
 
 Si ha seguido el tutorial desde el principio, puede recordar que ha establecido el consentimiento predeterminado en la extensión de consentimiento en **[!UICONTROL Pendiente: eventos de cola que se producen antes de que el usuario proporcione preferencias de consentimiento.]**
 
-Para empezar a recopilar datos, debe obtener el consentimiento del usuario. En este tutorial, obtiene el consentimiento del usuario simplemente pidiéndolo con una alerta. En una aplicación real, le recomendamos que consulte las prácticas recomendadas de consentimiento para su región.
+Para empezar a recopilar datos, debe obtener el consentimiento del usuario. En una aplicación real, le recomendamos que consulte las prácticas recomendadas de consentimiento para su región. En este tutorial, obtiene el consentimiento del usuario simplemente pidiéndolo con una alerta:
 
-1. Solo desea preguntar al usuario una vez. Por lo tanto, desea combinar el consentimiento del SDK móvil con las autorizaciones necesarias para el seguimiento mediante el de Apple [Marco de transparencia de seguimiento de aplicaciones](https://developer.apple.com/documentation/apptrackingtransparency). En esta aplicación, se da por hecho que, cuando el usuario autoriza el seguimiento, también consiente la recopilación de eventos.
+1. Solo desea solicitar el consentimiento al usuario una vez. Por lo tanto, desea combinar el consentimiento del SDK móvil con las autorizaciones necesarias para el seguimiento mediante el de Apple [Marco de transparencia de seguimiento de aplicaciones](https://developer.apple.com/documentation/apptrackingtransparency). En esta aplicación, se da por hecho que, cuando el usuario autoriza el seguimiento, también consiente la recopilación de eventos.
 
 1. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** en el navegador del proyecto Xcode.
 
@@ -95,9 +96,7 @@ En el ejemplo anterior, simplemente está registrando el estado de consentimient
 
 ## Validar con Assurance
 
-1. Revise la [Assurance](assurance.md) lección.
-1. Instale la aplicación.
-1. Inicie la aplicación mediante la URL generada por Assurance.
+1. Revise la [instrucciones de configuración](assurance.md#connecting-to-a-session) para conectar el simulador o dispositivo a Assurance.
 1. Si agregó el código anterior correctamente, se le pedirá que proporcione consentimiento.
 
    Seleccionar **[!UICONTROL Continuar...]** y luego seleccione **[!UICONTROL Permitir]**.
@@ -107,6 +106,17 @@ En el ejemplo anterior, simplemente está registrando el estado de consentimient
 
 1. Debería ver una **[!UICONTROL Obtener respuesta de consentimientos]** en la interfaz de usuario de Assurance.
    ![validación del consentimiento](assets/consent-update.png)
+
+
+## Restablecer consentimiento
+
+Si desea restablecer el consentimiento:
+
+1. Ir a **[!UICONTROL Configuración]** en la aplicación.
+
+1. Seleccionar **[!UICONTROL Configuración de aplicación...]** Se abrirá la configuración de la aplicación de Luma en la aplicación de configuración de iOS.
+
+1. Alternar **[!UICONTROL Permitir seguimiento]** apagada.
 
 
 

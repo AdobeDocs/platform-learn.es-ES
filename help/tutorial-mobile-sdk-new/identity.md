@@ -3,9 +3,10 @@ title: Recopilación de datos de identidad
 description: Obtenga información sobre cómo recopilar datos de identidad en una aplicación móvil.
 feature: Mobile SDK,Identities
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: e6ec9a4f-3163-47fd-8d5c-6e640af3b4ba
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '860'
 ht-degree: 5%
 
 ---
@@ -103,7 +104,7 @@ Desea actualizar la identidad estándar (correo electrónico) y la identidad per
 1. Vaya a **[!DNL Luma]** **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]** en el navegador del proyecto Xcode y busque el código que se ejecutará al seleccionar el **[!UICONTROL Iniciar sesión]** botón. Añada el siguiente código:
 
    ```swift
-   // Update identities
+   // Call updateIdentities
    MobileSDK.shared.updateIdentities(emailAddress: currentEmailId, crmId: currentCRMId)                             
    ```
 
@@ -117,7 +118,7 @@ Desea actualizar la identidad estándar (correo electrónico) y la identidad per
 
 Puede usar el complemento [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API para eliminar la identidad del mapa de identidad del lado del cliente almacenado. La extensión de identidad deja de enviar el identificador a la red perimetral. El uso de esta API no elimina el identificador del gráfico de identidades del lado del servidor. Consulte [Visualización de gráficos de identidad](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en) para obtener más información sobre los gráficos de identidad.
 
-1. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL General]** > **[!UICONTROL MobileSDK]** en el navegador del proyecto Xcode y añada el siguiente código a `func removeIdentities(emailAddress: String, crmId: String)` función:
+1. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** en el navegador del proyecto Xcode y añada el siguiente código a `func removeIdentities(emailAddress: String, crmId: String)` función:
 
    ```swift
    // Remove identities and reset email and CRM Id to their defaults
@@ -137,9 +138,9 @@ Puede usar el complemento [`Identity.removeIdentity`](https://developer.adobe.co
 
 ## Validar con Assurance
 
-1. Revise la [instrucciones de configuración](assurance.md) y conecte el simulador o dispositivo a Assurance.
+1. Revise la [instrucciones de configuración](assurance.md#connecting-to-a-session) para conectar el simulador o dispositivo a Assurance.
 1. En la aplicación de Luma.
-   1. Seleccione el **[!UICONTROL Inicio]** pestaña.
+   1. Seleccione el **[!UICONTROL Inicio]** y mueva el icono de Assurance a la izquierda.
    1. Seleccione el <img src="assets/login.png" width="15" /> de la parte superior derecha.
 
       <img src="./assets/identity1.png" width="300">
@@ -165,6 +166,10 @@ Una vez completados los pasos en la [lección de Experience Platform](platform.m
 1. Verá el **[!UICONTROL Identidades]** enumerados.
 
    ![validar gráfico de identidad](assets/identity-validate-graph.png)
+
+>[!INFO]
+>
+>No hay código en la aplicación para restablecer el ECID, lo que significa que solo puede restablecer el ECID (y crear de forma eficaz un nuevo perfil con un nuevo ECID en el dispositivo) mediante una desinstalación y una reinstalación de la aplicación. Para implementar el restablecimiento de identificadores, consulte la [`Identity.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities) y [`MobileCore.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities) Llamadas de API. Sin embargo, tenga en cuenta que cuando utilice un identificador de notificaciones push (consulte [Envío de notificaciones push](journey-optimizer-push.md)), ese identificador se convierte en otro identificador de perfil &quot;adhesivo&quot; en el dispositivo.
 
 
 >[!SUCCESS]
