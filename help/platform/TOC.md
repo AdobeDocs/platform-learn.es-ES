@@ -5,7 +5,7 @@ user-guide-description: Descubra los muchos componentes de Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 6564012147237b1ccd25e1507030f846c8564321
+source-git-commit: 3523a5b3af3b3efebaea593e723d8ca2a136986e
 workflow-type: tm+mt
 source-wordcount: '998'
 ht-degree: 35%
@@ -38,8 +38,8 @@ ht-degree: 35%
 + [Importación de datos de muestra en Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Administración {#admin}
    + [Uso de alertas](/help/platform/admin/use-alerts.md)
-   + [Usar zonas protegidas](/help/platform/admin/copy-objects-between-sandboxes.md)
-   + [Copia de objetos entre zonas protegidas](/help/platform/admin/use-sandboxes.md)
+   + [Usar zonas protegidas](/help/platform/admin/use-sandboxes.md)
+   + [Copia de objetos entre zonas protegidas](/help/platform/admin/copy-objects-between-sandboxes.md)
    + [Configuración del control de acceso basado en atributos](/help/platform/admin/configure-attribute-based-access-control.md)
    + [Admin Console](/help/platform/admin/admin-console.md)
    + [Administración de perfiles de producto](/help/platform/admin/managing-product-profiles.md)
