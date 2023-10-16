@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo implementar el consentimiento en u
 feature: Mobile SDK,Consent
 hide: true
 exl-id: 83f240ea-ea18-4986-9e89-5110a56167ce
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 1%
+source-wordcount: '542'
+ht-degree: 2%
 
 ---
 
@@ -96,28 +96,10 @@ En el ejemplo anterior, simplemente está registrando el estado de consentimient
 
 ## Validar con Assurance
 
+1. Elimine la aplicación de su dispositivo o simulador, ya que queremos restablecer e inicializar correctamente el seguimiento y el consentimiento.
 1. Revise la [instrucciones de configuración](assurance.md#connecting-to-a-session) para conectar el simulador o dispositivo a Assurance.
-1. Si agregó el código anterior correctamente, se le pedirá que proporcione consentimiento.
-
-   Seleccionar **[!UICONTROL Continuar...]** y luego seleccione **[!UICONTROL Permitir]**.
-
-   <img src="./assets/consent-update-1.png" width="300" /> 
-   <img src="./assets/consent-update-2.png" width="300" />
-
-1. Debería ver una **[!UICONTROL Obtener respuesta de consentimientos]** en la interfaz de usuario de Assurance.
+1. Al mover en la aplicación desde **[!UICONTROL Inicio]** pantalla para **[!UICONTROL Productos]** pantalla y volver a **[!UICONTROL Inicio]** pantalla, debería ver una **[!UICONTROL Obtener respuesta de consentimientos]** en la interfaz de usuario de Assurance.
    ![validación del consentimiento](assets/consent-update.png)
-
-
-## Restablecer consentimiento
-
-Si desea restablecer el consentimiento:
-
-1. Ir a **[!UICONTROL Configuración]** en la aplicación.
-
-1. Seleccionar **[!UICONTROL Configuración de aplicación...]** Se abrirá la configuración de la aplicación de Luma en la aplicación de configuración de iOS.
-
-1. Alternar **[!UICONTROL Permitir seguimiento]** apagada.
-
 
 
 >[!SUCCESS]

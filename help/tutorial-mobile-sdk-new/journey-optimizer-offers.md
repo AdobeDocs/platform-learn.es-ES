@@ -6,7 +6,7 @@ feature-set: Journey Optimizer
 feature: Offers
 hide: true
 exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
 source-wordcount: '2618'
 ht-degree: 3%
@@ -296,7 +296,9 @@ Como se ha explicado en lecciones anteriores, la instalación de una extensión 
 1. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** en el navegador del proyecto Xcode.
 1. Asegurar `AEPOptimize` forma parte de su lista de importaciones.
 
-   `import AEPOptimize`
+   ```swift
+   import AEPOptimize
+   ```
 
 1. Asegurar `Optimize.self` forma parte de la matriz de extensiones que está registrando.
 

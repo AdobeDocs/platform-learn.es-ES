@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Push
 hide: true
 exl-id: 37d5b52e-c0d0-4ca1-9629-5c3dd2b2a5d5
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '2607'
+source-wordcount: '2734'
 ht-degree: 3%
 
 ---
@@ -155,6 +155,26 @@ Para que la aplicación funcione con Journey Optimizer, debe actualizar la propi
 1. Debería ver la notificación push de prueba en la aplicación.
 
    <img src="assets/luma-app-push.png" width="300" />
+
+
+## Firmar
+
+La firma de la aplicación de Luma solo es necesaria para [Creación y envío de notificaciones push](journey-optimizer-push.md) y el [Creación y envío de mensajes en la aplicación](journey-optimizer-inapp.md) lecciones de este tutorial. Estas lecciones requieren un perfil de aprovisionamiento de Apple que **requiere una cuenta de desarrollador de Apple de pago**.
+
+Para actualizar la firma de la aplicación:
+
+1. Vaya a la aplicación en Xcode.
+1. Seleccionar **[!DNL Luma]** en el navegador del proyecto.
+1. Seleccione el **[!DNL Luma]** objetivo.
+1. Seleccione el **Firma y capacidades** pestaña.
+1. Configurar **[!UICONTROL Administrar firma automáticamente]**, **[!UICONTROL Equipo]**, y **[!UICONTROL Identificador de paquete]** o use los detalles específicos de aprovisionamiento de desarrollo de Apple.
+
+   >[!IMPORTANT]
+   >
+   >Asegúrese de utilizar un _único_ identificador de paquete y reemplace el `com.adobe.luma.tutorial.swiftui` identificador de paquete, ya que cada identificador de paquete debe ser único. Normalmente, se utiliza un formato DNS inverso para cadenas de ID de paquete, como `com.organization.brand.uniqueidentifier`. La versión final de este tutorial, por ejemplo, utiliza `com.adobe.luma.tutorial.swiftui`.
+
+
+   ![Funcionalidades de firma de Xcode](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
 
 
 ## Añadir funciones de notificaciones push a la aplicación

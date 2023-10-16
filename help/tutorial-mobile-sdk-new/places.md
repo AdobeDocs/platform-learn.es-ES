@@ -3,9 +3,9 @@ title: Usar lugares
 description: Aprenda a utilizar el servicio de geolocalización de Places en su aplicación móvil.
 hide: true
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '1666'
+source-wordcount: '1691'
 ht-degree: 3%
 
 ---
@@ -239,7 +239,10 @@ Para validar la configuración en Assurance:
 1. Si no está disponible en el carril izquierdo, seleccione **[!UICONTROL Configurar]** en el carril izquierdo y seleccione ![Añadir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) junto a **[!UICONTROL Eventos]** y **[!UICONTROL Mapa y simulación]** debajo **[!UICONTROL SERVICIO DE PLACES]**.
 1. Seleccione **[!UICONTROL Guardar]**.
 1. Seleccionar **[!UICONTROL Mapa y simulación]** en el carril izquierdo.
-1. Seleccione uno de los puntos de interés definidos en el servicio Places y, en la ventana emergente, seleccione ![Engranaje](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL Simular evento de entrada]**.
+1. Mueva el mapa a una ubicación de uno de sus puntos de interés.
+1. Seleccionar ![Engranaje](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) Simular puntos de interés de carga.  Su punto de interés se identifica con un círculo y un alfiler.
+1. Seleccione su punto de interés.
+1. En la ventana emergente, seleccione ![Engranaje](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL Simular evento de entrada]**.
    ![Simular evento de entrada](assets/places-simulate.png)
 1. Seleccionar **[!UICONTROL Eventos]** desde el carril izquierdo, y debería ver los eventos que ha simulado.
    ![Validación de AJO Decisioning](assets/places-events.png)
@@ -258,7 +261,9 @@ Como se ha explicado en lecciones anteriores, la instalación de una extensión 
 1. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]** en el navegador del proyecto Xcode.
 1. Asegurar `AEPPlaces` forma parte de su lista de importaciones.
 
-   `import AEPPlaces`
+   ```swift
+   import AEPPlaces
+   ```
 
 1. Asegurar `Places.self` forma parte de la matriz de extensiones que está registrando.
 

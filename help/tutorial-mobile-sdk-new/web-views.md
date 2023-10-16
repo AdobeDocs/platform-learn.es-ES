@@ -3,13 +3,13 @@ title: Administrar vistas web
 description: Obtenga información sobre cómo gestionar la recopilación de datos con WebViews en una aplicación móvil.
 jira: KT-6987
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+exl-id: 0c8818f7-39d3-496e-a835-2d85d50e50d6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '490'
 ht-degree: 1%
 
 ---
-
 
 # Administrar vistas web
 
@@ -67,6 +67,7 @@ Puede obtener más información sobre `Identity.getUrlVariables` API en [Guía d
 
 Para ejecutar el código:
 
+1. Revise la [instrucciones de configuración](assurance.md#connecting-to-a-session) para conectar el simulador o dispositivo a Assurance.
 1. Vaya a la **[!UICONTROL Configuración]** en la aplicación
 1. Pulse el botón **[!DNL View...]** para mostrar el **[!DNL Terms of Use]**.
 
