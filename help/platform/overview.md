@@ -4,16 +4,16 @@ description: Más información sobre Adobe Experience Platform
 doc-type: overview-page
 mini-toc-levels: 1
 exl-id: 5f84b0b4-b100-45dc-bcac-2dcc127c87f3
-source-git-commit: dcd7219ad6073727f66a8d1f30e67ce98f1b8a73
+source-git-commit: 14ec4ea743d1f323d29f9ab84506355d25c91452
 workflow-type: tm+mt
 source-wordcount: '164'
-ht-degree: 21%
+ht-degree: 33%
 
 ---
 
 # Tutoriales de Adobe Experience Platform
 
-Adobe Experience Platform es el sistema más potente, flexible y abierto del mercado para crear y administrar soluciones completas que mejoren la experiencia del cliente. Experience Platform les permite a las organizaciones centralizar y estandarizar los datos y el contenido de los clientes de cualquier sistema y aplicar la ciencia de datos y el aprendizaje automático para mejorar en gran medida el diseño y el envío de las experiencias personalizadas enriquecidas. Utilice estos vídeos y tutoriales para conocer los muchos componentes de Experience Platform.
+Adobe Experience Platform es el sistema más potente, flexible y abierto del mercado para crear y administrar soluciones completas que mejoren la experiencia del cliente. Experience Platform les permite a las organizaciones centralizar y estandarizar los datos y el contenido de los clientes de cualquier sistema y aplicar la ciencia de datos y el aprendizaje automático para mejorar en gran medida el diseño y el envío de las experiencias personalizadas enriquecidas. Utilice estos vídeos y tutoriales para conocer los numerosos componentes de Experience Platform.
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
@@ -30,24 +30,24 @@ Adobe Experience Platform es el sistema más potente, flexible y abierto del mer
 <tr>
   <td>
     <a href="intro-to-platform/a-customer-experience-powered-by-experience-platform.md">
-      <img alt="Una experiencia del cliente basada en un vídeo del Experience Platform" src="assets/thumb_A-Customer-Experience.jpg" />
+      <img alt="Una experiencia del cliente basada en vídeo para Experience Platform" src="assets/thumb_A-Customer-Experience.jpg" />
     </a>
     <div>
       <a href="intro-to-platform/a-customer-experience-powered-by-experience-platform.md">
-    <strong>Una experiencia de cliente ofrecida por un Experience Platform</strong>
+    <strong>Una experiencia del cliente con tecnología de Experience Platform</strong>
     </a>
     </div>
     <p>
-    <em>Consulte cómo Platform puede utilizarse para impulsar una experiencia de cliente</em>
+    <em>Consulte cómo se puede utilizar Platform para potenciar la experiencia del cliente</em>
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html">
-      <img alt="imagen en miniatura para el tutorial "Introducción a los arquitectos de datos y a los ingenieros de datos"" src="assets/thumb_Getting_started.jpg" />
+    <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=es">
+      <img alt="imagen en miniatura para el tutorial Introducción a los arquitectos e ingenieros de datos" src="assets/thumb_Getting_started.jpg" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html">
-    <strong>Introducción para arquitectos de datos e ingenieros de datos</strong>
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=es">
+    <strong>Introducción a los arquitectos e ingenieros de datos</strong>
     </a>
     </div>
     <p>
@@ -56,7 +56,7 @@ Adobe Experience Platform es el sistema más potente, flexible y abierto del mer
   </td>
   <td>
     <a href="sources/overview.md">
-      <img alt="imagen en miniatura del vídeo "Explicación de los conectores de origen"" src="assets/thumb_Sources.png" />
+      <img alt="imagen en miniatura del vídeo &quot;Explicación de los conectores de origen&quot;" src="assets/thumb_Sources.png" />
     </a>
     <div>
       <a href="sources/overview.md">

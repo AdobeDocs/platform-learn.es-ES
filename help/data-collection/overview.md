@@ -3,9 +3,9 @@ title: Tutoriales de recopilación de datos
 description: Vídeos y tutoriales explicativos para convertirse en un usuario experto en la recopilación de datos
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 14ec4ea743d1f323d29f9ab84506355d25c91452
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '241'
 ht-degree: 40%
 
 ---
@@ -62,6 +62,19 @@ La recopilación de datos es la próxima generación de funcionalidades de admin
     </div>
     <p>
     <em>Uso de etiquetas para implementar el SDK de Platform Mobile</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html?lang=es" target="_blank">
+      <img alt="Migración de Target al SDK web" src="assets/thumb_targetWebSdk.jpg" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html?lang=es" target="_blank">
+    <strong>Migración de Adobe Target a SDK web</strong>
+    </a>
+    </div>
+    <p>
+    <em>Migración de at.js a SDK web</em>
     <p>
   </td>
 </tr>
