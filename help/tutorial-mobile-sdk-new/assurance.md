@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo implementar la extensión Assuranc
 feature: Mobile SDK,Assurance
 hide: true
 exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 68610d961e4825706a5f524652f7ec103c615ecf
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '1002'
 ht-degree: 7%
 
 ---
@@ -105,6 +105,11 @@ Assurance funciona abriendo una dirección URL, ya sea mediante explorador o có
 En Xcode:
 
 1. Cree o reconstruya y ejecute la aplicación en el simulador o en un dispositivo físico desde Xcode, utilizando ![Reproducir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
+
+   >[!TIP]
+   >
+   >De forma opcional, es posible que desee &quot;limpiar&quot; la compilación, especialmente cuando vea resultados inesperados. Para ello, seleccione **[!UICONTROL Limpiar carpeta de compilación...]** desde el Xcode **[!UICONTROL Product]** menú.
+
 
 1. En el **[!UICONTROL Permitir que &quot;Aplicación de Luma&quot; use su ubicación]** diálogo, seleccione **[!UICONTROL Permitir mientras se utiliza la aplicación]**.
 
