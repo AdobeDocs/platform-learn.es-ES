@@ -5,9 +5,9 @@ user-guide-description: Descubra los muchos componentes de Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 3523a5b3af3b3efebaea593e723d8ca2a136986e
+source-git-commit: 85e0c45336044091151a866d8838eae482fde84d
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1002'
 ht-degree: 35%
 
 ---
@@ -120,6 +120,7 @@ ht-degree: 35%
    + [Configuración del destino de Marketo](/help/platform/destinations/configure-the-marketo-destination.md)
    + [Configuración del almacenamiento en la nube basado en archivos o destinos de marketing por correo electrónico](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
    + [Configuración de un destino social](/help/platform/destinations/configure-a-social-destination.md)
+   + [Activar mediante destinos de LiveRamp](/help/platform/destinations/liveramp-destinations.md)
    + Adobe Target y personalización personalizada{#target}
       + [Personalización de próxima visita con Adobe Target](/help/platform/destinations/target/next-hit-personalization.md)
       + [Configuración del destino de Adobe Target](/help/platform/destinations/target/configure-the-target-destination.md)
