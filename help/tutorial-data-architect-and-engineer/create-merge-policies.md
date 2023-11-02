@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 915502e54365eedb09b12a92aa3b1af71f6de1f4
 workflow-type: tm+mt
 source-wordcount: '996'
 ht-degree: 1%
@@ -61,7 +61,7 @@ Cuando hay varios esquemas habilitados para el perfil, una variable [!UICONTROL 
 
 Tenga en cuenta que no hay ningún esquema de unión para la clase ExperienceEvent. Aunque los datos de ExperienceEvent siguen entrando en el perfil, ya que se basan en series temporales, cada evento incluye una marca de tiempo y un ID, y los conflictos no representan un problema.
 
-Ahora, ¿qué sucede si no le gusta esa política de combinación predeterminada? ¿Qué sucede si Luma decide que su sistema CRM debe ser la fuente de la verdad cuando hay un conflicto? Para ello, vamos a crear una política de combinación.
+Ahora, ¿qué sucede si no le gusta esa política de combinación predeterminada? ¿Qué sucede si Luma decide que su sistema de lealtad debe ser la fuente de la verdad cuando hay un conflicto? Para ello, vamos a crear una política de combinación.
 
 ## Creación de una política de combinación en la IU
 
