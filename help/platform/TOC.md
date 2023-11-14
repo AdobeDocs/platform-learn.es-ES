@@ -5,9 +5,9 @@ user-guide-description: Descubra los muchos componentes de Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 85e0c45336044091151a866d8838eae482fde84d
+source-git-commit: 650ae527c640ec62b21e4e0e9b66a6efc1c580a1
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1000'
 ht-degree: 35%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 35%
    + [Entre bastidores: una experiencia del cliente ofrecida por un Experience Platform](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
    + [Información general de Experience Platform](/help/platform/intro-to-platform/overview.md)
    + [Funcionalidades clave](/help/platform/intro-to-platform/key-capabilities.md)
-   + [Servicios inteligentes y de aplicaciones](/help/platform/intro-to-platform/application-and-intelligent-services.md)
+   + [Aplicaciones basadas en la plataforma](/help/platform/intro-to-platform/native-applications.md)
    + [Integraciones con aplicaciones Experience Cloud](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
    + [Casos de uso clave](/help/platform/intro-to-platform/key-use-cases.md)
    + [Arquitectura básica](/help/platform/intro-to-platform/basic-architecture.md)
