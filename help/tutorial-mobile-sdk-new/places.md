@@ -3,9 +3,9 @@ title: Usar lugares
 description: Aprenda a utilizar el servicio de geolocalización de Places en su aplicación móvil.
 hide: true
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1691'
+source-wordcount: '1692'
 ht-degree: 3%
 
 ---
@@ -54,7 +54,7 @@ Puede definir algunos puntos de interés en el servicio Places.
    ![Crear biblioteca](assets/places-create-library.png)
 1. Para cerrar el **[!UICONTROL Administrar bibliotecas]** diálogo, seleccione **[!UICONTROL Cerrar]**.
 1. Volver a entrar **[!UICONTROL Gestión de PDI]**, seleccione **[!UICONTROL Importar POI]**.
-1. Seleccionar **[!UICONTROL Inicio]** en t**[!UICONTROL Los lugares de importación]Cuadro de diálogo **.
+1. Seleccionar **[!UICONTROL Inicio]** en el **[!UICONTROL Lugares de importación]** diálogo.
 1. Seleccionar **[!DNL Luma]** de la lista de bibliotecas,
 1. Seleccione **[!UICONTROL Siguiente]**.
    ![Seleccionar biblioteca](assets/places-import-select-library.png)
@@ -172,7 +172,7 @@ A continuación, va a definir reglas para trabajar con estos elementos de datos.
       ![Acción Etiquetas](assets/tags-action-mobile-core.png)
 
 1. Seleccionar ![Añadir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) junto al **[!UICONTROL Mobile Core - Adjuntar datos]** acción.
-   1. Seleccionar **[!UICONTROL Adobe Experience Platform Edge Network]** desde el **[!UICONTROL Extensión]** lista y seleccione **[!UICONTROL Reenviar evento a Edge Network]**. Esta acción garantiza que el evento y los datos de carga útil adicionales se reenvíen a la red perimetral.
+   1. Seleccionar **[!UICONTROL Adobe Experience Platform Edge Network]** desde el **[!UICONTROL Extensión]** lista y seleccione **[!UICONTROL Reenviar evento a Edge Network]**. Esta acción garantiza que el evento y los datos de carga útil adicionales se reenvíen a Platform Edge Network.
    1. Seleccione **[!UICONTROL Conservar cambios]**.
 
 1. Para guardar la regla, seleccione **[!UICONTROL Guardar en biblioteca]**.
@@ -240,7 +240,7 @@ Para validar la configuración en Assurance:
 1. Seleccione **[!UICONTROL Guardar]**.
 1. Seleccionar **[!UICONTROL Mapa y simulación]** en el carril izquierdo.
 1. Mueva el mapa a una ubicación de uno de sus puntos de interés.
-1. Seleccionar ![Engranaje](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) Simular puntos de interés de carga.  Su punto de interés se identifica con un círculo y un alfiler.
+1. Seleccionar ![Engranaje](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) Simular puntos de interés de carga. Su punto de interés se identifica con un círculo y un alfiler.
 1. Seleccione su punto de interés.
 1. En la ventana emergente, seleccione ![Engranaje](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL Simular evento de entrada]**.
    ![Simular evento de entrada](assets/places-simulate.png)
@@ -283,7 +283,7 @@ Como se ha explicado en lecciones anteriores, la instalación de una extensión 
    ]
    ```
 
-1. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** en el navegador del proyecto Xcode y busque la variable `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` function.Add el siguiente código:
+1. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** en el navegador del proyecto Xcode y busque la variable `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` función. Añada el siguiente código:
 
    ```swift
    // Process geolocation event
@@ -344,6 +344,8 @@ Ha visto una implementación de la funcionalidad de su aplicación, impulsada pr
 
 >[!SUCCESS]
 >
->Ahora ha habilitado la aplicación para servicios de geolocalización mediante la extensión Places en el SDK de Experience Platform Mobile.<br/>Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Ahora ha habilitado la aplicación para servicios de geolocalización mediante la extensión Places en el SDK de Experience Platform Mobile.
+>
+>Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Siguiente: **[Asignación de datos a Adobe Analytics](analytics.md)**

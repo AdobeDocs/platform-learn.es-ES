@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo implementar la extensión Assuranc
 feature: Mobile SDK,Assurance
 hide: true
 exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
-source-git-commit: 68610d961e4825706a5f524652f7ec103c615ecf
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '985'
 ht-degree: 7%
 
 ---
@@ -53,7 +53,7 @@ Además de la [Instalación del SDK](install-sdks.md)Sin embargo, como ha comple
    }
    ```
 
-   Este código inicia una sesión de garantía cuando la aplicación se encuentra en segundo plano y abierta mediante un vínculo profundo.
+   Este código inicia una sesión de garantía cuando la aplicación se encuentra en segundo plano y se abre mediante un vínculo profundo.
 
 Puede encontrar más información [aquí](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
@@ -123,7 +123,7 @@ En Xcode:
 
    <img src="assets/tracking-continue.png" width="300">
 
-1. En el **[!UICONTROL Permita que &quot;Aplicación de Luma&quot; rastree su actividad en la aplicación y los sitios web de otras empresas]** diálogo, seleccione **[!UICONTROL Permitir]**.
+1. En el **[!UICONTROL Permitir que &quot;Aplicación de Luma&quot; rastree su actividad en las aplicaciones y sitios web de otras empresas]** diálogo, seleccione **[!UICONTROL Permitir]**.
 
    <img src="assets/tracking-allow.png" width="300">
 
@@ -141,7 +141,7 @@ En su explorador:
 
    Si utiliza un dispositivo físico:
 
-   * Seleccionar **[!UICONTROL Escanear código QR]**. Utilice la cámara en el dispositivo físico para escanear el código QR y pulse el enlace para abrir la aplicación.
+   * Seleccionar **[!UICONTROL Escanear código QR]**. Para abrir la aplicación, utilice la cámara del dispositivo físico para escanear el código QR y pulse el vínculo.
 
      ![código de control de calidad de garantía](assets/assurance-qr-code.png)
 
@@ -186,16 +186,16 @@ Para comprobar si su aplicación utiliza las extensiones más actualizadas:
 
    ![Configuración de versiones de extensión](assets/assurance-configure-extension-versions.png)
 
-1. Seleccionar ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL Versiones de extensión]**. Verá una descripción general de las últimas extensiones disponibles y de las extensiones utilizadas en su versión de la aplicación.
+1. Seleccionar ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL Versiones de extensión]** para ver una descripción general de las últimas extensiones disponibles y de las extensiones utilizadas en su versión de la aplicación.
 
    ![Versiones de extensión](assets/assurance-extension-versions.png)
 
-1. Para actualizar las versiones de la extensión (por ejemplo, **[!UICONTROL Mensajes]** y **[!UICONTROL Optimización]**), en Xcode, para las extensiones específicas que necesitan una actualización, seleccione el paquete (extensión) de **[!UICONTROL Dependencias del paquete]** (p. ej., **[!UICONTROL AEPMessaging]**) y en el menú contextual, seleccione **[!UICONTROL Actualizar paquete]**. Xcode actualizará las dependencias del paquete.
+1. Para actualizar las versiones de la extensión (por ejemplo, **[!UICONTROL Mensajes]** y **[!UICONTROL Optimización]**) seleccione el paquete (extensión) de **[!UICONTROL Dependencias del paquete]** (por ejemplo, **[!UICONTROL AEPMessaging]**) y en el menú contextual, seleccione **[!UICONTROL Actualizar paquete]**. Xcode actualizará las dependencias del paquete.
 
 
 >[!NOTE]
 >
->Cuando haya actualizado las extensiones (paquetes) en Xcode, debe cerrar y eliminar la sesión actual y repetir todos los pasos desde [Conexión a una sesión](#connecting-to-a-session) y [Verificar extensiones](#verify-extensions) para garantizar que Assurance informa correctamente de las extensiones correctas en una nueva sesión de Assurance.
+>Una vez que haya actualizado las extensiones (paquetes) en Xcode, cierre y elimine la sesión actual y repita todos los pasos de [Conexión a una sesión](#connecting-to-a-session) y [Verificar extensiones](#verify-extensions) para garantizar que Assurance informa correctamente de las extensiones correctas en una nueva sesión de Assurance.
 
 
 
@@ -203,7 +203,9 @@ Para comprobar si su aplicación utiliza las extensiones más actualizadas:
 
 >[!SUCCESS]
 >
->Ahora ha configurado la aplicación para que utilice Assurance durante el resto del tutorial.<br/>Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Ahora ha configurado la aplicación para que utilice Assurance durante el resto del tutorial.
+>
+>Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 
 Siguiente: **[Implementación del consentimiento](consent.md)**

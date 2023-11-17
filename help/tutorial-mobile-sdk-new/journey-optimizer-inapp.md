@@ -6,10 +6,10 @@ feature-set: Journey Optimizer
 feature: In App
 hide: true
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1690'
-ht-degree: 4%
+source-wordcount: '1546'
+ht-degree: 5%
 
 ---
 
@@ -32,9 +32,8 @@ Antes de enviar mensajes en la aplicación con Journey Optimizer, debe asegurars
 
 * La aplicación se ha creado y ejecutado correctamente con los SDK instalados y configurados.
 * Configure la aplicación para Adobe Experience Platform.
-* Acceso a Journey Optimizer y permisos suficientes, tal como se describe [aquí](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). Además, necesita permisos suficientes para las siguientes funciones de Journey Optimizer.
+* Acceso a Journey Optimizer y permisos suficientes, tal como se describe [aquí](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html). Además, necesita permisos suficientes para las siguientes funciones de Journey Optimizer.
    * Administración de campañas.
-* Cuenta de desarrollador de Apple de pago con acceso suficiente para crear certificados, identificadores y claves.
 * Dispositivo o simulador físico de iOS para realizar pruebas.
 
 
@@ -67,16 +66,19 @@ En esta lección, debe
 1. Introduzca el ID del paquete de la aplicación móvil en **[!UICONTROL ID de aplicación (ID de paquete de iOS)]** field. Por ejemplo,  `com.adobe.luma.tutorial.swiftui`.
 1. Seleccione **[!UICONTROL Guardar]**.
 
-   ![configuración de superficie de aplicación](assets/push-app-surface-config.png)
+   ![configuración de superficie de aplicación](assets/push-app-surface-config-inapp.png)
 
 ### Actualizar configuración de secuencia de datos
 
-Para garantizar que los datos enviados desde su aplicación móvil a Edge Network se reenvíen a Journey Optimizer, actualice la configuración de Experience Edge
+Para garantizar que los datos enviados desde su aplicación móvil a Edge Network se reenvíen a Journey Optimizer, actualice la configuración de Experience Edge.
+
+
 
 1. En la IU de recopilación de datos, seleccione **[!UICONTROL Datastreams]** y seleccione la secuencia de datos, por ejemplo **[!DNL Luma Mobile App]**.
 1. Seleccionar ![Más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) para **[!UICONTROL Experience Platform]** y seleccione ![Editar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Editar]** en el menú contextual.
 1. En el **[!UICONTROL Datastreams]** > ![Carpeta](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** pantalla, asegúrese de **[!UICONTROL Adobe Journey Optimizer]** está seleccionado. Consulte [Configuración de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) para obtener más información.
 1. Para guardar la configuración de la secuencia de datos, seleccione **[!UICONTROL Guardar]**.
+
 
    ![Configuración de flujo de datos AEP](assets/datastream-aep-configuration.png)
 
@@ -101,27 +103,6 @@ Para que la aplicación funcione con Journey Optimizer, debe actualizar la propi
 >Si no lo ve... `AJO Push Tracking Experience Event Dataset` como opción, póngase en contacto con el servicio de atención al cliente.
 >
 
-
-## Firmar
-
-La firma de la aplicación de Luma solo es necesaria para [Creación y envío de notificaciones push](journey-optimizer-push.md) y el [Creación y envío de mensajes en la aplicación](journey-optimizer-inapp.md) lecciones de este tutorial. Estas lecciones requieren un perfil de aprovisionamiento de Apple que **requiere una cuenta de desarrollador de Apple de pago**.
-
-Para actualizar la firma de la aplicación:
-
-1. Vaya a la aplicación en Xcode.
-1. Seleccionar **[!DNL Luma]** en el navegador del proyecto.
-1. Seleccione el **[!DNL Luma]** objetivo.
-1. Seleccione el **Firma y capacidades** pestaña.
-1. Configurar **[!UICONTROL Administrar firma automáticamente]**, **[!UICONTROL Equipo]**, y **[!UICONTROL Identificador de paquete]** o use los detalles específicos de aprovisionamiento de desarrollo de Apple.
-
-   >[!IMPORTANT]
-   >
-   >Asegúrese de utilizar un _único_ identificador de paquete y reemplace el `com.adobe.luma.tutorial.swiftui` identificador de paquete, ya que cada identificador de paquete debe ser único. Normalmente, se utiliza un formato DNS inverso para cadenas de ID de paquete, como `com.organization.brand.uniqueidentifier`. La versión final de este tutorial, por ejemplo, utiliza `com.adobe.luma.tutorial.swiftui`.
-
-
-   ![Funcionalidades de firma de Xcode](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
-
-
 ### Implementar Journey Optimizer en la aplicación
 
 Como se ha explicado en lecciones anteriores, la instalación de una extensión de etiqueta móvil solo proporciona la configuración. A continuación, debe instalar y registrar el SDK de mensajería. Si estos pasos no están claros, revise la [Instalación de SDK](install-sdks.md) sección.
@@ -131,7 +112,7 @@ Como se ha explicado en lecciones anteriores, la instalación de una extensión 
 >Si ha completado la [Instalación de SDK](install-sdks.md) , el SDK ya está instalado y puede omitir este paso.
 >
 
-1. En Xcode, asegúrese de que [Mensajería AEP](https://github.com/adobe/aepsdk-messaging-ios.git) se añade a la lista de paquetes en Dependencias del paquete. Consulte [Administrador De Paquetes Swift](install-sdks.md#swift-package-manager).
+1. En Xcode, asegúrese de que [Mensajería AEP](https://github.com/adobe/aepsdk-messaging-ios) se añade a la lista de paquetes en Dependencias del paquete. Consulte [Administrador De Paquetes Swift](install-sdks.md#swift-package-manager).
 1. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** en el navegador del proyecto Xcode.
 1. Asegurar `AEPMessaging` forma parte de su lista de importaciones.
 
@@ -263,10 +244,12 @@ Puede validar los mensajes en la aplicación en la interfaz de usuario de Assura
 
 ## Pasos siguientes
 
-Ahora debe tener todas las herramientas para empezar a añadir mensajes en la aplicación, cuando corresponda.  Por ejemplo, promocionar productos en función de interacciones específicas que esté rastreando en la aplicación.
+Ahora debe tener todas las herramientas para empezar a añadir mensajes en la aplicación, cuando corresponda. Por ejemplo, promocionar productos en función de interacciones específicas que esté rastreando en la aplicación.
 
 >[!SUCCESS]
 >
->Ha habilitado la aplicación para mensajería en la aplicación y ha agregado una campaña de mensajería en la aplicación mediante Journey Optimizer y la extensión de Journey Optimizer para el SDK de Experience Platform Mobile.<br/>Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Ha habilitado la aplicación para mensajería en la aplicación y ha agregado una campaña de mensajería en la aplicación mediante Journey Optimizer y la extensión de Journey Optimizer para el SDK de Experience Platform Mobile.
+>
+>Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Siguiente: **[Creación y visualización de ofertas](journey-optimizer-offers.md)**

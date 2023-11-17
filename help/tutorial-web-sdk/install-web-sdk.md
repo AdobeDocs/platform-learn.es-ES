@@ -1,18 +1,18 @@
 ---
-title: Instalación y configuración de la extensión de etiqueta del SDK web de Adobe Experience Platform
-description: Obtenga información sobre cómo instalar y configurar la extensión de etiqueta del SDK web de plataforma en la interfaz de recopilación de datos. Esta lección forma parte del tutorial Implementar Adobe Experience Cloud con SDK web .
+title: Instalación y configuración de la extensión de etiquetas del SDK web de Adobe Experience Platform
+description: Obtenga información sobre cómo instalar y configurar la extensión de etiqueta SDK web de Platform en la interfaz de recopilación de datos. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '621'
-ht-degree: 13%
+source-wordcount: '618'
+ht-degree: 15%
 
 ---
 
-# Instalación de la extensión de etiquetas del SDK web de Adobe Experience Platform
+# Instalación de la extensión de etiquetas de SDK web de Adobe Experience Platform
 
-Obtenga información sobre cómo instalar y configurar la extensión de etiqueta del SDK web de plataforma en la interfaz de recopilación de datos. Esta extensión de etiqueta es la _solo extensión de etiqueta_ requerido para enviar datos a _todas las aplicaciones de Adobe Experience Cloud_, incluyendo [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-time Customer Data Platform y Journey Optimizer!
+Obtenga información sobre cómo instalar y configurar la extensión de etiqueta SDK web de Platform en la interfaz de recopilación de datos. Esta extensión de etiqueta es la _extensión de etiqueta solamente_ necesario para enviar datos a _todas las aplicaciones de Adobe Experience Cloud_, incluido [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-time Customer Data Platform y Journey Optimizer.
 
 ## Objetivos de aprendizaje
 
@@ -20,7 +20,7 @@ Al final de esta lección, debe poder:
 
 * Creación de una propiedad de etiqueta en la interfaz de recopilación de datos
 * Instalación de la extensión de etiqueta del SDK web de Platform
-* Asigne el conjunto de datos creado anteriormente a la extensión
+* Asigne el flujo de datos creado anteriormente a la extensión.
 
 ## Requisitos previos
 
@@ -29,63 +29,63 @@ Debe haber completado las lecciones anteriores en este tutorial:
 * [Configure los permisos](configure-permissions.md)
 * [Configuración de un esquema XDM](configure-schemas.md)
 * [Configuración de un área de nombres de identidad](configure-identities.md)
-* [Configurar un conjunto de datos](configure-datastream.md)
+* [Configuración de una secuencia de datos](configure-datastream.md)
 
 ## Instalación de la extensión del SDK web de Experience Platform
 
-### Agregar una propiedad
+### Añadir una propiedad
 
-Primero debe tener una propiedad tag . Una propiedad es un contenedor de todas las funciones, reglas y demás funciones de JavaScript necesarias para recopilar detalles de una página web y enviarlos a varias ubicaciones.
+Primero debe tener una propiedad de etiqueta. Una propiedad es un contenedor para todos los elementos JavaScript, las reglas y otras funciones necesarias para recopilar detalles de una página web y enviarlos a varias ubicaciones.
 
 Cree una nueva propiedad de etiqueta para el tutorial:
 
-1. Abra el [Interfaz de recopilación de datos](https://launch.adobe.com/){target=&quot;_blank&quot;}
-1. Select **[!UICONTROL Etiquetas]** en la navegación izquierda
+1. Abra el [Interfaz de recopilación de datos](https://launch.adobe.com/){target="_blank"}
+1. Seleccionar **[!UICONTROL Etiquetas]** en el panel de navegación izquierdo
 1. Seleccione el botón **[!UICONTROL Nueva propiedad]**
    ![Añadir una nueva propiedad](assets/websdk-property-addNewProperty.png)
-1. Como **[!UICONTROL Nombre]**, introduzca `Web SDK Course` (añada su nombre al final, si varias personas de su empresa están tomando este tutorial)
-1. Como **[!UICONTROL Dominios]**, introduzca `enablementadobe.com` (explicado más tarde)
+1. Como el **[!UICONTROL Nombre]**, introduzca `Web SDK Course` (añada su nombre al final, si varias personas de su compañía realizan este tutorial)
+1. Como el **[!UICONTROL Domains]**, introduzca `enablementadobe.com` (explicado más tarde)
 1. Seleccione **[!UICONTROL Guardar]**
-   ![Detalles de propiedad](assets/websdk-property-propertyDetails.png)
+   ![Detalles de la propiedad](assets/websdk-property-propertyDetails.png)
 
 ## Añadir la extensión del SDK web
 
-Con el esquema XDM, el conjunto de datos y la propiedad tag ahora creados, está listo para instalar la extensión del SDK web de Platform:
+Con el esquema XDM, la secuencia de datos y la propiedad de etiqueta creados, ya puede instalar la extensión del SDK web de Platform:
 
-1. Abra la nueva propiedad de etiqueta
-1. Vaya a **[!UICONTROL Extensiones]** > **[!UICONTROL Catálogo]**
-1. Buscar `Adobe Experience Platform Web SDK`
-1. Select **[!UICONTROL Instalar]**
+1. Abra la nueva propiedad de etiquetas
+1. Ir a **[!UICONTROL Extensiones]** > **[!UICONTROL Catálogo]**
+1. Buscar por `Adobe Experience Platform Web SDK`
+1. Seleccionar **[!UICONTROL Instalar]**
 
-   ![Instalación de la extensión del SDK web](assets/extension-platform-web-sdk.jpg)
+   ![Instalar extensión del SDK web](assets/extension-platform-web-sdk.jpg)
 
 
-## Vincular el SDK web de Platform a su almacén de datos
+## Vinculación del SDK web de Platform al conjunto de datos
 
-Deje la mayoría de los ajustes predeterminados y actualícelos más adelante, según sea necesario. Lo único que debe hacer ahora es vincular la extensión al conjunto de datos:
+Deje la mayoría de las configuraciones predeterminadas y actualícelas más tarde, según sea necesario. Lo único que debe hacer ahora es vincular la extensión al conjunto de datos:
 
-1. En **[!UICONTROL Datastreams]**, seleccione **[!UICONTROL Elegir de la lista]** método de entrada
-1. Seleccione el conjunto de datos creado anteriormente, `Luma Web SDK`
+1. En **[!UICONTROL Datastreams]**, seleccione la **[!UICONTROL Elegir de la lista]** método de entrada
+1. Seleccione la secuencia de datos que creó anteriormente, `Luma Web SDK`
 1. Seleccione **[!UICONTROL Guardar]**
    >[!NOTE]
    >
-   > Si no encuentra el conjunto de datos, vaya a la [Configurar un conjunto de datos](configure-datastream.md) y siga los pasos para crear una
+   > Si no encuentra el conjunto de datos, vaya a la [Configuración de una secuencia de datos](configure-datastream.md) y siga los pasos para crear uno
 
-   ![Selección del conjunto de datos](assets/extension-luma-web-sdk-datastream-extension.png)
+   ![Selección de flujo de datos](assets/extension-luma-web-sdk-datastream-extension.png)
 
 Ahora que ha instalado el SDK web de Platform y lo ha asociado al conjunto de datos, está listo para empezar a asignar elementos de datos a un objeto XDM con el esquema que ha creado.
 
 >[!NOTE]
 >
->Durante este tutorial, puede configurar solo un conjunto de datos y asociarlo a todos los entornos de etiquetas (desarrollo, fase y producción). Al implementar el SDK web de Platform en su propio sitio web, debe configurar un conjunto de datos independiente para cada entorno y asignarlo a los entornos de etiquetas mediante el complemento **[!UICONTROL Método de entrada]** > **[!UICONTROL Introducir valores]**
+>Durante este tutorial, solo debe configurar un conjunto de datos y asociarlo a todos los entornos de etiquetas (desarrollo, fase y producción). Al implementar el SDK web de Platform en su propio sitio web, debe configurar un flujo de datos independiente para cada entorno y asignarlo a los entornos de etiquetas mediante **[!UICONTROL Método de entrada]** > **[!UICONTROL Introducir valores]**
 >
->![Selección del conjunto de datos](assets/extension-luma-web-sdk-datastream-extension-enterValues.png)
+>![Selección de flujo de datos](assets/extension-luma-web-sdk-datastream-extension-enterValues.png)
 
 >[!NOTE]
 >
->Aunque no configuró un CNAME en la variable [!UICONTROL Dominio perimetral] en esta lección, Adobe recomienda utilizar un CNAME cuando implemente el SDK web de Platform en su propio sitio web. Aunque la implementación de CNAME no proporciona ningún beneficio en términos de vida útil de las cookies, puede haber otros beneficios. Estos beneficios incluyen bloqueadores de anuncios y exploradores menos comunes que impiden que se envíen datos a dominios que clasifican como rastreadores. En estos casos, el uso de un CNAME puede impedir que la recopilación de datos se interrumpa para los usuarios que utilizan estas herramientas.
+>Aunque no configuró un CNAME en el [!UICONTROL Dominio de Edge] Al configurar en esta lección, Adobe recomienda utilizar un CNAME al implementar el SDK web de Platform en su propio sitio web. Aunque la implementación de CNAME no proporciona ningún beneficio en términos de vida útil de las cookies, puede haber otros beneficios. Estos beneficios incluyen bloqueadores de anuncios y exploradores menos comunes que impiden que se envíen datos a dominios que clasifican como rastreadores. En estos casos, el uso de un CNAME puede impedir que la recopilación de datos se interrumpa para los usuarios que utilizan estas herramientas.
 
-Para obtener más información sobre cada sección de la extensión, consulte [Configurar la extensión del SDK web de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html)
+Para obtener más información sobre cada sección de la extensión, consulte [Configuración de la extensión SDK para web de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html?lang=es)
 
 
 
@@ -93,4 +93,4 @@ Para obtener más información sobre cada sección de la extensión, consulte [C
 
 >[!NOTE]
 >
->Gracias por invertir su tiempo en obtener información sobre el SDK web de Adobe Experience Platform. Si tiene alguna pregunta, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Experience League de debate de la comunidad](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Gracias por dedicar su tiempo a conocer el SDK web de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

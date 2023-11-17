@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo gestionar la recopilación de dato
 jira: KT-6987
 hide: true
 exl-id: 0c8818f7-39d3-496e-a835-2d85d50e50d6
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '489'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Obtenga información sobre cómo gestionar la recopilación de datos con WebView
 
 En esta lección, deberá hacer lo siguiente:
 
-* Comprenda por qué debe tener en cuenta consideraciones especiales para WebViews en la aplicación.
+* Comprenda por qué debe tener especial consideración para WebViews en la aplicación.
 * Comprenda el código necesario para evitar problemas de seguimiento.
 
 ## Posibles problemas de seguimiento
@@ -92,7 +92,7 @@ Para ejecutar el código:
      adobe_mc=TS=1636526122|MCMID=79076670946787530005526183384271520749|MCORGID=7ABB3E6A5A7491460A495D61@AdobeOrg
      ```
 
-Lamentablemente, la depuración de la sesión web es limitada; no puede utilizar el Adobe Experience Platform Debugger del explorador, por ejemplo, para continuar depurando la sesión de webview.
+Lamentablemente, la depuración de la sesión web es limitada. Por ejemplo, no puede utilizar el Adobe Experience Platform Debugger del explorador para continuar depurando la sesión de vista web.
 
 >[!NOTE]
 >
@@ -101,6 +101,8 @@ Lamentablemente, la depuración de la sesión web es limitada; no puede utilizar
 
 >[!SUCCESS]
 >
->Ahora ha configurado la aplicación para que muestre contenido basado en una URL en una vista web utilizando el mismo ECID que el ECID ya emitido por el SDK de Adobe Experience Platform Mobile.<br/>Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Ahora ha configurado la aplicación para que muestre contenido basado en una URL en una vista web utilizando el mismo ECID que el ECID ya emitido por el SDK de Adobe Experience Platform Mobile.
+>
+>Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Siguiente: **[Identidad](identity.md)**

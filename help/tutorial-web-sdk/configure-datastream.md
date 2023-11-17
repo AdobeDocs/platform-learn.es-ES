@@ -1,16 +1,16 @@
 ---
-title: Configurar una secuencia de datos
+title: Configuración de una secuencia de datos
 description: Obtenga información sobre cómo habilitar un flujo de datos y configurar soluciones de Experience Cloud. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK,Tags,Datastreams
 exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '447'
 ht-degree: 10%
 
 ---
 
-# Configurar una secuencia de datos
+# Configuración de una secuencia de datos
 
 Obtenga información sobre cómo habilitar un flujo de datos y configurar soluciones de Experience Cloud.
 

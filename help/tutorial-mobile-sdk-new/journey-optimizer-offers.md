@@ -6,10 +6,10 @@ feature-set: Journey Optimizer
 feature: Offers
 hide: true
 exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '2618'
-ht-degree: 3%
+source-wordcount: '2630'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +19,7 @@ Obtenga información sobre cómo mostrar ofertas de Administración de decisione
 
 Administración de decisiones de Journey Optimizer le ayuda a ofrecer la mejor oferta y experiencia a sus clientes en todos los puntos de contacto y en el momento adecuado. Una vez diseñada, la audiencia debe segmentarse con ofertas personalizadas.
 
-![Arquitectura](assets/architecture-od.png)
+![Arquitectura](assets/architecture-ajo.png)
 
 La administración de decisiones facilita la personalización con una biblioteca central de ofertas de marketing y un motor de decisión que aplica reglas y restricciones a perfiles enriquecidos en tiempo real creados por Adobe Experience Platform. Como resultado, le permite enviar a sus clientes la oferta correcta en el momento adecuado. Consulte [Acerca de Administración de decisiones](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=en) para obtener más información.
 
@@ -59,11 +59,11 @@ En esta lección, debe
 
 ### Actualizar configuración de secuencia de datos
 
-Para garantizar que los datos enviados desde su aplicación móvil a la red perimetral se reenvíen a Journey Optimizer - Gestión de decisiones, actualice la configuración de Experience Edge
+Para garantizar que los datos enviados desde su aplicación móvil a Platform Edge Network se reenvíen a Journey Optimizer - Gestión de decisiones, actualice su secuencia de datos.
 
 1. En la IU de recopilación de datos, seleccione **[!UICONTROL Datastreams]** y seleccione la secuencia de datos, por ejemplo **[!DNL Luma Mobile App]**.
 1. Seleccionar ![Más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) para **[!UICONTROL Experience Platform]** y seleccione ![Editar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Editar]** en el menú contextual.
-1. En el **[!UICONTROL Datastreams]** > ![Carpeta](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** pantalla, asegúrese de **[!UICONTROL Offer decisioning]**, **[!UICONTROL Segmentación de Edge]**, y **[!UICONTROL Adobe Journey Optimizer]** están seleccionados. Si también sigue la lección de Target, debe seleccionar **[!UICONTROL Destinos de personalización]** y también. Consulte [Configuración de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) para obtener más información.
+1. En el **[!UICONTROL Datastreams]** > ![Carpeta](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** pantalla, asegúrese de **[!UICONTROL Offer decisioning]**, **[!UICONTROL Segmentación de Edge]**, y **[!UICONTROL Adobe Journey Optimizer]** están seleccionados. Si va a seguir la lección de Target, seleccione **[!UICONTROL Destinos de personalización]**, también. Consulte [Configuración de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) para obtener más información.
 1. Para guardar la configuración de la secuencia de datos, seleccione **[!UICONTROL Guardar]** .
 
    ![Configuración de flujo de datos AEP](assets/datastream-aep-configuration-offers.png)
@@ -88,7 +88,7 @@ Para garantizar que los datos enviados desde su aplicación móvil a la red peri
 1. Seleccionar **[!UICONTROL Examinar]** desde la barra superior.
 1. Seleccione el esquema para abrirlo.
 1. En el editor de esquemas, seleccione ![Añadir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Añadir]** junto a Grupos de campos.
-1. En el **[!UICONTROL Adición de campos y grupos]** diálogo, ![Buscar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) buscar `proposition`, seleccione **[!UICONTROL Evento de experiencia: interacciones de propuesta]** y seleccione **[!UICONTROL Adición de grupos de campos]**. Este grupo de campos recopila los datos de evento de experiencia relevantes para las ofertas: qué oferta se presenta, como parte de qué recopilación, decisión y otros parámetros (consulte más adelante en esta lección). Pero también lo que está pasando con la oferta: se muestra, interactúa, se descarta, etc.
+1. En el **[!UICONTROL Adición de campos y grupos]** diálogo, ![Buscar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) buscar `proposition`, seleccione **[!UICONTROL Evento de experiencia: interacciones de propuesta]** y seleccione **[!UICONTROL Adición de grupos de campos]**. Este grupo de campos recopila los datos de evento de experiencia relevantes para las ofertas: qué oferta se presenta, como parte de qué recopilación, decisión y otros parámetros (consulte más adelante en esta lección). Pero también ¿qué está pasando con la oferta? ¿Se muestra, interactúa con, se descarta, etc.?
    ![Proposición](assets/schema-fieldgroup-proposition.png)
 1. Seleccionar **[!UICONTROL Guardar]** para guardar los cambios en el esquema.
 
@@ -112,7 +112,7 @@ Para poder crear ofertas, debe definir cómo y dónde se pueden colocar estas of
 
 1. Seleccionar **[!UICONTROL Ubicaciones]** desde la barra superior.
 
-1. Si no hay ninguna ubicación con el nombre **[!UICONTROL JSON móvil]**,  **[!UICONTROL Móvil]** as **[!UICONTROL Tipo de canal]** y **[!UICONTROL JSON]** as **[!UICONTROL Tipo de contenido]** aparece en la lista, debe crear una ubicación. De lo contrario, continúe a [Creación de ofertas](#create-offers).
+1. Si no hay ninguna ubicación con el nombre **[!UICONTROL JSON móvil]**,  **[!UICONTROL Móvil]** as **[!UICONTROL Tipo de canal]** y **[!UICONTROL JSON]** as **[!UICONTROL Tipo de contenido]** , debe crear una ubicación. De lo contrario, continúe a [Creación de ofertas](#create-offers).
 
 Para crear la ubicación JSON de Mobile:
 
@@ -145,7 +145,7 @@ Para crear la ubicación JSON de Mobile:
          ```json
          { 
              "title": "Juno Jacket",
-             "text": "On colder-than-comfortable mornings, you'll love warming up in the Juno All-Ways Performanc Jacket, designed to compete with wind and chill. Built-in Cocona&trade; technology aids evaporation, while a special zip placket and stand-up collar keep your neck protected.", 
+             "text": "On colder-than-comfortable mornings, you'll love warming up in the Juno All-Ways Performance Jacket, designed to compete with wind and chill. Built-in Cocona&trade; technology aids evaporation, while a special zip placket and stand-up collar keep your neck protected.", 
              "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/jackets/wj06-purple_main.jpg" 
          }  
          ```
@@ -178,39 +178,37 @@ Para crear la ubicación JSON de Mobile:
       | Luma: confirme la botella de agua | `{ "title": "Affirm Water Bottle", "text": "You'll stay hydrated with ease with the Affirm Water Bottle by your side or in hand. Measurements on the outside help you keep track of how much you're drinking, while the screw-top lid prevents spills. A metal carabiner clip allows you to attach it to the outside of a backpack or bag for easy access.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/gear/fitness-equipment/ug06-lb-0.jpg" }` |
       | Luma: Desiree Fitness Tee | `{ "title": "Desiree Fitness Tee", "text": "When you're too far to turn back, thank yourself for choosing the Desiree Fitness Tee. Its ultra-lightweight, ultra-breathable fabric wicks sweat away from your body and helps keeps you cool for the distance.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/tees/ws05-yellow_main.jpg" }` |
       | Luma - Adrienne Trek Jacket | `{ "title": "Adrienne Trek Jacket", "text": "You're ready for a cross-country jog or a coffee on the patio in the Adrienne Trek Jacket. Its style is unique with stand collar and drawstrings, and it fits like a jacket should.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/jackets/wj08-gray_main.jpg" }` |
-      | Luma: Camiseta de fitness diaria de Aero | `{ "title": "Adrienne Trek Jacket", "text": "You're ready for a cross-country jog or a coffee on the patio in the Adrienne Trek Jacket. Its style is unique with stand collar and drawstrings, and it fits like a jacket should.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/jackets/wj08-gray_main.jpg" }` |
+      | Luma: Camiseta de fitness diaria de Aero | `{ "title": "Aero Daily Fitness Tee", "text": "Need an everyday action tee that helps keep you dry? The Aero Daily Fitness Tee is made of 100% polyester wicking knit that funnels moisture away from your skin. Don't be fooled by its classic style; this tee hides premium performance technology beneath its unassuming look.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/men/tops/tees/ms01-black_main.jpg" }` |
 
       {style="table-layout:fixed"}
 
 1. Finalmente, debe crear una oferta de reserva, que es una oferta enviada a los clientes si no cumplen los requisitos para otras ofertas.
    1. Seleccionar **[!UICONTROL Crear oferta]**.
-   1. En el **[!UICONTROL Detalles]** paso de **[!UICONTROL Crear nueva oferta personalizada]**:
-   1. Introduzca una **[!UICONTROL Nombre]** para la oferta, por ejemplo `Luma - Fallback Offer`, e introduzca un **[!UICONTROL Fecha y hora de inicio]** y un **[!UICONTROL Fecha y hora de finalización]**.
-   1. Seleccione **[!UICONTROL Siguiente]**.
+   1. En el **[!UICONTROL Nueva oferta]** diálogo, seleccione **[!UICONTROL Oferta personalizada]** y seleccione **[!UICONTROL Siguiente]**.
+   1. En el **[!UICONTROL Detalles]** paso de **[!UICONTROL Crear nueva oferta de reserva]**, introduzca un **[!UICONTROL Nombre]** para la oferta, por ejemplo `Luma - Fallback Offer`y seleccione **[!UICONTROL Siguiente]**.
 
-1. En el **[!UICONTROL Añadir representaciones]** paso del **[!UICONTROL Crear nueva oferta personalizada]** pantalla:
-   1. Seleccionar ![Móvil](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DevicePhone_18_N.svg) **[!UICONTROL Móvil]** de **[!UICONTROL Canal]** y seleccione. **[!UICONTROL JSON móvil]** de **[!UICONTROL Ubicación]** lista.
-   1. Seleccionar **[!UICONTROL Personalizado]** para **[!UICONTROL Contenido]**.
-   1. Seleccionar **[!UICONTROL Añadir contenido]**. En el **[!UICONTROL Añadir personalización]** diálogo:
-      1. Introduzca el siguiente JSON:
+   1. En el **[!UICONTROL Añadir representaciones]** paso de  **[!UICONTROL Crear nueva oferta de reserva]**:
+      1. Seleccionar ![Móvil](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DevicePhone_18_N.svg) **[!UICONTROL Móvil]** de **[!UICONTROL Canal]** y seleccione. **[!UICONTROL JSON móvil]** de **[!UICONTROL Ubicación]** lista.
+      1. Seleccionar **[!UICONTROL Personalizado]** para **[!UICONTROL Contenido]**.
+      1. Seleccionar **[!UICONTROL Añadir contenido]**.
+      1. En el **[!UICONTROL Añadir personalización]** , introduzca el siguiente JSON y seleccione **[!UICONTROL Guardar]**:
 
          ```json
          {  
-             "title": "Luma",
-             "text": "Your store for sports wear and equipment.", 
-             "image": "https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png" 
+            "title": "Luma",
+            "text": "Your store for sports wear and equipment.", 
+            "image": "https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png" 
          }  
          ```
 
-      1. Seleccione **[!UICONTROL Guardar]**.
-   1. Seleccione **[!UICONTROL Siguiente]**.
+      1. Seleccione **[!UICONTROL Siguiente]**.
 
 
-1. En el **[!UICONTROL Revisar]** paso de **[!UICONTROL Crear nuevo elemento personalizado]** oferta:
+1. En el **[!UICONTROL Revisar]** paso de **[!UICONTROL Crear nueva reserva]** oferta:
    1. Revise la oferta y seleccione **[!UICONTROL Finalizar]**.
    1. En el **[!UICONTROL Guardar oferta]** diálogo, seleccione **[!UICONTROL Guardar y aprobar]**.
 
-Ahora debería tener la siguiente lista de ofertas.
+Ahora debería tener la siguiente lista de ofertas:
 ![Lista de ofertas](assets/ajo-offers-list.png)
 
 
@@ -292,7 +290,7 @@ Como se ha explicado en lecciones anteriores, la instalación de una extensión 
 >Si ha completado la [Instalación de SDK](install-sdks.md) , el SDK ya está instalado y puede omitir este paso.
 >
 
-1. En Xcode, asegúrese de que [Optimización de AEP](https://github.com/adobe/aepsdk-messaging-ios.git) se añade a la lista de paquetes en Dependencias del paquete. Consulte [Administrador De Paquetes Swift](install-sdks.md#swift-package-manager).
+1. En Xcode, asegúrese de que [Optimización de AEP](https://github.com/adobe/aepsdk-messaging-ios) se añade a la lista de paquetes en Dependencias del paquete. Consulte [Administrador De Paquetes Swift](install-sdks.md#swift-package-manager).
 1. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** en el navegador del proyecto Xcode.
 1. Asegurar `AEPOptimize` forma parte de su lista de importaciones.
 
@@ -317,6 +315,8 @@ Como se ha explicado en lecciones anteriores, la instalación de una extensión 
        Assurance.self
    ]
    ```
+
+1. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Model]** > **[!DNL Data]** > **[!UICONTROL decisiones]** en el navegador del proyecto Xcode. Actualice el `activityId` y `placementId` valores con los detalles del ámbito de decisión copiados desde la interfaz de Journey Optimizer.
 
 1. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** en el navegador del proyecto Xcode. Busque el `func updatePropositionOD(ecid: String, activityId: String, placementId: String, itemCount: Int) async` función. Añada el siguiente código:
 
@@ -348,7 +348,7 @@ Como se ha explicado en lecciones anteriores, la instalación de una extensión 
      ]
      ```
 
-     Sin embargo, puede utilizar cualquier tipo de implementación para asegurarse de que las API de optimización no obtienen los parámetros adecuados (`activityId`, `placementId` y, `itemCount`), para construir un válido [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) para su implementación.
+     Sin embargo, puede utilizar cualquier tipo de implementación para asegurarse de que las API de optimización obtienen los parámetros adecuados (`activityId`, `placementId` y, `itemCount`), para construir un válido [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) para su implementación.
    * llama a dos API: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  y [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).  Estas funciones borran todas las propuestas almacenadas en caché y actualizan las propuestas de este perfil.
 
 1. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!UICONTROL Personalización]** > **[!UICONTROL EdgeOffersView]** en el navegador del proyecto Xcode. Busque el `func onPropositionsUpdateOD(activityId: String, placementId: String, itemCount: Int) async` e inspeccione el código de esta función. La parte más importante de esta función es la [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) Llamada de API, que
@@ -356,9 +356,9 @@ Como se ha explicado en lecciones anteriores, la instalación de una extensión 
    * recupera las propuestas del perfil actual en función del ámbito de decisión (que ha definido en Journey Optimizer - Gestión de decisiones),
    * recupera la oferta de la propuesta,
    * desajusta el contenido de la oferta para que se pueda mostrar correctamente en la aplicación, y
-   * déclencheur el `displayed()` acción en la oferta que enviará un evento de vuelta a la red perimetral para informar que se muestra la oferta.
+   * déclencheur el `displayed()` acción en la oferta que devuelve un evento a la red perimetral que indica que se muestra la oferta.
 
-1. Sigue en **[!DNL EdgeOffersView]**, agregue el siguiente código a `.onFirstAppear` modificador. Este código garantizará que la llamada de retorno para actualizar las ofertas se registre solo una vez.
+1. Sigue en **[!DNL EdgeOffersView]**, agregue el siguiente código a `.onFirstAppear` modificador. Este código garantiza que la llamada de retorno para actualizar las ofertas se registre solo una vez.
 
    ```swift
    // Invoke callback for offer updates
@@ -367,7 +367,7 @@ Como se ha explicado en lecciones anteriores, la instalación de una extensión 
    }
    ```
 
-1. Sigue en **[!UICONTROL EdgeOffersView]**, agregue el siguiente código a `.task` modificador. Este código actualizará las ofertas cuando se actualice la vista.
+1. Sigue en **[!UICONTROL EdgeOffersView]**, agregue el siguiente código a `.task` modificador. Este código actualiza las ofertas cuando se actualiza la vista.
 
    ```swift
    // Clear and update offers
@@ -410,10 +410,12 @@ Ahora debería tener todas las herramientas para empezar a añadir más funciona
 
 * aplique parámetros diferentes a las ofertas (por ejemplo, prioridad o límite)
 * recopilar atributos de perfil en la aplicación (consulte [Perfil](profile.md)) y utilice estos atributos de perfil para crear audiencias. A continuación, utilice estas audiencias como parte de las reglas de idoneidad en su decisión.
-* combinar varios ámbitos de decisión.
+* combinar más de un ámbito de decisión.
 
 >[!SUCCESS]
 >
->Ha habilitado la aplicación para que muestre ofertas con la extensión Journey Optimizer - Decisioning para el SDK de Experience Platform Mobile.<br/>Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Ha habilitado la aplicación para que muestre ofertas con la extensión Journey Optimizer - Decisioning para el SDK de Experience Platform Mobile.
+>
+>Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Siguiente: **[Realizar pruebas A/B](target.md)**

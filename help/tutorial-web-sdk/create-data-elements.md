@@ -3,9 +3,9 @@ title: Creación de elementos de datos
 description: Obtenga información sobre cómo crear un objeto XDM y asignarle elementos de datos en etiquetas. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: fe03ee89bfccd0105b45383c84403b6a3d230235
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1202'
+source-wordcount: '1201'
 ht-degree: 5%
 
 ---
@@ -52,7 +52,7 @@ Comprenderá qué es una capa de datos y se familiarizará con el [Sitio de demo
 * [Configure los permisos](configure-permissions.md)
 * [Configuración de un esquema XDM](configure-schemas.md)
 * [Configuración de un área de nombres de identidad](configure-identities.md)
-* [Configurar una secuencia de datos](configure-datastream.md)
+* [Configuración de una secuencia de datos](configure-datastream.md)
 * [Extensión del SDK web instalada en la propiedad de etiqueta](install-web-sdk.md)
 
 >[!IMPORTANT]

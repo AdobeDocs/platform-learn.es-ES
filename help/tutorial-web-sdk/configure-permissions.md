@@ -3,9 +3,9 @@ title: Configuración de permisos para el tutorial
 description: Obtenga información sobre cómo solicitar acceso al SDK web de Experience Platform y configurar los permisos necesarios para completar el tutorial Implementar Adobe Experience Cloud con SDK web.
 feature: Web SDK,Tags,Access Control
 exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '414'
 ht-degree: 6%
 
 ---

@@ -3,10 +3,11 @@ title: Configuración de una propiedad de etiqueta
 description: Obtenga información sobre cómo configurar una propiedad de etiqueta en la [!UICONTROL Recopilación de datos] interfaz.
 feature: Mobile SDK,Tags
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+exl-id: 4d67b52e-db72-4ee6-be02-aa11a1d32481
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 8%
+source-wordcount: '1090'
+ht-degree: 7%
 
 ---
 
@@ -45,7 +46,7 @@ En esta lección, deberá hacer lo siguiente:
 
       >[!NOTE]
       >
-      > La configuración de consentimiento predeterminada para las implementaciones de SDK móvil basadas en Edge, como la que está haciendo en esta lección, proviene del [!UICONTROL Extensión de consentimiento] y no el [!UICONTROL Privacidad] en la configuración de la propiedad etiqueta. Puede añadir y configurar la extensión de consentimiento más adelante en esta lección. Para obtener más información, consulte [la documentación](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
+      > La configuración de consentimiento predeterminada para las implementaciones de SDK móvil basadas en Edge, como la que está haciendo en esta lección, proviene del [!UICONTROL Extensión de consentimiento] y no el [!UICONTROL Privacidad] en la configuración de la propiedad etiqueta. Puede añadir y configurar la extensión de consentimiento más adelante en esta lección. Para obtener más información, consulte [la documentación](https://developer.adobe.com/client-sdks/edge/consent-for-edge-network/).
 
 
 1. Abra la nueva propiedad.
@@ -131,7 +132,7 @@ La biblioteca se crea para las nuevas extensiones y configuraciones. Una compila
 
 1. En el **[!UICONTROL Instrucciones de instalación de Mobile]** , seleccione la **[!UICONTROL iOS]** pestaña.
 
-1. Puede copiar ![Copiar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) Siga las instrucciones para configurar el proyecto mediante CocoaPods. Los CocoaPods se utilizan para administrar las versiones y descargas del SDK. Para obtener más información, consulte la [Documentación de Cocoapods](https://cocoapods.org/). Si utiliza Android como plataforma de desarrollo, Gradle es la herramienta para administrar la versión, las descargas y las dependencias del SDK. Para obtener más información, consulte la [Documentación de Gradle](https://gradle.org/)
+1. Puede copiar ![Copiar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) Siga las instrucciones para configurar el proyecto mediante CocoaPods. Los CocoaPods se utilizan para administrar las versiones y descargas del SDK. Para obtener más información, consulte la [Documentación de CocoaPods](https://cocoapods.org/). Si utiliza Android™ como plataforma de desarrollo, Gradle es la herramienta para administrar la versión, las descargas y las dependencias del SDK. Para obtener más información, consulte la [Documentación de Gradle](https://gradle.org/)
 
    Las instrucciones de instalación le proporcionan un buen punto de partida para la implementación. Puede encontrar información adicional [aquí](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
@@ -140,7 +141,7 @@ La biblioteca se crea para las nuevas extensiones y configuraciones. Una compila
    >Para el resto de este tutorial, **no** utilice las instrucciones CocoaPods, pero en su lugar utilice una configuración nativa basada en Swift Package Manager (SPM).
    >
 
-1. Seleccione el **[!UICONTROL Swift]** pestaña siguiente **[!UICONTROL Añadir código de inicialización]**. Este bloque de código muestra cómo importar los SDK necesarios y registrar las extensiones en el inicio. Esto se tratará en más detalles en [Instalación de SDK](install-sdks.md).
+1. Seleccione el **[!UICONTROL Swift]** pestaña siguiente **[!UICONTROL Añadir código de inicialización]**. Este bloque de código muestra cómo importar los SDK necesarios y registrar las extensiones en el inicio. Esto se explica con más detalle en [Instalación de SDK](install-sdks.md).
 
 1. Copiar ![Copiar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) el **[!UICONTROL Identificador de archivo de entorno]** y guárdelo en un lugar en el que lo necesite más tarde. Este ID único apunta a su entorno de desarrollo de. Cada entorno (producción, ensayo y desarrollo) tiene su propio valor de ID único.
 
@@ -148,7 +149,7 @@ La biblioteca se crea para las nuevas extensiones y configuraciones. Una compila
 
 >[!NOTE]
 >
->Las instrucciones de instalación deben considerarse un punto de partida y no una documentación definitiva. Las últimas versiones del SDK y ejemplos de código se encuentran en el [documentación](https://developer.adobe.com/client-sdks/documentation/).
+>Las instrucciones de instalación deben considerarse un punto de partida y no una documentación definitiva. Las últimas versiones del SDK y ejemplos de código se encuentran en el [documentación](https://developer.adobe.com/client-sdks/home/).
 
 ## Arquitectura de etiquetas móviles
 
@@ -156,10 +157,12 @@ Si está familiarizado con la versión web de las etiquetas, anteriormente Launc
 
 * En la web, se procesa una propiedad de etiqueta en JavaScript que luego (normalmente) se aloja en la nube. Se hace referencia a ese archivo JavaScript directamente en el sitio web.
 
-* En una propiedad de etiqueta móvil, las reglas y configuraciones se representan en archivos JSON alojados en la nube. La extensión principal de Mobile descarga y lee los archivos JSON en la aplicación móvil. Las extensiones son SDK independientes que funcionan juntos. Si agrega una extensión a la propiedad de etiquetas, también debe actualizar la aplicación. Si cambia una configuración de extensión o crea una regla, esos cambios se reflejarán en la aplicación una vez que publique la biblioteca de etiquetas actualizada. Esa flexibilidad le permite modificar la configuración (como el ID del grupo de informes de Adobe Analytics) o incluso cambiar el comportamiento de la aplicación (mediante elementos de datos y reglas, como verá en lecciones posteriores) sin tener que cambiar el código en la aplicación y tener que volver a enviar la aplicación a la tienda de aplicaciones.
+* En una propiedad de etiqueta móvil, las reglas y configuraciones se representan en archivos JSON alojados en la nube. La extensión principal de Mobile descarga y lee los archivos JSON en la aplicación móvil. Las extensiones son SDK independientes que funcionan juntos. Si agrega una extensión a la propiedad de etiquetas, también debe actualizar la aplicación. Si cambia una configuración de extensión o crea una regla, esos cambios se reflejarán en la aplicación una vez que publique la biblioteca de etiquetas actualizada. Esa flexibilidad le permite modificar la configuración (como el ID del grupo de informes de Adobe Analytics) o incluso cambiar el comportamiento de la aplicación (mediante elementos de datos y reglas, como verá en lecciones posteriores) sin tener que cambiar el código en la aplicación y volver a enviar la tienda de aplicaciones.
 
 >[!SUCCESS]
 >
->Ahora tiene una propiedad de etiqueta móvil para usar en el resto de este tutorial.<br/>Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Ahora tiene una propiedad de etiqueta móvil para usar en el resto de este tutorial.
+>
+>Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Siguiente: **[Instalación de SDK](install-sdks.md)**

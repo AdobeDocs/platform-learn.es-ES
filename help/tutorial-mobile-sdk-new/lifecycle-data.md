@@ -3,7 +3,7 @@ title: Recopilar datos del ciclo vital
 description: Obtenga información sobre cómo recopilar datos del ciclo vital en una aplicación móvil.
 hide: true
 exl-id: a3b26e45-2a17-4b44-aec0-fdf83526a273
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 3%
@@ -121,6 +121,8 @@ Debería ver **[!UICONTROL Cierre de aplicación (segundo plano)]** y **[!UICONT
 
 >[!SUCCESS]
 >
->Ahora ha configurado la aplicación para enviar eventos de estado de aplicación (primer plano, segundo plano) a Adobe Experience Platform Edge Network y a todos los servicios definidos en la secuencia de datos.<br>Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Ahora ha configurado la aplicación para enviar eventos de estado de aplicación (primer plano, segundo plano) a Adobe Experience Platform Edge Network y a todos los servicios definidos en la secuencia de datos.
+>
+> Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Siguiente: **[Seguimiento de datos de eventos](events.md)**
