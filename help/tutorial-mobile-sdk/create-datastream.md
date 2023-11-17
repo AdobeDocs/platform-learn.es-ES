@@ -1,18 +1,22 @@
 ---
-title: Configurar una secuencia de datos
+title: Configuración de una secuencia de datos
 description: Obtenga información sobre cómo crear una secuencia de datos en Experience Platform.
 feature: Mobile SDK,Datastreams
 exl-id: 7b83f834-d1fb-45d1-8bcf-bc621f94725c
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 9%
+source-wordcount: '426'
+ht-degree: 8%
 
 ---
 
 # Crear un flujo de datos
 
 Obtenga información sobre cómo crear una secuencia de datos en Experience Platform.
+
+>[!INFO]
+>
+> Este tutorial se reemplazará con un nuevo tutorial con una nueva aplicación móvil de ejemplo a finales de noviembre de 2023
 
 Un conjunto de datos es una configuración del lado del servidor en Platform Edge Network.  La secuencia de datos garantiza que los datos entrantes en la red perimetral de Platform se enruten correctamente a las aplicaciones y servicios de Adobe Experience Cloud. Para obtener más información, consulte la [documentación](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=es) o esto [video](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html?lang=es).
 
@@ -26,7 +30,7 @@ En esta lección, deberá hacer lo siguiente:
 
 * Saber cuándo utilizar un conjunto de datos.
 * Crear un flujo de datos.
-* Configurar una secuencia de datos.
+* Configuración de una secuencia de datos.
 
 ## Crear un flujo de datos
 

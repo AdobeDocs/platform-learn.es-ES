@@ -3,9 +3,9 @@ title: Asignación de Analytics
 description: Obtenga información sobre cómo recopilar datos para Adobe Analytics en una aplicación móvil.
 solution: Data Collection,Experience Platform,Analytics
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '609'
 ht-degree: 2%
 
 ---
@@ -13,6 +13,11 @@ ht-degree: 2%
 # Asignación de Analytics
 
 Obtenga información sobre cómo asignar datos móviles a Adobe Analytics.
+
+>[!INFO]
+>
+> Este tutorial se reemplazará con un nuevo tutorial con una nueva aplicación móvil de ejemplo a finales de noviembre de 2023
+
 
 El [evento](events.md) Los datos que ha recopilado y enviado a Platform Edge Network en lecciones anteriores se reenvían a los servicios configurados en su conjunto de datos, incluido Adobe Analytics. Solo tiene que asignar los datos a las variables correctas del grupo de informes.
 

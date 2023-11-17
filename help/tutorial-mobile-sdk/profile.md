@@ -2,9 +2,9 @@
 title: Perfil
 description: Obtenga información sobre cómo recopilar datos de perfil en una aplicación móvil.
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '459'
 ht-degree: 2%
 
 ---
@@ -12,6 +12,10 @@ ht-degree: 2%
 # Perfil
 
 Obtenga información sobre cómo recopilar datos de perfil en una aplicación móvil.
+
+>[!INFO]
+>
+> Este tutorial se reemplazará con un nuevo tutorial con una nueva aplicación móvil de ejemplo a finales de noviembre de 2023
 
 Puede utilizar la extensión de perfil para almacenar atributos sobre el usuario en el cliente. Esta información se puede utilizar posteriormente para dirigir y personalizar mensajes durante escenarios en línea o sin conexión, sin tener que conectarse a un servidor para obtener un rendimiento óptimo. La extensión de perfil administra el perfil de operación del lado del cliente (CSOP), proporciona una forma de reaccionar a las API, actualiza los atributos del perfil de usuario y comparte los atributos del perfil de usuario con el resto del sistema como un evento generado.
 
@@ -27,9 +31,9 @@ Otras extensiones utilizan los datos del perfil para realizar acciones relaciona
 * La aplicación se ha creado y ejecutado correctamente con los SDK instalados y configurados.
 * Se ha importado el SDK de perfil.
 
-   ```swift
-   import AEPUserProfile
-   ```
+  ```swift
+  import AEPUserProfile
+  ```
 
 ## Objetivos de aprendizaje
 

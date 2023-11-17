@@ -3,7 +3,7 @@ title: Implementar el Experience Cloud de en sitios web con etiquetas
 description: La implementación del Experience Cloud en sitios web con etiquetas es el punto de partida perfecto para desarrolladores de front-end o especialistas en marketing técnico que deseen aprender a implementar las soluciones de Adobe Experience Cloud en su sitio web.
 recommendations: catalog, noDisplay
 exl-id: 1b95f0b2-3062-49d1-9b0b-e6824a54008f
-source-git-commit: 277f5f2c07bb5818e8c5cc129bef1ec93411c90d
+source-git-commit: 8c3b487691c95b16da2a270b7d71cfd3bab1f0eb
 workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 41%
@@ -83,52 +83,52 @@ En estas lecciones, debe implementar Adobe Experience Cloud en un sitio web de v
 1. Añada la extensión de [Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) a su navegador.
 1. Copie el código de página HTML de ejemplo
 
-+++Código de página HTML de muestra
+   +++Código de página HTML de muestra
 
-```html
-<!doctype html>
-<html lang="en">
-<head>
-    <title>Tags: Sample HTML Page</title>
-    <!--Preconnect and DNS-Prefetch to improve page load time. REPLACE "techmarketingdemos" WITH YOUR OWN AAM PARTNER ID, TARGET CLIENT CODE, AND ANALYTICS TRACKING SERVER-->
-    <link rel="preconnect" href="//dpm.demdex.net">
-    <link rel="preconnect" href="//fast.techmarketingdemos.demdex.net">
-    <link rel="preconnect" href="//techmarketingdemos.demdex.net">
-    <link rel="preconnect" href="//cm.everesttech.net">
-    <link rel="preconnect" href="//techmarketingdemos.tt.omtrdc.net">
-    <link rel="preconnect" href="//techmarketingdemos.sc.omtrdc.net">
-    <link rel="dns-prefetch" href="//dpm.demdex.net">
-    <link rel="dns-prefetch" href="//fast.techmarketingdemos.demdex.net">
-    <link rel="dns-prefetch" href="//techmarketingdemos.demdex.net">
-    <link rel="dns-prefetch" href="//cm.everesttech.net">
-    <link rel="dns-prefetch" href="//techmarketingdemos.tt.omtrdc.net">
-    <link rel="dns-prefetch" href="//techmarketingdemos.sc.omtrdc.net">
-    <!--/Preconnect and DNS-Prefetch-->
-    <!--Data Layer to enable rich data collection and targeting-->
-    <script>
-    var digitalData = {
-        "page": {
-            "pageInfo" : {
-                "pageName": "Home"
-                }
-            }
-    };
-    </script>
-    <!--/Data Layer-->
-    <!--jQuery or other helper libraries-->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <!--/jQuery-->
-    <!--Tags Header Embed Code: REPLACE THE NEXT LINE WITH THE EMBED CODE FROM YOUR OWN DEVELOPMENT ENVIRONMENT-->
-    <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
-    <!--/Tags Header Embed Code-->
-</head>
-<body>
-    <h1>Tags: Sample HTML Page</h1>
-    <p>This is a very simple page to demonstrate basic implementation concepts of Tags</p>
-    <p>See <a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
-</body>
-</html>
-```
+   ```html
+   <!doctype html>
+   <html lang="en">
+   <head>
+       <title>Tags: Sample HTML Page</title>
+       <!--Preconnect and DNS-Prefetch to improve page load time. REPLACE "techmarketingdemos" WITH YOUR OWN AAM PARTNER ID, TARGET CLIENT CODE, AND ANALYTICS TRACKING SERVER-->
+       <link rel="preconnect" href="//dpm.demdex.net">
+       <link rel="preconnect" href="//fast.techmarketingdemos.demdex.net">
+       <link rel="preconnect" href="//techmarketingdemos.demdex.net">
+       <link rel="preconnect" href="//cm.everesttech.net">
+       <link rel="preconnect" href="//techmarketingdemos.tt.omtrdc.net">
+       <link rel="preconnect" href="//techmarketingdemos.sc.omtrdc.net">
+       <link rel="dns-prefetch" href="//dpm.demdex.net">
+       <link rel="dns-prefetch" href="//fast.techmarketingdemos.demdex.net">
+       <link rel="dns-prefetch" href="//techmarketingdemos.demdex.net">
+       <link rel="dns-prefetch" href="//cm.everesttech.net">
+       <link rel="dns-prefetch" href="//techmarketingdemos.tt.omtrdc.net">
+       <link rel="dns-prefetch" href="//techmarketingdemos.sc.omtrdc.net">
+       <!--/Preconnect and DNS-Prefetch-->
+       <!--Data Layer to enable rich data collection and targeting-->
+       <script>
+       var digitalData = {
+           "page": {
+               "pageInfo" : {
+                   "pageName": "Home"
+                   }
+               }
+       };
+       </script>
+       <!--/Data Layer-->
+       <!--jQuery or other helper libraries-->
+       <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+       <!--/jQuery-->
+       <!--Tags Header Embed Code: REPLACE THE NEXT LINE WITH THE EMBED CODE FROM YOUR OWN DEVELOPMENT ENVIRONMENT-->
+       <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
+       <!--/Tags Header Embed Code-->
+   </head>
+   <body>
+       <h1>Tags: Sample HTML Page</h1>
+       <p>This is a very simple page to demonstrate basic implementation concepts of Tags</p>
+       <p>See <a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
+   </body>
+   </html>
+   ```
 
 +++
 

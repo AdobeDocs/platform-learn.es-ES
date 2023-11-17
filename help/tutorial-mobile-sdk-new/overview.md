@@ -3,9 +3,10 @@ title: 'Tutorial de implementación de Adobe Experience Cloud en aplicaciones m�
 description: Obtenga información sobre cómo implementar las aplicaciones móviles de Adobe Experience Cloud. Este tutorial le guía a través de una implementación de aplicaciones Experience Cloud en una aplicación Swift de ejemplo.
 recommendations: noDisplay,catalog
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+exl-id: 378bdf5d-c3ce-4a4c-b188-ab9e8265627f
+source-git-commit: f592fc61ad28d04eba3c1c21a0a66bda6e816a5b
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '874'
 ht-degree: 9%
 
 ---
@@ -86,11 +87,11 @@ Todos los clientes de Experience Cloud deben tener acceso a las funciones necesa
 
 ## Descargar la aplicación de Luma
 
-Hay dos versiones de la aplicación de ejemplo disponibles para descargar. Ambas versiones se pueden descargar o clonar desde [Github](https://git.corp.adobe.com/rmaur/Luma). Encontrará dos carpetas:
+Hay dos versiones de la aplicación de ejemplo disponibles para descargar. Ambas versiones se pueden descargar o clonar desde [Github](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App). Encontrará dos carpetas:
 
 
-1. [Inicio](https://git.corp.adobe.com/rmaur/Luma){target="_blank"}: un proyecto sin código o con código de marcador de posición para la mayoría del código del SDK de Experience Platform Mobile que necesita utilizar para completar los ejercicios prácticos de este tutorial.
-1. [Finalizar](https://git.corp.adobe.com/Luma){target="_blank"}: una versión con la implementación completa como referencia.
+1. [Inicio](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: un proyecto sin código o con código de marcador de posición para la mayoría del código del SDK de Experience Platform Mobile que necesita utilizar para completar los ejercicios prácticos de este tutorial.
+1. [Finalizar](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: una versión con la implementación completa como referencia.
 
 >[!NOTE]
 >

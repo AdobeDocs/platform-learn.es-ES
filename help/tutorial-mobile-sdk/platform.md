@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo enviar datos a Adobe Experience Pl
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 exl-id: fdd2c90e-8246-4d75-a6db-df3ef31946c4
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '862'
 ht-degree: 8%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 8%
 # Envío de datos a Adobe Experience Platform
 
 Obtenga información sobre cómo enviar datos a Adobe Experience Platform.
+
+>[!INFO]
+>
+> Este tutorial se reemplazará con un nuevo tutorial con una nueva aplicación móvil de ejemplo a finales de noviembre de 2023
 
 Esta lección opcional es relevante para todos los clientes de Real-time Customer Data Platform (Real-Time CDP), Journey Optimizer y Customer Journey Analytics. Experience Platform, la base de los productos de Experience Cloud, es un sistema abierto que transforma todos sus datos (de Adobe y sin Adobe) en perfiles de clientes sólidos que se actualizan en tiempo real y que utiliza perspectivas impulsadas por IA para ayudarle a ofrecer las experiencias correctas en todos los canales.
 

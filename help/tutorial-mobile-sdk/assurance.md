@@ -3,16 +3,20 @@ title: Configurar Assurance
 description: Obtenga información sobre cómo implementar la extensión Assurance en una aplicación móvil.
 feature: Mobile SDK,Assurance
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 2%
+source-wordcount: '603'
+ht-degree: 11%
 
 ---
 
 # Assurance
 
 Obtenga información sobre cómo configurar Adobe Experience Platform Assurance en una aplicación móvil.
+
+>[!INFO]
+>
+> Este tutorial se reemplazará con un nuevo tutorial con una nueva aplicación móvil de ejemplo a finales de noviembre de 2023
 
 Assurance, anteriormente conocido como Project Griffon, está diseñado para ayudarle a inspeccionar, probar, simular y validar la forma en que recopila datos o sirve experiencias en su aplicación móvil.
 
@@ -30,7 +34,7 @@ En esta lección, deberá hacer lo siguiente:
 * Confirme que su organización tiene acceso a (y solicítelo si no lo tiene).
 * Configure la dirección URL base.
 * Añada el código específico de iOS requerido.
-* Conéctese a una sesión.
+* Conexión a una sesión.
 
 ## Confirmar acceso
 

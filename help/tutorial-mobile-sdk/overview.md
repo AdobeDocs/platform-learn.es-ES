@@ -3,9 +3,9 @@ title: 'Tutorial de implementación de Adobe Experience Cloud en aplicaciones m�
 description: Obtenga información sobre cómo implementar las aplicaciones móviles de Adobe Experience Cloud. Este tutorial le guía a través de una implementación de aplicaciones Experience Cloud en una aplicación Swift de ejemplo.
 recommendations: noDisplay,catalog
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: 4bccc95ff94e9377b65771268e82b1900c003fc1
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '661'
 ht-degree: 11%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 11%
 # Tutorial de implementación de Adobe Experience Cloud en aplicaciones móviles
 
 Obtenga información sobre cómo implementar aplicaciones de Adobe Experience Cloud en su aplicación móvil mediante el SDK móvil de Adobe Experience Platform.
+
+>[!INFO]
+>
+> Este tutorial se reemplazará con un nuevo tutorial con una nueva aplicación móvil de ejemplo a finales de noviembre de 2023
 
 El SDK de Experience Platform Mobile es un SDK del lado del cliente que permite a los clientes de Adobe Experience Cloud interactuar con aplicaciones de Adobe y servicios de terceros a través de Adobe Experience Platform Edge Network. Consulte la [Documentación del SDK de Adobe Experience Platform Mobile](https://developer.adobe.com/client-sdks/documentation/) para obtener información más detallada.
 
@@ -55,7 +59,7 @@ En estas lecciones, se da por hecho que dispone de un Adobe ID y de los permisos
    * **[!UICONTROL Derechos de propiedad]**: elementos de permiso para **[!UICONTROL Desarrollar]**, **[!UICONTROL Aprobar]**, **[!UICONTROL Publish]**, **[!UICONTROL Administración de extensiones]**, y **[!UICONTROL Administrar entornos]**.
    * **[!UICONTROL Derechos de compañía]**: elementos de permiso para **[!UICONTROL Administrar propiedades]** y, si completa la lección opcional de mensajería push, **[!UICONTROL Administrar configuraciones de aplicación]**
 
-      Para obtener más información sobre los permisos de etiquetas, consulte [Permisos de usuario para etiquetas](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=es){target="_blank"} en la documentación del producto.
+     Para obtener más información sobre los permisos de etiquetas, consulte [Permisos de usuario para etiquetas](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=es){target="_blank"} en la documentación del producto.
 * En Experience Platform, debe tener:
    * **[!UICONTROL Modelado de datos]**: elementos de permiso para gestionar y ver esquemas.
    * **[!UICONTROL Identity Management]**: elementos de permiso para administrar y ver áreas de nombres de identidad.

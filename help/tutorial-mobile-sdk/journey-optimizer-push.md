@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '899'
 ht-degree: 2%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 2%
 # mensajería push de Adobe Journey Optimizer
 
 Obtenga información sobre cómo crear mensajes push para aplicaciones móviles con el SDK móvil de Platform y Adobe Journey Optimizer.
+
+>[!INFO]
+>
+> Este tutorial se reemplazará con un nuevo tutorial con una nueva aplicación móvil de ejemplo a finales de noviembre de 2023
 
 Journey Optimizer le permite crear sus recorridos y enviar mensajes a audiencias de destino. Antes de enviar notificaciones push con Journey Optimizer, debe asegurarse de que las configuraciones e integraciones adecuadas estén implementadas. Para comprender el flujo de datos de notificaciones push en Adobe Journey Optimizer, consulte [la documentación](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-gs.html).
 
@@ -90,7 +94,7 @@ Puede obtenerse documentación adicional [encontrado aquí](https://help.apple.c
 ## Instalación de la extensión Adobe Journey Optimizer tags
 
 1. Vaya a [!UICONTROL Etiquetas] > [!UICONTROL Extensiones] > [!UICONTROL Catálogo]y busque la variable **[!UICONTROL Adobe Journey Optimizer]** extensión.
-1. Instale la extensión de.
+1. Instalar la extensión.
    ![instalación de la extensión ajo](assets/mobile-push-tags-install.png)
 1. Seleccionar `CJM Push Tracking Experience Event Dataset` el conjunto de datos de Adobe Experience Platform.
    ![Configuración de extensión de AJO](assets/mobile-push-tags-ajo.png)

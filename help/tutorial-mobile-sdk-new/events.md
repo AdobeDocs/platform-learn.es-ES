@@ -3,7 +3,7 @@ title: Seguimiento de datos de eventos
 description: Obtenga información sobre cómo rastrear datos de evento en una aplicación móvil.
 hide: true
 exl-id: b926480b-b431-4db8-835c-fa1db6436a93
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: f592fc61ad28d04eba3c1c21a0a66bda6e816a5b
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 1%
@@ -367,7 +367,7 @@ Ahora debe tener todas las herramientas para empezar a añadir recopilación de 
 
 >[!TIP]
 >
->Revise la [aplicación finalizada](https://git.corp.adobe.com/rmaur/Luma) para ver más ejemplos.
+>Revise la [aplicación finalizada](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) para ver más ejemplos.
 
 
 ## Envío de eventos a Analytics y Platform

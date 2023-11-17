@@ -2,16 +2,20 @@
 title: Datos del ciclo vital
 description: Obtenga información sobre cómo recopilar datos del ciclo vital en una aplicación móvil.
 exl-id: 75b2dbaa-2f84-4b95-83f6-2f38a4f1d438
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 2%
+source-wordcount: '508'
+ht-degree: 3%
 
 ---
 
 # Datos del ciclo vital
 
 Obtenga información sobre cómo recopilar datos del ciclo vital en una aplicación móvil.
+
+>[!INFO]
+>
+> Este tutorial se reemplazará con un nuevo tutorial con una nueva aplicación móvil de ejemplo a finales de noviembre de 2023
 
 La extensión Adobe Experience Platform Mobile SDK Lifecycle permite la recopilación de datos del ciclo vital desde la aplicación móvil. La extensión de red perimetral de Adobe Experience Platform envía estos datos del ciclo vital a la red perimetral de Platform, donde se reenvían a otras aplicaciones y servicios según la configuración del flujo de datos. Obtenga más información acerca de [Extensión del ciclo vital](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/) en la documentación del producto.
 
@@ -21,9 +25,9 @@ La extensión Adobe Experience Platform Mobile SDK Lifecycle permite la recopila
 * La aplicación se ha creado y ejecutado correctamente con los SDK instalados y configurados.
 * Se ha importado el SDK de Assurance.
 
-   ```swift
-   import AEPAssurance
-   ```
+  ```swift
+  import AEPAssurance
+  ```
 
 * Registre la extensión de Assurance como se describe en la [lección anterior](install-sdks.md).
 

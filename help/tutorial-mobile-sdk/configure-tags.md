@@ -3,9 +3,9 @@ title: Configuración de una propiedad de etiqueta
 description: Obtenga información sobre cómo configurar una propiedad de etiqueta en la [!UICONTROL Recopilación de datos] interfaz.
 feature: Mobile SDK,Tags
 exl-id: 0c4b00cc-34e3-4d08-945e-3fd2bc1b6ccf
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '733'
 ht-degree: 11%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 11%
 # Configuración de una propiedad de etiqueta
 
 Obtenga información sobre cómo configurar una propiedad de etiqueta en la [!UICONTROL Recopilación de datos] interfaz.
+
+>[!INFO]
+>
+> Este tutorial se reemplazará con un nuevo tutorial con una nueva aplicación móvil de ejemplo a finales de noviembre de 2023
 
 Las etiquetas de Adobe Experience Platform son la próxima generación de funcionalidades de administración de etiquetas de Adobe. Las etiquetas ofrecen a los clientes una alternativa sencilla para implementar y administrar todas las etiquetas de análisis, marketing y publicidad necesarias para potenciar las importantes experiencias del cliente. Más información sobre [etiquetas](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=es) en la documentación del producto.
 
