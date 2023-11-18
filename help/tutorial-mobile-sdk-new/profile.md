@@ -3,7 +3,7 @@ title: Recopilación de datos de perfil
 description: Obtenga información sobre cómo recopilar datos de perfil en una aplicación móvil.
 hide: true
 exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 8f77843aec76e49c5e774016ed6cca5df510d3a4
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 1%
@@ -39,7 +39,7 @@ En esta lección, deberá hacer lo siguiente:
 
 Sería útil que la segmentación o personalización en la aplicación supiera rápidamente si un usuario ha realizado una compra en el pasado o recientemente. Vamos a configurarlo en la aplicación de Luma.
 
-1. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** en el navegador del proyecto Xcode y busque la variable `func updateUserAttributes(attributeName: String, attributeValue: String)` función. Añada el siguiente código:
+1. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** en el navegador del proyecto Xcode y busque la variable `func updateUserAttribute(attributeName: String, attributeValue: String)` función. Añada el siguiente código:
 
    ```swift
    // Create a profile map, add attributes to the map and update profile using the map
@@ -60,7 +60,7 @@ Sería útil que la segmentación o personalización en la aplicación supiera r
 
    ```swift
    // Update attributes
-   MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
+   MobileSDK.shared.updateUserAttribute(attributeName: "isPaidUser", attributeValue: "yes")
    ```
 
 
@@ -86,7 +86,7 @@ Una vez que haya actualizado el atributo de un usuario, estará disponible para 
 
    Este código:
 
-   1. Llama al [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) API con el `iPaidUser` nombre del atributo como elemento único en el `attributeNames` matriz.
+   1. Llama al [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) API con el `isPaidUser` nombre del atributo como elemento único en el `attributeNames` matriz.
    1. Entonces comprueba el valor del `isPaidUser` atributo y cuándo `yes`, coloca un distintivo en la <img src="assets/paiduser.png" width="20" /> en la barra de herramientas de la parte superior derecha.
 
 Se puede encontrar documentación adicional [aquí](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
