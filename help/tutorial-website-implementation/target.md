@@ -3,7 +3,7 @@ title: Añadir Adobe Target con etiquetas
 description: Obtenga información sobre cómo implementar Adobe Target mediante etiquetas con at.js, una solicitud de carga de página, parámetros, una solicitud de pedido y un código personalizado de encabezado y pie de página. Esta lección forma parte del tutorial Implementación del Experience Cloud en sitios web.
 solution: Data Collection, Target
 exl-id: aa22e51a-67c2-4b54-b582-6f34f8c68aee
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
 workflow-type: tm+mt
 source-wordcount: '4445'
 ht-degree: 75%
@@ -303,7 +303,7 @@ Es imperativo configurar el ID de cliente en la acción `Set Customer IDs` del s
 
 * El ID de cliente debe estar disponible en la página antes del código incrustado de etiquetas
 * Se debe instalar la extensión del servicio de ID de Adobe Experience Platform.
-* Debe utilizar la acción `Set Customer IDs` en una regla que se active con el evento “Library Loaded (Page Top)” [biblioteca cargada (principio de página)].
+* Debe utilizar la acción `Set Customer IDs` en una regla que se active con el evento “Biblioteca cargada (Principio de la página)”.
 * Utilice la acción `Fire Page Load Request` en una regla que se active *después* de la acción “Set Customer ID” (establecer ID de cliente).
 
 En la lección anterior, [Añadir el servicio de ID de Adobe Experience Platform](id-service.md), ha creado la regla `All Pages - Library Loaded - Authenticated - 10` para activar la acción “Set Customer ID” (establecer ID de cliente). Debido a que esta regla tiene una configuración `Order` de `10`, los ID de cliente se establecen antes de que nuestra solicitud de carga de página se active desde la regla `All Pages - Library Loaded` con su configuración `Order` de `50`. Por lo tanto, ¡ya ha implementado la recopilación de ID de cliente para Target!
@@ -485,7 +485,7 @@ Ahora necesitamos crear una regla para activar la solicitud de confirmación de 
 1. Haga clic en **[!UICONTROL Añadir regla]**
 1. Asigne un nombre a la regla `Order Confirmation Page - Library Loaded - 60`.
 1. Haga clic en **[!UICONTROL Eventos > Añadir]**
-   1. Seleccione **[!UICONTROL Tipo de evento > Biblioteca cargada (Principio de página)]**
+   1. Seleccione **[!UICONTROL Tipo de evento > Biblioteca cargada (Principio de la página)]**
    1. En **[!UICONTROL Opciones avanzadas]**, cambie la `Order` hasta `60` para que se active después de que `Load Target` acción (que se encuentra en nuestro `All Pages - Library Loaded` regla donde `Order` se establece en `50`)
    1. Haga clic en **[!UICONTROL Conservar cambios]**.
 1. Haga clic en **[!UICONTROL Condiciones > Añadir]**
@@ -567,7 +567,7 @@ En estas circunstancias, utilice la acción Código personalizado de la extensi�
 
 ## Encabezado de biblioteca y pie de página de biblioteca
 
-La pantalla Edit at.js de la interfaz de usuario de Target tiene ubicaciones en las que puede pegar JavaScript personalizado que se ejecuta inmediatamente antes o después del archivo at.js. El Library Header (encabezado de la biblioteca) se utiliza a veces para anular la configuración de at.js a través de la función [targetGlobalSettings()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/targetgobalsettings.html) o transmitir datos de terceros a través de la función [Data Providers](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html). El Library Footer (pie de página de la biblioteca) se utiliza a veces para agregar oyentes de [eventos personalizados de at.js](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/atjs-custom-events.html).
+La pantalla Edit at.js de la interfaz de usuario de Target tiene ubicaciones en las que puede pegar JavaScript personalizado que se ejecuta inmediatamente antes o después del archivo at.js. El Library Header (encabezado de la biblioteca) se utiliza a veces para anular la configuración de at.js a través de la función [targetGlobalSettings()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/targetgobalsettings.html) o transmitir datos de terceros a través de la función [Data Providers](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html). El Library Footer (pie de página de la biblioteca) se utiliza a veces para agregar oyentes de [eventos personalizados de at.js](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/atjs-custom-events.html).
 
 Para replicar esta capacidad en etiquetas, utilice la acción Código personalizado de la extensión principal y secuencie la acción antes (Library Header) o después (Library Footer) de la acción Load Target. Esto se puede hacer en la misma regla que la acción `Load Target` (según se muestra a continuación) o en reglas independientes con eventos o configuraciones de pedidos que se activan de forma fiable antes o después de la regla que contiene `Load Target`:
 

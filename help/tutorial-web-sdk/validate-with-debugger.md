@@ -3,10 +3,10 @@ title: Validación de implementaciones de SDK web con Experience Platform Debugg
 description: Obtenga información sobre cómo validar la implementación del SDK web de Platform con Adobe Experience Platform Debugger. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK,Tags,Debugger
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
 workflow-type: tm+mt
-source-wordcount: '1072'
-ht-degree: 6%
+source-wordcount: '1071'
+ht-degree: 5%
 
 ---
 
@@ -23,7 +23,7 @@ Si nunca antes ha utilizado Debugger (y este es diferente del antiguo Adobe Expe
 
 >[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
 
-En esta lección, debe usar el [Extensión de Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) para reemplazar la propiedad de etiqueta codificada en la variable [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html) con su propia propiedad.
+En esta lección, debe usar el [extensión de Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) para reemplazar la propiedad de etiqueta codificada en la variable [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html) con su propia propiedad.
 
 Esta técnica se denomina cambio de entorno y será útil más adelante, cuando trabaje con etiquetas en su propio sitio web. Puede cargar el sitio web de producción en su explorador, pero con su *desarrollo* entorno de etiquetas. Esta capacidad permite realizar y validar cambios de etiquetas con seguridad en de forma independiente de las revisiones de código normales. Después de todo, esta separación de las versiones de etiquetas de marketing de las versiones de código normal es una de las principales razones por las que los clientes utilizan etiquetas.
 

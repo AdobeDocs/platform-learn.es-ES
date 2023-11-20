@@ -5,9 +5,9 @@ feature: Web SDK, Tags
 level: Intermediate
 doc-type: tutorial
 exl-id: bee792c3-17b7-41fb-a422-289ca018097d
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
 workflow-type: tm+mt
-source-wordcount: '3321'
+source-wordcount: '3320'
 ht-degree: 2%
 
 ---
@@ -236,7 +236,7 @@ Si está utilizando el [biblioteca de trabajo](https://experienceleague.adobe.co
 
 ### Paso 4: Inspect y validación de la recopilación de datos
 
-En nuestro sitio, actualizamos la página y confirmamos la compilación de la biblioteca en [Depurador](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) Extensión de Chrome, en la sección de menú de etiquetas:
+En nuestro sitio, actualizamos la página y confirmamos la compilación de la biblioteca en [Depurador](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) Extensión de Chrome, en la sección de menú de etiquetas:
 
 ![](./images/build-date.png)
 
