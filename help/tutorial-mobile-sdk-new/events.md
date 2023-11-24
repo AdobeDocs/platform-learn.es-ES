@@ -3,9 +3,9 @@ title: Seguimiento de datos de eventos
 description: Obtenga información sobre cómo rastrear datos de evento en una aplicación móvil.
 hide: true
 exl-id: b926480b-b431-4db8-835c-fa1db6436a93
-source-git-commit: 4434bee35591d7cf79b7dddc03faba83d00b31f5
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1388'
 ht-degree: 1%
 
 ---
@@ -322,7 +322,7 @@ De nuevo, vamos a implementar este código en su proyecto Xcode.
 
 1. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]**.
 
-   1. Agregue el siguiente código resaltado al cierre del botón Inicio de sesión:
+   1. Añada el siguiente código resaltado a `Button("Login") {` cierre:
 
       ```swift
       // Send app interaction event

@@ -3,7 +3,7 @@ title: Recopilación de datos de perfil
 description: Obtenga información sobre cómo recopilar datos de perfil en una aplicación móvil.
 hide: true
 exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
-source-git-commit: 8f77843aec76e49c5e774016ed6cca5df510d3a4
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 1%
@@ -96,8 +96,8 @@ Se puede encontrar documentación adicional [aquí](https://developer.adobe.com/
 1. Revise la [instrucciones de configuración](assurance.md#connecting-to-a-session) para conectar el simulador o dispositivo a Assurance.
 1. Ejecute la aplicación para iniciar sesión e interactuar con un producto.
 
-   1. Mueva el icono Garantía a la izquierda.
    1. Seleccionar **[!UICONTROL Inicio]** en la barra de pestañas.
+   1. Mueva el icono Garantía a la izquierda.
    1. Para abrir la hoja Inicio de sesión, seleccione <img src="assets/login.png" width="15" /> botón.
 
       <img src="./assets/mobile-app-events-1.png" width="300">

@@ -4,9 +4,9 @@ description: Qué hacer a continuación después de completar el tutorial
 recommendations: display,noCatalog
 hide: true
 exl-id: be256529-fd4f-428b-b023-409b7a35c204
-source-git-commit: f2d64236d7d5a0b56ead3fd0e69818813c907b03
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '490'
 ht-degree: 8%
 
 ---
@@ -48,6 +48,7 @@ Revisemos rápidamente todo lo que ha logrado. Tiene lo siguiente:
 * **Más información sobre Experience Platform**. Obtenga más información sobre cómo introducir datos de otras fuentes y combinarlos con los datos del SDK móvil en [Introducción a Adobe Experience Platform para arquitectos e ingenieros de datos](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=es)
 
 
->[!NOTE]
+>[!SUCCESS]
 >
->Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>**¡Felicidades!** Ha completado este tutorial del SDK móvil de Experience Platform. Vuelva al tutorial regularmente, ya que haremos actualizaciones y añadiremos más contenido con el tiempo.<br/><br/>Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+

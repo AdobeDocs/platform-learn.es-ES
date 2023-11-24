@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo implementar la extensión Assuranc
 feature: Mobile SDK,Assurance
 hide: true
 exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '987'
 ht-degree: 7%
 
 ---
@@ -86,14 +86,14 @@ To update the signing for the lessons that require that you sign the application
 1. Seleccionar **[!DNL Luma]** en el navegador del proyecto.
 1. Seleccione el **[!DNL Luma]** objetivo.
 1. Seleccione el **Información** pestaña.
-1. Para añadir una URL base, desplácese hacia abajo hasta **Tipos de URL** y seleccione la **+** botón.
+1. Desplácese hacia abajo hasta **Tipos de URL (1)** y abra la sección utilizando las comillas angulares (>) si no hay ninguna abierta.
 1. Establecer **Identificador** Vaya al Identificador de paquete de su elección y defina una **Esquemas de URL** de su elección.
 
    ![url de garantía](assets/assurance-url-type.png)
 
    >[!IMPORTANT]
    >
-   >Asegúrese de utilizar un _único_ identificador de paquete y reemplace el `com.adobe.luma.tutorial.swiftui` identificador de paquete, ya que cada identificador de paquete debe ser único. Normalmente, se utiliza un formato DNS inverso para cadenas de ID de paquete, como `com.organization.brand.uniqueidentifier`.<br/>Del mismo modo, utilice un esquema de URL único y reemplace el ya proporcionado `lumatutorialswiftui` con su esquema de URL único.
+   >Asegúrese de utilizar un _único_ identificador de paquete, así que reemplace el `com.adobe.luma.tutorial.swiftui` identificador de paquete, ya que cada identificador de paquete debe ser único. Normalmente, se utiliza un formato DNS inverso para cadenas de ID de paquete, como `com.organization.brand.uniqueidentifier`.<br/>Del mismo modo, utilice un esquema de URL único, por lo que reemplace el ya proporcionado `lumatutorialswiftui` con su esquema de URL único.
 
 Para obtener más información sobre los esquemas de URL en iOS, consulte [Documentación de Apple](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 

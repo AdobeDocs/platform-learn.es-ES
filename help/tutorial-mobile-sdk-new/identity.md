@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo recopilar datos de identidad en un
 feature: Mobile SDK,Identities
 hide: true
 exl-id: e6ec9a4f-3163-47fd-8d5c-6e640af3b4ba
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 5%
+source-wordcount: '919'
+ht-degree: 4%
 
 ---
 
@@ -66,7 +66,7 @@ Desea actualizar la identidad estándar (correo electrónico) y la identidad per
    let identityMap: IdentityMap = IdentityMap()
    
    let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
-   let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
+   let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated, primary: true)
    identityMap.add(item:emailIdentity, withNamespace: "Email")
    identityMap.add(item: crmIdentity, withNamespace: "lumaCRMId")
    
@@ -81,12 +81,14 @@ Desea actualizar la identidad estándar (correo electrónico) y la identidad per
       let identityMap: IdentityMap = IdentityMap()
       ```
 
-   1. Configuración de `IdentityItem` objetos para correo electrónico e ID de CRM.
+   1. Configuración de `IdentityItem` objetos para correo electrónico e ID de CRM. El Adobe recomienda enviar identidades que representen a una persona, como el ID de Luma CRM, como la identidad principal. Si el mapa de identidad contiene el identificador de persona (por ejemplo, el ID de Luma CRM), el identificador de persona se convertirá en la identidad principal. De lo contrario, ECID se convierte en la identidad principal. La configuración de un ID de persona como ID principal facilita búsquedas más eficientes de un perfil en llamadas de API posteriores.
 
       ```swift
       let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
-      let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
+      let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated, primary: true)
       ```
+
+
 
    1. Añade estos `IdentityItem` objetos a la `IdentityMap` objeto.
 
