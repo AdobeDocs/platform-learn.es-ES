@@ -1,24 +1,20 @@
 ---
-title: Consentimiento
+title: Implementación del consentimiento para implementaciones del SDK de Platform Mobile
 description: Obtenga información sobre cómo implementar el consentimiento en una aplicación móvil.
 feature: Mobile SDK,Consent
 exl-id: 08042569-e16e-4ed9-9b5a-864d8b7f0216
-source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
+source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 6%
+source-wordcount: '544'
+ht-degree: 2%
 
 ---
 
-# Consentimiento
+# Implementación del consentimiento
 
 Obtenga información sobre cómo implementar el consentimiento en una aplicación móvil.
 
->[!INFO]
->
-> Este tutorial se reemplazará con un nuevo tutorial con una nueva aplicación móvil de ejemplo a finales de noviembre de 2023
-
-La extensión móvil Adobe Experience Platform Consent habilita la recopilación de preferencias de consentimiento de su aplicación móvil al utilizar el SDK móvil de Adobe Experience Platform y la extensión de red perimetral. Obtenga más información acerca de [Extensión de consentimiento](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/), en la documentación.
+La extensión móvil Adobe Experience Platform Consent habilita la recopilación de preferencias de consentimiento de su aplicación móvil al utilizar el SDK móvil de Adobe Experience Platform y la extensión de red perimetral. Obtenga más información acerca de [Extensión de consentimiento](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/) en la documentación.
 
 ## Requisitos previos
 
@@ -34,73 +30,81 @@ En esta lección, deberá hacer lo siguiente:
 
 ## Pedir consentimiento
 
-Si ha seguido el tutorial desde el principio, recordará haber configurado la variable **[!UICONTROL Nivel de consentimiento predeterminado]** a &quot;Pendiente&quot;. Para empezar a recopilar datos, debe obtener el consentimiento del usuario. En este tutorial, obtenga el consentimiento simplemente preguntando con una alerta; en una aplicación del mundo real, querrá consultar las prácticas recomendadas de consentimiento para su región.
+Si ha seguido el tutorial desde el principio, puede recordar que ha establecido el consentimiento predeterminado en la extensión de consentimiento en **[!UICONTROL Pendiente: eventos de cola que se producen antes de que el usuario proporcione preferencias de consentimiento.]**
 
-1. Solo desea preguntar al usuario una vez. Una forma sencilla de gestionarlo es simplemente utilizando `UserDefaults`.
-1. Navegue hasta `Home.swift`.
-1. Añada el siguiente código a `viewDidLoad()`.
+Para empezar a recopilar datos, debe obtener el consentimiento del usuario. En una aplicación real, le recomendamos que consulte las prácticas recomendadas de consentimiento para su región. En este tutorial, obtiene el consentimiento del usuario simplemente pidiéndolo con una alerta:
+
+1. Solo desea solicitar el consentimiento al usuario una vez. Puede hacerlo combinando el consentimiento del SDK móvil con la autorización necesaria para el seguimiento con el de Apple [Marco de transparencia de seguimiento de aplicaciones](https://developer.apple.com/documentation/apptrackingtransparency). En esta aplicación, se supone que cuando el usuario autoriza el seguimiento, consiente en recopilar eventos.
+
+1. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** en el navegador del proyecto Xcode.
+
+   Añada este código a `updateConsent` función.
 
    ```swift
-   let defaults = UserDefaults.standard
-   let consentKey = "askForConsentYet"
-   let hidePopUp = defaults.bool(forKey: consentKey)
+   // Update consent
+   let collectConsent = ["collect": ["val": value]]
+   let currentConsents = ["consents": collectConsent]
+   Consent.update(with: currentConsents)
+   MobileCore.updateConfigurationWith(configDict: currentConsents)
    ```
 
-1. Si el usuario no ha visto la alerta antes, muéstrela y actualice el consentimiento en función de su respuesta. Añada el siguiente código a `viewDidLoad()`.
+1. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL DisclaimerView]** en el navegador de proyectos de Xcode, que es la vista que se muestra después de instalar o reinstalar la aplicación e iniciar la aplicación por primera vez. Se solicita al usuario que autorice el seguimiento según el de Apple [Marco de transparencia de seguimiento de aplicaciones](https://developer.apple.com/documentation/apptrackingtransparency). Si el usuario lo autoriza, también debe actualizar el consentimiento.
+
+   Añada el siguiente código a `ATTrackingManager.requestTrackingAuthorization { status in` cierre.
 
    ```swift
-   if(hidePopUp == false){
-       //Consent Alert
-       let alert = UIAlertController(title: "Allow Data Collection?", message: "Selecting Yes will begin data collection", preferredStyle: .alert)
-       alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { action in
-           //Update Consent -> "yes"
-           let collectConsent = ["collect": ["val": "y"]]
-           let currentConsents = ["consents": collectConsent]
-           Consent.update(with: currentConsents)
-           defaults.set(true, forKey: consentKey)
-       }))
-       alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: { action in
-           //Update Consent -> "no"
-           let collectConsent = ["collect": ["val": "n"]]
-           let currentConsents = ["consents": collectConsent]
-           Consent.update(with: currentConsents)
-           defaults.set(true, forKey: consentKey)
-       }))
-       self.present(alert, animated: true)
+   // Add consent based on authorization
+   if status == .authorized {
+      // Set consent to yes
+      MobileSDK.shared.updateConsent(value: "y")
+   }
+   else {
+      // Set consent to yes
+      MobileSDK.shared.updateConsent(value: "n")
    }
    ```
 
-
 ## Obtener estado de consentimiento actual
 
-La extensión móvil de consentimiento suprimirá/anulará/permitirá automáticamente el seguimiento en función del valor de consentimiento actual. También puede acceder al estado de consentimiento actual usted mismo:
+La extensión móvil de consentimiento suprime automáticamente / suspende / permite el seguimiento en función del valor de consentimiento actual. También puede acceder al estado de consentimiento actual usted mismo:
 
-1. Navegue hasta `Home.swift`.
-1. Añada el siguiente código a `viewDidLoad()`.
+1. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** en el navegador de proyectos de Xcode.
 
-```swift
-Consent.getConsents{ consents, error in
-    guard error == nil, let consents = consents else { return }
-    guard let jsonData = try? JSONSerialization.data(withJSONObject: consents, options: .prettyPrinted) else { return }
-    guard let jsonStr = String(data: jsonData, encoding: .utf8) else { return }
-    print("Consent getConsents: ",jsonStr)
-}
-```
+   Añada el siguiente código a `getConsents` función:
 
-En el ejemplo anterior, simplemente imprime el estado de consentimiento en la consola. En un escenario real, puede usarlo para modificar qué menús u opciones se muestran al usuario.
+   ```swift
+   // Get consents
+   Consent.getConsents { consents, error in
+      guard error == nil, let consents = consents else { return }
+      guard let jsonData = try? JSONSerialization.data(withJSONObject: consents, options: .prettyPrinted) else { return }
+      guard let jsonStr = String(data: jsonData, encoding: .utf8) else { return }
+      Logger.aepMobileSDK.info("Consent getConsents: \(jsonStr)")
+   }
+   ```
+
+2. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL HomeView]** en el navegador de proyectos de Xcode.
+
+   Añada el siguiente código a `.task` modificador:
+
+   ```swift
+   // Ask status of consents
+   MobileSDK.shared.getConsents()   
+   ```
+
+En el ejemplo anterior, simplemente está registrando el estado de consentimiento en la consola en Xcode. En un escenario real, puede usarlo para modificar qué menús u opciones se muestran al usuario.
 
 ## Validar con Assurance
 
-1. Revise la [Assurance](assurance.md) lección.
-1. Instale la aplicación.
-1. Inicie la aplicación mediante la URL generada por Assurance.
-1. Si agregó el código anterior correctamente, se le solicitará que proporcione consentimiento. Seleccionar **Sí**.
-   ![ventana emergente de consentimiento](assets/mobile-consent-validate.png)
-1. Debería ver una **[!UICONTROL Preferencias de consentimiento actualizadas]** en la interfaz de usuario de Assurance.
-   ![validación del consentimiento](assets/mobile-consent-update.png)
+1. Elimine la aplicación del dispositivo o simulador para restablecer e inicializar correctamente el seguimiento y el consentimiento.
+1. Para conectar el simulador o el dispositivo a Assurance, consulte la [instrucciones de configuración](assurance.md#connecting-to-a-session) sección.
+1. Al mover en la aplicación desde **[!UICONTROL Inicio]** pantalla para **[!UICONTROL Productos]** pantalla y volver a **[!UICONTROL Inicio]** pantalla, debería ver una **[!UICONTROL Obtener respuesta de consentimientos]** en la interfaz de usuario de Assurance.
+   ![validación del consentimiento](assets/consent-update.png)
 
-Siguiente: **[Recopilar datos del ciclo vital](lifecycle-data.md)**
 
->[!NOTE]
+>[!SUCCESS]
+>
+>Ahora ha habilitado la aplicación para solicitar al usuario de su inicio inicial después de la instalación (o reinstalación) el consentimiento mediante el SDK para móviles de Adobe Experience Platform.
 >
 >Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+
+Siguiente: **[Recopilar datos del ciclo vital](lifecycle-data.md)**
