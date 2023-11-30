@@ -3,7 +3,7 @@ title: Asignación de datos recopilados con el SDK de Platform Mobile a Adobe An
 description: Obtenga información sobre cómo recopilar y asignar datos para Adobe Analytics en una aplicación móvil.
 solution: Data Collection,Experience Platform,Analytics
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: 29b9771d81395676547b93ab3a1475a6a69c763f
+source-git-commit: 1025e7a7f0e8f994ecc05ddb5362a66c8d89a978
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 2%
@@ -81,7 +81,7 @@ Este objeto:
 resultados en:
 
 ```
-s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
+s.products = ";5829,1,49.99;9841,3,30.00"
 ```
 
 >[!NOTE]
