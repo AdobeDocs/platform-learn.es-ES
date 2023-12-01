@@ -6,7 +6,7 @@ role: Admin, Developer, Architect, Data Engineer
 level: Intermediate, Experienced
 jira: KT-9921
 exl-id: f8fd351a-435c-4cc1-b987-ed2ead20d4d6
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 7edf8fc46943ae2f1e6e2e20f4d589d7959310c8
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 3%
@@ -31,7 +31,7 @@ Los proveedores de exploradores están cambiando el modo en que tratan las cooki
 
 ## Casos de uso y datos {#use-cases-data}
 
-El primer paso es definir los casos de uso implementados con la etiqueta de proveedor del lado del cliente. Por ejemplo, piense en el píxel Facebook (Meta). Trasladarlo de nuestro sitio a la [API de conversiones de facebook](https://exchange.adobe.com/apps/ec/105509/facebook-conversions-api-extension) con la extensión de reenvío de eventos significa documentar primero los casos de uso específicos.
+El primer paso es definir los casos de uso implementados con la etiqueta de proveedor del lado del cliente. Por ejemplo, piense en el píxel Facebook (Meta). Trasladarlo de nuestro sitio a la [API de metaconversiones](https://exchange.adobe.com/apps/ec/109168/meta-conversions-api) con la extensión de reenvío de eventos significa documentar primero los casos de uso específicos.
 
 Para el código de proveedor actual del lado del cliente:
 
