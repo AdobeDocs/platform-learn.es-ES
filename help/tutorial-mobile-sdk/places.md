@@ -1,11 +1,12 @@
 ---
 title: Uso de Places con el SDK de Platform Mobile
 description: Aprenda a utilizar el servicio de geolocalización de Places en su aplicación móvil.
+jira: KT-14635
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: 87477cce0f0c5c0bb140927bed22dbc6e11f2af9
+source-git-commit: 3186788dfb834f980f743cef82942b3cf468a857
 workflow-type: tm+mt
-source-wordcount: '1696'
-ht-degree: 3%
+source-wordcount: '1588'
+ht-degree: 2%
 
 ---
 
@@ -71,7 +72,7 @@ Puede definir algunos puntos de interés en el servicio Places.
 1. Seleccionar **[!UICONTROL Extensiones]**.
 1. Seleccionar **[!UICONTROL Catálogo]**.
 1. Busque la variable **[!UICONTROL Places]** extensión.
-1. Instalar la extensión.
+1. Instale la extensión de.
 
    ![Añadir extensión de Decisioning](assets/tag-places-extension.png)
 
@@ -319,7 +320,7 @@ Como se ha explicado en lecciones anteriores, la instalación de una extensión 
 
 1. Mueva (arrastre) el mapa para asegurarse de que el círculo central azul esté encima de uno de sus puntos de interés, por ejemplo Londres.
 
-1. Toque <img src="assets/geobutton.png" width="20" /> hasta que vea que la categoría y el nombre aparecen en la etiqueta en la ubicación roja con el pin.
+1. Tocar <img src="assets/geobutton.png" width="20" /> hasta que vea que la categoría y el nombre aparecen en la etiqueta en la ubicación roja con el pin.
 
 1. Pulse la etiqueta del punto de interés, que abre el **[!UICONTROL Punto de interés cercano]** hoja.
 

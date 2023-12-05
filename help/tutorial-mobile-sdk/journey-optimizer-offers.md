@@ -4,11 +4,12 @@ description: Obtenga información sobre cómo crear y mostrar ofertas con el SDK
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
+jira: KT-14640
 exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '2676'
-ht-degree: 2%
+source-wordcount: '2470'
+ht-degree: 1%
 
 ---
 
@@ -76,7 +77,7 @@ Para garantizar que los datos enviados desde su aplicación móvil a Platform Ed
 1. Seleccionar **[!UICONTROL Extensiones]**.
 1. Seleccionar **[!UICONTROL Catálogo]**.
 1. Busque la variable **[!UICONTROL Adobe Journey Optimizer - Toma de decisiones]** extensión.
-1. Instalar la extensión. La extensión no requiere ninguna configuración adicional.
+1. Instale la extensión de. La extensión no requiere ninguna configuración adicional.
 
    ![Añadir extensión de Decisioning](assets/tag-add-decisioning-extension.png)
 
@@ -124,7 +125,7 @@ Para crear la ubicación JSON de Mobile:
 
 
 
-## Cree ofertas
+## Creación de ofertas
 
 1. En la IU de Journey Optimizer, seleccione ![Ofertas](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Offers_18_N.svg)  **[!UICONTROL Ofertas]** de **[!UICONTROL GESTIÓN DE DECISIONES]** en el carril izquierdo.
 1. En el **[!UICONTROL Ofertas]** pantalla, seleccione **[!UICONTROL Examinar]** para ver la lista de ofertas.

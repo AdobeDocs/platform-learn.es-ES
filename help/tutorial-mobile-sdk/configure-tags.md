@@ -2,11 +2,12 @@
 title: Configuración de una propiedad de etiquetas para implementaciones del SDK de Platform Mobile
 description: Obtenga información sobre cómo configurar una propiedad de etiqueta en la [!UICONTROL Recopilación de datos] interfaz.
 feature: Mobile SDK,Tags
+jira: KT-14626
 exl-id: 0c4b00cc-34e3-4d08-945e-3fd2bc1b6ccf
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1095'
-ht-degree: 7%
+source-wordcount: '1005'
+ht-degree: 3%
 
 ---
 
@@ -35,11 +36,11 @@ En esta lección, deberá hacer lo siguiente:
 
 1. Cree una nueva propiedad de etiqueta móvil en la interfaz de recopilación de datos:
    1. Seleccionar **[!UICONTROL Etiquetas]** en el panel de navegación izquierdo.
-   1. Seleccione **[!UICONTROL Nueva propiedad]**
+   1. Seleccionar **[!UICONTROL Nueva propiedad]**
       ![crear una propiedad de etiqueta](assets/tags-new-property.png).
    1. Para el **[!UICONTROL Nombre]**, introduzca `Luma Mobile App Tutorial`.
    1. Para el **[!UICONTROL Plataforma]**, seleccione **[!UICONTROL Móvil]**.
-   1. Seleccione **[!UICONTROL Guardar]**.
+   1. Seleccionar  **[!UICONTROL Guardar]**.
 
       ![configuración de la propiedad tag](assets/tags-property-config.png)
 

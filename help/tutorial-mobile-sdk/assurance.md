@@ -2,11 +2,12 @@
 title: Configuración de Assurance para implementaciones del SDK de Platform Mobile
 description: Obtenga información sobre cómo implementar la extensión Assurance en una aplicación móvil.
 feature: Mobile SDK,Assurance
+jira: KT-14628
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 7%
+source-wordcount: '925'
+ht-degree: 6%
 
 ---
 
@@ -30,7 +31,7 @@ En esta lección, deberá hacer lo siguiente:
 * Confirme que su organización tiene acceso a (y solicítelo si no lo tiene).
 * Configure la dirección URL base.
 * Añada el código específico de iOS requerido.
-* Conexión a una sesión.
+* Conéctese a una sesión.
 
 ## Confirmar acceso
 

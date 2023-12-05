@@ -4,11 +4,12 @@ description: Obtenga información sobre cómo crear y enviar mensajes en la apli
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
+jira: KT-14639
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1540'
-ht-degree: 5%
+source-wordcount: '1434'
+ht-degree: 1%
 
 ---
 
@@ -32,7 +33,7 @@ Antes de enviar mensajes en la aplicación con Journey Optimizer, debe asegurars
 * La aplicación se ha creado y ejecutado correctamente con los SDK instalados y configurados.
 * Configure la aplicación para Adobe Experience Platform.
 * Acceso a Journey Optimizer y permisos suficientes, tal como se describe [aquí](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html). Además, necesita permisos suficientes para las siguientes funciones de Journey Optimizer.
-   * Administración de campañas.
+   * Administrar campañas.
 * Dispositivo o simulador físico de iOS para realizar pruebas.
 
 
@@ -89,7 +90,7 @@ Para que la aplicación funcione con Journey Optimizer, debe actualizar la propi
 1. Abra la propiedad, por ejemplo **[!DNL Luma Mobile App Tutorial]**.
 1. Seleccionar **[!UICONTROL Catálogo]**.
 1. Busque la variable **[!UICONTROL Adobe Journey Optimizer]** extensión.
-1. Instalar la extensión.
+1. Instale la extensión de.
 1. En el **[!UICONTROL Instalar extensión]** diálogo
    1. Seleccione un entorno, por ejemplo **[!UICONTROL Desarrollo]**.
    1. Seleccione el **[!UICONTROL Conjunto de datos de evento de experiencia de seguimiento push AJO]** conjunto de datos del **[!UICONTROL Conjunto de datos de evento]** lista.
@@ -166,10 +167,10 @@ El centro de eventos del SDK publica y recibe datos de eventos de extensiones re
 1. Seleccionar **[!UICONTROL Crear campaña]**.
 1. En el **[!UICONTROL Crear campaña]** pantalla:
    1. Seleccionar **[!UICONTROL Mensaje en la aplicación]** y seleccione una superficie de aplicación de la **[!UICONTROL Superficie de aplicación]** , por ejemplo **[!DNL Luma Mobile App]**.
-   1. Seleccione **[!UICONTROL Crear]**
+   1. Seleccionar **[!UICONTROL Crear]**
       ![Propiedades de campaña](assets/ajo-campaign-properties.png)
 1. En la pantalla Campaign definition, en **[!UICONTROL Propiedades]**, introduzca un **[!UICONTROL Nombre]** para la campaña, por ejemplo `Luma - In-App Messaging Campaign`, y a **[!UICONTROL Descripción]**, por ejemplo `In-app messaging campaign for Luma app`.
-   ![Nombre de la campaña](assets/ajo-campaign-properties-name.png)
+   ![Nombre de campaña](assets/ajo-campaign-properties-name.png)
 1. Desplácese hacia abajo hasta **[!UICONTROL Acción]** y seleccione **[!UICONTROL Editar contenido]**.
 1. En el **[!UICONTROL Mensaje en la aplicación]** pantalla:
    1. Seleccionar **[!UICONTROL Modal]** como el **[!UICONTROL Diseño del mensaje]**.

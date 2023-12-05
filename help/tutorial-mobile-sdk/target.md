@@ -4,11 +4,12 @@ description: Aprenda a utilizar una prueba A/B de Target en su aplicación móvi
 solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
+jira: KT-14641
 exl-id: 87546baa-2d8a-4cce-b531-bec3782d2e90
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1918'
-ht-degree: 3%
+source-wordcount: '1745'
+ht-degree: 2%
 
 ---
 
@@ -92,7 +93,7 @@ Para garantizar que los datos enviados desde su aplicación móvil a la red peri
 1. Seleccionar **[!UICONTROL Extensiones]**.
 1. Seleccionar **[!UICONTROL Catálogo]**.
 1. Busque la variable **[!UICONTROL Adobe Journey Optimizer - Toma de decisiones]** extensión.
-1. Instalar la extensión. La extensión no requiere ninguna configuración adicional.
+1. Instale la extensión de. La extensión no requiere ninguna configuración adicional.
 
    ![Añadir extensión de Decisioning](assets/tag-add-decisioning-extension.png)
 
@@ -162,7 +163,7 @@ Existen muchos tipos de actividades que puede crear en Adobe Target e implementa
 
 1. En el **[!DNL Targeting]** paso, revise la configuración de la prueba A/B. De forma predeterminada, ambas ofertas se asignan de forma equitativa entre todos los visitantes. Haga clic en **[!UICONTROL Siguiente]** para continuar.
 
-   ![Direccionamiento](assets/taget-targeting.png)
+   ![Segmentación](assets/taget-targeting.png)
 
 1. En el **[!UICONTROL Objetivos y configuración]** paso:
 

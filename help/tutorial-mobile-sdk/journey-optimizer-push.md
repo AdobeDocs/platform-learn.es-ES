@@ -4,11 +4,12 @@ description: Obtenga información sobre cómo crear notificaciones push en una a
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
+jira: KT-14638
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '2705'
-ht-degree: 3%
+source-wordcount: '2556'
+ht-degree: 0%
 
 ---
 
@@ -31,9 +32,9 @@ Journey Optimizer le permite crear recorridos y enviar mensajes a audiencias de 
 * Configure la aplicación para Adobe Experience Platform.
 * Acceso a Journey Optimizer y permisos suficientes, tal como se describe [aquí](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html?lang=en). Además, necesita permisos suficientes para las siguientes funciones de Journey Optimizer.
    * Cree una superficie de aplicación.
-   * Creación de un recorrido.
+   * Cree un recorrido.
    * Cree un mensaje.
-   * Creación de ajustes preestablecidos de mensaje.
+   * Cree ajustes preestablecidos de mensaje.
 * **Cuenta de desarrollador de Apple de pago** con acceso suficiente para crear certificados, identificadores y claves.
 * Dispositivo o simulador físico de iOS para realizar pruebas.
 
@@ -122,7 +123,7 @@ Para que la aplicación funcione con Journey Optimizer, debe actualizar la propi
 1. Abra la propiedad, por ejemplo **[!DNL Luma Mobile App Tutorial]**.
 1. Seleccionar **[!UICONTROL Catálogo]**.
 1. Busque la variable **[!UICONTROL Adobe Journey Optimizer]** extensión.
-1. Instalar la extensión.
+1. Instale la extensión de.
 1. En el **[!UICONTROL Instalar extensión]** diálogo
    1. Seleccione un entorno, por ejemplo **[!UICONTROL Desarrollo]**.
    1. Seleccione el **[!UICONTROL Conjunto de datos de evento de experiencia de seguimiento push AJO]** conjunto de datos del **[!UICONTROL Conjunto de datos de evento]** lista.

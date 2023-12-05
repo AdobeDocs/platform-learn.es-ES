@@ -2,11 +2,12 @@
 title: Creación de un esquema XDM para implementaciones de Platform Mobile SDK
 description: Obtenga información sobre cómo crear un esquema XDM para eventos de aplicaciones móviles.
 feature: Mobile SDK,Schemas
+jira: KT-14624
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 8%
+source-wordcount: '1414'
+ht-degree: 4%
 
 ---
 
@@ -20,7 +21,7 @@ La estandarización y la interoperabilidad son conceptos clave detrás de Adobe 
 
 XDM es una especificación documentada públicamente y diseñada para mejorar la potencia de las experiencias digitales. Proporciona estructuras y definiciones comunes que permiten a cualquier aplicación comunicarse con los servicios de Platform. Al adherirse a los estándares XDM, todos los datos de experiencia del cliente se pueden incorporar en una representación común que puede ofrecer perspectivas de una manera más rápida e integrada. Puede obtener información valiosa de las acciones de los clientes, definir las audiencias de los clientes mediante segmentos y utilizar los atributos del cliente para fines de personalización.
 
-Experience Platform utiliza esquemas para describir la estructura de los datos de una manera uniforme y reutilizable. Al definir los datos de manera uniforme en todos los sistemas, resulta más fácil conservar el significado y, por lo tanto, obtener valor de los datos.
+Experience Platform utiliza esquemas para describir la estructura de los datos de una manera uniforme y reutilizable. Al definir los datos de forma coherente en todos los sistemas, resulta más fácil conservar el significado y, por lo tanto, obtener valor de los datos.
 
 Antes de poder introducir datos en Platform, se debe crear un esquema para describir la estructura de los datos y proporcionar restricciones al tipo de datos que se pueden contener en cada campo. Los esquemas constan de una clase base y cero o más grupos de campos de esquema.
 
@@ -106,7 +107,7 @@ Para fines de aprendizaje, utiliza grupos de campos creados previamente y person
 
    >[!NOTE]
    >
-   >Si va a seguir este tutorial con varias personas en una sola zona protegida o utiliza una cuenta compartida, considere anexar o anteponer una identificación como parte de las convenciones de nomenclatura. Por ejemplo, en lugar de `Luma Mobile App Event Schema`, utilice `Luma Mobile App Event Schema - Joe Smith`. Consulte también la nota en [Información general](overview.md).
+   >Si va a seguir este tutorial con varias personas en una sola zona protegida o utiliza una cuenta compartida, considere anexar o anteponer una identificación como parte de las convenciones de nomenclatura. Por ejemplo, en lugar de `Luma Mobile App Event Schema`, use `Luma Mobile App Event Schema - Joe Smith`. Consulte también la nota en [Información general](overview.md).
 
 1. Seleccionar **[!UICONTROL Finalizar]** para finalizar el asistente.
 
