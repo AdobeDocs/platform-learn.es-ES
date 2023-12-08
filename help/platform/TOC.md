@@ -5,17 +5,17 @@ user-guide-description: Descubra los muchos componentes de Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 650ae527c640ec62b21e4e0e9b66a6efc1c580a1
+source-git-commit: cb97521c7906bcb16c7352f6c2447e07abb828c7
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 35%
+source-wordcount: '847'
+ht-degree: 17%
 
 ---
 
 
 # Tutoriales de Adobe Experience Platform {#tutorials}
 
-+ [Tutoriales de Platform](/help/platform/overview.md)
++ [Tutorials de plataforma](/help/platform/overview.md)
 + Introducción a Platform {#intro-to-platform}
    + [Una experiencia del cliente con tecnología de Experience Platform](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
    + [Entre bastidores: una experiencia del cliente ofrecida por un Experience Platform](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
@@ -35,19 +35,19 @@ ht-degree: 35%
    + [Organización de campañas con Marketo Engage](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
 + [Introducción: arquitectos de datos e ingenieros de datos](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=es){target="_blank"}
 + [Autenticar en las API de Experience Platform](/help/platform/authentication/platform-api-authentication.md)
-+ [Importación de datos de muestra en Experience Platform](/help/platform/data-generator/import-sample-data.md)
++ [Importar datos de muestra al Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Administración {#admin}
    + [Uso de alertas](/help/platform/admin/use-alerts.md)
    + [Usar zonas protegidas](/help/platform/admin/use-sandboxes.md)
    + [Copia de objetos entre zonas protegidas](/help/platform/admin/copy-objects-between-sandboxes.md)
+   + [Agregar usuarios](/help/platform/admin/add-users.md)
+   + [Añadir administradores de productos](/help/platform/admin/add-product-administrators.md)
    + [Configuración del control de acceso basado en atributos](/help/platform/admin/configure-attribute-based-access-control.md)
-   + [Admin Console](/help/platform/admin/admin-console.md)
-   + [Administración de perfiles de producto](/help/platform/admin/managing-product-profiles.md)
 + Audiencias y segmentación {#audiences}
    + [Introducción a Audience Portal y Composición](audiences/introduction-to-audience-portal-and-composition.md)
    + [Cargar audiencias](audiences/upload-audiences.md)
    + [Resumen del generador de reglas para audiencias](audiences/audience-rule-builder-overview.md)
-   + [Crear audiencias](audiences/create-audiences.md)
+   + [Creación de públicos](audiences/create-audiences.md)
    + [Crear audiencias basadas en contenido](audiences/create-content-based-audiences.md)
    + [Crear audiencias de conversión](audiences/create-conversion-audiences.md)
    + [Crear audiencias a partir de audiencias existentes](audiences/create-audiences-from-existing-audiences.md)
@@ -59,15 +59,15 @@ ht-degree: 35%
    + [Evaluar una regla de audiencia](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
    + [Creación de un conjunto de datos para exportar datos](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
    + [Configuración de conexión de coincidencia de segmentos](/help/platform/segments/segment-match-connection-setup.md)
-   + [Control de datos de coincidencias de segmentos](/help/platform/segments/segment-match-data-governance.md)
-   + [Flujo de configuración de coincidencia de segmentos](/help/platform/segments/segment-match-configuration-flow.md)
+   + [Gobernanza de datos de coincidencia de segmentos](/help/platform/segments/segment-match-data-governance.md)
+   + [Flujo de configuración de Coincidencia de segmentos](/help/platform/segments/segment-match-configuration-flow.md)
    + [Perspectivas previas al uso compartido de coincidencias de segmentos](/help/platform/segments/segment-match-pre-share-insights.md)
    + [Coincidencia de segmentos recibiendo datos](/help/platform/segments/segment-match-receiving-data.md)
 + [Registros de auditoría](/help/platform/governance/audit-logs.md)
-+ [Recopilación de datos](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=es){target="_blank"}
-+ Paneles {#dashboards}
++ [Recopilación de datos](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
++ Tableros {#dashboards}
    + [Crear un tablero](/help/platform/dashboards/create-a-dashboard.md)
-+ Control de datos {#data-governance}
++ Administración de datos {#data-governance}
    + [Información general](/help/platform/governance/understanding-data-governance.md)
    + [Demostración de extremo a extremo](/help/platform/governance/introduction-to-data-governance.md)
    + [Clasificación de datos mediante etiquetas](/help/platform/governance/classify-data-using-labels.md)
@@ -75,20 +75,20 @@ ht-degree: 35%
    + [Aplicar políticas de uso de datos](/help/platform/governance/enforce-data-usage-policies.md)
    + [Aplicar consentimiento](/help/platform/governance/enforce-consent.md)
    + [Integración con el marco de transparencia y consentimiento 2.0 de IAB](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
-+ Higiene de los datos {#data-hygiene}
++ Higiene de datos {#data-hygiene}
    + [Eliminar conjuntos de datos](/help/platform/data-hygiene/delete-datasets.md)
 + Ingesta de datos {#data-ingestion}
    + [Información general](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [Resumen de ingesta por lotes](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [Crear y rellenar un conjunto de datos](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
    + [Asignación de un archivo CSV a XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html?lang=es){target="_blank"}
-   + [Información general de fuentes](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
+   + [Resumen de orígenes](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
    + [Ingesta de datos desde Adobe Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=es)
    + [Ingesta de datos desde el Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
    + [Ingesta de datos desde el almacenamiento en la nube](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html?lang=es)
    + [Ingesta de datos desde CRM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html?lang=es)
    + [Ingesta de datos desde bases de datos](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-databases.html)
-   + [Información general sobre la ingesta de flujo continuo](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
+   + [Resumen de ingesta de streaming](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
    + [Transmisión de datos con la API de HTTP](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html?lang=es)
    + [Transmisión de datos mediante conectores de origen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=es)
    + [Tutoriales del SDK web](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
@@ -158,7 +158,8 @@ ht-degree: 35%
    + [Personalizar detalles de vista de perfil](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html){target="_blank"}
    + [Ver perfiles de cuenta](/help/platform/profiles/view-account-profiles.md)
    + [Crear políticas de combinación](/help/platform/profiles/create-merge-policies.md)
-   + [Información general sobre los esquemas de unión](/help/platform/profiles/union-schemas-overview.md)
+   + [Resumen de esquemas de unión](/help/platform/profiles/union-schemas-overview.md)
+   + [Creación de un atributo calculado](/help/platform/profiles/create-a-computed-attribute-for-sum-of-purchases.md)
    + [Actualizar un atributo específico mediante upsert](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + Privacidad y seguridad {#privacy}
    + [Introducción a Privacy Service](/help/platform/privacy/introduction-to-privacy-services.md)
@@ -200,7 +201,7 @@ ht-degree: 35%
    + [Creación de tipos de datos](/help/platform/schemas/create-data-types.md)
    + [Configuración de relaciones entre esquemas](/help/platform/schemas/configure-relationships-between-schemas.md)
    + [Uso de campos enumerados y valores sugeridos](/help/platform/schemas/use-enumerated-fields.md)
-   + [Copiado de esquemas entre zonas protegidas](/help/platform/schemas/copy-schemas-between-sandboxes.md)
+   + [Copiar esquemas entre zonas protegidas](/help/platform/schemas/copy-schemas-between-sandboxes.md)
    + [Actualización de esquemas](/help/platform/schemas/update-schemas.md)
    + [Creación de un esquema ad hoc](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
 + Fuentes {#sources}
@@ -211,7 +212,7 @@ ht-degree: 35%
    + [Ingesta de datos desde el almacenamiento en la nube](/help/platform/sources/ingest-data-from-cloud-storage.md)
    + [Ingesta de datos desde CRM](/help/platform/sources/ingest-data-from-crm.md)
    + [Ingesta de datos desde bases de datos](/help/platform/sources/ingest-data-from-databases.md)
-   + [Transmisión de datos con la API de HTTP](/help/platform/sources/streaming-ingestion-http-api.md)
+   + [Transmitir datos con API HTTP](/help/platform/sources/streaming-ingestion-http-api.md)
    + [Transmisión de datos mediante conectores de origen](/help/platform/sources/streaming-ingestion-source-connector.md)
    + [Solución de problemas: conector SFTP](/help/platform/sources/troubleshoot-sftp-connector.md)
 + Integraciones de Experience Cloud {#experience-cloud}
