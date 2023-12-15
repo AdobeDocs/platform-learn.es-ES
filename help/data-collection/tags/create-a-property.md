@@ -1,24 +1,20 @@
 ---
-title: Información general sobre las etiquetas y creación de una propiedad (anteriormente Launch)
-description: Obtenga información general rápida sobre las etiquetas en la recopilación de datos y aprenda a crear propiedades para albergar el código de su sitio.
-original-url: https://experienceleague.adobe.com/docs/core-services-learn/tutorials/launch-web/launch-overview-and-creating-properties.html
+title: Creación de una propiedad de etiquetas
+description: Obtenga información sobre cómo crear propiedades de etiquetas para administrar las etiquetas de marketing del sitio web.
 feature: Tags
 level: Beginner
 jira: KT-3524
+last-substantial-update: 2023-12-15T00:00:00Z
 exl-id: db2e1818-81bb-4d4c-b6ee-b537b48d3b21
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 65a1b8a042fa4330a1aed8bdcf319312c76eac22
 workflow-type: tm+mt
-source-wordcount: '61'
-ht-degree: 72%
+source-wordcount: '36'
+ht-degree: 0%
 
 ---
 
-# Información general sobre las etiquetas y creación de una propiedad
+# Creación de una propiedad de etiquetas
 
-Obtenga información general rápida sobre las etiquetas en la recopilación de datos y aprenda a crear propiedades para albergar el código de su sitio.
-
->[!NOTE]
->
-> El lanzamiento es ahora **[!DNL tags]**
+Obtenga información sobre cómo crear propiedades de etiquetas para administrar las etiquetas de marketing del sitio web.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28727/?learn=on)
