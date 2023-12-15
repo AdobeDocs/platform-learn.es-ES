@@ -6,7 +6,7 @@ role: Admin, Developer
 level: Beginner
 jira: KT-14689
 last-substantial-update: 2023-12-15T00:00:00Z
-source-git-commit: d60e457874f1f05a4a86a6b37b8aee58d4b3f067
+source-git-commit: 4d1a0ff598b822e2228d8719488b9dbb91c9870d
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Aprenda a añadir desarrolladores a aplicaciones basadas en Adobe Experience Platform como Real-time Customer Data Platform y Journey Optimizer. Los desarrolladores se añaden primero a Admin Console. Después de crear su proyecto de Platform en Developer Console, se asignan permisos a sus credenciales de API en Platform o en la interfaz de Journey Optimizer. Para obtener más información, visite la [Documentación de control de acceso](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/336081?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3426407?learn=on)
 
 >[!ADMIN]
 >
