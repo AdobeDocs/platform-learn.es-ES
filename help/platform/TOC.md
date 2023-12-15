@@ -5,9 +5,9 @@ user-guide-description: Descubra los muchos componentes de Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: cb97521c7906bcb16c7352f6c2447e07abb828c7
+source-git-commit: d60e457874f1f05a4a86a6b37b8aee58d4b3f067
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '849'
 ht-degree: 17%
 
 ---
@@ -41,6 +41,7 @@ ht-degree: 17%
    + [Usar zonas protegidas](/help/platform/admin/use-sandboxes.md)
    + [Copia de objetos entre zonas protegidas](/help/platform/admin/copy-objects-between-sandboxes.md)
    + [Agregar usuarios](/help/platform/admin/add-users.md)
+   + [Adición de desarrolladores](/help/platform/admin/add-developers.md)
    + [Añadir administradores de productos](/help/platform/admin/add-product-administrators.md)
    + [Configuración del control de acceso basado en atributos](/help/platform/admin/configure-attribute-based-access-control.md)
 + Audiencias y segmentación {#audiences}
