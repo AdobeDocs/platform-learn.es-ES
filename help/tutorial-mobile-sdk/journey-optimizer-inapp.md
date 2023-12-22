@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: In App
 jira: KT-14639
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: e316f881372a387b82f8af27f7f0ea032a99be99
 workflow-type: tm+mt
-source-wordcount: '1434'
+source-wordcount: '1447'
 ht-degree: 1%
 
 ---
@@ -79,7 +79,7 @@ Para garantizar que los datos enviados desde su aplicación móvil a Edge Networ
 1. Para guardar la configuración de la secuencia de datos, seleccione **[!UICONTROL Guardar]**.
 
 
-   ![Configuración de flujo de datos AEP](assets/datastream-aep-configuration.png)
+   ![Configuración de flujo de datos AEP](assets/datastream-ajo-inapp-configuration.png)
 
 
 ### Instalación de la extensión Journey Optimizer tags
@@ -91,16 +91,9 @@ Para que la aplicación funcione con Journey Optimizer, debe actualizar la propi
 1. Seleccionar **[!UICONTROL Catálogo]**.
 1. Busque la variable **[!UICONTROL Adobe Journey Optimizer]** extensión.
 1. Instale la extensión de.
-1. En el **[!UICONTROL Instalar extensión]** diálogo
-   1. Seleccione un entorno, por ejemplo **[!UICONTROL Desarrollo]**.
-   1. Seleccione el **[!UICONTROL Conjunto de datos de evento de experiencia de seguimiento push AJO]** conjunto de datos del **[!UICONTROL Conjunto de datos de evento]** lista.
-   1. Seleccionar **[!UICONTROL Guardar en biblioteca y crear]**.
-      ![Configuración de extensión de AJO](assets/push-tags-ajo.png)
 
->[!NOTE]
->
->Si no lo ve... `AJO Push Tracking Experience Event Dataset` como opción, póngase en contacto con el servicio de atención al cliente.
->
+Cuándo *solamente* uso de mensajes en la aplicación, en **[!UICONTROL Instalar extensión]** o **[!UICONTROL Configurar extensión]**, no es necesario configurar nada. Sin embargo, si ya ha seguido la [Notificaciones push](journey-optimizer-push.md) En esta lección del tutorial, verá esto para el **[!UICONTROL Desarrollo]** entorno, el **[!UICONTROL Conjunto de datos de evento de experiencia de seguimiento push AJO]** conjunto de datos está seleccionado en **[!UICONTROL Conjunto de datos de evento]** lista.
+
 
 ### Implementar Journey Optimizer en la aplicación
 
