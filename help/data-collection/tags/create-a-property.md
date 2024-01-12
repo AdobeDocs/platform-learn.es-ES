@@ -1,6 +1,6 @@
 ---
 title: Creación de una propiedad de etiquetas
-description: Obtenga información sobre cómo crear propiedades de etiquetas para administrar las etiquetas de marketing del sitio web.
+description: Aprenda a crear propiedades de etiquetas para administrar las etiquetas de marketing de su sitio web.
 feature: Tags
 level: Beginner
 jira: KT-3524
@@ -9,12 +9,12 @@ exl-id: db2e1818-81bb-4d4c-b6ee-b537b48d3b21
 source-git-commit: 65a1b8a042fa4330a1aed8bdcf319312c76eac22
 workflow-type: tm+mt
 source-wordcount: '36'
-ht-degree: 0%
+ht-degree: 77%
 
 ---
 
 # Creación de una propiedad de etiquetas
 
-Obtenga información sobre cómo crear propiedades de etiquetas para administrar las etiquetas de marketing del sitio web.
+Aprenda a crear propiedades de etiquetas para administrar las etiquetas de marketing de su sitio web.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28727/?learn=on)
