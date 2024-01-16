@@ -2,10 +2,10 @@
 title: Creación de una regla de etiqueta
 description: Obtenga información sobre cómo enviar un evento a la red perimetral de Platform con el objeto XDM mediante una regla de etiqueta. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Tags
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
 workflow-type: tm+mt
-source-wordcount: '833'
-ht-degree: 3%
+source-wordcount: '1153'
+ht-degree: 1%
 
 ---
 
@@ -15,15 +15,15 @@ Obtenga información sobre cómo enviar un evento a la red perimetral de Platfor
 
 >[!NOTE]
 >
-> Para fines de demostración, los ejercicios de esta lección se basan en el ejemplo utilizado durante la [Creación de elementos de datos](create-data-elements.md) paso; envío de una acción de evento de XDM para capturar contenido e identidades de usuarios en [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
+> Para fines de demostración, los ejercicios de esta lección se basan en el ejemplo utilizado durante la [Creación de identidades](create-identities.md) paso; envío de una acción de evento de XDM para capturar contenido e identidades de usuarios en [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
 
 
 ## Objetivos de aprendizaje
 
-Al final de esta lección, debe poder:
+Al final de esta lección, puede hacer lo siguiente:
 
 * Utilice una convención de nombres para administrar reglas dentro de las etiquetas
-* Creación de una regla de etiqueta para enviar un evento XDM
+* Envío de un evento XDM mediante los tipos de acción Actualizar variable y Enviar evento en una regla de etiqueta
 * Publicación de una regla de etiqueta en una biblioteca de desarrollo
 
 
@@ -31,87 +31,161 @@ Al final de esta lección, debe poder:
 
 Está familiarizado con las etiquetas de recopilación de datos y las [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html)y debe haber completado las siguientes lecciones anteriores en el tutorial:
 
-* [Configure los permisos](configure-permissions.md)
 * [Configuración de un esquema XDM](configure-schemas.md)
 * [Configuración de un área de nombres de identidad](configure-identities.md)
 * [Configuración de una secuencia de datos](configure-datastream.md)
 * [Extensión del SDK web instalada en la propiedad de etiqueta](install-web-sdk.md)
 * [Creación de elementos de datos](create-data-elements.md)
+* [Creación de identidades](create-identities.md)
 
 ## Convenciones de nomenclatura
 
 Para administrar mejor las reglas en las etiquetas, se recomienda seguir una convención de nombres estándar. Este tutorial utiliza una convención de nombres de tres partes:
 
-* [ubicación] - [evento] - [herramienta]
+* [**ubicación**] - [**evento**] - [**herramienta**] (**Secuencia**)
 
 donde;
 
-1. ubicación es la página o páginas del sitio donde se activa la regla
-1. event es el déclencheur que activa la señalización de
-1. herramienta es la aplicación o aplicaciones específicas utilizadas en el paso de acción para esa regla
-
+1. **ubicación** es la página o páginas del sitio donde se activa la regla
+1. **evento** es el déclencheur de la regla
+1. **herramienta** es la aplicación o aplicaciones específicas utilizadas en el paso de acción para esa regla
+1. **Secuencia** es el orden en que la regla debe activarse en relación con otras reglas
+<!-- minor update -->
 
 ## Crear regla de etiqueta
 
-En las etiquetas, las reglas se utilizan para ejecutar acciones (llamadas de activación) bajo varias condiciones. Utilizará esta primera regla para enviar el objeto XDM a la red perimetral mediante SDK web [!UICONTROL Enviar evento] acción. Más adelante en este tutorial, enviará diferentes versiones del objeto XDM en función del tipo de página en la que se encuentra el visitante. Por ese motivo, utilizará condiciones de regla para excluir esos otros tipos de páginas.
+En las etiquetas, las reglas se utilizan para ejecutar acciones (llamadas de activación) bajo varias condiciones. La extensión de etiquetas del SDK web de Platform incluye dos acciones que se utilizarán en esta lección:
+
+* **[!UICONTROL Actualizar variable]** asigna elementos de datos a campos XDM
+* **[!UICONTROL Enviar evento]** envía el objeto XDM a Experience Platform Edge Network
+
+### Actualizar variable
+
+Cree esta primera regla como una &quot;configuración global&quot; para establecer todas las variables de contenido esenciales en el objeto XDM mediante los SDK web de Platform **[!UICONTROL Actualizar variable]** acción. A continuación, cree una segunda regla, secuenciada en déclencheur después de la primera, para enviar el objeto XDM a Platform Edge Network mediante **[!UICONTROL Enviar evento]** acción. Más adelante en este tutorial, enviará diferentes campos XDM en función del tipo de página en la que se encuentra el visitante (por ejemplo, SKU de productos en páginas de productos). Para ello, secuencie las reglas que contienen **[!UICONTROL Actualizar variable]** acciones antes de la regla que utiliza la variable **[!UICONTROL Enviar evento]** acción.
 
 Para crear una regla de etiqueta:
 
 1. Abra la propiedad de etiqueta que está utilizando para este tutorial.
+
 1. Ir a **[!UICONTROL Reglas]** en el panel de navegación izquierdo
+
 1. Seleccione el **[!UICONTROL Crear nueva regla]** botón
+
    ![Creación de una regla](assets/rules-create.png)
-1. Asigne un nombre a la regla `all pages - library load - AA & AT`.
+
+1. Asigne un nombre a la regla `all pages global content variables - page bottom - AA (order 1)`.
+
+1. En el **[!UICONTROL Eventos]** , seleccione **[!UICONTROL Añadir]**
+
+   ![Asignar un nombre a la regla y añadir un evento](assets/rule-name-new.png)
+
+1. Utilice el **[!UICONTROL Extensión principal]** y seleccione `Page Bottom` como el **[!UICONTROL Tipo de evento]**
+
+1. En el **[!UICONTROL Nombre]** , asígnele un nombre `Core - Page Bottom - order 1`. Esto le ayuda a describir el déclencheur con un nombre significativo.
+
+1. Seleccionar **[!UICONTROL Avanzadas]** desplegable e introduzca `1` in **[!UICONTROL Pedido]**
 
    >[!NOTE]
    >
-   > Adobe Analytics y Target utilizarán esta regla de una manera específica en una lección futura, por este motivo `AA & AT` se utiliza al final del nombre.
+   > Cuanto mayor sea el número introducido, más adelante en el orden general de las operaciones que déclencheur.
 
-1. En el **[!UICONTROL Eventos]** , seleccione **[!UICONTROL Añadir]**
-   ![Asignar un nombre a la regla y añadir un evento](assets/rule-name.png)
-1. Utilice el **[!UICONTROL Extensión principal]** y seleccione `Library Loaded (Page Top)` como el **[!UICONTROL Tipo de evento]**.
-
-   Esta configuración significa que la regla se activa cada vez que la biblioteca de etiquetas se carga en una página.
 1. Seleccionar **[!UICONTROL Conservar cambios]** para volver a la pantalla de regla principal
-   ![Añada el evento Library Loaded](assets/rule-event-pagetop.png)
-1. En el **[!UICONTROL Condiciones]** , seleccione la **[!UICONTROL Añadir]** botón
-   ![Adición de condiciones](assets/rules-add-conditions.png)
-1. Seleccionar **[!UICONTROL Tipo de lógica]** `Exception`, **[!UICONTROL Extensión]** `Core`, y **[!UICONTROL Tipo de condición]** `Path Without Query String`
-1. Introduzca la ruta de la URL `/content/luma/us/en/user/cart.html` en el **[!UICONTROL ruta igual a]** , y **[!UICONTROL name]** it `Core - cart page`
-1. Seleccionar **[!UICONTROL Conservar cambios]**
-   ![Adición de condiciones](assets/rule-condition-exception.png)
-1. Añada tres excepciones más para las siguientes rutas URL
-
-   * **`Core - checkout page`** for `/content/luma/us/en/user/checkout.html`
-   * **`Core - thank you page`** for `/content/luma/us/en/user/checkout/order/thank-you.html`
-   * **`Core - product page`** para `/products/` con el interruptor Regex encendido
-
-   ![Adición de condiciones](assets/rule-condition-exception-all.png)
+   ![Seleccionar Déclencheur inferior de la página](assets/create-tag-rule-trigger-bottom.png)
 
 1. En el **[!UICONTROL Acciones]** , seleccione **[!UICONTROL Añadir]**
-1. Seleccionar **[!UICONTROL SDK web de Adobe Experience Platform]** como el **[!UICONTROL Extensión]**
-1. Seleccionar **[!UICONTROL Enviar evento]** como el **[!UICONTROL Tipo de acción]**
-1. Seleccionar **[!UICONTROL web.webpagedetails.pageViews]** como el **[!UICONTROL Tipo]**.
+
+1. Como el **[!UICONTROL Extensión]**, seleccione **[!UICONTROL SDK web de Adobe Experience Platform]**
+
+1. Como el **[!UICONTROL Tipo de acción]**, seleccione **[!UICONTROL Actualizar variable]**
+
+1. Como el **[!UICONTROL Elemento de datos]**, seleccione la `xdm.variable.content` que creó en la [Creación de elementos de datos](create-data-elements.md) lección
+
+   ![Actualizar esquema de variables](assets/create-rule-update-variable.png)
+
+Ahora, asigne los [!UICONTROL elementos de datos] a la [!UICONTROL esquema] utilizado por el objeto XDM.
+
+>[!NOTE]
+> 
+> Puede asignar a propiedades individuales u objetos completos. En este ejemplo, se asigna a propiedades individuales.
+
+
+1. Desplácese hacia abajo hasta que llegue al **`web`** objeto
+
+1. Seleccione para abrirlo
+
+1. Asigne los siguientes elementos de datos al correspondiente `web` Variables XDM
+
+   * **`web.webPageDetials.name`** hasta `%page.pageInfo.pageName%`
+   * **`web.webPageDetials.server`** hasta `%page.pageInfo.server%`
+   * **`web.webPageDetials.siteSection`** hasta `%page.pageInfo.hierarchie1%`
+
+   ![Actualización del contenido de variables](assets/create-rule-xdm-variable-content.png)
+
+1. A continuación, busque la `identityMap` en el esquema y selecciónelo
+
+1. Mapa a `identityMap.loginID` elemento de datos
+
+   ![Actualizar mapa de identidad variable](assets/create-rule-variable-identityMap.png)
+
+1. A continuación, busque el campo eventType y selecciónelo
+
+1. Introduzca el valor `web.webpagedetails.pageViews`
 
    >[!WARNING]
    >
-   > Este menú desplegable rellena el **`xdm.eventType`** en el objeto XDM. Aunque también puede escribir etiquetas de forma libre en este campo, es muy recomendable que **no** ya que tendrá efectos adversos con Platform.
+   > Este menú desplegable rellena el **`xdm.eventType`** en el objeto XDM. Aunque también puede escribir etiquetas de forma libre en este campo, es muy recomendable que **no** ya que tiene efectos adversos con Platform.
 
-1. Como el **[!UICONTROL Datos XDM]**, seleccione la `xdm.content` elemento de datos creado en la lección anterior
+   >[!TIP]
+   >
+   > Para comprender qué valores se rellenan en `eventType` , debe ir a la página de esquema y seleccionar el campo `eventType` para ver los valores sugeridos en el carril derecho.
+
+   ![Actualizar mapa de identidad variable](assets/create-tag-rule-eventType.png)
+
+
+1. Seleccionar **[!UICONTROL Conservar cambios]** y luego **[!UICONTROL Guardar]** la regla de la siguiente pantalla para terminar de crearla
+
+### Enviar evento
+
+Ahora que ha establecido las variables, puede crear la segunda regla para enviar el objeto XDM a Platform Edge Network con la variable **[!UICONTROL Enviar evento]** tipo de acción.
+
+1. A la derecha, seleccione para **[!UICONTROL Agregar regla]** para crear otra regla
+
+1. Asigne un nombre a la regla `all pages send event - page bottom - AA (order 50)`.
+
+1. En el **[!UICONTROL Eventos]** , seleccione **[!UICONTROL Añadir]**
+
+1. Utilice el **[!UICONTROL Extensión principal]** y seleccione `Page Bottom` como el **[!UICONTROL Tipo de evento]**
+
+1. En el **[!UICONTROL Nombre]** , asígnele un nombre `Core - Page Bottom - order 50`. Esto le ayuda a describir el déclencheur con un nombre significativo.
+
+1. Seleccionar **[!UICONTROL Avanzadas]** desplegable e introduzca `50` in **[!UICONTROL Pedido]**. Esto garantizará que el segundo déclencheur de regla sea posterior al primero que configure como déclencheur `1`.
+
+1. Seleccionar **[!UICONTROL Conservar cambios]** para volver a la pantalla de regla principal
+   ![Seleccionar Déclencheur inferior de la página](assets/create-tag-rule-trigger-bottom-send.png)
+
+1. En el **[!UICONTROL Acciones]** , seleccione **[!UICONTROL Añadir]**
+
+1. Como el **[!UICONTROL Extensión]**, seleccione  **[!UICONTROL SDK web de Adobe Experience Platform]**
+
+1. Como el  **[!UICONTROL Tipo de acción]**, seleccione  **[!UICONTROL Enviar evento]**
+
+1. Como el **[!UICONTROL XDM]**, seleccione la `xdm.variable.content` elemento de datos creado en la lección anterior
+
 1. Seleccionar **[!UICONTROL Conservar cambios]** para volver a la pantalla de regla principal
 
-   ![Añadir la acción Enviar evento](assets/rule-set-action-xdm.png)
+   ![Añadir la acción Enviar evento](assets/create-rule-send-event-action.png)
 1. Seleccionar **[!UICONTROL Guardar]** para guardar la regla
 
-   ![Guarde la regla](assets/rule-save.png)
+   ![Guarde la regla](assets/create-rule-save-rule.png)
 
 ## Publicación de la regla en una biblioteca
 
-A continuación, publique la regla en el entorno de desarrollo para que podamos verificar que funciona.
+A continuación, publique la regla en el entorno de desarrollo para poder verificar si funciona.
 
 Para crear una biblioteca:
 
 1. Ir a **[!UICONTROL Flujo de publicación]** en el panel de navegación izquierdo
+
 1. Seleccionar **[!UICONTROL Añadir biblioteca]**
 
    ![Seleccione Añadir biblioteca.](assets/rule-publish-library.png)
@@ -121,15 +195,15 @@ Para crear una biblioteca:
 
    >[!NOTE]
    >
-   >    Además de la extensión SDK para web de Adobe Experience Platform y la `all pages - library load - AA & AT` , verá los componentes de etiqueta creados en lecciones anteriores. La extensión Core contiene el JavaScript base requerido por todas las propiedades de etiquetas web.
+   >    Además de la extensión SDK para web de Adobe Experience Platform y la `all pages global content variables - page bottom - AA (order 50)` , verá los componentes de etiquetas creados en lecciones anteriores. La extensión Core contiene el JavaScript base requerido por todas las propiedades de etiquetas web.
 
 1. Seleccionar **[!UICONTROL Guardar y generar para desarrollo]**
 
-   ![Crear y crear la biblioteca](assets/rule-publish-add-all-changes.png)
+   ![Crear y crear la biblioteca](assets/create-tag-rule-library-changes.png)
 
 La biblioteca puede tardar unos minutos en crearse y, cuando se completa, muestra un punto verde a la izquierda del nombre de la biblioteca:
 
-![Compilación completa](assets/rule-publish-success.png)
+![Compilación completa](assets/create-rule-development-success.png)
 
 Como puede ver en el [!UICONTROL Flujo de publicación] En la pantalla de, hay mucho más en el proceso de publicación que está fuera del ámbito de este tutorial. Este tutorial solo utiliza una biblioteca en el entorno de desarrollo.
 

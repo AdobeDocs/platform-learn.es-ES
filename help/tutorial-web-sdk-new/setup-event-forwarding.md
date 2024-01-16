@@ -2,9 +2,9 @@
 title: Configuración de una propiedad de reenvío de eventos
 description: Obtenga información sobre cómo utilizar la propiedad de reenvío de eventos mediante datos del SDK web de Experience Platform. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK,Tags,Event Forwarding
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
 workflow-type: tm+mt
-source-wordcount: '1855'
+source-wordcount: '1858'
 ht-degree: 3%
 
 ---
@@ -59,6 +59,7 @@ Al final de esta lección, debe ser capaz de:
 
       * [Instalar extensión de SDK web](install-web-sdk.md)
       * [Creación de elementos de datos](create-data-elements.md)
+      * [Creación de identidades](create-identities.md)
       * [Creación de una regla de etiqueta](create-tag-rule.md)
       * [Validar con Adobe Experience Platform Debugger](validate-with-debugger.md)
 

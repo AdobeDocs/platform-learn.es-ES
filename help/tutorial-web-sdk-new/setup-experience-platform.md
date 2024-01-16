@@ -1,9 +1,9 @@
 ---
 title: Transmitir datos a Adobe Experience Platform con SDK web
 description: Obtenga información sobre cómo transmitir datos web a Adobe Experience Platform con el SDK web. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1601'
 ht-degree: 5%
 
 ---
@@ -30,7 +30,6 @@ Al final de esta lección, debe poder:
 Ya debería haber completado las siguientes lecciones:
 
 * El **Configuración inicial** lecciones:
-   * [Configure los permisos](configure-permissions.md)
    * [Configuración de un esquema XDM](configure-schemas.md)
    * [Configuración de una secuencia de datos](configure-datastream.md)
    * [Configuración de un área de nombres de identidad](configure-identities.md)
@@ -38,6 +37,7 @@ Ya debería haber completado las siguientes lecciones:
 * El **Configuración de etiquetas** lecciones:
    * [Instalar extensión de SDK web](install-web-sdk.md)
    * [Creación de elementos de datos](create-data-elements.md)
+   * [Creación de identidades](create-identities.md)
    * [Creación de reglas de etiquetas](create-tag-rule.md)
 
 
@@ -54,7 +54,7 @@ En este ejercicio, creará un conjunto de datos para realizar el seguimiento del
 
 1. Vaya a la [interfaz de Experience Platform](https://experience.adobe.com/platform/)
 1. Confirme que se encuentra en el entorno limitado de desarrollo que utiliza para este tutorial.
-1. Abrir **[!UICONTROL Conjuntos de datos]** desde la navegación izquierda
+1. Abrir **[!UICONTROL Administración de datos > Conjuntos de datos]** desde la navegación izquierda
 1. Seleccionar **[!UICONTROL Crear conjunto de datos]**
 
    ![Crear esquema](assets/experience-platform-create-dataset.png)
@@ -92,7 +92,7 @@ Ahora puede configurar los [!UICONTROL secuencia de datos] para enviar datos a [
 
    ![Configuración de secuencia de datos](assets/experience-platform-datastream-config.png)
 
-A medida que genera tráfico en la [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html) asignado a la propiedad tag, los datos rellenarán el conjunto de datos en Experience Platform.
+A medida que genera tráfico en [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html) asignado a la propiedad tag, los datos rellenarán el conjunto de datos en Experience Platform.
 
 ## Validación del conjunto de datos
 
@@ -129,7 +129,7 @@ Ahora los datos deben rellenarse en la variable `Luma Web Event Data` conjunto d
 
 Para confirmar que los datos han aterrizado en el lago de datos de Platform, una opción rápida es utilizar **[!UICONTROL Previsualizar conjunto de datos]** función. Los datos del SDK web se envían en microlotes al lago de datos y se actualizan en la interfaz de Platform periódicamente. Los datos generados pueden tardar entre 10 y 15 minutos en mostrarse.
 
-1. En el [Experience Platform](https://experience.adobe.com/platform/) interfaz, seleccione **[!UICONTROL Conjuntos de datos]** en el panel de navegación izquierdo para abrir **[!UICONTROL Conjuntos de datos]** panel.
+1. En el [Experience Platform](https://experience.adobe.com/platform/) interfaz, seleccione **[!UICONTROL Administración de datos > Conjuntos de datos]** en el panel de navegación izquierdo para abrir **[!UICONTROL Conjuntos de datos]** panel.
 
    El panel enumera todos los conjuntos de datos disponibles para su organización. Se muestran los detalles de cada conjunto de datos enumerado, incluido su nombre, el esquema al que se adhiere el conjunto de datos y el estado de la ejecución de ingesta más reciente.
 
@@ -220,7 +220,7 @@ Primero debe generar más datos de ejemplo. Repita los pasos anteriores de esta 
 1. En el [Experience Platform](https://experience.adobe.com/platform/) interfaz, seleccione **[!UICONTROL Perfiles]** en el panel de navegación izquierdo
 
 1. Como el **[!UICONTROL Área de nombres de identidad]** use `lumaCRMId`
-1. Copie y pegue el valor de `lumaCRMId` pasó la llamada que inspeccionó en Experience Platform Debugger (probablemente `112ca06ed53d3db37e4cea49cc45b71e`).
+1. Copie y pegue el valor de `lumaCRMId` pasó la llamada que inspeccionó en Experience Platform Debugger, en este caso `112ca06ed53d3db37e4cea49cc45b71e`.
 
    ![Perfil](assets/experience-platform-validate-dataset-profile.png)
 
@@ -228,11 +228,18 @@ Primero debe generar más datos de ejemplo. Repita los pasos anteriores de esta 
 
    ![Perfil](assets/experience-platform-validate-dataset-profile-set.png)
 
-1. Haga clic en [!UICONTROL ID de perfil] y una [!UICONTROL Perfil del cliente] La consola de se rellena. Aquí puede ver todas las identidades vinculadas a `lumaCRMId`, como el `ECID`:
+1. Para ver la información completa **[!UICONTROL Perfil del cliente]** para cada ID, seleccione la **[!UICONTROL ID de perfil]** en la ventana principal.
+
+   >[!NOTE]
+   >
+   >Nota: puede seleccionar el hipervínculo del ID de perfil o, si selecciona la fila, se abrirá un menú de la derecha en el que podrá seleccionar el hipervínculo ID de perfil
+   > ![Perfil del cliente](assets/experience-platform-select-profileId.png)
+
+   Aquí puede ver todas las identidades vinculadas a `lumaCRMId`, como el `ECID`.
 
    ![Perfil del cliente](assets/experience-platform-validate-dataset-custProfile.png)
 
-Ahora ha habilitado el SDK web de Platform para Experience Platform (y Real-Time CDP! ¡Y Customer Journey Analytics! Y Journey Optimizer!)!
+Ahora ha habilitado el SDK web de Platform para Experience Platform (y Real-Time CDP! Y Journey Optimizer!)!
 
 
 [Siguiente: ](setup-analytics.md)

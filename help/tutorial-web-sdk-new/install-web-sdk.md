@@ -2,16 +2,16 @@
 title: Instalación y configuración de la extensión de etiquetas del SDK web de Adobe Experience Platform
 description: Obtenga información sobre cómo instalar y configurar la extensión de etiqueta SDK web de Platform en la interfaz de recopilación de datos. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '604'
 ht-degree: 12%
 
 ---
 
 # Instalación de la extensión de etiquetas de SDK web de Adobe Experience Platform
 
-Obtenga información sobre cómo instalar y configurar la extensión de etiqueta SDK web de Platform en la interfaz de recopilación de datos. Esta extensión de etiqueta es la _extensión de etiqueta solamente_ necesario para enviar datos a _todas las aplicaciones de Adobe Experience Cloud_, incluido [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-time Customer Data Platform y Journey Optimizer.
+Obtenga información sobre cómo instalar y configurar la extensión de etiqueta del SDK web de Platform. La forma más sencilla de implementar el SDK web es mediante el administrador de etiquetas de Adobe, las etiquetas (anteriormente conocido como Launch). La extensión de etiqueta del SDK web de Platform es la _extensión de etiqueta solamente_ necesario para enviar datos a _todas las aplicaciones de Adobe Experience Cloud_, incluido [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-time Customer Data Platform y Journey Optimizer.
 
 ## Objetivos de aprendizaje
 
@@ -25,9 +25,6 @@ Al final de esta lección, debe poder:
 
 Debe haber completado las lecciones anteriores en este tutorial:
 
-* [Configure los permisos](configure-permissions.md)
-* [Configuración de un esquema XDM](configure-schemas.md)
-* [Configuración de un área de nombres de identidad](configure-identities.md)
 * [Configuración de una secuencia de datos](configure-datastream.md)
 
 ## Instalación de la extensión del SDK web de Experience Platform
@@ -66,6 +63,7 @@ Deje la mayoría de las configuraciones predeterminadas y actualícelas más tar
 1. En **[!UICONTROL Datastreams]**, seleccione la **[!UICONTROL Elegir de la lista]** método de entrada
 1. Seleccione la secuencia de datos que creó anteriormente, `Luma Web SDK`
 1. Seleccionar **[!UICONTROL Guardar]**
+
    >[!NOTE]
    >
    > Si no encuentra el conjunto de datos, vaya a la [Configuración de una secuencia de datos](configure-datastream.md) y siga los pasos para crear uno
@@ -76,9 +74,7 @@ Ahora que ha instalado el SDK web de Platform y lo ha asociado al conjunto de da
 
 >[!NOTE]
 >
->Durante este tutorial, solo debe configurar un conjunto de datos y asociarlo a todos los entornos de etiquetas (desarrollo, fase y producción). Al implementar el SDK web de Platform en su propio sitio web, debe configurar un flujo de datos independiente para cada entorno y asignarlo a los entornos de etiquetas mediante **[!UICONTROL Método de entrada]** > **[!UICONTROL Introducir valores]**
->
->![Selección de flujo de datos](assets/extension-luma-web-sdk-datastream-extension-enterValues.png)
+>Durante este tutorial, solo debe configurar un conjunto de datos y asociarlo a todos los entornos de etiquetas (desarrollo, fase y producción). Al implementar el SDK web de Platform en su propio sitio web, debe configurar un flujo de datos independiente para cada entorno y asignarlo a los entornos de etiquetas.
 
 >[!NOTE]
 >

@@ -2,9 +2,9 @@
 title: Configuración de permisos para el tutorial
 description: Obtenga información sobre cómo solicitar acceso al SDK web de Experience Platform y configurar los permisos necesarios para completar el tutorial Implementar Adobe Experience Cloud con SDK web.
 feature: Web SDK,Tags,Access Control
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '367'
 ht-degree: 3%
 
 ---
@@ -23,9 +23,9 @@ Obtenga información sobre cómo solicitar acceso al SDK web de Experience Platf
 Estas funciones deben estar disponibles para todos los clientes de Experience Cloud, incluso si no es cliente de una aplicación basada en Platform como Real-Time CDP.
 
 * Acceso a la **producción predeterminada**, **&quot;Prod&quot;** zona protegida.
-* Acceso a **[!UICONTROL Administrar esquemas]** y **[!UICONTROL Esquemas de vista]** bajo **[!UICONTROL Modelado de datos]**
-* Acceso a **[!UICONTROL Administrar áreas de nombres de identidad]** y **[!UICONTROL Ver áreas de nombres de identidad]** bajo **[!UICONTROL Identity Management]**
-* Acceso a **[!UICONTROL Administrar flujos de datos]** y **[!UICONTROL Ver flujos de datos]** bajo **[!UICONTROL Recopilación de datos]**
+* Acceso a **[!UICONTROL Administrar esquemas]** y **[!UICONTROL Esquemas de vista]** bajo **[!UICONTROL Modelado de datos]**.
+* Acceso a **[!UICONTROL Administrar áreas de nombres de identidad]** y **[!UICONTROL Ver áreas de nombres de identidad]** bajo **[!UICONTROL Identity Management]**.
+* Acceso a **[!UICONTROL Administrar flujos de datos]** y **[!UICONTROL Ver flujos de datos]** bajo **[!UICONTROL Recopilación de datos]**.
 * Si es cliente de una aplicación basada en Platform y va a completar el [Configurar Experience Platform](setup-experience-platform.md) lección, también debe tener:
    * Acceso a un **desarrollo** zona protegida.
    * Todos los elementos de permiso de **[!UICONTROL Administración de datos]**, y **[!UICONTROL Administración de perfiles]**:

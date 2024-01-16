@@ -2,7 +2,7 @@
 title: Configuración del Audience Manager con el SDK web de Platform
 description: Obtenga información sobre cómo configurar Adobe Audience Manager mediante el SDK web de Platform y validar la implementación mediante un destino de cookie. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 solution: Data Collection, Audience Manager
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
 workflow-type: tm+mt
 source-wordcount: '1330'
 ht-degree: 1%
@@ -85,7 +85,7 @@ Una vez guardada la fuente de datos, configure un [rasgo](https://experienceleag
 1. Seleccione el **[!UICONTROL Fuente de datos]** que creó en la sección anterior.
 1. **[!UICONTROL Seleccionar una carpeta]** en el que se guarda el rasgo en el panel de la derecha. Es posible que desee crear una carpeta **selección del icono +** junto a una carpeta principal existente. Puede asignar un nombre a esta nueva carpeta `Platform Web SDK tutorial`.
 1. Expanda el **[!UICONTROL Expresión de rasgo]** y seleccione. **[!UICONTROL Generador de expresiones]** Debe proporcionar un par de valor clave que signifique una visita a la página principal.
-1. Abra el [Página principal de Luma](https://luma.enablementadobe.com/content/luma/us/en.html) (asignado a su propiedad de etiquetas) y el **Platform Web SDK Debugger** y actualice la página.
+1. Abra el [Página principal de Luma](https://luma.enablementadobe.com/content/luma/us/en.html) (asignado a su propiedad de etiquetas) y el **Adobe Experience Platform Debugger** y actualice la página.
 1. Consulte las Solicitudes de red y los detalles del evento para el SDK web de Platform para encontrar la clave y el valor del nombre para la página principal.
    ![Datos XDM del Audience Manager de Adobe Experience Platform](assets/xdm-keyvalue.jpg)
 1. Vuelva al Generador de expresiones en la interfaz de usuario de Audience Manager e introduzca la clave como **`web.webPageDetails.name`** y el valor de **`content:luma:us:en`**. Este paso garantiza que active una característica cada vez que cargue la página principal.
@@ -100,7 +100,8 @@ El siguiente paso es crear una **segmento** y asigne el rasgo recién definido a
 1. Seleccionar **[!UICONTROL Añadir nuevo]** en la parte superior izquierda de la página para abrir el generador de segmentos
 1. Asigne a su segmento un nombre descriptivo y una descripción, como `Platform Web SDK - Homepage visitors`
 1. **[!UICONTROL Seleccionar una carpeta]** dónde se guardará el segmento en el panel situado a la derecha. Es posible que desee crear una carpeta **selección del icono +** junto a una carpeta principal existente. Puede asignar un nombre a esta nueva carpeta `Platform Web SDK tutorial`.
-1. Añada un código de integración, que en este caso es un conjunto aleatorio de números. 1. En el **[!UICONTROL Fuente de datos]** , seleccione **[!UICONTROL Audience Manager]** y la fuente de datos que creó anteriormente
+1. Añada un código de integración, que en este caso es un conjunto aleatorio de números.
+1. En el **[!UICONTROL Fuente de datos]** , seleccione **[!UICONTROL Audience Manager]** y la fuente de datos que creó anteriormente
 1. Expanda el **[!UICONTROL Características]** y busque el rasgo que ha creado
 1. Seleccionar **[!UICONTROL Agregar característica]**.
 1. Seleccionar **[!UICONTROL Guardar]** al final de la página
