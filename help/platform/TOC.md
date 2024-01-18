@@ -5,10 +5,10 @@ user-guide-description: Descubra los muchos componentes de Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: d60e457874f1f05a4a86a6b37b8aee58d4b3f067
+source-git-commit: 762fae584213b9f44ea6b97cb66f69526fc29595
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 17%
+source-wordcount: '855'
+ht-degree: 16%
 
 ---
 
@@ -41,6 +41,7 @@ ht-degree: 17%
    + [Usar zonas protegidas](/help/platform/admin/use-sandboxes.md)
    + [Copia de objetos entre zonas protegidas](/help/platform/admin/copy-objects-between-sandboxes.md)
    + [Agregar usuarios](/help/platform/admin/add-users.md)
+   + [Añadir usuarios a la recopilación de datos](https://experienceleague.adobe.com/docs/platform-learn/data-collection/users-and-permissions.html)
    + [Adición de desarrolladores](/help/platform/admin/add-developers.md)
    + [Añadir administradores de productos](/help/platform/admin/add-product-administrators.md)
    + [Configuración del control de acceso basado en atributos](/help/platform/admin/configure-attribute-based-access-control.md)

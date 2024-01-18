@@ -6,10 +6,10 @@ solution: Data Collection,Experience Platform
 doc-type: video
 auto-video-transcripts: true
 role: Developer, Data Engineer
-source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
+source-git-commit: 762fae584213b9f44ea6b97cb66f69526fc29595
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 42%
+source-wordcount: '185'
+ht-degree: 28%
 
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 42%
 # Tutoriales de recopilación de datos{#data-collection}
 
 + [Tutoriales de recopilación de datos](overview.md)
++ [Usuarios y permisos](admin/users-and-permissions.md)
 + Etiquetas{#tags}
    + [Información general y creación de una propiedad](tags/create-a-property.md)
    + [Elija una opción de alojamiento](tags/choose-a-hosting-option.md)
@@ -25,7 +26,6 @@ ht-degree: 42%
    + [Creación de elementos de datos](tags/create-data-elements.md)
    + [Generar reglas](tags/build-rules.md)
    + [Crear y publicar una biblioteca](tags/build-and-publish-a-library.md)
-   + [Usuarios y permisos](tags/users-and-permissions.md)
    + [Implementación en sitios web con SDK web](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=es){target="_blank"}
    + [Implementar en sitios web con SDK de soluciones](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
    + [Implementación en aplicaciones móviles](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=es){target="_blank"}
@@ -40,7 +40,7 @@ ht-degree: 42%
       + [Definición de valores de consentimiento mediante el estándar IAB TCF 2.0](web-sdk/consent/set-consent-iab.md)
       + [Inspect y validación de datos de consentimiento](web-sdk/consent/inspect.md)
       + [Tutorial completo del procesamiento de consentimiento](web-sdk/consent/tutorial.md)
-+ SDK móvil{#mobile-sdk}
++ Mobile SDK{#mobile-sdk}
    + [Información general](mobile-sdk/overview.md)
    + [Crear propiedades móviles](mobile-sdk/create-mobile-properties.md)
    + [Uso de administradores de dependencias](mobile-sdk/use-dependency-managers.md)
@@ -64,5 +64,5 @@ ht-degree: 42%
    + [Preparación de datos](edge/data-prep.md)
    + [Administración de datos confidenciales](edge/manage-sensitive-data-in-datastreams.md)
    + [ID de dispositivos de origen](edge/generate-first-party-device-ids.md)
-+ Debugger{#debugger}
++ Depurador{#debugger}
    + [Información general](debugger/overview.md)
