@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo recopilar y asignar datos para Ado
 solution: Data Collection,Experience Platform,Analytics
 jira: KT-14636
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: 3186788dfb834f980f743cef82942b3cf468a857
+source-git-commit: 30dd0142f1f5220f30c45d58665b710a06c827a8
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '923'
 ht-degree: 1%
 
 ---
@@ -82,7 +82,7 @@ Este objeto:
 resultados en:
 
 ```
-s.products = ";5829,1,49.99;9841,3,30.00"
+s.products = ";5829;1;49.99,9841;3;30.00"
 ```
 
 >[!NOTE]
@@ -207,6 +207,79 @@ Para asignar estos datos de contexto XDM a los datos de Analytics en el grupo de
 
 * Cree cargas XDM en la aplicación según el grupo de campos Extensión completa de Adobe Analytics ExperienceEvent, similar a lo que ha hecho en [Seguimiento de datos de eventos](events.md) lección, o
 * Genere reglas en la propiedad Etiquetas que utilicen acciones de regla para adjuntar o modificar datos en el grupo de campos Extensión completa de Adobe Analytics ExperienceEvent. Consulte para obtener más información [Adjuntar datos a eventos del SDK](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/) o [Modificación de datos en eventos del SDK](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/).
+
+
+### eVars de comercialización
+
+Si está utilizando [eVars de comercialización](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/merchandising-evars.html?lang=en) en la configuración de Analytics, por ejemplo, para capturar el color de los productos, como `&&products = ...;evar1=red;event10=50,...;evar1=blue;event10=60`, tiene que ampliar la carga útil XDM que definió en [Seguimiento de datos de eventos](events.md) para recopilar esa información de comercialización.
+
+* En JSON:
+
+  ```json
+  {
+    "productListItems": [
+        {
+            "SKU": "LLWS05.1-XS",
+            "name": "Desiree Fitness Tee",
+            "priceTotal": 24,
+            "_experience": {
+                "analytics": {
+                    "events1to100": {
+                        "event10": {
+                            "value": 50
+                        }
+                    },
+                    "customDimensions": {
+                        "eVars": {
+                            "eVar1": "red",
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "eventType": "commerce.productListAdds",
+    "commerce": {
+        "productListAdds": {
+            "value": 1
+        }
+    }
+  }
+  ```
+
+* En el código:
+
+  ```swift
+  var xdmData: [String: Any] = [
+    "productListItems": [
+      [
+        "name":  productName,
+        "SKU": sku,
+        "priceTotal": priceString,
+        "_experience" : [
+          "analytics": [
+            "events1to100": [
+              "event10": [
+                "value:": value
+              ]
+            ],
+            "customDimensions": [
+              "eVars": [
+                "eVar1": color
+              ]
+            ]
+          ]
+        ]
+      ]
+    ],
+    "eventType": "commerce.productViews",
+    "commerce": [
+      "productViews": [
+        "value": 1
+      ]
+    ]
+  ]
+  ```
 
 
 ### Usar reglas de procesamiento
