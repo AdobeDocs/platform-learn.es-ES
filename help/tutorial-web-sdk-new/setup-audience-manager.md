@@ -2,7 +2,7 @@
 title: Configuración del Audience Manager con el SDK web de Platform
 description: Obtenga información sobre cómo configurar Adobe Audience Manager mediante el SDK web de Platform y validar la implementación mediante un destino de cookie. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 solution: Data Collection, Audience Manager
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
 workflow-type: tm+mt
 source-wordcount: '1330'
 ht-degree: 1%
@@ -59,7 +59,7 @@ A continuación, cree un [Fuente de datos](https://experienceleague.adobe.com/do
 
    ![Fuentes de datos del Audience Manager de Adobe Experience Platform](assets/data-sources-list.jpg)
 
-1. Asigne a la fuente de datos un nombre descriptivo y una descripción. Para la configuración inicial, puede nombrar esto`Platform Web SDK tutorial`.
+1. Asigne a la fuente de datos un nombre descriptivo y una descripción. Para la configuración inicial, puede nombrar esto `Platform Web SDK tutorial`.
 1. Establecer **[!UICONTROL Tipo de ID]** hasta **[!UICONTROL Cookie]**
 1. En el **[!UICONTROL Controles de exportación de datos]** , seleccione **[!UICONTROL Sin restricciones]**
 

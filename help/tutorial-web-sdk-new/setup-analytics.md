@@ -2,9 +2,9 @@
 title: Configuración de Adobe Analytics mediante el SDK web de Experience Platform
 description: Obtenga información sobre cómo configurar Adobe Analytics mediante el SDK web de Experience Platform. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 solution: Data Collection, Analytics
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
 workflow-type: tm+mt
-source-wordcount: '4649'
+source-wordcount: '4675'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Debe haber completado todos los pasos de las secciones anteriores del tutorial:
    * [Creación de una regla de etiqueta](create-tag-rule.md)
    * [Validar con Adobe Experience Platform Debugger](validate-with-debugger.md)
 
-También es necesario [Habilitar el acceso de los usuarios a Adobe Experience Platform Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html) para que pueda validar los datos de Adobe Analytics con Adobe Experience Platform Assurance.
+También es necesario [Habilitar el acceso de los usuarios a Adobe Experience Platform Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html) para que pueda validar los datos de Adobe Analytics con Adobe Experience Platform Assurance. (Si tiene acceso a esquemas, áreas de nombres de identidad y flujos de datos, ya tendrá acceso a Assurance)
 
 ## Esquemas XDM y variables de Analytics
 
@@ -65,7 +65,7 @@ También es necesario [Habilitar el acceso de los usuarios a Adobe Experience Pl
 
 To understand what XDM variables are auto-mapped to Adobe Analytics, please see [Variables automatically mapped in Analytics](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html?lang=en). Any variable that is not auto-mapped must be manually mapped. -->
 
-1. **XDM independiente del producto**: mantenga un esquema XDM de par clave-valor semántico y utilice [Reglas de procesamiento de Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html) para asignar los campos XDM a eVars, props, etc.
+1. **XDM independiente del producto**: mantenga un esquema XDM de par clave-valor semántico y utilice [Reglas de procesamiento de Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html) para asignar los campos XDM a eVars, props, etc. Con un esquema XDM semántico, queremos decir que los propios nombres de campo tienen significado. Por ejemplo, el nombre del campo `web.webPageDetails.pageName` tiene más significado que decir `prop1` o `evar3`.
 
    >[!IMPORTANT]
    >
@@ -140,7 +140,7 @@ El SDK web de Platform envía datos del sitio web a Platform Edge Network. A con
 
 Es posible que desee cambiar a qué grupos de informes de Adobe Analytics se envían los datos cuando los visitantes se encuentran en determinadas páginas. Para configurar una configuración de anulación de secuencia de datos para Adobe Analytics:
 
-1. Edite el **[!UICONTROL Adobe Analytics]** para configurar la aplicación, abra el menú shish-kabab y seleccione **[!UICONTROL Editar]**
+1. Edite el **[!UICONTROL Adobe Analytics]** mediante la apertura de la ![más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) y, a continuación, seleccione **[!UICONTROL Editar]**
 
    ![Sobrescribir la secuencia de datos](assets/datastream-edit-analytics.png)
 
@@ -306,19 +306,16 @@ En el [Creación de una regla de etiqueta](create-tag-rule.md) lección, ha conf
 
 ### Incremento de vistas de página
 
-Dado que ahora está enviando datos a Adobe Analytics, también debe asignar un campo XDM adicional para indicar que una señalización debe procesarse como una vista de página de Analytics.
+Dado que ahora envía datos a Adobe Analytics, le recomendamos que asigne un campo XDM adicional para indicar una vista de página. Aunque técnicamente no es necesario para que Analytics procese una señalización como vista de página, resulta útil tener una forma estándar de indicar una vista de página para otras aplicaciones de flujo descendente.
 
 1. Abra el `all pages global content variables - page bottom - AA (order 1)` regla
+1. Abra el **[!UICONTROL Actualizar variable]** acción
 1. Desplácese hacia abajo y seleccione para abrir hasta `web.webPageDetails`
 1. Seleccione para abrir **[!UICONTROL pageViews]** objeto
 1. Establecer **[!UICONTROL valor]** hasta `1`
 1. Seleccionar **[!UICONTROL Conservar cambios]**
 
    ![Objeto XDM de vistas de página](assets/set-up-analytics-pageviews.png)
-
-   >[!TIP]
-   >
-   >Este campo equivale a enviar un **`s.t()`** señalización de vista de página para Analytics con `AppMeasurement.js`. Para una señalización de clic en vínculo, establezca el `webInteraction.linkClicks.value` hasta `1`
 
 
 ### Envíe una vista de página a otro grupo de informes con anulación de secuencia de datos
@@ -381,9 +378,9 @@ Cree una regla para enviar una llamada de vista de página adicional a un grupo 
 1. En **[!UICONTROL Grupos de informes]**, seleccione el grupo de informes para el que desee anular la selección. En este caso, `tmd-websdk-course-stg`.
 
 
->[!TIP]
->
->La lista de grupos de informes que se muestra aquí está determinada por la variable [configurar la anulación de un grupo de informes de secuencia de datos](configure-datastream.md###configure-a-datastream-report-suite-override) paso. Añadir grupo de informes equivaldría al etiquetado de grupos múltiples.
+   >[!TIP]
+   >
+   >La lista de grupos de informes que se muestra aquí está determinada por la variable [configurar la anulación de un grupo de informes de secuencia de datos](configure-datastream.md###configure-a-datastream-report-suite-override) paso. Añadir grupo de informes equivaldría al etiquetado de grupos múltiples.
 
 1. Seleccionar **[!UICONTROL Conservar cambios]**
 
@@ -415,6 +412,7 @@ Comience por rastrear las vistas de productos en la página de detalles del prod
 
 1. En el panel de navegación izquierdo, seleccione **[!UICONTROL Reglas]** y luego seleccione **[!UICONTROL Agregar regla]**
 1. Asígnele un nombre  [!UICONTROL `ecommerce - pdp page bottom - AA (order 20)`]
+1. Seleccione el ![símbolo +](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) en Evento para añadir un nuevo déclencheur
 1. En **[!UICONTROL Extensión]**, seleccione **[!UICONTROL Núcleo]**
 1. En **[!UICONTROL Tipo de evento]**, seleccione **[!UICONTROL Page Bottom]**
 1. Asígnele un nombre `Core - Page Bottom - order 20`
@@ -520,6 +518,7 @@ Comparar el elemento de datos con `productListItems` estructura (sugerencia, deb
 Ahora, vuelva a asignar el objeto XDM a una matriz completa. Repita los mismos pasos que al crear el `ecommerce - pdp page bottom - AA (order 20)` regla:
 
 1. Asígnele un nombre  [!UICONTROL `ecommerce - cart page bottom - AA (order 20)`]
+1. Seleccione el ![símbolo +](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) en Evento para añadir un nuevo déclencheur
 1. En **[!UICONTROL Extensión]**, seleccione **[!UICONTROL Núcleo]**
 1. En **[!UICONTROL Tipo de evento]**, seleccione **[!UICONTROL Page Bottom]**
 1. Asígnele un nombre `Core - Page Bottom - order 20`
@@ -670,16 +669,10 @@ Obtenga información sobre cómo validar que Adobe Analytics está capturando el
 
 ### Validación de ID de Experience Cloud
 
-1. Vaya a la [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} y use Experience Platform Debugger para lo siguiente [cambie la propiedad de etiquetas del sitio a su propia propiedad de desarrollo](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. Vaya a la [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}
+1. Seleccione el botón de inicio de sesión en la parte superior derecha y utilice las credenciales u: test@adobe.com p: test para autenticarse
+1. Abra Experience Platform Debugger y [cambie la propiedad de etiquetas del sitio a su propia propiedad de desarrollo](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 
-
-   >[!WARNING]
-   >
-   >Antes de continuar, asegúrese de haber iniciado sesión en el sitio de Luma.  Si no ha iniciado sesión, el sitio de Luma no le permite cerrar la compra.
-   >
-   > 1. En Luma, seleccione el botón de inicio de sesión en la parte superior derecha y utilice las credenciales **u: `test@adobe.com` p: prueba** para autenticarse
-   >
-   > 1. Se le redirigirá automáticamente a [Página de productos de Didi Sport Watch](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02) al cargar la página siguiente
 
 1. Para habilitar el seguimiento de Edge, vaya a Experience Platform Debugger, en el panel de navegación izquierdo, seleccione **[!UICONTROL Registros]**, luego seleccione la **[!UICONTROL Edge]** y seleccione. **[!UICONTROL Connect]**
 
@@ -689,7 +682,7 @@ Obtenga información sobre cómo validar que Adobe Analytics está capturando el
 
    ![Seguimiento de Edge conectado](assets/analytics-debugger-edge-connected.png)
 
-1. Actualice la [Página de productos de Didi Sport Watch](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02) y vuelva a comprobar Experience Platform Debugger, debería ver los datos que llegan. La fila que empieza por **[!UICONTROL Asignación automática de Analytics]** es la señalización de Adobe Analytics
+1. Actualice la página de Luma y vuelva a comprobar Experience Platform Debugger. Debería ver los datos que llegan. La fila que empieza por **[!UICONTROL Asignación automática de Analytics]** es la señalización de Adobe Analytics
 1. Seleccione para abrir ambos `[!UICONTROL mappedQueryParams]` y la segunda lista desplegable para ver las variables de Analytics
 
    ![Seguimiento de Edge de señalizaciones de Analytics](assets/analytics-debugger-edge-analytics.png)
@@ -700,6 +693,7 @@ Obtenga información sobre cómo validar que Adobe Analytics está capturando el
 
 1. Desplazarse hacia abajo para buscar `[!UICONTROL c.a.x.identitymap.ecid.[0].id]`. Es una variable de datos de contexto que captura el ECID
 1. Desplácese hacia abajo hasta que vea el informe de Analytics. `[!UICONTROL mid]` variable. Ambos ID coinciden con el ID de Experience Cloud del dispositivo.
+1. En el sitio de Luma,
 
    ![Analytics ECID](assets/analytics-debugger-ecid.png)
 
@@ -711,7 +705,7 @@ Obtenga información sobre cómo validar que Adobe Analytics está capturando el
 
 Arriba configuró una anulación de secuencia de datos para el [Página principal de Luma](https://luma.enablementadobe.com/content/luma/us/en.html).  Para validar esta configuración
 
-1. Busque una fila con **[!UICONTROL Configuración de flujo de datos después de aplicar el reemplazo.]**. Aquí encontrará el grupo de informes principal y los grupos de informes adicionales que se configuraron para las anulaciones del grupo de informes.
+1. Busque una fila con **[!UICONTROL Configuración de flujo de datos después de aplicar el reemplazo]**. Aquí encontrará el grupo de informes principal y los grupos de informes adicionales que se configuraron para las anulaciones del grupo de informes.
 
    ![Validación de lista de anulación de grupos de informes de Analytics](assets/aep-debugger-datastream-override.png)
 
@@ -721,9 +715,9 @@ Arriba configuró una anulación de secuencia de datos para el [Página principa
 
 ### Vistas de página de contenido
 
-Vuelva a la [Página de productos de Didi Sport Watch](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02).  Esta vez valida que Analytics captura las vistas de páginas de contenido.
+Vaya a una página de producto como la [Página de productos de Didi Sport Watch](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02).  Compruebe que Analytics captura las vistas de páginas de contenido.
 
-1. Buscar: `[!UICONTROL c.a.x.web.webpagedetails.pageviews.value]=1`. Le dice un `s.t()` La señalización de vista de página se está enviando a Analytics.
+1. Buscar: `[!UICONTROL c.a.x.web.webpagedetails.pageviews.value]=1`.
 1. Desplácese hacia abajo para ver el `[!UICONTROL gn]` variable. Es la sintaxis dinámica de Analytics para `[!UICONTROL s.pageName]` variable. Captura el nombre de página de la capa de datos.
 
    ![Cadena de producto de Analytics](assets/analytics-debugger-edge-page-view.png)
@@ -737,7 +731,7 @@ Dado que ya se encuentra en una página de producto, este ejercicio sigue utiliz
 1. Buscar: `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL sku]`. La variable captura el valor del elemento de datos asignado al `productListItems.item1.sku` anteriormente en esta lección
 1. Busque también. `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL _experience.analytics.customdimensions.evars.evar1]`. La variable captura el valor del elemento de datos asignado `productListItems.item1._experience.analytics.customdimensions.evars.evar1`
 1. Desplácese hacia abajo para ver el `[!UICONTROL pl]` variable. Es la sintaxis dinámica de la variable de cadena de producto de Analytics
-1. Tenga en cuenta que el nombre del producto de la capa de datos está asignado tanto a la variable `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL sku]` y el `[!UICONTROL product]` parámetro de la cadena de producción.  Además, el título de producto de la capa de datos se asigna a la evar1 de comercialización en la cadena de producción.
+1. Tenga en cuenta que el nombre del producto de la capa de datos está asignado tanto a la variable `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL sku]` y el `[!UICONTROL product]` parámetro de la cadena de products.  Además, el título de producto de la capa de datos se asigna a la evar1 de comercialización en la cadena de productos.
 
    ![Cadena de producto de Analytics](assets/analytics-debugger-prodstring.png)
 
@@ -840,9 +834,9 @@ Arriba ha validado que Adobe Analytics está capturando el ECID, las vistas de p
 
 Hay varias formas de acceder a Assurance:
 
-1. Access Assurance a través de Adobe Experience Platform
-1. Access Assurance mediante la recopilación de datos de Adobe Experience Platform
-1. Acceder a Assurance a través de Registros dentro del Adobe Experience Platform Debugger
+1. A través de la interfaz Adobe Experience Platform
+1. A través de la interfaz de recopilación de datos Adobe Experience Platform
+1. Mediante registros dentro del Adobe Experience Platform Debugger (recomendado)
 
 Para acceder a Assurance a través de Adobe Experience Platform, desplácese hacia abajo y seleccione **[!UICONTROL Assurance]** en la navegación del carril izquierdo debajo de **[!UICONTROL RECOPILACIÓN DE DATOS]**.  Seleccione el **[!UICONTROL &quot;Tutorial 3 de SDK web&quot;]** sesión para acceder a los eventos generados en la sección anterior.
 ![Assurance mediante Adobe Experience Platform](assets/assurance-open-aep.png)
@@ -850,7 +844,7 @@ Para acceder a Assurance a través de Adobe Experience Platform, desplácese hac
 Para acceder a Assurance a través de la recopilación de datos de Adobe Experience Platform, seleccione **[!UICONTROL Assurance]** en la navegación del carril izquierdo debajo de **[!UICONTROL RECOPILACIÓN DE DATOS]**.  Seleccione el **[!UICONTROL &quot;Tutorial 3 de SDK web&quot;]** sesión para acceder a los eventos generados en la sección anterior.\
 ![Assurance mediante la recopilación de datos de Adobe Experience Platform](assets/assurance-open-data-collection.png)
 
-Para acceder a Assurance a través del Adobe Experience Platform Debugger, vaya a Experience Platform Debugger, en el panel de navegación izquierdo, seleccione **[!UICONTROL Registros]**, luego seleccione la **[!UICONTROL Edge]** y seleccione. **[!UICONTROL Connect]**.  Una vez establecida la conexión a la red perimetral, seleccione el icono de vínculo externo\
+Para acceder a Assurance a través del Adobe Experience Platform Debugger, vaya a Experience Platform Debugger, en el panel de navegación izquierdo, seleccione **[!UICONTROL Registros]**, luego seleccione la **[!UICONTROL Edge]** y seleccione. **[!UICONTROL Connect]**.  Una vez establecida la conexión a la red perimetral, seleccione el icono de vínculo externo. Se recomienda acceder a Assurance a través de Debugger, ya que las sesiones web se deben iniciar desde Debugger.
 ![Assurance mediante la recopilación de datos de Adobe Experience Platform](assets/assurance-open-aep-debugger.png)
 
 Dentro de **[!UICONTROL &quot;Tutorial 3 de SDK web&quot;]** Centro de sesión de Assurance **[!UICONTROL &quot;hitdebugger&quot;]** en la barra de búsqueda de eventos para filtrar los resultados a los datos posteriores al procesamiento de Adobe Analytics.

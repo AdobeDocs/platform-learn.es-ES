@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo implementar Administración de dec
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
 workflow-type: tm+mt
-source-wordcount: '2455'
+source-wordcount: '2464'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Obtenga información sobre cómo implementar Administración de decisiones mediante el SDK web de Platform. Esta guía cubre los requisitos previos fundamentales de Administración de decisiones, los pasos detallados para la configuración y una explicación detallada de un caso de uso centrado en el estado de lealtad.
 
-Al seguir esta documentación, los usuarios de Journey Optimizer están equipados para aplicar de forma eficaz las funciones de offer decisioning, lo que mejora la personalización y la relevancia de sus interacciones con los clientes.
+Al seguir este tutorial, los usuarios de Journey Optimizer están equipados para aplicar de forma eficaz las funciones de offer decisioning, lo que mejora la personalización y la relevancia de sus interacciones con los clientes.
 
 ## Objetivos de aprendizaje
 
@@ -24,7 +24,7 @@ Al final de esta lección, puede hacer lo siguiente:
 
 * Comprenda los conceptos principales de gestión de decisiones en Adobe Journey Optimizer y su integración con el SDK web de Adobe Experience Platform.
 
-* Conozca el proceso paso a paso para configurar el SDK web para Offer Decisioning, lo que garantiza una integración perfecta con AJO.
+* Conozca el proceso paso a paso para configurar el SDK web para Offer Decisioning, lo que garantiza una integración perfecta con Journey Optimizer.
 
 * Explore un caso de uso detallado centrado en ofertas de estado de lealtad, obteniendo perspectivas sobre la creación y administración de ofertas, decisiones y ubicaciones de forma eficaz.
 
@@ -38,13 +38,11 @@ Al final de esta lección, puede hacer lo siguiente:
 
 Para completar las lecciones de esta sección, primero debe:
 
-* Asegúrese de que su organización tenga acceso a Adobe Journey Optimizer Ultimate (AJO y Offer decisioning) o a Adobe Experience Platform y al complemento del servicio de aplicaciones de Offer decisioning.
+* Asegúrese de que su organización tenga acceso a Adobe Journey Optimizer Ultimate (Journey Optimizer y Offer decisioning) o a Adobe Experience Platform y al complemento del servicio de aplicaciones de Offer decisioning.
 
 * Completar todas las lecciones para la configuración inicial del SDK web de Platform.
 
 * Habilite su organización para Edge Decisioning.
-
-* Publique el conjunto de datos.
 
 * Obtenga información sobre cómo configurar una ubicación e instanciar ID de ubicación y actividad dentro del JSON del ámbito de decisión.
 
@@ -64,7 +62,7 @@ El offer decisioning debe estar habilitado en **secuencia de datos** Configuraci
 
 Para configurar el Offer decisioning en el conjunto de datos:
 
-1. Ir a [Recopilación de datos](https://experience.adobe.com/#/data-collection) interfaz.
+1. Vaya a la [Recopilación de datos](https://experience.adobe.com/#/data-collection) interfaz.
 
 1. En el panel de navegación izquierdo, seleccione **Datastreams**.
 
@@ -143,7 +141,7 @@ Este caso de uso le permite comprender mejor cómo Journey Optimizer puede ayuda
 
 >[!NOTE]
 >
-> Dado que este tutorial está dirigido a los implementadores, vale la pena señalar que esta lección implica un trabajo sustancial de la interfaz de usuario en AJO. Aunque estas tareas de la interfaz de usuario las suelen administrar los especialistas en marketing, puede resultar beneficioso para los implementadores obtener información sobre el proceso, incluso si no son responsables de la creación de campañas de administración de decisiones a largo plazo.
+> Dado que este tutorial está dirigido a los implementadores, vale la pena señalar que esta lección implica un trabajo sustancial de la interfaz en Journey Optimizer. Aunque estas tareas de interfaz suelen gestionarlas los especialistas en marketing, puede resultar beneficioso para los implementadores obtener información sobre el proceso, incluso si no son responsables de la creación de campañas de administración de decisiones a largo plazo.
 
 ## Componentes
 
@@ -173,7 +171,7 @@ Para crear la ubicación, siga estos pasos:
 
 1. Haga clic en **Guardar**.
 1. Una vez creada la ubicación, se muestra en la lista de ubicaciones.
-1. Tome nota del ID de colocación, ya que puede ser necesario para la configuración dentro del ámbito de decisión.
+1. Seleccione la fila que contiene la nueva ubicación y tome nota del ID de ubicación, ya que esto puede ser necesario para la configuración dentro del ámbito de decisión.
 
    ![Consulte ID de ubicación ](../assets/decisioning-placement-id.png)
 
@@ -189,7 +187,7 @@ Para crear las reglas de decisión, siga estos pasos:
 
    ![Creación de la regla](../assets/decisioning-create-rule.png)
 
-1. Pongamos el nombre a la primera regla &#39;*Regla de estado de fidelización de oro*&#39;. Puede utilizar campos XDM para definir la regla. El Adobe Experience Platform **Generador de segmentos** es una interfaz de usuario intuitiva que puede utilizar para crear las condiciones de las reglas.
+1. Pongamos el nombre a la primera regla &#39;*Regla de estado de fidelización de oro*&#39;. Puede utilizar campos XDM para definir la regla. El Adobe Experience Platform **Generador de segmentos** es una interfaz intuitiva que puede utilizar para crear las condiciones de las reglas.
 
    ![Definición de la regla](../assets/decisioning-define-rule.png)
 
