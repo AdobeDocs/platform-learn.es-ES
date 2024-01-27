@@ -5,10 +5,10 @@ user-guide-description: Descubra los muchos componentes de Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 762fae584213b9f44ea6b97cb66f69526fc29595
+source-git-commit: b38cd5cf681415defae1dab77ad19fd00d41fda2
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 16%
+source-wordcount: '868'
+ht-degree: 17%
 
 ---
 
@@ -207,7 +207,7 @@ ht-degree: 16%
    + [Actualización de esquemas](/help/platform/schemas/update-schemas.md)
    + [Creación de un esquema ad hoc](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
 + Fuentes {#sources}
-   + [Información general de fuentes](/help/platform/sources/overview.md)
+   + [Información general](/help/platform/sources/overview.md)
    + [Ingesta de datos desde Adobe Analytics](/help/platform/sources/ingest-data-from-adobe-analytics.md)
    + [Ingesta de datos desde el Audience Manager](/help/platform/sources/ingest-data-from-aam.md)
    + [Ingesta de datos desde Marketo](/help/platform/sources/ingest-data-from-marketo.md)
@@ -217,6 +217,10 @@ ht-degree: 16%
    + [Transmitir datos con API HTTP](/help/platform/sources/streaming-ingestion-http-api.md)
    + [Transmisión de datos mediante conectores de origen](/help/platform/sources/streaming-ingestion-source-connector.md)
    + [Solución de problemas: conector SFTP](/help/platform/sources/troubleshoot-sftp-connector.md)
++ Manuales de tácticas de casos prácticos de {#use-case-playbooks}
+   + [Información general](/help/platform/use-case-playbooks/overview.md)
+   + [Configuración de una zona protegida de libros](/help/platform/use-case-playbooks/configure-a-playbook-sandbox.md)
+   + [Creación y publicación de una instancia de libro de estrategias](/help/platform/use-case-playbooks/create-and-publish-a-playbook-instance.md)
 + Integraciones de Experience Cloud {#experience-cloud}
    + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=es)
    + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
