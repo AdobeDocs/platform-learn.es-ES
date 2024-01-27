@@ -5,7 +5,7 @@ user-guide-description: Descubra los muchos componentes de Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: b38cd5cf681415defae1dab77ad19fd00d41fda2
+source-git-commit: 6068feccb23c8485390e64cd79e021167b1271a8
 workflow-type: tm+mt
 source-wordcount: '868'
 ht-degree: 17%
@@ -219,7 +219,7 @@ ht-degree: 17%
    + [Solución de problemas: conector SFTP](/help/platform/sources/troubleshoot-sftp-connector.md)
 + Manuales de tácticas de casos prácticos de {#use-case-playbooks}
    + [Información general](/help/platform/use-case-playbooks/overview.md)
-   + [Configuración de una zona protegida de libros](/help/platform/use-case-playbooks/configure-a-playbook-sandbox.md)
+   + [Configuración de una zona protegida de manual](/help/platform/use-case-playbooks/configure-a-playbook-sandbox.md)
    + [Creación y publicación de una instancia de libro de estrategias](/help/platform/use-case-playbooks/create-and-publish-a-playbook-instance.md)
 + Integraciones de Experience Cloud {#experience-cloud}
    + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=es)
