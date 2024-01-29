@@ -5,16 +5,16 @@ feature: Tags
 level: Beginner
 jira: KT-3529
 exl-id: 0be71b74-758e-4952-ab77-55deb8a02eda
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 72be7f50cf52633ea5970fd5a3b5b3d7fe9ea470
 workflow-type: tm+mt
-source-wordcount: '66'
-ht-degree: 0%
+source-wordcount: '75'
+ht-degree: 1%
 
 ---
 
 # Creación de elementos de datos
 
-Obtenga información sobre cómo crear elementos de datos para almacenar valores extraídos de la capa de datos y ponerlos a disposición de reglas y extensiones en la propiedad de etiquetas.
+Obtenga información sobre cómo crear elementos de datos para almacenar valores extraídos de la capa de datos y ponerlos a disposición de reglas y extensiones en la propiedad de etiquetas. Para obtener más información, consulte la [elementos de datos](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=es) documentación.
 
 >[!NOTE]
 >

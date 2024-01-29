@@ -6,9 +6,9 @@ solution: Data Collection,Experience Platform
 doc-type: video
 auto-video-transcripts: true
 role: Developer, Data Engineer
-source-git-commit: 762fae584213b9f44ea6b97cb66f69526fc29595
+source-git-commit: 72be7f50cf52633ea5970fd5a3b5b3d7fe9ea470
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '188'
 ht-degree: 28%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 28%
 + Etiquetas{#tags}
    + [Información general y creación de una propiedad](tags/create-a-property.md)
    + [Elija una opción de alojamiento](tags/choose-a-hosting-option.md)
-   + [Uso de entornos](tags/use-environments.md)
+   + [Uso de entornos y códigos incrustados](tags/use-environments-and-embed-codes.md)
    + [Añadir y configurar extensiones](tags/add-and-configure-extensions.md)
    + [Creación de elementos de datos](tags/create-data-elements.md)
    + [Generar reglas](tags/build-rules.md)
