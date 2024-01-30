@@ -2,9 +2,9 @@
 title: Configuración de una propiedad de reenvío de eventos
 description: Obtenga información sobre cómo utilizar la propiedad de reenvío de eventos mediante datos del SDK web de Experience Platform. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK,Tags,Event Forwarding
-source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
+source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: '1862'
 ht-degree: 3%
 
 ---
@@ -14,6 +14,9 @@ ht-degree: 3%
 Obtenga información sobre cómo utilizar la propiedad de reenvío de eventos mediante datos del SDK web de Experience Platform.
 
 El reenvío de eventos es un nuevo tipo de propiedad disponible en la recopilación de datos. El reenvío de eventos le permite enviar datos a proveedores de terceros que no sean de Adobe directamente desde Adobe Experience Platform Edge Network, en lugar del explorador tradicional del lado del cliente. Descubra las ventajas del reenvío de eventos en la [Resumen del reenvío de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en).
+
+
+![Diagrama del SDK web y reenvío de eventos](assets/dc-websdk-eventforwarding.png)
 
 Para utilizar el reenvío de eventos en Adobe Experience Platform, los datos deben enviarse primero a Adobe Experience Platform Edge Network mediante una o varias de las tres opciones siguientes:
 
@@ -50,7 +53,6 @@ Al final de esta lección, debe ser capaz de:
 
    * Configuración inicial
 
-      * [Configure los permisos](configure-permissions.md)
       * [Configuración de un esquema XDM](configure-schemas.md)
       * [Configuración de un área de nombres de identidad](configure-identities.md)
       * [Configuración de una secuencia de datos](configure-datastream.md)
