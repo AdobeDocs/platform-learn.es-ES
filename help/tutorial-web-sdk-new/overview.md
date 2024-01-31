@@ -2,7 +2,7 @@
 title: Tutorial de implementación de Adobe Experience Cloud con SDK web
 description: Obtenga información sobre cómo implementar aplicaciones de Experience Cloud mediante el SDK web de Adobe Experience Platform.
 recommendations: catalog, noDisplay
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: 12e6e9d06ae0d6945c165032d89fd0f801d94ff2
 workflow-type: tm+mt
 source-wordcount: '695'
 ht-degree: 4%
@@ -40,7 +40,7 @@ Después de completar este tutorial, debe estar preparado para empezar a impleme
 
 Todos los clientes de Experience Cloud pueden utilizar el SDK web de Platform. No es necesario obtener una licencia de una aplicación basada en Platform como Real-time Customer Data Platform o Journey Optimizer para utilizar el SDK web.
 
-En estas lecciones, se da por hecho que tiene una cuenta Adobe y la variable [permisos necesarios](configure-permissions.md) para completar las lecciones. Si no es así, debe ponerse en contacto con el administrador del Experience Cloud para solicitar el acceso.
+En estas lecciones, se da por hecho que dispone de una cuenta Adobe y de los permisos necesarios para completar las lecciones. Si no es así, debe ponerse en contacto con el administrador del Experience Cloud para solicitar el acceso.
 
 * Para **Recopilación de datos**, debe tener:
    * **[!UICONTROL Plataformas]**—permiso para **[!UICONTROL Web]** y, si tiene licencia, **[!UICONTROL Edge]**

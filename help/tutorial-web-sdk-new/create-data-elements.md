@@ -2,43 +2,22 @@
 title: Creación de elementos de datos
 description: Obtenga información sobre cómo crear un objeto XDM y asignarle elementos de datos en etiquetas. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Tags
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
 workflow-type: tm+mt
-source-wordcount: '1469'
+source-wordcount: '1212'
 ht-degree: 1%
 
 ---
 
 # Creación de elementos de datos
 
-Obtenga información sobre cómo crear los elementos de datos esenciales necesarios para capturar datos con el SDK web de Experience Platform. Recopilar datos de contenido e identidad en [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Aprenda a utilizar el esquema XDM creado anteriormente para recopilar datos mediante el tipo de elemento de datos del SDK web de Platform denominado Variable.
+Obtenga información sobre cómo crear elementos de datos en etiquetas para contenido, comercio y datos de identidad en [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html). A continuación, rellene y rellene los campos del esquema XDM con el tipo de elemento de datos Variable.
 
->[!NOTE]
->
-> Para fines de demostración, los ejercicios de esta lección se basan en el ejemplo utilizado durante [Configuración de un esquema](configure-schemas.md) paso; creación de objetos XDM de ejemplo que capturan el contenido visualizado y las identidades de los usuarios en la [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
 
 >[!IMPORTANT]
 >
 >Los datos de esta lección provienen de `[!UICONTROL digitalData]` en el sitio de Luma. Para ver la capa de datos, abra la consola de desarrollador y escriba `[!UICONTROL digitalData]` para ver la capa de datos completa disponible.![capa de datos digitalData](assets/data-element-data-layer.png)
 
-
-Independientemente del SDK web de Platform, debe seguir creando elementos de datos dentro de la propiedad de etiquetas que se asignen a variables de recopilación de datos de su sitio web, como una capa de datos, un atributo de HTML, etc. Una vez creados esos elementos de datos, debe asignarlos al esquema XDM creado durante la [configuración de esquemas](configure-schemas.md) lección. Por lo tanto, la creación de elementos de datos consta de dos acciones:
-
-1. Asignación de variables de sitio web a elementos de datos y
-1. Asignación de esos elementos de datos a un objeto XDM
-
-Para el paso 1, siga asignando la capa de datos a los elementos de datos del modo en que lo hace actualmente, utilizando cualquiera de los tipos de elementos de datos de la extensión de etiqueta principal. Para el paso 2, la extensión del SDK web de Platform tiene disponibles los siguientes tipos de elementos de datos:
-
-* ID de combinación de eventos
-* Mapa de identidad
-* Variable
-* Objeto XDM
-
-Esta lección se centra en el tipo de elemento de datos Variable. Puede crear un elemento de datos para capturar la actividad de los visitantes de Luma en función de la capa de datos disponible en el sitio de Luma. En la siguiente lección, aprenderá sobre el mapa de identidad.
-
->[!NOTE]
->
-> Los tipos de elementos de datos ID de combinación de eventos y objeto XDM rara vez se utilizan en casos puntuales.
 
 ## Objetivos de aprendizaje
 
@@ -51,16 +30,12 @@ Al final de esta lección, puede hacer lo siguiente:
 
 ## Requisitos previos
 
-Comprenderá qué es una capa de datos y se familiarizará con el [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} capa de datos y cómo hacer referencia a elementos de datos en etiquetas. Debe haber completado los siguientes pasos anteriores en el tutorial.
+Tiene una comprensión de lo que es una capa de datos y ha completado las siguientes lecciones anteriores en el tutorial:
 
 * [Configuración de un esquema XDM](configure-schemas.md)
 * [Configuración de un área de nombres de identidad](configure-identities.md)
 * [Configuración de una secuencia de datos](configure-datastream.md)
 * [Extensión del SDK web instalada en la propiedad de etiqueta](install-web-sdk.md)
-
->[!IMPORTANT]
->
->El [Extensión del servicio de ID de Experience Cloud](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) no es necesaria al implementar el SDK web de Adobe Experience Platform, ya que la funcionalidad del servicio de ID está integrada en el SDK web de Platform.
 
 ## Enfoques de capa de datos
 
@@ -192,7 +167,7 @@ Antes de crear el objeto XDM, cree el siguiente conjunto de elementos de datos p
 
    ![Elemento de datos Nombre de página](assets/data-element-pageName.jpg)
 
-Cree estos cuatro elementos de datos adicionales siguiendo los mismos pasos:
+Cree estos elementos de datos adicionales siguiendo los mismos pasos:
 
 * **`page.pageInfo.server`**  asignado a
   `digitalData.page.pageInfo.server`
@@ -206,7 +181,70 @@ Cree estos cuatro elementos de datos adicionales siguiendo los mismos pasos:
 * **`user.profile.attributes.loggedIn`** asignado a
   `digitalData.user.0.profile.0.attributes.loggedIn`
 
-* **`cart.orderId`** asignado a `digitalData.cart.orderId` (utilice esta opción durante la [Análisis de configuración](setup-analytics.md) lección)
+* **`product.productInfo.sku`** asignado a `digitalData.product.0.productInfo.sku`
+<!--digitalData.product.0.productInfo.sku
+    ```javascript
+    var cart = digitalData.product;
+    var cartItem;
+    cart.forEach(function(item){
+    cartItem = item.productInfo.sku;
+    });
+    return cartItem;
+    ```
+    -->
+* **`product.productInfo.title`** asignado a `digitalData.product.0.productInfo.title`
+* **`cart.orderId`** asignado a `digitalData.cart.orderId`
+<!--
+    ```javascript
+    var cart = digitalData.product;
+    var cartItem;
+    cart.forEach(function(item){
+    cartItem = item.productInfo.title;
+    });
+    return cartItem;
+    ```
+    -->
+* **`product.category`** uso del **[!UICONTROL Código personalizado]** **[!UICONTROL Tipo de elemento de datos]** y el siguiente código personalizado para analizar la dirección URL del sitio para la categoría de nivel superior:
+
+  ```javascript
+  var cat = location.pathname.split(/[/.]+/);
+  if (cat[5] == 'products') {
+     return (cat[6]);
+  } else if (cat[5] != 'html') { 
+     return (cat[5]);
+  }
+  ```
+
+* **`cart.productInfo`** mediante el siguiente código personalizado:
+
+  ```javascript
+  var cart = digitalData.cart.cartEntries; 
+  var cartItem = [];
+  cart.forEach(function(item, index, array){
+  cartItem.push({
+  "SKU": item.sku
+  });
+  });
+  return cartItem; 
+  ```
+
+* **`cart.productInfo.purchase`** mediante el siguiente código personalizado:
+
+  ```javascript
+  var cart = digitalData.cart.cartEntries; 
+  var cartItem = [];
+  cart.forEach(function(item, index, array){
+  var qty = parseInt(item.qty);
+  var price = parseInt(item.price);
+  cartItem.push({
+  "SKU": item.sku,
+  "quantity": qty,
+  "priceTotal": price
+  });
+  });
+  return cartItem; 
+  ```
+
 
 
 >[!CAUTION]
@@ -229,59 +267,21 @@ Para crear el elemento de datos Variable:
 
    ![Elemento de datos variable](assets/analytics-tags-data-element-xdm-variable.png)
 
-<!-- There are different ways to map data elements to XDM object fields. You can map individual data elements to individual XDM fields or map data elements to entire XDM objects as long as your data element matches the exact key-value pair schema present in the XDM object. In this lesson, you will capture content data by mapping to individual fields. You will learn how to [map a data element to an entire XDM object](setup-analytics.md#Map-an-entire-array-to-an-XDM-Object) in the [Setup Analytics](setup-analytics.md) lesson. 
-
-Create an XDM object to capture content data:
-
-1. In the left navigation, select **[!UICONTROL Data Elements]**
-1. Select **[!UICONTROL Add Data Element]**
-1. **[!UICONTROL Name]** the data element **`xdm.content`**
-1. As the **[!UICONTROL Extension]** select `Adobe Experience Platform Web SDK`
-1. As the **[!UICONTROL Data Element Type]** select `XDM object`
-1. Select the Platform **[!UICONTROL Sandbox]** in which you created the XDM schema in during the [Configure an XDM Schema](configure-schemas.md) lesson, in this example `DEVELOPMENT Mobile and Web SDK Courses`
-1. As the **[!UICONTROL Schema]**, select your `Luma Web Event Data` schema:
-
-    ![XDM object](assets/data-element-xdm.content-fields.png)
-
-    >[!NOTE]
-    >
-    >The sandbox corresponds to the Experience Platform sandbox in which you created the schema. There can be multiple sandboxes available in your Experience Platform instance, so make sure to select the right one. Always work in development first, then production.
-
-1. Scroll down until you reach the **`web`** object
-1. Select to open it
-
-    ![Web Object](assets/data-element-pageviews-xdm-object.png)
-
-
-1. Map the following web XDM variables to data elements
-
-    * **`web.webPageDetials.name`** to `%page.pageInfo.pageName%`
-    * **`web.webPageDetials.server`** to `%page.pageInfo.server%`
-    * **`web.webPageDetials.siteSection`** to `%page.pageInfo.hierarchie1%`
-
-    ![XDM object](assets/data-element-xdm.content.png)
-
-1. Next, find the `identityMap` object in the schema and select it
- 
-1. Map to the `identityMap.loginID` data element
-
-1. Select **[!UICONTROL Save]**
-
-   ![Data Collection interface](assets/identity-dataElements-xdmContent-LumaSchema-identityMapSelect3.png)
-
--->
 
 Al final de estos pasos, debe tener los siguientes elementos de datos creados:
 
 | Elementos de datos de la extensión CORE | Elementos de datos del SDK web de Platform |
 -----------------------------|-------------------------------
 | `cart.orderId` | `xdm.variable.content` |
+| `cart.productInfo` | |
+| `cart.productInfo.purchase` | |
 | `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |
 | `page.pageInfo.server` | |
+| `product.productInfo.sku` | |
+| `product.productInfo.title` | |
 | `user.profile.attributes.loggedIn` | |
 | `user.profile.attributes.username` | |
-
 
 >[!TIP]
 >

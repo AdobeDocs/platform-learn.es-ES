@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo implementar Administración de dec
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
-source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
+source-git-commit: 12e6e9d06ae0d6945c165032d89fd0f801d94ff2
 workflow-type: tm+mt
-source-wordcount: '2464'
+source-wordcount: '2470'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,9 @@ ht-degree: 0%
 Obtenga información sobre cómo implementar Administración de decisiones mediante el SDK web de Platform. Esta guía cubre los requisitos previos fundamentales de Administración de decisiones, los pasos detallados para la configuración y una explicación detallada de un caso de uso centrado en el estado de lealtad.
 
 Al seguir este tutorial, los usuarios de Journey Optimizer están equipados para aplicar de forma eficaz las funciones de offer decisioning, lo que mejora la personalización y la relevancia de sus interacciones con los clientes.
+
+
+![Diagrama del SDK web y Adobe Analytics](../assets/dc-websdk-ajo.png)
 
 ## Objetivos de aprendizaje
 

@@ -2,9 +2,9 @@
 title: Creación de identidades
 description: Obtenga información sobre cómo crear identidades en XDM y utilizar el elemento de datos del mapa de identidad para capturar los ID de usuario. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Tags
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '858'
 ht-degree: 1%
 
 ---
@@ -13,14 +13,7 @@ ht-degree: 1%
 
 Obtenga información sobre cómo capturar identidades con el SDK web de Experience Platform. Capturar datos de identidad no autenticados y autenticados en [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Aprenda a utilizar los elementos de datos creados anteriormente para recopilar datos autenticados con un tipo de elemento de datos del SDK web de Platform denominado mapa de identidad.
 
-La extensión de etiquetas del SDK web de Platform introduce cuatro nuevos tipos de elementos de datos:
-
-1. ID de combinación de eventos
-1. Mapa de identidad
-1. Variable
-1. Objeto XDM
-
-Esta lección se centra en el elemento de datos del mapa de identidad. Los elementos de datos que contienen un ID de usuario autenticado y un estado de autenticación se asignan al XDM.
+Esta lección se centra en el elemento de datos del mapa de identidad disponible con la extensión de etiquetas del SDK web de Adobe Experience Platform. Los elementos de datos que contienen un ID de usuario autenticado y un estado de autenticación se asignan al XDM.
 
 ## Objetivos de aprendizaje
 
@@ -32,7 +25,7 @@ Al final de esta lección, puede hacer lo siguiente:
 
 ## Requisitos previos
 
-Comprenderá qué es una capa de datos y se familiarizará con el [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} capa de datos y cómo hacer referencia a elementos de datos en etiquetas. Debe haber completado los siguientes pasos anteriores en el tutorial:
+Comprenderá qué es una capa de datos y se familiarizará con el [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} capa de datos y cómo hacer referencia a elementos de datos en etiquetas. Debe haber completado las siguientes lecciones anteriores en el tutorial:
 
 * [Configuración de un esquema XDM](configure-schemas.md)
 * [Configuración de un área de nombres de identidad](configure-identities.md)
@@ -40,14 +33,10 @@ Comprenderá qué es una capa de datos y se familiarizará con el [Sitio de demo
 * [Extensión del SDK web instalada en la propiedad de etiqueta](install-web-sdk.md)
 * [Creación de elementos de datos](create-data-elements.md)
 
->[!IMPORTANT]
->
->El [Extensión del servicio de ID de Experience Cloud](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) no es necesaria al implementar el SDK web de Adobe Experience Platform, ya que la funcionalidad del servicio de ID está integrada en el SDK web de Platform.
 
 ## Experience Cloud ID
 
-El [ID DEL Experience Cloud (ECID)](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en) es un área de nombres de identidad compartida que se utiliza en las aplicaciones de Adobe Experience Platform y Adobe Experience Cloud. ECID proporciona la base para la identidad del cliente y es la identidad predeterminada para las propiedades digitales. Esto hace que ECID sea el identificador ideal para rastrear el comportamiento de usuarios no autenticados, ya que siempre está presente.
-
+El [ID DEL Experience Cloud (ECID)](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en) es un área de nombres de identidad compartida que se utiliza en las aplicaciones de Adobe Experience Platform y Adobe Experience Cloud. ECID proporciona la base para la identidad del cliente y es la identidad predeterminada para las propiedades digitales. Esto hace que ECID sea el identificador ideal para rastrear el comportamiento de usuarios no autenticados, ya que siempre está presente
 
 <!-- FYI I commented this out because it was breaking the build - Jack
 >[!TIP]
@@ -59,6 +48,10 @@ El [ID DEL Experience Cloud (ECID)](https://experienceleague.adobe.com/docs/expe
 Obtenga más información sobre cómo [El seguimiento de los ECID se realiza mediante el SDK web de Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=en).
 
 Los ECID se configuran con una combinación de cookies de origen y Platform Edge Network. De forma predeterminada, las cookies de origen las establece el SDK web. Para tener en cuenta las restricciones del explorador sobre la duración de las cookies, puede optar por configurar y administrar sus propias cookies de origen en su lugar. Estos se denominan ID de dispositivos de origen (FPID).
+
+>[!IMPORTANT]
+>
+>El [Extensión del servicio de ID de Experience Cloud](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) no es necesaria al implementar el SDK web de Adobe Experience Platform, ya que la funcionalidad del servicio de ID está integrada en el SDK web de Platform.
 
 ## ID de dispositivo de origen (FPID)
 

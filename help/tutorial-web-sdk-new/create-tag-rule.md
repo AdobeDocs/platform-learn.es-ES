@@ -1,17 +1,17 @@
 ---
-title: Creación de una regla de etiqueta
+title: Creación de reglas de etiquetas
 description: Obtenga información sobre cómo enviar un evento a la red perimetral de Platform con el objeto XDM mediante una regla de etiqueta. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Tags
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '2005'
 ht-degree: 1%
 
 ---
 
-# Creación de una regla de etiqueta
+# Creación de reglas de etiquetas
 
-Obtenga información sobre cómo enviar un evento a la red perimetral de Platform con el objeto XDM mediante una regla de etiqueta. Una regla de etiqueta es una combinación de eventos, condiciones y acciones que indica a la propiedad de etiqueta que haga algo.
+Obtenga información sobre cómo enviar eventos a la red perimetral de Platform con el objeto XDM mediante reglas de etiqueta. Una regla de etiqueta es una combinación de eventos, condiciones y acciones que indica a la propiedad de etiqueta que haga algo.
 
 >[!NOTE]
 >
@@ -52,18 +52,25 @@ donde;
 1. **Secuencia** es el orden en que la regla debe activarse en relación con otras reglas
 <!-- minor update -->
 
-## Crear regla de etiqueta
+## Creación de reglas de etiquetas
 
 En las etiquetas, las reglas se utilizan para ejecutar acciones (llamadas de activación) bajo varias condiciones. La extensión de etiquetas del SDK web de Platform incluye dos acciones que se utilizarán en esta lección:
 
 * **[!UICONTROL Actualizar variable]** asigna elementos de datos a campos XDM
 * **[!UICONTROL Enviar evento]** envía el objeto XDM a Experience Platform Edge Network
 
-### Actualizar variable
+Primero definimos una regla con el **[!UICONTROL Actualizar variable]** acción, que define una &quot;configuración global&quot; de campos XDM que queremos enviar en cada página del sitio (por ejemplo, el nombre de página).
 
-Cree esta primera regla como una &quot;configuración global&quot; para establecer todas las variables de contenido esenciales en el objeto XDM mediante los SDK web de Platform **[!UICONTROL Actualizar variable]** acción. A continuación, cree una segunda regla, secuenciada en déclencheur después de la primera, para enviar el objeto XDM a Platform Edge Network mediante **[!UICONTROL Enviar evento]** acción. Más adelante en este tutorial, enviará diferentes campos XDM en función del tipo de página en la que se encuentra el visitante (por ejemplo, SKU de productos en páginas de productos). Para ello, secuencie las reglas que contienen **[!UICONTROL Actualizar variable]** acciones antes de la regla que utiliza la variable **[!UICONTROL Enviar evento]** acción.
+A continuación, podemos definir reglas adicionales con **[!UICONTROL Actualizar variable]** acción que complementará los campos XDM globales con campos adicionales que solo están disponibles bajo ciertas condiciones (por ejemplo, añadir detalles del producto en páginas de productos).
 
-Para crear una regla de etiqueta:
+Finalmente, utilizaremos otra regla con el **[!UICONTROL Enviar evento]** acción que enviará el objeto XDM completo a Adobe Experience Platform Edge Network.
+
+
+### Actualizar reglas de variables
+
+#### Campos globales
+
+Para crear una regla de etiqueta para los campos XDM globales:
 
 1. Abra la propiedad de etiqueta que está utilizando para este tutorial.
 
@@ -119,6 +126,8 @@ Ahora, asigne los [!UICONTROL elementos de datos] a la [!UICONTROL esquema] util
    * **`web.webPageDetials.server`** hasta `%page.pageInfo.server%`
    * **`web.webPageDetials.siteSection`** hasta `%page.pageInfo.hierarchie1%`
 
+1. Configure `web.webPageDetials.pageViews.value` como `1`.
+
    ![Actualización del contenido de variables](assets/create-rule-xdm-variable-content.png)
 
 1. A continuación, busque la `identityMap` en el esquema y selecciónelo
@@ -139,10 +148,196 @@ Ahora, asigne los [!UICONTROL elementos de datos] a la [!UICONTROL esquema] util
    >
    > Para comprender qué valores se rellenan en `eventType` , debe ir a la página de esquema y seleccionar el campo `eventType` para ver los valores sugeridos en el carril derecho.
 
+   >[!TIP]
+   >
+   > Mientras que ninguno `web.webPageDetials.pageViews.value` ni `eventType` establezca en `web.webpagedetails.pageViews` son necesarios para que Adobe Analytics procese una señalización como vista de página, resulta útil disponer de una forma estándar de indicar una vista de página para otras aplicaciones de flujo descendente.
+
    ![Actualizar mapa de identidad variable](assets/create-tag-rule-eventType.png)
 
 
 1. Seleccionar **[!UICONTROL Conservar cambios]** y luego **[!UICONTROL Guardar]** la regla de la siguiente pantalla para terminar de crearla
+
+
+#### Enriquezca el objeto XDM con reglas adicionales con la acción Actualizar variable
+
+Puede utilizar **[!UICONTROL Actualizar variable]**  en varias reglas secuenciadas para enriquecer el objeto XDM antes de enviarlo a [!UICONTROL Red perimetral de plataforma].
+
+>[!TIP]
+>
+>El orden de las reglas determina qué regla se ejecuta primero cuando se activa un evento. Si dos reglas tienen el mismo tipo de evento, se ejecuta primero la que tenga el número más bajo.
+> 
+>![orden de reglas](assets/set-up-analytics-sequencing.png)
+
+##### Campos de página de producto
+
+Comience por rastrear las vistas de productos en la página de detalles del producto de Luma:
+
+1. Seleccionar **[!UICONTROL Agregar regla]**
+1. Asígnele un nombre  [!UICONTROL `ecommerce - pdp page bottom - AA (order 20)`]
+1. Seleccione el ![símbolo +](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) en Evento para añadir un nuevo déclencheur
+1. En **[!UICONTROL Extensión]**, seleccione **[!UICONTROL Núcleo]**
+1. En **[!UICONTROL Tipo de evento]**, seleccione **[!UICONTROL Page Bottom]**
+1. Asígnele un nombre `Core - Page Bottom - order 20`
+1. Seleccionar para abrir **[!UICONTROL Opciones avanzadas]**, escriba `20`. Esto garantiza que la regla se ejecute después de que `all pages global content variables - page bottom - AA (order 1)` que establece las variables de contenido global, pero antes de la variable `all pages send event - page bottom - AA (order 50)` que envía el evento XDM.
+
+   ![Reglas XDM de Analytics](assets/set-up-analytics-pdp.png)
+
+1. En **[!UICONTROL Condiciones]**, seleccione para **[!UICONTROL Añadir]**
+1. Salir **[!UICONTROL Tipo de lógica]** as **[!UICONTROL Normal]**
+1. Salir **[!UICONTROL Extensiones]** as **[!UICONTROL Núcleo]**
+1. Seleccionar **[!UICONTROL Tipo de condición]** as **[!UICONTROL Ruta sin cadena de consulta]**
+1. A la derecha, habilite la **[!UICONTROL Regex]** alternar
+1. En **[!UICONTROL ruta igual a]** set `/products/`. Para el sitio de demostración de Luma, garantiza que la regla solo incluya déclencheur en las páginas de productos
+1. Seleccionar **[!UICONTROL Conservar cambios]**
+
+   ![Reglas XDM de Analytics](assets/set-up-analytics-product-condition.png)
+
+1. En **[!UICONTROL Acciones]** select **[!UICONTROL Añadir]**
+1. Seleccionar **[!UICONTROL SDK web de Adobe Experience Platform]** extensión
+1. Seleccionar **[!UICONTROL Tipo de acción]** as **[!UICONTROL Actualizar variable]**
+1. Desplácese hacia abajo hasta el `commerce` y seleccione para abrirlo.
+1. Abra el **[!UICONTROL productViews]** objeto y conjunto **[!UICONTROL valor]** hasta `1`
+
+   ![configurar vista de producto](assets/set-up-analytics-prodView.png)
+
+   >[!TIP]
+   >
+   >La configuración de commerce.productViews.value=1 en XDM se asigna automáticamente al `prodView` evento en Analytics
+
+
+1. Desplácese hacia abajo hasta y seleccione `productListItems` matriz
+1. Seleccionar **[!UICONTROL Proporcionar elementos individuales]**
+1. Seleccionar **[!UICONTROL Agregar elemento]**
+
+   ![Estableciendo evento de vista de producto](assets/set-up-analytics-xdm-individual.png)
+
+   >[!CAUTION]
+   >
+   >El **`productListItems`** es un `array` tipo de datos, de modo que espera que los datos se incluyan como una colección de elementos. Debido a la estructura de capas de datos del sitio de demostración de Luma y a que solo es posible ver un producto a la vez en el sitio de Luma, los elementos se agregan de forma individual. Al implementar en su propio sitio web, en función de la estructura de la capa de datos, puede proporcionar una matriz completa.
+
+1. Seleccionar para abrir **[!UICONTROL Elemento 1]**
+1. Mapa **`productListItems.item1.SKU`** a `%product.productInfo.sku%`
+
+   ![Variable del objeto XDM de SKU del producto](assets/set-up-analytics-sku.png)
+
+1. Buscar `eventType` y configúrelo en `commerce.productViews`
+
+1. Seleccionar **[!UICONTROL Conservar cambios]**
+
+1. Seleccionar **[!UICONTROL Guardar]** para guardar la regla
+
+
+
+
+### Campos del carro de compras
+
+Puede asignar toda la matriz a un objeto XDM, siempre que la matriz coincida con el formato del esquema XDM. El elemento de datos de código personalizado `cart.productInfo` ha creado bucles anteriores a través de `digitalData.cart.cartEntries` objeto de capa de datos en Luma y lo traduce al formato requerido del `productListItems` del esquema XDM.
+
+Para ilustrarlo, consulte la comparación a continuación de la capa de datos del sitio de Luma (izquierda) con el elemento de datos traducido (derecha):
+
+![Formato de matriz de objeto XDM](assets/data-element-xdm-array.png)
+
+Comparar el elemento de datos con `productListItems` estructura (sugerencia, debe coincidir).
+
+>[!IMPORTANT]
+>
+>Observe cómo se traducen las variables numéricas, con valores de cadena en la capa de datos como `price` y `qty` se ha cambiado el formato a números en el elemento de datos. Estos requisitos de formato son importantes para la integridad de los datos en Platform y se determinan durante la [configuración de esquemas](configure-schemas.md) paso. En el ejemplo, **[!UICONTROL cantidad]** utiliza el **[!UICONTROL Entero]** tipo de datos.
+> ![Tipo de datos del esquema XDM](assets/set-up-analytics-quantity-integer.png)
+
+Ahora, asignemos la matriz al objeto XDM&quot;.
+
+
+1. Cree una nueva regla con el nombre `ecommerce - cart page bottom - AA (order 20)`
+1. Seleccione el ![símbolo +](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) en Evento para añadir un nuevo déclencheur
+1. En **[!UICONTROL Extensión]**, seleccione **[!UICONTROL Núcleo]**
+1. En **[!UICONTROL Tipo de evento]**, seleccione **[!UICONTROL Page Bottom]**
+1. Asígnele un nombre `Core - Page Bottom - order 20`
+1. Seleccionar para abrir **[!UICONTROL Opciones avanzadas]**, escriba `20`
+1. Seleccionar **[!UICONTROL Conservar cambios]**
+
+   ![Reglas XDM de Analytics](assets/set-up-analytics-cart-sequence.png)
+
+1. En **[!UICONTROL Condiciones]**, seleccione para **[!UICONTROL Añadir]**
+1. Salir **[!UICONTROL Tipo de lógica]** as **[!UICONTROL Normal]**
+1. Salir **[!UICONTROL Extensiones]** as **[!UICONTROL Núcleo]**
+1. Seleccionar **[!UICONTROL Tipo de condición]** as **[!UICONTROL Ruta sin cadena de consulta]**
+1. A la derecha, **no** habilite el **[!UICONTROL Regex]** alternar
+1. En **[!UICONTROL ruta igual a]** set `/content/luma/us/en/user/cart.html`. Para el sitio de demostración de Luma, garantiza que la regla solo contenga déclencheur en la página del carro de compras
+1. Seleccionar **[!UICONTROL Conservar cambios]**
+
+   ![Reglas XDM de Analytics](assets/set-up-analytics-cart-condition.png)
+
+1. En **[!UICONTROL Acciones]** select **[!UICONTROL Añadir]**
+1. Seleccionar **[!UICONTROL SDK web de Adobe Experience Platform]** extensión
+1. Seleccionar **[!UICONTROL Tipo de acción]** as **[!UICONTROL Actualizar variable]**
+1. Desplácese hacia abajo hasta el `commerce` y seleccione para abrirlo.
+1. Abra el **[!UICONTROL productListViews]** objeto y conjunto **[!UICONTROL valor]** hasta `1`
+
+   ![configurar vista de producto](assets/set-up-analytics-cart-view.png)
+
+   >[!TIP]
+   >
+   >La configuración de commerce.productListViews.value=1 en XDM se asigna automáticamente al `scView` evento en Analytics
+
+
+
+1. Desplácese hacia abajo hasta y seleccione **[!UICONTROL productListItems]** matriz
+
+1. Seleccionar **[!UICONTROL Proporcionar toda la matriz]**
+
+1. Mapa a **`cart.productInfo`** elemento de datos
+
+1. Seleccionar `eventType` y se establece en `commerce.productListViews`
+
+1. Seleccionar **[!UICONTROL Conservar cambios]**
+
+1. Seleccionar **[!UICONTROL Guardar]** para guardar la regla
+
+Cree otras dos reglas para el cierre de compra y la compra siguiendo el mismo patrón con las siguientes diferencias:
+
+**Nombre de regla**: `ecommerce - checkout page bottom - AA (order 20)`
+
+* **[!UICONTROL Condición]**: /content/luma/us/en/user/checkout.html
+* Configure `eventType` como `commerce.checkouts`.
+* Establecer **Evento de comercio de XDM**: commerce.checkout.value a `1`
+
+  >[!TIP]
+  >
+  >Esto equivale a configurar `scCheckout` evento en Analytics
+
+**Nombre de regla**: `ecommerce - purchase page bottom - AA (order 20)`
+
+* **[!UICONTROL Condición]**: /content/luma/us/en/user/checkout/order/thank-you.html
+* Configure `eventType` como `commerce.purchases`.
+* Establecer **Evento de comercio de XDM**: commerce.purchases.value a `1`
+
+  >[!TIP]
+  >
+  >Esto equivale a configurar `purchase` evento en Analytics
+
+Hay pasos adicionales para capturar todos los datos necesarios `purchase` variables de evento:
+
+1. Abrir **[!UICONTROL comercio]** objeto
+1. Abra el **[!UICONTROL pedido]** objeto
+1. Mapa **[!UICONTROL purchaseID]** a la `cart.orderId` elemento de datos
+1. Establecer **[!UICONTROL currencyCode]** al valor codificado `USD`
+
+   ![Estableciendo purchaseID para Analytics](assets/set-up-analytics-purchase.png)
+
+   >[!TIP]
+   >
+   >Esto equivale a configurar `s.purchaseID` y `s.currencyCode` variables en Analytics
+
+
+1. Desplácese hacia abajo hasta y seleccione **[!UICONTROL productListItems]** matriz
+1. Seleccionar **[!UICONTROL Proporcionar toda la matriz]**
+1. Mapa a **`cart.productInfo.purchase`** elemento de datos
+1. Seleccionar **[!UICONTROL Guardar]**
+
+Cuando haya terminado, debería ver las siguientes reglas creadas.
+
+![Reglas XDM de Analytics](assets/set-up-analytics-rules.png)
+
 
 ### Enviar evento
 

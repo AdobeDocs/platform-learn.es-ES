@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo implementar el canal web mediante 
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
-source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
+source-git-commit: 12e6e9d06ae0d6945c165032d89fd0f801d94ff2
 workflow-type: tm+mt
-source-wordcount: '2444'
+source-wordcount: '2450'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 Obtenga información sobre cómo implementar el canal web mediante el SDK web de Platform. Esta guía cubre los requisitos previos básicos del canal web, los pasos detallados para la configuración y una explicación detallada de un caso de uso centrado en el estado de lealtad.
 
 Al seguir esta guía, los usuarios de Journey Optimizer están equipados para aplicar de forma eficaz el canal web para una personalización en línea avanzada mediante el Diseñador web de Journey Optimizer.
+
+![Diagrama del SDK web y Adobe Analytics](../assets/dc-websdk-ajo.png)
 
 ## Objetivos de aprendizaje
 
