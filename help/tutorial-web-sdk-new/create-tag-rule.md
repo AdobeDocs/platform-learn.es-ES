@@ -2,7 +2,7 @@
 title: Creación de reglas de etiquetas
 description: Obtenga información sobre cómo enviar un evento a la red perimetral de Platform con el objeto XDM mediante una regla de etiqueta. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Tags
-source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '2005'
 ht-degree: 1%
@@ -80,7 +80,7 @@ Para crear una regla de etiqueta para los campos XDM globales:
 
    ![Creación de una regla](assets/rules-create.png)
 
-1. Asigne un nombre a la regla `all pages global content variables - page bottom - AA (order 1)`.
+1. Asigne un nombre a la regla `all pages global content variables - library loaded - AA (order 1)`.
 
 1. En el **[!UICONTROL Eventos]** , seleccione **[!UICONTROL Añadir]**
 
@@ -173,12 +173,12 @@ Puede utilizar **[!UICONTROL Actualizar variable]**  en varias reglas secuenciad
 Comience por rastrear las vistas de productos en la página de detalles del producto de Luma:
 
 1. Seleccionar **[!UICONTROL Agregar regla]**
-1. Asígnele un nombre  [!UICONTROL `ecommerce - pdp page bottom - AA (order 20)`]
+1. Asígnele un nombre  [!UICONTROL `ecommerce - pdp library loaded - AA (order 20)`]
 1. Seleccione el ![símbolo +](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) en Evento para añadir un nuevo déclencheur
 1. En **[!UICONTROL Extensión]**, seleccione **[!UICONTROL Núcleo]**
 1. En **[!UICONTROL Tipo de evento]**, seleccione **[!UICONTROL Page Bottom]**
 1. Asígnele un nombre `Core - Page Bottom - order 20`
-1. Seleccionar para abrir **[!UICONTROL Opciones avanzadas]**, escriba `20`. Esto garantiza que la regla se ejecute después de que `all pages global content variables - page bottom - AA (order 1)` que establece las variables de contenido global, pero antes de la variable `all pages send event - page bottom - AA (order 50)` que envía el evento XDM.
+1. Seleccionar para abrir **[!UICONTROL Opciones avanzadas]**, escriba `20`. Esto garantiza que la regla se ejecute después de que `all pages global content variables - library loaded - AA (order 1)` que establece las variables de contenido global, pero antes de la variable `all pages send event - library loaded - AA (order 50)` que envía el evento XDM.
 
    ![Reglas XDM de Analytics](assets/set-up-analytics-pdp.png)
 
@@ -247,7 +247,7 @@ Comparar el elemento de datos con `productListItems` estructura (sugerencia, deb
 Ahora, asignemos la matriz al objeto XDM&quot;.
 
 
-1. Cree una nueva regla con el nombre `ecommerce - cart page bottom - AA (order 20)`
+1. Cree una nueva regla con el nombre `ecommerce - cart library loaded - AA (order 20)`
 1. Seleccione el ![símbolo +](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) en Evento para añadir un nuevo déclencheur
 1. En **[!UICONTROL Extensión]**, seleccione **[!UICONTROL Núcleo]**
 1. En **[!UICONTROL Tipo de evento]**, seleccione **[!UICONTROL Page Bottom]**
@@ -295,7 +295,7 @@ Ahora, asignemos la matriz al objeto XDM&quot;.
 
 Cree otras dos reglas para el cierre de compra y la compra siguiendo el mismo patrón con las siguientes diferencias:
 
-**Nombre de regla**: `ecommerce - checkout page bottom - AA (order 20)`
+**Nombre de regla**: `ecommerce - checkout library loaded - AA (order 20)`
 
 * **[!UICONTROL Condición]**: /content/luma/us/en/user/checkout.html
 * Configure `eventType` como `commerce.checkouts`.
@@ -305,7 +305,7 @@ Cree otras dos reglas para el cierre de compra y la compra siguiendo el mismo pa
   >
   >Esto equivale a configurar `scCheckout` evento en Analytics
 
-**Nombre de regla**: `ecommerce - purchase page bottom - AA (order 20)`
+**Nombre de regla**: `ecommerce - purchase library loaded - AA (order 20)`
 
 * **[!UICONTROL Condición]**: /content/luma/us/en/user/checkout/order/thank-you.html
 * Configure `eventType` como `commerce.purchases`.
@@ -345,7 +345,7 @@ Ahora que ha establecido las variables, puede crear la segunda regla para enviar
 
 1. A la derecha, seleccione para **[!UICONTROL Agregar regla]** para crear otra regla
 
-1. Asigne un nombre a la regla `all pages send event - page bottom - AA (order 50)`.
+1. Asigne un nombre a la regla `all pages send event - library loaded - AA (order 50)`.
 
 1. En el **[!UICONTROL Eventos]** , seleccione **[!UICONTROL Añadir]**
 
@@ -390,7 +390,7 @@ Para crear una biblioteca:
 
    >[!NOTE]
    >
-   >    Además de la extensión SDK para web de Adobe Experience Platform y la `all pages global content variables - page bottom - AA (order 50)` , verá los componentes de etiquetas creados en lecciones anteriores. La extensión Core contiene el JavaScript base requerido por todas las propiedades de etiquetas web.
+   >    Además de la extensión SDK para web de Adobe Experience Platform y la `all pages global content variables - library loaded - AA (order 50)` , verá los componentes de etiquetas creados en lecciones anteriores. La extensión Core contiene el JavaScript base requerido por todas las propiedades de etiquetas web.
 
 1. Seleccionar **[!UICONTROL Guardar y generar para desarrollo]**
 
