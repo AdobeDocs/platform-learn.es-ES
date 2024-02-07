@@ -2,7 +2,7 @@
 title: Instalación y configuración de la extensión de etiquetas del SDK web de Adobe Experience Platform
 description: Obtenga información sobre cómo instalar y configurar la extensión de etiqueta SDK web de Platform en la interfaz de recopilación de datos. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 12%
@@ -11,7 +11,7 @@ ht-degree: 12%
 
 # Instalación de la extensión de etiquetas de SDK web de Adobe Experience Platform
 
-Obtenga información sobre cómo instalar y configurar la extensión de etiqueta del SDK web de Platform. La forma más sencilla de implementar el SDK web es mediante el administrador de etiquetas de Adobe, las etiquetas (anteriormente conocido como Launch). La extensión de etiqueta del SDK web de Platform es la _extensión de etiqueta solamente_ necesario para enviar datos a _todas las aplicaciones de Adobe Experience Cloud_, incluido [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-time Customer Data Platform y Journey Optimizer.
+Obtenga información sobre cómo instalar y configurar la extensión de etiqueta del SDK web de Platform. La forma más sencilla de implementar el SDK web es mediante el administrador de etiquetas de Adobe, las etiquetas (anteriormente conocido como Launch). La extensión de etiqueta del SDK web de Platform es la _extensión de etiqueta solamente_ necesario para enviar datos a _todas las aplicaciones de Adobe Experience Cloud_, incluido [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), REAL-TIME CUSTOMER DATA PLATFORM y [Journey Optimizer](journey-optimizer/setup-web-channel.md)!
 
 ## Objetivos de aprendizaje
 

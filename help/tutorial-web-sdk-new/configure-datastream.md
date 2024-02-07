@@ -2,9 +2,9 @@
 title: Configuración de una secuencia de datos
 description: Obtenga información sobre cómo habilitar un flujo de datos y configurar soluciones de Experience Cloud. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK,Datastreams
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '547'
 ht-degree: 4%
 
 ---
@@ -43,7 +43,7 @@ Ahora puede crear una secuencia de datos para indicar a Platform Edge Network d�
 
    >[!NOTE]
    >
-   >Si es cliente de una aplicación basada en Platform como Real-Time CDP, le recomendamos que utilice una zona protegida de desarrollo para este tutorial. Si no lo está, use el **[!UICONTROL Prod]** zona protegida.
+   >Si es cliente de una aplicación basada en Platform como Real-Time CDP o Journey Optimizer, le recomendamos que utilice una zona protegida de desarrollo para este tutorial. Si no lo está, use el **[!UICONTROL Prod]** zona protegida.
 
 1. Ir a **[!UICONTROL Datastreams]** en el panel de navegación izquierdo
 1. Seleccionar **[!UICONTROL Nueva secuencia de datos]** en el lado derecho de la pantalla.
@@ -52,13 +52,6 @@ Ahora puede crear una secuencia de datos para indicar a Platform Edge Network d�
 1. Seleccionar **[!UICONTROL Guardar]**
 
    ![Creación de la secuencia de datos](assets/datastream-create-new-datastream.png)
-
-   >[!AVAILABILITY]
-   >
-   >La función de asignación se incorporará a este tutorial más adelante.
-
-
-
 
 En la siguiente pantalla, puede añadir servicios como aplicaciones de Adobe al conjunto de datos, pero no agregará ningún servicio en este punto del tutorial. Lo hará más adelante en las lecciones [Configurar Experience Platform](setup-experience-platform.md), [Configuración de Analytics](setup-analytics.md), [Configurar Audience Manager](setup-audience-manager.md), [Configurar Target](setup-target.md), o [Reenvío de eventos](setup-event-forwarding.md).
 
@@ -76,9 +69,9 @@ La anulación de la configuración del flujo de datos es un proceso de dos pasos
 1. En primer lugar, defina las anulaciones de la secuencia de datos en la configuración de la secuencia de datos. Esto debe hacerse por cada aplicación de Adobe que desee anular.
 1. A continuación, envíe las invalidaciones a la red perimetral mediante una acción de evento de envío del SDK web o mediante una configuración en la extensión de etiqueta del SDK web.
 
-Consulte la [la configuración del flujo de datos anula la documentación](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overrides.html?lang=en) para obtener instrucciones detalladas sobre cómo anular las configuraciones de secuencia de datos.
+En el [Configuración de Adobe Analytics](setup-analytics.md) Esta lección explica cómo anular el grupo de informes de una página mediante la acción Enviar evento del SDK web de Platform.
 
-En la lección Configurar Adobe Analytics, puede [Anular el grupo de informes de una página mediante la acción Enviar evento del SDK web de Platform](setup-analytics.md).
+Consulte la [la configuración del flujo de datos anula la documentación](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overrides.html?lang=en) para obtener instrucciones detalladas sobre cómo anular las configuraciones de secuencia de datos.
 
 Ya está listo para instalar la extensión del SDK web de Platform en su propiedad de etiquetas.
 
