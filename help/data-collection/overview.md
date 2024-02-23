@@ -3,29 +3,16 @@ title: Tutoriales de recopilación de datos
 description: Vídeos y tutoriales explicativos para convertirse en un usuario experto en la recopilación de datos
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: 14ec4ea743d1f323d29f9ab84506355d25c91452
+source-git-commit: d04a9dbe0f148e7ef210f1f4472a7771db5bb511
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 40%
+source-wordcount: '165'
+ht-degree: 32%
 
 ---
 
 # Tutoriales de recopilación de datos
 
 La recopilación de datos es la próxima generación de funcionalidades de administración de etiquetas de sitios web y SDK móvil desde Adobe. La recopilación de datos ofrece a los clientes una alternativa sencilla para implementar y gestionar las soluciones de análisis, marketing y publicidad necesarias para potenciar las importantes experiencias del cliente. Utilice estos vídeos y tutoriales para aprender sobre esta tecnología esencial.
-
-<div id="whats-new-section">
-
-## Novedades
-
-* **[Información general sobre la API del servidor (vídeo)](server-api/overview.md)**
-  *Envíe datos mediante una API de servidor segura y autenticada.*
-* **[Implementación de Adobe Experience Cloud en aplicaciones móviles (tutorial)](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=es)**
-  *Implementar aplicaciones de Experience Cloud con el SDK móvil.*
-* **[Movimiento de etiquetas del lado del cliente (tutorial)](event-forwarding/consider-moving-tags.md)**
-  *Considere la posibilidad de mover etiquetas del lado del cliente al reenvío de eventos.*
-
-</div>
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
@@ -58,7 +45,9 @@ La recopilación de datos es la próxima generación de funcionalidades de admin
       <img alt="Implementación en aplicaciones móviles" src="assets/thumb_swift.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=es" target="_blank"><strong> de implementación de Experience Cloud en aplicaciones móviles</strong></a>
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=es" target="_blank">
+    <strong>Implementación del Experience Cloud de en aplicaciones móviles</strong>
+    </a>
     </div>
     <p>
     <em>Uso de etiquetas para implementar el SDK de Platform Mobile</em>
