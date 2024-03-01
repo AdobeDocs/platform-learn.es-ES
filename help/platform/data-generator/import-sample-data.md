@@ -1,21 +1,20 @@
 ---
-title: Importación de datos de muestra en Adobe Experience Platform
+title: Importación de datos de ejemplo en Adobe Experience Platform
 description: Aprenda a configurar un entorno de zona protegida de Experience Platform con algunos datos de ejemplo.
 feature: API
 role: Developer
 level: Experienced
 jira: KT-7349
-thumbnail: 7349.jpg
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 4db88dbae923d37884391a65ff8fc16f53e19187
 workflow-type: tm+mt
-source-wordcount: '1831'
-ht-degree: 6%
+source-wordcount: '1776'
+ht-degree: 3%
 
 ---
 
-# Importación de datos de muestra en Adobe Experience Platform
+# Importación de datos de ejemplo en Adobe Experience Platform
 
 Aprenda a configurar un entorno de zona protegida de Experience Platform con datos de ejemplo. Con una colección de Postman puede crear grupos de campos, esquemas, conjuntos de datos y luego importar datos de ejemplo a Experience Platform.
 
