@@ -6,12 +6,12 @@ topic: Integrations
 role: Architect, Data Architect, User
 level: Intermediate
 jira: KT-13831
-thumbnail: 3423076.jpg
 last-substantial-update: 2023-08-23T00:00:00Z
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+exl-id: 87600927-d5bd-4edf-9332-f401b01c782f
+source-git-commit: 3e8f68c89b5ab94045ec1120a95b1e2cc1d1c97a
 workflow-type: tm+mt
-source-wordcount: '83'
-ht-degree: 24%
+source-wordcount: '76'
+ht-degree: 0%
 
 ---
 
@@ -20,4 +20,3 @@ ht-degree: 24%
 Obtenga información sobre cómo recopilar atributos de terceros de [!DNL Adobe Experience Platform Web SDK] y personalice su experiencia en el sitio para visitantes desconocidos mediante el reconocimiento de visitantes asistido por socios. Para obtener más información, visite la [Utilice el reconocimiento de visitantes asistido por socios para personalizar las experiencias en el sitio](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/onsite-personalization.html) documentación.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3423076/?learn=on)
-
