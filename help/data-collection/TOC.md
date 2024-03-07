@@ -6,10 +6,10 @@ solution: Data Collection,Experience Platform
 doc-type: video
 auto-video-transcripts: true
 role: Developer, Data Engineer
-source-git-commit: 72be7f50cf52633ea5970fd5a3b5b3d7fe9ea470
+source-git-commit: 0df82796a5885954102f7496fa043c0f3ef4b89e
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 28%
+source-wordcount: '190'
+ht-degree: 27%
 
 ---
 
@@ -25,6 +25,7 @@ ht-degree: 28%
    + [Añadir y configurar extensiones](tags/add-and-configure-extensions.md)
    + [Creación de elementos de datos](tags/create-data-elements.md)
    + [Generar reglas](tags/build-rules.md)
+   + [Apilar reglas](tags/stack-rules.md)
    + [Crear y publicar una biblioteca](tags/build-and-publish-a-library.md)
    + [Implementación en sitios web con SDK web](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=es){target="_blank"}
    + [Implementar en sitios web con SDK de soluciones](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
