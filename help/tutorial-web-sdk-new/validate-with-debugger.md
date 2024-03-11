@@ -2,9 +2,9 @@
 title: Validación de implementaciones de SDK web con Experience Platform Debugger
 description: Obtenga información sobre cómo validar la implementación del SDK web de Platform con Adobe Experience Platform Debugger. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK,Tags,Debugger
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1206'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,6 @@ Al final de esta lección, podrá utilizar Debugger para lo siguiente:
 * Cargar una biblioteca de etiquetas alternativa
 * Valide que el evento XDM del lado del cliente esté capturando y enviando datos según lo esperado a Platform Edge Network
 * Habilite el seguimiento de Edge para ver las solicitudes del lado del servidor enviadas por Platform Edge Network
-* Inicie una sesión de Adobe Experience Platform Assurance para ver el ID de Experience Cloud generado por Platform Edge Network
 
 ## Requisitos previos
 
@@ -45,7 +44,7 @@ Está familiarizado con las etiquetas de recopilación de datos y las [Sitio de 
 * [Extensión del SDK web instalada en la propiedad de etiqueta](install-web-sdk.md)
 * [Creación de elementos de datos](create-data-elements.md)
 * [Creación de identidades](create-identities.md)
-* [Creación de una regla de etiqueta](create-tag-rule.md)
+* [Creación de reglas de etiquetas](create-tag-rule.md)
 
 ## Carga de bibliotecas de etiquetas alternativas con Debugger
 

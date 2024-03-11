@@ -3,14 +3,19 @@ title: Configuración de un área de nombres de identidad
 description: Obtenga información sobre cómo configurar áreas de nombres de identidad para utilizarlas con el SDK web de Adobe Experience Platform. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK,Tags,Identities
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 12%
+source-wordcount: '694'
+ht-degree: 7%
 
 ---
 
 # Configuración de un área de nombres de identidad
+
+
+>[!CAUTION]
+>
+>Esperamos publicar cambios importantes en este tutorial el viernes 15 de marzo de 2024. Después de ese punto, muchos ejercicios cambiarán y es posible que tenga que reiniciar el tutorial desde el principio para completar todas las lecciones.
 
 Obtenga información sobre cómo configurar áreas de nombres de identidad para utilizarlas con el SDK web de Adobe Experience Platform.
 
@@ -41,7 +46,7 @@ Ya debe haber completado las lecciones anteriores:
 >
 >El [Extensión de ID de Experience Cloud](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) no es necesario al implementar el SDK web de Adobe Experience Platform, ya que la biblioteca JavaScript del SDK web contiene la funcionalidad del servicio de ID de visitante.
 
-## Cree un área de nombres de identidad
+## Crear un área de nombres de identidad
 
 En este ejercicio, se crea un área de nombres de identidad para el campo de identidad personalizado de Luma, `lumaCrmId`. Las áreas de nombres de identidad desempeñan un papel esencial en la creación de perfiles de clientes en tiempo real, ya que dos valores coincidentes en la misma área de nombres permiten que dos fuentes de datos formen un gráfico de identidad.
 
@@ -62,7 +67,7 @@ Ahora, cree un área de nombres para el ID de Luma CRM:
 
    Aparece una lista de áreas de nombres de identidad en la interfaz principal de la página, con sus nombres, símbolos de identidad, fecha de última actualización y si son áreas de nombres estándar o personalizadas. El carril derecho contiene información sobre la intensidad del gráfico de identidad.
 
-1. Seleccione **[!UICONTROL Crear área de nombres de identidad]**
+1. Seleccionar **[!UICONTROL Crear área de nombres de identidad]**
 
    ![Ver identidades](assets/configure-identities-screen.png)
 
@@ -93,7 +98,7 @@ Debido a una limitación actual en la extensión del SDK web, también se deben 
 
 ## Recursos adicionales
 
-* Documentación del [Servicio de identidad](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=es)
+* [Documentación del servicio de identidad](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=es)
 * [API del servicio de identidad](https://www.adobe.io/experience-platform-apis/references/identity-service/)
 
 Ahora que las identidades están configuradas, se puede configurar el conjunto de datos.

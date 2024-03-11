@@ -1,19 +1,18 @@
 ---
 title: Transmitir datos a Adobe Experience Platform con SDK web
 description: Obtenga información sobre cómo transmitir datos web a Adobe Experience Platform con el SDK web. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
-source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1608'
-ht-degree: 5%
+source-wordcount: '1587'
+ht-degree: 4%
 
 ---
 
-# Transmitir datos al Experience Platform con SDK web
+# Transmita datos a Experience Platform con el SDK web
 
 Obtenga información sobre cómo transmitir datos web a Adobe Experience Platform con el SDK web de Platform.
 
 Experience Platform es la columna vertebral de todas las nuevas aplicaciones de Experience Cloud, como Adobe Real-time Customer Data Platform, Adobe Customer Journey Analytics y Adobe Journey Optimizer. Estas aplicaciones están diseñadas para utilizar el SDK web de Platform como método óptimo de recopilación de datos web.
-
 
 ![Diagrama del SDK web y Adobe Experience Platform](assets/dc-websdk-aep.png)
 
@@ -24,35 +23,23 @@ Experience Platform utiliza el mismo esquema XDM creado anteriormente para captu
 Al final de esta lección, debe poder:
 
 * Crear un conjunto de datos en Adobe Experience Platform
-* Configuración de la secuencia de datos para enviar datos del SDK web a Adobe Experience Platform
+* Configure la secuencia de datos para enviar datos del SDK web a Adobe Experience Platform
 * Habilitar el streaming de datos web para el perfil del cliente en tiempo real
 * Validar que los datos hayan llegado tanto al conjunto de datos de Platform como al Perfil del cliente en tiempo real
 
 ## Requisitos previos
 
-Ya debería haber completado las siguientes lecciones:
+Para completar esta lección, primero debe:
 
-* El **Configuración inicial** lecciones:
-   * [Configuración de un esquema XDM](configure-schemas.md)
-   * [Configuración de una secuencia de datos](configure-datastream.md)
-   * [Configuración de un área de nombres de identidad](configure-identities.md)
-
-* El **Configuración de etiquetas** lecciones:
-   * [Instalar extensión de SDK web](install-web-sdk.md)
-   * [Creación de elementos de datos](create-data-elements.md)
-   * [Creación de identidades](create-identities.md)
-   * [Creación de reglas de etiquetas](create-tag-rule.md)
+* Tener acceso a una aplicación de Adobe Experience Platform como Real-time Customer Data Platform, Journey Optimizer o Customer Journey Analytics.
+* Complete las lecciones anteriores de las secciones Configuración inicial y Configuración de etiquetas de este tutorial.
 
 
 ## Crear un conjunto de datos
 
 Todos los datos que se incorporan correctamente a Adobe Experience Platform se conservan dentro del lago de datos como conjuntos de datos. A [conjunto de datos](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=en) es una construcción de almacenamiento y administración para una colección de datos, normalmente una tabla, que contiene un esquema (columnas) y campos (filas). Los conjuntos de datos también contienen metadatos que describen varios aspectos de los datos que almacenan.
 
-En este ejercicio, creará un conjunto de datos para realizar el seguimiento del contenido y los detalles de comercio electrónico de la [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
-
->[!WARNING]
->
->Ya debe haber creado el `Luma Web Event Data` , tal como se indica en la lección anterior, [Configuración de un esquema XDM](configure-schemas.md).
+Vamos a configurar un conjunto de datos para los datos de evento web de Luma:
 
 
 1. Vaya a la [interfaz de Experience Platform](https://experience.adobe.com/platform/)
@@ -211,7 +198,7 @@ Ahora el esquema también está habilitado para el perfil.
 > * En primer lugar, introduzca algunos datos en los conjuntos de datos.
 > * Solucionar cualquier problema que surja durante el proceso de ingesta de datos (por ejemplo, problemas de validación o asignación de datos).
 > * Habilitar los conjuntos de datos y esquemas para el perfil
-> * Volver a ingerir los datos
+> * Vuelva a ingerir los datos si es necesario
 
 
 ### Validación de un perfil

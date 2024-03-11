@@ -3,14 +3,19 @@ title: Configuración del Audience Manager con el SDK web de Platform
 description: Obtenga información sobre cómo configurar Adobe Audience Manager mediante el SDK web de Platform y validar la implementación mediante un destino de cookie. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 solution: Data Collection, Audience Manager
 exl-id: 45db48e9-73cf-4a9c-88f4-b5872a8224d3
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '1385'
-ht-degree: 4%
+source-wordcount: '1368'
+ht-degree: 1%
 
 ---
 
 # Configuración del Audience Manager con el SDK web de Platform
+
+
+>[!CAUTION]
+>
+>Esperamos publicar cambios importantes en este tutorial el viernes 15 de marzo de 2024. Después de ese punto, muchos ejercicios cambiarán y es posible que tenga que reiniciar el tutorial desde el principio para completar todas las lecciones.
 
 Obtenga información sobre cómo configurar Adobe Audience Manager mediante el SDK web de Platform y validar la implementación mediante un destino de cookie.
 
@@ -42,11 +47,11 @@ La implementación del Audience Manager mediante el SDK web de Platform difiere 
 
    ![Seleccione la secuencia de datos del SDK web de Luma](assets/datastream-luma-web-sdk.png)
 
-1. Seleccione **[!UICONTROL Agregar servicio]**
+1. Seleccionar **[!UICONTROL Añadir servicio]**
    ![Añadir un servicio al conjunto de datos](assets/aam-datastream-addService.png)
 1. Seleccionar **[!UICONTROL Adobe Audience Manager]** como el **[!UICONTROL Servicio]**
 1. Confirme que **[!UICONTROL Destinos de cookies habilitados]** y **[!UICONTROL Destinos URL habilitados]** están seleccionados
-1. Seleccione **[!UICONTROL Guardar]**
+1. Seleccionar **[!UICONTROL Guardar]**
    ![Confirme la configuración del flujo de datos del Audience Manager y guarde](assets/aam-datastream-save.png)
 
 ## Crear una fuente de datos
@@ -93,7 +98,7 @@ Una vez guardada la fuente de datos, configure un [rasgo](https://experienceleag
 1. **[!UICONTROL Guardar]** el rasgo.
 
 
-## Creación de segmentos
+## Crear un segmento
 
 El siguiente paso es crear una **segmento** y asigne el rasgo recién definido a este segmento.
 
@@ -144,7 +149,7 @@ A continuación, cree un **Destino basado en cookies** uso del **Generador de de
 
 1. Una vez que agregue el segmento, se abrirá una ventana emergente en la que debe proporcionar un valor esperado para la cookie. Para este ejercicio, introduzca el valor &quot;visitante&quot;.
 
-1. Seleccione **[!UICONTROL Guardar]**
+1. Seleccionar **[!UICONTROL Guardar]**
 
 1. Seleccionar **[!UICONTROL Listo]**
    ![Agregar característica del Audience Manager de Adobe Experience Platform](assets/luma-cookie-segment-dw.png)

@@ -2,14 +2,19 @@
 title: Transmitir datos a Adobe Experience Platform con SDK web
 description: Obtenga información sobre cómo transmitir datos web a Adobe Experience Platform con el SDK web. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '1605'
-ht-degree: 8%
+source-wordcount: '1600'
+ht-degree: 5%
 
 ---
 
-# Transmitir datos al Experience Platform con SDK web
+# Transmita datos a Experience Platform con el SDK web
+
+
+>[!CAUTION]
+>
+>Esperamos publicar cambios importantes en este tutorial el viernes 15 de marzo de 2024. Después de ese punto, muchos ejercicios cambiarán y es posible que tenga que reiniciar el tutorial desde el principio para completar todas las lecciones.
 
 Obtenga información sobre cómo transmitir datos web a Adobe Experience Platform con el SDK web de Platform.
 
@@ -22,7 +27,7 @@ Experience Platform utiliza el mismo esquema XDM creado anteriormente para captu
 Al final de esta lección, debe poder:
 
 * Crear un conjunto de datos en Adobe Experience Platform
-* Configuración de la secuencia de datos para enviar datos del SDK web a Adobe Experience Platform
+* Configure la secuencia de datos para enviar datos del SDK web a Adobe Experience Platform
 * Habilitar el streaming de datos web para el perfil del cliente en tiempo real
 * Validar que los datos hayan llegado tanto al conjunto de datos de Platform como al Perfil del cliente en tiempo real
 
@@ -56,7 +61,7 @@ En este ejercicio, creará un conjunto de datos para realizar el seguimiento del
 1. Vaya a la [interfaz de Experience Platform](https://experience.adobe.com/platform/)
 1. Confirme que se encuentra en el entorno limitado de desarrollo que utiliza para este tutorial.
 1. Abrir **[!UICONTROL Conjuntos de datos]** desde la navegación izquierda
-1. Seleccione **[!UICONTROL Crear conjunto de datos]**
+1. Seleccionar **[!UICONTROL Crear conjunto de datos]**
 
    ![Crear esquema](assets/experience-platform-create-dataset.png)
 
@@ -84,7 +89,7 @@ Ahora puede configurar los [!UICONTROL secuencia de datos] para enviar datos a [
 
    ![Seleccione la secuencia de datos del SDK web de Luma](assets/datastream-luma-web-sdk.png)
 
-1. Seleccione **[!UICONTROL Agregar servicio]**
+1. Seleccionar **[!UICONTROL Añadir servicio]**
    ![Añadir un servicio al conjunto de datos](assets/experience-platform-addService.png)
 1. Seleccionar **[!UICONTROL Adobe Experience Platform]** como el **[!UICONTROL Servicio]**
 1. Seleccionar `Luma Web Event Data` como el **[!UICONTROL Conjunto de datos de evento]**

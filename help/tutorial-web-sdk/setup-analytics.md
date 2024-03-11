@@ -3,14 +3,19 @@ title: Configuración de Adobe Analytics mediante el SDK web de Experience Platf
 description: Obtenga información sobre cómo configurar Adobe Analytics mediante el SDK web de Experience Platform. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 solution: Data Collection, Analytics
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '3545'
-ht-degree: 2%
+source-wordcount: '3473'
+ht-degree: 1%
 
 ---
 
 # Configuración de Adobe Analytics con el SDK web de Platform
+
+
+>[!CAUTION]
+>
+>Esperamos publicar cambios importantes en este tutorial el viernes 15 de marzo de 2024. Después de ese punto, muchos ejercicios cambiarán y es posible que tenga que reiniciar el tutorial desde el principio para completar todas las lecciones.
 
 Obtenga información sobre cómo configurar Adobe Analytics mediante [SDK web de Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html), cree reglas de etiquetas para enviar datos a Adobe Analytics y valide que Analytics está capturando los datos según lo esperado.
 
@@ -97,11 +102,11 @@ El SDK web de Platform envía datos del sitio web a Platform Edge Network. A con
 
    ![Seleccione la secuencia de datos del SDK web de Luma](assets/datastream-luma-web-sdk.png)
 
-1. Seleccione **[!UICONTROL Agregar servicio]**
+1. Seleccionar **[!UICONTROL Añadir servicio]**
    ![Añadir un servicio al conjunto de datos](assets/analytics-addService.png)
 1. Seleccionar **[!UICONTROL Adobe Analytics]** como el **[!UICONTROL Servicio]**
 1. Introduzca el  **[!UICONTROL ID del grupo de informes]** del grupo de informes de desarrollo
-1. Seleccione **[!UICONTROL Guardar]**
+1. Seleccionar **[!UICONTROL Guardar]**
 
    ![Análisis de guardado de flujo de datos](assets/analytics-datastream-save.png)
 
@@ -124,12 +129,12 @@ Durante la lección Crear elementos de datos, debe [elementos de datos de JavaSc
 
 1. Abra la propiedad de etiqueta que está utilizando para el tutorial.
 1. Ir a **[!UICONTROL Elementos de datos]**
-1. Seleccione **[!UICONTROL Agregar elemento de datos]**
-1. Asígnele el nombre **`product.productInfo.sku`**
+1. Seleccionar **[!UICONTROL Añadir elemento de datos]**
+1. Asígnele un nombre **`product.productInfo.sku`**
 1. Utilice el **[!UICONTROL Código personalizado]** **[!UICONTROL Tipo de elemento de datos]**
 1. Deje las casillas de verificación para **[!UICONTROL Forzar valor de minúsculas]** y **[!UICONTROL Limpiar texto]** desenfrenado
 1. Salir `None` como el **[!UICONTROL Duración del almacenamiento]** ya que este valor es diferente en cada página
-1. Seleccione **[!UICONTROL Abrir editor]**
+1. Seleccionar **[!UICONTROL Abrir editor]**
 
    ![Elemento de datos de código personalizado](assets/data-element-open-editor.jpg)
 
@@ -212,7 +217,7 @@ En la lección Crear elementos de datos, debe [creó un `xdm.content` elemento d
 1. Desplácese hacia abajo y seleccione para abrir hasta `web.webPageDetails`
 1. Seleccione para abrir **[!UICONTROL pageViews]** objeto
 1. Establecer **[!UICONTROL valor]** hasta `1`
-1. Seleccione [!UICONTROL **Guardar**]
+1. Seleccionar [!UICONTROL **Guardar**]
 
    ![Objeto XDM de vistas de página](assets/analytics-xdm-pageviews.png)
 
@@ -273,7 +278,7 @@ Puede asignarse a variables individuales para capturar datos en la página de de
    >Antes de guardar este objeto XDM, asegúrese de establecer también las variables &quot;globales&quot; y el incrementador de vista de página:
    >![Reconfiguración de variables globales en XDM](assets/analytics-global-xdm.png)
 
-1. Seleccione **[!UICONTROL Guardar]**
+1. Seleccionar **[!UICONTROL Guardar]**
 
 ### Asignar una matriz completa a un objeto XDM
 
@@ -312,7 +317,7 @@ Ahora, vuelva a asignar el objeto XDM a una matriz completa. Cree un elemento de
    >Antes de guardar este objeto XDM, asegúrese de establecer también las variables &quot;globales&quot; y el incrementador de vista de página:
    >![Reconfiguración de variables globales en XDM](assets/analytics-global-xdm.png)
 
-1. Seleccione **[!UICONTROL Guardar]**
+1. Seleccionar **[!UICONTROL Guardar]**
 
 Crear otro **[!UICONTROL Objeto XDM]**  **[!UICONTROL Tipo de elemento de datos]** para cierres de compra llamados `xdm.commerce.checkout`. Esta vez establezca el **[!UICONTROL commerce.checkouts.value]** hasta `1`, mapa **[!UICONTROL productListItems]** hasta **`cart.productInfo`** como acaba de hacer, y agregue las variables &quot;globales&quot; y el contador de vista de página.
 
@@ -345,7 +350,7 @@ Hay pasos adicionales para capturar la variable `purchase` evento:
    >Antes de guardar este objeto XDM, asegúrese de establecer también las variables &quot;globales&quot; y el incrementador de vista de página:
    >![Reconfiguración de variables globales en XDM](assets/analytics-global-xdm.png)
 
-1. Seleccione **[!UICONTROL Guardar]**
+1. Seleccionar **[!UICONTROL Guardar]**
 
 Al final de estos pasos, debe tener los siguientes cinco elementos de datos de objeto XDM creados:
 
@@ -364,7 +369,7 @@ Al final de estos pasos, debe tener los siguientes cinco elementos de datos de o
 Con los varios elementos de datos de objeto XDM creados, ya puede establecer las señalizaciones mediante reglas. En este ejercicio, se crean reglas individuales por evento de comercio electrónico y se utilizan condiciones para que las reglas se activen en las páginas correctas. Empecemos con un evento de Vista de producto.
 
 1. En el panel de navegación izquierdo, seleccione **[!UICONTROL Reglas]** y luego seleccione **[!UICONTROL Agregar regla]**
-1. Asígnele el nombre  [!UICONTROL `product view - library load - AA`]
+1. Asígnele un nombre  [!UICONTROL `product view - library load - AA`]
 1. En **[!UICONTROL Eventos]**, seleccione **[!UICONTROL Library Loaded (Page Top)]**
 1. En **[!UICONTROL Condiciones]**, seleccione para **[!UICONTROL Añadir]**
 
@@ -375,25 +380,25 @@ Con los varios elementos de datos de objeto XDM creados, ya puede establecer las
 1. Seleccionar **[!UICONTROL Tipo de condición]** as **[!UICONTROL Ruta sin cadena de consulta]**
 1. A la derecha, habilite la **[!UICONTROL Regex]** alternar
 1. En **[!UICONTROL ruta igual a]** set `/products/`. Para el sitio de demostración de Luma, garantiza que la regla solo incluya déclencheur en las páginas de productos
-1. Seleccione **[!UICONTROL Conservar cambios]**
+1. Seleccionar **[!UICONTROL Conservar cambios]**
 
    ![Reglas XDM de Analytics](assets/analytics-tags-prodView.png)
 
 1. En **[!UICONTROL Acciones]** select **[!UICONTROL Añadir]**
 1. Seleccionar **[!UICONTROL SDK web de Adobe Experience Platform]** extensión
 1. Seleccionar **[!UICONTROL Tipo de acción]** as **[!UICONTROL Enviar evento]**
-1. El **[!UICONTROL Tipo]** tiene una lista desplegable de valores para elegir. Seleccione `[!UICONTROL commerce.productViews]`
+1. El **[!UICONTROL Tipo]** tiene una lista desplegable de valores para elegir. Seleccionar `[!UICONTROL commerce.productViews]`
 
    >[!TIP]
    >
    >El valor seleccionado aquí no afecta a la forma en que se asignan los datos a Analytics, pero se recomienda aplicar cuidadosamente esta variable, ya que se utiliza en la interfaz del generador de segmentos de Adobe Experience Platform. El valor seleccionado está disponible para usar en `[!UICONTROL c.a.x.eventtype]` variable de datos de contexto descendente.
 
 1. En **[!UICONTROL Datos XDM]**, seleccione la `[!UICONTROL xdm.commerce.prodView]` Elemento de datos del objeto XDM
-1. Seleccione **[!UICONTROL Conservar cambios]**
+1. Seleccionar **[!UICONTROL Conservar cambios]**
 
    ![Reglas XDM de Analytics](assets/analytics-rule-commerce-productViews.png)
 
-1. La regla debe ser similar a la siguiente. Seleccione **[!UICONTROL Guardar]**
+1. La regla debe ser similar a la siguiente. Seleccionar **[!UICONTROL Guardar]**
 
    ![Reglas XDM de Analytics](assets/analytics-rule-product-view.png)
 
@@ -471,7 +476,7 @@ Obtenga información sobre cómo validar que Adobe Analytics está capturando el
    >La segunda lista desplegable corresponde al ID del grupo de informes de Analytics al que está enviando los datos. Debe coincidir con su propio grupo de informes, no con el de la captura de pantalla.
 
 1. Desplazarse hacia abajo para buscar `[!UICONTROL c.a.x.identitymap.ecid.[0].id]`. Es una variable de datos de contexto que captura el ECID
-1. Desplácese hacia abajo hasta que vea el informe de Analytics. `[!UICONTROL mid]` variable. Ambos ID coinciden con el ID de Experience Cloud del dispositivo.
+1. Desplácese hacia abajo hasta que vea el informe de Analytics. `[!UICONTROL mid]` variable. Ambos ID coinciden con el Experience Cloud ID del dispositivo.
 
    ![Analytics ECID](assets/analytics-debugger-ecid.png)
 
@@ -540,7 +545,7 @@ En este ejercicio, se asigna una variable XDM a una propiedad para poder verla e
 
    ![Compra de Analytics](assets/analytics-process-rules.png)
 
-1. Cree una regla para **[!UICONTROL Sobrescribir el valor de]** `[!UICONTROL Product Name (prop1)]` hasta `a.x.productlistitems.0.name`. Recuerde añadir la nota sobre por qué crea la regla y asignar un nombre al título de la misma. Seleccione **[!UICONTROL Guardar]**
+1. Cree una regla para **[!UICONTROL Sobrescribir el valor de]** `[!UICONTROL Product Name (prop1)]` hasta `a.x.productlistitems.0.name`. Recuerde añadir la nota sobre por qué crea la regla y asignar un nombre al título de la misma. Seleccionar **[!UICONTROL Guardar]**
 
    ![Compra de Analytics](assets/analytics-set-processing-rule.png)
 
@@ -554,7 +559,7 @@ En este ejercicio, se asigna una variable XDM a una propiedad para poder verla e
 
 1. Repita los pasos de validación y verá que los informes en tiempo real rellenan los datos según corresponda.
 
-   **Page Views**
+   **Vistas de páginas**
    ![Contenido en tiempo real](assets/analytics-real-time-content.png)
 
    **Vistas del producto**

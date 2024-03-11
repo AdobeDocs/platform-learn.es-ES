@@ -3,14 +3,19 @@ title: Creación de elementos de datos
 description: Obtenga información sobre cómo crear un objeto XDM y asignarle elementos de datos en etiquetas. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: aea1b1a88361f2ae0082772b5e7eeb6b25cec4c6
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1212'
 ht-degree: 1%
 
 ---
 
 # Creación de elementos de datos
+
+
+>[!CAUTION]
+>
+>Esperamos publicar cambios importantes en este tutorial el viernes 15 de marzo de 2024. Después de ese punto, muchos ejercicios cambiarán y es posible que tenga que reiniciar el tutorial desde el principio para completar todas las lecciones.
 
 Obtenga información sobre cómo crear los elementos de datos esenciales necesarios para capturar datos con el SDK web de Experience Platform. Recopilar datos de contenido e identidad en [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Aprenda a utilizar el esquema XDM creado anteriormente para recopilar datos mediante el SDK web de Platform a través de un nuevo tipo de elemento de datos denominado objeto XDM.
 

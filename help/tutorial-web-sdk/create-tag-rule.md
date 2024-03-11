@@ -3,14 +3,19 @@ title: Creación de una regla de etiqueta
 description: Obtenga información sobre cómo enviar un evento a la red perimetral de Platform con el objeto XDM mediante una regla de etiqueta. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Tags
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 5%
+source-wordcount: '871'
+ht-degree: 3%
 
 ---
 
 # Creación de una regla de etiqueta
+
+
+>[!CAUTION]
+>
+>Esperamos publicar cambios importantes en este tutorial el viernes 15 de marzo de 2024. Después de ese punto, muchos ejercicios cambiarán y es posible que tenga que reiniciar el tutorial desde el principio para completar todas las lecciones.
 
 Obtenga información sobre cómo enviar un evento a la red perimetral de Platform con el objeto XDM mediante una regla de etiqueta. Una regla de etiqueta es una combinación de eventos, condiciones y acciones que indica a la propiedad de etiqueta que haga algo.
 
@@ -61,7 +66,7 @@ Para crear una regla de etiqueta:
 1. Abra la propiedad de etiqueta que está utilizando para este tutorial.
 1. Ir a **[!UICONTROL Reglas]** en el panel de navegación izquierdo
 1. Seleccione el **[!UICONTROL Crear nueva regla]** botón
-   ![Crear una regla](assets/rules-create.png)
+   ![Creación de una regla](assets/rules-create.png)
 1. Asigne un nombre a la regla `all pages - library load - AA & AT`.
 
    >[!NOTE]
@@ -79,7 +84,7 @@ Para crear una regla de etiqueta:
    ![Adición de condiciones](assets/rules-add-conditions.png)
 1. Seleccionar **[!UICONTROL Tipo de lógica]** `Exception`, **[!UICONTROL Extensión]** `Core`, y **[!UICONTROL Tipo de condición]** `Path Without Query String`
 1. Introduzca la ruta de la URL `/content/luma/us/en/user/cart.html` en el **[!UICONTROL ruta igual a]** , y **[!UICONTROL name]** it `Core - cart page`
-1. Seleccione **[!UICONTROL Conservar cambios]**
+1. Seleccionar **[!UICONTROL Conservar cambios]**
    ![Adición de condiciones](assets/rule-condition-exception.png)
 1. Añada tres excepciones más para las siguientes rutas URL
 

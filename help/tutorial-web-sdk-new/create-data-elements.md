@@ -2,22 +2,16 @@
 title: Creación de elementos de datos
 description: Obtenga información sobre cómo crear un objeto XDM y asignarle elementos de datos en etiquetas. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Tags
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1199'
 ht-degree: 1%
 
 ---
 
 # Creación de elementos de datos
 
-Obtenga información sobre cómo crear elementos de datos en etiquetas para contenido, comercio y datos de identidad en [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html). A continuación, rellene y rellene los campos del esquema XDM con el tipo de elemento de datos Variable.
-
-
->[!IMPORTANT]
->
->Los datos de esta lección provienen de `[!UICONTROL digitalData]` en el sitio de Luma. Para ver la capa de datos, abra la consola de desarrollador y escriba `[!UICONTROL digitalData]` para ver la capa de datos completa disponible.![capa de datos digitalData](assets/data-element-data-layer.png)
-
+Obtenga información sobre cómo crear elementos de datos en etiquetas para contenido, comercio y datos de identidad en [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html). A continuación, rellene los campos del esquema XDM con la extensión del SDK web de Platform Tipo de elemento de datos variable.
 
 ## Objetivos de aprendizaje
 
@@ -37,9 +31,15 @@ Tiene una comprensión de lo que es una capa de datos y ha completado las leccio
 * [Configuración de una secuencia de datos](configure-datastream.md)
 * [Extensión del SDK web instalada en la propiedad de etiqueta](install-web-sdk.md)
 
+
+>[!IMPORTANT]
+>
+>Los datos de esta lección provienen de `[!UICONTROL digitalData]` en el sitio de Luma. Para ver la capa de datos, abra la consola de desarrollador y escriba `[!UICONTROL digitalData]` para ver la capa de datos completa disponible.![capa de datos digitalData](assets/data-element-data-layer.png)
+
+
 ## Enfoques de capa de datos
 
-Existen varias formas de asignar datos de la capa de datos al XDM mediante la funcionalidad de etiquetas de Adobe Experience Platform. A continuación se presentan algunas ventajas y desventajas de tres enfoques diferentes:
+Existen varias formas de asignar datos de la capa de datos al XDM mediante la funcionalidad de etiquetas de Adobe Experience Platform. A continuación se presentan algunas ventajas y desventajas de tres enfoques diferentes. Si lo desea, es posible combinar los siguientes enfoques:
 
 1. Implementación de XDM en la capa de datos
 1. Asignación a XDM en etiquetas
@@ -104,7 +104,7 @@ Contras
 
 * Dependencia total del equipo de desarrollo y el ciclo de desarrollo para actualizar qué datos se transfieren a XDM
 * Flexibilidad limitada, ya que XDM recibe la carga útil exacta de la capa de datos
-* No se pueden utilizar las funciones integradas de etiquetas, como raspado, persistencia o características para implementaciones rápidas
+* No se pueden utilizar las características de etiquetas integradas, como raspado, persistencia o características para implementaciones rápidas
 * No se puede usar la capa de datos para píxeles de terceros
 * No es posible transformar los datos entre la capa de datos y XDM
 
@@ -289,7 +289,7 @@ Al final de estos pasos, debe tener los siguientes elementos de datos creados:
 
 >[!TIP]
 >
->En un futuro [Creación de una regla de etiqueta](create-tag-rule.md) lección, aprenderá cómo **[!UICONTROL Variable]** elemento de datos permite apilar varias reglas en etiquetas utilizando **[!UICONTROL Actualizar tipo de acción de variable]**.
+>En un futuro [Creación de reglas de etiquetas](create-tag-rule.md) lección, aprenderá cómo **[!UICONTROL Variable]** elemento de datos permite apilar varias reglas en etiquetas utilizando **[!UICONTROL Actualizar tipo de acción de variable]**.
 
 Con estos elementos de datos en su lugar, está listo para empezar a enviar datos a Platform Edge Network con una regla de etiquetas. Pero primero, aprenda a recopilar identidades con el SDK web.
 

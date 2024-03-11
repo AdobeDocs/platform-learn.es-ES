@@ -3,14 +3,19 @@ title: Creación de un esquema XDM para datos web
 description: Obtenga información sobre cómo crear un esquema XDM para datos web en la interfaz de recopilación de datos. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK,Tags,Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '1121'
-ht-degree: 6%
+source-wordcount: '1093'
+ht-degree: 2%
 
 ---
 
 # Creación de un esquema XDM para datos web
+
+
+>[!CAUTION]
+>
+>Esperamos publicar cambios importantes en este tutorial el viernes 15 de marzo de 2024. Después de ese punto, muchos ejercicios cambiarán y es posible que tenga que reiniciar el tutorial desde el principio para completar todas las lecciones.
 
 Obtenga información sobre cómo crear un esquema XDM para datos web en la interfaz de recopilación de datos.
 
@@ -50,7 +55,7 @@ En este ejercicio, creará un esquema XDM utilizando los grupos de campos de lí
    >Si es cliente de una aplicación basada en Platform como Real-Time CDP, le recomendamos que utilice una zona protegida de desarrollo para este tutorial. Si no lo está, use el **[!UICONTROL Prod]** zona protegida.
 
 1. Ir a **[!UICONTROL Esquemas]** en el panel de navegación izquierdo
-1. Seleccione el botón de **[!UICONTROL Crear esquema]** en la parte superior derecha
+1. Seleccione el **[!UICONTROL Crear esquema]** botón en la parte superior derecha
 1. En el menú desplegable, seleccione **[!UICONTROL ExperienceEvent de XDM]**
 
 ![Evento de experiencia de esquema](assets/schema-XDM-experience-event.jpg)
@@ -70,7 +75,7 @@ Cuando sea posible, se recomienda utilizar grupos de campos existentes y adherir
 1. Marque la casilla
 1. Buscar por [!UICONTROL `Consumer Experience Event`]
 1. Marque la casilla
-1. Seleccione **[!UICONTROL Agregar grupos de campos]**
+1. Seleccionar **[!UICONTROL Adición de grupos de campos]**
 
    ![Agregar grupo de campos](assets/schema-add-field-group.jpg)
 
@@ -79,7 +84,7 @@ Con los grupos de campos seleccionados, está listo para asignar un nombre al es
 1. En el **[!UICONTROL Composición**] , seleccione el `Untitled schema name`
 1. En el **[!UICONTROL Propiedades del esquema]** , introduzca la variable **[!UICONTROL Nombre para mostrar]** `Luma Web Event Data`
 1. Seleccione cualquier elemento fuera de **[!UICONTROL Nombre para mostrar]** para activar el **[!UICONTROL Guardar]** opción
-1. Seleccione **[!UICONTROL Guardar]**
+1. Seleccionar **[!UICONTROL Guardar]**
 
 ![Datos de evento web de Luma](assets/schema-luma-web-event-data.png)
 

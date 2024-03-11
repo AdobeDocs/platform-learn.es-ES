@@ -2,9 +2,9 @@
 title: Configuración de una propiedad de reenvío de eventos
 description: Obtenga información sobre cómo utilizar la propiedad de reenvío de eventos mediante datos del SDK web de Experience Platform. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK,Tags,Event Forwarding
-source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1862'
+source-wordcount: '1861'
 ht-degree: 3%
 
 ---
@@ -62,7 +62,7 @@ Al final de esta lección, debe ser capaz de:
       * [Instalar extensión de SDK web](install-web-sdk.md)
       * [Creación de elementos de datos](create-data-elements.md)
       * [Creación de identidades](create-identities.md)
-      * [Creación de una regla de etiqueta](create-tag-rule.md)
+      * [Creación de reglas de etiquetas](create-tag-rule.md)
       * [Validar con Adobe Experience Platform Debugger](validate-with-debugger.md)
 
 
@@ -185,8 +185,8 @@ En este ejercicio, reenviará la altura de la ventanilla del explorador y el ID 
 
    >[!TIP]
    >
-   Al trabajar con su propio sitio web, puede encontrar la ruta del objeto XDM con las herramientas de red del explorador web, filtrando por `/ee` solicitudes, abrir la señalización [!UICONTROL **Carga útil**] y profundizando en la variable que está buscando. A continuación, haga clic con el botón derecho del ratón y seleccione &quot;Copiar ruta de propiedad&quot;. Este es un ejemplo de la altura de la ventanilla del explorador:
-   ![Ruta XDM de reenvío de eventos](assets/event-forwarding-xdm-path.png)
+   >Al trabajar con su propio sitio web, puede encontrar la ruta del objeto XDM con las herramientas de red del explorador web, filtrando por `/ee` solicitudes, abrir la señalización [!UICONTROL **Carga útil**] y profundizando en la variable que está buscando. A continuación, haga clic con el botón derecho del ratón y seleccione &quot;Copiar ruta de propiedad&quot;. Este es un ejemplo de la altura de la ventanilla del explorador:
+   > ![Ruta XDM de reenvío de eventos](assets/event-forwarding-xdm-path.png)
 
 ### Instalación de la extensión de conector de Adobe Cloud
 
@@ -280,7 +280,7 @@ Cree una biblioteca y todos los cambios en el entorno de desarrollo del reenvío
 
 >[!NOTE]
 >
-Si no ha vinculado las propiedades de reenvío de eventos de ensayo y producción a su conjunto de datos, verá el entorno de desarrollo como la única opción para crear una biblioteca en.
+>Si no ha vinculado las propiedades de reenvío de eventos de ensayo y producción a su conjunto de datos, verá el entorno de desarrollo como la única opción para crear una biblioteca en.
 
 ![Guardar regla de reenvío de eventos](assets/event-forwarding-initial-build.png)
 
@@ -323,4 +323,4 @@ Ahora puede validar la propiedad de reenvío de eventos mediante Platform Debugg
 
 >[!NOTE]
 >
-Gracias por dedicar su tiempo a conocer el SDK web de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Gracias por dedicar su tiempo a conocer el SDK web de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -2,9 +2,9 @@
 title: Configuración del consentimiento con el SDK web de Platform
 description: Obtenga información sobre cómo establecer la configuración de privacidad de la extensión de etiquetas de SDK web de Experience Platform. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK,Tags,Consent
-source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1603'
+source-wordcount: '1602'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Antes de ir a las configuraciones de etiquetas, obtenga más información acerca
 >La práctica recomendada para implementar una plataforma de administración de consentimiento es cargar la CMP _antes_ cargando el administrador de etiquetas. Para facilitar este tutorial, cargará el CMP _con_ el administrador de etiquetas. Esta lección está diseñada para mostrarle cómo utilizar las funciones de consentimiento del SDK web de Platform y no debe utilizarse como guía para configurar correctamente Klaro o cualquier otra CMP.
 
 
-Ahora, una vez que haya terminado con las configuraciones de Klaro, cree una regla de etiqueta con las siguientes configuraciones:
+Ahora, una vez que haya terminado con las configuraciones de Klaro, cree reglas de etiquetas con las siguientes configuraciones:
 
 * [!UICONTROL Nombre]: `all pages - library load - Klaro`
 * [!UICONTROL Evento]: [!UICONTROL Library Loaded (Page Top)] con [!UICONTROL Opciones avanzadas] > [!UICONTROL Pedido] establezca en 1

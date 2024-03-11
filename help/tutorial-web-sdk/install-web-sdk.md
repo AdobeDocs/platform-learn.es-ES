@@ -3,14 +3,19 @@ title: Instalación y configuración de la extensión de etiquetas del SDK web d
 description: Obtenga información sobre cómo instalar y configurar la extensión de etiqueta SDK web de Platform en la interfaz de recopilación de datos. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 15%
+source-wordcount: '644'
+ht-degree: 11%
 
 ---
 
 # Instalación de la extensión de etiquetas de SDK web de Adobe Experience Platform
+
+
+>[!CAUTION]
+>
+>Esperamos publicar cambios importantes en este tutorial el viernes 15 de marzo de 2024. Después de ese punto, muchos ejercicios cambiarán y es posible que tenga que reiniciar el tutorial desde el principio para completar todas las lecciones.
 
 Obtenga información sobre cómo instalar y configurar la extensión de etiqueta SDK web de Platform en la interfaz de recopilación de datos. Esta extensión de etiqueta es la _extensión de etiqueta solamente_ necesario para enviar datos a _todas las aplicaciones de Adobe Experience Cloud_, incluido [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-time Customer Data Platform y Journey Optimizer.
 
@@ -41,11 +46,11 @@ Cree una nueva propiedad de etiqueta para el tutorial:
 
 1. Abra el [Interfaz de recopilación de datos](https://launch.adobe.com/){target="_blank"}
 1. Seleccionar **[!UICONTROL Etiquetas]** en el panel de navegación izquierdo
-1. Seleccione el botón **[!UICONTROL Nueva propiedad]**
+1. Seleccione el **[!UICONTROL Nueva propiedad]** botón
    ![Añadir una nueva propiedad](assets/websdk-property-addNewProperty.png)
 1. Como el **[!UICONTROL Nombre]**, introduzca `Web SDK Course` (añada su nombre al final, si varias personas de su compañía realizan este tutorial)
 1. Como el **[!UICONTROL Domains]**, introduzca `enablementadobe.com` (explicado más tarde)
-1. Seleccione **[!UICONTROL Guardar]**
+1. Seleccionar **[!UICONTROL Guardar]**
    ![Detalles de la propiedad](assets/websdk-property-propertyDetails.png)
 
 ## Añadir la extensión del SDK web
@@ -66,7 +71,7 @@ Deje la mayoría de las configuraciones predeterminadas y actualícelas más tar
 
 1. En **[!UICONTROL Datastreams]**, seleccione la **[!UICONTROL Elegir de la lista]** método de entrada
 1. Seleccione la secuencia de datos que creó anteriormente, `Luma Web SDK`
-1. Seleccione **[!UICONTROL Guardar]**
+1. Seleccionar **[!UICONTROL Guardar]**
    >[!NOTE]
    >
    > Si no encuentra el conjunto de datos, vaya a la [Configuración de una secuencia de datos](configure-datastream.md) y siga los pasos para crear uno

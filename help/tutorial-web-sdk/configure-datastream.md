@@ -3,14 +3,19 @@ title: Configuración de una secuencia de datos
 description: Obtenga información sobre cómo habilitar un flujo de datos y configurar soluciones de Experience Cloud. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK,Tags,Datastreams
 exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 10%
+source-wordcount: '471'
+ht-degree: 5%
 
 ---
 
 # Configuración de una secuencia de datos
+
+
+>[!CAUTION]
+>
+>Esperamos publicar cambios importantes en este tutorial el viernes 15 de marzo de 2024. Después de ese punto, muchos ejercicios cambiarán y es posible que tenga que reiniciar el tutorial desde el principio para completar todas las lecciones.
 
 Obtenga información sobre cómo habilitar un flujo de datos y configurar soluciones de Experience Cloud.
 
@@ -47,9 +52,9 @@ Ahora puede crear una secuencia de datos para indicar a Platform Edge Network d�
 
 1. Ir a **[!UICONTROL Datastreams]** en el panel de navegación izquierdo
 1. Seleccionar **[!UICONTROL Nueva secuencia de datos]** en el lado derecho de la pantalla.
-1. Escriba `Luma Web SDK` como **[!UICONTROL nombre]**. Se hace referencia a este nombre más adelante al configurar la extensión del SDK web en la propiedad de etiquetas.
+1. Entrar `Luma Web SDK` como el **[!UICONTROL Nombre]**. Se hace referencia a este nombre más adelante al configurar la extensión del SDK web en la propiedad de etiquetas.
 1. Seleccione su `Luma Web Event Data` como el **[!UICONTROL Esquema de evento]**
-1. Seleccione **[!UICONTROL Guardar]**
+1. Seleccionar **[!UICONTROL Guardar]**
 
    ![Creación de la secuencia de datos](assets/datastream-create-datastream.png)
 
