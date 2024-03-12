@@ -2,9 +2,9 @@
 title: Configuración de Adobe Analytics mediante el SDK web de Experience Platform
 description: Obtenga información sobre cómo configurar Adobe Analytics mediante el SDK web de Experience Platform. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 solution: Data Collection, Analytics
-source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
+source-git-commit: 26545b660b70daf4296ec2afbc067065f77def01
 workflow-type: tm+mt
-source-wordcount: '3078'
+source-wordcount: '3024'
 ht-degree: 0%
 
 ---
@@ -21,16 +21,12 @@ Obtenga información sobre cómo configurar Adobe Analytics mediante [SDK web de
 
 Al final de esta lección, debe poder:
 
-* Configuración de un esquema XDM para Adobe Analytics
-* Comprenda la diferencia entre las variables XDM asignadas automáticamente y manualmente para Analytics
 * Configuración de una secuencia de datos para habilitar Adobe Analytics
-* Anular una secuencia de datos para enviar datos a otro grupo de informes de Adobe Analytics
-* Asignar elementos de datos de matriz individuales o completos al objeto XDM
-* Utilice el tipo de acción Actualizar regla de variable para apilar varias reglas en un evento XDM
-* Captura de vistas de página en Adobe Analytics con el objeto XDM
-* Captura de datos de comercio electrónico con el objeto XDM para la cadena de producto de Adobe Analytics
+* Comprenda la diferencia entre las variables XDM asignadas automáticamente y manualmente para Analytics
+* Configuración de un esquema XDM para variables específicas de Adobe Analytics
 * Definición de un eVar de comercialización de sintaxis de producto mediante XDM
-* Validar si las variables de Adobe Analytics se establecen con el objeto XDM mediante Experience Platform Debugger
+* Anular una secuencia de datos para enviar datos a otro grupo de informes de Adobe Analytics
+* Validación de variables de Adobe Analytics mediante Experience Platform Debugger
 * Usar reglas de procesamiento de Adobe Analytics para establecer variables personalizadas
 * Adobe Analytics captura los datos con Adobe Experience Platform Assurance
 * Adobe Analytics captura los datos validados mediante informes en tiempo real

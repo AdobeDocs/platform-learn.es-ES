@@ -2,9 +2,9 @@
 title: Creación de reglas de etiquetas
 description: Obtenga información sobre cómo enviar un evento a la red perimetral de Platform con el objeto XDM mediante una regla de etiqueta. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Tags
-source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
+source-git-commit: 26545b660b70daf4296ec2afbc067065f77def01
 workflow-type: tm+mt
-source-wordcount: '2009'
+source-wordcount: '2025'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,9 @@ Obtenga información sobre cómo enviar eventos a la red perimetral de Platform 
 Al final de esta lección, puede hacer lo siguiente:
 
 * Utilice una convención de nombres para administrar reglas dentro de las etiquetas
-* Envío de un evento XDM mediante los tipos de acción Actualizar variable y Enviar evento en una regla de etiqueta
+* Envío de un evento con campos XDM mediante las acciones Actualizar variable y Enviar evento
+* Apilar varios conjuntos de campos XDM en varias reglas
+* Asignar elementos de datos de matriz individuales o completos al objeto XDM
 * Publicación de una regla de etiqueta en una biblioteca de desarrollo
 
 
