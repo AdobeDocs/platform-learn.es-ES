@@ -1,21 +1,21 @@
 ---
-title: Bootcamp - Real-time CDP - Cree un segmento y tome medidas - Envíe su segmento a Adobe Target
-description: Bootcamp - Real-time CDP - Cree un segmento y tome medidas - Envíe su segmento a Adobe Target
+title: Bootcamp - Real-time CDP - Cree una audiencia y tome medidas - Envíe su audiencia a Adobe Target
+description: Bootcamp - Real-time CDP - Cree una audiencia y tome medidas - Envíe su audiencia a Adobe Target
 jira: KT-5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 solution: Experience Platform, Target
-feature: Segments, Integrations
+feature: Audiences, Integrations
 exl-id: 6a76c2ab-96b7-4626-a6d3-afd555220b1e
-source-git-commit: ee5c0af17c12f1d90774a3a4150c9788e2368e39
+source-git-commit: 9d12b3e3ad2238cf79aca3d9723e7e60d72e765c
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '867'
 ht-degree: 1%
 
 ---
 
-# 1.4 Tomar medidas: enviar el segmento a Adobe Target
+# 1.4 Tomar medidas: enviar la audiencia a Adobe Target
 
 Ir a [Adobe Experience Platform](https://experience.adobe.com/platform). Después de iniciar sesión, llegará a la página principal de Adobe Experience Platform.
 
@@ -25,11 +25,11 @@ Antes de continuar, debe seleccionar un **espacio aislado**. La zona protegida q
 
 ![Ingesta de datos](./images/sb1.png)
 
-## 1.4.1 Activación del segmento en el destino de Adobe Target
+## 1.4.1 Activar la audiencia en el destino de Adobe Target
 
 Adobe Target está disponible como destino en Real-Time CDP. Para configurar la integración de Adobe Target, vaya a **Destinos**, a **Catálogo**.
 
-Clic **Personalización** en el **Categorías** menú. A continuación, verá el **Adobe Target** tarjeta de destino. Clic **Activar segmentos**.
+Clic **Personalización** en el **Categorías** menú. A continuación, verá el **Adobe Target** tarjeta de destino. Clic **Activar audiencias**.
 
 ![EN](./images/atdest1.png)
 
@@ -37,7 +37,7 @@ Seleccionar el destino ``Bootcamp Target`` y haga clic en **Siguiente**.
 
 ![EN](./images/atdest3.png)
 
-En la lista de segmentos disponibles, seleccione el segmento que ha creado en [1.3 Crear un segmento](./ex3.md), que se denomina `yourLastName - Interest in Real-Time CDP`. A continuación, haga clic en **Siguiente**.
+En la lista de audiencias disponibles, seleccione la audiencia que creó en [1.3 Crear una audiencia](./ex3.md), que se denomina `yourLastName - Interest in Real-Time CDP`. A continuación, haga clic en **Siguiente**.
 
 ![EN](./images/atdest8.png)
 
@@ -49,17 +49,17 @@ Haga clic en **Finalizar**.
 
 ![EN](./images/atdest10.png)
 
-El segmento ahora está activado para Adobe Target.
+La audiencia ahora está activada en Adobe Target.
 
 ![EN](./images/atdest11.png)
 
 >[!IMPORTANT]
 >
->Cuando haya creado su destino de Adobe Target en Real-Time CDP, el destino puede tardar hasta una hora en estar activo. Este es un tiempo de espera único, debido a la configuración del back-end. Una vez que se haya completado el tiempo de espera de 1 hora inicial y la configuración del back-end, los segmentos Edge recién añadidos que se envíen al destino de Adobe Target estarán disponibles para la segmentación en tiempo real.
+>Cuando haya creado su destino de Adobe Target en Real-Time CDP, el destino puede tardar hasta una hora en estar activo. Este es un tiempo de espera único, debido a la configuración del back-end. Una vez que se haya completado el tiempo de espera de una hora y la configuración del back-end iniciales, las audiencias de Edge recién agregadas que se envíen al destino de Adobe Target estarán disponibles para la segmentación en tiempo real.
 
 ## 1.4.2 Configuración de la actividad basada en formularios de Adobe Target
 
-Ahora que el segmento de Real-Time CDP está configurado para enviarse a Adobe Target, puede configurar la actividad de segmentación de experiencias en Adobe Target. En este ejercicio configurará una actividad basada en el Compositor de experiencias visuales.
+Ahora que la audiencia de Real-Time CDP está configurada para enviarse a Adobe Target, puede configurar la actividad de segmentación de experiencias en Adobe Target. En este ejercicio configurará una actividad basada en el Compositor de experiencias visuales.
 
 Vaya a la página principal de Adobe Experience Cloud yendo a [https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/). Clic **Target** para abrirlo.
 
@@ -98,11 +98,11 @@ La audiencia predeterminada es **Todos los visitantes**. Haga clic en **3 puntos
 
 ![RTCDP](./images/atform3.png)
 
-Ahora está viendo la lista de audiencias disponibles y el segmento de Adobe Experience Platform que creó anteriormente y envió a Adobe Target ahora forma parte de esta lista. Seleccione el segmento que creó anteriormente en Adobe Experience Platform. Clic **Asignar audiencia**.
+Ahora está viendo la lista de audiencias disponibles, y la audiencia de Adobe Experience Platform que creó anteriormente y envió a Adobe Target ahora forma parte de esta lista. Seleccione la audiencia que creó anteriormente en Adobe Experience Platform. Clic **Asignar audiencia**.
 
 ![RTCDP](./images/exclatvecchaud.png)
 
-El segmento de Adobe Experience Platform ahora forma parte de esta actividad de segmentación de experiencias.
+La audiencia de Adobe Experience Platform ahora forma parte de esta actividad de segmentación de experiencias.
 
 ![RTCDP](./images/atform4.png)
 
@@ -170,7 +170,7 @@ A continuación, recibirá una confirmación visual de que la actividad está ac
 
 Su actividad ya está activa y se puede probar en el sitio web de bootcamp.
 
-Si ahora vuelve al sitio web de demostración y visita la página del producto durante **Real-Time CDP**, inmediatamente se clasificará para el segmento que ha creado y verá la actividad de Adobe Target en la página de inicio en tiempo real.
+Si ahora vuelve al sitio web de demostración y visita la página del producto durante **Real-Time CDP**, inmediatamente se clasifica para la audiencia que ha creado y se muestra la actividad de Adobe Target en la página de inicio en tiempo real.
 
 >[!IMPORTANT]
 >
@@ -182,7 +182,7 @@ Si ahora vuelve al sitio web de demostración y visita la página del producto d
 
 ![RTCDP](./images/atform12a.png)
 
-Paso siguiente: [1.5 Tomar medidas: enviar el segmento a Facebook](./ex5.md)
+Paso siguiente: [1.5 Tomar medidas: enviar la audiencia a Facebook](./ex5.md)
 
 [Volver al flujo de usuario 1](./uc1.md)
 
