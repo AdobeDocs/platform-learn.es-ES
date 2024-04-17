@@ -2,9 +2,10 @@
 title: Validación de implementaciones de SDK web con Experience Platform Assurance
 description: Obtenga información sobre cómo validar la implementación del SDK web de Platform con Adobe Experience Platform Assurance. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK,Tags,Assurance
-source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
+exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
+source-git-commit: 5e778dde1698110fade7163ed2585f059c27274c
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '595'
 ht-degree: 2%
 
 ---
@@ -31,7 +32,7 @@ Está familiarizado con las etiquetas de recopilación de datos y las [Sitio de 
 * [Extensión del SDK web instalada en la propiedad de etiqueta](install-web-sdk.md)
 * [Creación de elementos de datos](create-data-elements.md)
 * [Creación de identidades](create-identities.md)
-* [Creación de reglas de etiquetas](create-tag-rule.md)
+* [Creación de una regla de etiqueta](create-tag-rule.md)
 * [Validar con Debugger](validate-with-debugger.md)
 
 
@@ -70,7 +71,7 @@ Consulte cómo hemos realizado esto en la lección de Debugger:
 
 ## Validar el estado actual de la implementación del SDK web.
 
-Hay información limitada para ver en esta fase de la implementación. Un valor que podemos ver es su ID de Experience Cloud (ECID) que se genera en Platform Edge Network:
+Hay información limitada para ver en esta fase de la implementación. Un valor que podemos ver es su ID de Experience Cloud (ECID) que se genera en el Edge Network de Platform:
 
 1. Seleccione la fila con el evento llamado Controlador de respuesta de Adobe.
 1. A la derecha aparece un menú. Seleccione el `+` firmar junto a `[!UICONTROL ACPExtensionEvent]`
