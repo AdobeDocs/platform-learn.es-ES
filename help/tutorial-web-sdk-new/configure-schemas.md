@@ -2,7 +2,8 @@
 title: Creación de un esquema XDM para datos web
 description: Obtenga información sobre cómo crear un esquema XDM para datos web en la interfaz de recopilación de datos. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK,Schemas
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+exl-id: 159f914a-43d4-4808-b6af-01136386e25c
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 1%
@@ -15,7 +16,7 @@ Obtenga información sobre cómo crear un esquema XDM para datos web en la inter
 
 Los esquemas XDM (Experience Data Model) son los componentes básicos, los principios y las prácticas recomendadas para recopilar datos en Adobe Experience Platform.
 
-El SDK web de Platform utiliza su esquema para estandarizar los datos de evento web, enviarlos a Platform Edge Network y, finalmente, reenviar los datos a cualquier aplicación Experience Cloud configurada en el conjunto de datos. Este paso es fundamental, ya que define un modelo de datos estándar necesario para la ingesta de datos de experiencia del cliente en Experience Platform y permite la prestación de servicios y aplicaciones descendentes basados en estos estándares.
+El SDK web de Platform utiliza su esquema para estandarizar los datos de eventos web, enviarlos al Edge Network de Platform y, finalmente, reenviar los datos a cualquier aplicación del Experience Cloud configurada en la secuencia de datos. Este paso es fundamental, ya que define un modelo de datos estándar necesario para la ingesta de datos de experiencia del cliente en Experience Platform y permite la prestación de servicios y aplicaciones descendentes basados en estos estándares.
 
 ## ¿Por qué modelar los datos?
 
@@ -122,7 +123,7 @@ Cuando sea posible, se recomienda utilizar grupos de campos existentes y adherir
 1. Marque la casilla
 1. Seleccionar **[!UICONTROL Adición de grupos de campos]**
 
-   ![Agregar grupo de campos](assets/schema-add-field-group.jpg)
+   ![Agregar grupo de campos](assets/schema-add-field-group.png)
 
 Con ambos grupos de campos, observe que tiene acceso a los pares de clave-valor más utilizados y necesarios para la recopilación de datos en la web. El [!UICONTROL nombre para mostrar] Cada uno de los campos aparece a los especialistas en marketing en la interfaz del generador de segmentos de las aplicaciones basadas en Platform y puede cambiar el nombre para mostrar de los campos estándar para adaptarlos a sus necesidades. También puede quitar los campos que no desee. Al hacer clic en cualquier nombre de grupo de campos, la interfaz resalta qué agrupaciones de pares clave-valor pertenecen a él. En el siguiente ejemplo, verá a qué grupos pertenecen **[!UICONTROL Evento de experiencia del consumidor]**.
 

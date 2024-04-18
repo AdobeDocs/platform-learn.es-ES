@@ -2,7 +2,8 @@
 title: Instalación y configuración de la extensión de etiquetas del SDK web de Adobe Experience Platform
 description: Obtenga información sobre cómo instalar y configurar la extensión de etiqueta SDK web de Platform en la interfaz de recopilación de datos. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+exl-id: 7dedf9ea-eeda-4738-9633-b5a5a5f5f9ae
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 12%
@@ -53,7 +54,7 @@ Con el esquema XDM, la secuencia de datos y la propiedad de etiqueta creados, ya
 1. Buscar por `Adobe Experience Platform Web SDK`
 1. Seleccionar **[!UICONTROL Instalar]**
 
-   ![Instalar extensión del SDK web](assets/extension-platform-web-sdk.jpg)
+   ![Instalar extensión del SDK web](assets/extension-platform-web-sdk.png)
 
 
 ## Vinculación del SDK web de Platform al conjunto de datos

@@ -1,8 +1,9 @@
 ---
 title: Creación de reglas de etiquetas
-description: Obtenga información sobre cómo enviar un evento a la red perimetral de Platform con el objeto XDM mediante una regla de etiqueta. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
+description: Obtenga información sobre cómo enviar un evento al Edge Network de Platform con el objeto XDM mediante una regla de etiquetas. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Tags
-source-git-commit: 26545b660b70daf4296ec2afbc067065f77def01
+exl-id: c77ab8a1-922b-481e-b3cb-d2c5ca7bb8cb
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
 source-wordcount: '2025'
 ht-degree: 1%
@@ -11,7 +12,7 @@ ht-degree: 1%
 
 # Creación de reglas de etiquetas
 
-Obtenga información sobre cómo enviar eventos a la red perimetral de Platform con el objeto XDM mediante reglas de etiqueta. Una regla de etiqueta es una combinación de eventos, condiciones y acciones que indica a la propiedad de etiqueta que haga algo. Con el SDK web de Platform, las reglas se utilizan para enviar eventos a Platform Edge Network con los campos XDM adecuados.
+Obtenga información sobre cómo enviar eventos al Edge Network de Platform con el objeto XDM mediante reglas de etiquetas. Una regla de etiqueta es una combinación de eventos, condiciones y acciones que indica a la propiedad de etiqueta que haga algo. Con el SDK web de Platform, las reglas se utilizan para enviar eventos al Edge Network de Platform con los campos XDM adecuados.
 
 >[!NOTE]
 >
@@ -68,7 +69,7 @@ En el resto de esta lección:
 
 1. Cree reglas adicionales que anulen la &quot;configuración global&quot; o que contribuyan con campos XDM adicionales (mediante [!UICONTROL Actualizar variable] de nuevo) que solo son relevantes bajo ciertas condiciones (por ejemplo, añadir detalles del producto en páginas del producto).
 
-1. Cree otra regla con **[!UICONTROL Enviar evento]** acción que enviará el objeto XDM completo a Adobe Experience Platform Edge Network.
+1. Cree otra regla con **[!UICONTROL Enviar evento]** acción que enviará el objeto XDM completo al Edge Network de Adobe Experience Platform.
 
 Todas estas reglas se secuenciarán correctamente usando el complemento &quot;[!UICONTROL pedido]Opción &quot;.
 
@@ -105,7 +106,7 @@ Para crear reglas de etiquetas para los campos XDM globales:
    > Cuanto más bajo sea el número de pedido, más pronto se ejecutará. Por lo tanto, le damos a nuestra &quot;configuración global&quot; un número de pedido bajo.
 
 1. Seleccionar **[!UICONTROL Conservar cambios]** para volver a la pantalla de regla principal
-   ![Seleccionar Déclencheur cargado de biblioteca](assets/create-tag-rule-trigger-bottom.png)
+   ![Seleccionar Déclencheur cargado de biblioteca](assets/create-tag-rule-trigger-loaded.png)
 
 1. En el **[!UICONTROL Acciones]** , seleccione **[!UICONTROL Añadir]**
 
@@ -167,7 +168,7 @@ Ahora, asigne los [!UICONTROL elementos de datos] a la [!UICONTROL esquema] util
 
 #### Campos de página de producto
 
-Ahora, empiece a usar **[!UICONTROL Actualizar variable]** en reglas adicionales secuenciadas para enriquecer el objeto XDM antes de enviarlo a [!UICONTROL Red perimetral de plataforma].
+Ahora, empiece a usar **[!UICONTROL Actualizar variable]** en reglas adicionales secuenciadas para enriquecer el objeto XDM antes de enviarlo a [!UICONTROL Edge Network de plataforma].
 
 >[!TIP]
 >
@@ -339,7 +340,7 @@ Cuando haya terminado, debería ver las siguientes reglas creadas.
 
 ### Enviar regla de evento
 
-Ahora que ha establecido las variables, puede crear la regla para enviar el objeto XDM completo a Platform Edge Network con la variable **[!UICONTROL Enviar evento]** acción.
+Ahora que ha establecido las variables, puede crear la regla para enviar el objeto XDM completo al Edge Network de Platform con la variable **[!UICONTROL Enviar evento]** acción.
 
 1. A la derecha, seleccione **[!UICONTROL Agregar regla]** para crear otra regla
 
@@ -352,7 +353,7 @@ Ahora que ha establecido las variables, puede crear la regla para enviar el obje
 1. Seleccionar **[!UICONTROL Avanzadas]** desplegable e introduzca `50` in **[!UICONTROL Pedido]**. Esto garantizará que el segundo déclencheur de regla sea posterior al primero que configure como déclencheur `1`.
 
 1. Seleccionar **[!UICONTROL Conservar cambios]** para volver a la pantalla de regla principal
-   ![Seleccionar Déclencheur cargado de biblioteca](assets/create-tag-rule-trigger-bottom-send.png)
+   ![Seleccionar Déclencheur cargado de biblioteca](assets/create-tag-rule-trigger-loaded-send.png)
 
 1. En el **[!UICONTROL Acciones]** , seleccione **[!UICONTROL Añadir]**
 

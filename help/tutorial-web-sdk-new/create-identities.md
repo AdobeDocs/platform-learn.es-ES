@@ -2,7 +2,8 @@
 title: Creación de identidades
 description: Obtenga información sobre cómo crear identidades en XDM y utilizar el elemento de datos del mapa de identidad para capturar los ID de usuario. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Tags
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+exl-id: 7ca32dc8-dd86-48e0-8931-692bcbb2f446
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 1%
@@ -47,7 +48,7 @@ El [ID DEL Experience Cloud (ECID)](https://experienceleague.adobe.com/docs/expe
 
 Obtenga más información sobre cómo [El seguimiento de los ECID se realiza mediante el SDK web de Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=en).
 
-Los ECID se configuran con una combinación de cookies de origen y Platform Edge Network. De forma predeterminada, las cookies de origen las establece el SDK web. Para tener en cuenta las restricciones del explorador sobre la duración de las cookies, puede optar por configurar y administrar sus propias cookies de origen en su lugar. Estos se denominan ID de dispositivos de origen (FPID).
+Los ECID se configuran con una combinación de cookies de origen y Platform Edge Network. De forma predeterminada, el SDK web establece las cookies de origen del lado del cliente. Para tener en cuenta las restricciones del explorador sobre la duración de las cookies, puede optar por configurar sus propias cookies de origen del lado del servidor en su lugar. Estos se denominan ID de dispositivos de origen (FPID).
 
 >[!IMPORTANT]
 >
@@ -147,7 +148,7 @@ Al final de estos pasos, debe tener los siguientes elementos de datos creados:
 | `user.profile.attributes.loggedIn` | |
 | `user.profile.attributes.username` | |
 
-Con estos elementos de datos en su lugar, está listo para empezar a enviar datos a Platform Edge Network a través del objeto XDM creando una regla en las etiquetas.
+Con estos elementos de datos en su lugar, está listo para empezar a enviar datos al Edge Network de Platform a través del objeto XDM creando una regla en las etiquetas.
 
 [Siguiente: ](create-tag-rule.md)
 
