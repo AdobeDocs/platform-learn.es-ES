@@ -3,7 +3,7 @@ title: Configuración de Adobe Analytics mediante el SDK web de Experience Platf
 description: Obtenga información sobre cómo configurar Adobe Analytics mediante el SDK web de Experience Platform. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 solution: Data Collection, Analytics
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '3473'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->Esperamos publicar cambios importantes en este tutorial el viernes 15 de marzo de 2024. Después de ese punto, muchos ejercicios cambiarán y es posible que tenga que reiniciar el tutorial desde el principio para completar todas las lecciones.
+>Esperamos publicar cambios importantes en este tutorial el martes 23 de abril de 2024. Después de ese punto, muchos ejercicios cambiarán y es posible que tenga que reiniciar el tutorial desde el principio para completar todas las lecciones.
 
 Obtenga información sobre cómo configurar Adobe Analytics mediante [SDK web de Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html), cree reglas de etiquetas para enviar datos a Adobe Analytics y valide que Analytics está capturando los datos según lo esperado.
 
@@ -94,7 +94,7 @@ El esquema creado en [Configuración de un esquema](configure-schemas.md) Esta l
 
 ## Configuración de la secuencia de datos
 
-El SDK web de Platform envía datos del sitio web a Platform Edge Network. A continuación, la secuencia de datos indica a Platform Edge Network dónde reenviar esos datos, en este caso, cuál de los grupos de informes de Adobe Analytics.
+El SDK web de Platform envía datos del sitio web al Edge Network de Platform. A continuación, la secuencia de datos indica a Platform Edge Network dónde reenviar esos datos, en este caso, cuál de los grupos de informes de Adobe Analytics.
 
 1. Ir a [Recopilación de datos](https://experience.adobe.com/#/data-collection){target="blank"} interfaz
 1. En el panel de navegación izquierdo, seleccione **[!UICONTROL Datastreams]**
@@ -121,7 +121,7 @@ El SDK web de Platform envía datos del sitio web a Platform Edge Network. A con
 
 ## Creación de elementos de datos adicionales
 
-A continuación, capture datos adicionales de la capa de datos de Luma y envíelos a Platform Edge Network. Aunque la lección se centra en los requisitos comunes de Adobe Analytics, todos los datos capturados se pueden enviar fácilmente a otros destinos en función de la configuración del flujo de datos. Por ejemplo, si completa la lección de Adobe Experience Platform, los datos adicionales que capture en esta lección también se enviarán a Platform.
+A continuación, capture datos adicionales de la capa de datos de Luma y envíelos al Edge Network de Platform. Aunque la lección se centra en los requisitos comunes de Adobe Analytics, todos los datos capturados se pueden enviar fácilmente a otros destinos en función de la configuración del flujo de datos. Por ejemplo, si completa la lección de Adobe Experience Platform, los datos adicionales que capture en esta lección también se enviarán a Platform.
 
 ### Creación de elementos de datos de comercio electrónico
 
@@ -439,7 +439,7 @@ Añada los nuevos elementos de datos y reglas a su `Luma Web SDK Tutorial` y rec
 
 En el [Depurador](validate-with-debugger.md) En esta lección, ha aprendido a inspeccionar la señalización de objetos XDM del lado del cliente con Platform Debugger y la consola de desarrollador del explorador, que es similar a cómo depurar un `AppMeasurement.js` Implementación de Analytics. Para validar que Analytics captura correctamente los datos mediante el SDK web de Platform, debe ir dos pasos más allá para:
 
-1. Valide cómo procesa los datos el objeto XDM en la red perimetral de Platform, utilizando la función de seguimiento de Edge de Experience Platform Debugger
+1. Valide cómo procesa los datos el objeto XDM en el Edge Network de Platform mediante la función de seguimiento de Edge de Experience Platform Debugger
 1. Valide cómo Analytics procesa los datos mediante reglas de procesamiento e informes en tiempo real.
 
 ### Usar seguimiento de borde
@@ -476,7 +476,7 @@ Obtenga información sobre cómo validar que Adobe Analytics está capturando el
    >La segunda lista desplegable corresponde al ID del grupo de informes de Analytics al que está enviando los datos. Debe coincidir con su propio grupo de informes, no con el de la captura de pantalla.
 
 1. Desplazarse hacia abajo para buscar `[!UICONTROL c.a.x.identitymap.ecid.[0].id]`. Es una variable de datos de contexto que captura el ECID
-1. Desplácese hacia abajo hasta que vea el informe de Analytics. `[!UICONTROL mid]` variable. Ambos ID coinciden con el Experience Cloud ID del dispositivo.
+1. Desplácese hacia abajo hasta que vea el informe de Analytics. `[!UICONTROL mid]` variable. Ambos ID coinciden con el ID de Experience Cloud del dispositivo.
 
    ![Analytics ECID](assets/analytics-debugger-ecid.png)
 
@@ -496,7 +496,7 @@ Utilice la misma señalización para validar que Analytics captura las vistas de
 
 ### Eventos de cadena de producto y comercio electrónico
 
-Dado que ya se encuentra en una página de producto, este ejercicio sigue utilizando el mismo seguimiento de Edge para validar que Analytics capture los datos del producto. Tanto la cadena de producto como los eventos de comercio electrónico se asignan automáticamente a variables XDM de Analytics. Siempre y cuando haya asignado a la aplicación adecuada `productListItem` Variable XDM al [configuración de un esquema XDM para Adobe Analytics](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics), la red perimetral de plataforma se encarga de asignar los datos a las variables de análisis adecuadas.
+Dado que ya se encuentra en una página de producto, este ejercicio sigue utilizando el mismo seguimiento de Edge para validar que Analytics capture los datos del producto. Tanto la cadena de producto como los eventos de comercio electrónico se asignan automáticamente a variables XDM de Analytics. Siempre y cuando haya asignado a la aplicación adecuada `productListItem` Variable XDM al [configuración de un esquema XDM para Adobe Analytics](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics), el Edge Network de Platform se encarga de asignar los datos a las variables de análisis adecuadas.
 
 1. En primer lugar, valide que la variable `Product String` se ha establecido
 1. Buscar: `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL sku]`. La variable captura el valor del elemento de datos asignado al `productListItems.item1.sku` anteriormente en esta lección
@@ -505,7 +505,7 @@ Dado que ya se encuentra en una página de producto, este ejercicio sigue utiliz
 
    ![Cadena de producto de Analytics](assets/analytics-debugger-prodstring.png)
 
-El seguimiento de Edge trata `commerce` eventos de forma ligeramente diferente a `productList` dimensiones. No ve una variable de datos de contexto asignada de la misma manera que ve el nombre del producto asignado a `[!UICONTROL c.a.x.productlistitem.[0].name]` arriba. En su lugar, el seguimiento de Edge muestra la asignación automática del evento final en Analytics `event` variable. Platform Edge Network lo asigna en consecuencia, siempre y cuando se asigne al XDM adecuado `commerce` mientras que [configuración del esquema para Adobe Analytics](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics); en este caso, la variable `commerce.productViews.value=1`.
+El seguimiento de Edge trata `commerce` eventos de forma ligeramente diferente a `productList` dimensiones. No ve una variable de datos de contexto asignada de la misma manera que ve el nombre del producto asignado a `[!UICONTROL c.a.x.productlistitem.[0].name]` arriba. En su lugar, el seguimiento de Edge muestra la asignación automática del evento final en Analytics `event` variable. El Edge Network de plataforma lo asigna en consecuencia, siempre y cuando se asigne al XDM adecuado `commerce` mientras que [configuración del esquema para Adobe Analytics](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics); en este caso, la variable `commerce.productViews.value=1`.
 
 1. Vuelva a la ventana de Experience Platform Debugger y desplácese hacia abajo hasta el `[!UICONTROL event]` se establece en. `[!UICONTROL prodView]`
 

@@ -3,7 +3,7 @@ title: Conclusión y pasos siguientes
 description: Qué hacer a continuación después de completar el tutorial
 recommendations: display,noCatalog
 exl-id: bb0ef04d-fd01-4c24-8670-a84a9e33f1b6
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->Esperamos publicar cambios importantes en este tutorial el viernes 15 de marzo de 2024. Después de ese punto, muchos ejercicios cambiarán y es posible que tenga que reiniciar el tutorial desde el principio para completar todas las lecciones.
+>Esperamos publicar cambios importantes en este tutorial el martes 23 de abril de 2024. Después de ese punto, muchos ejercicios cambiarán y es posible que tenga que reiniciar el tutorial desde el principio para completar todas las lecciones.
 
 ¡Felicidades! Ha completado el tutorial &quot;Implementar Adobe Experience Cloud con SDK web&quot;.
 
@@ -24,14 +24,14 @@ Revisemos rápidamente todo lo que ha logrado. Tiene lo siguiente:
 * Se ha creado un esquema con grupos de campos estándar y personalizados.
 * Se ha configurado una secuencia de datos.
 * Se ha creado una propiedad de etiqueta.
-* Se han capturado campos de una capa de datos, se han transformado en XDM y se han enviado a Platform Edge Network.
+* Se han capturado campos de una capa de datos, se han transformado en XDM y se han enviado al Edge Network de Platform.
 * Consentimiento registrado e identidades autenticadas.
 * Se ha conectado la implementación del SDK web a las siguientes aplicaciones de Experience Cloud:
    * Adobe Experience Platform
    * Adobe Analytics
    * Adobe Audience Manager
    * Adobe Target
-* Se utiliza el reenvío de eventos para enviar datos de Platform Edge Network a un vínculo web.
+* Se utiliza el reenvío de eventos para enviar datos del Edge Network de Platform a un vínculo web.
 * Se ha validado la implementación con el Adobe Experience Platform Debugger.
 
 ¡Está listo para comenzar la siguiente fase de su recorrido: implementación de Adobe Experience Cloud en su propio sitio web!

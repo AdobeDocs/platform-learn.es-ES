@@ -2,32 +2,32 @@
 title: Transmitir datos a Adobe Experience Platform con SDK web
 description: Obtenga información sobre cómo transmitir datos web a Adobe Experience Platform con el SDK web. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '1600'
 ht-degree: 5%
 
 ---
 
-# Transmita datos a Experience Platform con el SDK web
+# Transmitir datos al Experience Platform con SDK web
 
 
 >[!CAUTION]
 >
->Esperamos publicar cambios importantes en este tutorial el viernes 15 de marzo de 2024. Después de ese punto, muchos ejercicios cambiarán y es posible que tenga que reiniciar el tutorial desde el principio para completar todas las lecciones.
+>Esperamos publicar cambios importantes en este tutorial el martes 23 de abril de 2024. Después de ese punto, muchos ejercicios cambiarán y es posible que tenga que reiniciar el tutorial desde el principio para completar todas las lecciones.
 
 Obtenga información sobre cómo transmitir datos web a Adobe Experience Platform con el SDK web de Platform.
 
 Experience Platform es la columna vertebral de todas las nuevas aplicaciones de Experience Cloud, como Adobe Real-time Customer Data Platform, Adobe Customer Journey Analytics y Adobe Journey Optimizer. Estas aplicaciones están diseñadas para utilizar el SDK web de Platform como método óptimo de recopilación de datos web.
 
-Experience Platform utiliza el mismo esquema XDM creado anteriormente para capturar datos de evento del sitio web de Luma. Cuando esos datos se envían a Platform Edge Network, la configuración del conjunto de datos puede reenviarlos al Experience Platform.
+Experience Platform utiliza el mismo esquema XDM creado anteriormente para capturar datos de evento del sitio web de Luma. Cuando esos datos se envían al Edge Network de Platform, la configuración del conjunto de datos puede reenviarlos al Experience Platform.
 
 ## Objetivos de aprendizaje
 
 Al final de esta lección, debe poder:
 
 * Crear un conjunto de datos en Adobe Experience Platform
-* Configure la secuencia de datos para enviar datos del SDK web a Adobe Experience Platform
+* Configuración de la secuencia de datos para enviar datos del SDK web a Adobe Experience Platform
 * Habilitar el streaming de datos web para el perfil del cliente en tiempo real
 * Validar que los datos hayan llegado tanto al conjunto de datos de Platform como al Perfil del cliente en tiempo real
 
@@ -81,7 +81,7 @@ Ahora hay configurado un conjunto de datos para empezar a recopilar datos de su 
 
 ## Configuración de la secuencia de datos
 
-Ahora puede configurar los [!UICONTROL secuencia de datos] para enviar datos a [!UICONTROL Adobe Experience Platform]. La secuencia de datos es el vínculo entre la propiedad de etiquetas, la red perimetral de Platform y el conjunto de datos del Experience Platform.
+Ahora puede configurar los [!UICONTROL secuencia de datos] para enviar datos a [!UICONTROL Adobe Experience Platform]. La secuencia de datos es el vínculo entre la propiedad de etiquetas, el Edge Network de Platform y el conjunto de datos del Experience Platform.
 
 1. Abra el [Recopilación de datos](https://experience.adobe.com/#/data-collection){target="blank"} interfaz
 1. Seleccionar **[!UICONTROL Datastreams]** desde la navegación izquierda

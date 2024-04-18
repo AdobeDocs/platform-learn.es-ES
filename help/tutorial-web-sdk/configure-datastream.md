@@ -3,7 +3,7 @@ title: Configuración de una secuencia de datos
 description: Obtenga información sobre cómo habilitar un flujo de datos y configurar soluciones de Experience Cloud. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK,Tags,Datastreams
 exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 5%
@@ -15,11 +15,11 @@ ht-degree: 5%
 
 >[!CAUTION]
 >
->Esperamos publicar cambios importantes en este tutorial el viernes 15 de marzo de 2024. Después de ese punto, muchos ejercicios cambiarán y es posible que tenga que reiniciar el tutorial desde el principio para completar todas las lecciones.
+>Esperamos publicar cambios importantes en este tutorial el martes 23 de abril de 2024. Después de ese punto, muchos ejercicios cambiarán y es posible que tenga que reiniciar el tutorial desde el principio para completar todas las lecciones.
 
 Obtenga información sobre cómo habilitar un flujo de datos y configurar soluciones de Experience Cloud.
 
-Las secuencias de datos indican a Adobe Experience Platform Edge Network dónde enviar los datos recopilados por el SDK web de Platform. En la configuración de flujos de datos, se habilitan las aplicaciones de Experience Cloud, la cuenta de Experience Platform y el reenvío de eventos. Consulte la [Aspectos básicos de configuración de una secuencia de datos](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=es) para obtener información más detallada.
+Las secuencias de datos indican al Edge Network de Adobe Experience Platform dónde enviar los datos recopilados por el SDK web de Platform. En la configuración de flujos de datos, se habilitan las aplicaciones de Experience Cloud, la cuenta de Experience Platform y el reenvío de eventos. Consulte la [Aspectos básicos de configuración de una secuencia de datos](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=es) para obtener información más detallada.
 
 ## Objetivos de aprendizaje
 
@@ -39,7 +39,7 @@ Antes de configurar la secuencia de datos, debe haber completado las siguientes 
 
 ## Crear un flujo de datos
 
-Ahora puede crear una secuencia de datos para indicar a Platform Edge Network dónde enviar los datos recopilados por el SDK web.
+Ahora puede crear un flujo de datos para indicar a Platform Edge Network dónde enviar los datos recopilados por el SDK web.
 
 **Para crear una secuencia de datos:**
 

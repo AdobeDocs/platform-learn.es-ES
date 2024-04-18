@@ -1,9 +1,9 @@
 ---
 title: Creación de una regla de etiqueta
-description: Obtenga información sobre cómo enviar un evento a la red perimetral de Platform con el objeto XDM mediante una regla de etiqueta. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
+description: Obtenga información sobre cómo enviar un evento al Edge Network de Platform con el objeto XDM mediante una regla de etiquetas. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Tags
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '871'
 ht-degree: 3%
@@ -15,9 +15,9 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->Esperamos publicar cambios importantes en este tutorial el viernes 15 de marzo de 2024. Después de ese punto, muchos ejercicios cambiarán y es posible que tenga que reiniciar el tutorial desde el principio para completar todas las lecciones.
+>Esperamos publicar cambios importantes en este tutorial el martes 23 de abril de 2024. Después de ese punto, muchos ejercicios cambiarán y es posible que tenga que reiniciar el tutorial desde el principio para completar todas las lecciones.
 
-Obtenga información sobre cómo enviar un evento a la red perimetral de Platform con el objeto XDM mediante una regla de etiqueta. Una regla de etiqueta es una combinación de eventos, condiciones y acciones que indica a la propiedad de etiqueta que haga algo.
+Obtenga información sobre cómo enviar un evento al Edge Network de Platform con el objeto XDM mediante una regla de etiquetas. Una regla de etiqueta es una combinación de eventos, condiciones y acciones que indica a la propiedad de etiqueta que haga algo.
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ donde;
 
 ## Crear regla de etiqueta
 
-En las etiquetas, las reglas se utilizan para ejecutar acciones (llamadas de activación) bajo varias condiciones. Utilizará esta primera regla para enviar el objeto XDM a la red perimetral mediante SDK web [!UICONTROL Enviar evento] acción. Más adelante en este tutorial, enviará diferentes versiones del objeto XDM en función del tipo de página en la que se encuentra el visitante. Por ese motivo, utilizará condiciones de regla para excluir esos otros tipos de páginas.
+En las etiquetas, las reglas se utilizan para ejecutar acciones (llamadas de activación) bajo varias condiciones. Utilizará esta primera regla para enviar el objeto XDM al Edge Network mediante SDK web [!UICONTROL Enviar evento] acción. Más adelante en este tutorial, enviará diferentes versiones del objeto XDM en función del tipo de página en la que se encuentra el visitante. Por ese motivo, utilizará condiciones de regla para excluir esos otros tipos de páginas.
 
 Para crear una regla de etiqueta:
 

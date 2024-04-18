@@ -3,7 +3,7 @@ title: Validación de implementaciones de SDK web con Experience Platform Debugg
 description: Obtenga información sobre cómo validar la implementación del SDK web de Platform con Adobe Experience Platform Debugger. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK,Tags,Debugger
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '1070'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->Esperamos publicar cambios importantes en este tutorial el viernes 15 de marzo de 2024. Después de ese punto, muchos ejercicios cambiarán y es posible que tenga que reiniciar el tutorial desde el principio para completar todas las lecciones.
+>Esperamos publicar cambios importantes en este tutorial el martes 23 de abril de 2024. Después de ese punto, muchos ejercicios cambiarán y es posible que tenga que reiniciar el tutorial desde el principio para completar todas las lecciones.
 
 Obtenga información sobre cómo validar la implementación del SDK web de Platform con Adobe Experience Platform Debugger.
 
@@ -37,7 +37,7 @@ Esta técnica se denomina cambio de entorno y será útil más adelante, cuando 
 Al final de esta lección, podrá utilizar Debugger para lo siguiente:
 
 * Cargar una biblioteca de etiquetas alternativa
-* Valide que el objeto XDM capture y envíe datos como se espera de Edge Network
+* Valide que el objeto XDM esté capturando y enviando datos como se espera del Edge Network
 
 ## Requisitos previos
 
@@ -87,7 +87,7 @@ A medida que continúe con el tutorial, utilizará esta técnica de asignación 
 
 ## Valide la implementación en Experience Platform Debugger.
 
-Puede utilizar Debugger para validar la implementación del SDK web de Platform y ver los datos enviados a Platform Edge Network:
+Puede utilizar Debugger para validar la implementación del SDK web de Platform y ver los datos enviados al Edge Network de Platform:
 
 1. Ir a **[!UICONTROL Resumen]** en el panel de navegación izquierdo, para ver los detalles de la propiedad de etiquetas
 
