@@ -3,9 +3,9 @@ title: Experience Makers Bootcamp
 description: Punto de partida para los participantes del Bootcamp de Experience Makers
 doc-type: multipage-overview
 exl-id: 400bd9f1-229c-4016-b06b-8fc033f7dbf2
-source-git-commit: 7ee17ab7d847b82dc56c91f552d79b24649a8c6a
+source-git-commit: 3a16967ead0bf86daaf69cf920586318a5866492
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '716'
 ht-degree: 1%
 
 ---
@@ -14,61 +14,24 @@ ht-degree: 1%
 
 ## Información general
 
-Muchas organizaciones no son conscientes de la fricción que existe en el recorrido de sus clientes, que es la consecuencia de un enfoque siloed y fragmentado en la orquestación de la comunicación con los clientes. Los datos, el perfil y el contenido deben estar perfectamente alineados para diseñar y ofrecer experiencias de cliente excepcionales.
+Muchas organizaciones no son conscientes de las fricciones que existen en el recorrido de sus clientes, lo que es consecuencia de un enfoque aislado y fragmentado en la orquestación de la comunicación con los clientes. Los datos, el perfil y el contenido deben estar perfectamente alineados para diseñar y ofrecer experiencias de cliente excepcionales.
 
 Únase a este bootcamp para conocer cómo un enfoque basado en plataformas puede ayudarle a obtener la información necesaria para identificar y eliminar los puntos de fricción para mejorar el recorrido de su cliente.
 
 La personalización a escala comienza con comprender qué se puede mejorar y una vista en tiempo real de su cliente es fundamental para ello. Las perspectivas conducen a la acción, lo que conduce a más perspectivas. El exclusivo enfoque de Adobe, centrado en la plataforma, le ofrece las herramientas necesarias no solo para impulsar el cambio tecnológico, sino también para afectar a su organización, a su equipo y a su capacidad para ofrecer una experiencia de cliente integral en lugar de una experiencia de cliente específica del canal.
+
+>[!VIDEO](https://video.tv.adobe.com/v/344962?quality=12&enable=on)
 
 ## Agenda
 
 ### Día 1
 
 
-9:30: Entrada
-
-10:00: Kickoff / Intro &amp; Bootcamp Challenge
-
-11:00: Personalización 1-1, búsqueda por fricción, silos, PDV de Adobe (pizarra)
-
-12:00: Descanso
-
-12:15: Desglose de la arquitectura de la solución (pizarra)
-
-13:00: Almuerzo
-
-14:00: Flujo de usuario 1: Tutorial de &quot;adquisición&quot; y análisis prácticos
-
-15:30: Descanso
-
-16:00: Registro e incorporación de Userflow 2
-
-17:30: Golfclinic &amp; Borrel
-
-19:30: Cena
+10:00: Kickoff 10:30: Demostración del Recorrido del cliente: arte de lo posible 11:00: 1-1 personalización, caza por fricción, silos, PDV de Adobe (pizarra) 11:45: Salto 12:00: Desglose de la arquitectura de las soluciones (pizarra electrónica) 13:00: Almuerzo 14:00: Registro e incorporación de Userflow 1: tutorial (por qué y cómo) 15:30: Salto 16:00: Flujo de usuario 2 Fusión física y digital: introducción y práctica/inmersión profunda 18:00: Salto 18:30: Caminar hasta el restaurante 19:00: Cena
 
 ### Día 2
 
-08:30: Sesión de desayuno: Introducción a la entrega basada en el Recorrido del usuario, Estructura del equipo, Registro de entregas pendientes
-
-09.45: Explicación de los flujos de datos de AEP a través de escenarios proactivos
-
-10.15: Fortalecer la privacidad: perspectivas sobre la gobernanza de datos con AEP
-
-10.45: Pausa
-
-12:00: Flujo de usuario 3 &quot;Fusión física y digital&quot;
-
-12.30: Comida
-
-13.30: Customer Journey Analytics - profundización
-
-14.15: Exploración de las últimas innovaciones en GenAI para AEP y versiones posteriores
-
-14.45: Convlusión y ajuste
-
-15.00: Bebidas y suspensión
-
+08:00: Desayuno 08:30: Introducción a la entrega basada en el Recorrido del usuario, estructura del equipo, retraso de entrega 09.45: Flujo de usuario 3 Fusión física y digital: Tutorial con ejercicio práctico 11.15: Salto 11.30: Los flujos de usuario terminan: 12:00: Grupo Presentations 12.30: Comida 13.30: Flujo de usuario 4: Análisis del cliente - profundización 14.30: Conclusión, resumen y pasos siguientes 15.00: Bebidas y suspensión
 
 ## Requisitos previos
 

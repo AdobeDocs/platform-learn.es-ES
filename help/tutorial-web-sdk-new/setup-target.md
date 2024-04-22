@@ -2,9 +2,9 @@
 title: Configuración de Adobe Target con el SDK web de Platform
 description: Obtenga información sobre cómo implementar Adobe Target mediante el SDK web de Platform. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 solution: Data Collection, Target
-source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
+source-git-commit: c57ad58f8ca145a01689a5d32b4ecb94cf169b2c
 workflow-type: tm+mt
-source-wordcount: '4264'
+source-wordcount: '4308'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,8 @@ Al final de esta lección, debe poder:
 
 * Obtenga información sobre cómo añadir el fragmento de preocultación del SDK web de Platform para evitar parpadeos al utilizar Target con códigos de incrustación de etiquetas asíncronos
 * Configuración de una secuencia de datos para habilitar la funcionalidad de Target
-* Procesar decisiones de personalización visuales cuando se carga la página (anteriormente denominado &quot;mbox global&quot;)
+* Procesar actividades del compositor de experiencias visuales
+* Procesar actividades del compositor de formularios
 * Pasar datos XDM a Target y comprender la asignación a parámetros de Target
 * Pasar datos personalizados a Target, como parámetros de perfil y de entidad
 * Validación de una implementación de Target con el SDK web de Platform
@@ -188,20 +189,22 @@ En primer lugar, debe comprender la terminología utilizada en las interfaces Ta
 * **Decisión de personalización**: acción que el servidor determina que debe aplicarse. Estas decisiones pueden basarse en los criterios de audiencia y en la priorización de actividades de Target.
 * **Proposición**: el resultado de las decisiones tomadas por el servidor que se entregan en la respuesta del SDK web de Platform. Por ejemplo, intercambiar una imagen de titular sería una propuesta.
 
-### Actualizar la regla de carga de página
+### Actualice el [!UICONTROL Enviar evento] acción
 
-Las decisiones de personalización visual de Target las entrega el SDK web de Platform, si Target está habilitado en la secuencia de datos. Sin embargo, _no se representan automáticamente_. Debe modificar la regla de carga de página global para habilitar el procesamiento automático.
+Las decisiones de personalización visual de Target las entrega el SDK web de Platform, si Target está habilitado en la secuencia de datos. Sin embargo, _no se representan automáticamente_. Debe actualizar el [!UICONTROL Enviar evento] acción para habilitar el procesamiento automático.
 
 1. En el [Recopilación de datos](https://experience.adobe.com/#/data-collection){target="blank"} , abra la propiedad de etiqueta que está utilizando para este tutorial
-1. Abra el `all pages - library load - AA & AT` regla
+1. Abra el `all pages - library loaded - send event - 50` regla
 1. Seleccione el `Adobe Experience Platform Web SDK - Send event` acción
 1. Activar **[!UICONTROL Procesar decisiones de personalización visuales]** con la casilla de verificación
 
    ![Habilitar el procesamiento de decisiones de personalización visual](assets/target-rule-enable-visual-decisions.png)
 
-1. En el **[!UICONTROL Anulaciones de configuración de secuencia de datos**] el **[!UICONTROL Token de propiedad de destino]** puede anularse como valor estático o con un elemento de datos. Solo los tokens de propiedad definidos en la variable [**Invalidaciones avanzadas de token de propiedad**](#advanced-pto) sección en **Configuración de flujo de datos** devolverá resultados.
-
-   ![Anular el token de propiedad](assets/target-property-token-ovrrides.png)
+<!--
+1. In the **[!UICONTROL Datastream configuration overrides**] the **[!UICONTROL Target Property Token]** can be overridden either as a static value or with a data element. Only property tokens defined in the [**Advanced Property Token Overrides**](#advanced-pto) section in **Datastream Configuration** will return results.
+   
+   ![Override the Property Token](assets/target-property-token-ovrrides.png)
+   -->
 
 1. Guarde los cambios y cree en la biblioteca.
 
@@ -222,7 +225,7 @@ Ahora que la parte de implementación básica ha finalizado, cree una actividad 
 >
 >Si utiliza Google Chrome como explorador, la variable [Extensión del Compositor de experiencias visuales (VEC) Helper](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html?lang=en) es necesario para cargar el sitio correctamente para editarlo en el VEC.
 
-1. Navegar a Target
+1. Vaya a la interfaz de Adobe Target.
 1. Cree una actividad de segmentación de experiencias (XT) usando la página de inicio de Luma para la URL de la actividad
 
    ![Crear una nueva actividad XT](assets/target-xt-create-activity.png)
@@ -267,7 +270,7 @@ Si configura una actividad de, debería ver el contenido representado en la pág
 
    ![Llamada de red en Adobe Experience Platform Debugger](assets/target-debugger-network.png)
 
-1. Observe que hay claves debajo de `query` > `personalization` y  `decisionScopes` tiene un valor de `__view__`. Este ámbito equivale al &quot;mbox global&quot; de Target. Esta llamada del SDK web de Platform solicitó decisiones a Target.
+1. Observe que hay claves debajo de `query` > `personalization` y  `decisionScopes` tiene un valor de `__view__`. Este ámbito es equivalente al de `target-global-mbox`. Esta llamada del SDK web de Platform solicitó decisiones a Target.
 
    ![`__view__` solicitud decisionScope](assets/target-debugger-view-scope.png)
 
@@ -278,13 +281,13 @@ Si configura una actividad de, debería ver el contenido representado en la pág
 
 ## Configurar y procesar un ámbito de decisión personalizado
 
-Los ámbitos de decisión personalizados (anteriormente conocidos como &quot;mboxes&quot;) se pueden utilizar para entregar contenido de HTML o JSON de forma estructurada mediante el Compositor de experiencias basadas en formularios de Target. El SDK web de Platform no procesa automáticamente el contenido entregado a uno de estos ámbitos personalizados.
+Los ámbitos de decisión personalizados (anteriormente conocidos como &quot;mboxes&quot;) se pueden utilizar para entregar contenido de HTML o JSON de forma estructurada mediante el Compositor de experiencias basadas en formularios de Target. El SDK web de Platform no procesa automáticamente el contenido entregado a uno de estos ámbitos personalizados. Se puede procesar con una acción en Etiquetas.
 
-### Agregar un ámbito a la regla de carga de página
+### Agregue un ámbito al [!UICONTROL Acción Enviar evento]
 
 Modifique la regla de carga de página para agregar un ámbito de decisión personalizado:
 
-1. Abra el `all pages - library load - AA & AT` regla
+1. Abra el `all pages - library loaded - send event - 50` regla
 1. Seleccione el `Adobe Experience Platform Web SDK - Send Event` acción
 1. Agregue uno o varios ámbitos que desee utilizar. Para este ejemplo, utilice `homepage-hero`.
 
@@ -383,9 +386,17 @@ Si ha activado su actividad, debería ver el procesamiento de contenido en la p�
 
    ![Impresión de actividad de Target](assets/target-debugger-activity-impression.png)
 
-## Paso de datos adicionales a Target
+## Envío de parámetros a Target
 
 En esta sección, se pasarán datos específicos de Target y se examinará más de cerca cómo se asignan los datos XDM a los parámetros de Target.
+
+### Parámetros de página (mbox) y XDM
+
+Todos los campos XDM se pasan automáticamente a Target como [parámetros de página](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/page) o parámetros de mbox.
+
+Algunos de estos campos XDM se asignarán a objetos especiales en el backend de Target. Por ejemplo, `web.webPageDetails.URL` estará disponible automáticamente para crear condiciones de segmentación basadas en URL o como `page.url` al crear scripts de perfil.
+
+### Parámetros especiales y el objeto de datos
 
 Existen algunos puntos de datos que pueden ser útiles para Target que no están asignados desde el objeto XDM. Estos parámetros especiales de Target incluyen:
 
@@ -394,9 +405,9 @@ Existen algunos puntos de datos que pueden ser útiles para Target que no están
 * [Parámetros reservados de Recommendations](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html?lang=en#pass-behavioral)
 * Valores de categoría para [afinidad de categoría](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/category-affinity.html?lang=en)
 
-### Crear elementos de datos para parámetros especiales de Target
+Estos parámetros deben enviarse en la variable `data` en lugar de en el `xdm` objeto. Además, los parámetros de página (o mbox) también se pueden incluir en `data` objeto.
 
-En primer lugar, utilice los elementos de datos creados en [Creación de elementos de datos](create-data-elements.md) lección para construir el `data` objeto que se utiliza para pasar datos que no son XDM:
+Para rellenar el objeto de datos, cree el siguiente elemento de datos y reutilice los elementos de datos creados en la variable [Creación de elementos de datos](create-data-elements.md) lección:
 
 * **`data.content`** mediante el siguiente código personalizado:
 
@@ -414,45 +425,54 @@ En primer lugar, utilice los elementos de datos creados en [Creación de element
   return data;
   ```
 
+
+
 ### Actualizar la regla de carga de página
 
 Para pasar datos adicionales para Target fuera del objeto XDM, es necesario actualizar las reglas aplicables. Para este ejemplo, la única modificación que debe realizar es incluir el nuevo **data.content** elemento de datos a la regla de carga de página genérica y a la regla de vista de página de producto.
 
-1. Abra el `all pages - library load - AA & AT` regla
+1. Abra el `all pages - library loaded - send event - 50` regla
 1. Seleccione el `Adobe Experience Platform Web SDK - Send event` acción
 1. Añada el `data.content` al campo Datos.
 
    ![Añadir datos de destino a la regla](assets/target-rule-data.png)
 
 1. Guarde los cambios y cree en la biblioteca.
-1. Repita los pasos del 1 al 4 para **vista de producto - carga de biblioteca - AA** regla
+1. Repita los pasos del 1 al 4 para **ecommerce: biblioteca cargada: establecer variables de detalles del producto - 20** regla
 
 >[!NOTE]
 >
 >El ejemplo anterior utiliza un `data` objeto que no se rellena completamente en todos los tipos de página. Las etiquetas gestionan correctamente esta situación y omiten las claves que tienen un valor indefinido. Por ejemplo, `entity.id` y `entity.name` no se pasaría en ninguna página aparte de los detalles del producto.
 
 
-## División de decisiones de personalización y eventos de recopilación de Analytics
+## División de solicitudes de Personalización y Analytics
 
-La capa de datos del sitio de Luma está completamente definida antes del código incrustado de etiquetas. Esto nos permite utilizar una sola llamada para recuperar contenido personalizado (por ejemplo, de Adobe Target) y enviar datos de análisis (por ejemplo, a Adobe Analytics). En muchos sitios web, la capa de datos no se puede cargar con la suficiente antelación o rapidez para que sea adecuada para su uso con aplicaciones de personalización. En esas situaciones, se pueden hacer dos `sendEvent` las llamadas de en una sola página se cargan y utilizan la primera para la personalización y la segunda para analytics. Desglosar las reglas de evento de esta manera permite que el evento de Target Decisioning se active lo antes posible. El evento de Analytics puede esperar hasta que se rellene el objeto de capa de datos. Se trata de implementaciones similares previas al SDK web, en las que Adobe Target activaría el `target-global-mbox` en la parte superior de la página y Adobe Analytics activaría el `s.t()` llamada de al final de la página
+La capa de datos del sitio de Luma está completamente definida antes del código incrustado de etiquetas. Esto nos permite utilizar una sola llamada para recuperar contenido personalizado (por ejemplo, de Adobe Target) y enviar datos de análisis (por ejemplo, a Adobe Analytics).
 
+Sin embargo, en muchos sitios web, la capa de datos no se puede cargar con la suficiente antelación o rapidez como para utilizar una sola llamada para ambas aplicaciones. En estas situaciones, puede utilizar dos [!UICONTROL Enviar evento] las acciones de una sola página se cargan y utilizan la primera para la personalización y la segunda para analytics. Dividir los eventos de esta manera permite que el evento de personalización se active lo antes posible, mientras se espera a que la capa de datos se cargue completamente antes de enviar el evento de Analytics. Esto es similar a muchas implementaciones de SDK previas a la web, en las que Adobe Target activaba el `target-global-mbox` en la parte superior de la página y Adobe Analytics activaría el `s.t()` llamada de al final de la página
 
-1. Cree una regla llamada `all pages - page top - request decisions`
-1. Añada un evento a la regla. Utilice el **Núcleo** y la extensión de **[!UICONTROL Library Loaded (Page Top)]** tipo de evento
-1. Añada una acción a la regla. Utilice el **SDK web de Adobe Experience Platform** extensión y **Enviar evento** tipo de acción
+Para crear la solicitud de personalización en la parte superior:
+
+1. Abra el `all pages - library loaded - send event - 50` regla
+1. Abra el **Enviar evento** acción
 1. Seleccionar **[!UICONTROL Uso de eventos guiados]** y luego seleccione **[!UICONTROL Solicitar personalización]**
 1. Esto bloquea el **Tipo** as **[!UICONTROL Recuperación de propuesta de decisión]**
 
    ![send_decision_request_alone](assets/target-decision-request.png)
 
-1. Al crear su `Adobe Analytics Send Event rule` use el **Estilo de evento guiado** seleccione la sección **[!UICONTROL Evento de la parte inferior de la página: recopilar análisis]** botón de opción
+Para crear la solicitud de análisis en la parte inferior:
+
+1. Cree una nueva regla llamada `all pages - page bottom - send event - 50`
+1. Añada un evento a la regla. Utilice el **Núcleo** y la extensión de **[!UICONTROL Page Bottom]** tipo de evento
+1. Añada una acción a la regla. Utilice el **SDK web de Adobe Experience Platform** extensión y **Enviar evento** tipo de acción
+1. Seleccionar **[!UICONTROL Uso de eventos guiados]** y luego seleccione **[!UICONTROL Recopilar análisis]**
 1. Esto bloquea el **[!UICONTROL Incluir notificaciones de visualización pendientes]** casilla de verificación seleccionada para que se envíe la notificación de visualización en cola de la solicitud de toma de decisiones.
 
 ![send_decision_request_alone](assets/target-aa-request-guided.png)
 
 >[!TIP]
 >
->Si el evento para el que está recuperando una propuesta de toma de decisiones no tiene un evento Adobe Analytics posterior, utilice el **Estilo de evento guiado** **[!UICONTROL Sin guía: mostrar todos los campos]**. Tendrá que seleccionar todas las opciones manualmente , pero la opción se desbloquea en **[!UICONTROL enviar automáticamente una notificación de visualización]** junto con su solicitud de captura.
+>Si el evento para el que está recuperando una propuesta de toma de decisiones no tiene un evento Adobe Analytics posterior, utilice el **Estilo de evento guiado** **[!UICONTROL Sin guía: mostrar todos los campos]**. Tendrá que seleccionar todas las opciones manualmente, pero la opción se desbloquea para **[!UICONTROL enviar automáticamente una notificación de visualización]** junto con su solicitud de captura.
 
 
 ### Validación con Debugger
@@ -507,7 +527,7 @@ Además, puede utilizar Assurance cuando corresponda para confirmar que las soli
 
 1. Seleccione el método de conexión, en este caso utilizaremos **[!UICONTROL copiar vínculo]**
 1. Copie el vínculo y péguelo en una nueva pestaña del explorador
-1. Clic **[!UICONTROL Listo]**
+1. Haga clic en **[!UICONTROL Listo]**.
 
    ![Validar en el vínculo de conexión de assurance mediante copia](assets/validate-in-assurance-copylink.png)
 

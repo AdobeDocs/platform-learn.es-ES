@@ -3,7 +3,7 @@ title: Creación de reglas de etiquetas
 description: Obtenga información sobre cómo enviar un evento al Edge Network de Platform con el objeto XDM mediante una regla de etiquetas. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Tags
 exl-id: c77ab8a1-922b-481e-b3cb-d2c5ca7bb8cb
-source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
+source-git-commit: 0220f5dbe8e34e92cf584380629ecc29a549dabd
 workflow-type: tm+mt
 source-wordcount: '2025'
 ht-degree: 1%
@@ -344,7 +344,7 @@ Ahora que ha establecido las variables, puede crear la regla para enviar el obje
 
 1. A la derecha, seleccione **[!UICONTROL Agregar regla]** para crear otra regla
 
-1. Asigne un nombre a la regla `all pages - library loaded - set send event - 50`.
+1. Asigne un nombre a la regla `all pages - library loaded - send event - 50`.
 
 1. En el **[!UICONTROL Eventos]** , seleccione **[!UICONTROL Añadir]**
 
