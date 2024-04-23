@@ -5,9 +5,9 @@ solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: c57ad58f8ca145a01689a5d32b4ecb94cf169b2c
+source-git-commit: 43eb66edecb9dce59dbb4995230181c9f2cbce5b
 workflow-type: tm+mt
-source-wordcount: '2587'
+source-wordcount: '2675'
 ht-degree: 0%
 
 ---
@@ -127,10 +127,29 @@ Este caso de uso le permite comprender mejor cómo Journey Optimizer puede ayuda
 
 ### Crear un esquema de fidelización e introducir datos de ejemplo
 
-Cuando los datos del SDK web se incorporan en Adobe Experience Platform, se pueden enriquecer con el resto de los datos que ha introducido. Cuando un usuario se autentica en el sitio de Luma y la identidad autenticada se envía a Platform, que representa una identidad en el sistema CRM de Luma. Se construye un gráfico de identidades en Experience Platform y en todos los demás conjuntos de datos habilitados para perfiles que también contienen identidades con `lumaCrmId` El área de nombres de se puede unir para crear perfiles de clientes en tiempo real. Crearemos rápidamente otro conjunto de datos en Adobe Experience Platform con algunos datos de fidelidad de muestra para poder demostrar cómo se pueden utilizar los perfiles de cliente en tiempo real en las campañas web de Journey Optimizer. Dado que ya ha realizado ejercicios similares, las instrucciones serán breves.
+Cuando los datos del SDK web se incorporan en Adobe Experience Platform, se pueden ampliar con otras fuentes de datos que haya introducido en Platform. Por ejemplo, cuando un usuario inicia sesión en el sitio de Luma, la variable `lumaCrmId` se envía a Platform, que representa una identidad en el sistema CRM de Luma. Se construye un gráfico de identidades en Experience Platform y todos los demás conjuntos de datos habilitados para perfiles pueden unirse para crear perfiles de cliente en tiempo real. Crearemos rápidamente otro conjunto de datos en Adobe Experience Platform con algunos datos de fidelidad de muestra para poder demostrar cómo se pueden utilizar los perfiles de cliente en tiempo real en las campañas web de Journey Optimizer. Dado que ya ha realizado ejercicios similares, las instrucciones serán breves.
 
+Para crear el esquema:
 
+1. Creación de un nuevo esquema
+1. Elegir **[!UICONTROL Perfil individual]** como el [!UICONTROL clase base]
+1. Asignar un nombre al esquema `Luma Loyalty Schema`
+1. Seleccione el `personID` el campo y la marca se muestran como una [!UICONTROL Identidad] y [!UICONTROL Identidad principal] uso del `Luma CRM Id` [!UICONTROL Área de nombres de identidad].
+1. Añada el [!UICONTROL Detalles de fidelización] grupo de campos
+1. Habilitar el esquema para [!UICONTROL Perfil]
 
+CAPTURA DE PANTALLA DEL ESQUEMA
+
+Para crear el conjunto de datos e introducir los datos de ejemplo:
+
+1. Cree un nuevo conjunto de datos a partir de `Luma Loyalty Schema`
+1. Asignar un nombre al conjunto de datos `Luma Loyalty Dataset`
+1. Habilitar el conjunto de datos para [!UICONTROL Perfil]
+1. Descargue el archivo de muestra LoyaltyWebSDK.json
+1. Arrastre y suelte el archivo en el conjunto de datos
+1. Confirme que los datos se han introducido correctamente.
+
+CAPTURA DE PANTALLA DEL CONJUNTO DE DATOS Y CONFIRMACIÓN
 
 ### Crear campaña de recompensas de fidelización
 

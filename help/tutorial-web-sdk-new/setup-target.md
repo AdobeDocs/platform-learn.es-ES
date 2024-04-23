@@ -2,9 +2,10 @@
 title: Configuración de Adobe Target con el SDK web de Platform
 description: Obtenga información sobre cómo implementar Adobe Target mediante el SDK web de Platform. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 solution: Data Collection, Target
-source-git-commit: c57ad58f8ca145a01689a5d32b4ecb94cf169b2c
+exl-id: 5bf95d05-a651-438e-a4f2-4b8f210d7f63
+source-git-commit: 6a741604cd2eb026600c2d4cb8c0ddcb15f64e3f
 workflow-type: tm+mt
-source-wordcount: '4308'
+source-wordcount: '4307'
 ht-degree: 0%
 
 ---
@@ -19,16 +20,16 @@ Obtenga información sobre cómo implementar Adobe Target mediante el SDK web de
 
 ## Objetivos de aprendizaje
 
-Al final de esta lección, debe poder:
+Al final de esta lección, debe poder hacer lo siguiente con una implementación de SDK web de Target:
 
-* Obtenga información sobre cómo añadir el fragmento de preocultación del SDK web de Platform para evitar parpadeos al utilizar Target con códigos de incrustación de etiquetas asíncronos
+* Añada el fragmento preocultado para evitar el parpadeo
 * Configuración de una secuencia de datos para habilitar la funcionalidad de Target
 * Procesar actividades del compositor de experiencias visuales
 * Procesar actividades del compositor de formularios
 * Pasar datos XDM a Target y comprender la asignación a parámetros de Target
 * Pasar datos personalizados a Target, como parámetros de perfil y de entidad
-* Validación de una implementación de Target con el SDK web de Platform
-* Envíe solicitudes de propuesta de Target por separado de las solicitudes de Adobe Analytics y resuelva sus eventos de visualización más adelante
+* Validar una implementación de Target.
+* Separar solicitudes de personalización de solicitudes de análisis
 
 >[!TIP]
 >
@@ -48,7 +49,7 @@ Para completar las lecciones de esta sección, primero debe:
    * [Uso del Compositor de experiencias basadas en formularios](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer.html)
    * [Crear actividades de segmentación de experiencias](https://experienceleague.adobe.com/docs/target-learn/tutorials/activities/create-experience-targeting-activities.html)
 
-## Añadir mitigación de parpadeo
+## Agregar control de parpadeo
 
 Antes de empezar, determine si se requiere una solución adicional de control de parpadeos en función de cómo se cargue la biblioteca de etiquetas.
 
@@ -59,7 +60,7 @@ Antes de empezar, determine si se requiere una solución adicional de control de
 
 ### Implementación asincrónica
 
-Cuando una biblioteca de etiquetas se carga de forma asíncrona, es posible que la página termine de procesarse antes de que Target haya realizado un intercambio de contenido. Este comportamiento puede llevar a lo que se conoce como &quot;parpadeo&quot;, en el que el contenido predeterminado aparece brevemente antes de ser reemplazado por el contenido personalizado especificado por Target. Si desea evitar este parpadeo, Adobe recomienda añadir un fragmento preocultado especial inmediatamente antes del código incrustado de etiqueta asincrónico de.
+Cuando una biblioteca de etiquetas se carga de forma asíncrona, es posible que la página termine de procesarse antes de que Target haya reemplazado el contenido predeterminado por contenido personalizado. Este comportamiento puede llevar a lo que se conoce como &quot;parpadeo&quot;, en el que el contenido predeterminado aparece brevemente antes de ser reemplazado por el contenido personalizado especificado por Target. Si desea evitar este parpadeo, Adobe recomienda añadir un fragmento preocultado especial inmediatamente antes del código incrustado de etiqueta asincrónico de.
 
 Este fragmento ya está presente en el sitio de Luma, pero echemos un vistazo más de cerca para comprender lo que hace este código:
 
@@ -181,7 +182,7 @@ Para los fines de este tutorial utilizando el sitio de Luma, utilice el símbolo
 
 ## Procesar decisiones de personalización visuales
 
-En primer lugar, debe comprender la terminología utilizada en las interfaces Target y etiquetas.
+Las decisiones de personalización visual hacen referencia a las experiencias creadas en el Compositor de experiencias visuales de Adobe Target. En primer lugar, debe comprender la terminología utilizada en las interfaces de Target y de etiquetas:
 
 * **Actividad**: un conjunto de experiencias dirigidas a una o más audiencias. Por ejemplo, una prueba A/B simple podría ser una actividad con dos experiencias.
 * **Experiencia**: conjunto de acciones dirigidas a una o más ubicaciones o ámbitos de decisión.
