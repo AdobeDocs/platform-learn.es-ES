@@ -3,7 +3,7 @@ title: Configuración de Adobe Target con el SDK web de Platform
 description: Obtenga información sobre cómo implementar Adobe Target mediante el SDK web de Platform. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 solution: Data Collection, Target
 exl-id: 5bf95d05-a651-438e-a4f2-4b8f210d7f63
-source-git-commit: 6a741604cd2eb026600c2d4cb8c0ddcb15f64e3f
+source-git-commit: c2bcd13a584fa88e91acd6d000b14595beb7dcdb
 workflow-type: tm+mt
 source-wordcount: '4307'
 ht-degree: 0%
@@ -547,7 +547,7 @@ Esto confirma que la información de A4T que se puso en cola para su posterior t
 
 Ahora que ha completado esta lección, debe tener una implementación en funcionamiento de Adobe Target mediante el SDK web de Platform.
 
-[Siguiente: ](setup-consent.md)
+[Siguiente: ](setup-web-channel.md)
 
 >[!NOTE]
 >
