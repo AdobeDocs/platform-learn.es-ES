@@ -3,7 +3,7 @@ title: Creación de identidades
 description: Obtenga información sobre cómo crear identidades en XDM y utilizar el elemento de datos del mapa de identidad para capturar los ID de usuario. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Tags
 exl-id: 7ca32dc8-dd86-48e0-8931-692bcbb2f446
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 1%
@@ -37,7 +37,7 @@ Comprenderá qué es una capa de datos y se familiarizará con el [Sitio de demo
 
 ## Experience Cloud ID
 
-El [ID DEL Experience Cloud (ECID)](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en) es un área de nombres de identidad compartida que se utiliza en las aplicaciones de Adobe Experience Platform y Adobe Experience Cloud. ECID proporciona la base para la identidad del cliente y es la identidad predeterminada para las propiedades digitales. Esto hace que ECID sea el identificador ideal para rastrear el comportamiento de usuarios no autenticados, ya que siempre está presente
+El [ID DEL Experience Cloud (ECID)](https://experienceleague.adobe.com/en/docs/experience-platform/identity/ecid) es un área de nombres de identidad compartida que se utiliza en las aplicaciones de Adobe Experience Platform y Adobe Experience Cloud. ECID proporciona la base para la identidad del cliente y es la identidad predeterminada para las propiedades digitales. Esto hace que ECID sea el identificador ideal para rastrear el comportamiento de usuarios no autenticados, ya que siempre está presente
 
 <!-- FYI I commented this out because it was breaking the build - Jack
 >[!TIP]
@@ -46,7 +46,7 @@ El [ID DEL Experience Cloud (ECID)](https://experienceleague.adobe.com/docs/expe
 >![View ECID](assets/validate-dev-console-ecid.png)
 -->
 
-Obtenga más información sobre cómo [El seguimiento de los ECID se realiza mediante el SDK web de Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=en).
+Obtenga más información sobre cómo [El seguimiento de los ECID se realiza mediante el SDK web de Platform](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview).
 
 Los ECID se configuran con una combinación de cookies de origen y Platform Edge Network. De forma predeterminada, el SDK web establece las cookies de origen del lado del cliente. Para tener en cuenta las restricciones del explorador sobre la duración de las cookies, puede optar por configurar sus propias cookies de origen del lado del servidor en su lugar. Estos se denominan ID de dispositivos de origen (FPID).
 
@@ -60,7 +60,7 @@ Los FPID son cookies de origen _configura utilizando sus propios servidores web_
 
 Una vez establecida una cookie FPID, su valor se puede recuperar y enviar al Adobe a medida que se recopilan los datos del evento. Los FPID recopilados se utilizan como semillas para generar ECID en Platform Edge Network, que siguen siendo los identificadores predeterminados en las aplicaciones de Adobe Experience Cloud.
 
-Aunque los FPID no se utilizan en este tutorial, se le recomienda utilizar FPID en su propia implementación del SDK web. Más información sobre [ID de dispositivos de origen en el SDK web de Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=es)
+Aunque los FPID no se utilizan en este tutorial, se le recomienda utilizar FPID en su propia implementación del SDK web. Más información sobre [ID de dispositivos de origen en el SDK web de Platform](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/first-party-device-ids)
 
 >[!CAUTION]
 >
@@ -70,7 +70,7 @@ Aunque los FPID no se utilizan en este tutorial, se le recomienda utilizar FPID 
 
 Como se ha indicado anteriormente, a todos los visitantes de las propiedades digitales se les asigna un ECID por Adobe al utilizar el SDK web de Platform. Esto hace que ECID sea la identidad predeterminada para rastrear comportamientos digitales no autenticados.
 
-También puede enviar un ID de usuario autenticado para que Platform pueda crear [Gráficos de identidad](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identifies/understanding-identity-and-identity-graphs.html?lang=es) y Target pueden establecer sus [ID de terceros](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html). Esto se realiza mediante el uso de [!UICONTROL Mapa de identidad] tipo de elemento de datos.
+También puede enviar un ID de usuario autenticado para que Platform pueda crear [Gráficos de identidad](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs) y Target pueden establecer sus [ID de terceros](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/3rd-party-id). Esto se realiza mediante el uso de [!UICONTROL Mapa de identidad] tipo de elemento de datos.
 
 Para crear el [!UICONTROL Mapa de identidad] elemento de datos:
 

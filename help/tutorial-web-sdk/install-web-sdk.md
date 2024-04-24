@@ -3,7 +3,7 @@ title: Instalación y configuración de la extensión de etiquetas del SDK web d
 description: Obtenga información sobre cómo instalar y configurar la extensión de etiqueta SDK web de Platform en la interfaz de recopilación de datos. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 12%
@@ -81,7 +81,7 @@ Ahora que ha instalado el SDK web de Platform y lo ha asociado al conjunto de da
 >
 >Aunque no configuró un CNAME en el [!UICONTROL Dominio de Edge] Al configurar en esta lección, Adobe recomienda utilizar un CNAME al implementar el SDK web de Platform en su propio sitio web. Aunque la implementación de CNAME no proporciona ningún beneficio en términos de vida útil de las cookies, puede haber otros beneficios. Estos beneficios incluyen bloqueadores de anuncios y exploradores menos comunes que impiden que se envíen datos a dominios que clasifican como rastreadores. En estos casos, el uso de un CNAME puede impedir que la recopilación de datos se interrumpa para los usuarios que utilizan estas herramientas.
 
-Para obtener más información sobre cada sección de la extensión, consulte [Configuración de la extensión SDK para web de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html?lang=es)
+Para obtener más información sobre cada sección de la extensión, consulte [Configuración de la extensión SDK para web de Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/web-sdk-extension-configuration)
 
 
 

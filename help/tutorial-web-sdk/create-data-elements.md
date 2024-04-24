@@ -3,7 +3,7 @@ title: Creación de elementos de datos
 description: Obtenga información sobre cómo crear un objeto XDM y asignarle elementos de datos en etiquetas. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1199'
 ht-degree: 1%
@@ -53,7 +53,7 @@ Existen varias formas de asignar datos de la capa de datos al XDM mediante la fu
 
 ### Implementación de XDM en la capa de datos
 
-Este método implica utilizar el objeto XDM completamente definido como estructura para la capa de datos. A continuación, asigne toda la capa de datos a un elemento de datos de objeto XDM en las etiquetas. Si la implementación no utiliza un administrador de etiquetas, este método puede ser ideal porque puede enviar datos a XDM directamente desde la aplicación utilizando [Comando sendEvent de XDM](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=en#sending-xdm-data). Si utiliza etiquetas, puede crear un elemento de datos de código personalizado que capture toda la capa de datos como un objeto JSON de paso al XDM. A continuación, asigne el JSON de paso a través al campo de objeto XDM en la acción Enviar evento.
+Este método implica utilizar el objeto XDM completamente definido como estructura para la capa de datos. A continuación, asigne toda la capa de datos a un elemento de datos de objeto XDM en las etiquetas. Si la implementación no utiliza un administrador de etiquetas, este método puede ser ideal porque puede enviar datos a XDM directamente desde la aplicación utilizando [Comando sendEvent de XDM](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). Si utiliza etiquetas, puede crear un elemento de datos de código personalizado que capture toda la capa de datos como un objeto JSON de paso al XDM. A continuación, asigne el JSON de paso a través al campo de objeto XDM en la acción Enviar evento.
 
 A continuación se muestra un ejemplo del aspecto que tendría la capa de datos al utilizar el formato de capa de datos del cliente de Adobe:
 
@@ -128,16 +128,16 @@ Este método implica la asignación de variables de capa de datos individuales U
 >
 > Capa de datos de Google
 > 
-> Si su organización ya utiliza Google Analytics y tiene el objeto dataLayer tradicional de Google en su sitio web, puede utilizar el complemento [Extensión de capa de datos Google](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/google-data-layer/overview.html?lang=en) en etiquetas. Esto le permite implementar la tecnología de Adobe más rápido sin tener que solicitar asistencia a su equipo de TI. La asignación de la capa de datos de Google a XDM seguiría los mismos pasos que se describen arriba.
+> Si su organización ya utiliza Google Analytics y tiene el objeto dataLayer tradicional de Google en su sitio web, puede utilizar el complemento [Extensión de capa de datos Google](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/google-data-layer/overview) en etiquetas. Esto le permite implementar la tecnología de Adobe más rápido sin tener que solicitar asistencia a su equipo de TI. La asignación de la capa de datos de Google a XDM seguiría los mismos pasos que se describen arriba.
 
 ### Asignar a XDM en el conjunto de datos
 
-Este método utiliza la funcionalidad integrada en la configuración de flujo de datos denominada [Preparación de datos para la recopilación de datos](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html) y omite la asignación de variables de capa de datos a XDM en etiquetas.
+Este método utiliza la funcionalidad integrada en la configuración de flujo de datos denominada [Preparación de datos para la recopilación de datos](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) y omite la asignación de variables de capa de datos a XDM en etiquetas.
 
 #### Pros
 
 * Flexible, ya que puede asignar variables individuales al XDM
-* Capacidad para [calcular nuevos valores](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html?lang=es) o [transformar tipos de datos](https://experienceleague.adobe.com/docs/experience-platform/data-prep/data-handling.html) de una capa de datos antes de pasar a XDM
+* Capacidad para [calcular nuevos valores](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) o [transformar tipos de datos](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) de una capa de datos antes de pasar a XDM
 * Aproveche una [IU de asignación](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) para asignar campos en los datos de origen a XDM con una IU de apuntar y hacer clic
 
 #### Contras

@@ -3,7 +3,7 @@ title: Configuración de una secuencia de datos
 description: Obtenga información sobre cómo habilitar un flujo de datos y configurar soluciones de Experience Cloud. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK,Datastreams
 exl-id: 20f770d1-eb0f-41a9-b451-4069a0a91fc4
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 4%
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 Obtenga información sobre cómo habilitar un conjunto de datos y configurar aplicaciones de Experience Cloud.
 
-Las secuencias de datos indican al Edge Network de Adobe Experience Platform dónde enviar los datos recopilados por el SDK web de Platform. En la configuración de flujos de datos, se habilitan las aplicaciones de Experience Cloud, la cuenta de Experience Platform y el reenvío de eventos. Consulte la [Aspectos básicos de configuración de una secuencia de datos](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=es) para obtener información más detallada.
+Las secuencias de datos indican al Edge Network de Adobe Experience Platform dónde enviar los datos recopilados por el SDK web de Platform. En la configuración de flujos de datos, se habilitan las aplicaciones de Experience Cloud, la cuenta de Experience Platform y el reenvío de eventos. Consulte la [Aspectos básicos de configuración de una secuencia de datos](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/datastreams) para obtener información más detallada.
 
 
 ![SDK web, flujos de datos y diagrama de Edge Network](assets/dc-websdk-datastreams.png)
@@ -72,7 +72,7 @@ La anulación de la configuración del flujo de datos es un proceso de dos pasos
 
 En el [Configuración de Adobe Analytics](setup-analytics.md) Esta lección explica cómo anular el grupo de informes de una página mediante la acción Enviar evento del SDK web de Platform.
 
-Consulte la [la configuración del flujo de datos anula la documentación](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overrides.html?lang=en) para obtener instrucciones detalladas sobre cómo anular las configuraciones de secuencia de datos.
+Consulte la [la configuración del flujo de datos anula la documentación](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides) para obtener instrucciones detalladas sobre cómo anular las configuraciones de secuencia de datos.
 
 Ya está listo para instalar la extensión del SDK web de Platform en su propiedad de etiquetas.
 

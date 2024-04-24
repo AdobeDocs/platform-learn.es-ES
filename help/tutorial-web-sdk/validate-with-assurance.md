@@ -3,7 +3,7 @@ title: Validación de implementaciones de SDK web con Experience Platform Assura
 description: Obtenga información sobre cómo validar la implementación del SDK web de Platform con Adobe Experience Platform Assurance. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK,Tags,Assurance
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 2%
@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # Validación de implementaciones de SDK web con Experience Platform Assurance
 
-Adobe Experience Platform Assurance es un producto de Adobe Experience Cloud que le ayuda a inspeccionar, probar, simular y validar cómo recopilar datos o servir experiencias. Más información sobre [Garantía de Adobe](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en).
+Adobe Experience Platform Assurance es un producto de Adobe Experience Cloud que le ayuda a inspeccionar, probar, simular y validar cómo recopilar datos o servir experiencias. Más información sobre [Garantía de Adobe](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home).
 
 
 ## Objetivos de aprendizaje

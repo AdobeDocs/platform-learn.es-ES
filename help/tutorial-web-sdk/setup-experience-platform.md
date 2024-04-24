@@ -2,7 +2,7 @@
 title: Transmitir datos a Adobe Experience Platform con SDK web
 description: Obtenga información sobre cómo transmitir datos web a Adobe Experience Platform con el SDK web. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1587'
 ht-degree: 4%
@@ -38,7 +38,7 @@ Para completar esta lección, primero debe:
 
 ## Crear un conjunto de datos
 
-Todos los datos que se incorporan correctamente a Adobe Experience Platform se conservan dentro del lago de datos como conjuntos de datos. A [conjunto de datos](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=en) es una construcción de almacenamiento y administración para una colección de datos, normalmente una tabla, que contiene un esquema (columnas) y campos (filas). Los conjuntos de datos también contienen metadatos que describen varios aspectos de los datos que almacenan.
+Todos los datos que se incorporan correctamente a Adobe Experience Platform se conservan dentro del lago de datos como conjuntos de datos. A [conjunto de datos](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) es una construcción de almacenamiento y administración para una colección de datos, normalmente una tabla, que contiene un esquema (columnas) y campos (filas). Los conjuntos de datos también contienen metadatos que describen varios aspectos de los datos que almacenan.
 
 Vamos a configurar un conjunto de datos para los datos de evento web de Luma:
 
@@ -140,7 +140,7 @@ Para confirmar que los datos han aterrizado en el lago de datos de Platform, una
 
 >[!INFO]
 >
->El servicio de consultas de Adobe Experience Platform es un método más robusto para validar datos en el lago, pero está fuera del ámbito de este tutorial. Para obtener más información, consulte [Exploración de datos](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/explore-data.html?lang=es) en la sección Tutoriales de Platform.
+>El servicio de consultas de Adobe Experience Platform es un método más robusto para validar datos en el lago, pero está fuera del ámbito de este tutorial. Para obtener más información, consulte [Exploración de datos](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) en la sección Tutoriales de Platform.
 
 
 ## Habilitar el conjunto de datos y el esquema para el perfil del cliente en tiempo real

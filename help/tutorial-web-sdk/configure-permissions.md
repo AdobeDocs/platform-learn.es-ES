@@ -2,7 +2,7 @@
 title: Configuración de permisos para el tutorial
 description: Obtenga información sobre cómo solicitar acceso al SDK web de Experience Platform y configurar los permisos necesarios para completar el tutorial Implementar Adobe Experience Cloud con SDK web.
 feature: Web SDK,Tags,Access Control
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 3%
@@ -15,7 +15,7 @@ Obtenga información sobre cómo solicitar acceso al SDK web de Experience Platf
 
 ## Recopilación de datos
 
-* Tener permiso para **[!UICONTROL Desarrollar]**, **[!UICONTROL Editar]**, **[!UICONTROL Aprobar]**, **[!UICONTROL Publish]**, **[!UICONTROL Administración de extensiones]**, **[!UICONTROL Administrar entornos]**, y **[!UICONTROL Administrar propiedades]**. Para obtener más información sobre los permisos de etiquetas, consulte [la documentación](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+* Tener permiso para **[!UICONTROL Desarrollar]**, **[!UICONTROL Editar]**, **[!UICONTROL Aprobar]**, **[!UICONTROL Publish]**, **[!UICONTROL Administración de extensiones]**, **[!UICONTROL Administrar entornos]**, y **[!UICONTROL Administrar propiedades]**. Para obtener más información sobre los permisos de etiquetas, consulte [la documentación](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions).
 * Si va a completar la lección opcional de reenvío de eventos, tenga una licencia de producto que incluya el reenvío de Edge y un elemento de permiso **[!UICONTROL Plataformas]** > **[!UICONTROL Edge]**
 
 ## Experience Platform
@@ -31,11 +31,11 @@ Estas funciones deben estar disponibles para todos los clientes de Experience Cl
    * Todos los elementos de permiso de **[!UICONTROL Administración de datos]**, y **[!UICONTROL Administración de perfiles]**:
 
 
-Para obtener más información sobre el control de acceso a la plataforma, consulte [la documentación](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=es).
+Para obtener más información sobre el control de acceso a la plataforma, consulte [la documentación](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home).
 
 ## Adobe Analytics
 
-Para la lección opcional de Adobe Analytics, debe tener [acceso de administrador a Configuración del grupo de informes, Reglas de procesamiento y Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=es)
+Para la lección opcional de Adobe Analytics, debe tener [acceso de administrador a Configuración del grupo de informes, Reglas de procesamiento y Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/home)
 
 ## Adobe Target
 
@@ -43,7 +43,7 @@ Para la lección opcional de Adobe Target, debe tener [Editor o aprobador](https
 
 ## Adobe Audience Manager
 
-* Para la lección opcional de Audience Manager, debe tener acceso para crear, leer y escribir características, segmentos y destinos. Para obtener más información, consulte el tutorial sobre [Control de acceso basado en roles de Audience Manager](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control.html?lang=en).
+* Para la lección opcional de Audience Manager, debe tener acceso para crear, leer y escribir características, segmentos y destinos. Para obtener más información, consulte el tutorial sobre [Control de acceso basado en roles de Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
 
 Ahora está listo para iniciar los pasos de configuración iniciales.
 

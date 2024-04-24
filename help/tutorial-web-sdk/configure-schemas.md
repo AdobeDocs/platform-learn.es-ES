@@ -3,7 +3,7 @@ title: Creación de un esquema XDM para datos web
 description: Obtenga información sobre cómo crear un esquema XDM para datos web en la interfaz de recopilación de datos. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK,Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 1%
@@ -53,7 +53,7 @@ Este es el objetivo del Adobe [Modelo de datos de experiencia](https://business.
 >
 > Con fines de demostración, los ejercicios de esta lección crean un esquema de ejemplo para capturar el contenido visualizado y los productos comprados por los clientes en [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Aunque puede utilizar estos pasos para crear un esquema diferente para sus propios fines, se recomienda seguir primero junto con la creación del esquema de ejemplo para conocer las capacidades del editor de esquemas.
 
-Para obtener más información sobre los esquemas XDM, siga el curso [Modelar los datos de la experiencia del cliente con XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=es) o consulte la [Información general del sistema XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=es).
+Para obtener más información sobre los esquemas XDM, siga el curso [Modelar los datos de la experiencia del cliente con XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=es) o consulte la [Información general del sistema XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home).
 
 ## Objetivos de aprendizaje
 
@@ -69,7 +69,7 @@ Todos los permisos de usuario y aprovisionamiento necesarios para la recopilaci�
 
 ## Creación de un esquema XDM
 
-Los esquemas XDM son la forma estándar de describir los datos en Experience Platform, lo que permite reutilizar todos los datos que se ajustan a los esquemas en una organización sin conflictos o incluso compartirlos entre varias organizaciones. Para obtener más información, consulte la [conceptos básicos de composición de esquemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=es).
+Los esquemas XDM son la forma estándar de describir los datos en Experience Platform, lo que permite reutilizar todos los datos que se ajustan a los esquemas en una organización sin conflictos o incluso compartirlos entre varias organizaciones. Para obtener más información, consulte la [conceptos básicos de composición de esquemas](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition).
 
 En este ejercicio, creará un esquema XDM utilizando los grupos de campos de línea de base recomendados para capturar datos de evento web en el [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}:
 
@@ -102,9 +102,9 @@ En este ejercicio, creará un esquema XDM utilizando los grupos de campos de lí
 
 ## Adición de grupos de campos
 
-Como se ha indicado anteriormente, XDM es el marco principal que estandariza los datos de experiencia del cliente al proporcionar estructuras y definiciones comunes para su uso en servicios de Adobe Experience Platform descendentes. Al cumplir con los estándares XDM, _todos los datos de experiencia del cliente_ pueden incorporarse en una representación común. Este método le permite obtener información valiosa de las acciones de los clientes, definir las audiencias de los clientes mediante segmentos y expresar los atributos del cliente con fines de personalización mediante datos de varias fuentes. Consulte [Prácticas recomendadas para el modelado de datos](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en) para obtener más información.
+Como se ha indicado anteriormente, XDM es el marco principal que estandariza los datos de experiencia del cliente al proporcionar estructuras y definiciones comunes para su uso en servicios de Adobe Experience Platform descendentes. Al cumplir con los estándares XDM, _todos los datos de experiencia del cliente_ pueden incorporarse en una representación común. Este método le permite obtener información valiosa de las acciones de los clientes, definir las audiencias de los clientes mediante segmentos y expresar los atributos del cliente con fines de personalización mediante datos de varias fuentes. Consulte [Prácticas recomendadas para el modelado de datos](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/best-practices) para obtener más información.
 
-Cuando sea posible, se recomienda utilizar grupos de campos existentes y adherirse a un modelo independiente del producto y a las convenciones de nomenclatura. Puede crear un grupo de campos personalizado para cualquier dato específico de su organización que no se ajuste a los grupos de campos predefinidos anteriores. Consulte [Creación de un esquema con el Editor de esquemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=en#create) para ver pasos más detallados sobre esquemas personalizados.
+Cuando sea posible, se recomienda utilizar grupos de campos existentes y adherirse a un modelo independiente del producto y a las convenciones de nomenclatura. Puede crear un grupo de campos personalizado para cualquier dato específico de su organización que no se ajuste a los grupos de campos predefinidos anteriores. Consulte [Creación de un esquema con el Editor de esquemas](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#create) para ver pasos más detallados sobre esquemas personalizados.
 
 >[!TIP]
 > 
@@ -129,7 +129,7 @@ Con ambos grupos de campos, observe que tiene acceso a los pares de clave-valor 
 
 ![Grupos de campos de esquema](assets/schema-consumer-experience-event.png)
 
-Esta lección es solo un punto de partida. Al crear su propio esquema de eventos web, debe explorar y documentar los requisitos empresariales. Este proceso es similar a la creación de un [Documento de requisitos empresariales](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-a-business-requirements-document.html?lang=es) y [Referencia de diseño de solución](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html) para una implementación de Adobe Analytics, pero debe incluir requisitos para _todos los destinatarios de datos descendentes_ como destinos de plataforma, Target y reenvío de eventos.
+Esta lección es solo un punto de partida. Al crear su propio esquema de eventos web, debe explorar y documentar los requisitos empresariales. Este proceso es similar a la creación de un [Documento de requisitos empresariales](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-a-business-requirements-document) y [Referencia de diseño de solución](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr) para una implementación de Adobe Analytics, pero debe incluir requisitos para _todos los destinatarios de datos descendentes_ como destinos de plataforma, Target y reenvío de eventos.
 
 
 ### El objeto identityMap
@@ -143,7 +143,7 @@ Es un objeto que se debe tener para cualquier recopilación de datos relacionado
 
 >[!IMPORTANT]
 >
-> Es posible activar **[!UICONTROL Perfil]** para un esquema antes de guardar el esquema. **No hacer** habilitarlo en este punto. Una vez que un esquema está habilitado para el perfil, no se puede deshabilitar ni eliminar. Los campos no se pueden eliminar de los esquemas en este punto, aunque es posible [Campos obsoletos en la IU](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/field-deprecation-ui.html?lang=en#deprecate). Estas implicaciones son importantes que se deben tener en cuenta más adelante cuando trabaje con sus propios datos en el entorno de producción.
+> Es posible activar **[!UICONTROL Perfil]** para un esquema antes de guardar el esquema. **No hacer** habilitarlo en este punto. Una vez que un esquema está habilitado para el perfil, no se puede deshabilitar ni eliminar. Los campos no se pueden eliminar de los esquemas en este punto, aunque es posible [Campos obsoletos en la IU](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate). Estas implicaciones son importantes que se deben tener en cuenta más adelante cuando trabaje con sus propios datos en el entorno de producción.
 >
 >
 >Esta configuración se analiza más en la [Experience Platform de instalación](setup-experience-platform.md) lección.

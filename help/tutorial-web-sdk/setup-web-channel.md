@@ -5,7 +5,7 @@ solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '2885'
 ht-degree: 0%
@@ -249,7 +249,7 @@ Para crear el experimento de contenido:
 
 1. También puede elegir **[!UICONTROL Distribuir uniformemente]**. Marque esta opción para asegurarse de que las divisiones de tratamiento siempre se dividen uniformemente.
 
-[Obtenga más información acerca de los experimentos de contenido en el canal web de Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/get-started-experiment.html?lang=en).
+[Obtenga más información acerca de los experimentos de contenido en el canal web de Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/content-experiment/get-started-experiment).
 
 ### Editar contenido con el Asistente visual
 
@@ -350,7 +350,7 @@ La extensión de Adobe Experience Platform Debugger, disponible tanto para Chrom
 
 Puede utilizar el depurador del sitio de Luma para validar la experiencia del canal web en producción. Esta es una práctica recomendada una vez que el caso de uso de las Recompensas de fidelidad está en funcionamiento, para garantizar que todo esté configurado correctamente.
 
-[Obtenga información sobre cómo configurar Debugger en el explorador mediante la guía aquí](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=en).
+[Obtenga información sobre cómo configurar Debugger en el explorador mediante la guía aquí](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
 Para iniciar la validación con el depurador:
 

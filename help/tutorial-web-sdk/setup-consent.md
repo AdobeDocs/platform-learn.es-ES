@@ -3,7 +3,7 @@ title: Configuración del consentimiento con el SDK web de Platform
 description: Obtenga información sobre cómo establecer la configuración de privacidad de la extensión de etiquetas de SDK web de Experience Platform. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK,Tags,Consent
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1602'
 ht-degree: 0%
@@ -215,10 +215,10 @@ Una vez que haya establecido esta regla, la recopilación de eventos debe comenz
 ![Opción de visitante de publicación de consentimiento](assets/consent-post-user-optin.png)
 
 
-Para obtener más información sobre el consentimiento en el SDK web, consulte [Compatibilidad con preferencias de consentimiento del cliente](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=en).
+Para obtener más información sobre el consentimiento en el SDK web, consulte [Compatibilidad con preferencias de consentimiento del cliente](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
 
 
-Para obtener más información sobre [!UICONTROL Definir consentimiento] acción, consulte [Definir consentimiento](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/action-types.html?lang=en#set-consent).
+Para obtener más información sobre [!UICONTROL Definir consentimiento] acción, consulte [Definir consentimiento](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/action-types#set-consent).
 
 [Siguiente: ](setup-event-forwarding.md)
 
