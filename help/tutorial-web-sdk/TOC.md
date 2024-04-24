@@ -7,34 +7,39 @@ role: Data Engineer, Developer
 level: Beginner,Intermediate
 jira: KT-6953
 recommendations: noDisplay,noCatalog
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+index: false
+hide: true
+source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
 workflow-type: tm+mt
-source-wordcount: '81'
-ht-degree: 41%
+source-wordcount: '95'
+ht-degree: 27%
 
 ---
 
 
-# Tutorial de implementación de Adobe Experience Cloud con SDK web. {#implement-web-sdk}
+# Tutorial de implementación de Adobe Experience Cloud con SDK web. {#implement-web-sdk-new}
 
 + [Información general del tutorial](overview.md)
 + Configuración inicial {#initial-configuration}
-   + [Configure los permisos](configure-permissions.md)
    + [Configuración de un esquema XDM](configure-schemas.md)
    + [Configuración de un área de nombres de identidad](configure-identities.md)
-   + [Configurar una secuencia de datos](configure-datastream.md)
+   + [Configuración de una secuencia de datos](configure-datastream.md)
 
 + Configuración de etiquetas {#tags-configuration}
-   + [Instalación de la extensión del SDK web](install-web-sdk.md)
+   + [Instalar extensión de SDK web](install-web-sdk.md)
    + [Creación de elementos de datos](create-data-elements.md)
-   + [Creación de una regla de etiqueta](create-tag-rule.md)
+   + [Creación de identidades](create-identities.md)
+   + [Creación de reglas de etiquetas](create-tag-rule.md)
    + [Validar con Debugger](validate-with-debugger.md)
+   + [Validar con Assurance](validate-with-assurance.md)
 
 + Configuración de aplicaciones {#applications-setup}
    + [Configurar Experience Platform](setup-experience-platform.md)
    + [Configuración de Adobe Analytics](setup-analytics.md)
    + [Configurar Audience Manager](setup-audience-manager.md)
    + [Configurar Target](setup-target.md)
+   + [Configuración del canal web de Journey Optimizer](setup-web-channel.md)
+   + [Configuración de Journey Optimizer Decision Management](setup-decision-management.md)
 
 + Gestión del consentimiento {#consent-management}
    + [Configuración del consentimiento](setup-consent.md)

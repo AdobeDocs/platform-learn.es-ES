@@ -3,24 +3,20 @@ title: Configuración del Audience Manager con el SDK web de Platform
 description: Obtenga información sobre cómo configurar Adobe Audience Manager mediante el SDK web de Platform y validar la implementación mediante un destino de cookie. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 solution: Data Collection, Audience Manager
 exl-id: 45db48e9-73cf-4a9c-88f4-b5872a8224d3
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
 workflow-type: tm+mt
-source-wordcount: '1368'
+source-wordcount: '1337'
 ht-degree: 1%
 
 ---
 
 # Configuración del Audience Manager con el SDK web de Platform
 
-
->[!CAUTION]
->
->Esperamos publicar cambios importantes en este tutorial el martes 23 de abril de 2024. Después de ese punto, muchos ejercicios cambiarán y es posible que tenga que reiniciar el tutorial desde el principio para completar todas las lecciones.
-
 Obtenga información sobre cómo configurar Adobe Audience Manager mediante el SDK web de Platform y validar la implementación mediante un destino de cookie.
 
 [Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager.html?lang=es) es la solución de Adobe Experience Cloud que proporciona todo lo necesario para recopilar información relevante desde el punto de vista comercial acerca de los visitantes del sitio, crear segmentos comercializables y ofrecer contenido y publicidad segmentada a la audiencia adecuada.
 
+![Diagrama del SDK web y Adobe Audience Manager](assets/dc-websdk-aam.png)
 
 ## Objetivos de aprendizaje
 
@@ -43,9 +39,9 @@ La implementación del Audience Manager mediante el SDK web de Platform difiere 
 
 1. Ir a [Recopilación de datos](https://experience.adobe.com/#/data-collection){target="blank"} interfaz
 1. En el panel de navegación izquierdo, seleccione **[!UICONTROL Datastreams]**
-1. Seleccione el creado anteriormente `Luma Web SDK` secuencia de datos
+1. Seleccione el creado anteriormente `Luma Web SDK: Development Environment` secuencia de datos
 
-   ![Seleccione la secuencia de datos del SDK web de Luma](assets/datastream-luma-web-sdk.png)
+   ![Seleccione la secuencia de datos del SDK web de Luma](assets/datastream-luma-web-sdk-development.png)
 
 1. Seleccionar **[!UICONTROL Añadir servicio]**
    ![Añadir un servicio al conjunto de datos](assets/aam-datastream-addService.png)
@@ -65,7 +61,7 @@ A continuación, cree un [Fuente de datos](https://experienceleague.adobe.com/do
 
    ![Fuentes de datos del Audience Manager de Adobe Experience Platform](assets/data-sources-list.jpg)
 
-1. Asigne a la fuente de datos un nombre descriptivo y una descripción. Para la configuración inicial, puede nombrar esto`Platform Web SDK tutorial`.
+1. Asigne a la fuente de datos un nombre descriptivo y una descripción. Para la configuración inicial, puede nombrar esto `Platform Web SDK tutorial`.
 1. Establecer **[!UICONTROL Tipo de ID]** hasta **[!UICONTROL Cookie]**
 1. En el **[!UICONTROL Controles de exportación de datos]** , seleccione **[!UICONTROL Sin restricciones]**
 
@@ -91,7 +87,7 @@ Una vez guardada la fuente de datos, configure un [rasgo](https://experienceleag
 1. Seleccione el **[!UICONTROL Fuente de datos]** que creó en la sección anterior.
 1. **[!UICONTROL Seleccionar una carpeta]** en el que se guarda el rasgo en el panel de la derecha. Es posible que desee crear una carpeta **selección del icono +** junto a una carpeta principal existente. Puede asignar un nombre a esta nueva carpeta `Platform Web SDK tutorial`.
 1. Expanda el **[!UICONTROL Expresión de rasgo]** y seleccione. **[!UICONTROL Generador de expresiones]** Debe proporcionar un par de valor clave que signifique una visita a la página principal.
-1. Abra el [Página principal de Luma](https://luma.enablementadobe.com/content/luma/us/en.html) (asignado a su propiedad de etiquetas) y el **Platform Web SDK Debugger** y actualice la página.
+1. Abra el [Página principal de Luma](https://luma.enablementadobe.com/content/luma/us/en.html) (asignado a su propiedad de etiquetas) y el **Adobe Experience Platform Debugger** y actualice la página.
 1. Consulte las Solicitudes de red y los detalles del evento para el SDK web de Platform para encontrar la clave y el valor del nombre para la página principal.
    ![Datos XDM del Audience Manager de Adobe Experience Platform](assets/xdm-keyvalue.jpg)
 1. Vuelva al Generador de expresiones en la interfaz de usuario de Audience Manager e introduzca la clave como **`web.webPageDetails.name`** y el valor de **`content:luma:us:en`**. Este paso garantiza que active una característica cada vez que cargue la página principal.
@@ -106,7 +102,8 @@ El siguiente paso es crear una **segmento** y asigne el rasgo recién definido a
 1. Seleccionar **[!UICONTROL Añadir nuevo]** en la parte superior izquierda de la página para abrir el generador de segmentos
 1. Asigne a su segmento un nombre descriptivo y una descripción, como `Platform Web SDK - Homepage visitors`
 1. **[!UICONTROL Seleccionar una carpeta]** dónde se guardará el segmento en el panel situado a la derecha. Es posible que desee crear una carpeta **selección del icono +** junto a una carpeta principal existente. Puede asignar un nombre a esta nueva carpeta `Platform Web SDK tutorial`.
-1. Añada un código de integración, que en este caso es un conjunto aleatorio de números. 1. En el **[!UICONTROL Fuente de datos]** , seleccione **[!UICONTROL Audience Manager]** y la fuente de datos que creó anteriormente
+1. Añada un código de integración, que en este caso es un conjunto aleatorio de números.
+1. En el **[!UICONTROL Fuente de datos]** , seleccione **[!UICONTROL Audience Manager]** y la fuente de datos que creó anteriormente
 1. Expanda el **[!UICONTROL Características]** y busque el rasgo que ha creado
 1. Seleccionar **[!UICONTROL Agregar característica]**.
 1. Seleccionar **[!UICONTROL Guardar]** al final de la página

@@ -2,20 +2,14 @@
 title: Configuración de permisos para el tutorial
 description: Obtenga información sobre cómo solicitar acceso al SDK web de Experience Platform y configurar los permisos necesarios para completar el tutorial Implementar Adobe Experience Cloud con SDK web.
 feature: Web SDK,Tags,Access Control
-exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '367'
 ht-degree: 3%
 
 ---
 
 # Configuración de permisos para el tutorial
-
-
->[!CAUTION]
->
->Esperamos publicar cambios importantes en este tutorial el martes 23 de abril de 2024. Después de ese punto, muchos ejercicios cambiarán y es posible que tenga que reiniciar el tutorial desde el principio para completar todas las lecciones.
 
 Obtenga información sobre cómo solicitar acceso al SDK web de Experience Platform y configurar los permisos necesarios para completar este tutorial. Para implementar el SDK web de Platform mediante etiquetas en la interfaz de recopilación de datos, debe tener configurados los permisos de usuario adecuados en [Admin Console](https://adminconsole.adobe.com).
 
@@ -29,9 +23,9 @@ Obtenga información sobre cómo solicitar acceso al SDK web de Experience Platf
 Estas funciones deben estar disponibles para todos los clientes de Experience Cloud, incluso si no es cliente de una aplicación basada en Platform como Real-Time CDP.
 
 * Acceso a la **producción predeterminada**, **&quot;Prod&quot;** zona protegida.
-* Acceso a **[!UICONTROL Administrar esquemas]** y **[!UICONTROL Esquemas de vista]** bajo **[!UICONTROL Modelado de datos]**
-* Acceso a **[!UICONTROL Administrar áreas de nombres de identidad]** y **[!UICONTROL Ver áreas de nombres de identidad]** bajo **[!UICONTROL Identity Management]**
-* Acceso a **[!UICONTROL Administrar flujos de datos]** y **[!UICONTROL Ver flujos de datos]** bajo **[!UICONTROL Recopilación de datos]**
+* Acceso a **[!UICONTROL Administrar esquemas]** y **[!UICONTROL Esquemas de vista]** bajo **[!UICONTROL Modelado de datos]**.
+* Acceso a **[!UICONTROL Administrar áreas de nombres de identidad]** y **[!UICONTROL Ver áreas de nombres de identidad]** bajo **[!UICONTROL Identity Management]**.
+* Acceso a **[!UICONTROL Administrar flujos de datos]** y **[!UICONTROL Ver flujos de datos]** bajo **[!UICONTROL Recopilación de datos]**.
 * Si es cliente de una aplicación basada en Platform y va a completar el [Configurar Experience Platform](setup-experience-platform.md) lección, también debe tener:
    * Acceso a un **desarrollo** zona protegida.
    * Todos los elementos de permiso de **[!UICONTROL Administración de datos]**, y **[!UICONTROL Administración de perfiles]**:

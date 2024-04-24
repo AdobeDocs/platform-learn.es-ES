@@ -3,25 +3,20 @@ title: Configuración del consentimiento con el SDK web de Platform
 description: Obtenga información sobre cómo establecer la configuración de privacidad de la extensión de etiquetas de SDK web de Experience Platform. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK,Tags,Consent
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
 workflow-type: tm+mt
-source-wordcount: '1640'
+source-wordcount: '1602'
 ht-degree: 0%
 
 ---
 
 # Configuración del consentimiento con el SDK web de Platform
 
-
->[!CAUTION]
->
->Esperamos publicar cambios importantes en este tutorial el martes 23 de abril de 2024. Después de ese punto, muchos ejercicios cambiarán y es posible que tenga que reiniciar el tutorial desde el principio para completar todas las lecciones.
-
 Obtenga información sobre cómo establecer la configuración de privacidad de la extensión de etiquetas de SDK web de Experience Platform. Establezca el consentimiento en función de la interacción del visitante con un titular de una plataforma de administración de consentimiento (CMP).
 
 >[!NOTE]
 > 
->Para fines de demostración, este tutorial utiliza [Klaro](https://heyklaro.com/){target="_blank"} como CMP. Puede seguir a través de Klaro o el CMP que use con su sitio web.
+>Para fines de demostración, este tutorial utiliza [Klaro](https://heyklaro.com/) como CMP. Puede seguir a través de Klaro o el CMP que use con su sitio web.
 
 
 ## Objetivos de aprendizaje
@@ -69,7 +64,7 @@ Antes de ir a las configuraciones de etiquetas, obtenga más información acerca
 >La práctica recomendada para implementar una plataforma de administración de consentimiento es cargar la CMP _antes_ cargando el administrador de etiquetas. Para facilitar este tutorial, cargará el CMP _con_ el administrador de etiquetas. Esta lección está diseñada para mostrarle cómo utilizar las funciones de consentimiento del SDK web de Platform y no debe utilizarse como guía para configurar correctamente Klaro o cualquier otra CMP.
 
 
-Ahora, una vez que haya terminado con las configuraciones de Klaro, cree una regla de etiqueta con las siguientes configuraciones:
+Ahora, una vez que haya terminado con las configuraciones de Klaro, cree reglas de etiquetas con las siguientes configuraciones:
 
 * [!UICONTROL Nombre]: `all pages - library load - Klaro`
 * [!UICONTROL Evento]: [!UICONTROL Library Loaded (Page Top)] con [!UICONTROL Opciones avanzadas] > [!UICONTROL Pedido] establezca en 1

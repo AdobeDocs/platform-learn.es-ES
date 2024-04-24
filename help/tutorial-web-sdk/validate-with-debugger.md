@@ -3,19 +3,14 @@ title: Validación de implementaciones de SDK web con Experience Platform Debugg
 description: Obtenga información sobre cómo validar la implementación del SDK web de Platform con Adobe Experience Platform Debugger. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK,Tags,Debugger
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
 workflow-type: tm+mt
-source-wordcount: '1070'
-ht-degree: 2%
+source-wordcount: '1206'
+ht-degree: 1%
 
 ---
 
 # Validación de implementaciones de SDK web con Experience Platform Debugger
-
-
->[!CAUTION]
->
->Esperamos publicar cambios importantes en este tutorial el martes 23 de abril de 2024. Después de ese punto, muchos ejercicios cambiarán y es posible que tenga que reiniciar el tutorial desde el principio para completar todas las lecciones.
 
 Obtenga información sobre cómo validar la implementación del SDK web de Platform con Adobe Experience Platform Debugger.
 
@@ -28,7 +23,7 @@ Si nunca antes ha utilizado Debugger (y este es diferente del antiguo Adobe Expe
 
 >[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
 
-En esta lección, debe usar el [extensión de Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) para reemplazar la propiedad de etiqueta codificada en la variable [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html) con su propia propiedad.
+En esta lección, se usa el [Extensión de Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) para reemplazar la propiedad de etiqueta codificada en la variable [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html) con su propia propiedad.
 
 Esta técnica se denomina cambio de entorno y será útil más adelante, cuando trabaje con etiquetas en su propio sitio web. Puede cargar el sitio web de producción en su explorador, pero con su *desarrollo* entorno de etiquetas. Esta capacidad permite realizar y validar cambios de etiquetas con seguridad en de forma independiente de las revisiones de código normales. Después de todo, esta separación de las versiones de etiquetas de marketing de las versiones de código normal es una de las principales razones por las que los clientes utilizan etiquetas.
 
@@ -37,31 +32,27 @@ Esta técnica se denomina cambio de entorno y será útil más adelante, cuando 
 Al final de esta lección, podrá utilizar Debugger para lo siguiente:
 
 * Cargar una biblioteca de etiquetas alternativa
-* Valide que el objeto XDM esté capturando y enviando datos como se espera del Edge Network
+* Validar que el evento XDM del lado del cliente captura y envía datos según lo esperado al Edge Network de Platform
+* Habilite el seguimiento de Edge para ver las solicitudes del lado del servidor enviadas por el Edge Network de Platform
 
 ## Requisitos previos
 
-Está familiarizado con las etiquetas de recopilación de datos y las [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} y haya completado las siguientes lecciones anteriores en el tutorial:
+Está familiarizado con las etiquetas de recopilación de datos y las [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} y haya completado las lecciones anteriores en el tutorial:
 
-* [Configure los permisos](configure-permissions.md)
 * [Configuración de un esquema XDM](configure-schemas.md)
 * [Configuración de un área de nombres de identidad](configure-identities.md)
 * [Configuración de una secuencia de datos](configure-datastream.md)
 * [Extensión del SDK web instalada en la propiedad de etiqueta](install-web-sdk.md)
 * [Creación de elementos de datos](create-data-elements.md)
-* [Creación de una regla de etiqueta](create-tag-rule.md)
-
+* [Creación de identidades](create-identities.md)
+* [Creación de reglas de etiquetas](create-tag-rule.md)
 
 ## Carga de bibliotecas de etiquetas alternativas con Debugger
 
-Este tutorial utiliza una versión alojada públicamente de [Sitio web de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Abra la página principal y márquela como favorito.
-
-![Página principal de Luma](assets/validate-luma-site.png)
-
 Experience Platform Debugger tiene una característica interesante que le permite reemplazar una biblioteca de etiquetas existente por otra diferente. Esta técnica es útil para la validación y nos permite omitir muchos pasos de implementación en este tutorial.
 
-1. Asegúrese de tener el sitio de Luma abierto y seleccionar el icono de extensión de Experience Platform Debugger.
-1. Debugger se abrirá y mostrará algunos detalles de la implementación codificada, que no están relacionados con este tutorial (puede que tenga que volver a cargar el sitio de Luma después de abrir Debugger).
+1. Asegúrese de que tiene el [Sitio web de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} Abra y seleccione el icono Experience Platform Debugger extension.
+1. Debugger se abrirá y mostrará algunos detalles de la implementación codificada (es posible que tenga que volver a cargar el sitio de Luma después de abrir Debugger).
 1. Confirme que Debugger es &quot;**[!UICONTROL Conectado a Luma]**&quot; como se muestra a continuación y, a continuación, seleccione el &quot;**[!UICONTROL bloquear]**&quot; para bloquear Debugger en el sitio de Luma.
 1. Seleccione el **[!UICONTROL Iniciar sesión]** e inicie sesión en Adobe Experience Cloud con su ID de Adobe.
 1. Ahora, vaya a **[!UICONTROL Etiquetas de Experience Platform]** en el panel de navegación izquierdo
@@ -73,38 +64,46 @@ Experience Platform Debugger tiene una característica interesante que le permit
 
    ![Seleccione Acciones > Reemplazar](assets/validate-switch-environment.png)
 
-1. Dado que se ha autenticado, Debugger va a extraer las propiedades y entornos de etiquetas disponibles. Seleccione su `Web SDK Course` propiedad
+1. Dado que se ha autenticado, Debugger va a extraer las propiedades y entornos de etiquetas disponibles. Seleccione su propiedad; en este caso `Web SDK Course 3`
 1. Seleccione su `Development` entorno
 1. Seleccione el **[!UICONTROL Aplicar]** botón
 
    ![Seleccione la propiedad de etiqueta alternativa](assets/validate-switch-selection.png)
 
-1. El sitio web de Luma se volverá a cargar _con la propiedad de etiquetas_.
+1. El sitio web de Luma se volverá a cargar _con su propia propiedad de etiquetas_.
 
    ![propiedad de etiqueta reemplazada](assets/validate-switch-success.png)
 
-A medida que continúe con el tutorial, utilizará esta técnica de asignación del sitio de Luma a su propia propiedad de etiquetas para validar la implementación del SDK web de Platform. Cuando empiece a utilizar etiquetas en el sitio web de producción, puede utilizar esta misma técnica para validar los cambios.
+A medida que continúa con el tutorial, utilizará esta técnica de asignación del sitio de Luma a su propia propiedad de etiquetas para validar la implementación del SDK web de Platform. Cuando empiece a utilizar etiquetas en el sitio web de producción, puede utilizar esta misma técnica para validar los cambios a medida que los realiza en el entorno de desarrollo de etiquetas.
 
-## Valide la implementación en Experience Platform Debugger.
+## Validar solicitudes de red del lado del cliente con Experience Platform Debugger
 
-Puede utilizar Debugger para validar la implementación del SDK web de Platform y ver los datos enviados al Edge Network de Platform:
+Puede utilizar Debugger para validar las señalizaciones del lado del cliente activadas desde la implementación del SDK web de Platform para ver los datos enviados al Edge Network de Platform:
 
 1. Ir a **[!UICONTROL Resumen]** en el panel de navegación izquierdo, para ver los detalles de la propiedad de etiquetas
 
    ![Pestaña Resumen](assets/validate-summary.png)
 
 1. Ahora, vaya a **[!UICONTROL SDK web de Experience Platform]** en el panel de navegación izquierdo para ver la **[!UICONTROL Solicitudes de red]**
-1. Abra el **[!UICONTROL eventos]** fila (no se preocupe si esta captura de pantalla muestra más solicitudes que la suya, incluye solicitudes de futuras lecciones y puede ignorarlas por ahora)
+1. Abra el **[!UICONTROL eventos]** reñir
 
    ![Solicitud de SDK web de Adobe Experience Platform](assets/validate-aep-screen.png)
 
-1. Observe cómo podemos ver el `web.webpagedetails.pageView` tipo de evento especificado en nuestra [!UICONTROL Enviar evento] acción y otras variables listas para usar que se ajustan a la variable `AEP Web SDK ExperienceEvent Mixin` formato
+1. Observe cómo puede ver el `web.webpagedetails.pageView` tipo de evento especificado en su [!UICONTROL Actualizar variable] acción y otras variables listas para usar que se ajustan a la variable `AEP Web SDK ExperienceEvent` grupo de campos
 
    ![Detalles del evento](assets/validate-event-pageViews.png)
 
-1. Desplácese hacia abajo hasta el `web` objeto, seleccione para abrirlo e inspeccionar el `webPageDetails.name`, `webPageDetails.server`, y `webPageDetails.siteSection`. Deben coincidir con las variables de la capa de datos digital correspondiente en la página de inicio
+1. Desplácese hacia abajo hasta el `web` objeto, seleccione para abrirlo e inspeccionar el `webPageDetails.name`, `webPageDetails.server`, y `webPageDetails.siteSection`. Deben coincidir con el correspondiente `digitalData` variables de capa de datos en la página principal
 
-   ![Pestaña Red](assets/validate-xdm-content.png)
+>[!TIP]
+>
+> Para ver y comparar `digitalData` capa de datos en la página principal:
+>
+> 1. En la página de inicio de Luma, abra las herramientas para desarrolladores de navegadores. En el caso de Chrome, seleccione el botón `F12` en el teclado
+> 1. Seleccione el **[!UICONTROL Consola]** pestaña
+> 1. Entrar `digitalData` y seleccione `Enter` en el teclado para que aparezcan los valores de la capa de datos
+
+![Pestaña Red](assets/validate-xdm-content.png)
 
 También puede validar los detalles del mapa de identidad:
 
@@ -123,8 +122,7 @@ También puede validar los detalles del mapa de identidad:
 1. Busque la variable **identityMap** en la ventana emergente. Aquí debería ver `lumaCrmId` con tres claves authenticatedState, id y primary:
    ![SDK web en Debugger](assets/identity-deugger-websdk-event-lumaCrmId-dark.png)
 
-
-## Validar con las herramientas de desarrollo del explorador
+### Validación de solicitudes del lado del cliente con herramientas de desarrollo del explorador
 
 Estos tipos de detalles de solicitud también están visibles en las herramientas para desarrolladores web del explorador **Red** (suponiendo que el sitio web esté cargando la biblioteca de etiquetas).
 
@@ -138,11 +136,35 @@ Estos tipos de detalles de solicitud también están visibles en las herramienta
 
    >[!NOTE]
    >
-   >    Es posible que no vea la misma cantidad de solicitudes de carga útil que en la captura de pantalla anterior. Esta disparidad se debe a que las lecciones futuras para [configuración de Target](setup-target.md) se completaron en el momento de la captura de pantalla que se está realizando. Puede ignorar esta diferencia por ahora.
+   > El valor ECID es visible en la respuesta de red. No se incluye en la `identityMap` parte de la solicitud de red, ni se almacena en este formato en una cookie.
 
-Ahora que un objeto XDM se activa en una página y con los conocimientos necesarios para validar la recopilación de datos, ya puede configurar las aplicaciones de Adobe individuales mediante el SDK web de Platform.
+## Validar solicitudes de red del lado del servidor con Experience Platform Debugger
 
-[Siguiente: ](setup-experience-platform.md)
+Como aprendió en el [Configuración de una secuencia de datos](configure-datastream.md) En esta lección, el SDK web de Platform envía primero datos de la propiedad digital al Edge Network de Platform. A continuación, Platform Edge Network realiza solicitudes adicionales del lado del servidor a los servicios correspondientes habilitados en el conjunto de datos. Puede validar las solicitudes del lado del servidor realizadas por Platform Edge Network mediante el seguimiento de Edge en Debugger.
+
+<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en). -->
+
+
+### Habilitar seguimiento de Edge
+
+Para habilitar el seguimiento de Edge:
+
+1. En la navegación izquierda de **[!UICONTROL Experience Platform Debugger]** select **[!UICONTROL Registros]**
+1. Seleccione el **[!UICONTROL Edge]** y seleccione. **[!UICONTROL Connect]**
+
+   ![Conectar seguimiento de Edge](assets/analytics-debugger-edgeTrace.png)
+
+1. Está vacío por ahora
+
+   ![Seguimiento de Edge conectado](assets/analytics-debugger-edge-connected.png)
+
+1. Actualice la [Página de inicio de Luma](https://luma.enablementadobe.com/) y compruebe **[!UICONTROL Experience Platform Debugger]** de nuevo, para ver pasar los datos.
+
+   ![Seguimiento de Edge de señalizaciones de Analytics](assets/validate-edge-trace.png)
+
+En este punto, no puede ver ninguna solicitud del Edge Network de Platform que vaya a una aplicación de Adobe porque no ha habilitado ninguna en la secuencia de datos. En lecciones futuras, utilice el seguimiento de Edge para ver las solicitudes salientes del lado del servidor a las aplicaciones de Adobe y al reenvío de eventos. Pero primero, obtenga información acerca de otra herramienta para validar las solicitudes del lado del servidor realizadas por Platform Edge Network: Adobe Experience Platform Assurance.
+
+[Siguiente: ](validate-with-assurance.md)
 
 >[!NOTE]
 >

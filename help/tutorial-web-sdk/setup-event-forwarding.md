@@ -3,23 +3,21 @@ title: Configuración de una propiedad de reenvío de eventos
 description: Obtenga información sobre cómo utilizar la propiedad de reenvío de eventos mediante datos del SDK web de Experience Platform. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK,Tags,Event Forwarding
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
 workflow-type: tm+mt
-source-wordcount: '1893'
+source-wordcount: '1861'
 ht-degree: 3%
 
 ---
 
 # Configuración de una propiedad de reenvío de eventos
 
-
->[!CAUTION]
->
->Esperamos publicar cambios importantes en este tutorial el martes 23 de abril de 2024. Después de ese punto, muchos ejercicios cambiarán y es posible que tenga que reiniciar el tutorial desde el principio para completar todas las lecciones.
-
 Obtenga información sobre cómo utilizar la propiedad de reenvío de eventos mediante datos del SDK web de Experience Platform.
 
 El reenvío de eventos es un nuevo tipo de propiedad disponible en la recopilación de datos. El reenvío de eventos le permite enviar datos a proveedores de terceros que no sean de Adobe directamente desde el Edge Network de Adobe Experience Platform, en lugar del explorador tradicional del lado del cliente. Descubra las ventajas del reenvío de eventos en la [Resumen del reenvío de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en).
+
+
+![Diagrama del SDK web y reenvío de eventos](assets/dc-websdk-eventforwarding.png)
 
 Para utilizar el reenvío de eventos en Adobe Experience Platform, primero deben enviarse datos al Edge Network de Adobe Experience Platform mediante una o varias de las tres opciones siguientes:
 
@@ -56,7 +54,6 @@ Al final de esta lección, debe ser capaz de:
 
    * Configuración inicial
 
-      * [Configure los permisos](configure-permissions.md)
       * [Configuración de un esquema XDM](configure-schemas.md)
       * [Configuración de un área de nombres de identidad](configure-identities.md)
       * [Configuración de una secuencia de datos](configure-datastream.md)
@@ -65,7 +62,8 @@ Al final de esta lección, debe ser capaz de:
 
       * [Instalar extensión de SDK web](install-web-sdk.md)
       * [Creación de elementos de datos](create-data-elements.md)
-      * [Creación de una regla de etiqueta](create-tag-rule.md)
+      * [Creación de identidades](create-identities.md)
+      * [Creación de reglas de etiquetas](create-tag-rule.md)
       * [Validar con Adobe Experience Platform Debugger](validate-with-debugger.md)
 
 
@@ -91,9 +89,9 @@ Para configurar Target en el conjunto de datos:
 
 1. Ir a [Recopilación de datos](https://experience.adobe.com/#/data-collection){target="blank"} interfaz
 1. En el panel de navegación izquierdo, seleccione **[!UICONTROL Datastreams]**
-1. Seleccione el creado anteriormente `Luma Web SDK` secuencia de datos
+1. Seleccione el creado anteriormente `Luma Web SDK: Development Environment` secuencia de datos
 
-   ![Seleccione la secuencia de datos del SDK web de Luma](assets/datastream-luma-web-sdk.png)
+   ![Seleccione la secuencia de datos del SDK web de Luma](assets/datastream-luma-web-sdk-development.png)
 
 1. Seleccionar **[!UICONTROL Añadir servicio]**
    ![Añadir un servicio al conjunto de datos](assets/event-forwarding-datastream-addService.png)

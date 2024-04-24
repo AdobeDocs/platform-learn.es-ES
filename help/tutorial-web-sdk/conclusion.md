@@ -2,20 +2,15 @@
 title: Conclusión y pasos siguientes
 description: Qué hacer a continuación después de completar el tutorial
 recommendations: display,noCatalog
-exl-id: bb0ef04d-fd01-4c24-8670-a84a9e33f1b6
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
+source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '390'
 ht-degree: 3%
 
 ---
 
 # Conclusión y pasos siguientes
-
-
->[!CAUTION]
->
->Esperamos publicar cambios importantes en este tutorial el martes 23 de abril de 2024. Después de ese punto, muchos ejercicios cambiarán y es posible que tenga que reiniciar el tutorial desde el principio para completar todas las lecciones.
 
 ¡Felicidades! Ha completado el tutorial &quot;Implementar Adobe Experience Cloud con SDK web&quot;.
 
