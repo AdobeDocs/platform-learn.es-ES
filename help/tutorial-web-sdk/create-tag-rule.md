@@ -3,21 +3,16 @@ title: Creación de reglas de etiquetas
 description: Obtenga información sobre cómo enviar un evento al Edge Network de Platform con el objeto XDM mediante una regla de etiquetas. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Tags
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
 workflow-type: tm+mt
-source-wordcount: '2025'
+source-wordcount: '1957'
 ht-degree: 1%
 
 ---
 
 # Creación de reglas de etiquetas
 
-Obtenga información sobre cómo enviar eventos al Edge Network de Platform con el objeto XDM mediante reglas de etiquetas. Una regla de etiqueta es una combinación de eventos, condiciones y acciones que indica a la propiedad de etiqueta que haga algo. Con el SDK web de Platform, las reglas se utilizan para enviar eventos al Edge Network de Platform con los campos XDM adecuados.
-
->[!NOTE]
->
-> Para fines de demostración, los ejercicios de esta lección se basan en las lecciones anteriores para enviar eventos de usuarios en [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}.
-
+Obtenga información sobre cómo enviar eventos al Edge Network de Platform con el objeto XDM mediante reglas de etiquetas. Una regla de etiqueta es una combinación de eventos, condiciones y acciones que indica a la propiedad de etiqueta que haga algo. Con el SDK web de Platform, las reglas se utilizan para enviar eventos al Edge Network de Platform con los datos adecuados.
 
 ## Objetivos de aprendizaje
 
@@ -45,29 +40,28 @@ Está familiarizado con las etiquetas de recopilación de datos y las [Sitio de 
 
 Para administrar mejor las reglas en las etiquetas, se recomienda seguir una convención de nombres estándar. Este tutorial utiliza una convención de nombres de cinco partes:
 
-* [**ubicación**] - [**evento**] - [**propósito**] - [**herramienta**] - [**pedido**]
+* [**ubicación**] - [**evento**] - [**propósito**] - [**pedido**]
 
 donde;
 
 1. **ubicación** es la página o páginas del sitio donde se activa la regla
 1. **evento** es el déclencheur de la regla
 1. **propósito** es la acción principal realizada por la regla
-1. **herramienta** es la aplicación o aplicaciones específicas utilizadas en el paso de acción para esa regla, que debería ser poco frecuente con el SDK web
-1. **Secuencia** es el orden en que la regla debe activarse en relación con otras reglas
+1. **pedido** es el orden en que la regla debe activarse en relación con otras reglas
 <!-- minor update -->
 
 ## Creación de reglas de etiquetas
 
 En las etiquetas, las reglas se utilizan para ejecutar acciones (llamadas de activación) bajo varias condiciones. La extensión de etiquetas del SDK web de Platform incluye dos acciones que se utilizarán en esta lección:
 
-* **[!UICONTROL Actualizar variable]** asigna elementos de datos a campos XDM
+* **[!UICONTROL Actualizar variable]** asigna elementos de datos a propiedades en un objeto XDM
 * **[!UICONTROL Enviar evento]** envía el objeto XDM a Experience Platform Edge Network
 
 En el resto de esta lección:
 
-1. Cree una regla para definir una &quot;configuración global&quot; de campos XDM (mediante [!UICONTROL Actualizar variable] que deseamos enviar en todas las páginas del sitio web (por ejemplo, el nombre de la página) utilizando **[!UICONTROL Actualizar variable]** acción.
+1. Cree una regla con **[!UICONTROL Actualizar variable]** acción para definir una &quot;configuración global&quot; de campos XDM.
 
-1. Cree reglas adicionales que anulen la &quot;configuración global&quot; o que contribuyan con campos XDM adicionales (mediante [!UICONTROL Actualizar variable] de nuevo) que solo son relevantes bajo ciertas condiciones (por ejemplo, añadir detalles del producto en páginas del producto).
+1. Creación de reglas adicionales con **[!UICONTROL Actualizar variable]** Acciones que anulan nuestra &quot;configuración global&quot; y aportan campos XDM adicionales en determinadas condiciones (por ejemplo, añadir detalles del producto en páginas de productos).
 
 1. Cree otra regla con **[!UICONTROL Enviar evento]** acción que enviará el objeto XDM completo al Edge Network de Adobe Experience Platform.
 
@@ -77,11 +71,9 @@ Este vídeo ofrece información general del proceso:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on)
 
-### Actualizar reglas de variables
+### Campos de configuración global
 
-#### Configuración global
-
-Para crear reglas de etiquetas para los campos XDM globales:
+Para crear una regla de etiqueta para los campos XDM globales:
 
 1. Abra la propiedad de etiqueta que está utilizando para este tutorial.
 
@@ -118,11 +110,7 @@ Para crear reglas de etiquetas para los campos XDM globales:
 
    ![Actualizar esquema de variables](assets/create-rule-update-variable.png)
 
-Ahora, asigne los [!UICONTROL elementos de datos] a la [!UICONTROL esquema] utilizado por el objeto XDM.
-
->[!NOTE]
-> 
-> Puede asignar a propiedades individuales u objetos completos. En este ejemplo, se asigna a propiedades individuales.
+Ahora, asigne los [!UICONTROL elementos de datos] a la [!UICONTROL esquema] utilizado por el objeto XDM. Puede asignar a propiedades individuales u objetos completos. En este ejemplo, se asigna a propiedades individuales:
 
 1. Busque el campo eventType y selecciónelo
 
@@ -160,13 +148,13 @@ Ahora, asigne los [!UICONTROL elementos de datos] a la [!UICONTROL esquema] util
 
    >[!TIP]
    >
-   > Mientras que ninguno `eventType` establezca en `web.webpagedetails.pageViews` ni `web.webPageDetials.pageViews.value` son necesarios para que Adobe Analytics procese una señalización como vista de página, resulta útil disponer de una forma estándar de indicar una vista de página para otras aplicaciones de flujo descendente.
+   > Mientras que ninguno `eventType` establezca en `web.webpagedetails.pageViews` ni `web.webPageDetails.pageViews.value` son necesarios para que Adobe Analytics procese una señalización como vista de página, resulta útil disponer de una forma estándar de indicar una vista de página para otras aplicaciones de flujo descendente.
 
 
 1. Seleccionar **[!UICONTROL Conservar cambios]** y luego **[!UICONTROL Guardar]** la regla de la siguiente pantalla para terminar de crearla
 
 
-#### Campos de página de producto
+### Campos de página de producto
 
 Ahora, empiece a usar **[!UICONTROL Actualizar variable]** en reglas adicionales secuenciadas para enriquecer el objeto XDM antes de enviarlo a [!UICONTROL Edge Network de plataforma].
 
@@ -235,7 +223,7 @@ Comience por rastrear las vistas de productos en la página de detalles del prod
 1. Seleccionar **[!UICONTROL Guardar]** para guardar la regla
 
 
-#### Campos del carro de compras
+### Campos del carro de compras
 
 Puede asignar toda la matriz a un objeto XDM, siempre que la matriz coincida con el formato del esquema XDM. El elemento de datos de código personalizado `cart.productInfo` ha creado bucles anteriores a través de `digitalData.cart.cartEntries` objeto de capa de datos en Luma y lo traduce al formato requerido del `productListItems` del esquema XDM.
 

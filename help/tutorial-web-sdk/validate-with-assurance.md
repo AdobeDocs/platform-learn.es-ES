@@ -3,16 +3,16 @@ title: Validación de implementaciones de SDK web con Experience Platform Assura
 description: Obtenga información sobre cómo validar la implementación del SDK web de Platform con Adobe Experience Platform Assurance. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK,Tags,Assurance
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '609'
 ht-degree: 2%
 
 ---
 
 # Validación de implementaciones de SDK web con Experience Platform Assurance
 
-Adobe Experience Platform Assurance es un producto de Adobe Experience Cloud que le ayuda a inspeccionar, probar, simular y validar cómo recopilar datos o servir experiencias. Más información sobre [Garantía de Adobe](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home).
+Adobe Experience Platform Assurance es una función que le ayuda a inspeccionar, probar, simular y validar cómo recopilar datos o servir experiencias. Más información sobre [Garantía de Adobe](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home).
 
 
 ## Objetivos de aprendizaje
@@ -51,10 +51,11 @@ Consulte cómo hemos realizado esto en la lección de Debugger:
 1. Seleccione el **[!UICONTROL Edge]** y seleccione. **[!UICONTROL Connect]**
 
    ![Conectar seguimiento de Edge](assets/analytics-debugger-edgeTrace.png)
-1. Con el seguimiento de Edge habilitado, puede ver un icono de vínculo de salida en la parte superior. Seleccione el icono para abrir Assurance. Se abre una nueva pestaña en el explorador.
+1. Con el seguimiento de Edge habilitado, puede ver un icono de vínculo de salida en la parte superior. Seleccione el icono para abrir Assurance.
 
    ![Iniciar sesión de Assurance](assets/validate-debugger-start-assurnance.png)
 
+1. Se abre una nueva pestaña del explorador con la interfaz de Assurance.
 
 ### Iniciar una sesión de Assurance desde la interfaz de Assurance
 
@@ -88,7 +89,7 @@ Hay información limitada para ver en esta fase de la implementación. Un valor 
 
 En lecciones futuras, utilice Assurance para validar cargas útiles completamente procesadas que lleguen a una aplicación de Adobe habilitada en el conjunto de datos.
 
-Ahora que un objeto XDM se activa en una página y con los conocimientos necesarios para validar la recopilación de datos, ya puede configurar las aplicaciones de Adobe individuales mediante el SDK web de Platform.
+Ahora que un objeto XDM se activa en una página y con los conocimientos necesarios para validar la recopilación de datos, ya puede configurar las aplicaciones de Adobe individuales y de Experience Platform mediante el SDK web de Platform.
 
 [Siguiente: ](setup-experience-platform.md)
 

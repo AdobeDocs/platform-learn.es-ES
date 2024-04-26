@@ -3,9 +3,9 @@ title: Instalación y configuración de la extensión de etiquetas del SDK web d
 description: Obtenga información sobre cómo instalar y configurar la extensión de etiqueta SDK web de Platform en la interfaz de recopilación de datos. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '589'
 ht-degree: 12%
 
 ---
@@ -28,9 +28,7 @@ Debe haber completado las lecciones anteriores en este tutorial:
 
 * [Configuración de una secuencia de datos](configure-datastream.md)
 
-## Instalación de la extensión del SDK web de Experience Platform
-
-### Añadir una propiedad
+### Añadir una propiedad de etiqueta
 
 Primero debe tener una propiedad de etiqueta. Una propiedad es un contenedor para todos los elementos JavaScript, las reglas y otras funciones necesarias para recopilar detalles de una página web y enviarlos a varias ubicaciones.
 
@@ -57,7 +55,7 @@ Con el esquema XDM, la secuencia de datos y la propiedad de etiqueta creados, ya
    ![Instalar extensión del SDK web](assets/extension-platform-web-sdk.png)
 
 
-## Vinculación del SDK web de Platform al conjunto de datos
+## Vinculación de la extensión al conjunto de datos
 
 Deje la mayoría de las configuraciones predeterminadas y actualícelas más tarde, según sea necesario. Lo único que debe hacer ahora es vincular la extensión al conjunto de datos:
 
@@ -71,19 +69,17 @@ Deje la mayoría de las configuraciones predeterminadas y actualícelas más tar
 
    ![Selección de flujo de datos](assets/extension-luma-web-sdk-datastream-extension.png)
 
-Ahora que ha instalado el SDK web de Platform y lo ha asociado al conjunto de datos, está listo para empezar a asignar elementos de datos a un objeto XDM con el esquema que ha creado.
-
->[!NOTE]
->
->Durante este tutorial, solo debe configurar un conjunto de datos y asociarlo a todos los entornos de etiquetas (desarrollo, fase y producción). Al implementar el SDK web de Platform en su propio sitio web, debe configurar un flujo de datos independiente para cada entorno y asignarlo a los entornos de etiquetas.
+Para obtener más información sobre cada sección de la extensión, consulte [Configuración de la extensión SDK para web de Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/web-sdk-extension-configuration).
 
 >[!NOTE]
 >
 >Aunque no configuró un CNAME en el [!UICONTROL Dominio de Edge] Al configurar en esta lección, Adobe recomienda utilizar un CNAME al implementar el SDK web de Platform en su propio sitio web. Aunque la implementación de CNAME no proporciona ningún beneficio en términos de vida útil de las cookies, puede haber otros beneficios. Estos beneficios incluyen bloqueadores de anuncios y exploradores menos comunes que impiden que se envíen datos a dominios que clasifican como rastreadores. En estos casos, el uso de un CNAME puede impedir que la recopilación de datos se interrumpa para los usuarios que utilizan estas herramientas.
 
-Para obtener más información sobre cada sección de la extensión, consulte [Configuración de la extensión SDK para web de Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/web-sdk-extension-configuration)
+>[!NOTE]
+>
+>Durante este tutorial, solo debe configurar un conjunto de datos y asociarlo a todos los entornos de etiquetas (desarrollo, fase y producción). Al implementar el SDK web de Platform en su propio sitio web, debe configurar un flujo de datos independiente para cada entorno y asignarlo en consecuencia en la configuración de la extensión.
 
-
+Ahora que ha instalado el SDK web de Platform y lo ha asociado al conjunto de datos, está listo para empezar a recopilar datos.
 
 [Siguiente: ](create-data-elements.md)
 
