@@ -1,18 +1,19 @@
 ---
 title: Instalación y configuración de la extensión de etiquetas del SDK web de Adobe Experience Platform
 description: Obtenga información sobre cómo instalar y configurar la extensión de etiqueta SDK web de Platform en la interfaz de recopilación de datos. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
-feature: Web SDK
+feature: Web SDK, Tags
+jira: KT-15404
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 12%
+source-wordcount: '594'
+ht-degree: 9%
 
 ---
 
 # Instalación de la extensión de etiquetas de SDK web de Adobe Experience Platform
 
-Obtenga información sobre cómo instalar y configurar la extensión de etiqueta del SDK web de Platform. La forma más sencilla de implementar el SDK web es mediante el administrador de etiquetas de Adobe, las etiquetas (anteriormente conocido como Launch). La extensión de etiqueta del SDK web de Platform es la _extensión de etiqueta solamente_ necesario para enviar datos a _todas las aplicaciones de Adobe Experience Cloud_, incluido [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), REAL-TIME CUSTOMER DATA PLATFORM y [Journey Optimizer](setup-web-channel.md)!
+Obtenga información sobre cómo instalar y configurar la extensión de etiquetas de SDK web de Adobe Experience Platform. La forma más sencilla de implementar el SDK web es mediante el administrador de etiquetas de Adobe, las etiquetas (anteriormente conocido como Launch). La extensión de etiqueta del SDK web de Platform es la _extensión de etiqueta solamente_ necesario para enviar datos a _todas las aplicaciones de Adobe Experience Cloud_, incluido [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), REAL-TIME CUSTOMER DATA PLATFORM y [Journey Optimizer](setup-web-channel.md)!
 
 ## Objetivos de aprendizaje
 
@@ -69,7 +70,7 @@ Deje la mayoría de las configuraciones predeterminadas y actualícelas más tar
 
    ![Selección de flujo de datos](assets/extension-luma-web-sdk-datastream-extension.png)
 
-Para obtener más información sobre cada sección de la extensión, consulte [Configuración de la extensión SDK para web de Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/web-sdk-extension-configuration).
+Para obtener más información sobre cada sección de la extensión, consulte [Configuración de la extensión SDK para web de Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
 
 >[!NOTE]
 >
@@ -85,4 +86,4 @@ Ahora que ha instalado el SDK web de Platform y lo ha asociado al conjunto de da
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer el SDK web de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Gracias por dedicar su tiempo a conocer el SDK web de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

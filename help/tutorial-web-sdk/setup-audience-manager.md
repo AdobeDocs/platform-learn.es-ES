@@ -2,17 +2,18 @@
 title: Configuración del Audience Manager con el SDK web de Platform
 description: Obtenga información sobre cómo configurar Adobe Audience Manager mediante el SDK web de Platform y validar la implementación mediante un destino de cookie. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 solution: Data Collection, Audience Manager
+jira: KT-15409
 exl-id: 45db48e9-73cf-4a9c-88f4-b5872a8224d3
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1337'
+source-wordcount: '1340'
 ht-degree: 1%
 
 ---
 
 # Configuración del Audience Manager con el SDK web de Platform
 
-Obtenga información sobre cómo configurar Adobe Audience Manager mediante el SDK web de Platform y validar la implementación mediante un destino de cookie.
+Obtenga información sobre cómo configurar Adobe Audience Manager mediante el SDK web de Adobe Experience Platform y validar la implementación mediante un destino de cookie.
 
 [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager) es la solución de Adobe Experience Cloud que proporciona todo lo necesario para recopilar información relevante desde el punto de vista comercial acerca de los visitantes del sitio, crear segmentos comercializables y ofrecer contenido y publicidad segmentada a la audiencia adecuada.
 
@@ -35,7 +36,7 @@ Para completar esta lección, primero debe:
 
 ## Configuración de la secuencia de datos
 
-La implementación del Audience Manager mediante el SDK web de Platform difiere de la implementación mediante [reenvío del lado del servidor (SSF)](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/server-side-forwarding/ssf). El reenvío del lado del servidor pasa los datos de solicitud de Adobe Analytics al Audience Manager. Una implementación del SDK web de Platform pasa los datos XDM enviados al Edge Network de Platform al Audience Manager. El Audience Manager está habilitado en el conjunto de datos:
+La implementación del Audience Manager mediante el SDK web de Platform difiere de la implementación mediante [reenvío del lado del servidor (SSF)](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf). El reenvío del lado del servidor pasa los datos de solicitud de Adobe Analytics al Audience Manager. Una implementación del SDK web de Platform pasa los datos XDM enviados al Edge Network de Platform al Audience Manager. El Audience Manager está habilitado en el conjunto de datos:
 
 1. Ir a [Recopilación de datos](https://experience.adobe.com/#/data-collection){target="blank"} interfaz
 1. En el panel de navegación izquierdo, seleccione **[!UICONTROL Datastreams]**
@@ -96,12 +97,12 @@ Una vez guardada la fuente de datos, configure un [rasgo](https://experienceleag
 
 ## Crear un segmento
 
-El siguiente paso es crear una **segmento** y asigne el rasgo recién definido a este segmento.
+Los siguientes pasos son crear un **segmento** y asigne el rasgo recién definido a este segmento.
 
 1. Seleccionar **[!UICONTROL Datos de audiencia]** en la barra de navegación superior y seleccione **[!UICONTROL Segmentos]**
 1. Seleccionar **[!UICONTROL Añadir nuevo]** en la parte superior izquierda de la página para abrir el generador de segmentos
 1. Asigne a su segmento un nombre descriptivo y una descripción, como `Platform Web SDK - Homepage visitors`
-1. **[!UICONTROL Seleccionar una carpeta]** dónde se guardará el segmento en el panel situado a la derecha. Es posible que desee crear una carpeta **selección del icono +** junto a una carpeta principal existente. Puede asignar un nombre a esta nueva carpeta `Platform Web SDK tutorial`.
+1. **[!UICONTROL Seleccionar una carpeta]** dónde se guarda el segmento en el panel situado a la derecha. Es posible que desee crear una carpeta **selección del icono +** junto a una carpeta principal existente. Puede asignar un nombre a esta nueva carpeta `Platform Web SDK tutorial`.
 1. Añada un código de integración, que en este caso es un conjunto aleatorio de números.
 1. En el **[!UICONTROL Fuente de datos]** , seleccione **[!UICONTROL Audience Manager]** y la fuente de datos que creó anteriormente
 1. Expanda el **[!UICONTROL Características]** y busque el rasgo que ha creado
@@ -184,4 +185,4 @@ Ahora que ha completado esta lección, debe poder ver cómo el SDK web de Platfo
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer el SDK web de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Gracias por dedicar su tiempo a conocer el SDK web de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

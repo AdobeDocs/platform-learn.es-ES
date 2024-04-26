@@ -2,17 +2,18 @@
 title: Creación de un esquema XDM para datos web
 description: Obtenga información sobre cómo crear un esquema XDM para datos web en la interfaz de recopilación de datos. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK,Schemas
+jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1493'
+source-wordcount: '1498'
 ht-degree: 1%
 
 ---
 
 # Creación de un esquema XDM para datos web
 
-Obtenga información sobre cómo crear un esquema XDM para datos web en la interfaz de recopilación de datos.
+Obtenga información sobre cómo crear un esquema XDM para datos web en la interfaz de recopilación de datos de Adobe Experience Platform.
 
 Los esquemas XDM (Experience Data Model) son los componentes básicos, los principios y las prácticas recomendadas para recopilar datos en Adobe Experience Platform.
 
@@ -22,7 +23,7 @@ El SDK web de Platform utiliza su esquema para estandarizar los datos de eventos
 
 Las empresas tienen su propio idioma para comunicarse sobre su dominio. Los concesionarios de automóviles se ocupan de marcas, modelos y cilindros. Las aerolíneas se ocupan de los números de vuelo, la clase de servicio y las asignaciones de asientos. Algunos de estos términos son exclusivos de una empresa específica, otros se comparten entre un sector industrial y otros son compartidos por casi todas las empresas. Para términos que se comparten entre un sector vertical o incluso más amplio, puede empezar a hacer cosas útiles con los datos al nombrar y estructurar estos términos de una manera común.
 
-Por ejemplo, muchas empresas se ocupan de pedidos. ¿Qué pasaría si, colectivamente, estas empresas decidieran modelar un pedido de manera similar? Por ejemplo, ¿qué sucede si el modelo de datos consiste en un objeto con una `priceTotal` propiedad que representaba el precio total del pedido? ¿Qué sucede si ese objeto también tiene propiedades denominadas `currencyCode` y `purchaseOrderNumber`? Tal vez el objeto order contenga una propiedad denominada `payments` sería una matriz de objetos de pago. Cada objeto representaría un pago para el pedido. Por ejemplo, quizás un cliente pagó parte del pedido con una tarjeta de regalo y pagó el resto con una tarjeta de crédito. Puede empezar a construir un modelo con este aspecto:
+Por ejemplo, muchas empresas se ocupan de pedidos. ¿Qué pasaría si, colectivamente, estas empresas decidieran modelar un pedido de manera similar? Por ejemplo, ¿qué sucede si el modelo de datos consiste en un objeto con una `priceTotal` propiedad que representaba el precio total del pedido? ¿Qué sucede si ese objeto también tiene propiedades denominadas `currencyCode` y `purchaseOrderNumber`? Tal vez el objeto order contenga una propiedad denominada `payments` sería una matriz de objetos de pago. Cada objeto representaría un pago para el pedido. Por ejemplo, quizás un cliente pagó parte del pedido con una tarjeta de regalo y el resto con una tarjeta de crédito. Puede empezar a construir un modelo con este aspecto:
 
 ```json
 {
@@ -111,7 +112,7 @@ Cuando sea posible, se recomienda utilizar grupos de campos existentes y adherir
 >En este ejercicio, se agregan los grupos de campos predefinidos recomendados para la recopilación de datos web: _**[!UICONTROL ExperienceEvent del SDK web de AEP]**_ y _**[!UICONTROL Evento de experiencia del consumidor]**_.
 >
 >
-> Si solo va a implementar **Adobe Analytics** con el SDK web y no enviar ningún dato a **Experience Platform**, use el [!UICONTROL Plantilla de Adobe Analytics ExperienceEvent] grupo de campos para definir el esquema XDM. Se utilizará en el [Análisis de configuración](setup-analytics.md) lección.
+> Si solo va a implementar **Adobe Analytics** con el SDK web y no enviar ningún dato a **Experience Platform**, use el [!UICONTROL Plantilla de Adobe Analytics ExperienceEvent] grupo de campos para definir el esquema XDM. Se utiliza en el [Análisis de configuración](setup-analytics.md) lección.
 
 1. En el **[!UICONTROL Grupos de campos]** , seleccione **[!UICONTROL Añadir]**
 
@@ -125,7 +126,7 @@ Cuando sea posible, se recomienda utilizar grupos de campos existentes y adherir
 
    ![Agregar grupo de campos](assets/schema-add-field-group.png)
 
-Con ambos grupos de campos, observe que tiene acceso a los pares de clave-valor más utilizados y necesarios para la recopilación de datos en la web. El [!UICONTROL nombre para mostrar] Cada uno de los campos aparece a los especialistas en marketing en la interfaz del generador de segmentos de las aplicaciones basadas en Platform y puede cambiar el nombre para mostrar de los campos estándar para adaptarlos a sus necesidades. También puede quitar los campos que no desee. Al hacer clic en cualquier nombre de grupo de campos, la interfaz resalta qué agrupaciones de pares clave-valor pertenecen a él. En el siguiente ejemplo, verá a qué grupos pertenecen **[!UICONTROL Evento de experiencia del consumidor]**.
+Con ambos grupos de campos, observe que tiene acceso a los pares de clave-valor más utilizados y necesarios para la recopilación de datos en la web. El [!UICONTROL nombre para mostrar] Cada uno de los campos aparece a los especialistas en marketing en la interfaz del generador de segmentos de las aplicaciones basadas en Platform y puede cambiar el nombre para mostrar de los campos estándar para adaptarlos a sus necesidades. También puede quitar los campos que no desee. Al hacer clic en cualquier nombre de grupo de campos, la interfaz resalta qué agrupaciones de pares clave-valor pertenecen a él. En el siguiente ejemplo, verá a qué campos pertenecen **[!UICONTROL Evento de experiencia del consumidor]**.
 
 ![Grupos de campos de esquema](assets/schema-consumer-experience-event.png)
 
@@ -143,7 +144,7 @@ Es un objeto que se debe tener para cualquier recopilación de datos relacionado
 
 >[!IMPORTANT]
 >
-> Es posible activar **[!UICONTROL Perfil]** para un esquema antes de guardar el esquema. **No hacer** habilitarlo en este punto. Una vez que un esquema está habilitado para el perfil, no se puede deshabilitar ni eliminar. Los campos no se pueden eliminar de los esquemas en este punto, aunque es posible [Campos obsoletos en la IU](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate). Estas implicaciones son importantes que se deben tener en cuenta más adelante cuando trabaje con sus propios datos en el entorno de producción.
+> Es posible activar **[!UICONTROL Perfil]** para un esquema antes de guardar el esquema. **No hacer** habilitarlo en este punto. Una vez que un esquema está habilitado para el perfil, no se puede deshabilitar ni eliminar sin restablecer toda la zona protegida. Los campos no se pueden eliminar de los esquemas en este punto, aunque es posible [Campos obsoletos en la IU](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate). Estas implicaciones son importantes que se deben tener en cuenta más adelante cuando trabaje con sus propios datos en el entorno de producción.
 >
 >
 >Esta configuración se analiza más en la [Experience Platform de instalación](setup-experience-platform.md) lección.
@@ -154,11 +155,11 @@ Para completar esta lección, seleccione **[!UICONTROL Guardar]** en la parte su
 ![Guardar esquema](assets/schema-select-save.png)
 
 
-Ahora puede hacer referencia a este esquema al agregar la extensión del SDK web a la propiedad de etiqueta.
+Ahora puede hacer referencia a este esquema cuando agregue la extensión del SDK web a la propiedad de etiquetas.
 
 
 [Siguiente: ](configure-identities.md)
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer el SDK web de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Gracias por dedicar su tiempo a conocer el SDK web de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

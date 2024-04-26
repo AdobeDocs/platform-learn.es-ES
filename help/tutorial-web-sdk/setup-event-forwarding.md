@@ -1,18 +1,19 @@
 ---
-title: Configuración de una propiedad de reenvío de eventos
+title: Configuración de un reenvío de eventos con datos del SDK web de Platform
 description: Obtenga información sobre cómo utilizar la propiedad de reenvío de eventos mediante datos del SDK web de Experience Platform. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK,Tags,Event Forwarding
+jira: KT-15414
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1861'
-ht-degree: 3%
+source-wordcount: '1873'
+ht-degree: 2%
 
 ---
 
-# Configuración de una propiedad de reenvío de eventos
+# Configuración del reenvío de eventos con datos del SDK web de Platform
 
-Obtenga información sobre cómo utilizar la propiedad de reenvío de eventos mediante datos del SDK web de Experience Platform.
+Aprenda a utilizar el reenvío de eventos con datos del SDK web de Adobe Experience Platform.
 
 El reenvío de eventos es un nuevo tipo de propiedad disponible en la recopilación de datos. El reenvío de eventos le permite enviar datos a proveedores de terceros que no sean de Adobe directamente desde el Edge Network de Adobe Experience Platform, en lugar del explorador tradicional del lado del cliente. Descubra las ventajas del reenvío de eventos en la [Resumen del reenvío de eventos](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
 
@@ -22,7 +23,7 @@ El reenvío de eventos es un nuevo tipo de propiedad disponible en la recopilaci
 Para utilizar el reenvío de eventos en Adobe Experience Platform, primero deben enviarse datos al Edge Network de Adobe Experience Platform mediante una o varias de las tres opciones siguientes:
 
 * [SDK web de Adobe Experience Platform](overview.md)
-* [SDK móvil de Adobe Experience Platform](https://developer.adobe.com/client-sdks/documentation/)
+* [SDK móvil de Adobe Experience Platform](https://developer.adobe.com/client-sdks/home/)
   <!--* [Server-to-Server API](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
 
 
@@ -46,11 +47,11 @@ Al final de esta lección, debe ser capaz de:
 ## Requisitos previos
 
 * Licencia de software que incluye el reenvío de eventos. El reenvío de eventos es una función de pago de la recopilación de datos. Póngase en contacto con el equipo de su cuenta de Adobe para obtener más información.
-* Reenvío de eventos activado en su organización de Experience Cloud.
+* El reenvío de eventos está activado en su organización de Experience Cloud.
 * Permiso de usuario para el reenvío de eventos. (Entrada [Admin Console](https://adminconsole.adobe.com/), en el producto de Adobe Experience Platform Launch, elementos de permiso para[!UICONTROL Plataformas] > [!UICONTROL Edge] y todo [!UICONTROL Derechos de propiedad]). Una vez concedida, debería ver [!UICONTROL Reenvío de eventos] en la navegación izquierda de la interfaz de recopilación de datos:
   ![Propiedades del reenvío de eventos](assets/event-forwarding-menu.png)
 
-* SDK web o móvil de Adobe Experience Platform configurado para enviar datos al Edge Network. Debe haber completado las siguientes lecciones de este tutorial:
+* El SDK web o móvil de Adobe Experience Platform está configurado para enviar datos al Edge Network. Debe haber completado las siguientes lecciones de este tutorial:
 
    * Configuración inicial
 
@@ -76,14 +77,14 @@ Para empezar, cree una propiedad de reenvío de eventos:
 1. Seleccione **[!UICONTROL Nueva propiedad]**.
    ![Propiedades del reenvío de eventos](assets/event-forwarding-new.png)
 
-1. Asigne un nombre a la propiedad. En este caso `Server-Side - Web SDK Course`
+1. Asigne un nombre a la propiedad. En este caso, `Server-Side - Web SDK Course`
 
 1. Seleccione **[!UICONTROL Guardar]**.
    ![guardar propiedad de reenvío de eventos](assets/event-forwarding-save.png)
 
 ## Configuración de la secuencia de datos
 
-Para que el reenvío de eventos utilice los datos que envía a la red perimetral, debe vincular la propiedad de reenvío de eventos recién creada al mismo conjunto de datos utilizado para enviar datos a las soluciones de Adobe.
+Para que el reenvío de eventos utilice los datos que envía al Edge Network de Platform, debe vincular la propiedad de reenvío de eventos recién creada al mismo conjunto de datos utilizado para enviar datos a las soluciones de Adobe.
 
 Para configurar Target en el conjunto de datos:
 
@@ -209,7 +210,7 @@ Existen algunas diferencias principales entre la configuración de reglas en una
 
 * **[!UICONTROL Eventos] &amp; [!UICONTROL Condiciones]**:
 
-   * **Etiquetas**: todas las reglas se activan mediante un Evento que debe especificarse en la regla, por ejemplo, `Library Loaded - Page Top`. Las condiciones son opcionales.
+   * **Etiquetas**: todas las reglas se activan mediante un evento que debe especificarse en la regla, por ejemplo, `Library Loaded - Page Top`. Las condiciones son opcionales.
    * **Reenvío de eventos**: Se da por hecho que cada evento enviado al Edge Network de Platform es un déclencheur para reenviar datos. Por lo tanto, no hay [!UICONTROL Eventos] que se deben seleccionar en las reglas de reenvío de eventos. Para administrar qué eventos almacenan en déclencheur una regla de reenvío de eventos, debe configurar las condiciones.
 
 * **Tokenización de elemento de datos**:
@@ -231,7 +232,7 @@ Para configurar una regla para reenviar datos a su webhook, primero debe obtener
 
 1. Ir a [Webhook.site](https://webhook.site)
 
-1. Buscar **Su URL única**, lo utilizará como solicitud de URL en la regla del reenvío de eventos
+1. Buscar **Su URL única**, se usa como solicitud de URL en la regla del reenvío de eventos
 
 1. Seleccionar **[!UICONTROL Copiar al portapapeles]**
 
@@ -324,4 +325,4 @@ Ahora puede validar la propiedad de reenvío de eventos mediante Platform Debugg
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer el SDK web de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Gracias por dedicar su tiempo a conocer el SDK web de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

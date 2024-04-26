@@ -4,20 +4,21 @@ description: Obtenga información sobre cómo implementar el canal web de Journe
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
+jira: KT-15411
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '2885'
+source-wordcount: '2892'
 ht-degree: 0%
 
 ---
 
 
-# Configuración del canal web de Journey Optimizer
+# Configuración del canal web de Journey Optimizer con SDK web
 
-Obtenga información sobre cómo implementar Journey Optimizer [canal web](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) mediante el SDK web de Platform. Esta lección cubre los requisitos previos básicos del canal web, los pasos detallados para la configuración y una explicación detallada de un caso de uso centrado en el estado de lealtad.
+Obtenga información sobre cómo implementar Adobe Journey Optimizer [canal web](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) uso del SDK web de Adobe Experience Platform. Esta lección cubre los requisitos previos básicos del canal web, los pasos detallados para la configuración y una explicación detallada de un caso de uso centrado en el estado de lealtad.
 
-Al seguir esta lección, los usuarios de Journey Optimizer están equipados para aplicar de forma eficaz el canal web para una personalización en línea avanzada mediante el diseñador web de Journey Optimizer.
+Al seguir esta lección, los usuarios de Journey Optimizer están equipados para utilizar el canal web para una personalización en línea avanzada mediante el diseñador web de Journey Optimizer.
 
 ![Diagrama del SDK web y Adobe Analytics](assets/dc-websdk-ajo.png)
 
@@ -51,7 +52,7 @@ Para completar las lecciones de esta sección, primero debe:
   > 1. El sitio web está incrustado en un iframe.
   > 1. El control de calidad o el sitio de fase del cliente no son accesibles externamente (son sitios internos).
 
-* Al crear experiencias web e incluir contenido de la biblioteca Adobe Experience Manager Assets Essentials, es necesario [configurar el subdominio para publicar este contenido](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/web-delegated-subdomains).
+* Al crear experiencias web e incluir contenido de la biblioteca Adobe Experience Manager Assets Essentials, es necesario [configurar el subdominio para publicar este contenido](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains).
 * Si utiliza la función de experimentación de contenido, asegúrese de que el conjunto de datos web también se incluya en la configuración de creación de informes.
 * Actualmente, se admiten dos tipos de implementaciones para habilitar la creación y el envío de campañas de canal web en las propiedades web:
    * Solo del lado del cliente: para modificar el sitio web, debe implementar el SDK web de Adobe Experience Platform.
@@ -253,13 +254,13 @@ Para crear el experimento de contenido:
 
 ### Editar contenido con el Asistente visual
 
-Ahora vamos a crear la experiencia del canal web. Para ello, utilice el Adobe Experience Cloud **[!UICONTROL Ayuda visual]**. Esta herramienta es una extensión de explorador compatible con Google Chrome y Microsoft® Edge. Asegúrese de haber descargado la extensión antes de intentar crear sus experiencias. Asegúrese también de que la página web incluya el SDK web.
+Ahora, vamos a crear la experiencia del canal web. Para ello, utilice el Adobe Experience Cloud **[!UICONTROL Ayuda visual]**. Esta herramienta es una extensión de explorador compatible con Google Chrome y Microsoft® Edge. Asegúrese de haber descargado la extensión antes de intentar crear sus experiencias. Asegúrese también de que la página web incluya el SDK web.
 
 1. Dentro de **[!UICONTROL Acción]** de la campaña, haga clic en **[!UICONTROL Editar contenido]**. Dado que ha introducido una sola dirección URL de página como superficie, debe estar preparado para empezar a trabajar en el compositor.
 
    ![Edición de contenido](assets/web-channel-edit-content.png)
 
-1. Ahora haga clic en **[!UICONTROL Editar página web]** para empezar a crear.
+1. Ahora, haga clic en **[!UICONTROL Editar página web]** para empezar a crear.
 
    ![Editar página web](assets/web-channel-edit-web-page.png)
 
@@ -296,7 +297,7 @@ En el editor, añada el HTML para. `Luma Loyalty Rewards – Gold Status` audien
 
 ![Validar HTML](assets/web-channel-add-custom-html-validate.png)
 
-Ahora revise el nuevo componente de HTML personalizado para comprobar su ajuste y funcionamiento.
+Ahora, revise el nuevo componente de HTML personalizado para ver si encaja o no.
 
 ![Revisar HTML personalizado](assets/web-channel-review-custom-html.png)
 
@@ -387,4 +388,4 @@ Para iniciar la validación con el depurador:
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer el SDK web de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Gracias por dedicar su tiempo a conocer el SDK web de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -2,17 +2,18 @@
 title: Configuración de Adobe Target con el SDK web de Platform
 description: Obtenga información sobre cómo implementar Adobe Target mediante el SDK web de Platform. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 solution: Data Collection, Target
+jira: KT-15410
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: dc23b39e4311d618022fb1c70c2a106c0e901c8e
 workflow-type: tm+mt
-source-wordcount: '4307'
+source-wordcount: '4305'
 ht-degree: 0%
 
 ---
 
 # Configuración de Adobe Target con el SDK web de Platform
 
-Obtenga información sobre cómo implementar Adobe Target mediante el SDK web de Platform. Obtenga información sobre cómo ofrecer experiencias y cómo pasar parámetros adicionales a Target.
+Obtenga información sobre cómo implementar Adobe Target mediante el SDK web de Adobe Experience Platform. Obtenga información sobre cómo ofrecer experiencias y cómo pasar parámetros adicionales a Target.
 
 [Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/target-home) es la aplicación de Adobe Experience Cloud que le proporciona todo lo necesario para adaptar y personalizar la experiencia de sus clientes con el fin de maximizar los ingresos de sus sitios web, aplicaciones y otros canales digitales, tanto para PC como para móviles.
 
@@ -20,7 +21,7 @@ Obtenga información sobre cómo implementar Adobe Target mediante el SDK web de
 
 ## Objetivos de aprendizaje
 
-Al final de esta lección, debe poder hacer lo siguiente con una implementación de SDK web de Target:
+Al final de esta lección, puede hacer lo siguiente con una implementación del SDK web de Target:
 
 * Añada el fragmento preocultado para evitar el parpadeo
 * Configuración de una secuencia de datos para habilitar la funcionalidad de Target
@@ -41,7 +42,7 @@ Al final de esta lección, debe poder hacer lo siguiente con una implementación
 Para completar las lecciones de esta sección, primero debe:
 
 * Completar todas las lecciones para la configuración inicial del SDK web de Platform, incluida la configuración de elementos de datos y reglas.
-* Asegúrese de que tiene un [Función Editor o Aprobador](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) en Adobe Target.
+* Asegúrese de que tiene un [Función Editor o Aprobador](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80) en Adobe Target.
 * Instale el [Extensión de ayuda del Compositor de experiencias visuales](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) si utiliza el explorador Google Chrome.
 * Saber cómo configurar actividades en Target. Si necesita un actualizador, los siguientes tutoriales y guías le resultarán útiles para esta lección:
    * [Utilice la extensión de ayuda del Compositor de experiencias visuales (VEC)](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)
@@ -55,12 +56,12 @@ Antes de empezar, determine si se requiere una solución adicional de control de
 
 >[!NOTE]
 >
->Este tutorial utiliza el [Sitio de Luma](https://luma.enablementadobe.com/content/luma/us/en.html) que tiene una implementación asíncrona de etiquetas y mitigación de parpadeo. Esta sección es una referencia para comprender cómo funciona la mitigación de parpadeo con el SDK web de Platform.
+>Este tutorial utiliza el [Sitio web de Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target=_blank}, que tiene una implementación asíncrona de etiquetas y una mitigación de parpadeo. Esta sección es una referencia para comprender cómo funciona la mitigación de parpadeo con el SDK web de Platform.
 
 
 ### Implementación asincrónica
 
-Cuando una biblioteca de etiquetas se carga de forma asíncrona, es posible que la página termine de procesarse antes de que Target haya reemplazado el contenido predeterminado por contenido personalizado. Este comportamiento puede llevar a lo que se conoce como &quot;parpadeo&quot;, en el que el contenido predeterminado aparece brevemente antes de ser reemplazado por el contenido personalizado especificado por Target. Si desea evitar este parpadeo, Adobe recomienda añadir un fragmento preocultado especial inmediatamente antes del código incrustado de etiqueta asincrónico de.
+Cuando una biblioteca de etiquetas se carga de forma asíncrona, es posible que la página termine de procesarse antes de que Target haya reemplazado el contenido predeterminado por contenido personalizado. Este comportamiento puede llevar a lo que se conoce como &quot;parpadeo&quot;, en el que el contenido predeterminado aparece brevemente antes de ser reemplazado por el contenido personalizado. Si desea evitar este parpadeo, Adobe recomienda añadir un fragmento preocultado especial inmediatamente antes del código incrustado de etiqueta asincrónico de.
 
 Este fragmento ya está presente en el sitio de Luma, pero echemos un vistazo más de cerca para comprender lo que hace este código:
 
@@ -188,7 +189,7 @@ Las decisiones de personalización visual hacen referencia a las experiencias cr
 * **Experiencia**: conjunto de acciones dirigidas a una o más ubicaciones o ámbitos de decisión.
 * **Ámbito de decisión**: una ubicación en la que se entrega una experiencia de Target. Los ámbitos de decisión son equivalentes a los &quot;mboxes&quot; si está familiarizado con el uso de versiones anteriores de Target.
 * **Decisión de personalización**: acción que el servidor determina que debe aplicarse. Estas decisiones pueden basarse en los criterios de audiencia y en la priorización de actividades de Target.
-* **Proposición**: el resultado de las decisiones tomadas por el servidor que se entregan en la respuesta del SDK web de Platform. Por ejemplo, intercambiar una imagen de titular sería una propuesta.
+* **Proposición**: el resultado de las decisiones tomadas por el servidor, que se entregan en la respuesta del SDK web de Platform. Por ejemplo, intercambiar una imagen de titular sería una propuesta.
 
 ### Actualice el [!UICONTROL Enviar evento] acción
 
@@ -231,7 +232,7 @@ Ahora que la parte de implementación básica ha finalizado, cree una actividad 
 
    ![Crear una nueva actividad XT](assets/target-xt-create-activity.png)
 
-1. Modifique la página; por ejemplo, cambie el texto en el banner a pantalla completa de la página de inicio.  Cuando termine, seleccione **[!UICONTROL Guardar]** entonces **[!UICONTROL Siguiente]**.
+1. Modifique la página, por ejemplo, cambie el texto del banner a pantalla completa de la página de inicio.  Cuando termine, seleccione **[!UICONTROL Guardar]** entonces **[!UICONTROL Siguiente]**.
 
    ![Modificación del VEC de Target](assets/target-xt-vec-modification.png)
 
@@ -302,7 +303,7 @@ Modifique la regla de carga de página para agregar un ámbito de decisión pers
 
 ### Procesar la respuesta de Target
 
-Ahora que ha configurado el SDK web de Platform para solicitar contenido para `homepage-hero` ámbito, debe hacer algo con la respuesta. La extensión de etiqueta del SDK web de Platform proporciona un [!UICONTROL Enviar evento completado] evento que se puede utilizar para almacenar en déclencheur inmediatamente una nueva regla cuando una respuesta de un [!UICONTROL Enviar evento] acción recibida.
+Ahora que ha configurado el SDK web de Platform para solicitar contenido para `homepage-hero` ámbito, debe hacer algo con la respuesta. La extensión de etiqueta del SDK web de Platform proporciona un [!UICONTROL Enviar evento completado] evento, que se puede utilizar para almacenar en déclencheur inmediatamente una nueva regla cuando una respuesta de un [!UICONTROL Enviar evento] acción recibida.
 
 1. Cree una regla llamada `homepage - send event complete - render homepage-hero`.
 1. Añada un evento a la regla. Utilice el **SDK web de Adobe Experience Platform** y la extensión de **[!UICONTROL Enviar evento completado]** tipo de evento.
@@ -393,7 +394,7 @@ En esta sección, se pasarán datos específicos de Target y se examinará más 
 
 ### Parámetros de página (mbox) y XDM
 
-Todos los campos XDM se pasan automáticamente a Target como [parámetros de página](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/page) o parámetros de mbox.
+Todos los campos XDM se pasan automáticamente a Target como [parámetros de página](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/page-parameters) o parámetros de mbox.
 
 Algunos de estos campos XDM se asignarán a objetos especiales en el backend de Target. Por ejemplo, `web.webPageDetails.URL` estará disponible automáticamente para crear condiciones de segmentación basadas en URL o como `page.url` al crear scripts de perfil.
 
@@ -401,7 +402,7 @@ Algunos de estos campos XDM se asignarán a objetos especiales en el backend de 
 
 Existen algunos puntos de datos que pueden ser útiles para Target que no están asignados desde el objeto XDM. Estos parámetros especiales de Target incluyen:
 
-* [Atributos de perfil](https://experienceleague.adobe.com/en/docs/target/using/implement-target/before-implement/methods/in-page-profile-attributes)
+* [Atributos de perfil](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/in-page-profile-attributes)
 * [Atributos de entidad de Recommendations](https://experienceleague.adobe.com/en/docs/target/using/recommendations/entities/entity-attributes)
 * [Parámetros reservados de Recommendations](https://experienceleague.adobe.com/en/docs/target/using/recommendations/plan-implement#pass-behavioral)
 * Valores de categoría para [afinidad de categoría](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/category-affinity)
@@ -543,7 +544,7 @@ Además, puede utilizar Assurance cuando corresponda para confirmar que las soli
 
    ![Validar en la visita de assurance Analytics](assets/validate-in-assurance-analyticsevent.png)
 
-Esto confirma que la información de A4T que se puso en cola para su posterior transmisión cuando realizamos la llamada de decisión de Target se envió correctamente cuando la llamada de seguimiento de Analytics se activó más adelante en la página.
+Esto confirma que la información de A4T que se puso en cola para su posterior transmisión cuando realizamos la llamada de toma de decisiones de Target se envió correctamente cuando la llamada de seguimiento de Analytics se activó más adelante en la página.
 
 Ahora que ha completado esta lección, debe tener una implementación en funcionamiento de Adobe Target mediante el SDK web de Platform.
 
@@ -551,4 +552,4 @@ Ahora que ha completado esta lección, debe tener una implementación en funcion
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer el SDK web de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Gracias por dedicar su tiempo a conocer el SDK web de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

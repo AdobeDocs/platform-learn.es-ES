@@ -1,22 +1,23 @@
 ---
-title: Configuración de Administración de decisiones con el SDK web de Platform
+title: Configuración de Journey Optimizer Decision Management con el SDK web de Platform
 description: Obtenga información sobre cómo implementar Administración de decisiones mediante el SDK web de Platform. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
+jira: KT-15412
 exl-id: f7852ef4-44b0-49df-aec8-cb211726247d
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '2511'
+source-wordcount: '2515'
 ht-degree: 0%
 
 ---
 
 # Configuración de Administración de decisiones con el SDK web de Platform
 
-Obtenga información sobre cómo implementar Administración de decisiones mediante el SDK web de Platform. Esta guía cubre los requisitos previos fundamentales de Administración de decisiones, los pasos detallados para la configuración y una explicación detallada de un caso de uso centrado en el estado de lealtad.
+Obtenga información sobre cómo implementar la capacidad Administración de decisiones de Adobe Journey Optimizer mediante el SDK web de Platform. Esta guía cubre los requisitos previos fundamentales de Administración de decisiones, los pasos detallados para la configuración y una explicación detallada de un caso de uso centrado en el estado de lealtad.
 
-Al seguir este tutorial, los usuarios de Journey Optimizer están equipados para aplicar de forma eficaz las funciones de offer decisioning, lo que mejora la personalización y la relevancia de sus interacciones con los clientes.
+Al seguir este tutorial, los usuarios de Journey Optimizer están equipados para utilizar las funciones de Gestión de decisiones, lo que mejora la personalización y relevancia de sus interacciones con los clientes.
 
 
 ![Diagrama del SDK web y Adobe Analytics](assets/dc-websdk-ajo.png)
@@ -51,9 +52,7 @@ Para completar las lecciones de esta sección, primero debe:
 
 ## Limitaciones
 
-Tome nota de la siguiente limitación:
-
-* Actualmente, Adobe Journey Optimizer no admite ofertas basadas en eventos. Si crea una regla de decisión basada en un evento, no puede aplicarla en una oferta.
+Actualmente, Adobe Journey Optimizer no admite ofertas basadas en eventos. Si crea una regla de decisión basada en un evento, no puede aplicarla en una oferta.
 
 ## Concesión de acceso a Gestión de decisiones
 
@@ -140,7 +139,7 @@ En primer lugar, debe comprender la terminología utilizada en la interfaz de Ad
 
 En esta lección, debe implementar un ejemplo de caso de uso de las Recompensas de fidelidad para comprender la Gestión de decisiones mediante el SDK web.
 
-Este caso de uso le permite comprender mejor cómo Journey Optimizer puede ayudar a ofrecer la mejor oferta a sus clientes, utilizando la biblioteca de ofertas centralizada y el motor de decisión de ofertas.
+Este caso de uso le permite comprender mejor cómo Journey Optimizer puede ayudar a ofrecer la mejor oferta a sus clientes, utilizando la biblioteca de ofertas centralizada y el motor de decisión de Gestión de decisiones.
 
 >[!NOTE]
 >
@@ -307,11 +306,11 @@ Para crear la decisión, siga estos pasos:
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Ahora debe definir la variable **ámbitos de decisión**. Primero seleccione una ubicación. Puede utilizar el creado anteriormente &#39;*Titular de página principal*&#39;.
+1. Ahora, debe definir la variable **ámbitos de decisión**. Primero seleccione una ubicación. Puede utilizar el creado anteriormente &#39;*Titular de página principal*&#39;.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. A continuación, debe agregar **criterios de evaluación** para el ámbito de decisión. Clic **Añadir** y elija el creado anteriormente &#39;*Recompensas de fidelización*&#39; **colección** que contiene todas las ofertas de lealtad que se deben tener en cuenta.
+1. A continuación, debe agregar **criterios de evaluación** para el ámbito de decisión. Clic **Añadir** y elija el creado anteriormente &#39;*Recompensas de fidelización*&#39; **colección, que contiene todas las ofertas de fidelidad que se deben tener en cuenta.
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -334,7 +333,7 @@ Para crear la decisión, siga estos pasos:
 
 ## Simulaciones
 
-Como práctica recomendada, debe validar la lógica de Luma Loyalty Decisioning para garantizar que las ofertas correctas se envíen a las audiencias de fidelidad correctas. Para ello, utilice lo siguiente **perfiles de prueba**. También es aconsejable probar los cambios en las ofertas mediante perfiles de prueba antes de llevar las nuevas versiones de oferta a producción.
+Como práctica recomendada, debe validar la lógica de Luma Loyalty Decisioning para garantizar que las ofertas correctas se envíen a las audiencias de fidelidad correctas. Para realizar esta validación, utilice **perfiles de prueba**. También es aconsejable probar los cambios en las ofertas mediante perfiles de prueba antes de llevar las nuevas versiones de oferta a producción.
 
 Para comenzar la prueba, seleccione la **Simulaciones** de la pestaña **Ofertas** menú.
 
@@ -370,7 +369,7 @@ Para comenzar la prueba, seleccione la **Simulaciones** de la pestaña **Ofertas
 
 El **Adobe Experience Platform Debugger** Esta extensión, disponible tanto para Chrome como para Firefox, analiza sus páginas web para identificar problemas en la implementación de las soluciones de Adobe Experience Cloud.
 
-Puede utilizar el depurador del sitio de Luma para validar la lógica de toma de decisiones en producción. Esta es una buena práctica una vez que el caso de uso de las Recompensas de fidelidad está en funcionamiento, para garantizar que todo esté configurado correctamente.
+Puede utilizar el depurador del sitio de Luma para validar la lógica de toma de decisiones en producción. Esta validación es una buena práctica una vez que el caso de uso de las Recompensas de fidelidad está en funcionamiento, para garantizar que todo esté configurado correctamente.
 
 [Obtenga información sobre cómo configurar Debugger en el explorador mediante la guía aquí](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
@@ -405,4 +404,4 @@ Para iniciar la validación con el depurador:
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer el SDK web de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Gracias por dedicar su tiempo a conocer el SDK web de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

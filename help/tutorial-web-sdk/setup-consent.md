@@ -2,21 +2,22 @@
 title: Configuración del consentimiento con el SDK web de Platform
 description: Obtenga información sobre cómo establecer la configuración de privacidad de la extensión de etiquetas de SDK web de Experience Platform. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK,Tags,Consent
+jira: KT-15413
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1602'
+source-wordcount: '1604'
 ht-degree: 0%
 
 ---
 
 # Configuración del consentimiento con el SDK web de Platform
 
-Obtenga información sobre cómo establecer la configuración de privacidad de la extensión de etiquetas de SDK web de Experience Platform. Establezca el consentimiento en función de la interacción del visitante con un titular de una plataforma de administración de consentimiento (CMP).
+Obtenga información sobre cómo establecer la configuración de privacidad de la extensión de etiqueta SDK web de Adobe Experience Platform. Establezca el consentimiento en función de la interacción del visitante con un titular de una plataforma de administración de consentimiento (CMP).
 
 >[!NOTE]
 > 
->Para fines de demostración, este tutorial utiliza [Klaro](https://heyklaro.com/) como CMP. Puede seguir a través de Klaro o el CMP que use con su sitio web.
+>Para fines de demostración, este tutorial utiliza [Klaro](https://klaro.org/) como CMP. Puede seguir a través de Klaro o el CMP que use con su sitio web.
 
 
 ## Objetivos de aprendizaje
@@ -32,6 +33,7 @@ Al final de esta lección, puede hacer lo siguiente:
 Debe estar familiarizado con las etiquetas y los pasos para crear reglas, elementos de datos, crear bibliotecas en entornos y cambiar de bibliotecas de etiquetas con Experience Platform Debugger.
 
 Antes de empezar a configurar la configuración de privacidad y a crear las reglas para configurar el consentimiento, asegúrese de haber insertado el script de la plataforma de administración de consentimiento en el sitio web y de que funcione correctamente. Una CMP se puede cargar directamente en el código fuente con la ayuda de los desarrolladores del sitio o cargarse a través de las etiquetas. Esta lección demuestra este último enfoque.
+
 >[!NOTE]
 > 
 >1. Las organizaciones utilizan una plataforma de administración de consentimiento (o CMP) para documentar y administrar legalmente las opciones de consentimiento de un visitante antes de recopilar, compartir o vender datos de visitantes de fuentes en línea como sitios web y aplicaciones.
@@ -42,10 +44,10 @@ Antes de empezar a configurar la configuración de privacidad y a crear las regl
 
 Antes de ir a las configuraciones de etiquetas, obtenga más información acerca de la plataforma de administración de consentimiento utilizada en este tutorial de Klaro.
 
-1. Visita [Klaro](https://heyklaro.com/) y configure una cuenta.
+1. Visita [Klaro](https://klaro.org/) y configure una cuenta.
 1. Ir a **Administrador de privacidad** y cree una instancia de acuerdo con las instrucciones.
 1. Utilice el **Código de integración** para inyectar Klaro en su propiedad de etiquetas (las instrucciones se encuentran en el siguiente ejercicio).
-1. Omita el **Digitalización** , ya que detectará la propiedad de etiqueta que está codificada en el sitio web de demostración de Luma y no la que ha creado para este tutorial.
+1. Omita el **Digitalización** , ya que detecta la propiedad de etiqueta que está codificada en el sitio web de demostración de Luma y no la que ha creado para este tutorial.
 1. Añada un servicio llamado `aep web sdk` y active la opción **Estado predeterminado del servicio**. Cuando está activado, el valor de consentimiento predeterminado es `true`, de lo contrario `false`. Esta configuración es útil cuando desea decidir cuál va a ser el estado de consentimiento predeterminado (antes del consentimiento del visitante) para la aplicación web. Por ejemplo:
    * Para la CCPA, el consentimiento predeterminado suele establecerse en `true`. Va a hacer referencia a este escenario como **Inclusión implícita** en este tutorial
    * Para el RGPD, el consentimiento predeterminado suele estar establecido en `false`. Va a hacer referencia a este escenario como **Exclusión implícita** en este tutorial.
@@ -218,10 +220,10 @@ Una vez que haya establecido esta regla, la recopilación de eventos debe comenz
 Para obtener más información sobre el consentimiento en el SDK web, consulte [Compatibilidad con preferencias de consentimiento del cliente](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
 
 
-Para obtener más información sobre [!UICONTROL Definir consentimiento] acción, consulte [Definir consentimiento](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/action-types#set-consent).
+Para obtener más información sobre [!UICONTROL Definir consentimiento] acción, consulte [Definir consentimiento](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
 
 [Siguiente: ](setup-event-forwarding.md)
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer el SDK web de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Gracias por dedicar su tiempo a conocer el SDK web de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

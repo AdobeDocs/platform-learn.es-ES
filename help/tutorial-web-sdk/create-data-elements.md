@@ -1,18 +1,19 @@
 ---
-title: Creación de elementos de datos
+title: Creación de elementos de datos para el SDK web de Platform
 description: Obtenga información sobre cómo crear un objeto XDM y asignarle elementos de datos en etiquetas. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Tags
+jira: KT-15401
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1205'
 ht-degree: 1%
 
 ---
 
 # Creación de elementos de datos
 
-Obtenga información sobre cómo crear elementos de datos en etiquetas para contenido, comercio y datos de identidad en [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html). A continuación, rellene los campos del esquema XDM con la extensión del SDK web de Platform Tipo de elemento de datos variable.
+Obtenga información sobre cómo crear elementos de datos en etiquetas para contenido, comercio y datos de identidad en [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html). A continuación, rellene los campos del esquema XDM con la extensión del SDK web de Adobe Experience Platform Variable data element type.
 
 ## Objetivos de aprendizaje
 
@@ -138,7 +139,7 @@ Este método utiliza la funcionalidad integrada en la configuración de flujo de
 
 * Flexible, ya que puede asignar variables individuales al XDM
 * Capacidad para [calcular nuevos valores](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) o [transformar tipos de datos](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) de una capa de datos antes de pasar a XDM
-* Aproveche una [IU de asignación](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) para asignar campos en los datos de origen a XDM con una IU de apuntar y hacer clic
+* Aproveche una [IU de asignación](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep#create-mapping) para asignar campos en los datos de origen a XDM con una IU de apuntar y hacer clic
 
 #### Contras
 
@@ -298,4 +299,4 @@ Con estos elementos de datos en su lugar, está listo para empezar a enviar dato
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer el SDK web de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Gracias por dedicar su tiempo a conocer el SDK web de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

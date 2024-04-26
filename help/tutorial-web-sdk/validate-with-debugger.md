@@ -2,28 +2,29 @@
 title: Validación de implementaciones de SDK web con Experience Platform Debugger
 description: Obtenga información sobre cómo validar la implementación del SDK web de Platform con Adobe Experience Platform Debugger. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK,Tags,Debugger
+jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1194'
+source-wordcount: '1195'
 ht-degree: 1%
 
 ---
 
 # Validación de implementaciones de SDK web con Experience Platform Debugger
 
-Obtenga información sobre cómo validar la implementación del SDK web de Platform con Adobe Experience Platform Debugger.
+Obtenga información sobre cómo validar la implementación del SDK web de Adobe Experience Platform con Adobe Experience Platform Debugger.
 
-Experience Platform Debugger es una extensión disponible para los navegadores Chrome y Firefox que permite ver la tecnología de Adobe implementada en las páginas web. Descargue la versión para su navegador preferido:
+Experience Platform Debugger es una extensión disponible para los navegadores Chrome y Firefox, que le ayuda a ver la tecnología de Adobe implementada en las páginas web. Descargue la versión para su navegador preferido:
 
 * [Extensión de Firefox](https://addons.mozilla.org/es/firefox/addon/adobe-experience-platform-dbg/)
-* [Extensión de Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
+* [Extensión de Chrome](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
 Si nunca antes ha utilizado Debugger, es posible que desee ver este vídeo de información general de cinco minutos:
 
 >[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
 
-En esta lección, se usa el [Extensión de Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) para reemplazar la propiedad de etiqueta codificada en la variable [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html) con su propia propiedad.
+En esta lección, se usa el [extensión de Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) para reemplazar la propiedad de etiqueta codificada en la variable [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html) con su propia propiedad.
 
 Esta técnica se denomina cambio de entorno y será útil más adelante, cuando trabaje con etiquetas en su propio sitio web. Le permite cargar el sitio web de producción en su explorador, pero con su *desarrollo* biblioteca de etiquetas. Esta capacidad permite realizar y validar cambios de etiquetas con seguridad en de forma independiente de las revisiones de código normales. Después de todo, esta separación de las versiones de etiquetas de marketing de las versiones de código normal es una de las principales razones por las que los clientes utilizan etiquetas.
 
@@ -162,10 +163,10 @@ Para habilitar el seguimiento de Edge:
 
    ![Seguimiento de Edge de señalizaciones de Analytics](assets/validate-edge-trace.png)
 
-En este punto, no puede ver ninguna solicitud del Edge Network de Platform que vaya a una aplicación de Adobe porque no ha habilitado ninguna en la secuencia de datos. En lecciones futuras, utilice el seguimiento de Edge para ver las solicitudes salientes del lado del servidor a las aplicaciones de Adobe y al reenvío de eventos. Pero primero, obtenga información acerca de otra herramienta para validar las solicitudes del lado del servidor realizadas por Platform Edge Network: Adobe Experience Platform Assurance.
+En este punto, no puede ver ninguna solicitud del Edge Network de Platform que vaya a aplicaciones de Adobe porque no ha habilitado ninguna en la secuencia de datos. En lecciones futuras, utilice el seguimiento de Edge para ver las solicitudes salientes del lado del servidor a las aplicaciones de Adobe y al reenvío de eventos. Pero primero, obtenga información acerca de otra herramienta para validar las solicitudes del lado del servidor realizadas por Platform Edge Network: Adobe Experience Platform Assurance.
 
 [Siguiente: ](validate-with-assurance.md)
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer el SDK web de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Gracias por dedicar su tiempo a conocer el SDK web de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
