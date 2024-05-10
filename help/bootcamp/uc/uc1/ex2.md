@@ -7,10 +7,10 @@ doc-type: tutorial
 activity: develop
 feature: Profiles
 exl-id: 4c810767-00ab-4cae-baa9-97b0cb9bf2df
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: 47b9c3553bd0dae39f8271446dd15ee2f6df4d41
 workflow-type: tm+mt
-source-wordcount: '511'
-ht-degree: 1%
+source-wordcount: '493'
+ht-degree: 0%
 
 ---
 
@@ -39,12 +39,6 @@ En el menú de la izquierda, vaya a **Perfiles** y a **Examinar**.
 En el panel Visualizador de perfiles del sitio web, puede encontrar la descripción general de la identidad. Cada identidad está vinculada a un área de nombres.
 
 ![Perfil del cliente](./images/identities.png)
-
-En el panel Visor de perfiles, actualmente puede ver esta identidad:
-
-| Área de nombres | Identidad |
-|:-------------:| :---------------:|
-| ID DEL Experience Cloud (ECID) | 19428085896177382402834560825640259081 |
 
 Con Adobe Experience Platform, todos los ID son igualmente importantes. Anteriormente, el ECID era el ID más importante en el contexto de Adobe y todos los demás ID estaban vinculados al ECID en una relación jerárquica. Con Adobe Experience Platform, este ya no es el caso, y cada ID puede considerarse un identificador principal.
 

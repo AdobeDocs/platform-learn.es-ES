@@ -9,10 +9,10 @@ solution: Journey Optimizer
 feature-set: Journey Optimizer
 feature: Journeys
 exl-id: 138a70fa-fe50-4585-b47f-150db4770c3d
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: cd59a41f4533f18a54d80298ee9faf3a8ba3c6e7
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 4%
+source-wordcount: '948'
+ht-degree: 0%
 
 ---
 
@@ -160,7 +160,7 @@ Haga clic en **Ok**.
 
 ## 2.3.3 Publicar el recorrido
 
-Aún necesita darle un Nombre a su recorrido. Para ello, haga clic en el icono **Propiedades** en la parte superior derecha de la pantalla.
+Aún necesita darle un Nombre a su recorrido. Para ello, haga clic en el icono **Lápiz** en la parte superior izquierda de la pantalla.
 
 ![ACOP](./images/journeyname.png)
 

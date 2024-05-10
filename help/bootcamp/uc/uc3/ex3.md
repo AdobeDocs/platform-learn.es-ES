@@ -9,10 +9,10 @@ solution: Journey Optimizer
 feature-set: Journey Optimizer
 feature: Events
 exl-id: be8c23ec-c5f8-4abc-849f-994446072a84
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: cd59a41f4533f18a54d80298ee9faf3a8ba3c6e7
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 2%
+source-wordcount: '839'
+ht-degree: 1%
 
 ---
 
@@ -181,7 +181,7 @@ Desplazarse arriba y hacer clic **Ok**.
 
 ![ACOP](./images/jomsg21.png)
 
-Aún necesita darle un Nombre a su recorrido. Para ello, haga clic en el icono **Propiedades** en la parte superior derecha de la pantalla.
+Aún necesita darle un Nombre a su recorrido. Para ello, haga clic en el icono **Lápiz** en la parte superior izquierda de la pantalla.
 
 ![ACOP](./images/journeyname.png)
 

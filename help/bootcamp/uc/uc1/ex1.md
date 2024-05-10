@@ -7,9 +7,9 @@ doc-type: tutorial
 activity: develop
 feature: Profiles
 exl-id: 32a084a3-4c04-4367-947e-f7151fdad73b
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: cd59a41f4533f18a54d80298ee9faf3a8ba3c6e7
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '418'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Platform es un entorno en el que la palabra cliente es más amplia que solo los 
 
 ## Flujo de recorrido del cliente
 
-Ir a [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Clic **Permitir todo**.
+Ir a [https://bootcamp.aepdemo.net](https://publish9122.adobedemo.com/content/aep-bootcamp-experience/language-masters/en.html). Clic **Permitir todo**.
 
 ![DSN](./images/web8.png)
 
