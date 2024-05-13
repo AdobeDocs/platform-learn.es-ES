@@ -1,20 +1,20 @@
 ---
-title: Bootcamp - Real-time CDP - Cree un segmento y tome medidas - Envíe su segmento a DV360
-description: Bootcamp - Real-time CDP - Cree un segmento y tome medidas - Envíe su segmento a DV360
+title: Bootcamp - Real-time CDP - Cree una audiencia y tome medidas - Envíe su audiencia a DV360
+description: Bootcamp - Real-time CDP - Cree una audiencia y tome acción - Envíe su audiencia a DV360
 jira: KT-5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 feature: Destinations
 exl-id: 31f46e37-f1c0-4730-8520-1ccd98df6501
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: 5876de5015e4c8c337c235c24cc28b0a32e274dd
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 3%
 
 ---
 
-# 1.5 Tomar medidas: enviar el segmento a Facebook
+# 1.5 Tomar medidas: enviar la audiencia a Facebook
 
 Ir a [Adobe Experience Platform](https://experience.adobe.com/platform). Después de iniciar sesión, llegará a la página principal de Adobe Experience Platform.
 
@@ -24,7 +24,7 @@ Antes de continuar, debe seleccionar un **espacio aislado**. La zona protegida q
 
 ![Ingesta de datos](./images/sb1.png)
 
-En el menú de la izquierda, vaya a **Destinos**, luego vaya a **Catálogo**. A continuación, verá el **Catálogo de destinos**. Entrada **Destinos**, haga clic en **Activar segmentos** en el **Audiencia personalizada de facebook** Tarjeta de.
+En el menú de la izquierda, vaya a **Destinos**, luego vaya a **Catálogo**. A continuación, verá el **Catálogo de destinos**. Entrada **Destinos**, haga clic en **Activar audiencias** en el **Audiencia personalizada de facebook** Tarjeta de.
 
 ![RTCDP](./images/rtcdpgoogleseg.png)
 
@@ -32,7 +32,7 @@ Seleccionar el destino **bootcamp-facebook** y haga clic en **Siguiente**.
 
 ![RTCDP](./images/rtcdpcreatedest2.png)
 
-En la lista de segmentos disponibles, seleccione el segmento que creó en el ejercicio anterior. Haga clic en **Siguiente**.
+En la lista de audiencias disponibles, seleccione la audiencia que creó en el ejercicio anterior. Haga clic en **Siguiente**.
 
 ![RTCDP](./images/rtcdpcreatedest3.png)
 
@@ -40,7 +40,7 @@ En el **Asignación** , asegúrese de que la variable **Aplicar transformación*
 
 ![RTCDP](./images/rtcdpcreatedest4a.png)
 
-En el **Programación de segmentos** , seleccione la **Origen de la audiencia** y configúrelo en **Directamente de los clientes**. Haga clic en **Siguiente**.
+En el **Programación de audiencias** , seleccione la **Origen de la audiencia** y configúrelo en **Directamente de los clientes**. Haga clic en **Siguiente**.
 
 ![RTCDP](./images/rtcdpcreatedest4.png)
 
@@ -48,9 +48,9 @@ Por último, en la **Revisar** página, haga clic en **Finalizar**.
 
 ![RTCDP](./images/rtcdpcreatedest5.png)
 
-El segmento ahora está vinculado a Audiencias personalizadas de Facebook. Cada vez que un cliente se califica para este segmento, se enviará una señal al lado del servidor de Facebook para incluir a ese cliente en la audiencia personalizada en el lado del Facebook.
+La audiencia ahora está vinculada a Audiencias personalizadas de Facebook. Cada vez que un cliente se califica para esta audiencia, se enviará una señal al lado del servidor de Facebook para incluir a ese cliente en la audiencia personalizada en el lado del Facebook.
 
-En Facebook, encontrará el segmento de Adobe Experience Platform en Audiencias personalizadas:
+En Facebook, encontrará la audiencia de Adobe Experience Platform en Audiencias personalizadas :
 
 ![RTCDP](./images/rtcdpcreatedest5b.png)
 

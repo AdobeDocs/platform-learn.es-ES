@@ -5,9 +5,9 @@ jira: KT-5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-feature: Profiles, Segments, Integrations, Destinations
+feature: Profiles, Audiences, Integrations, Destinations
 exl-id: 4500dc9b-cc1a-4de8-aa39-7d4e849d65c4
-source-git-commit: ee5c0af17c12f1d90774a3a4150c9788e2368e39
+source-git-commit: 5876de5015e4c8c337c235c24cc28b0a32e274dd
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 2%
@@ -38,16 +38,16 @@ En este ejercicio, seguirá un script y recorrerá el sitio web.
 
 En este ejercicio, iniciará sesión en Adobe Experience Platform y verá su propio perfil de cliente en tiempo real en la interfaz de usuario.
 
-[1.3 Crear un segmento: IU](./ex3.md)
+[1.3 Crear una audiencia: IU](./ex3.md)
 
-En este ejercicio, creará un segmento utilizando el Generador de segmentos de Adobe Experience Platform.
+En este ejercicio, creará una audiencia utilizando el Generador de audiencias de Adobe Experience Platform.
 
-[1.4 Tomar medidas: enviar el segmento a Adobe Target](./ex4.md)
+[1.4 Tomar medidas: enviar la audiencia a Adobe Target](./ex4.md)
 
-Utilice el segmento creado en el ejercicio 1.1 para configurar una actividad de segmentación de experiencias en Adobe Target.
+Utilice la audiencia creada en el ejercicio 1.1 para configurar una actividad de segmentación de experiencias en Adobe Target.
 
-[1.5 Tomar medidas: enviar el segmento a Facebook](./ex5.md)
+[1.5 Tomar medidas: enviar la audiencia a Facebook](./ex5.md)
 
-Conecte el segmento que creó en el ejercicio 1.1 a Facebook de destino.
+Conecte la audiencia creada en el ejercicio 1.1 a Facebook de destino.
 
 [Volver a todos los módulos](../../overview.md)
