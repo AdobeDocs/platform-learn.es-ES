@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo informar y analizar las interaccio
 solution: Data Collection,Experience Platform,Analytics
 hide: true
 hidefromtoc: true
-source-git-commit: 9607ec77a891a85a8bae2a2622e74d59588e1dbf
+source-git-commit: 7237bc0e6fabd74157022b99e6edee47ef83f1c9
 workflow-type: tm+mt
-source-wordcount: '3415'
+source-wordcount: '3410'
 ht-degree: 1%
 
 ---
@@ -85,9 +85,9 @@ Una conexión en Customer Journey Analytics define los conjuntos de datos (y los
          | Eventos de decisión de MODE - *nombre de zona protegida* toma de decisiones | identityMap | timestamp | Datos de aplicación móvil | habilitar | habilitar |
          | Conjunto de datos de evento de experiencia de seguimiento push AJO | identityMap | timestamp | Datos de aplicación móvil | habilitar | habilitar |
 
-         ![Conexiones CJA 3](assets/cja-connections-3.png)
-
       1. Seleccionar **[!UICONTROL Añadir conjuntos de datos]**.
+
+         ![Conexiones CJA 3](assets/cja-connections-3.png)
 
 1. De nuevo en **[!UICONTROL Conexiones]** > **[!UICONTROL Aplicación Luma: conexión del tutorial del SDK móvil de AEP]**, seleccione **[!UICONTROL Guardar]** para guardar la conexión.
 
@@ -156,8 +156,6 @@ Para crear la vista de datos:
       ![Configuración del componente de vista de datos de CJA](assets/cja-dataview-component-settings.png)
 
    1. Ahora que sabe cómo agregar campos a la vista de datos y configurar el componente resultante, utilice las tablas siguientes para una lista de campos de esquema para agregar como métrica o dimensión. Utilice el **Ruta de esquema** Valor de columna de la tabla siguiente para buscar o recorrer el campo de esquema específico. Una vez arrastrado y soltado, marque la **Configuración de componentes** valor de columna en la tabla si se requieren configuraciones específicas para un componente, como modificar su **[!UICONTROL Nombre del componente]** o definiendo **[!UICONTROL INCLUIR VALORES DE EXCLUSIÓN]**.
-
-      ![Configuración del componente de vista de datos de CJA](assets/cja-dataview-component-settings.png)
 
       **MÉTRICAS**
 
@@ -232,9 +230,9 @@ Para crear el proyecto:
 
    1. Seleccionar **[!UICONTROL Proyecto de Workspace en blanco]** en el cuadro de diálogo emergente.
 
-      ![Proyectos de CJA: 1](assets/cja-projects-1.png)
-
    1. Seleccione **[!UICONTROL Crear]**.
+
+      ![Proyectos de CJA: 1](assets/cja-projects-1.png)
 
 1. Se le presentará la variable **[!UICONTROL Nuevo proyecto]** interfaz. En esta interfaz, puede generar informes y visualizaciones.
 
@@ -357,8 +355,10 @@ En función del informe anterior, se desea visualizar las visitas en el orden pr
    ![Proyectos de CJA 18](assets/cja-projects-18.png)
 También puede arrastrar y soltar el **[!UICONTROL Vista de productos]** dimensión debajo de **[!UICONTROL Todas las personas]** dimensión en la **[!UICONTROL Abandonos]** visualización.
 
-1. Repita el paso anterior para **[!UICONTROL Producto Añadido A Listas]** y **[!UICONTROL Compras]** dimensiones. Su **[!UICONTROL Abandonos]** ahora, la visualización muestra una representación visual del canal de conversión de sus productos.
-   ![Proyectos de CJA 19](assets/cja-projects-19.png)
+1. Repita el paso anterior para **[!UICONTROL Producto Añadido A Listas]** y **[!UICONTROL Compras]** dimensiones.
+
+Su **[!UICONTROL Abandonos]** ahora, la visualización muestra una representación visual del canal de conversión de sus productos.
+![Proyectos de CJA 19](assets/cja-projects-19.png)
 
 No olvide guardar el proyecto.
 
