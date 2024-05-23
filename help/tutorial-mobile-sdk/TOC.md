@@ -1,5 +1,5 @@
 ---
-user-guide-title: Tutorial de implementación de Experience Cloud en aplicaciones móviles
+user-guide-title: Tutorial de implementación del Experience Cloud en aplicaciones móviles
 breadcrumb-title: Tutorial de aplicación móvil
 user-guide-description: Obtenga información sobre cómo implementar aplicaciones de Adobe Experience Cloud en aplicaciones móviles con el SDK móvil de Experience Platform.
 solution: Data Collection
@@ -8,17 +8,17 @@ role: Developer
 level: Beginner,Intermediate
 jira: KT-6987
 recommendations: noDisplay,noCatalog
-source-git-commit: 8c588f7aeefe0d4e4b17cf5f34268dcca943e2a0
+source-git-commit: 6a6d8dcceead2421c79a0727e18bec97dfe3d9cb
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 85%
+source-wordcount: '78'
+ht-degree: 33%
 
 ---
 
 
-#  de implementación de Experience Cloud en aplicaciones móviles {#implement-mobile-sdk}
+# Implementación del Experience Cloud de en aplicaciones móviles {#implement-mobile-sdk}
 
-+ [Información general del tutorial](overview.md)
++ [Resumen del tutorial](overview.md)
 + Configuración inicial {#initial-configuration}
    + [Creación de un esquema](create-schema.md)
    + [Crear un flujo de datos](create-datastream.md)
@@ -41,5 +41,6 @@ ht-degree: 85%
       + [Mensajes en la aplicación](journey-optimizer-inapp.md)
       + [Gestión de decisiones](journey-optimizer-offers.md)
    + [Target](target.md)
+   + [Customer Journey Analytics](customer-journey-analytics.md)
 + [Conclusión](conclusion.md)
 
