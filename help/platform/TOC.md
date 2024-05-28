@@ -1,14 +1,14 @@
 ---
 user-guide-title: Tutoriales de Adobe Experience Platform
 breadcrumb-title: Tutoriales
-user-guide-description: Descubra los muchos componentes de Experience Platform.
+user-guide-description: Conozca los muchos componentes de Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: fd571fccc93e8d99beb9dafbe432961488a4d94d
+source-git-commit: 39a2297c90162bde5ae9c99d5a2061a801434215
 workflow-type: tm+mt
-source-wordcount: '874'
-ht-degree: 17%
+source-wordcount: '876'
+ht-degree: 15%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 17%
    + [Uso de alertas](/help/platform/admin/use-alerts.md)
    + [Usar zonas protegidas](/help/platform/admin/use-sandboxes.md)
    + [Copia de objetos entre zonas protegidas](/help/platform/admin/copy-objects-between-sandboxes.md)
-   + [Agregar usuarios](/help/platform/admin/add-users.md)
+   + [Adición de usuarios](/help/platform/admin/add-users.md)
    + [Añadir usuarios a la recopilación de datos](https://experienceleague.adobe.com/docs/platform-learn/data-collection/users-and-permissions.html)
    + [Adición de desarrolladores](/help/platform/admin/add-developers.md)
    + [Añadir administradores de productos](/help/platform/admin/add-product-administrators.md)
@@ -49,12 +49,12 @@ ht-degree: 17%
    + [Introducción a Audience Portal y Composición](audiences/introduction-to-audience-portal-and-composition.md)
    + [Cargar audiencias](audiences/upload-audiences.md)
    + [Resumen del generador de reglas para audiencias](audiences/audience-rule-builder-overview.md)
-   + [Creación de públicos](audiences/create-audiences.md)
+   + [Crear público](audiences/create-audiences.md)
    + [Crear audiencias basadas en contenido](audiences/create-content-based-audiences.md)
    + [Crear audiencias de conversión](audiences/create-conversion-audiences.md)
    + [Crear audiencias a partir de audiencias existentes](audiences/create-audiences-from-existing-audiences.md)
    + [Crear audiencias secuenciales](audiences/create-sequential-audiences.md)
-   + [Crear audiencias dinámicas](audiences/create-dynamic-audiences.md)
+   + [Crear público dinámico](audiences/create-dynamic-audiences.md)
    + [Creación de audiencias de varias entidades](audiences/create-multi-entity-audiences.md)
    + [Crear y activar audiencias de cuenta (B2B)](audiences/create-audiences-with-b2b-data.md)
    + [Demostración de la segmentación de streaming](/help/platform/audiences/streaming-segmentation-demo.md)
@@ -67,9 +67,9 @@ ht-degree: 17%
    + [Coincidencia de segmentos recibiendo datos](/help/platform/segments/segment-match-receiving-data.md)
 + [Registros de auditoría](/help/platform/governance/audit-logs.md)
 + [Recopilación de datos](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
-+ Tableros {#dashboards}
++ Paneles {#dashboards}
    + [Crear un tablero](/help/platform/dashboards/create-a-dashboard.md)
-+ Administración de datos {#data-governance}
++ Gobernanza de datos {#data-governance}
    + [Información general](/help/platform/governance/understanding-data-governance.md)
    + [Demostración de extremo a extremo](/help/platform/governance/introduction-to-data-governance.md)
    + [Clasificación de datos mediante etiquetas](/help/platform/governance/classify-data-using-labels.md)
@@ -78,13 +78,12 @@ ht-degree: 17%
    + [Aplicar consentimiento](/help/platform/governance/enforce-consent.md)
    + [Integración con el marco de transparencia y consentimiento 2.0 de IAB](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + Higiene de datos {#data-hygiene}
-   + [Eliminar conjuntos de datos](/help/platform/data-hygiene/delete-datasets.md)
    + [Caducidad de perfil y evento seudónimos](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
 + Ingesta de datos {#data-ingestion}
    + [Información general](/help/platform/data-ingestion/understanding-data-ingestion.md)
-   + [Resumen de ingesta por lotes](/help/platform/data-ingestion/batch-ingestion-overview.md)
+   + [Información general de la ingesta por lotes](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [Crear y rellenar un conjunto de datos](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
-   + [Asignación de un archivo CSV a XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html?lang=es){target="_blank"}
+   + [Asignación de un archivo CSV a XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html){target="_blank"}
    + [Resumen de orígenes](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
    + [Ingesta de datos desde Adobe Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=es)
    + [Ingesta de datos desde el Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
@@ -96,6 +95,8 @@ ht-degree: 17%
    + [Transmisión de datos mediante conectores de origen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=es)
    + [Tutoriales del SDK web](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
    + [Tutoriales del SDK móvil](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
++ Ciclo de datos {#data-lifecycle}
+   + [Caducar conjuntos de datos](/help/platform/data-lifecycle/expire-datasets.md)
 + Data Science Workspace {#data-science-workspace}
    + [Información general](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
    + [Arquitectura](data-science-workspace/architecture-overview.md)
@@ -190,11 +191,11 @@ ht-degree: 17%
    + [Analizar y visualizar datos](/help/platform/queries/analyze-and-visualize.md)
    + [Creación de paneles con herramientas de BI](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
    + [Recargar los datos de clientes](/help/platform/queries/recharge-your-customer-data.md)
-   + [Conectar clientes al servicio de consultas](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html?lang=es){target="_blank"}
+   + [Conectar clientes al servicio de consultas](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
    + [Validación de datos en el lago de datos](/help/platform/queries/validate-data-in-the-datalake.md)
 + Esquemas {#schemas}
    + [Información general](/help/platform/schemas/schemas-and-experience-data-model.md)
-   + [Componentes](/help/platform/schemas/schema-building-blocks.md)
+   + [Bloques de creación](/help/platform/schemas/schema-building-blocks.md)
    + [Planificación del modelo de datos](/help/platform/schemas/plan-your-data-model.md)
    + [Conversión del modelo de datos a XDM](/help/platform/schemas/convert-your-data-model-to-xdm.md)
    + [Crear esquemas](/help/platform/schemas/create-schemas.md)
