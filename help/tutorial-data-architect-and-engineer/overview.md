@@ -8,10 +8,10 @@ thumbnail: 4348-overview.jpg
 recommendations: catalog, noDisplay
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: fabbc591-840b-40dc-89af-305626a16338
-source-git-commit: e640a7e5c3a5f745462aa0d4e9d5f5c0b34ca8d7
+source-git-commit: efef0389cedfec7dfa19d876df96c58b7463ee12
 workflow-type: tm+mt
-source-wordcount: '777'
-ht-degree: 1%
+source-wordcount: '771'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,7 @@ _Introducción a Adobe Experience Platform para arquitectos e ingenieros de dato
 
 ## Objetivos de aprendizaje
 
-Los arquitectos de datos y los ingenieros de datos deben colaborar estrechamente para que la implementación de Experience Platform se realice correctamente. Este tutorial práctico le enseña las tareas clave ejecutadas por _ambas funciones_ para que sepa cómo empezar a implementar Platform para su propio negocio. Se le guiará a través de ejercicios que le presentarán la terminología, las funciones, la interfaz y la API clave de Experience Platform. Los clientes de aplicaciones de Adobe Experience Cloud como Real-time Customer Data Platform, Customer Journey Analytics y Journey Optimizer también encontrarán útil este contenido, ya que los servicios de Platform son fundamentos críticos de dichas aplicaciones.
+Los arquitectos de datos y los ingenieros de datos deben colaborar estrechamente para que la implementación de Experience Platform se realice correctamente. Este tutorial práctico le enseña las tareas clave ejecutadas por _ambas funciones_ para que sepa cómo empezar a implementar Platform para su propio negocio. Se le guiará a través de ejercicios que le presentarán la terminología, las funciones, la interfaz y las API clave de Experience Platform. Los clientes de aplicaciones de Adobe Experience Cloud como Real-time Customer Data Platform, Customer Journey Analytics y Journey Optimizer también encontrarán útil este contenido, ya que los servicios de Platform son fundamentos críticos de dichas aplicaciones.
 
 ![La arquitectura de marketing de Adobe Experience Cloud destaca los servicios de Platform que se tratan en este tutorial: identidad, perfil, segmentación, ingesta, consulta y administración](assets/marketecture.png)
 
