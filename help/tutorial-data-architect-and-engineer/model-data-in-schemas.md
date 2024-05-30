@@ -8,10 +8,10 @@ feature: Schemas
 jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: e0289aeaf2d987e4690c08b1695a3356442b15f6
+source-git-commit: 8e470d8a0c9fee7389ac60a743431fe81012fa0f
 workflow-type: tm+mt
-source-wordcount: '2611'
-ht-degree: 2%
+source-wordcount: '2619'
+ht-degree: 1%
 
 ---
 
@@ -86,7 +86,7 @@ En este ejercicio, crearemos un esquema para los datos de fidelidad de Luma.
 
 Una vez creado el esquema, se le redirigirá al Editor de esquemas, donde puede agregar campos al esquema. Puede agregar campos individuales directamente al esquema o utilizar grupos de campos. Es importante tener en cuenta que todos los campos individuales siguen estando asociados a una clase o grupo de campos. Puede elegir entre un gran conjunto de grupos de campos estándar del sector proporcionados por Adobe o crear los suyos propios. A medida que empiece a modelar sus propios datos en Experience Platform, es bueno familiarizarse con los grupos de campo estándar del sector que proporciona Adobe. Siempre que sea posible, se recomienda utilizarlos, ya que a veces alimentan servicios descendentes, como inteligencia artificial aplicada al cliente, Attribution AI y Adobe Analytics.
 
-Al trabajar con sus propios datos, un paso importante será determinar cuáles de sus propios datos deben capturarse en Platform y cómo deben modelarse. Este gran tema se analiza con más detalle en el curso [Modelar los datos de la experiencia del cliente con XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=es). En este tutorial, solo le guiaré a través de la implementación de algunos esquemas predeterminados.
+Al trabajar con sus propios datos, un paso significativo será determinar cuáles de sus propios datos deben capturarse en Platform y cómo deben modelarse. Este gran tema se analiza con más detalle en el curso [Modelar los datos de la experiencia del cliente con XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=es). En este tutorial, solo le guiaré a través de la implementación de algunos esquemas predeterminados.
 
 Para agregar grupos de campos:
 
@@ -99,27 +99,32 @@ Para agregar grupos de campos:
    ![Seleccionar grupos de campos estándar](assets/schemas-loyalty-addFirstTwoFieldGroups.png)
 
 1. Compruebe la **[!UICONTROL Industria]** > **[!UICONTROL Comercial]** para exponer los grupos de campos específicos del sector.
-1. Seleccionar **[!UICONTROL Lealtad]** para añadir los campos del programa de fidelización.
-1. Seleccionar **[!UICONTROL Agregar grupo de campos]** para agregar los tres grupos de campos al esquema.
+1. Seleccionar **[!UICONTROL Detalles de fidelización]** para añadir los campos del programa de fidelización.
+1. Seleccionar **[!UICONTROL Adición de grupos de campos]** para agregar los tres grupos de campos al esquema.
    ![Adición de grupos de campos estándar al esquema de fidelización](assets/schemas-loyalty-saveOotbMixins.png)
 
 
-Ahora dedique un tiempo a explorar el estado actual del esquema. Los grupos de campos han agregado campos estándar relacionados con una persona, sus detalles de contacto y el estado del programa de fidelización. Puede encontrar útiles estos dos grupos de campos al crear esquemas para los datos de su propia compañía. Seleccione una fila de grupo de campos específica o marque la casilla junto al nombre del grupo de campos para ver cómo cambia la visualización.
+Ahora, dedique un tiempo a explorar el estado actual del esquema. Los grupos de campos han agregado campos estándar relacionados con una persona, sus detalles de contacto y el estado del programa de fidelización. Puede encontrar útiles estos dos grupos de campos al crear esquemas para los datos de su propia compañía. Seleccione una fila de grupo de campos específica o marque la casilla junto al nombre del grupo de campos para ver cómo cambia la visualización.
 
 Para guardar el esquema, seleccione **[!UICONTROL Guardar]**.
 ![Guardar el esquema](assets/schemas-loyalty-saveSchema.png)
 
 >[!NOTE]
 >
->Es aceptable si un grupo de campos agrega un campo para un punto de datos que no recopila. Por ejemplo, &quot;faxPhone&quot; puede ser un campo para el que Luma no recopila datos. Eso está bien. El hecho de que un campo se defina en el esquema no significa que haya datos para él *debe* ingerirse más adelante.
+>Es aceptable si un grupo de campos agrega un campo para un punto de datos que no recopila. Por ejemplo, &quot;faxPhone&quot; puede ser un campo para el que Luma no recopila datos. Eso está bien. El hecho de que un campo se defina en el esquema no significa que haya datos para él *debe* ingerirse más adelante. También puede quitar el campo del esquema.
 
 ### Agregar un grupo de campos personalizados
 
-Ahora vamos a crear un grupo de campos personalizados.
+Ahora, vamos a crear un grupo de campos personalizados.
 
 Mientras que el grupo de campo de fidelidad contenía un `loyaltyID` , Luma desea administrar todos sus identificadores del sistema en un solo grupo para garantizar la coherencia en sus esquemas.
 
-Los grupos de campos deben crearse en el flujo de trabajo del esquema. Puede agregar un nuevo campo personalizado al esquema y crear un grupo de campos personalizados de esa manera, o bien puede crear primero un grupo de campos personalizados y luego agregarle campos. En este tutorial empezamos con la creación de un grupo de campos personalizados.
+Los grupos de campos deben crearse en el flujo de trabajo del esquema. Puede hacer lo siguiente:
+
+* Agregue primero un nuevo campo personalizado al esquema y, a continuación, cree un grupo de campos personalizados, o
+* Cree primero un grupo de campos personalizados y, a continuación, agréguele campos.
+
+En este tutorial, empezamos con la creación de un grupo de campos personalizados.
 
 Para crear el grupo de campos:
 
