@@ -9,16 +9,16 @@ solution: Customer Journey Analytics
 feature-set: Customer Journey Analytics
 feature: Connections, Data Views, Workspace Basics, Calculated Metrics, Visualizations, Audiences
 exl-id: cd4b423c-cd0b-44cf-8ac7-23c25876457c
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: 901b90ca165a74bbc4f871469222064b70d0a20a
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '384'
 ht-degree: 1%
 
 ---
 
 # 4. Análisis del Recorrido del cliente
 
-En este flujo de usuario, obtendrá experiencia práctica con el servicio de aplicaciones para Customer Journey Analytics.
+En este flujo de usuario, obtendrá experiencia práctica con la aplicación de Customer Journey Analytics.
 
 Customer Journey Analytics proporciona un conjunto de herramientas a los equipos de inteligencia empresarial y ciencia de datos para vincular y analizar datos de canales cruzados (en línea y sin conexión). Las funciones de Customer Journey Analytics ofrecen contexto y claridad a los complejos recorridos de clientes multicanal. El contexto proporcionado genera una perspectiva procesable sobre cómo eliminar los puntos problemáticos del proceso de conversión del cliente y ofrecer experiencias positivas en los momentos más importantes.
 
@@ -40,7 +40,7 @@ Se puede encontrar más información sobre el Customer Journey Analytics [aquí]
 
 - Se prefiere estar algo familiarizado con Analysis Workspace, pero no es obligatorio
 - Acceso a Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Acceso al servicio de aplicaciones para Customer Journey Analytics
+- Acceso a la aplicación del Customer Journey Analytics
 
 >[!IMPORTANT]
 >

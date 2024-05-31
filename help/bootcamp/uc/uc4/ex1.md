@@ -7,9 +7,9 @@ doc-type: tutorial
 activity: develop
 solution: Customer Journey Analytics
 exl-id: 587be8bc-8ebe-4f30-99d8-ba88ce40caf7
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: 901b90ca165a74bbc4f871469222064b70d0a20a
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## Objetivos
 
-- Comprender el servicio de aplicaciones de CJA
+- Comprender la aplicación CJA
 - Aprenda a posicionar CJA
 - Comprender el flujo de trabajo de CJA: de la conexión de datos a las perspectivas
 

@@ -4,20 +4,24 @@ description: Obtenga información sobre cómo configurar áreas de nombres de id
 feature: Web SDK,Identities
 jira: KT-15400
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 8%
+source-wordcount: '655'
+ht-degree: 12%
 
 ---
 
 # Configuración de un área de nombres de identidad
 
-Obtenga información sobre cómo configurar áreas de nombres de identidad para utilizarlas con el SDK web de Adobe Experience Platform.
+Obtenga información sobre cómo configurar espacios de nombres de identidad para utilizarlos con el SDK web de Adobe Experience Platform.
 
 El [Servicio de identidad de Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/id-service/using/home) establece un ID de visitante común (el ECID) en todas las aplicaciones de Adobe basadas en SDK para potenciar las funciones de Experience Cloud, como el uso compartido de audiencias entre aplicaciones. También puede enviar sus propios ID de cliente al servicio para permitir integraciones y segmentaciones en todos los dispositivos con otros sistemas, como el sistema de administración de la relación con los clientes (CRM).
 
 El [Servicio de identidad de Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) (sí, ¡hay dos!) utiliza los ECID y los ID de cliente para generar gráficos de identidad, lo que le permite combinar atributos y comportamientos en los perfiles de cliente en tiempo real.
+
+>[!NOTE]
+>
+>Un área de nombres de identidad personalizada es _no obligatorio_ para implementar Adobe Analytics, Adobe Target o Adobe Audience Manager con el SDK web (las identidades autenticadas se pueden pasar en el `data` en lugar del objeto `xdm` como verá más adelante). Se requieren áreas de nombres de identidad para aplicaciones nativas de Platform como Journey Optimizer, Real-time Customer Data Platform y Customer Journey Analytics. Aunque puede decidir no utilizar un área de nombres de identidad en su propia implementación, se espera que lo haga como parte de este tutorial.
 
 >[!NOTE]
 >

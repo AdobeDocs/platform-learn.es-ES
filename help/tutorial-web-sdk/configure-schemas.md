@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo crear un esquema XDM para datos we
 feature: Web SDK,Schemas
 jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
 workflow-type: tm+mt
-source-wordcount: '1498'
-ht-degree: 1%
+source-wordcount: '1542'
+ht-degree: 3%
 
 ---
 
@@ -18,6 +18,10 @@ Obtenga información sobre cómo crear un esquema XDM para datos web en la inter
 Los esquemas XDM (Experience Data Model) son los componentes básicos, los principios y las prácticas recomendadas para recopilar datos en Adobe Experience Platform.
 
 El SDK web de Platform utiliza su esquema para estandarizar los datos de eventos web, enviarlos al Edge Network de Platform y, finalmente, reenviar los datos a cualquier aplicación del Experience Cloud configurada en la secuencia de datos. Este paso es fundamental, ya que define un modelo de datos estándar necesario para la ingesta de datos de experiencia del cliente en Experience Platform y permite la prestación de servicios y aplicaciones descendentes basados en estos estándares.
+
+>[!NOTE]
+>
+>Un esquema XDM es _no obligatorio_ para implementar Adobe Analytics, Adobe Target o Adobe Audience Manager con el SDK web (los datos se pueden pasar en la variable `data` en lugar del objeto `xdm` como verá más adelante). Se requiere un esquema XDM para las implementaciones de mayor rendimiento de las aplicaciones nativas de Platform como Journey Optimizer, Real-time Customer Data Platform y Customer Journey Analytics. Aunque puede decidir no utilizar un esquema XDM en su propia implementación, se espera que lo haga como parte de este tutorial.
 
 ## ¿Por qué modelar los datos?
 
@@ -111,8 +115,7 @@ Cuando sea posible, se recomienda utilizar grupos de campos existentes y adherir
 > 
 >En este ejercicio, se agregan los grupos de campos predefinidos recomendados para la recopilación de datos web: _**[!UICONTROL ExperienceEvent del SDK web de AEP]**_ y _**[!UICONTROL Evento de experiencia del consumidor]**_.
 >
->
-> Si solo va a implementar **Adobe Analytics** con el SDK web y no enviar ningún dato a **Experience Platform**, use el [!UICONTROL Plantilla de Adobe Analytics ExperienceEvent] grupo de campos para definir el esquema XDM. Se utiliza en el [Análisis de configuración](setup-analytics.md) lección.
+
 
 1. En el **[!UICONTROL Grupos de campos]** , seleccione **[!UICONTROL Añadir]**
 

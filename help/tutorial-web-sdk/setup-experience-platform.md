@@ -3,16 +3,16 @@ title: Transmitir datos a Adobe Experience Platform con el SDK web de Platform
 description: Obtenga información sobre cómo transmitir datos web a Adobe Experience Platform con el SDK web. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
 workflow-type: tm+mt
-source-wordcount: '1592'
-ht-degree: 4%
+source-wordcount: '1940'
+ht-degree: 5%
 
 ---
 
 # Transmitir datos al Experience Platform con SDK web
 
-Obtenga información sobre cómo transmitir datos web a Adobe Experience Platform con el SDK web de Platform.
+Obtenga información sobre cómo transmitir datos web a Adobe Experience Platform con SDK web de Platform.
 
 Experience Platform es la columna vertebral de todas las nuevas aplicaciones de Experience Cloud, como Adobe Real-time Customer Data Platform, Adobe Customer Journey Analytics y Adobe Journey Optimizer. Estas aplicaciones están diseñadas para utilizar el SDK web de Platform como método óptimo de recopilación de datos web.
 
@@ -232,6 +232,57 @@ Primero debe generar más datos de ejemplo. Repita los pasos anteriores de esta 
    ![Perfil del cliente](assets/experience-platform-validate-dataset-custProfile.png)
 
 Ahora ha habilitado el SDK web de Platform para Experience Platform (y Real-Time CDP! ¡Y Journey Optimizer! ¡Y Customer Journey Analytics!).
+
+### Crear un esquema de fidelización e introducir datos de ejemplo
+
+Se espera que los clientes de Real-time Customer Data Platform y Journey Optimizer completen este ejercicio.
+
+Cuando los datos del SDK web se incorporan en Adobe Experience Platform, se pueden ampliar con otras fuentes de datos que haya introducido en Platform. Por ejemplo, cuando un usuario inicia sesión en el sitio de Luma, se construye un gráfico de identidades en Experience Platform y todos los demás conjuntos de datos con perfil habilitado pueden unirse para crear perfiles de cliente en tiempo real. Para ver esto en acción, cree rápidamente otro conjunto de datos en Adobe Experience Platform con algunos datos de fidelidad de ejemplo para poder utilizar Perfiles del cliente en tiempo real con Real-time Customer Data Platform y Journey Optimizer. Dado que ya ha realizado ejercicios similares, las instrucciones serán breves.
+
+Cree el esquema de fidelización:
+
+1. Creación de un nuevo esquema
+1. Elegir **[!UICONTROL Perfil individual]** como el [!UICONTROL clase base]
+1. Asignar un nombre al esquema `Luma Loyalty Schema`
+1. Añada el [!UICONTROL Detalles de fidelización] grupo de campos
+1. Añada el [!UICONTROL Datos demográficos] grupo de campos
+1. Seleccione el `Person ID` y marcarlo como un campo [!UICONTROL Identidad] y [!UICONTROL Identidad principal] uso del `Luma CRM Id` [!UICONTROL Área de nombres de identidad].
+1. Habilitar el esquema para [!UICONTROL Perfil]
+
+   ![Esquema de fidelización](assets/web-channel-loyalty-schema.png)
+
+Para crear el conjunto de datos e introducir los datos de ejemplo:
+
+1. Cree un nuevo conjunto de datos a partir de `Luma Loyalty Schema`
+1. Asignar un nombre al conjunto de datos `Luma Loyalty Dataset`
+1. Habilitar el conjunto de datos para [!UICONTROL Perfil]
+1. Descargar el archivo de muestra [luma-loyalty-forWeb.json](assets/luma-loyalty-forWeb.json)
+1. Arrastre y suelte el archivo en el conjunto de datos
+1. Confirme que los datos se han introducido correctamente.
+
+   ![Esquema de fidelización](assets/web-channel-loyalty-dataset.png)
+
+### Crear un público
+
+Las audiencias agrupan perfiles en torno a rasgos comunes. Cree una audiencia rápida que pueda utilizar en su campaña web:
+
+1. En la interfaz del Experience Platform, vaya a **[!UICONTROL Audiencias]** en el panel de navegación izquierdo
+1. Seleccionar **[!UICONTROL Crear audiencia]**
+1. Seleccionar **[!UICONTROL Generar regla]**
+1. Seleccionar **[!UICONTROL Crear]**
+
+   ![Crear un público](assets/web-campaign-create-audience.png)
+
+1. Seleccionar **[!UICONTROL Atributos]**
+1. Busque el **[!UICONTROL Lealtad]** > **[!UICONTROL Nivel]** y arrástrelo al campo **[!UICONTROL Atributos]** sección
+1. Defina la audiencia como usuarios cuyos `tier` es `gold`
+1. Nombrar la audiencia `Luma Loyalty Rewards – Gold Status`
+1. Seleccionar **[!UICONTROL Edge]** como el **[!UICONTROL Método de evaluación]**
+1. Seleccionar **[!UICONTROL Guardar]**
+
+   ![Definición de la audiencia](assets/web-campaign-define-audience.png)
+
+Como se trata de una audiencia muy sencilla, podemos utilizar el método de evaluación de Edge. Las audiencias de Edge se evalúan en Edge, por lo que en la misma solicitud realizada por el SDK web al Edge Network de Platform, podemos evaluar la definición de la audiencia y confirmar inmediatamente si el usuario cumple los requisitos.
 
 
 [Siguiente: ](setup-analytics.md)
