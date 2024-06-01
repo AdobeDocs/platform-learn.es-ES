@@ -4,16 +4,16 @@ description: Obtenga información sobre cómo validar la implementación del SDK
 feature: Web SDK,Tags,Debugger
 jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '1195'
-ht-degree: 1%
+source-wordcount: '1172'
+ht-degree: 3%
 
 ---
 
 # Validación de implementaciones de SDK web con Experience Platform Debugger
 
-Obtenga información sobre cómo validar la implementación del SDK web de Adobe Experience Platform con Adobe Experience Platform Debugger.
+Obtenga información sobre cómo validar la implementación de SDK web de Adobe Experience Platform con Adobe Experience Platform Debugger.
 
 Experience Platform Debugger es una extensión disponible para los navegadores Chrome y Firefox, que le ayuda a ver la tecnología de Adobe implementada en las páginas web. Descargue la versión para su navegador preferido:
 
@@ -75,7 +75,7 @@ Experience Platform Debugger tiene una característica interesante que le permit
 
    ![propiedad de etiqueta reemplazada](assets/validate-switch-success.png)
 
-A medida que continúa con el tutorial, utilizará esta técnica de asignación del sitio de Luma a su propia propiedad de etiquetas para validar la implementación del SDK web de Platform. Cuando empiece a utilizar etiquetas en el sitio web de producción, puede utilizar esta misma técnica para validar los cambios a medida que los realiza en el entorno de desarrollo de etiquetas.
+A medida que continúa con el tutorial, utilizará esta técnica de asignación del sitio de Luma a su propia propiedad de etiquetas para validar la implementación del SDK web de Platform. Al utilizar etiquetas en su propio sitio web, puede utilizar esta misma técnica para validar las bibliotecas de etiquetas de desarrollo en el sitio web de producción.
 
 ## Validar solicitudes de red del lado del cliente con Experience Platform Debugger
 
@@ -131,7 +131,7 @@ Estos tipos de detalles de solicitud también están visibles en las herramienta
 
    ![Pestaña Red](assets/validate-dev-console.png)
 
-1. Vaya a la **Respuesta** y observe cómo se incluye el valor de ECID en la respuesta. Copie este valor tal como lo utilizará para validar la información de perfil en el siguiente ejercicio
+1. Vaya a la **Respuesta** y observe cómo se incluye el valor de ECID en la respuesta.
 
    ![Pestaña Red](assets/validate-dev-console-ecid.png)
 

@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo habilitar un flujo de datos y conf
 feature: Web SDK,Datastreams
 jira: KT-15399
 exl-id: 20f770d1-eb0f-41a9-b451-4069a0a91fc4
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 4%
+source-wordcount: '536'
+ht-degree: 8%
 
 ---
 
@@ -55,9 +55,9 @@ Ahora puede crear un flujo de datos para indicar a Platform Edge Network dónde 
 
    >[!NOTE]
    >
-   >Solo es necesario seleccionar un esquema si se utiliza la variable [Preparación de datos para la recopilación de datos](/help/data-collection/edge/data-prep.md) función.
+   >No es necesario que seleccione un esquema. La selección de un esquema solo es necesaria si utiliza [Preparación de datos para la recopilación de datos](/help/data-collection/edge/data-prep.md) función.
 
-En la siguiente pantalla, puede añadir servicios como aplicaciones de Adobe al conjunto de datos, pero no agregará ningún servicio en este punto del tutorial. Lo hará más adelante en las lecciones [Configurar Experience Platform](setup-experience-platform.md), [Configuración de Analytics](setup-analytics.md), [Configurar Audience Manager](setup-audience-manager.md), [Configurar Target](setup-target.md), o [Reenvío de eventos](setup-event-forwarding.md).
+En la siguiente pantalla, puede agregar servicios como aplicaciones de Adobe al conjunto de datos, pero no agregará ningún servicio en este punto. Lo hará más adelante en las lecciones [Configurar Experience Platform](setup-experience-platform.md), [Configuración de Analytics](setup-analytics.md), [Configurar Audience Manager](setup-audience-manager.md), [Configurar Target](setup-target.md), o [Reenvío de eventos](setup-event-forwarding.md).
 
 >[!NOTE]
 >

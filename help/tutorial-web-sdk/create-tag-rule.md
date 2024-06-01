@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo enviar un evento al Edge Network d
 feature: Tags
 jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '1963'
-ht-degree: 1%
+source-wordcount: '1983'
+ht-degree: 2%
 
 ---
 
@@ -56,7 +56,7 @@ donde;
 En las etiquetas, las reglas se utilizan para ejecutar acciones (llamadas de activación) bajo varias condiciones. La extensión de etiquetas del SDK web de Platform incluye dos acciones que se utilizan en esta lección:
 
 * **[!UICONTROL Actualizar variable]** asigna elementos de datos a propiedades en un objeto XDM
-* **[!UICONTROL Enviar evento]** envía el objeto XDM a Experience Platform Edge Network
+* **[!UICONTROL Enviar evento]** envía el objeto XDM al Edge Network del Experience Platform
 
 En el resto de esta lección:
 
@@ -163,7 +163,6 @@ Ahora, empiece a usar **[!UICONTROL Actualizar variable]** en reglas adicionales
 >
 >El orden de las reglas determina qué regla se ejecuta primero cuando se activa un evento. Si dos reglas tienen el mismo tipo de evento, se ejecuta primero la que tenga el número más bajo.
 > 
->![orden de reglas](assets/set-up-analytics-sequencing.png)
 
 Comience por rastrear las vistas de productos en la página de detalles del producto de Luma:
 
@@ -172,7 +171,8 @@ Comience por rastrear las vistas de productos en la página de detalles del prod
 1. Seleccione el ![símbolo +](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) en Evento para añadir un nuevo déclencheur
 1. En **[!UICONTROL Extensión]**, seleccione **[!UICONTROL Núcleo]**
 1. En **[!UICONTROL Tipo de evento]**, seleccione **[!UICONTROL Library Loaded (Page Top)]**
-1. Seleccionar para abrir **[!UICONTROL Opciones avanzadas]**, escriba `20`. Este valor de orden garantiza que la regla se ejecute después de que `all pages - library loaded - set global variables - 1` que establece la configuración global.
+1. Seleccionar para abrir **[!UICONTROL Opciones avanzadas]**, escriba `20`. Este valor de orden garantiza la ejecución de la regla _después_ el `all pages - library loaded - set global variables - 1` que establece la configuración global.
+1. Seleccionar **[!UICONTROL Conservar cambios]**
 
    ![Reglas XDM de Analytics](assets/set-up-analytics-pdp.png)
 
@@ -189,6 +189,7 @@ Comience por rastrear las vistas de productos en la página de detalles del prod
 1. En **[!UICONTROL Acciones]** select **[!UICONTROL Añadir]**
 1. Seleccionar **[!UICONTROL SDK web de Adobe Experience Platform]** extensión
 1. Seleccionar **[!UICONTROL Tipo de acción]** as **[!UICONTROL Actualizar variable]**
+1. Seleccionar `xdm.variable.content` como el **[!UICONTROL Elemento de datos]**
 1. Desplácese hacia abajo hasta el `commerce` objeto
 1. Abra el **[!UICONTROL productViews]** objeto y conjunto **[!UICONTROL valor]** hasta `1`
 
@@ -202,7 +203,7 @@ Comience por rastrear las vistas de productos en la página de detalles del prod
 
    >[!NOTE]
    >
-   >Debido a que esta regla tiene un orden superior, sobrescribirá la variable `eventType` se establece en la regla &quot;configuración global&quot;. `eventType` solo puede contener un valor, y se recomienda configurarlo con el evento de mayor valor.
+   >Debido a que esta regla tiene un orden superior, sobrescribirá la variable `eventType` se establece en la regla &quot;configuración global&quot;. `eventType` solo puede contener un valor, y se recomienda configurarlo con el evento más valioso.
 
 1. Desplácese hacia abajo hasta y seleccione `productListItems` matriz
 1. Seleccionar **[!UICONTROL Proporcionar elementos individuales]**
@@ -215,7 +216,7 @@ Comience por rastrear las vistas de productos en la página de detalles del prod
    >El **`productListItems`** es un `array` tipo de datos, de modo que espera que los datos se incluyan como una colección de elementos. Debido a la estructura de capas de datos del sitio de demostración de Luma y a que solo es posible ver un producto a la vez en el sitio de Luma, los elementos se agregan de forma individual. Al implementar en su propio sitio web, en función de la estructura de la capa de datos, puede proporcionar una matriz completa.
 
 1. Seleccionar para abrir **[!UICONTROL Elemento 1]**
-1. Mapa **`productListItems.item1.SKU`** a `%product.productInfo.sku%`
+1. Mapa **`productListItems.item1.SKU`** hasta `%product.productInfo.sku%`
 
    ![Variable del objeto XDM de SKU del producto](assets/set-up-analytics-sku.png)
 
@@ -264,6 +265,7 @@ Ahora, asignemos la matriz al objeto XDM:
 1. En **[!UICONTROL Acciones]** select **[!UICONTROL Añadir]**
 1. Seleccionar **[!UICONTROL SDK web de Adobe Experience Platform]** extensión
 1. Seleccionar **[!UICONTROL Tipo de acción]** as **[!UICONTROL Actualizar variable]**
+1. Seleccionar `xdm.variable.content` como el **[!UICONTROL Elemento de datos]**
 1. Desplácese hacia abajo hasta el `commerce` y seleccione para abrirlo.
 1. Abra el **[!UICONTROL productListViews]** objeto y conjunto **[!UICONTROL valor]** hasta `1`
 
@@ -320,6 +322,7 @@ Cree otras dos reglas para el cierre de compra y la compra siguiendo el mismo pa
 1. Desplácese hacia abajo hasta y seleccione **[!UICONTROL productListItems]** matriz
 1. Seleccionar **[!UICONTROL Proporcionar toda la matriz]**
 1. Mapa a **`cart.productInfo.purchase`** elemento de datos
+1. Seleccionar **[!UICONTROL Conservar cambios]**
 1. Seleccionar **[!UICONTROL Guardar]**
 
 Cuando haya terminado, debería ver las siguientes reglas creadas.
@@ -339,7 +342,7 @@ Ahora que ha establecido las variables, puede crear la regla para enviar el obje
 
 1. Utilice el **[!UICONTROL Extensión principal]** y seleccione `Library Loaded (Page Top)` como el **[!UICONTROL Tipo de evento]**
 
-1. Seleccionar **[!UICONTROL Avanzadas]** desplegable e introduzca `50` in **[!UICONTROL Pedido]**. Esto garantizará que el segundo déclencheur de regla sea posterior al primero que configure como déclencheur `1`.
+1. Seleccionar **[!UICONTROL Avanzadas]** desplegable e introduzca `50` in **[!UICONTROL Pedido]**. Esto garantizará que esta regla se active después de todas las demás reglas configuradas (que tenían `1` o `20` como su [!UICONTROL Pedido]).
 
 1. Seleccionar **[!UICONTROL Conservar cambios]** para volver a la pantalla de regla principal
    ![Seleccionar Déclencheur cargado de biblioteca](assets/create-tag-rule-trigger-loaded-send.png)

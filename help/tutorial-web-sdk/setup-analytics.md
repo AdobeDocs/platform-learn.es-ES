@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo configurar Adobe Analytics mediant
 solution: Data Collection, Analytics
 jira: KT-15408
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '2735'
+source-wordcount: '2865'
 ht-degree: 1%
 
 ---
@@ -74,15 +74,15 @@ Existen varias formas de establecer variables de Analytics en una implementació
 1. Asigne campos XDM a variables de Analytics en reglas de procesamiento de Analytics (ya no se recomienda).
 1. Asigne a variables de Analytics directamente en el esquema XDM (ya no se recomienda).
 
-A partir de mayo de 2024, ya no necesita crear un esquema XDM para implementar Adobe Analytics con el SDK web de Platform. El `data` objeto (y el `data.variable` elemento de datos que ha creado en este tutorial) se puede utilizar para establecer todas las variables de Analytics personalizadas. La configuración de estas variables en el objeto de datos resultará familiar a los clientes de Analytics existentes, es más eficaz que el uso de la interfaz de reglas de procesamiento y evita que datos innecesarios ocupen espacio en los perfiles de cliente en tiempo real (importante si tiene Real-time Customer Data Platform o Journey Optimizer).
+A partir de mayo de 2024, ya no necesita crear un esquema XDM para implementar Adobe Analytics con el SDK web de Platform. El `data` objeto (y el `data.variable` elemento de datos que ha creado en [Creación de elementos de datos](create-data-elements.md) ) para configurar todas las variables de Analytics personalizadas. La configuración de estas variables en el objeto de datos resultará familiar a los clientes de Analytics existentes, es más eficaz que el uso de la interfaz de reglas de procesamiento y evita que datos innecesarios ocupen espacio en los perfiles de cliente en tiempo real (importante si tiene Real-time Customer Data Platform o Journey Optimizer).
 
 ### Campos asignados automáticamente
 
 Muchos campos XDM se asignan automáticamente a variables de Analytics. Para obtener la lista más actualizada de asignaciones, consulte [Asignación de variables de Analytics en Adobe Experience Edge](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
 
-Esto ocurre si _incluso si no ha definido un esquema personalizado_. El SDK web de Experience Platform recopila automáticamente algunos datos y los envía al Edge Network de Platform como campos XDM. Por ejemplo, el SDK web lee la dirección URL de la página actual y la envía como `web.webPageDetails.URL`. Este campo se reenvía a Adobe Analytics y rellena automáticamente los informes de URL de la página en Adobe Analytics.
+Esto ocurre si _incluso si no ha definido un esquema personalizado_. El SDK web de Experience Platform recopila automáticamente algunos datos y los envía al Edge Network de Platform como campos XDM. Por ejemplo, el SDK web lee la dirección URL de la página actual y la envía como campo XDM `web.webPageDetails.URL`. Este campo se reenvía a Adobe Analytics y rellena automáticamente los informes de URL de la página en Adobe Analytics.
 
-Al implementar el SDK web para Analytics y aplicaciones basadas en Platform, creará un esquema XDM personalizado, como lo ha hecho en este tutorial en la [Configuración de un esquema](configure-schemas.md) lección. Algunos de los campos XDM que ha implementado se asignan automáticamente a variables de Analytics, como se describe en esta tabla:
+Si implementa un SDK web para Adobe Analytics con un esquema XDM, como ha hecho en este tutorial, algunos de los campos XDM que ha implementado se asignan automáticamente a variables de Analytics, como se describe en esta tabla:
 
 | Variables asignadas automáticamente de XDM a Analytics | variable de Adobe Analytics |
 |-------|---------|
@@ -103,15 +103,18 @@ Al implementar el SDK web para Analytics y aplicaciones basadas en Platform, cre
 
 Las secciones individuales de la cadena de producto de Analytics se configuran mediante diferentes variables XDM en la variable `productListItems` objeto.
 
+>[!NOTE]
+>
 >El 18 de agosto de 2022, `productListItems[].SKU` tiene prioridad para la asignación al nombre del producto en la variable s.products.
 >El valor establecido en `productListItems[].name` se asigna al nombre del producto solo si `productListItems[].SKU` no existe. De lo contrario, no está asignado y disponible en los datos de contexto.
 >No establezca una cadena vacía o nulo como `productListItems[].SKU`. Esto tiene el efecto no deseado de asignar al nombre del producto en la variable s.products.
 
+
 ### Establecer variables en el objeto de datos
 
-Configuración de variables en `data` es la forma recomendada de establecer variables de Analytics con el SDK web. La configuración de variables en el objeto de datos también puede sobrescribir cualquiera de las variables asignadas automáticamente.
+Pero, ¿qué sucede con las eVars, las props y los eventos? Configuración de variables en `data` es la forma recomendada de establecer estas variables de Analytics con el SDK web. La configuración de variables en el objeto de datos también puede sobrescribir cualquiera de las variables asignadas automáticamente.
 
-En primer lugar, ¿cuál es el `data` objeto? En cualquier evento del SDK web puede enviar dos objetos con datos personalizados, el `data` y el objeto `xdm` objeto. Ambos se envían al Edge Network de Platform, pero solo el `xdm` se envía al conjunto de datos del Experience Platform. Propiedades en la `data` el objeto se puede asignar en Edge a `xdm` Los campos que utilizan la función Preparación de datos para la recopilación de datos, pero de lo contrario no se envían al Experience Platform. Esto lo convierte en una forma ideal de enviar datos a aplicaciones como Analytics, que no están creadas de forma nativa en Experience Platform.
+En primer lugar, ¿cuál es el `data` objeto? En cualquier evento del SDK web puede enviar dos objetos con datos personalizados, el `xdm` y el objeto `data` objeto. Ambos se envían al Edge Network de Platform, pero solo el `xdm` se envía al conjunto de datos del Experience Platform. Propiedades en la `data` el objeto se puede asignar en Edge a `xdm` Los campos que utilizan la función Preparación de datos para la recopilación de datos, pero de lo contrario no se envían al Experience Platform. Esto lo convierte en una forma ideal de enviar datos a aplicaciones como Analytics, que no están creadas de forma nativa en Experience Platform.
 
 Estos son los dos objetos de una llamada genérica del SDK web:
 
@@ -119,9 +122,28 @@ Estos son los dos objetos de una llamada genérica del SDK web:
 
 Adobe Analytics está configurado para buscar cualquier propiedad en `data.__adobe.analytics` y utilizarlos para variables de Analytics.
 
-Ahora vamos a hacer esto.
+Ahora veamos cómo funciona esto. Vamos a establecer `eVar1` y `prop1` con su nombre de página y vea cómo se puede sobrescribir el valor asignado a XDM
 
-Utilizamos el `data.variable` elemento de datos t
+1. Abra la regla de etiqueta `all pages - library loaded - set global variables - 1`
+1. Añadir un nuevo **[!UICONTROL Acción]**
+1. Seleccionar **[!UICONTROL SDK web de Adobe Experience Platform]** extensión
+1. Seleccionar **[!UICONTROL Tipo de acción]** as **[!UICONTROL Actualizar variable]**
+1. Seleccionar `data.variable` como el **[!UICONTROL Elemento de datos]**
+1. Seleccione el **[!UICONTROL análisis]** objeto
+1. Establecer `eVar1` como el `page.pageInfo.pageName` elemento de datos
+1. Establecer `prop1` para copiar el valor de `eVar1`
+1. Para probar la sobrescritura de valores asignados a XDM, en la variable **[!UICONTROL Propiedad adicional]** establece el nombre de la página como un valor estático `test`
+1. Guarde la regla
+
+
+Ahora, es necesario incluir el objeto de datos en la regla de evento de envío.
+
+1. Abra la regla de etiqueta `all pages - library loaded - send event - 50`
+1. Abra el **[!UICONTROL Enviar evento]** acción
+1. Seleccionar `data.variable` como el **[!UICONTROL Datos]**
+1. Seleccionar **[!UICONTROL Conservar cambios]**
+1. Seleccionar **[!UICONTROL Guardar]**
+
 
 
 <!--
@@ -200,7 +222,7 @@ Para configurar la configuración de anulación de grupos de informes de Adobe A
 
    ![Sobrescribir la secuencia de datos](assets/datastream-edit-analytics.png)
 
-1. Seleccione el **[!UICONTROL Opciones avanzadas]** para abrir **[!UICONTROL Anulaciones de grupos de informes]**
+1. Seleccionar **[!UICONTROL Opciones avanzadas]** para abrir **[!UICONTROL Anulaciones de grupos de informes]**
 
 1. Seleccione los grupos de informes que desee anular. En este caso, `Web SDK Course Dev` y `Web SDK Course Stg`
 
@@ -219,9 +241,10 @@ Vamos a crear una regla para enviar una llamada de vista de página adicional a 
 
 1. En **[!UICONTROL Extensión]**, seleccione **[!UICONTROL Núcleo]**
 
-1. En **[!UICONTROL Tipo de evento]**, seleccione **[!UICONTROL biblioteca cargada]**
+1. En **[!UICONTROL Tipo de evento]**, seleccione **[!UICONTROL Library Loaded (Page Top)]**
 
 1. Seleccionar para abrir **[!UICONTROL Opciones avanzadas]**, escriba `51`. Esto garantiza que la regla se ejecute después de que `all pages - library loaded - send event - 50` que establece el XDM de línea base con el **[!UICONTROL Actualizar variable]** tipo de acción.
+1. Seleccionar **[!UICONTROL Conservar cambios]**
 
    ![Anulación de grupo de informes de Analytics](assets/set-up-analytics-rs-override.png)
 
@@ -247,9 +270,9 @@ Vamos a crear una regla para enviar una llamada de vista de página adicional a 
 
 1. Como el **[!UICONTROL Tipo de acción]**, seleccione **[!UICONTROL Enviar evento]**
 
-1. Como el **[!UICONTROL Tipo]**, seleccione `web.webpagedetails.pageViews`
-
 1. Como el **[!UICONTROL Datos XDM]**, seleccione la `xdm.variable.content` elemento de datos que ha creado en [Creación de elementos de datos](create-data-elements.md) lección
+
+1. Como el **[!UICONTROL Datos]**, seleccione la `data.variable` elemento de datos que ha creado en [Creación de elementos de datos](create-data-elements.md) lección
 
    ![Anulación de flujo de datos de Analytics](assets/set-up-analytics-datastream-override-1.png)
 
@@ -261,7 +284,7 @@ Vamos a crear una regla para enviar una llamada de vista de página adicional a 
    >
    >    Esta pestaña determina en qué entorno de etiquetas se produce la anulación. Para este ejercicio, solo debe especificar el entorno de desarrollo, pero cuando implemente esto en producción, recuerde hacerlo también en **[!UICONTROL Producción]** entorno.
 
-
+1. Seleccione el **[!UICONTROL Sandbox]** que está utilizando para el tutorial
 1. Seleccione el **[!UICONTROL Datastream]**, en este caso `Luma Web SDK: Development Environment`
 
 1. En **[!UICONTROL Grupos de informes]**, seleccione el grupo de informes para el que desee anular la selección. En este caso, `tmd-websdk-course-stg`.
@@ -275,7 +298,7 @@ Vamos a crear una regla para enviar una llamada de vista de página adicional a 
 
 ## Cree su entorno de desarrollo
 
-Añada los nuevos elementos de datos y reglas a su `Luma Web SDK Tutorial` y reconstruya su entorno de desarrollo.
+Añada las reglas actualizadas a su `Luma Web SDK Tutorial` y reconstruya su entorno de desarrollo.
 
 ¡Felicidades! El siguiente paso es validar la implementación de Adobe Analytics mediante el SDK web de Experience Platform.
 

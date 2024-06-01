@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo instalar y configurar la extensió
 feature: Web SDK, Tags
 jira: KT-15404
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 9%
+source-wordcount: '607'
+ht-degree: 11%
 
 ---
 
@@ -61,6 +61,7 @@ Con el esquema XDM, la secuencia de datos y la propiedad de etiqueta creados, ya
 Deje la mayoría de las configuraciones predeterminadas y actualícelas más tarde, según sea necesario. Lo único que debe hacer ahora es vincular la extensión al conjunto de datos:
 
 1. En **[!UICONTROL Datastreams]**, seleccione la **[!UICONTROL Elegir de la lista]** método de entrada
+1. Seleccione el entorno limitado en el que ha creado el esquema, el área de nombres de identidad y el conjunto de datos
 1. Seleccione la secuencia de datos que creó anteriormente, `Luma Web SDK`
 1. Seleccionar **[!UICONTROL Guardar]**
 
