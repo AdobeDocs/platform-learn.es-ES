@@ -1,16 +1,16 @@
 ---
 title: Crear conjuntos de datos e introducir datos en Adobe Experience Platform
 description: Este vídeo muestra cómo crear conjuntos de datos e introducir datos en la interfaz de Adobe Experience Platform.
-feature: Data Ingestion
+feature: Data Ingestion, Datasets
 role: Data Architect, Data Engineer, Developer
 level: Beginner
 jira: KT-2700
 thumbnail: 27269.jpg
 exl-id: f01c7d88-a77e-4fb2-aa5a-d647abc41790
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 66165c7b55a6c7483b58ce4d6da7eda11baee08a
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 19%
+source-wordcount: '76'
+ht-degree: 9%
 
 ---
 
