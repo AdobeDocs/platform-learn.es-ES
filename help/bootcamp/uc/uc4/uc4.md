@@ -26,7 +26,7 @@ Eche un vistazo a este vídeo para comprender el valor, el recorrido del cliente
 
 >[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on)
 
-Se puede encontrar más información sobre el Customer Journey Analytics [aquí](https://spark.adobe.com/page/t62eiRu9l6iWJ/).
+Encontrará más información sobre el Customer Journey Analytics [aquí](https://spark.adobe.com/page/t62eiRu9l6iWJ/).
 
 ## Objetivos de aprendizaje
 

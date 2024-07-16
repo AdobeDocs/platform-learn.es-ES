@@ -6,14 +6,14 @@ mini-toc-levels: 1
 exl-id: 5f84b0b4-b100-45dc-bcac-2dcc127c87f3
 source-git-commit: 14ec4ea743d1f323d29f9ab84506355d25c91452
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 33%
+source-wordcount: '154'
+ht-degree: 7%
 
 ---
 
 # Tutoriales de Adobe Experience Platform
 
-Adobe Experience Platform es el sistema más potente, flexible y abierto del mercado para crear y administrar soluciones completas que mejoren la experiencia del cliente. Experience Platform les permite a las organizaciones centralizar y estandarizar los datos y el contenido de los clientes de cualquier sistema y aplicar la ciencia de datos y el aprendizaje automático para mejorar en gran medida el diseño y el envío de las experiencias personalizadas enriquecidas. Utilice estos vídeos y tutoriales para conocer los numerosos componentes de Experience Platform.
+Adobe Experience Platform es el sistema más potente, flexible y abierto del mercado para crear y administrar soluciones completas que mejoren la experiencia del cliente. Experience Platform permite a las organizaciones centralizar y estandarizar los datos y el contenido de los clientes de cualquier sistema y aplicar la ciencia de datos y el aprendizaje automático para mejorar en gran medida el diseño y el envío de las experiencias personalizadas enriquecidas. Utilice estos vídeos y tutoriales para conocer los numerosos componentes de Experience Platform.
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
@@ -34,11 +34,11 @@ Adobe Experience Platform es el sistema más potente, flexible y abierto del mer
     </a>
     <div>
       <a href="intro-to-platform/a-customer-experience-powered-by-experience-platform.md">
-    <strong>Una experiencia del cliente con tecnología de Experience Platform</strong>
+    <strong>Una experiencia de cliente con tecnología de Experience Platform</strong>
     </a>
     </div>
     <p>
-    <em>Consulte cómo se puede utilizar Platform para potenciar la experiencia del cliente</em>
+    <em>Vea cómo se puede usar Platform para mejorar la experiencia del cliente</em>
     <p>
   </td>
   <td>
@@ -47,7 +47,7 @@ Adobe Experience Platform es el sistema más potente, flexible y abierto del mer
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=es">
-    <strong>Introducción a los arquitectos e ingenieros de datos</strong>
+    <strong>Introducción para arquitectos e ingenieros de datos</strong>
     </a>
     </div>
     <p>
@@ -64,7 +64,7 @@ Adobe Experience Platform es el sistema más potente, flexible y abierto del mer
     </a>
     </div>
     <p>
-    <em>Ingesta sencilla de datos</em>
+    <em>Ingiera fácilmente sus datos</em>
     <p>
   </td>
    <!--

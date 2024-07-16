@@ -10,7 +10,7 @@ recommendations: noDisplay,noCatalog
 source-git-commit: 4ed0c204613e283bbd9f51f4225215068284ac69
 workflow-type: tm+mt
 source-wordcount: '95'
-ht-degree: 27%
+ht-degree: 24%
 
 ---
 
@@ -35,11 +35,11 @@ ht-degree: 27%
    + [Configurar Experience Platform](setup-experience-platform.md)
    + [Configuración de Adobe Analytics](setup-analytics.md)
    + [Configurar Audience Manager](setup-audience-manager.md)
-   + [Configurar Target](setup-target.md)
+   + [Configuración de Target](setup-target.md)
    + [Configuración del canal web de Journey Optimizer](setup-web-channel.md)
    + [Configuración de Journey Optimizer Decision Management](setup-decision-management.md)
 
-+ Gestión del consentimiento {#consent-management}
++ Administración de consentimiento {#consent-management}
    + [Configuración del consentimiento](setup-consent.md)
 
 + Reenvío de eventos {#event-forwarding}

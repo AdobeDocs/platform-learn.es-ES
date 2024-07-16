@@ -20,7 +20,7 @@ Obtenga información sobre cómo implementar la capacidad Administración de dec
 Al seguir este tutorial, los usuarios de Journey Optimizer están equipados para utilizar las funciones de Gestión de decisiones, lo que mejora la personalización y relevancia de sus interacciones con los clientes.
 
 
-![Diagrama del SDK web y Adobe Analytics](assets/dc-websdk-ajo.png)
+![Diagrama de SDK web y Adobe Analytics](assets/dc-websdk-ajo.png)
 
 ## Objetivos de aprendizaje
 
@@ -56,15 +56,15 @@ Actualmente, Adobe Journey Optimizer no admite ofertas basadas en eventos. Si cr
 
 ## Concesión de acceso a Gestión de decisiones
 
-Para conceder acceso a la funcionalidad de Gestión de decisiones, debe crear un **Perfil del producto** y asigne los permisos correspondientes a sus usuarios. [Obtenga más información sobre la administración de usuarios y permisos de Journey Optimizer en esta sección](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
+Para conceder acceso a la funcionalidad de Administración de decisiones, debe crear un **perfil de producto** y asignar los permisos correspondientes a los usuarios. [Obtenga más información sobre la administración de usuarios y permisos de Journey Optimizer en esta sección](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
 
 ## Configuración de la secuencia de datos
 
-El offer decisioning debe estar habilitado en **secuencia de datos** Configuración de antes de que el SDK web de Platform pueda entregar cualquier actividad de Administración de decisiones.
+El offer decisioning debe estar habilitado en la configuración de **datastream** para que el SDK web de Platform pueda entregar cualquier actividad de Administración de decisiones.
 
 Para configurar el Offer decisioning en el conjunto de datos:
 
-1. Vaya a la [Recopilación de datos](https://experience.adobe.com/#/data-collection) interfaz.
+1. Vaya a la interfaz [Recopilación de datos](https://experience.adobe.com/#/data-collection).
 
 1. En el panel de navegación izquierdo, seleccione **Datastreams**.
 
@@ -72,24 +72,24 @@ Para configurar el Offer decisioning en el conjunto de datos:
 
    ![Seleccionar secuencia de datos](assets/decisioning-datastream-select.png)
 
-1. Seleccionar **Editar** dentro de **Servicio de Adobe Experience Platform**.
+1. Seleccione **Editar** dentro del **servicio Adobe Experience Platform**.
 
    ![Editar servicio](assets/decisioning-edit-datastream.png)
 
-1. Compruebe la **Offer decisioning** cuadro.
+1. Marque la casilla **Offer decisioning**.
 
-   ![AÑADIR CAPTURA DE PANTALLA](assets/decisioning-check-offer-box.png)
+   ![AGREGAR CAPTURA DE PANTALLA](assets/decisioning-check-offer-box.png)
 
 1. Seleccione **Guardar**.
 
-Esto garantiza que los eventos entrantes de Journey Optimizer los gestione correctamente **Adobe Experience Platform Edge**.
+Esto garantiza que **Adobe Experience Platform Edge** gestione correctamente los eventos entrantes para Journey Optimizer.
 
 ## Configuración del SDK para la administración de decisiones
 
 Gestión de decisiones requiere pasos adicionales del SDK, según el tipo de implementación del SDK web. Hay dos opciones disponibles para configurar el SDK para gestión de decisiones.
 
 * Instalación independiente del SDK
-   1. Configure las variables `sendEvent` acción con su `decisionScopes`.
+   1. Configure la acción `sendEvent` con su `decisionScopes`.
 
       ```javascript
       alloy("sendEvent", {
@@ -108,12 +108,12 @@ Gestión de decisiones requiere pasos adicionales del SDK, según el tipo de imp
 
       ![Seleccionar etiquetas](assets/decisioning-data-collection-tags.png)
 
-   1. Seleccione el **Propiedad de etiqueta**.
+   1. Seleccione la **propiedad de etiqueta**.
 
-   1. Cree su **Reglas**.
-      * Agregar un SDK web de Platform **Acción Enviar evento** y añada el correspondiente `decisionScopes` a la configuración de esa acción.
+   1. Cree sus **reglas**.
+      * Agregue un SDK web de Platform **Enviar acción de evento** y agregue el `decisionScopes` relevante a la configuración de esa acción.
 
-   1. Creación y publicación de un **Biblioteca** que contenga todos los **Reglas**, **Elementos de datos**, y **Extensiones** que ha configurado.
+   1. Cree y publique una **biblioteca** que contenga todas las **reglas**, **elementos de datos** y **extensiones** relevantes que haya configurado.
 
 ## Terminología
 
@@ -122,17 +122,17 @@ En primer lugar, debe comprender la terminología utilizada en la interfaz de Ad
 * **Límite**: Una restricción que dicta la frecuencia con la que aparece una oferta. Dos tipos:
    * Límites totales: Número máximo de veces que se puede mostrar una oferta en la audiencia de destino.
    * Límite de perfil: tiempos en los que se puede mostrar una oferta a un usuario en particular.
-* **Colecciones**: subconjuntos de ofertas agrupadas por condiciones específicas establecidas por un experto en marketing, por ejemplo, la categoría de oferta.
+* **Colecciones**: subconjuntos de ofertas agrupadas según condiciones específicas establecidas por un experto en marketing, por ejemplo, una categoría de oferta.
 * **Decisión**: Lógica que dicta la elección de una oferta.
-* **Regla de decisión**: Restricciones en las ofertas para averiguar la elegibilidad de un usuario.
-* **Oferta elegible**: una oferta que coincide con las restricciones preestablecidas y que se puede mostrar a un usuario.
-* **Gestión de decisiones**: sistema de creación y distribución de ofertas personalizadas mediante la lógica empresarial y las reglas de decisión.
+* **Regla de decisión**: Restricciones en ofertas para averiguar la elegibilidad de un usuario.
+* **Oferta elegible**: Una oferta que coincida con las restricciones preestablecidas y que se pueda mostrar a un usuario.
+* **Administración de decisiones**: El sistema de creación y distribución de ofertas personalizadas mediante la lógica empresarial y las reglas de decisión.
 * **Ofertas de reserva**: La oferta predeterminada que se muestra cuando un usuario no cumple los requisitos para ninguna oferta de una colección.
-* **Oferta**: un mensaje de marketing con posibles reglas de elegibilidad que determinan sus visualizadores.
+* **Oferta**: Un mensaje de marketing con posibles reglas de elegibilidad que determinan sus visualizadores.
 * **Biblioteca de ofertas**: Repositorio central que administra ofertas, decisiones y reglas asociadas.
 * **Ofertas personalizadas**: mensajes de marketing personalizados adaptados según las restricciones de elegibilidad.
-* **Ubicaciones**: Configuración o escenario en el que se muestra una oferta a un usuario.
-* **Prioridad**: Métrica de clasificación para ofertas que considera varias restricciones como elegibilidad y límite.
+* **Ubicaciones**: La configuración o el escenario donde se muestra una oferta a un usuario.
+* **Prioridad**: Métrica de clasificación para ofertas que tienen en cuenta varias restricciones, como elegibilidad y límite.
 * **Representaciones**: Información específica del canal, por ejemplo, ubicación o idioma, que guía la visualización de una oferta.
 
 ## Resumen de caso de uso: recompensas de fidelización
@@ -151,50 +151,50 @@ Antes de empezar a crear las ofertas, debe definir varios componentes previos.
 
 ### Crear una ubicación para ofertas de fidelización
 
-**Ubicaciones** son contenedores que se utilizan para mostrar las ofertas. En este ejemplo, se crea una ubicación en la parte superior del sitio de Luma.
+**Las ubicaciones** son contenedores que se usan para mostrar las ofertas. En este ejemplo, se crea una ubicación en la parte superior del sitio de Luma.
 
-Se puede acceder a la lista de ubicaciones en el **Componentes** menú. Los filtros están disponibles para ayudarle a recuperar ubicaciones según un canal o contenido específico.
+Se puede acceder a la lista de ubicaciones en el menú **Componentes**. Los filtros están disponibles para ayudarle a recuperar ubicaciones según un canal o contenido específico.
 
 ![Ver ubicaciones](assets/decisioning-placements-list.png)
 
 Para crear la ubicación, siga estos pasos:
 
-1. Clic **Crear ubicación**.
+1. Haga clic en **Crear ubicación**.
 
    ![Crear ubicación](assets/decisioning-create-placement.png)
 
 1. Defina las propiedades de la ubicación:
-   * **Nombre**: nombre de la ubicación. Llamemos a la ubicación de ejemplo *&#39;Titular de página principal&#39;*.
-   * **Tipo de canal**: Canal para el que se utiliza la ubicación. Vamos a usar *&#39;Web&#39;* ya que las ofertas se muestran en el sitio web de Luma.
-   * **Tipo de contenido**: Tipo de contenido que la ubicación puede mostrar: texto, HTML, vínculo de imagen o JSON. Puede utilizar *&#39;HTML&#39;* para la oferta.
-   * **Descripción**: una descripción de la ubicación (opcional).
+   * **Nombre**: El nombre de la ubicación. Llamemos a la ubicación de ejemplo *&#39;Banner de página principal&#39;*.
+   * **Tipo de canal**: Canal para el que se usa la ubicación. Vamos a usar *&#39;Web&#39;* porque las ofertas se muestran en el sitio web de Luma.
+   * **Tipo de contenido**: Tipo de contenido que la ubicación puede mostrar: texto, HTML, vínculo de imagen o JSON. Puede usar *&#39;HTML&#39;* para la oferta.
+   * **Descripción**: Una descripción de la ubicación (opcional).
 
-   ![Añadir detalles](assets/decisioning-placement-details.png)
+   ![Agregar detalles](assets/decisioning-placement-details.png)
 
 1. Haga clic en **Guardar**.
 1. Una vez creada la ubicación, se muestra en la lista de ubicaciones.
 1. Seleccione la fila que contiene la nueva ubicación y tome nota del ID de ubicación, ya que esto puede ser necesario para la configuración dentro del ámbito de decisión.
 
-   ![Consulte ID de ubicación ](assets/decisioning-placement-id.png)
+   ![Ver Id. de ubicación ](assets/decisioning-placement-id.png)
 
 ### Reglas de decisión para el estado de fidelización
 
-**Reglas de decisión** especifique las condiciones en las que se presentan las ofertas. En este ejemplo, se crean reglas de decisión para servir diferentes ofertas según el estado de Lealtad de un usuario.
+**Las reglas de decisión** especifican las condiciones en las que se presentan las ofertas. En este ejemplo, se crean reglas de decisión para servir diferentes ofertas según el estado de Lealtad de un usuario.
 
-Se puede acceder a la lista de reglas de decisión en la **Componentes** menú.
+Se puede acceder a la lista de reglas de decisión en el menú **Componentes**.
 
 Para crear las reglas de decisión, siga estos pasos:
 
-1. Vaya a **Reglas** y haga clic en **Crear regla**.
+1. Vaya a la pestaña **Reglas** y haga clic en **Crear regla**.
 
-   ![Creación de la regla](assets/decisioning-create-rule.png)
+   ![Crear la regla](assets/decisioning-create-rule.png)
 
-1. Pongamos el nombre a la primera regla &#39;*Regla de estado de fidelización de oro*&#39;. Puede utilizar campos XDM para definir la regla. El Adobe Experience Platform **Generador de segmentos** es una interfaz intuitiva que puede utilizar para crear las condiciones de las reglas.
+1. Asignemos un nombre a la primera regla &#39;*Regla de estado de fidelidad de oro*&#39;. Puede utilizar campos XDM para definir la regla. El Adobe Experience Platform **Generador de segmentos** es una interfaz intuitiva que puede usar para generar las condiciones de regla.
 
-   ![Definición de la regla](assets/decisioning-define-rule.png)
+   ![Definir la regla](assets/decisioning-define-rule.png)
 
-1. Clic **Guardar** para confirmar la condición de regla.
-1. El recién guardado &#39;*Regla de estado de fidelización de oro*&#39; se mostrará en la **Lista de reglas**. Selecciónelo para mostrar sus propiedades.
+1. Haga clic en **Guardar** para confirmar la condición de regla.
+1. La &#39;*Regla de estado de fidelidad Gold*&#39; guardada recientemente se mostrará en la **lista de reglas**. Selecciónelo para mostrar sus propiedades.
 
    ![Ver regla creada](assets/decisioning-view-rules.png)
 
@@ -203,27 +203,27 @@ Para crear las reglas de decisión, siga estos pasos:
 
 ### Cualificadores de colección
 
-**Cualificadores de colección** permite organizar y buscar fácilmente ofertas dentro de la biblioteca de ofertas. En este ejemplo, se agregan calificadores de colección a las ofertas de Recompensas de fidelidad para mejorar la organización de la oferta.
+Los **calificadores de colección** le permiten organizar y buscar fácilmente ofertas dentro de la biblioteca de ofertas. En este ejemplo, se agregan calificadores de colección a las ofertas de Recompensas de fidelidad para mejorar la organización de la oferta.
 
-Se puede acceder a la lista de calificadores de colección en el **Componentes** menú.
+Se puede obtener acceso a la lista de calificadores de colección en el menú **Componentes**.
 
 Para crear el calificador de la colección Loyalty Rewards, siga estos pasos:
 
-1. Vaya a **Cualificadores de colección** y haga clic en **Crear calificador de colección**.
+1. Vaya a la pestaña **Calificadores de colección** y haga clic en **Crear calificador de colección**.
 
    ![Crear calificador de colección](assets/decisioning-create-collection-qualifier.png)
 
-1. Asignemos un nombre al calificador de la colección &#39;*Recompensas de fidelización*&#39;
+1. Asignemos un nombre al calificador de la colección &#39;*Recompensas de fidelidad*&#39;
 
-   ![Asignar un nombre a la colección](assets/decisioning-name-collection.png)
+   ![Asigne un nombre a la colección](assets/decisioning-name-collection.png)
 
-1. El nuevo calificador de colección ahora debería mostrarse en la **Calificador de colección** pestaña
+1. El nuevo calificador de colección debería mostrarse ahora en la ficha **Calificador de colección**
 
 ## Ofertas
 
 Ahora es el momento de crear las ofertas de recompensas de fidelidad.
 
-Se puede acceder a la lista de ofertas en la **Ofertas** menú.
+Se puede acceder a la lista de ofertas desde el menú **Ofertas**.
 
 ![Ver menú de ofertas](assets/decisioning-offers-menu.png)
 
@@ -234,60 +234,60 @@ Comience creando ofertas personalizadas para los diferentes niveles de fidelidad
 
 Para crear la primera **oferta**, siga estos pasos:
 
-1. Clic **Crear oferta**, luego seleccione **Oferta personalizada**.
+1. Haga clic en **Crear oferta** y, a continuación, seleccione **Oferta personalizada**.
 
-1. Pongamos el nombre a la primera oferta &#39;*Nivel de fidelidad de Luma: oro*&#39;. Debe especificar una fecha y una hora de inicio/finalización para esta oferta. También debe asociar la variable **calificador de colección** &#39;*Recompensas de fidelización*&quot; a la oferta, lo que le permite organizar mejor dentro de la **Biblioteca de ofertas**. Después, haga clic en **Siguiente**.
+1. Asignemos un nombre a la primera oferta &#39;*Nivel de fidelidad de Luma: Oro*&#39;. Debe especificar una fecha y una hora de inicio/finalización para esta oferta. También debe asociar el **calificador de colección** &#39;*Recompensas de fidelidad*&#39; a la oferta, lo que le permite organizar mejor la **Biblioteca de ofertas**. Después, haga clic en **Siguiente**.
 
-   ![Añadir detalles de la oferta](assets/decisioning-add-offer-details.png)
+   ![Agregar detalles de oferta](assets/decisioning-add-offer-details.png)
 
-1. Ahora debe agregar **representaciones** para definir dónde se muestra la oferta. Vamos a elegir el **canal web**. Vamos a elegir también el &#39;*Titular de página principal*&#39; **ubicación** ha configurado anteriormente. El seleccionado **ubicación** es de tipo HTML, por lo que puede añadir contenido de HTML, JSON o TEXT directamente al editor para crear la oferta utilizando **Personalizado** botón de opción.
+1. Ahora debe agregar **representaciones** para definir dónde se muestra la oferta. Vamos a elegir el **canal web**. Vamos a elegir también la **ubicación** del titular de la página principal *que configuró anteriormente.* La **ubicación** seleccionada es del tipo HTML, por lo que puede agregar contenido de HTML, JSON o TEXT directamente al editor para crear la oferta con el botón de opción **Personalizado**.
 
-   ![Añadir detalles de representación](assets/decisioning-add-representation-details.png)
+   ![Agregar detalles de representación](assets/decisioning-add-representation-details.png)
 
-1. Editar el contenido de la oferta directamente con **Editor de expresiones**. Recuerde que puede agregar contenido de HTML, JSON o TEXT a esta ubicación. Asegúrese de seleccionar la **modo** en la parte inferior del editor, según el tipo de contenido. También puede pulsar **validate** para asegurarse de que no haya errores.
+1. Edite el contenido de la oferta directamente con el **Editor de expresiones**. Recuerde que puede agregar contenido de HTML, JSON o TEXT a esta ubicación. Asegúrese de seleccionar el **modo** correcto en la parte inferior del editor, según el tipo de contenido. También puede presionar **validate** para asegurarse de que no haya errores.
 
-   ![Añadir HTML de ofertas](assets/decisioning-add-offer-html.png)
+   ![Agregar HTML de ofertas](assets/decisioning-add-offer-html.png)
 
 1. Además, puede utilizar el Editor de expresiones para recuperar atributos almacenados en Adobe Experience Platform. Añadamos el nombre de un perfil al contenido de la oferta para personalizar mejor a los miembros socio en un nivel 1:1.
 
-   ![Añadir personalización de oferta](assets/decisioning-add-offer-personalization.png)
+   ![Agregar personalización de oferta](assets/decisioning-add-offer-personalization.png)
 
-1. Añada restricciones para mostrar únicamente la oferta a perfiles que cumplan los requisitos para la variable &#39;*Regla de estado de fidelización de oro*&#39;.
+1. Agregue restricciones para mostrar únicamente la oferta a los perfiles que cumplen los requisitos para la &#39;*Regla de estado de fidelidad de oro*&#39;.
 
    ![Agregar restricción de regla](assets/decisioning-add-rule-constraint.png)
 
-1. Cuando haya terminado de revisar la oferta, haga clic en **Finalizar**. Seleccionar **Guardar y aprobar**.
+1. Una vez que hayas terminado de revisar tu oferta, haz clic en **Finalizar**. Seleccione **Guardar y aprobar**.
 
 Ahora cree el resto de las ofertas para los distintos niveles de Fidelidad de Luma
 
 ### Ofertas de reserva
 
-Aún desea ofrecer una oferta a los visitantes que no sean fieles a Luma del sitio de Luma. Para ello, puede configurar un **oferta de reserva** para la campaña.
+Aún desea ofrecer una oferta a los visitantes que no sean fieles a Luma del sitio de Luma. Para ello, puede configurar una **oferta de reserva** para la campaña.
 
 Para crear la oferta de reserva, siga estos pasos:
 
-1. Clic **Crear oferta**, luego seleccione **Oferta de reserva**.
+1. Haga clic en **Crear oferta** y luego seleccione **Oferta de reserva**.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Asignemos un nombre a la oferta de reserva &#39;*Fidelidad que no es de Luma*&#39;. También puede asociar el creado anteriormente **calificador de colección**, &#39;*Recompensas de fidelización*&quot; a la oferta de reserva para facilitar la organización de la oferta.
+1. Asignemos un nombre a la oferta de reserva &#39;*Fidelidad que no sea de Luma*&#39;. También puede asociar el **calificador de colección** creado anteriormente, &#39;*Recompensas de fidelidad*&#39; a la oferta de reserva para facilitar la organización de la oferta.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Añada el contenido de la oferta de reserva a **Editor de expresiones**. Recuerde que puede agregar contenido de HTML, JSON o TEXT a esta ubicación. Asegúrese de seleccionar la **modo** en la parte inferior del editor, según el tipo de contenido. También puede pulsar **validate** para asegurarse de que no haya errores.
+1. Agregar el contenido de la oferta de reserva al **Editor de expresiones**. Recuerde que puede agregar contenido de HTML, JSON o TEXT a esta ubicación. Asegúrese de seleccionar el **modo** correcto en la parte inferior del editor, según el tipo de contenido. También puede presionar **validate** para asegurarse de que no haya errores.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Si todo está configurado correctamente, pulse **Finalizar** y luego **Guardar y aprobar**.
+1. Si todo está configurado correctamente, presione **Finalizar** y luego **Guardar y aprobar**.
 <!--
    ![ADD SCREENSHOT](#)
 -->
 
 ## Decisiones
 
-**Decisiones** son contenedores para ofertas que seleccionan la mejor oferta disponible para un cliente, según el destinatario.
+**Decisions** son contenedores para ofertas que eligen la mejor oferta disponible para un cliente, según el destino.
 
-La lista de decisiones está disponible en la **Decisiones** de la pestaña **Ofertas** menú.
+La lista de decisiones está disponible en la pestaña **Decisiones** del menú **Ofertas**.
 <!--
    ![ADD SCREENSHOT](#)
 -->
@@ -298,48 +298,48 @@ Vamos a crear una decisión para el caso de uso de las Recompensas de fidelidad 
 
 Para crear la decisión, siga estos pasos:
 
-1. Clic **Crear decisión**.
+1. Haga clic en **Crear decisión**.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Llamemos a la decisión, &#39;*Ofertas de fidelización de Luma de diciembre*&#39;. Las ofertas deben ejecutarse durante 1 mes, por lo que vamos a especificarlo aquí.
+1. Llamemos a la decisión: &#39;*Ofertas de fidelidad de Luma de diciembre*&#39;. Las ofertas deben ejecutarse durante 1 mes, por lo que vamos a especificarlo aquí.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Ahora, debe definir la variable **ámbitos de decisión**. Primero seleccione una ubicación. Puede utilizar el creado anteriormente &#39;*Titular de página principal*&#39;.
+1. Ahora debe definir los **ámbitos de decisión**. Primero seleccione una ubicación. Puede usar el titular de la página principal *creado anteriormente*.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. A continuación, debe agregar **criterios de evaluación** para el ámbito de decisión. Clic **Añadir** y elija el creado anteriormente &#39;*Recompensas de fidelización*&#39; **colección, que contiene todas las ofertas de fidelidad que se deben tener en cuenta.
+1. A continuación, debe agregar **criterios de evaluación** para el ámbito de decisión. Haga clic en **Agregar** y elija la colección de ** &#39;*Recompensas de fidelidad*&#39; creada anteriormente, que contiene todas las ofertas de fidelidad que deben tenerse en cuenta.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Dentro de &#39;*Recompensas de fidelización* En la colección, puede utilizar el campo de idoneidad para restringir la entrega de ofertas a un subconjunto de visitantes de Luma. Sin embargo, en este caso de uso, desea que todos los visitantes reciban una de las ofertas. Recuerde, ha configurado un **oferta de reserva** para todos los visitantes que no sean fieles. Establezca la idoneidad en &quot;Ninguno&quot;.
+1. Dentro de la colección &#39;*Recompensas por fidelidad*&#39;, puede utilizar el campo de idoneidad para restringir la entrega de ofertas a un subconjunto de visitantes de Luma. Sin embargo, en este caso de uso, desea que todos los visitantes reciban una de las ofertas. Recuerde, ha configurado una **oferta de reserva** para todos los visitantes que no sean fieles. Establezca la idoneidad en &quot;Ninguno&quot;.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Además, puede usar el complemento **método de clasificación** para seleccionar la mejor oferta para cada visitante de Luma si cumplen los requisitos varias ofertas para la combinación de usuario y ubicación. Para este caso de uso, puede utilizar la variable **Prioridad de ofertas** , que utiliza los valores definidos en las ofertas para ofrecer la mejor oferta.
+1. Además, puede usar el campo **método de clasificación** para seleccionar la mejor oferta para cada visitante de Luma si varias ofertas cumplen los requisitos para la combinación de usuario y ubicación. Para este caso de uso, puede usar el método **Prioridad de oferta**, que usa los valores definidos en las ofertas para ofrecer la mejor oferta.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Ahora añada el **oferta de reserva** a la decisión. Recordatorio de que la oferta de reserva es la oferta predeterminada que se muestra a los visitantes de Luma si no entran en ninguna de las audiencias de Fidelidad de Luma. Seleccionar &#39;*Fidelidad que no es de Luma*&#39; de la lista de ofertas de reserva disponibles para &#39;*Titular de página principal*&#39; ubicación.
+1. Ahora agregue la **oferta de reserva** a la decisión. Recordatorio de que la oferta de reserva es la oferta predeterminada que se muestra a los visitantes de Luma si no entran en ninguna de las audiencias de Fidelidad de Luma. Seleccione &#39;*Fidelidad que no es de Luma*&#39; de la lista de ofertas de reserva disponibles para la ubicación &#39;*Banner de página principal*&#39;.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Antes de activar la decisión, vamos a revisar el ámbito de decisión, la oferta de reserva, la vista previa de las ofertas disponibles y estimar los perfiles cualificados. Una vez que todo esté bien, puede hacer clic en **Finalizar** y **Guardar y activar**.
+1. Antes de activar la decisión, vamos a revisar el ámbito de decisión, la oferta de reserva, la vista previa de las ofertas disponibles y estimar los perfiles cualificados. Una vez que todo esté bien, puedes hacer clic en **Finalizar** y **Guardar y activar**.
 <!--
    ![ADD SCREENSHOT](#)
 -->
 
 ## Simulaciones
 
-Como práctica recomendada, debe validar la lógica de Luma Loyalty Decisioning para garantizar que las ofertas correctas se envíen a las audiencias de fidelidad correctas. Para realizar esta validación, utilice **perfiles de prueba**. También es aconsejable probar los cambios en las ofertas mediante perfiles de prueba antes de llevar las nuevas versiones de oferta a producción.
+Como práctica recomendada, debe validar la lógica de Luma Loyalty Decisioning para garantizar que las ofertas correctas se envíen a las audiencias de fidelidad correctas. Puede realizar esta validación utilizando **perfiles de prueba**. También es aconsejable probar los cambios en las ofertas mediante perfiles de prueba antes de llevar las nuevas versiones de oferta a producción.
 
-Para comenzar la prueba, seleccione la **Simulaciones** de la pestaña **Ofertas** menú.
+Para comenzar la prueba, seleccione la ficha **Simulaciones** en el menú **Ofertas**.
 
 ### Prueba de ofertas de fidelización
 
-1. Seleccione un perfil de prueba para utilizarlo en la simulación. Clic **Administrar perfil**. [Para crear o designar un nuevo perfil de prueba para la prueba de ofertas, siga esta guía](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
+1. Seleccione un perfil de prueba para utilizarlo en la simulación. Haga clic en **Administrar perfil**. [Para crear o designar un nuevo perfil de prueba para la prueba de ofertas, siga esta guía](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -347,19 +347,19 @@ Para comenzar la prueba, seleccione la **Simulaciones** de la pestaña **Ofertas
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Seleccione el ámbito de decisión que desea probar. Seleccionar **Agregar ámbito de decisión**.
+1. Seleccione el ámbito de decisión que desea probar. Seleccione **Agregar ámbito de decisión**.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Seleccione el creado anteriormente &#39;*Titular de página principal*&#39; ubicación.
+1. Seleccione la ubicación &#39;*Banner de página principal*&#39; creada anteriormente.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Se muestran las decisiones disponibles, seleccione la creada anteriormente &#39;*Ofertas de fidelización de Luma de diciembre*&#39; y haga clic en **Añadir**.
+1. Se muestran las decisiones disponibles, seleccione la decisión &#39;*Ofertas de fidelidad de Luma de diciembre*&#39; creada anteriormente y haga clic en **Agregar**.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Una vez seleccionado un perfil de prueba, haga clic en **Ver resultados**. La mejor oferta disponible se muestra en el perfil de prueba seleccionado para &#39;*Ofertas de fidelización de Luma de diciembre*&#39; decisión.
+1. Una vez que seleccione un perfil de prueba, haga clic en **Ver resultados**. La mejor oferta disponible se muestra al perfil de prueba seleccionado para la decisión &#39;*Ofertas de fidelidad de Luma de diciembre*&#39;.
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -367,11 +367,11 @@ Para comenzar la prueba, seleccione la **Simulaciones** de la pestaña **Ofertas
 
 ## Validación de gestión de decisiones mediante Adobe Experience Platform Debugger
 
-El **Adobe Experience Platform Debugger** Esta extensión, disponible tanto para Chrome como para Firefox, analiza sus páginas web para identificar problemas en la implementación de las soluciones de Adobe Experience Cloud.
+La extensión **Adobe Experience Platform Debugger**, disponible tanto para Chrome como para Firefox, analiza sus páginas web para identificar problemas en la implementación de soluciones de Adobe Experience Cloud.
 
 Puede utilizar el depurador del sitio de Luma para validar la lógica de toma de decisiones en producción. Esta validación es una buena práctica una vez que el caso de uso de las Recompensas de fidelidad está en funcionamiento, para garantizar que todo esté configurado correctamente.
 
-[Obtenga información sobre cómo configurar Debugger en el explorador mediante la guía aquí](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
+[Aprenda a configurar el depurador en su explorador con la guía aquí](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
 Para iniciar la validación con el depurador:
 
@@ -379,23 +379,23 @@ Para iniciar la validación con el depurador:
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. En la página web, abra el **Adobe Experience Platform Debugger**.
+1. En la página web, abre **Adobe Experience Platform Debugger**.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Vaya a **Resumen**. Compruebe que la variable **ID de flujo de datos** coincide con el **secuencia de datos** in **Recopilación de datos de Adobe** para el que ha activado el Offer decisioning.
+1. Vaya a **Resumen**. Compruebe que el **ID de secuencia de datos** coincide con la **secuencia de datos** en la **recopilación de datos de Adobe** para la que habilitó el Offer decisioning.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. En **Soluciones** vaya a la **SDK web de Experience Platform**.
+1. En **Soluciones**, vaya al **SDK web de Experience Platform**.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Dentro de **Configuración** pestaña, Activar/desactivar **Habilitar depuración**. Esto habilita el registro de la sesión en un **Adobe Experience Platform Assurance** sesión.
+1. En la ficha **Configuración**, active **Habilitar depuración**. Esto habilita el registro de la sesión en una sesión de **Adobe Experience Platform Assurance**.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. A continuación, puede iniciar sesión en el sitio con varias cuentas de fidelidad de Luma y utilizar el depurador para validar las solicitudes enviadas a **red de Adobe Experience Platform Edge**. Todas estas solicitudes deben capturarse en **Assurance** para el seguimiento del registro.
+1. A continuación, puede iniciar sesión en el sitio con varias cuentas de fidelidad de Luma y utilizar el depurador para validar las solicitudes enviadas a la **red de Adobe Experience Platform Edge**. Todas estas solicitudes deben capturarse en **Assurance** para el seguimiento del registro.
 <!--
    ![ADD SCREENSHOT](#)
 -->
@@ -404,4 +404,4 @@ Para iniciar la validación con el depurador:
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer el SDK web de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Gracias por dedicar su tiempo a conocer el SDK web de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

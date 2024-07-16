@@ -6,7 +6,7 @@ jira: KT-14628
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
 source-git-commit: 576f85eda6e5888b9eafa15a705a99c3a70fed07
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '1022'
 ht-degree: 5%
 
 ---
@@ -35,11 +35,11 @@ En esta lección, deberá hacer lo siguiente:
 
 ## Confirmar acceso
 
-Confirme que su organización tiene acceso a Assurance. Usted, como usuario, debe añadirse al perfil de Adobe Experience Platform. Consulte [Acceso de usuario](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html?lang=en) en la Guía de Assurance para obtener más información.
+Confirme que su organización tiene acceso a Assurance. Usted, como usuario, debe añadirse al perfil de Adobe Experience Platform. Consulte [Acceso de usuario](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html?lang=en) en la guía de Assurance para obtener más información.
 
 ## Implementación
 
-Además de la [Instalación del SDK](install-sdks.md)Sin embargo, como ha completado la lección anterior, iOS también requiere la siguiente adición para iniciar la sesión de Assurance para su aplicación.
+Además de la instalación general del [SDK](install-sdks.md), que ha completado en la lección anterior, iOS también requiere la siguiente adición para iniciar la sesión de Assurance para su aplicación.
 
 1. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL SceneDelegate]** en el navegador de proyectos de Xcode.
 
@@ -55,7 +55,7 @@ Además de la [Instalación del SDK](install-sdks.md)Sin embargo, como ha comple
 
    Este código inicia una sesión de garantía cuando la aplicación se encuentra en segundo plano y se abre mediante un vínculo profundo.
 
-Puede encontrar más información [aquí](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
+Encontrará más información [aquí](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
 
 
@@ -64,35 +64,35 @@ Puede encontrar más información [aquí](https://developer.adobe.com/client-sdk
 Debe proporcionar un identificador de paquete único para la aplicación.
 
 1. Abra el proyecto en Xcode.
-1. Seleccionar **[!DNL Luma]** en el navegador del proyecto.
-1. Seleccione el **[!DNL Luma]** objetivo.
-1. Seleccione el **Firma y capacidades** pestaña.
+1. Seleccione **[!DNL Luma]** en el navegador de proyectos.
+1. Seleccione el destino **[!DNL Luma]**.
+1. Seleccione la pestaña **Firma y capacidades**.
 1. Defina un **[!UICONTROL Identificador de paquete]**.
 
    >[!IMPORTANT]
    >
-   >Asegúrese de utilizar un _único_ identificador de paquete y reemplace el `com.adobe.luma.tutorial.swiftui` identificador de paquete, ya que cada identificador de paquete debe ser único. Normalmente, se utiliza un formato DNS inverso para cadenas de ID de paquete, como `com.organization.brand.uniqueidentifier`. La versión final de este tutorial, por ejemplo, utiliza `com.adobe.luma.tutorial.swiftui`.
+   >Asegúrese de utilizar un identificador de paquete _unique_ y reemplace el identificador de paquete `com.adobe.luma.tutorial.swiftui`, ya que cada identificador de paquete debe ser único. Normalmente, utiliza un formato DNS inverso para cadenas de ID de paquete, como `com.organization.brand.uniqueidentifier`. La versión final de este tutorial, por ejemplo, utiliza `com.adobe.luma.tutorial.swiftui`.
 
 
-   ![Funcionalidades de firma de Xcode](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
+   ![Funciones de firma de Xcode](assets/xcode-signing-capabilities.png){zoomable="yes"}
 
 
 ## Configuración de una dirección URL base
 
 1. Vaya al proyecto en Xcode.
-1. Seleccionar **[!DNL Luma]** en el navegador del proyecto.
-1. Seleccione el **[!DNL Luma]** objetivo.
-1. Seleccione el **Información** pestaña.
-1. Para añadir una URL base, desplácese hacia abajo hasta **Tipos de URL** y seleccione la **+** botón.
-1. Establecer **Identificador** Vaya al Identificador de paquete de su elección y defina una **Esquemas de URL** de su elección.
+1. Seleccione **[!DNL Luma]** en el navegador de proyectos.
+1. Seleccione el destino **[!DNL Luma]**.
+1. Seleccione la ficha **Información**.
+1. Para agregar una URL base, desplácese hacia abajo hasta **Tipos de URL** y seleccione el botón **+**.
+1. Establezca **Identificador** en el identificador de paquete que elija y establezca **Esquemas de URL** de su elección
 
    ![url de garantía](assets/assurance-url-type.png)
 
    >[!IMPORTANT]
    >
-   >Asegúrese de utilizar un _único_ identificador de paquete y reemplace el `com.adobe.luma.tutorial.swiftui` identificador de paquete, ya que cada identificador de paquete debe ser único. Normalmente, se utiliza un formato DNS inverso para cadenas de ID de paquete, como `com.organization.brand.uniqueidentifier`. Puede utilizar el mismo identificador de paquete que utilizó en [Definir identificador de paquete](#define-bundle-identifier).<br/>Del mismo modo, utilice un esquema de URL único y reemplace el ya proporcionado `lumatutorialswiftui` con su esquema de URL único.
+   >Asegúrese de utilizar un identificador de paquete _unique_ y reemplace el identificador de paquete `com.adobe.luma.tutorial.swiftui`, ya que cada identificador de paquete debe ser único. Normalmente, utiliza un formato DNS inverso para cadenas de ID de paquete, como `com.organization.brand.uniqueidentifier`. Puede usar el mismo identificador de paquete que usó en [Definir identificador de paquete](#define-bundle-identifier).<br/>Del mismo modo, use un esquema de URL único y reemplace el esquema de URL ya proporcionado `lumatutorialswiftui` por el único.
 
-Para obtener más información sobre los esquemas de URL en iOS, consulte [Documentación de Apple](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
+Para obtener más información acerca de los esquemas de URL en iOS, consulte [Documentación de Apple](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 
 Assurance funciona abriendo una dirección URL, ya sea mediante explorador o código QR. Esa URL comienza con la URL base que abre la aplicación y contiene parámetros adicionales. Estos parámetros únicos se utilizan para conectar la sesión.
 
@@ -101,26 +101,26 @@ Assurance funciona abriendo una dirección URL, ya sea mediante explorador o có
 
 En Xcode:
 
-1. Cree o reconstruya y ejecute la aplicación en el simulador o en un dispositivo físico desde Xcode, utilizando ![Reproducir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
+1. Compile o vuelva a compilar y ejecute la aplicación en el simulador o en un dispositivo físico desde Xcode con ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
    >[!TIP]
    >
-   >De forma opcional, es posible que desee &quot;limpiar&quot; la compilación, especialmente cuando vea resultados inesperados. Para ello, seleccione **[!UICONTROL Limpiar carpeta de compilación...]** desde el Xcode **[!UICONTROL Product]** menú.
+   >De forma opcional, es posible que desee &quot;limpiar&quot; la compilación, especialmente cuando vea resultados inesperados. Para ello, seleccione **[!UICONTROL Limpiar carpeta de compilación...]** en el menú Xcode **[!UICONTROL Producto]**.
 
 
-1. En el **[!UICONTROL Permitir que &quot;Aplicación de Luma&quot; use su ubicación]** diálogo, seleccione **[!UICONTROL Permitir mientras se utiliza la aplicación]**.
+1. En el cuadro de diálogo **[!UICONTROL Permitir que la &quot;aplicación de Luma&quot; use su ubicación]**, seleccione **[!UICONTROL Permitir al usar la aplicación]**.
 
    <img src="assets/geolocation-permissions.png" width="300">
 
-1. En el **[!UICONTROL &quot;Aplicación de Luma&quot; desea enviarle notificaciones]** diálogo, seleccione **[!UICONTROL Permitir]**.
+1. En el cuadro de diálogo **[!UICONTROL &quot;Aplicación de Luma&quot; desea enviarle notificaciones]**, seleccione **[!UICONTROL Permitir]**.
 
    <img src="assets/notification-permissions.png" width="300">
 
-1. Seleccionar **[!UICONTROL Continuar...]** para permitir que la aplicación rastree su actividad.
+1. Seleccione **[!UICONTROL Continuar...]** para permitir que la aplicación rastree su actividad.
 
    <img src="assets/tracking-continue.png" width="300">
 
-1. En el **[!UICONTROL Permitir que &quot;Aplicación de Luma&quot; rastree su actividad en las aplicaciones y sitios web de otras empresas]** diálogo, seleccione **[!UICONTROL Permitir]**.
+1. En el cuadro de diálogo **[!UICONTROL Permitir que &quot;Aplicación de Luma&quot; rastree su actividad en las aplicaciones y sitios web de otras compañías]**, seleccione **[!UICONTROL Permitir]**.
 
    <img src="assets/tracking-allow.png" width="300">
 
@@ -128,31 +128,31 @@ En Xcode:
 En su explorador:
 
 1. Vaya a la IU de recopilación de datos.
-1. Seleccionar **[!UICONTROL Assurance]** desde el carril izquierdo.
-1. Seleccionar **[!UICONTROL Crear sesión]**.
-1. Seleccionar **[!UICONTROL Inicio]**.
-1. Proporcione un **[!UICONTROL Nombre de sesión]** como `Luma Mobile App Session` y el **[!UICONTROL URL básica]**, que son los esquemas de URL introducidos en Xcode, seguidos de `://` Por ejemplo: `lumatutorialswiftui://`
+1. Seleccione **[!UICONTROL Assurance]** en el carril izquierdo.
+1. Seleccione **[!UICONTROL Crear sesión]**.
+1. Seleccione **[!UICONTROL Iniciar]**.
+1. Proporcione un **[!UICONTROL Nombre de sesión]** como `Luma Mobile App Session` y la **[!UICONTROL URL base]**, que son los esquemas de URL que introdujo en Xcode, seguidos de `://`. Por ejemplo: `lumatutorialswiftui://`
 1. Seleccione **[!UICONTROL Siguiente]**.
-   ![sesión de creación de garantía](assets/assurance-create-session.png)
-1. En el **[!UICONTROL Crear nueva sesión]** diálogo modal:
+   ![garantía al crear sesión](assets/assurance-create-session.png)
+1. En el diálogo modal **[!UICONTROL Crear nueva sesión]**:
 
    Si utiliza un dispositivo físico:
 
-   * Seleccionar **[!UICONTROL Escanear código QR]**. Para abrir la aplicación, utilice la cámara del dispositivo físico para escanear el código QR y pulse el vínculo.
+   * Seleccione **[!UICONTROL Escanear código QR]**. Para abrir la aplicación, utilice la cámara del dispositivo físico para escanear el código QR y pulse el vínculo.
 
-     ![código de control de calidad de garantía](assets/assurance-qr-code.png)
+     ![código de control de calidad de seguridad](assets/assurance-qr-code.png)
 
    Si utiliza un simulador:
 
-   1. Seleccionar **[!UICONTROL Copiar vínculo]**.
-   1. Copie el vínculo profundo mediante ![Copiar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)  y utilice el vínculo profundo para abrir la aplicación con Safari en el simulador.
-      ![Vínculo de copia de Assurance](assets/assurance-copy-link.png)
+   1. Seleccione **[!UICONTROL Copiar vínculo]**.
+   1. Copie el vínculo profundo mediante ![Copiar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) y utilice el vínculo profundo para abrir la aplicación con Safari en el simulador.
+      ![Vínculo de copia de seguridad](assets/assurance-copy-link.png)
 
 1. Cuando se carga la aplicación, aparece un cuadro de diálogo modal en el que se le solicita que introduzca el PIN que se muestra en el paso 7.
 
    <img src="assets/assurance-enter-pin.png" width="300">
 
-   Introduzca el PIN y seleccione **[!UICONTROL Connect]**.
+   Escriba el PIN y seleccione **[!UICONTROL Conectar]**.
 
 
 1. Si la conexión se ha realizado correctamente, verá lo siguiente:
@@ -168,31 +168,31 @@ En su explorador:
 
          ![eventos de garantía](assets/assurance-events.png)
 
-Si tiene algún problema, consulte la [técnico](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
+Si encuentra algún desafío, revise la [documentación técnica](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} y la [documentación general](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
 
 
 ## Verificar extensiones
 
 Para comprobar si su aplicación utiliza las extensiones más actualizadas:
 
-1. Seleccionar **[!UICONTROL Configurar]**.
+1. Seleccione **[!UICONTROL Configurar]**.
 
-1. Seleccionar ![Añadir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) para ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL Versiones de extensión]**.
+1. Seleccione ![Agregar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) para ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL versiones de extensión]**.
 
 1. Seleccione **[!UICONTROL Guardar]**.
 
-   ![Configuración de versiones de extensión](assets/assurance-configure-extension-versions.png)
+   ![Configurar versiones de extensión](assets/assurance-configure-extension-versions.png)
 
-1. Seleccionar ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL Versiones de extensión]** para ver una descripción general de las últimas extensiones disponibles y de las extensiones utilizadas en su versión de la aplicación.
+1. Seleccione ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL Versiones de extensión]** para ver una descripción general de las extensiones más recientes disponibles y de las extensiones usadas en su versión de la aplicación.
 
    ![Versiones de extensión](assets/assurance-extension-versions.png)
 
-1. Para actualizar las versiones de la extensión (por ejemplo, **[!UICONTROL Mensajes]** y **[!UICONTROL Optimización]**) seleccione el paquete (extensión) de **[!UICONTROL Dependencias del paquete]** (por ejemplo, **[!UICONTROL AEPMessaging]**) y en el menú contextual, seleccione **[!UICONTROL Actualizar paquete]**. Xcode actualizará las dependencias del paquete.
+1. Para actualizar las versiones de la extensión (por ejemplo, **[!UICONTROL Messaging]** y **[!UICONTROL Optimize]**), seleccione el paquete (extensión) de **[!UICONTROL Dependencias del paquete]** (por ejemplo, **[!UICONTROL AEPMessaging]**) y, en el menú contextual, seleccione **[!UICONTROL Actualizar paquete]**. Xcode actualizará las dependencias del paquete.
 
 
 >[!NOTE]
 >
->Una vez que haya actualizado las extensiones (paquetes) en Xcode, cierre y elimine la sesión actual y repita todos los pasos de [Conexión a una sesión](#connecting-to-a-session) y [Verificar extensiones](#verify-extensions) para garantizar que Assurance informa correctamente de las extensiones correctas en una nueva sesión de Assurance.
+>Una vez que haya actualizado las extensiones (paquetes) en Xcode, cierre y elimine la sesión actual y repita todos los pasos de [Conexión a una sesión](#connecting-to-a-session) y [Verificación de las extensiones](#verify-extensions) para garantizar que Assurance notifique correctamente las extensiones correctas en una nueva sesión de Assurance.
 
 
 
@@ -202,7 +202,7 @@ Para comprobar si su aplicación utiliza las extensiones más actualizadas:
 >
 >Ahora ha configurado la aplicación para que utilice Assurance durante el resto del tutorial.
 >
->Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 
-Siguiente: **[Implementación del consentimiento](consent.md)**
+Siguiente: **[Implementar consentimiento](consent.md)**

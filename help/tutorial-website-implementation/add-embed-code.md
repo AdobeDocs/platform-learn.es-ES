@@ -4,8 +4,8 @@ description: Obtenga información sobre cómo obtener los códigos de incrustaci
 exl-id: a2959553-2d6a-4c94-a7df-f62b720fd230
 source-git-commit: 277f5f2c07bb5818e8c5cc129bef1ec93411c90d
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 50%
+source-wordcount: '1037'
+ht-degree: 45%
 
 ---
 
@@ -19,7 +19,7 @@ En esta lección, debe implementar el código incrustado asincrónico del entorn
 >
 > * El platform launch (lado del cliente) ahora es **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=es)**
 > * El lado del servidor de platform launch ahora es **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
-> * Las configuraciones de Edge ahora son **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=es)**
+> * Ahora, las configuraciones de Edge son **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=es)**
 
 ## Objetivos de aprendizaje
 
@@ -28,13 +28,13 @@ Al final de esta lección, debe poder:
 * Obtener el código incrustado de la propiedad de etiquetas
 * Comprender la diferencia entre los entornos de desarrollo, de ensayo y de producción.
 * Añadir un código incrustado de etiqueta en un documento HTML
-* Explicar la ubicación óptima del código incrustado de etiqueta en relación con otro código de en la variable `<head>` de un documento html
+* Explicar la ubicación óptima del código incrustado de etiqueta en relación con otro código en `<head>` de un documento HTML
 
 ## Copiar el código de incrustación
 
-El código de incrustación es un `<script>` que coloca en las páginas web para cargar y ejecutar la lógica que crea en las etiquetas. Si carga la biblioteca de forma asíncrona, el explorador continúa cargando la página, recupera la biblioteca de etiquetas y la ejecuta en paralelo. En este caso, solo hay un código de incrustación, que usted pone en `<head>`. (Cuando las etiquetas se implementan sincrónicamente, hay dos códigos incrustados, uno que se coloca en la variable `<head>` y otro que usted puso delante de la `</body>`).
+El código incrustado es una etiqueta `<script>` que se coloca en las páginas web para cargar y ejecutar la lógica que se haya generado en las etiquetas. Si carga la biblioteca de forma asíncrona, el explorador continúa cargando la página, recupera la biblioteca de etiquetas y la ejecuta en paralelo. En este caso, solo hay un código de incrustación, que usted pone en `<head>`. (Cuando las etiquetas se implementan sincrónicamente, existen dos códigos incrustados, uno que se coloca en `<head>` y otro que se coloca antes de `</body>`).
 
-En la propiedad Overview Screen, haga clic en **[!UICONTROL Entornos]** en la navegación izquierda para ir a la página de entornos. Tenga en cuenta que los entornos de desarrollo, de estado y de producción ya se han creado.
+En la pantalla Información general de la propiedad, haga clic en **[!UICONTROL Entornos]** en el panel de navegación izquierdo para ir a la página de entornos. Tenga en cuenta que los entornos de desarrollo, de estado y de producción ya se han creado.
 
 ![Haga clic en Entornos en la barra de navegación superior](images/launch-environments.png)
 
@@ -46,7 +46,7 @@ Son los únicos entornos necesarios para completar el tutorial. Los entornos per
 
 Ahora vamos a copiar el código de incrustación:
 
-1. En la fila **[!UICONTROL Development]**, haga clic en el ![icono Instalar](images/launch-installIcon.png) para abrir el modal.
+1. En la fila **[!UICONTROL Desarrollo]**, haga clic en el icono Instalar ![Icono Instalar](images/launch-installIcon.png) para abrir el modal.
 
 1. Tenga en cuenta que las etiquetas se configurarán de forma predeterminada como códigos incrustados asincrónicos
 
@@ -58,7 +58,7 @@ Ahora vamos a copiar el código de incrustación:
 
 ## Implemente el código de incrustación en el `<head>` de la página HTML de ejemplo.
 
-El código de incrustación debe implementarse en el elemento `<head>` de todas las páginas HTML que comparten la propiedad. Puede tener uno o varios archivos de plantilla que controlan el `<head>` globalmente en todo el sitio, lo que lo convierte en un proceso directo para añadir etiquetas.
+El código de incrustación debe implementarse en el elemento `<head>` de todas las páginas HTML que comparten la propiedad. Puede tener uno o varios archivos de plantilla que controlan el `<head>` globalmente en todo el sitio, lo que lo convierte en un proceso directo para agregar etiquetas.
 
 Si aún no lo ha hecho, copie el código de página HTML de ejemplo y péguelo en un editor de código. [Brackets](https://brackets.io/) es un editor de código abierto gratuito si lo necesita.
 
@@ -130,17 +130,17 @@ Analicemos algunas de las prácticas recomendadas en la implementación de etiqu
 
 * **Capa de datos**:
 
-   * Recomendamos *encarecidamente* la creación de una capa de datos en su sitio que contenga todos los atributos necesarios para rellenar variables en Analytics, Target y otras soluciones de marketing. Esta página de muestra solo contiene una capa de datos muy sencilla, pero una capa de datos real puede contener muchos más detalles sobre la página, el visitante, los detalles del carro de compras, etc. Para obtener más información sobre las capas de datos, consulte [Customer Experience Digital Data Layer 1.0](https://www.w3.org/2013/12/ceddl-201312.pdf).
+   * *Recomendamos encarecidamente* la creación de una capa de datos en su sitio que contenga todos los atributos necesarios para rellenar variables en Analytics, Target y otras soluciones de marketing. Esta página de muestra solo contiene una capa de datos muy sencilla, pero una capa de datos real puede contener muchos más detalles sobre la página, el visitante, los detalles del carro de compras, etc. Para obtener más información sobre las capas de datos, consulte [Customer Experience Digital Data Layer 1.0](https://www.w3.org/2013/12/ceddl-201312.pdf).
 
    * Defina la capa de datos antes del código de incrustación de etiquetas para maximizar lo que puede hacer con las soluciones de Experience Cloud.
 
-* **Bibliotecas de ayuda de JavaScript**: Si ya tiene una biblioteca como JQuery implementada en `<head>` de sus páginas, cárguelo antes que las etiquetas para aprovechar su sintaxis en etiquetas y Target
+* **Bibliotecas de ayuda de JavaScript**: Si ya tiene una biblioteca como JQuery implementada en `<head>` de sus páginas, cárguela antes que las etiquetas para aprovechar su sintaxis en las etiquetas y Target
 
 * **Doctype HTML 5**: se requiere el doctype HTML 5 para Target.
 
 * **Preconnect y dns-prefetch**: utilice preconnect y dns-prefetch para mejorar el tiempo de carga de la página. Consulte también: [https://w3c.github.io/resource-hints/](https://w3c.github.io/resource-hints/)
 
-* **preocultación de fragmento para implementaciones asíncronas de Target**: aprenderá más sobre esto en la lección de Target, pero cuando Target se implemente mediante códigos de incrustación de etiqueta asincrónicos, debe codificar un fragmento de ocultamiento previo en las páginas antes de los códigos de incrustación de etiqueta para administrar el parpadeo del contenido
+* **fragmento preocultado para implementaciones asincrónicas de Target**: aprenderá más sobre esto en la lección de Target, pero cuando Target se implemente mediante códigos incrustados de etiqueta asincrónicos, debe codificar un fragmento preocultado en las páginas antes de los códigos incrustados de etiqueta para administrar el parpadeo del contenido
 
 Este es un resumen de cómo se ven estas prácticas recomendadas en el orden sugerido. Tenga en cuenta que hay algunos marcadores de posición para detalles específicos de la cuenta:
 

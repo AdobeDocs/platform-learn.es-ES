@@ -1,6 +1,6 @@
 ---
-title: Explicación de los destinos en [!DNL Real-Time Customer Data Platform] y [!DNL Experience Platform]
-description: Obtenga información sobre los tipos de destino que puede utilizar para obtener datos de [!DNL Real-Time CDP], [!DNL Experience Platform], and [!DNL Tags] para admitir una amplia variedad de casos de uso.
+title: Comprender los destinos en [!DNL Real-Time Customer Data Platform] y [!DNL Experience Platform]
+description: Obtenga información acerca de los tipos de destino que puede usar para obtener datos de  [!DNL Real-Time CDP], [!DNL Experience Platform], and [!DNL Tags]  y admitir una amplia variedad de casos de uso.
 solution: Real-Time Customer Data Platform
 feature: Destinations
 role: User, Admin
@@ -11,14 +11,14 @@ last-substantial-update: 2023-09-20T00:00:00Z
 exl-id: d6e78ec2-f9e0-4794-b585-9bebef9b036b
 source-git-commit: 7c471d9da851c594c33e00473a04996fd247bb84
 workflow-type: tm+mt
-source-wordcount: '83'
-ht-degree: 18%
+source-wordcount: '78'
+ht-degree: 3%
 
 ---
 
 # Información general sobre los destinos
 
-Los destinos son integraciones prediseñadas con plataformas de destino que activan y exportan datos a esos socios de forma fluida. Obtenga información sobre los tipos de destino que puede utilizar para obtener datos de [!DNL Real-Time CDP], [!DNL Experience Platform], y [!DNL Tags] para admitir una amplia variedad de casos de uso. Para obtener más información, consulte la [documentación](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=es).
+Los destinos son integraciones prediseñadas con plataformas de destino que activan y exportan datos a esos socios de forma fluida. Obtenga información acerca de los tipos de destino que puede usar para obtener datos de [!DNL Real-Time CDP], [!DNL Experience Platform] y [!DNL Tags] con el fin de admitir una amplia variedad de casos de uso. Para obtener más información, visite la [documentación](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=es).
 
 >[!VIDEO](https://video.tv.adobe.com/v/29707?learn=on)
 

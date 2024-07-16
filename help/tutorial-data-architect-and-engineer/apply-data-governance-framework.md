@@ -10,8 +10,8 @@ thumbnail: 4348-apply-data-governance-framework.jpg
 exl-id: 3cc3c794-5ffd-41bf-95d8-be5bca2e3a0f
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 2%
+source-wordcount: '621'
+ht-degree: 1%
 
 ---
 
@@ -48,23 +48,23 @@ Luma promete a los miembros de su programa de fidelidad que los datos de fidelid
 El primer paso del proceso de control de datos es aplicar etiquetas de control a los datos. Antes de hacerlo, echemos un vistazo rápido a las etiquetas disponibles:
 
 1. En la interfaz de usuario de Platform, seleccione **[!UICONTROL Políticas]** en el panel de navegación izquierdo
-1. Vaya a la **[!UICONTROL Etiquetas]** para ver todas las etiquetas de la cuenta.
+1. Vaya a la pestaña **[!UICONTROL Etiquetas]** para ver todas las etiquetas de la cuenta.
 
-Hay muchas etiquetas listas para usar, además de que puede crear las suyas propias mediante el [!UICONTROL Crear etiqueta] botón. Existen tres tipos principales: [!UICONTROL Etiquetas de contrato], [!UICONTROL Etiquetas de identidad], y [!UICONTROL Etiquetas confidenciales] que se corresponden con motivos comunes por los que los datos pueden estar restringidos. Cada una de las etiquetas tiene un [!UICONTROL Nombre descriptivo] y un corto [!UICONTROL Nombre] que es solo una abreviatura del tipo y un número. Por ejemplo, la variable [!DNL C1] La etiqueta es para &quot;Sin exportación de terceros&quot;, que es lo que necesitamos para nuestra política de fidelización.
+Hay muchas etiquetas listas para usar, además de que puede crear las suyas propias con el botón [!UICONTROL Crear etiqueta]. Existen tres tipos principales: [!UICONTROL etiquetas de contrato], [!UICONTROL etiquetas de identidad] y [!UICONTROL etiquetas confidenciales] que corresponden a motivos comunes por los que los datos pueden estar restringidos. Cada una de las etiquetas tiene un [!UICONTROL Nombre descriptivo] y un [!UICONTROL Nombre] corto, que es solo una abreviatura del tipo y un número. Por ejemplo, la etiqueta [!DNL C1] es para &quot;Sin exportación de terceros&quot;, que es lo que necesitamos para nuestra política de fidelización.
 
-![Etiqueta de gobernanza de datos](assets/governance-policies.png)
+![Etiqueta de control de datos](assets/governance-policies.png)
 
 Ahora es el momento de etiquetar los datos cuyo uso queremos restringir:
 
 1. En la interfaz de usuario de Platform, seleccione **[!UICONTROL Conjuntos de datos]** en el panel de navegación izquierdo
-1. Abra el `Luma Loyalty Dataset`
-1. Vaya a la **[!UICONTROL Gobernanza de datos]** pestaña
+1. Abrir `Luma Loyalty Dataset`
+1. Vaya a la pestaña **[!UICONTROL Control de datos]**
 1. Puede aplicar etiquetas a campos individuales o aplicarlas a todo el conjunto de datos. Aplicaremos la etiqueta a todo el conjunto de datos. Haga clic en el icono de lápiz. Si no ve el icono, intente hacer que el explorador sea más ancho o desplácese por el panel central hacia la derecha.
    ![Gobierno de datos](assets/governance-dataset.png)
-1. En el modal, expanda el **[!UICONTROL Etiquetas de contrato]** y marque la **[!UICONTROL C2]** etiqueta
-1. Seleccione el **[!UICONTROL Guardar cambios]** botón
+1. En el modal, expanda la sección **[!UICONTROL Etiquetas de contrato]** y compruebe la etiqueta **[!UICONTROL C2]**
+1. Seleccione el botón **[!UICONTROL Guardar cambios]**
    ![Gobierno de datos](assets/governance-applyLabel.png)
-1. Volver a la página principal [!UICONTROL Gobernanza de datos] pantalla, con el **[!UICONTROL Mostrar etiquetas heredadas]** Con esta opción activada, puede ver cómo se ha aplicado la etiqueta a todos los campos del conjunto de datos.
+1. Al volver a la pantalla principal [!UICONTROL Control de datos], con la opción **[!UICONTROL Mostrar etiquetas heredadas]** activada, puede ver cómo se ha aplicado la etiqueta a todos los campos del conjunto de datos.
    ![Gobierno de datos](assets/governance-labelsAdded.png)
 
 
@@ -76,11 +76,11 @@ Ahora es el momento de etiquetar los datos cuyo uso queremos restringir:
 Ahora que nuestros datos están etiquetados, podemos crear una política.
 
 1. En la interfaz de usuario de Platform, seleccione **[!UICONTROL Políticas]** en el panel de navegación izquierdo
-1. En la pestaña Examinar, ya existe una directiva predeterminada llamada &quot;restricción de exportación de terceros&quot; que asocia la etiqueta C2 con la acción de marketing [!UICONTROL Exportar a terceros]¡Exactamente lo que necesitamos!
-1. Seleccione la política y, a continuación, actívela a través del **[!UICONTROL Estado de política]** alternar
+1. En la pestaña Examinar, ya existe una directiva predeterminada llamada &quot;restricción de exportación de terceros&quot; que asocia la etiqueta C2 con la acción de marketing [!UICONTROL Exportar a terceros], exactamente lo que necesitamos.
+1. Seleccione la directiva y, a continuación, actívela mediante la opción **[!UICONTROL Estado de la directiva]**
    ![Gobierno de datos](assets/governance-enablePolicy.png)
 
-Puede crear sus propias directivas seleccionando la **[!UICONTROL Crear política]** botón. Esto abre un asistente que le permite combinar varias etiquetas y restricciones de acciones de marketing.
+Puede crear sus propias directivas si selecciona el botón **[!UICONTROL Crear directiva]**. Esto abre un asistente que le permite combinar varias etiquetas y restricciones de acciones de marketing.
 
 ## Aplicar políticas de gobernanza
 
@@ -91,8 +91,8 @@ La aplicación de las políticas de gobernanza es obviamente un componente clave
 
 ## Recursos adicionales
 
-* [Documentación de gobernanza de datos](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=es)
-* [Referencia de API del servicio Dataset](https://www.adobe.io/experience-platform-apis/references/dataset-service/)
-* [Referencia de API del servicio de políticas de gobernanza](https://www.adobe.io/experience-platform-apis/references/policy-service/)
+* [Documentación de control de datos](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=es)
+* [Referencia de API del servicio de conjunto de datos](https://www.adobe.io/experience-platform-apis/references/dataset-service/)
+* [Referencia de API del servicio de directivas de gobernanza](https://www.adobe.io/experience-platform-apis/references/policy-service/)
 
-Ahora vamos a pasar a [servicio de consultas](run-queries.md).
+Ahora pasemos al [servicio de consultas](run-queries.md).

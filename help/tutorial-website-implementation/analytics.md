@@ -1,29 +1,28 @@
 ---
 title: Añadir Adobe Analytics
-description: Obtenga información sobre cómo implementar Adobe Analytics mediante la extensión de etiqueta de Adobe Analytics, enviar la señalización de vista de página, agregar variables, rastrear eventos y agregar complementos. Esta lección forma parte del tutorial Implementación del Experience Cloud en sitios web .
+description: Obtenga información sobre cómo implementar Adobe Analytics con la extensión de etiquetas de Adobe Analytics, enviar la señalización de vista de página, añadir variables, rastrear eventos y añadir complementos. Esta lección forma parte del tutorial Implementación del Experience Cloud en sitios web.
 solution: Data Collection, Analytics
 exl-id: dababaf2-ff8f-4178-8eaf-04a707b4ab05
 source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
 workflow-type: tm+mt
-source-wordcount: '3891'
-ht-degree: 83%
+source-wordcount: '3827'
+ht-degree: 69%
 
 ---
 
 # Añadir Adobe Analytics
 
-En esta lección, debe implementar la [extensión de Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=es) y creará reglas para enviar datos a Adobe Analytics.
+En esta lección, debe implementar la [extensión de Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html) y creará reglas para enviar datos a Adobe Analytics.
 
 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=es) es una solución líder del sector que le permite comprender a sus clientes como personas y dirigir su negocio con inteligencia de clientes.
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch se está integrando en Adobe Experience Platform como un conjunto de tecnologías de recopilación de datos. Se han implementado varios cambios terminológicos en la interfaz que debe tener en cuenta al usar este contenido:
+>Adobe Experience Platform Launch se está integrando en Adobe Experience Platform como un conjunto de tecnologías de recopilación de datos. Se han implementado varios cambios terminológicos en la interfaz que debe tener en cuenta al utilizar este contenido:
 >
-> * El platform launch (lado del cliente) ya está **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=es)**
-> * El servidor de platform launch está ahora **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
-> * Las configuraciones de Edge ahora **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=es)**
-
+> * El platform launch (lado del cliente) ahora es **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=es)**
+> * El lado del servidor de platform launch ahora es **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Ahora, las configuraciones de Edge son **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=es)**
 
 ## Objetivos de aprendizaje
 
@@ -40,7 +39,7 @@ Se pueden implementar muchas cosas para Analytics en etiquetas. Esta lección no
 
 ## Requisitos previos
 
-Ya debería haber completado las lecciones en [Configuración de etiquetas](create-a-property.md) y [Añadir el servicio de identidad](id-service.md).
+Ya debería haber completado las lecciones de [Configurar etiquetas](create-a-property.md) y [Agregar el servicio de identidad](id-service.md).
 
 Además, necesita al menos un ID de grupo de informes y un servidor de seguimiento. Si no dispone de un grupo de informes de prueba o desarrollo que pueda utilizar para este tutorial, cree uno. Si no está seguro de cómo hacerlo, consulte [la documentación](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html?lang=es). Puede obtener un servidor de seguimiento desde su implementación actual, su asesor de Adobe o su representante del servicio de atención al cliente.
 
@@ -56,25 +55,25 @@ La extensión de Analytics consta de dos partes principales:
 
 **Para añadir la extensión de Analytics**
 
-1. Vaya a **[!UICONTROL Extensiones > Catálogo]**
+1. Ir a **[!UICONTROL Extensiones > Catálogo]**
 1. Localice la extensión de Adobe Analytics
 1. Haga clic en **[!UICONTROL Instalar]**
 
    ![Instalación de la extensión de Analytics](images/analytics-catalog-install.png)
 
-1. En [!UICONTROL Administración de biblioteca > Grupos de informes], introduzca los ID de los grupos de informes que desee utilizar con cada entorno de etiquetas. Si los usuarios tienen acceso a Adobe Analytics, tenga en cuenta que cuando empiece a escribir en el cuadro, verá una lista previamente rellenada de todos los grupos de informes. (Está bien utilizar un grupo de informes para todos los entornos en este tutorial, pero en la vida real le recomendamos utilizar grupos de informes independientes, como se muestra en la imagen siguiente)
+1. En [!UICONTROL Administración de biblioteca > Grupos de informes], escriba los identificadores de los grupos de informes que desee usar en cada entorno de etiquetas. Si los usuarios tienen acceso a Adobe Analytics, tenga en cuenta que cuando empiece a escribir en el cuadro, verá una lista previamente rellenada de todos los grupos de informes. (Está bien utilizar un grupo de informes para todos los entornos en este tutorial, pero en la vida real le recomendamos utilizar grupos de informes independientes, como se muestra en la imagen siguiente)
 
    ![Especifique los ID de los grupos de informes](images/analytics-config-reportSuite.png)
 
    >[!TIP]
    >
-   >Se recomienda usar la [!UICONTROL opción Administrar la biblioteca por mí] como la configuración de [!UICONTROL Administración de bibliotecas], ya que facilita la tarea de mantener la biblioteca `AppMeasurement.js` actualizada.
+   >Se recomienda usar la opción [!UICONTROL Administrar la biblioteca por mí] como la configuración de [!UICONTROL Administración de biblioteca], ya que facilita la tarea de mantener la biblioteca `AppMeasurement.js` actualizada.
 
-1. En [!UICONTROL General > Servidor de seguimiento], introduzca su servidor de seguimiento, por ejemplo: `tmd.sc.omtrdc.net`. Introduzca el servidor de seguimiento SSL si su sitio es compatible con `https://`.
+1. En [!UICONTROL General > Servidor de seguimiento], ingrese su servidor de seguimiento, por ejemplo `tmd.sc.omtrdc.net`. Introduzca el servidor de seguimiento SSL si su sitio es compatible con `https://`.
 
    ![Especifique los servidores de seguimiento](images/analytics-config-trackingServer.png).
 
-1. En el [!UICONTROL Sección Variables globales], en [!UICONTROL Configuración adicional], establezca la variable [!UICONTROL Nombre de la página] usando la variable `Page Name` elemento de datos. Haga clic en el ![icono de elemento de datos](images/icon-dataElement.png) para abrir el modal y elegir el elemento de datos de la página `Page Name`.
+1. En la sección [!UICONTROL Variables globales], en [!UICONTROL Configuración adicional], establezca la variable [!UICONTROL Nombre de página] con el elemento de datos `Page Name`. Haga clic en el ![icono de elemento de datos](images/icon-dataElement.png) para abrir el modal y elegir el elemento de datos de la página `Page Name`.
 
 1. Haga clic en **[!UICONTROL Guardar en biblioteca]**
 
@@ -82,44 +81,44 @@ La extensión de Analytics consta de dos partes principales:
 
 >[!NOTE]
 >
->Las variables globales se pueden configurar en la configuración de la extensión o en las acciones de reglas. Tenga en cuenta que al configurar variables en la configuración de la extensión, la capa de datos debe definirse *before* los códigos incrustados de etiquetas.
+>Las variables globales se pueden configurar en la configuración de la extensión o en las acciones de reglas. Tenga en cuenta que al configurar variables en la configuración de la extensión, la capa de datos debe definirse *antes de* los códigos de incrustación de etiquetas.
 
 ## Envío de la señalización de vista de página
 
 Ahora creará una regla para activar la señalización de Analytics, que enviará la variable [!UICONTROL Nombre de página (Page Name)] establecida en la configuración de la extensión.
 
-Ya ha creado la regla &quot;All Pages - Library Loaded&quot; en la variable [Añadir un elemento de datos, una regla y una biblioteca](add-data-elements-rules.md) lección de este tutorial, que se activa en todas las páginas cuando se carga la biblioteca de etiquetas. You *may* utilice esta regla también para Analytics; sin embargo, esta configuración requiere que todos los atributos de capa de datos utilizados en la señalización de Analytics se definan antes que los códigos incrustados de etiquetas. Para permitir una mayor flexibilidad de recopilación de datos, cree una regla de “todas las páginas” nueva con DOM Ready preparado para activar la señalización de Analytics.
+Ya ha creado la regla &quot;All Pages - Library Loaded&quot; en la lección [Añadir un elemento de datos, una regla y una biblioteca](add-data-elements-rules.md) de este tutorial, que se activa en cada página cuando se carga la biblioteca de etiquetas. Usted *también podría* utilizar esta regla para Analytics, sin embargo esta configuración requiere que todos los atributos de capa de datos utilizados en la señalización de Analytics se definan antes que los códigos incrustados de etiqueta. Para permitir una mayor flexibilidad de recopilación de datos, cree una regla de “todas las páginas” nueva con DOM Ready preparado para activar la señalización de Analytics.
 
 **Para enviar la señalización de vista de página**
 
-1. Vaya a la **[!UICONTROL Reglas]** en la navegación izquierda y, a continuación, haga clic en **[!UICONTROL Agregar regla]**
+1. Vaya a la sección **[!UICONTROL Reglas]** en el panel de navegación izquierdo y luego haga clic en **[!UICONTROL Agregar regla]**
 
    ![Añadir regla](images/analytics-addRule.png)
 
 1. Asigne un nombre a la regla `All Pages - DOM Ready`.
-1. Haga clic en **[!UICONTROL Eventos > Añadir]** para abrir la pantalla `Event Configuration`.
+1. Haga clic en **[!UICONTROL Eventos > Agregar]** para abrir la pantalla de `Event Configuration`
 
    ![Asignar un nombre a la regla y añadir un evento](images/analytics-domReady-nameAddAnalyticsEvent.png)
 
-1. Seleccione **[!UICONTROL Tipo de evento > DOM Ready]** (tenga en cuenta que el orden de la regla es “50”).
-1. Haga clic en **[!UICONTROL Conservar cambios]**.
+1. Seleccione **[!UICONTROL Tipo de evento > DOM Ready]** (tenga en cuenta que el orden de la regla es &quot;50&quot;).
+1. Haga clic en **[!UICONTROL Conservar cambios]**
    ![Configuración del evento](images/analytics-configureEventDomReady.png)
 
 1. En Acciones (Actions), haga clic en el ![icono +](images/icon-plus.png) para añadir una acción nueva.
 
    ![Haga clic en el icono + para añadir una acción nueva](images/analytics-ruleAddAction.png)
 
-1. Seleccione **[!UICONTROL Extensión > Adobe Analytics]**.
+1. Seleccione **[!UICONTROL Extensión > Adobe Analytics]**
 
-1. Seleccione **[!UICONTROL Tipo de acción > Enviar señalización]**.
+1. Seleccione **[!UICONTROL Tipo de acción > Enviar señalización]**
 
 1. Deje Tracking configurado como `s.t()`. Si desea realizar una llamada a `s.tl()` en una regla de evento de clic, también puede hacerlo usando la acción “Enviar señalización”.
 
-1. Haga clic en el botón **[!UICONTROL Conservar cambios]**.
+1. Haga clic en el botón **[!UICONTROL Conservar cambios]**
 
    ![Haga clic en el icono + para añadir una acción nueva](images/analytics-sendBeacon.png)
 
-1. Haga clic en **[!UICONTROL Guardar en biblioteca y crear]**.
+1. Haga clic en **[!UICONTROL Guardar en biblioteca y compilar]**
 
    ![Haga clic en Guardar en biblioteca y crear](images/analytics-saveToLibraryAndBuild.png)
 
@@ -128,10 +127,10 @@ Ya ha creado la regla &quot;All Pages - Library Loaded&quot; en la variable [Añ
 Después de crear una regla para enviar una señalización de Analytics, debe poder ver la solicitud en Experience Cloud Debugger.
 
 1. Abra [el sitio web de Luma](https://luma.enablementadobe.com/content/luma/us/en.html) en el explorador Chrome.
-1. Haga clic en el icono de Debugger ![Abrir Experience Cloud Debugger](images/analytics-debuggerIcon.png) para iniciar **[!UICONTROL Adobe Experience Cloud Debugger]**.
-1. Asegúrese de que Debugger asigne la propiedad de etiqueta a *your* Entorno de desarrollo, tal como se describe en la sección [lección anterior](switch-environments.md)
+1. Haga clic en el icono de Debugger ![Abrir el Experience Cloud Debugger](images/analytics-debuggerIcon.png) para abrir **[!UICONTROL Adobe Experience Cloud Debugger]**
+1. Asegúrese de que Debugger asigne la propiedad de etiqueta a *su entorno de desarrollo*, tal como se describe en la [lección anterior](switch-environments.md)
 
-   ![El entorno de desarrollo de etiquetas que se muestra en Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![Se muestra el entorno de desarrollo de etiquetas en Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. Haga clic para abrir la pestaña de Analytics.
 1. Amplíe el nombre del grupo de informes para mostrar todas las solicitudes realizadas.
@@ -141,11 +140,11 @@ Después de crear una regla para enviar una señalización de Analytics, debe po
 
 >[!NOTE]
 >
->Si el nombre de la página (Page Name) no se muestra, vuelva a los pasos de esta página para asegurarse de que no ha pasado por alto nada.
+>Si el nombre de la página no se muestra, vuelva a los pasos de esta página para asegurarse de que no se ha perdido nada.
 
 ## Añadir variables con reglas
 
-Cuando configuró la extensión de Analytics, rellenó la variable `pageName` en la configuración de la extensión. Esta ubicación es perfecta para rellenar otras variables globales, como eVars y props, siempre que el valor esté disponible en la página antes de que se cargue el código de incrustación de etiquetas.
+Cuando configuró la extensión de Analytics, rellenó la variable `pageName` en la configuración de la extensión. Esta ubicación es perfecta para rellenar otras variables globales, como eVars y props, siempre y cuando el valor esté disponible en la página antes de que se cargue el código incrustado de etiqueta.
 
 En las reglas que utilizan la acción `Set Variables` hay una ubicación más flexible para establecer variables (así como eventos). Las reglas permiten configurar diferentes variables y eventos de Analytics en condiciones diferentes. Por ejemplo, puede configurar `prodView` solo en las páginas de detalles del producto y el evento `purchase` solo en páginas de confirmación de pedido. Esta sección enseña cómo configurar variables mediante el uso de reglas.
 
@@ -163,15 +162,15 @@ Primero, debe identificar qué páginas son las páginas de detalles del product
 
 **Para crear un elemento de datos para el tipo de página**
 
-1. Haga clic en **[!UICONTROL Elementos de datos]** en la navegación izquierda
-1. Haga clic en **[!UICONTROL Añadir elemento de datos]**.
+1. Haga clic en **[!UICONTROL Elementos de datos]** en el panel de navegación izquierdo
+1. Haga clic en **[!UICONTROL Agregar elemento de datos]**
 
    ![Añadir un elemento de datos nuevo](images/analytics-addDataElement.png)
 
 1. Asigne un nombre al elemento de datos `Page Type`.
-1. Seleccione **[!UICONTROL Tipo de elemento de datos > Variable JavaScript]**.
-1. Uso `digitalData.page.category.type` como el **[!UICONTROL Nombre de variable de JavaScript]**
-1. Marque la **[!UICONTROL Limpiar texto]** y **[!UICONTROL Forzar minúsculas]** opciones
+1. Seleccione **[!UICONTROL Tipo de elemento de datos > Variable JavaScript]**
+1. Usar `digitalData.page.category.type` como **[!UICONTROL nombre de variable de JavaScript]**
+1. Compruebe las opciones **[!UICONTROL Limpiar texto]** y **[!UICONTROL Forzar minúsculas]**
 1. Haga clic en **[!UICONTROL Guardar en biblioteca]**
 
    ![Añadir un elemento de datos nuevo para el tipo de página](images/analytics-PageTypeDataElement.png)
@@ -182,15 +181,15 @@ A continuación, recopile el ID de producto de la PDP actual con un elemento de 
 
 **Para crear el elemento de datos para el ID de producto**
 
-1. Haga clic en **[!UICONTROL Elementos de datos]** en la navegación izquierda
-1. Haga clic en **[!UICONTROL Añadir elemento de datos]**.
+1. Haga clic en **[!UICONTROL Elementos de datos]** en el panel de navegación izquierdo
+1. Haga clic en **[!UICONTROL Agregar elemento de datos]**
 
    ![Añadir un elemento de datos nuevo](images/analytics-addDataElement.png)
 
 1. Asigne un nombre al elemento de datos `Product Id`.
-1. Seleccione **[!UICONTROL Tipo de elemento de datos > Variable JavaScript]**.
-1. Uso `digitalData.product.0.productInfo.sku` como el **[!UICONTROL Nombre de variable de JavaScript]**
-1. Marque la **[!UICONTROL Limpiar texto]** y **[!UICONTROL Forzar minúsculas]** opciones
+1. Seleccione **[!UICONTROL Tipo de elemento de datos > Variable JavaScript]**
+1. Usar `digitalData.product.0.productInfo.sku` como **[!UICONTROL nombre de variable de JavaScript]**
+1. Compruebe las opciones **[!UICONTROL Limpiar texto]** y **[!UICONTROL Forzar minúsculas]**
 1. Haga clic en **[!UICONTROL Guardar en biblioteca]**
 
    ![Añadir un elemento de datos nuevo para el tipo de página](images/analytics-ProductIdDataElement.png)
@@ -202,7 +201,7 @@ Si está familiarizado con las implementaciones de Adobe Analytics, probablement
 **Para añadir la extensión `Adobe Analytics Product String`**
 
 1. Vaya a la página [!UICONTROL Extensiones > Catálogo].
-1. Busque la extensión `Adobe Analytics Product String` mediante los servicios de asesoría de Adobe y haga clic en **[!UICONTROL Instalar]**.
+1. Busque la extensión `Adobe Analytics Product String` mediante los servicios de Adobe Consulting y haga clic en **[!UICONTROL Instalar]**
    ![Añadir la extensión de cadena de producto de Adobe Analytics mediante la asesoría de Adobe](images/analytics-addProductStringExtension.png)
 1. Dedique un momento a leer las instrucciones.
 1. Haga clic en **[!UICONTROL Guardar en biblioteca]**
@@ -215,29 +214,28 @@ Utilice ahora los nuevos elementos de datos y la extensión para crear la regla 
 
 **Para generar la regla de las PDP**
 
-1. Vaya a la **[!UICONTROL Reglas]** en la navegación izquierda y, a continuación, haga clic en **[!UICONTROL Agregar regla]**
+1. Vaya a la sección **[!UICONTROL Reglas]** en el panel de navegación izquierdo y luego haga clic en **[!UICONTROL Agregar regla]**
 
    ![Añadir regla](images/analytics-addRule2.png)
 
 1. Asigne un nombre a la regla `Product Details - DOM Ready - 40`.
-1. Haga clic en **[!UICONTROL Eventos > Añadir]** para abrir la pantalla `Event Configuration`.
+1. Haga clic en **[!UICONTROL Eventos > Agregar]** para abrir la pantalla de `Event Configuration`
 
    ![Asignar un nombre a la regla y añadir un evento](images/analytics-domReadyAddEvent.png)
 
-1. Seleccione **[!UICONTROL Tipo de evento > DOM Ready]**.
-1. Establezca el **[!UICONTROL Orden (Order)]** en 40, de modo que la regla se ejecute *antes* de la regla que contiene la acción Analytics > Enviar señalización.
-1. Haga clic en **[!UICONTROL Conservar cambios]**.
-
+1. Seleccione **[!UICONTROL Tipo de evento > DOM Ready]**
+1. Establezca **[!UICONTROL Order]** en 40, de modo que la regla se ejecute *antes de* la regla que contiene la acción Analytics > Send Beacon
+1. Haga clic en **[!UICONTROL Conservar cambios]**
    ![Configuración del evento](images/analytics-configDOMReadyEvent.png)
 
-1. En **[!UICONTROL Condiciones (Conditions)]**, haga ![clic en el icono +](images/icon-plus.png) para abrir la pantalla `Condition Configuration`.
+1. En **[!UICONTROL Condiciones]**, haga clic en ![Haga clic en el icono +](images/icon-plus.png) para abrir la pantalla de `Condition Configuration`
    ![Haga clic en el icono + para añadir una condición nueva](images/analytics-PDPRuleAddCondition.png)
 
-   1. Seleccione **[!UICONTROL Tipo de condición > Comparación de valores]**.
+   1. Seleccione **[!UICONTROL Tipo de condición > Comparación de valor]**
    1. Utilice el selector de elementos de datos y seleccione `Page Type` en el primer campo.
-   1. Seleccione **[!UICONTROL Contiene (Contains)]** en la lista desplegable de operadores de comparación.
+   1. Seleccione **[!UICONTROL Contiene]** de la lista desplegable de operadores de comparación
    1. En el siguiente tipo de campo `product-page` (es la parte única del valor de tipo de página extraído de la capa de datos en PDP).
-   1. Haga clic en **[!UICONTROL Conservar cambios]**.
+   1. Haga clic en **[!UICONTROL Conservar cambios]**
 
       ![Definición de la condición](images/analytics-PDP-condition.png)
 
@@ -245,14 +243,14 @@ Utilice ahora los nuevos elementos de datos y la extensión para crear la regla 
 
    ![Haga clic en el icono + para añadir una acción nueva](images/analytics-PDPAddAction.png)
 
-1. Seleccione **[!UICONTROL Extensión > Cadena de producto de Adobe Analytics]**.
-1. Seleccione **[!UICONTROL Tipo de acción > Definir s.products]**.
+1. Seleccione **[!UICONTROL Extensión > Cadena de producto de Adobe Analytics]**
+1. Seleccione **[!UICONTROL Tipo de acción > Definir s.products]**
 
-1. En la sección **[!UICONTROL Evento de comercio electrónico de Analytics]**, seleccione **[!UICONTROL prodView]**.
+1. En la sección **[!UICONTROL Evento de comercio electrónico de Analytics]**, seleccione **[!UICONTROL prodView]**
 
-1. En la sección **[!UICONTROL Variables de capa de datos para datos de producto]**, utilice el selector de elementos de datos para elegir el elemento de datos `Product Id`.
+1. En la sección **[!UICONTROL Variables de capa de datos para datos de producto]**, use el selector de elementos de datos para elegir el elemento de datos `Product Id`
 
-1. Haga clic en **[!UICONTROL Conservar cambios]**.
+1. Haga clic en **[!UICONTROL Conservar cambios]**
 
    ![Añadir la variable de cadena de producto con la extensión de cadena de producto de Adobe Analytics](images/analytics-PDPaddProductString.png)
 
@@ -261,17 +259,17 @@ Utilice ahora los nuevos elementos de datos y la extensión para crear la regla 
 
    ![Añadir otra acción para la cadena de producto](images/analytics-PDPaddAnotherAction.png)
 
-1. Seleccione **[!UICONTROL Extensión > Adobe Analytics]**.
-1. Seleccione **[!UICONTROL Tipo de acción > Definir variables]**.
-1. Seleccione **[!UICONTROL eVar1 > Establecer como]** e introduzca `product detail page`.
-1. Configure **[!UICONTROL event1]** y deje los valores opcionales en blanco.
-1. En Eventos, haga clic en el botón **[!UICONTROL Añadir otro]**.
-1. Configure el evento **[!UICONTROL prodView]** y deje los valores opcionales en blanco.
-1. Haga clic en **[!UICONTROL Conservar cambios]**.
+1. Seleccione **[!UICONTROL Extensión > Adobe Analytics]**
+1. Seleccione **[!UICONTROL Tipo de acción > Establecer variables]**
+1. Seleccione **[!UICONTROL eVar 1 > Definir como]** e introduzca `product detail page`
+1. Establezca **[!UICONTROL event1]** y deje los valores opcionales en blanco.
+1. En Eventos, haga clic en el botón **[!UICONTROL Agregar otro]**
+1. Configure el evento **[!UICONTROL prodView]** y deje los valores opcionales en blanco
+1. Haga clic en **[!UICONTROL Conservar cambios]**
 
    ![Establecer variables de Analytics en una regla de PDP](images/analytics-PDPsetVariables.png)
 
-1. Haga clic en **[!UICONTROL Guardar en biblioteca y crear]**.
+1. Haga clic en **[!UICONTROL Guardar en biblioteca y compilar]**
 
    ![Guarde la regla](images/analytics-PDP-saveRule.png)
 
@@ -283,7 +281,7 @@ Acaba de crear una regla que establece variables antes de que se envíe la seña
 
 1. Abra [el sitio web de Luma](https://luma.enablementadobe.com/content/luma/us/en.html) en el explorador Chrome.
 1. Vaya a cualquier página de detalles del producto.
-1. Haga clic en el icono de Debugger ![Abrir Experience Cloud Debugger](images/analytics-debuggerIcon.png) para iniciar **[!UICONTROL Adobe Experience Cloud Debugger]**.
+1. Haga clic en el icono de Debugger ![Abrir el Experience Cloud Debugger](images/analytics-debuggerIcon.png) para abrir **[!UICONTROL Adobe Experience Cloud Debugger]**
 1. Haga clic en la pestaña Analytics.
 1. Amplíe su grupo de informes.
 1. Observe las variables de detalles de producto que ahora se encuentran en Debugger, concretamente que se ha configurado `eVar1` en “página de detalles de producto”, que la variable `Events` se ha configurado en “event1” y “prodView”, que la variable de productos se ha configurado con el ID del producto que está viendo y que el Nombre de página (Page Name) sigue incluyendo la extensión.
@@ -294,84 +292,82 @@ Acaba de crear una regla que establece variables antes de que se envíe la seña
 
 Cuando se carga una página, normalmente activa una señalización de carga de página activada por la función `s.t()`. Esto aumenta automáticamente una métrica `page view` para la página enumerada en la variable `pageName`.
 
-Sin embargo, algunas veces no se desea aumentar las vistas de página del sitio, ya que la acción que se está realizando es de menor importancia o quizás diferente de una vista de página. En este caso, utilice la función `s.tl()`, que comúnmente se denomina solicitud de “vínculo de seguimiento”. Aunque se denomina solicitud de vínculo de seguimiento, no es necesario activarla al hacer clic en un vínculo. Se puede activar mediante *any* de los eventos disponibles en el generador de reglas de etiquetas, incluido su propio JavaScript personalizado.
+Sin embargo, algunas veces no se desea aumentar las vistas de página del sitio, ya que la acción que se está realizando es de menor importancia o quizás diferente de una vista de página. En este caso, utilice la función `s.tl()`, que comúnmente se denomina solicitud de “vínculo de seguimiento”. Aunque se denomina solicitud de vínculo de seguimiento, no es necesario activarla al hacer clic en un vínculo. Se puede activar mediante *cualquiera* de los eventos disponibles en el generador de reglas de etiquetas, incluido su propio JavaScript personalizado.
 
 En este tutorial, se activará una llamada `s.tl()` mediante uno de los eventos JavaScript más interesantes, un evento `Enters Viewport`.
 
 ### El ejemplo de uso
 
-Para este caso de uso, desea saber si las personas se desplazan hacia abajo en nuestra página de inicio de Luma lo suficientemente lejos como para ver la variable *Productos destacados* de nuestra página. Hay cierta discordia interna en nuestra empresa sobre si las personas visitan esa sección o no, por lo que quiere usar Analytics para averiguarlo.
+En este caso de uso, desea saber si las personas se desplazan hacia abajo en nuestra página de inicio de Luma lo suficientemente lejos como para ver la sección *Productos destacados* de nuestra página. Hay cierta discordia interna en nuestra empresa sobre si las personas visitan esa sección o no, por lo que quiere usar Analytics para averiguarlo.
 
-### Crear la regla con etiquetas
+### Creación de la regla en etiquetas
 
-1. Vaya a la **[!UICONTROL Reglas]** en la navegación izquierda y, a continuación, haga clic en **[!UICONTROL Agregar regla]**
-
+1. Vaya a la sección **[!UICONTROL Reglas]** en el panel de navegación izquierdo y luego haga clic en **[!UICONTROL Agregar regla]**
    ![Añadir regla](images/analytics-addRule3.png)
 1. Asigne un nombre a la regla `Homepage - Featured Products enters Viewport`.
-1. Haga clic en **[!UICONTROL Eventos > Añadir]** para abrir la pantalla `Event Configuration`.
+1. Haga clic en **[!UICONTROL Eventos > Agregar]** para abrir la pantalla de `Event Configuration`
 
    ![Agregar regla de productos destacados](images/analytics-newArrivalsRuleAdd2.png)
 
-1. Seleccione **[!UICONTROL Tipo de evento > Ingreso a la ventanilla]**. Así se muestra un campo en el que debe introducir el selector de CSS que identificará el elemento de la página que debería activar la regla cuando entre a la vista en el navegador.
-1. Vuelva a la página principal de Luma y desplácese hacia abajo hasta la sección Productos destacados .
-1. Haga clic con el botón derecho en el espacio entre el título &quot;PRODUCTOS FUNCIONADOS&quot; y los elementos de esta sección y seleccione `Inspect` en el menú contextual. Así puede acercarse a lo que busca.
+1. Seleccione **[!UICONTROL Tipo de evento > Entra a la ventanilla]**. Así se muestra un campo en el que debe introducir el selector de CSS que identificará el elemento de la página que debería activar la regla cuando entre a la vista en el navegador.
+1. Vuelva a la página principal de Luma y desplácese hasta la sección Productos destacados.
+1. Haga clic con el botón derecho en el espacio entre el título &quot;PRODUCTOS DESTACADOS&quot; y los elementos de esta sección y seleccione `Inspect` en el menú contextual. Así puede acercarse a lo que busca.
 1. Justo por ahí, posiblemente justo debajo de la sección seleccionada, está buscando un elemento div con `class="we-productgrid aem-GridColumn aem-GridColumn--default--12"`. Busque este elemento.
-1. Haga clic con el botón derecho en este elemento y seleccione **[!UICONTROL Copiar > Selector de copia]**.
+1. Haga clic con el botón derecho en este elemento y seleccione **[!UICONTROL Copiar > Selector de copia]**
 
    ![Configuración del evento de Ingreso a la ventanilla](images/analytics-copyElementSelector.png)
 
-1. Vuelva a las etiquetas y pegue este valor del portapapeles en el campo etiquetado `Elements matching the CSS selector`.
-   1. Aparte, le corresponde decidir cómo identificar los selectores de CSS. Este método es poco fiable, ya que ciertos cambios en la página podrían inhabilitar dicho selector. Tenga esto en cuenta cuando use cualquier selector de CSS en etiquetas.
-1. Haga clic en **[!UICONTROL Conservar cambios]**.
-
+1. Vuelva a las etiquetas y pegue este valor del portapapeles en el campo denominado `Elements matching the CSS selector`.
+   1. Aparte, le corresponde decidir cómo identificar los selectores de CSS. Este método es poco fiable, ya que ciertos cambios en la página podrían inhabilitar dicho selector. Tenga esto en cuenta esto cuando use cualquier selector de CSS en etiquetas.
+1. Haga clic en **[!UICONTROL Conservar cambios]**
    ![Configuración del evento de Ingreso a la ventanilla](images/analytics-configEntersViewportEvent.png)
 
 1. En Condiciones (Conditions), haga clic en el ![icono +](images/icon-plus.png) para añadir una nueva condición.
-1. Seleccione **[!UICONTROL Tipo de condición > Comparación de valores]**.
+1. Seleccione **[!UICONTROL Tipo de condición > Comparación de valor]**
 1. Utilice el selector de elementos de datos y seleccione `Page Name` en el primer campo.
-1. Seleccione **[!UICONTROL Igual]** en la lista desplegable de operadores de comparación.
+1. Seleccione **[!UICONTROL Igual a]** en la lista desplegable de operadores de comparación
 1. en el siguiente tipo de campo `content:luma:us:en` (es el nombre de la página principal tal como se extrae de la capa de datos; solo queremos que esta regla se ejecute en la página principal).
-1. Haga clic en **[!UICONTROL Conservar cambios]**.
+1. Haga clic en **[!UICONTROL Conservar cambios]**
 
    ![Configuración de la condición de página principal](images/analytics-configHomepageCondition.png)
 
 1. En Acciones (Actions), haga clic en el ![icono +](images/icon-plus.png) para añadir una acción nueva.
-1. Seleccione **[!UICONTROL Extensión > Adobe Analytics]**.
-1. Seleccione **[!UICONTROL Tipo de acción > Definir variables]**.
+1. Seleccione **[!UICONTROL Extensión > Adobe Analytics]**
+1. Seleccione **[!UICONTROL Tipo de acción > Establecer variables]**
 1. Configure `eVar3` como `Home Page - Featured Products`.
 1. Configure `prop3` como `Home Page - Featured Products`.
 1. Configure la variable `Events` como `event3`.
-1. Haga clic en **[!UICONTROL Conservar cambios]**.
+1. Haga clic en **[!UICONTROL Conservar cambios]**
 
    ![Configuración del evento de Ingreso a la ventanilla](images/analytics-configViewportAction.png)
 
 1. En Acciones (Actions), haga clic en el ![icono +](images/icon-plus.png) para añadir otra acción nueva.
 
-1. Seleccione **[!UICONTROL Extensión > Adobe Analytics]**.
-1. Seleccione **[!UICONTROL Tipo de acción > Enviar señalización]**.
-1. Elija la **[!UICONTROL `s.tl()`]** opción de seguimiento
-1. En el campo **[!UICONTROL Nombre de vínculo (Link Name)]**, introduzca `Scrolled down to Featured Products`. Este valor se colocará en el informe de vínculos personalizados de Analytics.
-1. Haga clic en **[!UICONTROL Conservar cambios]**.
+1. Seleccione **[!UICONTROL Extensión > Adobe Analytics]**
+1. Seleccione **[!UICONTROL Tipo de acción > Enviar señalización]**
+1. Elija la opción de seguimiento **[!UICONTROL `s.tl()`]**
+1. En el campo **[!UICONTROL Nombre del vínculo]**, escriba `Scrolled down to Featured Products`. Este valor se colocará en el informe de vínculos personalizados de Analytics.
+1. Haga clic en **[!UICONTROL Conservar cambios]**
 
    ![Señalización de productos destacados de configuración](images/analytics-configEntersViewportBeacon.png)
 
-1. Haga clic en **[!UICONTROL Guardar en biblioteca y crear]**.
+1. Haga clic en **[!UICONTROL Guardar en biblioteca y compilar]**
 
    ![Guarde la regla y créela](images/analytics-saveCustomLinkRule.png)
 
 ### Validación de la señalización del vínculo de seguimiento (Track Link)
 
-Ahora debe asegurarse de que esta visita entra cuando se desplaza hacia abajo hasta la sección Productos destacados de la página principal de nuestro sitio. Cuando carga la página principal por primera vez, no debe realizarse la solicitud, pero después de desplazarse hacia abajo y de que la sección sea visible, la visita se activa con los valores nuevos.
+Ahora debe asegurarse de que esta visita entra cuando se desplaza hacia abajo hasta la sección Productos destacados de la página principal del sitio. Cuando carga la página principal por primera vez, no debe realizarse la solicitud, pero después de desplazarse hacia abajo y de que la sección sea visible, la visita se activa con los valores nuevos.
 
 1. Abra el [sitio de Luma](https://luma.enablementadobe.com/content/luma/us/en.html) en el navegador Chrome y asegúrese de que se encuentra en la parte superior de la página principal.
-1. Haga clic en el **[!UICONTROL icono de Debugger]**![ Abrir Experience Cloud Debugger](images/analytics-debuggerIcon.png) para iniciar [!UICONTROL Adobe Experience Cloud Debugger].
+1. Haga clic en el **[!UICONTROL icono de depurador]** ![Abra el Experience Cloud Debugger](images/analytics-debuggerIcon.png) para abrir [!UICONTROL Adobe Experience Cloud Debugger]
 1. Haga clic en la pestaña Analytics.
 1. Amplíe las visitas de su grupo de informes.
 1. Observe la visita individual de vista de página normal para la página principal con el nombre de la página, etc., (pero nada en eVar3 o prop3).
 
    ![Debugger con una vista de página](images/analytics-debuggerPageView.png)
 
-1. Deje Debugger abierto, desplácese hacia abajo por el sitio hasta que vea la sección Productos destacados .
+1. Con Debugger abierto, desplácese hacia abajo por el sitio hasta que vea la sección Productos destacados
 1. Vuelva a ver Debugger y debería haber aparecido otra visita de Analytics. Esta visita debe tener los parámetros asociados con la visita de “s.tl()” configurada, concretamente:
    1. `LinkType = "link_o"` (lo que significa que la visita es una visita de vínculo personalizado, no una visita de vista de página).
    1. `LinkName = "Scrolled down to Featured Products"`
@@ -395,14 +391,14 @@ La implementación de complementos conlleva tres pasos:
 
 Si va a añadir la función “doPlugins” (abajo) y utiliza complementos, debe marcar una casilla para que el objeto “s” de Analytics esté disponible globalmente durante la implementación de Analytics.
 
-1. Vaya a **[!UICONTROL Extensiones > Instaladas]**.
+1. Vaya a **[!UICONTROL Extensiones > Instaladas]**
 
-1. En la extensión Adobe Analytics, haga clic en **[!UICONTROL Configurar]**.
+1. En la extensión de Adobe Analytics, haga clic en **[!UICONTROL Configurar]**
 
    ![Configuración de Analytics](images/analytics-configureExtension.png)
 
-1. En **[!UICONTROL Administración de bibliotecas]**, seleccione la casilla denominada `Make tracker globally accessible`. Como puede ver en la ventana de ayuda, esto dota al seguimiento de un alcance global en “window.s”, lo que resulta importante cuando se hace referencia a él en el JavaScript del cliente.
-   ![Hacer que el rastreador sea accesible globalmente](images/analytics-makeTrackerGlobal.png)
+1. En **[!UICONTROL Administración de biblioteca]**, seleccione la casilla denominada `Make tracker globally accessible`. Como puede ver en la ventana de ayuda, esto dota al seguimiento de un alcance global en “window.s”, lo que resulta importante cuando se hace referencia a él en el JavaScript del cliente.
+   ![Permitir acceso global al rastreador](images/analytics-makeTrackerGlobal.png)
 
 ### Inclusión de la función “doPlugins”
 
@@ -469,7 +465,7 @@ En primer lugar, llame a un complemento que se haya incorporado a la biblioteca 
    ![Llamar a complementos en “doPlugins”](images/analytics-doPluginsWithPlugins2.png)
 
 1. Guardar la ventana de código
-1. Haga clic en **[!UICONTROL Guardar en biblioteca y crear]**.
+1. Haga clic en **[!UICONTROL Guardar en biblioteca y compilar]**
 
    ![Llamar a complementos en “doPlugins”](images/analytics-saveExtensionAndBuild2.png)
 
@@ -480,7 +476,7 @@ Ahora puede asegurarse de que los complementos funcionan.
 **Para validar los complementos**
 
 1. Abra [el sitio web de Luma](https://luma.enablementadobe.com/content/luma/us/en.html) en el explorador Chrome.
-1. Haga clic en el icono de Debugger ![Abrir Experience Cloud Debugger](images/analytics-debuggerIcon.png) para iniciar **[!UICONTROL Adobe Experience Cloud Debugger]**.
+1. Haga clic en el icono de Debugger ![Abrir el Experience Cloud Debugger](images/analytics-debuggerIcon.png) para abrir **[!UICONTROL Adobe Experience Cloud Debugger]**
 1. Haga clic en la pestaña Analytics.
 1. Amplíe su grupo de informes.
 1. Puede ver que la visita de Analytics no tiene una variable de campaña.
@@ -503,6 +499,6 @@ Ahora puede asegurarse de que los complementos funcionan.
    >
    >Existen varias formas de recuperar un parámetro fuera de la cadena de consulta de la URL, incluida a través de la configuración de la extensión de Analytics. Sin embargo, en estas otras opciones no integradas, no se permite detener la duplicación innecesaria, como se ha hecho aquí con el complemento “getValOnce”. Es un método más utilizado, pero debe determinar qué método funciona mejor para usted y sus necesidades.
 
-¡Buen trabajo! Ha completado la lección de Analytics. Por supuesto, hay muchas otras cosas que puede hacer para mejorar nuestra implementación de Analytics, pero esperamos que esto le haya dado algunas de las habilidades básicas para satisfacer el resto de sus necesidades.
+¡Buen trabajo! Ha completado la lección de Analytics. Por supuesto, hay muchas otras cosas que puede hacer para mejorar la implementación de Analytics, pero esperamos que esto le haya dotado de algunas de las habilidades principales para satisfacer el resto de sus necesidades.
 
-[Siguiente: “Añadir Adobe Audience Manager” >](audience-manager.md)
+[Siguiente: &quot;Añadir Adobe Audience Manager&quot; >](audience-manager.md)

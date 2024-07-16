@@ -24,27 +24,27 @@ La personalización a escala comienza con comprender qué se puede mejorar y una
 
 ### Día 1
 
-9:30: Entrada
+Entrada de 9:30:
 
 10:00: Kickoff / Intro &amp; Bootcamp Challenge
 
-11:00: Personalización 1-1, búsqueda por fricción, silos, PDV de Adobe (pizarra)
+Personalización 11:00: 1-1, búsqueda por fricción, silos, PDV de Adobe (pizarra)
 
-12:00: Descanso
+Descanso 12:00:
 
-12:15: Desglose de la arquitectura de la solución (pizarra)
+12:15: Desglose de arquitectura de la solución (pizarra)
 
-13:00: Almuerzo
+13:00: almuerzo
 
-14:00: Flujo de usuario 1: Tutorial de &quot;adquisición&quot; y análisis prácticos
+14:00: Flujo de usuario 1: Tutorial de &quot;adquisición&quot; y análisis en profundidad prácticos
 
-15:30: Descanso
+Descanso 15:30:
 
-16:00: Registro e incorporación de Userflow 2
+16:00: Flujo de usuario 2 Registro e incorporación
 
 17:30: Golfclinic &amp; Borrel
 
-19:30: Cena
+Cena del 19:30:
 
 ### Día 2
 
@@ -56,7 +56,7 @@ La personalización a escala comienza con comprender qué se puede mejorar y una
 
 10.45: Pausa
 
-12:00: Flujo de usuario 3 &quot;Fusión física y digital&quot;
+12:00: Flujo de usuario 3 &quot; Fusión física y digital&quot;
 
 12.30: Comida
 
@@ -93,11 +93,11 @@ El objetivo principal de nuestro Experience Makers Bootcamp es ayudar a las orga
 
 Se han creado otros vídeos que muestran elementos del bootcamp e integraciones potentes entre aplicaciones de Adobe Experience Platform y que no son de Adobe. Haga clic en el vínculo siguiente para encontrar una descripción general de esos vídeos.
 
-Ir a [Vídeos](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=en).
+Vaya a [Vídeos](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=en).
 
 ## YouTube
 
-Puede encontrar vídeos interesantes adicionales [en nuestro canal de YouTube](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
+Puedes encontrar vídeos interesantes adicionales [en nuestro canal de YouTube](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
 
 ## Flujos de usuario
 
@@ -109,7 +109,7 @@ En este flujo de usuario, comprenderá todos los elementos que necesita para imp
 
 En este flujo de usuario, comprenderá todos los elementos que necesita para implementar casos de uso de registro e incorporación mediante Real-Time CDP y Adobe Journey Optimizer.
 
-[3. Fusión física y digital](./uc/uc3/uc3.md)
+[3. Combinando datos físicos y digitales](./uc/uc3/uc3.md)
 
 En este flujo de usuario, personalizará la experiencia del cliente en canales en línea y sin conexión de forma coherente mediante Real-Time CDP y Adobe Journey Optimizer.
 

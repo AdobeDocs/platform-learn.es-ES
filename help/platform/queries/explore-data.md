@@ -1,5 +1,5 @@
 ---
-title: Exploración de datos
+title: Explorar datos
 description: Obtenga información sobre cómo validar datos ingeridos, obtener una vista previa de datos y explorar propiedades estadísticas y analíticas de datos mediante funciones SQL.
 feature: Queries
 role: Data Engineer, Developer
@@ -9,13 +9,13 @@ thumbnail: 333415.jpg
 exl-id: 7288da8f-4646-4519-81cc-dae33d79b86e
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '57'
-ht-degree: 77%
+source-wordcount: '52'
+ht-degree: 46%
 
 ---
 
-# Exploración de datos
+# Explorar datos
 
-Obtenga información sobre cómo validar datos ingeridos, obtener una vista previa de datos y explorar propiedades estadísticas y analíticas de datos mediante funciones SQL. Para obtener más información, visite la [Documentación del servicio de consultas](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=es).
+Obtenga información sobre cómo validar datos ingeridos, obtener una vista previa de datos y explorar propiedades estadísticas y analíticas de datos mediante funciones SQL. Para obtener más información, visite la [documentación del servicio de consultas](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=es).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333415?learn=on)

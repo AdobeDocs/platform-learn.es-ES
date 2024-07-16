@@ -10,8 +10,8 @@ thumbnail: 4348-run-queries.jpg
 exl-id: a37531cb-96ad-4547-86af-84f7ed65f019
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 4%
+source-wordcount: '314'
+ht-degree: 0%
 
 ---
 
@@ -22,14 +22,14 @@ En esta lección, aprenderá a configurar, escribir y ejecutar consultas para va
 
 Adobe Experience Platform Query Service le ayuda a dar sentido a sus datos, ya que le permite utilizar SQL estándar para consultar datos en Platform. Con el servicio de consulta, puede unirse a cualquier conjunto de datos del lago de datos y capturar los resultados de la consulta como un nuevo conjunto de datos para usar en el sistema de informes, el aprendizaje automático o para su inserción en el perfil del cliente en tiempo real.
 
-**Arquitectos de datos** y **Ingenieros de datos** Necesitará utilizar el servicio de consulta fuera de este tutorial.
+**Los arquitectos de datos** y **ingenieros de datos** necesitarán usar el servicio de consulta fuera de este tutorial.
 
 Antes de comenzar los ejercicios, vea este breve vídeo para obtener más información sobre el servicio de consultas:
 >[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on)
 
 ## Permisos necesarios
 
-En el [Configuración de permisos](configure-permissions.md) Esta lección, ha configurado todos los controles de acceso necesarios para completar esta lección.
+En la lección [Configurar permisos](configure-permissions.md), configuró todos los controles de acceso necesarios para completar esta lección.
 
 <!-- Settings > **[!UICONTROL Services]** > **[!UICONTROL Query Service]**
 * Permission items Data Management > **[!UICONTROL View Datasets]** and  **[!UICONTROL Manage Datasets]**
@@ -42,7 +42,7 @@ En el [Configuración de permisos](configure-permissions.md) Esta lección, ha c
 Empecemos con algunas consultas simples:
 
 1. En la interfaz de usuario de Platform, vaya a **Consultas** en el panel de navegación izquierdo
-1. Seleccione el **Crear consulta** en la parte superior derecha para abrir un cuadro de texto para ejecutar y ejecutar consultas
+1. Seleccione el botón **Crear consulta** de la parte superior derecha para abrir un cuadro de texto para ejecutar y ejecutar consultas
 1. Introduzca la siguiente consulta en el editor y pulse Mayús+Intro o Mayús+Retorno para ejecutar la consulta.
 
    ```
@@ -54,7 +54,7 @@ Empecemos con algunas consultas simples:
    ![MOSTRAR CONSULTA DE TABLA](assets/queries-showTables.png)
 
 
-1. Ahora pruebe esta consulta, reemplazando `_techmarketingdemos` con su propia área de nombres de inquilino, que, si lo recuerda, es visible en los esquemas.
+1. Ahora intente esta consulta, reemplazando `_techmarketingdemos` con su propio espacio de nombres de inquilino, que, si lo recuerda, es visible en los esquemas.
 
    ```
    SELECT person.name.lastName,loyalty.tier
@@ -64,12 +64,12 @@ Empecemos con algunas consultas simples:
 
    ![SELECCIONAR datos del conjunto de datos de fidelidad](assets/queries-loyaltySelect.png)
 
-1. Si se produce algún error, aparecen mensajes detallados en la **[!UICONTROL Consola]** , como se muestra a continuación
+1. Si hay algún error, aparecerán mensajes detallados en la ficha **[!UICONTROL Consola]**, como se muestra a continuación
    ![Error en la consulta](assets/queries-error.png)
 
-1. Con la consulta correcta, **[!UICONTROL Nombre]** it `Luma Gold Level Customers`
+1. Con la consulta que realizó correctamente, **[!UICONTROL Name]** lo `Luma Gold Level Customers`
 1. Seleccione el botón **[!UICONTROL Guardar]**
-   ![Guardado de la consulta](assets/queries-loyaltySelect-save.png)
+   ![Guardando la consulta](assets/queries-loyaltySelect-save.png)
 
 
 <!--SELECT COUNT(DISTINCT (_techmarketingdemos.systemIdentifier.loyaltyId)) FROM luma_loyalty_dataset 
@@ -122,4 +122,4 @@ In this exercise, we will join two datasets `Luma Loyalty Dataset` and `Luma Off
 * [Documentación del servicio de consultas](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=es)
 * [Referencia de API del servicio de consultas](https://www.adobe.io/experience-platform-apis/references/query-service/)
 
-Y ahora para la última lección práctica, [creación de segmentos](build-segments.md)!
+Y ahora, para la lección práctica final, [creando segmentos](build-segments.md)!

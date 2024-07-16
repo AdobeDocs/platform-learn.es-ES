@@ -11,7 +11,7 @@ feature: Journeys
 exl-id: e4464502-60c8-4fba-a429-169b7a4516c8
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '222'
 ht-degree: 2%
 
 ---
@@ -20,15 +20,15 @@ ht-degree: 2%
 
 ## Flujo de recorrido del cliente
 
-Abra una ventana nueva, limpia y de incógnito del explorador y vaya a [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Clic **Permitir todo**. En función del comportamiento de navegación en el flujo de usuario anterior, verá que la personalización se produce en la página de inicio del sitio web.
+Abra una ventana nueva, limpia y de incógnito del explorador y vaya a [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Haga clic en **Permitir todo**. En función del comportamiento de navegación en el flujo de usuario anterior, verá que la personalización se produce en la página de inicio del sitio web.
 
 ![DSN](./images/web8a.png)
 
-Haga clic en **Perfil** en la esquina superior derecha de la pantalla.
+Haz clic en el icono **Perfil** en la esquina superior derecha de la pantalla.
 
 ![Demostración](./images/web8b.png)
 
-Clic **Crear una cuenta**.
+Haga clic en **Crear una cuenta**.
 
 ![Demostración](./images/pv5.png)
 
@@ -42,7 +42,7 @@ Desplácese hacia abajo. Ahora debe introducir el eventID del evento personaliza
 
 El ID de evento es lo que debe enviarse a Adobe Experience Platform para almacenar en déclencheur la recorrido que ha creado. Este es el eventID de este ejemplo: `19cab7852cdef99d25b6d5f1b6503da39d1f486b1d585743f97ed2d1e6b6c74f`
 
-Rellene el eventID en el campo **Su ID de evento de creación de cuenta** y haga clic en **Registrar**.
+Complete el eventID en el campo **Id. de evento de creación de cuenta** y haga clic en **Registrar**.
 
 ![Demostración](./images/pv8a.png)
 
@@ -56,7 +56,7 @@ También recibirá este correo electrónico, que es el correo electrónico que c
 
 Ya ha terminado este ejercicio.
 
-Paso siguiente: [2.5 Instalar y utilizar la aplicación móvil](./ex5.md)
+Siguiente paso: [2.5 Instalar y usar la aplicación móvil](./ex5.md)
 
 [Volver al flujo de usuario 2](./uc2.md)
 

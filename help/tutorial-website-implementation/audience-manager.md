@@ -1,12 +1,12 @@
 ---
 title: Añadir Adobe Audience Manager
-description: Obtenga información sobre cómo implementar Adobe Audience Manager en el sitio web mediante el reenvío del lado del servidor y las etiquetas. Esta lección forma parte del tutorial Implementación del Experience Cloud en sitios web .
+description: Obtenga información sobre cómo implementar Adobe Audience Manager en el sitio web mediante el reenvío del lado del servidor y las etiquetas. Esta lección forma parte del tutorial Implementación del Experience Cloud en sitios web.
 solution: Data Collection, Audience Manager
 exl-id: ddc77dc5-bfb5-4737-b6b6-47d37c9f0528
 source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
 workflow-type: tm+mt
-source-wordcount: '1795'
-ht-degree: 84%
+source-wordcount: '1749'
+ht-degree: 73%
 
 ---
 
@@ -18,12 +18,11 @@ Esta lección le guiará a través de los pasos para habilitar Adobe Audience Ma
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch se está integrando en Adobe Experience Platform como un conjunto de tecnologías de recopilación de datos. Se han implementado varios cambios terminológicos en la interfaz que debe tener en cuenta al usar este contenido:
+>Adobe Experience Platform Launch se está integrando en Adobe Experience Platform como un conjunto de tecnologías de recopilación de datos. Se han implementado varios cambios terminológicos en la interfaz que debe tener en cuenta al utilizar este contenido:
 >
-> * El platform launch (lado del cliente) ya está **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=es)**
-> * El servidor de platform launch está ahora **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
-> * Las configuraciones de Edge ahora **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=es)**
-
+> * El platform launch (lado del cliente) ahora es **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=es)**
+> * El lado del servidor de platform launch ahora es **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Ahora, las configuraciones de Edge son **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=es)**
 
 ## Objetivos de aprendizaje
 
@@ -37,7 +36,7 @@ Al final de esta lección, debe poder:
 
 Para completar esta lección, debe:
 
-1. Haber completado las lecciones de [Configuración de etiquetas](create-a-property.md), [Añadir Adobe Analytics](analytics.md)y [Añadir el servicio de identidad](id-service.md).
+1. Haber completado las lecciones de [Configuración de etiquetas](create-a-property.md), [Agregar Adobe Analytics](analytics.md) y [Agregar el servicio de identidad](id-service.md).
 
 1. Acceso de administrador a Adobe Analytics para habilitar el reenvío del lado del servidor para el grupo de informes que se utiliza en este tutorial. También puede pedir a un administrador existente de su organización que lo haga siguiendo las instrucciones que se indican a continuación.
 
@@ -62,7 +61,7 @@ Como ya ha implementado Adobe Analytics en este tutorial, ahora se implementa Au
 Existen dos pasos principales para realizar una implementación de SSF:
 
 1. Activar un “conmutador” en la Admin Console de Analytics para reenviar datos de Analytics a Audience Manager *por grupo de informes*.
-1. Colocación del código en su lugar, que se realiza mediante etiquetas. Para que esto funcione correctamente, debe tener instalada la extensión del servicio de ID de Adobe Experience Platform, así como la extensión de Analytics (de hecho, *no necesitará* la extensión de AAM, que se explica a continuación).
+1. Colocación del código en su lugar, que se realiza mediante etiquetas. Para que esto funcione correctamente, debe tener instalada la extensión del servicio de identidad de Adobe Experience Platform, así como la extensión de Analytics (de hecho, *no necesitará* la extensión de AAM, que se explica a continuación).
 
 ### Habilitar el reenvío del lado del servidor en la Admin Console de Analytics
 
@@ -74,11 +73,11 @@ Se requiere configurar la Admin Console de Adobe Analytics para empezar a reenvi
 
    ![Iniciar sesión en Adobe Analytics](images/aam-logIntoAnalytics.png)
 
-1. En el panel de navegación superior de Analytics, seleccione **[!UICONTROL Administración > Grupos de informes]** y, en la lista, seleccione (selección múltiple) los grupos de informes que desee reenviar a Audience Manager.
+1. En el panel de navegación superior de Analytics, seleccione **[!UICONTROL Administración > Grupos de informes]** y, en la lista, seleccione (selección múltiple) los grupos de informes que desee reenviar al Audience Manager.
 
    ![Haga clic en la Admin Console](images/aam-analyticsAdminConsoleReportSuites.png)
 
-1. En la pantalla Grupos de informes y con los grupos de informes seleccionados, seleccione **[!UICONTROL Editar configuración > General > Reenvío del lado del servidor]**.
+1. En la pantalla Grupos de informes y con los grupos de informes seleccionados, elija **[!UICONTROL Editar configuración > General > Reenvío del lado del servidor]**.
 
    ![Seleccione el menú SSF](images/aam-selectSSFmenu.png)
 
@@ -86,7 +85,7 @@ Se requiere configurar la Admin Console de Adobe Analytics para empezar a reenvi
    >
    >Como se ha indicado anteriormente, debe tener privilegios de administrador para ver este elemento de menú.
 
-1. Una vez en la página Reenvío del lado del servidor, lea la información y marque la casilla de verificación **[!UICONTROL Habilitar reenvío del lado del servidor]** para los grupos de informes.
+1. Una vez en la página Reenvío del lado del servidor, lea la información y marque la casilla de **[!UICONTROL Habilitar reenvío del lado del servidor]** para los grupos de informes.
 
 1. Haga clic en **[!UICONTROL Guardar]**.
 
@@ -96,19 +95,19 @@ Se requiere configurar la Admin Console de Adobe Analytics para empezar a reenvi
 >
 >Ya que es necesario habilitar el reenvío del lado del servidor para cada grupo de informes, asegúrese de repetir estos pasos para los grupos de informes reales cuando implemente el reenvío en su grupo de informes del sitio.
 >
->Además, si la opción SSF está atenuada, debe asignar los grupos de informes a su organización de Experience Cloud para habilitar la opción. Esto se explica en [la documentación](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=es).
+>Además, si la opción SSF está atenuada, debe asignar los grupos de informes a su organización de Experience Cloud para habilitar la opción. Esto se explica en [la documentación](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html).
 
-Una vez completado este paso, y si tiene habilitado el servicio de ID de Adobe Experience Platform, los datos se reenvían de Analytics a AAM. Sin embargo, para completar el proceso de modo que la respuesta regrese correctamente de AAM a la página (y también a Analytics mediante la función de Audience Analytics), también debe completar el siguiente paso en las etiquetas . No se preocupe, es muy fácil.
+Una vez completado este paso, y si tiene habilitado el servicio de identidad de Adobe Experience Platform, los datos se reenvían de Analytics a AAM. AAM Sin embargo, para completar el proceso de modo que la respuesta regrese correctamente de la página (y de la página a Analytics mediante la función de Audience Analytics), también debe completar en las etiquetas el siguiente paso. No se preocupe, es muy fácil.
 
-### Habilitar el reenvío del lado del servidor en las etiquetas
+### Habilitar el reenvío del lado del servidor en etiquetas
 
-Este es el segundo de dos pasos para habilitar el SSF. Ya ha cambiado el conmutador en el Admin Console de Analytics y ahora solo necesita añadir el código, lo que le servirá si simplemente marca la casilla de verificación correcta.
+Este es el segundo de dos pasos para habilitar el SSF. Ya ha cambiado el conmutador en el Admin Console de Analytics y ahora solo necesita añadir el código, lo que las etiquetas harán por usted si simplemente marca la casilla de verificación correcta.
 
 >[!NOTE]
 >
->Para implementar el reenvío de datos de Analytics del lado del servidor en AAM, en realidad editaremos/configuraremos la extensión de Analytics en etiquetas. **not** la extensión de AAM. La extensión de AAM se utiliza exclusivamente para implementaciones DIL del lado del cliente, para aquellos que no tienen Adobe Analytics. Por lo tanto, los siguientes pasos son correctos cuando le envían a la extensión de Analytics para configurarla.
+>AAM AAM Para implementar el reenvío de datos de Analytics por parte del servidor en las etiquetas, en realidad editaremos/configuraremos la extensión de Analytics en las etiquetas, **no** la extensión de la. La extensión de AAM se utiliza exclusivamente para implementaciones DIL del lado del cliente, para aquellos que no tienen Adobe Analytics. Por lo tanto, los siguientes pasos son correctos cuando le envían a la extensión de Analytics para configurarla.
 
-#### Para habilitar el reenvío del lado del servidor en las etiquetas
+#### Para habilitar SSF en etiquetas
 
 1. Vaya a **[!UICONTROL Extensiones > Instaladas]** y haga clic para configurar la extensión de Analytics.
 
@@ -116,11 +115,11 @@ Este es el segundo de dos pasos para habilitar el SSF. Ya ha cambiado el conmuta
 
 1. Expanda la sección `Adobe Audience Manager`.
 
-1. Marque la casilla para **[!UICONTROL compartir automáticamente datos de Analytics con Audience Manager]**. Así se añade el “módulo” (código) de Audience Manager a la implementación de `AppMeasurement.js` de Analytics.
+1. Marque la casilla para **[!UICONTROL compartir automáticamente datos de Analytics con el Audience Manager]**. Así se añade el “módulo” (código) de Audience Manager a la implementación de `AppMeasurement.js` de Analytics.
 
 1. Añada su “subdominio de Audience Manager” (también conocido como “nombre de socio”, “ID de socio” o “subdominio de socio”). Siga estas instrucciones para [obtener el subdominio de Audience Manager](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html).
 
-1. Haga clic en **[!UICONTROL Guardar en biblioteca y crear]**.
+1. Haga clic en **[!UICONTROL Guardar en biblioteca y compilar]**
 
    ![Configurar SSF](images/aam-configLaunchSSF.png)
 
@@ -132,7 +131,8 @@ La manera principal de comprobar que el reenvío del lado del servidor funciona 
 
 #### Verificar que el código se esté cargando correctamente
 
-El código que etiqueta las instalaciones para gestionar el reenvío, y especialmente la respuesta de AAM a la página, se denomina &quot;módulo&quot; al Audience Manager. Podemos usar Experience Cloud Debugger para garantizar que se haya cargado.
+AAM El código que instala las etiquetas para gestionar el reenvío y especialmente la respuesta de los usuarios a la página, se llama el Audience Manager de
+&quot;Módulo&quot;. Podemos usar Experience Cloud Debugger para garantizar que se haya cargado.
 
 1. Abra el sitio de Luma.
 1. Haga clic en el icono de Debugger en el navegador para abrir Experience Cloud Debugger.
@@ -152,7 +152,7 @@ A continuación, también podemos verificar que Debugger está recopilando el �
 
 >[!WARNING]
 >
->Es posible que observe que la sección Audience Manager de Debugger hace referencia a “DIL”, que es la “Biblioteca de integración de datos” y que, generalmente, hace referencia a una implementación del lado del cliente, a diferencia del enfoque del lado del servidor que hemos implementado aquí. La verdad es que el “módulo” de AAM (utilizado en este enfoque de SSF) utiliza mucho del mismo código que la biblioteca DIL del lado del cliente, por lo que Debugger lo identifica como tal. Si ha seguido los pasos de este tutorial y los demás elementos de esta sección de validación son correctos, puede estar seguro de que el reenvío del lado del servidor funciona.
+>Es posible que observe que la sección Audience Manager de Debugger hace referencia a &quot;DIL&quot;, que es la &quot;Data Integration Library&quot; y que, por lo general, hace referencia a una implementación del lado del cliente, a diferencia del enfoque del lado del servidor que hemos implementado aquí. La verdad es que el “módulo” de AAM (utilizado en este enfoque de SSF) utiliza mucho del mismo código que la biblioteca DIL del lado del cliente, por lo que Debugger lo identifica como tal. Si ha seguido los pasos de este tutorial y los demás elementos de esta sección de validación son correctos, puede estar seguro de que el reenvío del lado del servidor funciona.
 
 #### Comprobar la solicitud y respuesta de Analytics
 
@@ -174,8 +174,8 @@ Aquí está el problema. Si no utiliza el reenvío de datos del lado del servido
 
 >[!WARNING]
 >
-> Cuidado con el falso “SUCCESS”: si hay una respuesta, y todo parece estar funcionando, **asegúrese** de que dispone de ese objeto “material”. Si no lo tiene, puede que se muestre un mensaje en la respuesta que dice &quot;status&quot;:&quot;SUCCESS&quot;. Aunque parezca absurdo, es prueba de que **NO** funciona correctamente. Si lo ve, significa que ha completado el segundo paso (el código de las etiquetas ), pero que el reenvío en el Admin Console de Analytics (primer paso de esta sección) aún no ha finalizado. En este caso, debe comprobar que ha activado SSF en la Admin Console de Analytics. Si lo ha hecho y aún no han pasado cuatro horas, tenga paciencia.
+>Tenga en cuenta el falso &quot;Éxito&quot;: si hay una respuesta y todo parece estar funcionando, asegúrese de **que** tiene ese objeto &quot;material&quot;. Si no lo tiene, puede que se muestre un mensaje en la respuesta que dice &quot;status&quot;:&quot;SUCCESS&quot;. Aunque parezca absurdo, es prueba de que **NO** funciona correctamente. Si lo ve, significa que ha completado el segundo paso (el código de las etiquetas), pero que el reenvío en el Admin Console de Analytics (primer paso de esta sección) aún no ha finalizado. En este caso, debe comprobar que ha activado SSF en la Admin Console de Analytics. Si lo ha hecho y aún no han pasado cuatro horas, tenga paciencia.
 
 ![Respuesta de AA: falso éxito](images/aam-responseFalseSuccess.png)
 
-[Siguiente: “Integraciones de Experience Cloud” >](integrations.md)
+[Siguiente: &quot;Integraciones de Experience Cloud&quot; >](integrations.md)

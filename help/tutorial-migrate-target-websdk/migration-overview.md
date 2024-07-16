@@ -1,10 +1,10 @@
 ---
-title: Resumen de migración | Migrar Target de at.js 2.x al SDK web
+title: Resumen de migración | Migración de Target de at.js 2.x a SDK web
 description: Obtenga información sobre las diferencias clave entre at.js y el SDK web de Platform y cómo planificar el esfuerzo de migración.
 exl-id: a8ed78e4-c8c2-4505-b4b5-e5d508f5ed87
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '796'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ Independientemente de lo simple o compleja que sea su implementación, es import
 El proceso de migración incluye los siguientes pasos clave:
 
 1. Evalúe la implementación actual y determine un enfoque de migración
-1. Configuración de los componentes iniciales para conectarse a Adobe Experience Platform Edge Network
+1. Configuración de los componentes iniciales para conectarse al Edge Network de Adobe Experience Platform
 1. Actualice la implementación básica para reemplazar at.js con el SDK web de Platform
 1. Mejore la implementación del SDK web de Platform para sus casos de uso específicos. SPA Esto puede implicar pasar parámetros adicionales, tener en cuenta los cambios de vista de la aplicación de una sola página (), utilizar tokens de respuesta y mucho más.
 1. Actualizar objetos en la interfaz de Target, como scripts de perfil, actividades y definiciones de audiencia
@@ -49,17 +49,17 @@ El SDK web de Platform no es una evolución de la biblioteca at.js de Target. Se
 | Rendimiento | at.js es una de las múltiples bibliotecas que se deben cargar para una integración adecuada entre aplicaciones. Esto resulta en un tiempo de carga inferior al óptimo. | El SDK web de Platform es una única biblioteca ligera que elimina la necesidad de varias bibliotecas específicas de la aplicación, lo que mejora el rendimiento de carga de página. |
 | Solicitudes | Llamadas independientes para cada aplicación de Adobe. Las llamadas de Target son en gran medida independientes de otras llamadas de red. | Una sola llamada para todas las aplicaciones de Adobe. Los cambios en los datos pasados en estas llamadas podrían afectar a varias aplicaciones descendentes. |
 | Orden de carga | La integración adecuada con otras aplicaciones de Adobe requiere un orden de carga específico de bibliotecas y llamadas de red. | La integración adecuada no depende de la vinculación de datos de distintas llamadas de red específicas a aplicaciones, por lo que el orden de carga no es un problema. |
-| Red perimetral | Utiliza Adobe Experience Cloud Edge Network (tt.omtrdc.net), opcionalmente con un CNAME específico de Target. | Utiliza Adobe Experience Platform Edge Network (edge.adobedc.net), opcionalmente con un solo CNAME. |
-| Terminología básica | Nombres de at.js: <br> - `mbox` <br> - `pageLoad` evento (mbox global) <br> - `offer` | Equivalente de SDK web de Platform: <br> - `decisionScope` <br> - `__view__` decisionScope <br> - `proposition` |
+| Edge Network | Utiliza el Edge Network de Adobe Experience Cloud (tt.omtrdc.net), opcionalmente con un CNAME específico de Target. | Utiliza el Edge Network de Adobe Experience Platform (edge.adobedc.net), opcionalmente con un solo CNAME. |
+| Terminología básica | Nomenclatura de at.js: <br> - `mbox` <br> - `pageLoad` evento (mbox global) <br> - `offer` | Equivalente del SDK web de la plataforma: <br> - `decisionScope` <br> - `__view__` decisionScope <br> - `proposition` |
 
-### Información general del vídeo
+### Vídeo introductorio
 
-El siguiente vídeo ofrece información general sobre el SDK web de Adobe Experience Platform y Adobe Experience Platform Edge Network.
+El siguiente vídeo ofrece información general sobre el SDK web de Adobe Experience Platform y el Edge Network de Adobe Experience Platform.
 
 >[!VIDEO](https://video.tv.adobe.com/v/34141/?learn=on)
 
-Ahora que comprende las diferencias de alto nivel entre at.js y el SDK web de Platform, puede [planificación de la migración](plan-migration.md).
+Ahora que comprende las grandes diferencias entre at.js y el SDK web de Platform, puede [planificar la migración](plan-migration.md).
 
 >[!NOTE]
 >
->Nos comprometemos a ayudarle a tener éxito con su migración de Target de at.js al SDK web. Si encuentra algún obstáculo con la migración o cree que falta información esencial en esta guía, indíquenoslo publicando en [esta discusión de la comunidad](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Nos comprometemos a ayudarle a tener éxito con su migración de Target de at.js al SDK web. Si encuentra obstáculos con la migración o cree que falta información esencial en esta guía, comuníquenoslo publicando en [esta discusión de la comunidad](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

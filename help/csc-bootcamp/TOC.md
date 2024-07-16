@@ -10,8 +10,8 @@ hide: true
 doc-type: multipage
 source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 3%
+source-wordcount: '97'
+ht-degree: 2%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 3%
 + Fase 1: Planificación y preparación {#planning}
    + [Planificación](/help/csc-bootcamp/phases/planning/planning.md)
    + [Otros trabajos previos al trabajo](/help/csc-bootcamp/phases/planning/prework.md)
-+ Fase 2: Producción {#production}
++ Fase 2 - Producción {#production}
    + [Crear titular de página principal del producto](/help/csc-bootcamp/phases/production/banner.md)
    + [Crear anuncio de medios sociales](/help/csc-bootcamp/phases/production/social.md)
    + [Creación de contenido de aplicación móvil](/help/csc-bootcamp/phases/production/app.md)

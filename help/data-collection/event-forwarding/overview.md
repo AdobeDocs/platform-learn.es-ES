@@ -8,14 +8,14 @@ thumbnail: 331937.jpeg
 exl-id: bd1a7414-b232-4ae3-98e8-b0ec1c60361b
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '137'
-ht-degree: 62%
+source-wordcount: '131'
+ht-degree: 41%
 
 ---
 
 # Información general sobre el reenvío de eventos
 
-Descubra cómo el reenvío de eventos centraliza la recopilación de datos, reduce la cantidad de código requerido en sus aplicaciones web y móviles y transmite datos a soluciones que no son de Adobe a través de Adobe Experience Platform Edge Network. Para obtener más información, visite la [documentación del reenvío de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
+Descubra cómo el reenvío de eventos centraliza la recopilación de datos, reduce la cantidad de código necesario en sus aplicaciones web y móviles y transmite datos a soluciones que no son de Adobe a través de Adobe Experience Platform Edge Network. Para obtener más información, visite la [documentación del reenvío de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
 
 >[!NOTE]
 >

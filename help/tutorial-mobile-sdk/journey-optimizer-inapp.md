@@ -9,7 +9,7 @@ exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
 source-git-commit: e316f881372a387b82f8af27f7f0ea032a99be99
 workflow-type: tm+mt
 source-wordcount: '1447'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Obtenga información sobre cómo crear mensajes en la aplicación para aplicaciones móviles con el SDK móvil de Experience Platform y Journey Optimizer.
 
-Journey Optimizer le permite crear campañas para enviar mensajes en la aplicación a audiencias de destino. Las campañas en Journey Optimizer se utilizan para entregar contenido único a una audiencia específica mediante varios canales. Con las campañas, las acciones se realizan simultáneamente, ya sea de forma inmediata o en función de una programación especificada. Cuando utilice recorridos (consulte la [Notificaciones push de Journey Optimizer](journey-optimizer-push.md) lección), las acciones se ejecutan de forma secuencial.
+Journey Optimizer le permite crear campañas para enviar mensajes en la aplicación a audiencias de destino. Las campañas en Journey Optimizer se utilizan para entregar contenido único a una audiencia específica mediante varios canales. Con las campañas, las acciones se realizan simultáneamente, ya sea de forma inmediata o en función de una programación especificada. Cuando se utilizan recorridos (consulte la lección [Notificaciones push de Journey Optimizer](journey-optimizer-push.md)), las acciones se ejecutan de forma secuencial.
 
 ![Arquitectura](assets/architecture-ajo.png)
 
@@ -32,7 +32,7 @@ Antes de enviar mensajes en la aplicación con Journey Optimizer, debe asegurars
 
 * La aplicación se ha creado y ejecutado correctamente con los SDK instalados y configurados.
 * Configure la aplicación para Adobe Experience Platform.
-* Acceso a Journey Optimizer y permisos suficientes, tal como se describe [aquí](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html). Además, necesita permisos suficientes para las siguientes funciones de Journey Optimizer.
+* Acceso a Journey Optimizer y permisos suficientes como se describe [aquí](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html). Además, necesita permisos suficientes para las siguientes funciones de Journey Optimizer.
    * Administrar campañas.
 * Dispositivo o simulador físico de iOS para realizar pruebas.
 
@@ -52,34 +52,34 @@ En esta lección, debe
 
 >[!TIP]
 >
->Si ya ha configurado su entorno como parte de la [mensajería push de Journey Optimizer](journey-optimizer-push.md) En esta lección, es posible que ya haya realizado algunos de los pasos de esta sección de configuración.
+>Si ya configuró su entorno como parte de la lección [Mensajería push de Journey Optimizer](journey-optimizer-push.md), es posible que ya haya realizado algunos de los pasos de esta sección de configuración.
 
 
 ### Añadir una superficie de aplicación en la recopilación de datos
 
-1. Desde el [Interfaz de recopilación de datos](https://experience.adobe.com/data-collection/), seleccione **[!UICONTROL Superficies de aplicación]** en el panel izquierdo.
+1. En la [interfaz de recopilación de datos](https://experience.adobe.com/data-collection/), seleccione **[!UICONTROL Superficies de la aplicación]** en el panel izquierdo.
 1. Para crear una configuración, seleccione **[!UICONTROL Crear superficie de aplicación]**.
    ![inicio de superficie de aplicación](assets/push-app-surface.png)
-1. Introduzca una **[!UICONTROL Nombre]** para la configuración, por ejemplo `Luma App Tutorial`  .
-1. Desde **[!UICONTROL Configuración de aplicaciones móviles]**, seleccione **[!UICONTROL Apple iOS]**.
-1. Introduzca el ID del paquete de la aplicación móvil en **[!UICONTROL ID de aplicación (ID de paquete de iOS)]** field. Por ejemplo,  `com.adobe.luma.tutorial.swiftui`.
+1. Escriba un **[!UICONTROL Nombre]** para la configuración, por ejemplo `Luma App Tutorial` .
+1. En **[!UICONTROL Configuración de aplicaciones móviles]**, seleccione **[!UICONTROL Apple iOS]**.
+1. Introduzca el ID del paquete de la aplicación móvil en el campo **[!UICONTROL ID de la aplicación (ID del paquete de iOS)]**. Por ejemplo, `com.adobe.luma.tutorial.swiftui`.
 1. Seleccione **[!UICONTROL Guardar]**.
 
    ![configuración de superficie de aplicación](assets/push-app-surface-config-inapp.png)
 
 ### Actualizar configuración de secuencia de datos
 
-Para garantizar que los datos enviados desde su aplicación móvil a Edge Network se reenvíen a Journey Optimizer, actualice la configuración de Experience Edge.
+Para garantizar que los datos enviados desde la aplicación móvil al Edge Network se reenvíen a Journey Optimizer, actualice la configuración de Experience Edge.
 
 
 
-1. En la IU de recopilación de datos, seleccione **[!UICONTROL Datastreams]** y seleccione la secuencia de datos, por ejemplo **[!DNL Luma Mobile App]**.
-1. Seleccionar ![Más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) para **[!UICONTROL Experience Platform]** y seleccione ![Editar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Editar]** en el menú contextual.
-1. En el **[!UICONTROL Datastreams]** > ![Carpeta](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** pantalla, asegúrese de **[!UICONTROL Adobe Journey Optimizer]** está seleccionado. Consulte [Configuración de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) para obtener más información.
-1. Para guardar la configuración de la secuencia de datos, seleccione **[!UICONTROL Guardar]**.
+1. En la IU de recopilación de datos, seleccione **[!UICONTROL Datastreams]** y su secuencia de datos, por ejemplo **[!DNL Luma Mobile App]**.
+1. Seleccione ![Más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) para **[!UICONTROL Experience Platform]** y seleccione ![Editar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Editar]** del menú contextual.
+1. En la pantalla **[!UICONTROL Datastreams]** > ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]**, compruebe que **[!UICONTROL Adobe Journey Optimizer]** esté seleccionado. Consulte [Configuración de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) para obtener más información.
+1. Para guardar la configuración de su secuencia de datos, seleccione **[!UICONTROL Guardar]**.
 
 
-   ![Configuración de flujo de datos AEP](assets/datastream-ajo-inapp-configuration.png)
+   ![Configuración de secuencia de datos AEP](assets/datastream-ajo-inapp-configuration.png)
 
 
 ### Instalación de la extensión Journey Optimizer tags
@@ -87,30 +87,30 @@ Para garantizar que los datos enviados desde su aplicación móvil a Edge Networ
 Para que la aplicación funcione con Journey Optimizer, debe actualizar la propiedad de etiquetas.
 
 1. Vaya a **[!UICONTROL Etiquetas]** > **[!UICONTROL Extensiones]** > **[!UICONTROL Catálogo]**.
-1. Abra la propiedad, por ejemplo **[!DNL Luma Mobile App Tutorial]**.
-1. Seleccionar **[!UICONTROL Catálogo]**.
-1. Busque la variable **[!UICONTROL Adobe Journey Optimizer]** extensión.
+1. Abra su propiedad, por ejemplo **[!DNL Luma Mobile App Tutorial]**.
+1. Seleccione **[!UICONTROL Catálogo]**.
+1. Busque la extensión **[!UICONTROL Adobe Journey Optimizer]**.
 1. Instale la extensión de.
 
-Cuándo *solamente* uso de mensajes en la aplicación, en **[!UICONTROL Instalar extensión]** o **[!UICONTROL Configurar extensión]**, no es necesario configurar nada. Sin embargo, si ya ha seguido la [Notificaciones push](journey-optimizer-push.md) En esta lección del tutorial, verá esto para el **[!UICONTROL Desarrollo]** entorno, el **[!UICONTROL Conjunto de datos de evento de experiencia de seguimiento push AJO]** conjunto de datos está seleccionado en **[!UICONTROL Conjunto de datos de evento]** lista.
+Cuando *solo* usa mensajes en la aplicación, en **[!UICONTROL Instalar extensión]** o **[!UICONTROL Configurar extensión]**, no necesita configurar nada. Sin embargo, si ya ha seguido la lección [Notificaciones push](journey-optimizer-push.md) del tutorial, verá que para el entorno **[!UICONTROL Desarrollo]**, el conjunto de datos **[!UICONTROL AJO Push Tracking Experience Event Dataset]** está seleccionado de la lista **[!UICONTROL Conjunto de datos de evento]**.
 
 
 ### Implementar Journey Optimizer en la aplicación
 
-Como se ha explicado en lecciones anteriores, la instalación de una extensión de etiqueta móvil solo proporciona la configuración. A continuación, debe instalar y registrar el SDK de mensajería. Si estos pasos no están claros, revise la [Instalación de SDK](install-sdks.md) sección.
+Como se ha explicado en lecciones anteriores, la instalación de una extensión de etiqueta móvil solo proporciona la configuración. A continuación, debe instalar y registrar el SDK de mensajería. Si estos pasos no están claros, revise la sección [Instalar SDK](install-sdks.md).
 
 >[!NOTE]
 >
->Si ha completado la [Instalación de SDK](install-sdks.md) , el SDK ya está instalado y puede omitir este paso.
+>Si ha completado la sección [Instalar SDK](install-sdks.md), el SDK ya está instalado y puede omitir este paso.
 >
 
-1. En Xcode, asegúrese de que [Mensajería AEP](https://github.com/adobe/aepsdk-messaging-ios) se añade a la lista de paquetes en Dependencias del paquete. Consulte [Administrador De Paquetes Swift](install-sdks.md#swift-package-manager).
+1. En Xcode, asegúrese de que [AEP Messaging](https://github.com/adobe/aepsdk-messaging-ios) se añada a la lista de paquetes en Dependencias del paquete. Consulte [Administrador De Paquetes Swift](install-sdks.md#swift-package-manager).
 1. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** en el navegador del proyecto Xcode.
-1. Asegurar `AEPMessaging` forma parte de su lista de importaciones.
+1. Asegúrese de que `AEPMessaging` forme parte de su lista de importaciones.
 
    `import AEPMessaging`
 
-1. Asegurar `Messaging.self` forma parte de la matriz de extensiones que está registrando.
+1. Asegúrese de que `Messaging.self` forme parte de la matriz de extensiones que está registrando.
 
    ```swift
    let extensions = [
@@ -131,14 +131,14 @@ Como se ha explicado en lecciones anteriores, la instalación de una extensión 
 
 ## Validar la configuración con Assurance
 
-1. Revise la [instrucciones de configuración](assurance.md#connecting-to-a-session) para conectar el simulador o dispositivo a Assurance.
+1. Revise la sección [instrucciones de configuración](assurance.md#connecting-to-a-session) para conectar su simulador o dispositivo a Assurance.
 1. En la IU de Assurance, seleccione **[!UICONTROL Configurar]**.
    ![configurar clic](assets/push-validate-config.png)
-1. Seleccione el ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) botón situado junto a **[!UICONTROL Mensajería en la aplicación]**.
+1. Seleccione el botón ![Más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) junto a **[!UICONTROL Mensajería en la aplicación]**.
 1. Seleccione **[!UICONTROL Guardar]**.
    ![guardar](assets/assurance-in-app-config.png)
-1. Seleccionar **[!UICONTROL Mensajería en la aplicación]** en el panel de navegación izquierdo.
-1. Seleccione el **[!UICONTROL Validación]** pestaña. Confirme que no está recibiendo ningún error.
+1. Seleccione **[!UICONTROL Mensajería en la aplicación]** en el panel de navegación izquierdo.
+1. Seleccione la ficha **[!UICONTROL Validación]**. Confirme que no está recibiendo ningún error.
 
    ![Validación en la aplicación](assets/assurance-in-app-validate.png)
 
@@ -152,41 +152,41 @@ Para crear su propio mensaje en la aplicación, debe definir una campaña en Jou
 * eventos del ciclo vital de la aplicación, como inicio, instalación, actualización, cierre o bloqueo,
 * eventos de geolocalización, como entrar o salir de un punto de interés.
 
-En este tutorial, va a utilizar las API principales genéricas e independientes de la extensión de Mobile (consulte [API genéricas principales de Mobile](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis)) para facilitar el seguimiento de eventos de pantallas de usuario, acciones y datos PII. Los eventos generados por estas API se publican en el centro de eventos del SDK y las extensiones los pueden utilizar. El centro de eventos del SDK proporciona la estructura de datos principal vinculada a todas las extensiones del SDK de la plataforma móvil y mantiene una lista de extensiones registradas y módulos internos, una lista de detectores de eventos registrados y una base de datos de estado compartida.
+En este tutorial, usará las API principales genéricas e independientes de la extensión de Mobile (consulte [API principales genéricas de Mobile](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis)) para facilitar el seguimiento de eventos de pantallas de usuario, acciones y datos PII. Los eventos generados por estas API se publican en el centro de eventos del SDK y las extensiones los pueden utilizar. El centro de eventos del SDK proporciona la estructura de datos principal vinculada a todas las extensiones del SDK de la plataforma móvil y mantiene una lista de extensiones registradas y módulos internos, una lista de detectores de eventos registrados y una base de datos de estado compartida.
 
 El centro de eventos del SDK publica y recibe datos de eventos de extensiones registradas para simplificar las integraciones con soluciones de Adobe y de terceros. Por ejemplo, cuando se instala la extensión Optimize, todas las solicitudes e interacciones con el motor de ofertas de Journey Optimizer - Gestión de decisiones se gestionan mediante el centro de eventos.
 
-1. En la IU de Journey Optimizer, seleccione **[!UICONTROL Campañas]** desde el carril izquierdo.
-1. Seleccionar **[!UICONTROL Crear campaña]**.
-1. En el **[!UICONTROL Crear campaña]** pantalla:
-   1. Seleccionar **[!UICONTROL Mensaje en la aplicación]** y seleccione una superficie de aplicación de la **[!UICONTROL Superficie de aplicación]** , por ejemplo **[!DNL Luma Mobile App]**.
+1. En la interfaz de usuario de Journey Optimizer, seleccione **[!UICONTROL Campañas]** en el carril izquierdo.
+1. Seleccione **[!UICONTROL Crear campaña]**.
+1. En la pantalla **[!UICONTROL Crear campaña]**:
+   1. Seleccione **[!UICONTROL Mensaje en la aplicación]** y elija una superficie de aplicación en la lista **[!UICONTROL Superficie de aplicación]**, por ejemplo **[!DNL Luma Mobile App]**.
    1. Seleccionar **[!UICONTROL Crear]**
       ![Propiedades de campaña](assets/ajo-campaign-properties.png)
-1. En la pantalla Campaign definition, en **[!UICONTROL Propiedades]**, introduzca un **[!UICONTROL Nombre]** para la campaña, por ejemplo `Luma - In-App Messaging Campaign`, y a **[!UICONTROL Descripción]**, por ejemplo `In-app messaging campaign for Luma app`.
+1. En la pantalla de definición de campaña, en **[!UICONTROL Propiedades]**, escriba un **[!UICONTROL Nombre]** para la campaña, por ejemplo `Luma - In-App Messaging Campaign`, y una **[!UICONTROL Descripción]**, por ejemplo `In-app messaging campaign for Luma app`.
    ![Nombre de campaña](assets/ajo-campaign-properties-name.png)
 1. Desplácese hacia abajo hasta **[!UICONTROL Acción]** y seleccione **[!UICONTROL Editar contenido]**.
-1. En el **[!UICONTROL Mensaje en la aplicación]** pantalla:
-   1. Seleccionar **[!UICONTROL Modal]** como el **[!UICONTROL Diseño del mensaje]**.
-   2. Entrar `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` para el **[!UICONTROL URL de medios]**.
-   3. Introduzca una **[!UICONTROL Header]**, por ejemplo `Welcome to this Luma In-App Message` e introduzca un **[!UICONTROL Cuerpo]**, por ejemplo `Triggered by pushing that button in the app...`.
-   4. Entrar **[!UICONTROL Descartar]** como el **[!UICONTROL Texto de #1 de botón (principal)]**.
+1. En la pantalla **[!UICONTROL Mensaje en la aplicación]**:
+   1. Seleccione **[!UICONTROL Modal]** como **[!UICONTROL Diseño de mensaje]**.
+   2. Escriba `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` para la **[!UICONTROL URL multimedia]**.
+   3. Escriba un **[!UICONTROL encabezado]**, por ejemplo `Welcome to this Luma In-App Message` y un **[!UICONTROL cuerpo]**, por ejemplo `Triggered by pushing that button in the app...`.
+   4. Escriba **[!UICONTROL Descartar]** como **[!UICONTROL botón #1 texto (principal)]**.
    5. Observe cómo se actualiza la vista previa.
-   6. Seleccionar **[!UICONTROL Revisar para activar]**.
+   6. Seleccione **[!UICONTROL Revisar para activar]**.
       ![Editor en la aplicación](assets/ajo-in-app-editor.png)
-1. En el **[!UICONTROL Revise para activar (Luma, campaña de mensajería en la aplicación)]** pantalla, seleccione ![Editar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) en el **[!UICONTROL Programación]** mosaico.
-   ![Revisar programación seleccionar Programación](assets/ajo-review-select-schedule.png)
-1. De nuevo en **[!DNL Luma - In-App Messaging Campaign]** pantalla, seleccione ![Editar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Editar déclencheur]**.
-1. En el **[!UICONTROL Déclencheur de mensajes en la aplicación]** , configure los detalles de la acción de seguimiento que almacena en déclencheur el mensaje en la aplicación:
-   1. Para eliminar **[!UICONTROL Evento de inicio de aplicación]**, seleccione ![Cerrar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg) .
-   1. Uso ![Añadir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Añadir condición]** repetidamente para generar la siguiente lógica para **[!UICONTROL Mostrar mensaje si]**.
+1. En la pantalla **[!UICONTROL Revisar para activar (Luma: mensajería en la aplicación)]**, seleccione ![Editar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) en el mosaico **[!UICONTROL Programar]**.
+   ![Revisar horario y seleccionar horario](assets/ajo-review-select-schedule.png)
+1. En la pantalla de **[!DNL Luma - In-App Messaging Campaign]**, seleccione ![Editar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Editar déclencheur]**.
+1. En el cuadro de diálogo **[!UICONTROL déclencheur de mensajes en la aplicación]** , configure los detalles de la acción de seguimiento que almacena en déclencheur el mensaje en la aplicación:
+   1. Para quitar **[!UICONTROL evento de inicio de aplicación]**, seleccione ![Cerrar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg) .
+   1. Use ![Agregar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Agregar condición]** repetidamente para generar la siguiente lógica para **[!UICONTROL Mostrar mensaje si]**.
    1. Haga clic en **[!UICONTROL Finalizado]**.
-      ![lógica de déclencheur](assets/ajo-trigger-logic.png)
+      ![lógica de Déclencheur](assets/ajo-trigger-logic.png)
 
-   Ha definido una acción de seguimiento, donde la variable **[!UICONTROL Acción]** igual a `in-app` y el **[!UICONTROL Datos de contexto]** con la acción es un par de valor clave de `"showMessage" : "true"`.
+   Ha definido una acción de seguimiento, donde **[!UICONTROL Action]** es igual a `in-app` y **[!UICONTROL Context data]** con la acción es un par de valor clave de `"showMessage" : "true"`.
 
-1. De nuevo en **[!DNL Luma - In-App Messaging Campaign]** pantalla, seleccione **[!UICONTROL Revisar para activar]**.
-1. En el **[!UICONTROL Revise para activar (Luma, campaña de mensajería en la aplicación)]** pantalla, seleccione **[!UICONTROL Activar]**.
-1. Ya ve su **[!DNL Luma - In-App Messaging Campaign]** con estado **[!UICONTROL Activo]** en el **[!UICONTROL Campañas]** lista.
+1. En la pantalla **[!DNL Luma - In-App Messaging Campaign]**, seleccione **[!UICONTROL Revisar para activar]**.
+1. En la pantalla **[!UICONTROL Revisar para activar (Luma: mensajería en la aplicación)]**, seleccione **[!UICONTROL Activar]**.
+1. Ves a tu **[!DNL Luma - In-App Messaging Campaign]** con el estado **[!UICONTROL Activo]** en la lista **[!UICONTROL Campañas]**.
    ![Lista de campañas](assets/ajo-campaign-list.png)
 
 
@@ -194,7 +194,7 @@ El centro de eventos del SDK publica y recibe datos de eventos de extensiones re
 
 Dispone de todos los ingredientes para enviar un mensaje en la aplicación. Lo que queda es cómo almacenar en déclencheur este mensaje en la aplicación.
 
-1. Ir a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** en el navegador del proyecto Xcode. Busque el `func sendTrackAction(action: String, data: [String: Any]?)` y agregue el siguiente código, que llama a la función [`MobileCore.track`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) función, según los parámetros `action` y `data`.
+1. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** en el navegador del proyecto Xcode. Busque la función `func sendTrackAction(action: String, data: [String: Any]?)` y agregue el código siguiente, que llama a la función [`MobileCore.track`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction), en función de los parámetros `action` y `data`.
 
 
    ```swift
@@ -202,7 +202,7 @@ Dispone de todos los ingredientes para enviar un mensaje en la aplicación. Lo q
    MobileCore.track(action: action, data: data)
    ```
 
-1. Ir a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL ConfigView]** en el Navegador de proyectos Xcode. Busque el código del botón Mensaje en la aplicación y añada el siguiente código:
+1. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL ConfigView]** en el navegador del proyecto Xcode. Busque el código del botón Mensaje en la aplicación y añada el siguiente código:
 
    ```swift
    // Setting parameters and calling function to send in-app message
@@ -213,11 +213,11 @@ Dispone de todos los ingredientes para enviar un mensaje en la aplicación. Lo q
 
 ## Validar con la aplicación
 
-1. Vuelva a compilar y ejecute la aplicación en el simulador o en un dispositivo físico desde Xcode mediante ![Reproducir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
+1. Vuelva a compilar y ejecute la aplicación en el simulador o en un dispositivo físico desde Xcode con ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
-1. Vaya a la **[!UICONTROL Configuración]** pestaña.
+1. Vaya a la ficha **[!UICONTROL Configuración]**.
 
-1. Tocar **[!UICONTROL Mensaje en la aplicación]**. Verá que el mensaje en la aplicación aparece en la aplicación.
+1. Pulse **[!UICONTROL Mensaje en la aplicación]**. Verá que el mensaje en la aplicación aparece en la aplicación.
 
    <img src="assets/ajo-in-app-message.png" width="300" />
 
@@ -226,11 +226,11 @@ Dispone de todos los ingredientes para enviar un mensaje en la aplicación. Lo q
 
 Puede validar los mensajes en la aplicación en la interfaz de usuario de Assurance.
 
-1. Revise la [instrucciones de configuración](assurance.md#connecting-to-a-session) para conectar el simulador o dispositivo a Assurance.
-1. Seleccionar **[!UICONTROL Mensajería en la aplicación]**.
-1. Seleccionar **[!UICONTROL Lista de eventos]**.
-1. Seleccione una **[!UICONTROL Mostrar mensaje]** entrada.
-1. Inspect el evento sin procesar, especialmente el `html`, que contiene el diseño completo y el contenido del mensaje en la aplicación.
+1. Revise la sección [instrucciones de configuración](assurance.md#connecting-to-a-session) para conectar su simulador o dispositivo a Assurance.
+1. Seleccione **[!UICONTROL Mensajería en la aplicación]**.
+1. Seleccione **[!UICONTROL Lista de eventos]**.
+1. Seleccione una entrada de **[!UICONTROL Mostrar mensaje]**.
+1. Inspect devuelve el evento sin procesar, especialmente `html`, que contiene el diseño y el contenido completos del mensaje en la aplicación.
    ![Mensaje en la aplicación de Assurance](assets/assurance-in-app-display-message.png)
 
 
@@ -242,6 +242,6 @@ Ahora debe tener todas las herramientas para empezar a añadir mensajes en la ap
 >
 >Ha habilitado la aplicación para mensajería en la aplicación y ha agregado una campaña de mensajería en la aplicación mediante Journey Optimizer y la extensión de Journey Optimizer para el SDK de Experience Platform Mobile.
 >
->Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Siguiente: **[Creación y visualización de ofertas](journey-optimizer-offers.md)**
+Siguiente: **[Crear y mostrar ofertas](journey-optimizer-offers.md)**

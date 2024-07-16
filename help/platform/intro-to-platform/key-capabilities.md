@@ -1,6 +1,6 @@
 ---
 title: Capacidades clave
-description: Conozca las funcionalidades clave de Experience Platform y cómo aportan valor a su empresa.
+description: Obtenga información sobre las funcionalidades clave de Experience Platform y cómo aportan valor a su empresa.
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 level: Beginner
 last-substantial-update: 2023-10-24T00:00:00Z
@@ -10,13 +10,13 @@ exl-id: d46373b9-4a80-4fe0-a072-51ec48585b3f
 source-git-commit: ca7acd3678b4af4a5b5a040d931a79b7a570fc51
 workflow-type: tm+mt
 source-wordcount: '40'
-ht-degree: 5%
+ht-degree: 80%
 
 ---
 
 # Funcionalidades clave de Adobe Experience Platform
 
-Conozca las funcionalidades clave de Experience Platform y cómo aportan valor a su empresa.
+Obtenga información sobre las funcionalidades clave de Experience Platform y cómo aportan valor a su empresa.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32502?learn=on)
 

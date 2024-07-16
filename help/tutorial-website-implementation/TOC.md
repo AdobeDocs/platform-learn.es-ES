@@ -11,7 +11,7 @@ recommendations: noDisplay,noCatalog
 source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '86'
-ht-degree: 27%
+ht-degree: 17%
 
 ---
 
@@ -19,16 +19,16 @@ ht-degree: 27%
 # Implementar el Experience Cloud de en sitios web con etiquetas {#implement-in-websites}
 
 + [Tutorial sobre implementación en sitios web con etiquetas](overview.md)
-+ Configuración de etiquetas{#configure-tags}
++ Configurar etiquetas {#configure-tags}
    + [Creación de una propiedad de etiqueta](create-a-property.md)
    + [Añadir el código de incrustación](add-embed-code.md)
    + [Añadir un elemento de datos, una regla y una biblioteca](add-data-elements-rules.md)
    + [Cambiar entornos con Debugger](switch-environments.md)
-+ Implementación de soluciones{#implement-solutions}
++ Implementar soluciones{#implement-solutions}
    + [Añadir el servicio de identidad](id-service.md)
    + [Añadir Adobe Target](target.md)
    + [Añadir Adobe Analytics](analytics.md)
    + [Añadir Adobe Audience Manager](audience-manager.md)
    + [Integraciones de Experience Cloud](integrations.md)
-+ Publicación de la propiedad{#publish}
-   + [Publique la propiedad ](publish.md)
++ Publish su propiedad{#publish}
+   + [Publish su propiedad](publish.md)

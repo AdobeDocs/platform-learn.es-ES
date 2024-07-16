@@ -9,7 +9,7 @@ feature: Mobile SDK
 exl-id: 14bfbebe-6df3-4a0e-875c-b4c0d016f8da
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '535'
 ht-degree: 0%
 
 ---
@@ -18,15 +18,15 @@ ht-degree: 0%
 
 ## o aplicación móvil
 
-Antes de instalar o aplicativo, é necesario activar o **Rastreamento** no seu dispositivo iOS. Para isso, acceso **Configuraciones** > **Privacidade e segurança** > **Rastreamento** e verifique a opção **que os aplicativos solicitem o rastreamento**.
+Antes de instalar o aplicar, é necesario habilitar o **Rastreamento** no seu dispositivo iOS. Para isso, access **Configurações** > **Privacidade e segurança** > **Rastreamento** e verifique a opção **que os aplicativos solicitem o rastreamento**.
 
 ![DSN](./../uc3/images/app4.png)
 
-Accede a App Store da Apple e pesquise `aepmobile-bootcamp`. Clique em **Instalar** ou **Descargar**.
+Acceder a un App Store da Apple e pesquise `aepmobile-bootcamp`. Clique em **Instalar** ou **Descargar**.
 
 ![DSN](./../uc3/images/app1.png)
 
-Depois que o aplicativo estiver instalado, clique em **Abrir**.
+Depois que o aplicativo estiver instalado, clique em **Abrir**.
 
 ![DSN](./../uc3/images/app2.png)
 
@@ -38,11 +38,11 @@ Clique em ****.
 
 ![DSN](./../uc3/images/app3.png)
 
-Clic **Estoy de acuerdo**.
+Haz clic en **Acepto**.
 
 ![DSN](./../uc3/images/app7.png)
 
-Clique em **quanto usa o aplicativo**.
+Clique em **quanto usa o aplicativo**.
 
 ![DSN](./../uc3/images/app8.png)
 
@@ -76,11 +76,11 @@ Retorne para a página inicial do aplicativo e os recursos adicionais irão.
 
 ![DSN](./images/app17.png)
 
-Primeiro, acceso **Productos**. Clique em qualquer produto, ejemplo anidado: **Café para llevar**.
+Primeiro, acceda a **Productos**. Ejemplo de Clique em qualquer produto: **Café para llevar**.
 
 ![DSN](./images/app19.png)
 
-Você verá una página de producto **Café para llevar** no aplicativo.
+Você verá una página de producto **Café para llevar** no aplicativo.
 
 ![DSN](./images/app20.png)
 
@@ -92,11 +92,11 @@ Em, a tela abaixo será exibida:
 
 ![DSN](./images/screen1.png)
 
-Em, retorne para a página inicial. Clique no ícone do **baliza**.
+Em, retorne para a página inicial. Clique no ícone do **beacon**.
 
 ![DSN](./images/app23.png)
 
-Após essa etapa, o seguinte será exibido. Primeiro, selecione **Señalización de pantalla de Bootcamp** e clique no botão de **entrada**. Isso que você simule uma entrada de sinalização com beacon.
+Após essa etapa, o seguinte será exibido. Primeiro, selecione **Señalización de pantalla Bootcamp** y clique no botão de **entrada**. Isso que você simule uma entrada de sinalização com beacon.
 
 ![DSN](./images/app21.png)
 
@@ -104,15 +104,15 @@ Agora confira a tela da loja. Você verá o último producto visualizado a parti
 
 ![DSN](./images/screen2.png)
 
-Em, retorne para **Productos**. Clique em qualquer produto, ejemplo anidado: **Manta de playa Tan**.
+Em, restaurado para **Productos**. Ejemplo de Clique em qualquer produto: **Manta de playa Tan**.
 
 ![DSN](./images/app22.png)
 
-Em, retorne para a página inicial. Clique no ícone do **baliza**.
+Em, retorne para a página inicial. Clique no ícone do **beacon**.
 
 ![DSN](./images/app23.png)
 
-Em, selecione **Señalización de pantalla de Bootcamp** e clique no botão de **Entrada** novamente. Isso que você simule uma entrada de sinalização (baliza).
+Em, selecione **Bootcamp Screen Beacon** e clique no botão de **Entrada** novamente. Isso que você simule uma entrada de sinalização (baliza).
 
 ![DSN](./images/app21.png)
 
@@ -126,7 +126,7 @@ Agora, confira a tela da loja novamente. Você verá o último producto visualiz
 
 Nos próximos exercícios, você e testar sua própria jornada de entrada do beacon.
 
-Próxima etapa: [3.2 Cría de eventos](./ex2.md)
+Próxima etapa: [3,2 Crie seu evento](./ex2.md)
 
 [Hoteles cerca de Fluxo de Usuário 3](./uc3.md)
 

@@ -13,14 +13,14 @@ thumbnail: 338250.jpg
 exl-id: cc432fcf-2ff3-48bc-8053-7a6d1f643869
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 0%
+source-wordcount: '148'
+ht-degree: 18%
 
 ---
 
 # Ingesta de datos desde el Marketo Engage
 
-Aprenda a ingerir fácilmente datos de Marketo Engage en Real-time Customer Data Platform, B2B Edition y Adobe Experience Platform mediante el conector de origen mediante dos flujos de trabajo.
+Aprenda a realizar fácilmente una ingesta de datos de Marketo Engage a Real-time Customer Data Platform, B2B Edition y Adobe Experience Platform mediante el conector de origen con dos flujos de trabajo.
 
 ## Flujo de trabajo de plantilla
 
@@ -36,4 +36,4 @@ Obtenga información sobre cómo configurar el conector de origen para Marketo m
 
 Para obtener más información, consulte la siguiente documentación:
 * [Documentación del conector de origen del Marketo Engage](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html).
-* [Creación de un flujo de datos de origen mediante plantillas en la IU](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#)
+* [Crear un flujo de datos de origen mediante plantillas en la interfaz de usuario](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#)

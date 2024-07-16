@@ -16,19 +16,19 @@ ht-degree: 1%
 
 # 1.5 Ação: envie seu para o Facebook
 
-Acceso [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer login, você irá a página inicial da Adobe Experience Platform.
+Acceder a [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer login, você irá a página inicial da Adobe Experience Platform.
 
 ![Ingesta de datos](./images/home.png)
 
-Antes de continuar, você precisa selecionar um **espacio aislado**. O nome do sandbox a ser selecionado é Bootcamp. Posible fazer es tan clicando no texto **[!UICONTROL Producción de producción]** na linha azul na parte superior da tela. Depois de selecionar o sandbox apropiado, você a tela mudando e agora você está em seu [!UICONTROL espacio aislado] dedicado.
+Antes de continuar, você precisa selecionar um **espacio aislado**. O nome do sandbox a ser selecionado é Bootcamp. No se puede escribir más **[!UICONTROL Production Prod]** na linha azul na parte superior da tela. Depois de selecionar o sandbox apropiado, você a tela mudando e agora você está em seu [!UICONTROL sandbox] dedicado.
 
 ![Ingesta de datos](./images/sb1.png)
 
-No menu à esquerda, vá para **Destinos** e, em, vá para **Catálogo**. Você va o **Catálogo de destinos**. Em **Destinos**, grupo em **Activar segmentos** sin cartón **Audiencia personalizada de facebook**.
+No menu à esquerda, vá para **Destinations** e, em, vá para **Catalog**. Você va a **Catálogo de destinos**. Em **Destinos**, grupo **Activar segmentos** sin cartón **Audiencia personalizada de Facebook**.
 
 ![RTCDP](./images/rtcdpgoogleseg.png)
 
-Selecione o **bootcamp-facebook** e clique em **Siguiente**.
+Selecciona **bootcamp-facebook** e clique em **Next**.
 
 ![RTCDP](./images/rtcdpcreatedest2.png)
 
@@ -36,15 +36,15 @@ Na lista de íveis, selecione o que você criou no exercício anterior. Clique e
 
 ![RTCDP](./images/rtcdpcreatedest3.png)
 
-Na página **Asignación**, verifique se a caixa de seleção **Aplicar transformación** está marcado. Clique em **Siguiente**.
+Na página **Mapping**, verifique se a caixa de seleção **Apply Transformation** está marcada. Clique em **Siguiente**.
 
 ![RTCDP](./images/rtcdpcreatedest4a.png)
 
-Na página **Programación de segmentos**, seleccione una a **Origen de la audiencia** e **Directamente de los clientes**. Clique em **Siguiente**.
+En la página **Programación de segmentos**, selecciona **Origen de tu audiencia** y define como **Directamente de los clientes**. Clique em **Siguiente**.
 
 ![RTCDP](./images/rtcdpcreatedest4.png)
 
-Por fim, na página **Revisar**, grupo em **Finalizar**.
+Por fim, na página **Revisar**, grupo **Finalizar**.
 
 ![RTCDP](./images/rtcdpcreatedest5.png)
 

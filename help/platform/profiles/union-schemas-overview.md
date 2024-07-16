@@ -1,6 +1,6 @@
 ---
-title: Información general sobre los esquemas de unión
-description: El Perfil de cliente en tiempo real permite la personalización en varios canales a escala en cada fase del recorrido del cliente. Los datos de lote o flujo se pueden habilitar para el perfil del cliente en tiempo real habilitando el esquema y el conjunto de datos correspondiente.
+title: Resumen de esquemas de unión
+description: El perfil del cliente en tiempo real permite la personalización en varios canales a escala en cada fase del recorrido del cliente. Los datos de lote o flujo se pueden habilitar para el perfil del cliente en tiempo real habilitando el esquema y el conjunto de datos correspondiente.
 feature: Profiles
 role: Data Engineer, Data Architect, Developer, User
 level: Beginner
@@ -9,12 +9,12 @@ thumbnail: 329940.jpg
 exl-id: 6e6512c2-2d8e-4b56-b8b8-d318b98f3627
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 19%
+source-wordcount: '105'
+ht-degree: 0%
 
 ---
 
-# Información general sobre los esquemas de unión
+# Resumen de esquemas de unión
 
 Este vídeo le ofrece una descripción general de los esquemas de unión utilizados por el Perfil del cliente en tiempo real de Adobe Experience Platform. Los esquemas de unión permiten ver una amalgamación de todos los campos contenidos en esquemas que comparten la misma clase. El perfil del cliente en tiempo real utiliza los esquemas de unión para crear una vista holística de cada cliente individual. Para obtener más información, visite la [documentación del esquema de unión](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html).
 

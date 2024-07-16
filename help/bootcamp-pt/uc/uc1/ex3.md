@@ -9,7 +9,7 @@ feature: Segments
 exl-id: 9b8d93b5-5bed-4600-8602-b438a0893612
 source-git-commit: ee5c0af17c12f1d90774a3a4150c9788e2368e39
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '517'
 ht-degree: 2%
 
 ---
@@ -20,51 +20,51 @@ Neste exercício, você irá criar um Construtor de Segmentos da Adobe Experienc
 
 ## História
 
-Acceso [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer login, você irá a página inicial da Adobe Experience Platform.
+Acceder a [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer login, você irá a página inicial da Adobe Experience Platform.
 
 ![Ingesta de datos](./images/home.png)
 
-Antes de continuar, você precisa selecionar um **espacio aislado**. O nome do sandbox a ser selecionado é ``Bootcamp``. Posible fazer es tan clicando no texto **[!UICONTROL Producción de producción]** na linha azul na parte superior da tela. Depois de selecionar o sandbox apropiado, você a tela mudando e agora você está em seu [!UICONTROL espacio aislado] dedicado.
+Antes de continuar, você precisa selecionar um **espacio aislado**. O nome do sandbox a ser selecionado é ``Bootcamp``. No se puede escribir más **[!UICONTROL Production Prod]** na linha azul na parte superior da tela. Depois de selecionar o sandbox apropiado, você a tela mudando e agora você está em seu [!UICONTROL sandbox] dedicado.
 
 ![Ingesta de datos](./images/sb1.png)
 
-Sin menú a la esquerda, acceso **Segmentos**. Nesta página, você tem uma visão geral de todos os. Clique no botão + Criar para cometer un crimen o un crimen o un crimen o un crimen o un crimen o un crimen o una.
+No hay menú a la sombra, acceda a **Segmentos**. Nesta página, você tem uma visão geral de todos os. Clique no botão + Criar para cometer un crimen o un crimen o un crimen o un crimen o un crimen o un crimen o una.
 
 ![Segmentación](./images/menuseg.png)
 
-Quando estiver no novo construtor de, você irá perciber imediatamente a opção de menu **Atributos** e a referência do **Perfil individual de XDM**.
+Quando estiver no novo construtor de, você irá perciber imediatamente a opção de menu **Attributes** e a referência do **XDM Individual Profile**.
 
 ![Segmentación](./images/segmentationui.png)
 
 Como o XDM é a linguagem que alimenta o setor de experiência, o XDM também é a base para o construtor de. Todos los dados ingeridos na plataforma devem ser mapeados em relação ao XDM e, portanto, todos los dados se tornam parte do mesmo modelo de dados, independientemente da origem desses dados. Isso oferece uma grande vantagem ao criar, pois a partir dessa interface do usuário do constructor de, é possível dados de qualquer origem no mesmo fluxo de trabalho. Os criados no Construtor de podem ser enviado para soluciones como Adobe Target, Adobe Campaign e Adobe Audience Manager para ativação.
 
-Agora você precisa criar um de todos os clientes que visualizaram o produto **Real-Time CDP**.
+La lista completa de nuestros clientes para ver o producir **Real-Time CDP**.
 
-Para este, você precisa adicionar a Evento de experiência. Você pode encontrar todos los Eventos de experiência clicando no ícone **Eventos** una barra de menú **Campos**.
+Para este, você precisa adicionar a Evento de experiência. Você pode encontrar todos los Eventos de experiência clicando no ícone **Eventos** na barra de menu **Campos**.
 
 ![Segmentación](./images/findee.png)
 
-Em, você va o nó **ExperienceEvents de XDM** do nível superior. Clique em **ExperienceEvent de XDM**.
+Em, você va o nó **XDM ExperienceEvents** do nível superior. Haga clic en **XDM ExperienceEvent**.
 
 ![Segmentación](./images/see.png)
 
-Acceso **Elementos de lista de productos**.
+Obtener acceso a **elementos de lista de productos**.
 
 ![Segmentación](./images/plitems.png)
 
-Selecione **Nombre** e arraste e solte o objeto **Nombre** do menu à esquerda na tela do construtor de na seção **Eventos**. Em, o seguinte será exibido:
+Selecione **Name** e arraste e solte o objeto **Name** do menu à esquerda na tela do constructor de na seção **Events**. Em, o seguinte será exibido:
 
 ![Segmentación](./images/eewebpdtlname.png)
 
-O parâmetro de comparação deve ser **igual a** e, no campo de entrada, insira **Real-time CDP**.
+O parâmetro de comparação deve ser **igual a** e, no campo de entrada, insira **Real-time CDP**.
 
 ![Segmentación](./images/pv.png)
 
-Siempre que adicionar a un elemento para construir de un, você pode clicar no botão **Actualizar estimación** para obter uma nova estimativa da população em seu.
+Siempre que adiciones a un elemento para construir de la, você pode clicar no botão **Actualizar estimación** para obter uma nova estimativa da população em seu.
 
 ![Segmentación](./images/refreshest.png)
 
-Párr **Método de evaluación**, selecione **Edge**.
+Para **Método de evaluación**, seleccione **Edge**.
 
 ![Segmentación](./images/evedge.png)
 
@@ -74,7 +74,7 @@ Como modelo de nomenclatura, use:
 
 - `seuSobrenome - Interest in Real-Time CDP`
 
-Em, grupo no botão **Guardar y cerrar** para salvar la vida de la.
+Em,, clique no botão **Guardar y cerrar** para guardar la.
 
 ![Segmentación](./images/segmentname.png)
 

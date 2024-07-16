@@ -17,10 +17,10 @@ ht-degree: 0%
 
 # Añadir administradores de productos
 
-Obtenga información sobre cómo agregar administradores de productos para Adobe Experience Platform. Los administradores de productos administran el control de acceso para aplicaciones basadas en la plataforma como Real-time Customer Data Platform y Journey Optimizer. Pueden crear usuarios, desarrolladores y administradores adicionales en Admin Console y, a continuación, concederles permisos (y credenciales de API) en la interfaz de Platform o Journey Optimizer. Para obtener más información, visite la [Documentación de control de acceso](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=es).
+Obtenga información sobre cómo agregar administradores de productos para Adobe Experience Platform. Los administradores de productos administran el control de acceso para aplicaciones basadas en la plataforma como Real-time Customer Data Platform y Journey Optimizer. Pueden crear usuarios, desarrolladores y administradores adicionales en Admin Console y, a continuación, concederles permisos (y credenciales de API) en la interfaz de Platform o Journey Optimizer. Para obtener más información, visite la [documentación de control de acceso](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=es).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333860?learn=on)
 
 >[!TIP]
 >
->También le recomendamos que añada el administrador del producto como **usuario** a la `AEP-Default-All-Users` perfil de producto en Admin Console y, a continuación, agréguelo a una función en la pantalla de permisos de la interfaz de Platform. Consulte [Adición de usuarios](add-users.md) para obtener más información.
+>También le recomendamos que agregue al administrador del producto como **usuario** al perfil de producto `AEP-Default-All-Users` en Admin Console y, a continuación, que los agregue a una función en la pantalla de permisos de la interfaz de Platform. Consulte [Agregar usuarios](add-users.md) para obtener más información.

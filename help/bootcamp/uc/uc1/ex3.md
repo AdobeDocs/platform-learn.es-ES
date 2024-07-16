@@ -24,55 +24,55 @@ Ir a [Adobe Experience Platform](https://experience.adobe.com/platform). Despué
 
 ![Ingesta de datos](./images/home.png)
 
-Antes de continuar, debe seleccionar un **espacio aislado**. La zona protegida que se va a seleccionar se denomina ``Bootcamp``. Para ello, haga clic en el texto **[!UICONTROL Producción de producción]** en la línea azul de la parte superior de la pantalla. Después de seleccionar las [!UICONTROL espacio aislado], verá el cambio de pantalla y ahora estará en su dedicado [!UICONTROL espacio aislado].
+Antes de continuar, debe seleccionar una **zona protegida**. La zona protegida que se va a seleccionar se denomina ``Bootcamp``. Para ello, haga clic en el texto **[!UICONTROL Producción]** en la línea azul de la parte superior de la pantalla. Después de seleccionar la [!UICONTROL zona protegida] adecuada, verá el cambio en la pantalla y ahora se encuentra en la [!UICONTROL zona protegida] dedicada.
 
 ![Ingesta de datos](./images/sb1.png)
 
-En el menú de la izquierda, vaya a **Audiencias**. En esta página, verá Paneles con información esencial acerca de **Audiencia** rendimiento.
+En el menú de la izquierda, ve a **Audiencias**. En esta página, verá paneles con información esencial sobre el rendimiento de **Audience**.
 
 ![Segmentación](./images/menuseg.png)
 
-Haga clic en **Examinar** para ver una descripción general de todas las audiencias existentes. Haga clic en **+ Crear audiencia** para empezar a crear una audiencia nueva.
+Haz clic en **Examinar** para ver una descripción general de todas las audiencias existentes. Haga clic en el botón **+ Crear audiencia** para comenzar a crear una audiencia nueva.
 
 
 ![Segmentación](./images/segmentationui.png)
 
-Aparecerá una ventana emergente que le preguntará si desea hacerlo **&#39;Componer audiencia&#39;** o **&#39;Generar regla&#39;**. Elegir **&#39;Generar regla&#39;** para continuar y haga clic en **crear**.
+Aparecerá una ventana emergente que le preguntará si desea **&#39;Componer audiencia&#39;** o **&#39;Generar regla&#39;**. Elija **&#39;Generar regla&#39;** para continuar y haga clic en **crear**.
 
 ![Segmentación][def]
 
-Una vez que esté en el generador de audiencias, verá inmediatamente el **Atributos** y la opción **Perfil individual de XDM** Referencia de.
+Una vez que esté en el generador de audiencias, verá inmediatamente la opción de menú **Atributos** y la referencia de **Perfil individual XDM**.
 
 
 Dado que XDM es el lenguaje que potencia el negocio de la experiencia, XDM también es la base del generador de audiencias. Todos los datos que se incorporen en Platform deben asignarse a XDM y, como tales, todos los datos pasan a formar parte del mismo modelo de datos independientemente de dónde provengan. Esto le ofrece una gran ventaja a la hora de crear audiencias, ya que desde esta interfaz de usuario del generador de audiencias puede combinar datos de cualquier origen en el mismo flujo de trabajo. Las audiencias creadas en el Generador de audiencias se pueden enviar a soluciones como Adobe Target, Adobe Campaign o cualquier otro canal de activación.
 
-Ahora debe crear una audiencia de todos los clientes que han visto el producto **Real-Time CDP**.
+Ahora necesita crear una audiencia de todos los clientes que han visto el producto **Real-Time CDP**.
 
-Para crear esta audiencia, debe añadir un Evento de experiencia. Puede encontrar todos los eventos de experiencias haciendo clic en **Eventos** en el menú **Campos** barra de menús.
+Para crear esta audiencia, debe añadir un Evento de experiencia. Puede encontrar todos los eventos de experiencias haciendo clic en el icono **Eventos** en la barra de menús de **Campos**.
 
 ![Segmentación](./images/findee.png)
 
-A continuación, verá el nivel superior, **ExperienceEvents de XDM** nodo. Haga clic en **ExperienceEvent de XDM**.
+A continuación, verá el nodo **XDM ExperienceEvents** de nivel superior. Haga clic en **ExperienceEvent de XDM**.
 
 ![Segmentación](./images/see.png)
 
-Ir a **Elementos de lista de productos**.
+Vaya a **Elementos de lista de productos**.
 
 ![Segmentación](./images/plitems.png)
 
-Seleccionar **Nombre** y arrastre y suelte el **Nombre** del menú de la izquierda al lienzo del generador de audiencias en la **Eventos** sección. A continuación, verá esto:
+Seleccione **Name** y arrastre y suelte el objeto **Name** del menú de la izquierda en el lienzo del generador de audiencias en la sección **Events**. A continuación, verá esto:
 
 ![Segmentación](./images/eewebpdtlname.png)
 
-El parámetro de comparación debe ser **igual a** y en el campo de entrada, introduzca **Real-time CDP**.
+El parámetro de comparación debe ser **igual a** y en el campo de entrada, ingrese **CDP en tiempo real**.
 
 ![Segmentación](./images/pv.png)
 
-Cada vez que añada un elemento al generador de audiencias, puede hacer clic en el **Actualizar estimación** para obtener una nueva estimación de la población de su audiencia.
+Cada vez que añada un elemento al generador de audiencias, puede hacer clic en el botón **Actualizar estimación** para obtener una nueva estimación de la población de su audiencia.
 
 ![Segmentación](./images/refreshest.png)
 
-Como **Método de evaluación**, seleccione **Edge**.
+Como **método de evaluación**, seleccione **Edge**.
 
 ![Segmentación](./images/evedge.png)
 
@@ -82,7 +82,7 @@ Como convención de nombres, utilice:
 
 - `yourLastName - Interest in Real-Time CDP`
 
-A continuación, haga clic en **Guardar y cerrar** para guardar la audiencia.
+A continuación, haga clic en el botón **Guardar y cerrar** para guardar la audiencia.
 
 ![Segmentación](./images/segmentname.png)
 
@@ -92,7 +92,7 @@ Ahora se le redirigirá a la página de información general de audiencia, donde
 
 Ahora puede continuar con el siguiente ejercicio y utilizar la audiencia con Adobe Target.
 
-Paso siguiente: [1.4 Tomar medidas: enviar la audiencia a Adobe Target](./ex4.md)
+Paso siguiente: [1.4 Realizar acción: enviar la audiencia a Adobe Target](./ex4.md)
 
 [Volver al flujo de usuario 1](./uc1.md)
 

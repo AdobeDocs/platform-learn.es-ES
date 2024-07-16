@@ -10,7 +10,7 @@ thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '1103'
+source-wordcount: '1089'
 ht-degree: 0%
 
 ---
@@ -20,24 +20,24 @@ ht-degree: 0%
 <!-- 15min-->
 En esta lección, debe habilitar los esquemas y conjuntos de datos para el Perfil del cliente en tiempo real.
 
-Vale, mentí cuando dije que la lección de los conjuntos de datos era la lección más corta de este tutorial: ¡esta debería tardar aún menos tiempo! Literalmente, todo lo que vas a hacer es dar la vuelta a un montón de toggles. Pero lo que pasa cuando cambias estos toggles es _de verdad_ importante, por lo que quería dedicarle una página entera.
+Vale, mentí cuando dije que la lección de los conjuntos de datos era la lección más corta de este tutorial: ¡esta debería tardar aún menos tiempo! Literalmente, todo lo que vas a hacer es dar la vuelta a un montón de toggles. Pero lo que pasa cuando cambias estos toggles es _realmente_ importante, así que quería dedicarle una página entera.
 
 Con el Perfil del cliente en tiempo real, puede ver una vista integral de cada cliente individual que combina datos de varios canales, incluidos datos en línea, sin conexión, CRM y de terceros. El perfil le permite consolidar los distintos datos de clientes en una vista unificada, lo que ofrece una cuenta procesable con marca de tiempo de cada interacción de clientes.
 
-Tan increíble como todo lo que suena, no es necesario activar *todos los datos* para el perfil. De hecho, solo debe habilitar los datos que necesite para casos de uso de activación. Habilite los datos que desee utilizar para casos de uso de marketing, integraciones de centros de llamadas, etc., en los que necesite un acceso rápido a un perfil de cliente sólido. Si solo carga datos para su análisis, probablemente no debería habilitarse para el perfil.
+Por increíble que suene todo eso, no necesitas activar *todos tus datos* para el perfil. De hecho, solo debe habilitar los datos que necesite para casos de uso de activación. Habilite los datos que desee utilizar para casos de uso de marketing, integraciones de centros de llamadas, etc., en los que necesite un acceso rápido a un perfil de cliente sólido. Si solo carga datos para su análisis, probablemente no debería habilitarse para el perfil.
 
-Hay cosas importantes [protecciones para datos del perfil del cliente en tiempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) que debe revisar al decidir cuál de sus propios datos debe habilitar para el perfil.
+Existen [protecciones importantes para los datos del perfil del cliente en tiempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) que debe revisar al decidir cuáles de sus propios datos debe habilitar para el perfil.
 
 <!--is this accurate. Are there other considerations to point out? -->
 
-**Arquitectos de datos** Necesitará habilitar el Perfil del cliente en tiempo real fuera de este tutorial.
+**Los arquitectos de datos** tendrán que habilitar el perfil del cliente en tiempo real fuera de este tutorial.
 
 Antes de comenzar los ejercicios, vea este breve vídeo para obtener más información acerca del Perfil del cliente en tiempo real:
 >[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on)
 
 ## Permisos necesarios
 
-En el [Configuración de permisos](configure-permissions.md) Esta lección, ha configurado todos los controles de acceso necesarios para completar esta lección.
+En la lección [Configurar permisos](configure-permissions.md), configuró todos los controles de acceso necesarios para completar esta lección.
 
 
 <!--* Permission items **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]** and **[!UICONTROL Manage Schemas]**
@@ -51,16 +51,16 @@ En el [Configuración de permisos](configure-permissions.md) Esta lección, ha c
 
 Empecemos con la sencilla tarea de habilitar un esquema:
 
-1. En la interfaz de usuario de Platform, abra **Esquema de fidelización de Luma**
-1. Entrada **[!UICONTROL Propiedades del esquema]**, cambie el **Perfil** cambiar
-1. En el modal de confirmación, pulse la tecla **[!UICONTROL Activar]** para confirmar
-1. Seleccione el **[!UICONTROL Guardar]** para guardar los cambios
+1. En la interfaz de usuario de Platform, abra el **Esquema de fidelización de Luma**
+1. En **[!UICONTROL Propiedades del esquema]**, alterne el conmutador **Perfil**
+1. En el modal de confirmación, presione el botón **[!UICONTROL Habilitar]** para confirmar
+1. Seleccione el botón **[!UICONTROL Guardar]** para guardar los cambios
 
    >[!IMPORTANT]
    >
    >Una vez que un esquema está habilitado para el perfil, no se puede deshabilitar ni eliminar. Además, los campos no se pueden eliminar del esquema después de este punto. Estas implicaciones son importantes que se deben tener en cuenta más adelante cuando trabaje con sus propios datos en el entorno de producción. Debe utilizar una zona protegida de desarrollo en este tutorial, que se puede eliminar en cualquier momento.
    >
-   >En el entorno controlado de este tutorial, habilitará los esquemas y conjuntos de datos para el perfil, _antes de ingerir datos_. Al trabajar con sus propios datos, le recomendamos que haga las cosas en el siguiente orden:
+   >En el entorno controlado de este tutorial, habilitará los esquemas y conjuntos de datos para el perfil _antes de ingerir datos_. Al trabajar con sus propios datos, le recomendamos que haga las cosas en el siguiente orden:
    >
    > 1. En primer lugar, introduzca algunos datos en los conjuntos de datos.
    > 1. Solucionar cualquier problema que surja durante el proceso de ingesta de datos (por ejemplo, problemas de validación o asignación de datos).
@@ -78,27 +78,27 @@ Fácil, ¿verdad? Repita los pasos anteriores para este otro esquema:
 
 ## Habilitar esquemas para el perfil del cliente en tiempo real mediante la API de Platform
 
-Ahora, es el momento de habilitar el `Luma CRM Schema` con la API de. Si desea omitir este ejercicio y simplemente habilitarlo en la interfaz de usuario, continúe.
+Ahora es el momento de habilitar `Luma CRM Schema` con la API. Si desea omitir este ejercicio y simplemente habilitarlo en la interfaz de usuario, continúe.
 
 ### Obtener el meta:altId del esquema
 
-Primero vamos a por el `meta:altId` de la `Luma CRM Schema`:
+Primero vamos a obtener `meta:altId` de `Luma CRM Schema`:
 
 1. Abrir [!DNL Postman]
-1. Si no tiene un token de acceso, abra la solicitud **[!DNL OAuth: Request Access Token]** y seleccione **Enviar** para solicitar un nuevo token de acceso, como hizo en el [!DNL Postman] lección.
+1. Si no tiene un token de acceso, abra la solicitud **[!DNL OAuth: Request Access Token]** y seleccione **Enviar** para solicitar un nuevo token de acceso, tal como lo hizo en la lección [!DNL Postman].
 1. Abrir la solicitud **[!DNL Schema Registry API > Schemas > Retrieve a list of schemas within the specified container.]**
-1. Seleccione el **Enviar** botón
+1. Seleccione el botón **Enviar**
 1. Deberías obtener una respuesta de 200
-1. Busque en la respuesta de `Luma CRM Schema` y copie el `meta:altId` valor
-   ![Copie el meta:altId](assets/profile-crm-getMetaAltId.png)
+1. Busque la respuesta para el elemento `Luma CRM Schema` y copie el valor `meta:altId`
+   ![Copiar el meta:altId](assets/profile-crm-getMetaAltId.png)
 
 ### Habilitar el esquema
 
 Ahora que tenemos el meta:altId del esquema, podemos habilitarlo para el perfil:
 
 1. Abrir la solicitud **[!DNL Schema Registry API > Schemas > Update one or more attributes of a custom schema specified by ID.]**
-1. En el **Parámetros** pegue su `meta:altId` valor como `SCHEMA_ID` valor de parámetro
-1. En el **Cuerpo** , pegue el siguiente código
+1. En **Params**, pegue su valor `meta:altId` como el valor del parámetro `SCHEMA_ID`
+1. En la ficha **Cuerpo**, pegue el código siguiente
 
    ```json
    [{
@@ -108,12 +108,12 @@ Ahora que tenemos el meta:altId del esquema, podemos habilitarlo para el perfil:
    }]
    ```
 
-1. Seleccione el **Enviar** botón
+1. Seleccione el botón **Enviar**
 1. Deberías obtener una respuesta de 200
 
-   ![Habilite el esquema CRM para el perfil con el meta:altId personalizado utilizado como parámetro SCHEMA_ID](assets/profile-crm-enableProfile.png)
+   ![Habilite el esquema CRM para el perfil con su meta:altId personalizado utilizado como parámetro SCHEMA_ID](assets/profile-crm-enableProfile.png)
 
-Debería poder ver en la interfaz de usuario que los cinco esquemas están habilitados para el perfil (es posible que tenga que MAYÚS-Recargar para verlo) `Luma CRM Schema` está activada):
+Debería poder ver en la interfaz de usuario que los cinco esquemas están habilitados para el perfil (es posible que necesite MAYÚS-Recargar para ver que `Luma CRM Schema` está habilitado):
 ![Todos los esquemas habilitados](assets/profile-allSchemasEnabled.png)
 
 
@@ -122,10 +122,10 @@ Debería poder ver en la interfaz de usuario que los cinco esquemas están habil
 Los conjuntos de datos también deben habilitarse para el perfil y el proceso es aún más sencillo:
 
 1. En la interfaz de usuario de Platform, abra `Luma Loyalty Dataset`
-1. Alternar el **[!UICONTROL Perfil]** cambiar
-1. En el modal de confirmación, pulse la tecla **[!UICONTROL Activar]** para confirmar
+1. Alternar el conmutador **[!UICONTROL Perfil]**
+1. En el modal de confirmación, presione el botón **[!UICONTROL Habilitar]** para confirmar
 
-   ![ Alternancia de perfil](assets/profile-loyalty-enableDataset.png)
+   ![ cambio de perfil](assets/profile-loyalty-enableDataset.png)
 
 Repita los pasos anteriores para estos otros conjuntos de datos:
 
@@ -143,14 +143,14 @@ Ahora habilitará un conjunto de datos para el perfil mediante la API. De nuevo,
 
 ### Obtener el ID del conjunto de datos
 
-Primero tenemos que conseguir el `id` de la `Luma CRM Dataset`:
+Primero necesitamos obtener `id` de `Luma CRM Dataset`:
 
 1. Abrir [!DNL Postman]
-1. Si no tiene un token de acceso, abra la solicitud **[!DNL OAuth: Request Access Token]** y seleccione **Enviar** para solicitar un nuevo token de acceso, como hizo en el [!DNL Postman] lección.
+1. Si no tiene un token de acceso, abra la solicitud **[!DNL OAuth: Request Access Token]** y seleccione **Enviar** para solicitar un nuevo token de acceso, tal como lo hizo en la lección [!DNL Postman].
 1. Abrir la solicitud **[!DNL Catalog Service API > Datasets > Retrieve a list of datasets.]**
-1. Seleccione el **Enviar** botón
+1. Seleccione el botón **Enviar**
 1. Deberías obtener una respuesta de 200
-1. Busque en la respuesta de `Luma CRM Dataset` y copie el id:
+1. Busque la respuesta para el elemento `Luma CRM Dataset` y copie el ID:
    ![Copiar el ID](assets/profile-crm-copyDatasetId.png)
 
 ### Habilitar el conjunto de datos
@@ -158,8 +158,8 @@ Primero tenemos que conseguir el `id` de la `Luma CRM Dataset`:
 Ahora que tenemos el ID del conjunto de datos, podemos habilitarlo para el perfil:
 
 1. Abrir la solicitud **[!DNL Catalog Service API > Datasets > Update one or more attributes of a dataset specified by ID.]**
-1. En el **Parámetros** actualice el `DATASET_ID` valor para los suyos propios
-1. En el **Cuerpo** , pegue el siguiente código. Tenga en cuenta que los dos primeros valores son etiquetas preexistentes visibles en la respuesta anterior. Deben incluirse en el cuerpo, además de las dos nuevas etiquetas que estamos añadiendo:
+1. En **Params**, actualice el valor `DATASET_ID` por el suyo propio
+1. En la ficha **Cuerpo**, pegue el siguiente código. Tenga en cuenta que los dos primeros valores son etiquetas preexistentes visibles en la respuesta anterior. Deben incluirse en el cuerpo, además de las dos nuevas etiquetas que estamos añadiendo:
 
    ```json
    {
@@ -172,10 +172,10 @@ Ahora que tenemos el ID del conjunto de datos, podemos habilitarlo para el perfi
    }
    ```
 
-1. Seleccione el **Enviar** botón
+1. Seleccione el botón **Enviar**
 1. Deberías obtener una respuesta de 200
 
-   ![Habilite el conjunto de datos CRM para el perfil, asegurándose de utilizar su ID de conjunto de datos personalizado como parámetro DATASET_ID](assets/profile-crm-enableDataset.png)
+   ![Habilite el conjunto de datos CRM para el perfil, asegurándose de usar su ID de conjunto de datos personalizado como parámetro DATASET_ID](assets/profile-crm-enableDataset.png)
 
 También puede confirmar que la interfaz de usuario muestra el conjunto de datos habilitado:
 ![Confirmar](assets/profile-crm-confirmEnabled.png)
@@ -186,9 +186,9 @@ También puede confirmar que la interfaz de usuario muestra el conjunto de datos
 
 ## Recursos adicionales
 
-* [Documentación del Perfil del cliente en tiempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=es)
+* [Documentación del perfil del cliente en tiempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=es)
 * [Referencia de la API del perfil del cliente en tiempo real](https://www.adobe.io/experience-platform-apis/references/profile/)
 
 
-**Ingenieros de datos** debe continuar a la [Suscripción a eventos de ingesta de datos](subscribe-to-data-ingestion-events.md) lección.
-**Arquitectos de datos** _puede saltarse adelante_ y vaya a la [lección de ingesta por lotes](ingest-batch-data.md).
+**Los ingenieros de datos** deben continuar con la lección [Suscribirse a eventos de ingesta de datos](subscribe-to-data-ingestion-events.md).
+**Los arquitectos de datos** _pueden pasar por alto_ e ir a la [lección de ingesta por lotes](ingest-batch-data.md).

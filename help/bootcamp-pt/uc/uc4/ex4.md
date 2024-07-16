@@ -11,8 +11,8 @@ feature: Workspace Basics, Calculated Metrics
 exl-id: d56128af-dd1e-47ea-922f-85418e9da687
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 1%
+source-wordcount: '808'
+ht-degree: 0%
 
 ---
 
@@ -38,11 +38,11 @@ Se você nunca usou o Analysis Workspace antes, se habla en inglés, se habla en
 
 ### Proyecto Crie Seu
 
-Agora é hora de criar seu primeiro projeto do CJA. Vá para a aba de projetos dentro do CJA. Clique em **Crear nuevo**.
+Agora é hora de criar seu primeiro projeto do CJA. Vá para a aba de projetos dentro do CJA. Haga clic en **Crear nuevo**.
 
 ![demostración](./images/prmenu.png)
 
-Em, el você va a tela abaixo. Selecione **Proyecto en blanco** então clique em **Crear**.
+Em, el você va a tela abaixo. Seleccione **Proyecto en blanco** ficha **Crear**.
 
 ![demostración](./images/prmenu1.png)
 
@@ -50,16 +50,16 @@ Você verá um projeto vazio.
 
 ![demostración](./images/premptyprojects.png)
 
-Primeiro, certifique-se de selecionar a Visualização de dados correta no canto superior direito da tela. Neste ejemplo, a Visualização de dados a ser selecionada é `vangeluwe - Omnichannel Data View`.
+Primeiro, certifique-se de selecionar a Visualização de dados correta no canto superior direito da tela. Neste ejemplo, a Visualização de dados a ser selecionado é `vangeluwe - Omnichannel Data View`.
 
 ![demostración](./images/prdv.png)
 
 Em, você va a salvar el proyecto de dar un nombre a otro. Você pode usar o seguinte comando para salvar:
 
-| SO | Método abreviado |
+| Sistema operativo | Método abreviado |
 | ----------------- |-------------| 
 | Windows | Control + S |
-| Mac | Comando +S |
+| Mac | Comando + S |
 
 Você verá este pop-up:
 
@@ -71,7 +71,7 @@ Utiliza este modelo de nomenclatura:
 | ----------------- |-------------| 
 | `yourLastName - Omnichannel Analysis` | `yourLastName - Omnichannel Analysis` |
 
-Em, grupo em **Guardar**.
+Em, grupo **Guardar**.
 
 ![demostración](./images/prsave2.png)
 
@@ -83,23 +83,23 @@ Como ejemplo, criaremos uma Taxa de conversão calculada usando una métrica/eve
 
 ## Taxa de conversación
 
-Vamos começar a abrir o construtor de métricas calculadas. Clique em **+** para criar sua primeira Métrica calculada en Analysis Workspace.
+Vamos começar a abrir o construtor de métricas calculadas. Clique em **+** para criar sua primeira Métrica calculada en Analysis Workspace.
 
 ![demostración](./images/pradd.png)
 
-O **Creador de métricas calculadas** va a hacer lo siguiente:
+O **Creador De Métricas Calculadas**:
 
 ![demostración](./images/prbuilder.png)
 
-Encontrar **Compras** una lista de métricas no menu do lado esquerdo. Em **Métricas** círculo em **Mostrar todo**
+Encontre **Purchases** na lista de indicadores no menu do lado esquerdo. Em **Métricas** grupo em **Mostrar todo**
 
 ![demostración](./images/calcbuildercr1.png)
 
-Agora arraste e solte a métrica **Compras** Una definición de la métrica calculada.
+Agora arraste e solte a métrica **Compras** na definição da métrica calculada.
 
 ![demostración](./images/calcbuildercr2.png)
 
-, taxa de conversación significa **Conversiones/Sesiones**. Então, vamos fazer o mesmo calculada... Encontrar una métrica **Sesiones** No hay ningún criador de definición, no hay evento **Compras**.
+, taxa de conversación significa **Conversiones / Sesiones**. Então, vamos fazer o mesmo calculada... Encontre a métrica **Sessions** e arraste e solte-a no criador de definição, no evento **Purchases**.
 
 ![demostración](./images/calcbuildercr3.png)
 
@@ -127,9 +127,9 @@ Não se esqueça de **Salvar** a Métrica calculada.
 
 ## 4.4.3 Dimensiones calculadas: Filtros (segmentação) e intervalos de datos
 
-### Filtros: Cosas que hacer cerca
+### Filtros: Dimensões calculadas
 
-No hay nada que ver con el resto de los. Antes de iniciar el análisis, também é interessante criar algumas **Dimension calculados**. Isso significa, esencialmente, **segmentos** no hay Adobe Analytics. No hay Customer Journey Analytics, no hay **Filtros**.
+No hay nada que ver con el resto de los. Antes de iniciar qualquer análise, também é interessante criar algumas **Dimension calculados**. Esto significa, esencialmente, **segmentos** en Adobe Analytics. No hay Customer Journey Analytics, los segmentos de los **Filtros**.
 
 ![demostración](./images/prfilters.png)
 

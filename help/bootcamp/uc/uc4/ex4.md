@@ -11,8 +11,8 @@ feature: Workspace Basics, Calculated Metrics
 exl-id: 6a9fc1a4-9a6a-43f2-9393-815f9dc2cb4e
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 9%
+source-wordcount: '768'
+ht-degree: 1%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 9%
 
 ## 4.4.1 IU de Analysis Workspace en CJA
 
-Analysis Workspace elimina todas las limitaciones típicas de un único informe de Analytics. Proporciona un lienzo flexible y robusto para la creación de proyectos de análisis personalizados. Arrastre y suelte cualquier número de tablas de datos, visualizaciones y componentes (dimensiones, métricas, segmentos y granularidades de tiempo) en un proyecto. Cree de forma instantánea desgloses y segmentos, cohortes para análisis y alertas, compare segmentos, realice análisis de flujo y visitas en el orden previsto, y revise y programe informes para compartir con cualquier persona de su empresa.
+Analysis Workspace elimina todas las limitaciones típicas de un solo informe de Analytics. Proporciona un lienzo flexible y robusto para la creación de proyectos de análisis personalizados. Arrastre y suelte cualquier número de tablas de datos, visualizaciones y componentes (dimensiones, métricas, segmentos y granularidades de tiempo) en un proyecto. Cree de forma instantánea desgloses y segmentos, cohortes para análisis y alertas, compare segmentos, realice análisis de flujo y visitas en el orden previsto, y revise y programe informes para compartir con cualquier persona de su empresa.
 
 Customer Journey Analytics lleva esta solución sobre los datos de Platform. Recomendamos encarecidamente ver este vídeo de información general de cuatro minutos:
 
@@ -43,7 +43,7 @@ Haga clic en **Crear nuevo**.
 
 ![demostración](./images/prmenu.png)
 
-Entonces verá esto... Seleccionar **Proyecto en blanco** y luego haga clic en **Crear**.
+Entonces verá esto... Seleccione **Proyecto en blanco** y haga clic en **Crear**.
 
 ![demostración](./images/prmenu1.png)
 
@@ -55,10 +55,10 @@ En primer lugar, asegúrese de seleccionar la Vista de datos correcta en la esqu
 
 A continuación, guarde el proyecto y asígnele un nombre. Puede utilizar el siguiente comando para guardar:
 
-| SO | Método abreviado |
+| Sistema operativo | Método abreviado |
 | ----------------- |-------------| 
 | Windows | Control + S |
-| Mac | Comando +S |
+| Mac | Comando + S |
 
 Verá esta ventana emergente:
 
@@ -78,27 +78,27 @@ A continuación, haga clic en **Guardar**.
 
 Aunque hemos organizado todos los componentes de la vista de datos, aún necesita adaptar algunos de ellos para que los usuarios empresariales estén listos para iniciar el análisis. Además, durante cualquier análisis, puede crear una métrica calculada para profundizar en la búsqueda de perspectivas.
 
-A modo de ejemplo, crearemos un **Tasa de conversión** uso del **Compras** métrica o evento que definimos en la vista de datos.
+Por ejemplo, crearemos una **tasa de conversión** calculada con la métrica o el evento **Compras** que definimos en la vista de datos.
 
 ### Tasa de conversión
 
-Empecemos a abrir el creador de métricas calculadas. Haga clic en **+** para crear la primera métrica calculada en Analysis Workspace.
+Empecemos a abrir el creador de métricas calculadas. Haga clic en **+** para crear su primera métrica calculada en Analysis Workspace.
 
 ![demostración](./images/pradd.png)
 
-El **Creador de métricas calculadas** se mostrará:
+Se mostrará **Creador de métricas calculadas**:
 
 ![demostración](./images/prbuilder.png)
 
-Busque el **Compras** en la lista de Métricas, en el menú de la izquierda. En **Métricas** click **Mostrar todo**
+Busque **Compras** en la lista de Métricas del menú del lado izquierdo. En **Métricas** haga clic en **Mostrar todo**
 
 ![demostración](./images/calcbuildercr1.png)
 
-Ahora arrastre y suelte el **Compras** métrica en a la definición de métrica calculada.
+Ahora arrastre y suelte la métrica **Compras** en la definición de métrica calculada.
 
 ![demostración](./images/calcbuildercr2.png)
 
-Normalmente, la tasa de conversión significa que **Conversiones/Sesiones**. Hagamos el mismo cálculo en el lienzo de definición de métrica calculada. Busque el **Sesiones** y arrástrela y suéltela en el generador de definiciones, bajo el icono **Compras** evento.
+Normalmente, la tasa de conversión significa **Conversiones / Sesiones**. Hagamos el mismo cálculo en el lienzo de definición de métrica calculada. Busque la métrica **Sesiones**, arrástrela y suéltela en el generador de definiciones, en el evento **Compras**.
 
 ![demostración](./images/calcbuildercr3.png)
 
@@ -120,7 +120,7 @@ Aparecerá algo similar a esto en la pantalla:
 
 ![demostración](./images/calcbuildercr6.png)
 
-No te olvides de **Guardar** la Métrica calculada.
+No olvides **guardar** la métrica calculada.
 
 ![demostración](./images/pr9.png)
 
@@ -128,7 +128,7 @@ No te olvides de **Guardar** la Métrica calculada.
 
 ### Filtros: Dimension calculados
 
-Los cálculos no están pensados para ser solo para métricas. Antes de comenzar cualquier análisis, también es interesante crear algunos **Dimension calculados**. Esto básicamente significaba **segmentos** de nuevo en Adobe Analytics. En Customer Journey Analytics, estos segmentos se denominan **Filtros**.
+Los cálculos no están pensados para ser solo para métricas. Antes de comenzar cualquier análisis, también es interesante crear **Dimension calculados**. Básicamente, esto significaba **segmentos** de nuevo en Adobe Analytics. En Customer Journey Analytics, estos segmentos se denominan **Filters**.
 
 ![demostración](./images/prfilters.png)
 
@@ -154,7 +154,7 @@ En estos Dimension de tiempo calculado, ayudaremos a los analistas y usuarios em
 
 Ya ha finalizado el ejercicio de preparación de datos con CJA Analysis Workspace.
 
-Paso siguiente: [4.5 Visualización con el Customer Journey Analytics](./ex5.md)
+Siguiente paso: [4.5 visualización con el Customer Journey Analytics](./ex5.md)
 
 [Volver al flujo de usuario 4](./uc4.md)
 

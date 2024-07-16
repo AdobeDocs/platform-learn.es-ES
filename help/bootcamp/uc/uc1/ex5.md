@@ -20,31 +20,31 @@ Ir a [Adobe Experience Platform](https://experience.adobe.com/platform). Despué
 
 ![Ingesta de datos](./images/home.png)
 
-Antes de continuar, debe seleccionar un **espacio aislado**. La zona protegida que se va a seleccionar se denomina ``Bootcamp``. Para ello, haga clic en el texto **[!UICONTROL Producción de producción]** en la línea azul de la parte superior de la pantalla. Después de seleccionar las [!UICONTROL espacio aislado], verá el cambio de pantalla y ahora estará en su dedicado [!UICONTROL espacio aislado].
+Antes de continuar, debe seleccionar una **zona protegida**. La zona protegida que se va a seleccionar se denomina ``Bootcamp``. Para ello, haga clic en el texto **[!UICONTROL Producción]** en la línea azul de la parte superior de la pantalla. Después de seleccionar la [!UICONTROL zona protegida] adecuada, verá el cambio en la pantalla y ahora se encuentra en la [!UICONTROL zona protegida] dedicada.
 
 ![Ingesta de datos](./images/sb1.png)
 
-En el menú de la izquierda, vaya a **Destinos**, luego vaya a **Catálogo**. A continuación, verá el **Catálogo de destinos**. Entrada **Destinos**, haga clic en **Activar audiencias** en el **Audiencia personalizada de facebook** Tarjeta de.
+En el menú de la izquierda, ve a **Destinos** y luego ve a **Catálogo**. Verá el **Catálogo de destinos**. En **Destinos**, haga clic en **Activar audiencias** en la tarjeta **Audiencia personalizada de Facebook**.
 
 ![RTCDP](./images/rtcdpgoogleseg.png)
 
-Seleccionar el destino **bootcamp-facebook** y haga clic en **Siguiente**.
+Seleccione el destino **bootcamp-facebook** y haga clic en **Siguiente**.
 
 ![RTCDP](./images/rtcdpcreatedest2.png)
 
-En la lista de audiencias disponibles, seleccione la audiencia que creó en el ejercicio anterior. Haga clic en **Siguiente**.
+En la lista de audiencias disponibles, seleccione la audiencia que creó en el ejercicio anterior. Haga clic en **Next**.
 
 ![RTCDP](./images/rtcdpcreatedest3.png)
 
-En el **Asignación** , asegúrese de que la variable **Aplicar transformación** La casilla de verificación está activada. Haga clic en **Siguiente**.
+En la página **Asignación**, asegúrese de que la casilla de verificación **Aplicar transformación** esté habilitada. Haga clic en **Next**.
 
 ![RTCDP](./images/rtcdpcreatedest4a.png)
 
-En el **Programación de audiencias** , seleccione la **Origen de la audiencia** y configúrelo en **Directamente de los clientes**. Haga clic en **Siguiente**.
+En la página **Programación de audiencias**, seleccione **Origen de su audiencia** y configúrelo en **Directamente de los clientes**. Haga clic en **Next**.
 
 ![RTCDP](./images/rtcdpcreatedest4.png)
 
-Por último, en la **Revisar** página, haga clic en **Finalizar**.
+Por último, en la página **Revisar**, haga clic en **Finalizar**.
 
 ![RTCDP](./images/rtcdpcreatedest5.png)
 

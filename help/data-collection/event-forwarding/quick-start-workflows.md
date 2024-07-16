@@ -6,10 +6,11 @@ level: Intermediate
 doc-type: Technical Video
 last-substantial-update: 2023-09-21T00:00:00Z
 jira: KT-13957
-source-git-commit: fd9ef1bfeea139dbb83d00f6ad4538524a7d00bc
+exl-id: ac4fd395-f44f-4c4a-b3a2-7a951e305dd5
+source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 12%
+source-wordcount: '88'
+ht-degree: 1%
 
 ---
 
@@ -24,6 +25,3 @@ Este vídeo muestra a los usuarios dos casos de uso avanzados para sacar el máx
 Para obtener más información sobre el flujo de trabajo de inicio rápido de la API de metaconversiones, visite [la documentación](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/server/meta/overview.html?lang=es#quick-start).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424501?learn=on)
-
-
-

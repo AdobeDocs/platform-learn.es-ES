@@ -15,7 +15,7 @@ ht-degree: 8%
 
 Obtenga información sobre cómo configurar una secuencia de datos para el SDK web de Adobe Experience Platform.
 
-[Datastreams](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) indique al Edge Network de Adobe Experience Platform dónde enviar los datos recopilados por el SDK web de Platform. En la configuración de flujos de datos, se habilitan las aplicaciones de Experience Cloud, la cuenta de Experience Platform y el reenvío de eventos.
+[Datastreams](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) indica al Edge Network de Adobe Experience Platform dónde enviar los datos recopilados por el SDK web de Platform. En la configuración de flujos de datos, se habilitan las aplicaciones de Experience Cloud, la cuenta de Experience Platform y el reenvío de eventos.
 
 ![SDK web, flujos de datos y diagrama de Edge Network](assets/dc-websdk-datastreams.png)
 
@@ -39,25 +39,25 @@ Ahora puede crear un flujo de datos para indicar a Platform Edge Network dónde 
 
 **Para crear una secuencia de datos:**
 
-1. Abra el [Interfaz de recopilación de datos](https://launch.adobe.com/){target="_blank"}
+1. Abrir la [interfaz de recopilación de datos](https://launch.adobe.com/){target="_blank"}
 1. Asegúrese de que está en la zona protegida correcta
 
    >[!NOTE]
    >
-   >Si es cliente de una aplicación basada en Platform como Real-Time CDP o Journey Optimizer, le recomendamos que utilice una zona protegida de desarrollo para este tutorial. Si no lo está, use el **[!UICONTROL Prod]** zona protegida.
+   >Si es cliente de una aplicación basada en Platform como Real-Time CDP o Journey Optimizer, le recomendamos que utilice una zona protegida de desarrollo para este tutorial. Si no lo está, use la zona protegida **[!UICONTROL Prod]**.
 
-1. Ir a **[!UICONTROL Datastreams]** en el panel de navegación izquierdo
+1. Vaya a **[!UICONTROL Datastreams]** en el panel de navegación izquierdo
 1. Seleccionar **[!UICONTROL Nueva secuencia de datos]**
-1. Entrar `Luma Web SDK: Development Environment` como el **[!UICONTROL Nombre]**. Se hace referencia a este nombre más adelante al configurar la extensión del SDK web en la propiedad de etiquetas.
+1. Escriba `Luma Web SDK: Development Environment` como **[!UICONTROL Nombre]**. Se hace referencia a este nombre más adelante al configurar la extensión del SDK web en la propiedad de etiquetas.
 1. Seleccionar **[!UICONTROL Guardar]**
 
-   ![Creación de la secuencia de datos](assets/datastream-create-new-datastream.png)
+   ![Crear la secuencia de datos](assets/datastream-create-new-datastream.png)
 
    >[!NOTE]
    >
-   >No es necesario que seleccione un esquema. La selección de un esquema solo es necesaria si utiliza [Preparación de datos para la recopilación de datos](/help/data-collection/edge/data-prep.md) función.
+   >No es necesario que seleccione un esquema. La selección de esquemas solo es necesaria si usa la característica [Preparación de datos para la recopilación de datos](/help/data-collection/edge/data-prep.md).
 
-En la siguiente pantalla, puede agregar servicios como aplicaciones de Adobe al conjunto de datos, pero no agregará ningún servicio en este punto. Lo hará más adelante en las lecciones [Configurar Experience Platform](setup-experience-platform.md), [Configuración de Analytics](setup-analytics.md), [Configurar Audience Manager](setup-audience-manager.md), [Configurar Target](setup-target.md), o [Reenvío de eventos](setup-event-forwarding.md).
+En la siguiente pantalla, puede agregar servicios como aplicaciones de Adobe al conjunto de datos, pero no agregará ningún servicio en este punto. Lo hará más adelante en las lecciones [Configurar Experience Platform](setup-experience-platform.md), [Configurar Analytics](setup-analytics.md), [Configurar Audience Manager](setup-audience-manager.md), [Configurar destino](setup-target.md) o [Reenvío de eventos](setup-event-forwarding.md).
 
 >[!NOTE]
 >
@@ -65,14 +65,14 @@ En la siguiente pantalla, puede agregar servicios como aplicaciones de Adobe al 
 
 ## Anular una secuencia de datos
 
-[Anulaciones de flujo de datos](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides) permite definir configuraciones adicionales para el conjunto de datos y, a continuación, anular la configuración predeterminada en determinadas condiciones.
+[Anulaciones de secuencia de datos](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides) le permiten definir configuraciones adicionales para su secuencia de datos y luego anular la configuración predeterminada en ciertas condiciones.
 
 La anulación de la configuración del flujo de datos es un proceso de dos pasos:
 
 1. En primer lugar, defina las anulaciones de flujos de datos en la configuración del servicio de flujos de datos. Por ejemplo, puede definir grupos de informes de Analytics, espacios de trabajo de Target o conjuntos de datos de Platform alternativos para utilizarlos como invalidaciones.
 1. A continuación, envíe las invalidaciones al Edge Network mediante una acción de evento de envío del SDK web o mediante una configuración en la extensión de etiqueta del SDK web.
 
-En el [Configuración de Adobe Analytics](setup-analytics.md) En esta lección, se anula el grupo de informes de una página mediante la acción de evento de envío del SDK web de Platform.
+En la lección [Configurar Adobe Analytics](setup-analytics.md), reemplaza el grupo de informes de una página mediante la acción Enviar evento del SDK web de Platform.
 
 Ya está listo para instalar la extensión del SDK web de Platform en su propiedad de etiquetas.
 
@@ -80,4 +80,4 @@ Ya está listo para instalar la extensión del SDK web de Platform en su propied
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer el SDK web de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Gracias por dedicar su tiempo a conocer el SDK web de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

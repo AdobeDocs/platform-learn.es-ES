@@ -16,6 +16,6 @@ ht-degree: 34%
 
 # Uso de entornos de etiquetas y códigos incrustados
 
-Aprenda a utilizar entornos de desarrollo, ensayo y producción, así como códigos incrustados, para desarrollar y validar su propiedad de etiquetas. Para obtener más información, consulte la [entornos](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=es) documentación.
+Aprenda a utilizar entornos de desarrollo, ensayo y producción, así como códigos incrustados, para desarrollar y validar su propiedad de etiquetas. Para obtener más información, consulte la documentación de [entornos](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=es).
 
 >[!VIDEO](https://video.tv.adobe.com/v/28729/?learn=on)

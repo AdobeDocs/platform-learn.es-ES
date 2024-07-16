@@ -68,17 +68,17 @@ Antes de comenzar los próximos ejercicios, es clave comprender qué pasos son n
 
 Antes de comenzar los pasos anteriores, no se olvide del paso 0, que es comprender los datos disponibles en Adobe Experience Platform.
 
-**La basura entra, la basura sale.** ¿Recuerdas? Debe tener una idea clara de qué datos están disponibles y cómo se configuran los esquemas en Adobe Experience Platform. Comprender los datos que se encuentran en Adobe Experience Platform facilitará las cosas, no solo en la parte de conexión de datos, sino también al crear visualizaciones y realizar análisis.
+**basura entra, basura sale.** ¿Se acuerda? Debe tener una idea clara de qué datos están disponibles y cómo se configuran los esquemas en Adobe Experience Platform. Comprender los datos que se encuentran en Adobe Experience Platform facilitará las cosas, no solo en la parte de conexión de datos, sino también al crear visualizaciones y realizar análisis.
 
 ## 4.1.5 Paso 0: Comprender los esquemas y conjuntos de datos de Adobe Experience Platform
 
-Inicie sesión en Adobe Experience Platform desde esta URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
+Inicie sesión en Adobe Experience Platform desde esta dirección URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
 Después de iniciar sesión, llegará a la página principal de Adobe Experience Platform.
 
 ![Ingesta de datos](../uc1/images/home.png)
 
-Antes de continuar, debe seleccionar un **espacio aislado**. La zona protegida que se va a seleccionar se denomina ``Bootcamp``. Para ello, haga clic en el texto **[!UICONTROL Prod]** en la esquina superior derecha de la pantalla. Después de seleccionar la zona protegida adecuada, verá que la pantalla cambia y ahora está en la zona protegida dedicada.
+Antes de continuar, debe seleccionar una **zona protegida**. La zona protegida que se va a seleccionar se denomina ``Bootcamp``. Para ello, haga clic en el texto **[!UICONTROL Prod]** en la esquina superior derecha de la pantalla. Después de seleccionar la zona protegida adecuada, verá que la pantalla cambia y ahora está en la zona protegida dedicada.
 
 ![Ingesta de datos](../uc1/images/sb1.png)
 
@@ -93,19 +93,19 @@ Eche un vistazo a estos esquemas y conjuntos de datos en Adobe Experience Platfo
 Asegúrese de haber comprobado cosas como las siguientes:
 
 - Identidades: CRMID, phoneNumber, ECID, correo electrónico. ¿Qué identidades son los identificadores principales y cuáles son los identificadores secundarios?
-Puede encontrar los identificadores abriendo un esquema y mirando el objeto `_experienceplatform.identification.core`. Eche un vistazo al esquema [Sistema de demostración: Esquema de eventos para el sitio web (Global v1.1)](https://experience.adobe.com/platform/schema).
+Puede encontrar los identificadores abriendo un esquema y mirando el objeto `_experienceplatform.identification.core`. Eche un vistazo al esquema [Sistema de demostración: esquema de eventos para el sitio web (Global v1.1)](https://experience.adobe.com/platform/schema).
 
 ![demostración](./images/identity.png)
 
-- Explorar el objeto de comercio dentro del esquema [Sistema de demostración: Esquema de eventos para el sitio web (Global v1.1)](https://experience.adobe.com/platform/schema).
+- Explore el objeto de comercio dentro del esquema [Sistema de demostración: esquema de eventos para el sitio web (Global v1.1)](https://experience.adobe.com/platform/schema).
 
 ![demostración](./images/commerce.png)
 
-- Previsualice todos los [conjuntos de datos](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created) y echar un vistazo a los datos
+- Obtenga una vista previa de todos los [conjuntos de datos](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created) y observe los datos
 
 Ya está listo para empezar a utilizar la interfaz de usuario de Customer Journey Analytics.
 
-Paso siguiente: [4.2 Conectar conjuntos de datos de Adobe Experience Platform en Customer Journey Analytics](./ex2.md)
+Paso siguiente: [4.2 Conexión de conjuntos de datos de Adobe Experience Platform en Customer Journey Analytics](./ex2.md)
 
 [Volver al flujo de usuario 4](./uc4.md)
 

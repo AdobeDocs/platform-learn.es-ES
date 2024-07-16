@@ -26,9 +26,9 @@ _Introducción a Adobe Experience Platform para arquitectos e ingenieros de dato
 
 ## Objetivos de aprendizaje
 
-Los arquitectos de datos y los ingenieros de datos deben colaborar estrechamente para que la implementación de Experience Platform se realice correctamente. Este tutorial práctico le enseña las tareas clave ejecutadas por _ambas funciones_ para que sepa cómo empezar a implementar Platform para su propio negocio. Se le guiará a través de ejercicios que le presentarán la terminología, las funciones, la interfaz y las API clave de Experience Platform. Los clientes de aplicaciones de Adobe Experience Cloud como Real-time Customer Data Platform, Customer Journey Analytics y Journey Optimizer también encontrarán útil este contenido, ya que los servicios de Platform son fundamentos críticos de dichas aplicaciones.
+Los arquitectos de datos y los ingenieros de datos deben colaborar estrechamente para que la implementación de Experience Platform se realice correctamente. Este tutorial práctico le enseña las tareas clave ejecutadas por _ambos roles_ para que sepa cómo empezar a implementar Platform para su propio negocio. Se le guiará a través de ejercicios que le presentarán la terminología, las funciones, la interfaz y las API clave de Experience Platform. Los clientes de aplicaciones de Adobe Experience Cloud como Real-time Customer Data Platform, Customer Journey Analytics y Journey Optimizer también encontrarán útil este contenido, ya que los servicios de Platform son fundamentos críticos de dichas aplicaciones.
 
-![La arquitectura de marketing de Adobe Experience Cloud destaca los servicios de Platform que se tratan en este tutorial: identidad, perfil, segmentación, ingesta, consulta y administración](assets/marketecture.png)
+![Marketing de Adobe Experience Cloud que resalta los servicios de plataforma que se tratan en este tutorial: Identidad, Perfil, Segmentación, Ingesta, Consulta y Administración](assets/marketecture.png)
 
 Los temas incluyen:
 
@@ -48,9 +48,9 @@ Adobe Experience Platform es una plataforma técnica diseñada para ayudarle a l
 
 ## Requisitos previos
 
-* Ha completado la [Curso de introducción a Adobe Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1&amp;lang=es) en el Experience League y estén familiarizados con las funcionalidades de Platform
+* Ha completado el curso [Introducción a Adobe Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1&amp;lang=es) en Experience League y está familiarizado con las funcionalidades de Platform
 * Tiene acceso a una cuenta aprovisionada con Adobe Experience Platform (o una aplicación basada en Platform, como Real-Time CDP o Journey Optimizer) y a la recopilación de datos (anteriormente Launch).
-* Usted es administrador del sistema de esa cuenta o puede tener una [configurar permisos de usuario](configure-permissions.md) para usted.
+* Usted es administrador del sistema de esa cuenta o puede tener [configurar permisos de usuario](configure-permissions.md) para usted.
 
 ## Uso de este tutorial
 
@@ -58,7 +58,7 @@ Este tutorial combina tareas para ingenieros y arquitectos de datos. Como es un 
 
 A medida que crea varios elementos de Platform durante este tutorial, intente adherirse a los nombres que recomiendo en la medida de lo posible. Sin embargo, hay algunos nombres de elementos de alto nivel que puede que desee personalizar en caso de que haya varias personas en su organización que realicen este tutorial simultáneamente. Por ejemplo, es posible que desee asignar el nombre &quot;Plataforma de tutorial de Luma: Ignatius J Reilly&quot; a la zona protegida de Platform en lugar de &quot;Plataforma de tutorial de Luma&quot;.
 
-Si se queda atascado, intente volver a leer las instrucciones primero y, a continuación, utilice el ![Registrar un problema](https://experienceleague.adobe.com/assets/img/feedback.svg) en la barra lateral de cada página para ponerse en contacto conmigo.
+Si se queda atascado, intente volver a leer las instrucciones primero y, a continuación, utilice el vínculo ![Registrar un problema](https://experienceleague.adobe.com/assets/img/feedback.svg) de la barra lateral de cada página para ponerse en contacto conmigo.
 
 ## Notas técnicas
 
@@ -68,7 +68,7 @@ En el tutorial, creará un entorno de zona protegida y lo utilizará para comple
 
 ### API
 
-Platform se crea primero según la API. Aunque los flujos de trabajo de la interfaz existen para todos los flujos de trabajo de plataforma principales y se utilizarán principalmente, el tutorial contiene algunos ejercicios orientados a la API. Le guiaré a través de la configuración básica del proyecto en la consola de Adobe Developer y le proporcionaré lo siguiente [!DNL Postman] Entornos y colecciones para empezar a usar la API de Platform. Después de completar el tutorial, puede que le resulte útil familiarizarse con la API de Platform y utilizarla en su propia implementación.
+Platform se crea primero según la API. Aunque los flujos de trabajo de la interfaz existen para todos los flujos de trabajo de plataforma principales y se utilizarán principalmente, el tutorial contiene algunos ejercicios orientados a la API. Le guiaré a través de la configuración básica del proyecto en Adobe Developer Console y le proporcionaré [!DNL Postman] entornos y colecciones para empezar a usar la API de Platform. Después de completar el tutorial, puede que le resulte útil familiarizarse con la API de Platform y utilizarla en su propia implementación.
 
 ### Tecnologías de terceros
 
@@ -79,4 +79,4 @@ Aunque utilizará varias tecnologías en este tutorial, permanecerá casi comple
 * Junio de 2023: actualizado para incluir un nuevo flujo de trabajo de permisos y para utilizar la credencial de la API de servidor a servidor OAuth
 
 
-Ahora pasemos a la primera lección...[configuración de permisos](configure-permissions.md).
+Ahora pasemos a la primera lección: [configurar permisos](configure-permissions.md).

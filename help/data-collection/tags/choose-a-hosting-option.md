@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Elija una opción de alojamiento
 
-Aprenda a elegir la mejor opción de alojamiento para su biblioteca de etiquetas. Para obtener más información, consulte la [hosts](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/hosts/hosts-overview.html) documentación.
+Aprenda a elegir la mejor opción de alojamiento para su biblioteca de etiquetas. Para obtener más información, consulte la documentación de [hosts](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/hosts/hosts-overview.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/28728/?learn=on)

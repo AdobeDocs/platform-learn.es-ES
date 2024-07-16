@@ -1,49 +1,50 @@
 ---
-title: Bootcamp de la cadena de suministro de contenido de Experience Manager
+title: Experience Makers Content Supply Chain Bootcamp
 description: Punto de partida para los participantes del Bootcamp de la cadena de suministro de contenido de Experience Makers
 doc-type: multipage-overview
-source-git-commit: 989e4e2add1d45571462eccaeebcbe66a77291db
+exl-id: df80423b-f9cf-4e92-a3e9-427c0f07ebc8
+source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
 
-# Bootcamp de la cadena de suministro de contenido de Experience Manager
+# Experience Makers Content Supply Chain Bootcamp
 
 ## Información general
 
-El mundo es ahora digital primero. Es una realidad que las empresas se han visto obligadas a aceptar, y no va a desaparecer pronto. Como parte de este mundo digital, nos enfrentamos a un enorme aumento de contenido impulsado por más personas que navegan por las redes sociales, pasan tiempo en espacios digitales y trabajan de forma remota.
+El mundo es ahora digital primero. Es una realidad que las empresas se han visto obligadas a aceptar, y no va a desaparecer pronto. Como parte de este mundo digital, nos enfrentamos a una enorme oleada de contenido impulsada por más gente que navega por las redes sociales, pasa tiempo en espacios digitales y trabaja de forma remota.
 
-Esto significa que hay más canales, mercados y formatos para entregar contenido, y hay una buena necesidad de que el contenido sea dinámico y optimizado.
+Lo que esto significa para usted es que hay más canales, mercados y formatos para ofrecer contenido, y hay una mayor necesidad de que ese contenido sea dinámico y optimizado.
 
-Este bootcamp aprende cómo mantenerse al día con la demanda de contenido: hay una forma de planificar, producir y entregar contenido de forma más rápida y sencilla. Se llama cadena de suministro de contenido. Y si puede poner uno en marcha con procesos sin problemas, estrategias sólidas y prácticas sólidas, puede optimizar todo el ciclo de vida del contenido.
+Este bootcamp le enseña cómo mantenerse al día con la demanda de contenido: hay una manera de planificar, producir y entregar contenido de forma más rápida y sencilla. Se llama una cadena de suministro de contenido. Y si puede poner en marcha uno con procesos sin problemas, una estrategia sólida y prácticas sólidas, puede optimizar todo el ciclo de vida del contenido.
 
 ## Agenda
 
 ### Día 1
 
-10.00 - 10.30: Kickoff e Introducciones
+10.00 - 10.30: Kickoff y presentaciones
 
-10.30 a 11.00 horas: El Desafío Lego
+10.30 - 11.00: El reto Lego
 
-11.00 - 12.00: &quot;Presentación y demostración de la cadena de suministro de contenido - Arte de lo posible&quot;
+11.00 - 12.00: &quot;Presentación y demostración de la cadena de suministro de contenido: el arte de lo posible&quot;
 
-12.00 - 12.15: Salto
+12.00 - 12.15: Pausa
 
-12.15 - 13.00 horas: Fase de planificación: planificación y admisión de campañas
+12.15 - 13.00: Fase de planificación - Planificación y admisión de la campaña
 
 13.00 - 14.00: Almuerzo
 
-14.00 - 14.30: Fase de planificación: tareas iniciales
+14.00 - 14.30: Fase de planificación - Tareas iniciales
 
-14.30 a 15.30 horas: Fase de producción: crear titular de página principal
+14.30 - 15.30: Fase de producción: Creación del titular de la página principal
 
-15.30 - 15.45: Salto
+15.30 - 15.45: Pausa
 
-15.45 - 16.30: &quot;Exploración de Adobe Express y Adobe Asset Link&quot;
+15.45 - 16.30: &quot;Exploración del Adobe Express y del vínculo de Adobe con los recursos&quot;
 
-16.30 a 17.00 horas: Fase de producción: crear publicación de medios sociales
+16.30 - 17.00: Fase de producción - Creación de una publicación en los medios sociales
 
 18.00 - 19.00: Actividad divertida
 
@@ -52,25 +53,25 @@ Este bootcamp aprende cómo mantenerse al día con la demanda de contenido: hay 
 
 ### Día 2
 
-9.00 - 9.30: &quot;LEGO - Obtención de control sobre el trabajo a realizar&quot;
+09.00 - 09.30: &quot;LEGO - Conseguir el control sobre el trabajo a realizar&quot;
 
-De las 9.30 a las 10.00 horas: Fase de producción: crear contenido de aplicación móvil
+09.30 - 10.00: Fase de producción - Creación de contenido de aplicación móvil
 
-10.00 - 10.15: Salto
+10.00 - 10.15: Pausa
 
-10.15 - 10.45: Fase de entrega: verificar aplicación móvil
+10.15 - 10.45: Fase de entrega: verificación de la aplicación móvil
 
-10.45 - 12.30: Fase de entrega: cree páginas en AEM
+AEM 10.45 - 12.30: Fase de envío: creación de páginas en el sitio de trabajo de la
 
 12.30 - 13.30: Almuerzo
 
-13.30 - 14.30: Fase de entrega: campaña GO/NO GO
+13.30 - 14.30: Fase de entrega: Campaign GO/NO-GO
 
-14.30 a 15.00 horas: Perspectivas : Conozca las campañas
+14.30 - 15.00: perspectivas: aprenda de sus campañas
 
 15.00 - 15.30: Conclusión, resumen y pasos siguientes
 
-15.30: Parada
+15.30: Salida
 
 ## Requisitos previos
 
@@ -80,4 +81,4 @@ De las 9.30 a las 10.00 horas: Fase de producción: crear contenido de aplicaci�
 
 >[!IMPORTANT]
 >
->Este tutorial se creó para facilitar un formato de taller concreto. Utiliza sistemas y cuentas específicos a los que es posible que no tenga acceso. Incluso sin acceso, creemos que aún puede aprender mucho leyendo este contenido muy detallado. Si participa en uno de los talleres y necesita sus credenciales de acceso, póngase en contacto con el representante del Adobe, que le proporcionará la información necesaria.
+>Este tutorial se ha creado para facilitar un formato de taller concreto. Utiliza sistemas y cuentas específicos a los que podría no tener acceso. Incluso sin acceso, creemos que aún puede aprender mucho leyendo este contenido tan detallado. Si usted participa en uno de los talleres y necesita sus credenciales de acceso, póngase en contacto con su representante del Adobe, quien le proporcionará la información requerida.

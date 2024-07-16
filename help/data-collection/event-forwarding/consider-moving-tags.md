@@ -8,30 +8,30 @@ jira: KT-9921
 exl-id: f8fd351a-435c-4cc1-b987-ed2ead20d4d6
 source-git-commit: 7edf8fc46943ae2f1e6e2e20f4d589d7959310c8
 workflow-type: tm+mt
-source-wordcount: '1369'
-ht-degree: 3%
+source-wordcount: '1279'
+ht-degree: 2%
 
 ---
 
-# Considere la posibilidad de abandonar el etiquetado de proveedores del lado del cliente y empezar a usar el reenvío de eventos
+# Considere mover etiquetas de proveedor del lado del cliente al reenvío de eventos
 
 Existen varias razones de peso para considerar la posibilidad de mover etiquetas de proveedor del lado del cliente a un servidor o a un navegador. En este artículo, analizamos cómo evaluar una etiqueta de proveedor del lado del cliente para transferirla potencialmente a una propiedad de reenvío de eventos.
 
-Esta evaluación solo es necesaria si está considerando la posibilidad de eliminar una etiqueta de proveedor del lado del cliente y reemplazarla por una distribución de datos del lado del servidor en una propiedad de reenvío de eventos. Este artículo da por hecho que está familiarizado con los conceptos básicos de [recopilación de datos](https://experienceleague.adobe.com/docs/data-collection.html), y [reenvío de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
+Esta evaluación solo es necesaria si está considerando la posibilidad de eliminar una etiqueta de proveedor del lado del cliente y reemplazarla por una distribución de datos del lado del servidor en una propiedad de reenvío de eventos. En este artículo se da por hecho que está familiarizado con los conceptos básicos de [recopilación de datos](https://experienceleague.adobe.com/docs/data-collection.html) y [reenvío de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
 
 >[!NOTE]
 >
 >Adobe Experience Platform Launch se ha convertido en un conjunto de tecnologías de recopilación de datos en Adobe Experience Platform. Como resultado, se han implementado varios cambios terminológicos en la documentación del producto. Consulte el siguiente [documento](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html) para obtener una referencia consolidada de los cambios terminológicos.
 
-Los proveedores de exploradores están cambiando el modo en que tratan las cookies de terceros. Los proveedores y tecnologías de publicidad y marketing suelen requerir el uso de muchas etiquetas del lado del cliente. Estos desafíos son solo dos razones de peso por las que nuestros clientes añaden la distribución de datos del lado del servidor.
+Los proveedores de exploradores están cambiando el modo en que tratan las cookies de terceros. Los proveedores y tecnologías de Advertising y marketing suelen requerir el uso de muchas etiquetas del lado del cliente. Estos desafíos son solo dos razones de peso por las que nuestros clientes añaden la distribución de datos del lado del servidor.
 
 >[!NOTE]
 >
->`Tag` En este artículo, se refiere al código del lado del cliente, normalmente JavaScript de un proveedor que se utiliza para la recopilación de datos en el explorador o dispositivo mientras un visitante interactúa con el sitio o la aplicación. `Website` o `site` aquí se refiere a un sitio web, una aplicación web o una aplicación para un dispositivo móvil. Una &quot;etiqueta&quot; para estos fines también se denomina píxel.
+>`Tag` en este artículo significa código del lado del cliente, normalmente JavaScript de un proveedor que se utiliza para la recopilación de datos en el explorador o dispositivo mientras un visitante interactúa con el sitio o la aplicación. `Website` o `site` aquí hacen referencia a un sitio web, una aplicación web o una aplicación para un dispositivo móvil. Una &quot;etiqueta&quot; para estos fines también se denomina píxel.
 
 ## Casos de uso y datos {#use-cases-data}
 
-El primer paso es definir los casos de uso implementados con la etiqueta de proveedor del lado del cliente. Por ejemplo, piense en el píxel Facebook (Meta). Trasladarlo de nuestro sitio a la [API de metaconversiones](https://exchange.adobe.com/apps/ec/109168/meta-conversions-api) con la extensión de reenvío de eventos significa documentar primero los casos de uso específicos.
+El primer paso es definir los casos de uso implementados con la etiqueta de proveedor del lado del cliente. Por ejemplo, piense en el píxel Facebook (Meta). Cambiarlo de nuestro sitio a la [API de metaconversiones](https://exchange.adobe.com/apps/ec/109168/meta-conversions-api) con la extensión de reenvío de eventos significa documentar primero los casos de uso específicos.
 
 Para el código de proveedor actual del lado del cliente:
 
@@ -44,7 +44,7 @@ En nuestro ejemplo, estamos realizando un seguimiento de las conversiones con el
 
 ### Datos {#data}
 
-Con la etiqueta del lado del cliente existente, cuando se ejecuta o ejecuta en nuestro sitio, ¿qué sucede con los datos de nuestro caso de uso? ¿Podemos capturar los datos que necesitamos en el cliente, sin la etiqueta del proveedor, para que podamos enviarlos al reenvío de eventos? Al utilizar [etiquetas](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=es) Para otros sistemas de administración de etiquetas, la mayoría de los datos de interacción del visitante están disponibles para su recopilación y distribución. Pero, ¿están disponibles los datos que necesitamos para nuestro caso de uso cuando los necesitamos, donde los necesitamos y en el formato que los necesitamos, sin la etiqueta de proveedor del lado del cliente? Estas son algunas preguntas de datos adicionales que deben tenerse en cuenta:
+Con la etiqueta del lado del cliente existente, cuando se ejecuta o ejecuta en nuestro sitio, ¿qué sucede con los datos de nuestro caso de uso? ¿Podemos capturar los datos que necesitamos en el cliente, sin la etiqueta del proveedor, para que podamos enviarlos al reenvío de eventos? Al usar [tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=es) u otros sistemas de administración de etiquetas, la mayoría de los datos de interacción de los visitantes están disponibles para su recopilación y distribución. Pero, ¿están disponibles los datos que necesitamos para nuestro caso de uso cuando los necesitamos, donde los necesitamos y en el formato que los necesitamos, sin la etiqueta de proveedor del lado del cliente? Estas son algunas preguntas de datos adicionales que deben tenerse en cuenta:
 
 - ¿Se requiere un ID de usuario de proveedor con cada evento?
 - Si es así, ¿cómo se puede recopilar o generar sin la etiqueta del lado del cliente?
@@ -69,7 +69,7 @@ Estos son algunos pasos que podemos seguir para investigar los extremos de la AP
 
 - ¿Existen puntos finales de API para enviar los datos necesarios? Para encontrar los puntos de conexión compatibles con sus casos de uso, consulte la documentación de API o del desarrollador del proveedor.
 - ¿Permiten la transmisión de datos de eventos o solo datos por lotes?
-- ¿Con qué métodos de autenticación son compatibles? ¿Token, HTTP, versión de credenciales del cliente de OAuth u otro? Consulte [aquí](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/secrets.html) para métodos admitidos por el reenvío de eventos.
+- ¿Con qué métodos de autenticación son compatibles? ¿Token, HTTP, versión de credenciales del cliente de OAuth u otro? Consulte [aquí](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/secrets.html) los métodos admitidos por el reenvío de eventos.
 - ¿Cuál es el desplazamiento de actualización de su API? ¿Es compatible esa limitación con los mínimos del reenvío de eventos? Detalles [aquí](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/secrets.html#:~:text=you%20can%20configure%20the%20Refresh%20Offset%20value%20for%20the%20secret).
 - ¿Qué datos requieren para los extremos relevantes?
 - ¿Requieren un identificador de usuario específico del proveedor con cada llamada al punto de conexión?
@@ -87,20 +87,20 @@ Si el proveedor no tiene los puntos finales de API para admitir nuestros casos d
 
 ¿Qué sucede si tienen API, pero también requieren un ID único de visitante o usuario con cada llamada de API? ¿Cómo podemos acceder a ese ID si no tenemos el código del lado del cliente del proveedor (etiqueta) en ejecución en el sitio?
 
-Algunos proveedores están cambiando sus sistemas para el nuevo mundo sin cookies de terceros. Estos cambios incluyen el uso de identificadores únicos alternativos, como un [UUID](https://developer.mozilla.org/en-US/docs/Glossary/UUID) u otros [ID generado por el cliente](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html). Si el proveedor permite un ID generado por el cliente, podemos enviarlo desde el cliente a Platform Edge Network con SDK web o móvil, o posiblemente obtenerlo desde una llamada de API en el reenvío de eventos. Cuando enviamos datos a ese proveedor en una regla de reenvío de eventos, simplemente incluimos ese identificador según sea necesario.
+Algunos proveedores están cambiando sus sistemas para el nuevo mundo sin cookies de terceros. Estos cambios incluyen el uso de identificadores únicos alternativos, como [UUID](https://developer.mozilla.org/en-US/docs/Glossary/UUID) u otro [ID generado por el cliente](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html). Si el proveedor permite un ID generado por el cliente, podemos enviarlo desde el cliente al Edge Network de Platform con el SDK web o móvil, o posiblemente obtenerlo desde una llamada de API en el reenvío de eventos. Cuando enviamos datos a ese proveedor en una regla de reenvío de eventos, simplemente incluimos ese identificador según sea necesario.
 
-Si el proveedor requiere datos (como un ID único específico del proveedor, por ejemplo) que solo se puedan generar o a los que se pueda acceder mediante su propia etiqueta del lado del cliente, es probable que esa etiqueta del proveedor no sea una buena candidata para moverse. _Se desaconseja intentar la ingeniería inversa de una etiqueta del lado del cliente con la idea de mover esa recopilación de datos al reenvío de eventos sin las API adecuadas._
+Si el proveedor requiere datos (como un ID único específico del proveedor, por ejemplo) que solo se puedan generar o a los que se pueda acceder mediante su propia etiqueta del lado del cliente, es probable que esa etiqueta del proveedor no sea una buena candidata para moverse. _No se recomienda intentar realizar ingeniería inversa en una etiqueta del lado del cliente con la idea de mover esa recopilación de datos al reenvío de eventos sin las API adecuadas._
 
-El [Conector de Adobe Experience Platform Cloud](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/cloud-connector/overview.html) La extensión de puede realizar solicitudes HTTP según sea necesario con proveedores que tengan las API adecuadas para la transferencia de datos de evento de servidor a servidor. Aunque es bueno tener extensiones específicas de proveedor y hay más extensiones en desarrollo activo en este momento, podemos implementar reglas de reenvío de eventos hoy mediante la extensión de conector de nube, sin esperar extensiones de proveedor adicionales.
+La extensión [Adobe Experience Platform Cloud Connector](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/cloud-connector/overview.html) puede realizar solicitudes HTTP según sea necesario con proveedores que tengan las API adecuadas para la transferencia de datos de eventos de servidor a servidor. Aunque es bueno tener extensiones específicas de proveedor y hay más extensiones en desarrollo activo en este momento, podemos implementar reglas de reenvío de eventos hoy mediante la extensión de conector de nube, sin esperar extensiones de proveedor adicionales.
 
 ## Herramientas {#tools}
 
-Investigar y probar los extremos de la API del proveedor es más fácil con herramientas como [Postman](https://www.postman.com/)o extensiones del editor de texto como Visual Studio Code [Cliente Thunder](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client), o [Cliente HTTP](https://marketplace.visualstudio.com/items?itemName=mkloubert.vscode-http-client).
+Investigar y probar los extremos de la API del proveedor es más fácil con herramientas como [Postman](https://www.postman.com/) o extensiones del editor de texto como Visual Studio Code [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client) o [HTTP Client](https://marketplace.visualstudio.com/items?itemName=mkloubert.vscode-http-client).
 
 ## Pasos siguientes {#next-steps}
 
 Este artículo proporciona una secuencia de pasos para evaluar una etiqueta del lado del cliente de un proveedor y moverla potencialmente del lado del servidor en una propiedad de reenvío de eventos. Para obtener más información sobre temas relacionados, consulte estos vínculos:
 
 - [Administración de etiquetas](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=es) en Adobe Experience Platform
-- [Reenvío de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html) para el procesamiento en el servidor
+- [Reenvío de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html) para el procesamiento del lado del servidor
 - [Actualizaciones terminológicas](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html) en la recopilación de datos

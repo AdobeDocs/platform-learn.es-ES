@@ -5,20 +5,20 @@ recommendations: catalog, noDisplay
 exl-id: 1b95f0b2-3062-49d1-9b0b-e6824a54008f
 source-git-commit: 2483409b52562e13a4f557fe5bdec75b5afb4716
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 39%
+source-wordcount: '851'
+ht-degree: 37%
 
 ---
 
 # Información general
 
-_Implementar el Experience Cloud de en sitios web con etiquetas_ es el punto de partida perfecto para desarrolladores de front-end o especialistas en marketing técnico que deseen aprender a implementar las soluciones de Adobe Experience Cloud en su sitio web.
+_Implementar el Experience Cloud en sitios web con etiquetas_ es el punto de partida perfecto para desarrolladores de front-end o especialistas en marketing técnico que deseen aprender a implementar las soluciones de Adobe Experience Cloud en su sitio web.
 
 Cada lección contiene ejercicios prácticos e información fundamental para ayudarle a implementar Experience Cloud y comprender su valor.  Se proporcionan sitios de muestra para completar el tutorial, lo que le permite aprender las técnicas subyacentes en un entorno seguro. Después de completar este tutorial, debe estar preparado para empezar a implementar todas las soluciones de marketing a través de las etiquetas en su propio sitio web.
 
 >[!INFO]
 >
->Este tutorial utiliza extensiones y bibliotecas específicas de la aplicación (AppMeasurement.js para Adobe Analytics, at.js para Adobe Target). Si desea implementar el SDK web de Adobe Experience Platform, consulte la [Implementar Adobe Experience Cloud con SDK web](/help/tutorial-web-sdk/overview.md) tutorial.
+>Este tutorial utiliza extensiones y bibliotecas específicas de la aplicación (AppMeasurement.js para Adobe Analytics, at.js para Adobe Target). Si desea implementar el SDK web de Adobe Experience Platform, consulte el tutorial [Implementar Adobe Experience Cloud con SDK web](/help/tutorial-web-sdk/overview.md).
 
 
 Tras completar esta formación, debe ser capaz de:
@@ -28,7 +28,7 @@ Tras completar esta formación, debe ser capaz de:
 * Instalación de una propiedad de etiquetas en un sitio web
 
 * Añadir las siguientes soluciones de Adobe Experience Cloud:
-   * **[Servicio de ID de Adobe Experience Platform](id-service.md)**
+   * **[Servicio de identidad de Adobe Experience Platform](id-service.md)**
    * **[Adobe Target](target.md)**
    * **[Adobe Analytics](analytics.md)**
    * **[Adobe Audience Manager](audience-manager.md)**
@@ -37,7 +37,7 @@ Tras completar esta formación, debe ser capaz de:
 
 * Validar la implementación con Adobe Experience Cloud Debugger.
 
-* Publicar cambios mediante entornos de desarrollo, ensayo y producción
+* Publish cambia a través de los entornos de desarrollo, ensayo y producción
 
 >[!NOTE]
 >
@@ -45,17 +45,17 @@ Tras completar esta formación, debe ser capaz de:
 >
 > * El platform launch (lado del cliente) ahora es **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=es)**
 > * El lado del servidor de platform launch ahora es **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
-> * Las configuraciones de Edge ahora son **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=es)**
+> * Ahora, las configuraciones de Edge son **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=es)**
 
 >[!NOTE]
 >
->También hay tutoriales de varias soluciones similares disponibles para [SDK web](../tutorial-web-sdk/overview.md) y [Mobile SDK](../tutorial-mobile-sdk/overview.md).
+>También hay tutoriales de varias soluciones similares disponibles para [SDK web](../tutorial-web-sdk/overview.md) y [SDK móvil](../tutorial-mobile-sdk/overview.md).
 
 ## Requisitos previos
 
 En estas lecciones, se da por hecho que dispone de un Adobe ID y de los permisos necesarios para completar los ejercicios. Si no es así, es posible que deba ponerse en contacto con el administrador de Experience Cloud para solicitar acceso.
 
-* Para las etiquetas, debe tener permiso para desarrollar, aprobar, publicar, gestionar extensiones y entornos. Para obtener más información sobre los permisos de usuario de etiquetas, consulte [la documentación](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+* Para las etiquetas, debe tener permiso para desarrollar, aprobar, Publish, gestionar extensiones y entornos. Para obtener más información sobre los permisos de usuario de etiquetas, consulte [la documentación](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
 * Para Adobe Analytics, debe conocer su servidor de seguimiento y qué grupos de informes desea utilizar para completar este tutorial.
 * Para Audience Manager, debe conocer su subdominio de Audience Manager (también conocido como &quot;nombre de socio&quot;, &quot;ID de socio&quot; o &quot;subdominio de socio&quot;)
 
@@ -65,7 +65,7 @@ Además, se da por hecho que está familiarizado con los lenguajes de desarrollo
 
 La función de etiquetas de Adobe Experience Platform es la nueva generación de funcionalidades de administración de etiquetas de sitios web y SDK móvil de Adobe. Las etiquetas ofrecen a los clientes una alternativa sencilla para implementar y gestionar todas las soluciones de análisis, marketing y publicidad necesarias para potenciar las importantes experiencias del cliente. Las etiquetas no suponen ningún coste adicional. Está disponible para cualquier cliente de Adobe Experience Cloud.
 
-Las etiquetas para sitios web le permiten administrar de forma centralizada todo el código JavaScript relacionado con las soluciones de análisis, marketing y publicidad utilizadas en los sitios con versión escritorio y móviles. Por ejemplo, si implementa Adobe Analytics, las etiquetas administran la biblioteca JavaScript de AppMeasurement, rellenan variables y activan solicitudes.
+Las etiquetas para sitios web le permiten administrar de forma centralizada todas las soluciones de JavaScript relacionadas con las soluciones de análisis, marketing y publicidad que se utilizan en los sitios con versión escritorio y móviles. Por ejemplo, si implementa Adobe Analytics, las etiquetas administran la biblioteca JavaScript de AppMeasurement, rellenan variables y activan solicitudes.
 
 El contenido del contenedor se minimiza, incluido el código personalizado. Todo es modular. Si no necesita un elemento, este no se incluye en la biblioteca. El resultado es una implementación rápida y compacta.
 
@@ -80,7 +80,7 @@ En estas lecciones, debe implementar Adobe Experience Cloud en un sitio web de v
 ## Obtención de las herramientas
 
 1. Ya que se utilizan varias extensiones específicas del navegador, le recomendamos que complete el tutorial utilizando el navegador web [Chrome](https://www.google.com/chrome/).
-1. Añada el [Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) Extensión de a su explorador Chrome
+1. Agregue la extensión [Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) a su explorador Chrome
 1. Copie el código de página HTML de ejemplo
 
    +++Código de página HTML de muestra

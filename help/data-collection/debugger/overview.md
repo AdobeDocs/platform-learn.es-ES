@@ -10,20 +10,20 @@ thumbnail: 32156.jpg
 exl-id: 9ce0b5db-9f00-4b59-8655-09cd59b3d5df
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 63%
+source-wordcount: '134'
+ht-degree: 54%
 
 ---
 
 # información general de Adobe Experience Platform Debugger
 
-Descubra cómo funciona el Adobe Experience Platform Debugger [Extensión de Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) y [Complemento de Firefox](https://addons.mozilla.org/es/firefox/addon/adobe-experience-platform-dbg/) le ayuda a depurar las implementaciones web del SDK web de Adobe Experience Platform, Adobe Analytics, Adobe Target, Adobe Audience Manager, etiquetas y mucho más.
+Descubra cómo la extensión de Adobe Experience Platform Debugger [Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) y el complemento [Firefox](https://addons.mozilla.org/es/firefox/addon/adobe-experience-platform-dbg/) le ayudan a depurar las implementaciones web del SDK web de Adobe Experience Platform, Adobe Analytics, Adobe Target, Adobe Audience Manager, etiquetas y más.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
 
 ## Recursos adicionales
 
-* [Descargue el complemento de Firefox](https://addons.mozilla.org/es/firefox/addon/adobe-experience-platform-dbg/)
+* [Descargar el complemento de Firefox](https://addons.mozilla.org/es/firefox/addon/adobe-experience-platform-dbg/)
 * [Descargar la extensión de Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 * [Documentación de Experience Platform Debugger](https://experienceleague.adobe.com/docs/debugger/using-v2/experience-cloud-debugger.html?lang=es)
-* [Depuración de una implementación de etiquetas](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/debug-launch-implementation.html?lang=es)
+* [Depurar una implementación de etiquetas](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/debug-launch-implementation.html?lang=es)

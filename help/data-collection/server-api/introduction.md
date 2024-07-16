@@ -12,7 +12,7 @@ topic: Integrations
 exl-id: 9607e641-b0d5-49c1-b319-32ed0720e715
 source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
-source-wordcount: '2087'
+source-wordcount: '2086'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Al final de este artículo debería tener una comprensión clara de estos térmi
 
 En esta captura de pantalla, el cursor del ratón se sitúa sobre el vínculo de Adobe Experience Platform. En la parte inferior se encuentra la barra de estado del navegador web que muestra la &quot;dirección&quot; de la página que recibirá el navegador. En otras palabras, al hacer clic en el vínculo de Adobe Experience Platform, se indica al explorador que &quot;obtenga esa página para que pueda verla aquí en mi pantalla&quot;.
 
-Al hacer clic en un vínculo, el explorador realiza una solicitud a un servidor para obtener una página. Este es un `GET` La solicitud de, uno de los métodos de solicitud utilizados comúnmente con las API web. Una cosa que el navegador necesita para cumplir la solicitud es la página &quot;dirección&quot; - ¿dónde está en la web?
+Al hacer clic en un vínculo, el explorador realiza una solicitud a un servidor para obtener una página. Esta es una solicitud `GET`, uno de los métodos de solicitud que se usan comúnmente con las API web. Una cosa que el navegador necesita para cumplir la solicitud es la página &quot;dirección&quot; - ¿dónde está en la web?
 
 ### Partes de una dirección URL
 
@@ -47,7 +47,7 @@ Al hacer clic en un vínculo, el explorador realiza una solicitud a un servidor 
 
 La mayoría de los navegadores tienen una &quot;barra de direcciones&quot; que muestra parte o toda la &quot;dirección&quot; de una página web. Cuando el navegador &quot;obtiene&quot; la página para el enlace en el que hemos hecho clic, muestra la &quot;dirección&quot; de la página en esta barra de direcciones. Entonces, ¿cuál es la &quot;dirección&quot; de una página web?
 
-Que `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` arriba se encuentra la dirección de una página en la web, que se denomina URL o Localizador uniforme de recursos. Las direcciones URL pueden hacer referencia a una página como esta, a un archivo de imagen, a un vídeo u otros tipos de archivo.
+Ese(a) `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` de arriba es la dirección de una página en la web y se llama URL o Localizador uniforme de recursos. Las direcciones URL pueden hacer referencia a una página como esta, a un archivo de imagen, a un vídeo u otros tipos de archivo.
 
 ![Partes de una dirección URL](../assets/api101-url-parts.jpg)
 
@@ -55,25 +55,25 @@ Esta dirección, la URL, tiene partes específicas que son muy relevantes para l
 
 **Esquema**
 
-El `scheme` lo anterior también se denomina `protocol` con las API web y, normalmente, `http` o `https`. El protocolo de transferencia HTTP o HyperText es la forma en que los recursos, como las páginas web, se transfieren de un servidor web a un explorador web. HTTPS es la versión segura, en la que la transferencia se produce a través de Internet mediante la seguridad destinada a evitar interferencias con el recurso que se transfiere. Es común ver un pequeño icono de candado en la barra de direcciones del navegador cuando se visualiza una página a través de HTTPS.
+El `scheme` anterior también se denomina `protocol` con API web y suele ser `http` o `https`. El protocolo de transferencia HTTP o HyperText es la forma en que los recursos, como las páginas web, se transfieren de un servidor web a un explorador web. HTTPS es la versión segura, en la que la transferencia se produce a través de Internet mediante la seguridad destinada a evitar interferencias con el recurso que se transfiere. Es común ver un pequeño icono de candado en la barra de direcciones del navegador cuando se visualiza una página a través de HTTPS.
 
 Para las API web, las transferencias de estos recursos se producen a través de solicitudes HTTP: solicitudes a través de HTTP, en otras palabras.
 
 **Hosts y dominios**
 
-El `business.adobe.com` es el host del recurso que se solicita. Cuando se hace clic en el vínculo de ejemplo, el explorador utiliza esta parte de la dirección URL para encontrar el servidor en el que está alojada la página. No siempre es exactamente lo mismo que el servidor web, pero en un nivel básico podemos pensarlo como el servidor donde el navegador obtendrá la página que solicitamos.
+`business.adobe.com` es el host del recurso que se solicita. Cuando se hace clic en el vínculo de ejemplo, el explorador utiliza esta parte de la dirección URL para encontrar el servidor en el que está alojada la página. No siempre es exactamente lo mismo que el servidor web, pero en un nivel básico podemos pensarlo como el servidor donde el navegador obtendrá la página que solicitamos.
 
-Los nombres de dominio forman parte del Sistema de nombres de dominio, más conocido como DNS. La mayoría piensa en `adobe.com` o `example.com` como &quot;nombre de dominio&quot;, pero hay partes relevantes para las API. `www.adobe.com` y `business.adobe.com` pueden llamarse nombres de dominio, pero la variable `www.` y el `business.` Las partes de se denominan subdominios. Las API suelen interactuar con una dirección URL que incluye un subdominio como `api.example.com` o `sub.www.example.com`.
+Los nombres de dominio forman parte del Sistema de nombres de dominio, más conocido como DNS. La mayoría de las personas consideran a `adobe.com` o `example.com` como un &quot;nombre de dominio&quot;, pero hay partes relevantes para las API. `www.adobe.com` y `business.adobe.com` pueden llamarse nombres de dominio, pero las partes `www.` y `business.` se denominan subdominios. Las API suelen interactuar con una dirección URL que incluye un subdominio como `api.example.com` o `sub.www.example.com`.
 
-Es muy común ver el término _host_ hacer referencia a un nombre de dominio completo, incluidos los subdominios como `business.adobe.com`. También es común ver los términos _sector_ o _nombre de dominio_ al hacer referencia a un host sin el subdominio como `adobe.com`. Memorizar los términos específicos de cada parte y variación de un host no es importante aquí. Sin embargo, tener en cuenta que estos términos se utilizan comúnmente es importante para que pueda aclarar cualquier detalle relevante para su negocio y discusiones.
+Es muy común ver que el término _host_ hace referencia a un nombre de dominio completo, incluido cualquier subdominio como `business.adobe.com`. También es común ver los términos _dominio_ o _nombre de dominio_ al hacer referencia a un host sin el subdominio como `adobe.com`. Memorizar los términos específicos de cada parte y variación de un host no es importante aquí. Sin embargo, tener en cuenta que estos términos se utilizan comúnmente es importante para que pueda aclarar cualquier detalle relevante para su negocio y discusiones.
 
 **Origen**
 
-Origen es otro término que hay que tener en cuenta que está estrechamente relacionado con las partes de una dirección URL. En un nivel básico, un origen es aproximadamente el `scheme` más el `host` más el `domain` gustar `https://business.adobe.com`. Los distintos valores suelen representar orígenes diferentes, como `https://business.adobe.com` y `http://business.adobe.com` no son del mismo origen porque tienen esquemas diferentes. `https://www.adobe.com` y `https://business.adobe.com` tampoco son el mismo origen en muchos usos debido a los diferentes subdominios.
+Origen es otro término que hay que tener en cuenta que está estrechamente relacionado con las partes de una dirección URL. En un nivel básico, un origen es aproximadamente `scheme` más `host` más `domain` como `https://business.adobe.com`. Los distintos valores suelen representar orígenes diferentes, como `https://business.adobe.com` y `http://business.adobe.com`, no son el mismo origen porque tienen esquemas diferentes. `https://www.adobe.com` y `https://business.adobe.com` tampoco son el mismo origen en muchos usos debido a los diferentes subdominios.
 
 **Ruta**
 
-El último bit del ejemplo de URL anterior es el `path` al recurso: la página de nuestro ejemplo. El `/products/experience-platform/` Esta parte suele representar carpetas o directorios en el servidor web. Al igual que tenemos carpetas o directorios en nuestros equipos para documentos y fotos, también tenemos carpetas en servidores web para organizar el contenido. Y finalmente, el `/adobe-experience-platform.html` part es el nombre del fichero: la página web.
+El último bit del ejemplo de URL anterior es el `path` del recurso, la página de nuestro ejemplo. La parte `/products/experience-platform/` suele representar carpetas o directorios en el servidor web. Al igual que tenemos carpetas o directorios en nuestros equipos para documentos y fotos, también tenemos carpetas en servidores web para organizar el contenido. Y, por último, la parte `/adobe-experience-platform.html` es el nombre del archivo: la página web.
 
 Hay otras partes más detalladas de una URL que se resaltarán en la siguiente parte de esta serie.
 
@@ -85,7 +85,7 @@ Es habitual que una página web incluya contenido o recursos de otros hosts o fu
 
 ## Usos comunes de las API web
 
-Aparte de la hora del día, el tiempo o el contenido personalizado, hay muchos usos para las API web. Las plataformas de medios sociales como Twitter, TikTok, Facebook, LinkedIn, Snapchat, Pinterest y otras tienen una variedad de API que los programadores pueden utilizar con sus aplicaciones. Y por supuesto, el Adobe también tiene [una amplia variedad de API](https://developer.adobe.com/apis) que los programadores utilizan para que su software pueda interactuar con los productos y servicios de Adobe. Los productos y servicios de software acceden a otros productos y servicios de software a través de estas API.
+Aparte de la hora del día, el tiempo o el contenido personalizado, hay muchos usos para las API web. Las plataformas de medios sociales como Twitter, TikTok, Facebook, LinkedIn, Snapchat, Pinterest y otras tienen una variedad de API que los programadores pueden utilizar con sus aplicaciones. Y, por supuesto, el Adobe también tiene [una amplia variedad de API](https://developer.adobe.com/apis) que los programadores utilizan para que su software pueda interactuar con los productos y servicios del Adobe. Los productos y servicios de software acceden a otros productos y servicios de software a través de estas API.
 
 ## API de ejemplo
 
@@ -95,9 +95,9 @@ La API de acceso a datos de Adobe Experience Platform es una API web que permite
 
 ## Extremos de API
 
-Cuando los programadores &quot;utilizan&quot; un navegador o API web en sus programas, suelen realizar solicitudes para enviar o recibir recursos, como nuestro explorador de ejemplo que solicita una página web. La documentación de la API a menudo enumera los &quot;extremos&quot; para esas solicitudes, por ejemplo: `https://platform.adobe.io/data/foundation/export/files/{dataSetFileId}`. Este es el patrón específico o &quot;extremo&quot; de la API de acceso a datos de Platform que utilizará un programador para obtener un archivo de conjunto de datos.
+Cuando los programadores &quot;utilizan&quot; un navegador o API web en sus programas, suelen realizar solicitudes para enviar o recibir recursos, como nuestro explorador de ejemplo que solicita una página web. La documentación de API a menudo enumera los &quot;extremos&quot; de esas solicitudes; por ejemplo: `https://platform.adobe.io/data/foundation/export/files/{dataSetFileId}`. Este es el patrón específico o &quot;extremo&quot; de la API de acceso a datos de Platform que utilizará un programador para obtener un archivo de conjunto de datos.
 
-El `{dataSetFileId}` rodeado de llaves representa un valor que el programador necesita enviar en la solicitud. Por lo tanto, la dirección URL de la solicitud de API real tendría un aspecto similar al siguiente `https://platform.adobe.io/data/foundation/export/files/xyz123brb` donde el `xyz123brb` debe ser un ID válido del archivo del conjunto de datos que el programador desea recibir.
+`{dataSetFileId}` entre llaves representa un valor que el programador necesita enviar en la solicitud. Por lo tanto, la dirección URL de la solicitud de API real sería similar a `https://platform.adobe.io/data/foundation/export/files/xyz123brb`, donde `xyz123brb` debe ser un identificador válido del archivo de conjunto de datos que el programador desea recibir.
 
 En otras palabras, del mismo modo que el explorador obtiene una página en una dirección URL específica, las solicitudes de API obtienen recursos de un extremo específico, o los envían a, como este ejemplo de conjunto de datos.
 
@@ -109,23 +109,23 @@ Todo el proceso, desde la solicitud hasta la respuesta, implica muchos pasos má
 
 **`GET`**
 
-El `GET` el método de solicitud se utiliza al solicitar una respuesta que proporciona un recurso, como nuestra página web y ejemplos de conjuntos de datos. Cuando hacemos clic en un vínculo en un explorador o tocamos un vínculo en un dispositivo móvil, estamos realizando una `GET` solicitud entre bastidores.
+El método de solicitud `GET` se usa al solicitar una respuesta que proporciona un recurso, como nuestra página web y los ejemplos de conjuntos de datos. Cuando hacemos clic en un vínculo en un explorador o tocamos un vínculo en un dispositivo móvil, realizamos una solicitud `GET` entre bastidores.
 
 **`POST`**
 
-El `POST` envía datos con la solicitud. Puede sonar extraño que una &quot;solicitud&quot; envíe datos, pero la idea es que al realizar la solicitud de API se pida al punto de conexión (el software receptor) que acepte la solicitud, y en el caso de un `POST`, para aceptar también los datos que se envían. Los datos enviados se suelen escribir en un almacén de datos, como una base de datos o un archivo, para poder guardarlos.
+El método `POST` envía datos con la solicitud. Puede sonar extraño que una &quot;solicitud&quot; envíe datos, pero la idea es que al realizar la solicitud de API se está pidiendo al punto de conexión (el software receptor) que acepte la solicitud, y en el caso de un `POST`, que también acepte los datos que se envían. Los datos enviados se suelen escribir en un almacén de datos, como una base de datos o un archivo, para poder guardarlos.
 
 **`PUT`**
 
-El `PUT` el método de solicitud es similar a `POST` dado que envía datos, pero si los datos que se están enviando ya existen en el extremo, un `PUT` actualizará los datos existentes reemplazándolos. A `POST` no se actualiza, simplemente envía, por lo que varias `POST` Las solicitudes de pueden crear varios registros de los datos enviados, en lugar de actualizar cualquier registro existente.
+El método de solicitud `PUT` es similar a `POST` porque envía datos, pero si los datos que se están enviando ya existen en el extremo, un `PUT` actualizará los datos existentes reemplazándolos. Un(a) `POST` no se actualiza, simplemente envía, de modo que varias solicitudes `POST` pueden crear varios registros de los datos enviados, en lugar de actualizar cualquier registro existente.
 
 **`PATCH`**
 
-El `PATCH` El método de solicitud se utiliza para enviar datos que actualizan parte de un registro existente, como cuando cambiamos nuestra dirección al actualizar nuestro perfil de cuenta. Con un `POST` solicitud se podría crear un perfil adicional y con un `PUT`, el perfil existente podría reemplazarse, pero utilizando el `PATCH` método simplemente actualizamos la parte relevante del registro existente, como nuestra dirección.
+El método de solicitud `PATCH` se usa para enviar datos que actualizan parte de un registro existente, como cuando cambiamos nuestra dirección al actualizar nuestro perfil de cuenta. Con una solicitud `POST` se podría crear un perfil adicional y con un `PUT`, se podría reemplazar el perfil existente, pero usando el método `PATCH` simplemente actualizamos la parte relevante del registro existente, como nuestra dirección.
 
 **`DELETE`**
 
-El `DELETE` El método de solicitud elimina un recurso especificado en la solicitud, como si hacemos clic en un vínculo para eliminar completamente nuestro perfil de cuenta.
+El método de solicitud `DELETE` quita un recurso especificado en la solicitud, como si hacemos clic en un vínculo para eliminar completamente el perfil de la cuenta.
 
 Hay varios más, pero esta es una lista de los métodos más comunes al trabajar con API.
 
@@ -133,7 +133,7 @@ Hay varios más, pero esta es una lista de los métodos más comunes al trabajar
 
 Ahora que tiene los términos, conceptos y pasos básicos involucrados con las API, podemos ver un ejemplo de solicitud de API en la práctica.
 
-La página del ejemplo de explorador tiene una URL de `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html`. Cuando se hace clic en el vínculo de Adobe Experience Platform, el explorador realiza una `GET` para esta página. Como tenemos el navegador para hacer el trabajo por nosotros, todo lo que tenemos que hacer es hacer clic, pero si un programador quiere que esa solicitud se produzca en una aplicación de software, tiene que proporcionar todos los detalles necesarios para que la solicitud de API se cumpla con éxito.
+La página del ejemplo de nuestro explorador tiene una dirección URL de `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html`. Cuando se hace clic en el vínculo de Adobe Experience Platform, el explorador realiza una solicitud `GET` para esta página. Como tenemos el navegador para hacer el trabajo por nosotros, todo lo que tenemos que hacer es hacer clic, pero si un programador quiere que esa solicitud se produzca en una aplicación de software, tiene que proporcionar todos los detalles necesarios para que la solicitud de API se cumpla con éxito.
 
 Este es el aspecto que podría tener el código:
 
@@ -162,7 +162,10 @@ fetch(
 );
 ```
 
-En el código anterior, puede ver el `URL` el explorador solicita y, cerca de la parte inferior, está el `method: "GET"` método de solicitud. Las otras líneas de código también son partes de la solicitud, pero están fuera del ámbito de este artículo.
+En el código anterior, puede ver el `URL` que el explorador solicita y abajo, cerca de la parte inferior, está el método de solicitud `method: "GET"`. Las otras líneas de código también son partes de la solicitud, pero están fuera del ámbito de este artículo.
 
 
-*[API]: interfaz de programación de aplicaciones *[URL]: Localizador uniforme de recursos *[HTTP]: Protocolo de transferencia de hipertexto *[DNS]: Sistema de nombres de dominio
+*[API]: interfaz de programación de aplicaciones
+*[URL]: Localizador uniforme de recursos
+*[HTTP]: protocolo de transferencia de hipertexto
+*[DNS]: Sistema de nombres de dominio

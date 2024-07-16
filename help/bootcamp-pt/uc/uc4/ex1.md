@@ -9,7 +9,7 @@ solution: Customer Journey Analytics
 exl-id: 63933d9e-b774-483f-b547-188c77440595
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '942'
 ht-degree: 0%
 
 ---
@@ -69,17 +69,17 @@ Antes de iniciar los próximos exercícios, é essencial compreender quais etapa
 
 Antes de iniciar como etapas acima, não se esqueça da etapa 0, que é compreender os dados que estão disponíveis na Adobe Experience Platform.
 
-**La basura entra, la basura sale.** Você deve ter uma ideia clara de quais dados estão disponíveis e como os esquemas na Adobe Experience Platform são. Compreender os dados que estão na Adobe Experience Platform como coisas, não só na parte de conexão de dados, mas também na hora de construir visualizaciones e fazer análises.
+**basura entra, basura sale.** Você deve ter uma ideia clara de quais dados estão disponíveis e como os esquemas na Adobe Experience Platform são. Compreender os dados que estão na Adobe Experience Platform como coisas, não só na parte de conexão de dados, mas também na hora de construir visualizaciones e fazer análises.
 
 ## 4.1.5 Etapa 0: Compresor de conjuntos de datos electrónicos de la Adobe Experience Platform
 
-Faça login na Adobe Experience Platform acessando a URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
+Faça inicia sesión en Adobe Experience Platform accediendo a una dirección URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
 Depois de fazer login, você irá a página inicial da Adobe Experience Platform.
 
 ![Ingesta de datos](../uc1/images/home.png)
 
-Antes de continuar, você precisa selecionar um **espacio aislado**. O nome do sandbox a ser selecionado é ``Bootcamp``. Você pode fazer isso clicando no ícone **[!UICONTROL Prod]** no canto superior direito da tela. Depois de selecionar o sandbox apropiado, você a tela mudando e agora você está em seu sandbox dedicada.
+Antes de continuar, você precisa selecionar um **espacio aislado**. O nome do sandbox a ser selecionado é ``Bootcamp``. Você pode fazer isso clicando no ícone **[!UICONTROL Prod]** no canto superior direito da tela. Depois de selecionar o sandbox apropiado, você a tela mudando e agora você está em seu sandbox dedicada.
 
 ![Ingesta de datos](../uc1/images/sb1.png)
 
@@ -95,19 +95,19 @@ Certifique-se de ter verificado ao menos:
 
 - Identidades: CRMID, phoneNumber, ECID, correo electrónico. ¿Cuáles son las identidades são os primários, quais são os ários?
 
-Você pode os abrindo do um schema e o objeto `_experienceplatform.identification.core`. esquema de la [Sistema de demostración: Esquema de eventos para el sitio web (Global v1.1)](https://experience.adobe.com/platform/schema).
+Você pode os abrindo do um schema e o objeto `_experienceplatform.identification.core`. Esquema de [Sistema de demostración: esquema de eventos para el sitio web (Global v1.1)](https://experience.adobe.com/platform/schema).
 
 ![demostración](./images/identity.png)
 
-- Explore el objeto de comércio dentro do schema [Sistema de demostración: Esquema de eventos para el sitio web (Global v1.1)](https://experience.adobe.com/platform/schema).
+- Explore el objeto de comércio dentro do schema [Sistema de demostración - Esquema de eventos para el sitio web (Global v1.1)](https://experience.adobe.com/platform/schema).
 
 ![demostración](./images/commerce.png)
 
-- Visualizar todos los [conjuntos de datos](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created) e verifique os dados
+- Visualizar todos los [conjuntos de datos](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created) y verificar los datos
 
 Agora você está pronto para hacer uso de la interfaz de usuario del Customer Journey Analytics.
 
-Próxima etapa: [4.2 Colocar los conjuntos de datos en Adobe Experience Platform sin Customer Journey Analytics](./ex2.md)
+Próxima etapa: [4.2 Puenteo datasets da Adobe Experience Platform no Customer Journey Analytics](./ex2.md)
 
 [Hoteles cerca de Fluxo de Usuário 4](./uc4.md)
 

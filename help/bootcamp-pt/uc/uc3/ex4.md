@@ -11,7 +11,7 @@ feature: Events
 exl-id: 04e2877f-8672-4584-8204-4489a7025c63
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '186'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,11 @@ Para testar sua jornada, você deve usar o eventID criado no exercício 3.2, que
 O eventID é o que precisa ser publicado à Adobe Experience Platform para acionar a jornada. Ejemplo anidado, o eventID é:
 `e76c0bf0c77c3517e5b6f4c457a0754ebaf5f1f6b9357d74e0d8e13ae517c3d5`.
 
-Abra o aplicativo móvel e vá para a inicial. Categoría no disponible de **Configuración**.
+Abra o aplicativo móvel e vá para a inicial. Clique no ícone de **Configuración**.
 
 ![DSN](./images/appsett.png)
 
-Cole seu eventID no campo **EventID de señalización** e clique em **Guardar**.
+Cole seu eventID no campo **Beacon EventID** e clique em **Guardar**.
 
 ![DSN](./images/beacon1.png)
 
@@ -39,11 +39,11 @@ Em, será exibida a tela:
 
 ![DSN](./images/screen1.png)
 
-Volver a la página inicial. Clique no ícone do **baliza**.
+Volver a la página inicial. Clique no ícone do **beacon**.
 
 ![DSN](./images/app23.png)
 
-Primeiro, selecione **Señalización de pantalla de Bootcamp** e clique no botão de **entrada** botón. Isso que você simule uma entrada do beacon.
+Primeiro, selecione **Señalización de pantalla Bootcamp** e clique no botão de **entrada** button. Isso que você simule uma entrada do beacon.
 
 ![DSN](./images/app21.png)
 

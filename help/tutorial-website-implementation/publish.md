@@ -1,15 +1,15 @@
 ---
-title: Publicación de la propiedad de etiquetas
+title: Publish su propiedad de etiquetas
 description: Obtenga información sobre cómo publicar la propiedad de etiquetas del entorno de desarrollo en los entornos de ensayo y producción. Esta lección forma parte del tutorial Implementación del Experience Cloud en sitios web.
 exl-id: dec70472-cecc-4630-b68e-723798f17a56
 source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 69%
+source-wordcount: '571'
+ht-degree: 58%
 
 ---
 
-# Publicación de la propiedad de etiquetas
+# Publish su propiedad de etiquetas
 
 Después de haber implementado varias soluciones clave de Adobe Experience Cloud en su entorno de desarrollo, es hora de analizar el flujo de trabajo de publicación.
 
@@ -19,7 +19,7 @@ Después de haber implementado varias soluciones clave de Adobe Experience Cloud
 >
 > * El platform launch (lado del cliente) ahora es **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=es)**
 > * El lado del servidor de platform launch ahora es **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
-> * Las configuraciones de Edge ahora son **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=es)**
+> * Ahora, las configuraciones de Edge son **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=es)**
 
 ## Objetivos de aprendizaje
 
@@ -33,9 +33,9 @@ Al final de esta lección, debe poder:
 
 Después de crear y validar la biblioteca en el entorno de desarrollo, es hora de publicarla en el entorno de ensayo.
 
-1. Vaya a la **[!UICONTROL Flujo de publicación]** página
+1. Ir a la página **[!UICONTROL Flujo de publicación]**
 
-1. Abra el menú desplegable situado junto a la biblioteca y seleccione **[!UICONTROL Enviar para aprobación]**.
+1. Abra el menú desplegable situado junto a la biblioteca y seleccione **[!UICONTROL Enviar para aprobación]**
 
    ![Enviar para aprobación](images/publishing-submitForApproval.png)
 
@@ -55,7 +55,7 @@ En un escenario en tiempo real, el siguiente paso del proceso sería que el equi
 
 **Para validar los cambios en la biblioteca de ensayo**
 
-1. En la propiedad de etiquetas, abra [!UICONTROL Entornos] página
+1. En su propiedad de etiquetas, abra la página [!UICONTROL Entornos]
 
 1. En la fila [!UICONTROL Ensayo], haga clic en el ![icono Instalar](images/launch-installIcon.png) para abrir el modal.
 
@@ -63,20 +63,20 @@ En un escenario en tiempo real, el siguiente paso del proceso sería que el equi
 
 1. Haga clic en el icono ![Copiar](images/launch-copyIcon.png) para copiar el código de incrustación en el portapapeles.
 
-1. Haga clic en **[!UICONTROL Cerrar]** para cerrar el modal.
+1. Haga clic en **[!UICONTROL Cerrar]** para cerrar el modal
 
    ![Icono Instalar](images/publishing-copyStagingCode.png)
 
 1. Abra [el sitio de ejemplo de Luma](https://luma.enablementadobe.com/content/luma/us/en.html) en el navegador Chrome.
 
-1. Abra el [Extensión de Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) haciendo clic en ![Icono de Debugger](images/icon-debugger.png) icono
+1. Abra [Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) haciendo clic en el icono ![Debugger](images/icon-debugger.png)
 
    ![Haga clic en el icono de Debugger](images/switchEnvironments-openDebugger.png)
 
 1. Vaya a la pestaña Herramientas.
 
-1. En el **[!UICONTROL Adobe Launch > Reemplazar código de incrustación de Launch]** Pegue el código incrustado de ensayo que se encuentra en el portapapeles.
-1. Encienda el **[!UICONTROL Aplicar en luma.enablementadobe.com]** cambiar
+1. En la sección **[!UICONTROL Launch de Adobe > Reemplazar código de incrustación de Launch]**, pegue el código de incrustación de ensayo que se encuentra en el portapapeles.
+1. Activar el conmutador **[!UICONTROL Aplicar en luma.enablementadobe.com]**
 
 1. Haga clic en el icono de disco para guardar.
 
@@ -102,11 +102,11 @@ En realidad, una vez que el equipo de control de calidad ha cerrado sesión al r
 
 1. La biblioteca ahora aparece en la columna [!UICONTROL Aprobado] en el estado sin compilar (punto amarillo):
 
-1. Abra el menú desplegable y seleccione **[!UICONTROL Generar y publicar en producción]**:
+1. Abra el menú desplegable y seleccione **[!UICONTROL Generar y Publish en producción]**:
 
    ![Haga clic en Generar y publicar en producción](images/publishing-buildAndPublishToProduction.png)
 
-1. Haga clic en **[!UICONTROL Publicar]** en el cuadro de diálogo:
+1. Haga clic en **[!UICONTROL Publish]** en el cuadro de diálogo:
 
    ![Haga clic en Publicar](images/publishing-publish.png)
 

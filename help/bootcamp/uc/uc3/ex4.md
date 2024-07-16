@@ -11,8 +11,8 @@ feature: Events
 exl-id: 45c77177-9ea9-4c3d-a40e-c04a747938eb
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 1%
+source-wordcount: '193'
+ht-degree: 0%
 
 ---
 
@@ -29,21 +29,21 @@ Abra la aplicación móvil y vaya a la página principal. Haga clic en el icono 
 
 ![DSN](./images/appsett.png)
 
-Pegue el ID de evento en el campo **EventID de señalización** y haga clic en **Guardar**.
+Pegue su eventID en el campo **Beacon EventID** y haga clic en **Guardar**.
 
 ![DSN](./images/beacon1.png)
 
-Antes de continuar, abre esta página web en tu ordenador: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
+Antes de continuar, abra esta página web en el equipo: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
 
 A continuación, verá esto:
 
 ![DSN](./images/screen1.png)
 
-A continuación, vuelva a la página principal. Haga clic en **baliza** icono.
+A continuación, vuelva a la página principal. Haga clic en el icono **baliza**.
 
 ![DSN](./images/app23.png)
 
-Entonces verá esto... Primero, seleccione **Señalización de pantalla de Bootcamp** y, a continuación, haga clic en **entrada** botón. Esto le permite simular una entrada de señalización.
+Entonces verá esto... Primero, seleccione **Señalización de pantalla Bootcamp** y luego haga clic en el botón **entry**. Esto le permite simular una entrada de señalización.
 
 ![DSN](./images/app21.png)
 

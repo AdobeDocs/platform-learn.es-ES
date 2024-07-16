@@ -7,18 +7,18 @@ exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
 source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
 source-wordcount: '1873'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
 # Configuración del reenvío de eventos con datos del SDK web de Platform
 
-Aprenda a utilizar el reenvío de eventos con datos del SDK web de Adobe Experience Platform.
+Obtenga información sobre cómo utilizar el reenvío de eventos con los datos del SDK web de Adobe Experience Platform.
 
-El reenvío de eventos es un nuevo tipo de propiedad disponible en la recopilación de datos. El reenvío de eventos le permite enviar datos a proveedores de terceros que no sean de Adobe directamente desde el Edge Network de Adobe Experience Platform, en lugar del explorador tradicional del lado del cliente. Descubra las ventajas del reenvío de eventos en la [Resumen del reenvío de eventos](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
+El reenvío de eventos es un nuevo tipo de propiedad disponible en la recopilación de datos. El reenvío de eventos le permite enviar datos a proveedores de terceros que no sean de Adobe directamente desde el Edge Network de Adobe Experience Platform, en lugar del explorador tradicional del lado del cliente. Obtenga más información acerca de las ventajas del reenvío de eventos en la [descripción general del reenvío de eventos](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
 
 
-![Diagrama del SDK web y reenvío de eventos](assets/dc-websdk-eventforwarding.png)
+![Diagrama del SDK web y del reenvío de eventos](assets/dc-websdk-eventforwarding.png)
 
 Para utilizar el reenvío de eventos en Adobe Experience Platform, primero deben enviarse datos al Edge Network de Adobe Experience Platform mediante una o varias de las tres opciones siguientes:
 
@@ -48,8 +48,8 @@ Al final de esta lección, debe ser capaz de:
 
 * Licencia de software que incluye el reenvío de eventos. El reenvío de eventos es una función de pago de la recopilación de datos. Póngase en contacto con el equipo de su cuenta de Adobe para obtener más información.
 * El reenvío de eventos está activado en su organización de Experience Cloud.
-* Permiso de usuario para el reenvío de eventos. (Entrada [Admin Console](https://adminconsole.adobe.com/), en el producto de Adobe Experience Platform Launch, elementos de permiso para[!UICONTROL Plataformas] > [!UICONTROL Edge] y todo [!UICONTROL Derechos de propiedad]). Una vez concedida, debería ver [!UICONTROL Reenvío de eventos] en la navegación izquierda de la interfaz de recopilación de datos:
-  ![Propiedades del reenvío de eventos](assets/event-forwarding-menu.png)
+* Permiso de usuario para el reenvío de eventos. (En [Admin Console](https://adminconsole.adobe.com/), en el producto Adobe Experience Platform Launch, los elementos de permiso para [!UICONTROL Plataformas] > [!UICONTROL Edge] y todos los [!UICONTROL Derechos de propiedad]). Una vez concedido, debería ver [!UICONTROL Reenvío de eventos] en la navegación izquierda de la interfaz de recopilación de datos:
+  ![Propiedades de reenvío de eventos](assets/event-forwarding-menu.png)
 
 * El SDK web o móvil de Adobe Experience Platform está configurado para enviar datos al Edge Network. Debe haber completado las siguientes lecciones de este tutorial:
 
@@ -72,10 +72,10 @@ Al final de esta lección, debe ser capaz de:
 
 Para empezar, cree una propiedad de reenvío de eventos:
 
-1. Abra el [Interfaz de recopilación de datos](https://experience.adobe.com/#/data-collection)
-1. Seleccionar **[!UICONTROL Reenvío de eventos]** desde la navegación izquierda
+1. Abrir la [interfaz de recopilación de datos](https://experience.adobe.com/#/data-collection)
+1. Seleccione **[!UICONTROL Reenvío de eventos]** en el panel de navegación izquierdo
 1. Seleccione **[!UICONTROL Nueva propiedad]**.
-   ![Propiedades del reenvío de eventos](assets/event-forwarding-new.png)
+   ![Propiedades de reenvío de eventos](assets/event-forwarding-new.png)
 
 1. Asigne un nombre a la propiedad. En este caso, `Server-Side - Web SDK Course`
 
@@ -88,27 +88,27 @@ Para que el reenvío de eventos utilice los datos que envía al Edge Network de 
 
 Para configurar Target en el conjunto de datos:
 
-1. Ir a [Recopilación de datos](https://experience.adobe.com/#/data-collection){target="blank"} interfaz
+1. Ir a la interfaz de [recopilación de datos](https://experience.adobe.com/#/data-collection){target="blank"}
 1. En el panel de navegación izquierdo, seleccione **[!UICONTROL Datastreams]**
-1. Seleccione el creado anteriormente `Luma Web SDK: Development Environment` secuencia de datos
+1. Seleccione la secuencia de datos `Luma Web SDK: Development Environment` creada anteriormente
 
    ![Seleccione la secuencia de datos del SDK web de Luma](assets/datastream-luma-web-sdk-development.png)
 
-1. Seleccionar **[!UICONTROL Añadir servicio]**
-   ![Añadir un servicio al conjunto de datos](assets/event-forwarding-datastream-addService.png)
-1. Seleccionar **[!UICONTROL Reenvío de eventos]** como el **[!UICONTROL Servicio]**
+1. Seleccionar **[!UICONTROL Agregar servicio]**
+   ![Agregar un servicio al conjunto de datos](assets/event-forwarding-datastream-addService.png)
+1. Seleccione **[!UICONTROL Reenvío de eventos]** como **[!UICONTROL servicio]**
 
-1. En el **[!UICONTROL ID de propiedad]** , seleccione el nombre que dio a su propiedad de reenvío de eventos, en este caso `Server-Side - Web SDK Course`
+1. En el menú desplegable **[!UICONTROL Id. de propiedad]**, seleccione el nombre que dio a su propiedad de reenvío de eventos, en este caso `Server-Side - Web SDK Course`
 
-1. En el **[!UICONTROL ID de entorno]** , seleccione el entorno de etiquetas al que está vinculando el entorno de reenvío de eventos, en este caso `Development`
+1. En el menú desplegable **[!UICONTROL Id. de entorno]**, seleccione el entorno de etiqueta al que está vinculando el entorno de reenvío de eventos, en este caso `Development`
 
    >[!TIP]
    >
-   >    Para enviar datos a un entorno fuera de la organización de Adobe, seleccione **[!UICONTROL Introducir ID manualmente]** y pegar en un ID. El ID se proporciona al crear una propiedad de reenvío de eventos.
+   >    Para enviar datos a un entorno de reenvío de eventos fuera de la organización de Adobe, selecciona **[!UICONTROL Introducir manualmente los identificadores]** y pega los datos en un identificador. El ID se proporciona al crear una propiedad de reenvío de eventos.
 
 1. Seleccione **[!UICONTROL Guardar]**.
 
-   ![Habilitación del flujo de datos de reenvío de eventos](assets/event-forwarding-datastream-enable.png)
+   ![Habilitación de secuencia de datos de reenvío de eventos](assets/event-forwarding-datastream-enable.png)
 
 Repita estos pasos para los flujos de datos de ensayo y producción cuando esté listo para promocionar los cambios a través del flujo de publicación.
 
@@ -118,11 +118,11 @@ En este ejercicio aprenderá a configurar un elemento de datos de reenvío de ev
 
 >[!NOTE]
 >
->Un webhook es una forma de integrar diferentes sistemas en tiempo semirreal. [Webhook.site](https://webhook.site/) es una herramienta de terceros que le permite inspeccionar, probar y automatizar fácilmente (con el generador de acciones personalizadas visual o WebhookScript) cualquier solicitud HTTP o correo electrónico entrante.
+>Un webhook es una forma de integrar diferentes sistemas en tiempo semirreal. [Webhook.site](https://webhook.site/) es una herramienta de terceros que permite inspeccionar, probar y automatizar fácilmente (con el Generador de acciones personalizadas de Visual Studio o WebhookScript) cualquier solicitud HTTP o correo electrónico entrante.
 
 >[!IMPORTANT]
 >
->Ya debe haber creado y asignado elementos de datos a un objeto XDM, así como haber configurado reglas de etiquetas y haber creado esos cambios dentro de una biblioteca en un entorno de etiquetas para continuar. Si no lo ha hecho, consulte la **Configuración de etiquetas** pasos en la [requisitos previos](setup-event-forwarding.md#prerequisites) sección. Estos pasos garantizan que los datos se envíen al Edge Network de Platform y, desde allí, puede configurar una propiedad de reenvío de eventos para reenviar datos a una solución que no sea de Adobe.
+>Ya debe haber creado y asignado elementos de datos a un objeto XDM, así como haber configurado reglas de etiquetas y haber creado esos cambios dentro de una biblioteca en un entorno de etiquetas para continuar. Si no lo ha hecho, consulte los pasos de la configuración de **etiquetas** en la sección de [requisitos previos](setup-event-forwarding.md#prerequisites). Estos pasos garantizan que los datos se envíen al Edge Network de Platform y, desde allí, puede configurar una propiedad de reenvío de eventos para reenviar datos a una solución que no sea de Adobe.
 
 
 ### Creación de un elemento de datos de reenvío de eventos
@@ -131,35 +131,35 @@ El objeto XDM configurado anteriormente con la extensión de etiqueta del SDK we
 
 >[!IMPORTANT]
 >
->Hay una diferencia de sintaxis clave al hacer referencia a campos XDM en el reenvío de eventos en comparación con otros contextos. Para hacer referencia a datos en una propiedad de reenvío de eventos, la ruta del elemento de datos debe incluir el `arc.event` prefijo:
+>Hay una diferencia de sintaxis clave al hacer referencia a campos XDM en el reenvío de eventos en comparación con otros contextos. Para hacer referencia a datos en una propiedad de reenvío de eventos, la ruta del elemento de datos debe incluir el prefijo `arc.event`:
 >
 > * `arc` significa contexto de respuesta de Adobe.
 > * Por ejemplo: `arc.event.xdm.web.webPageDetails.URL`
 >
 >Si esta ruta de acceso no se especifica correctamente, no se recopilarán datos.
 
-En este ejercicio, reenviará la altura de la ventanilla del explorador y el ID del Experience Cloud del objeto XDM a un webhook. La ruta del campo XDM está determinada por el esquema XDM creado durante la [Configuración de un esquema XDM](configure-schemas.md) lección.
+En este ejercicio, reenviará la altura de la ventanilla del explorador y el ID del Experience Cloud del objeto XDM a un webhook. La ruta del campo XDM está determinada por el esquema XDM creado durante la lección [Configurar un esquema XDM](configure-schemas.md).
 
 >[!TIP]
 >
->También puede encontrar la ruta del objeto XDM utilizando las herramientas de red del explorador web, filtrando por `/ee` solicitudes, abrir la señalización [!UICONTROL **Carga útil**] y profundizando en la variable que está buscando. A continuación, haga clic con el botón derecho del ratón y seleccione &quot;Copiar ruta de propiedad&quot;. Este es un ejemplo de la altura de la ventanilla del explorador:
-> ![Ruta XDM de reenvío de eventos](assets/event-forwarding-xdm-path.png)
+>También puede encontrar la ruta del objeto XDM utilizando las herramientas de red del explorador web, filtrando las solicitudes `/ee`, abriendo la señalización [!UICONTROL **Payload**] y explorando en profundidad la variable que está buscando. A continuación, haga clic con el botón derecho del ratón y seleccione &quot;Copiar ruta de propiedad&quot;. Este es un ejemplo de la altura de la ventanilla del explorador:
+> ![Ruta XDM de reenvío de eventos ](assets/event-forwarding-xdm-path.png)
 
-1. Vaya a la **[!UICONTROL Reenvío de eventos]** propiedad creada recientemente
+1. Vaya a la propiedad **[!UICONTROL Reenvío de eventos]** que creó recientemente
 
 1. En el panel de navegación izquierdo, seleccione **[!UICONTROL Elementos de datos]**
 
-1. Seleccionar para **[!UICONTROL Crear nuevo elemento de datos]**
+1. Seleccione para **[!UICONTROL crear nuevo elemento de datos]**
 
-   ![Nuevo elemento de datos del reenvío de eventos](assets/event-forwarding-new-dataelement.png)
+   ![Nuevo elemento de datos para el reenvío de eventos](assets/event-forwarding-new-dataelement.png)
 
 1. **[!UICONTROL Nombre]** el elemento de datos `environment.browserDetails.viewportHeight`
 
-1. En **[!UICONTROL Extensión]**, dejar `CORE`
+1. En **[!UICONTROL extensión]**, deje `CORE`
 
 1. En **[!UICONTROL Tipo de elemento de datos]**, seleccione `Path`
 
-1. Escriba la ruta del objeto XDM que contiene la altura de la ventanilla del explorador `arc.event.xdm.environment.browserDetails.viewportHeight`
+1. Escriba la ruta de objeto XDM que contiene la altura de la ventanilla del explorador `arc.event.xdm.environment.browserDetails.viewportHeight`
 
 1. Seleccionar **[!UICONTROL Guardar]**
 
@@ -168,13 +168,13 @@ En este ejercicio, reenviará la altura de la ventanilla del explorador y el ID 
 
 1. Crear otro elemento de datos
 
-1. **[!UICONTROL Nombre]** it `ecid`
+1. **[!UICONTROL Nombre]** lo `ecid`
 
-1. En **[!UICONTROL Extensión]**, dejar `CORE`
+1. En **[!UICONTROL extensión]**, deje `CORE`
 
 1. En **[!UICONTROL Tipo de elemento de datos]**, seleccione `Path`
 
-1. Escriba la ruta del objeto XDM que contiene el ID del Experience Cloud `arc.event.xdm.identityMap.ECID.0.id`
+1. Escriba la ruta del objeto XDM que contiene el ID de Experience Cloud `arc.event.xdm.identityMap.ECID.0.id`
 
 1. Seleccionar **[!UICONTROL Guardar]**
 
@@ -182,23 +182,23 @@ En este ejercicio, reenviará la altura de la ventanilla del explorador y el ID 
 
    >[!CAUTION]
    >
-   > Asegúrese de incluir el `arc.event.` prefijo en la ruta. Además, asegúrese de seguir exactamente las mayúsculas y minúsculas como el nombre del campo Objeto XDM; el área de nombres ECID debe estar en mayúsculas.
+   > Asegúrese de incluir el prefijo `arc.event.` en la ruta. Además, asegúrese de seguir exactamente las mayúsculas y minúsculas como el nombre del campo Objeto XDM; el área de nombres ECID debe estar en mayúsculas.
 
 
    >[!TIP]
    >
-   >Al trabajar con su propio sitio web, puede encontrar la ruta del objeto XDM con las herramientas de red del explorador web, filtrando por `/ee` solicitudes, abrir la señalización [!UICONTROL **Carga útil**] y profundizando en la variable que está buscando. A continuación, haga clic con el botón derecho del ratón y seleccione &quot;Copiar ruta de propiedad&quot;. Este es un ejemplo de la altura de la ventanilla del explorador:
+   >Al trabajar con su propio sitio web, puede encontrar la ruta del objeto XDM con las herramientas de red del explorador web, filtrando las solicitudes `/ee`, abriendo la señalización [!UICONTROL **Payload**] y explorando en profundidad la variable que está buscando. A continuación, haga clic con el botón derecho del ratón y seleccione &quot;Copiar ruta de propiedad&quot;. Este es un ejemplo de la altura de la ventanilla del explorador:
    > ![Ruta XDM de reenvío de eventos](assets/event-forwarding-xdm-path.png)
 
 ### Instalación de la extensión de conector de Adobe Cloud
 
-Para enviar datos a ubicaciones de terceros, primero debe instalar el [!UICONTROL Conector de Adobe Cloud] extensión.
+Para enviar datos a ubicaciones de terceros, primero debe instalar la extensión [!UICONTROL Conector de Adobe Cloud].
 
-1. Seleccionar **[!UICONTROL Extensiones]** en el panel de navegación izquierdo
+1. Seleccione **[!UICONTROL Extensiones]** en el panel de navegación izquierdo
 
-1. Seleccione el **[!UICONTROL Catálogo]** pestaña
+1. Seleccione la ficha **[!UICONTROL Catálogo]**
 
-1. Busque la variable **[!UICONTROL Conector de Adobe Cloud]**, seleccione **[!UICONTROL Instalar]**
+1. Busque **[!UICONTROL Conector de Adobe Cloud]**, seleccione **[!UICONTROL Instalar]**
 
    ![Ruta de ECID de reenvío de eventos](assets/event-forwarding-adobe-cloud-connector.png)
 
@@ -208,16 +208,16 @@ No se necesita ninguna configuración de extensión. Con esta extensión, ahora 
 
 Existen algunas diferencias principales entre la configuración de reglas en una propiedad de etiqueta y una regla en una propiedad de reenvío de eventos:
 
-* **[!UICONTROL Eventos] &amp; [!UICONTROL Condiciones]**:
+* **[!UICONTROL Eventos] y [!UICONTROL Condiciones]**:
 
-   * **Etiquetas**: todas las reglas se activan mediante un evento que debe especificarse en la regla, por ejemplo, `Library Loaded - Page Top`. Las condiciones son opcionales.
-   * **Reenvío de eventos**: Se da por hecho que cada evento enviado al Edge Network de Platform es un déclencheur para reenviar datos. Por lo tanto, no hay [!UICONTROL Eventos] que se deben seleccionar en las reglas de reenvío de eventos. Para administrar qué eventos almacenan en déclencheur una regla de reenvío de eventos, debe configurar las condiciones.
+   * **Etiquetas**: todas las reglas se activan mediante un Evento que debe especificarse en la regla, por ejemplo, `Library Loaded - Page Top`. Las condiciones son opcionales.
+   * **Reenvío de eventos**: Se supone que cada evento enviado al Edge Network de Platform es un déclencheur para reenviar datos. Por lo tanto, no hay [!UICONTROL Eventos] que se deban seleccionar en las reglas de reenvío de eventos. Para administrar qué eventos almacenan en déclencheur una regla de reenvío de eventos, debe configurar las condiciones.
 
-* **Tokenización de elemento de datos**:
+* **Token de elemento de datos**:
 
-   * **Etiquetas**: Los nombres de los elementos de datos se identifican mediante token con un `%` al principio y al final del nombre del elemento de datos cuando se utiliza en una regla. Por ejemplo, `%viewportHeight%`.
+   * **Tags**: los nombres de los elementos de datos se identifican mediante token con un `%` al principio y al final del nombre del elemento de datos cuando se utilizan en una regla. Por ejemplo, `%viewportHeight%`.
 
-   * **Reenvío de eventos**: los nombres de los elementos de datos llevan un token `{{` al principio y `}}` al final del nombre del elemento de datos cuando se utiliza en una regla. Por ejemplo, `{{viewportHeight}}`.
+   * **Reenvío de eventos**: los nombres de los elementos de datos se identifican mediante token con `{{` al principio y `}}` al final del nombre del elemento de datos cuando se utilizan en una regla. Por ejemplo, `{{viewportHeight}}`.
 
 * **Secuencia de acciones de regla**:
 
@@ -230,9 +230,9 @@ Existen algunas diferencias principales entre la configuración de reglas en una
 
 Para configurar una regla para reenviar datos a su webhook, primero debe obtener su webhook personal:
 
-1. Ir a [Webhook.site](https://webhook.site)
+1. Ir a [webhook.site](https://webhook.site)
 
-1. Buscar **Su URL única**, se usa como solicitud de URL en la regla del reenvío de eventos
+1. Busque **su dirección URL única**, la usa como solicitud de dirección URL en la regla de reenvío de eventos
 
 1. Seleccionar **[!UICONTROL Copiar al portapapeles]**
 
@@ -240,35 +240,35 @@ Para configurar una regla para reenviar datos a su webhook, primero debe obtener
 
    ![Copiar URL de webhook](assets/event-forwarding-webhook.png)
 
-1. Volver atrás **[!UICONTROL Recopilación de datos]** > **[!UICONTROL Reenvío de eventos]** > **[!UICONTROL Reglas]** desde la navegación izquierda
+1. Retroceder **[!UICONTROL Recopilación de datos]** > **[!UICONTROL Reenvío de eventos]** > **[!UICONTROL Reglas]** desde la navegación izquierda
 
 1. Seleccionar **[!UICONTROL Crear nueva regla]**
 
-   ![Reenvío de eventos Nueva regla](assets/event-forwarding-new-rules.png)
+   ![Nueva regla para reenvío de eventos](assets/event-forwarding-new-rules.png)
 
-1. Asígnele un nombre `all events - ad cloud connector - webhook`
+1. Asigne un nombre `all events - ad cloud connector - webhook`
 
 1. Añadir una acción
 
-1. En **[!UICONTROL Extensión]**, seleccione **[!UICONTROL Conector de Adobe Cloud]**
+1. En **[!UICONTROL Extensión]**, seleccione **[!UICONTROL Conector de nube de Adobe]**
 
-1. En **[!UICONTROL Tipo de acción]**, seleccione **[!UICONTROL Hacer llamada de recuperación]**
+1. En **[!UICONTROL Tipo de acción]**, seleccione **[!UICONTROL Realizar llamada de recuperación]**
 
-1. Pegue la dirección URL del webhook en **[!UICONTROL URL]** campo
+1. Pegue la URL de Webhook en el campo **[!UICONTROL URL]**
 
    ![Copiar URL de webhook](assets/event-forwarding-rule.png)
 
-1. En **[Parámetros de consulta]**, agregará ambos elementos de datos creados anteriormente.
+1. En **[Parámetros de consulta]**, agregará ambos elementos de datos que creó anteriormente.
 
-1. En el **[!UICONTROL Clave]** tipo de columna en `viewPortHeight`. En el **[!UICONTROL Valor]** , introduzca la columna `{{environment.browserDetails.viewportHeight}}` elemento de datos escribiéndolo o seleccionándolo en el icono del selector de elementos de datos
+1. En el tipo de columna **[!UICONTROL Clave]** de `viewPortHeight`. En la columna **[!UICONTROL Valor]**, escriba el elemento de datos `{{environment.browserDetails.viewportHeight}}`; para ello, escríbalo o selecciónelo en el icono del selector de elementos de datos
 
-1. Seleccionar [!UICONTROL **+ Agregar otro**] para agregar otro parámetro de consulta
+1. Seleccione [!UICONTROL **+ Agregar otro**] para agregar otro parámetro de consulta
 
-1. En el **[!UICONTROL Clave]** tipo de columna en `ecid`. En la columna Value, introduzca la variable `{{ecid}}` elemento de datos
+1. En el tipo de columna **[!UICONTROL Clave]** de `ecid`. En la columna Valor, escriba el elemento de datos `{{ecid}}`
 
 1. Seleccionar **[!UICONTROL Conservar cambios]**
 
-   ![Añadir parámetro de consulta](assets/event-forwarding-rule-query-parameter.png)
+   ![Agregar parámetro de consulta](assets/event-forwarding-rule-query-parameter.png)
 
 1. La regla debe ser similar a la siguiente
 
@@ -290,34 +290,34 @@ Cree una biblioteca y todos los cambios en el entorno de desarrollo del reenvío
 
 Ahora puede validar la propiedad de reenvío de eventos mediante Platform Debugger y Webhook.site:
 
-1. Siga los pasos para [cambiar la biblioteca de etiquetas](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property) en el [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en/men.html) a la propiedad de etiquetas del SDK web a la que asignó la propiedad de reenvío de eventos en el conjunto de datos.
+1. Siga los pasos para [cambiar la biblioteca de etiquetas](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property) en el [sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en/men.html) a la propiedad de etiquetas del SDK web a la que asignó la propiedad de reenvío de eventos en la secuencia de datos.
 
-1. Antes de volver a cargar la página, abra en Experience Platform Debugger. **[!UICONTROL Registros]** desde la navegación izquierda
+1. Antes de volver a cargar la página, en Experience Platform Debugger abra **[!UICONTROL Registros]** desde el panel de navegación izquierdo
 
-1. Seleccione el **[!UICONTROL Edge]** pestaña, luego seleccione **[!UICONTROL Connect]** para ver las solicitudes del Edge Network de Platform
+1. Seleccione la ficha **[!UICONTROL Edge]** y, a continuación, seleccione **[!UICONTROL Connect]** para ver las solicitudes del Edge Network de la plataforma
 
-   ![Sesión de red perimetral del reenvío de eventos](assets/event-forwarding-edge-session.png)
+   ![Sesión de red perimetral de reenvío de eventos](assets/event-forwarding-edge-session.png)
 
 1. Volver a cargar la página
 
 1. Verá solicitudes adicionales que le proporcionan visibilidad de las solicitudes del lado del servidor que el Edge Network de Platform envía al enlace web
 
-1. La solicitud en la que se debe centrar la validación es la que muestra la dirección URL completamente construida que envía la red de Edge
+1. La solicitud en la que se centra la validación es la que muestra la dirección URL completamente construida que envía la red de Edge
 
-   ![Debugger de reenvío de eventos](assets/event-forwarding-debugger.png)
+   ![Depurador de reenvío de eventos](assets/event-forwarding-debugger.png)
 
 
 1. Observe los parámetros de cadena de consulta viewPortHeight y ecid
 
-   ![Reenvío de eventos validar cadenas de consulta](assets/event-forwarding-validate-data.png)
+   ![El reenvío de eventos valida las cadenas de consulta](assets/event-forwarding-validate-data.png)
 
 1. Coinciden con los datos que se ven en el objeto XDM
 
    ![Datos coincidentes del reenvío de eventos](assets/event-forwarding-matching-data.png)
 
-1. Por último, valide las coincidencias de datos en [Webhook.site](https://webhook.site) así como al ver su ventana de webhook abierta
+1. Por último, valide también las coincidencias de datos en [Webhook.site](https://webhook.site) al ver la ventana de Webhook abierta
 
-   ![Datos del sitio del gancho web de reenvío de eventos](assets/event-forwarding-webhook-data.png)
+   ![Datos del sitio de enlace web de reenvío de eventos](assets/event-forwarding-webhook-data.png)
 
 ¡Felicidades! Ha configurado el reenvío de eventos.
 
@@ -325,4 +325,4 @@ Ahora puede validar la propiedad de reenvío de eventos mediante Platform Debugg
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer el SDK web de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Gracias por dedicar su tiempo a conocer el SDK web de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

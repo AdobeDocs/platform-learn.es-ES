@@ -10,7 +10,7 @@ thumbnail: 4348-create-a-sandbox.jpg
 exl-id: a04afada-52a1-4812-8fa2-14be72e68614
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '398'
 ht-degree: 2%
 
 ---
@@ -23,14 +23,14 @@ En esta lección, debe crear una zona protegida de entorno de desarrollo que uti
 
 Los entornos limitados proporcionan entornos aislados en los que puede probar la funcionalidad sin mezclar recursos y datos con el entorno de producción. Para obtener más información, consulte la [documentación de zonas protegidas](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=es).
 
-**Arquitectos de datos** y **Ingenieros de datos** deberá crear entornos limitados fuera de este tutorial.
+**Los arquitectos de datos** y **ingenieros de datos** deberán crear zonas protegidas fuera de este tutorial.
 
 Antes de comenzar los ejercicios, vea este breve vídeo para obtener más información sobre las zonas protegidas:
 >[!VIDEO](https://video.tv.adobe.com/v/29838/?learn=on)
 
 ## Permisos necesarios
 
-En el [Configuración de permisos](configure-permissions.md) Esta lección, ha configurado todos los controles de acceso necesarios para completar esta lección.
+En la lección [Configurar permisos](configure-permissions.md), configuró todos los controles de acceso necesarios para completar esta lección.
 
 <!--
 * Permission items **[!UICONTROL Sandbox Administration]** > **[!UICONTROL View Sandboxes]** and **[!UICONTROL Manage Sandboxes]**
@@ -43,41 +43,41 @@ En el [Configuración de permisos](configure-permissions.md) Esta lección, ha c
 
 Vamos a crear una zona protegida:
 
-1. Inicie sesión en [Adobe Experience Platform](https://experience.adobe.com/platform) interfaz
-1. Ir a **[!UICONTROL Zonas protegidas]** en el panel de navegación izquierdo
-1. Seleccionar **[!UICONTROL Crear zona protegida]** en la parte superior derecha
-   ![Seleccione Crear zona protegida](assets/sandbox-createSandbox.png)
+1. Inicie sesión en la interfaz [Adobe Experience Platform](https://experience.adobe.com/platform)
+1. Vaya a **[!UICONTROL Zonas protegidas]** en el panel de navegación izquierdo
+1. Seleccione **[!UICONTROL Crear zona protegida]** en la parte superior derecha
+   ![Seleccionar Crear zona protegida](assets/sandbox-createSandbox.png)
 
-1. Seleccionar **[!UICONTROL Desarrollo]** como el **[!UICONTROL Tipo]**
-1. Asigne un nombre a la zona protegida `luma-tutorial` (considere añadir su nombre al final)
-1. Título del tutorial `Luma Tutorial` (considere añadir su nombre al final)
+1. Seleccione **[!UICONTROL Desarrollo]** como **[!UICONTROL Tipo]**
+1. Asigne un nombre a la zona protegida `luma-tutorial` (considere la posibilidad de agregar su nombre al final)
+1. Asigne un título al tutorial `Luma Tutorial` (considere la posibilidad de agregar su nombre al final)
 1. Seleccione el botón **[!UICONTROL Crear]**
    ![Crear su zona protegida](assets/sandbox-nameSandbox.png)
    >[!NOTE]
    >
    >Aunque puede utilizar valores arbitrarios para el nombre y el título de la zona protegida, se recomienda mantener los valores sugeridos, ya que nos referiremos a estas etiquetas en todo el tutorial. Si varias personas de su organización completan este tutorial, considere la posibilidad de agregar su nombre al final del título y el nombre de la zona protegida, por ejemplo, luma-tutorial-ignatiusjreilly.
 
-Las zonas protegidas tardan aproximadamente 30 segundos en crearse, tiempo durante el cual[!UICONTROL Creando]&quot; estado aparece. Cuando la zona protegida esté completamente creada, se mostrará como &quot;[!UICONTROL Activo]&quot;:
+Las zonas protegidas tardan aproximadamente 30 segundos en crearse, tiempo durante el cual se muestra el estado &quot;[!UICONTROL Creando]&quot;. Cuando la zona protegida esté completamente creada, se mostrará como &quot;[!UICONTROL Activa]&quot;:
 ![Estado activo](assets/sandbox-active.png)
 
-Espere hasta que su zona protegida sea &quot;[!UICONTROL Activo]&quot; antes de continuar con el siguiente ejercicio.
+Espere hasta que su zona protegida esté &quot;[!UICONTROL Activa]&quot; antes de continuar con el siguiente ejercicio.
 
 ## Agregar la nueva zona protegida a la función
 
 Una vez que la zona protegida esté activa, debe incluirla en su función para poder utilizarla. Para agregarlo a su función (requiere privilegios de administrador del sistema o administrador de productos):
 
-1. Vaya a la [!UICONTROL Permisos] pantalla
-1. Abra el `Luma Tutorial Platform` función
-1. Opcionalmente _quitar_ el `Prod` zona protegida de la función
-1. Añada el `Luma Tutorial` espacio aislado
-1. Seleccione **[!UICONTROL Guardar]**
-1. En el [!UICONTROL Zonas protegidas] fila, seleccione **[!UICONTROL Editar]**
+1. Ir a la pantalla [!UICONTROL Permisos]
+1. Abrir el rol `Luma Tutorial Platform`
+1. Opcionalmente _quitar_ la zona protegida `Prod` del rol
+1. Agregar la zona protegida `Luma Tutorial`
+1. Seleccionar **[!UICONTROL Guardar]**
+1. En la fila [!UICONTROL Zonas protegidas], seleccione **[!UICONTROL Editar]**
 
-   ![Añadir el tutorial de Luma](assets/sandbox-addLumaTutorial.png)
+   ![Agregar el tutorial de Luma](assets/sandbox-addLumaTutorial.png)
 
-1. Vuelva a cargar (o Mayús-recargar) la página y ahora debería estar en el `Luma Tutorial` o debería aparecer en la lista desplegable de la zona protegida
-1. Cambie a la `Luma Tutorial` zona protegida si aún no está en ella
+1. Vuelva a cargar (o Mayús-recargar) la página y ahora debería estar en la zona protegida `Luma Tutorial` o debería aparecer en la lista desplegable de la zona protegida
+1. Cambiar a la zona protegida `Luma Tutorial` si aún no se encuentra en ella
 
-   ![Confirmar zona protegida](assets/sandbox-confirmDropdown.png)
+   ![Confirmar espacio aislado](assets/sandbox-confirmDropdown.png)
 
-Genial. Ha creado su zona protegida y está listo para lo siguiente [Configuración de Developer Console y Postman](set-up-developer-console-and-postman.md)!
+¡Genial, has creado tu zona protegida y estás listo para [configurar Developer Console y Postman](set-up-developer-console-and-postman.md)!

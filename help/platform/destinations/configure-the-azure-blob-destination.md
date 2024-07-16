@@ -1,5 +1,5 @@
 ---
-title: Configuración del destino de Azure Blob
+title: Configurar el destino de Azure Blob
 description: Obtenga información sobre cómo configurar un destino de almacenamiento de Azure Blob en Real-time Customer Data Platform (Real-Time CDP).
 solution: Real-Time Customer Data Platform
 feature: Destinations
@@ -10,14 +10,14 @@ thumbnail: 331082.jpg
 exl-id: 17340357-2e3a-4c94-b010-442fba70b216
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 26%
+source-wordcount: '56'
+ht-degree: 0%
 
 ---
 
-# Configuración del destino de Azure Blob
+# Configurar el destino de Azure Blob
 
-Obtenga información sobre cómo configurar un destino de almacenamiento de Azure Blob en Real-time Customer Data Platform (Real-Time CDP). Para obtener más información, consulte la [documentación](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob.html).
+Obtenga información sobre cómo configurar un destino de almacenamiento de Azure Blob en Real-time Customer Data Platform (Real-Time CDP). Para obtener más información, visite la [documentación](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/331082/?learn=on)
 

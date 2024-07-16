@@ -12,13 +12,13 @@ thumbnail: 3424763.jpeg
 exl-id: 3a4171dd-459e-4bef-a4a6-5b6520707a40
 source-git-commit: ca7acd3678b4af4a5b5a040d931a79b7a570fc51
 workflow-type: tm+mt
-source-wordcount: '74'
-ht-degree: 10%
+source-wordcount: '68'
+ht-degree: 11%
 
 ---
 
 # Copia de objetos entre zonas protegidas
 
-Obtenga información sobre cómo copiar objetos entre entornos limitados del Experience Platform mediante paquetes. Duplique fácilmente esquemas, conjuntos de datos, recorridos y mucho más en sus entornos limitados para admitir procesos de versiones e implementaciones de varias regiones/marcas. Para obtener información más detallada, consulte la [herramientas de zona protegida](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html) documentación. 
+Obtenga información sobre cómo copiar objetos entre entornos limitados del Experience Platform mediante paquetes. Duplique fácilmente esquemas, conjuntos de datos, recorridos y mucho más en sus entornos limitados para admitir procesos de versiones e implementaciones de varias regiones/marcas. Para obtener información más detallada, consulte la documentación de [herramientas de espacio aislado](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html). 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424763/?learn=on)

@@ -1,61 +1,62 @@
 ---
-title: 'Bootcamp de CSC: perspectivas para un administrador de marketing'
-description: 'Bootcamp de CSC: perspectivas para un administrador de marketing'
+title: 'CSC Bootcamp: perspectivas para un responsable de marketing'
+description: 'CSC Bootcamp: perspectivas para un responsable de marketing'
 doc-type: multipage-overview
-source-git-commit: 989e4e2add1d45571462eccaeebcbe66a77291db
+exl-id: 8a979899-7b56-427e-aede-6d4e045c89c1
+source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---
 
-# Perspectivas para un administrador de marketing
+# Perspectivas de un responsable de marketing
 
-## Vista semanal del líder del proyecto
+## Vista semanal del jefe de proyecto
 
-En la columna izquierda, haga clic en &quot;Vista semanal del líder del proyecto&quot;:
+En la columna izquierda, haga clic en &quot;Vista semanal del jefe de proyecto&quot;:
 
 ![vista semanal de jefes de proyecto](./images/weekly-view.png)
 
-Esto abarca una amplia gama de informes, en los que siempre se puede hacer clic o actuar para obtener más información:
+Esto cubre una amplia gama de informes, siempre disponibles para clics/acciones para obtener más información:
 
-- La variable **tareas que vencen esta semana por proyecto**
+- Las **tareas que vencen esta semana por proyecto**
 
-![debido a esta semana](./images/tasks-due.png)
+![vence esta semana](./images/tasks-due.png)
 
-- La variable **Próximos hitos de la administración de proyectos** :
+- Los próximos hitos de **Administración de proyectos** :
 
 ![próximos hitos](./images/upcoming-milestones.png)
 
-- La variable **Problemas abiertos por prioridad**
+- **Problemas pendientes por prioridad**
 
 ![problemas por prioridad](./images/open-issues.png)
 
-- La variable **Tareas atrasadas por departamento**
+- Las **tareas atrasadas por departamento**
 
-![tareas atrasadas](./images/late-tasks.png)
+![tareas tardías](./images/late-tasks.png)
 
-- La variable **Tareas atrasadas por individuo**
+- Las **tareas atrasadas de la persona**
 
 ![tareas atrasadas individuales](./images/individual-late-tasks.png)
 
 ## Perspectivas relacionadas con SCRUM
 
-En la columna izquierda, haga clic en Estado de iteración.
+En la columna de la izquierda, haga clic en &#39;Estado de iteración&#39;
 
 ![estado de iteración de clic](./images/iteration-status.png)
 
-Si sus equipos trabajan con la metodología SCRUM, este es un interesante conjunto de informes de Administración:
+Si sus equipos trabajan con la metodología SCRUM, este es un interesante conjunto de informes de administración:
 
 - **Velocidad por iteración**
 
-![velocity](./images/velocity.png)
+![velocidad](./images/velocity.png)
 
-- **Velocidad media por equipo**
+- **Velocidad promedio por equipo**
 
 ![velocidad media](./images/average-velocity.png)
 
-- **Iteraciones actuales totales por hora completadas por usuario asignado**
+- **Totales de horas completadas de iteraciones actuales por usuario asignado**
 
 ![totales de horas completadas](./images/iteration-status.png)
 
@@ -65,13 +66,13 @@ Si sus equipos trabajan con la metodología SCRUM, este es un interesante conjun
 
 ## Informes de eficiencia
 
-En la columna de la izquierda, haga clic en &quot;Eficiencia&quot;
+En la columna de la izquierda, haga clic en &quot;Eficiencia&quot;.
 
-![eficiencia de los clics](./images/efficiency.png)
+![eficiencia de clic](./images/efficiency.png)
 
 - **Proporción planificada/no planificada** (del trabajo realizado)
 
-![relación planificada/no planificada](./images/planned-unplanned.png)
+![proporción planificada/no planificada](./images/planned-unplanned.png)
 
 - **Solicitudes completadas por semana**
 
@@ -79,27 +80,27 @@ En la columna de la izquierda, haga clic en &quot;Eficiencia&quot;
 
 ## Perspectivas del proyecto en vuelo
 
-En la columna de la izquierda, haga clic en &quot;Marketing - Proyectos a bordo&quot;
+En la columna de la izquierda, haga clic en &quot;Marketing - Proyectos en vuelo&quot;
 
 - **Estado de los proyectos en vuelo**
 
-![proyectos a bordo](./images/inflight-projects.png)
+![proyectos en vuelo](./images/inflight-projects.png)
 
 - **Proyectos Por Condición Por Mes**
 
 ![proyectos por condición](./images/project-by-condition.png)
 
-- Lista, progreso y detalles financieros del **Proyectos a bordo**
+- Lista, progreso y detalles financieros de **Proyectos en vuelo**
 
 ![detalles financieros](./images/inflights-projects.png)
 
 ## Visualizar dependencias (entre proyectos)
 
-De vuelta a la línea &quot;PIN&quot;, haga clic en &quot;Vista de Gant Portfolio&quot;:
+De nuevo a la línea &#39;PIN&#39;, haga clic en &#39;Vista de Gantt de Portfolio&#39;:
 
-![haga clic en la vista de ganancia del portafolio](./images/gant-view.png)
+![hacer clic en la vista Gantt del portafolio](./images/gant-view.png)
 
-Aquí tiene un **Vista Gant Chart de un grupo de proyectos** con posibles dependencias (predecesores) entre proyectos
+Aquí tiene una vista de gráfico Gantt **de un grupo de proyectos** con posibles dependencias (predecesoras) entre proyectos
 
 ![dependencias entre proyectos](./images/gant-chart.png)
 
@@ -107,15 +108,15 @@ Aquí tiene un **Vista Gant Chart de un grupo de proyectos** con posibles depend
 
 >[!NOTE]
 >
-> Este es un ejemplo de integración con un software de terceros. Se trata de una integración con Adobe Campaign como ilustración. Importa los resultados de las campañas completadas en Adobe Campaign.
+> Este es un ejemplo de integración con un software de terceros. Esta es una integración con Adobe Campaign a modo de ilustración. Importa los resultados de las campañas completadas en Adobe Campaign.
 
 En la línea &quot;PIN&quot;, haga clic en &quot;Resumen de campaña&quot;:
 
 - **Resumen de Adobe Campaign**
 
-![summary](./images/campaign-summary.png)
+![resumen](./images/campaign-summary.png)
 
-- **Adobe Campaign enviado a aperturas**
+- **Adobe Campaign enviado a las aperturas**
 
 ![enviado para abrir](./images/sent-to-open.png)
 
@@ -125,6 +126,6 @@ En la línea &quot;PIN&quot;, haga clic en &quot;Resumen de campaña&quot;:
 
 Paso siguiente: [Conclusión](../../conclusion.md)
 
-[Volver a la fase 4: perspectivas para un administrador de proyectos](./project-manager.md)
+[Volver a la fase 4: perspectivas para un gestor de proyectos](./project-manager.md)
 
 [Volver a todos los módulos](../../overview.md)

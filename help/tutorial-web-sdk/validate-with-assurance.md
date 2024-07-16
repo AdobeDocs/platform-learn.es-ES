@@ -25,7 +25,7 @@ Al final de esta lección, debe poder:
 
 ## Requisitos previos
 
-Está familiarizado con las etiquetas de recopilación de datos y las [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} y haya completado las lecciones anteriores en el tutorial:
+Está familiarizado con las etiquetas de recopilación de datos y con el [sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} y ha completado las lecciones anteriores en el tutorial:
 
 * [Configuración de un esquema XDM](configure-schemas.md)
 * [Configuración de un área de nombres de identidad](configure-identities.md)
@@ -43,15 +43,15 @@ Existen varias formas de iniciar una sesión de Assurance.
 
 ### Iniciar una sesión de Assurance en Debugger
 
-Cada vez que se habilita el seguimiento de Edge en Adobe Experience Platform Debugger, se inicia una sesión de Assurance en segundo plano.
+Cada vez que activa el seguimiento de Edge en Adobe Experience Platform Debugger, se inicia una sesión de Assurance en segundo plano.
 
 Consulte cómo hemos realizado esto en la lección de Debugger:
 
-1. Vaya a la [Sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html) y use el depurador para [cambie la propiedad de etiquetas del sitio a su propia propiedad de desarrollo](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
-1. En la navegación izquierda de **[!UICONTROL Experience Platform Debugger]** select **[!UICONTROL Registros]**
-1. Seleccione el **[!UICONTROL Edge]** y seleccione. **[!UICONTROL Connect]**
+1. Vaya al [sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html) y use el depurador para [cambiar la propiedad de etiquetas del sitio a su propia propiedad de desarrollo](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. En la navegación izquierda de **[!UICONTROL Experience Platform Debugger]**, seleccione **[!UICONTROL Registros]**
+1. Seleccione la ficha **[!UICONTROL Edge]** y seleccione **[!UICONTROL Conectar]**
 
-   ![Conectar seguimiento de Edge](assets/analytics-debugger-edgeTrace.png)
+   ![Conectar el seguimiento de Edge](assets/analytics-debugger-edgeTrace.png)
 1. Con el seguimiento de Edge habilitado, puede ver un icono de vínculo de salida en la parte superior. Seleccione el icono para abrir Assurance.
 
    ![Iniciar sesión de Assurance](assets/validate-debugger-start-assurnance.png)
@@ -60,17 +60,17 @@ Consulte cómo hemos realizado esto en la lección de Debugger:
 
 ### Iniciar una sesión de Assurance desde la interfaz de Assurance
 
-1. Abra el [Interfaz de recopilación de datos](https://experience.adobe.com/#/data-collection/home){target="_blank"}
+1. Abrir la [interfaz de recopilación de datos](https://experience.adobe.com/#/data-collection/home){target="_blank"}
 1. Seleccione Assurance en el panel de navegación izquierdo
 1. Seleccione Crear sesión
    ![Crear una sesión de Assurance](assets/assurance-create-session.png)
 1. Seleccione Inicio
 1. Asigne un nombre a la sesión, por ejemplo, `Luma Web SDK validation`
-1. Como el **[!UICONTROL URL básica]** introduzcan `https://luma.enablementadobe.com/`
-   ![Asignar un nombre a la sesión de Assurance](assets/assurance-name-session.png)
+1. Como **[!UICONTROL URL base]**, escriba `https://luma.enablementadobe.com/`
+   ![Asigne un nombre a la sesión de Assurance](assets/assurance-name-session.png)
 1. En la pantalla siguiente, seleccione **[!UICONTROL Copiar vínculo]**
 1. Seleccione el icono para copiar el vínculo en el portapapeles.
-1. Pegue la dirección URL en el explorador, que abrirá el sitio web de Luma con un parámetro de URL especial. `adb_validation_sessionid` e iniciar la sesión
+1. Pegue la dirección URL en el explorador, que abrirá el sitio web de Luma con un parámetro de URL especial `adb_validation_sessionid` e iniciará la sesión
 1. En la interfaz de Assurance, debería ver un mensaje que indique que se ha conectado correctamente a la sesión y que debería ver los eventos capturados en la interfaz de Assurance.
    ![La sesión de Assurance se ha conectado](assets/assurance-success.png)
 
@@ -78,11 +78,11 @@ Consulte cómo hemos realizado esto en la lección de Debugger:
 
 Hay información limitada para ver en esta fase de la implementación. Un valor que podemos ver es su ID de Experience Cloud (ECID) que se genera en el Edge Network de Platform:
 
-1. Seleccione la fila con el evento llamado `Alloy Response Handle`.
-1. A la derecha aparece un menú. Seleccione el `+` firmar junto a `[!UICONTROL ACPExtensionEventData]`
-1. Explorar en profundidad seleccionando `[!UICONTROL payload > 0 > payload > 0 > namespace]`. El ID mostrado en la última `0` corresponde al `ECID`. Lo sabe por el valor que aparece debajo de `namespace` concordancia `ECID`
+1. Seleccione la fila con el evento denominado `Alloy Response Handle`.
+1. A la derecha aparece un menú. Seleccionar el signo `+` junto a `[!UICONTROL ACPExtensionEventData]`
+1. Explorar en profundidad seleccionando `[!UICONTROL payload > 0 > payload > 0 > namespace]`. El identificador mostrado bajo los últimos `0` corresponde a `ECID`. Lo sabe por el valor que aparece en `namespace` que coincide con `ECID`
 
-   ![Validación de ECID de Assurance](assets/validate-assurance-ecid.png)
+   ![Assurance valida el ECID](assets/validate-assurance-ecid.png)
 
    >[!CAUTION]
    >
@@ -96,4 +96,4 @@ Ahora que un objeto XDM se activa en una página y con los conocimientos necesar
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer el SDK web de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Gracias por dedicar su tiempo a conocer el SDK web de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

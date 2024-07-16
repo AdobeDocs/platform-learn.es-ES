@@ -6,7 +6,7 @@ exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
 source-git-commit: d04a9dbe0f148e7ef210f1f4472a7771db5bb511
 workflow-type: tm+mt
 source-wordcount: '165'
-ht-degree: 32%
+ht-degree: 30%
 
 ---
 
@@ -33,11 +33,11 @@ La recopilación de datos es la próxima generación de funcionalidades de admin
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=es" target="_blank">
-    <strong>Implementación del Experience Cloud con SDK web</strong>
+    <strong>Implementar el Experience Cloud con SDK web</strong>
     </a>
     </div>
     <p>
-    <em>Uso de etiquetas para implementar el SDK web de Platform</em>
+    <em>Usar etiquetas para implementar el SDK web de Platform</em>
     <p>
   </td>
   <td>
@@ -46,24 +46,24 @@ La recopilación de datos es la próxima generación de funcionalidades de admin
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=es" target="_blank">
-    <strong>Implementación del Experience Cloud de en aplicaciones móviles</strong>
+    <strong>Implementar el Experience Cloud en aplicaciones móviles</strong>
     </a>
     </div>
     <p>
-    <em>Uso de etiquetas para implementar el SDK de Platform Mobile</em>
+    <em>Usar etiquetas para implementar el SDK de Platform Mobile</em>
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html?lang=es" target="_blank">
+    <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
       <img alt="Migración de Target al SDK web" src="assets/thumb_targetWebSdk.jpg" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html?lang=es" target="_blank">
-    <strong>Migración de Adobe Target a SDK web</strong>
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+    <strong>Migrar Adobe Target al SDK web</strong>
     </a>
     </div>
     <p>
-    <em>Migración de at.js a SDK web</em>
+    <em>Migrar de at.js al SDK web</em>
     <p>
   </td>
 </tr>

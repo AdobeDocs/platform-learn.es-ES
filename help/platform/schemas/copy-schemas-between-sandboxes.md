@@ -20,6 +20,6 @@ Este vídeo muestra cómo copiar un esquema de una zona protegida a otra en Adob
 
 >[!TIP]
 >
->A finales de 2023 se introdujo un proceso mucho más fácil y centrado en la interfaz para mover esquemas y otros objetos entre entornos limitados, que recomendamos utilizar en su lugar. Consulte lo siguiente [Copia de objetos entre zonas protegidas](https://experienceleague.adobe.com/docs/platform-learn/tutorials/admin/copy-objects-between-sandboxes.html?lang=es).
+>A finales de 2023 se introdujo un proceso mucho más fácil y centrado en la interfaz para mover esquemas y otros objetos entre entornos limitados, que recomendamos utilizar en su lugar. Vea [Copiar objetos entre zonas protegidas](https://experienceleague.adobe.com/docs/platform-learn/tutorials/admin/copy-objects-between-sandboxes.html?lang=es).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333592?learn=on)

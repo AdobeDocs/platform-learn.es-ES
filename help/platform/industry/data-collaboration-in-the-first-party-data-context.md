@@ -1,5 +1,5 @@
 ---
-title: Colaboración de datos en el contexto de datos de origen
+title: Data Collaboration en el contexto de datos de origen
 description: Entrega de la promesa de experiencia, con acceso a menos datos. Tanto si es un anunciante, editor o agencia, este seminario web le ayudará a desbloquear las oportunidades de colaboración de datos en un futuro sin cookies de terceros.
 feature: Data Management
 role: User, Developer, Data Engineer, Architect, Data Architect, Admin, Leader
@@ -10,18 +10,18 @@ jira: KT-9145
 exl-id: 84d900c4-662e-486c-97c9-38c55fd5bf28
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 34%
+source-wordcount: '135'
+ht-degree: 17%
 
 ---
 
-# Colaboración de datos en el contexto de datos de origen
+# Data Collaboration en el contexto de datos de origen
 
 Entrega de la promesa de experiencia, con acceso a menos datos. Tanto si es un anunciante, editor o agencia, este seminario web le ayudará a desbloquear las oportunidades de colaboración de datos en un futuro sin cookies de terceros.
 
 >[!VIDEO](https://video.tv.adobe.com/v/337665/?learn=on)
 
-## Principales conclusiones:
+## Consideraciones clave:
 
 * Cómo incorporar modelos de colaboración de datos en el contexto de datos de origen, con el consentimiento del consumidor.
 * Creación de asociaciones de marca a marca y de editor directo que cumplan la promesa de la experiencia.
@@ -33,4 +33,4 @@ Entrega de la promesa de experiencia, con acceso a menos datos. Tanto si es un a
 
 [Audience Marketplace para compradores de datos](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/audience-marketplace/audience-marketplace-for-data-buyers/marketplace-data-buyers.html?lang=en)
 
-[People-Based Destinations](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/people-based/people-based-destinations-overview.html?lang=es)
+[Destinos basados en personas](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/people-based/people-based-destinations-overview.html?lang=es)

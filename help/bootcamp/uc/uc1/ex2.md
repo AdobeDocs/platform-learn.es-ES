@@ -28,11 +28,11 @@ Ir a [Adobe Experience Platform](https://experience.adobe.com/platform). Despué
 
 ![Ingesta de datos](./images/home.png)
 
-Antes de continuar, debe seleccionar un **espacio aislado**. La zona protegida que se va a seleccionar se denomina ``Bootcamp``. Para ello, haga clic en el texto **[!UICONTROL Producción de producción]** en la línea azul de la parte superior de la pantalla. Después de seleccionar las [!UICONTROL espacio aislado], verá el cambio de pantalla y ahora estará en su dedicado [!UICONTROL espacio aislado].
+Antes de continuar, debe seleccionar una **zona protegida**. La zona protegida que se va a seleccionar se denomina ``Bootcamp``. Para ello, haga clic en el texto **[!UICONTROL Producción]** en la línea azul de la parte superior de la pantalla. Después de seleccionar la [!UICONTROL zona protegida] adecuada, verá el cambio en la pantalla y ahora se encuentra en la [!UICONTROL zona protegida] dedicada.
 
 
 
-En el menú de la izquierda, vaya a **Perfiles** y a **Examinar**.
+En el menú de la izquierda, ve a **Perfiles** y a **Examinar**.
 
 ![Perfil del cliente](./images/homemenu.png)
 
@@ -45,21 +45,21 @@ En el panel Visualizador de perfiles del sitio web, puede encontrar la descripci
 
 Con Adobe Experience Platform, todos los ID son igualmente importantes. Anteriormente, el ECID era el ID más importante en el contexto de Adobe y todos los demás ID estaban vinculados al ECID en una relación jerárquica. Con Adobe Experience Platform, este ya no es el caso, y cada ID puede considerarse un identificador principal.
 
-Normalmente, el identificador principal depende del contexto. Si le pregunta a su centro de llamadas, **¿Cuál es el ID más importante?** probablemente responderán, **¡el número de teléfono!** Pero si le preguntas a tu equipo de CRM, ellos responderán, **La dirección de correo electrónico**  Adobe Experience Platform comprende esta complejidad y la administra por usted. Cada aplicación, ya sea de Adobe o de no Adobe, hablará con Adobe Experience Platform haciendo referencia al ID que consideran principal. Y simplemente funciona.
+Normalmente, el identificador principal depende del contexto. Si le pregunta a su centro de llamadas, **¿Cuál es el ID más importante?** es probable que respondan, **el número de teléfono!** Pero si le pregunta a su equipo de CRM, responderán: **La dirección de correo electrónico!** Adobe Experience Platform comprende esta complejidad y la administra por usted. Cada aplicación, ya sea de Adobe o de no Adobe, hablará con Adobe Experience Platform haciendo referencia al ID que consideran principal. Y simplemente funciona.
 
-Para el campo **Área de nombres de identidad**, seleccione **ECID** y para el campo **Valor de identidad** introduzca el ECID que se puede encontrar en el panel Visor de perfiles del sitio web de bootcamp. Clic **Ver**. A continuación, verá su perfil en la lista. Haga clic en **ID de perfil** para abrir el perfil.
+Para el campo **Área de nombres de identidad**, seleccione **ECID** y para el campo **Valor de identidad**, introduzca el ECID que puede encontrar en el panel Visor de perfiles del sitio web de bootcamp. Haga clic en **Ver**. A continuación, verá su perfil en la lista. Haga clic en **ID de perfil** para abrir el perfil.
 
 ![Perfil del cliente](./images/popupecid.png)
 
-Ahora verá una descripción general de un par de **Atributos de perfil** del perfil de cliente.
+Ahora verá una descripción general de un par de **Atributos de perfil** importantes de su perfil de cliente.
 
 ![Perfil del cliente](./images/profile.png)
 
-Ir a **Eventos**, donde puede ver las entradas de cada evento de experiencia vinculado a su perfil.
+Vaya a **Eventos**, donde podrá ver las entradas de todos los eventos de experiencia vinculados a su perfil.
 
 ![Perfil del cliente](./images/profileee.png)
 
-Finalmente, vaya a la opción de menú **Abono a audiencia**. Ahora verá todas las audiencias que cumplen los requisitos para este perfil.
+Finalmente, vaya a la opción de menú **Suscripción a audiencias**. Ahora verá todas las audiencias que cumplen los requisitos para este perfil.
 
 ![Perfil del cliente](./images/profileseg.png)
 

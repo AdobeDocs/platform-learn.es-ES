@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Obtenga información sobre cómo rastrear eventos en una aplicación móvil.
 
-La extensión de red perimetral proporciona una API para enviar eventos de experiencia a Platform Edge Network. Un evento de experiencia es un objeto que contiene datos que se ajustan a la definición de esquema XDM ExperienceEvent. De forma más sencilla, capturan lo que las personas hacen en su aplicación móvil. Una vez que Platform Edge Network recibe los datos, se pueden reenviar a aplicaciones y servicios configurados en el conjunto de datos, como Adobe Analytics y Experience Platform. Obtenga más información acerca de [Eventos de experiencia](https://developer.adobe.com/client-sdks/documentation/getting-started/track-events/) en la documentación del producto.
+La extensión de Edge Network proporciona una API para enviar eventos de experiencia al Edge Network de Platform. Un evento de experiencia es un objeto que contiene datos que se ajustan a la definición de esquema XDM ExperienceEvent. De forma más sencilla, capturan lo que las personas hacen en su aplicación móvil. Una vez que Platform Edge Network recibe los datos, se pueden reenviar a aplicaciones y servicios configurados en el conjunto de datos, como Adobe Analytics y Experience Platform. Obtenga más información acerca de [Eventos de experiencias](https://developer.adobe.com/client-sdks/documentation/getting-started/track-events/) en la documentación del producto.
 
 ## Requisitos previos
 
@@ -36,7 +36,7 @@ En esta lección, debe
 
 ## Creación de un evento de experiencia
 
-La extensión de Edge de Adobe Experience Platform puede enviar eventos que siguen un esquema XDM definido anteriormente a Adobe Experience Platform Edge Network.
+La extensión de Adobe Experience Platform Edge puede enviar eventos que siguen un esquema XDM definido anteriormente al Edge Network de Adobe Experience Platform.
 
 El proceso es así...
 
@@ -57,7 +57,7 @@ El proceso es así...
 
 Para los grupos de campos estándar, el proceso tiene este aspecto:
 
-* En el esquema, identifique los eventos que está intentando recopilar. En este ejemplo, se realiza un seguimiento de los eventos de experiencia comercial, por ejemplo una vista de producto (**[!UICONTROL productViews]**) evento.
+* En el esquema, identifique los eventos que está intentando recopilar. En este ejemplo, está realizando un seguimiento de eventos de experiencia comercial, por ejemplo un evento de vista de producto (**[!UICONTROL productViews]**).
 
   ![esquema de vista de producto](assets/datacollection-prodView-schema.png)
 
@@ -74,15 +74,15 @@ Para los grupos de campos estándar, el proceso tiene este aspecto:
   ]
   ```
 
-   * `eventType`: Describe el evento que se produjo, use un [valor conocido](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) cuando sea posible.
-   * `commerce.productViews.value`: el valor numérico o booleano del evento. Si es booleano (o &quot;contador&quot; en Adobe Analytics), el valor siempre se establece en 1. Si es un evento numérico o de moneda, el valor puede ser > 1.
+   * `eventType`: describe el evento que se produjo y usa un [valor conocido](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) siempre que sea posible.
+   * `commerce.productViews.value`: valor numérico o booleano del evento. Si es booleano (o &quot;contador&quot; en Adobe Analytics), el valor siempre se establece en 1. Si es un evento numérico o de moneda, el valor puede ser > 1.
 
-* En el esquema, identifique cualquier dato adicional asociado con el evento de vista de producto de comercio. En este ejemplo, incluya **[!UICONTROL productListItems]** que es un conjunto estándar de campos utilizados con cualquier evento relacionado con el comercio:
+* En el esquema, identifique cualquier dato adicional asociado con el evento de vista de producto de comercio. En este ejemplo, incluya **[!UICONTROL productListItems]**, que es un conjunto estándar de campos utilizados con cualquier evento relacionado con el comercio:
 
   ![esquema de elementos de lista de productos](assets/datacollection-prodListItems-schema.png)
-   * Observe que **[!UICONTROL productListItems]** es una matriz para poder proporcionar varios productos.
+   * Observe que **[!UICONTROL productListItems]** es una matriz para que se puedan proporcionar varios productos.
 
-* Para agregar estos datos, expanda su `xdmData` objeto para incluir datos suplementarios:
+* Para agregar estos datos, expanda el objeto `xdmData` para incluir datos adicionales:
 
   ```swift
   var xdmData: [String: Any] = [
@@ -103,19 +103,19 @@ Para los grupos de campos estándar, el proceso tiene este aspecto:
   ]
   ```
 
-* Ahora puede utilizar esta estructura de datos para crear un `ExperienceEvent`:
+* Ahora puede usar esta estructura de datos para crear un(a) `ExperienceEvent`:
 
   ```swift
   let productViewEvent = ExperienceEvent(xdm: xdmData)
   ```
 
-* Y envíe el evento y los datos a Platform Edge Network mediante el `sendEvent` API:
+* Y envíe el evento y los datos al Edge Network de Platform mediante la API `sendEvent`:
 
   ```swift
   Edge.sendEvent(experienceEvent: productViewEvent)
   ```
 
-El [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API es el SDK de AEP Mobile equivalente a [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) y [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackstate) Llamadas de API. Consulte [Migración de la extensión móvil de Analytics a Adobe Experience Platform Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-analytics/migrate-to-edge-network/) para obtener más información.
+La API [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) es el SDK de AEP Mobile equivalente a las llamadas a la API [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) y [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackstate). Consulte [Migrar de la extensión móvil de Analytics al Edge Network de Adobe Experience Platform](https://developer.adobe.com/client-sdks/documentation/adobe-analytics/migrate-to-edge-network/) para obtener más información.
 
 Ahora va a implementar realmente este código en su proyecto Xcode.
 Tiene diferentes acciones comerciales relacionadas con productos en la aplicación y quiere enviar eventos, según estas acciones realizadas por el usuario:
@@ -127,7 +127,7 @@ Tiene diferentes acciones comerciales relacionadas con productos en la aplicaci�
 
 Para implementar el envío de eventos de experiencia relacionados con el comercio de forma reutilizable, se utiliza una función dedicada:
 
-1. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** en el navegador del proyecto Xcode y añada lo siguiente a `func sendCommerceExperienceEvent(commerceEventType: String, product: Product)` función.
+1. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** en el navegador del proyecto Xcode y agregue lo siguiente a la función `func sendCommerceExperienceEvent(commerceEventType: String, product: Product)`.
 
    ```swift
    // Set up a data dictionary, create an experience event and send the event.
@@ -155,34 +155,34 @@ Para implementar el envío de eventos de experiencia relacionados con el comerci
 
    * configura la carga útil XDM como un diccionario, utilizando los parámetros de la función,
    * configura un evento de experiencia utilizando el diccionario,
-   * envía el evento de experiencia utilizando [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
+   * envía el evento de experiencia mediante la API [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent).
 
-1. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!UICONTROL ProductView]** en el navegador del proyecto Xcode y añada varias llamadas a `sendCommerceExperienceEvent` función:
+1. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!UICONTROL ProductView]** en el navegador del proyecto Xcode y agregue varias llamadas a la función `sendCommerceExperienceEvent`:
 
-   1. En el `.task` modificador, dentro de `ATTrackingManager.trackingAuthorizationStatus` cierre. Esta `.task` se llama al modificador cuando se inicializa y se muestra la vista de producto, por lo que desea enviar un evento de vista de producto en ese momento específico.
+   1. En el modificador `.task`, dentro del cierre `ATTrackingManager.trackingAuthorizationStatus`. Se llama a este modificador `.task` cuando se inicializa y se muestra la vista de producto, por lo que desea enviar un evento de vista de producto en ese momento específico.
 
       ```swift
       // Send productViews commerce experience event
       MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productViews", product: product)
       ```
 
-   1. Para cada uno de los botones (<img src="assets/saveforlater.png" width="15" />, <img src="assets/addtocart.png" width="20" /> y <img src="assets/purchase.png" width="20" />) en la barra de herramientas, añada la llamada correspondiente dentro de la variable `ATTrackingManager.trackingAuthorizationStatus == .authorized` cierre:
+   1. Para cada uno de los botones (<img src="assets/saveforlater.png" width="15" />, <img src="assets/addtocart.png" width="20" /> y <img src="assets/purchase.png" width="20" />) en la barra de herramientas, agregue la llamada relevante dentro del cierre `ATTrackingManager.trackingAuthorizationStatus == .authorized`:
 
-      1. Para  <img src="assets/saveforlater.png" width="15" />
+      1. Para <img src="assets/saveforlater.png" width="15" />
 
          ```swift
          // Send saveForLater commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "saveForLaters", product: product)
          ```
 
-      1. Para  <img src="assets/addtocart.png" width="20" />
+      1. Para <img src="assets/addtocart.png" width="20" />
 
          ```swift
          // Send productListAdds commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productListAdds", product: product)
          ```
 
-      1. Para  <img src="assets/purchase.png" width="20" />
+      1. Para <img src="assets/purchase.png" width="20" />
 
          ```swift
          // Send purchase commerce experience event
@@ -191,7 +191,7 @@ Para implementar el envío de eventos de experiencia relacionados con el comerci
 
 >[!TIP]
 >
->Si está desarrollando para Android™, utilice Map (`java.util.Map`) como interfaz fundamental para construir la carga útil XDM.
+>Si está desarrollando para Android™, utilice Map (`java.util.Map`) como interfaz base para construir la carga útil XDM.
 
 
 ### Grupos de campos personalizados
@@ -199,15 +199,15 @@ Para implementar el envío de eventos de experiencia relacionados con el comerci
 Imagine que desea rastrear las vistas de pantalla y las interacciones en la propia aplicación. Recuerde que ha definido un grupo de campos personalizados para este tipo de eventos.
 
 * En el esquema, identifique los eventos que intenta recopilar.
-  ![esquema de interacción de aplicación](assets/datacollection-appInteraction-schema.png)
+  ![esquema de interacción de la aplicación](assets/datacollection-appInteraction-schema.png)
 
 * Empiece a construir el objeto.
 
   >[!NOTE]
   >
-  * Los grupos de campos estándar siempre comienzan en la raíz del objeto.
+  >* Los grupos de campos estándar siempre comienzan en la raíz del objeto.
   >
-  * Los grupos de campos personalizados siempre comienzan con un objeto único de su organización de Experience Cloud, `_techmarketingdemos` en este ejemplo.
+  >* Los grupos de campos personalizados siempre comienzan con un objeto único de su organización de Experience Cloud, `_techmarketingdemos` en este ejemplo.
 
   Para el evento de interacción de la aplicación, construiría un objeto como:
 
@@ -247,13 +247,13 @@ Imagine que desea rastrear las vistas de pantalla y las interacciones en la prop
   ```
 
 
-* Ahora puede utilizar esta estructura de datos para crear un `ExperienceEvent`.
+* Ahora puede usar esta estructura de datos para crear un(a) `ExperienceEvent`.
 
   ```swift
   let event = ExperienceEvent(xdm: xdmData)
   ```
 
-* Envíe el evento y los datos a Platform Edge Network.
+* Envíe el evento y los datos de al Edge Network de Platform.
 
   ```swift
   Edge.sendEvent(experienceEvent: event)
@@ -262,9 +262,9 @@ Imagine que desea rastrear las vistas de pantalla y las interacciones en la prop
 
 De nuevo, vamos a implementar este código en su proyecto Xcode.
 
-1. Para mayor comodidad, puede definir dos funciones en **[!UICONTROL MobileSDK]**. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** en el navegador del proyecto Xcode.
+1. Para su comodidad, usted define dos funciones en **[!UICONTROL MobileSDK]**. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** en el navegador del proyecto Xcode.
 
-   1. Uno para las interacciones entre aplicaciones. Añada este código a `func sendAppInteractionEvent(actionName: String)` función:
+   1. Uno para las interacciones entre aplicaciones. Agregue este código a la función `func sendAppInteractionEvent(actionName: String)`:
 
       ```swift
       // Set up a data dictionary, create an experience event and send the event.
@@ -289,10 +289,10 @@ De nuevo, vamos a implementar este código en su proyecto Xcode.
 
       * configura la carga útil XDM como un diccionario, utilizando el parámetro de la función,
       * configura un evento de experiencia utilizando el diccionario,
-      * envía el evento de experiencia utilizando [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
+      * envía el evento de experiencia mediante la API [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent).
 
 
-   1. Y uno para el seguimiento de pantalla. Añada este código a `func sendTrackScreenEvent(stateName: String) ` función:
+   1. Y uno para el seguimiento de pantalla. Agregue este código a la función `func sendTrackScreenEvent(stateName: String) `:
 
       ```swift
       // Set up a data dictionary, create an experience event and send the event.
@@ -318,7 +318,7 @@ De nuevo, vamos a implementar este código en su proyecto Xcode.
 
       * configura la carga útil XDM como un diccionario, utilizando el parámetro de la función,
       * configura un evento de experiencia utilizando el diccionario,
-      * envía el evento de experiencia utilizando [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
+      * envía el evento de experiencia mediante la API [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent).
 
 1. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]**.
 
@@ -329,7 +329,7 @@ De nuevo, vamos a implementar este código en su proyecto Xcode.
       MobileSDK.shared.sendAppInteractionEvent(actionName: "login")
       ```
 
-   1. Agregue el siguiente código resaltado a `onAppear` modificador:
+   1. Agregue el siguiente código resaltado al modificador `onAppear`:
 
       ```swift
       // Send track screen event
@@ -338,11 +338,11 @@ De nuevo, vamos a implementar este código en su proyecto Xcode.
 
 ## Validación
 
-1. Revise la [instrucciones de configuración](assurance.md#connecting-to-a-session) para conectar el simulador o dispositivo con Assurance.
+1. Revise la sección [instrucciones de configuración](assurance.md#connecting-to-a-session) para conectar el simulador o dispositivo con Assurance.
 
    1. Mueva el icono Garantía a la izquierda.
-   1. Seleccionar **[!UICONTROL Inicio]** en la barra de pestañas y compruebe que ve un **[!UICONTROL ECID]**, **[!UICONTROL Correo electrónico]**, y **[!UICONTROL ID de CRM]** en la pantalla Inicio.
-   1. Seleccionar **[!DNL Products]** en la barra de pestañas.
+   1. Seleccione **[!UICONTROL Inicio]** en la barra de pestañas y verifique que ve un **[!UICONTROL ECID]**, **[!UICONTROL correo electrónico]** y **[!UICONTROL ID de CRM]** en la pantalla Inicio.
+   1. Seleccione **[!DNL Products]** en la barra de fichas.
    1. Seleccione un producto.
    1. Seleccionar <img src="assets/saveforlater.png" width="15" />.
    1. Seleccionar <img src="assets/addtocart.png" width="20" />.
@@ -351,8 +351,8 @@ De nuevo, vamos a implementar este código en su proyecto Xcode.
       <img src="./assets/mobile-app-events-3.png" width="300">
 
 
-1. En la interfaz de usuario de Assurance, busque **[!UICONTROL hitReceived]** eventos de la **[!UICONTROL com.adobe.edge.konductor]** proveedor.
-1. Seleccione el evento y revise los datos XDM en la **[!UICONTROL messages]** objeto. Como alternativa, puede utilizar ![Copiar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL Copiar evento sin procesar]** y utilice un editor de texto o código de su preferencia para pegar e inspeccionar el evento.
+1. En la IU de Assurance, busque los eventos **[!UICONTROL hitReceived]** del proveedor **[!UICONTROL com.adobe.edge.konductor]**.
+1. Seleccione el evento y revise los datos XDM en el objeto **[!UICONTROL messages]**. También puede usar ![Copiar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL Copiar evento sin procesar]** y usar un editor de texto o código de su preferencia para pegar e inspeccionar el evento.
 
    ![validación de recopilación de datos](assets/datacollection-validation.png)
 
@@ -362,22 +362,22 @@ De nuevo, vamos a implementar este código en su proyecto Xcode.
 Ahora debe tener todas las herramientas para empezar a añadir recopilación de datos a la aplicación. Puede añadir más inteligencia a la forma en que el usuario interactúa con sus productos en la aplicación y puede añadir más interacciones de la aplicación y llamadas de seguimiento de pantalla a la aplicación:
 
 * Implemente las funciones de pedido, cierre de compra, cesta vacía y otras a la aplicación, y agregue eventos de experiencia comercial relevantes a esta funcionalidad.
-* Repita la llamada a `sendAppInteractionEvent` con el parámetro adecuado para rastrear otras interacciones de la aplicación por parte del usuario.
-* Repita la llamada a `sendTrackScreenEvent` con el parámetro adecuado para hacer un seguimiento de las pantallas visualizadas por el usuario en la aplicación.
+* Repita la llamada a `sendAppInteractionEvent` con el parámetro correspondiente para rastrear otras interacciones de la aplicación por parte del usuario.
+* Repita la llamada a `sendTrackScreenEvent` con el parámetro correspondiente para rastrear las pantallas que vio el usuario en la aplicación.
 
 >[!TIP]
 >
-Revise la [aplicación finalizada](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) para ver más ejemplos.
+>Revise la [aplicación finalizada](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) para ver más ejemplos.
 
 
 ## Envío de eventos a Analytics y Platform
 
-Ahora que ha recopilado los eventos y los ha enviado a Platform Edge Network, se envían a las aplicaciones y servicios configurados en su [secuencia de datos](create-datastream.md). En lecciones posteriores, puede asignar estos datos a [Adobe Analytics](analytics.md), [Adobe Experience Platform](platform.md)y otras soluciones de Adobe Experience Cloud como [Adobe Target](target.md) y Adobe Journey Optimizer.
+Ahora que ha recopilado los eventos y los ha enviado al Edge Network de Platform, se envían a las aplicaciones y servicios configurados en su [secuencia de datos](create-datastream.md). En lecciones posteriores, asignará estos datos a [Adobe Analytics](analytics.md), [Adobe Experience Platform](platform.md) y otras soluciones de Adobe Experience Cloud como [Adobe Target](target.md) y Adobe Journey Optimizer.
 
 >[!SUCCESS]
 >
-Ahora ha configurado la aplicación para rastrear eventos de comercio, interacción de aplicaciones y seguimiento de pantalla en Adobe Experience Platform Edge Network y todos los servicios definidos en el flujo de datos.
+>Ahora ha configurado la aplicación para rastrear eventos de comercio, interacción de aplicaciones y seguimiento de pantalla al Edge Network de Adobe Experience Platform y a todos los servicios definidos en el conjunto de datos.
 >
-Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en este [Entrada de discusión de la comunidad Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Siguiente: **[Administrar vistas web](web-views.md)**

@@ -6,7 +6,8 @@ role: Admin, Developer
 level: Beginner
 jira: KT-14689
 last-substantial-update: 2023-12-15T00:00:00Z
-source-git-commit: 4d1a0ff598b822e2228d8719488b9dbb91c9870d
+exl-id: 4bd28867-b664-4a45-8892-91af821cbbcc
+source-git-commit: eae0910e2475ce20f7afd289005b6a8869eaa210
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 # Añadir desarrolladores y conceder permisos a credenciales de API
 
-Aprenda a añadir desarrolladores a aplicaciones basadas en Adobe Experience Platform como Real-time Customer Data Platform y Journey Optimizer. Los desarrolladores se añaden primero a Admin Console. Después de crear su proyecto de Platform en Developer Console, se asignan permisos a sus credenciales de API en Platform o en la interfaz de Journey Optimizer. Para obtener más información, visite la [Documentación de control de acceso](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=es).
+Aprenda a añadir desarrolladores a aplicaciones basadas en Adobe Experience Platform como Real-time Customer Data Platform y Journey Optimizer. Los desarrolladores se añaden primero a Admin Console. Una vez que hayan creado su proyecto de Platform en Developer Console, las credenciales de la API se asignan con permisos en Platform o en la interfaz de Journey Optimizer. Para obtener más información, visite la [documentación de control de acceso](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=es).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426407?learn=on)
 
@@ -25,5 +26,4 @@ Aprenda a añadir desarrolladores a aplicaciones basadas en Adobe Experience Pla
 
 >[!TIP]
 >
->También le recomendamos que agregue el desarrollador como **usuario** a la `AEP-Default-All-Users` perfil de producto en Admin Console y, a continuación, agréguelos al mismo rol en la interfaz de Platform que la credencial de API. Esto les permite utilizar la interfaz si es necesario. Consulte [Adición de usuarios](add-users.md) para obtener más información.
-
+>También recomendamos que agregue al desarrollador como **usuario** al perfil de producto `AEP-Default-All-Users` en Admin Console y, a continuación, que se agregue al mismo rol en la interfaz de Platform que la credencial de la API. Esto les permite utilizar la interfaz si es necesario. Consulte [Agregar usuarios](add-users.md) para obtener más información.

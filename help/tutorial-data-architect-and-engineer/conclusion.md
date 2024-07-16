@@ -8,8 +8,8 @@ jira: KT-4348
 exl-id: 73abe4bd-57cb-4acf-98f6-253b01fd79ff
 source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '426'
-ht-degree: 5%
+source-wordcount: '413'
+ht-degree: 1%
 
 ---
 
@@ -19,23 +19,23 @@ ht-degree: 5%
 
 ¡Felicidades, has pasado por todo el tutorial!
 
-Ahora tiene experiencia práctica con las funcionalidades de Platform que suelen utilizar los arquitectos y los ingenieros de datos. Entiendo que tu papel es solo uno de los dos y que hiciste un _lote_ de trabajo que a menudo realiza un compañero. Espero que al hacerlo puedan apreciar cómo encajan todas las piezas y apreciar el trabajo en equipo requerido para implementar Experience Platform con éxito.
+Ahora tiene experiencia práctica con las funcionalidades de Platform que suelen utilizar los arquitectos y los ingenieros de datos. Entiendo que su función es solo una de las dos y que usted hizo _mucho_ trabajo que a menudo hace un compañero. Espero que al hacerlo puedan apreciar cómo encajan todas las piezas y apreciar el trabajo en equipo requerido para implementar Experience Platform con éxito.
 
 Ha aprendido a hacer lo siguiente:
 
-* Administrar usuarios y permisos en el Admin Console, con los que **Arquitectos de datos** son tareas a menudo
-* Cree una zona protegida, que **Arquitectos de datos** y **Ingenieros de datos** puede utilizar para experimentar con nuevos esquemas y datos
-* Configure el acceso a la API de Platform en Developer Console y utilice las colecciones de Experience Platform Postman, que **Arquitectos de datos** y **Ingenieros de datos** le resultará útil
+* Administre usuarios y permisos en el Admin Console, con los cuales **Arquitectos de datos** suelen recibir tareas
+* Cree una zona protegida que **Arquitectos de datos** e **Ingenieros de datos** puedan usar para experimentar con nuevos esquemas y datos
+* Configure el acceso a la API de Platform en Developer Console y utilice las colecciones Experience Platform Postman, que tanto **Arquitectos de datos** como **Ingenieros de datos** encontrarán útiles
 * Modelar datos en esquemas XDM, que es un bloque de creación básico relevante para todos los usuarios de Platform
-* Asigne identidades a áreas de nombres y agréguelas a esquemas, lo que supone una tarea crítica de **Arquitectos de datos** para unir perfiles
-* Crear conjuntos de datos que **Arquitectos de datos** normalmente está configurado para recibir datos entrantes
+* Asigne identidades a áreas de nombres y agréguelas a esquemas, lo cual es una tarea crítica de **Arquitectos de datos** para unir perfiles
+* Cree conjuntos de datos que **Arquitectos de datos** suelen configurar para recibir datos entrantes
 * Habilite esquemas y conjuntos de datos para perfiles de clientes en tiempo real, otra tarea para **Arquitectos de datos**
-* Suscribirse a eventos de ingesta de datos, que **Ingenieros de datos** puede utilizar para la monitorización de la ingesta
-* Ingesta de datos por lotes mediante varios métodos, que es una de las tareas principales de **Ingenieros de datos**
-* Transmita datos mediante el SDK web de Adobe Experience Platform, que **Ingenieros de datos** normalmente, deben coordinarse con los desarrolladores web
-* Crear políticas de combinación para priorizar conjuntos de datos, otra herramienta para la **Arquitecto de datos**
-* Ejecutar consultas para validar datos, una capacidad útil para ambos **Arquitectos de datos** y **Ingenieros de datos**
-* Generar segmentos, que **Arquitectos de datos** Deberá entenderlo para dar soporte a los usuarios empresariales de Platform
+* Suscribirse a eventos de ingesta de datos que **ingenieros de datos** puedan usar para supervisar la ingesta
+* Ingesta de datos por lotes mediante varios métodos, que es una de las tareas principales de **ingenieros de datos**
+* Transmita datos mediante el SDK web de Adobe Experience Platform, que **los ingenieros de datos** suelen necesitar para coordinar con sus desarrolladores web
+* Cree políticas de combinación para priorizar conjuntos de datos, otra herramienta para **arquitecto de datos**
+* Ejecutar consultas para validar datos, una funcionalidad útil tanto para **arquitectos de datos** como para **ingenieros de datos**
+* Genere segmentos que **Arquitectos de datos** necesitarán entender para admitir a los usuarios empresariales de Platform
 
 
 
@@ -47,7 +47,7 @@ Le sugiero que lo conserve y lo utilice para una mayor experimentación con Plat
 
 Los recursos clave:
 
-* [Tutoriales de Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/overview.html?lang=es)
+* [Tutoriales de Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/overview.html)
 * [Documentación de Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=es)
 * [cursos de Experience League](https://experienceleague.adobe.com/?lang=es#dashboard/learning)
 

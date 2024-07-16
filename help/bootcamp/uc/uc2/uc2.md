@@ -11,8 +11,8 @@ feature: Events, Journeys, Profiles, Mobile SDK
 exl-id: 31f2bbcc-3fd5-4448-a9aa-b79a82e13809
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 1%
+source-wordcount: '215'
+ht-degree: 2%
 
 ---
 
@@ -52,7 +52,7 @@ En este ejercicio, probará el recorrido que acaba de crear.
 
 En este ejercicio, debe instalar la aplicación móvil.
 
-[2.6 Personalización en el centro de llamadas](./ex6.md)
+[2.6 Personalization en el centro de llamadas](./ex6.md)
 
 En este ejercicio, verá cómo se puede optimizar la experiencia de un centro de llamadas en función de la inteligencia de Adobe Experience Platform.
 

@@ -10,8 +10,8 @@ hide: true
 doc-type: multipage
 source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 3%
+source-wordcount: '172'
+ht-degree: 2%
 
 ---
 
@@ -32,16 +32,16 @@ ht-degree: 3%
    + [2.1 Visite el sitio web y cree su cuenta](/help/bootcamp/uc/uc2/ex1.md)
    + [2.2 Crear su evento](/help/bootcamp/uc/uc2/ex2.md)
    + [2.3 Crear el recorrido y el mensaje de correo electrónico](/help/bootcamp/uc/uc2/ex3.md)
-   + [2.4 Probar el recorrido](/help/bootcamp/uc/uc2/ex4.md)
-   + [2.5 Instalar y utilizar la aplicación móvil](/help/bootcamp/uc/uc2/ex5.md)
-   + [2.6 Personalización en el centro de llamadas](/help/bootcamp/uc/uc2/ex6.md)
-+ 3 - Fusión física y digital {#uc3}
+   + [2.4 Prueba tu recorrido](/help/bootcamp/uc/uc2/ex4.md)
+   + [2.5 Instalar y usar la aplicación móvil](/help/bootcamp/uc/uc2/ex5.md)
+   + [2.6 Personalization en el centro de llamadas](/help/bootcamp/uc/uc2/ex6.md)
++ 3 - Fusión de datos físicos y digitales {#uc3}
    + [Información general](/help/bootcamp/uc/uc3/uc3.md)
    + [3.1 Uso de la aplicación móvil y déclencheur de una entrada de señalización](/help/bootcamp/uc/uc3/ex1.md)
    + [3.2 Crear su evento](/help/bootcamp/uc/uc3/ex2.md)
    + [3.3 Crear el recorrido y las notificaciones push](/help/bootcamp/uc/uc3/ex3.md)
    + [3.4 Probar el recorrido](/help/bootcamp/uc/uc3/ex4.md)
-+ 4 - Análisis del Recorrido del cliente {#uc4}
++ 4 - Análisis de Recorrido del cliente {#uc4}
    + [Información general](/help/bootcamp/uc/uc4/uc4.md)
    + [4.1 Customer Journey Analytics 101](/help/bootcamp/uc/uc4/ex1.md)
    + [4.2 Conexión de conjuntos de datos de Adobe Experience Platform en Customer Journey Analytics](/help/bootcamp/uc/uc4/ex2.md)

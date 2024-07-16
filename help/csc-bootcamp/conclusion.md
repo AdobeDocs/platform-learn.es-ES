@@ -2,38 +2,39 @@
 title: CSC Bootcamp - Conclusión
 description: CSC Bootcamp - Conclusión
 doc-type: multipage-overview
-source-git-commit: 989e4e2add1d45571462eccaeebcbe66a77291db
+exl-id: c1145651-1b8a-4634-87b3-db84ceaa731e
+source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '215'
 ht-degree: 0%
 
 ---
 
 # Conclusión
 
-Como han notado durante este bootcamp, la cadena de suministro de contenido no se trata de productos, sino de la sinergia entre los productos. Esta sinergia conlleva muchos beneficios, por ejemplo:
+Como han notado durante este bootcamp, la cadena de suministro de contenido no es sobre productos, sino sobre la sinergia entre productos. Esta sinergia genera muchos beneficios, por ejemplo:
 
-- **Racionalización de los gastos**
-   - Incorporar la producción de contenido al cliente cuando se pueda hacer por menos
-   - Consolidar y asignar el gasto de manera más eficiente entre los asociados de negocios de los organismos
+- **Racionalización de gastos**
+   - Lleve la producción de contenido de forma interna cuando se pueda hacer por menos tiempo
+   - Consolidar y asignar de forma más eficiente el gasto entre los socios de la agencia
 - **Reutilización de recursos**
-   - Eliminar el despilfarro al recrear los activos existentes a través del acceso unificado
-   - Aumente el uso y la velocidad al mercado a través de la búsqueda global optimizada de Al
-- **Reducir los tiempos del ciclo de creación**
-   - Reducir la carga administrativa mediante la organización y colaboración del trabajo
-   - Acelere los ciclos con capacidades de revisión y aprobación seguras integradas
-- **Optimización de la automatización**
+   - Elimine los residuos al volver a crear los activos existentes mediante el acceso unificado
+   - Aumente el uso y la velocidad de comercialización mediante una búsqueda global mejorada
+- **Reducir tiempos de ciclo de creación**
+   - Reduzca la carga administrativa mediante la orquestación de trabajo y la colaboración
+   - Acelere los ciclos con funciones integradas de revisión y aprobación seguras
+- **Optimizar automatización**
    - Generar automáticamente variaciones de recursos para varios canales y dispositivos
-   - Generar automáticamente versiones localizadas de activos para varios mercados/geos
-- **Medir el rendimiento de forma eficaz**
-   - Optimización de los flujos de trabajo mediante la inteligencia de rendimiento del presupuesto y del proyecto
-   - Priorizar el trabajo de mayor valor mediante perspectivas avanzadas de rendimiento de los recursos
+   - Generar automáticamente versiones localizadas de recursos para varios mercados o geos
+- **Medir el rendimiento de manera efectiva**
+   - Optimizar flujos de trabajo mediante inteligencia de rendimiento de proyecto y presupuesto
+   - Priorice el trabajo de mayor valor mediante perspectivas avanzadas de rendimiento de recursos
 
-Sin embargo, es igual de importante enfatizar nuevamente que la Cadena de Suministro de Contenido no es una solución mágica para todos sus problemas. Es una forma de trabajar que le permite ser más eficiente y administrar todas las experiencias que desee ofrecer a sus clientes. Debes rastrear antes de poder caminar y eventualmente correr.
+Sin embargo, es igualmente importante recalcar de nuevo que la cadena de suministro de contenido no es una solución mágica para todos sus problemas. Es una forma de trabajar que te permite ser más eficiente y administrar todas las experiencias que quieras llevar a tus clientes. Tienes que arrastrarte, antes de que puedas caminar y eventualmente correr.
 
-![Recorrido](./images/crawl-walk-run.png)
+![Ejecución de recorrido de rastreo](./images/crawl-walk-run.png)
 
 
-[Volver a la fase 4: perspectivas para un administrador de marketing](./phases/insights/marketing-manager.md)
+[Volver a la fase 4: perspectivas para un responsable de marketing](./phases/insights/marketing-manager.md)
 
 [Volver a todos los módulos](./overview.md)

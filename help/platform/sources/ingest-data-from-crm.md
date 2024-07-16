@@ -1,5 +1,5 @@
 ---
-title: Ingesta de datos mediante conectores de origen CRM
+title: Ingesta de datos mediante conectores de Source de CRM
 description: Aprenda a agrupar fácilmente los datos de ingesta de fuentes CRM en el perfil del cliente en tiempo real y el lago de datos de Adobe Experience Platform sin problemas.
 feature: Sources
 role: Data Engineer, Data Architect, Developer
@@ -10,14 +10,14 @@ last-substantial-update: 2023-05-24T00:00:00Z
 exl-id: 2a0caa84-dca6-4ba9-9ebf-bdf38dfc3cb2
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '186'
 ht-degree: 0%
 
 ---
 
 # Ingesta de datos mediante conectores de origen CRM
 
-Aprenda a agrupar fácilmente los datos de ingesta de fuentes CRM en el perfil del cliente en tiempo real y el lago de datos de Adobe Experience Platform sin problemas. Para obtener documentación más detallada del producto, consulte [administración de la relación con los clientes (CRM)](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#access-control-for-sources-in-data-ingestion) en la página de información general de conectores de origen.
+Aprenda a agrupar fácilmente los datos de ingesta de fuentes CRM en el perfil del cliente en tiempo real y el lago de datos de Adobe Experience Platform sin problemas. Para obtener documentación más detallada del producto, consulte [administración de la relación con los clientes (CRM)](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#access-control-for-sources-in-data-ingestion) en la página de información general de los conectores de Source.
 
 ## Flujo de trabajo estándar
 
@@ -32,6 +32,6 @@ Obtenga información sobre cómo configurar el conector de origen para Salesforc
 >[!VIDEO](https://video.tv.adobe.com/v/3419422?learn=on)
 
 Para obtener más información, consulte la siguiente documentación:
-* [Documentación de creación de una conexión de Salesforce](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html).
-* [Creación de un flujo de datos de origen mediante plantillas en la IU](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#).
+* [Documentación de creación de conexión de Salesforce](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html).
+* [Crear un flujo de datos de origen mediante plantillas en la interfaz de usuario](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#).
 

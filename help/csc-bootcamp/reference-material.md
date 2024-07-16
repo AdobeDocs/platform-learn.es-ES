@@ -4,11 +4,11 @@ description: Puntos de partida interesantes que le ayudarán a comprender mejor 
 jira: KT-5342
 doc-type: tutorial
 activity: develop
-exl-id: 8dda3ba5-ad68-41b7-b247-aedb217256a4
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+exl-id: 6a37ce5c-5daa-45dd-a968-eae9c3a63ad3
+source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 5%
+source-wordcount: '370'
+ht-degree: 4%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 5%
 
 ## Deslizar cubierta
 
-Esta documentación puede ayudarle a familiarizarse con el concepto de este bootcamp, así como con la cadena de suministro de contenido. Sin embargo, siempre hay algunas cosas que queríamos mostrar, pero que ya no podíamos incluir. Puede encontrar esta información en el [siguiente portaobjetos](https://adobe.sharepoint.com/:p:/r/sites/SWEnterpriseMarketingTeam/Shared%20Documents/Bootcamps/Content%20Supply%20Chain%20Bootcamp/Experience%20Makers%20Content%20Supply%20Chain%20Slide%20Deck.pptx?d=w1a3787d39c3a43ab941cfd0069f8383a&amp;csf=1&amp;web=1&amp;e=57aFUU) y nuestros [Arte de la demostración posible](https://xd.adobe.com/view/45ea642f-69fb-4bbe-bba6-6915a3709a6d-10b9/?fullscreen).
+Esta documentación puede ayudarle a familiarizarse con el concepto de este bootcamp, así como con la cadena de suministro de contenido. Sin embargo, siempre hay algunas cosas que queríamos mostrar, pero que ya no podíamos incluir. Puede encontrar esta información en la [siguiente presentación](https://adobe.sharepoint.com/:p:/r/sites/SWEnterpriseMarketingTeam/Shared%20Documents/Bootcamps/Content%20Supply%20Chain%20Bootcamp/Experience%20Makers%20Content%20Supply%20Chain%20Slide%20Deck.pptx?d=w1a3787d39c3a43ab941cfd0069f8383a&amp;csf=1&amp;web=1&amp;e=57aFUU) y en nuestra [demostración de arte de lo posible](https://xd.adobe.com/view/45ea642f-69fb-4bbe-bba6-6915a3709a6d-10b9/?fullscreen).
 
 ## Conozca a Adobike
 
 Adobike es una empresa con sede en Bruselas y ya tiene una presencia establecida en el mercado. Tienen una comunidad de 50.000 jinetes a su lado. Recientemente han desarrollado una nueva e-bike revolucionaria, y en ese proceso la compañía también está transformando la configuración de su equipo de marketing, así como los procesos y tecnologías relacionados.
 
-![Adobike](./images/adobike-logo.png)
+![Adobe Bike](./images/adobike-logo.png)
 
 Con el lanzamiento de su nueva moto, están viendo desafíos con problemas de eficiencia en el trabajo. Es crucial que tengan una visibilidad completa de todo el ciclo de vida del trabajo, desde la solicitud inicial hasta la entrega final, en una sola solución. Al funcionar con un alto nivel de orquestación, deben permitir la colaboración entre equipos.
 

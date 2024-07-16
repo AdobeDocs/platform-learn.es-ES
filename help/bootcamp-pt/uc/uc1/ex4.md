@@ -10,48 +10,48 @@ feature: Segments, Integrations
 exl-id: 862afd4c-1b6c-48fe-bc1f-967c065642e0
 source-git-commit: ee5c0af17c12f1d90774a3a4150c9788e2368e39
 workflow-type: tm+mt
-source-wordcount: '912'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
 
 # 1.4 Ação: envie seu para o Adobe Target
 
-Acceso [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer login, você irá a página inicial da Adobe Experience Platform.
+Acceder a [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer login, você irá a página inicial da Adobe Experience Platform.
 
 ![Ingesta de datos](./images/home.png)
 
-Antes de continuar, você precisa selecionar um **espacio aislado**. O nome do sandbox a ser selecionado é Bootcamp. Posible fazer es tan clicando no texto **[!UICONTROL Producción de producción]** na linha azul na parte superior da tela. Depois de selecionar o sandbox apropiado, você a tela mudando e agora você está em seu [!UICONTROL espacio aislado] dedicado.
+Antes de continuar, você precisa selecionar um **espacio aislado**. O nome do sandbox a ser selecionado é Bootcamp. No se puede escribir más **[!UICONTROL Production Prod]** na linha azul na parte superior da tela. Depois de selecionar o sandbox apropiado, você a tela mudando e agora você está em seu [!UICONTROL sandbox] dedicado.
 
 ![Ingesta de datos](./images/sb1.png)
 
 ## 1.4.1 Active seu para o destino do Adobe Target
 
-O Adobe Target está dispuesto como um destino do CDP em tempo real. Para configurar una integración com o Adobe Target, acesse **Destinos** e **Catálogo**.
+O Adobe Target está dispuesto como um destino do CDP em tempo real. Para configurar una integración com en Adobe Target, acceda a **Destinos** y **Catálogo**.
 
-Clique em **Personalización** no hay menú **Categorías**. Você va o cartão de destino do **Adobe Target**. Clique em **Activar segmentos**.
+Clique em **Personalization** en el menú **Categorías**. Você verá o cartão de destino do **Adobe Target**. Haga clic en **Activar segmentos**.
 
-![EN](./images/atdest1.png)
+![A LAS](./images/atdest1.png)
 
-Selecione o destino ``Bootcamp Target`` e camarilla **Siguiente**.
+Selecione o destino ``Bootcamp Target`` e clique **Siguiente**.
 
-![EN](./images/atdest3.png)
+![A LAS](./images/atdest3.png)
 
-Na lista de íveis, selecione o que você criou em [1.3 Crie um](./ex3.md), com o nome `yourLastName - Interest in Real-Time CDP`. Em, grupo em **Siguiente**.
+Na lista de íveis, selecione o que você criou em [1.3 Crie um](./ex3.md), com o nome `yourLastName - Interest in Real-Time CDP`. Em, grupo **Siguiente**.
 
-![EN](./images/atdest8.png)
+![A LAS](./images/atdest8.png)
 
-Na próxima página, clique em **Siguiente**.
+En la próxima página, grupo **Siguiente**.
 
-![EN](./images/atdest9.png)
+![A LAS](./images/atdest9.png)
 
 Clique em **Finalizar**.
 
-![EN](./images/atdest10.png)
+![A LAS](./images/atdest10.png)
 
 Seu agora está ativado para o Adobe Target.
 
-![EN](./images/atdest11.png)
+![A LAS](./images/atdest11.png)
 
 >[!IMPORTANT]
 >
@@ -61,30 +61,30 @@ Seu agora está ativado para o Adobe Target.
 
 Agora que seu Real-Time CDP está configurada para ser publicada en Adobe Target, é possível configurar sua atividade de Segmentação por experiência no Adobe Target. Neste exercício, você va a configurar uma atividade baseada no Compositor de experiencias visuales.
 
-Acceso a la página inicial de Adobe Experience Cloud [https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/). Clique em **Target** para abrir.
+Acceder a la página inicial de Adobe Experience Cloud accediendo a [https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/). Clique em **Target** para abrir.
 
 ![RTCDP](./images/excl.png)
 
 Na página inicial do **Adobe Target**, você verá todas las actividades existentes.
-Clique em **+ Crear actividad** para criar uma nova atividade.
+Haz clic en **+ Crear actividad** para ver la actividad de uma nova.
 
 ![RTCDP](./images/exclatov.png)
 
-Selecione **Segmentación de experiencias**.
+Seleccione **Segmentación de experiencias**.
 
 ![RTCDP](./images/exclatcrxt.png)
 
-Selecione **Visual** e- **URL de actividad** como `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpantXX.html`, mas, antes disso, substitua XX por um número entre 01 e 60.
+Selecione **Visual** e a **URL de actividad** como `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpantXX.html`, mas, antes disso, substitua XX por um número entre 01 e 60.
 
 >[!IMPORTANT]
 >
->da capacitação deve usar uma página da Web para evitar a colisão de várias experiências do Adobe Target. ¿Qué es lo que buscas? Encuentra una URL de acessando: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html).
+>da capacitação deve usar uma página da Web para evitar a colisão de várias experiências do Adobe Target. Encontrar una URL accediendo a: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html).
 >
 >Todas las páginas que comparamos a mesma URL base e terminam com o número do.
 >
->Por ejemplo, o 1 deve usar una URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant01.html`, o 30 de los utilizan una URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant30.html`.
+>Por ejemplo, o 1 deve usar una dirección URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant01.html`, o bien, 30 deve usar una dirección URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant30.html`.
 
-Seleccione un espacio de trabajo **AT Bootcamp**.
+Seleccione el espacio de trabajo **AT Bootcamp**.
 
 Clique em **Siguiente**.
 
@@ -98,7 +98,7 @@ Atualmente, o público padrão são **Todos los visitantes**. Clique nos **3 pun
 
 ![RTCDP](./images/atform3.png)
 
-Agora você está vendo a lista de públicos disponibles, e o da Adobe Experience Platform que você criou anteriormente e enviou ao Adobe Target agora faz parte dessa lista. Seleccione una opción o un que você criou anteriormente en Adobe Experience Platform. Clique em **Asignar audiencia**.
+Agora você está vendo a lista de públicos disponibles, e o da Adobe Experience Platform que você criou anteriormente e enviou ao Adobe Target agora faz parte dessa lista. Seleccione una opción o un que você criou anteriormente en Adobe Experience Platform. Clique em **Asignar audiencia**.
 
 ![RTCDP](./images/exclatvecchaud.png)
 
@@ -106,25 +106,25 @@ Seu da Adobe Experience Platform agora faz parte dessa Actividad de segmentació
 
 ![RTCDP](./images/atform4.png)
 
-Antes de alterar a imagem principal, você deve clicar em **Permitir todo** no banner de cookies.
+Antes de alterar una imagen principal, você deve clicar em **Permitir todas** sin banner de cookies.
 
 Para isso, vá para **Examinar**
 
 ![RTCDP](./images/cook1.png)
 
-Em, grupo em **Permitir todo**.
+Em, grupo **Permitir todos**.
 
 ![RTCDP](./images/cook2.png)
 
-Em, retorne para **Escribir**.
+Em, restaurado para **Componer**.
 
 ![RTCDP](./images/cook3.png)
 
-Agora vamos mudar a imagem principal na página inicial do site. Clique na imagem principal padrão no site, clique em **Reemplazar contenido** e selecione **Imagen**.
+Agora vamos mudar a imagem principal na página inicial do site. Clique na imagem principal padrão en el sitio, clique em **Reemplazar contenido** e selecione **Imagen**.
 
 ![RTCDP](./images/atform5.png)
 
-Pesquise o arquivo de imagem **rtcdp.png**. Selecione e clique em **Guardar**.
+Pesquise o arquivo de imagem **rtcdp.png**. Selecciona un grupo **Guardar**.
 
 ![RTCDP](./images/atform6.png)
 
@@ -148,19 +148,19 @@ Clique em **Siguiente**.
 
 ![RTCDP](./images/atform8a.png)
 
-Na página **Objetivos y configuración**, acceso **Métricas de objetivo**.
+En la página **Objetivos y configuración**, acceda a **Métricas de objetivos**.
 
 ![RTCDP](./images/atform9.png)
 
-a Meta principal como **Participación** - **Tiempo en el sitio**. Clique em **Guardar y cerrar**.
+una meta principal como **Participación** - **Tiempo en el sitio**. Haz clic en **Guardar y cerrar**.
 
 ![RTCDP](./images/vec3.png)
 
-Agora você está na página **Resumen de actividad**. Você ainda precisa sua Atividade.
+Agora você está en la página **Resumen de la actividad**. Você ainda precisa sua Atividade.
 
 ![RTCDP](./images/atform10.png)
 
-Clique no campo **Inactivo** e selecione **Activar**.
+Clique no campo **Inactivo** e selecione **Activar**.
 
 ![RTCDP](./images/atform11.png)
 
@@ -174,11 +174,11 @@ Se agora você voltar ao seu site de demostração e visita a página do produto
 
 >[!IMPORTANT]
 >
->da capacitação deve usar uma página da Web para evitar a colisão de várias experiências do Adobe Target. Encontrar una URL con un enlace a acessando ao: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html).
+>da capacitação deve usar uma página da Web para evitar a colisão de várias experiências do Adobe Target. Encontrar una URL con el enlace: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html).
 >
 >Todas las páginas que comparamos a mesma URL base e terminam com o número do.
 >
->Por ejemplo, o 1 deve usar a `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant01.html`, o 30 de los utilizan una URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant30.html`.
+>Por ejemplo, o 1 deve usar un(a) `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant01.html`, o 30 deve usar una URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant30.html`.
 
 ![RTCDP](./images/atform12a.png)
 

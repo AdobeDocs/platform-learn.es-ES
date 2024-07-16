@@ -1,6 +1,6 @@
 ---
 title: Casos de uso clave
-description: Obtenga información general sobre los cinco casos de uso clave de Experience Platform&mdash;Reparticipación inteligente, No pierda campañas, Optimización de la conversión del cliente, Reconocimiento contextual y Valor único a valor de duración.
+description: Obtenga información general sobre los cinco casos de uso clave de Experience Platform&mdash;Intelligent Re-engagement, Don't Lose Campaigns, Customer Conversion Optimization, Contextual Recognition y One-Time Value to Lifetime Value.
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 level: Beginner
 last-substantial-update: 2023-11-01T00:00:00Z

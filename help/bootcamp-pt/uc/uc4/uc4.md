@@ -11,7 +11,7 @@ feature: Connections, Data Views, Workspace Basics, Calculated Metrics, Visualiz
 exl-id: 70b06cca-879a-451b-8126-de2f830f056a
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '420'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Assista a este vídeo para compreender o valor, a jornada do cliente e o process
 
 >[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on)
 
-Más información sobre el Customer Journey Analytics podem ser encontradas [aquí](https://spark.adobe.com/page/t62eiRu9l6iWJ/).
+Más información sobre o Customer Journey Analytics podem ser encontradas [aqui](https://spark.adobe.com/page/t62eiRu9l6iWJ/).
 
 ## Objetivos de aprendizaje
 
