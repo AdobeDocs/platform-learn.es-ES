@@ -2,10 +2,10 @@
 title: Implementación de integraciones de Experience Cloud con etiquetas
 description: Descubra cómo validar las integraciones de públicos, A4T y Atributos del cliente en su implementación de Adobe Experience Cloud. Esta lección forma parte del tutorial Implementación del Experience Cloud en sitios web.
 exl-id: 1d02efce-a50a-4f4d-a0cf-eb8275cf0faa
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2182441d992aec0602d0955d78aa85407bd770c9
 workflow-type: tm+mt
-source-wordcount: '1213'
-ht-degree: 86%
+source-wordcount: '1199'
+ht-degree: 85%
 
 ---
 
@@ -28,13 +28,12 @@ Debe completar todas las lecciones anteriores de este tutorial antes de seguir l
 >
 >Existen muchos requisitos de permisos de usuario, configuraciones de cuenta y pasos de aprovisionamiento necesarios para utilizar completamente estas integraciones y que están fuera del ámbito de este tutorial. Si aún no utiliza estas integraciones en su implementación actual de Experience Cloud, debe tener en cuenta lo siguiente:
 >
->* Examinar todos los requisitos de las [integraciones de servicios principales](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=es).
->* Revise todos los requisitos de la [integración de Analytics para Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html).
->* Pida a un administrador de su organización de Experience Cloud [que solicite la provisión de estas integraciones](https://www.adobe.com/go/audiences).
+>* Examinar todos los requisitos de las [integraciones de servicios principales](https://experienceleague.adobe.com/en/docs/core-services/interface/services/getting-started).
+>* Revise todos los requisitos de la [integración de Analytics para Target](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/before-implement).
 
 ## Públicos
 
-[Públicos](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html) forma parte del servicio principal People y le permite compartir públicos entre soluciones. Por ejemplo, puede crear una audiencia en Audience Manager y utilizarla para enviar contenido personalizado con Target.
+[Públicos](https://experienceleague.adobe.com/es/docs/core-services/interface/services/audiences/overview) forma parte del servicio principal People y le permite compartir públicos entre soluciones. Por ejemplo, puede crear una audiencia en Audience Manager y utilizarla para enviar contenido personalizado con Target.
 
 Los requisitos principales para implementar A4T (que ya ha hecho) son:
 
