@@ -5,9 +5,9 @@ user-guide-description: Descubra los muchos componentes de Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: cd1f166eac926688313812a67c1b5664608cb9cf
+source-git-commit: 1a3b89f7be838aeff389e7f404114ed3fef370d7
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '920'
 ht-degree: 16%
 
 ---
@@ -52,6 +52,7 @@ ht-degree: 16%
    + [Descripción general de la composición de audiencias federada](audiences/overview-of-federated-audience-composition.md)
    + [Resumen del generador de reglas para audiencias](audiences/audience-rule-builder-overview.md)
    + [Creación de públicos](audiences/create-audiences.md)
+   + [Usar restricciones de tiempo](audiences/time-constraints.md)
    + [Crear audiencias basadas en contenido](audiences/create-content-based-audiences.md)
    + [Crear audiencias de conversión](audiences/create-conversion-audiences.md)
    + [Crear audiencias a partir de audiencias existentes](audiences/create-audiences-from-existing-audiences.md)
