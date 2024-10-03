@@ -8,7 +8,7 @@ thumbnail: 4348-overview.jpg
 recommendations: catalog, noDisplay
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: fabbc591-840b-40dc-89af-305626a16338
-source-git-commit: efef0389cedfec7dfa19d876df96c58b7463ee12
+source-git-commit: 63987fb652a653283a05a5f35f7ce670127ae905
 workflow-type: tm+mt
 source-wordcount: '771'
 ht-degree: 0%
@@ -48,7 +48,7 @@ Adobe Experience Platform es una plataforma técnica diseñada para ayudarle a l
 
 ## Requisitos previos
 
-* Ha completado el curso [Introducción a Adobe Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1&amp;lang=es) en Experience League y está familiarizado con las funcionalidades de Platform
+* Ha visto la [lista de reproducción de Adobe Experience Platform](https://experienceleague.adobe.com/en/playlists/experience-platform-introduction) en Experience League y está familiarizado con las funciones de Platform
 * Tiene acceso a una cuenta aprovisionada con Adobe Experience Platform (o una aplicación basada en Platform, como Real-Time CDP o Journey Optimizer) y a la recopilación de datos (anteriormente Launch).
 * Usted es administrador del sistema de esa cuenta o puede tener [configurar permisos de usuario](configure-permissions.md) para usted.
 

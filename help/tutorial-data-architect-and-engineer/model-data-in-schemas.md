@@ -8,7 +8,7 @@ feature: Schemas
 jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: 8e470d8a0c9fee7389ac60a743431fe81012fa0f
+source-git-commit: 63987fb652a653283a05a5f35f7ce670127ae905
 workflow-type: tm+mt
 source-wordcount: '2619'
 ht-degree: 1%
@@ -47,7 +47,7 @@ Antes de comenzar los ejercicios, vea este breve vídeo para obtener más inform
 
 >[!TIP]
 >
-> Para profundizar en el modelado de datos en Experience Platform, recomendamos realizar el curso [Modelar los datos de la experiencia del cliente con XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=es), disponible de forma gratuita en Experience League.
+> Para profundizar en el modelado de datos en Experience Platform, recomendamos ver la lista de reproducción [Modelar los datos de la experiencia del cliente con XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm), disponible de forma gratuita en Experience League.
 
 ## Permisos necesarios
 
@@ -86,7 +86,7 @@ En este ejercicio, crearemos un esquema para los datos de fidelidad de Luma.
 
 Una vez creado el esquema, se le redirigirá al Editor de esquemas, donde puede agregar campos al esquema. Puede agregar campos individuales directamente al esquema o utilizar grupos de campos. Es importante tener en cuenta que todos los campos individuales siguen estando asociados a una clase o grupo de campos. Puede elegir entre un gran conjunto de grupos de campos estándar del sector proporcionados por Adobe o crear los suyos propios. A medida que empiece a modelar sus propios datos en Experience Platform, es bueno familiarizarse con los grupos de campo estándar del sector que proporciona Adobe. Siempre que sea posible, se recomienda utilizarlos, ya que a veces alimentan servicios descendentes, como inteligencia artificial aplicada al cliente, Attribution AI y Adobe Analytics.
 
-Al trabajar con sus propios datos, un paso significativo será determinar cuáles de sus propios datos deben capturarse en Platform y cómo deben modelarse. Este tema de gran tamaño se analiza con más detalle en el curso [Modelar los datos de la experiencia del cliente con XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=es). En este tutorial, solo le guiaré a través de la implementación de algunos esquemas predeterminados.
+Al trabajar con sus propios datos, un paso significativo será determinar cuáles de sus propios datos deben capturarse en Platform y cómo deben modelarse. Este gran tema se analiza con más detalle en la lista de reproducción [Modelar los datos de la experiencia del cliente con XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm). En este tutorial, solo le guiaré a través de la implementación de algunos esquemas predeterminados.
 
 Para agregar grupos de campos:
 
