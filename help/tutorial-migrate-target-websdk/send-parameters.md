@@ -1,8 +1,8 @@
 ---
-title: Envío de parámetros | Migración de Target de at.js 2.x a SDK web
+title: 'Envío de parámetros: Migre Target de at.js 2.x al SDK web'
 description: Obtenga información sobre cómo enviar parámetros de mbox, perfil y entidad a Adobe Target mediante el SDK web de Experience Platform.
 exl-id: 7916497b-0078-4651-91b1-f53c86dd2100
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '1539'
 ht-degree: 0%

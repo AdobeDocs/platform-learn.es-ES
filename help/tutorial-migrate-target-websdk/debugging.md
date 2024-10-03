@@ -1,8 +1,8 @@
 ---
-title: Depurar | Migración de Target de at.js 2.x a SDK web
+title: 'Depuración: Migre Target de at.js 2.x al SDK web'
 description: Obtenga información sobre cómo depurar una implementación de Adobe Target mediante el SDK web de Adobe Experience Platform. Los temas incluyen opciones de depuración, extensiones de explorador y diferencias entre at.js y el SDK web de Platform.
 exl-id: 20699551-a708-469a-8980-67586db82787
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '1492'
 ht-degree: 2%

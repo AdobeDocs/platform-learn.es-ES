@@ -1,8 +1,8 @@
 ---
-title: Reemplazar la biblioteca | Migración de Target de at.js 2.x a SDK web
+title: 'Reemplazar la biblioteca: migrar Target de at.js 2.x al SDK web'
 description: Obtenga información sobre cómo migrar una implementación de Adobe Target de at.js 2.x al SDK web de Adobe Experience Platform. Los temas incluyen información general de la biblioteca, diferencias de implementación y otras llamadas importantes.
 exl-id: dfafa132-376a-475d-a467-9bc2f0a414cf
-source-git-commit: 07c3c5b3f45eeb02e94a25dbd164b7397cb7869d
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '1594'
 ht-degree: 1%

@@ -1,8 +1,8 @@
 ---
-title: Actualización de audiencias y scripts de perfil | Migración de Target de at.js 2.x a SDK web
+title: 'Actualización de audiencias y scripts de perfil: Migre Target de at.js 2.x al SDK web'
 description: Obtenga información sobre cómo actualizar las audiencias de Adobe Target y los scripts de perfil para la compatibilidad con el SDK web de Experience Platform.
 exl-id: 2c0f85f7-6e8c-4d0b-8ed5-53897d06e563
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 0%
