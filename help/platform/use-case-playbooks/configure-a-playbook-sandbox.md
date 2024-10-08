@@ -9,9 +9,9 @@ duration: 355
 last-substantial-update: 2024-01-27T00:00:00Z
 jira: KT-14074
 exl-id: 4b231a49-5df8-4bad-800f-e58807b69aaa
-source-git-commit: eae0910e2475ce20f7afd289005b6a8869eaa210
+source-git-commit: 050bfd05f39ee0736d188d7bcb5cc6ed6c5e320e
 workflow-type: tm+mt
-source-wordcount: '70'
+source-wordcount: '74'
 ht-degree: 1%
 
 ---
@@ -24,6 +24,6 @@ Aprenda a configurar una zona protegida para libros de reproducción de casos de
 1. Añadir permisos y usuarios a la zona protegida
 1. Configuración de superficies de canal para correo electrónico, push y SMS
 
-Para obtener más información, consulte [Introducción](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html?lang=es).
+Para obtener más información, consulte [Introducción a los manuales de casos de uso](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html?lang=es).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426987/?learn=on)
