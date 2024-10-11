@@ -6,10 +6,10 @@ level: Experienced
 jira: KT-9728
 thumbnail: KT-9728.jpeg
 exl-id: 2e3c1f71-e224-4631-b680-a05ecd4c01e7
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: fd60f7ad338c81f5b32e7951d5a00b49c5aa1756
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 1%
+source-wordcount: '704'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ Las aplicaciones de Adobe Experience Cloud han generado tradicionalmente cookies
 1. Cookies de origen configuradas por un servidor de Adobe mediante la configuración CNAME de un nombre de dominio
 1. Cookies de origen configuradas por JavaScript
 
-Los cambios recientes en el explorador restringen la duración de estos tipos de cookies. Las cookies de origen son más efectivas cuando se establecen mediante un servidor propiedad del cliente que utiliza un registro A/AAAA DNS, en lugar de un CNAME DNS. La funcionalidad de ID de dispositivo de origen (FPID) permite a los clientes que implementan el SDK web de Adobe Experience Platform utilizar ID de dispositivo en cookies de servidores que utilizan registros A/AAAA de DNS. Estos ID se pueden enviar al Adobe de y se pueden usar como semillas para generar ID de Experience Cloud (ECID), que sigue siendo el identificador principal en las aplicaciones de Adobe Experience Cloud.
+Los cambios recientes en el explorador restringen la duración de estos tipos de cookies. Las cookies de origen son más efectivas cuando se establecen mediante un servidor propiedad del cliente que utiliza un registro A/AAAA DNS, en lugar de un CNAME DNS. La [funcionalidad de ID de dispositivo de origen (FPID)](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/identity/first-party-device-ids) permite a los clientes que implementan el SDK web de Adobe Experience Platform usar ID de dispositivo en cookies de servidores que usan registros A/AAAA de DNS. Estos ID se pueden enviar al Adobe de y se pueden usar como semillas para generar ID de Experience Cloud (ECID), que sigue siendo el identificador principal en las aplicaciones de Adobe Experience Cloud.
 
 A continuación se muestra un ejemplo rápido de cómo funciona la funcionalidad:
 
@@ -30,7 +30,9 @@ A continuación se muestra un ejemplo rápido de cómo funciona la funcionalidad
 1. Un explorador del usuario final solicita una página web del servidor web o CDN de un cliente.
 1. El cliente genera un ID de dispositivo (FPID) en su servidor web o CDN (el servidor web debe estar vinculado al registro A/AAAA de DNS del nombre de dominio).
 1. El cliente establece una cookie de origen para almacenar el FPID en el explorador del usuario final.
-1. La implementación del SDK web de Adobe Experience Platform del cliente realiza una solicitud al Edge Network de la plataforma, incluido el FPID en el mapa de identidad.
+1. La implementación del SDK web de Adobe Experience Platform del cliente realiza una solicitud al Edge Network de la plataforma y:
+   1. Incluye el FPID en el mapa de identidad.
+   1. Configura un CNAME para sus solicitudes de SDK web y su secuencia de datos con el nombre de su cookie FPID.
 1. El Edge Network Experience Platform recibe el FPID y lo utiliza para generar un ID de Experience Cloud (ECID).
 1. La respuesta del SDK web de Platform devuelve el ECID al explorador del usuario final.
 1. Si el SDK web de Platform `idMigrationEnabled=true` usa JavaScript para almacenar el ECID como cookie `AMCV_` en el explorador del usuario final.
