@@ -1,9 +1,9 @@
 ---
-title: 'Depurar: migrar destinatario desde '
+title: 'Depuración: migración de Adobe Target a Adobe Journey Optimizer, extensión de Decisioning Mobile'
 description: Obtenga información sobre cómo depurar una implementación de Adobe Target mediante el SDK para móviles de Adobe Experience Platform.
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
-source-wordcount: '1227'
+source-wordcount: '1237'
 ht-degree: 3%
 
 ---
@@ -159,4 +159,4 @@ La carga útil de solicitud y la respuesta de las llamadas del SDK web de Platfo
 
 >[!NOTE]
 >
->Nos comprometemos a ayudarle a tener éxito con su migración de Target móvil de la extensión de Target a la extensión de Optimize. Si encuentra obstáculos con la migración o cree que falta información esencial en esta guía, comuníquenoslo publicando en [esta discusión de la comunidad](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Nos comprometemos a ayudarle a tener éxito con su migración de Target móvil de la extensión de Target a la extensión de Decisioning. Si encuentra obstáculos con la migración o cree que falta información esencial en esta guía, comuníquenoslo publicando en [esta discusión de la comunidad](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

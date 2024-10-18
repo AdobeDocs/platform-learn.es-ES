@@ -1,16 +1,16 @@
 ---
-title: 'Validación de implementaciones de Target con SDK web: Migración de Target de at.js 2.x al SDK web'
-description: Obtenga información sobre cómo validar actividades y depurar una implementación de Adobe Target mediante el SDK web de Adobe Experience Platform.
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+title: Validación de implementaciones de Target con la extensión Adobe Journey Optimizer - Decisioning Mobile
+description: Obtenga información sobre cómo validar actividades y depurar una implementación de Adobe Target con la extensión Adobe Journey Optimizer - Decisioning Mobile.
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 1%
 
 ---
 
-# Validación de la implementación del SDK web de Platform
+# Validación de la implementación de la extensión de Adobe Journey Optimizer - Decisioning Mobile
 
-Después de migrar la implementación de Target de la extensión Target a la extensión Optimize, es importante validar que todo funciona correctamente antes de publicar cualquier cambio en la aplicación de producción. El Adobe recomienda lo siguiente, que se trata en detalle en esta página:
+Después de migrar la implementación de Target de la extensión de Target a la extensión de Decisioning, es importante validar que todo funciona correctamente antes de publicar los cambios en la aplicación de producción. El Adobe recomienda lo siguiente, que se trata en detalle en esta página:
 
 * Realice una validación técnica para asegurarse de que la implementación básica y las solicitudes y respuestas del SDK de Platform Mobile sean correctas
 * Asegúrese de que las actividades de Target se entreguen y representen correctamente
@@ -54,10 +54,10 @@ Cada implementación de Target es diferente según la arquitectura y las funcion
 |---|---|
 | | |
 
-Después de realizar los pasos de validación anteriores, puede estar seguro de que la implementación del SDK de Platform Mobile con la extensión Optimize está lista para pasar a producción.
+Después de realizar los pasos de validación anteriores, puede estar seguro de que la implementación del SDK de Platform Mobile con la extensión Decisioning está lista para pasar a producción.
 
 A continuación, aprenda a [solucionar problemas de una implementación de Target mediante el SDK web de Platform](debugging.md).
 
 >[!NOTE]
 >
->Nos comprometemos a ayudarle a tener éxito con su migración de Target móvil de la extensión de Target a la extensión de Optimize. Si encuentra obstáculos con la migración o cree que falta información esencial en esta guía, comuníquenoslo publicando en [esta discusión de la comunidad](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Nos comprometemos a ayudarle a tener éxito con su migración de Target móvil de la extensión de Target a la extensión de Decisioning. Si encuentra obstáculos con la migración o cree que falta información esencial en esta guía, comuníquenoslo publicando en [esta discusión de la comunidad](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

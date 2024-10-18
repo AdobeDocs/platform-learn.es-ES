@@ -1,14 +1,14 @@
 ---
-title: 'Reemplazar la biblioteca: migrar Target de at.js 2.x al SDK web'
-description: Obtenga información sobre cómo migrar una implementación de Adobe Target de at.js 2.x al SDK web de Adobe Experience Platform. Los temas incluyen información general de la biblioteca, diferencias de implementación y otras llamadas importantes.
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+title: 'Reemplace el SDK: Migrar de Adobe Target a Adobe Journey Optimizer: extensión de Decisioning Mobile'
+description: Obtenga información sobre cómo reemplazar el SDK al migrar del Adobe Target a la extensión Adobe Journey Optimizer - Decisioning Mobile.
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
-source-wordcount: '1560'
+source-wordcount: '1558'
 ht-degree: 1%
 
 ---
 
-# Reemplace la biblioteca at.js de con el SDK web de Platform
+# Reemplace el SDK de Target por el SDK de Optimize
 
 Obtenga información sobre cómo reemplazar la implementación de Adobe Target en la página para migrar de at.js al SDK web de Platform. Un reemplazo básico consiste en los siguientes pasos:
 
@@ -399,4 +399,4 @@ A continuación, aprenda a [solicitar y aplicar actividades basadas en formulari
 
 >[!NOTE]
 >
->Nos comprometemos a ayudarle a tener éxito con su migración de Target móvil de la extensión de Target a la extensión de Optimize. Si encuentra obstáculos con la migración o cree que falta información esencial en esta guía, comuníquenoslo publicando en [esta discusión de la comunidad](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Nos comprometemos a ayudarle a tener éxito con su migración de Target móvil de la extensión de Target a la extensión de Decisioning. Si encuentra obstáculos con la migración o cree que falta información esencial en esta guía, comuníquenoslo publicando en [esta discusión de la comunidad](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

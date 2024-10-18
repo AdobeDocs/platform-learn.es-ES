@@ -1,9 +1,9 @@
 ---
-title: 'Habilitar compatibilidad entre dominios: migre Target de at.js 2.x al SDK web'
+title: Habilitar compatibilidad entre dominios - Migrar de Adobe Target a Adobe Journey Optimizer - Extensión de Decisioning Mobile
 description: Obtenga información sobre cómo configurar Adobe Target para aplicaciones móviles y entre dominios en escenarios de explorador web mediante el SDK web de Experience Platform.
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
@@ -71,4 +71,4 @@ A continuación, aprenda a [actualizar audiencias y scripts de perfil](update-au
 
 >[!NOTE]
 >
->Nos comprometemos a ayudarle a tener éxito con su migración de Target móvil de la extensión de Target a la extensión de Optimize. Si encuentra obstáculos con la migración o cree que falta información esencial en esta guía, comuníquenoslo publicando en [esta discusión de la comunidad](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Nos comprometemos a ayudarle a tener éxito con su migración de Target móvil de la extensión de Target a la extensión de Decisioning. Si encuentra obstáculos con la migración o cree que falta información esencial en esta guía, comuníquenoslo publicando en [esta discusión de la comunidad](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

@@ -1,16 +1,16 @@
 ---
-title: 'Planificación: Migre Target en aplicaciones móviles de la extensión Target a la extensión Optimize.'
+title: 'Planning: Migración de Adobe Target a Adobe Journey Optimizer: extensión de Decisioning Mobile'
 description: Obtenga información sobre cómo planificar la implementación de Adobe Target desde at.js 2.x al SDK web de Adobe Experience Platform.
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 0%
 
 ---
 
-# Planifique la migración de Target a la extensión Optimize.
+# Planifique la migración de Target a la extensión de Decisioning
 
-Antes de actualizar Target desde la extensión Target a la extensión Optimize de su aplicación móvil, debe evaluar la implementación actual.
+Antes de actualizar Target desde la extensión Target a la extensión Decisioning en la aplicación móvil, debe evaluar la implementación actual.
 
 ## Evaluar la implementación actual de la extensión Target
 
@@ -50,8 +50,8 @@ As you migrate, you should plan on following your company's process for testing 
 -->
 
 
-A continuación, revise la [comparación detallada de la extensión de Target y la extensión de Optimize](detailed-comparison.md) para comprender mejor las diferencias técnicas e identificar las áreas que requieren un enfoque adicional.
+A continuación, revise la [comparación detallada de la extensión de Target y la extensión de Decisioning](detailed-comparison.md) para comprender mejor las diferencias técnicas e identificar las áreas que requieren un enfoque adicional.
 
 >[!NOTE]
 >
->Nos comprometemos a ayudarle a tener éxito con su migración de Target móvil de la extensión de Target a la extensión de Optimize. Si encuentra obstáculos con la migración o cree que falta información esencial en esta guía, comuníquenoslo publicando en [esta discusión de la comunidad](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Nos comprometemos a ayudarle a tener éxito con su migración de Target móvil de la extensión de Target a la extensión de Decisioning. Si encuentra obstáculos con la migración o cree que falta información esencial en esta guía, comuníquenoslo publicando en [esta discusión de la comunidad](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
