@@ -5,10 +5,10 @@ user-guide-description: Descubra los muchos componentes de Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 8f7e2699e0158bc36459bbe61a5aa8e70e8e775b
+source-git-commit: 988e0bfbcf43d8148aac86e2b85cdaec82f19650
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 16%
+source-wordcount: '934'
+ht-degree: 17%
 
 ---
 
@@ -37,7 +37,6 @@ ht-degree: 16%
 + [Autenticar en las API de Experience Platform](/help/platform/authentication/platform-api-authentication.md)
 + [Importar datos de muestra al Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Administración {#admin}
-   + [Utilizar el asistente de IA](/help/platform/admin/ai-assistant.md)
    + [Uso de alertas](/help/platform/admin/use-alerts.md)
    + [Usar zonas protegidas](/help/platform/admin/use-sandboxes.md)
    + [Copia de objetos entre zonas protegidas](/help/platform/admin/copy-objects-between-sandboxes.md)
@@ -46,6 +45,9 @@ ht-degree: 16%
    + [Adición de desarrolladores](/help/platform/admin/add-developers.md)
    + [Añadir administradores de productos](/help/platform/admin/add-product-administrators.md)
    + [Configuración del control de acceso basado en atributos](/help/platform/admin/configure-attribute-based-access-control.md)
++ Asistente de IA{#ai-assistant}
+   + [Información general](/help/platform/ai-assistant/overview.md)
+   + [Limpiar audiencias](/help/platform/ai-assistant/find-unused-audiences.md)
 + Audiencias y segmentación {#audiences}
    + [Introducción a Audience Portal y Composición](audiences/introduction-to-audience-portal-and-composition.md)
    + [Cargar audiencias](audiences/upload-audiences.md)
@@ -78,7 +80,7 @@ ht-degree: 16%
    + [Información general](/help/platform/governance/understanding-data-governance.md)
    + [Demostración de extremo a extremo](/help/platform/governance/introduction-to-data-governance.md)
    + [Clasificación de datos mediante etiquetas](/help/platform/governance/classify-data-using-labels.md)
-   + [Crear políticas de uso de datos](/help/platform/governance/create-data-usage-policies.md)
+   + [Creación de políticas de uso de datos](/help/platform/governance/create-data-usage-policies.md)
    + [Aplicar políticas de uso de datos](/help/platform/governance/enforce-data-usage-policies.md)
    + [Aplicar consentimiento](/help/platform/governance/enforce-consent.md)
    + [Integración con el marco de transparencia y consentimiento 2.0 de IAB](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)

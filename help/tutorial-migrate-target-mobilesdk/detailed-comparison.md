@@ -1,9 +1,9 @@
 ---
 title: Comparación de la extensión de Target con la extensión de Decisioning
 description: Obtenga información sobre las diferencias entre la extensión de Target y la extensión Decisioning, incluidas las funciones, la configuración y el flujo de datos.
-source-git-commit: 78d04d625aa55ce5eb76615c220b49aefd958431
+source-git-commit: c907ccb9163ace8272f6881638a41362090bf3e5
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '470'
 ht-degree: 4%
 
 ---
@@ -30,7 +30,7 @@ Si es nuevo en el SDK web de Platform, no se preocupe: los elementos siguientes 
 | Parámetros personalizados | Admitido | No se admiten parámetros por mbox |
 | Audiencias de entrada | Admitido | Admitido |
 | Segmentación de audiencias mediante métricas móviles del ciclo vital | Admitido | Compatible mediante reglas de recopilación de datos |
-| thirdPartyId (mbox3rdPartyId) | Compatible mediante el mapa de identidad y la configuración del área de nombres en el conjunto de datos |
+| thirdPartyId (mbox3rdPartyId) | Admitido | Compatible mediante el mapa de identidad y la configuración del área de nombres en el conjunto de datos |
 | Notificaciones (mostrar, hacer clic) | Admitido | Admitido |
 | Tokens de respuesta | Admitido | Admitido |
 | Ofertas dinámicas | Admitido | Admitido |
