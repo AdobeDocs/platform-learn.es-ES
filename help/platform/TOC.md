@@ -5,9 +5,9 @@ user-guide-description: Descubra los muchos componentes de Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 988e0bfbcf43d8148aac86e2b85cdaec82f19650
+source-git-commit: f650acd67fb1097eb17ed16ef3f991c474b6d479
 workflow-type: tm+mt
-source-wordcount: '934'
+source-wordcount: '939'
 ht-degree: 17%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 17%
    + [Información general](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
    + [Demostración de extremo a extremo](/help/platform/rtcdp/demo.md)
    + [Flujo de trabajo](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
-   + [Descripción general de B2B Edition](/help/platform/rtcdp/b2b-overview.md)
+   + [Información general de B2B edition](/help/platform/rtcdp/b2b-overview.md)
    + [Organización de campañas con Marketo Engage](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
 + [Introducción: arquitectos de datos e ingenieros de datos](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=es){target="_blank"}
 + [Autenticar en las API de Experience Platform](/help/platform/authentication/platform-api-authentication.md)
@@ -39,7 +39,8 @@ ht-degree: 17%
 + Administración {#admin}
    + [Uso de alertas](/help/platform/admin/use-alerts.md)
    + [Usar zonas protegidas](/help/platform/admin/use-sandboxes.md)
-   + [Copia de objetos entre zonas protegidas](/help/platform/admin/copy-objects-between-sandboxes.md)
+   + [Copia de paquetes entre zonas protegidas](/help/platform/admin/copy-objects-between-sandboxes.md)
+   + [Uso compartido de paquetes entre organizaciones de IMS](/help/platform/admin/share-packages-across-orgs.md)
    + [Adición de usuarios](/help/platform/admin/add-users.md)
    + [Agregar usuarios a la recopilación de datos](https://experienceleague.adobe.com/docs/platform-learn/data-collection/users-and-permissions.html)
    + [Adición de desarrolladores](/help/platform/admin/add-developers.md)
