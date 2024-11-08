@@ -1,0 +1,75 @@
+---
+title: Recopilación de datos de Adobe Experience Platform y reenvío del lado del servidor en tiempo real
+description: En este módulo, se utilizarán los conjuntos de datos, esquemas y la propiedad del servidor de recopilación de datos de Adobe Experience Platform configurados previamente para recopilar datos y, a continuación, reenviar esos datos del lado del servidor a un extremo de su elección.
+kt: 5342
+doc-type: tutorial
+source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+workflow-type: tm+mt
+source-wordcount: '480'
+ht-degree: 0%
+
+---
+
+# Conexiones Real-Time CDP 2.5: Reenvío de eventos
+
+**Autor: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/), [Clement Delalande](https://www.linkedin.com/in/clement-delalande/)**
+
+En este módulo, se utilizarán los conjuntos de datos, esquemas y la propiedad del cliente de recopilación de datos de Adobe Experience Platform configurados previamente para recopilar datos y, a continuación, reenviar esos datos del lado del servidor a un extremo de su elección.
+
+En este módulo, deberá hacer lo siguiente:
+
+- Crear una propiedad de servidor de recopilación de datos de Adobe Experience Platform
+- Instalación y uso de la extensión de conector de Adobe Cloud en la recopilación de datos de Adobe Experience Platform
+- Crear un extremo de función de Google y transmitir datos a él
+- Crear un extremo de AWS y transmitir datos a él
+
+Vea este vídeo para comprender el valor, el recorrido del cliente y el proceso de configuración:
+
+>[!VIDEO](https://video.tv.adobe.com/v/331987?quality=12&learn=on)
+
+## Objetivos de aprendizaje
+
+- Familiarícese con las propiedades del servidor de recopilación de datos de Adobe Experience Platform y con la nueva extensión de conector de Adobe Cloud
+- Aprenda a reutilizar datos del SDK web de Adobe Experience Platform en soluciones de terceros como Google y AWS
+- Comprenda la arquitectura detrás de la recopilación de datos de Adobe Experience Platform y el reenvío del lado del servidor.
+
+## Requisitos previos
+
+- Acceso a la recopilación de datos de Adobe Experience Platform y Adobe Experience Platform
+- Comprensión de los conjuntos de datos de Adobe Experience Platform y XDM
+
+>[!NOTE]
+>
+>No olvide instalar, configurar y utilizar la extensión de Chrome como se hace referencia en [0.1: instale la extensión de Chrome para la documentación del Experience League](../../gettingstarted/gettingstarted/ex1.md)
+
+## Ejercicios
+
+[2.5.1 Crear una propiedad de reenvío de eventos de recopilación de datos](./ex1.md)
+
+En este ejercicio, creará su propiedad de reenvío de eventos de recopilación de datos de Adobe Experience Platform.
+
+[2.5.2 Actualizar el flujo de datos para que los datos estén disponibles para la propiedad de reenvío de eventos de recopilación de datos](./ex2.md)
+
+En este ejercicio, actualizará el flujo de datos existente para que los datos recopilados por la propiedad de cliente de recopilación de datos de Adobe Experience Platform estén disponibles para la propiedad de servidor de recopilación de datos de Adobe Experience Platform.
+
+[2.5.3 Crear y configurar un webhook personalizado](./ex3.md)
+
+En este ejercicio, creará y configurará un webhook personalizado y empezará a reenviar los datos recopilados por el SDK web a dicho webhook personalizado.
+
+[2.5.4 Crear y configurar una función de nube de Google](./ex4.md)
+
+En este ejercicio, creará y configurará una función de nube de Google y empezará a reenviar los datos recopilados por el SDK web a Google.
+
+[2.5.5 Avanzar eventos hacia el ecosistema de AWS](./ex5.md)
+
+En este ejercicio, configurará el entorno de AWS mediante AWS API Gateway, AWS Kinesis, AWS Firefox y AWS S3, después de lo cual empezará a reenviar los datos de evento recopilados por el SDK web.
+
+[Resumen y beneficios](./summary.md)
+
+Resumen de este módulo y descripción general de las ventajas.
+
+>[!NOTE]
+>
+>Gracias por dedicar su tiempo a aprender todo lo que necesita saber sobre Adobe Experience Platform y sus aplicaciones. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, póngase en contacto directamente con Tech Insiders, enviando un correo electrónico a **techinsiders@adobe.com**.
+
+[Volver a todos los módulos](../../../overview.md)
