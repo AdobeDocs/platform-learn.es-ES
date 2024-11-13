@@ -3,21 +3,22 @@ title: 'Introducción: Instale la extensión de Chrome para la documentación de
 description: 'Introducción: Instale la extensión de Chrome para la documentación de Experience League'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 8d595675c09a4347c04e900414d94b6c674e20f7
+exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
+source-git-commit: 57d12036519ab066b713496669ffdc895d3b4825
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '909'
 ht-degree: 0%
 
 ---
 
-# 0.1 Instalar la extensión de Chrome para la documentación de Experience League
+# 0.1.1 Instalar la extensión de Chrome para la documentación de Experience League
 
-## 0.1.1 ¿Por qué hemos creado una extensión de Chrome?
+## Acerca de la extensión Chrome
 
 La documentación se ha convertido en genérica para que cualquier persona pueda reutilizarla fácilmente, utilizando cualquier instancia de Adobe Experience Platform.
-Al hacer que la documentación sea reutilizable, se introdujeron **Variables de entorno** en la documentación, lo que significa que encontrará las **claves** siguientes en la documentación. Cada clave es una variable específica para un entorno específico, y la extensión de Chrome cambiará esa variable por usted y, como tal, le facilitará la copia de código y texto de las páginas del tutorial y su pegado en las distintas interfaces de usuario que utilizará como parte del tutorial.
+Para poder reutilizar la documentación, se introdujeron **Variables de entorno** en la documentación, lo que significa que encontrará los siguientes **marcadores de posición** en la documentación. Cada marcador de posición es una variable específica para un entorno específico y la extensión de Chrome cambiará esa variable para que sea más fácil copiar código y texto de las páginas del tutorial y pegarlo en las distintas interfaces de usuario que utilizará como parte del tutorial.
 
-A continuación se puede encontrar un ejemplo de estos valores. Actualmente, estos valores aún no se pueden usar, pero tan pronto como instale y active la extensión de Chrome, verá que estas variables cambian al texto &quot;normal&quot; que puede copiar y reutilizar.
+A continuación se puede encontrar un ejemplo de estos valores. Actualmente, estos valores aún no se pueden usar, pero tan pronto como instale y active la extensión de Chrome, verá que estas variables cambian al texto normal y puede copiarlas y reutilizarlas.
 
 | Nombre | Clave |
 |:-------------:| :---------------:|
@@ -26,7 +27,7 @@ A continuación se puede encontrar un ejemplo de estos valores. Actualmente, est
 | Nombre de zona protegida AEP | `--aepSandboxName--` |
 | LDAP del perfil del alumno | `--aepUserLdap--` |
 
-Por ejemplo, en la siguiente captura de pantalla puede ver una referencia a `--aepTenantId--`.
+Por ejemplo, en la siguiente captura de pantalla puede ver una referencia a `aepTenantId`.
 
 ![DSN](./images/mod7before.png)
 
@@ -34,13 +35,9 @@ Una vez instalada la extensión, el mismo texto se cambia automáticamente para 
 
 ![DSN](./images/mod7.png)
 
-La extensión también le permite hacer lo siguiente:
+## 0.1.1.1 Instalar la extensión de Chrome
 
-- Regístrese para acceder al tutorial
-
-## 0.1.2 Instalación de la extensión de Chrome
-
-Para instalar esa extensión de Chrome, abra el explorador Chrome y vaya a: [https://chrome.google.com/webstore/detail/platform-learn-configurat/hhnbkfgioecmhimdhooigajdajplinfi/related?hl=en&amp;authuser=0](https://chrome.google.com/webstore/detail/platform-learn-configurat/hhnbkfgioecmhimdhooigajdajplinfi/related?hl=en&amp;authuser=0). Entonces verá esto...
+Para instalar esa extensión de Chrome, abra el explorador Chrome y vaya a: [https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi). Entonces verá esto...
 
 Haga clic en **Agregar a Chrome**.
 
@@ -58,9 +55,9 @@ En el menú de **extensiones**, haga clic en el icono de **pieza del rompecabeza
 
 ![DSN](./images/c6.png)
 
-## 0.1.2 Configuración de la extensión de Chrome
+## 0.1.1.2 Configuración de la extensión de Chrome
 
-Vaya a [https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/overview.html?lang=en](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/overview.html?lang=en) y, a continuación, haga clic en el icono de la extensión para abrirla.
+Vaya a [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview) y, a continuación, haga clic en el icono de la extensión para abrirla.
 
 ![DSN](./images/tuthome.png)
 
@@ -68,88 +65,81 @@ Entonces verá esta ventana emergente. Haga clic en el icono **+**.
 
 ![DSN](./images/c7.png)
 
-Introduzca su nombre y el ID de configuración creado para su entorno de Adobe Experience Platform. Haga clic en **Crear nuevo**.
-
->[!IMPORTANT]
->
->Si es un empleado de Adobe: puede encontrar el ID de configuración que desea utilizar en el repositorio interno de Github (https://git.corp.adobe.com/vangeluw/platformenablement).
->
->Si usted es un socio de soluciones de Adobe, póngase en contacto con su socio de soluciones o envíe un correo electrónico a **spphelp@adobe.com**.
+Introduzca los valores como se indica a continuación, todos ellos relacionados con la instancia de Adobe Experience Platform.
 
 ![DSN](./images/c8.png)
 
-En el menú de la izquierda de la extensión, ahora verá un icono con las iniciales. Haga clic en ella. Luego verá la asignación entre las **variables de entorno** y los valores de instancia de Adobe Experience Platform específicos. Haga clic en **Activar configuración**.
+Si no está seguro de qué valores introducir para estos campos, siga las instrucciones siguientes.
+
+**Nombre de organización de IMS de AEP**
+
+Cuando inicies sesión en tu instancia de Adobe Experience Platform en [https://platform.adobe.com/](https://platform.adobe.com/), encontrarás el nombre de tu instancia en la esquina superior derecha de la pantalla.
+
+![DSN](./images/aepname.png)
+
+**ID de organización de IMS de AEP**
+
+El ID de organización de IMS es el identificador único de la instancia de Adobe Experience Cloud y se hace referencia a él en varias ubicaciones a lo largo de este tutorial.
+
+La búsqueda del ID de organización de IMS se puede realizar de varias formas. Si no está seguro, consulte con uno de los administradores del sistema de su instancia para encontrar el ID.
+
+Puede encontrarlo si va a [Admin Console](https://https://adminconsole.adobe.com/), donde puede encontrarlo como parte de la dirección URL.
+
+![DSN](./images/aepid1.png)
+
+También puede encontrarlo si visita **Administración de datos > Consultas** en su menú de AEP, donde puede encontrarlo en **Nombre de usuario**.
+
+![DSN](./images/aepid2.png)
+
+Asegúrese de copiar y pegar la parte **@AdobeOrg** junto con el ID.
+
+**ID de inquilino de AEP**
+
+El ID de inquilino es el identificador único de la instancia de AEP de su organización. Cuando inicie sesión en su instancia de Adobe Experience Platform en [https://platform.adobe.com/](https://platform.adobe.com/), encontrará el ID de inquilino en la dirección URL.
+
+![DSN](./images/aeptenantid.png)
+
+Cuando lo introduzca en la extensión de Chrome, debe asegurarse de que se agrega un guion bajo como prefijo, de modo que en este ejemplo **experienceplatform** se convierta en **_experienceplatform**.
+
+**Nombre de zona protegida de AEP**
+
+El nombre de la zona protegida es el nombre del entorno que utilizará en la instancia de AEP. Cuando inicie sesión en su instancia de Adobe Experience Platform en [https://platform.adobe.com/](https://platform.adobe.com/), encontrará el ID de inquilino en la dirección URL.
+
+Antes de tomar el nombre de la zona protegida de la dirección URL, debe asegurarse de que está en la zona protegida que debe utilizar para este tutorial. Puede cambiar a la zona protegida derecha haciendo clic en el menú del conmutador de zona protegida en la esquina superior derecha de la pantalla.
+
+![DSN](./images/aepsandboxsw.png)
+
+En este ejemplo, el nombre de la zona protegida de AEP es **tech-insiders**.
+
+![DSN](./images/aepsname.png)
+
+**Su LDAP**
+
+Este es el nombre de usuario que se utilizará como parte del tutorial. En este ejemplo, el LDAP se basa en la dirección de correo electrónico de este usuario. La dirección de correo electrónico es **vangeluw@adobe.com**, por lo que el LDAP se convierte en **vangeluw**.
+
+El LDAP se utiliza para garantizar que la configuración que va a realizar esté vinculada a usted y no entre en conflicto con otros usuarios que puedan estar utilizando la misma instancia y zona protegida que está utilizando.
+
+Sus valores deben ser similares a estos.
+Finalmente, haga clic en **Crear nuevo**.
+
+![DSN](./images/c8a.png)
+
+
+En el menú de la izquierda de la extensión, ahora verá un nuevo icono con las iniciales de su entorno. Haga clic en ella. Luego verá la asignación entre las **variables de entorno** y los valores de instancia de Adobe Experience Platform específicos. Haga clic en **Activar configuración**.
 
 ![DSN](./images/c9.png)
 
-Después de activar la configuración, verá un punto verde junto a las iniciales. Esto significa que el ID de configuración ya está activo. También verá una serie de opciones de menú adicionales.
+Después de activar la configuración, verá un punto verde junto a las iniciales de su entorno. Esto significa que su entorno ya está activo.
 
 ![DSN](./images/c10.png)
 
-Ahora tiene dos opciones:
+## 0.1.1.3 Verificar el contenido del tutorial
 
-- Si ya es un usuario de la habilitación con una configuración existente, vaya a **0.1.3 Usuario existente: inicio de sesión**
-- Si es un usuario completamente nuevo que inicia este tutorial por primera vez, vaya a **0.1.4 Suscripción** y omita **0.1.3 Usuario existente - Iniciar sesión**
+Como prueba, ve a [esta página](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex3).
 
-## 0.1.3 Usuario existente: inicio de sesión
+Ahora debería ver que todas las **variables de entorno** han sido reemplazadas por sus valores verdaderos, según el entorno activado en la extensión de Chrome.
 
->[!IMPORTANT]
->
->Ejercicio **0.1.3 Usuario existente: iniciar sesión** solo funcionará si ya es un usuario que se registró en este tutorial.
-
-Si es un usuario que está configurando esta extensión de Chrome por primera vez, haga clic en el icono morado en el menú de la izquierda. Entonces verá esto...
-
-![DSN](./images/chromeret1.png)
-
-Rellene los valores según sea necesario.
-
->[!IMPORTANT]
->
->El **LDAP** es el campo más importante: debe usar el mismo LDAP que usó la primera vez que se registró en el tutorial. Esto garantizará que su progreso se cargue correctamente. Si no está seguro de cuál es su ldap, eche un vistazo a su dirección de correo electrónico. Utilice el texto que aparece antes del @-symbol en su dirección de correo electrónico como LDAP. Si su dirección de correo electrónico es **techinsiders@adobe.com**, el LDAP que escriba aquí debería ser **vangeluw**).
-
-![DSN](./images/chromeret2.png)
-
-Haga clic en **Aceptar**.
-
-![DSN](./images/chromeret3.png)
-
-Después de 30 seg-1 minuto, tu pantalla cambiará y regresarás a **Inicio**, donde verás esto:
-
-![DSN](./images/chromeret4.png)
-
-La extensión de Chrome ya está configurada y puede comprobar si todo funciona correctamente.
-
-## 0.1.4 Nuevo usuario: suscripción
-
->[!IMPORTANT]
->
->Ejercicio **0.1.4 Nuevo usuario - Suscribirse** está dirigido a los nuevos usuarios que inician este tutorial por primera vez.
-
-Si es un usuario nuevo que se inscribe en este tutorial por primera vez, haga clic en el icono amarillo del menú. Entonces verá esto...
-
-![DSN](./images/c11.png)
-
-Rellene los campos según sea necesario. Haga clic en **Guardar**.
-
->[!IMPORTANT]
->
->El **LDAP** es el campo más importante. Si no está seguro de cuál es su ldap, eche un vistazo a su dirección de correo electrónico. Utilice el texto que aparece antes del @-symbol en su dirección de correo electrónico como LDAP. Si su dirección de correo electrónico es **techinsiders@adobe.com**, el LDAP que escriba aquí debería ser **vangeluw**).
-
-![DSN](./images/chrome1.png)
-
-Después de 30 seg-1 minuto, tu pantalla cambiará y regresarás a **Inicio**, donde verás esto:
-
-![DSN](./images/chrome2.png)
-
-La extensión de Chrome ya está configurada y puede comprobar si todo funciona correctamente.
-
-## 0.1.5 Verificar el contenido del tutorial
-
-Como prueba, ve a [esta página](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/module4/ex3.html?lang=en).
-
-Ahora debería ver que todas las **variables de entorno** han sido reemplazadas por sus valores verdaderos, según el ID de configuración de la extensión de Chrome.
-
-Ahora debería tener una vista similar a la siguiente, donde las variables de entorno `--aepTenantId--` han sido reemplazadas por su ID de inquilino real, que en este caso es **_experienceplatform**.
+Ahora debería tener una vista similar a la siguiente, donde la variable de entorno `aepTenantId` se ha reemplazado por su ID de inquilino de AEP real, que en este caso es **_experienceplatform**.
 
 ![DSN](./images/c12.png)
 
