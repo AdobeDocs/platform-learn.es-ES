@@ -3,7 +3,7 @@ title: Seguimiento de datos de eventos en aplicaciones móviles con el SDK móvi
 description: Obtenga información sobre cómo rastrear datos de evento en una aplicación móvil.
 jira: KT-14631
 exl-id: 4779cf80-c143-437b-8819-1ebc11a26852
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: afb15c561179386e7846e8cd8963f67820af09f1
 workflow-type: tm+mt
 source-wordcount: '1328'
 ht-degree: 0%
@@ -121,9 +121,9 @@ Ahora va a implementar realmente este código en su proyecto Xcode.
 Tiene diferentes acciones comerciales relacionadas con productos en la aplicación y quiere enviar eventos, según estas acciones realizadas por el usuario:
 
 * vista: se produce cuando un usuario ve un producto específico,
-* añadir al carro: cuando un usuario pulse <img src="assets/addtocart.png" width="20" /> en una pantalla de detalles del producto,
-* guardar para más tarde: cuando un usuario pulse <img src="assets/saveforlater.png" width="15" /> en una pantalla de detalles del producto,
-* compra: cuando un usuario pulse <img src="assets/purchase.png" width="20" /> en una pantalla de detalles del producto.
+* añadir al carro: cuando un usuario pulse <img src="assets/addtocart.png" width="20"/> en una pantalla de detalles del producto,
+* guardar para más tarde: cuando un usuario pulse <img src="assets/saveforlater.png" width="15"/> en una pantalla de detalles del producto,
+* compra: cuando un usuario pulse <img src="assets/purchase.png" width="20"/> en una pantalla de detalles del producto.
 
 Para implementar el envío de eventos de experiencia relacionados con el comercio de forma reutilizable, se utiliza una función dedicada:
 
@@ -166,23 +166,23 @@ Para implementar el envío de eventos de experiencia relacionados con el comerci
       MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productViews", product: product)
       ```
 
-   1. Para cada uno de los botones (<img src="assets/saveforlater.png" width="15" />, <img src="assets/addtocart.png" width="20" /> y <img src="assets/purchase.png" width="20" />) en la barra de herramientas, agregue la llamada relevante dentro del cierre `ATTrackingManager.trackingAuthorizationStatus == .authorized`:
+   1. Para cada uno de los botones (<img src="assets/saveforlater.png" width="15"/>, <img src="assets/addtocart.png" width="20"/> y <img src="assets/purchase.png" width="20"/>) en la barra de herramientas, agregue la llamada relevante dentro del cierre `ATTrackingManager.trackingAuthorizationStatus == .authorized`:
 
-      1. Para <img src="assets/saveforlater.png" width="15" />
+      1. Para <img src="assets/saveforlater.png" width="15"/>
 
          ```swift
          // Send saveForLater commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "saveForLaters", product: product)
          ```
 
-      1. Para <img src="assets/addtocart.png" width="20" />
+      1. Para <img src="assets/addtocart.png" width="20"/>
 
          ```swift
          // Send productListAdds commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productListAdds", product: product)
          ```
 
-      1. Para <img src="assets/purchase.png" width="20" />
+      1. Para <img src="assets/purchase.png" width="20"/>
 
          ```swift
          // Send purchase commerce experience event
@@ -340,13 +340,13 @@ De nuevo, vamos a implementar este código en su proyecto Xcode.
 
 1. Revise la sección [instrucciones de configuración](assurance.md#connecting-to-a-session) para conectar el simulador o dispositivo con Assurance.
 
-   1. Mueva el icono Garantía a la izquierda.
+   1. Mueva el icono de Assurance a la izquierda.
    1. Seleccione **[!UICONTROL Inicio]** en la barra de pestañas y verifique que ve un **[!UICONTROL ECID]**, **[!UICONTROL correo electrónico]** y **[!UICONTROL ID de CRM]** en la pantalla Inicio.
    1. Seleccione **[!DNL Products]** en la barra de fichas.
    1. Seleccione un producto.
-   1. Seleccionar <img src="assets/saveforlater.png" width="15" />.
-   1. Seleccionar <img src="assets/addtocart.png" width="20" />.
-   1. Seleccionar <img src="assets/purchase.png" width="15" />.
+   1. Seleccionar <img src="assets/saveforlater.png" width="15"/>.
+   1. Seleccionar <img src="assets/addtocart.png" width="20"/>.
+   1. Seleccionar <img src="assets/purchase.png" width="15"/>.
 
       <img src="./assets/mobile-app-events-3.png" width="300">
 
