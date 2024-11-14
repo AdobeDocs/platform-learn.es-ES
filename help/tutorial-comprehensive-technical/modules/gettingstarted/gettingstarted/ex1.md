@@ -4,14 +4,14 @@ description: 'Introducción: Instale la extensión de Chrome para la documentaci
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: 57d12036519ab066b713496669ffdc895d3b4825
+source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '903'
 ht-degree: 0%
 
 ---
 
-# 0.1.1 Instalar la extensión de Chrome para la documentación de Experience League
+# Instale la extensión de Chrome para la documentación de Experience League
 
 ## Acerca de la extensión Chrome
 
@@ -35,7 +35,7 @@ Una vez instalada la extensión, el mismo texto se cambia automáticamente para 
 
 ![DSN](./images/mod7.png)
 
-## 0.1.1.1 Instalar la extensión de Chrome
+## Instalación de la extensión de Chrome
 
 Para instalar esa extensión de Chrome, abra el explorador Chrome y vaya a: [https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi). Entonces verá esto...
 
@@ -55,7 +55,7 @@ En el menú de **extensiones**, haga clic en el icono de **pieza del rompecabeza
 
 ![DSN](./images/c6.png)
 
-## 0.1.1.2 Configuración de la extensión de Chrome
+## Configuración de la extensión de Chrome
 
 Vaya a [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview) y, a continuación, haga clic en el icono de la extensión para abrirla.
 
@@ -133,7 +133,7 @@ Después de activar la configuración, verá un punto verde junto a las iniciale
 
 ![DSN](./images/c10.png)
 
-## 0.1.1.3 Verificar el contenido del tutorial
+## Verificar contenido del tutorial
 
 Como prueba, ve a [esta página](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex3).
 
@@ -141,10 +141,10 @@ Ahora debería ver que todas las **variables de entorno** han sido reemplazadas 
 
 Ahora debería tener una vista similar a la siguiente, donde la variable de entorno `aepTenantId` se ha reemplazado por su ID de inquilino de AEP real, que en este caso es **_experienceplatform**.
 
-![DSN](./images/c12.png)
+![DSN](./images/mod7.png)
 
-Paso siguiente: [0.2 Use el sistema de demostración siguiente para configurar la propiedad de cliente de recopilación de datos de Adobe Experience Platform](./ex2.md)
+Paso siguiente: [Use el sistema de demostración siguiente para configurar la propiedad de cliente de recopilación de datos de Adobe Experience Platform](./ex2.md)
 
-[Volver al módulo 0](./getting-started.md)
+[Volver atrás a Introducción](./getting-started.md)
 
 [Volver a todos los módulos](./../../../overview.md)

@@ -4,14 +4,14 @@ description: 'Introducción: resumen'
 kt: 5342
 doc-type: tutorial
 exl-id: 31616c51-01e0-4f99-91f1-4f21054b0999
-source-git-commit: 57d12036519ab066b713496669ffdc895d3b4825
+source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 1%
+source-wordcount: '246'
+ht-degree: 2%
 
 ---
 
-# 0.1 Introducción
+# Introducción
 
 En este módulo configurará todo para que pueda recopilar datos, acceder al entorno de demostración y personalizar las variables dinámicas en este tutorial.
 
@@ -28,23 +28,23 @@ En este módulo configurará todo para que pueda recopilar datos, acceder al ent
 
 ## Ejercicios
 
-[0.1.1 Instalar la extensión de Chrome para la documentación de Experience League](./ex1.md)
+[Instale la extensión de Chrome para la documentación de Experience League](./ex1.md)
 
 En este ejercicio instalará y configurará la extensión de Chrome para poder utilizarla y personalizar el contenido del tutorial.
 
-[0.1.2 Usar Demo System Next para configurar la propiedad de cliente de recopilación de datos de Adobe Experience Platform](./ex2.md)
+[Utilice Demo System Next para configurar la propiedad de cliente de recopilación de datos de Adobe Experience Platform](./ex2.md)
 
 En este ejercicio utilizará Sistema de demostración siguiente para configurar las propiedades de Launch para la web y dispositivos móviles.
 
-[0.1.3 Crear su secuencia de datos](./ex3.md)
+[Crear su secuencia de datos](./ex3.md)
 
 En este ejercicio utilizará Sistema de demostración siguiente para configurar las propiedades de Launch para la web y dispositivos móviles.
 
-[0.1.4 Uso del sitio web](./ex4.md)
+[Uso del sitio web](./ex4.md)
 
 En este ejercicio configurará el sitio web para que pueda utilizarlo para demostraciones y habilitación.
 
-[0.1.5 Uso de la aplicación móvil](./ex5.md)
+[Uso de la aplicación móvil](./ex5.md)
 
 En este ejercicio configurará la aplicación móvil para que pueda utilizarla para demostraciones y activación.
 

@@ -3,40 +3,37 @@ title: 'Introducción: Utilice el sistema de demostración junto a para configur
 description: 'Introducción: Utilice el sistema de demostración junto a para configurar la propiedad de Launch'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: f863bf1c-004a-4137-9ef2-efae76499dfa
+source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
 
-# 0.2 Usar Demo System Next para configurar la propiedad de cliente de recopilación de datos de Adobe Experience Platform
+# Utilice Demo System Next para configurar la propiedad de cliente de recopilación de datos de Adobe Experience Platform
 
-Después de registrarse en el Tutorial técnico completo de Adobe Experience Platform, hay un proceso automatizado que le proporcionará acceso al sistema de demostración, para que pueda acceder y ejecutar la configuración siguiente.
+Para visualizar las lecciones aprendidas en este tutorial y hacer posible que pruebe la configuración en un entorno seguro, este tutorial utiliza las herramientas Siguiente del sistema de demostración de Adobe. Para aprovechar al máximo este tutorial, la instancia de AEP debe configurarse para integrarse con Demo System Next.
 
-Una vez que tenga acceso al sistema de demostración, siga los pasos a continuación.
+Una vez que tenga acceso a Demo System Next, proceda con los siguientes pasos.
 
-Vaya a [https://dashboard.adobedemo.com/](https://dashboard.adobedemo.com/). Seleccione su zona protegida y haga clic en **Configuración rápida**.
+Vaya a [https://dsn.adobe.com/](https://dsn.adobe.com/) y luego a **Configuración**.
+
+![DSN](./images/dsnsetup.png)
+
+En el menú desplegable **Entorno**, seleccione la instancia de AEP y la zona protegida.
 
 ![DSN](./images/dsnh1.png)
 
-Verá lo siguiente:
+A continuación, seleccione el ajuste preestablecido **Usuario de tutorial de AEP**.
 
 ![DSN](./images/dsnhome.png)
 
-En **General** - **Entorno**, seleccione su instancia de Adobe Experience Platform y su zona protegida, en este caso:
-
-- **Experience Platform Internacional**
-- **aepenablementfy22**
-- Configuración: seleccione **Global v2.0**
-
-![DSN](./images/dsn1.png)
-
-A continuación, seleccione el ajuste preestablecido **Usuario de habilitación** y haga clic en **Iniciar**.
+A continuación, haga clic en **Iniciar**.
 
 ![DSN](./images/dsn2.png)
 
-En la ventana emergente, escriba un nombre para la propiedad de recopilación de datos. Use esta convención de nombres: **Sistema de demostración (DD/MM/AAAA)**. Información: el LDAP se añadirá automáticamente, no es necesario que lo añada usted mismo.
+En la ventana emergente, introduzca un nombre para las propiedades de recopilación de datos y los proyectos de Experience Builder. Use esta convención de nombres: **Sistema de demostración (DD/MM/AAAA)**. Información: el LDAP se añadirá automáticamente, no es necesario que lo añada usted mismo.
 
 Haga clic en **Start**.
 
@@ -48,9 +45,9 @@ A continuación, verá esta ventana emergente, que muestra el progreso al crear 
 
 Una vez completado el proceso de configuración rápida, tendrá lo siguiente:
 
-- 1 proyecto de venta minorista por web, que permite utilizar un sitio web de demostración con la marca de demostración de Luma
-- 1 proyecto de venta minorista móvil, que permite utilizar una aplicación móvil de demostración con la marca de demostración de Luma
-- 1 Proyecto de CX App Retail, que permite utilizar una aplicación de centro de llamadas y clientelización con la marca de demostración de Luma.
+- 1 proyecto web, que permite utilizar un sitio web de demostración con una marca de demostración de telco
+- 1 proyecto de aplicación móvil, que permite utilizar una aplicación móvil de demostración con una marca de demostración de telco
+- 1 Proyecto de aplicación CX, que permite utilizar una aplicación de centro de llamadas con una marca de demostración de telecomunicaciones
 - 1 Propiedad de recopilación de datos para la web, que utilizará para recopilar datos del sitio web
 - 1 propiedad de recopilación de datos para móviles, que utilizará para recopilar datos de la aplicación móvil
 
@@ -58,8 +55,8 @@ Una vez completado el proceso de configuración rápida, tendrá lo siguiente:
 
 Mantenga esta pantalla abierta ya que la necesitará en los siguientes pasos.
 
-Paso siguiente: [0.3 Crear su secuencia de datos](./ex3.md)
+Paso siguiente: [Crear su secuencia de datos](./ex3.md)
 
-[Volver al módulo 0](./getting-started.md)
+[Volver atrás a Introducción](./getting-started.md)
 
 [Volver a todos los módulos](./../../../overview.md)

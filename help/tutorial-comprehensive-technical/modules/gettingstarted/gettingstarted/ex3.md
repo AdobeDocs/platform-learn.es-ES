@@ -3,26 +3,31 @@ title: 'Introducción: Creación de una secuencia de datos'
 description: 'Introducción: Creación de una secuencia de datos'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: b3e6f66d-fb7a-43ab-aedb-45141af76d3e
+source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '842'
 ht-degree: 1%
 
 ---
 
-# 0.3 Crear su secuencia de datos
+# Crear su secuencia de datos
 
-Vaya a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). Después del ejercicio anterior, ahora tiene dos propiedades de recopilación de datos: una para la web y otra para el móvil.
+Vaya a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/).
 
 ![DSN](./images/launchprop.png)
 
-Estas propiedades están casi listas para utilizarse, pero antes de empezar a recopilar datos con estas propiedades, debe configurar una secuencia de datos. Obtendrá más información sobre el concepto de conjunto de datos y su significado en el Ejercicio 1.2.
+En el menú de la izquierda, haga clic en **[!UICONTROL Etiquetas]**. Después del ejercicio anterior, ahora tiene dos propiedades de recopilación de datos: una para la web y otra para el móvil.
+
+![DSN](./images/launchprop1.png)
+
+Estas propiedades están casi listas para utilizarse, pero antes de empezar a recopilar datos con estas propiedades, debe configurar una secuencia de datos. Obtendrá más información sobre el concepto de secuencia de datos y lo que significa en un ejercicio posterior del módulo Recopilación de datos.
 
 Por ahora, siga estos pasos.
 
-## 0.3.1 Creación de un flujo de datos para la web
+## Creación de un flujo de datos para la web
 
-Haga clic en **[!UICONTROL Datastreams]** o **[!UICONTROL Datastreams (Beta)]**.
+Haga clic en **[!UICONTROL Datastreams]**.
 
 ![Haga clic en el icono Configuración de Edge en el panel de navegación izquierdo](./images/edgeconfig1a.png)
 
@@ -34,7 +39,7 @@ Haga clic en **[!UICONTROL Nueva secuencia de datos]**.
 
 ![Haga clic en el icono Configuración de Edge en el panel de navegación izquierdo](./images/edgeconfig1.png)
 
-Para **[!UICONTROL Nombre descriptivo]** y para la descripción opcional, escriba `--aepUserLdap-- - Demo System Datastream`. Para Esquema de eventos, seleccione **Sistema de demostración - Esquema de eventos para el sitio web (Global v1.1)**. Haga clic en **Guardar**.
+Para **[!UICONTROL Name]** y para la descripción opcional, escriba `--aepUserLdap-- - Demo System Datastream`. Para **Esquema de asignación**, seleccione **Sistema de demostración - Esquema de evento para el sitio web (Global v1.1)**. Haga clic en **Guardar**.
 
 ![Asigne un nombre a la configuración de Edge y guarde](./images/edgeconfig2.png)
 
@@ -64,21 +69,21 @@ Entonces verá esto... Haga clic en **Extensiones**.
 
 ![Asigne un nombre a la configuración de Edge y guarde](./images/edgeconfig11.png)
 
-En la extensión SDK para web de Adobe Experience Platform, haga clic en **Configurar**.
+Primero, haga clic en la extensión SDK para web de Adobe Experience Platform y, a continuación, haga clic en **Configurar**.
 
 ![Asigne un nombre a la configuración de Edge y guarde](./images/edgeconfig12.png)
 
-Entonces verá esto... Para **Datastreams**, actualmente verá un valor ficticio establecido en 1. Ahora necesita hacer clic en el botón de opción **Elegir de la lista**. En la lista desplegable, seleccione la secuencia de datos que creó anteriormente.
+Entonces verá esto... Eche un vistazo al menú **Datastreams** y compruebe que está seleccionada la zona protegida correcta, que en su caso debería ser `--aepSandboxName--`.
+
+![Asigne un nombre a la configuración de Edge y guarde](./images/edgeconfig12a.png)
+
+Abra el menú desplegable **Secuencias de datos** y seleccione la secuencia de datos que creó anteriormente.
 
 ![Asigne un nombre a la configuración de Edge y guarde](./images/edgeconfig13.png)
 
-Asegúrese de haber seleccionado **Flujo de datos**. SUGERENCIA: Puede filtrar los resultados de la lista desplegable fácilmente escribiendo su `--aepUserLdap--`.
+Asegúrese de haber seleccionado **Flujo de datos** en los tres entornos diferentes. A continuación, haga clic en **Guardar**.
 
 ![Asigne un nombre a la configuración de Edge y guarde](./images/edgeconfig14.png)
-
-Desplácese hacia abajo hasta que vea **Recopilación de datos**. Asegúrese de que la casilla de verificación para **Habilitar la recopilación de datos de clics** no esté habilitada. Haga clic en **Guardar** para guardar los cambios.
-
-![Asigne un nombre a la configuración de Edge y guarde](./images/edgeconfig14a.png)
 
 Vaya a **Flujo de publicación**.
 
@@ -92,13 +97,15 @@ Haga clic en **Agregar todos los recursos modificados** y, a continuación, haga
 
 ![Asigne un nombre a la configuración de Edge y guarde](./images/edgeconfig17.png)
 
-Los cambios se están publicando y estarán listos en un par de minutos.
+Los cambios se están publicando y estarán listos en un par de minutos. Después, verá el punto verde junto a **Principal**.
 
-## 0.3.2 Crear un flujo de datos para dispositivos móviles
+![Asigne un nombre a la configuración de Edge y guarde](./images/edgeconfig17a.png)
+
+## Crear un flujo de datos para dispositivos móviles
 
 Vaya a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/).
 
-Haga clic en **[!UICONTROL Datastreams]** o **[!UICONTROL Datastreams (Beta)]**.
+Haga clic en **[!UICONTROL Datastreams]**.
 
 ![Haga clic en el icono Flujo de datos en el panel de navegación izquierdo](./images/edgeconfig1a.png)
 
@@ -110,7 +117,7 @@ Haga clic en **[!UICONTROL Nueva secuencia de datos]**.
 
 ![Haga clic en el icono Flujo de datos en el panel de navegación izquierdo](./images/edgeconfig1.png)
 
-Para **[!UICONTROL Nombre descriptivo]** y para la descripción opcional, escriba `--aepUserLdap-- - Demo System Datastream (Mobile)`. Para Esquema de eventos, seleccione **Sistema de demostración - Esquema de eventos para aplicación móvil (Global v1.1)**. Haga clic en **Guardar**.
+Para **[!UICONTROL Nombre descriptivo]** y para la descripción opcional, escriba `--aepUserLdap-- - Demo System Datastream (Mobile)`. Para **Esquema de asignación**, seleccione **Sistema de demostración - Esquema de evento para aplicación móvil (Global v1.1)**. Haga clic en **Guardar**.
 
 Haga clic en **[!UICONTROL Guardar]**.
 
@@ -130,7 +137,7 @@ Entonces verá esto...
 
 ![Asigne un nombre a la configuración de secuencia de datos y guarde](./images/edgeconfig5m.png)
 
-La secuencia de datos ya está lista para utilizarse en la propiedad de cliente de recopilación de datos de Adobe Experience Platform para dispositivos móviles.
+El conjunto de datos está listo para utilizarse en la propiedad de cliente de recopilación de datos de Adobe Experience Platform para dispositivos móviles.
 
 Vaya a **Etiquetas** y filtre los resultados de búsqueda para ver sus dos propiedades de recopilación de datos. Abra la propiedad de **Mobile** al hacer clic en ella.
 
@@ -140,13 +147,13 @@ Entonces verá esto... Haga clic en **Extensiones**.
 
 ![Asigne un nombre a la configuración de Edge y guarde](./images/edgeconfig11m.png)
 
-En la extensión **Adobe Experience Platform Edge Network**, haga clic en **Configurar**.
+Haga clic en la extensión **Adobe Experience Platform Edge Network** y, a continuación, haga clic en **Configurar**.
 
 ![Asigne un nombre a la configuración de Edge y guarde](./images/edgeconfig12m.png)
 
 Entonces verá esto... Ahora debe seleccionar la zona protegida y la secuencia de datos correctos que acaba de configurar. La zona protegida que se va a usar es `--aepSandboxName--` y el conjunto de datos se llama `--aepUserLdap-- - Demo System Datastream (Mobile)`.
 
-Para el **dominio de Edge Network**, use el dominio predeterminado que es **edge.adobedc.net**.
+Para el **dominio de Edge Network**, utilice el dominio predeterminado.
 
 Haga clic en **Guardar** para guardar los cambios.
 
@@ -164,10 +171,12 @@ Haga clic en **Agregar todos los recursos modificados** y luego haga clic en **G
 
 ![Asigne un nombre a la configuración de Edge y guarde](./images/edgeconfig17m.png)
 
-Los cambios se están publicando y estarán listos en un par de minutos.
+Los cambios se están publicando y estarán listos en un par de minutos. Después, verá el punto verde junto a **Principal**.
 
-Paso siguiente: [0.4 Usar el sitio web](./ex4.md)
+![Asigne un nombre a la configuración de Edge y guarde](./images/edgeconfig17ma.png)
 
-[Volver al módulo 0](./getting-started.md)
+Paso siguiente: [Usar el sitio web](./ex4.md)
+
+[Volver atrás a Introducción](./getting-started.md)
 
 [Volver a todos los módulos](./../../../overview.md)

@@ -3,16 +3,17 @@ title: 'Introducción: Uso de la aplicación móvil'
 description: 'Introducción: Uso de la aplicación móvil'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 2b94f08f-c932-4287-9956-cfe368c96c12
+source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
 
-# 0.5 Uso de la aplicación móvil
+# Uso de la aplicación móvil
 
-## 0.5.1 Descargar la aplicación
+## Descargue la aplicación
 
 Vaya a [https://bit.ly/dx-demo-app](https://bit.ly/dx-demo-app) en su equipo. Entonces verá esto...
 
@@ -22,7 +23,7 @@ Usa la aplicación **Camera** de tu smartphone para instalar la aplicación móv
 
 >[!NOTE]
 >
->Después de instalar la aplicación por primera vez en un dispositivo iOS, es posible que aparezca un mensaje de error al intentar abrir la aplicación que dice: **Desarrollador empresarial que no es de confianza**. Para solucionarlo, ve a **Configuración > General > Administración de dispositivos > Adobe Systems Inc.** y haz clic en **Confiar en Adobe Systems Inc.**.
+>Después de instalar la aplicación por primera vez en un dispositivo iOS, es posible que aparezca un mensaje de error al intentar abrir la aplicación que dice: **Desarrollador empresarial que no es de confianza**. Para solucionarlo, tienes que ir a **Configuración > General > Administración de VPN y dispositivos > Adobe Systems Inc.** y hacer clic en **Confiar en Adobe Systems Inc.**.
 
 Una vez que la aplicación esté instalada, la encontrarás en la pantalla de inicio del dispositivo. Haga clic en el icono para abrir la aplicación.
 
@@ -48,21 +49,25 @@ Ahora puede cargar un proyecto personalizado. Haga clic en el código QR para ca
 
 ![DSN](./images/mobileappn6.png)
 
-Después del ejercicio 0.1, tuvo este resultado. Haga clic para abrir el **proyecto de venta minorista móvil** que se creó para usted.
+Después del ejercicio anterior, obtuvo este resultado. Haga clic para abrir el **proyecto Mobile Edge Telco** que se creó para usted.
 
 ![DSN](./images/dsn5b.png)
 
-En caso de que hayas cerrado accidentalmente la ventana de tu navegador, o para futuras sesiones de demostración o habilitación, también puedes acceder a tu proyecto de sitio web yendo a [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Después de iniciar sesión con su Adobe ID, verá esto. Haga clic en el proyecto de la aplicación móvil para abrirlo.
+En caso de que hayas cerrado accidentalmente la ventana de tu navegador, o para futuras sesiones de demostración o habilitación, también puedes acceder a tu proyecto de sitio web yendo a [https://dsn.adobe.com](https://dsn.adobe.com). Después de iniciar sesión con su Adobe ID, verá esto. Haga clic en los tres puntos **...** de su proyecto de aplicación móvil y, a continuación, haga clic en **Editar**.
 
 ![DSN](./images/web8a.png)
 
-Entonces verá esto... Haga clic en **Integraciones**.
+En la página **Integraciones**, debe seleccionar la propiedad de recopilación de datos que se creó en el ejercicio anterior. Para ello, haga clic en **Seleccionar entorno**.
 
 ![DSN](./images/web8aa.png)
 
-Debe seleccionar la propiedad Recopilación de datos para móvil creada en el ejercicio 0.1. A continuación, haga clic en **Ejecutar**.
+Haga clic en **Seleccionar** en la propiedad de recopilación de datos creada en el paso anterior, que se llama `--aepUserLdap - Demo System (DD/MM/YYYY) (mobile)`. A continuación, haga clic en **Guardar**.
 
 ![DSN](./images/web8b.png)
+
+Entonces verá esto... A continuación, haga clic en **Ejecutar**.
+
+![DSN](./images/web8bb.png)
 
 A continuación, verá esta ventana emergente, que contiene un código QR. Escanee este código QR desde la aplicación móvil.
 
@@ -76,8 +81,8 @@ Ahora, vuelve a **Inicio** en la aplicación. La aplicación ya está lista para
 
 ![DSN](./images/mobileappn8.png)
 
-Ahora ha completado el módulo 0.
+Ahora ha completado el módulo Introducción y está listo para empezar con los próximos ejercicios.
 
-[Volver al módulo 0](./getting-started.md)
+[Volver atrás a Introducción](./getting-started.md)
 
 [Volver a todos los módulos](./../../../overview.md)
