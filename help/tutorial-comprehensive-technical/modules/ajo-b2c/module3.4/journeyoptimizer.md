@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer
 description: En este módulo, aprenderá todo lo que debe saber sobre Journey Optimizer, que ayuda a las empresas a diseñar y ofrecer experiencias conectadas, contextuales y personalizadas a sus clientes.
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+exl-id: f9f37817-f640-4b54-b977-13fd6cc29fcd
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '349'
 ht-degree: 2%
 
 ---
@@ -31,7 +32,7 @@ En este módulo, aprenderá todo lo que debe saber sobre Adobe Journey Optimizer
 
 >[!NOTE]
 >
->No olvide instalar, configurar y utilizar la extensión de Chrome como se hace referencia en [0.1: instale la extensión de Chrome para la documentación del Experience League](../../gettingstarted/gettingstarted/ex1.md)
+>No olvide instalar, configurar y utilizar la extensión de Chrome como se hace referencia en [Instalar la extensión de Chrome para la documentación del Experience League](../../gettingstarted/gettingstarted/ex1.md)
 
 ## Ejercicios
 

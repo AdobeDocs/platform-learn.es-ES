@@ -3,9 +3,10 @@ title: Actualizar el ID de configuración y probar el Recorrido
 description: Actualizar el ID de configuración y probar el Recorrido
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 6807f93d-bd44-4f63-8005-6819c9f5f1ed
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '611'
 ht-degree: 0%
 
 ---
@@ -73,10 +74,6 @@ La biblioteca se actualizará y, después de uno o dos minutos, podrá probar la
 Vaya a [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Después de iniciar sesión con su Adobe ID, verá esto. Haga clic en el proyecto del sitio web para abrirlo.
 
 ![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
-
-En la página **Screens**, haga clic en **Ejecutar**.
-
-![DSN](./../../../modules/datacollection/module1.1/images/web2.png)
 
 A continuación, verá cómo se abre el sitio web de demostración. Seleccione la URL y cópiela en el portapapeles.
 

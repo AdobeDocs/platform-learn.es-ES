@@ -3,9 +3,10 @@ title: 'Foundation: configuración de la recopilación de datos de Adobe Experie
 description: 'Foundation: configuración de la recopilación de datos de Adobe Experience Platform y de la extensión del SDK web: recopilación de datos web del lado del cliente'
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+exl-id: dce7f1b5-72ca-41b2-9aa8-41c13ce25c82
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '646'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 0%
 
 ### Instalación del Adobe Experience Platform Debugger
 
-Experience Platform Debugger es una extensión disponible para los navegadores Chrome y Firefox que permite ver la tecnología de Adobe implementada en las páginas web. Descargue la versión para su navegador preferido:
+Experience Platform Debugger es una extensión disponible para los navegadores Chrome y Firefox que permite ver la tecnología de Adobe implementada en las páginas web. Instale la versión de su navegador preferido:
 
 - [Extensión de Firefox](https://addons.mozilla.org/es/firefox/addon/adobe-experience-platform-dbg/)
 
@@ -37,13 +38,9 @@ Compruebe que estos 2 ajustes están activados:
 
 ### Abrir el sitio web de demostración
 
-Vaya a [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Después de iniciar sesión con su Adobe ID, verá esto. Haga clic en el proyecto del sitio web para abrirlo.
+Vaya a [https://dsn.adobe.com](https://dsn.adobe.com). Después de iniciar sesión con su Adobe ID, verá esto. Haga clic en los 3 puntos **...** del proyecto del sitio web y, a continuación, haga clic en **Ejecutar** para abrirlo.
 
-![DSN](./../../gettingstarted/gettingstarted/images/web8.png)
-
-En la página **Screens**, haga clic en **Ejecutar**.
-
-![DSN](./images/web2.png)
+![DSN](.//images/web8.png)
 
 A continuación, verá cómo se abre el sitio web de demostración. Seleccione la URL y cópiela en el portapapeles.
 
@@ -77,15 +74,19 @@ Haga clic en el botón **[!UICONTROL Iniciar sesión]** en la parte superior der
 
 ![Depurador de AEP](./images/validate2.png)
 
+Se iniciará sesión en el depurador.
+
+![Depurador de AEP](./images/validate2ab.png)
+
 Pulse el botón de recarga del sitio web de demostración para conectar el depurador a esa pestaña específica.
 
 ![Depurador de AEP](./images/validate2a.png)
 
-Confirme que Debugger está **[!UICONTROL conectado a la página principal]**, como se muestra arriba, y luego haga clic en el icono **[!UICONTROL bloquear]** para bloquear Debugger en el sitio web de demostración. Si no lo hace, Debugger seguirá cambiando para exponer los detalles de implementación de cualquier pestaña del explorador que esté enfocada, lo que puede resultar confuso.
+Confirme que Debugger está **[!UICONTROL conectado a la página principal]**, como se muestra arriba, y luego haga clic en el icono **[!UICONTROL bloquear]** para bloquear Debugger en el sitio web de demostración. Si no lo hace, Debugger seguirá cambiando para exponer los detalles de implementación de cualquier pestaña del explorador que esté enfocada, lo que puede resultar confuso. Una vez que el depurador esté bloqueado, el icono cambiará a **Desbloquear**.
 
 ![Depurador de AEP](./images/validate3.png)
 
-A continuación, vaya a cualquier página del sitio web de demostración, como la página de categoría **Hombres**.
+A continuación, vaya a cualquier página del sitio web de demostración, como la página de categoría **Planes**.
 
 ![Extensión del SDK web de AEP de AEP Debugger](./images/validate4.png)
 
@@ -95,11 +96,11 @@ Cada solicitud contiene una fila **[!UICONTROL events]**.
 
 ![Extensión del SDK web de AEP de AEP Debugger](./images/validate5.png)
 
-Haga clic para abrir la fila **[!UICONTROL events]**. Observe cómo puede ver el evento **web.webpagedetails.pageViews**, así como otras variables integradas que se adhieren al formato **Web SDK ExperienceEvent XDM**.
+Haga clic para abrir una fila **[!UICONTROL events]**. Observe cómo puede ver el evento **web.webpagedetails.pageViews**, así como otras variables integradas que se adhieren al formato **Web SDK ExperienceEvent XDM**.
 
 ![Valor de eventos](./images/validate8.png)
 
-Estos tipos de detalles de solicitud también están visibles en la pestaña Red (Network). Filtre las solicitudes con **interaction** para localizar las solicitudes enviadas por el SDK web. Puede encontrar todos los detalles de la carga útil XDM en los encabezados de carga útil de solicitud:
+Estos tipos de detalles de solicitud también están visibles en la pestaña Red (Network). Filtre las solicitudes con **interaction** para localizar las solicitudes enviadas por el SDK web. Puede encontrar todos los detalles de la carga útil XDM en la sección Carga útil:
 
 ![Ficha Red](./images/validate9.png)
 

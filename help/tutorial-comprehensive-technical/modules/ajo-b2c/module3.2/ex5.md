@@ -3,9 +3,10 @@ title: 'Adobe Journey Optimizer: API meteorológica externa, acción de SMS y m�
 description: 'Adobe Journey Optimizer: API meteorológica externa, acción de SMS y más: Déclencheur el Recorrido de cliente orquestado'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 068c8be4-2e9e-4d38-9c0e-f769ac927b57
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '628'
 ht-degree: 1%
 
 ---
@@ -73,10 +74,6 @@ Haga clic en **Agregar todos los recursos modificados** y, a continuación, haga
 Vaya a [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Después de iniciar sesión con su Adobe ID, verá esto. Haga clic en el proyecto del sitio web para abrirlo.
 
 ![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
-
-En la página **Screens**, haga clic en **Ejecutar**.
-
-![DSN](./../../../modules/datacollection/module1.1/images/web2.png)
 
 A continuación, verá cómo se abre el sitio web de demostración. Seleccione la URL y cópiela en el portapapeles.
 

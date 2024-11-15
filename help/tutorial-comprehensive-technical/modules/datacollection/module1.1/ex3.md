@@ -3,9 +3,10 @@ title: 'Foundation: configuración de la recopilación de datos de Adobe Experie
 description: 'Foundation: configuración de la recopilación de datos de Adobe Experience Platform y la extensión del SDK web: introducción a la recopilación de datos de Adobe Experience Platform'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 391c79d6-9c42-465e-bce8-60fa6474979c
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1273'
 ht-degree: 9%
 
 ---
@@ -26,31 +27,30 @@ Esta es la página de Propiedades de recopilación de datos de Adobe Experience 
 
 ![Página de propiedades](./images/launch1.png)
 
-En el módulo 0, Demo System creó dos propiedades de cliente para usted: una para el sitio web y otra para la aplicación móvil. Encuéntralos buscando `--aepUserLdap--` en el cuadro **[!UICONTROL Buscar]**.
+En **Introducción**, Demo System creó dos propiedades de cliente para usted: una para el sitio web y otra para la aplicación móvil. Encuéntralos buscando `--aepUserLdap--` en el cuadro **[!UICONTROL Buscar]**.
+Haga clic para abrir la propiedad **Web**.
 
 ![Cuadro de búsqueda](./images/property6.png)
 
-Abra la propiedad **Web**.
 
-A continuación, verá la página Información general de la propiedad. Haz clic en **[!UICONTROL Extensiones]** en el carril izquierdo. Haga clic en el botón **[!UICONTROL Configurar]** de la extensión del SDK web de Adobe Experience Platform.
+
+A continuación, verá la página Información general de la propiedad. Haz clic en **[!UICONTROL Extensiones]** en el carril izquierdo, luego haz clic en **SDK web de Adobe Experience Platform** y, a continuación, haz clic en **[!UICONTROL Configurar]**.
 
 ![Página de información general de propiedad](./images/property7.png)
 
-Bienvenido al SDK web de Adobe Experience Platform. Aquí puede configurar la extensión con la secuencia de datos que creó en el [Ejercicio 0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md), así como algunas configuraciones más avanzadas. Solo va a configurar dos opciones para este ejercicio.
+Bienvenido al SDK web de Adobe Experience Platform. Aquí puede configurar la extensión con la secuencia de datos que creó en [Introducción](./../../../modules/gettingstarted/gettingstarted/ex2.md), así como algunas configuraciones más avanzadas.
 
-El dominio de Edge predeterminado es siempre **edge.adobedc.net**. Si ha implementado una configuración CNAME en su entorno de Adobe Experience Cloud o Adobe Experience Platform, deberá actualizar el **[!UICONTROL dominio de Edge]**. Su instancia de Adobe Experience Platform está usando este dominio de Edge: `--webSdkEdgeDomain--`.
+El dominio Edge predeterminado es siempre **edge.adobedc.net**. Si ha implementado una configuración CNAME en su entorno de Adobe Experience Cloud o Adobe Experience Platform, deberá actualizar el **[!UICONTROL dominio de Edge]**.
 
-Si el dominio de Edge de su instancia es diferente del predeterminado, actualice el dominio de Edge. Un dominio de Edge permite configurar un servidor de seguimiento de origen, que a continuación utiliza una configuración CNAME en el back-end para garantizar que los datos se recopilen en el Adobe.
+Si el dominio Edge de su instancia es diferente del predeterminado, actualice el dominio Edge aquí. Si no está seguro, utilice el dominio predeterminado. Un dominio Edge permite configurar un servidor de seguimiento de origen, que a su vez utiliza una configuración CNAME en el back-end para garantizar que los datos se recopilen en el Adobe.
 
 ![Extensiones de inicio](./images/property9edgedomain.png)
 
-Ahora, asegúrese de que el botón de opción **[!UICONTROL Elegir de la lista]** esté seleccionado en el encabezado **[!UICONTROL Datastreams]** y seleccione su secuencia de datos con el nombre: `--aepUserLdap-- - Demo System Datastream`, en la lista del cuadro **[!UICONTROL Datastream]**.
-
-![Extensiones de inicio](./images/property9edge.png)
+En **[!UICONTROL Datastreams]**, ya seleccionó su secuencia de datos en la sección **Introducción**. Ha seleccionado esta secuencia de datos: `--aepUserLdap-- - Demo System Datastream`, de la lista del cuadro **[!UICONTROL Secuencia de datos]**, para cada uno de los entornos.
 
 Haga clic en **[!UICONTROL Guardar]** para volver a la vista Extensiones.
 
-![Página principal del SDK web de Adobe Experience Platform](./images/save.png)
+![Extensiones de inicio](./images/property9edge.png)
 
 ## 1.1.3.2 Elementos de datos
 
@@ -104,11 +104,13 @@ Haga clic en la regla que devuelve.
 
 ![Medios - búsqueda de reglas de páginas de artículo](./images/rule1.png)
 
-Veamos los elementos individuales que componen esta regla. Para todas las reglas Si se produce un **[!UICONTROL Evento]** especificado, se evalúan las **[!UICONTROL Condiciones]** y las **[!UICONTROL Acciones]** especificadas se realizarán si es necesario.
+Veamos los elementos individuales que componen esta regla.
+
+Para todas las reglas: si se produce un **[!UICONTROL evento]** especificado, se evalúan las **[!UICONTROL condiciones]** y, a continuación, las **[!UICONTROL acciones]** especificadas se realizan si es necesario.
 
 ![Medios - Regla de páginas de artículo](./images/rule2.png)
 
-Haga clic en el evento **Custom Event - Product View**. Esta es la vista que se carga.
+Haga clic en el evento **Principal - Evento personalizado**. Esta es la vista que se carga.
 
 Haga clic en el menú desplegable **Tipo de evento**.
 
@@ -118,9 +120,11 @@ En esta sección se enumeran algunas de las interacciones estándar que se puede
 
 Haga clic en **[!UICONTROL Cancelar]** para volver a la regla.
 
-Haga clic en la acción **Enviar evento de &quot;vista de producto&quot; a AEP**.
+Haga clic en la acción **Enviar evento de experiencia de &quot;vista de producto&quot;**.
 
-Aquí puede ver los datos que el SDK web de Adobe Experience Platform envía a Adobe Edge. Más específicamente, se usa la **aleación** **[!UICONTROL instancia]** del SDK web. La configuración de otra **[!UICONTROL instancia]** permitiría el uso de diferentes flujos de datos, entre otras cosas. Ha especificado el evento **[!UICONTROL Type]** como **commerce.productViews** y los datos XDM que está enviando son el elemento de datos **XDM - Product View** que cambió anteriormente.
+![Acción Enviar evento](./images/rule5a.png)
+
+Aquí puede ver los datos que el SDK web de Adobe Experience Platform envía al perímetro de. Más específicamente, se usa la **aleación** **[!UICONTROL instancia]** del SDK web. El evento **[!UICONTROL Type]** está establecido en **Vistas del producto Commerce (carrito)** y los datos XDM que está enviando son el elemento de datos **XDM - Vista del producto** que cambió anteriormente.
 
 ![Acción Enviar evento](./images/rule5.png)
 
@@ -136,17 +140,14 @@ Haga clic en la biblioteca existente, llamada **Principal**.
 
 ![Acceso a la biblioteca](./images/publish1.png)
 
-Haga clic en el botón **Agregar todos los recursos modificados**.
+Haga clic en el botón **Agregar todos los recursos modificados**. Siguiente,
+Haga clic en el botón **Guardar y generar para desarrollo**.
 
 ![Acceso a la biblioteca](./images/publish1a.png)
 
-Desplácese hacia abajo para ver que la mayoría de los recursos permanecerán como **Revisión 1 (más reciente)**, pero los dos que hemos cambiado: **Elemento de datos: ruleArticlePages** y **Extensión: Adobe Experience Platform Web SDK** se marcarán con solo **Último**.
-
-Haga clic en el botón **Guardar y generar para desarrollo**.
+La biblioteca puede tardar unos minutos en crearse y, cuando se complete, mostrará un punto verde a la izquierda del nombre de la biblioteca.
 
 ![Biblioteca de contenido](./images/publish2.png)
-
-La biblioteca puede tardar unos minutos en crearse y, cuando se complete, mostrará un punto verde a la izquierda del nombre de la biblioteca.
 
 Como puede ver en la pantalla Flujo de publicación, hay mucho más en el proceso de publicación de la recopilación de datos de Adobe Experience Platform que está fuera del ámbito de este tutorial. Solo vamos a usar una sola biblioteca en nuestro entorno de desarrollo.
 

@@ -3,16 +3,15 @@ title: 1.1 Configuración de la recopilación de datos de Adobe Experience Platf
 description: 'Foundation: configuración de la recopilación de datos de Adobe Experience Platform y la extensión del SDK web'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: b69ebe41-ff28-4dde-b639-198201120742
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
 
 # 1.1 Foundation: configuración de la recopilación de datos de Adobe Experience Platform y la extensión del SDK web
-
-**Autor: [Matthew Joseph Woolley](https://www.linkedin.com/in/matthewjwoolley/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 Este módulo básico le presenta la visión de recopilación de datos de Adobe y le explica cómo obtener datos de un sitio web y una aplicación móvil en Adobe Experience Platform y otras aplicaciones a través de la recopilación de datos de Adobe Experience Platform, los SDK de Adobe Experience Platform y Adobe Experience Platform Edge Network. Este módulo presenta algunos conceptos y tecnologías que tienen un impacto que va más allá del ámbito de un tutorial técnico de Adobe Experience Platform. Debe quedar claro qué partes de estos ejercicios son fundamentales para el resto del tutorial completo, qué le enseñan más sobre Experience Edge y sus capacidades, y dónde ir para obtener más información y tutoriales.
 
@@ -35,7 +34,7 @@ Este módulo básico le presenta la visión de recopilación de datos de Adobe y
 
 >[!NOTE]
 >
->No olvide instalar, configurar y utilizar la extensión de Chrome como se hace referencia en [0.1: instale la extensión de Chrome para la documentación del Experience League](../../gettingstarted/gettingstarted/ex1.md)
+>No olvide instalar, configurar y utilizar la extensión de Chrome como se hace referencia en [Instalar la extensión de Chrome para la documentación del Experience League](../../gettingstarted/gettingstarted/ex1.md)
 
 ## Ejercicios
 

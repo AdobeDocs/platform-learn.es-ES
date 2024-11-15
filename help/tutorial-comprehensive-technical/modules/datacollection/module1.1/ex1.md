@@ -3,9 +3,10 @@ title: 'Foundation: configuración de la recopilación de datos de Adobe Experie
 description: 'Foundation: configuración de la recopilación de datos de Adobe Experience Platform y la extensión del SDK web: explicación de la recopilación de datos de Adobe Experience Platform'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+exl-id: 098031c6-4d8b-46a5-ae86-8fd7692268d3
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '504'
 ht-degree: 2%
 
 ---
@@ -42,7 +43,12 @@ Ahora, eche un vistazo al carril izquierdo.
 - **[!UICONTROL Etiquetas]** ofrece una descripción general de todas las propiedades del lado del cliente
 - **[!UICONTROL Superficies de la aplicación]** ofrece una descripción general de todas las configuraciones de la aplicación para habilitar las notificaciones push (que se usa/habilita en combinación con Project Sierra)
 - **[!UICONTROL Las secuencias de datos]** se explorarán en el [próximo ejercicio](./ex2.md)
-- **[!UICONTROL Reenvío de eventos]** proporciona una descripción general de todas las propiedades del lado del servidor que se exploran en [Módulo 14 - Conexiones de Real-Time CDP: Reenvío de eventos](./../../../modules/rtcdp-b2c/module2.5/aep-data-collection-ssf.md)
+- **[!UICONTROL Reenvío de eventos]** proporciona una descripción general de todas las propiedades del lado del servidor que se exploran en [Módulo 2.5 - Conexiones de Real-Time CDP: Reenvío de eventos](./../../../modules/rtcdp-b2c/module2.5/aep-data-collection-ssf.md)
+- **[!UICONTROL Supervisión]** proporciona información general sobre el tráfico de eventos entrantes y salientes a través del reenvío de eventos
+- **[!UICONTROL Assurance]** proporciona acceso para depurar una implementación mediante el Adobe Debugger
+- **[!UICONTROL Places]** proporciona acceso para administrar puntos de interés a los que se puede acceder para la personalización basada en la ubicación en aplicaciones móviles
+- **[!UICONTROL Esquemas]** proporciona acceso al editor de esquemas de Adobe Experience Platform
+- **[!UICONTROL Identidades]** proporciona acceso a la configuración de Identity Graph de Adobe Experience Platform
 
 ## Más información
 

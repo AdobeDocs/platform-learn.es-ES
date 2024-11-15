@@ -3,9 +3,10 @@ title: Servicios inteligentes
 description: Servicios inteligentes
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 3668f06b-df76-43db-be6a-36c339256a22
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '257'
 ht-degree: 3%
 
 ---
@@ -29,7 +30,7 @@ En este módulo, aprenderá a configurar y utilizar Adobe Experience Platform In
 
 >[!NOTE]
 >
->No olvide instalar, configurar y utilizar la extensión de Chrome como se hace referencia en [0.1: instale la extensión de Chrome para la documentación del Experience League](../../gettingstarted/gettingstarted/ex1.md)
+>No olvide instalar, configurar y utilizar la extensión de Chrome como se hace referencia en [Instalar la extensión de Chrome para la documentación del Experience League](../../gettingstarted/gettingstarted/ex1.md)
 
 ## Ejercicios
 

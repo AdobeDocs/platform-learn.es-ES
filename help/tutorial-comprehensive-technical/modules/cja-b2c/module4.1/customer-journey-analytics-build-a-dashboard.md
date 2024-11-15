@@ -3,9 +3,10 @@ title: 'Customer Journey Analytics: cree un tablero con Analysis Workspace sobre
 description: 'Customer Journey Analytics: cree un tablero con Analysis Workspace sobre Adobe Experience Platform'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 0eef0211-bb6a-4b92-a6ce-507d928ccdea
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '420'
 ht-degree: 0%
 
 ---
@@ -41,7 +42,7 @@ Encontrará más información sobre el Customer Journey Analytics [aquí](https:
 
 >[!NOTE]
 >
->No olvide instalar, configurar y utilizar la extensión de Chrome como se hace referencia en [0.1: instale la extensión de Chrome para la documentación del Experience League](../../gettingstarted/gettingstarted/ex1.md)
+>No olvide instalar, configurar y utilizar la extensión de Chrome como se hace referencia en [Instalar la extensión de Chrome para la documentación del Experience League](../../gettingstarted/gettingstarted/ex1.md)
 
 ## Ejercicios
 

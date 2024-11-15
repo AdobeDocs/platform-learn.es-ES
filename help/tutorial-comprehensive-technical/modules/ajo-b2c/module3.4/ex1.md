@@ -3,9 +3,10 @@ title: 'Adobe Journey Optimizer: Configuración de un recorrido basado en décle
 description: 'En esta sección configurará un recorrido basado en déclencheur: confirmación de pedido'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: b9d9b357-08d1-4f65-9e0b-46224d035602
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '1998'
+source-wordcount: '1991'
 ht-degree: 0%
 
 ---
@@ -404,10 +405,6 @@ Probemos el recorrido actualizado comprando un producto en el sitio web de demos
 Vaya a [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Después de iniciar sesión con su Adobe ID, verá esto. Haga clic en el proyecto del sitio web para abrirlo.
 
 ![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
-
-En la página **Screens**, haga clic en **Ejecutar**.
-
-![DSN](./../../../modules/datacollection/module1.1/images/web2.png)
 
 A continuación, verá cómo se abre el sitio web de demostración. Seleccione la URL y cópiela en el portapapeles.
 
