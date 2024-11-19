@@ -3,9 +3,10 @@ title: Foundation - Perfil del cliente en tiempo real - Resumen
 description: Foundation - Perfil del cliente en tiempo real - Resumen
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 6d5519b0-494d-4cfd-aebe-078317d753ac
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,6 @@ Vamos a destacar las ventajas del Perfil del cliente en tiempo real:
 - El perfil del cliente en tiempo real se basa en un gráfico de identidad flexible y en tiempo real que permite combinar dinámicamente fragmentos de perfil de varios conjuntos de datos en función de los identificadores.
 - Una vez que los fragmentos de perfil se combinan a través del gráfico de identidad, cualquiera de los identificadores disponibles se puede utilizar para recuperar el perfil de un cliente
 - La segmentación ahora se realiza utilizando XDM como idioma detrás del segmento, lo que facilita la reutilización y comprensión del mismo
-- Los segmentos ahora también se pueden crear a través de la API, lo que permite definir un segmento externamente de forma programática y luego insertar la definición del segmento a través de la API.
 
 ## Eche un vistazo a esto
 

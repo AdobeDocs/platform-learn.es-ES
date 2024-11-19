@@ -5,9 +5,9 @@ user-guide-description: Un tutorial práctico que cubre muchos aspectos de Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: f79a989f01fa1c005a0c06cea81268118b2467be
+source-git-commit: 8cfe1dbb528bdf5ecc828cf67ef969c885982435
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '923'
 ht-degree: 4%
 
 ---
@@ -47,7 +47,9 @@ ht-degree: 4%
       + [Resumen y beneficios](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/summary.md)
    + 1.3 - Composición de audiencia federada {#module13}
       + [Información general](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/fac.md)
-      + [1.3.1 Introducción a FAC](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex1.md)
+      + [1.3.1 Configuración de la cuenta de Snowflake](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex1.md)
+      + [1.3.2 Creación de esquemas, modelos de datos y vínculos](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex2.md)
+      + [1.3.3 Crear una composición federada](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex3.md)
       + [Resumen y beneficios](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/summary.md)
 
 + 2 Real-Time CDP B2C {#rtcdpb2c}
@@ -57,8 +59,7 @@ ht-degree: 4%
       + [2.1.2 Visualizar su propio perfil de cliente en tiempo real: IU](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex2.md)
       + [2.1.3 Visualice su propio perfil de cliente en tiempo real: API](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex3.md)
       + [2.1.4 Crear un segmento: IU](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex4.md)
-      + [2.1.5 Crear un segmento: API](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex5.md)
-      + [2.1.6 Ver el perfil del cliente en tiempo real en acción en el centro de llamadas](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex6.md)
+      + [2.1.5 Ver el perfil del cliente en tiempo real en acción en el centro de llamadas](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex5.md)
       + [Resumen y beneficios](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/summary.md)
    + 2.2 Servicios inteligentes {#module22}
       + [Información general](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.2/intelligent-services.md)

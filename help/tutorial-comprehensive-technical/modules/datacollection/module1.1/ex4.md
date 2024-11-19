@@ -4,16 +4,16 @@ description: 'Foundation: configuración de la recopilación de datos de Adobe E
 kt: 5342
 doc-type: tutorial
 exl-id: dce7f1b5-72ca-41b2-9aa8-41c13ce25c82
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
 
 # 1.1.4 Recopilación de datos web del lado del cliente
 
-## 1.1.4.1 Validar los datos de la solicitud
+## Validar los datos de la solicitud
 
 ### Instalación del Adobe Experience Platform Debugger
 
@@ -40,7 +40,7 @@ Compruebe que estos 2 ajustes están activados:
 
 Vaya a [https://dsn.adobe.com](https://dsn.adobe.com). Después de iniciar sesión con su Adobe ID, verá esto. Haga clic en los 3 puntos **...** del proyecto del sitio web y, a continuación, haga clic en **Ejecutar** para abrirlo.
 
-![DSN](.//images/web8.png)
+![DSN](./images/web8.png)
 
 A continuación, verá cómo se abre el sitio web de demostración. Seleccione la URL y cópiela en el portapapeles.
 

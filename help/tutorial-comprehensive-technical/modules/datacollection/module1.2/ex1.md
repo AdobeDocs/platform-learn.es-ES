@@ -4,9 +4,9 @@ description: 'Foundation - Ingesta de datos: de desconocido a conocido en el sit
 kt: 5342
 doc-type: tutorial
 exl-id: 08cb7892-4e1c-4646-9e3b-8ab008dfd947
-source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '749'
 ht-degree: 1%
 
 ---
@@ -27,9 +27,9 @@ Ahora introducirá datos en Adobe Experience Platform y esos datos se vinculará
 
 ### Flujo de Recorrido del cliente
 
-Vaya a [https://dsn.adobe.com](https://dsn.adobe.com). Después de iniciar sesión con su Adobe ID, verá esto. Haga clic en los 3 puntos **...** de su proyecto de sitio web y, a continuación, haga clic en **Editar**.
+Vaya a [https://dsn.adobe.com](https://dsn.adobe.com). Después de iniciar sesión con su Adobe ID, verá esto. Haga clic en los 3 puntos **...** del proyecto del sitio web y, a continuación, haga clic en **Ejecutar** para abrirlo.
 
-![DSN](./../../gettingstarted/gettingstarted/images/web8.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 A continuación, verá cómo se abre el sitio web de demostración. Seleccione la URL y cópiela en el portapapeles.
 
@@ -79,7 +79,7 @@ Haga clic en **Iniciar sesión** para ir a la página Registrar/Iniciar sesión.
 
 ![Demostración](./images/pv8.png)
 
-Haga clic en **CREAR UNA CUENTA**.
+Haga clic en **Crear una cuenta**.
 
 ![Demostración](./images/pv9.png)
 

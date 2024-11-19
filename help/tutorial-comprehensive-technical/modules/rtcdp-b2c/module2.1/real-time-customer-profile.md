@@ -5,24 +5,21 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 exl-id: 79ae9722-bf38-47f7-acbc-aa5bd1289411
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 0%
+source-wordcount: '361'
+ht-degree: 1%
 
 ---
 
 # Base 2.1: perfil del cliente en tiempo real
 
-**Autor: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
-En este módulo, profundizaremos en las capacidades de perfil del cliente en tiempo real e identidad de Adobe Experience Platform. Aprenderá cómo se pueden definir las audiencias, la función del servicio de ID y el ID de Experience Cloud, y cómo definir las consultas del generador de segmentos para definir sus propios segmentos.
+En este módulo, profundizará en las capacidades de perfil del cliente en tiempo real e identidad de Adobe Experience Platform. Aprenderá cómo se pueden definir las audiencias, la función del servicio de ID y el ID de Experience Cloud, y cómo definir las consultas del generador de segmentos para definir sus propios segmentos.
 
 ## Objetivos de aprendizaje
 
 - Obtenga información sobre cómo visualizar el perfil de cliente en tiempo real de un cliente a través de la IU de Adobe Experience Platform
 - Obtenga información sobre cómo crear un segmento con el Generador de segmentos de Adobe Experience Platform
-- Obtenga información sobre cómo crear un segmento y almacenar sus resultados en un conjunto de datos mediante las API de Adobe Experience Platform
 - Obtenga información acerca del impacto del acceso a un perfil de cliente completo, incluido el comportamiento en tiempo real, en entornos sin conexión
 
 ## Requisitos previos
@@ -54,11 +51,7 @@ En este ejercicio, utilizará Postman y Adobe I/O para ver su propio perfil de c
 
 En este ejercicio, creará un segmento utilizando el Generador de segmentos de Adobe Experience Platform.
 
-[2.1.5 Crear un segmento: API](./ex5.md)
-
-En este ejercicio, utilizará Postman y Adobe I/O para crear un segmento y almacenar los resultados de ese segmento como un conjunto de datos, utilizando las API de Adobe Experience Platform.
-
-[2.1.6 Ver el perfil del cliente en tiempo real en acción en el centro de llamadas](./ex6.md)
+[2.1.5 Ver el perfil del cliente en tiempo real en acción en el centro de llamadas](./ex5.md)
 
 En este ejercicio, suplantará a un empleado del centro de llamadas que recibe una llamada de un cliente. Para influir realmente en la experiencia de este cliente, debe tener acceso a toda la información disponible en tiempo real.
 

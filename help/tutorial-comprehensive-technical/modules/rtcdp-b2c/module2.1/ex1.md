@@ -3,9 +3,10 @@ title: 'Foundation - Perfil del cliente en tiempo real: de desconocido a conocid
 description: 'Foundation - Perfil del cliente en tiempo real: de desconocido a conocido en el sitio web'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: ddbf97c2-8105-42b6-b9bf-209b1df6a3b5
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '968'
 ht-degree: 2%
 
 ---
@@ -22,13 +23,9 @@ Platform es un entorno en el que la palabra cliente es más amplia que solo los 
 
 ## Flujo de recorrido del cliente
 
-Vaya a [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Después de iniciar sesión con su Adobe ID, verá esto. Haga clic en el proyecto del sitio web para abrirlo.
+Vaya a [https://dsn.adobe.com](https://dsn.adobe.com). Después de iniciar sesión con su Adobe ID, verá esto. Haga clic en los 3 puntos **...** del proyecto del sitio web y, a continuación, haga clic en **Ejecutar** para abrirlo.
 
-![DSN](../../gettingstarted/gettingstarted/images/web8.png)
-
-En la página **Screens**, haga clic en **Ejecutar**.
-
-![DSN](../../gettingstarted/gettingstarted/images/web2.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 A continuación, verá cómo se abre el sitio web de demostración. Seleccione la URL y cópiela en el portapapeles.
 
@@ -62,7 +59,7 @@ También puede ver todos los eventos de experiencia recopilados según el compor
 
 ![Demostración](../../datacollection/module1.2/images/pv3.png)
 
-Vaya a la categoría de producto **Hombres**. A continuación, haz clic en el producto **Montana Wind Jacket**.
+Vaya a la categoría de productos **Teléfonos y dispositivos**. A continuación, haz clic en el producto **iPhone 15 Pro**.
 
 ![Demostración](../../datacollection/module1.2/images/pv4.png)
 
@@ -74,15 +71,15 @@ Abra el panel Visor de Provile y eche un vistazo a los **Eventos de experiencia*
 
 ![Demostración](../../datacollection/module1.2/images/pv6.png)
 
-Vuelva a la página de categoría **Mujeres** y haga clic en otro producto. Se ha enviado otro evento de experiencia a Adobe Experience Platform.
+Vuelva a la página de categoría **Teléfonos y dispositivos** y haga clic en otro producto. Se ha enviado otro evento de experiencia a Adobe Experience Platform. Abra el panel Visor de perfiles. Ahora verá 2 eventos de experiencia del tipo **Vista de producto**. Aunque el comportamiento es anónimo, con el consentimiento adecuado, puede rastrear cada clic y almacenarlo en Adobe Experience Platform. Una vez que se conozca al cliente anónimo, podremos fusionar automáticamente todos los comportamientos anónimos con el perfil conocido.
 
 ![Demostración](../../datacollection/module1.2/images/pv7.png)
 
-Abra el panel Visor de perfiles. Ahora verá 2 eventos de experiencia del tipo **Vista de producto**. Aunque el comportamiento es anónimo, podemos rastrear cada clic y almacenarlo en Adobe Experience Platform. Una vez que se conozca al cliente anónimo, podremos fusionar automáticamente todos los comportamientos anónimos con el perfil conocido.
+Vaya a la página Registrar/Iniciar sesión. Haga clic en **Iniciar sesión**.
 
 ![Demostración](../../datacollection/module1.2/images/pv8.png)
 
-Vaya a la página Registrar/Iniciar sesión. Haga clic en **CREAR UNA CUENTA**.
+Haga clic en **Crear una cuenta**.
 
 ![Demostración](../../datacollection/module1.2/images/pv9.png)
 
@@ -104,11 +101,11 @@ Ahora ha introducido datos en Adobe Experience Platform y los ha vinculado a ide
 
 Después de convertirse en un cliente conocido, es hora de empezar a usar la aplicación móvil. Abra la aplicación móvil en el iPhone y, a continuación, inicie sesión en la aplicación.
 
-Si ya no tienes la aplicación instalada, o si no recuerdas cómo instalarla, mira aquí: [0.5 Usa la aplicación móvil](../../gettingstarted/gettingstarted/ex5.md)
+Si ya no tienes la aplicación instalada, o si no recuerdas cómo instalarla, mira aquí: [Usa la aplicación móvil](../../gettingstarted/gettingstarted/ex5.md)
 
-Después de instalar la aplicación según se le ha indicado, verá la página de aterrizaje de la aplicación con la marca Luma cargada. Haga clic en el icono de cuenta en la parte superior izquierda de la pantalla.
+Después de instalar la aplicación según las instrucciones, verá la página de aterrizaje de la aplicación con la marca Citi Signal cargada. Haga clic en el icono de cuenta en la parte superior izquierda de la pantalla.
 
-![Demostración](./images/app_hp.png)
+![Demostración](./images/app_hp1.png)
 
 En la pantalla Inicio de sesión, inicie sesión con la dirección de correo electrónico que utilizó en el sitio web de escritorio. Haga clic en **Iniciar sesión**.
 
@@ -120,15 +117,23 @@ Vaya a la pantalla de inicio de la aplicación y haga clic en para abrir cualqui
 
 A continuación, verá la página de detalles del producto.
 
-![Demostración](./images/app_carst.png)
+![Demostración](./images/app_galaxy.png)
 
 Vaya a la pantalla de inicio de la aplicación y deslice hacia la izquierda en la pantalla para ver el panel Visor de perfiles. Verá el producto que acaba de ver en la sección **Eventos de experiencia**, junto con todas las vistas de productos de la sesión del sitio web anterior.
 
-![Demostración](./images/app_after_carst.png)
+>[!NOTE]
+>
+>Pueden pasar un par de minutos antes de que vea la vista consolidada en la aplicación y en el sitio web.
+
+![Demostración](./images/app_after_galaxy.png)
 
 Ahora vuelva al equipo de escritorio y actualice la página principal, después de lo cual verá que el producto también aparece allí.
 
-![Demostración](./images/lb_x_aftermobile.png)
+>[!NOTE]
+>
+>Pueden pasar un par de minutos antes de que vea la vista consolidada en la aplicación y en el sitio web.
+
+![Demostración](./images/web_x_aftermobile.png)
 
 Ahora ha introducido datos en Adobe Experience Platform y los ha vinculado a identificadores como ECID y direcciones de correo electrónico. El objetivo de este ejercicio era comprender el contexto empresarial de lo que está a punto de hacer. Ahora ha creado de forma eficaz un perfil de cliente en tiempo real y entre dispositivos. En el próximo ejercicio, verá el perfil en Adobe Experience Platform.
 

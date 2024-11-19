@@ -4,20 +4,20 @@ description: 'Foundation: configuración de la recopilación de datos de Adobe E
 kt: 5342
 doc-type: tutorial
 exl-id: 391c79d6-9c42-465e-bce8-60fa6474979c
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 9%
+source-wordcount: '1269'
+ht-degree: 10%
 
 ---
 
-# 1.1.3: Introducción a la recopilación de datos de Adobe Experience Platform
+# 1.1.3 Introducción a la recopilación de datos de Adobe Experience Platform
 
 ## Contexto
 
 Ahora vamos a echar un vistazo más profundo a los componentes básicos de la recopilación de datos de Adobe Experience Platform para comprender qué se instala en su sitio web de demostración. Observará de cerca la extensión SDK para web de Adobe Experience Platform, configurará un elemento de datos y una regla y aprenderá a publicar una biblioteca.
 
-## 1.1.3.1: extensión del SDK web de Adobe Experience Platform
+## Extensión de SDK web de Adobe Experience Platform
 
 Una extensión es un conjunto de código empaquetado que amplía la interfaz de recopilación de datos de Adobe Experience Platform y la funcionalidad de la biblioteca. La recopilación de datos de Adobe Experience Platform es la plataforma y las extensiones son como aplicaciones que se ejecutan en la plataforma. Todas las extensiones utilizadas en el tutorial se crean y administran mediante Adobe, pero los terceros pueden crear sus propias extensiones para limitar la cantidad de código personalizado que los usuarios de recopilación de datos de Adobe Experience Platform deben administrar.
 
@@ -52,7 +52,7 @@ Haga clic en **[!UICONTROL Guardar]** para volver a la vista Extensiones.
 
 ![Extensiones de inicio](./images/property9edge.png)
 
-## 1.1.3.2 Elementos de datos
+## Elementos de datos
 
 Los Data Elements son los componentes básicos del diccionario de datos (o mapa de datos). Utilice Data Elements para recopilar, organizar y entregar datos a través de la tecnología de marketing y publicidad.
 
@@ -88,7 +88,7 @@ Desplácese hacia arriba e introduzca el texto `%Product Category%`. Haga clic e
 
 En este punto, la extensión SDK para web de Adobe Experience Platform está instalada y ha actualizado un elemento de datos para recopilar datos con una estructura XDM. A continuación, vamos a comprobar las reglas que enviarán datos en el momento correcto.
 
-## 1.1.3.3 Normas
+## Reglas
 
 La recopilación de datos de Adobe Experience Platform es un sistema basado en reglas. Busca la interacción de usuarios y datos asociados. Cuando se cumplen los criterios descritos en las reglas, la regla activa la extensión, script o el código del lado del cliente identificados.
 
@@ -130,7 +130,7 @@ Aquí puede ver los datos que el SDK web de Adobe Experience Platform envía al 
 
 Ahora que ha consultado la regla, puede publicar todos los cambios en la recopilación de datos de Adobe Experience Platform.
 
-## 1.1.3.4 Publish en una biblioteca
+## Publish en una biblioteca
 
 Finalmente, para validar la regla y el elemento de datos que acaba de actualizar, debe publicar una biblioteca que contenga los elementos editados en nuestra propiedad. Hay algunos pasos rápidos que debe seguir en la sección **[!UICONTROL Publicación]** de la recopilación de datos de Adobe Experience Platform.
 

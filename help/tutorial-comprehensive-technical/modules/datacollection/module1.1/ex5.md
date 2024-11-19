@@ -4,20 +4,20 @@ description: 'Foundation: configuración de la recopilación de datos de Adobe E
 kt: 5342
 doc-type: tutorial
 exl-id: a9022269-6db2-46c6-a82b-ec8d5b881a55
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
 
-# 1.1.5: Implementación de Adobe Analytics y Adobe Audience Manager
+# 1.1.5 Implementación de Adobe Analytics y Adobe Audience Manager
 
 ## Contexto
 
 Ahora sabe que los datos XDM fluyen a la plataforma. Explorará más sobre qué es XDM en [Módulo 1.2](./../module1.2/data-ingestion.md), así como sobre cómo generar su propio esquema para rastrear variables personalizadas. Por ahora, verá lo que sucede cuando establece su secuencia de datos para reenviar datos a Analytics y a Audience Manager.
 
-## 1.1.5.1 Asignación de variables en Analytics
+## Asignación de variables en Analytics
 
 Adobe Experience Platform [!DNL Web SDK] asigna ciertos valores automáticamente, lo que hace que una nueva implementación de Analytics mediante el SDK web sea lo más rápida posible. Las variables asignadas automáticamente se enumeran [aquí](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html#data-collection).
 
@@ -56,11 +56,11 @@ Para que los utilice Analytics, los datos XDM se acoplan con notación de puntos
 
 Se puede acceder a todos los datos recopilados por la red perimetral mediante [reglas de procesamiento](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html). En Analytics, puede utilizar reglas de procesamiento para incorporar datos de contexto en variables de Analytics.
 
-## 1.1.5.2 Audience Manager en el Edge Network Experience Platform
+## Audience Manager en el Edge Network Experience Platform
 
 El reenvío del lado del servidor no es un concepto nuevo para Audience Manager y se aplica el mismo proceso que antes. También puede sincronizar identidades.
 
-## 1.1.5.3 Revise su secuencia de datos para enviar datos a Adobe Analytics
+## Revise la secuencia de datos para enviar datos a Adobe Analytics
 
 Si desea enviar datos recopilados por el SDK web a Adobe Analytics y Adobe Audience Manager, siga estos pasos.
 
@@ -78,7 +78,7 @@ Entonces verá esto... Seleccione el servicio **Adobe Analytics**, después del 
 
 ![Depurador de AEP](./images/aa3.png)
 
-## 1.1.5.4 Revise su secuencia de datos para enviar datos a Adobe Audience Manager
+## Revise la secuencia de datos para enviar datos a Adobe Audience Manager
 
 Entonces verá esto... Para habilitar Adobe Audience Manager, haga clic en **+Agregar servicio**.
 

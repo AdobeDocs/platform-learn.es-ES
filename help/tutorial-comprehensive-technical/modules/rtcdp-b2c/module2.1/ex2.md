@@ -3,9 +3,10 @@ title: Foundation - Perfil del cliente en tiempo real - Visualice su propio perf
 description: Foundation - Perfil del cliente en tiempo real - Visualice su propio perfil del cliente en tiempo real - IU
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 5a43b67e-574a-4bf5-b5bf-064c6dec7be8
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '567'
 ht-degree: 1%
 
 ---
@@ -14,17 +15,17 @@ ht-degree: 1%
 
 En este ejercicio, iniciará sesión en Adobe Experience Platform y verá su propio perfil de cliente en tiempo real en la interfaz de usuario.
 
-## Historia
+## Contexto
 
 En el Perfil del cliente en tiempo real, todos los datos de perfil se muestran junto con los datos de evento, así como las suscripciones a segmentos existentes. Los datos mostrados pueden proceder de cualquier lugar, de aplicaciones de Adobe y soluciones externas. Esta es la vista más potente de Adobe Experience Platform, el verdadero sistema de registro de experiencias.
 
-## 2.1.2.1 Uso de la vista de perfil del cliente en Adobe Experience Platform
+## Uso de la vista de perfil del cliente en Adobe Experience Platform
 
 Ir a [Adobe Experience Platform](https://experience.adobe.com/platform). Después de iniciar sesión, llegará a la página principal de Adobe Experience Platform.
 
 ![Ingesta de datos](../../datacollection/module1.2/images/home.png)
 
-Antes de continuar, debe seleccionar una **zona protegida**. La zona protegida que se va a seleccionar se denomina ``--aepSandboxName--``. Para ello, haga clic en el texto **[!UICONTROL Producción]** en la línea azul de la parte superior de la pantalla. Después de seleccionar la [!UICONTROL zona protegida] adecuada, verá el cambio en la pantalla y ahora se encuentra en la [!UICONTROL zona protegida] dedicada.
+Antes de continuar, debe seleccionar una **zona protegida**. La zona protegida que se va a seleccionar se denomina ``--aepSandboxName--``. Después de seleccionar la [!UICONTROL zona protegida] adecuada, verá el cambio en la pantalla y ahora se encuentra en la [!UICONTROL zona protegida] dedicada.
 
 ![Ingesta de datos](../../datacollection/module1.2/images/sb1.png)
 
@@ -40,23 +41,24 @@ En el panel Visor de perfiles, puede ver estas combinaciones de ID y áreas de n
 
 | Identidad | Área de nombres |
 |:-------------:| :---------------:|
-| ID DEL Experience Cloud (ECID) | 12507560687324495704459439363261812234 |
-| ID de correo electrónico | woutervangeluwe+06022022-01@gmail.com |
-| Identificador de número de móvil | +32473622044+06022022-01 |
+| ID DEL Experience Cloud (ECID) | 79943948563923140522865572770524243489 |
+| ID DEL Experience Cloud (ECID) | 70559351147248820114888181867542007989 |
+| ID de correo electrónico | woutervangeluwe+18112024-01@gmail.com |
+| Identificador de número de móvil | +32473622044+18112024-01 |
 
 Con Adobe Experience Platform, todos los ID son igualmente importantes. Anteriormente, el ECID era el ID más importante en el contexto de Adobe y todos los demás ID estaban vinculados al ECID en una relación jerárquica. Con Adobe Experience Platform, este ya no es el caso, y cada ID puede considerarse un identificador principal.
 
-Normalmente, el identificador principal depende del contexto. Si le pregunta a su centro de llamadas, **¿Cuál es el ID más importante?** es probable que respondan, **el número de teléfono!** Pero si le pregunta a su equipo de CRM, responderán: **La dirección de correo electrónico!** Adobe Experience Platform comprende esta complejidad y la administra por usted. Cada aplicación, ya sea de Adobe o de no Adobe, hablará con Adobe Experience Platform haciendo referencia al ID que consideran principal. Y simplemente funciona.
+Normalmente, el identificador principal depende del contexto. Si le pregunta a su centro de llamadas, **¿Cuál es el ID más importante?** es probable que respondan, **el número de teléfono!** Pero si le pregunta a su equipo de CRM, responderán: **la dirección de correo electrónico!** Adobe Experience Platform comprende esta complejidad y la administra por usted. Cada aplicación, ya sea de Adobe o de no Adobe, hablará con Adobe Experience Platform haciendo referencia al ID que consideran principal. Y simplemente funciona.
 
 Para el campo **Área de nombres de identidad**, seleccione **Correo electrónico** y para el campo **Valor de identidad**, escriba la dirección de correo electrónico que utilizó para registrarse en el ejercicio anterior. Haga clic en **Ver**. A continuación, verá su perfil en la lista. Haga clic en **ID de perfil** para abrir el perfil.
 
 ![Perfil del cliente](./images/popupecid.png)
 
-Ahora verá una descripción general de un par de **Atributos de perfil** importantes de su perfil de cliente.
+Ahora verá una descripción general de un par de **Atributos de perfil** importantes de su perfil de cliente. Para ver todos los atributos de perfil disponibles para su perfil, haga clic en **Atributos**.
 
 ![Perfil del cliente](./images/profile.png)
 
-Si desea ver todos los atributos de perfil disponibles para su perfil, vaya a **Atributos**.
+A continuación, verá una lista completa de todos los atributos.
 
 ![Perfil del cliente](./images/profilattr.png)
 
@@ -64,7 +66,7 @@ Vaya a **Eventos**, donde podrá ver las entradas de todos los eventos de experi
 
 ![Perfil del cliente](./images/profileee.png)
 
-Finalmente, vaya a la opción de menú **Abono a segmentos**. Ahora verá todos los segmentos que cumplen los requisitos para este perfil.
+Finalmente, vaya a la opción de menú **Suscripción a audiencias**. Aquí encontrará todas las audiencias aptas para este cliente. La lista puede estar vacía actualmente, pero eso cambiará en los siguientes módulos.
 
 ![Perfil del cliente](./images/profileseg.png)
 
