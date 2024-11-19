@@ -3,9 +3,10 @@ title: Foundation - Ingesta de datos - Ingesta de datos desde fuentes sin conexi
 description: Foundation - Ingesta de datos - Ingesta de datos desde fuentes sin conexión
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 21b84a77-4115-4ba7-b847-b236aa14bbdd
+source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '771'
 ht-degree: 2%
 
 ---
@@ -21,11 +22,11 @@ La zona de aterrizaje de datos es una interfaz de almacenamiento del blob de Azu
 > Adobe Experience Platform **aplica un tiempo de vida (TTL) estricto de siete días** a todos los archivos cargados en un contenedor de zona de aterrizaje de datos. Todos los archivos se eliminan a los siete días.
 
 
-## 1.2.5.1 Requisitos previos
+## Requisitos previos
 
-Para copiar blobs o archivos en la zona de aterrizaje de datos de Adobe Experience Platform, utilizará AzCopy, una utilidad de línea de comandos. Puede descargar una versión para su sistema operativo a través de [https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10).
+Para copiar blobs o archivos en la zona de aterrizaje de datos de Adobe Experience Platform, utilizará AzCopy, una utilidad de línea de comandos. Puede descargar una versión para su sistema operativo a través de [https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10), desplácese hacia abajo en esa página hasta **Descargar el binario portátil de AzCopy** y seleccione la versión adecuada para su sistema operativo.
 
-![dlz-install-az-copy.png](./images/dlz-install-az-copy.png)
+![dlz-install-az-copy.png](./images/dlzinstallazcopy.png)
 
 - Descomprima el archivo descargado
 
@@ -37,7 +38,7 @@ Para copiar blobs o archivos en la zona de aterrizaje de datos de Adobe Experien
 
 - Abra una ventana de terminal y vaya a la carpeta en su escritorio, debería ver el siguiente contenido (azcopy y global-context-websiteinteractions.csv), por ejemplo en OSX:
 
-![dlz-unzip-azcopy.png](./images/dlz-unzip-azcopy.png)
+![dlz-unzip-azcopy.png](./images/dlzunzipazcopy.png)
 
 ## 1.2.5.2 Conexión de la zona de aterrizaje de datos a Adobe Experience Platform
 
@@ -47,19 +48,23 @@ Después de iniciar sesión, llegará a la página principal de Adobe Experience
 
 ![Ingesta de datos](./images/home.png)
 
-Antes de continuar, debe seleccionar una **zona protegida**. La zona protegida que se va a seleccionar se denomina ``--module2sandbox--``. Para ello, haga clic en el texto **[!UICONTROL Producción]** en la línea azul de la parte superior de la pantalla. Después de seleccionar la zona protegida adecuada, verá que la pantalla cambia y ahora está en la zona protegida dedicada.
+Antes de continuar, debe seleccionar una **zona protegida**. La zona protegida que se va a seleccionar se denomina ``--aepSandboxName--``.  Después de seleccionar la zona protegida adecuada, verá que la pantalla cambia y ahora está en la zona protegida dedicada.
 
 ![Ingesta de datos](./images/sb1.png)
 
-En el menú de la izquierda, ve a **Fuentes**. En el catálogo de fuentes, busque **aterrizaje de datos**. En la tarjeta **Zona de aterrizaje de datos**, haga clic en **...** y seleccione **Ver credenciales**.
+En el menú de la izquierda, ve a **Fuentes**. En el catálogo de fuentes, busque **aterrizaje de datos**.
 
-![dlz-view-credentials.png](./images/dlz-view-credentials.png)
+![Ingesta de datos](./images/sourcesdlz.png)
 
-Haga clic en Copiar **SASUri**.
+Haga clic en la tarjeta **Zona de aterrizaje de datos**; verá las credenciales en la pestaña derecha.
 
-![dlz-copy-sas-uri.png](./images/dlz-copy-sas-uri.png)
+![dlz-view-credentials.png](./images/dlzviewcredentials.png)
 
-## 1.2.5.3 Copie el archivo CSV en la zona de aterrizaje de datos de AEP
+Haga clic en el icono como se indica para copiar **SASUri**.
+
+![dlz-copy-sas-uri.png](./images/dlzcopysasuri.png)
+
+## Copie el archivo CSV en la zona de aterrizaje de datos de AEP
 
 Ahora, ingerirá datos en Adobe Experience Platform mediante las herramientas de línea de comandos de Azure con AZCopy.
 
@@ -75,41 +80,41 @@ Asegúrate de rodear tu SASUri con comillas dobles. Reemplace `<your-local-file>
 
 Después de ejecutar el comando anterior en el terminal, verá lo siguiente:
 
-![dlz-exec-copy-command.png](./images/dlz-exec-copy-command.png)
+![dlz-exec-copy-command.png](./images/dlzexeccopycommand.png)
 
-## 1.2.5.4 Busque su archivo en la zona de aterrizaje de datos
+## Busque el archivo en la zona de aterrizaje de datos
 
 Vaya a la zona de aterrizaje de datos en Adobe Experience Platform.
 
 Seleccione **Orígenes**, busque **aterrizaje de datos** y haga clic en el botón **Configurar**.
 
-![dlz-inspect-datalanding-zone.png](./images/dlz-inspect-datalanding-zone.png)
+![dlz-inspect-datalanding-zone.png](./images/dlzinspectdatalandingzone.png)
 
 Se abrirá la zona de aterrizaje de datos. Verá el archivo que acaba de cargar en el panel **seleccionar datos** de la zona de aterrizaje de datos.
 
-![dlz-datalanding-zone-open.png](./images/dlz-datalanding-zone-open.png)
+![dlz-datalanding-zone-open.png](./images/dlzdatalandingzoneopen.png)
 
-## 1.2.5.5 Procesar el archivo
+## Procesar el archivo
 
 Seleccione su archivo y seleccione **Delimitado** como formato de datos. A continuación, verá una vista previa de los datos. Haga clic en **Next**.
 
-![dlz-datalanding-select-file.png](./images/dlz-datalanding-select-file.png)
+![dlz-datalanding-select-file.png](./images/dlzdatalandingselectfile.png)
 
 Ahora puede empezar a asignar los datos cargados para que coincidan con el esquema XDM del conjunto de datos.
 
 Seleccione **Conjunto de datos existente** y seleccione el conjunto de datos **Sistema de demostración - Conjunto de datos de evento para el sitio web (Global v1.1)**. Haga clic en **Next**.
 
-![dlz-target-dataset.png](./images/dlz-target-dataset.png)
+![dlz-target-dataset.png](./images/dlztargetdataset.png)
 
 Ahora está listo para asignar los datos de origen entrantes del archivo csv a los campos de destino desde el esquema XDM del conjunto de datos.
 
-![dlz-start-mapping.png](./images/dlz-start-mapping.png)
+![dlz-start-mapping.png](./images/dlzstartmapping.png)
 
 >[!NOTE]
 >
 > No le importan los posibles errores con la asignación. Corrija la asignación en el siguiente paso.
 
-## 1.2.5.6 Asignación de campos
+## Asignar campos
 
 En primer lugar, haga clic en el botón **Borrar todas las asignaciones**. A continuación, puede empezar con una asignación limpia.
 
@@ -117,19 +122,19 @@ En primer lugar, haga clic en el botón **Borrar todas las asignaciones**. A con
 
 A continuación, haga clic en **Nuevo tipo de campo** y seleccione **Agregar nuevo campo**.
 
-![dlz-clear-mappings.png](./images/dlz-clear-mappings.png)
+![dlz-clear-mappings.png](./images/dlzclearmappings.png)
 
 Para asignar el campo de origen **ecid**, seleccione el campo **identities.ecid** y haga clic en **Seleccionar**.
 
-![dlz-map-identity.png](./images/dlz-map-identity.png)
+![dlz-map-identity.png](./images/dlzmapidentity.png)
 
 A continuación, haga clic en **Asignar campo de destino**.
 
-![dlz-map-select-target-field.png](./images/dlz-map-select-target-field.png)
+![dlz-map-select-target-field.png](./images/dlzmapselecttargetfield.png)
 
 Seleccione el campo ``--aepTenantId--``.identification.core.ecid en la estructura de esquema.
 
-![dlz-map-target-field.png](./images/dlz-map-target-field.png)
+![dlz-map-target-field.png](./images/dlzmaptargetfield.png)
 
 Debe asignar otros campos, haga clic en **+ Nuevo tipo de campo** seguido de **Agregar nuevo campo** y agregue campos para esta asignación
 
@@ -139,29 +144,29 @@ Debe asignar otros campos, haga clic en **+ Nuevo tipo de campo** seguido de **A
 | timestamp | timestamp |
 | timestamp | _id |
 
-![dlz-add-other-mapping.png](./images/dlz-add-other-mapping.png)
+![dlz-add-other-mapping.png](./images/dlzaddothermapping.png)
 
 Cuando termine, la pantalla debería tener el aspecto siguiente. Haga clic en **Next**.
 
-![dlz-mapping-result.png](./images/dlz-mapping-result.png)
+![dlz-mapping-result.png](./images/dlzmappingresult.png)
 
 Haga clic en **Next**.
 
-![dlz-default-scheduling.png](./images/dlz-default-scheduling.png)
+![dlz-default-scheduling.png](./images/dlzdefaultscheduling.png)
 
 Haga clic en **Finalizar**.
 
-![dlz-import-finish.png](./images/dlz-import-finish.png)
+![dlz-import-finish.png](./images/dlzimportfinish.png)
 
-## 1.2.5.7 Monitorización del flujo de datos
+## Monitorización del flujo de datos
 
 Para supervisar su flujo de datos, vaya a **Orígenes**, **Flujos de datos** y haga clic en su flujo de datos:
 
-![dlz-monitor-dataflow.png](./images/dlz-monitor-dataflow.png)
+![dlz-monitor-dataflow.png](./images/dlzmonitordataflow.png)
 
 La carga de los datos puede tardar un par de minutos. Si se realiza correctamente, verá un estado de **Éxito**:
 
-![dlz-monitor-dataflow-result.png](./images/dlz-monitor-dataflow-result.png)
+![dlz-monitor-dataflow-result.png](./images/dlzmonitordataflowresult.png)
 
 Paso siguiente: [Resumen y beneficios](./summary.md)
 

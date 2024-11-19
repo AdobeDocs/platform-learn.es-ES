@@ -3,16 +3,15 @@ title: Foundation - Ingesta de datos
 description: Foundation - Ingesta de datos
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 976d801a-3dcb-4cd9-8b9f-b1c964fe7c25
+source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '397'
 ht-degree: 1%
 
 ---
 
 # Base 1.2: ingesta de datos
-
-**Autor: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 En este módulo, el objetivo es aprender todo acerca de la ingesta de datos. Aprenderá a utilizar la ingesta de datos en streaming y por lotes. Implementará la ingesta de datos de flujo continuo mediante Launch, de modo que el comportamiento del cliente en el sitio web del laboratorio práctico se transmita a Adobe Experience Platform en tiempo real. Aprenderá a utilizar la ingesta de datos por lotes mediante un flujo de trabajo de Adobe Experience Platform para tomar un archivo CSV, asignarlo a un esquema XDM y, a continuación, ingerirlo en Adobe Experience Platform.
 

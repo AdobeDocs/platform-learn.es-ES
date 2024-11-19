@@ -4,9 +4,9 @@ description: 'Introducción: Uso del sitio web'
 kt: 5342
 doc-type: tutorial
 exl-id: 6c63a63e-551f-4568-bba5-9d61d7e6a7d1
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >Si ya no tiene abierta la siguiente pantalla, vaya a la opción 2.
 
-Después del ejercicio 0.1, tuvo este resultado. Haga clic aquí para abrir el **proyecto Web Telco** que se creó para usted.
+Después del ejercicio anterior, obtuvo este resultado. Haga clic aquí para abrir el **proyecto Web Telco** que se creó para usted.
 
 ![DSN](./images/dsn5a.png)
 

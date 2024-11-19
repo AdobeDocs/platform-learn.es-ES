@@ -4,14 +4,14 @@ description: 'Foundation - Ingesta de datos: de desconocido a conocido en el sit
 kt: 5342
 doc-type: tutorial
 exl-id: 08cb7892-4e1c-4646-9e3b-8ab008dfd947
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '746'
 ht-degree: 1%
 
 ---
 
-# 1.2.1 - De desconocido a conocido en el sitio web
+# 1.2.1 De desconocido a conocido en el sitio web
 
 ## Contexto
 
@@ -27,7 +27,7 @@ Ahora introducirá datos en Adobe Experience Platform y esos datos se vinculará
 
 ### Flujo de Recorrido del cliente
 
-Vaya a [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Después de iniciar sesión con su Adobe ID, verá esto. Haga clic en el proyecto del sitio web para abrirlo.
+Vaya a [https://dsn.adobe.com](https://dsn.adobe.com). Después de iniciar sesión con su Adobe ID, verá esto. Haga clic en los 3 puntos **...** de su proyecto de sitio web y, a continuación, haga clic en **Editar**.
 
 ![DSN](./../../gettingstarted/gettingstarted/images/web8.png)
 
@@ -41,12 +41,9 @@ Abra una nueva ventana del explorador de incógnito.
 
 Pegue la dirección URL del sitio web de demostración, que copió en el paso anterior. Luego se le pedirá que inicie sesión con su Adobe ID.
 
-
 Seleccione el tipo de cuenta y complete el proceso de inicio de sesión.
 
-
 Luego verá el sitio web cargado en una ventana de incógnito del explorador. Para cada demostración, deberá utilizar una ventana nueva del explorador de incógnito para cargar la URL del sitio web de demostración.
-
 
 Haga clic en el Adobe del logotipo situado en la esquina superior izquierda de la pantalla para abrir el Visor de perfiles.
 
@@ -58,43 +55,45 @@ Eche un vistazo al panel Visor de perfiles y al Perfil del cliente en tiempo rea
 
 También puede ver todos los eventos de experiencia recopilados según el comportamiento del cliente. La lista está actualmente vacía, pero cambiará pronto.
 
-![Demostración](../module1.2/images/pv3.png)
+![Demostración](./images/pv3.png)
 
-Vaya a la categoría de producto **Hombres**. A continuación, haz clic en el producto **Montana Wind Jacket**.
+Vaya a la categoría de productos **Teléfonos y dispositivos**. A continuación, haz clic en el producto **iPhone 15 Pro**.
 
-![Demostración](../module1.2/images/pv4.png)
+![Demostración](./images/pv4.png)
 
-A continuación, verá la página de detalles del producto. Ahora se ha enviado a Adobe Experience Platform un evento de experiencia de tipo **Vista de producto** mediante la implementación del SDK web que revisó en el módulo 1.
+A continuación, verá la página de detalles del producto. Ahora se ha enviado a Adobe Experience Platform un evento de experiencia de tipo **Vista de producto** mediante la implementación del SDK web que revisó en el módulo anterior.
 
-![Demostración](../module1.2/images/pv5.png)
+![Demostración](./images/pv5.png)
 
 Abra el panel Visor de Provile y eche un vistazo a los **Eventos de experiencia**.
 
-![Demostración](../module1.2/images/pv6.png)
+![Demostración](./images/pv6.png)
 
-Vuelva a la página de categoría **Mujeres** y haga clic en otro producto. Se ha enviado otro evento de experiencia a Adobe Experience Platform.
+Vuelva a la página de categoría **Teléfonos y dispositivos** y haga clic en otro producto. Se ha enviado otro evento de experiencia a Adobe Experience Platform.
 
-![Demostración](../module1.2/images/pv7.png)
+Abra el panel Visor de perfiles. Ahora verá 2 eventos de experiencia del tipo **Vista de producto**. Aunque el comportamiento es anónimo, con el consentimiento adecuado, podemos rastrear cada clic y almacenarlo en Adobe Experience Platform. Una vez que se conozca al cliente anónimo, podremos fusionar automáticamente todos los comportamientos anónimos con el perfil conocido.
 
-Abra el panel Visor de perfiles. Ahora verá 2 eventos de experiencia del tipo **Vista de producto**. Aunque el comportamiento es anónimo, podemos rastrear cada clic y almacenarlo en Adobe Experience Platform. Una vez que se conozca al cliente anónimo, podremos fusionar automáticamente todos los comportamientos anónimos con el perfil conocido.
+![Demostración](./images/pv7.png)
 
-![Demostración](../module1.2/images/pv8.png)
+Haga clic en **Iniciar sesión** para ir a la página Registrar/Iniciar sesión.
 
-Vaya a la página Registrar/Iniciar sesión. Haga clic en **CREAR UNA CUENTA**.
+![Demostración](./images/pv8.png)
 
-![Demostración](../module1.2/images/pv9.png)
+Haga clic en **CREAR UNA CUENTA**.
+
+![Demostración](./images/pv9.png)
 
 Complete sus detalles y haga clic en **Registrarse** después de lo cual se le redirigirá a la página anterior.
 
-![Demostración](../module1.2/images/pv10.png)
+![Demostración](./images/pv10.png)
 
 Abra el panel Visualizador de perfiles y vaya a Perfil del cliente en tiempo real. En el panel Visor de perfiles, debería ver todos los datos personales que se muestran, como los identificadores de correo electrónico y teléfono que acaba de agregar.
 
-![Demostración](../module1.2/images/pv11.png)
+![Demostración](./images/pv11.png)
 
 En el panel Visor de perfiles, vaya a Eventos de experiencia. Verá los 2 productos que vio antes en el panel Visor de perfiles. Ambos eventos ahora también están conectados al perfil &quot;conocido&quot;.
 
-![Demostración](../module1.2/images/pv12.png)
+![Demostración](./images/pv12.png)
 
 Ahora ha introducido datos en Adobe Experience Platform y los ha vinculado a identificadores como ECID y direcciones de correo electrónico. El objetivo de esto es comprender el contexto empresarial de lo que está a punto de hacer. En el siguiente ejercicio, empezará a configurar todo lo que necesita para que sea posible toda esa ingesta de datos.
 
