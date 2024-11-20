@@ -4,7 +4,7 @@ description: 'Foundation: configuración de la recopilación de datos de Adobe E
 kt: 5342
 doc-type: tutorial
 exl-id: e97d40b5-616d-439c-9d6b-eaa4ebf5acb0
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -59,7 +59,7 @@ Para esta secuencia de datos...
 - Todos los datos de Experience Event se recopilan de forma predeterminada en el conjunto de datos **Sistema de demostración: conjunto de datos de evento para el sitio web (Global v1.1)**
 - Todos los datos de perfil se recopilarán de forma predeterminada en el conjunto de datos **Sistema de demostración - Conjunto de datos de perfil para el sitio web (Global v1.1)** (el SDK web aún no admite la ingesta nativa de datos de perfil con el SDK web)
 - Si desea utilizar el servicio de aplicación **Offer decisioning** para este conjunto de datos, debe marcar la casilla de verificación de Offer decisioning. (Esto formará parte de [Módulo 3.3](./../../../modules/ajo-b2c/module3.3/offer-decisioning.md))
-- **La segmentación de Edge** está habilitada de manera predeterminada, lo que significa que los segmentos que cumplan los requisitos se evaluarán en el perímetro, tras la ingesta de tráfico entrante
+- **La segmentación de Edge** está habilitada de manera predeterminada, lo que significa que las audiencias que cumplan los requisitos se evaluarán en el perímetro, tras la ingesta de tráfico entrante
 - Si desea usar **Destinos de Personalization**, marque la casilla Destinos de Personalization.
 - 
    - Si desea usar las funcionalidades de **Adobe Journey Optimizer** en este conjunto de datos, debe marcar la casilla de Adobe Journey Optimizer.

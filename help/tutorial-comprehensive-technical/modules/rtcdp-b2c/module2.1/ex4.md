@@ -1,19 +1,19 @@
 ---
-title: Foundation - Perfil del cliente en tiempo real - Creación de un segmento - IU
-description: Foundation - Perfil del cliente en tiempo real - Creación de un segmento - IU
+title: Foundation - Perfil del cliente en tiempo real - Creación de una audiencia - IU
+description: Foundation - Perfil del cliente en tiempo real - Creación de una audiencia - IU
 kt: 5342
 doc-type: tutorial
 exl-id: db1d744d-c4ff-4131-b104-98bb70269140
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '694'
 ht-degree: 3%
 
 ---
 
-# 2.1.4 Crear un segmento: IU
+# 2.1.4 Crear una audiencia: IU
 
-En este ejercicio, creará un segmento utilizando el Generador de segmentos de Adobe Experience Platform.
+En este ejercicio, creará una audiencia utilizando el Generador de audiencias de Adobe Experience Platform.
 
 Ir a [Adobe Experience Platform](https://experience.adobe.com/platform). Después de iniciar sesión, llegará a la página principal de Adobe Experience Platform.
 
@@ -23,7 +23,7 @@ Antes de continuar, debe seleccionar una **zona protegida**. La zona protegida q
 
 ![Ingesta de datos](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-En el menú de la izquierda, ve a **Audiencias**. En esta página, puede ver una descripción general de todos los segmentos existentes. Haga clic en el botón **+ Crear audiencia** para comenzar a crear un nuevo segmento.
+En el menú de la izquierda, ve a **Audiencias**. En esta página, puede ver una descripción general de todas las audiencias existentes. Haga clic en el botón **+ Crear audiencia** para comenzar a crear una audiencia nueva.
 
 ![Segmentación](./images/menuseg.png)
 
@@ -31,7 +31,7 @@ Seleccione **Generar regla** y haga clic en **Crear**.
 
 ![Segmentación](./images/menusegbr.png)
 
-Una vez que esté en el nuevo generador de segmentos, verá inmediatamente la opción de menú **Atributos** y la referencia de **Perfil individual XDM**.
+Una vez que esté en el nuevo generador de audiencias, verá inmediatamente la opción de menú **Atributos** y la referencia de **Perfil individual XDM**.
 
 ![Segmentación](./images/segmentationui.png)
 

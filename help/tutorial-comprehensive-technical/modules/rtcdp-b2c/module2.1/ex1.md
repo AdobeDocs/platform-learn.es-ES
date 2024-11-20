@@ -4,7 +4,7 @@ description: 'Foundation - Perfil del cliente en tiempo real: de desconocido a c
 kt: 5342
 doc-type: tutorial
 exl-id: ddbf97c2-8105-42b6-b9bf-209b1df6a3b5
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 2%
@@ -43,7 +43,7 @@ Seleccione el tipo de cuenta y complete el proceso de inicio de sesión.
 
 ![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-Luego verá el sitio web cargado en una ventana de incógnito del explorador. Para cada demostración, deberá utilizar una ventana nueva del explorador de incógnito para cargar la URL del sitio web de demostración.
+Luego verá el sitio web cargado en una ventana de incógnito del explorador. Para cada ejercicio, deberá utilizar una ventana nueva del explorador de incógnito para cargar la URL del sitio web de demostración.
 
 ![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 

@@ -3,9 +3,10 @@ title: 'Adobe Journey Optimizer: Configuración de un recorrido basado en lotes'
 description: En esta sección configurará un recorrido de correo electrónico por lotes para enviar una newsletter
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 52b2e019-e408-4160-87b7-2aabd0f3c68f
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '786'
 ht-degree: 1%
 
 ---
@@ -22,7 +23,7 @@ Se le redirigirá a la vista **Inicio** en Journey Optimizer. Primero, asegúres
 
 ## 3.4.2.1 Crear recorrido de la newsletter
 
-Ahora creará un recorrido basado en lotes. A diferencia del recorrido basado en eventos del ejercicio anterior, que se basa en los eventos de experiencia entrantes o las entradas o salidas de segmentos para almacenar en déclencheur un recorrido para un cliente específico, los recorridos basados en lotes se dirigen a un segmento completo una vez con contenido único como boletines informativos, promociones únicas o información genérica, o periódicamente con contenido similar enviado de forma regular, como por ejemplo campañas de cumpleaños y recordatorios.
+Ahora creará un recorrido basado en lotes. A diferencia del recorrido basado en eventos del ejercicio anterior, que se basa en los eventos de experiencia entrantes o en las entradas o salidas de audiencia para almacenar en déclencheur un recorrido para un cliente específico, los recorridos basados en lotes se dirigen a una audiencia completa una vez con contenido único como boletines informativos, promociones únicas o información genérica, o periódicamente con contenido similar enviado de forma regular como, por ejemplo, campañas de cumpleaños y recordatorios.
 
 En el menú, ve a **Recorridos** y haz clic en **Crear Recorrido**.
 
@@ -37,11 +38,11 @@ Haga clic en **Ok**.
 
 ![Journey Optimizer](./images/batchj2.png)
 
-En **Orquestación**, arrastre y suelte **Leer segmento** en el lienzo. Esto significa que, una vez publicado, el recorrido comenzará recuperando toda la audiencia del segmento, que luego se convertirá en la audiencia de destino del recorrido y el mensaje. Haga clic en **Seleccionar un segmento**.
+En **Orquestación**, arrastre y suelte **Leer audiencia** en el lienzo. Esto significa que, una vez publicado, el recorrido comenzará recuperando toda la audiencia, que luego se convertirá en la audiencia objetivo del recorrido y el mensaje. Haga clic en **Seleccionar una audiencia**.
 
 ![Journey Optimizer](./images/batchj3.png)
 
-En la ventana emergente **Elija un segmento**, busque su ldap y seleccione el segmento que creó en [Módulo 2.3 - CDP en tiempo real - Genere un segmento y tome medidas](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) llamado `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. por ejemplo: vangeluw - Interés en PROTEUS FITNESS JACKSHIRT. Haga clic en **Guardar**.
+En la ventana emergente **Elija una audiencia**, busque su ldap y seleccione la audiencia que creó en [Módulo 2.3 - CDP en tiempo real - Cree una audiencia y tome medidas](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) con el nombre `--aepUserLdap-- - Interest in Galaxy S24`. Haga clic en **Guardar**.
 
 ![Journey Optimizer](./images/batchj5.png)
 

@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 exl-id: 79ae9722-bf38-47f7-acbc-aa5bd1289411
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '357'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,6 @@ En este módulo, profundizará en las capacidades de perfil del cliente en tiemp
 ## Requisitos previos
 
 - Acceso a [Adobe Experience Platform](https://experience.adobe.com/platform)
-- Acceso a [https://public.aepdemo.net](https://public.aepdemo.net)
 - **Descargar estos recursos**:
    - [Colecciones de Postman](./../../../assets/postman/postman_profile.zip)
 

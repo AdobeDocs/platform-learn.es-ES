@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer - Eventos empresariales
 description: En esta sección se explica cómo utilizar la capacidad de eventos empresariales para realizar un caso de uso de "artículo disponible"
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 8519e17f-e050-4a06-9651-29bf67f27276
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '1195'
+source-wordcount: '1187'
 ht-degree: 1%
 
 ---
@@ -98,14 +99,14 @@ En el menú de la izquierda, debajo de **Eventos**, busque su ldap. Encontrará 
 
 ![Journey Optimizer](./images/bej12.png)
 
-Como puede ver, se ha agregado automáticamente una actividad **Leer segmento** al lienzo. Esto se debe a que los eventos empresariales solo envían un déclencheur para que el recorrido lea un segmento específico, que luego recuperará la lista de perfiles de ese recorrido.
+Como puede ver, se ha agregado automáticamente una actividad **Leer audiencia** al lienzo. Esto se debe a que los eventos empresariales solo envían un déclencheur para que el recorrido lea una audiencia específica, que luego recupera la lista de perfiles de ese recorrido.
 
-Haga clic en la actividad **Leer segmento**.
-La configuración de **Leer segmento** espera que seleccione el segmento al que desea notificar el evento empresarial que acaba de ocurrir. Haga clic en el campo **Seleccionar un segmento**.
+Haga clic en la actividad **Leer audiencia**.
+La configuración de **Leer audiencia** espera que seleccione la audiencia a la que desea notificar el evento empresarial que acaba de ocurrir. Haga clic en el campo **Seleccionar una audiencia**.
 
 ![Journey Optimizer](./images/bej13.png)
 
-En la ventana emergente **Elija un segmento**, busque su ldap y seleccione el segmento que creó en [Módulo 2.3 - CDP en tiempo real - Genere un segmento y tome medidas](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) llamado `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. por ejemplo: vangeluw - Interés en PROTEUS FITNESS JACKSHIRT. Haga clic en **Guardar**.
+En la ventana emergente **Elija una audiencia**, busque su ldap y seleccione la audiencia que creó en [Módulo 2.3 - CDP en tiempo real - Cree una audiencia y tome medidas](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) con el nombre `--aepUserLdap-- - Interest in Galaxy S24`. Haga clic en **Guardar**.
 
 ![Journey Optimizer](./images/bej14.png)
 

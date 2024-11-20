@@ -3,9 +3,10 @@ title: Configuración del extremo de la API HTTP en Adobe Experience Platform
 description: Configuración del extremo de la API HTTP en Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: a29dd01d-4415-45d6-ad52-7f14aef60565
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '303'
 ht-degree: 8%
 
 ---
@@ -20,7 +21,7 @@ Después de iniciar sesión, llegará a la página principal de Adobe Experience
 
 ![Ingesta de datos](./../../../modules/datacollection/module1.2/images/home.png)
 
-Antes de continuar, debe seleccionar una **zona protegida**. La zona protegida que se va a seleccionar se denomina ``--aepSandboxName--``. Para ello, haga clic en el texto **[!UICONTROL Producción]** en la línea azul de la parte superior de la pantalla. Después de seleccionar la zona protegida adecuada, verá que la pantalla cambia y ahora está en la zona protegida dedicada.
+Antes de continuar, debe seleccionar una **zona protegida**. La zona protegida que se va a seleccionar se denomina ``--aepSandboxName--``. Después de seleccionar la zona protegida adecuada, verá que la pantalla cambia y ahora está en la zona protegida dedicada.
 
 ![Ingesta de datos](./../../../modules/datacollection/module1.2/images/sb1.png)
 

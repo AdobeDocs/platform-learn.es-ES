@@ -4,7 +4,8 @@ description: Offer decisioning - Offer decisioning 101
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 8a627c29-7780-455f-abe1-a69f8fe145ea
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 2%
@@ -92,9 +93,9 @@ Ahora verá todos los campos de la Ubicación:
 
 ## 3.3.1.4 Normas de decisión
 
-Una regla (también denominada regla de elegibilidad) es el equivalente de un **segmento**. Una regla es, de hecho, un segmento en sí mismo con la única diferencia de que una regla se puede utilizar con una oferta para proporcionar la mejor oferta a un perfil en Adobe Experience Platform.
+Una regla (también llamada regla de elegibilidad) es el equivalente de una **audiencia**. Una regla es, de hecho, una audiencia con la única diferencia de que se puede utilizar una regla con una oferta para proporcionar la mejor oferta a un perfil en Adobe Experience Platform.
 
-Como ya sabe cómo definir segmentos en función de los módulos de habilitación anteriores, volvamos rápidamente al entorno de segmentación:
+Como ya sabe cómo definir audiencias en función de los módulos de habilitación anteriores, volvamos rápidamente al entorno de segmentación:
 
 Ir a **Reglas**. Haga clic en **+ Crear regla**.
 
@@ -106,7 +107,7 @@ A continuación, verá el entorno de segmentación de Adobe Experience Platform.
 
 Ahora puede acceder a todos los campos que forman parte del esquema de unión para el perfil del cliente en tiempo real y puede crear cualquier regla.
 
-También es interesante saber que simplemente puede reutilizar segmentos ya definidos en Adobe Experience Platform, yendo a **Audiencias** > ``--aepTenantId--``.
+También es interesante saber que simplemente puede reutilizar audiencias ya definidas en Adobe Experience Platform, yendo a **Audiencias** > ``--aepTenantId--``.
 
 ![Regla de decisión](./images/decisionruleaud.png)
 

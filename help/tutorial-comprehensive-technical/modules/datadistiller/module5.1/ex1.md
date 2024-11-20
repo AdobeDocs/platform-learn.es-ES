@@ -3,9 +3,10 @@ title: 'Servicio de consultas: Introducción'
 description: 'Servicio de consultas: Introducción'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: b8a404d1-7796-46e3-b245-553acdc753ae
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
@@ -18,7 +19,7 @@ Ir a [Adobe Experience Platform](https://experience.adobe.com/platform). Despué
 
 ![Ingesta de datos](./../../../modules/datacollection/module1.2/images/home.png)
 
-Antes de continuar, debe seleccionar una **zona protegida**. La zona protegida que se va a seleccionar se denomina ``--module7sandbox--``. Para ello, haga clic en el texto **[!UICONTROL Producción]** en la línea azul de la parte superior de la pantalla. Después de seleccionar la [!UICONTROL zona protegida] adecuada, verá el cambio en la pantalla y ahora se encuentra en la [!UICONTROL zona protegida] dedicada.
+Antes de continuar, debe seleccionar una **zona protegida**. La zona protegida que se va a seleccionar se denomina ``--aepSandboxName--``. Después de seleccionar la [!UICONTROL zona protegida] adecuada, verá el cambio en la pantalla y ahora se encuentra en la [!UICONTROL zona protegida] dedicada.
 
 ![Ingesta de datos](./../../../modules/datacollection/module1.2/images/sb1.png)
 

@@ -4,10 +4,10 @@ description: Consulte su perfil de cliente en tiempo real en acción en el centr
 kt: 5342
 doc-type: tutorial
 exl-id: 47c96696-644a-43b9-8deb-846bd2587af0
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 2%
+source-wordcount: '317'
+ht-degree: 3%
 
 ---
 
@@ -50,11 +50,9 @@ A continuación, debe seleccionar una de las identidades y el área de nombres c
 | ID de correo electrónico | woutervangeluwe+18112024-01@gmail.com |
 | Identificador de número de móvil | +32473622044+18112024-01 |
 
-Cuando el cliente llama a su centro de llamadas, se puede usar el número de teléfono para identificar al cliente. En este ejercicio, utilizará el número de teléfono para recuperar el perfil del cliente en la aplicación CX.
-
 ![Demostración](./images/19.png)
 
-Ahora verá la información que, idealmente, se mostraría en el centro de llamadas, de modo que los empleados del centro de llamadas tengan toda la información relevante disponible inmediatamente cuando hablen con un cliente.
+Ahora verá la información que, idealmente, se mostraría en el centro de llamadas, de modo que los agentes del centro de llamadas tengan toda la información relevante disponible inmediatamente cuando hablen con un cliente.
 
 ![Demostración](./images/20.png)
 

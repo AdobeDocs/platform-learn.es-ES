@@ -3,9 +3,10 @@ title: 'Activación de segmentos en Microsoft Azure Event Hub: crear un segmento
 description: 'Activación de segmentos en Microsoft Azure Event Hub: crear un segmento de streaming'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 86bc3afa-16a9-4834-9119-ce02445cd524
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '344'
 ht-degree: 1%
 
 ---
@@ -44,7 +45,7 @@ Después de iniciar sesión, llegará a la página principal de Adobe Experience
 
 ![Ingesta de datos](./../../../modules/datacollection/module1.2/images/home.png)
 
-Antes de continuar, debe seleccionar una **zona protegida**. La zona protegida que se va a seleccionar se denomina ``--aepSandboxName--``. Para ello, haga clic en el texto **[!UICONTROL Producción]** en la línea azul de la parte superior de la pantalla. Después de seleccionar la zona protegida adecuada, verá que la pantalla cambia y ahora está en la zona protegida dedicada.
+Antes de continuar, debe seleccionar una **zona protegida**. La zona protegida que se va a seleccionar se denomina ``--aepSandboxName--``. Después de seleccionar la zona protegida adecuada, verá que la pantalla cambia y ahora está en la zona protegida dedicada.
 
 ![Ingesta de datos](./../../../modules/datacollection/module1.2/images/sb1.png)
 

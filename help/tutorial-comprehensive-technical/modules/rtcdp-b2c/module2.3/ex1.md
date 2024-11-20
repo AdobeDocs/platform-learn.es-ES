@@ -1,87 +1,84 @@
 ---
-title: 'CDP en tiempo real: cree un segmento y tome medidas; genere un segmento'
-description: 'CDP en tiempo real: cree un segmento y tome medidas; genere un segmento'
+title: 'Real-time CDP: creación de una audiencia y acción: creación de una audiencia'
+description: 'Real-time CDP: creación de una audiencia y acción: creación de una audiencia'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: a46b1640-769d-4fb3-97e6-beaf9706efbf
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '611'
 ht-degree: 2%
 
 ---
 
-# 2.3.1 Crear un segmento
+# 2.3.1 Crear una audiencia
 
-En este ejercicio, creará un segmento utilizando el generador de segmentos de Adobe Experience Platform.
+En este ejercicio, creará una audiencia utilizando el generador de audiencias de Adobe Experience Platform.
 
-## 2.3.1.1 Contexto
+## Contexto
 
-En el mundo actual, responder al comportamiento de un cliente debe ser en tiempo real. Una de las formas de responder al comportamiento del cliente en tiempo real es mediante el uso de un segmento, con la condición de que el segmento se califique en tiempo real. En este ejercicio, debe crear un segmento que tenga en cuenta la actividad real en el sitio web que hemos estado utilizando.
+La respuesta a los intereses de un cliente debe ser en tiempo real. Una de las formas de responder al comportamiento del cliente en tiempo real es mediante el uso de una audiencia, con la condición de que la audiencia cumpla los requisitos en tiempo real. En este ejercicio, debe crear una audiencia que tenga en cuenta la actividad real en el sitio web que hemos estado utilizando.
 
-## 2.3.1.2 Identificar el comportamiento al que desea reaccionar
+## Identifique el comportamiento al que desee reaccionar
 
-Vaya a [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Después de iniciar sesión con su Adobe ID, verá esto. Haga clic en el proyecto del sitio web para abrirlo.
+Vaya a [https://dsn.adobe.com](https://dsn.adobe.com). Después de iniciar sesión con su Adobe ID, verá esto. Haga clic en los 3 puntos **...** del proyecto del sitio web y, a continuación, haga clic en **Ejecutar** para abrirlo.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
-
-Ahora puede seguir el siguiente flujo para acceder al sitio web. Haga clic en **Integraciones**.
-
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web1.png)
-
-En la página **Integraciones**, debe seleccionar la propiedad de recopilación de datos que se creó en el ejercicio 0.1.
-
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web2.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 A continuación, verá cómo se abre el sitio web de demostración. Seleccione la URL y cópiela en el portapapeles.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web3.png)
+![DSN](../../gettingstarted/gettingstarted/images/web3.png)
 
 Abra una nueva ventana del explorador de incógnito.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web4.png)
+![DSN](../../gettingstarted/gettingstarted/images/web4.png)
 
 Pegue la dirección URL del sitio web de demostración, que copió en el paso anterior. Luego se le pedirá que inicie sesión con su Adobe ID.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web5.png)
+![DSN](../../gettingstarted/gettingstarted/images/web5.png)
 
 Seleccione el tipo de cuenta y complete el proceso de inicio de sesión.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web6.png)
+![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-Luego verá el sitio web cargado en una ventana de incógnito del explorador. Para cada demostración, deberá utilizar una ventana nueva del explorador de incógnito para cargar la URL del sitio web de demostración.
+Luego verá el sitio web cargado en una ventana de incógnito del explorador. Para cada ejercicio, deberá utilizar una ventana nueva del explorador de incógnito para cargar la URL del sitio web de demostración.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web7.png)
+![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 
 En este ejemplo, desea responder a un cliente específico que ve un producto específico.
-En la página de inicio de **Luma**, ve a **Hombres** y haz clic en el producto **PROTEUS FITNESS JACKSHIRT**.
+En la página de inicio de **Citi Signal**, ve a **Teléfonos y dispositivos** y haz clic en el producto **Galaxy S24**.
 
-![Ingesta de datos](./images/homenadia.png)
+![Ingesta de datos](./images/homegalaxy.png)
 
-Así que cuando alguien visita la página de productos de **PROTEUS FITNESS JACKSHIRT**, querrás poder actuar. Lo primero que debe hacer para realizar una acción es definir un segmento.
+Así que cuando alguien visite la página de productos del **Galaxy S24**, querrá poder tomar medidas. Lo primero que debe hacer para realizar una acción es definir una audiencia.
 
-![Ingesta de datos](./images/homenadiapp.png)
+![Ingesta de datos](./images/homegalaxy1.png)
 
-## 2.3.1.3 Creación del segmento
+## Creación de la audiencia
 
 Ir a [Adobe Experience Platform](https://experience.adobe.com/platform). Después de iniciar sesión, llegará a la página principal de Adobe Experience Platform.
 
 ![Ingesta de datos](./../../../modules/datacollection/module1.2/images/home.png)
 
-Antes de continuar, debe seleccionar una **zona protegida**. La zona protegida que se va a seleccionar se denomina ``--aepSandboxName--``. Para ello, haga clic en el texto **[!UICONTROL Producción]** en la línea azul de la parte superior de la pantalla. Después de seleccionar la [!UICONTROL zona protegida] adecuada, verá el cambio en la pantalla y ahora se encuentra en la [!UICONTROL zona protegida] dedicada.
+Antes de continuar, debe seleccionar una **zona protegida**. La zona protegida que se va a seleccionar se denomina ``--aepSandboxName--``. Después de seleccionar la [!UICONTROL zona protegida] adecuada, verá el cambio en la pantalla y ahora se encuentra en la [!UICONTROL zona protegida] dedicada.
 
 ![Ingesta de datos](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-En el menú de la izquierda, ve a **Segmentos** y luego a **Examinar**, donde podrás ver una descripción general de todos los segmentos existentes. Haga clic en el botón **Crear segmento** para comenzar a crear un nuevo segmento.
+En el menú de la izquierda, ve a **Audiencias** y luego a **Examinar**, donde podrás ver una descripción general de todas las audiencias existentes. Haga clic en el botón **Crear audiencia** para comenzar a crear una audiencia nueva.
 
 ![Segmentación](./images/menuseg.png)
 
-Como se mencionó anteriormente, debe generar un segmento con todos los clientes que hayan visto el producto **PROTEUS FITNESS JACKSHIRT**.
+Seleccione **Generar regla** y haga clic en **Crear**.
 
-Para crear este segmento, debe añadir un evento. Puede encontrar todos los eventos haciendo clic en el icono **Eventos** en la barra de menús **Segmentos**.
+![Segmentación](./images/menuseg1.png)
+
+Como se mencionó anteriormente, debe generar una audiencia de todos los clientes que han visto el producto **Galaxy S24**.
+
+Para crear esta audiencia, debe añadir un evento. Puede encontrar todos los eventos haciendo clic en el icono **Eventos** en la barra de menús de **Audiencias**.
 
 A continuación, verá el nodo **XDM ExperienceEvent** de nivel superior.
 
-Para encontrar clientes que han visitado el producto **PROTEUS FITNESS JACKSHIRT**, haz clic en **XDM ExperienceEvent**.
+Para encontrar clientes que han visitado el producto **Galaxy S24**, haga clic en **XDM ExperienceEvent**.
 
 ![Segmentación](./images/findee.png)
 
@@ -89,32 +86,29 @@ Desplácese hacia abajo hasta **Elementos de lista de productos** y haga clic en
 
 ![Segmentación](./images/see.png)
 
-Seleccione **Name** y arrastre y suelte el objeto **Name** del menú izquierdo de **Elementos de lista de productos** en el lienzo del generador de segmentos en la sección **Eventos**.
+Seleccione **Name** y arrastre y suelte el objeto **Name** del menú izquierdo de **Elementos de lista de productos** en el lienzo del generador de audiencias en la sección **Eventos**.
 
 ![Segmentación](./images/eewebpdtlname1.png)
 
-El parámetro de comparación debe ser **igual a** y en el campo de entrada, escriba `PROTEUS FITNESS JACKSHIRT`.
+El parámetro de comparación debe ser **igual a** y en el campo de entrada, escriba `Galaxy S24`.
 
 ![Segmentación](./images/pv.png)
 
-Las **reglas de eventos** deben tener un aspecto similar al siguiente. Cada vez que agregue un elemento al generador de segmentos, puede hacer clic en el botón **Actualizar estimación** para obtener una nueva estimación de la población del segmento.
+Las **reglas de eventos** deben tener un aspecto similar al siguiente. Cada vez que añada un elemento al generador de audiencias, puede hacer clic en el botón **Actualizar estimación** para obtener una nueva estimación de la población de su audiencia.
 
 ![Segmentación](./images/ldap4.png)
 
-Por último, asigne un nombre al segmento y guárdelo.
+Asigne un nombre a la audiencia y establezca el **Método de evaluación** en **Edge**.
 
 Como convención de nombres, utilice:
 
-- `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`
+- `--aepUserLdap-- - Interest in Galaxy S24`
 
-El nombre del segmento debería tener un aspecto similar al siguiente:
-`vangeluw - Interest in PROTEUS FITNESS JACKSHIRT`
-
-A continuación, haga clic en el botón **Guardar y cerrar** para guardar el segmento.
+A continuación, haga clic en el botón **Publish** para guardar la audiencia.
 
 ![Segmentación](./images/segmentname.png)
 
-A continuación, se le redirigirá a la página de resumen del segmento.
+A continuación, se le redirigirá a la página de información general de audiencia.
 
 ![Segmentación](./images/savedsegment.png)
 

@@ -1,11 +1,12 @@
 ---
-title: 'Real-time CDP: cree un segmento y tome medidas . Configure un destino de Advertising como Google DV360'
-description: 'Real-time CDP: cree un segmento y tome medidas . Configure un destino de Advertising como Google DV360'
+title: 'Real-time CDP: cree una audiencia y tome medidas . Configure un destino de Advertising como Google DV360'
+description: 'Real-time CDP: cree una audiencia y tome medidas . Configure un destino de Advertising como Google DV360'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: fdc590d5-b986-422c-97ef-b5a439644439
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '331'
 ht-degree: 1%
 
 ---
@@ -14,13 +15,13 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->El siguiente contenido está diseñado para su información - Usted hace **NOT** tiene que configurar un nuevo destino para DV360. El destino ya se ha creado y puede utilizarlo en el siguiente ejercicio.
+>El siguiente contenido está parcialmente diseñado para su información - Si ese destino ya existe en su instancia, entonces **NO** tiene que configurar un nuevo destino para DV360. El destino ya se ha creado en ese caso y puede utilizarlo en el siguiente ejercicio.
 
 Ir a [Adobe Experience Platform](https://experience.adobe.com/platform). Después de iniciar sesión, llegará a la página principal de Adobe Experience Platform.
 
 ![Ingesta de datos](./../../../modules/datacollection/module1.2/images/home.png)
 
-Antes de continuar, debe seleccionar una **zona protegida**. La zona protegida que se va a seleccionar se denomina ``--aepSandboxName--``. Para ello, haga clic en el texto **[!UICONTROL Producción]** en la línea azul de la parte superior de la pantalla. Después de seleccionar la [!UICONTROL zona protegida] adecuada, verá el cambio en la pantalla y ahora se encuentra en la [!UICONTROL zona protegida] dedicada.
+Antes de continuar, debe seleccionar una **zona protegida**. La zona protegida que se va a seleccionar se denomina ``--aepSandboxName--``. Después de seleccionar la [!UICONTROL zona protegida] adecuada, verá el cambio en la pantalla y ahora se encuentra en la [!UICONTROL zona protegida] dedicada.
 
 ![Ingesta de datos](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -61,9 +62,9 @@ Después de crear el destino, verá esto. Si lo desea, puede seleccionar una pol
 ![RTCDP](./images/rtcdpcreatedest1.png)
 
 A continuación, verá una lista de destinos disponibles.
-En el siguiente ejercicio, conectará el segmento creado en el ejercicio anterior al destino de Google DV360.
+En el siguiente ejercicio, conectará la audiencia que creó en el ejercicio anterior al destino de Google DV360.
 
-Siguiente paso: [2.3.3 Realizar acción: enviar el segmento a DV360](./ex3.md)
+Siguiente paso: [2.3.3 Realizar acción: enviar la audiencia a DV360](./ex3.md)
 
 [Volver al módulo 2.3](./real-time-cdp-build-a-segment-take-action.md)
 

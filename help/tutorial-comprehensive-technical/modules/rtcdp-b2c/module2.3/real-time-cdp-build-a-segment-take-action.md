@@ -6,16 +6,14 @@ audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 147d9153-5742-4857-aae1-0ec434a1e626
-source-git-commit: f4b3463ce9464c96378790bf8070504fc90cb2ff
+source-git-commit: b46c753a8d854b5a448d10d30c7a5701900a35b8
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '336'
 ht-degree: 1%
 
 ---
 
 # 2.3 CDP en tiempo real: cree un segmento y tome medidas
-
-**Autor: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/), [Alberto De Caro](https://www.linkedin.com/in/albertodecaro/), [Benedikt Wedenik](https://www.linkedin.com/in/benedikt-wedenik/)**
 
 En este módulo, configurará un segmento de flujo continuo y activará el segmento en varios destinos.
 
@@ -38,25 +36,25 @@ En este módulo, configurará un segmento de flujo continuo y activará el segme
 
 ## Ejercicios
 
-[2.3.1 Crear un segmento](./ex1.md)
+[2.3.1 Crear una audiencia](./ex1.md)
 
-Obtenga información sobre cómo crear un segmento.
+Obtenga información sobre cómo crear una audiencia.
 
 [2.3.2 Consulte cómo configurar el destino DV360 mediante Destinos](./ex2.md)
 
 Obtenga información sobre cómo configurar un destino de publicidad mediante la interfaz de usuario de Real-Time CDP.
 
-[2.3.3 Tomar acción: enviar el segmento a DV360](./ex3.md)
+[2.3.3 Tomar acción: enviar a su audiencia a DV360](./ex3.md)
 
-Conecte el segmento que creó en el ejercicio 6.1 al DV360 de destino.
+Conecte la audiencia que creó al DV360 de destino.
 
-[2.3.4 Tomar medidas: enviar el segmento a un destino S3](./ex4.md)
+[2.3.4 Tomar medidas: enviar a su audiencia a un destino S3](./ex4.md)
 
-Utilice el segmento que ha creado en el ejercicio 6.1 y envíelo a un destino S3, que suele utilizarse para destinos de marketing de correo electrónico.
+Utilice la audiencia que ha creado y envíela a un destino S3, que suele utilizarse para destinos de marketing por correo electrónico.
 
-[2.3.5 Tomar medidas: enviar el segmento a Adobe Target](./ex5.md)
+[2.3.5 Tomar medidas: enviar la audiencia a Adobe Target](./ex5.md)
 
-Utilice el segmento creado en el ejercicio 6.1 para configurar una actividad de segmentación de experiencias en Adobe Target.
+Utilice la audiencia que ha creado para configurar una actividad de segmentación de experiencias en Adobe Target.
 
 [2.3.6 Audiencias externas](./ex6.md)
 

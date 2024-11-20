@@ -3,27 +3,28 @@ title: 'Real-time CDP: audiencias externas'
 description: 'Real-time CDP: audiencias externas'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: c7e4960f-4007-4c27-b5ba-7b21cd52c2f7
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '1978'
+source-wordcount: '1950'
 ht-degree: 1%
 
 ---
 
 # 2.3.6 Audiencias externas
 
-En muchos casos, es posible que su empresa desee utilizar segmentos existentes de otras aplicaciones para enriquecer el perfil del cliente en Adobe Experience Platform.
+En muchos casos, es posible que su empresa desee utilizar audiencias existentes de otras aplicaciones para enriquecer el perfil del cliente en Adobe Experience Platform.
 Estas audiencias externas pueden haberse definido en función de un modelo de ciencia de datos o mediante plataformas de datos externas.
 
-La función de audiencias externas de Adobe Experience Platform permite centrarse en la ingesta de audiencias externas y su activación sin necesidad de redefinir la definición de segmento correspondiente en detalle en Adobe Experience Platform.
+La función de audiencias externas de Adobe Experience Platform permite centrarse en la ingesta de audiencias externas y su activación sin necesidad de redefinir la definición de audiencia correspondiente en detalle en Adobe Experience Platform.
 
 El proceso general se divide en tres pasos principales:
 
 - Importar los metadatos de audiencia externa: este paso está diseñado para introducir los metadatos de audiencia externa, como el nombre de la audiencia, en Adobe Experience Platform.
-- Asigne la pertenencia a la audiencia externa al perfil del cliente: este paso está diseñado para enriquecer el perfil del cliente con el atributo de pertenencia a segmento externo.
-- Cree los segmentos en Adobe Experience Platform: este paso está diseñado para crear segmentos procesables basados en la pertenencia a audiencias externas.
+- Asigne la pertenencia a audiencias externas al perfil del cliente: este paso está diseñado para enriquecer el perfil del cliente con el atributo de pertenencia a audiencias externas.
+- Cree las audiencias en Adobe Experience Platform: este paso está diseñado para crear audiencias procesables basadas en la pertenencia a audiencias externas.
 
-## Metadatos de 2.3.6.1
+## Metadatos
 
 Ir a [Adobe Experience Platform](https://experience.adobe.com/platform). Después de iniciar sesión, llegará a la página principal de Adobe Experience Platform.
 
@@ -31,13 +32,13 @@ Ir a [Adobe Experience Platform](https://experience.adobe.com/platform). Despué
 
 >[!IMPORTANT]
 >
->¡La zona protegida que se utilizará para este ejercicio es ``--module2sandbox--``!
+>¡La zona protegida que se utilizará para este ejercicio es ``--aepSandboxName--``!
 
-Antes de continuar, debe seleccionar una **zona protegida**. La zona protegida que se va a seleccionar se denomina ``--module2sandbox--``. Para ello, haga clic en el texto **[!UICONTROL Producción]** en la línea azul de la parte superior de la pantalla. Después de seleccionar la [!UICONTROL zona protegida] adecuada, verá el cambio en la pantalla y ahora se encuentra en la [!UICONTROL zona protegida] dedicada.
+Antes de continuar, debe seleccionar una **zona protegida**. La zona protegida que se va a seleccionar se denomina ``--aepSandboxName--``. Después de seleccionar la [!UICONTROL zona protegida] adecuada, verá el cambio en la pantalla y ahora se encuentra en la [!UICONTROL zona protegida] dedicada.
 
 ![Ingesta de datos](./images/sb1.png)
 
-Aunque los datos del segmento definen la condición para que un perfil forme parte de un segmento, los metadatos del segmento son información sobre el segmento, como su nombre, descripción y estado. Como los metadatos de audiencias externas se almacenarán en Adobe Experience Platform, debe utilizar un área de nombres de identidad para introducir los metadatos en Adobe Experience Platform.
+Aunque los datos de audiencia definen la condición para que un perfil forme parte de una audiencia, los metadatos de audiencia son información sobre la audiencia, como el nombre, la descripción y el estado de la audiencia. Como los metadatos de audiencias externas se almacenarán en Adobe Experience Platform, debe utilizar un área de nombres de identidad para introducir los metadatos en Adobe Experience Platform.
 
 ## 2.3.6.1.1 Área de nombres de identidad para audiencias externas
 
@@ -47,19 +48,19 @@ Para ver la identidad que ya se creó, ve a **Identidades** y busca **Externas**
 Tenga en cuenta:
 
 - El símbolo de identidad **externalaudiences** se utilizará en los pasos siguientes para hacer referencia a la identidad de audiencias externas.
-- El tipo **Identificador de no personas** se usa para este área de nombres de identidad, ya que esta área de nombres no está pensada para identificar perfiles de clientes, sino segmentos.
+- El tipo **Identificador de no personas** se usa para este área de nombres de identidad, ya que esta área de nombres no está pensada para identificar perfiles de clientes, sino audiencias.
 
 ![Identidad de audiencias externas](images/extAudIdNS.png)
 
 ## 2.3.6.1.2 Creación del esquema de metadatos de audiencias externas
 
-Los metadatos de audiencias externas se basan en el **Esquema de definición de segmento**. Puede encontrar más detalles en el [repositorio XDM Github](https://github.com/adobe/xdm/blob/master/docs/reference/classes/segmentdefinition.schema.md).
+Los metadatos de audiencias externas se basan en el **Esquema de definición de audiencia**. Puede encontrar más detalles en el [repositorio XDM Github](https://github.com/adobe/xdm/blob/master/docs/reference/classes/segmentdefinition.schema.md).
 
 En el menú de la izquierda, vaya a Esquemas. Haga clic en **+ Crear esquema** y luego haga clic en **Examinar**.
 
 ![Esquema de metadatos de audiencias externas 1](images/extAudMDXDM1.png)
 
-Para asignar una clase, busque **definición de segmento**. Seleccione la clase **Segment definition** y haga clic en **Asignar clase**.
+Para asignar una clase, busque **definición de audiencia**. Seleccione la clase **Audience definition** y haga clic en **Asignar clase**.
 
 ![Esquema de metadatos de audiencias externas 2](images/extAudMDXDM2.png)
 
@@ -203,13 +204,13 @@ En los resultados de la consulta verá los metadatos de la audiencia externa que
 
 ![Metadatos de audiencias externas str 5](images/extAudMDstr5.png)
 
-## 2.3.6.2 Suscripción a segmentos
+## Suscripción a audiencia
 
-Con los metadatos de audiencia externa disponibles, ahora puede ingerir el abono a segmentos para un perfil de cliente específico.
+Con los metadatos de audiencia externa disponibles, ahora puede ingerir la pertenencia de la audiencia a un perfil de cliente específico.
 
-Ahora debe preparar un conjunto de datos de perfil enriquecido con el esquema de pertenencia a segmentos. Puede encontrar más detalles en el [repositorio XDM Github](https://github.com/adobe/xdm/blob/master/docs/reference/datatypes/segmentmembership.schema.md).
+Ahora debe preparar un conjunto de datos de perfil enriquecido con el esquema de pertenencia a audiencias. Puede encontrar más detalles en el [repositorio XDM Github](https://github.com/adobe/xdm/blob/master/docs/reference/datatypes/segmentmembership.schema.md).
 
-## 2.3.6.2.1 Creación del esquema de pertenencia a audiencias externas
+### Creación del esquema de pertenencia a audiencias externas
 
 En el menú derecho, vaya a **Esquemas**. Haga clic en **Crear esquema** y, a continuación, haga clic en **Perfil individual de XDM**.
 
@@ -237,7 +238,7 @@ A continuación, habilite la opción **Perfil** y confirme. Haga clic en **Guard
 
 ![Esquema de perfil de audiencias externas 5](images/extAudPrXDM5.png)
 
-## 2.3.6.2.2 Crear el conjunto de datos de pertenencia a audiencias externas
+### Crear el conjunto de datos de pertenencia a audiencias externas
 
 En **Esquemas**, vaya a **Examinar**. Busque y haga clic en el esquema `--aepUserLdap-- - External Audiences Membership` que creó en el paso anterior. A continuación, haga clic en **Crear conjunto de datos a partir del esquema**.
 
@@ -251,7 +252,7 @@ Entonces verá esto... No olvide habilitar la opción **Perfil**.
 
 ![Metadatos de audiencias externas DS 3](images/extAudPrDS3.png)
 
-## 2.3.6.2.3 Crear una conexión Source de API HTTP
+### Creación de una conexión HTTP API Source
 
 
 A continuación, debe configurar el conector Source de la API HTTP que utilizará para introducir los metadatos en el conjunto de datos.
@@ -294,7 +295,7 @@ Entonces verá esto...
 
 ![Metadatos de audiencias externas http 4](images/extAudPrhttp4a.png)
 
-## 2.3.6.2.4 Ingesta de datos de pertenencia a audiencias externas
+### Ingesta de datos de pertenencia a audiencias externas
 
 En la ficha Información general del conector de Source, haga clic en **...** y, a continuación, haga clic en **Copiar carga útil de esquema**.
 
@@ -346,7 +347,7 @@ Actualice la pantalla del conector Source de la API HTTP, donde después de un p
 
 ![Metadatos de audiencias externas str 2](images/extAudPrstr2.png)
 
-## 2.3.6.2.5 Validar la ingesta de pertenencia a audiencias externas
+### Validar la ingesta de pertenencia a audiencias externas
 
 Una vez completado el procesamiento, puede comprobar la disponibilidad de los datos en el conjunto de datos mediante el servicio de consulta.
 
@@ -368,7 +369,7 @@ En los resultados de la consulta verá los metadatos de la audiencia externa que
 
 ![Metadatos de audiencias externas str 5](images/extAudPrstr5.png)
 
-## 2.3.6.3 Crear un segmento
+## Crear un segmento
 
 Ahora está listo para realizar acciones en las audiencias externas.
 En Adobe Experience Platform, la acción se logra creando segmentos, rellenando las audiencias respectivas y compartiendo esas audiencias en los destinos.
@@ -396,7 +397,7 @@ Entonces verá esto... También notará que el perfil para el cual ingirió la p
 
 El segmento está listo ahora y se puede enviar a un destino para su activación.
 
-## 2.3.6.4 Visualizar el perfil del cliente
+## Visualice su perfil de cliente
 
 Ahora también puede visualizar la calificación de segmentos en su perfil de cliente. Vaya a **Perfiles**, use el área de nombres de identidad **Sistema de demostración - CRMID**, proporcione la identidad `--aepUserLdap---profile-test-01` que usó como parte del ejercicio 6.6.2.4 y haga clic en **Ver**. A continuación, haga clic en **ID de perfil** para abrir el perfil.
 

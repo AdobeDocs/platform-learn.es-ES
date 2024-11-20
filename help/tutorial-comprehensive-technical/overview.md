@@ -4,7 +4,7 @@ description: Punto de partida para ingenieros de datos, analistas de datos, arqu
 doc-type: multipage-overview
 hide: false
 exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: b46c753a8d854b5a448d10d30c7a5701900a35b8
 workflow-type: tm+mt
 source-wordcount: '1524'
 ht-degree: 2%
@@ -84,7 +84,7 @@ Puedes encontrar muchos videos interesantes de nuestros eventos de Tech Academy,
 - **Descripción:** En este módulo básico, ingerirá datos del sitio web en Platform
 - **Inversión de tiempo:** 120 minutos
 
-[1.3 Composición de audiencias federadas](./modules/datacollection/module1.3/fac.md)
+[1.3 Composición de audiencia federada](./modules/datacollection/module1.3/fac.md)
 
 - **Audiencia:** Analista de datos, Ingeniero de datos, Arquitecto de datos
 - **Requisitos previos:** Acceso a Adobe Experience Platform

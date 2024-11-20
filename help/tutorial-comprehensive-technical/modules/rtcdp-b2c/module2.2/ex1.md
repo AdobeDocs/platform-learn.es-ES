@@ -3,9 +3,10 @@ title: 'Servicios inteligentes: preparación de datos de inteligencia artificial
 description: 'AI del cliente: preparación de datos (ingesta)'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 71405859-cfc6-4991-a0b0-11c94818a0fa
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '753'
 ht-degree: 1%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 1%
 Para que los servicios inteligentes descubran datos de sus eventos de marketing, los datos deben enriquecerse semánticamente y mantenerse en una estructura estándar. Los servicios inteligentes aprovechan los esquemas XDM (Experience Data Model) de Adobe para conseguirlo.
 En concreto, todos los conjuntos de datos que se utilizan en Intelligent Services deben cumplir con el esquema XDM **Evento de experiencia del consumidor**.
 
-## 2.2.1.1 Crear esquema
+## Crear esquema
 
 En este ejercicio, creará un esquema que contiene el mixin **Evento de experiencia del consumidor**, que requiere el servicio inteligente **inteligencia artificial aplicada al cliente**.
 
@@ -25,37 +26,40 @@ Después de iniciar sesión, llegará a la página principal de Adobe Experience
 
 ![Ingesta de datos](../../datacollection/module1.2/images/home.png)
 
-Antes de continuar, debe seleccionar una **zona protegida**. La zona protegida que se va a seleccionar se denomina ``--module10sandbox--``. Para ello, haga clic en el texto **[!UICONTROL Producción]** en la línea azul de la parte superior de la pantalla. Después de seleccionar la zona protegida adecuada, verá que la pantalla cambia y ahora está en la zona protegida dedicada.
+Antes de continuar, debe seleccionar una **zona protegida**. La zona protegida que se va a seleccionar se denomina ``--aepSandboxName--``. Después de seleccionar la zona protegida adecuada, verá que la pantalla cambia y ahora está en la zona protegida dedicada.
 
 ![Ingesta de datos](../../datacollection/module1.2/images/sb1.png)
 
 En el menú de la izquierda, haz clic en **Esquemas** y ve a **Examinar**. Haga clic en **Crear esquema**.
 
-![Crear nuevo esquema](./images/create-schema-button.png)
+![Crear nuevo esquema](./images/createschemabutton.png)
 
-En la ventana emergente, seleccione **XDM ExperienceEvent**.
+En la ventana emergente, selecciona **Manual** y haz clic en **Seleccionar**.
+
+![Crear nuevo esquema](./images/schmanual.png)
+
+A continuación, seleccione **Evento de experiencia** y haga clic en **Siguiente**.
 
 ![Crear nuevo esquema](./images/xdmee.png)
 
-Entonces verá esto...
+Debe proporcionar un nombre para el esquema ahora. Como nombre de nuestro esquema, use esto: `--aepUserLdap-- - Demo System - Customer Experience Event` y haga clic en **Finalizar**.
+
+![Crear nuevo esquema](./images/schname.png)
+
+Entonces verá esto... Haga clic en **+ Agregar** en Grupos de campos.
 
 ![Crear nuevo esquema](./images/xdmee1.png)
 
-Busque y seleccione los **mixins** siguientes para agregarlos a este esquema:
+Busque y seleccione los **grupos de campos** siguientes para agregarlos a este esquema:
 
 - Evento de experiencia del consumidor
-
-  ![Nuevo esquema CEE](./images/cee.png)
-
 - Detalles del ID del usuario final
-
-  ![Nuevo esquema CEE](./images/identitymap.png)
 
 Haga clic en **Agregar grupos de campos**.
 
-![Clave de identidad definida](./images/addmixin.png)
+![Nuevo esquema CEE](./images/cee.png)
 
-Entonces verá esto... Seleccione el mixin **Detalles del identificador de usuario final**.
+Entonces verá esto... Haga clic en el grupo de campos **Detalles del identificador de usuario final**.
 
 ![Crear nuevo esquema](./images/eui1.png)
 
@@ -63,7 +67,7 @@ Vaya al campo **endUserIDs._experience.email.id**.
 
 ![Crear nuevo esquema](./images/eui2.png)
 
-En el menú derecho del campo **endUserIDs._experience.email.id**, desplácese hacia abajo y marque la casilla de verificación de **Identidad**, marque la casilla de verificación de **Identidad principal** y seleccione el **Área de nombres de identidad** de **Correo electrónico**.
+En el menú derecho del campo **endUserIDs._experience.email.id**, desplácese hacia abajo y marque la casilla de verificación de **Identidad**, marque la casilla de verificación de **Identidad principal** y seleccione el **Área de nombres de identidad** de **Correo electrónico**. Haga clic en **Aplicar**.
 
 ![Crear nuevo esquema](./images/eui3.png)
 
@@ -71,21 +75,7 @@ Vaya al campo **endUserIDs._experience.mcid.id**. Marque la casilla de verificac
 
 ![Crear nuevo esquema](./images/eui4.png)
 
-Asigne un nombre al esquema ahora.
-
-Como nombre para nuestro esquema, utilizará esto:
-
-- `--aepUserLdap-- - Demo System - Customer Experience Event`
-
-Por ejemplo, para ldap **vangeluw**, este debe ser el nombre del esquema:
-
-- **vangeluw - Sistema de demostración - Evento de experiencia del cliente**
-
-Eso debería darte algo como esto. Haga clic en el botón **+ Agregar** para agregar nuevos **mixins**.
-
-![Crear nuevo esquema](./images/xdmee2.png)
-
-Seleccione el nombre del esquema. Ahora debería habilitar su esquema para **Perfil**, haciendo clic en la opción **Perfil**.
+Entonces, tendrás esto. A continuación, seleccione el nombre del esquema. Ahora debería habilitar su esquema para **Perfil**, haciendo clic en la opción **Perfil**.
 
 ![Crear nuevo esquema](./images/xdmee3.png)
 
@@ -97,7 +87,7 @@ Ahora debería tener esto. Haga clic en **Guardar** para guardar el esquema.
 
 ![Crear nuevo esquema](./images/xdmee5.png)
 
-## 2.2.1.2 Crear conjunto de datos
+## Crear conjunto de datos
 
 En el menú de la izquierda, haga clic en **Conjuntos de datos** y vaya a **Examinar**. Haga clic en **Crear conjunto de datos**.
 
@@ -129,7 +119,7 @@ Ahora debería tener esto:
 
 Ya está listo para empezar a ingerir datos de evento de experiencias del consumidor y empezar a utilizar el servicio de inteligencia artificial aplicada al cliente.
 
-## 2.2.1.3 Descargar datos de prueba de Experience Event
+## Descargar datos de prueba de Experience Event
 
 Una vez configurados el **esquema** y el **conjunto de datos**, ya puede ingerir datos de evento de experiencia. Dado que la inteligencia artificial aplicada al cliente requiere datos en **2 trimestres al menos**, necesitará ingerir datos preparados de forma externa.
 
@@ -145,7 +135,7 @@ Ahora ha descargado un archivo denominado **retail-v1-dec2020-xl.json.zip**. Col
 
 ![Conjunto de datos](./images/ingest.png)
 
-## 2.2.1.4 Ingesta de datos de prueba de Evento de experiencia
+## Ingesta de datos de prueba de Evento de experiencia
 
 En Adobe Experience Platform, vaya a **Conjuntos de datos** y abra su conjunto de datos, que se llama **[!UICONTROL ldap - Sistema de demostración - Conjunto de datos de evento de experiencia del cliente]**.
 
