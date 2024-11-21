@@ -3,215 +3,89 @@ title: 'Recopilación de datos y reenvío del lado del servidor en tiempo real: 
 description: Creación y configuración de una función de nube de Google
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: ee73ce3a-baaa-432a-9626-249be9aaeff2
+source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
 workflow-type: tm+mt
-source-wordcount: '1593'
-ht-degree: 0%
+source-wordcount: '1184'
+ht-degree: 1%
 
 ---
 
-# 2.5.4 Crear y configurar una función de nube de Google
+# 2.5.4 Reenviar eventos a GCP Pub/Sub
 
-## 2.5.4.1 Crear la función de nube de Google
+>[!NOTE]
+>
+>Para este ejercicio, necesita acceder a un entorno de Google Cloud Platform. Si todavía no tiene acceso a GCP, cree una nueva cuenta con su dirección de correo electrónico personal.
 
-Vaya a [https://console.cloud.google.com/](https://console.cloud.google.com/). Vaya a **Funciones de nube**.
+## Cree su Pub/Subtema de Google Cloud
+
+Vaya a [https://console.cloud.google.com/](https://console.cloud.google.com/). En la barra de búsqueda, escriba `pub/sub`. Haga clic en el resultado de búsqueda **Pub/Sub - Global real-time messaging**.
 
 ![GCP](./images/gcp1.png)
 
-Entonces verá esto... Haga clic en **CREAR FUNCIÓN**.
+Entonces verá esto... Haga clic en **CREAR TEMA**.
 
 ![GCP](./images/gcp2.png)
 
-Entonces verá esto...
+Entonces verá esto... Para el identificador de tema, use `--aepUserLdap---event-forwarding`. Haga clic en **Crear**.
 
 ![GCP](./images/gcp6.png)
 
-Realice las siguientes opciones:
-
-- **Nombre de función**: `--aepUserLdap---event-forwarding`
-- **Región**: seleccione cualquier región
-- **Tipo de Déclencheur**: seleccione **HTTP**
-- **Autenticación**: seleccione **Permitir invocaciones no autenticadas**
-
-Ahora debería tener esto. Haga clic en **GUARDAR**.
+Se creará el tema. Haga clic en **ID de suscripción** del tema.
 
 ![GCP](./images/gcp7.png)
 
-Haga clic en **SIGUIENTE**.
+Entonces verá esto... Copie el **nombre del tema** en el portapapeles y guárdelo, tal como lo necesitará en los próximos ejercicios.
 
 ![GCP](./images/gcp8.png)
 
-A continuación, verá esto:
+Ahora vamos al reenvío de eventos de recopilación de datos de Adobe Experience Platform para actualizar la propiedad de reenvío de eventos y comenzar a reenviar eventos a Pub/Sub.
 
-![GCP](./images/gcp9.png)
 
-Realice las siguientes opciones:
+## Actualice la propiedad del reenvío de eventos: Secrets
 
-- **Runtime**: seleccione **Node.js 16** (o más reciente)
-- **Punto de entrada**: escriba **helloAEP**
+Los **secretos** de las propiedades de reenvío de eventos se usan para almacenar credenciales que se usarán para autenticarse en las API externas. En este ejemplo, debe configurar un secreto para almacenar el token OAuth de Google Cloud Platform, que se utilizará para autenticar al utilizar Pub/Sub para transmitir datos hacia GCP.
 
-Haga clic en **HABILITAR API** para habilitar la **API de Cloud Build**. A continuación, verá una nueva ventana. En esa nueva ventana, vuelve a hacer clic en **HABILITAR**.
+Vaya a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) y luego a **Secretos**. Haga clic en **Crear nuevo secreto**.
 
-![GCP](./images/gcp10.png)
+![Recopilación de datos Adobe Experience Platform SSF](./images/secret1.png)
 
-Entonces verá esto... Haga clic en **Habilitar**.
+Entonces verá esto... Siga estas instrucciones:
 
-![GCP](./images/gcp11.png)
+- Nombre: use `--aepUserLdap---gcp-secret`
+- Entorno de destino: seleccionar **Desarrollo**
+- Tipo: **Google OAuth 2**
+- Marque la casilla de verificación de **Pub/Sub**
 
-Una vez que la **API de Cloud Build** se haya habilitado, verá esto.
+Haga clic en **Crear secreto**.
 
-![GCP](./images/gcp12.png)
+![Recopilación de datos Adobe Experience Platform SSF](./images/secret2.png)
 
-Vuelva a su **función de nube**.
-En el Editor en línea de funciones de nube, asegúrese de que tiene el siguiente código:
+Después de hacer clic en **Crear secreto**, verá una ventana emergente para configurar la autenticación entre el secreto de la propiedad de reenvío de eventos y Google. Haga clic en **Crear y autorizar secreto `--aepUserLdap---gcp-secret` con Google**.
 
-```javascript
-/**
- * Responds to any HTTP request.
- *
- * @param {!express:Request} req HTTP request context.
- * @param {!express:Response} res HTTP response context.
- */
-exports.helloAEP = (req, res) => {
-  let message = req.query.message || req.body.message || 'Hello World!';
-  res.status(200).send(message);
-};
-```
+![Recopilación de datos Adobe Experience Platform SSF](./images/secret3.png)
 
-A continuación, haga clic en **IMPLEMENTAR**.
+Haga clic en para seleccionar su cuenta de Google.
 
-![GCP](./images/gcp13.png)
+![Recopilación de datos Adobe Experience Platform SSF](./images/secret4.png)
 
-Entonces verá esto... Se está creando su función de nube. Esto puede tardar un par de minutos.
+Haga clic en **Continuar**.
 
-![GCP](./images/gcp14.png)
+>[!NOTE]
+>
+>El mensaje emergente puede variar. Autorice o permita el acceso solicitado para continuar con el ejercicio.
 
-Una vez que la función se haya creado y ejecutado, verá esto. Haga clic en el nombre de la función para abrirla.
+![Recopilación de datos Adobe Experience Platform SSF](./images/secret5.png)
 
-![GCP](./images/gcp15.png)
+Después de autenticarse correctamente, verá esto.
 
-Entonces verá esto... Ir a **DÉCLENCHEUR**. Verá la **URL de Déclencheur** que es lo que usará para definir el punto de conexión en Launch Server Side.
+![Recopilación de datos Adobe Experience Platform SSF](./images/secret6.png)
 
-![GCP](./images/gcp16.png)
+El secreto se ha configurado correctamente y se puede utilizar en un elemento de datos.
 
-Copie la dirección URL de Déclencheur, con este aspecto: **https://europe-west1-dazzling-pillar-273812.cloudfunctions.net/vangeluw-event-forwarding**.
+## Actualice la propiedad de reenvío de eventos: elemento de datos
 
-En los siguientes pasos, configurará Adobe Experience Platform Data Collection Server para que transmita información específica acerca de **Vistas de página** a su función de Google Cloud. En lugar de reenviar la carga útil completa tal cual, solo enviará elementos como **ECID**, **timestamp** y **Page Name** a su función de Google Cloud.
-
-Este es un ejemplo de carga útil que debe analizar para filtrar las variables mencionadas anteriormente:
-
-```json
-{
-  "events": [
-    {
-      "xdm": {
-        "eventType": "web.webpagedetails.pageViews",
-        "web": {
-          "webPageDetails": {
-            "URL": "https://builder.adobedemo.com/run/vangeluw-OCUC",
-            "name": "vangeluw-OCUC",
-            "viewName": "vangeluw-OCUC",
-            "pageViews": {
-              "value": 1
-            }
-          },
-          "webReferrer": {
-            "URL": "https://builder.adobedemo.com/run/vangeluw-OCUC/equipment"
-          }
-        },
-        "device": {
-          "screenHeight": 1080,
-          "screenWidth": 1920,
-          "screenOrientation": "landscape"
-        },
-        "environment": {
-          "type": "browser",
-          "browserDetails": {
-            "viewportWidth": 1920,
-            "viewportHeight": 451
-          }
-        },
-        "placeContext": {
-          "localTime": "2022-02-23T06:51:07.140+01:00",
-          "localTimezoneOffset": -60
-        },
-        "timestamp": "2022-02-23T05:51:07.140Z",
-        "implementationDetails": {
-          "name": "https://ns.adobe.com/experience/alloy/reactor",
-          "version": "2.8.0+2.9.0",
-          "environment": "browser"
-        },
-        "_experienceplatform": {
-          "identification": {
-            "core": {
-              "ecid": "08346969856929444850590365495949561249"
-            }
-          },
-          "demoEnvironment": {
-            "brandName": "vangeluw-OCUC"
-          },
-          "interactionDetails": {
-            "core": {
-              "channel": "web"
-            }
-          }
-        }
-      },
-      "query": {
-        "personalization": {
-          "schemas": [
-            "https://ns.adobe.com/personalization/html-content-item",
-            "https://ns.adobe.com/personalization/json-content-item",
-            "https://ns.adobe.com/personalization/redirect-item",
-            "https://ns.adobe.com/personalization/dom-action"
-          ],
-          "decisionScopes": [
-            "eyJ4ZG06YWN0aXZpdHlJZCI6Inhjb3JlOm9mZmVyLWFjdGl2aXR5OjE0YzA1MjM4MmUxYjY1MDUiLCJ4ZG06cGxhY2VtZW50SWQiOiJ4Y29yZTpvZmZlci1wbGFjZW1lbnQ6MTRiZjA5ZGM0MTkwZWJiYSJ9",
-            "__view__"
-          ]
-        }
-      }
-    }
-  ],
-  "query": {
-    "identity": {
-      "fetch": [
-        "ECID"
-      ]
-    }
-  },
-  "meta": {
-    "state": {
-      "domain": "adobedemo.com",
-      "cookiesEnabled": true,
-      "entries": [
-        {
-          "key": "kndctr_907075E95BF479EC0A495C73_AdobeOrg_identity",
-          "value": "CiYwODM0Njk2OTg1NjkyOTQ0NDg1MDU5MDM2NTQ5NTk0OTU2MTI0OVIPCPn66KfyLxgBKgRJUkwx8AH5-uin8i8="
-        },
-        {
-          "key": "kndctr_907075E95BF479EC0A495C73_AdobeOrg_consent_check",
-          "value": "1"
-        },
-        {
-          "key": "kndctr_907075E95BF479EC0A495C73_AdobeOrg_consent",
-          "value": "general=in"
-        }
-      ]
-    }
-  }
-}
-```
-
-Estos son los campos que contienen la información que debe analizarse:
-
-- ECID: **events.xdm._experienceplatform.identification.core.ecid**
-- marca de tiempo: **marca de tiempo**
-- Nombre de página: **events.xdm.web.webPageDetails.name**
-
-Ahora vamos al servidor de recopilación de datos de Adobe Experience Platform para configurar los elementos de datos y hacerlo posible.
-
-## 2.5.4.2 Actualice la propiedad de reenvío de eventos: elementos de datos
+Para utilizar el secreto en la propiedad de reenvío de eventos, debe crear un elemento de datos que almacene el valor del secreto.
 
 Vaya a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) y luego a **Reenvío de eventos**. Busque la propiedad Reenvío de eventos y haga clic en ella para abrirla.
 
@@ -221,70 +95,44 @@ En el menú de la izquierda, vaya a **Elementos de datos**. Haga clic en **Agreg
 
 ![Recopilación de datos Adobe Experience Platform SSF](./images/de1gcp.png)
 
-A continuación, verá un nuevo elemento de datos para configurar.
+Configure el elemento de datos de esta manera:
 
-![Recopilación de datos Adobe Experience Platform SSF](./images/de2gcp.png)
+- Nombre: **Secreto de GCP**
+- Extensión: **Core**
+- Tipo de elemento de datos: **Secreto**
+- Secreto de desarrollo: seleccione el secreto que creó, que se llama `--aepUserLdap---gcp-secret`
 
-Realice la siguiente selección:
+Haga clic en **Guardar**.
 
-- Como **Nombre**, escriba **customerECID**.
-- Como la **extensión**, seleccione **Principal**.
-- Como **Tipo de elemento de datos**, seleccione **Ruta**.
-- Como **ruta**, escriba `arc.event.xdm.--aepTenantId--.identification.core.ecid`. Al ingresar esta ruta, estará filtrando el campo **ecid** de la carga útil de evento que el sitio web o la aplicación móvil envía a Adobe Edge.
+![Recopilación de datos Adobe Experience Platform SSF](./images/secret7.png)
 
->[!NOTE]
->
->En las rutas de acceso anteriores y posteriores, se hace referencia a **arc**. **arc** significa Contexto de recursos de Adobe y **arc** siempre representa el objeto más alto disponible en el contexto del lado del servidor. Se pueden agregar enriquecimientos y transformaciones a ese objeto **arc** mediante las funciones del servidor de recopilación de datos de Adobe Experience Platform.
->
->En las rutas de acceso anteriores y posteriores, se hace referencia a **event**. **event** significa un evento único y el servidor de recopilación de datos de Adobe Experience Platform siempre evaluará cada evento de forma individual. A veces, es posible que vea una referencia a **events** en la carga útil enviada por el lado del cliente del SDK web, pero en el servidor de recopilación de datos de Adobe Experience Platform, cada evento se evalúa individualmente.
+## Actualice la propiedad de reenvío de eventos: Extensión
 
-Ahora vas a tener esto. Haga clic en **Guardar**.
+Con el Secreto y el Elemento de datos configurados, ahora puede configurar la extensión para Google Cloud Platform en la propiedad Reenvío de eventos.
 
-![Recopilación de datos Adobe Experience Platform SSF](./images/gcdpde1.png)
+Vaya a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/), vaya a **Reenvío de eventos** y abra su propiedad de Reenvío de eventos.
 
-Haga clic en **Agregar elemento de datos**.
+![Recopilación de datos Adobe Experience Platform SSF](./images/prop1.png)
 
-![Recopilación de datos Adobe Experience Platform SSF](./images/addde.png)
+A continuación, vaya a **Extensions**, para **Catalog**. Haga clic en la extensión **Google Cloud Platform** y luego en **Instalar**.
 
-A continuación, verá un nuevo elemento de datos para configurar.
+![Recopilación de datos Adobe Experience Platform SSF](./images/gext2.png)
 
-![Recopilación de datos Adobe Experience Platform SSF](./images/de2gcp.png)
+Entonces verá esto... Haga clic en el icono Elemento de datos.
 
-Realice la siguiente selección:
+![Recopilación de datos Adobe Experience Platform SSF](./images/gext3.png)
 
-- Como **Nombre**, escriba **eventTimestamp**.
-- Como la **extensión**, seleccione **Principal**.
-- Como **Tipo de elemento de datos**, seleccione **Ruta**.
-- Como **ruta**, escriba **arc.event.xdm.timestamp**. Al introducir esta ruta, se filtrará el campo **timestamp** de la carga útil de evento que el sitio web o la aplicación móvil envía a Adobe Edge.
+Seleccione el elemento de datos que creó en el ejercicio anterior, que se llama **Secreto GCP**. Haga clic en **Seleccionar**.
 
-Ahora vas a tener esto. Haga clic en **Guardar**.
+![Recopilación de datos Adobe Experience Platform SSF](./images/gext4.png)
 
-![Recopilación de datos Adobe Experience Platform SSF](./images/gcdpde2.png)
+Entonces verá esto... Haga clic en **Guardar**.
 
-Haga clic en **Agregar elemento de datos**.
+![Recopilación de datos Adobe Experience Platform SSF](./images/gext5.png)
 
-![Recopilación de datos Adobe Experience Platform SSF](./images/addde.png)
+## Actualizar la propiedad de reenvío de eventos: Actualizar una regla
 
-A continuación, verá un nuevo elemento de datos para configurar.
-
-![Recopilación de datos Adobe Experience Platform SSF](./images/de2gcp.png)
-
-Realice la siguiente selección:
-
-- Como **Nombre**, escriba **nombreDePágina**.
-- Como la **extensión**, seleccione **Principal**.
-- Como **Tipo de elemento de datos**, seleccione **Ruta**.
-- Como **ruta**, escriba **arc.event.xdm.web.webPageDetails.name**. Al escribir esta ruta, se filtrará el campo **name** de la carga útil de evento que el sitio web o la aplicación móvil envía a Adobe Edge.
-
-Ahora vas a tener esto. Haga clic en **Guardar**.
-
-![Recopilación de datos Adobe Experience Platform SSF](./images/gcdpde3.png)
-
-Ahora se han creado estos elementos de datos:
-
-![Recopilación de datos Adobe Experience Platform SSF](./images/de3gcp.png)
-
-## 2.5.4.3 Actualizar la propiedad de reenvío de eventos: Actualizar una regla
+Ahora que la extensión de Google Cloud Platform está configurada, puede definir una regla para comenzar a reenviar datos de evento a su tema de publicación/subtema. Para ello, deberá actualizar la regla **Todas las páginas** que creó en uno de los ejercicios anteriores.
 
 En el menú de la izquierda, ve a **Reglas**. En el ejercicio anterior creó la regla **Todas las páginas**. Haga clic en esa regla para abrirla.
 
@@ -294,49 +142,44 @@ Entonces vas a hacer esto. Haga clic en el icono **+** debajo de **Acciones** pa
 
 ![Recopilación de datos Adobe Experience Platform SSF](./images/rl2gcp.png)
 
-Entonces verá esto...
+Entonces verá esto... Realice la siguiente selección:
 
-![Recopilación de datos Adobe Experience Platform SSF](./images/rl4gcp.png)
+- Seleccione la **extensión**: **Google Cloud Platform**.
+- Seleccione **Tipo de acción**: **Enviar datos a Cloud Pub/Sub**.
 
-Realice la siguiente selección:
-
-- Seleccione la **extensión**: **Conector de nube de Adobe**.
-- Seleccione el **Tipo de acción**: **Realizar llamada de recuperación**.
-
-Esto debería proporcionarle este **Nombre**: **Conector de nube de Adobe - Realizar llamada de búsqueda**. Ahora debería ver esto:
+Esto debería darle este **Nombre**: **Google Cloud Platform - Enviar datos a Cloud Pub/Sub**. Ahora debería ver esto:
 
 ![Recopilación de datos Adobe Experience Platform SSF](./images/rl5gcp.png)
 
-A continuación, configure lo siguiente:
+Ahora debe configurar el tema Pub/Sub que creó anteriormente.
 
-- Cambiar el protocolo de solicitud de GET a **POST**
-- Escriba la dirección URL de la función de Google Cloud que creó en uno de los pasos anteriores, que tiene este aspecto: **https://europe-west1-dazzling-pillar-273812.cloudfunctions.net/vangeluw-event-forwarding**
+Puede encontrar el **nombre del tema** aquí, cópielo.
 
-Ahora debería tener esto. A continuación, vaya a **Cuerpo**.
+![GCP](./images/gcp8.png)
+
+Pegue **Topic name** en la configuración de regla. A continuación, haga clic en el icono Elemento de datos junto al campo **Datos (obligatorios)**.
 
 ![Recopilación de datos Adobe Experience Platform SSF](./images/rl6gcp.png)
 
-Entonces verá esto... Haga clic en el botón de opción de **JSON**.
+Seleccione **Evento XDM** y haga clic en **Seleccionar**.
 
 ![Recopilación de datos Adobe Experience Platform SSF](./images/rl7gcp.png)
 
-Configure **Body** de la siguiente manera:
-
-| CLAVE | VALOR |
-|--- |--- |
-| customerECID | {{customerECID}} |
-| pageName | {{pageName}} |
-| eventTimestamp | {{eventTimestamp}} |
-
 Entonces verá esto... Haga clic en **Conservar cambios**.
+
+![Recopilación de datos Adobe Experience Platform SSF](./images/rl8gcp.png)
+
+Haga clic en **Guardar**.
 
 ![Recopilación de datos Adobe Experience Platform SSF](./images/rl9gcp.png)
 
-Entonces verá esto... Haga clic en **Guardar**.
+Entonces verá esto...
 
 ![Recopilación de datos Adobe Experience Platform SSF](./images/rl10gcp.png)
 
-Ahora ha actualizado la regla existente en una propiedad de Adobe Experience Platform Data Collection Server. Vaya a **Flujo de publicación** para publicar los cambios. Abra la biblioteca de desarrollo **Main** haciendo clic en **Editar** como se indica.
+## Publicación de los cambios
+
+La configuración ha finalizado. Vaya a **Flujo de publicación** para publicar los cambios. Abra la biblioteca de desarrollo **Main** haciendo clic en **Editar** como se indica.
 
 ![Recopilación de datos Adobe Experience Platform SSF](./images/rl12gcp.png)
 
@@ -348,19 +191,11 @@ Después de un par de minutos, verá que la implementación está completa y lis
 
 ![Recopilación de datos Adobe Experience Platform SSF](./images/rl14.png)
 
-## 2.5.3.4 Prueba de la configuración
+## Pruebe la configuración
 
-Vaya a [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Después de iniciar sesión con su Adobe ID, verá esto. Haga clic en el proyecto del sitio web para abrirlo.
+Vaya a [https://dsn.adobe.com](https://dsn.adobe.com). Después de iniciar sesión con su Adobe ID, verá esto. Haga clic en los 3 puntos **...** del proyecto del sitio web y, a continuación, haga clic en **Ejecutar** para abrirlo.
 
-![DSN](../../gettingstarted/gettingstarted/images/web8.png)
-
-Ahora puede seguir el siguiente flujo para acceder al sitio web. Haga clic en **Integraciones**.
-
-![DSN](../../gettingstarted/gettingstarted/images/web1.png)
-
-En la página **Integraciones**, debe seleccionar la propiedad de recopilación de datos que se creó en el ejercicio 0.1.
-
-![DSN](../../gettingstarted/gettingstarted/images/web2.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 A continuación, verá cómo se abre el sitio web de demostración. Seleccione la URL y cópiela en el portapapeles.
 
@@ -378,65 +213,19 @@ Seleccione el tipo de cuenta y complete el proceso de inicio de sesión.
 
 ![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-Luego verá el sitio web cargado en una ventana de incógnito del explorador. Para cada demostración, deberá utilizar una ventana nueva del explorador de incógnito para cargar la URL del sitio web de demostración.
+Luego verá el sitio web cargado en una ventana de incógnito del explorador. Para cada ejercicio, deberá utilizar una ventana nueva del explorador de incógnito para cargar la URL del sitio web de demostración.
 
 ![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 
-Cuando abra la Vista de desarrollador del explorador, puede inspeccionar las Solicitudes de red como se indica a continuación. Cuando use el filtro **interaction**, verá las solicitudes de red que envía el cliente de recopilación de datos de Adobe Experience Platform a Adobe Edge.
-
-![Configuración de recopilación de datos de Adobe Experience Platform](./images/hook1.png)
-
-Cambie la vista a la función de nube de Google y vaya a **LOGS**. Ahora debería tener una vista similar a esta, en la que se muestran varias entradas de registro. Cada vez que vea **Inicio de la ejecución de funciones**, significa que el tráfico entrante se recibió en la función de nube de Google.
+Cambie la vista a su Google Cloud Pub/Sub y vaya a **MESSAGES**. Haz clic en **EXTRAER** y después de unos segundos verás algunos mensajes en la lista. Haga clic en un mensaje para visualizar su contenido.
 
 ![Configuración de recopilación de datos de Adobe Experience Platform](./images/hook3gcp.png)
 
-Actualicemos un poco su función para que funcione con los datos entrantes y muestre la información recibida del servidor de recopilación de datos de Adobe Experience Platform. Vaya a **SOURCE** y haga clic en **EDITAR**.
+Ahora puede ver la carga útil XDM del evento en Google Pub/Sub. Ahora ha enviado correctamente los datos recopilados por la recopilación de datos de Adobe Experience Platform, en tiempo real, a un extremo Pub/Sub de Google Cloud. A partir de ahí, esos datos se pueden utilizar en cualquier aplicación de Google Cloud Platform, como BigQuery para almacenamiento y creación de informes o para casos de uso de aprendizaje automático.
 
 ![Configuración de recopilación de datos de Adobe Experience Platform](./images/hook4gcp.png)
 
-En la pantalla siguiente, haz clic en **NEXT**.
-
-![Configuración de recopilación de datos de Adobe Experience Platform](./images/gcf1.png)
-
-Actualice el código de esta manera:
-
-```javascript
-/**
- * Responds to any HTTP request.
- *
- * @param {!express:Request} req HTTP request context.
- * @param {!express:Response} res HTTP response context.
- */
-exports.helloAEP = (req, res) => {
-  console.log('>>>>> Function has started. The following information was received from Event Forwarding:');
-  console.log(req.body);
-
-  let message = req.query.message || req.body.message || 'Hello World!';
-  res.status(200).send(message);
-};
-```
-
-Entonces, tendrás esto. Haga clic en **IMPLEMENTAR**.
-
-![Configuración de recopilación de datos de Adobe Experience Platform](./images/gcf2.png)
-
-Después de un par de minutos, la función se volverá a implementar. Haga clic en el nombre de la función para abrirla.
-
-![Configuración de recopilación de datos de Adobe Experience Platform](./images/gcf3.png)
-
-En tu sitio web de demostración, ve a un producto, como por ejemplo **DEIRDRE RELAXED-FIT CAPRI**.
-
-![Configuración de recopilación de datos de Adobe Experience Platform](./images/gcf3a.png)
-
-Cambie la vista a la función de nube de Google y vaya a **LOGS**. Ahora debería tener una vista similar a esta, en la que se muestran varias entradas de registro.
-
-Para cada vista de página del sitio web de demostración, ahora debería ver una nueva ventana emergente de entrada de registro en los registros de la función de Google Cloud, que muestra la información recibida.
-
-![Configuración de recopilación de datos de Adobe Experience Platform](./images/gcf4.png)
-
-Ahora ha enviado correctamente los datos recopilados por la recopilación de datos de Adobe Experience Platform, en tiempo real, a un punto final de función de nube de Google. A partir de ahí, esos datos se pueden utilizar en cualquier aplicación de Google Cloud Platform, como BigQuery para almacenamiento y creación de informes o para casos de uso de aprendizaje automático.
-
-Paso siguiente: [2.5.5 Reenviar eventos hacia el ecosistema de AWS](./ex5.md)
+Siguiente paso: [2.5.5 Reenviar eventos a AWS Kinesis y AWS S3](./ex5.md)
 
 [Volver al módulo 2.5](./aep-data-collection-ssf.md)
 

@@ -4,7 +4,7 @@ description: Crear y configurar un webhook personalizado
 kt: 5342
 doc-type: tutorial
 exl-id: bb712980-5910-4f01-976b-b7fcf03f5407
-source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
+source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
 workflow-type: tm+mt
 source-wordcount: '1107'
 ht-degree: 1%
@@ -149,7 +149,7 @@ Si selecciona la carga útil sin procesar, vaya a [https://jsonformatter.org/jso
 
 ![Configuración de recopilación de datos de Adobe Experience Platform](./images/hook2.png)
 
-Cambie la vista al webhook personalizado [https://webhook.site/](https://webhook.site/) que utilizó en uno de los pasos anteriores. Ahora debería tener una vista similar a esta, con las solicitudes de red mostradas en el menú de la izquierda. Está viendo la carga útil **xdm** que se filtró fuera de la solicitud de red que se mostró arriba.
+Cambie la vista al webhook personalizado [https://pipedream.com/requestbin](https://pipedream.com/requestbin) que utilizó en uno de los pasos anteriores. Ahora debería tener una vista similar a esta, con las solicitudes de red mostradas en el menú de la izquierda. Está viendo la carga útil **xdm** que se filtró fuera de la solicitud de red que se mostró arriba.
 
 ![Configuración de recopilación de datos de Adobe Experience Platform](./images/hook3.png)
 
@@ -161,9 +161,9 @@ Si ahora navega por el sitio web, verá solicitudes de red adicionales disponibl
 
 ![Configuración de recopilación de datos de Adobe Experience Platform](./images/hook5.png)
 
-Ahora ha configurado el reenvío de eventos del lado del servidor de las cargas útiles del SDK web/XDM en un webhook personalizado externo. En los próximos ejercicios, configurará un enfoque similar y enviará los mismos datos a los entornos de Google y AWS.
+Ahora ha configurado el reenvío de eventos del lado del servidor de las cargas útiles del SDK web/XDM en un webhook personalizado externo. En los próximos ejercicios, configurará un enfoque similar y enviará esos mismos datos hacia Google Cloud Platform y AWS.
 
-Siguiente paso: [2.5.4 Crear y configurar una función de nube de Google](./ex4.md)
+Siguiente paso: [2.5.4 Reenviar eventos a GCP Pub/Sub](./ex4.md)
 
 [Volver al módulo 2.5](./aep-data-collection-ssf.md)
 

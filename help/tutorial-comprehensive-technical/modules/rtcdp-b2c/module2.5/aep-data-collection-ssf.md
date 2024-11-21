@@ -4,9 +4,9 @@ description: En este módulo, se utilizarán los conjuntos de datos, esquemas y 
 kt: 5342
 doc-type: tutorial
 exl-id: aa3ab1eb-6fee-4ea9-9a0d-0d8ca803d7c2
-source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
+source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '458'
 ht-degree: 0%
 
 ---
@@ -51,13 +51,13 @@ En este ejercicio, actualizará el flujo de datos existente para que los datos r
 
 En este ejercicio, creará y configurará un webhook personalizado y empezará a reenviar los datos recopilados por el SDK web a dicho webhook personalizado.
 
-[2.5.4 Crear y configurar una función de nube de Google](./ex4.md)
+[2.5.4 Reenviar eventos a GCP Pub/Sub](./ex4.md)
 
 En este ejercicio, creará y configurará una función de nube de Google y empezará a reenviar los datos recopilados por el SDK web a Google.
 
-[2.5.5 Avanzar eventos hacia el ecosistema de AWS](./ex5.md)
+[2.5.5 Reenviar eventos a AWS Kinesis y AWS S3](./ex5.md)
 
-En este ejercicio, configurará el entorno de AWS mediante AWS API Gateway, AWS Kinesis, AWS Firefox y AWS S3, después de lo cual empezará a reenviar los datos de evento recopilados por el SDK web.
+En este ejercicio, configurará el entorno de AWS mediante AWS IAM, AWS Kinesis, AWS Firefox y AWS S3, tras lo cual empezará a reenviar los datos de evento recopilados por el SDK web.
 
 [Resumen y beneficios](./summary.md)
 

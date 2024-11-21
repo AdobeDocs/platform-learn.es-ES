@@ -5,7 +5,7 @@ user-guide-description: Un tutorial práctico que cubre muchos aspectos de Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: b6c98ca773ba46205c467321a7796c29b614e75c
+source-git-commit: f40ed48cdf9f6f05d5a5cc28d152a67448ed8a16
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 4%
@@ -92,8 +92,8 @@ ht-degree: 4%
       + [2.5.1 Crear una propiedad de reenvío de eventos de recopilación de datos de Adobe Experience Platform](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex1.md)
       + [2.5.2 Actualizar el flujo de datos para que los datos estén disponibles para la propiedad del servidor de recopilación de datos de Adobe Experience Platform](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex2.md)
       + [2.5.3 Crear y configurar un webhook personalizado](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex3.md)
-      + [2.5.4 Crear y configurar una función de nube de Google](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex4.md)
-      + [2.5.5 Avanzar eventos hacia el ecosistema de AWS](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex5.md)
+      + [2.5.4 Reenviar eventos a GCP Pub/Sub](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex4.md)
+      + [2.5.5 Reenviar eventos a AWS Kinesis y AWS S3](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex5.md)
       + [Resumen y beneficios](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/summary.md)
    + 2.6 Transmitir datos de Apache Kafka a Real-Time CDP {#module26}
       + [Información general](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.6/aep-apache-kafka.md)
