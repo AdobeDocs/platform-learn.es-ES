@@ -4,9 +4,9 @@ description: Punto de partida para ingenieros de datos, analistas de datos, arqu
 doc-type: multipage-overview
 hide: false
 exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
-source-git-commit: b46c753a8d854b5a448d10d30c7a5701900a35b8
+source-git-commit: b6c98ca773ba46205c467321a7796c29b614e75c
 workflow-type: tm+mt
-source-wordcount: '1524'
+source-wordcount: '1511'
 ht-degree: 2%
 
 ---
@@ -42,22 +42,22 @@ Después de completar los ejercicios de este tutorial, podrá hacer lo siguiente
 - Transmitir datos a Adobe Experience Platform en tiempo real mediante la recopilación de datos de Adobe Experience Platform
 - Ingesta por lotes de datos en Adobe Experience Platform mediante un flujo de trabajo o mediante una aplicación de extracción, transformación y carga (ETL)
 - Visualice y utilice el perfil del cliente en tiempo real en Adobe Experience Platform
-- Creación de segmentos
+- Creación de públicos
 - Consumir varias API de Adobe Experience Platform
 - Utilice SQL para consultar los datos en Adobe Experience Platform
 - Configuración y ejecución de recorridos en tiempo real basados en déclencheur
-- Utilice CDP en tiempo real para tomar medidas al activar un segmento en varios destinos
+- Utilice CDP en tiempo real para tomar medidas al activar una audiencia en varios destinos
 - Utilice Customer Journey Analytics para informar sobre datos de clientes omnicanal de varias fuentes, como Google BigQuery
 
 ## Requisitos previos
 
 - Acceso a Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Acceso a la recopilación de datos de Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Acceso al sistema de demostración: [https://dashboard.adobedemo.com/](https://dashboard.adobedemo.com/)
+- Acceso al sistema de demostración: [https://dsn.adobe.com/](https://dsn.adobe.com/)
 
 ## Vídeos
 
-Puedes encontrar muchos videos interesantes de nuestros eventos de Tech Academy, de Bootcamp y más en nuestro [canal de YouTube de la Comunidad de Experience Makers](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
+Puedes encontrar muchos videos interesantes de nuestros seminarios web de Tech Academy, de bootcamp y más en nuestro [canal de YouTube de la Comunidad de Experience Makers](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
 
 ## Contenido
 
@@ -109,19 +109,19 @@ Puedes encontrar muchos videos interesantes de nuestros eventos de Tech Academy,
 - **Descripción:** En este módulo, aprenderá a configurar y utilizar Adobe Experience Platform Intelligent Services.
 - **Inversión de tiempo:** 60 minutos
 
-[2.3 Real-Time CDP: Crear un segmento y actuar en consecuencia](./modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)
+[2.3 Real-Time CDP: crear una audiencia y actuar en consecuencia](./modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)
 
 - **Audiencia:** arquitecto de datos, ingeniero de orquestaciones, experto en marketing
 - **Requisitos previos:** Acceso a Adobe Experience Platform, Real-time CDP, Adobe Audience Manager, Adobe Target, AWS S3
-- **Descripción:** En este módulo, configurará un segmento, lo habilitará para la segmentación de streaming y activará el segmento en varios destinos, entre ellos Google DV360, Google AdWords, Adobe Audience Manager, Adobe Target y destinos S3 como Salesforce Marketing Cloud.
+- **Descripción:** En este módulo, configurará una audiencia y la activará en varios destinos, incluidos Google DV360, Adobe Target y AWS S3.
 - **Inversión de tiempo:** 90 minutos
 
-[2.4 Real-Time CDP: Activación de segmentos en Microsoft Azure Event Hub](./modules/rtcdp-b2c/module2.4/segment-activation-microsoft-azure-eventhub.md)
+[2.4 Real-Time CDP: Audience Activation de Microsoft Azure Event Hub](./modules/rtcdp-b2c/module2.4/segment-activation-microsoft-azure-eventhub.md)
 
 - **Audiencia:** Ingeniero de datos, arquitecto de datos, analista de datos
 - **Requisitos previos:** Acceso a Adobe Experience Platform, Real-time CDP y Microsoft Azure
-- **Descripción:** En este módulo, configurará un destino de Microsoft Azure EventHub como destino en tiempo real de CDP en tiempo real de Adobe Experience Platform. También configurará e implementará una función de Azure que se activará en tiempo real cada vez que Adobe Experience Platform envíe una carga útil de segmento a su destino de Azure EventHub. La función de Azure que almacenará en déclencheur mostrará el mecanismo de las capacidades de activación de Adobe Experience Platform Real-time CDP.
-Como parte de este módulo, también comprenderá qué déclencheur necesita CDP en tiempo real para entregar una carga útil a un destino especificado. También analizaremos el estado de la calificación de un segmento y cómo se relaciona con la activación.
+- **Descripción:** En este módulo, configurará un destino de Microsoft Azure EventHub como destino en tiempo real de CDP en tiempo real de Adobe Experience Platform. También configurará e implementará una función de Azure que se activará en tiempo real cada vez que Adobe Experience Platform envíe una carga útil de audiencia a su destino de Azure EventHub. La función de Azure que almacenará en déclencheur mostrará el mecanismo de las capacidades de activación de Adobe Experience Platform Real-time CDP.
+Como parte de este módulo, también comprenderá qué déclencheur necesita CDP en tiempo real para entregar una carga útil a un destino especificado. También analizaremos el estado de una calificación de audiencia y cómo se relaciona con la activación.
 - **Inversión de tiempo:** 90 minutos
 
 [Conexiones Real-Time CDP 2.5: Reenvío de eventos](./modules/rtcdp-b2c/module2.5/aep-data-collection-ssf.md)

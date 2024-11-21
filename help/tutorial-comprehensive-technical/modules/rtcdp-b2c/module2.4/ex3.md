@@ -1,43 +1,75 @@
 ---
-title: 'Activación de segmentos en Microsoft Azure Event Hub: crear un segmento de streaming'
-description: 'Activación de segmentos en Microsoft Azure Event Hub: crear un segmento de streaming'
+title: 'Audience Activation de Microsoft Azure Event Hub: configure el destino RTCDP del centro de eventos en Adobe Experience Platform'
+description: 'Audience Activation de Microsoft Azure Event Hub: configure el destino RTCDP del centro de eventos en Adobe Experience Platform'
 kt: 5342
 doc-type: tutorial
 exl-id: 86bc3afa-16a9-4834-9119-ce02445cd524
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 1%
+source-wordcount: '541'
+ht-degree: 0%
 
 ---
 
-# 2.4.3 Crear un segmento
+# 2.4.3 Configuración del destino de Azure Event Hub en Adobe Experience Platform
 
-## 2.4.3.1 Introducción
+## Identificar los parámetros de conexión de Azure necesarios
 
-Va a crear un segmento simple:
+Para configurar un destino de centro de eventos en Adobe Experience Platform, necesita lo siguiente:
 
-- **Interés en el equipo** para el cual calificarán los perfiles de clientes cuando visiten la página de **Equipo** del sitio web de demostración de Luma.
+- Área de nombres de Event Hubs
+- Centro de eventos
+- Nombre de clave SAS de Azure
+- Clave SAS de Azure
 
-### Es bueno saber
+El espacio de nombres EventHub y EventHub se definieron en el ejercicio anterior: [Configurar Event Hub en Azure](./ex2.md)
 
-Real-time CDP almacenará en déclencheur una activación en un destino cuando cumpla los requisitos de un segmento que forme parte de la lista de activación de ese destino. En ese caso, la carga útil de calificación de segmentos que se enviará a ese destino contendrá **todos los segmentos a los que pertenece su perfil**.
+### Área de nombres de Event Hubs
 
-El objetivo de este módulo es mostrar que la calificación de segmentos de su perfil de cliente se envía a **su destino de centro de eventos** en tiempo real.
+Para buscar la información anterior en Azure Portal, vaya a [https://portal.azure.com/#home](https://portal.azure.com/#home). Asegúrese de que está utilizando la cuenta de Azure correcta.
 
-### Estado del segmento
+Haga clic en **Todos los recursos** en su portal de Azure:
 
-Una calificación de segmentos en Adobe Experience Platform siempre tiene una propiedad **status** y puede ser una de las siguientes:
+![2-01-azure-all-resources.png](./images/201azureallresources.png)
 
-- **realizado**: esto indica una nueva calificación de segmento
-- **existente**: esto indica una calificación de segmento existente
-- **saliente**: esto indica que el perfil ya no cumple los requisitos para el segmento
+Busque su **Área de nombres de centros de eventos** en la lista y haga clic en ella.
 
-## 2.4.3.2 Crear el segmento
+![2-01-azure-all-resources.png](./images/201azureallresources1.png)
 
-La creación de un segmento se explica en detalle en [Módulo 2.3](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md).
+El nombre de **Event Hubs Namespace** ya está claramente visible. Debe ser similar a `--aepUserLdap---aep-enablement`.
 
-### Crear segmento
+![2-01-azure-all-resources.png](./images/201azureallresources2.png)
+
+### Centro de eventos
+
+En la página **Área de nombres de los centros de eventos**, haga clic en **Entidades > Centros de eventos** para obtener una lista de los centros de eventos definidos en el Área de nombres de los centros de eventos. Si ha seguido las convenciones de nomenclatura utilizadas en el ejercicio anterior, encontrará un centro de eventos denominado `--aepUserLdap---aep-enablement-event-hub`. Tome nota de ello, lo necesitará en el próximo ejercicio.
+
+![2-04-event-hub-selected.png](./images/204eventhubselected.png)
+
+### Nombre de clave SAS
+
+En su página **Área de nombres de los centros de eventos**, haga clic en **Configuración > Políticas de acceso compartido**. Verá una lista de directivas de acceso compartido. La clave SAS que estamos buscando es **RootManageSharedAccessKey**, que es el nombre de clave **SAS. ¡Anótalo!
+
+![2-05-select-sas.png](./images/205selectsas.png)
+
+### Valor de clave SAS
+
+A continuación, haga clic en **RootManageSharedAccessKey** para obtener el valor de la clave SAS. Y presione el icono **Copiar al portapapeles** para copiar la **clave principal**, en este caso `pqb1jEC0KLazwZzIf2gTHGr75Z+PdkYgv+AEhObbQEY=`.
+
+![2-07-sas-key-value.png](./images/207saskeyvalue.png)
+
+### Resumen de valores de destino
+
+En este punto debería haber identificado todos los valores necesarios para definir el destino de Azure Event Hub en Adobe Experience Platform Real-time CDP.
+
+| Nombre de atributo de destino | Valor de atributo de destino | Valor de ejemplo |
+|---|---|---|
+| sasKeyName | Nombre de clave SAS | RootManageSharedAccessKey |
+| sasKey | Valor de clave SAS | pqb1jEC0KLazwZzIf2gTHGr75Z+PdkYgv+AEhObbQEY= |
+| namespace | Área de nombres de Event Hubs | `--aepUserLdap---aep-enablement` |
+| eventHubName | Centro de eventos | `--aepUserLdap---aep-enablement-event-hub` |
+
+## Crear un destino de Azure Event Hub en Adobe Experience Platform
 
 Inicie sesión en Adobe Experience Platform desde esta dirección URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
@@ -49,29 +81,31 @@ Antes de continuar, debe seleccionar una **zona protegida**. La zona protegida q
 
 ![Ingesta de datos](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-Vaya a **Segmentos**. Haga clic en el botón **+ Crear segmento**.
+Vaya a **Destinos** y luego a **Catálogo**. Seleccione **Cloud Storage**, vaya a **Azure Event Hubs** y haga clic en **Configurar**.
 
-![Ingesta de datos](./images/seg.png)
+![2-08-list-targets.png](./images/208listdestinations.png)
 
-Asigne un nombre al segmento `--aepUserLdap-- - Interest in Equipment` y añada el nombre de página al evento de experiencia:
+Seleccione **Autenticación estándar**. Rellene los detalles de conexión que ha recopilado en el ejercicio anterior. A continuación, haga clic en **Conectar con destino**.
 
-Haga clic en **Eventos** y arrastre y suelte **XDM ExperienceEvent > Web > Detalles de página web > Nombre**. Escriba **equipo** como valor:
+![2-09-destination-values.png](./images/209destinationvalues.png)
 
-![4-05-create-ee-2.png](./images/4-05-create-ee-2.png)
+Si las credenciales son correctas, verá una confirmación: **Conectado**.
 
-Arrastre y suelte **XDM ExperienceEvent > `--aepTenantId--` > demoEnvironment > brandName**. Escriba `--aepUserLdap--` como valor, establezca el parámetro de comparación en **contiene** y haga clic en **Guardar**:
+![2-09-destination-values.png](./images/209destinationvaluesa.png)
 
-![4-05-create-ee-2-brand.png](./images/4-05-create-ee-2-brand.png)
+Ahora necesita escribir el nombre y la descripción con el formato `--aepUserLdap---aep-enablement`. Escriba **eventHubName** (consulte el ejercicio anterior, tiene este aspecto: `--aepUserLdap---aep-enablement-event-hub`) y haga clic en **Siguiente**.
 
-### Definición de PQL
+![2-10-create-destination.png](./images/210createdestination.png)
 
-El PQL del segmento tiene este aspecto:
+Si lo desea, puede seleccionar una Política de control de datos. Haga clic en **Guardar y salir**.
 
-```code
-CHAIN(xEvent, timestamp, [C0: WHAT(web.webPageDetails.name.equals("equipment", false) and _experienceplatform.demoEnvironment.brandName.contains("--aepUserLdap--", false))])
-```
+![2-11-save-exit-activation.png](./images/211saveexitactivation.png)
 
-Siguiente paso: [2.4.4 Activar segmento](./ex4.md)
+El destino se habrá creado y estará disponible en Adobe Experience Platform.
+
+![2-12-destination-created.png](./images/212destinationcreated.png)
+
+Paso siguiente: [2.4.4 Crear una audiencia](./ex4.md)
 
 [Volver al módulo 2.4](./segment-activation-microsoft-azure-eventhub.md)
 

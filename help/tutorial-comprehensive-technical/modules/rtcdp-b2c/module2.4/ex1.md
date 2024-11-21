@@ -1,131 +1,132 @@
 ---
-title: 'Activación de segmentos en Microsoft Azure Event Hub: configure Event Hub en Azure'
-description: 'Activación de segmentos en Microsoft Azure Event Hub: configure Event Hub en Azure'
+title: 'Activación de segmentos en Microsoft Azure Event Hub: configuración de su entorno de Microsoft Azure'
+description: 'Activación de segmentos en Microsoft Azure Event Hub: configuración de su entorno de Microsoft Azure'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 772b4d2b-144a-4f29-a855-8fd3493a85d2
+source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 1%
+source-wordcount: '467'
+ht-degree: 0%
 
 ---
 
-# 2.4.1 Configuración del entorno de Microsoft Azure EventHub
+# 2.4.1 Configuración del entorno
 
-Azure Event Hubs es un servicio de suscripción de publicación con gran capacidad de adaptación que puede introducir millones de eventos por segundo y transmitirlos a varias aplicaciones. Esto le permite procesar y analizar las grandes cantidades de datos producidos por sus dispositivos y aplicaciones conectados.
+## Crear una suscripción de Azure
 
-## 2.4.1.1 ¿Qué es Azure Event Hubs?
+>[!NOTE]
+>
+>Si ya tiene una suscripción a Azure, puede omitir este paso. Continúe con el siguiente ejercicio en ese caso.
 
-Azure Event Hubs es una plataforma de transmisión de datos masivos y un servicio de ingesta de eventos. Puede recibir y procesar millones de eventos por segundo. Los datos enviados a un centro de eventos se pueden transformar y almacenar mediante cualquier proveedor de análisis en tiempo real o adaptador de almacenamiento/agrupamiento.
+Vaya a [https://portal.azure.com](https://portal.azure.com) e inicie sesión con su cuenta de Azure. Si no dispone de una, utilice su dirección de correo electrónico personal para crear su cuenta de Azure.
 
-Event Hubs representa la **puerta principal** de una canalización de eventos, a menudo denominada ingestor de eventos en las arquitecturas de soluciones. Un ingestor de eventos es un componente o servicio que se encuentra entre los editores de eventos (como Adobe Experience Platform RTCDP) y los consumidores de eventos para desvincular la producción de un flujo de evento del consumo de esos eventos. Event Hubs proporciona una plataforma de streaming unificada con búfer de retención de tiempo, lo que desvincula a los productores de eventos de los consumidores de eventos.
+![02-azure-portal-email.png](./images/02azureportalemail.png)
 
-## 2.4.1.2 Crear un área de nombres de Event Hubs
+Después de iniciar sesión correctamente, verá la siguiente pantalla:
 
-Vaya a [https://portal.azure.com/#home](https://portal.azure.com/#home) y seleccione **Crear un recurso**.
+![03-azure-logged-in.png](./images/03azureloggedin.png)
 
-![1-01-open-azure-portal.png](./images/1-01-open-azure-portal.png)
+Haga clic en el menú de la izquierda y seleccione **Todos los recursos**. Si aún no se ha suscrito, aparecerá la pantalla de suscripción de Azure. En ese caso, seleccione **Iniciar con una versión de prueba gratuita de Azure**.
 
-En la pantalla del recurso, escribe **Event** en la barra de búsqueda y selecciona **Event Hubs** de la lista desplegable:
+![04-azure-start-subscribe.png](./images/04azurestartsubscribe.png)
 
-![1-02-search-event-hubs.png](./images/1-02-search-event-hubs.png)
+Rellene el formulario de suscripción de Azure, proporcione su teléfono móvil y tarjeta de crédito para la activación (tendrá un nivel gratuito durante 30 días y no se le cobrará, a menos que actualice).
 
-Haga clic en **Crear**:
+Cuando finalice el proceso de suscripción, ya está listo para comenzar:
 
-![1-03-event-hub-create.png](./images/1-03-event-hub-create.png)
+![06-azure-subscription-ok.png](./images/06azuresubscriptionok.png)
 
-Si es la primera vez que crea un recurso en Azure, deberá crear un nuevo **grupo de recursos**. Si ya tiene un grupo de recursos, puede seleccionarlo (o crear uno nuevo).
+## Instalar Visual Code Studio
 
-Seleccione **Crear nuevo**, asigne un nombre al grupo `--aepUserLdap---aep-enablement`.
+Utilizará Microsoft Visual Code Studio para administrar su proyecto de Azure. Puede descargarlo a través de [este enlace](https://code.visualstudio.com/download). Siga las instrucciones de instalación de su sistema operativo específico en el mismo sitio web.
 
-![1-04-create-resource-group.png](./images/1-04-create-resource-group.png)
+## Instalar extensiones de código visual
 
-Complete la prueba de los campos como se indica:
+Instale las funciones de Azure para el código de Visual Studio desde [https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions). Haga clic en el botón Instalar:
 
-- Área de nombres: defina su área de nombres, debe ser única, use el siguiente patrón `--aepUserLdap---aep-enablement`
-- Ubicación: **Europa occidental** se refiere al centro de datos de Azure en Ámsterdam
-- Nivel de precios: **Básico**
-- Unidades de rendimiento: **1**
+![07-azure-code-extension-install.png](./images/07azurecodeextensioninstall.png)
 
-![1-05-create-namespace.png](./images/1-05-create-namespace.png)
+Instale la cuenta de Azure e inicie sesión para el código de Visual Studio desde [https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account). Haga clic en el botón Instalar:
 
-Haga clic en **Revisar + crear**.
+![08-azure-account-extension-install.png](./images/08azureaccountextensioninstall.png)
 
-![1-06-namespace-review-create.png](./images/1-06-namespace-review-create.png)
+## Instalación de node.js
 
-Haga clic en **Crear**.
+>[!NOTE]
+>
+>Si ya tiene node.js instalado, puede omitir este paso. Continúe con el siguiente ejercicio en ese caso.
 
-![1-07-namespace-create.png](./images/1-07-namespace-create.png)
+### macOS
 
-La implementación del grupo de recursos puede tardar entre 1 y 2 minutos. Si se realiza correctamente, verá la siguiente pantalla:
+Asegúrate de tener [Homebrew](https://brew.sh/) instalado primero. Siga las instrucciones [aquí](https://brew.sh/).
 
-![1-08-namespace-deploy.png](./images/1-08-namespace-deploy.png)
+![Nodo](./images/brew.png)
 
-## 2.4.1.3 Configurar el centro de eventos en Azure
+Una vez instalado Homebrew, ejecute este comando:
 
-Vaya a [https://portal.azure.com/#home](https://portal.azure.com/#home) y seleccione **Todos los recursos**.
+```javascript
+brew install node
+```
 
-![1-09-all-resources.png](./images/1-09-all-resources.png)
+### Windows
 
-En la lista de recursos, seleccione su área de nombres `--aepUserLdap---aep-enablement`:
+Descargue [Windows Installer](https://nodejs.org/en/#home-downloadhead) directamente desde el sitio web [nodejs.org](https://nodejs.org/en/).
 
-![1-10-list-resources.png](./images/1-10-list-resources.png)
+## Verificar la versión de node.js
 
-En la pantalla de detalles de `--aepUserLdap---aep-enablement`, seleccione **Event Hubs**:
+Para este módulo, debe tener instalado node.js versión 18. Cualquier otra versión de node.js puede causar problemas con este ejercicio.
 
-![1-11-eventhub-namespace.png](./images/1-11-eventhub-namespace.png)
+Antes de continuar, compruebe su versión de node.js ahora.
 
-Haga clic en **+ Centro de eventos**.
+Ejecute este comando para comprobar la versión de node.js:
 
-![1-12-add-event-hub.png](./images/1-12-add-event-hub.png)
+```javascript
+node -v
+```
 
-Use `--aepUserLdap---aep-enablement-event-hub` como nombre y haga clic en **Crear**.
+Si su versión es inferior o superior a 18, debe actualizar o degradar.
 
-![1-13-create-event-hub.png](./images/1-13-create-event-hub.png)
+### Actualización/degradación de la versión de node.js en macOS
 
-Haga clic en **Event Hubs** en el área de nombres del centro de eventos. Ahora debería ver su **Centro de eventos** en la lista. En ese caso, puede pasar al siguiente ejercicio.
+Asegúrese de tener instalado el paquete **n**.
 
-![1-14-event-hub-list.png](./images/1-14-event-hub-list.png)
+Para instalar el paquete **n**, ejecute este comando:
 
-## 2.4.1.4 Configurar su cuenta de almacenamiento de Azure
+```javascript
+sudo npm install -g n
+```
 
-Para depurar la función de Azure Event Hub en ejercicios posteriores, deberá proporcionar una cuenta de almacenamiento de Azure como parte de la configuración del proyecto de código de Visual Studio. Ahora creará esa cuenta de almacenamiento de Azure.
+Si su versión es inferior o superior a la versión 12, ejecute este comando para actualizar o degradar:
 
-Vaya a [https://portal.azure.com/#home](https://portal.azure.com/#home) y seleccione **Crear un recurso**.
+```javascript
+sudo n 18
+```
 
-![1-15-event-hub-storage.png](./images/1-15-event-hub-storage.png)
+### Actualización/degradación de la versión de node.js en Windows
 
-Escriba **storage** en la búsqueda y seleccione **Storage Account** de la lista.
+Desinstale node.js de Windows > Panel de control de Campaign > Agregar o quitar programas.
 
-![1-16-event-hub-search-storage.png](./images/1-16-event-hub-search-storage.png)
+Instalando la versión requerida desde el sitio web [nodejs.org](https://nodejs.org/en/).
 
-Seleccione **Crear**.
+## Instale el paquete NPM: solicitud
 
-![1-17-event-hub-create-storage.png](./images/1-17-event-hub-create-storage.png)
+Debe instalar el paquete **request** como parte de la instalación de node.js.
 
-Especifique su **grupo de recursos** (creado al principio de este ejercicio), use `--aepUserLdap--aepstorage` como nombre de su cuenta de almacenamiento y seleccione **Almacenamiento redundante localmente (LRS)**; a continuación, haga clic en **Revisar + crear**.
+Para instalar el paquete **request**, ejecute este comando:
 
-![1-18-event-hub-create-review-storage.png](./images/1-18-event-hub-create-review-storage.png)
+```javascript
+npm install request
+```
 
-Haga clic en **Crear**.
+## Instale las herramientas principales de funciones de Azure:
 
-![1-19-event-hub-submit-storage.png](./images/1-19-event-hub-submit-storage.png)
+```
+brew tap azure/functions
+brew install azure-functions-core-tools@4
+```
 
-La creación de su cuenta de almacenamiento tardará un par de segundos:
-
-![1-20-event-hub-deploy-storage.png](./images/1-20-event-hub-deploy-storage.png)
-
-Cuando finalice, la pantalla mostrará el botón **Ir al recurso**.
-
-Haga clic en **Microsoft Azure**.
-
-![1-21-event-hub-deploy-ready-storage.png](./images/1-21-event-hub-deploy-ready-storage.png)
-
-Su cuenta de almacenamiento ahora está visible en **Recursos recientes**.
-
-![1-22-event-hub-deploy-resources-list.png](./images/1-22-event-hub-deploy-resources-list.png)
-
-Paso siguiente: [2.4.2 Configuración del destino de Azure Event Hub en Adobe Experience Platform](./ex2.md)
+Siguiente paso: [2.4.2 Configuración del entorno de Microsoft Azure EventHub](./ex2.md)
 
 [Volver al módulo 2.4](./segment-activation-microsoft-azure-eventhub.md)
 
