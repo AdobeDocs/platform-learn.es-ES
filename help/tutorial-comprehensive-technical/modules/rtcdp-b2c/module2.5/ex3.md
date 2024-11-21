@@ -3,26 +3,29 @@ title: 'Recopilación de datos de Adobe Experience Platform y reenvío del lado 
 description: Crear y configurar un webhook personalizado
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: bb712980-5910-4f01-976b-b7fcf03f5407
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
-source-wordcount: '1093'
+source-wordcount: '1107'
 ht-degree: 1%
 
 ---
 
 # 2.5.3 Crear y configurar un webhook personalizado
 
-## 2.5.3.1 Crear su webhook personalizado
+## Cree su webhook personalizado
 
-Vaya a [https://webhook.site/](https://webhook.site/). Verá algo como esto:
+Vaya a [https://pipedream.com/requestbin](https://pipedream.com/requestbin). Ya usó esta aplicación en [SDK de destinos de Ejercicio 2.3.7](./../../../modules/rtcdp-b2c/module2.3/ex7.md)
+
+Si aún no ha utilizado ese servicio, cree una cuenta de y, a continuación, un espacio de trabajo. Una vez creado el espacio de trabajo, verá algo similar a esto.
+
+Haga clic en **copiar** para copiar la dirección URL. Deberá especificar esta dirección URL en el siguiente ejercicio. La dirección URL de este ejemplo es `https://eodts05snjmjz67.m.pipedream.net`.
 
 ![demostración](./images/webhook1.png)
 
-Verá su dirección URL única, que tiene el siguiente aspecto: `https://webhook.site/585126a1-41fc-4721-864b-d4aa8c268a1d`.
-
 Este sitio web ha creado este webhook para usted, y usted podrá configurarlo en su **[!DNL Event Forwarding property]** para comenzar a probar el reenvío de eventos.
 
-## 2.5.3.2 Actualizar la propiedad de reenvío de eventos: Crear un elemento de datos
+## Actualizar la propiedad de reenvío de eventos: Crear un elemento de datos
 
 Vaya a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) y luego a **Reenvío de eventos**. Busque la propiedad Reenvío de eventos y haga clic en ella para abrirla.
 
@@ -41,11 +44,13 @@ Realice la siguiente selección:
 - Como **Nombre**, introduzca **Evento XDM**.
 - Como la **extensión**, seleccione **Principal**.
 - Como **Tipo de elemento de datos**, seleccione **Ruta**.
-- Como **ruta**, escriba **arc.event.xdm**. Al introducir esta ruta, filtrará la sección **XDM** de la carga útil de evento que el sitio web o la aplicación móvil envían a Adobe Edge.
+- Como **Ruta**, seleccione **Leer datos de XDM (arc.event.xdm)**. Al seleccionar esta ruta, filtrará la sección **XDM** de la carga útil de evento que el sitio web o la aplicación móvil envían a Adobe Edge.
+
+![Recopilación de datos Adobe Experience Platform SSF](./images/de3.png)
 
 Ahora vas a tener esto. Haga clic en **Guardar**.
 
-![Recopilación de datos Adobe Experience Platform SSF](./images/de3.png)
+![Recopilación de datos Adobe Experience Platform SSF](./images/de3a.png)
 
 >[!NOTE]
 >
@@ -53,7 +58,7 @@ Ahora vas a tener esto. Haga clic en **Guardar**.
 >
 >En la ruta anterior, se hace referencia a **event**. **event** significa un evento único y el servidor de recopilación de datos de Adobe Experience Platform siempre evaluará cada evento de forma individual. A veces, es posible que vea una referencia a **events** en la carga útil enviada por el lado del cliente del SDK web, pero en el servidor de recopilación de datos de Adobe Experience Platform, cada evento se evalúa individualmente.
 
-## 2.5.3.3 Actualizar la propiedad de Adobe Experience Platform Data Collection Server: Crear una regla
+## Actualizar la propiedad del servidor de recopilación de datos de Adobe Experience Platform: Crear una regla
 
 En el menú de la izquierda, ve a **Reglas**. Haga clic en **Crear nueva regla**.
 
@@ -75,7 +80,7 @@ Esto debería proporcionarle este **Nombre**: **Conector de nube de Adobe - Real
 A continuación, configure lo siguiente:
 
 - Cambiar el método de solicitud de GET a **POST**
-- Escriba la dirección URL del webhook personalizado que creó en uno de los pasos anteriores del sitio web [https://webhook.site/](https://webhook.site/), que tiene el siguiente aspecto: `https://webhook.site/585126a1-41fc-4721-864b-d4aa8c268a1d`
+- Escriba la dirección URL del webhook personalizado que creó en uno de los pasos anteriores, que tiene este aspecto: `https://eodts05snjmjz67.m.pipedream.net`
 
 Ahora debería tener esto. A continuación, vaya a **Cuerpo**.
 
@@ -110,19 +115,11 @@ Después de un par de minutos, verá que la implementación está completa y lis
 
 ![Recopilación de datos Adobe Experience Platform SSF](./images/rl14.png)
 
-## 2.5.3.4 Prueba de la configuración
+## Pruebe la configuración
 
-Vaya a [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Después de iniciar sesión con su Adobe ID, verá esto. Haga clic en el proyecto del sitio web para abrirlo.
+Vaya a [https://dsn.adobe.com](https://dsn.adobe.com). Después de iniciar sesión con su Adobe ID, verá esto. Haga clic en los 3 puntos **...** del proyecto del sitio web y, a continuación, haga clic en **Ejecutar** para abrirlo.
 
-![DSN](../../gettingstarted/gettingstarted/images/web8.png)
-
-Ahora puede seguir el siguiente flujo para acceder al sitio web. Haga clic en **Integraciones**.
-
-![DSN](../../gettingstarted/gettingstarted/images/web1.png)
-
-En la página **Integraciones**, debe seleccionar la propiedad de recopilación de datos que se creó en el ejercicio 0.1.
-
-![DSN](../../gettingstarted/gettingstarted/images/web2.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 A continuación, verá cómo se abre el sitio web de demostración. Seleccione la URL y cópiela en el portapapeles.
 
@@ -140,7 +137,7 @@ Seleccione el tipo de cuenta y complete el proceso de inicio de sesión.
 
 ![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-Luego verá el sitio web cargado en una ventana de incógnito del explorador. Para cada demostración, deberá utilizar una ventana nueva del explorador de incógnito para cargar la URL del sitio web de demostración.
+Luego verá el sitio web cargado en una ventana de incógnito del explorador. Para cada ejercicio, deberá utilizar una ventana nueva del explorador de incógnito para cargar la URL del sitio web de demostración.
 
 ![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 
@@ -148,15 +145,15 @@ Cuando abra la Vista de desarrollador del explorador, puede inspeccionar las Sol
 
 ![Configuración de recopilación de datos de Adobe Experience Platform](./images/hook1.png)
 
-Si selecciona la carga útil sin procesar, vaya a [https://jsonformatter.org/json-pretty-print](https://jsonformatter.org/json-pretty-print) y pegue la carga útil. Haga clic en **Hacer bonito**. Verá la carga útil JSON, el objeto **events** y el objeto **xdm**. En uno de los pasos anteriores, al definir el elemento de datos, utilizó la referencia **arc.event.xdm**, que le permitirá analizar el objeto **xdm** de esta carga.
+Si selecciona la carga útil sin procesar, vaya a [https://jsonformatter.org/json-pretty-print](https://jsonformatter.org/json-pretty-print) y pegue la carga útil. Haga clic en **Minificar / Beautify**. Verá la carga útil JSON, el objeto **events** y el objeto **xdm**. En uno de los pasos anteriores, al definir el elemento de datos, utilizó la referencia **arc.event.xdm**, que le permitirá analizar el objeto **xdm** de esta carga.
 
 ![Configuración de recopilación de datos de Adobe Experience Platform](./images/hook2.png)
 
-Cambie la vista al sitio web [https://webhook.site/](https://webhook.site/) que utilizó en uno de los pasos anteriores. Ahora debería tener una vista similar a esta, con las solicitudes de red mostradas en el menú de la izquierda. Está viendo la carga útil **xdm** que se filtró fuera de la solicitud de red que se mostró arriba.
+Cambie la vista al webhook personalizado [https://webhook.site/](https://webhook.site/) que utilizó en uno de los pasos anteriores. Ahora debería tener una vista similar a esta, con las solicitudes de red mostradas en el menú de la izquierda. Está viendo la carga útil **xdm** que se filtró fuera de la solicitud de red que se mostró arriba.
 
 ![Configuración de recopilación de datos de Adobe Experience Platform](./images/hook3.png)
 
-Desplácese un poco hacia abajo en la carga útil para encontrar el nombre de la página, que en este caso es **vangeluw-OCUC** (que es el nombre del proyecto de su sitio web de demostración).
+Desplácese un poco hacia abajo en la carga para encontrar el nombre de página, que en este caso es **home**.
 
 ![Configuración de recopilación de datos de Adobe Experience Platform](./images/hook4.png)
 
@@ -164,7 +161,7 @@ Si ahora navega por el sitio web, verá solicitudes de red adicionales disponibl
 
 ![Configuración de recopilación de datos de Adobe Experience Platform](./images/hook5.png)
 
-Ya ha configurado el reenvío del lado del servidor de las cargas útiles del SDK web/XDM a un webhook personalizado externo. En los próximos ejercicios, configurará un enfoque similar y enviará los mismos datos a los entornos de Google y AWS.
+Ahora ha configurado el reenvío de eventos del lado del servidor de las cargas útiles del SDK web/XDM en un webhook personalizado externo. En los próximos ejercicios, configurará un enfoque similar y enviará los mismos datos a los entornos de Google y AWS.
 
 Siguiente paso: [2.5.4 Crear y configurar una función de nube de Google](./ex4.md)
 

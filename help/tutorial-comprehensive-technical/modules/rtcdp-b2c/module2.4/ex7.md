@@ -3,7 +3,8 @@ title: 'Audience Activation a Microsoft Azure Event Hub: acción'
 description: 'Audience Activation a Microsoft Azure Event Hub: acción'
 kt: 5342
 doc-type: tutorial
-source-git-commit: cefebfe0336952f0e3099fd2dd9f4395d453f713
+exl-id: f5b224bf-60b9-46e0-abdb-9d96a7e8c59f
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%
@@ -76,11 +77,36 @@ Para verificarlo, abra el panel Visor de perfiles. Ahora debería ser miembro de
 
 Cambie a Visual Studio Code y observe su ficha **TERMINAL**; debería ver una lista de audiencias para su **ECID** específico. Esta carga de activación se envía a su centro de eventos en cuanto cumple los requisitos para la audiencia `--aepUserLdap-- - Interest in Plans`.
 
+![6-06-vsc-activation-realizado.png](./images/cs3.png)
+
 Si examina más de cerca la carga de la audiencia, verá que `--aepUserLdap-- - Interest in Plans` está en estado **realizado**.
 
-Un estado de audiencia de **realizado** significa que tu perfil forma parte de la audiencia, mientras que el estado de **saliente** significa que nuestro perfil se ha eliminado de la audiencia.
+```json
+{
+  "identityMap": {
+    "ecid": [
+      {
+        "id": "36281682065771928820739672071812090802"
+      }
+    ]
+  },
+  "segmentMembership": {
+    "ups": {
+      "94db5aed-b90e-478d-9637-9b0fad5bba11": {
+        "createdAt": 1732129904025,
+        "lastQualificationTime": "2024-11-21T07:33:52Z",
+        "mappingCreatedAt": 1732130611000,
+        "mappingUpdatedAt": 1732130611000,
+        "name": "vangeluw - Interest in Plans",
+        "status": "realized",
+        "updatedAt": 1732129904025
+      }
+    }
+  }
+}
+```
 
-![6-06-vsc-activation-realizado.png](./images/cs3.png)
+Un estado de audiencia de **realizado** significa que tu perfil forma parte de la audiencia, mientras que el estado de **saliente** significa que nuestro perfil se ha eliminado de la audiencia.
 
 Paso siguiente: [Resumen y beneficios](./summary.md)
 

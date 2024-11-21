@@ -4,16 +4,14 @@ description: En este módulo, se utilizarán los conjuntos de datos, esquemas y 
 kt: 5342
 doc-type: tutorial
 exl-id: aa3ab1eb-6fee-4ea9-9a0d-0d8ca803d7c2
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
 
 # Conexiones Real-Time CDP 2.5: Reenvío de eventos
-
-**Autor: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/), [Clement Delalande](https://www.linkedin.com/in/clement-delalande/)**
 
 En este módulo, se utilizarán los conjuntos de datos, esquemas y la propiedad del cliente de recopilación de datos de Adobe Experience Platform configurados previamente para recopilar datos y, a continuación, reenviar esos datos del lado del servidor a un extremo de su elección.
 
@@ -23,10 +21,6 @@ En este módulo, deberá hacer lo siguiente:
 - Instalación y uso de la extensión de conector de Adobe Cloud en la recopilación de datos de Adobe Experience Platform
 - Crear un extremo de función de Google y transmitir datos a él
 - Crear un extremo de AWS y transmitir datos a él
-
-Vea este vídeo para comprender el valor, el recorrido del cliente y el proceso de configuración:
-
->[!VIDEO](https://video.tv.adobe.com/v/331987?quality=12&learn=on)
 
 ## Objetivos de aprendizaje
 

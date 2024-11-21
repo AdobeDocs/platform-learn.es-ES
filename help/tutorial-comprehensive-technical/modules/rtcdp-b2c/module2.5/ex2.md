@@ -3,9 +3,10 @@ title: 'Recopilación de datos de Adobe Experience Platform y reenvío del lado 
 description: Actualice la secuencia de datos para que los datos estén disponibles para la propiedad del servidor de recopilación de datos de Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 7b5b598e-e54c-4f0f-b260-d643600ee6ca
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '232'
 ht-degree: 1%
 
 ---
@@ -14,9 +15,9 @@ ht-degree: 1%
 
 ## 2.5.2.1 Actualizar la secuencia de datos
 
-En el [Ejercicio 0.2](./../../gettingstarted/gettingstarted/ex2.md), creó su propia **[!UICONTROL secuencia de datos]**. Luego usó el nombre `--aepUserLdap-- - Demo System Datastream`.
+En [Introducción](./../../gettingstarted/gettingstarted/ex2.md), creó su propia **[!UICONTROL secuencia de datos]**. Luego usó el nombre `--aepUserLdap-- - Demo System Datastream`.
 
-En este ejercicio, debe configurar ese **[!UICONTROL flujo de datos]** para que funcione con su **[!DNL Data Collection Server property]**.
+En este ejercicio, debe configurar ese **[!UICONTROL conjunto de datos]** para que funcione con su **propiedad del servidor de recopilación de datos**.
 
 Para ello, vaya a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). Entonces verá esto... En el menú de la izquierda, haga clic en **[!UICONTROL Datastreams]**.
 
