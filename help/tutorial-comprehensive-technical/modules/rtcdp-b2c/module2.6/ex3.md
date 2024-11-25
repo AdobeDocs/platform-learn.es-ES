@@ -4,10 +4,10 @@ description: Configuración del extremo de la API HTTP en Adobe Experience Platf
 kt: 5342
 doc-type: tutorial
 exl-id: a29dd01d-4415-45d6-ad52-7f14aef60565
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: 6485bfa1c75c43bb569f77c478a273ace24a61d4
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 8%
+source-wordcount: '296'
+ht-degree: 6%
 
 ---
 
@@ -25,7 +25,7 @@ Antes de continuar, debe seleccionar una **zona protegida**. La zona protegida q
 
 ![Ingesta de datos](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-En el menú de la izquierda, ve a **Sources** y desplázate hacia abajo en el **Catálogo de orígenes** hasta que veas **HTTP API**. Haga clic en **Agregar datos**.
+En el menú de la izquierda, ve a **Sources** y desplázate hacia abajo en el **Catálogo de orígenes** hasta que veas **HTTP API**. Haga clic en **Configuración**.
 
 ![Ingesta de datos](./images/kaep1.png)
 
@@ -39,15 +39,9 @@ Verá esto, haga clic en **Siguiente**.
 
 Seleccione **Conjunto de datos existente** y abra el menú desplegable. Busque y seleccione el conjunto de datos **Sistema de demostración - Conjunto de datos de evento para el centro de llamadas (Global v1.1)**.
 
+Haga clic en **Next**.
+
 ![Ingesta de datos](./images/kaep4.png)
-
-Haga clic en **Next**.
-
-![Ingesta de datos](./images/kaep6.png)
-
-Haga clic en **Next**.
-
-![Ingesta de datos](./images/kaep7.png)
 
 Haga clic en **Finalizar**.
 
@@ -55,11 +49,11 @@ Haga clic en **Finalizar**.
 
 A continuación, verá una descripción general del conector Source de la API HTTP que acaba de crear.
 
-![Ingesta de datos](./images/kaep9.png)
-
 Deberá copiar la dirección URL de **extremo de transmisión**, que se parece a la que se muestra a continuación, ya que la necesitará en el siguiente ejercicio.
 
-`https://dcs.adobedc.net/collection/d282bbfc8a540321341576275a8d052e9dc4ea80625dd9a5fe5b02397cfd80dc`
+`https://dcs.adobedc.net/collection/63751d0f299eeb7aa48a2f22acb284ed64de575f8640986d8e5a935741be9067`
+
+![Ingesta de datos](./images/kaep9.png)
 
 Ha terminado este ejercicio.
 

@@ -4,16 +4,16 @@ description: Actualice la secuencia de datos para que los datos estén disponibl
 kt: 5342
 doc-type: tutorial
 exl-id: 7b5b598e-e54c-4f0f-b260-d643600ee6ca
-source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
+source-git-commit: 6485bfa1c75c43bb569f77c478a273ace24a61d4
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '231'
 ht-degree: 1%
 
 ---
 
 # 2.5.2 Actualizar el flujo de datos para que los datos estén disponibles para la propiedad del servidor de recopilación de datos de Adobe Experience Platform
 
-## 2.5.2.1 Actualizar la secuencia de datos
+## Actualizar la secuencia de datos
 
 En [Introducción](./../../gettingstarted/gettingstarted/ex2.md), creó su propia **[!UICONTROL secuencia de datos]**. Luego usó el nombre `--aepUserLdap-- - Demo System Datastream`.
 
