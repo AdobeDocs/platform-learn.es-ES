@@ -4,16 +4,14 @@ description: Servicio de consultas
 kt: 5342
 doc-type: tutorial
 exl-id: 6eb65de3-d0e8-49d4-a702-5c9d6a1952b7
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '547'
 ht-degree: 1%
 
 ---
 
 # 5.1 Servicio de consultas
-
-**Autores: [Marc Meewis](https://www.linkedin.com/in/marcmeewis/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 En este módulo, obtendrá una vista previa práctica del servicio de consultas de Adobe Experience Platform. Query Service permite realizar consultas omnicanal en todos los datos de las aplicaciones de Adobe Experience Cloud, combinando y analizando datos en Adobe Campaign, Analytics, Audience Manager, Target, Advertising Cloud y otros datos de clientes cargados o insertados en Adobe Experience Platform.
 
@@ -45,35 +43,35 @@ Utilizaremos datos que se hayan insertado en la plataforma mediante datos de int
 
 ## Ejercicios
 
-[5.1.0 Requisitos previos](./ex0.md)
+[5.1.1 Requisitos previos](./ex1.md)
 
 Deberá instalar PSQL para ejecutar las consultas en este ejercicio de habilitación. Según el sistema operativo, tendrá que instalar Microsoft Power BI o Tableau. Los usuarios de Windows pueden elegir entre Power BI o Tableau. Los usuarios de Mac deben instalar Tableau.
 
-[5.1.1 Introducción](./ex1.md)
+[5.1.2 Introducción](./ex2.md)
 
 En este ejercicio explorará la interfaz de usuario del servicio de consultas de Adobe Experience Platform, obtendrá información sobre los conjuntos de datos, buscará sus consultas y, finalmente, configurará una conexión desde PSQL.
 
-[5.1.2 Uso del servicio de consultas](./ex2.md)
+[5.1.3 Uso del servicio de consultas](./ex3.md)
 
 En este ejercicio aprenderá sobre la sintaxis básica del servicio de consultas y podrá identificar los atributos del esquema XDM en su consulta.
 
-[5.1.3 Consultas, consultas, consultas... y análisis de pérdida](./ex3.md)
+[5.1.4 Consultas, consultas, consultas, análisis de pérdida](./ex4.md)
 
 En este ejercicio va a realizar consultas y aprenderá sobre las funciones definidas por Adobe mientras realiza análisis de pérdida. Al final de esto, escribirá una consulta para preparar un conjunto de datos para utilizarlo en Microsoft Power BI.
 
-[5.1.4 Generar un conjunto de datos a partir de una consulta](./ex4.md)
+[5.1.5 Generar un conjunto de datos a partir de una consulta](./ex5.md)
 
 En este ejercicio, se genera un conjunto de datos a partir de una consulta ejecutada en el ejercicio anterior y se utiliza este conjunto de datos en los ejercicios siguientes.
 
-[5.1.5 Servicio de consultas y Power BI](./ex5.md)
+[5.1.6 Servicio de consultas y Power BI](./ex6.md)
 
 En este ejercicio, conectará Power BI a Adobe Experience Platform y Query Service para realizar el análisis de interacción del centro de llamadas.
 
-[5.1.6 Servicio de consultas y Tableau](./ex6.md)
+[5.1.7 Servicio de consultas y Tableau](./ex7.md)
 
 En este ejercicio, conectará Tableau a Adobe Experience Platform y Query Service para realizar el análisis de interacción del centro de llamadas.
 
-[5.1.7 API del servicio de consultas](./ex7.md)
+[5.1.8 API del servicio de consultas](./ex8.md)
 
 En este ejercicio utilizará la API del servicio de consulta para administrar las plantillas de consulta y las programaciones de consultas.
 

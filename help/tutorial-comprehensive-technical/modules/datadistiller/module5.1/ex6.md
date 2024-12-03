@@ -1,62 +1,77 @@
 ---
-title: 'Servicio de consulta: explorar el conjunto de datos con Tableau'
-description: 'Servicio de consulta: explorar el conjunto de datos con Tableau'
+title: 'Servicio de consulta: explorar el conjunto de datos con Power BI'
+description: 'Servicio de consulta: explorar el conjunto de datos con Power BI'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: c27abd0e-e563-4702-a243-1aec84ce6116
+source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
 
-# 5.1.6 Servicio de consultas y Tableau
+# 5.1.6 Servicio de consultas y Power BI
 
-Abra Tableau.
+Abra Microsoft Power BI Desktop.
 
-![start-tableau.png](./images/start-tableau.png)
+![start-power-bi.png](./images/start-power-bi.png)
 
-En **Conectarse a un servidor**, seleccione **PostgreSQL**:
+Haga clic en **Obtener datos**.
 
-![tableau-connect-postgress.png](./images/tableau-connect-postgress.png)
+![power-bi-get-data.png](./images/power-bi-get-data.png)
+
+Busca **postgres** (1), selecciona **Postgres** (2) de la lista y **Conecta** (3).
+
+![power-bi-connect-progress.png](./images/power-bi-connect-progress.png)
 
 Vaya a Adobe Experience Platform, **Consultas** y **Credenciales**.
 
 ![query-service-credentials.png](./images/query-service-credentials.png)
 
-En la página **Credentials** de Adobe Experience Platform, copie el **host** y péguelo en el campo **Server**, copie la **Base de datos** y péguela en el campo **Database** en Tableau, copie el **Puerto** y péguelo en el campo **Puerto** en Tableau, haga lo mismo para **Username** y **Contraseña**. A continuación, haga clic en **Iniciar sesión**.
+En la página **Credenciales** de Adobe Experience Platform, copie el **host** y péguelo en el campo **Servidor**, copie la **Base de datos** y péguela en el campo **Base de datos** de PowerBI. A continuación, haga clic en Aceptar (2).
 
-Iniciar sesión:
+>[!IMPORTANT]
+>
+>Asegúrese de incluir el puerto **:80** al final del valor del servidor porque el servicio de consultas no utiliza actualmente el puerto PostgreSQL predeterminado de 5432.
 
-![tableau-connection-dialog.png](./images/tableau-connection-dialog.png)
+![power-bi-connect-server.png](./images/power-bi-connect-server.png)
 
-Haga clic en buscar (1) e introduzca su **ldap** en el campo de búsqueda, identifique la tabla del conjunto de resultados y arrástrela (3) a la ubicación **Arrastrar tablas aquí**. Cuando termine, haga clic en **Hoja 1** (3).
+En el siguiente cuadro de diálogo, rellene el Nombre de usuario y la Contraseña con su Nombre de usuario y Contraseña que se encuentran en las **Credenciales** de Consultas en Adobe Experience Platform.
 
-![tableau-drag-table.png](./images/tableau-drag-table.png)
+![query-service-credentials.png](./images/query-service-credentials.png)
 
-Para visualizar nuestros datos en el mapa necesitamos convertir la longitud y la latitud en dimensiones. En **Medidas**, seleccione **Latitud** (1), abra la lista desplegable del campo y seleccione **Convertir en Dimension** (2). Haga lo mismo para la medida **Longitude**.
+En el cuadro de diálogo Navegador, coloque su **LDAP** en el campo de búsqueda (1) para localizar los conjuntos de datos de CTAS y marque la casilla junto a cada uno (2). Luego haga clic en Load (3).
 
-![tableau-convert-dimension.png](./images/tableau-convert-dimension.png)
+![power-bi-load-churn-data.png](./images/power-bi-load-churn-data.png)
 
-Arrastre la medida **Longitude** a **Columns** y la medida **Latitude** a **Rows**. Automáticamente, el mapa de **Bélgica** aparecerá con pequeños puntos que representan las ciudades dentro del conjunto de datos.
+Asegúrese de que la ficha **Informe** (1) esté seleccionada.
 
-![tableau-drag-lon-lat.png](./images/tableau-drag-lon-lat.png)
+![power-bi-report-tab.png](./images/power-bi-report-tab.png)
 
-Seleccione **Nombres de medida** (1), abra la lista desplegable y seleccione **Agregar a hoja** (2):
+Seleccione el mapa (1) y después de añadirlo al lienzo de informes, amplíe el mapa (2).
 
-![tableau-select-measure-names.png](./images/tableau-select-measure-names.png)
+![power-bi-select-map.png](./images/power-bi-select-map.png)
 
-Ahora tendrá un mapa, con puntos de varios tamaños. El tamaño indica la cantidad de interacciones del centro de llamadas para esa ciudad específica. Para variar el tamaño de los puntos, vaya al panel derecho y abra **Valores de medida** (usando el icono desplegable). En la lista desplegable, seleccione **Editar tamaños**. Juega con diferentes tamaños.
+A continuación, debemos definir las medidas y las dimensiones; para ello, arrastre los campos de la sección **fields** a los marcadores de posición correspondientes (ubicados en **visualizaciones**), como se indica a continuación:
 
-![tableau-vary-size-dots.png](./images/tableau-vary-size-dots.png)
+![power-bi-drag-lat-lon.png](./images/power-bi-drag-lat-lon.png)
 
-Para mostrar más los datos por **Tema de llamada**, arrastre (1) la dimensión **Tema de llamada** a **Páginas**. Desplácese por los diferentes **temas de llamada** usando **Tema de llamada** (2) a la derecha de la pantalla:
+Como medida, usaremos un recuento de **customerId**. Arrastre el campo **crmid** de la sección **fields** al marcador de posición **Size**:
 
-![tableau-call-topic-navigation.png](./images/tableau-call-topic-navigation.png)
+![power-bi-drag-crmid.png](./images/power-bi-drag-crmid.png)
+
+Por último, para realizar algún análisis de **callTopic**, vamos a arrastrar el campo **callTopic** al marcador de posición **Filtros de nivel de página** (es posible que tenga que desplazarse en la sección **visualizaciones**);
+
+![power-bi-drag-calltopic.png](./images/power-bi-drag-calltopic.png)
+
+Seleccione o anule la selección de **callTopics** para investigar:
+
+![power-bi-report-select-calltopic.png](./images/power-bi-report-select-calltopic.png)
 
 Ya ha terminado este ejercicio.
 
-Siguiente paso: [5.1.7 API de servicio de consultas](./ex7.md)
+Siguiente paso: [5.1.8 API de servicio de consultas](./ex8.md)
 
 [Volver al módulo 5.1](./query-service.md)
 

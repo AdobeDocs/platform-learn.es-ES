@@ -4,9 +4,9 @@ description: 'AI del cliente: preparación de datos (ingesta)'
 kt: 5342
 doc-type: tutorial
 exl-id: 71405859-cfc6-4991-a0b0-11c94818a0fa
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '698'
 ht-degree: 1%
 
 ---
@@ -53,33 +53,20 @@ Entonces verá esto... Haga clic en **+ Agregar** en Grupos de campos.
 Busque y seleccione los **grupos de campos** siguientes para agregarlos a este esquema:
 
 - Evento de experiencia del consumidor
-- Detalles del ID del usuario final
+
+![Nuevo esquema CEE](./images/cee1.png)
+
+- IdentityMap
 
 Haga clic en **Agregar grupos de campos**.
 
-![Nuevo esquema CEE](./images/cee.png)
+![Nuevo esquema CEE](./images/cee2.png)
 
-Entonces verá esto... Haga clic en el grupo de campos **Detalles del identificador de usuario final**.
-
-![Crear nuevo esquema](./images/eui1.png)
-
-Vaya al campo **endUserIDs._experience.email.id**.
-
-![Crear nuevo esquema](./images/eui2.png)
-
-En el menú derecho del campo **endUserIDs._experience.email.id**, desplácese hacia abajo y marque la casilla de verificación de **Identidad**, marque la casilla de verificación de **Identidad principal** y seleccione el **Área de nombres de identidad** de **Correo electrónico**. Haga clic en **Aplicar**.
-
-![Crear nuevo esquema](./images/eui3.png)
-
-Vaya al campo **endUserIDs._experience.mcid.id**. Marque la casilla de verificación de **Identidad** y seleccione el **área de nombres de identidad** de **ECID**. Haga clic en **Aplicar**.
-
-![Crear nuevo esquema](./images/eui4.png)
-
-Entonces, tendrás esto. A continuación, seleccione el nombre del esquema. Ahora debería habilitar su esquema para **Perfil**, haciendo clic en la opción **Perfil**.
+Entonces verá esto... A continuación, seleccione el nombre del esquema. Ahora debería habilitar su esquema para **Perfil**, haciendo clic en la opción **Perfil**.
 
 ![Crear nuevo esquema](./images/xdmee3.png)
 
-Entonces verá esto... Haga clic en **Habilitar**.
+Entonces verá esto... Marque la casilla de verificación de **Los datos de este esquema contendrán una identidad principal en el campo identityMap.**. Haga clic en **Habilitar**.
 
 ![Crear nuevo esquema](./images/xdmee4.png)
 
@@ -121,19 +108,19 @@ Ya está listo para empezar a ingerir datos de evento de experiencias del consum
 
 ## Descargar datos de prueba de Experience Event
 
-Una vez configurados el **esquema** y el **conjunto de datos**, ya puede ingerir datos de evento de experiencia. Dado que la inteligencia artificial aplicada al cliente requiere datos en **2 trimestres al menos**, necesitará ingerir datos preparados de forma externa.
+Una vez configurados el **esquema** y el **conjunto de datos**, ya puede ingerir datos de evento de experiencia. Dado que la inteligencia artificial aplicada al cliente requiere tiene requisitos de datos específicos, deberá ingerir datos preparados de forma externa.
 
-Los datos preparados para los eventos de experiencia deben cumplir con los requisitos y el esquema del mixin [Consumer Experience Event XDM Mixin](https://github.com/adobe/xdm/blob/797cf4930d5a80799a095256302675b1362c9a15/docs/reference/context/experienceevent-consumer.schema.md).
+Los datos preparados para los eventos de experiencia de este ejercicio deben cumplir con los requisitos y el esquema del [grupo de campos XDM de evento de experiencia del consumidor](https://github.com/adobe/xdm/blob/797cf4930d5a80799a095256302675b1362c9a15/docs/reference/context/experienceevent-consumer.schema.md).
 
-Descargue el archivo que contiene datos de ejemplo de esta ubicación: [https://dashboard.adobedemo.com/data](https://dashboard.adobedemo.com/data). Haga clic en el botón **Descargar**.
+Descargue el archivo zip con datos de demostración desde esta ubicación: [https://tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip).
 
-![Conjunto de datos](./images/dsn1.png)
-
-Alternativamente, si no puede acceder al vínculo anterior, también puede descargar el archivo desde esta ubicación: [https://aepmodule10.s3-us-west-2.amazonaws.com/retail-v1-dec2020-xl.json.zip](https://aepmodule10.s3-us-west-2.amazonaws.com/retail-v1-dec2020-xl.json.zip).
-
-Ahora ha descargado un archivo denominado **retail-v1-dec2020-xl.json.zip**. Coloque el archivo en el escritorio del equipo y descomprímalo, tras lo cual verá un archivo llamado **retail-v1.json**. Necesitará este archivo en el siguiente ejercicio.
+Ahora ha descargado un archivo denominado **CUSTOM-CAI-EVENTS-WEB.zip**. Coloque el archivo en el escritorio del equipo y descomprímalo, tras lo cual verá una carpeta llamada **CUSTOM-CAI-EVENTS-WEB**.
 
 ![Conjunto de datos](./images/ingest.png)
+
+En esa carpeta, encontrará varios archivos json secuenciados, que todos deben ingerirse en el siguiente ejercicio.
+
+![Conjunto de datos](./images/ingest1a.png)
 
 ## Ingesta de datos de prueba de Evento de experiencia
 
@@ -145,9 +132,11 @@ En su conjunto de datos, haga clic en **Elegir archivos** para agregar datos.
 
 ![Conjunto de datos](./images/ingest2.png)
 
-En la ventana emergente, selecciona el archivo **retail-v1.json** y haz clic en **Abrir**.
+En la ventana emergente, selecciona los archivos **WEBSITE-EE-1.json** hasta **WEBSITE-EE-5.json** y haz clic en **Abrir**.
 
 ![Conjunto de datos](./images/ingest3.png)
+
+Repita este proceso de ingesta para los archivos **WEBSITE-EE-6.json** y **WEBSITE-EE-7.json**.
 
 Verá los datos que se están importando y se creará un nuevo lote con el estado **Cargando**. No se aleje de esta página hasta que se haya cargado el archivo.
 
@@ -159,11 +148,9 @@ Una vez que se haya cargado el archivo, verá que el estado del lote cambia de *
 
 La ingesta y el procesamiento de los datos pueden tardar entre 10 y 20 minutos.
 
-Una vez que la ingesta de datos se realice correctamente, el estado del lote cambiará a **Correcto**.
+Una vez que la ingesta de datos se haya realizado correctamente, el estado del lote de las diversas cargas cambiará a **Correcto**.
 
 ![Conjunto de datos](./images/ingest7.png)
-
-![Conjunto de datos](./images/ingest8.png)
 
 Siguiente paso: [2.2.2 inteligencia artificial aplicada al cliente - Crear una nueva instancia (configurar)](./ex2.md)
 

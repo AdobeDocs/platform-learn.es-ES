@@ -3,10 +3,11 @@ title: 'Inteligencia artificial aplicada al cliente: panel de puntuación y segm
 description: 'Inteligencia artificial aplicada al cliente: panel de puntuación y segmentación (predecir y realizar acciones)'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 4dd8489a-65e4-489a-9228-3c642b10e761
+source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 1%
+source-wordcount: '272'
+ht-degree: 0%
 
 ---
 
@@ -14,13 +15,13 @@ ht-degree: 1%
 
 Una vez que la instancia de inteligencia artificial aplicada al cliente complete la ejecución de un modelo, le permitirá visualizar la puntuación de tendencia que se evalúa para predecir que un cliente realizará una compra en los próximos 30 días.
 
-![IA](./images/caimodels.png)
+![IA](./images/caiinstancesummary1.png)
 
 >[!NOTE]
 >
 >Solo una instancia de inteligencia artificial aplicada al cliente con un estado de **Éxito** le permitirá obtener una vista previa de las perspectivas del servicio.
 
-## 2.2.3.1 Predicción de la tendencia
+## Predicción de tendencia
 
 Ahora vamos a revisar la tendencia predicha generada por el modelo de instancia de inteligencia artificial aplicada al cliente. Haga clic en el nombre de la instancia para ver el panel.
 
@@ -30,15 +31,13 @@ El panel de inteligencia artificial aplicada al cliente muestra el resumen sobre
 
 ![Descripción de IA](./images/caidescription.png)
 
-![Resumen del panel](./images/caidashboard.png)
-
 Pase el ratón sobre los factores influyentes para ver el desglose adicional de la distribución de datos.
 
 ![Factores de influencia](./images/caiinfluencefactors.png)
 
-## 2.2.3.2 Acciones comerciales
+## Acciones comerciales
 
-### 2.2.3.2.1 Segmentación de clientes
+### Segmentación de clientes
 
 El panel de inteligencia artificial aplicada al cliente permite definir segmentos con un solo clic. Haga clic en el botón **Crear segmento** de las tarjetas de tendencia.
 
@@ -48,33 +47,17 @@ Verá que se crea una definición de segmento automáticamente.
 
 ![Regla de segmento](./images/caicreatesegment.png)
 
-Asigne un nombre al segmento, siguiendo esta convención de nombres: `--aepUserLdap-- - Customer AI High Propensity`. Haga clic en **Guardar**.
+Asigne un nombre al segmento, siguiendo esta convención de nombres: `--aepUserLdap-- - Customer AI High Propensity`. Haga clic en **Publish**.
 
 ![Regla de segmento](./images/caicreatesegment1.png)
 
-Ahora puede utilizar este segmento para la segmentación mediante, por ejemplo, Real-time CDP, Journey Orchestration y Adobe Target.
+Ahora puede utilizar este segmento para la segmentación mediante, por ejemplo, Real-time CDP, Journey Optimizer y Adobe Target.
 
-### 2.2.3.2.2 Información general del perfil
+## Cleanup
 
-Dado que la puntuación de tendencia de inteligencia artificial aplicada al cliente forma parte del Perfil del cliente en tiempo real, puede ver la puntuación de cada cliente.
+Para asegurarse de que no se conserven datos de demostración innecesarios en su entorno, asegúrese de eliminar el conjunto de datos `--aepUserLdap-- - Demo System - Customer Experience Event Dataset` una vez que haya completado correctamente este ejercicio. Si no elimina los datos de demostración, su instancia de AEP tendrá un impacto en los costes.
 
-En Adobe Experience Platform, ve a **Perfiles** en el menú de la izquierda y selecciona **Examinar**.
-
-Busque un perfil con cualquiera de los identificadores, como por ejemplo **CORREO ELECTRÓNICO hbirkenshawa@businessweek.com**, que están disponibles en el archivo JSON que ha ingerido. Haga clic en **ID de perfil** para abrir el perfil.
-
-![Perfil](./images/profile1.png)
-
-A continuación, verá esto:
-
-![Perfil](./images/profile2.png)
-
-Vaya a **Atributos**, que contiene la salida del modelo de inteligencia artificial aplicada al cliente.
-
-![Perfil](./images/profile3.png)
-
-Desplácese hacia abajo para ver la puntuación de tendencia calculada por el modelo de inteligencia artificial aplicada al cliente.
-
-![Perfil](./images/profile4.png)
+![Perfil](./images/cleanup.png)
 
 Paso siguiente: [Resumen y beneficios](./summary.md)
 
