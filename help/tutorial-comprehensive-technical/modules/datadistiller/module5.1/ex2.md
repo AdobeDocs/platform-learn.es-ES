@@ -4,9 +4,9 @@ description: 'Servicio de consultas: Introducción'
 kt: 5342
 doc-type: tutorial
 exl-id: 5c4615c6-41c0-465a-b9b6-f59eef388c73
-source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
+source-git-commit: d9d9a38c1e160950ae755e352a54667c8a7b30f7
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '647'
 ht-degree: 0%
 
 ---
@@ -23,50 +23,49 @@ Antes de continuar, debe seleccionar una **zona protegida**. La zona protegida q
 
 ![Ingesta de datos](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-
 ## Exploración de datos en la plataforma
 
 Traer datos de diferentes canales es una tarea difícil para cualquier marca. Y en este ejercicio, los clientes de Citi Signal se relacionan con Citi Signal en su sitio web, en su aplicación móvil, el sistema de puntos de venta de Citi Signal recopila los datos de compra y tienen datos de CRM y de fidelidad. Citi Signal utiliza Adobe Analytics y Adobe Launch para capturar datos en su sitio web, aplicación móvil y sistema POS, por lo que estos datos ya están fluyendo a Adobe Experience Platform. Empecemos por explorar todos los datos de Citi Signal que ya existen en Adobe Experience Platform.
 
 En el menú de la izquierda, vaya a **Conjuntos de datos**.
 
-![emea-website-interaction-dataset.png](./images/emea-website-interaction-dataset.png)
+![emea-website-interaction-dataset.png](./images/emeawebsiteinteractiondataset.png)
 
 Citi Signal está transmitiendo datos a Adobe Experience Platform y estos datos están disponibles en el conjunto de datos `Demo System - Event Dataset for Website (Global v1.1)`. Busque `Demo System - Event Dataset for Website`.
 
-![emea-callcenter-interaction-dataset.png](./images/emea-website-interaction-dataset1.png)
+![emea-callcenter-interaction-dataset.png](./images/emeawebsiteinteractiondataset1.png)
 
 Los datos de interacción del centro de llamadas de Citi Signal se capturan en el conjunto de datos `Demo System - Event Dataset for Call Center (Global v1.1)`. Busque `Demo System - Event Dataset for Call Center` datos en el cuadro de búsqueda. Haga clic en el nombre del conjunto de datos para abrirlo.
 
-![emea-callcenter-interaction-dataset.png](./images/emea-callcenter-interaction-dataset.png)
+![emea-callcenter-interaction-dataset.png](./images/emeacallcenterinteractiondataset.png)
 
-Después de hacer clic en el conjunto de datos, obtendrá una descripción general de la actividad del conjunto de datos, como los lotes ingeridos y los fallidos.
+Después de hacer clic en el conjunto de datos, obtendrá una descripción general de la actividad del conjunto de datos, como los lotes ingeridos y los fallidos. Haga clic en **Vista previa del conjunto de datos** para ver una muestra de los datos almacenados en el conjunto de datos `Demo System - Event Dataset for Call Center (Global v1.1)`.
 
-![preview-interaction-dataset.png](./images/preview-interaction-dataset.png)
+![preview-interaction-dataset.png](./images/previewinteractiondataset.png)
 
-Haga clic en **Vista previa del conjunto de datos** para ver una muestra de los datos almacenados en el conjunto de datos `Demo System - Event Dataset for Call Center (Global v1.1)`. El panel izquierdo muestra la estructura de esquema de este conjunto de datos.
+El panel izquierdo muestra la estructura de esquema de este conjunto de datos y, en el lado derecho, verá una muestra de los datos introducidos.
 
-![explore-interaction-dataset.png](./images/explore-interaction-dataset.png)
+![explore-interaction-dataset.png](./images/exploreinteractiondataset.png)
 
-Haga clic en el botón **Cerrar** para cerrar la ventana **Vista previa del conjunto de datos**.
+Haga clic en **Cerrar** para cerrar la ventana **Vista previa del conjunto de datos**.
 
 ## Introducción al servicio de consultas
 
-Se accede al servicio de consultas de Adobe Experience Platform haciendo clic en **Consultas** en el menú de la izquierda.
+Se accede al servicio de consultas haciendo clic en **Consultas** en el menú de la izquierda.
 
-![select-queries.png](./images/select-queries.png)
+![select-queries.png](./images/selectqueries.png)
 
 Al ir a **Registro**, verá la página Lista de consultas, que le proporciona una lista de todas las consultas que se han ejecutado en esta organización, con las más recientes en la parte superior.
 
-![query-list.png](./images/query-list.png)
+![query-list.png](./images/querylist.png)
 
 Haga clic en cualquier consulta SQL de la lista y observe los detalles proporcionados en el carril derecho.
 
-![click-sql-query.png](./images/click-sql-query.png)
+![click-sql-query.png](./images/clicksqlquery.png)
 
 Puede desplazarse por la ventana para ver la consulta completa o puede hacer clic en el icono resaltado abajo para copiar toda la consulta en el bloc de notas. No es necesario copiar la consulta en este momento.
 
-![click-copy-query.png](./images/click-copy-query.png)
+![click-copy-query.png](./images/clickcopyquery.png)
 
 No solo puede ver las consultas que se han ejecutado, esta interfaz de usuario le permite crear nuevos conjuntos de datos a partir de consultas. Estos conjuntos de datos se pueden vincular al Perfil del cliente en tiempo real de Adobe Experience Platform o se pueden utilizar como entrada para Adobe Experience Platform Data Science Workspace.
 
@@ -74,31 +73,31 @@ No solo puede ver las consultas que se han ejecutado, esta interfaz de usuario l
 
 El servicio de consultas admite clientes con un controlador para PostgreSQL. En esto utilizaremos PSQL, una interfaz de línea de comandos, y Power BI o Tableau. Vamos a conectar con PSQL.
 
-Haz clic en **Credenciales**.
+Haga clic en **credenciales**.
 
-![queries-select-configuration.png](./images/queries-select-configuration.png)
+![queries-select-configuration.png](./images/queriesselectconfiguration.png)
 
-Verá la siguiente pantalla. La pantalla Configuración proporciona información del servidor y credenciales para autenticarse en el servicio de consultas. Por ahora, nos centraremos en el lado derecho de la pantalla que contiene un comando de conexión para PSQL. Haga clic en el botón Copiar para copiar el comando en el portapapeles.
+Verá la siguiente pantalla. La pantalla proporciona información del servidor y credenciales para autenticarse en el servicio de consultas. Por ahora, nos centraremos en el lado derecho de la pantalla que contiene un comando de conexión para PSQL. Haga clic en el botón Copiar para copiar el comando en el portapapeles.
 
-![copy-psql-connection.png](./images/copy-psql-connection.png)
+![copy-psql-connection.png](./images/copypsqlconnection.png)
 
 Para Windows: abra la línea de comandos pulsando la tecla de Windows, escribiendo cmd y haciendo clic en el resultado del símbolo del sistema.
 
-![open-command-prompt.png](./images/open-command-prompt.png)
+![open-command-prompt.png](./images/opencommandprompt.png)
 
 Para macOS: Abra terminal.app mediante la búsqueda destacada:
 
-![open-terminal-osx.png](./images/open-terminal-osx.png)
+![open-terminal-osx.png](./images/openterminalosx.png)
 
 Pegue el comando de conexión que ha copiado desde la interfaz de usuario del servicio de consultas y pulse Enter en la ventana del símbolo del sistema:
 
 Windows:
 
-![comando conectado al símbolo del sistema.png](./images/command-prompt-connected.png)
+![comando conectado al símbolo del sistema.png](./images/commandpromptconnected.png)
 
 MacOS:
 
-![command-prompt-paste-osx.png](./images/command-prompt-paste-osx.png)
+![command-prompt-paste-osx.png](./images/commandpromptpasteosx.png)
 
 Ahora está conectado al servicio de consultas mediante PSQL.
 
