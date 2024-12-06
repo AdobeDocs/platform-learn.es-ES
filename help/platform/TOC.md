@@ -5,10 +5,10 @@ user-guide-description: Descubra los muchos componentes de Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: b52630da0ff68b8784ebd70afd3472c39e984844
+source-git-commit: c49c3d4cdfd4fcfc930332a25b9fd5d5356e1004
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 16%
+source-wordcount: '947'
+ht-degree: 17%
 
 ---
 
@@ -50,6 +50,7 @@ ht-degree: 16%
    + [Información general](/help/platform/ai-assistant/overview.md)
    + [Configuración del acceso](/help/platform/ai-assistant/access.md)
    + [Limpiar audiencias](/help/platform/ai-assistant/find-unused-audiences.md)
+   + [Incorporación con un nuevo producto](/help/platform/ai-assistant/onboard.md)
 + Audiencias y segmentación {#audiences}
    + [Introducción a Audience Portal y Composición](audiences/introduction-to-audience-portal-and-composition.md)
    + [Cargar audiencias](audiences/upload-audiences.md)

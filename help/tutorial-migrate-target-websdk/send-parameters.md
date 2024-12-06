@@ -2,9 +2,9 @@
 title: 'Envío de parámetros: Migre Target de at.js 2.x al SDK web'
 description: Obtenga información sobre cómo enviar parámetros de mbox, perfil y entidad a Adobe Target mediante el SDK web de Experience Platform.
 exl-id: 7916497b-0078-4651-91b1-f53c86dd2100
-source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
+source-git-commit: f30d6434be69e87406326955b3821d07bd2e66c1
 workflow-type: tm+mt
-source-wordcount: '1539'
+source-wordcount: '1609'
 ht-degree: 0%
 
 ---
@@ -306,7 +306,7 @@ targetPageParams = function() {
 
 La información de compra se pasa a Target cuando el grupo de campos `commerce` tiene `purchases.value` establecido en `1`. El id. de pedido y el total del pedido se asignan automáticamente desde el objeto `order`. Si la matriz `productListItems` está presente, los valores `SKU` se utilizan para `productPurchasedId`.
 
-Ejemplos del SDK web de Platform que usan el comando `sendEvent`:
+Ejemplo del SDK web de Platform con `sendEvent`:
 
 >[!BEGINTABS]
 
@@ -328,14 +328,24 @@ alloy("sendEvent", {
       "SKU": "SKU-00002"
     }, {
       "SKU": "SKU-00003"
-    }]
+    }],
+      "_experience": {
+          "decisioning": {
+              "propositions": [{
+                  "scope": "<your_mbox>"
+              }],
+              "propositionEventType": {
+                  "display": 1
+              }
+          }
+      }
   }
 });
 ```
 
 >[!TAB Etiquetas]
 
-En las etiquetas, utilice primero un elemento de datos [!UICONTROL XDM object] para asignarlo a los campos XDM:
+En las etiquetas, utilice primero un elemento de datos [!UICONTROL XDM object] para asignarlo a los campos XDM necesarios (consulte el ejemplo de JavaScript) y al ámbito personalizado opcional:
 
 ![Asignación a un campo XDM en un elemento de datos de objeto XDM](assets/params-tags-purchase.png){zoomable="yes"}
 
@@ -345,6 +355,13 @@ E incluya su [!UICONTROL objeto XDM] en su [!UICONTROL evento Send] [!UICONTROL 
 
 >[!ENDTABS]
 
+>[!IMPORTANT]
+>
+> `_experience.decisioning.propositionEventType` debe establecerse con `display: 1` para que la llamada se use para incrementar una métrica de Target.
+
+>[!NOTE]
+>
+> Si desea utilizar un nombre de mbox/ubicación personalizado en la definición de métrica de Target, por ejemplo `orderConfirmPage`, rellene la matriz `_experience.decisioning.propositions` con un ámbito personalizado como en el ejemplo anterior.
 
 >[!NOTE]
 >
@@ -384,7 +401,8 @@ alloy("sendEvent", {
     "identityMap": {
       "GLOBAL_CUSTOMER_ID": [{
         "id": "TT8675309",
-        "authenticatedState": "authenticated"
+        "authenticatedState": "authenticated",
+        "primary": true
       }]
     }
   }
@@ -407,6 +425,12 @@ En el servicio Adobe Target de su secuencia de datos, asegúrese de establecer e
 ![Establezca el área de nombres de ID de terceros de Target en el conjunto de datos](assets/params-tags-customerIdNamespaceInDatastream.png){zoomable="yes"}
 
 >[!ENDTABS]
+
+>[!NOTE]
+>
+> El Adobe recomienda enviar áreas de nombres que representen a una persona, como identidades autenticadas, como la identidad principal.
+
+
 
 ## Ejemplo de SDK web de Platform
 
@@ -458,7 +482,8 @@ Ahora que comprende cómo se asignan los distintos parámetros de Target mediant
         "identityMap": {
           "GLOBAL_CUSTOMER_ID": [{
             "id": "TT8675309",
-            "authenticatedState": "authenticated"
+            "authenticatedState": "authenticated",
+            "primary": true
           }]
         },
         "web": {
@@ -534,7 +559,8 @@ Ahora que comprende cómo se asignan los distintos parámetros de Target mediant
         "identityMap": {
           "GLOBAL_CUSTOMER_ID": [{
             "id": "TT8675309",
-            "authenticatedState": "authenticated"
+            "authenticatedState": "authenticated",
+            "primary": true
           }]
         },
         "commerce": {
@@ -550,7 +576,17 @@ Ahora que comprende cómo se asignan los distintos parámetros de Target mediant
           "SKU": "SKU-00002"
         }, {
           "SKU": "SKU-00003"
-        }]
+        }],
+        "_experience": {
+            "decisioning": {
+                "propositions": [{
+                    "scope": "<your_mbox>"
+                }],
+                "propositionEventType": {
+                    "display": 1
+                }
+            }
+        }
       }
     });
   </script>
