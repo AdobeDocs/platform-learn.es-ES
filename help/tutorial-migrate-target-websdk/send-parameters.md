@@ -2,9 +2,9 @@
 title: 'Envío de parámetros: Migre Target de at.js 2.x al SDK web'
 description: Obtenga información sobre cómo enviar parámetros de mbox, perfil y entidad a Adobe Target mediante el SDK web de Experience Platform.
 exl-id: 7916497b-0078-4651-91b1-f53c86dd2100
-source-git-commit: f30d6434be69e87406326955b3821d07bd2e66c1
+source-git-commit: 0697c6d13272182432e11fdb9d84a752d39527b6
 workflow-type: tm+mt
-source-wordcount: '1609'
+source-wordcount: '1608'
 ht-degree: 0%
 
 ---
@@ -372,7 +372,7 @@ E incluya su [!UICONTROL objeto XDM] en su [!UICONTROL evento Send] [!UICONTROL 
 
 Target permite la sincronización de perfiles entre dispositivos y sistemas mediante un único ID de cliente. Con at.js, se puede establecer como `mbox3rdPartyId` en la solicitud de Target o como el primer ID de cliente enviado al servicio de ID de Experience Cloud. A diferencia de at.js, una implementación del SDK web de Platform le permite especificar qué ID de cliente utilizar como `mbox3rdPartyId` si hay varios. Por ejemplo, si su empresa tiene un ID de cliente global e ID de cliente independientes para diferentes líneas de negocio, puede configurar qué ID de Target debe utilizar.
 
-Siga algunos pasos para configurar la sincronización de ID para los casos de uso de Atributos de cliente y multidispositivo de Target:
+Siga algunos pasos para configurar la sincronización de ID en los casos de uso de atributos de cliente y entre dispositivos:
 
 1. Crear un **[!UICONTROL área de nombres de identidad]** para el ID de cliente en la pantalla de recopilación de datos o plataforma de **[!UICONTROL Identidades]**
 1. Asegúrese de que el **[!UICONTROL alias]** de los Atributos del cliente coincida con el **[!UICONTROL símbolo de identidad]** de su área de nombres
