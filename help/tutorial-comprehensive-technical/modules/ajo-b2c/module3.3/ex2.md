@@ -3,7 +3,8 @@ title: 'Offer decisioning: configuración de las ofertas y el ID de decisión'
 description: 'Offer decisioning: configuración de las ofertas y el ID de decisión'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 1418398b-d192-4d0b-b372-4be73fc153ed
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
 source-wordcount: '1428'
 ht-degree: 3%
@@ -27,11 +28,11 @@ En este ejercicio, creará cuatro **Ofertas personalizadas**. Estos son los deta
 
 Inicie sesión en Adobe Journey Optimizer en [Adobe Experience Cloud](https://experience.adobe.com). Haga clic en **Journey Optimizer**.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
 Se le redirigirá a la vista **Inicio** en Journey Optimizer. Primero, asegúrese de que está usando la zona protegida correcta. La zona protegida que se va a usar se llama `--aepSandboxName--`. Para cambiar de una zona protegida a otra, haga clic en **PRODUCTION Prod (VA7)** y seleccione la zona protegida en la lista. En este ejemplo, la zona protegida se denomina **Habilitación de AEP para el año fiscal 22**. Estará en la vista **Inicio** de su zona protegida `--aepSandboxName--`.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 En el menú de la izquierda, haz clic en **Ofertas** y luego ve a **Ofertas**. Haga clic en **+ Crear oferta**.
 
@@ -356,7 +357,7 @@ Y, por último, ahora verá su decisión en la descripción general:
 
 Ahora ha configurado correctamente su decisión. Su decisión ya está activa y se puede utilizar para ofrecer ofertas optimizadas y personalizadas a sus clientes, en tiempo real.
 
-Paso siguiente: [3.3.3 Prepare la propiedad de cliente de recopilación de datos y la configuración del SDK web para el Offer decisioning](./ex3.md)
+Paso siguiente: [3.3.3 Prepare la propiedad de cliente de recopilación de datos y la configuración de Web SDK para el Offer decisioning](./ex3.md)
 
 [Volver al módulo 3.3](./offer-decisioning.md)
 

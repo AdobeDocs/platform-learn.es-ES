@@ -3,14 +3,15 @@ title: 'Offer decisioning: Pruebe la decisión'
 description: 'Offer decisioning: Pruebe la decisión'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: a03ec0bd-d48f-45bc-8097-ab263331b7bb
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '1234'
 ht-degree: 0%
 
 ---
 
-# 3.3.3 Preparar la propiedad de cliente de recopilación de datos de Adobe Experience Platform y la configuración del SDK web para Offer decisioning
+# 3.3.3 Preparar la propiedad del cliente de recopilación de datos de Adobe Experience Platform y la configuración de Web SDK para el Offer decisioning
 
 ## 3.3.3.1 Actualizar la secuencia de datos
 
@@ -50,7 +51,7 @@ En su propiedad, vaya a **[!UICONTROL Reglas]** y abra la regla **[!UICONTROL Vi
 
 ![SDK web](./images/launch2.png)
 
-Haga clic para abrir [!UICONTROL Acción] **[!UICONTROL SDK web de AEP - Enviar evento]**.
+Haga clic para abrir [!UICONTROL Acción] **[!UICONTROL AEP Web SDK - Enviar evento]**.
 
 ![SDK web](./images/launch3.png)
 
@@ -77,11 +78,11 @@ La [!UICONTROL ID de ubicación] identifica la ubicación y el tipo de recurso q
 
 Para encontrar la [!UICONTROL ID de ubicación] para la [!UICONTROL web - imagen], ve a Adobe Journey Optimizer en [Adobe Experience Cloud](https://experience.adobe.com). Haga clic en **Journey Optimizer**.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-Se le redirigirá a la vista **Inicio** en Journey Optimizer. Primero, asegúrese de que está usando la zona protegida correcta. La zona protegida que se va a usar se llama `--aepSandboxName--`. Para cambiar de una zona protegida a otra, haga clic en **PRODUCTION Prod (VA7)** y seleccione la zona protegida en la lista. En este ejemplo, la zona protegida se denomina **Habilitación de AEP para el año fiscal 22**. Estará en la vista **Inicio** de su zona protegida `--aepSandboxName--`.
+Se le redirigirá a la vista **Inicio** en Journey Optimizer. Primero, asegúrese de que está usando la zona protegida correcta. La zona protegida que se va a usar se llama `--aepSandboxName--`. Estará en la vista **Inicio** de su zona protegida `--aepSandboxName--`.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 A continuación, ve a [!UICONTROL Componentes] y luego a [!UICONTROL Ubicaciones]. Haga clic en la ubicación [!UICONTROL Web - Imagen] para ver sus detalles.
 
@@ -128,7 +129,7 @@ El **[!UICONTROL ámbito de decisión]** se puede generar de dos maneras:
 
   ![SDK web](./images/launch10.png)
 
-A continuación, vuelva a Launch para realizar la acción **[!UICONTROL SDK web de AEP - Enviar evento]**.
+A continuación, vuelva a Launch, a la acción **[!UICONTROL AEP Web SDK - Enviar evento]**.
 
 ![SDK web](./images/launch4.png)
 
@@ -136,7 +137,7 @@ Pegue el ámbito de decisión codificado en el campo de entrada.
 
 ![SDK web](./images/launch11.png)
 
-Guarde los cambios en la acción **[!UICONTROL SDK web de AEP - Enviar evento]** haciendo clic en **[!UICONTROL Conservar cambios]**.
+Guarde los cambios en la acción **[!UICONTROL AEP Web SDK - Enviar evento]** haciendo clic en **[!UICONTROL Conservar cambios]**.
 
 ![SDK web](./images/keepchanges.png)
 
@@ -225,7 +226,7 @@ En Recopilación de datos de Adobe Experience Platform, vaya a **[!UICONTROL Flu
 
 ![SDK web](./images/decrec9.png)
 
-Con este cambio, esta regla de la recopilación de datos de Adobe Experience Platform ahora escucha la respuesta del Offer decisioning que forma parte de la respuesta del SDK web y, cuando se recibe la respuesta, la imagen de la oferta se muestra en la página principal.
+Con este cambio, esta regla de la recopilación de datos de Adobe Experience Platform ahora escucha la respuesta del Offer decisioning que forma parte de la respuesta de Web SDK y, cuando se recibe la respuesta, la imagen de la oferta se muestra en la página principal.
 
 Al ver el sitio web de demostración, verá que esta imagen se reemplazará ahora:
 

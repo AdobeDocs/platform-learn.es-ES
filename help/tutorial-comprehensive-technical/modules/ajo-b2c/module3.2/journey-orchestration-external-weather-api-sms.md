@@ -6,16 +6,14 @@ audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 7f3d6dcb-845d-4ff1-97c3-8e93b8d2c624
-source-git-commit: f4b3463ce9464c96378790bf8070504fc90cb2ff
+source-git-commit: 07153124eb3cd4c07bbabb6f7b137f525fa1a27f
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '436'
 ht-degree: 0%
 
 ---
 
 # 3.2 Adobe Journey Optimizer: Fuentes de datos externas y acciones personalizadas
-
-**Autor: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 En este módulo, utilizará Adobe Journey Optimizer para escuchar el comportamiento de los clientes, tanto en línea como sin conexión, y responder a él de una manera inteligente, contextual y en tiempo real. Ya ha tenido una experiencia práctica inicial con Adobe Journey Optimizer en el módulo 6. En este ejercicio, profundizará un poco y explorará un caso de uso más avanzado en el que las fuentes de datos externas se utilizan como parte de un recorrido.
 

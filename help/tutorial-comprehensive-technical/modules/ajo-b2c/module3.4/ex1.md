@@ -4,10 +4,10 @@ description: 'En esta sección configurará un recorrido basado en déclencheur:
 kt: 5342
 doc-type: tutorial
 exl-id: b9d9b357-08d1-4f65-9e0b-46224d035602
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
-source-wordcount: '1991'
-ht-degree: 0%
+source-wordcount: '1921'
+ht-degree: 1%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 Inicie sesión en Adobe Journey Optimizer en [Adobe Experience Cloud](https://experience.adobe.com). Haga clic en **Journey Optimizer**.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-Se le redirigirá a la vista **Inicio** en Journey Optimizer. Primero, asegúrese de que está usando la zona protegida correcta. La zona protegida que se va a usar se llama `--aepSandboxName--`. Para cambiar de una zona protegida a otra, haga clic en **PRODUCTION Prod (VA7)** y seleccione la zona protegida en la lista. En este ejemplo, la zona protegida se denomina **Habilitación de AEP para el año fiscal 22**. Estará en la vista **Inicio** de su zona protegida `--aepSandboxName--`.
+Se le redirigirá a la vista **Inicio** en Journey Optimizer. Primero, asegúrese de que está usando la zona protegida correcta. La zona protegida que se va a usar se llama `--aepSandboxName--`. Estará en la vista **Inicio** de su zona protegida `--aepSandboxName--`.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 ## 3.4.1.1 Creación de un evento
 
@@ -33,23 +33,14 @@ En la pantalla **Eventos**, verá una vista similar a esta. Haga clic en **Crear
 
 A continuación, verá una configuración de evento vacía.
 
-![Journey Optimizer](./images/oc32.png)
-
 En primer lugar, asigne al evento un nombre como este: `--aepUserLdap--PurchaseEvent` y agregue una descripción como esta: `Purchase Event`.
 
-![Journey Optimizer](./images/oc34.png)
-
-A continuación se muestra la selección **Tipo de evento**. Seleccione **Unitario**.
-
-![Journey Optimizer](./images/eventidtype1.png)
-
-A continuación se muestra la selección **Tipo de ID de evento**. Seleccionar **sistema generado**
+Para **Type**, seleccione **Unitary**.
+Para **Tipo de ID de evento**, seleccione **Sistema generado**.
 
 ![Journey Optimizer](./images/eventidtype.png)
 
 A continuación se muestra la selección Esquema. Se ha preparado un esquema para este ejercicio. Use el esquema `Demo System - Event Schema for Website (Global v1.1) v.1`.
-
-![Journey Optimizer](./images/oc35.png)
 
 Después de seleccionar el esquema, verá una serie de campos seleccionados en la sección **Carga útil**. Haga clic en el icono **Editar/Lápiz** para agregar campos adicionales a este evento.
 
@@ -63,21 +54,19 @@ En primer lugar, marque la casilla en la línea `--aepTenantId--`.
 
 ![Journey Optimizer](./images/oc38.png)
 
-A continuación, desplácese hacia abajo y marque la casilla de verificación en la línea `productListItems`.
-
-![Journey Optimizer](./images/oc39.png)
-
 A continuación, desplácese hacia abajo y marque la casilla de verificación en la línea `commerce`.
 
 ![Journey Optimizer](./images/oc391.png)
 
-A continuación, haga clic en **Aceptar**.
+A continuación, desplácese hacia abajo y marque la casilla de verificación en la línea `productListItems`. Haga clic en **Ok**.
+
+![Journey Optimizer](./images/oc39.png)
 
 Luego verá que se han agregado campos adicionales al evento. Haga clic en **Guardar**.
 
 ![Journey Optimizer](./images/oc40.png)
 
-El nuevo evento se comparte y ahora verá el evento en la lista de eventos disponibles.
+El nuevo evento se guarda y ahora verá el evento en la lista de eventos disponibles.
 
 Vuelve a hacer clic en el evento para abrir de nuevo la pantalla **Editar evento**.
 Pase el ratón sobre el campo **Carga útil** de nuevo para ver los 3 iconos. Haz clic en el icono **Ver carga**.
@@ -89,7 +78,7 @@ Ahora verá un ejemplo de la carga útil esperada. El evento tiene un identifica
 ![Journey Optimizer](./images/oc42.png)
 
 El ID de evento es lo que debe enviarse a Adobe Journey Optimizer para almacenar en déclencheur el recorrido que va a generar en el siguiente paso. Anote este eventID, ya que lo necesitará en uno de los pasos siguientes.
-`"eventID": "ef6dd943c94fe1b4763c098ccd1772344662f2a9f614513106cb5ada8be36857"`
+`"eventID": "1c8148a8ab1993537d0ba4e6ac293dd4f2a88d80b2ca7be6293c3b28d4ff5ae6"`
 
 Haga clic en **Aceptar**, seguido de **Cancelar**.
 
@@ -101,11 +90,11 @@ En el menú, ve a **Recorridos** y haz clic en **Crear Recorrido**.
 
 ![Journey Optimizer](./images/oc43.png)
 
-Entonces verá esto... Dé un nombre a su recorrido. Usar `--aepUserLdap-- - Order Confirmation journey`. Haga clic en **Aceptar**.
+Entonces verá esto... Dé un nombre a su recorrido. Usar `--aepUserLdap-- - Order Confirmation journey`. Haga clic en **Guardar**.
 
 ![Journey Optimizer](./images/oc45.png)
 
-En primer lugar, debe agregar el evento como punto de partida del recorrido. Busque el evento `--aepUserLdap--PurchaseEvent`, arrástrelo y suéltelo en el lienzo. Haga clic en **Aceptar**.
+En primer lugar, debe agregar el evento como punto de partida del recorrido. Busque el evento `--aepUserLdap--PurchaseEvent`, arrástrelo y suéltelo en el lienzo. Haga clic en **Guardar**.
 
 ![Journey Optimizer](./images/oc46.png)
 
@@ -125,7 +114,7 @@ Ahora puede ver esto. Haga clic en el campo de texto **Línea de asunto**.
 
 ![ACOP](./images/journeyactions3.png)
 
-En el área de texto empiece a escribir **Gracias por su pedido,**
+En el área de texto empieza a escribir **Gracias por tu pedido,** y haz clic en el icono **Personalization**.
 
 ![Journey Optimizer](./images/oc5.png)
 
@@ -133,7 +122,7 @@ La línea de asunto aún no ha finalizado. A continuación, debe traer el token 
 
 ![Journey Optimizer](./images/oc6.png)
 
-Entonces volverás a estar aquí. Haga clic en **Enviar correo electrónico a Designer** para crear el contenido del correo electrónico.
+Entonces volverás a estar aquí. Haga clic en **Editar cuerpo del correo electrónico** para crear el contenido del correo electrónico.
 
 ![Journey Optimizer](./images/oc7.png)
 
@@ -147,35 +136,27 @@ Arrastrar y soltar 8 veces una columna **1:1** en el lienzo, lo que debería pro
 
 ![Journey Optimizer](./images/oc9.png)
 
-Vaya a **Componentes de contenido**.
+En el menú de la izquierda, ve a **Fragmentos**. Arrastre el encabezado que creó anteriormente en el ejercicio 3.2.2 al primer componente del lienzo. Arrastre el pie de página creado anteriormente en el ejercicio 3.2.2 al último componente del lienzo.
+
+![Journey Optimizer](./images/fragm1.png)
+
+Haga clic en el icono **+** en el menú de la izquierda. Vaya a **Contenido** para empezar a agregar contenido al lienzo.
 
 ![Journey Optimizer](./images/oc10.png)
 
-Arrastre y suelte un componente **Image** en la primera fila. Haga clic en **Examinar**.
-
-![Journey Optimizer](./images/oc11.png)
-
-Vaya a la carpeta **enablement-assets**, seleccione el archivo **luma-logo.png** y haga clic en **Seleccionar**.
-
-![Journey Optimizer](./images/oc12.png)
-
-Ahora estás de vuelta aquí. Haga clic en la imagen para seleccionarla y, a continuación, utilice el control deslizante **Size** para reducir un poco el tamaño de la imagen del logotipo.
-
-![Journey Optimizer](./images/oc13.png)
-
-Vaya a **Componentes de contenido** y arrastre y suelte un componente **Imagen** en la segunda fila. Seleccione el **componente de imagen**, pero NO haga clic en Examinar.
+Vaya a **Contenido** y arrastre y suelte un componente **Imagen** en la segunda fila. Haga clic en **Examinar**.
 
 ![Journey Optimizer](./images/oc15.png)
 
-Pegue esta URL de imagen en el campo **Source**: `https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/29043bedcde632a9cbe8a02a164189c9_preparing.png`. Esta imagen está alojada fuera del Adobe.
+Abra la carpeta **citi-signal-images**, haga clic para seleccionar la imagen **citisignal-preparation.png** y haga clic en **Seleccionar**.
 
 ![Journey Optimizer](./images/oc14.png)
 
-Cuando cambie el ámbito a otro campo, se renderiza la imagen y verá esto:
+En **Estilos**, cambie el ancho a **40%**.
 
-![Journey Optimizer](./images/oc16.png)
+![Journey Optimizer](./images/oc14a.png)
 
-A continuación, vaya a **Componentes de contenido** y arrastre y suelte un componente **Texto** en la tercera fila.
+A continuación, vaya a **Contenido** y arrastre y suelte un componente **Texto** en la tercera fila.
 
 ![Journey Optimizer](./images/oc17.png)
 
@@ -207,7 +188,7 @@ A continuación, verá esto:
 
 ![Journey Optimizer](./images/oc21.png)
 
-A continuación, vaya a **Componentes de contenido** y arrastre y suelte un componente **Texto** en la cuarta fila.
+A continuación, vaya a **Contenido** y arrastre y suelte un componente **Texto** en la cuarta fila.
 
 ![Journey Optimizer](./images/oc22.png)
 
@@ -219,7 +200,7 @@ Cambie el tamaño de la fuente a **26px** y centre el texto en esta celda. A con
 
 ![Journey Optimizer](./images/oc23.png)
 
-A continuación, vaya a **Componentes de contenido** y arrastre y suelte un componente **HTML** en la quinta fila. Haga clic en el componente HTML y, a continuación, en **Mostrar el código fuente**.
+A continuación, ve a **Contenido** y arrastra y suelta un componente **HTML** en la quinta fila. Haga clic en el componente HTML y, a continuación, en **Mostrar el código fuente**.
 
 ![Journey Optimizer](./images/oc24.png)
 
@@ -235,7 +216,7 @@ Entonces, tendrás esto. Haga clic en **Guardar** para guardar el progreso.
 
 ![Journey Optimizer](./images/oc26.png)
 
-Vaya a **Componentes de contenido** y arrastre y suelte un componente **HTML** en la sexta fila. Haga clic en el componente HTML y, a continuación, en **Mostrar el código fuente**.
+Vaya a **Contenido** y arrastre y suelte un componente **HTML** en la sexta fila. Haga clic en el componente HTML y, a continuación, en **Mostrar el código fuente**.
 
 ![Journey Optimizer](./images/oc57.png)
 
@@ -257,11 +238,9 @@ Primero, elimine **xxx** en el código de HTML.
 
 En el menú de la izquierda, haga clic en **Atributos contextuales**. Este contexto se pasa al mensaje desde el recorrido.
 
-![Journey Optimizer](./images/oc601.png)
-
 Entonces verá esto... Haga clic en la flecha situada junto a **Journey Orchestration** para explorar en profundidad.
 
-![Journey Optimizer](./images/oc61.png)
+![Journey Optimizer](./images/oc601.png)
 
 Haga clic en la flecha situada junto a **Eventos** para explorar en profundidad.
 
@@ -287,7 +266,7 @@ Ahora volverá a la Designer de correo electrónico. Haga clic en **Guardar** pa
 
 ![Journey Optimizer](./images/oc67.png)
 
-A continuación, vaya a **Componentes de contenido** y arrastre y suelte un componente **HTML** en la séptima fila. Haga clic en el componente HTML y, a continuación, en **Mostrar el código fuente**.
+A continuación, ve a **Contenido** y arrastra y suelta un componente **HTML** en la séptima fila. Haga clic en el componente HTML y, a continuación, en **Mostrar el código fuente**.
 
 ![Journey Optimizer](./images/oc68.png)
 
@@ -304,9 +283,6 @@ Primero, elimine el primer **xxx** de su código de HTML.
 ![Journey Optimizer](./images/oc71.png)
 
 En el menú de la izquierda, haga clic en **Atributos contextuales**.
-
-![Journey Optimizer](./images/oc711.png)
-
 Haga clic en la flecha situada junto a **Journey Orchestration** para explorar en profundidad.
 
 ![Journey Optimizer](./images/oc72.png)
@@ -336,13 +312,10 @@ Entonces, tendrás esto. Ahora elimina el segundo **xxx** de tu código de HTML.
 ![Journey Optimizer](./images/oc76.png)
 
 Vuelva a hacer clic en el icono **+** junto a **Precio total** para agregarlo al lienzo.
-
-![Journey Optimizer](./images/oc77.png)
-
 También puede agregar el campo **Currency** desde el objeto **Order** al lienzo, como puede ver aquí.
 Cuando hayas terminado, haz clic en **Guardar** para guardar los cambios.
 
-![Journey Optimizer](./images/oc771.png)
+![Journey Optimizer](./images/oc77.png)
 
 A continuación, volverá a la Designer de correo electrónico. Vuelva a hacer clic en **Guardar**.
 
@@ -356,7 +329,7 @@ Haga clic en la flecha de la esquina superior izquierda para volver al recorrido
 
 ![Journey Optimizer](./images/oc79a.png)
 
-Haz clic en **Aceptar** para cerrar la acción de correo electrónico.
+Haz clic en **Guardar** para cerrar la acción de correo electrónico.
 
 ![Journey Optimizer](./images/oc79b.png)
 
@@ -380,7 +353,7 @@ Esta es la página de Propiedades de recopilación de datos de Adobe Experience 
 
 ![Página de propiedades](./../../../modules/datacollection/module1.1/images/launch1.png)
 
-En el módulo 0, Demo System creó dos propiedades de cliente para usted: una para el sitio web y otra para la aplicación móvil. Encuéntralos buscando `--aepUserLdap--` en el cuadro **[!UICONTROL Buscar]**. Haga clic para abrir la propiedad **Web**.
+En **Introducción**, Demo System creó dos propiedades de cliente para usted: una para el sitio web y otra para la aplicación móvil. Encuéntralos buscando `--aepUserLdap--` en el cuadro **[!UICONTROL Buscar]**. Haga clic para abrir la propiedad **Web**.
 
 ![Cuadro de búsqueda](./../../../modules/datacollection/module1.1/images/property6.png)
 
@@ -388,11 +361,11 @@ Vaya a **Elementos de datos**. Busque y abra el elemento de datos **XDM - Purcha
 
 ![Journey Optimizer](./images/oc91.png)
 
-Entonces verá esto... Vaya al campo **_experience.campaign.orchestration.eventID** y rellene su eventID aquí. El eventID que se va a rellenar aquí es el eventID que ha creado como parte del ejercicio 10.1.2. Haga clic en **Guardar** o en **Guardar en biblioteca**.
+Entonces verá esto... Vaya al campo **_experience.campaign.orchestration.eventID** y rellene su eventID aquí. El eventID que se va a rellenar aquí es el eventID que creó como parte del ejercicio 3.4.1.1 Haga clic en **Guardar** o en **Guardar en biblioteca**.
 
 ![Journey Optimizer](./images/oc92.png)
 
-Guarde los cambios en la propiedad de cliente y, a continuación, publique los cambios actualizando la biblioteca de desarrollo.
+Guarde los cambios en la propiedad y, a continuación, publique los cambios actualizando la biblioteca de desarrollo.
 
 ![Journey Optimizer](./images/oc93.png)
 
@@ -402,33 +375,29 @@ Los cambios se han implementado y se pueden probar.
 
 Probemos el recorrido actualizado comprando un producto en el sitio web de demostración.
 
-Vaya a [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Después de iniciar sesión con su Adobe ID, verá esto. Haga clic en el proyecto del sitio web para abrirlo.
+Vaya a [https://dsn.adobe.com](https://dsn.adobe.com). Después de iniciar sesión con su Adobe ID, verá esto. Haga clic en los 3 puntos **...** del proyecto del sitio web y, a continuación, haga clic en **Ejecutar** para abrirlo.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 A continuación, verá cómo se abre el sitio web de demostración. Seleccione la URL y cópiela en el portapapeles.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web3.png)
+![DSN](../../gettingstarted/gettingstarted/images/web3.png)
 
 Abra una nueva ventana del explorador de incógnito.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web4.png)
+![DSN](../../gettingstarted/gettingstarted/images/web4.png)
 
 Pegue la dirección URL del sitio web de demostración, que copió en el paso anterior. Luego se le pedirá que inicie sesión con su Adobe ID.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web5.png)
+![DSN](../../gettingstarted/gettingstarted/images/web5.png)
 
 Seleccione el tipo de cuenta y complete el proceso de inicio de sesión.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web6.png)
+![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-Luego verá el sitio web cargado en una ventana de incógnito del explorador. Para cada demostración, deberá utilizar una ventana nueva del explorador de incógnito para cargar la URL del sitio web de demostración.
+Luego verá el sitio web cargado en una ventana de incógnito del explorador. Para cada ejercicio, deberá utilizar una ventana nueva del explorador de incógnito para cargar la URL del sitio web de demostración.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web7.png)
-
-Haga clic en el Adobe del logotipo situado en la esquina superior izquierda de la pantalla para abrir el Visor de perfiles.
-
-![Demostración](./../../../modules/datacollection/module1.2/images/pv1.png)
+![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 
 Eche un vistazo al panel Visor de perfiles y al Perfil del cliente en tiempo real con el **ID de Experience Cloud** como identificador principal de este cliente actualmente desconocido.
 
@@ -442,13 +411,25 @@ Complete sus detalles y haga clic en **Registrarse** después de lo cual se le r
 
 ![Demostración](./../../../modules/datacollection/module1.2/images/pv10.png)
 
-Agregue cualquier producto al carro de compras y vaya a la página **Carro de compras**. Haga clic en **Continuar con el cierre de compra**.
+Añadir cualquier producto al carro de compras
+
+![Journey Optimizer](./images/cart1a.png)
+
+Vaya a la página **Carro**. Haga clic en **Finalizar compra**.
 
 ![Journey Optimizer](./images/cart1.png)
 
-A continuación, compruebe los campos en la página de cierre de compra y haga clic en **Cierre de compra**.
+A continuación, compruebe los campos y complete si es necesario. Haga clic en **Continuar**.
 
 ![Journey Optimizer](./images/cart2.png)
+
+Haga clic en **Confirmar pedido**.
+
+![Journey Optimizer](./images/cart2a.png)
+
+Su pedido se ha confirmado.
+
+![Journey Optimizer](./images/cart2b.png)
 
 Recibirá el correo electrónico de confirmación del pedido en cuestión de segundos.
 

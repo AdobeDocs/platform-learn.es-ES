@@ -3,10 +3,11 @@ title: 'Adobe Journey Optimizer: API meteorológica externa, acción de SMS y m�
 description: 'Adobe Journey Optimizer: API meteorológica externa, acción de SMS y más: definición de una fuente de datos externa'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: aeafa053-16f1-4fd3-944e-91401daeeced
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 3%
+source-wordcount: '568'
+ht-degree: 4%
 
 ---
 
@@ -16,11 +17,11 @@ En este ejercicio, creará una fuente de datos externa personalizada utilizando 
 
 Inicie sesión en Adobe Journey Optimizer en [Adobe Experience Cloud](https://experience.adobe.com). Haga clic en **Journey Optimizer**.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-Se le redirigirá a la vista **Inicio** en Journey Optimizer. Primero, asegúrese de que está usando la zona protegida correcta. La zona protegida que se va a usar se llama `--aepSandboxName--`. Para cambiar de una zona protegida a otra, haga clic en **PRODUCTION Prod (VA7)** y seleccione la zona protegida en la lista. En este ejemplo, la zona protegida se denomina **Habilitación de AEP para el año fiscal 22**. Estará en la vista **Inicio** de su zona protegida `--aepSandboxName--`.
+Se le redirigirá a la vista **Inicio** en Journey Optimizer. Primero, asegúrese de que está usando la zona protegida correcta. La zona protegida que se va a usar se llama `--aepSandboxName--`. Estará en la vista **Inicio** de su zona protegida `--aepSandboxName--`.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 En el menú de la izquierda, desplácese hacia abajo y haga clic en **Configuraciones**. A continuación, haga clic en el botón **Administrar** en **Fuentes de datos**.
 
@@ -45,13 +46,9 @@ Haga clic en **Crear una cuenta**.
 
 ![Mapa del tiempo](./images/owm1.png)
 
-Complete los detalles.
+Complete los detalles. Haga clic en **Crear cuenta**.
 
 ![Mapa del tiempo](./images/owm2.png)
-
-Haga clic en **Crear cuenta**.
-
-![Mapa del tiempo](./images/owm3.png)
 
 A continuación, se le redirigirá a la página de su cuenta.
 
@@ -65,7 +62,7 @@ Una **clave API** tiene el siguiente aspecto: `b2c4c36b6bb59c3458d6686b05311dc3`
 
 Puedes encontrar la **Documentación de la API** para el **Tiempo actual** [aquí](https://openweathermap.org/current).
 
-En nuestro caso de uso, implementaremos la conexión con Open Weather Map en función de la ciudad en la que se encuentra el cliente.
+Para este caso de uso, implementará la conexión con Open Weather Map en función de la ciudad en la que se encuentra el cliente, usando la **solicitud de API integrada por nombre de ciudad**.
 
 ![Mapa del tiempo](./images/owm6.png)
 
@@ -73,7 +70,7 @@ Vuelva a **Adobe Journey Optimizer**, a la ventana emergente **Source de datos e
 
 ![Demostración](./images/emptyds.png)
 
-Como nombre para el origen de datos, use `--aepUserLdap--WeatherApi`. En este ejemplo, el nombre del origen de datos es `vangeluwWeatherApi `.
+Como nombre para el origen de datos, use `--aepUserLdap--WeatherApi`.
 
 Definir descripción en: `Access to the Open Weather Map`.
 
@@ -98,7 +95,7 @@ Finalmente, debe definir un **FieldGroup**, que es básicamente la solicitud que
 
 ![Demostración](./images/fg.png)
 
-Según la documentación de la API meteorológica, necesitamos enviar un parámetro `q=City`.
+Según la documentación de la API meteorológica, debe enviar un parámetro `q=City`.
 
 ![Demostración](./images/owmapi.png)
 
@@ -106,58 +103,68 @@ Para que coincida con la solicitud de API esperada, configure el grupo de campos
 
 >[!IMPORTANT]
 >
->El nombre del grupo de campos debe ser único, use esta convención de nomenclatura: `--aepUserLdap--WeatherByCity`, así que en este caso, el nombre debe ser `vangeluwWeatherByCity`
+>El nombre del grupo de campos debe ser único, use esta convención de nomenclatura: `--aepUserLdap--WeatherByCity`
 
 ![Demostración](./images/fg1.png)
 
 Para la carga de respuesta, debe pegar un ejemplo de la respuesta que enviará la API meteorológica.
 
-Puede encontrar la respuesta JSON de API esperada en la página Documentación de API [aquí](https://openweathermap.org/current).
+Puede encontrar la respuesta JSON de API esperada en la página Documentación de API [aquí](https://openweathermap.org/current), en el asunto **JSON**.
 
 ![Demostración](./images/owmapi1.png)
 
 O puede copiar la respuesta JSON desde aquí:
 
 ```json
-{"coord": { "lon": 139,"lat": 35},
-  "weather": [
-    {
-      "id": 800,
-      "main": "Clear",
-      "description": "clear sky",
-      "icon": "01n"
-    }
-  ],
-  "base": "stations",
-  "main": {
-    "temp": 281.52,
-    "feels_like": 278.99,
-    "temp_min": 280.15,
-    "temp_max": 283.71,
-    "pressure": 1016,
-    "humidity": 93
-  },
-  "wind": {
-    "speed": 0.47,
-    "deg": 107.538
-  },
-  "clouds": {
-    "all": 2
-  },
-  "dt": 1560350192,
-  "sys": {
-    "type": 3,
-    "id": 2019346,
-    "message": 0.0065,
-    "country": "JP",
-    "sunrise": 1560281377,
-    "sunset": 1560333478
-  },
-  "timezone": 32400,
-  "id": 1851632,
-  "name": "Shuzenji",
-  "cod": 200
-}
+{
+   "coord": {
+      "lon": 7.367,
+      "lat": 45.133
+   },
+   "weather": [
+      {
+         "id": 501,
+         "main": "Rain",
+         "description": "moderate rain",
+         "icon": "10d"
+      }
+   ],
+   "base": "stations",
+   "main": {
+      "temp": 284.2,
+      "feels_like": 282.93,
+      "temp_min": 283.06,
+      "temp_max": 286.82,
+      "pressure": 1021,
+      "humidity": 60,
+      "sea_level": 1021,
+      "grnd_level": 910
+   },
+   "visibility": 10000,
+   "wind": {
+      "speed": 4.09,
+      "deg": 121,
+      "gust": 3.47
+   },
+   "rain": {
+      "1h": 2.73
+   },
+   "clouds": {
+      "all": 83
+   },
+   "dt": 1726660758,
+   "sys": {
+      "type": 1,
+      "id": 6736,
+      "country": "IT",
+      "sunrise": 1726636384,
+      "sunset": 1726680975
+   },
+   "timezone": 7200,
+   "id": 3165523,
+   "name": "Province of Turin",
+   "cod": 200
+}    
 ```
 
 Copie la respuesta JSON anterior en el portapapeles y, a continuación, vaya a la pantalla de configuración de la fuente de datos personalizada.
