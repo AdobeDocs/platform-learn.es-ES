@@ -3,10 +3,11 @@ title: Journey Optimizer Cree su evento
 description: Journey Optimizer Cree su evento
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: b132ad78-aaa3-458d-9895-0935f8ba88bb
+source-git-commit: f843c50af04d744a7d769f320b5b55a5e6d25ffd
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 0%
+source-wordcount: '404'
+ht-degree: 1%
 
 ---
 
@@ -16,7 +17,7 @@ Inicie sesión en Adobe Journey Optimizer en [Adobe Experience Cloud](https://ex
 
 ![ACOP](./images/acophome.png)
 
-Se le redirigirá a la vista **Inicio** en Journey Optimizer. Primero, asegúrese de que está usando la zona protegida correcta. La zona protegida que se va a usar se llama `--aepSandboxName--`. Para cambiar de una zona protegida a otra, haga clic en **PRODUCTION Prod (VA7)** y seleccione la zona protegida en la lista. En este ejemplo, la zona protegida se denomina **Habilitación de AEP para el año fiscal 22**. Estará en la vista **Inicio** de su zona protegida `--aepSandboxName--`.
+Se le redirigirá a la vista **Inicio** en Journey Optimizer. Primero, asegúrese de que está usando la zona protegida correcta. La zona protegida que se va a usar se llama `--aepSandboxName--`.
 
 ![ACOP](./images/acoptriglp.png)
 
@@ -33,18 +34,11 @@ A continuación, aparece una nueva ventana de evento vacía.
 ![ACOP](./images/emptyevent1.png)
 
 En primer lugar, asigne un nombre al evento como este: `--aepUserLdap--AccountCreationEvent`.
-
-![ACOP](./images/eventname.png)
-
-A continuación, agregue una descripción como esta `Account Creation Event`.
+Establezca la descripción en `Account Creation Event`, asegúrese de que **Type** está establecido en **Unitary** y, para la selección de **Event ID Type**, seleccione **System Generated**.
 
 ![ACOP](./images/eventdescription.png)
 
-A continuación, asegúrese de que **Type** está establecido en **Unitary** y, para la selección de **Event ID Type**, seleccione **System Generated**.
-
-![ACOP](./images/eventidtype.png)
-
-A continuación se muestra la selección Esquema. Se ha preparado un esquema para este ejercicio. Use el esquema `Demo System - Event Schema for Website (Global v1.1) v.1`.
+A continuación se muestra la selección Esquema. Use el esquema `Demo System - Event Schema for Website (Global v1.1) v.1`.
 
 ![ACOP](./images/eventschema.png)
 
@@ -60,21 +54,13 @@ En el objeto `--aepTenantId--.demoEnvironment`, asegúrese de seleccionar los ca
 
 ![ACOP](./images/eventpayloadbr.png)
 
-En el objeto `--aepTenantId--.identification.core`, asegúrese de seleccionar el campo **correo electrónico**.
+En el objeto `--aepTenantId--.identification.core`, asegúrese de seleccionar el campo **correo electrónico**. Haga clic en **Aceptar** para guardar los cambios.
 
 ![ACOP](./images/eventpayloadbrid.png)
 
-Haga clic en **Aceptar** para guardar los cambios.
-
-![ACOP](./images/saveok.png)
-
-Debería ver lo siguiente:
+Entonces debería ver esto. Establezca **Namespace** en **ECID (ECID)**. Haga clic en **Guardar**.
 
 ![ACOP](./images/eventsave.png)
-
-Haz clic en **Guardar** una vez más para guardar los cambios.
-
-![ACOP](./images/save1.png)
 
 El evento se ha configurado y guardado.
 
@@ -90,16 +76,20 @@ Ahora verá un ejemplo de la carga útil esperada.
 
 Su evento tiene un identificador de evento de orquestación único, que puede encontrar desplazándose hacia abajo en esa carga hasta que vea `_experience.campaign.orchestration.eventID`.
 
+El ID de evento es lo que debe enviarse a Adobe Experience Platform para almacenar en déclencheur el recorrido que creará a continuación. Recuerde este ID de evento, ya que lo necesitará en uno de los próximos ejercicios.
+`"eventID": "5ae9b8d3f68eb555502b0c07d03ef71780600c4bd0373a4065c692ae0bfbd34d"`
+
+Haga clic en **Ok**.
+
 ![ACOP](./images/payloadeventID.png)
 
-El ID de evento es lo que debe enviarse a Adobe Experience Platform para almacenar en déclencheur la Recorrido que va a generar en el ejercicio 7.2. Recuerde este eventID, tal como lo necesitará en el ejercicio 7.3.
-`"eventID": "227402c540eb8f8855c6b2333adf6d54d7153d9d7d56fa475a6866081c574736"`
+Haga clic en **Cancelar**.
 
-Haga clic en **Aceptar**, seguido de **Cancelar**.
+![ACOP](./images/payloadeventID1.png)
 
 Ya ha terminado este ejercicio.
 
-Paso siguiente: [3.1.2 Journey Optimizer: Cree su recorrido y mensaje de correo electrónico](./ex2.md)
+Paso siguiente: [3.1.2 Crear fragmentos para usarlos en el mensaje](./ex2.md)
 
 [Volver al módulo 3.1](./journey-orchestration-create-account.md)
 

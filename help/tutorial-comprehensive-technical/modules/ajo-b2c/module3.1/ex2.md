@@ -1,258 +1,240 @@
 ---
-title: Journey Optimizer Cree su recorrido y mensaje de correo electrónico
-description: Journey Optimizer Cree su mensaje de correo electrónico
+title: 'Journey Optimizer: Creación de fragmentos'
+description: 'Journey Optimizer: Creación de fragmentos'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 81810b3a-7eca-436f-a5dc-48c46cb33980
+source-git-commit: f843c50af04d744a7d769f320b5b55a5e6d25ffd
 workflow-type: tm+mt
-source-wordcount: '1413'
+source-wordcount: '1056'
 ht-degree: 0%
 
 ---
 
-# 3.1.2 Crear el recorrido y el mensaje de correo electrónico
+# 3.1.2 Crear fragmentos para usarlos en el mensaje
 
-En este ejercicio, configurará el recorrido y el mensaje que debe activarse cuando alguien cree una cuenta en el sitio web de demostración.
+En este ejercicio, configurará dos fragmentos, uno para un encabezado reutilizable y otro para un pie de página reutilizable.
 
 Inicie sesión en Adobe Journey Optimizer en [Adobe Experience Cloud](https://experience.adobe.com). Haga clic en **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
-Se le redirigirá a la vista **Inicio** en Journey Optimizer. Primero, asegúrese de que está usando la zona protegida correcta. La zona protegida que se va a usar se llama `--aepSandboxName--`. Para cambiar de una zona protegida a otra, haga clic en **PRODUCTION Prod (VA7)** y seleccione la zona protegida en la lista. En este ejemplo, la zona protegida se denomina **Habilitación de AEP para el año fiscal 22**. Estará en la vista **Inicio** de su zona protegida `--aepSandboxName--`.
+Se le redirigirá a la vista **Inicio** en Journey Optimizer. Primero, asegúrese de que está usando la zona protegida correcta. La zona protegida que se va a usar se llama `--aepSandboxName--`.
 
 ![ACOP](./images/acoptriglp.png)
 
-## 3.1.2.1 Creación de un recorrido
+## 3.1.2.1 Crear el fragmento de encabezado
 
-En el menú de la izquierda, haga clic en **Recorridos**. A continuación, haga clic en **Crear Recorrido** para crear un nuevo recorrido.
+En el menú de la izquierda, haga clic en **Fragmentos**. Un fragmento es un componente reutilizable dentro de Journey Optimizer, que evita la duplicación y facilita los cambios futuros que deberían afectar a todos los mensajes, como los cambios en un encabezado o pie de página de un mensaje de correo electrónico.
 
-![ACOP](./images/createjourney.png)
+Haga clic en **Crear fragmento**.
 
-A continuación, verá una pantalla de recorrido vacía.
+![ACOP](./images/fragm1.png)
 
-![ACOP](./images/journeyempty.png)
+Escriba el nombre `--aepUserLdap-- - CitiSignal - Header` y seleccione **Tipo: Fragmento visual**. Haga clic en **Crear**.
 
-En el ejercicio anterior creó un nuevo **evento**. Le puso este nombre `ldapAccountCreationEvent` y reemplazó `ldap` por su LDAP. Este fue el resultado de la creación del Evento:
+![ACOP](./images/fragm2.png)
 
-![ACOP](./images/eventdone.png)
+Entonces verá esto... En el menú de la izquierda, encontrará los componentes de estructura que puede utilizar para definir la estructura del correo electrónico (filas y columnas).
 
-Ahora debe tomar este evento como inicio de este Recorrido. Para ello, vaya al lado izquierdo de la pantalla y busque el evento en la lista de eventos.
+Arrastre y suelte una columna **1:1** del menú en el lienzo. Este será el marcador de posición de la imagen del logotipo.
 
-![ACOP](./images/eventlist.png)
+![Journey Optimizer](./images/fragm3.png)
 
-Seleccione el evento, arrástrelo y suéltelo en el lienzo de Recorrido. El Recorrido ahora tiene este aspecto:
+A continuación, puede utilizar Componentes de contenido para añadir contenido dentro de estos bloques. Arrastre y suelte un componente **Image** en la primera celda de la primera fila. Haga clic en **Examinar**.
 
-![ACOP](./images/journeyevent.png)
+![Journey Optimizer](./images/fragm4.png)
 
-Como segundo paso en el recorrido, debe agregar un breve paso **Wait**. Vaya al lado izquierdo de la pantalla a la sección **Orchestration** para encontrarlo. Utilizará atributos de perfil y debe asegurarse de que se rellenan en el Perfil del cliente en tiempo real.
+A continuación, verá una ventana emergente que muestra su Media Library de AEM Assets. Vaya a la carpeta **citi-signal-images**, haga clic para seleccionar la imagen **CitiSignal-Logo-White.png** y haga clic en **Seleccionar**.
 
-![ACOP](./images/journeywait.png)
+>[!NOTE]
+>
+>Si no ves las imágenes de Citi Signal en tu biblioteca de AEM Assets, puedes encontrarlas [aquí](../../../assets/ajo/CitiSignal-images.zip). Descárguelas en su escritorio, cree la carpeta **citi-signal-images** y cargue todas las imágenes de esa carpeta.
 
-Su recorrido ahora tiene este aspecto. En el lado derecho de la pantalla debe configurar el tiempo de espera. Configúrelo en 1 minuto. Esto le dará tiempo suficiente para que los atributos de perfil estén disponibles después de que se active el evento.
+![Journey Optimizer](./images/fragm5.png)
 
-![ACOP](./images/journeywait1.png)
+Entonces verá esto... La imagen es blanca y aún no se muestra. Ahora debe definir un color de fondo para que la imagen se muestre correctamente. Haga clic en **Estilos** y luego haga clic en el cuadro **Color de fondo**.
 
-Haga clic en **Aceptar** para guardar los cambios.
+![Journey Optimizer](./images/fragm6.png)
 
-Como tercer paso del recorrido, debes agregar una acción **Correo electrónico**. Vaya al lado izquierdo de la pantalla a **Actions**, seleccione la acción **Email** y arrástrela y suéltela en el segundo nodo del recorrido. Ahora puede ver esto.
+En la ventana emergente, cambie el código de color **Hex** a **#8821F4** y, a continuación, cambie el enfoque haciendo clic en el campo **100%**. Luego verá el nuevo color aplicado a la imagen.
 
-![ACOP](./images/journeyactions.png)
+![Journey Optimizer](./images/fragm7.png)
 
-Defina **Category** en **Marketing** y seleccione una superficie de correo electrónico que le permita enviar correo electrónico. En este caso, la superficie de correo electrónico que se va a seleccionar es **Correo electrónico**. Asegúrese de que las casillas de verificación de **Clics en el correo electrónico** y **aperturas del correo electrónico** estén habilitadas.
+La imagen también es un poco demasiado grande en este momento. Cambiemos la anchura deslizando el conmutador **Width** a **40%**.
 
-![ACOP](./images/journeyactions1.png)
+![Journey Optimizer](./images/fragm8.png)
 
-El siguiente paso es crear el mensaje. Para ello, haga clic en **Editar contenido**.
+El fragmento de encabezado ya está listo. Haz clic en **Guardar** y luego haz clic en la flecha para volver a la pantalla anterior.
 
-![ACOP](./images/journeyactions2.png)
+![Journey Optimizer](./images/fragm9.png)
 
-## 3.1.2.2 Crear el mensaje
+El fragmento debe publicarse para poder utilizarse. Haga clic en **Publish**.
 
-Para crear tu mensaje, haz clic en **Editar contenido**.
+![Journey Optimizer](./images/fragm10.png)
 
-![ACOP](./images/journeyactions2.png)
+Después de un par de minutos, verás que el estado de tu fragmento ha cambiado a **Activo**.
+A continuación, debe crear un nuevo fragmento para el pie de página de los mensajes de correo electrónico. Haga clic en **Crear fragmento**.
 
-Ahora puede ver esto.
+![Journey Optimizer](./images/fragm11.png)
 
-![ACOP](./images/journeyactions3.png)
+## 3.1.2.1 Crear el fragmento Pie de página
 
-Haga clic en el campo de texto **Línea de asunto**.
+Haga clic en **Crear fragmento**.
 
-![Journey Optimizer](./images/msg5.png)
+![Journey Optimizer](./images/fragm11.png)
 
-Empiece a escribir **Hola** en el área de texto
+Escriba el nombre `--aepUserLdap-- - CitiSignal - Footer` y seleccione **Tipo: Fragmento visual**. Haga clic en **Crear**.
 
-![Journey Optimizer](./images/msg6.png)
+![Journey Optimizer](./images/fragm12.png)
 
-La línea de asunto aún no ha finalizado. A continuación, debe traer el token de personalización para el campo **Nombre** que se almacena en `profile.person.name.firstName`. En el menú de la izquierda, desplácese hacia abajo para encontrar el elemento **Person** y haga clic en la flecha para ir un nivel más profundo.
+Entonces verá esto... En el menú de la izquierda, encontrará los componentes de estructura que puede utilizar para definir la estructura del correo electrónico (filas y columnas).
 
-![Journey Optimizer](./images/msg7.png)
+Arrastre y suelte una columna **1:1** del menú en el lienzo. Este será el marcador de posición para el contenido del pie de página.
 
-Ahora encuentra el elemento **Nombre completo** y haz clic en la flecha para ir un nivel más profundo.
+![Journey Optimizer](./images/fragm13.png)
 
-![Journey Optimizer](./images/msg8.png)
+A continuación, puede utilizar Componentes de contenido para añadir contenido dentro de estos bloques. Arrastre y suelte un componente **HTML** en la primera celda de la primera fila. Haga clic en el componente para seleccionarlo y luego haga clic en el icono **&lt;/>** para editar el código fuente del HTML.
 
-Finalmente, busque el campo **Nombre** y haga clic en el signo **+** que está al lado. A continuación, verá aparecer el token de personalización en el campo de texto.
+![Journey Optimizer](./images/fragm14.png)
 
-![Journey Optimizer](./images/msg9.png)
+Entonces verá esto...
 
-A continuación, agregue el texto **, ¡gracias por registrarse!**. Haga clic en **Guardar**.
+![Journey Optimizer](./images/fragm15.png)
 
-![Journey Optimizer](./images/msg10.png)
+Copie el siguiente fragmento de código de HTML y péguelo en la ventana **Editar HTML** de Journey Optimizer.
 
-Entonces volverás a estar aquí. Haga clic en **Enviar correo electrónico a Designer** para crear el contenido del correo electrónico.
+```html
+<!--[if mso]><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td style="text-align: center;" ><![endif]-->
+<table style="width: auto; display: inline-block;">
+  <tbody>
+    <tr class="component-social-container">
+      <td style="padding: 5px">
+        <a style="text-decoration: none;" href="https://www.facebook.com" data-component-social-icon-id="facebook">
+        
+        </a>
+      </td>
+      <td style="padding: 5px">
+        <a style="text-decoration: none;" href="https://x.com" data-component-social-icon-id="twitter">
+        
+        </a>
+      </td>
+      <td style="padding: 5px">
+        <a style="text-decoration: none;" href="https://www.instagram.com" data-component-social-icon-id="instagram">
+         
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+```
 
-![Journey Optimizer](./images/msg11.png)
+Entonces, tendrás esto. En las líneas 7, 12 y 17, ahora debe insertar un archivo de imagen con los recursos de la biblioteca de AEM Assets.
 
-En la siguiente pantalla, se le solicitarán tres métodos diferentes para proporcionar el contenido del correo electrónico:
+![Journey Optimizer](./images/fragm16.png)
 
-- **Diseñe desde cero**: Comience con un lienzo en blanco y utilice el editor de WYSIWYG para arrastrar y soltar los componentes de estructura y contenido y así crear visualmente el contenido del correo electrónico.
-- **Codifique su propia**: cree su propia plantilla de correo electrónico codificándola con el HTML
-- **HTML de importación**: importe una plantilla de HTML existente que podrá editar.
+Asegúrese de que el cursor se encuentra en la línea 7 y luego haga clic en **Assets** en el menú de la izquierda. Haga clic en **Abrir selector de recursos** para seleccionar la imagen.
 
-Haga clic en **Diseñar desde cero**.
+![Journey Optimizer](./images/fragm17.png)
 
-![Journey Optimizer](./images/msg12.png)
+Abra la carpeta **citi-signal-images** y haga clic para seleccionar la imagen **Icon_Facebook.png**. Haga clic en **Seleccionar**.
 
-En el menú de la izquierda, encontrará los componentes de estructura que puede utilizar para definir la estructura del correo electrónico (filas y columnas).
+![Journey Optimizer](./images/fragm18.png)
 
-![Journey Optimizer](./images/msg13.png)
+Asegúrese de que el cursor se encuentra en la línea 12 y luego haga clic en **Abrir selector de recursos** para seleccionar la imagen.
 
-Arrastre y suelte una columna **1:2 Left** del menú en el lienzo. Este será el marcador de posición de la imagen del logotipo.
+![Journey Optimizer](./images/fragm19.png)
 
-![Journey Optimizer](./images/msg14.png)
+Abra la carpeta **citi-signal-images** y haga clic para seleccionar la imagen **Icon_X.png**. Haga clic en **Seleccionar**.
 
-Arrastre y suelte una columna **1:1** debajo del componente anterior. Este será el bloque de banner.
+![Journey Optimizer](./images/fragm20.png)
 
-![Journey Optimizer](./images/msg15.png)
+Asegúrese de que el cursor se encuentra en la línea 17 y, a continuación, haga clic en **Abrir selector de recursos** para seleccionar la imagen.
 
-Arrastre y suelte una columna **1:2 Left** debajo del componente anterior. Este será el contenido real con una imagen en el lado izquierdo y texto en el lado derecho.
+![Journey Optimizer](./images/fragm21.png)
 
-![Journey Optimizer](./images/msg16.png)
+Abra la carpeta **citi-signal-images** y haga clic para seleccionar la imagen **Icon_Instagram.png**. Haga clic en **Seleccionar**.
 
-A continuación, arrastre y suelte una columna **1:1** debajo del componente anterior. Este será el pie de página del correo electrónico. El lienzo debería tener un aspecto similar al siguiente:
+![Journey Optimizer](./images/fragm22.png)
 
-![Journey Optimizer](./images/msg17.png)
+Entonces verá esto... Haga clic en **Guardar**.
 
-A continuación, vamos a utilizar los componentes de contenido para añadir contenido dentro de estos bloques. Haga clic en el elemento de menú **Componentes de contenido**
+![Journey Optimizer](./images/fragm23.png)
 
-![Journey Optimizer](./images/msg18.png)
+Luego volverás a estar en el editor. Los iconos aún no están visibles porque el fondo y los archivos de imagen están todos en blanco. Para cambiar el color de fondo, ve a **Estilos** y haz clic en la casilla de verificación **Color de fondo**.
 
-Arrastre y suelte un componente **Image** en la primera celda de la primera fila. Haga clic en **Examinar**.
+![Journey Optimizer](./images/fragm24.png)
 
-![Journey Optimizer](./images/msg19.png)
+Cambie el código de color **Hex** a **#000000**.
 
-Entonces verá esto... Vaya a la carpeta **enablement-assets** y seleccione el archivo **luma-logo.png**. Haga clic en **Seleccionar**.
+![Journey Optimizer](./images/fragm25.png)
 
-![Journey Optimizer](./images/msg21.png)
+Cambie la alineación para que esté centrada.
 
-Ahora estás de vuelta aquí:
+![Journey Optimizer](./images/fragm26.png)
 
-![Journey Optimizer](./images/msg25.png)
+Vamos a agregar otras partes al pie de página. Arrastre y suelte un componente **Image** sobre el componente de HTML que acaba de crear. Haga clic en **Examinar**.
 
-Vaya a **Componentes de contenido** y arrastre y suelte un componente **Imagen** en la primera celda de la primera fila. Haga clic en **Examinar**.
+![Journey Optimizer](./images/fragm27.png)
 
-![Journey Optimizer](./images/msg26.png)
+Haga clic para seleccionar el archivo de imagen **`CitiSignal_Footer_Logo.png`** y haga clic en **Seleccionar**.
 
-En la ventana emergente **Assets**, ve a la carpeta **enablement-assets**. En esta carpeta encontrará todos los recursos preparados y cargados previamente por el equipo creativo. Seleccione **module23-thank-you-new.png** y haga clic en **Seleccionar**.
+![Journey Optimizer](./images/fragm28.png)
 
-![Journey Optimizer](./images/msg28.png)
+Vaya a **Estilos** y haga clic en la casilla de verificación **Color de fondo**; cambiémosla a negro otra vez. Cambie el código de color **Hex** a **#000000**.
 
-A continuación, tendrá esto:
+![Journey Optimizer](./images/fragm29.png)
 
-![Journey Optimizer](./images/msg30.png)
+Cambie la anchura a **20%** y compruebe que la alineación esté centrada.
 
-Seleccione la imagen y, en el menú de la derecha, desplácese hacia abajo hasta que vea el componente deslizador de anchura **Size**. Utilice el regulador para cambiar la anchura a f.i. **60 %**.
+![Journey Optimizer](./images/fragm30.png)
 
-![Journey Optimizer](./images/msg31.png)
+A continuación, arrastre y suelte un componente **Text** bajo el componente HTML que creó. Haga clic en **Examinar**.
 
-A continuación, vaya a **Componentes de contenido** y arrastre y suelte un componente **Texto** en el componente de estructura en la cuarta fila.
+![Journey Optimizer](./images/fragm31.png)
 
-![Journey Optimizer](./images/msg33.png)
+Copie y pegue el texto siguiente reemplazando el texto del marcador de posición.
 
-Seleccione el texto predeterminado **Escriba el texto aquí.** como lo haría con cualquier editor de texto. Escriba **Estimado** en su lugar. Observe la barra de herramientas de texto que se muestra cuando está en modo de texto.
+```
+1234 N. South Street, Anywhere, US 12345
 
-![Journey Optimizer](./images/msg34.png)
+Unsubscribe
 
-En la barra de herramientas, haga clic en el icono **Agregar personalización**.
+©2024 CitiSignal, Inc and its affiliates. All rights reserved.
+```
 
-![Journey Optimizer](./images/msg35.png)
+Establezca la **alineación del texto** en el centro.
 
-A continuación, debe traer el token de personalización **First name** que se almacena en `profile.person.name.firstName`. En el menú, busque el elemento **Person**, explore en profundidad el elemento **Nombre completo** y, a continuación, haga clic en el icono **+** para agregar el campo Nombre al editor de expresiones.
+![Journey Optimizer](./images/fragm32.png)
 
-Haga clic en **Guardar**.
+Cambiar **color de fuente** a blanco, **#FFFFFF**.
 
-![Journey Optimizer](./images/msg36.png)
+![Journey Optimizer](./images/fragm33.png)
 
-Ahora notará cómo se ha agregado el campo de personalización al texto.
+Cambiar el **color de fondo** a negro, **#000000**.
 
-![Journey Optimizer](./images/msg37.png)
+![Journey Optimizer](./images/fragm34.png)
 
-En el mismo campo de texto, presione **Entrar** dos veces para agregar dos líneas y escriba **Gracias por crear su cuenta con Luma!**.
+Seleccione el texto **Cancelar la suscripción** en el pie de página y haga clic en el icono **Vínculo** de la barra de menús. Establezca **Type** en **Exclusión/baja externa** y establezca la dirección URL en **https://aepdemo.net/unsubscribe.html** (no se permite tener una dirección URL en blanco para el vínculo de cancelación de suscripción).
 
-![Journey Optimizer](./images/msg38.png)
+![Journey Optimizer](./images/fragm35.png)
 
-La última comprobación que debes realizar para asegurarte de que el correo electrónico esté listo es previsualizarlo, haz clic en el botón **Simular contenido**.
+Entonces, tendrás esto. El pie de página ya está listo. Haz clic en **Guardar** y luego haz clic en la flecha para volver a la página anterior.
 
-![Journey Optimizer](./images/msg50.png)
+![Journey Optimizer](./images/fragm36.png)
 
-Comience por identificar qué perfil desea utilizar para la vista previa. Seleccione el área de nombres **email** haciendo clic en el icono situado junto al campo **Introducir área de nombres de identidad**.
+Haga clic en **Publish** para publicar el pie de página y utilizarlo en un mensaje de correo electrónico.
 
-En la lista de áreas de nombres de identidad, seleccione el área de nombres **Email**.
+![Journey Optimizer](./images/fragm37.png)
 
-En el campo **Valor de identidad**, escriba la dirección de correo electrónico de un perfil de demostración anterior que ya esté almacenado en el Perfil del cliente en tiempo real. Por ejemplo **woutervangeluwe+06022022-01@gmail.com** y haga clic en el botón **Buscar perfil de prueba**
+Después de un par de minutos, verás que el estado del pie de página ha cambiado a **Activo**.
 
-![Journey Optimizer](./images/msg53.png)
-
-Una vez que el perfil aparezca en la tabla, haga clic en la ficha **Vista previa** para obtener acceso a la pantalla de vista previa.
-
-Cuando la vista previa esté lista, compruebe que la personalización es correcta en la línea de asunto, el texto del cuerpo y el vínculo de baja se resaltan como un hipervínculo.
-
-Haga clic en **Cerrar** para cerrar la vista previa.
-
-![Journey Optimizer](./images/msg54.png)
-
-Haz clic en **Guardar** para guardar el mensaje.
-
-![Journey Optimizer](./images/msg55.png)
-
-Vuelva al panel de mensajes haciendo clic en la **flecha** junto al texto de la línea de asunto en la esquina superior izquierda.
-
-![Journey Optimizer](./images/msg56.png)
-
-Ha completado la creación del correo electrónico de registro. Haga clic en la flecha de la esquina superior izquierda para volver al recorrido.
-
-![Journey Optimizer](./images/msg57.png)
-
-Haga clic en **Ok**.
-
-![Journey Optimizer](./images/msg57a.png)
-
-## 3.1.2.3 Publish su recorrido
-
-Aún necesita darle un Nombre a su recorrido. Para ello, haga clic en el icono **Propiedades** en la parte superior derecha de la pantalla.
-
-![ACOP](./images/journeyname.png)
-
-A continuación, puede introducir el nombre del recorrido aquí. Use `--aepUserLdap-- - Account Creation Journey`. Haga clic en **Aceptar** para guardar los cambios.
-
-![ACOP](./images/journeyname1.png)
-
-Ahora puede publicar su recorrido haciendo clic en **Publish**.
-
-![ACOP](./images/publishjourney.png)
-
-Vuelva a hacer clic en **Publish**.
-
-![ACOP](./images/publish1.png)
-
-A continuación, verá una barra de confirmación verde que indica que el recorrido se ha publicado.
-
-![ACOP](./images/published.png)
+![Journey Optimizer](./images/fragm38.png)
 
 Ya ha terminado este ejercicio.
 
-Paso siguiente: [3.1.3 Actualice la propiedad de recopilación de datos y pruebe su recorrido](./ex3.md)
+Paso siguiente: [3.1.3 Cree su recorrido y mensaje de correo electrónico](./ex3.md)
 
 [Volver al módulo 3.1](./journey-orchestration-create-account.md)
 

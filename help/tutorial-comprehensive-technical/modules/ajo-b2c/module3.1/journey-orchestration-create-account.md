@@ -4,18 +4,16 @@ description: Adobe Journey Optimizer
 kt: 5342
 doc-type: tutorial
 exl-id: 73812caa-29a1-4931-944d-9651c6de2c19
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: f843c50af04d744a7d769f320b5b55a5e6d25ffd
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '268'
 ht-degree: 3%
 
 ---
 
 # 3.1 Adobe Journey Optimizer: Orchestration
 
-**Autores: [Rob In der](https://www.linkedin.com/in/ridmaur/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
-En este módulo, le explicaremos los pasos para utilizar Adobe Journey Optimizer. Tendrá acceso a Adobe Journey Optimizer y podrá configurar Eventos y Recorridos que comiencen en función de un déclencheur de un evento de experiencia enviado a Platform.
+En este módulo, le explicaremos los pasos para utilizar Adobe Journey Optimizer. Configurará eventos y recorridos que se inician en función de un déclencheur de un evento de experiencia enviado a AEP.
 
 ## Objetivos de aprendizaje
 
@@ -37,11 +35,15 @@ En este módulo, le explicaremos los pasos para utilizar Adobe Journey Optimizer
 
 En este ejercicio, aprenderá a configurar un evento.
 
-[3.1.2 Crear el recorrido y el mensaje de correo electrónico](./ex2.md)
+[3.1.2 Crear fragmentos para usarlos en el mensaje](./ex2.md)
+
+En este ejercicio, aprenderá a configurar fragmentos reutilizables que utilizará al crear el mensaje de correo electrónico.
+
+[3.1.3 Crear el recorrido y el mensaje de correo electrónico](./ex3.md)
 
 En este ejercicio, aprenderá a configurar un mensaje de correo electrónico.
 
-[3.1.3 Actualizar la propiedad de recopilación de datos y probar el recorrido](./ex3.md)
+[3.1.3 Actualizar la propiedad de recopilación de datos y probar el recorrido](./ex4.md)
 
 Esto le guiará a través de la configuración de Launch para almacenar en déclencheur su evento y proporcionar la carga útil adecuada y, finalmente, podrá enviarse un correo electrónico.
 

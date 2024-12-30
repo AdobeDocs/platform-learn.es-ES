@@ -5,9 +5,9 @@ user-guide-description: Un tutorial práctico que cubre muchos aspectos de Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: ca6370660b676cef48890d23652258015aa2b9ed
+source-git-commit: cf8b97f06bbe6741fc6dfa70c207c6a748f5fe85
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '923'
 ht-degree: 4%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 4%
       + [Uso de la aplicación móvil](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex5.md)
 
 + 1 Recopilación de datos {#datacollection}
-   + 1.1 Recopilación de datos de Adobe Experience Platform y SDK web {#module11}
+   + 1.1 Recopilación de datos de Adobe Experience Platform y Web SDK {#module11}
       + [Información general](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md)
       + [1.1.1 Explicación de la recopilación de datos de Adobe Experience Platform](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/ex1.md)
       + [Edge Network 1.1.2, flujos de datos y recopilación de datos del lado del servidor](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/ex2.md)
@@ -76,7 +76,7 @@ ht-degree: 4%
       + [2.3.4 Tomar medidas: enviar a su audiencia a un destino S3](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex4.md)
       + [2.3.5 Tomar medidas: enviar la audiencia a Adobe Target](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex5.md)
       + [2.3.6 Audiencias externas](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex6.md)
-      + [2.3.7 SDK de destinos](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex7.md)
+      + [2.3.7 Destinos SDK](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex7.md)
       + [Resumen y beneficios](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/summary.md)
    + 2.4 Real-Time CDP: Audience Activation de Microsoft Azure Event Hub {#module24}
       + [Información general](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/segment-activation-microsoft-azure-eventhub.md)
@@ -108,8 +108,9 @@ ht-degree: 4%
    + 3.1 Adobe Journey Optimizer: Orquestación {#module31}
       + [Información general](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/journey-orchestration-create-account.md)
       + [3.1.1 Creación de un evento](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex1.md)
-      + [3.1.2 Crear el recorrido y el mensaje de correo electrónico](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex2.md)
-      + [3.1.3 Actualizar la propiedad de recopilación de datos y probar el Recorrido](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex3.md)
+      + [3.1.2 Crear fragmentos para usarlos en el mensaje](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex2.md)
+      + [3.1.3 Crear el recorrido y el mensaje de correo electrónico](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex3.md)
+      + [3.1.4 Actualizar la propiedad de recopilación de datos y probar el Recorrido](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex4.md)
       + [Resumen y beneficios](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/summary.md)
    + 3.2 Adobe Journey Optimizer: Fuentes de datos externas y acciones personalizadas {#module32}
       + [Información general](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.2/journey-orchestration-external-weather-api-sms.md)
@@ -123,7 +124,7 @@ ht-degree: 4%
       + [Información general](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/offer-decisioning.md)
       + [3.3.1 Offer decisioning 101](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/ex1.md)
       + [3.3.2 Configurar sus ofertas y decisiones](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/ex2.md)
-      + [3.3.3 Preparar la propiedad de cliente de recopilación de datos de Adobe Experience Platform y la configuración del SDK web para Offer decisioning](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/ex3.md)
+      + [3.3.3 Preparar la propiedad del cliente de recopilación de datos de Adobe Experience Platform y la configuración de Web SDK para el Offer decisioning](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/ex3.md)
       + [3.3.4 Combinación de Adobe Target y Offer Decisioning](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/ex4.md)
       + [3.3.5 Usar su decisión en un correo electrónico](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/ex5.md)
       + [3.3.6 Prueba de la decisión mediante la API](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/ex6.md)
