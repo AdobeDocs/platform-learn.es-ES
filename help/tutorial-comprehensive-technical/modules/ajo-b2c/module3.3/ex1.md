@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 exl-id: 8a627c29-7780-455f-abe1-a69f8fe145ea
-source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
+source-git-commit: 21718a7c3a4df2793ae257a9b7cbe4466f1193f5
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '948'
 ht-degree: 2%
 
 ---
@@ -49,7 +49,7 @@ En el menú de la izquierda, haga clic en **Ofertas**. Ahora verá el menú Ofer
 
 ![Ubicaciones](./images/homedec.png)
 
-Haga clic en **Componentes**. Ahora verá el menú Ofertas, que contiene elementos como Ubicaciones, Etiquetas, Reglas y Clasificaciones.
+Haga clic en **Componentes**. Ahora verá cosas como Ubicaciones, Calificador de colección, Reglas y Clasificaciones.
 
 ![Ubicaciones](./images/components.png)
 
@@ -61,7 +61,7 @@ Ir a **Ubicaciones**.
 
 En la pestaña **Ubicaciones** puede definir las ubicaciones de sus ofertas. Al definir una decisión, la ubicación define dónde aparecerá la oferta resultante (Tipo de canal) y en qué forma (Tipo de contenido).
 
-Si no ve ninguna ubicación en su instancia de Adobe Experience Platform, créela como se indica a continuación y en la captura de pantalla.
+Si no ve ninguna ubicación en su entorno, créela como se indica a continuación y en la captura de pantalla.
 
 | Nombre | Tipo de canal | Tipo de contenido |
 | ---------------------- | ------------ | ------------ |
@@ -101,19 +101,17 @@ Ir a **Reglas**. Haga clic en **+ Crear regla**.
 
 ![Reglas de decisión](./images/rules.png)
 
-A continuación, verá el entorno de segmentación de Adobe Experience Platform.
+A continuación, verá la interfaz de creación de audiencias de Adobe Experience Platform.
 
 ![Reglas de decisión](./images/createrule1.png)
 
 Ahora puede acceder a todos los campos que forman parte del esquema de unión para el perfil del cliente en tiempo real y puede crear cualquier regla.
 
-También es interesante saber que simplemente puede reutilizar audiencias ya definidas en Adobe Experience Platform, yendo a **Audiencias** > ``--aepTenantId--``.
-
-![Regla de decisión](./images/decisionruleaud.png)
+También es bueno saber que simplemente puede reutilizar audiencias ya definidas en Adobe Experience Platform, yendo a **Audiencias** > ``--aepTenantId--``.
 
 A continuación, verá esto:
 
-![Regla de decisión](./images/decisionruleaud1.png)
+![Regla de decisión](./images/decisionruleaud.png)
 
 Si lo desea, ahora puede configurar sus propias reglas. Para este ejercicio, necesitará dos reglas:
 

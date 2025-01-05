@@ -2,9 +2,10 @@
 title: Información general
 description: Punto de partida para ingenieros de datos, analistas de datos, arquitectos de datos, científicos de datos, ingenieros de orquestaciones y especialistas en marketing para comprender plenamente el valor comercial de Adobe Experience Platform y todos sus servicios de aplicaciones.
 doc-type: multipage-overview
-source-git-commit: 8270f69dd04714e217ddbb4d125157799cba2940
+exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
+source-git-commit: 21718a7c3a4df2793ae257a9b7cbe4466f1193f5
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1221'
 ht-degree: 2%
 
 ---
@@ -36,7 +37,7 @@ Este tutorial no solo se centra en las aplicaciones de Adobe, sino que tiene en 
 Después de completar los ejercicios de este tutorial, podrá hacer lo siguiente:
 
 - Configuración de esquemas, grupos de campos, conjuntos de datos e identidades
-- Configure una propiedad de recopilación de datos de Adobe Experience Platform y la nueva extensión del SDK web en la recopilación de datos de Adobe Experience Platform
+- Configure una propiedad de recopilación de datos de Adobe Experience Platform y la nueva extensión de SDK web en Recopilación de datos de Adobe Experience Platform
 - Transmitir datos a Adobe Experience Platform en tiempo real mediante la recopilación de datos de Adobe Experience Platform
 - Ingesta por lotes de datos en Adobe Experience Platform mediante un flujo de trabajo o mediante una aplicación de extracción, transformación y carga (ETL)
 - Visualice y utilice el perfil del cliente en tiempo real en Adobe Experience Platform
@@ -67,6 +68,8 @@ Para cada módulo que complete usando el tutorial siguiente, debe enviar una pru
 
 ## Contenido
 
+Para comprobar el estado del contenido siguiente, vaya a la [página de estado](./status.md).
+
 [0. Introducción](./modules/gettingstarted/gettingstarted/getting-started.md)
 
 En este módulo básico, configurará todo para que pueda acceder y utilizar el entorno de demostración.
@@ -75,9 +78,9 @@ En este módulo básico, configurará todo para que pueda acceder y utilizar el 
 
 ### 1. Recopilación de datos
 
-[1.1 Foundation: configuración de la recopilación de datos de Adobe Experience Platform y SDK web](./modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md)
+[1.1 Foundation: configuración de la recopilación de datos de Adobe Experience Platform y Web SDK](./modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md)
 
-En este módulo básico, aprenderá sobre la recopilación de datos de Adobe Experience Platform y la nueva extensión del SDK web.
+En este módulo básico, aprenderá sobre la recopilación de datos de Adobe Experience Platform y la nueva extensión de Web SDK.
 
 **Inversión de tiempo:** 30 minutos
 
