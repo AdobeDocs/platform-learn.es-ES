@@ -4,9 +4,9 @@ description: 'En esta sección configurará un recorrido basado en déclencheur:
 kt: 5342
 doc-type: tutorial
 exl-id: b9d9b357-08d1-4f65-9e0b-46224d035602
-source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
+source-git-commit: 9865b5697abe2d344fb530636a1afc3f152a9e8f
 workflow-type: tm+mt
-source-wordcount: '1921'
+source-wordcount: '1919'
 ht-degree: 1%
 
 ---
@@ -136,7 +136,7 @@ Arrastrar y soltar 8 veces una columna **1:1** en el lienzo, lo que debería pro
 
 ![Journey Optimizer](./images/oc9.png)
 
-En el menú de la izquierda, ve a **Fragmentos**. Arrastre el encabezado que creó anteriormente en el ejercicio 3.2.2 al primer componente del lienzo. Arrastre el pie de página creado anteriormente en el ejercicio 3.2.2 al último componente del lienzo.
+En el menú de la izquierda, ve a **Fragmentos**. Arrastre el encabezado que creó anteriormente en [ejercicio 3.1.2.1](./../module3.1/ex2.md) al primer componente del lienzo. Arrastre el pie de página creado anteriormente en [ejercicio 3.1.2.2](./../module3.1/ex2.md) al último componente del lienzo.
 
 ![Journey Optimizer](./images/fragm1.png)
 

@@ -4,16 +4,14 @@ description: En este módulo, aprenderá todo lo que debe saber sobre Journey Op
 kt: 5342
 doc-type: tutorial
 exl-id: f9f37817-f640-4b54-b977-13fd6cc29fcd
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 9865b5697abe2d344fb530636a1afc3f152a9e8f
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '285'
 ht-degree: 2%
 
 ---
 
 # 3.4 Adobe Journey Optimizer
-
-**Autores: [Maxime Foutrel](https://www.linkedin.com/in/maximefoutrel/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 En este módulo, aprenderá todo lo que debe saber sobre Adobe Journey Optimizer, que ayuda a las empresas a diseñar y ofrecer experiencias conectadas, contextuales y personalizadas a sus clientes.
 
@@ -28,7 +26,7 @@ En este módulo, aprenderá todo lo que debe saber sobre Adobe Journey Optimizer
 
 - Acceso a Adobe Journey Optimizer
 - **Descargar estos recursos**:
-   - [Recursos](./../../../assets/ajo/ajo_assets.zip)
+   - [Recursos](./../../../assets/ajo/CitiSignal-images.zip)
 
 >[!NOTE]
 >
@@ -40,21 +38,17 @@ En este módulo, aprenderá todo lo que debe saber sobre Adobe Journey Optimizer
 
 En este ejercicio, configurará un recorrido basado en déclencheur para enviar el mensaje de correo electrónico que creó en el ejercicio anterior.
 
-[3.4.2 Configuración de un recorrido de newsletter basado en lotes](./ex2.md)
+[3.4.2 Configuración de una campaña](./ex2.md)
 
-En este ejercicio, debe configurar un recorrido basado en lotes para enviar el mensaje de correo electrónico que creó en el ejercicio anterior.
+En este ejercicio, configurará una campaña de correo electrónico tradicional.
 
-[3.4.3 Aplicar la personalización en un mensaje de correo electrónico](./ex3.md)
+[3.4.3 Aplicar la personalización basada en segmentos en un mensaje de correo electrónico](./ex3.md)
 
 En este ejercicio, utilizará las suscripciones a segmentos para definir qué contenido se mostrará dentro de un correo electrónico.
 
 [3.4.4 Configuración y uso de notificaciones push](./ex4.md)
 
 En este ejercicio, debe instalar una aplicación móvil en el dispositivo iOS y configurar y enviar una notificación push al dispositivo.
-
-[3.4.5 Crear un recorrido de evento empresarial](./ex5.md)
-
-En este ejercicio, definirá un evento empresarial que enviará un mensaje de retorno en existencias a través de SMS a los clientes que anteriormente habían mostrado interés en ese producto, pero que no pudieron comprarlo porque el producto estaba agotado.
 
 [Resumen y beneficios](./summary.md)
 
