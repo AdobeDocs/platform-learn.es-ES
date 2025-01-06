@@ -4,9 +4,9 @@ description: En este módulo, aprenderá todo lo que debe saber sobre Journey Op
 kt: 5342
 doc-type: tutorial
 exl-id: f9f37817-f640-4b54-b977-13fd6cc29fcd
-source-git-commit: 9865b5697abe2d344fb530636a1afc3f152a9e8f
+source-git-commit: fc24f3c9fb1683db35026dc53d0aaa055aa87e34
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '286'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,7 @@ En este módulo, aprenderá todo lo que debe saber sobre Adobe Journey Optimizer
 
 - Acceso a Adobe Journey Optimizer
 - **Descargar estos recursos**:
-   - [Recursos](./../../../assets/ajo/CitiSignal-images.zip)
+   - [Imágenes de CitiSignal](./../../../assets/ajo/CitiSignal-images.zip)
 
 >[!NOTE]
 >
