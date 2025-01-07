@@ -4,16 +4,14 @@ description: 'Recopilación de datos: composición de audiencia federada'
 kt: 5342
 doc-type: tutorial
 exl-id: 44660f3e-0594-4578-9531-1c918992aa9d
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
 
 # 1.3 Composición de audiencia federada
-
-**Autor: [Ludovic Latapie](https://www.linkedin.com/in/ludoviclatapie/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 En este módulo, el objetivo es aprender todo acerca de la creación de audiencias mediante la Composición de audiencias federada.
 
@@ -38,7 +36,7 @@ La Composición de audiencias federada proporciona a los clientes de Real-Time C
 
 ## Ejercicios
 
-[1.3.1 Configuración de la cuenta de Snowflake](./ex1.md)
+[1.3.1 Configuración del entorno de Snowflake](./ex1.md)
 
 En este ejercicio, configurará la cuenta de prueba de Snowflake y la conectará a Adobe Experience Platform
 

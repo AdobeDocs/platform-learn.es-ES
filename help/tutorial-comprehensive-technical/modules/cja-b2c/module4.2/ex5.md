@@ -4,9 +4,9 @@ description: 'Ingesta y análisis de datos de Google Analytics en Adobe Experien
 kt: 5342
 doc-type: tutorial
 exl-id: bd42d049-e2f6-45a3-82fe-e2ee530a76d7
-source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
+source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
 workflow-type: tm+mt
-source-wordcount: '3184'
+source-wordcount: '3100'
 ht-degree: 2%
 
 ---
@@ -119,69 +119,44 @@ Haz clic en **Guardar y continuar**.
 
 ![demostración](./images/22.png)
 
+Haga clic en **Guardar**.
+
+![demostración](./images/22a.png)
+
 Ahora puede agregar componentes a la vista de datos. Como puede ver, algunas métricas y dimensiones se añaden automáticamente.
 
 ![demostración](./images/24.png)
 
-Agregue los siguientes componentes a la vista de datos:
+Agregue los siguientes componentes a la vista de datos. Asegúrese también de actualizar los nombres de campo a nombres descriptivos. Para ello, seleccione la métrica o dimensión y actualice el campo **Nombre del componente** en el menú derecho.
 
-| Nombre del componente | Tipo de componente | Ruta del componente |
-| -----------------|-----------------|-----------------|
-| nivel | Dimensión | _experienceplatform.loyaltyDetails.level |
-| puntos | Métrica | _experienceplatform.loyaltyDetails.points |
-| commerce.checkouts.value | Métrica | commerce.checkouts.value |
-| commerce.productListRemovals.value | Métrica | commerce.productListRemovals.value |
-| commerce.productListAdds | Métrica | commerce.productListAdds |
-| commerce.productViews.value | Métrica | commerce.productViews.value |
-| commerce.purchases.value | Métrica | commerce.purchases.value |
-| web.webPageDetails.pageViews | Métrica | web.webPageDetails.pageViews |
-| El ID de transacción | Dimensión | commerce.order.payments.transactionID |
-| channel.mediaType | Dimensión | channel.mediaType |
-| channel.typeAtSource | Dimensión | channel.typeAtSource |
-| Código de seguimiento | Dimensión | marketing.trackingCode |
-| gaid | Dimensión | _experienceplatform.identification.core.gaid |
-| web.webPageDetails.name | Dimensión | web.webPageDetails.name |
-| Tipo de evento | Dimensión | eventType |
-| Proveedor | Dimensión | environment.browserDetails.vendor |
-| Identificador | Dimensión | _id |
-| Marca de tiempo | Dimensión | timestamp |
-| Tipo | Dimensión | device.type |
-| loyaltyId | Dimensión | _experienceplatform.identification.core.loyaltyId |
-
-A continuación, tendrá esto:
-
-![demostración](./images/25.png)
-
-A continuación, debe cambiar el nombre descriptivo de algunas de las métricas y dimensiones anteriores para que pueda utilizarlas fácilmente al crear el análisis. Para ello, seleccione la métrica o dimensión y actualice el campo **Name** como se indica en la siguiente imagen.
-
-![demostración](./images/25a.png)
-
-| Nombre original del componente | Nombre para mostrar |
-| -----------------|-----------------|
-| nivel | Nivel de fidelización |
-| puntos | Puntos de fidelización |
-| commerce.checkouts.value | Cierres de compra |
-| commerce.productListRemovals.value | Eliminaciones del carro |
-| commerce.productListAdds | Adiciones al carro |
-| commerce.productViews.value | Vistas del producto |
-| commerce.purchases.value | Compras |
-| web.webPageDetails.pageViews | Page Views |
-| channel.mediaType | Traffic Medium |
-| channel.typeAtSource | Traffic Source |
-| Código de seguimiento | Canal de marketing |
-| gaid | ID de Google Analytics |
-| Nombre | Título de página |
-| Proveedor | Explorador |
-| Tipo | Device Type |
-| loyaltyId | ID de fidelización |
+| Tipo de componente | Nombre original del componente | Nombre para mostrar | Ruta del componente |
+| -----------------| -----------------|-----------------|-----------------|
+| Métrica | commerce.checkouts.value | Cierres de compra | `commerce.checkouts.value` |
+| Métrica | commerce.productListRemovals.value | Eliminaciones del carro | `commerce.productListRemovals.value` |
+| Métrica | commerce.productListAdds | Adiciones al carro | `commerce.productListAdds` |
+| Métrica | commerce.productViews.value | Vistas del producto | `commerce.productViews.value` |
+| Métrica | commerce.purchases.value | Compras | `commerce.purchases.value` |
+| Métrica | web.webPageDetails.pageViews | Page Views | `web.webPageDetails.pageViews` |
+| Métrica | puntos | Puntos de fidelización | `_experienceplatform.loyaltyDetails.points` |
+| Dimensión | nivel | Nivel de fidelización | `_experienceplatform.loyaltyDetails.level` |
+| Dimensión | channel.mediaType | Traffic Medium | `channel.mediaType` |
+| Dimensión | channel.typeAtSource | Traffic Source | `channel.typeAtSource` |
+| Dimensión | Código de seguimiento | Canal de marketing | `marketing.trackingCode` |
+| Dimensión | gaid | ID de Google Analytics | `_experienceplatform.identification.core.gaid` |
+| Dimensión | web.webPageDetails.name | Título de página | `web.webPageDetails.name` |
+| Dimensión | Proveedor | Explorador | `environment.browserDetails.vendor` |
+| Dimensión | Tipo | Device Type | `device.type` |
+| Dimensión | loyaltyId | ID de fidelización | `_experienceplatform.identification.core.loyaltyId` |
+| Dimensión | commerce.order.payments.transactionID | El ID de transacción | `commerce.order.payments.transactionID` |
+| Dimensión | eventType | Tipo de evento | `eventType` |
+| Dimensión | timestamp | Marca de tiempo | `timestamp` |
+| Dimensión | `_id` | Identificador | `_id` |
 
 Luego tendrá algo así:...
 
 ![demostración](./images/25b.png)
 
-A continuación, debe realizar algunos cambios en el contexto de persona y sesión para algunos de estos componentes cambiando **Configuración de atribución**.
-
-![demostración](./images/25c.png)
+A continuación, debe realizar algunos cambios en el contexto de persona y sesión para algunos de estos componentes cambiando **Configuración de atribución o persistencia**.
 
 Cambie **Configuración de atribución** para los siguientes componentes:
 
@@ -193,37 +168,30 @@ Cambie **Configuración de atribución** para los siguientes componentes:
 | Traffic Medium |
 | Device Type |
 | ID de Google Analytics |
-| ID de fidelización |
-| Nivel de fidelización |
-| Puntos de fidelización |
 
-Para ello, seleccione el componente, haga clic en **Usar modelo de atribución personalizado** y establezca el **Modelo** en **Último contacto** y la **Caducidad** en **Persona (ventana de informes)**. Repita este proceso para todos los componentes mencionados anteriormente.
+Para ello, seleccione el componente, haga clic en **Usar modelo de atribución personalizado** y establezca el **Modelo** en **Más reciente** y la **Caducidad** en **Ventana de informes de persona**. Repita este proceso para todos los componentes mencionados anteriormente.
 
 ![demostración](./images/27a.png)
 
-Después de realizar los cambios en la configuración de atribución para todos los componentes mencionados anteriormente, debe tener esta vista:
+Después de realizar los cambios en la configuración de atribución para todos los componentes mencionados anteriormente, debe tener esta vista. Haz clic en **Guardar y continuar**.
 
 ![demostración](./images/27.png)
 
-La vista de datos ya está configurada. Haga clic en **Guardar**.
+En la pantalla **Configuración**, no se requieren cambios. Haga clic en **Guardar y finalizar**.
 
-![demostración](./images/30.png)
+![demostración](./images/27b.png)
 
 Ya está listo para analizar los datos de los Google Analytics en Adobe Analytics Analysis Workspace. Vamos a pasar al siguiente ejercicio.
 
 ## 4.2.5.3 Crear el proyecto
 
-En Customer Journey Analytics, vaya a **Proyectos**.
+En Customer Journey Analytics, ve a **Workspace**. Haga clic en **Crear proyecto**
 
 ![demostración](./images/pro1.png)
 
-A continuación, verá esto:
+Seleccione **Proyecto Workspace en blanco** y haga clic en **Crear**.
 
 ![demostración](./images/pro2.png)
-
-Cree un proyecto haciendo clic en **Crear nuevo proyecto**.
-
-![demostración](./images/pro3.png)
 
 Ahora tiene un proyecto en blanco:
 
@@ -236,27 +204,21 @@ Primero, guarde el proyecto y asígnele un nombre. Puede utilizar el siguiente c
 | Windows | Control + S |
 | Mac | Comando + S |
 
-Verá esta ventana emergente:
-
-![demostración](./images/prsave.png)
-
-Utilice esta convención de nombres:
+Verás esta ventana emergente. Utilice esta convención de nombres:
 
 | Nombre | Descripción |
 | ----------------- |-------------| 
-| ldap: GA + Loyalty Workspace | ldap: GA + Loyalty Workspace |
+| `--aepUserLdap-- – GA + Loyalty Workspace` | `--aepUserLdap-- – GA + Loyalty Workspace` |
 
-A continuación, haga clic en **Guardar proyecto**.
+A continuación, haga clic en **Guardar**.
 
-![demostración](./images/prsave2.png)
+![demostración](./images/prsave.png)
 
-A continuación, asegúrese de seleccionar la vista de datos correcta en la esquina superior derecha de la pantalla. Esta es la vista de datos que creó en el ejercicio anterior, con la convención de nombres `ldap - GA + Loyalty Data View`. En este ejemplo, la vista de datos que se va a seleccionar es `ldap - GA + Loyalty Data View`.
+A continuación, asegúrese de seleccionar la vista de datos correcta en la esquina superior derecha de la pantalla. Esta es la vista de datos que creó en el ejercicio anterior, con la convención de nombres `--aepUserLdap-- - GA + Loyalty Data View`.
 
 ![demostración](./images/prdvlist.png)
 
-![demostración](./images/prdv.png)
-
-### 12.5.3.1 Tablas improvisadas
+### 4.2.5.3.1 Tablas improvisadas
 
 Las tablas improvisadas funcionan, más o menos, como tablas dinámicas en Excel. Selecciona algo de la barra izquierda, lo arrastra y lo suelta en la forma libre y obtendrá un informe de tabla.
 
@@ -270,13 +232,9 @@ Veamos dos ejemplos en los que necesita utilizar SQL, BigQuery y algo de tiempo 
 
 Respondamos a estas preguntas y a algunas más con Analysis Workspace en CJA.
 
-En primer lugar, seleccione el intervalo de fechas correcto (**Últimas 53 semanas completas**) en el lado derecho del panel.
+En primer lugar, seleccione el intervalo de fechas correcto (**Hoy**) en el lado derecho del panel. Seleccionar **Aplicar**.
 
 ![demostración](./images/pro11.png)
-
-A continuación, haga clic en **Aplicar** para aplicar el intervalo de fechas. Recuerde este paso para los próximos ejercicios.
-
-![demostración](./images/apply.png)
 
 >[!NOTE]
 >
@@ -296,9 +254,13 @@ Para poder hacerlo, debe crear la Métrica calculada **Tasa de conversión**. Pa
 
 ![demostración](./images/procalc1.png)
 
-Como nombre para la métrica calculada, use **Tasa de conversión**. A continuación, arrastre las métricas **purchase** y **sesiones** al lienzo. Establezca **Formato** en **Porcentaje** y **Lugares decimales** en **2**. Finalmente, haga clic en **Guardar**.
+Como nombre para la métrica calculada, use **Tasa de conversión** y use **tasa de conversión** para **identificador externo**. A continuación, arrastre las métricas **purchase** y **sesiones** al lienzo. Establezca **Formato** en **Porcentaje** y **Lugares decimales** en **2**. Finalmente, haga clic en **Guardar**.
 
 ![demostración](./images/procalc2.png)
+
+Haga clic en **Guardar**.
+
+![demostración](./images/procalc2a.png)
 
 A continuación, para usar todas estas métricas en la **tabla de forma libre**, arrástrelas y suéltelas una por una en la **tabla de forma libre**. Consulte el ejemplo siguiente.
 

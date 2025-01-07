@@ -4,9 +4,9 @@ description: 'Customer Journey Analytics: visualización con Customer Journey An
 kt: 5342
 doc-type: tutorial
 exl-id: 3c928a73-b4ec-4b68-943c-c177b1e29f7b
-source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
+source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1502'
 ht-degree: 0%
 
 ---
@@ -49,15 +49,15 @@ Automáticamente, se agregará la dimensión **Day** para crear su primera tabla
 
 ![demostración](./images/pro3.png)
 
-A continuación, haga clic con el botón derecho en el resumen de la métrica.
+A continuación, haga clic con el botón derecho en el resumen de la métrica. Haga clic en **Visualizar**.
 
 ![demostración](./images/pro4.png)
 
-Haga clic en **Visualizar** y, a continuación, seleccione **Línea** como visualización.
+Haga clic en **Línea**.
 
 ![demostración](./images/pro5.png)
 
-Verá las vistas de sus productos por día.
+Verá las vistas de sus productos por hora.
 
 ![demostración](./images/pro6.png)
 
@@ -90,7 +90,7 @@ Empecemos a encontrar los 5 productos más vistos. En el menú del lado izquierd
 
 Ahora arrastre y suelte **Nombre de producto** para reemplazar la dimensión **Día**:
 
-Este será el resultado
+Este será el resultado. Seleccione los 4 nombres de productos y verá la actualización de la visualización.
 
 ![demostración](./images/pro10a.png)
 
@@ -110,13 +110,9 @@ Por último, puede añadir más visualizaciones. En el lado izquierdo, debajo de
 
 ![demostración](./images/pro18.png)
 
-A continuación, en la tabla, seleccione las primeras 5 **filas del agente de usuario** del desglose que hicimos en **Google Pixel XL Black Smartphone de 32 GB** > **Citi Signal**. Mientras selecciona las 3 filas, mantenga presionado el botón **CTRL** (en Windows) o el botón **Comando** (en Mac).
+A continuación, en la tabla, seleccione las primeras 5 **filas del agente de usuario** del desglose que hicimos en **Google Pixel XL Black Smartphone de 32 GB** > **Citi Signal**. Mientras selecciona las 3 filas, mantenga presionado el botón **CTRL** (en Windows) o el botón **Comando** (en Mac). Verá cómo se actualiza el gráfico de anillo.
 
 ![demostración](./images/pro20.png)
-
-Verá que el gráfico de anillo ha cambiado:
-
-![demostración](./images/pro21.png)
 
 Incluso puede adaptar el diseño para que sea más legible, haciendo que el gráfico **Línea** y el gráfico **Anillo** sean un poco más pequeños para que puedan encajar uno junto al otro:
 
@@ -156,13 +152,9 @@ Entonces verá esto...
 
 ![demostración](./images/prodatefa.png)
 
-Busque la dimensión **Tipo de evento** en los componentes del lado izquierdo:
+Busque la dimensión **Tipo de evento** en los componentes del lado izquierdo. Haga clic en la flecha para abrir la dimensión.
 
 ![demostración](./images/pro26.png)
-
-Haga clic en la flecha para abrir la dimensión:
-
-![demostración](./images/pro27.png)
 
 Verá todos los tipos de eventos disponibles.
 
@@ -176,7 +168,7 @@ Haz lo mismo con **commerce.productListAdds** y **commerce.purchases** y suélta
 
 ![demostración](./images/props1.png)
 
-Puedes hacer muchas cosas aquí. Algunos ejemplos: compare con el paso del tiempo, compare cada paso por dispositivo o compare por fidelidad. Sin embargo, si queremos analizar cosas interesantes como por qué los clientes no compran después de agregar un artículo al carro de compras, podemos usar la mejor herramienta en CJA: hacer clic con el botón derecho.
+Puedes hacer muchas cosas aquí. Algunos ejemplos: compare con el paso del tiempo, compare cada paso por dispositivo o compare por fidelidad. Sin embargo, si desea analizar cosas interesantes como por qué los clientes no compran después de agregar un artículo al carro de compras, podemos utilizar la mejor herramienta de CJA: hacer clic con el botón derecho.
 
 Haga clic con el botón derecho en el punto de contacto **commerce.productListAdds**. Luego haz clic en **Abandonos por desglose en este punto de contacto**.
 
@@ -194,36 +186,24 @@ Cambie **Tipo de evento** por **Nombre de página**, en la nueva tabla de forma 
 
 De nuevo, hay muchas maneras de realizar este análisis. Usemos el análisis de flujo para iniciar la parte de descubrimiento.
 
-Cierre el panel actual haciendo clic aquí:
+Cierre el panel actual haciendo clic aquí y, a continuación, agregue un nuevo panel en blanco haciendo clic en **+ Agregar panel en blanco**.
 
 ![demostración](./images/pro0.png)
-
-Ahora agregue un nuevo panel en blanco al hacer clic en **+ Agregar panel en blanco**.
-
-![demostración](./images/pro0a.png)
 
 Haga clic en la visualización **Flujo**.
 
 ![demostración](./images/pro35.png)
 
-A continuación, verá esto:
-
-![demostración](./images/pro351.png)
-
-Seleccione el mismo intervalo de fechas que en el ejercicio anterior.
+Entonces verá esto... Seleccione el mismo intervalo de fechas que en el ejercicio anterior. Haga clic en **Aplicar**.
 
 ![demostración](./images/pro0b.png)
 
-Busque la dimensión **Nombre de página** en los componentes del lado izquierdo:
+Busque la dimensión **Nombre de página** en los componentes del lado izquierdo y haga clic en la flecha para abrir la dimensión.
 
 ![demostración](./images/pro36.png)
 
-Haga clic en la flecha para abrir la dimensión:
-
-![demostración](./images/pro37.png)
-
 Encontrará todas las páginas vistas. Buscar el nombre de página: **Cancelar servicio**.
-Arrastre y suelte **Cancelar servicio** en la visualización de flujo del campo central:
+Arrastre y suelte **Cancelar servicio** en la visualización de flujo del campo central. Haga clic en **Generar**.
 
 ![demostración](./images/pro38.png)
 
@@ -274,23 +254,15 @@ Ahora seleccione **positivo** como valor para el filtro.
 
 ![demostración](./images/pro49.png)
 
-Cambie el ámbito al nivel **Persona**.
+Cambie el ámbito al nivel **Persona**. Haga clic en **Guardar**.
 
 ![demostración](./images/pro50.png)
 
-Para finalizar, simplemente haz clic en **Guardar**.
-
-![demostración](./images/pro51.png)
-
-Entonces volverás a estar aquí. Si aún no lo ha hecho, cierre el panel anterior.
+Entonces volverás a estar aquí. Si aún no lo ha hecho, cierre el panel anterior y agregue un nuevo panel en blanco haciendo clic en **+ Agregar panel en blanco**.
 
 ![demostración](./images/pro0c.png)
 
-Ahora agregue un nuevo panel en blanco al hacer clic en **+ Agregar panel en blanco**.
-
-![demostración](./images/pro24c.png)
-
-Seleccione el mismo intervalo de fechas que en el ejercicio anterior.
+Seleccione el mismo intervalo de fechas que en el ejercicio anterior. Haga clic en **Aplicar**.
 
 ![demostración](./images/pro24d.png)
 
