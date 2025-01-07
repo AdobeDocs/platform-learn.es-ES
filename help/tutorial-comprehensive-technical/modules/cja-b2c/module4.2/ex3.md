@@ -4,9 +4,9 @@ description: 'Ingesta y análisis de datos de Google Analytics en Adobe Experien
 kt: 5342
 doc-type: tutorial
 exl-id: 86b04b4e-0439-4491-b700-5b0591c493b7
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '1757'
+source-wordcount: '1395'
 ht-degree: 1%
 
 ---
@@ -36,15 +36,15 @@ Copie el ID del proyecto en un archivo de texto separado.
 
 | Credencial | Nombre | Ejemplo |
 | ----------------- |-------------| -------------|
-| Identificador de proyecto | random | compuso-tarea-306413 |
+| Identificador de proyecto | random | possible-bee-447102-h3 |
 
 Puedes comprobar tu ID de proyecto en cualquier momento haciendo clic en tu **Nombre del proyecto** en la barra de menú superior:
 
-![demostración](./images/ex1/projectMenu.png)
+![demostración](./images/ex1projectMenu.png)
 
 Verá su ID de proyecto a la derecha:
 
-![demostración](./images/ex1/projetcselection.png)
+![demostración](./images/ex1projetcselection.png)
 
 En este ejercicio aprenderá a obtener los otros 3 campos obligatorios:
 
@@ -52,123 +52,86 @@ En este ejercicio aprenderá a obtener los otros 3 campos obligatorios:
 - clientSecret
 - refreshToken
 
-## 4.2.3.1 API y servicios de Google Cloud
+## 4.2.3.1 Google Auth Platform
 
 Para empezar, vuelva a la página de inicio de Google Cloud Platform. Para ello, simplemente haga clic en el logotipo en la esquina superior izquierda de la pantalla.
 
-![demostración](./images/ex2/5.png)
+![demostración](./images/ex25.png)
 
-Una vez que esté en la página de inicio, vaya al menú de la izquierda, haga clic en **API y servicios** y luego haga clic en **Tablero**.
+Una vez que esté en la página de inicio, busque **Google Auth Platform** en la barra de búsqueda. Haga clic en el primer resultado para abrirlo.
 
-![demostración](./images/ex2/4.png)
+![demostración](./images/ex24.png)
 
-Ahora verá la página principal de **API y servicios**.
+Ahora verá la página principal de **Google Auth Platform**. Haga clic en **GET INICIADA**.
 
-![demostración](./images/ex2/6.png)
+![demostración](./images/ex26.png)
 
-En esta página, puede ver el uso de las distintas conexiones de API de Google. Para configurar una conexión de API de modo que Adobe Experience Platform pueda leer desde BigQuery, debe seguir estos pasos:
-
-- Primero, debe crear una pantalla de consentimiento de OAuth para habilitar futuras autenticaciones. Las razones de seguridad de Google también requieren que un ser humano realice la primera autenticación antes de permitir el acceso mediante programación.
-- Segundo, necesita las credenciales de la API (clientId y clientSecret) que se utilizarán para la autenticación de la API y el acceso a su conector de BigQuery.
-
-## 4.2.3.2 Pantalla de consentimiento de OAuth
-
-Empecemos por crear la pantalla de consentimiento de OAuth. En el menú de la izquierda de la página principal de **API y servicios**, haga clic en **Pantalla de consentimiento de OAuth**.
-
-![demostración](./images/ex2/6-1a.png)
-
-A continuación, verá esto:
-
-![demostración](./images/ex2/6-1.png)
-
-Seleccione el tipo de usuario: **Externo**. A continuación, haga clic en **CREAR**.
-
-![demostración](./images/ex2/6-2.png)
-
-A continuación, se encuentra en la ventana **Configuración de la pantalla de consentimiento de OAuth**.
-
-Lo único que hay que hacer aquí es escribir el nombre de la pantalla de consentimiento en el campo **Nombre de aplicación** y seleccionar el **correo electrónico de asistencia al usuario**. Para el nombre de la aplicación, utilice esta convención de nombres:
+Para **nombre de aplicación**, use esto:
 
 | Nombre | Ejemplo |
 | ----------------- |-------------| 
 | `--aepUserLdap-- - AEP BigQuery Connector` | vangeluw: conector BigQuery de AEP |
 
-![demostración](./images/ex2/6-3.png)
+Seleccione su dirección de correo electrónico para el campo **Correo electrónico de asistencia al usuario**.
 
-A continuación, desplácese hacia abajo hasta que vea **Información de contacto del desarrollador** y rellene una dirección de correo electrónico.
+Haga clic en **SIGUIENTE**.
 
-![demostración](./images/ex2/6-3a.png)
+![demostración](./images/go1.png)
 
-Haga clic en **GUARDAR Y CONTINUAR**.
+Seleccione **External** y haga clic en **NEXT**.
 
-![demostración](./images/ex2/6-4.png)
+![demostración](./images/go2.png)
 
-Entonces verá esto... Haga clic en **GUARDAR Y CONTINUAR**.
+Escriba su dirección de correo electrónico y haga clic en **SIGUIENTE**.
 
-![demostración](./images/ex2/o1.png)
+![demostración](./images/go3.png)
 
-Entonces verá esto... Haga clic en **GUARDAR Y CONTINUAR**.
+Marque la casilla y haga clic en **CONTINUAR**. A continuación, haga clic en **CREAR**.
 
-![demostración](./images/ex2/o2.png)
+![demostración](./images/go4.png)
 
-Entonces verá esto... Haga clic en **VOLVER AL TABLERO**.
+## 4.2.3.2 Crear cliente de OAuth
 
-![demostración](./images/ex2/o3.png)
+Haga clic en **CREAR CLIENTE DE OAUTH**.
 
-Entonces verá esto... Haga clic en **APLICACIÓN DE PUBLISH**.
-
-![demostración](./images/ex2/o4.png)
-
-Haga clic en **CONFIRMAR**.
-
-![demostración](./images/ex2/o5.png)
+![demostración](./images/ex261.png)
 
 Entonces verá esto...
 
-![demostración](./images/ex2/o6.png)
+![demostración](./images/ex2611.png)
 
-En el siguiente paso, finalizará la configuración de la API y obtendrá sus credenciales de la API.
+Seleccione **aplicación web**.
 
-## 4.2.3.3 Credenciales de la API de Google: Secreto del cliente e ID del cliente
-
-En el menú de la izquierda, haga clic en **Credenciales**. A continuación, verá esto:
-
-![demostración](./images/ex2/7.png)
-
-Haga clic en el botón **+ CREAR CREDENCIALES**.
-
-![demostración](./images/ex2/9.png)
-
-Verá 3 opciones... Haga clic en **ID de cliente de OAuth**:
-
-![demostración](./images/ex2/11.png)
-
-En la pantalla siguiente, seleccione **aplicación web**.
-
-![demostración](./images/ex2/12.png)
+![demostración](./images/ex212.png)
 
 Aparecerán varios campos nuevos. Ahora necesita escribir el **Nombre** del ID de cliente de OAuth y también los **URI de redireccionamiento autorizados**.
 
-Siga esta convención de nombres:
+Para el campo **Nombre**, use esto:
 
 | Campo | Valor | Ejemplo |
 | ----------------- |-------------| -------------| 
 | Nombre | ldap: Conector de AEP BigQuery | vangeluw - Conector de Platform BigQuery |
-| URI de redireccionamiento autorizados | https://developers.google.com/oauthplayground | https://developers.google.com/oauthplayground |
+
+![demostración](./images/ex2122.png)
+
+
+Haga clic en **+ AGREGAR URI** en **URI de redireccionamiento autorizados**. Añada el nuevo URI siguiente.
+
+| Campo | Valor |
+| ----------------- |-------------| 
+| URI de redireccionamiento autorizados | https://developers.google.com/oauthplayground |
 
 El campo **URI de redireccionamiento autorizados** es muy importante porque lo necesitará más adelante para obtener el RefreshToken que necesita para finalizar la configuración del conector Source de BigQuery en Adobe Experience Platform.
 
-![demostración](./images/ex2/12-1.png)
+Haga clic en **Crear**.
 
-Antes de continuar, debe presionar físicamente el botón **Entrar** después de ingresar la URL para almacenar el valor en el campo **URI de redireccionamiento autorizados**. Si no hace clic en el botón **Entrar**, se encontrará con problemas en una etapa posterior, en el **sitio de reproducción de OAuth 2.0**.
+![demostración](./images/ex2121.png)
 
-A continuación, haga clic en **Crear**:
+Se ha creado el ID de cliente de OAuth. Haga clic en él para ver ahora su ID de cliente y su Secreto de cliente.
 
-![demostración](./images/ex2/19.png)
+![demostración](./images/ex220.png)
 
-Ahora verá su ID de cliente y su Secreto de cliente.
-
-![demostración](./images/ex2/20.png)
+Verá los valores de ID de cliente y Secreto de cliente.
 
 Copie estos dos campos y péguelos en un archivo de texto en su escritorio. Siempre puede acceder a estas credenciales más adelante, pero es más fácil guardarlas en un archivo de texto junto al ID de proyecto de BigQuery.
 
@@ -176,14 +139,23 @@ Como recapitulación de la configuración del conector de Source de BigQuery en 
 
 | Credenciales del conector de BigQuery | Valor |
 | ----------------- |-------------| 
-| Identificador de proyecto | su propio ID de proyecto (por ejemplo,: compuesto-tarea-306413) |
+| Identificador de proyecto | su propio ID de proyecto (por ejemplo,: possible-bee-447102-h3) |
 | clientid | yourclientid |
 | client secret | yourclientsecret |
 
+![demostración](./images/ex2200.png)
+
+A continuación, debe publicar la aplicación OAuth. Vaya a **Audience** y haga clic en **PUBLISH APP**.
+
+![demostración](./images/ex2pub1.png)
+
+Haga clic en **CONFIRMAR**.
+
+![demostración](./images/ex2pub2.png)
 
 Todavía le falta **refreshToken**. refreshToken es un requisito por razones de seguridad. En el mundo de las API, los tokens suelen caducar cada 24 horas. Por lo tanto, **refreshToken** es necesario para actualizar el token de seguridad cada 24 horas, para que la configuración del Conector de Source pueda seguir conectándose a Google Cloud Platform y BigQuery.
 
-## 4.2.3.4 API de BigQuery y refreshToken
+## 4.2.3.3 API de BigQuery y refreshToken
 
 Existen muchas maneras de obtener un refreshToken para acceder a las API de Google Cloud Platform. Una de estas opciones es, por ejemplo, utilizar Postman.
 Sin embargo, Google ha creado algo más fácil de probar y reproducir con sus API, una herramienta llamada **OAuth 2.0 Playground**.
@@ -192,23 +164,15 @@ Para acceder al área de reproducción de **OAuth 2.0**, ve a [https://developer
 
 Luego verá la página principal del **sitio de reproducción de OAuth 2.0**.
 
-![demostración](./images/ex2/22.png)
+![demostración](./images/ex222.png)
 
-Haz clic en el icono **engranaje** en la parte superior derecha de la pantalla:
+Haz clic en el icono **engranaje** en la parte superior derecha de la pantalla. Asegúrese de que la configuración sea la misma que se puede ver en la imagen anterior.
 
-![demostración](./images/ex2/22-1.png)
+Marque la casilla de verificación: **Use sus propias credenciales de OAuth**
 
-Asegúrese de que la configuración sea la misma que se puede ver en la imagen anterior.
+![demostración](./images/ex2221.png)
 
-Compruebe la configuración para estar seguro al 100 %.
-
-Una vez finalizado, marque la casilla de **Usar sus propias credenciales de OAuth**
-
-![demostración](./images/ex2/22-2.png)
-
-Deben aparecer dos campos, y usted tiene el valor para ellos.
-
-![demostración](./images/ex2/23.png)
+Aparecerán dos campos.
 
 Rellene los campos siguientes a esta tabla:
 
@@ -217,75 +181,55 @@ Rellene los campos siguientes a esta tabla:
 | ID de cliente de OAuth | su propio ID de cliente (en el archivo de texto de su escritorio) |
 | Secreto de cliente de OAuth | su propio Secreto de cliente (en el archivo de texto de su escritorio) |
 
-![demostración](./images/ex2/23-a.png)
+Una vez que hayas rellenado tus credenciales, haz clic en **Cerrar**.
 
-Copie el **ID de cliente** y el **Secreto de cliente** del archivo de texto que creó en su escritorio.
+![demostración](./images/ex223a.png)
 
-![demostración](./images/ex2/20.png)
+En el menú de la izquierda, puede ver todas las API de Google disponibles. Busque la **API de BigQuery v2** y haga clic en ella para abrirla.
 
-Una vez que hayas rellenado tus credenciales, haz clic en **Cerrar**
+![demostración](./images/ex227.png)
 
-![demostración](./images/ex2/23-1.png)
+A continuación, seleccione el ámbito como se indica en la siguiente imagen. Debe hacer clic en cada una de las API disponibles, y se mostrará una marca de verificación para cada API seleccionada.
 
-En el menú de la izquierda, puede ver todas las API de Google disponibles. Busque **API de BigQuery v2**.
+A continuación, haga clic en **Autorizar API**.
 
-![demostración](./images/ex2/27.png)
+![demostración](./images/ex226.png)
 
-A continuación, seleccione el ámbito como se indica en la siguiente imagen:
+Haga clic en la dirección de correo electrónico que utilizó para configurar GCP y BigQuery.
 
-![demostración](./images/ex2/26.png)
+![demostración](./images/ex2266.png)
 
-Una vez que los haya seleccionado, debería ver un botón azul que dice **Autorizar API**. Haga clic en ella.
-
-![demostración](./images/ex2/28.png)
-
-Seleccione la cuenta de Google que utilizó para configurar GCP y BigQuery.
-
-Podría ver una gran advertencia: **Esta aplicación no está verificada**. Esto sucede porque Platform BigQuery Connector aún no se ha revisado formalmente, por lo que Google no sabe si es una aplicación auténtica o no. Debe ignorar esta notificación.
+Verá una gran advertencia: **Esta aplicación no está verificada**. Esto sucede porque Platform BigQuery Connector aún no se ha revisado formalmente, por lo que Google no sabe si es una aplicación auténtica o no.
 
 Haga clic en **Avanzado**.
 
-![demostración](./images/ex2/32.png)
+![demostración](./images/ex232.png)
 
-A continuación, haga clic en **Ir a ldap - Conector de AEP BigQuery (no seguro)**.
+A continuación, haga clic en **Ir a —aepUserLdap— - Conector de AEP BigQuery (no seguro)**.
 
-![demostración](./images/ex2/33.png)
+![demostración](./images/ex233.png)
 
-Se le redirigirá a la pantalla de consentimiento de OAuth que ha creado.
+A continuación, verá un mensaje de seguridad para obtener acceso. Haga clic en **Seleccionar todo**.
 
-![demostración](./images/ex2/29.png)
+![demostración](./images/ex229.png)
 
-Si utiliza la autenticación de doble factor (2FA), introduzca el código de verificación que se le ha enviado.
+Desplácese hacia abajo y haga clic en **Continuar**.
 
-![demostración](./images/ex2/30.png)
+![demostración](./images/ex230.png)
 
-Google ahora le mostrará ocho mensajes de **permiso** diferentes. Haga clic en **Permitir** para las ocho solicitudes de permiso. (Este es un procedimiento que debe ser seguido y confirmado una vez por un ser humano real, antes de que la API permita solicitudes programáticas)
+A continuación, se le enviará de nuevo al área de reproducción de OAuth 2.0 y verá esto. Haga clic en **Código de autorización de Exchange para tokens**.
 
-Una vez más, no se mostrarán **ocho ventanas emergentes diferentes**, tiene que hacer clic en **Permitir** para todas ellas.
-
-![demostración](./images/ex2/29.png)
-
-Después de las ocho solicitudes de permiso, verá esta descripción general. Haga clic en **Permitir** para finalizar el proceso.
-
-![demostración](./images/ex2/35.png)
-
-Después de hacer clic con el botón **Permitir** por última vez, se te enviará de vuelta al área de reproducción de OAuth 2.0 y verás lo siguiente:
-
-![demostración](./images/ex2/36.png)
-
-Haga clic en **Código de autorización de Exchange para tokens**.
-
-![demostración](./images/ex2/36-1.png)
+![demostración](./images/ex236.png)
 
 Después de un par de segundos, la vista **Paso 2 - Código de autorización de intercambio para tokens** se cerrará automáticamente y verá **Paso 3 - Configurar la solicitud a la API**.
 
 Tiene que volver al **Código de autorización de Exchange del paso 2 para tokens**, así que haga clic en el **Código de autorización de Exchange del paso 2 para tokens** de nuevo para visualizar el **token de actualización**.
 
-![demostración](./images/ex2/37.png)
+![demostración](./images/ex237.png)
 
 Ahora verá **Actualizar token**.
 
-![demostración](./images/ex2/38.png)
+![demostración](./images/ex238.png)
 
 Copie el **token de actualización** y péguelo en el archivo de texto del escritorio junto con las demás credenciales del conector de Source de BigQuery:
 
@@ -310,15 +254,15 @@ Antes de continuar, debe seleccionar una **zona protegida**. La zona protegida q
 
 ![Ingesta de datos](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-En el menú de la izquierda, vaya a Fuentes. Luego verá la página principal de **Sources**. En el menú **Orígenes**, haga clic en **Bases de datos**. Haz clic en la tarjeta **Google BigQuery**. A continuación, haga clic en **Configurar** o en **+ Configurar**.
+En el menú de la izquierda, vaya a Fuentes. Luego verá la página principal de **Sources**. En el menú **Orígenes**, haga clic en **Bases de datos**. Haz clic en la tarjeta **Google BigQuery**. A continuación, haga clic en **Configurar**.
 
-![demostración](./images/1.png)
+![demostración](./images/s1.png)
 
 Ahora debe crear una nueva conexión.
 
-Haz clic en **Nueva cuenta**. Ahora debe completar todos los campos siguientes, según la configuración realizada en GCP y BigQuery.
+Haga clic en **Nueva cuenta**. Ahora debe completar todos los campos siguientes, según la configuración realizada en GCP y BigQuery.
 
-![demostración](./images/3.png)
+![demostración](./images/s3.png)
 
 Empecemos por nombrar la conexión:
 
@@ -329,36 +273,28 @@ Utilice esta convención de nombres:
 | Nombre de la cuenta | `--aepUserLdap-- - BigQuery Connection` | vangeluw - Conexión de BigQuery |
 | Descripción | `--aepUserLdap-- - BigQuery Connection` | vangeluw - Conexión de BigQuery |
 
-Lo que debería darte algo como esto:
+A continuación, tendrá esto:
 
-![demostración](./images/ex2/39-a.png)
+![demostración](./images/ex239a.png)
 
 A continuación, rellene los detalles de la API de GCP y BigQuery **Autenticación de cuenta** que almacenó en un archivo de texto en su escritorio:
 
 | Credenciales del conector de BigQuery | Valor |
 | ----------------- |-------------| 
-| Identificador de proyecto | su propio ID de proyecto aleatorio (por ejemplo,: apt-Summer-273608) |
+| Identificador de proyecto | su propio ID de proyecto aleatorio (por ejemplo,: possible-bee-447102-h3) |
 | clientId | ... |
 | clientSecret | ... |
 | refreshToken | ... |
 
-Los detalles de la **autenticación de la cuenta** deberían tener un aspecto similar al siguiente:
+Los detalles de la **autenticación de la cuenta** deberían tener este aspecto. Haga clic en **Conectar con el origen**.
 
-![demostración](./images/ex2/39-xx.png)
+![demostración](./images/ex239xx.png)
 
-Después de rellenar todos estos campos, haga clic en **Conectar con el origen**.
+Si los detalles de **Autenticación de cuenta** se han completado correctamente, debería ver una confirmación visual de que la conexión funciona correctamente al ver la confirmación de **Conectado**. Haga clic en **Next**.
 
-![demostración](./images/ex2/39-2.png)
+![demostración](./images/ex2projectid.png)
 
-Si los detalles de **Autenticación de cuenta** se han completado correctamente, debería ver una confirmación visual de que la conexión funciona correctamente al ver la confirmación de **Conectado**.
-
-![demostración](./images/ex2/projectid.png)
-
-Ahora que se ha creado la conexión, haga clic en **Siguiente**:
-
-![demostración](./images/42.png)
-
-Ahora verá el conjunto de datos de BigQuery que creó durante el ejercicio 12.2.
+Ahora verá el conjunto de datos de BigQuery que creó en el ejercicio anterior.
 
 ![demostración](./images/datasets.png)
 

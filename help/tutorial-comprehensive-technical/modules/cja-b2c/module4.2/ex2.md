@@ -3,9 +3,10 @@ title: 'Ingesta y análisis de datos de Google Analytics en Adobe Experience Pla
 description: 'Ingesta y análisis de datos de Google Analytics en Adobe Experience Platform con el conector Source de BigQuery: cree su primera consulta en BigQuery'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: c3c06447-3096-4f55-993b-4d41bc15c4d2
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -28,44 +29,42 @@ La solución a este problema es transformar los datos de los Google Analytics en
 
 Vaya a la [consola de BigQuery](https://console.cloud.google.com/bigquery).
 
-![demostración](./images/ex3/1.png)
+![demostración](./images/ex31.png)
 
 En **Explorer**, verás tu identificador de proyecto. Haga clic en su ID de proyecto (no haga clic en el conjunto de datos **bigquery-public-data**).
 
-![demostración](./images/ex3/2.png)
+![demostración](./images/ex32.png)
 
 Puede ver que aún no hay ningún conjunto de datos, por lo que vamos a crear uno ahora.
-Haga clic en **CREAR CONJUNTO DE DATOS**.
+Haga clic en 3 **...** y, a continuación, haga clic en **CREAR CONJUNTO DE DATOS**.
 
-![demostración](./images/ex3/4.png)
+![demostración](./images/ex34.png)
 
 A la derecha de la pantalla, verá el menú **Crear conjunto de datos**.
 
-![demostración](./images/ex3/5.png)
+![demostración](./images/ex35.png)
 
 Para el **ID del conjunto de datos**, use la siguiente convención de nombres. Para los demás campos, mantenga la configuración predeterminada.
 
 | Nombre | Ejemplo |
 | ----------------- | ------------- | 
-| `--aepUserLdap--_BigQueryDataSets` | vangeluw_BigQueryDataSets |
+| `--aepUserLdap--_BigQueryDataSet` | vangeluw_BigQueryDataSet |
 
-![demostración](./images/ex3/6.png)
+Haga clic en **CREAR CONJUNTO DE DATOS**.
 
-A continuación, haga clic en **Crear conjunto de datos**.
-
-![demostración](./images/ex3/7.png)
+![demostración](./images/ex36.png)
 
 A continuación, volverá a la consola de BigQuery con el conjunto de datos creado.
 
-![demostración](./images/ex3/8.png)
+![demostración](./images/ex38.png)
 
 ## 4.2.2.2 Cree su primera SQL BigQuery
 
-A continuación, creará su primera consulta en BigQuery. El objetivo de esta consulta es tomar los datos de muestra de los Google Analytics y transformarlos para que se puedan introducir en Adobe Experience Platform. Vaya a la ficha **EDITOR**.
+A continuación, creará su primera consulta en BigQuery. El objetivo de esta consulta es tomar los datos de muestra de los Google Analytics y transformarlos para que se puedan introducir en Adobe Experience Platform. Vaya a la ficha **Consulta sin título**.
 
-![demostración](./images/ex3/9.png)
+![demostración](./images/ex39.png)
 
-Copie la siguiente consulta SQL y péguela en el editor de consultas. No dude en leer la consulta y comprender la sintaxis de BigQuery de los Google Analytics.
+Copie la siguiente consulta SQL y péguela en el Editor de consultas. No dude en leer la consulta y comprender la sintaxis de BigQuery de los Google Analytics.
 
 
 ```sql
@@ -232,29 +231,29 @@ GROUP BY
 
 Cuando esté listo, haga clic en **Ejecutar** para ejecutar la consulta:
 
-![demostración](./images/ex3/10.png)
+![demostración](./images/ex310.png)
 
 La ejecución de la consulta puede tardar un par de minutos.
 
 Una vez que la consulta haya terminado de ejecutarse, verá el siguiente resultado en los **resultados de la consulta**.
 
-![demostración](./images/ex3/12.png)
+![demostración](./images/ex312.png)
 
 ## 4.2.2.3 Guarde los resultados de la consulta SQL de BigQuery
 
 El siguiente paso es guardar el resultado de la consulta haciendo clic en el botón **GUARDAR RESULTADOS**.
 
-![demostración](./images/ex3/13.png)
+![demostración](./images/ex313.png)
 
 Como ubicación de salida, seleccione **tabla BigQuery**.
 
-![demostración](./images/ex3/14.png)
+![demostración](./images/ex314.png)
 
 Verá una nueva ventana emergente donde ya están rellenados **Nombre de proyecto** y **Nombre de conjunto de datos**. El nombre del conjunto de datos debe ser el conjunto de datos que creó al principio de este ejercicio, con esta convención de nombres:
 
 | Nombre | Ejemplo |
 | ----------------- | ------------- | 
-| `--aepUserLdap--_BigQueryDataSets` | `vangeluw_BigQueryDataSets` |
+| `--aepUserLdap--_BigQueryDataSet` | `vangeluw_BigQueryDataSet` |
 
 Ahora debe introducir un Nombre de tabla. Utilice esta convención de nombres:
 
@@ -262,13 +261,13 @@ Ahora debe introducir un Nombre de tabla. Utilice esta convención de nombres:
 | ----------------- |------------- | 
 | `--aepUserLdap--_GAdataTableBigQuery` | `vangeluw_GAdataTableBigQuery` |
 
-![demostración](./images/ex3/16.png)
-
 Haga clic en **GUARDAR**.
+
+![demostración](./images/ex316.png)
 
 Puede llevar algún tiempo hasta que los datos estén listos en la tabla que ha creado. Después de un par de minutos, actualice el explorador. Luego debería ver dentro del conjunto de datos la tabla `--aepUserLdap--_GAdataTableBigquery` en **Explorer** dentro del proyecto BigQuery.
 
-![demostración](./images/ex3/19.png)
+![demostración](./images/ex319.png)
 
 Ahora puede continuar con el siguiente ejercicio, en el que conectará esta tabla a Adobe Experience Platform.
 

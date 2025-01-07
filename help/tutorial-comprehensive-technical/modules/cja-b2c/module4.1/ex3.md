@@ -3,10 +3,11 @@ title: Customer Journey Analytics - Crear una vista de datos
 description: Customer Journey Analytics - Crear una vista de datos
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 7dc6e169-3bf7-4f9b-a74d-e410b7ce2da7
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '1613'
-ht-degree: 2%
+source-wordcount: '1591'
+ht-degree: 3%
 
 ---
 
@@ -37,13 +38,13 @@ En la pantalla **Conexiones**, marque la casilla de verificación que aparece de
 
 Se le redirigirá al flujo de trabajo **Crear vista de datos**.
 
-![demostración](./images/0-v2.png)
+![demostración](./images/0v2.png)
 
 ## 4.1.3.2 Definición de vista de datos
 
 Ahora puede configurar las definiciones básicas para la vista de datos.
 
-![demostración](./images/0-v2.png)
+![demostración](./images/0v2.png)
 
 La **conexión** que creó en el ejercicio anterior ya está seleccionada. Su conexión se llama `--aepUserLdap-- – Omnichannel Data Connection`.
 
@@ -53,11 +54,11 @@ A continuación, asigne un nombre a la vista de datos según esta convención de
 
 Escriba el mismo valor para la descripción: `--aepUserLdap-- – Omnichannel Data View`.
 
-| Nombre | Descripción |
-| ----------------- |-------------| 
-| `--aepUserLdap-- – Omnichannel Data View` | `--aepUserLdap-- – Omnichannel Data View` |
+| Nombre | Descripción | ID externo |
+| ----------------- |-------------|-------------| 
+| `--aepUserLdap-- – Omnichannel Data View` | `--aepUserLdap-- – Omnichannel Data View` | `--aepUserLdap--123` |
 
-![demostración](./images/1-v2.png)
+![demostración](./images/1v2.png)
 
 Para la **Zona horaria**, seleccione la zona horaria **Hora del meridiano de Greenwich; Monrovia, Casablanca [GMT]**. Este es un entorno realmente interesante, ya que algunas empresas operan en diferentes países y regiones geográficas. Asignar el huso horario adecuado para cada país evitará errores típicos en los datos, como creer que, por ejemplo, en Perú, la mayoría de la gente compra camisetas a las 4:00 a.m.
 
@@ -67,11 +68,15 @@ También puede modificar la nomenclatura de las métricas principales (Persona, 
 
 Ahora debe tener configurada la siguiente configuración:
 
-![demostración](./images/1-v2.png)
+![demostración](./images/1v2.png)
 
-Haga clic en **Guardar y continuar**.
+Haz clic en **Guardar y continuar**.
 
-![demostración](./images/12-v2.png)
+![demostración](./images/12v2.png)
+
+Haga clic en **Guardar**.
+
+![demostración](./images/12v2a.png)
 
 ## 4.1.3.3 Componentes de vista de datos
 
@@ -81,19 +86,13 @@ En este ejercicio, configurará los componentes que necesita para analizar los d
 - Medio: componentes añadidos a la vista de datos
 - Lado derecho: Configuración de componentes
 
-![demostración](./images/2-v2.png)
-
->[!IMPORTANT]
->
->Si no encuentra una métrica o dimensión específica, compruebe si el campo `Contains data` se ha eliminado de la vista de datos. Si no es así, elimine ese campo.
->
->![demostración](./images/2-v2a.png)
+![demostración](./images/2v2.png)
 
 Ahora tiene que arrastrar y soltar los componentes que necesita para el análisis en **Componentes agregados**. Para ello, debe seleccionar los componentes en el menú de la izquierda y arrastrarlos y soltarlos en el lienzo en el centro.
 
 Empecemos con el primer componente: **Nombre (web.webPageDetails.name)**. Busque este componente y, a continuación, arrástrelo y suéltelo en el lienzo.
 
-![demostración](./images/3-v2.png)
+![demostración](./images/3v2.png)
 
 Este componente es el nombre de página, tal como se puede derivar de la lectura del campo de esquema `(web.webPageDetails.name)`.
 
@@ -101,11 +100,11 @@ Sin embargo, usar **Name** como nombre no es la mejor convención de nombres par
 
 Cambiemos el nombre a **Nombre de página**. Haga clic en el componente y cambie su nombre en el área **Configuración de componentes**.
 
-![demostración](./images/3-0-v2.png)
+![demostración](./images/30v2.png)
 
 Algo muy importante es la **configuración de persistencia**. El concepto de evars y prop no existe en CJA, pero la configuración de Persistencia hace posible un comportamiento similar.
 
-![demostración](./images/3-0-v21.png)
+![demostración](./images/30v21.png)
 
 Si no cambia esta configuración, CJA interpretará la dimensión como **Prop** (nivel de visita individual). Además, podemos cambiar la Persistencia para que la dimensión sea un **eVar** (persista el valor a través del recorrido).
 
@@ -119,21 +118,21 @@ Dejemos el nombre de página como una prop. Por lo tanto, no es necesario que ca
 
 A continuación, elija la dimensión **phoneNumber** y suéltela en el lienzo. El nuevo nombre debe ser **Número de teléfono**.
 
-![demostración](./images/3-1-v2.png)
+![demostración](./images/31v2.png)
 
 Por último, vamos a cambiar la configuración de Persistencia, ya que el Número móvil debe persistir en el nivel de usuario.
 
 Para cambiar la Persistencia, desplácese hacia abajo en el menú derecho y abra la pestaña **Persistencia**:
 
-![demostración](./images/5-v2.png)
+![demostración](./images/5v2.png)
 
 Marque la casilla de verificación para modificar la configuración de persistencia. Seleccione **Más reciente** y el ámbito **Persona (ventana de informes)**, ya que solo nos importa el último número de móvil de esa persona. Si el cliente no rellena el móvil en visitas futuras, aún verá rellenado este valor.
 
-![demostración](./images/6-v2.png)
-
 | Nombre del componente a buscar | Nuevo nombre | Configuración de persistencia |
 | ----------------- |-------------| --------------------| 
-| phoneNumber | Número de teléfono | Más reciente, persona (ventana de informes) |
+| phoneNumber | Número de teléfono | Más reciente, ventana Informes de personas |
+
+![demostración](./images/6v2.png)
 
 El siguiente componente es `web.webPageDetails.pageViews.value`.
 
@@ -145,9 +144,9 @@ Cambie el nombre a **Vistas de página** en la **configuración de componentes**
 | ----------------- |-------------| --------------------| 
 | web.webPageDetails.pageViews.value | Page Views |         |
 
-![demostración](./images/7-v2.png)
+![demostración](./images/7v2.png)
 
-Para la configuración de atribución, lo dejaremos vacío.
+Para la configuración de atribución, no es necesario cambiar nada.
 
 Nota: La configuración de persistencia en las métricas también se puede cambiar en Analysis Workspace. En algunos casos, puede optar por configurarlo aquí para evitar que los usuarios empresariales tengan que pensar cuál es el mejor modelo de persistencia.
 
@@ -162,8 +161,8 @@ A continuación, tendrá que configurar muchos Dimension y métricas, tal como s
 | sensación de llamada | Sensación de llamada |          |
 | ID de llamada | Tipo de interacción de llamada |          |
 | callTopic | Tema de llamada | Más reciente, sesión |
-| ecid | ECID | Más reciente, persona (ventana de informes) |
-| email | ID de correo electrónico | Más reciente, persona (ventana de informes) |
+| ecid | ECID | Más reciente, ventana Informes de personas |
+| email | ID de correo electrónico | Más reciente, ventana Informes de personas |
 | Tipo de pago | Tipo de pago |          |
 | Método de adición de producto | Método de adición de producto | Más reciente, sesión |
 | Tipo de evento | Tipo de evento |         |
@@ -180,31 +179,24 @@ A continuación, tendrá que configurar muchos Dimension y métricas, tal como s
 | Cantidad | Cantidad |          |
 | commerce.order.priceTotal | Ingresos |         |
 
-La configuración debería tener este aspecto:
+La configuración debería tener este aspecto. No olvides **guardar** tu vista de datos. Así que haga clic en **Guardar** ahora.
 
-![demostración](./images/11-v2.png)
-
-No olvides **guardar** tu vista de datos. Así que haga clic en **Guardar** ahora.
-
-![demostración](./images/12-v2s.png)
+![demostración](./images/11v2.png)
 
 ## 4.1.3.4 Métricas calculadas
 
 
-Aunque hemos organizado todos los componentes de la vista de datos, aún necesita adaptar algunos de ellos para que los usuarios empresariales estén listos para iniciar el análisis.
+Aunque ha organizado todos los componentes de la vista de datos, aún debe adaptar algunos de ellos para que los usuarios empresariales estén listos para iniciar el análisis.
 
-Si recuerda que no hemos introducido específicamente métricas como Agregar al carro de compras, Vista de producto o Compras en la Vista de datos.
-Sin embargo, tenemos una dimensión llamada: **Tipo de evento**. Así que derivemos estos tipos de interacción creando 3 métricas calculadas.
+Si lo recuerda, no introdujo métricas específicas, como Agregar al carro de compras, Vista de producto o Compras, en la Vista de datos.
+Sin embargo, tiene una dimensión llamada: **Tipo de evento**. Por lo tanto, puede derivar estos tipos de interacción creando 3 métricas calculadas.
 
 Empecemos con la primera métrica: **Vistas del producto**.
 
 En el lado izquierdo, busque **Tipo de evento** y seleccione la dimensión. A continuación, arrástrelo y suéltelo en el lienzo **Componentes incluidos**.
-
-![demostración](./images/calcmetr1.png)
-
 Haga clic para seleccionar la nueva métrica **Tipo de evento**.
 
-![demostración](./images/calcmetr2.png)
+![demostración](./images/calcmetr1.png)
 
 Ahora cambie el nombre y la descripción del componente a los siguientes valores:
 
@@ -218,7 +210,7 @@ Ahora contemos solamente **eventos de vistas del producto**. Para ello, desplác
 
 ![demostración](./images/calcmetr4.png)
 
-Como solo queremos contar **vistas del producto**, especifique **commerce.productViews** con los criterios.
+Ya que solamente desea contar **Vistas del producto**, especifique **commerce.productViews** con los criterios.
 
 ![demostración](./images/calcmetr5.png)
 
@@ -254,7 +246,7 @@ Primero, arrastre y suelte la misma dimensión **Tipo de evento** que hicimos pa
 
 Verá una ventana emergente que alerta de un campo duplicado, ya que estamos utilizando la misma variable. Haz clic en **Agregar de todos modos**:
 
-![demostración](./images/calcmetr7.png)
+![demostración](./images/calcmetr6.png)
 
 Ahora, siga el mismo proceso que para las métricas Vistas del producto y Agregar al carro de compras:
 - Cambie primero el nombre y la descripción.
@@ -274,7 +266,7 @@ La configuración final debería ser similar a esta. Haz clic en **Guardar y con
 
 Se le debe redirigir a esta pantalla:
 
-![demostración](./images/8-v2.png)
+![demostración](./images/8v2.png)
 
 En esta pestaña, puede modificar algunas configuraciones importantes para cambiar la forma en que se procesan los datos. Empecemos por establecer **Tiempo de espera de sesión** en 30 minutos. Gracias a la marca de tiempo de cada evento de experiencia, puede ampliar el concepto de sesión a todos los canales. Por ejemplo, ¿qué sucede si un cliente llama al centro de llamadas después de visitar el sitio web? Con los tiempos de espera de sesión personalizados tiene mucha flexibilidad para decidir qué es una sesión y cómo esa sesión combinará los datos.
 
@@ -282,11 +274,11 @@ En esta pestaña, puede modificar algunas configuraciones importantes para cambi
 
 En esta pestaña puede modificar otras cosas como filtrar los datos mediante un segmento o filtro. No tendrá que hacer eso en este ejercicio.
 
-![demostración](./images/10-v2.png)
+![demostración](./images/10v2.png)
 
 Una vez finalizado, haga clic en **Guardar y finalizar**.
 
-![demostración](./images/13-v2.png)
+![demostración](./images/13v2.png)
 
 >[!NOTE]
 >

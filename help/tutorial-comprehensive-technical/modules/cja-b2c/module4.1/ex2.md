@@ -3,9 +3,10 @@ title: 'Customer Journey Analytics: conectar conjuntos de datos de Adobe Experie
 description: 'Customer Journey Analytics: conectar conjuntos de datos de Adobe Experience Platform en Customer Journey Analytics'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 96e7a5b2-9833-430a-8eab-27651a113675
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '714'
 ht-degree: 1%
 
 ---
@@ -41,23 +42,21 @@ Ahora puede asignar un nombre a la conexión.
 
 Use esta convención de nombres: `--aepUserLdap-- – Omnichannel Data Connection`.
 
-Ejemplo: `vangeluw - Omnichannel Data Connection`
-
-También debe seleccionar la zona protegida correcta para utilizarla. En el menú de zona protegida, seleccione la zona protegida, que debe ser `Bootcamp`. En este ejemplo, la zona protegida que se va a usar es **Bootcamp**. Y también necesita establecer el **Promedio de eventos diarios** en **menos de 1 millón**.
+También debe seleccionar la zona protegida correcta para utilizarla. En el menú de zona protegida, seleccione la zona protegida, que debe ser `--aepSandboxName--`. En este ejemplo, la zona protegida es **Tech Insiders**. También debe establecer el **Promedio de eventos diarios** en **menos de 1 millón**.
 
 ![demostración](./images/cjasb.png)
 
-Después de seleccionar la zona protegida, se actualizarán los conjuntos de datos disponibles.
+Después de seleccionar la zona protegida, puede empezar a añadir conjuntos de datos. Haga clic en **Agregar conjuntos de datos**.
 
 ![demostración](./images/cjasb1.png)
 
 ## 4.1.2.2 Seleccionar conjuntos de datos de Adobe Experience Platform
 
-Busque el conjunto de datos `Demo System - Event Dataset for Website (Global v1.1)`. Haga clic en **+** para agregar el conjunto de datos a esta conexión.
+Busque el conjunto de datos `Demo System - Event Dataset for Website (Global v1.1)`. Active la casilla de este conjunto de datos para agregarlo a esta conexión.
 
 ![demostración](./images/cja7.png)
 
-Ahora busque y marque las casillas de verificación de `Demo System - Event Dataset for Voice Assistants (Global v1.1)` y `Demo System - Event Dataset for Call Center (Global v1.1)`.
+Permanezca en la misma pantalla y ahora busque y marque la casilla de verificación de `Demo System - Event Dataset for Call Center (Global v1.1)`.
 
 Entonces, tendrás esto. Haga clic en **Next**.
 
@@ -71,7 +70,7 @@ El objetivo ahora es unirse a estos conjuntos de datos. Para cada conjunto de da
 
 ![demostración](./images/cja11.png)
 
-Como puede ver, la mayoría de ellos tienen el ID de persona seleccionado automáticamente. Esto se debe a que se selecciona un identificador principal en cada esquema de Adobe Experience Platform. Por ejemplo, este es el esquema de `Demo System - Event Schema for Call Center (Global v1.1)`, donde puede ver que el Identificador principal está establecido en `phoneNumber`.
+Como puede ver, la mayoría de ellos tienen el ID de persona seleccionado automáticamente. Esto se debe a que se selecciona una identidad principal en cada esquema de Adobe Experience Platform. Por ejemplo, este es el esquema de `Demo System - Event Schema for Website (Global v1.1)`, donde puede ver que la identidad principal está establecida en `ecid`.
 
 ![demostración](./images/cja13.png)
 
@@ -83,7 +82,7 @@ Como se ha mencionado, puede establecer diferentes ID de persona para cada conju
 
 El nombre del campo ID de persona no es importante, siempre y cuando el valor de los campos ID de persona se corresponda con. Supongamos que tenemos `email` en un conjunto de datos y `emailAddress` en otro conjunto de datos definido como ID de persona. Si `delaigle@adobe.com` tiene el mismo valor para el campo ID de persona en ambos conjuntos de datos, CJA podrá unir los datos.
 
-Actualmente existen otras limitaciones, como vincular el comportamiento anónimo a conocido. Lea las preguntas frecuentes aquí: [preguntas frecuentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html).
+Revise las preguntas frecuentes de CJA aquí para comprender los matices con la vinculación de identidad: [Preguntas frecuentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html).
 
 ### Configuración de los datos mediante el ID de persona
 
@@ -91,32 +90,38 @@ Ahora que comprende el concepto de vincular conjuntos de datos mediante el ID de
 
 ![demostración](./images/cja15.png)
 
-Vaya a cada conjunto de datos para actualizar el ID de persona.
+Vaya a cada conjunto de datos para actualizar el ID de persona. Ahora rellene el campo ID de persona eligiendo `email` en la lista desplegable.
 
 ![demostración](./images/cja12a.png)
 
-Ahora rellene el campo ID de persona eligiendo `email` en la lista desplegable.
-
-![demostración](./images/cja17.png)
-
-Una vez que haya vinculado los tres conjuntos de datos, estamos listos para continuar.
+Una vez que haya vinculado los dos conjuntos de datos, está listo para continuar.
 
 | conjunto de datos | ID de la persona |
 | ----------------- |-------------| 
 | Sistema de demostración: conjunto de datos de eventos para el sitio web (Global v1.1) | email |
-| Sistema de demostración: conjunto de datos de eventos para asistentes de voz (Global v1.1) | email |
 | Sistema de demostración: conjunto de datos de eventos para el centro de llamadas (Global v1.1) | email |
 
-También debe asegurarse de que estas opciones estén habilitadas para cada conjunto de datos:
+También debe asegurarse de que estas opciones estén habilitadas para ambos conjuntos de datos:
 
 - Importar todos los datos nuevos
 - Rellenar todos los datos existentes
+
+(No olvide habilitar ambas opciones para el segundo conjunto de datos)
+
+También debe seleccionar un **tipo de origen de datos** para cada conjunto de datos.
+
+Esta es la configuración del conjunto de datos **Sistema de demostración - Conjunto de datos de evento para el sitio web (Global v1.1)**.
+
+![demostración](./images/cja16a.png)
+
+Esta es la configuración del conjunto de datos **Sistema de demostración - Conjunto de datos de evento para el sitio web (Global v1.1)**.
 
 Haga clic en **Agregar conjuntos de datos**.
 
 ![demostración](./images/cja16.png)
 
 Haz clic en **Guardar** y ve al siguiente ejercicio.
+
 Después de haber creado su **conexión**, es posible que pasen unas horas antes de que sus datos estén disponibles en CJA.
 
 ![demostración](./images/cja20.png)

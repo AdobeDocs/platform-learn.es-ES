@@ -3,9 +3,10 @@ title: 'Customer Journey Analytics: visualización con Customer Journey Analytic
 description: 'Customer Journey Analytics: visualización con Customer Journey Analytics'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 3c928a73-b4ec-4b68-943c-c177b1e29f7b
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1500'
 ht-degree: 0%
 
 ---
@@ -24,11 +25,11 @@ En estos ejercicios utilizará Analysis Workspace dentro de CJA para analizar vi
 
 Cubriremos algunas de las consultas realizadas en el Módulo 7: Servicio de consultas para que pueda ver lo fácil que es ejecutar las mismas consultas y más pero sin usar SQL y dependiendo únicamente de la filosofía de arrastrar y soltar de Analysis Workspace.
 
-Usemos el proyecto que creó en [11.4 Preparación de datos en Analysis Workspace](./ex4.md), así que vaya a [https://analytics.adobe.com](https://analytics.adobe.com).
+Usemos el proyecto que creó en la preparación de datos de [4.1.4 en Analysis Workspace](./ex4.md), así que vaya a [https://analytics.adobe.com](https://analytics.adobe.com).
+
+Haga clic para abrir el proyecto `--aepUserLdap-- - Omnichannel Analysis`.
 
 ![demostración](./images/prohome.png)
-
-Abra el proyecto `--aepUserLdap-- - Omnichannel Analysis`.
 
 Con el proyecto abierto y la vista de datos `--aepUserLdap-- - Omnichannel Analysis` seleccionada, está listo para empezar a crear sus primeras visualizaciones.
 
@@ -36,7 +37,7 @@ Con el proyecto abierto y la vista de datos `--aepUserLdap-- - Omnichannel Analy
 
 ## ¿Cuántas vistas de productos tenemos diariamente?
 
-En primer lugar, es necesario seleccionar las fechas adecuadas para analizar los datos. Vaya al menú desplegable de calendario en el lado derecho del lienzo. Haga clic en él y seleccione el intervalo de fechas aplicable.
+En primer lugar, debe seleccionar las fechas adecuadas para analizar los datos. Vaya al menú desplegable de calendario en el lado derecho del lienzo. Haga clic en él y seleccione el intervalo de fechas aplicable.
 
 ![demostración](./images/pro1.png)
 

@@ -4,27 +4,18 @@ description: 'Customer Journey Analytics: cree un tablero con Analysis Workspace
 kt: 5342
 doc-type: tutorial
 exl-id: 0eef0211-bb6a-4b92-a6ce-507d928ccdea
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 0%
+source-wordcount: '384'
+ht-degree: 1%
 
 ---
 
 # Customer Journey Analytics 4.1: cree un tablero con Analysis Workspace sobre Adobe Experience Platform
 
-**Autor: [Victor de la Iglesia](https://www.linkedin.com/in/victordelaiglesia/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
 En este módulo, obtendrá experiencia práctica con el servicio de aplicaciones para Customer Journey Analytics.
 
 Customer Journey Analytics proporciona un conjunto de herramientas a los equipos de inteligencia empresarial y ciencia de datos para vincular y analizar datos de canales cruzados (en línea y sin conexión). Las funciones de Customer Journey Analytics ofrecen contexto y claridad a los complejos recorridos de clientes multicanal. El contexto proporcionado genera una perspectiva procesable sobre cómo eliminar los puntos problemáticos del proceso de conversión del cliente y ofrecer experiencias positivas en los momentos más importantes.
-
-
-Eche un vistazo a este vídeo para comprender el valor, el recorrido del cliente y el proceso de configuración:
-
->[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on)
-
-Encontrará más información sobre el Customer Journey Analytics [aquí](https://spark.adobe.com/page/t62eiRu9l6iWJ/).
 
 ## Objetivos de aprendizaje
 

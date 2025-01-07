@@ -3,9 +3,10 @@ title: Customer Journey Analytics - Preparación de datos en Analysis Workspace
 description: Customer Journey Analytics - Preparación de datos en Analysis Workspace
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: aa2fab85-d56e-4a00-8b8f-8a2053d8674a
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '758'
 ht-degree: 1%
 
 ---
@@ -32,12 +33,12 @@ Si no ha utilizado Analysis Workspace anteriormente, le recomendamos encarecidam
 
 ### Cree Su Proyecto
 
-Ahora es el momento de crear su primer proyecto de CJA. Vaya a la pestaña Proyectos dentro de CJA.
-Haga clic en **Crear nuevo**.
+Ahora es el momento de crear su primer espacio de trabajo de CJA. Vaya a la pestaña **Workspace** dentro de CJA.
+Haga clic en **Crear proyecto**.
 
 ![demostración](./images/prmenu.png)
 
-Entonces verá esto... Seleccione **Proyecto en blanco** y haga clic en **Crear**.
+Entonces verá esto... Seleccione **Proyecto de Workspace en blanco** y haga clic en **Crear**.
 
 ![demostración](./images/prmenu1.png)
 
@@ -45,7 +46,7 @@ A continuación, verá un proyecto vacío.
 
 ![demostración](./images/premptyprojects.png)
 
-En primer lugar, asegúrese de seleccionar la Vista de datos correcta en la esquina superior derecha de la pantalla. En este ejemplo, la vista de datos que se va a seleccionar es `vangeluwe - Omnichannel Data View`.
+En primer lugar, asegúrese de seleccionar la Vista de datos correcta en la esquina superior derecha de la pantalla. La vista de datos que se va a seleccionar es `--aepUserLdap-- - Omnichannel Data View`.
 
 ![demostración](./images/prdv.png)
 
@@ -108,17 +109,17 @@ La tasa de conversión suele representarse en forma de porcentaje. Por lo tanto,
 
 Finalmente, cambie el nombre y la descripción de la métrica calculada:
 
-| Título | Descripción |
-| ----------------- |-------------| 
-| Tasa de conversión | Tasa de conversión |
+| Título | Descripción | ID externo |
+| ----------------- |-------------| -------------| 
+| Tasa de conversión | Tasa de conversión | conversionRate |
 
-Aparecerá algo similar a esto en la pantalla:
+Entonces tendrá esto. Haga clic en **Guardar**.
 
 ![demostración](./images/calcbuildercr6.png)
 
-No olvides **guardar** la métrica calculada.
+Vuelva a hacer clic en **Guardar**.
 
-![demostración](./images/pr9.png)
+![demostración](./images/calcbuildercr6a.png)
 
 ## 4.1.4.3 Dimension calculados: Filtros (segmentación) e intervalos de fechas
 
