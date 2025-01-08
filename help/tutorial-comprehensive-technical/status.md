@@ -3,9 +3,9 @@ title: Estado del contenido
 description: Estado del contenido
 doc-type: multipage-overview
 exl-id: 75fe2d3d-d9f5-4e9c-8dde-928e9935c25f
-source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
+source-git-commit: 608fc570f9aa172db3578664e793f35fb3f1bf50
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '240'
 ht-degree: 9%
 
 ---
@@ -19,7 +19,7 @@ A continuación se muestra una descripción general del estado del contenido en 
 | [0. Primeros pasos ](./modules/gettingstarted/gettingstarted/getting-started.md) | 11/14/2024 | Sí | - |
 | [1.1 Foundation - Configuración de la recopilación de datos de Adobe Experience Platform y Web SDK](./modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md) | 11/18/2024 | Sí | - |
 | [1.2 Foundation - Ingesta de datos](./modules/datacollection/module1.2/data-ingestion.md) | 11/18/2024 | Sí | - |
-| [1.3 Composición de audiencia federada](./modules/datacollection/module1.3/fac.md) | - | No | El contenido está pendiente de creación |
+| [1.3 Composición de audiencia federada](./modules/datacollection/module1.3/fac.md) | 01/07/2025 | Sí, 95% | Los archivos de datos de muestra están pendientes, el contenido está hecho y probado en un 95 % |
 | [2.1 Foundation - Perfil del cliente en tiempo real](./modules/rtcdp-b2c/module2.1/real-time-customer-profile.md) | 11/19/2024 | Sí | - |
 | [2.2 Servicios inteligentes](./modules/rtcdp-b2c/module2.2/intelligent-services.md) | 12/03/2024 | Sí | - |
 | [2.3 Real-Time CDP - Crear una audiencia y tomar medidas](./modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) | 20/11/2024 | Sí | - |
