@@ -4,9 +4,9 @@ description: Introducción a los servicios de Firefly
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: ea06ca2d05195efa57643d45d7e50d3d914081d3
+source-git-commit: 6c344db00b8296c8ea6d31c83cefd8edcddb51b1
 workflow-type: tm+mt
-source-wordcount: '1017'
+source-wordcount: '1114'
 ht-degree: 1%
 
 ---
@@ -119,13 +119,13 @@ Abra **Contenedores de blob** y haga clic en el contenedor que creó en el ejerc
 
 ![Almacenamiento de Azure](./images/az18.png)
 
-## 1.1.2.4 Carga manual de archivos y uso de un archivo de degradado como referencia de estilo
+## 1.1.2.4 Carga manual de archivos y uso de un archivo de imagen como referencia de estilo
 
-Ahora debe cargar un archivo de degradado de su elección en el contenedor. Puedes usar cualquier archivo de degradado que desees o [este archivo](./images/gradient.jpg) descargándolo en tu equipo.
+Ahora debe cargar un archivo de imagen de su elección en el contenedor. Puedes usar cualquier archivo de imagen que desees o [este archivo](./images/gradient.jpg) descargándolo en tu equipo.
 
 ![Almacenamiento de Azure](./images/gradient.jpg)
 
-Coloque el archivo de degradado en el contenedor en el Explorador de almacenamiento de Azure.
+Coloque el archivo de imagen en el contenedor en el Explorador de almacenamiento de Azure.
 
 Una vez cargado, lo verá en su contenedor:
 
@@ -147,7 +147,7 @@ Vuelva a Postman. Abra la solicitud **POST - Firefly - T2I (styleref) V3**. Ver�
 
 ![Almacenamiento de Azure](./images/az23.png)
 
-Reemplace la dirección URL del marcador de posición por la dirección URL prefirmada del archivo de degradado que copió del Explorador de almacenamiento de Azure. Entonces, tendrás esto. Haga clic en **Enviar**.
+Reemplace la URL del marcador de posición por la URL prefirmada para el archivo de imagen que copió del Explorador de almacenamiento de Azure. Entonces, tendrás esto. Haga clic en **Enviar**.
 
 ![Almacenamiento de Azure](./images/az24.png)
 
@@ -155,7 +155,7 @@ Recibirá una respuesta de Servicios de Firefly de nuevo, con una imagen nueva. 
 
 ![Almacenamiento de Azure](./images/az25.png)
 
-Verá otra imagen con `horses in a field`, pero esta vez el estilo será similar al archivo de degradado proporcionado como referencia de estilo.
+Verá otra imagen con `horses in a field`, pero esta vez el estilo será similar al archivo de imagen que proporcionó como referencia de estilo.
 
 ![Almacenamiento de Azure](./images/az26.png)
 
@@ -195,7 +195,7 @@ A continuación, haga clic en **Cuerpo**.
 
 ![Almacenamiento de Azure](./images/az31.png)
 
-Ahora tendrá que seleccionar un archivo del equipo local. Puede usar un nuevo archivo de imagen o usar otro archivo de degradado que encuentre [aquí](./images/gradient2-p.jpg).
+Ahora tendrá que seleccionar un archivo del equipo local. Puede usar un nuevo archivo de imagen que elija, o bien otro archivo de imagen que encuentre [aquí](./images/gradient2-p.jpg).
 
 ![Archivo de degradación](./images/gradient2-p.jpg)
 
@@ -223,7 +223,10 @@ El nombre de archivo que se va a usar es `gradient2-p.jpg`, lo que significa que
 
 A continuación, ve a **Encabezados** donde debes agregar un nuevo encabezado manualmente. Utilice esto:
 
-x-ms-blob-type BlockBlob
+| Clave | Valor |
+|:-------------:| :---------------:| 
+| `x-ms-blob-type` | `BlockBlob` |
+
 
 ![Almacenamiento de Azure](./images/az35.png)
 
@@ -238,6 +241,27 @@ Verá esta respuesta vacía en Postman, lo que significa que la carga del archiv
 Si vuelve al Explorador de almacenamiento de Azure y actualiza el contenido de la carpeta, ahora encontrará allí el archivo recién cargado.
 
 ![Almacenamiento de Azure](./images/az38.png)
+
+## 1.1.2.5 Uso de archivos programáticos
+
+Para usar archivos de lectura mediante programación de cuentas de almacenamiento de Azure, deberá crear un nuevo token de **firma de acceso compartido (SAS)**, con permisos que le permitan leer un archivo. Técnicamente, puede utilizar el token SAS que creó en el ejercicio anterior, pero se recomienda tener un token independiente con solo permisos de **Read**.
+
+Para ello, vuelva al Explorador de almacenamiento de Azure. Haga clic con el botón secundario en el contenedor y, a continuación, haga clic en **Obtener firma de acceso compartido**.
+
+![Almacenamiento de Azure](./images/az27.png)
+
+En **Permisos**, se requieren los siguientes permisos:
+
+- **Leer**
+- **Agregar**
+- **Create**
+- **Write**
+- **Lista**
+
+Haga clic en **Crear**.
+
+![Almacenamiento de Azure](./images/az28.png)
+
 
 Paso siguiente: [1.1.3 ...](./ex3.md)
 

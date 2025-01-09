@@ -4,10 +4,10 @@ breadcrumb-title: Tutorial técnico completo para aplicaciones de Adobe, desde C
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 7066ef48f613cb2c593b065f8c81b0d49f19968b
+source-git-commit: d658ebcecea1cb98f6c7176a9238fcb740fb03e3
 workflow-type: tm+mt
-source-wordcount: '102'
-ht-degree: 4%
+source-wordcount: '122'
+ht-degree: 8%
 
 ---
 
@@ -16,6 +16,8 @@ ht-degree: 4%
 
 + [Información general del tutorial](/help/tutorial-one-adobe/overview.md)
 
++ Primeros pasos {#gettingstarted}
+   + [Primeros pasos](/help/tutorial-one-adobe/modules/getting-started/getting-started.md)
 + 1 Adobe Creative Cloud {#creativecloud}
    + 1.1 Servicios de Adobe Firefly {#module11}
       + [Información general](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/firefly-services.md)
@@ -29,6 +31,11 @@ ht-degree: 4%
       + [Información general](/help/tutorial-one-adobe/modules/csc/module2.1/aemcs.md)
       + [AEM 2.1.1 Introducción a la administración de la información de usuario de CS](/help/tutorial-one-adobe/modules/csc/module2.1/ex1.md)
       + [Resumen y beneficios](/help/tutorial-one-adobe/modules/csc/module2.1/summary.md)
+   + 2.2 Workfront {#module22}
+      + [Información general](/help/tutorial-one-adobe/modules/csc/module2.2/workfront.md)
+      + [2.2.1 Introducción a Workfront](/help/tutorial-one-adobe/modules/csc/module2.2/ex1.md)
+      + [2.2.5 Integración de Workfront + Photoshop](/help/tutorial-one-adobe/modules/csc/module2.2/ex5.md)
+      + [Resumen y beneficios](/help/tutorial-one-adobe/modules/csc/module2.2/summary.md)
 
 + 3 Experiencia del cliente unificada {#uce}
    + 3.1 Adobe Real-Time CDP {#module31}
