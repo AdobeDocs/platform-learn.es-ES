@@ -3,14 +3,65 @@ title: Cree su programa de Cloud Manager
 description: Cree su programa de Cloud Manager
 kt: 5342
 doc-type: tutorial
-source-git-commit: 1077ada5423cde76d1dd337e8a4f8f83324a8853
+exl-id: fda247eb-1865-4936-b46e-84128ccab357
+source-git-commit: 183def00c705cdc8b8e48e197c63629e803290a2
 workflow-type: tm+mt
-source-wordcount: '27'
-ht-degree: 0%
+source-wordcount: '200'
+ht-degree: 4%
 
 ---
 
 # 2.1.1 Crear su programa de Cloud Manager
+
+Vaya a [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com). La organización que debe seleccionar es `--aepImsOrgName--`. Entonces verás algo como esto. Haga clic en **Agregar programa**.
+
+![AEMCS](./images/aemcs1.png)
+
+Para el **Nombre de programa**, use `--aepUserLdap-- - CitiSignal`. Haga clic en **Continuar**.
+
+![AEMCS](./images/aemcs2.png)
+
+Asegúrese de que las siguientes opciones están seleccionadas:
+
+- Sitios
+- Recursos
+- Edge Delivery Services
+
+Haga clic en **Crear**.
+
+![AEMCS](./images/aemcs3.png)
+
+La creación de los entornos tardará un poco.
+
+![AEMCS](./images/aemcs4.png)
+
+Una vez creados los entornos y listos para usarlos, recibirá una confirmación por correo electrónico.
+
+![AEMCS](./images/aemcs5.png)
+
+Una vez que hayas recibido tu confirmación por correo electrónico, vuelve a [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com). Verá que el estado del programa ha cambiado a **Listo**. Haga clic en el programa para abrirlo.
+
+![AEMCS](./images/aemcs6.png)
+
+Eche un vistazo a la pestaña **Canalizaciones**. Haga clic en los 3 puntos **...** y luego haga clic en **Ejecutar**.
+
+![AEMCS](./images/aemcs7.png)
+
+Haga clic en **Ejecutar**.
+
+![AEMCS](./images/aemcs8.png)
+
+A continuación, haga clic en los 3 puntos **...** en la ficha **Entornos** y haga clic en **Ver detalles**.
+
+![AEMCS](./images/aemcs9.png)
+
+A continuación, verá los detalles del entorno, incluida la dirección URL del entorno **Author**, que necesitará en el siguiente ejercicio.
+
+![AEMCS](./images/aemcs10.png)
+
+Una vez finalizada la ejecución de la canalización, puede continuar con el siguiente ejercicio.
+
+AEM Siguiente paso: [2.1.2 Configuración de su entorno de CS de la](./ex2.md)
 
 [Volver al módulo 2.1](./aemcs.md)
 

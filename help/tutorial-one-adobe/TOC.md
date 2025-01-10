@@ -4,10 +4,10 @@ breadcrumb-title: Tutorial técnico completo para aplicaciones de Adobe, desde C
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: d658ebcecea1cb98f6c7176a9238fcb740fb03e3
+source-git-commit: 89611537cad42082af1b9aa753752d5450f103a5
 workflow-type: tm+mt
-source-wordcount: '122'
-ht-degree: 8%
+source-wordcount: '129'
+ht-degree: 7%
 
 ---
 
@@ -29,7 +29,8 @@ ht-degree: 8%
 + 2 Cadena de suministro de contenido {#csc}
    + 2.1 Cloud Service de Adobe Experience Manager {#module21}
       + [Información general](/help/tutorial-one-adobe/modules/csc/module2.1/aemcs.md)
-      + [AEM 2.1.1 Introducción a la administración de la información de usuario de CS](/help/tutorial-one-adobe/modules/csc/module2.1/ex1.md)
+      + [2.1.1 Crear su programa de Cloud Manager](/help/tutorial-one-adobe/modules/csc/module2.1/ex1.md)
+      + [AEM 2.1.2 Configuración del entorno de CS](/help/tutorial-one-adobe/modules/csc/module2.1/ex2.md)
       + [Resumen y beneficios](/help/tutorial-one-adobe/modules/csc/module2.1/summary.md)
    + 2.2 Workfront {#module22}
       + [Información general](/help/tutorial-one-adobe/modules/csc/module2.2/workfront.md)
