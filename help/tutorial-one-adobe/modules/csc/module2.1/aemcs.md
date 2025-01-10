@@ -4,9 +4,9 @@ description: Cloud Service de Adobe Experience Manager
 kt: 5342
 doc-type: tutorial
 exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
-source-git-commit: 183def00c705cdc8b8e48e197c63629e803290a2
+source-git-commit: ce8e9f193765f362b3ea1396626d56b453e1d5ec
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '169'
 ht-degree: 2%
 
 ---
@@ -30,6 +30,10 @@ En este ejercicio, creará su programa de Cloud Manager, que creará los product
 [AEM 2.1.2 Configuración del entorno de CS](./ex2.md)
 
 AEM En este ejercicio, configurará su entorno de CS de y accederá a su sitio web de CitiSignal.
+
+[2.1.3 Desarrollar un bloque personalizado](./ex3.md)
+
+En este ejercicio, desarrollará un componente de bloque personalizado para su sitio web.
 
 [Resumen y beneficios](./summary.md)
 
