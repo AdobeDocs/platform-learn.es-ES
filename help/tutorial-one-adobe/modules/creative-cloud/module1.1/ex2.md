@@ -4,9 +4,9 @@ description: Introducción a los servicios de Firefly
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: 6c344db00b8296c8ea6d31c83cefd8edcddb51b1
+source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1500'
 ht-degree: 1%
 
 ---
@@ -244,7 +244,9 @@ Si vuelve al Explorador de almacenamiento de Azure y actualiza el contenido de l
 
 ## 1.1.2.5 Uso de archivos programáticos
 
-Para usar archivos de lectura mediante programación de cuentas de almacenamiento de Azure, deberá crear un nuevo token de **firma de acceso compartido (SAS)**, con permisos que le permitan leer un archivo. Técnicamente, puede utilizar el token SAS que creó en el ejercicio anterior, pero se recomienda tener un token independiente con solo permisos de **Read**.
+Para poder usar archivos leídos mediante programación desde cuentas de almacenamiento de Azure a largo plazo, deberá crear un nuevo token de **firma de acceso compartido (SAS)**, con permisos que le permitan leer un archivo. Técnicamente, puede utilizar el token SAS que creó en el ejercicio anterior, pero se recomienda tener un token independiente con solo permisos de **Read** y un token independiente con solo permisos de **Write**.
+
+### Token SAS de lectura a largo plazo
 
 Para ello, vuelva al Explorador de almacenamiento de Azure. Haga clic con el botón secundario en el contenedor y, a continuación, haga clic en **Obtener firma de acceso compartido**.
 
@@ -253,17 +255,113 @@ Para ello, vuelva al Explorador de almacenamiento de Azure. Haga clic con el bot
 En **Permisos**, se requieren los siguientes permisos:
 
 - **Leer**
-- **Agregar**
-- **Create**
-- **Write**
 - **Lista**
+
+Establezca el **Tiempo de caducidad** en 1 año a partir de ahora.
 
 Haga clic en **Crear**.
 
-![Almacenamiento de Azure](./images/az28.png)
+![Almacenamiento de Azure](./images/az100.png)
 
+A continuación, obtendrá el token SAS a largo plazo con permisos de lectura. Copie la dirección URL y escríbala en un archivo del equipo.
 
-Paso siguiente: [1.1.3 ...](./ex3.md)
+![Almacenamiento de Azure](./images/az101.png)
+
+La dirección URL tendrá este aspecto:
+
+`https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+
+Puede derivar un par de valores de la dirección URL anterior:
+
+- `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`: `vangeluw`
+- `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+
+### Token SAS de escritura a largo plazo
+
+Para ello, vuelva al Explorador de almacenamiento de Azure. Haga clic con el botón secundario en el contenedor y, a continuación, haga clic en **Obtener firma de acceso compartido**.
+
+![Almacenamiento de Azure](./images/az27.png)
+
+En **Permisos**, se requieren los siguientes permisos:
+
+- **Agregar**
+- **Create**
+- **Write**
+
+Establezca el **Tiempo de caducidad** en 1 año a partir de ahora.
+
+Haga clic en **Crear**.
+
+![Almacenamiento de Azure](./images/az102.png)
+
+A continuación, obtendrá el token SAS a largo plazo con permisos de lectura. Copie la dirección URL y escríbala en un archivo del equipo.
+
+![Almacenamiento de Azure](./images/az103.png)
+
+La dirección URL tendrá este aspecto:
+
+`https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+Una vez más, puede derivar un par de valores de la URL anterior:
+
+- `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`: `vangeluw`
+- `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_SAS_WRITE`: `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+### Variables en Postman
+
+Como puede ver en la sección anterior, hay algunas variables comunes en el token de lectura y en el token de escritura.
+
+Ahora debe crear variables en Postman que almacenarán los distintos elementos de los tokens SAS anteriores.
+Hay algunos valores que son los mismos en ambas direcciones URL:
+
+- `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`: `vangeluw`
+- `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_SAS_WRITE`: `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+Para futuras interacciones de API, lo principal que cambiará es el nombre del recurso, mientras que las variables anteriores permanecerán igual. En ese caso, tiene sentido crear variables en Postman para que no necesite especificarlas manualmente cada vez.
+
+Para ello, abra Postman. Haga clic en el icono **Entornos**, abra el menú **Todas las variables** y haga clic en **Entorno**.
+
+![Almacenamiento de Azure](./images/az104.png)
+
+Entonces verá esto. Cree estas 4 variables en la tabla que se muestra y, para las columnas **Valor inicial** y **Valor actual**, introduzca sus valores personales específicos.
+
+- `AZURE_STORAGE_URL`: su dirección URL
+- `AZURE_STORAGE_CONTAINER`: su nombre de contenedor
+- `AZURE_STORAGE_SAS_READ`: su token de lectura SAS
+- `AZURE_STORAGE_SAS_WRITE`: su token de escritura SAS
+
+Haga clic en **Guardar**.
+
+![Almacenamiento de Azure](./images/az105.png)
+
+En uno de los ejercicios anteriores, el **Cuerpo** de su solicitud **Firefly - T2I (styleref) V3** tenía este aspecto:
+
+`"url": "https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D"`
+
+![Almacenamiento de Azure](./images/az24.png)
+
+Ahora puede cambiar la dirección URL a:
+
+`"url": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/gradient.jpg{{AZURE_STORAGE_SAS_READ}}"`
+
+Haga clic en **Enviar** para probar los cambios que realizó.
+
+![Almacenamiento de Azure](./images/az106.png)
+
+Si las variables se configuraron correctamente, verá que se devuelve una dirección URL de imagen.
+
+![Almacenamiento de Azure](./images/az107.png)
+
+Abra la dirección URL de la imagen para comprobar la imagen.
+
+![Almacenamiento de Azure](./images/az108.png)
+
+Siguiente paso: [1.1.3 Adobe Firefly y Adobe Photoshop](./ex3.md)
 
 [Volver al módulo 1.1](./firefly-services.md)
 
