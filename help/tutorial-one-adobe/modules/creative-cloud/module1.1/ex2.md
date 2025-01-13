@@ -4,7 +4,7 @@ description: Introducción a los servicios de Firefly
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
+source-git-commit: d26d4735c92498d56beb7859ec67a0c3e174fc25
 workflow-type: tm+mt
 source-wordcount: '1500'
 ht-degree: 1%
@@ -242,7 +242,7 @@ Si vuelve al Explorador de almacenamiento de Azure y actualiza el contenido de l
 
 ![Almacenamiento de Azure](./images/az38.png)
 
-## 1.1.2.5 Uso de archivos programáticos
+## 1.1.2.6 Uso de archivos programáticos
 
 Para poder usar archivos leídos mediante programación desde cuentas de almacenamiento de Azure a largo plazo, deberá crear un nuevo token de **firma de acceso compartido (SAS)**, con permisos que le permitan leer un archivo. Técnicamente, puede utilizar el token SAS que creó en el ejercicio anterior, pero se recomienda tener un token independiente con solo permisos de **Read** y un token independiente con solo permisos de **Write**.
 
@@ -359,7 +359,7 @@ Si las variables se configuraron correctamente, verá que se devuelve una direcc
 
 Abra la dirección URL de la imagen para comprobar la imagen.
 
-![Almacenamiento de Azure](./images/az108.png)
+![Almacenamiento de Azure](./images/az108.jpg)
 
 Siguiente paso: [1.1.3 Adobe Firefly y Adobe Photoshop](./ex3.md)
 

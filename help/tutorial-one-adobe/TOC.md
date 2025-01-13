@@ -4,9 +4,9 @@ breadcrumb-title: Tutorial técnico completo para aplicaciones de Adobe, desde C
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 5242f77e2756e1bcd9ed25a7b95b06a01114fcd5
+source-git-commit: ab3f13389ae194519dcb9c8988ea38b89f6e5907
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '160'
 ht-degree: 6%
 
 ---
@@ -41,8 +41,10 @@ ht-degree: 6%
       + [Resumen y beneficios](/help/tutorial-one-adobe/modules/csc/module2.2/summary.md)
 
 + 3 Experiencia del cliente unificada {#uce}
-   + 3.1 Adobe Real-Time CDP {#module31}
-      + [Información general](/help/tutorial-one-adobe/modules/uce/module3.1/rtcdp.md)
-      + [3.1.1 Creación de un evento](/help/tutorial-one-adobe/modules/uce/module3.1/ex1.md)
+   + 3.1 Composición de audiencia federada {#module31}
+      + [Información general](/help/tutorial-one-adobe/modules/uce/module3.1/fac.md)
+      + [3.1.1 Configuración del entorno de Snowflake](/help/tutorial-one-adobe/modules/uce/module3.1/ex1.md)
+      + [3.1.2 Creación de esquemas, modelos de datos y vínculos](/help/tutorial-one-adobe/modules/uce/module3.1/ex2.md)
+      + [3.1.3 Crear una composición federada](/help/tutorial-one-adobe/modules/uce/module3.1/ex3.md)
       + [Resumen y beneficios](/help/tutorial-one-adobe/modules/uce/module3.1/summary.md)
 

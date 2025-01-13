@@ -2,9 +2,10 @@
 title: 'Información general: tutorial técnico completo: un Adobe'
 description: 'Tutorial técnico completo: un Adobe'
 doc-type: multipage-overview
-source-git-commit: b1bb17bfe451c67903424bd8da6716d0ad1c2cd3
+exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
+source-git-commit: d26d4735c92498d56beb7859ec67a0c3e174fc25
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '302'
 ht-degree: 4%
 
 ---
@@ -62,8 +63,12 @@ En este módulo fundacional, utilizará el Adobe Firefly para ...
 
 En este módulo básico, configurará el programa de Cloud Service de Adobe Experience Manager, el sitio y el repositorio de Assets.
 
+[2.2 Adobe Workfront](./modules/csc/module2.2/workfront.md)
+
+En este módulo básico, configurará el programa de Cloud Service de Adobe Experience Manager, el sitio y el repositorio de Assets.
+
 ### 3. Experiencia del cliente unificada
 
-[3.1 Adobe Real-Time CDP](./modules/uce/module3.1/rtcdp.md)
+[3.1 Composición de audiencia federada](./modules/uce/module3.1/fac.md)
 
 En este módulo básico, aprenderá sobre la recopilación de datos de Adobe Experience Platform y la nueva extensión de Web SDK.
