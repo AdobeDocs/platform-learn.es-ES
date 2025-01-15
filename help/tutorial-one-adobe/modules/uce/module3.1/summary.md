@@ -4,7 +4,7 @@ description: Foundation - FAC - Summary
 kt: 5342
 doc-type: tutorial
 exl-id: 9681cceb-1d8b-48d0-b751-af98778b6acb
-source-git-commit: d26d4735c92498d56beb7859ec67a0c3e174fc25
+source-git-commit: 29f1c26d370859fd2200610ed74a1ea744be08a8
 workflow-type: tm+mt
 source-wordcount: '53'
 ht-degree: 1%
@@ -20,9 +20,7 @@ ht-degree: 1%
 Vamos a destacar las ventajas de las capacidades de ingesta de datos de Federated Audience Composition en Adobe Experience Platform:
 
 
-
 ## Eche un vistazo a esto
-
 
 [Volver al módulo 1.3](./fac.md)
 
