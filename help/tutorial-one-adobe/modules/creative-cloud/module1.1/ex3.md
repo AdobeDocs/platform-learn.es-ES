@@ -1,17 +1,17 @@
 ---
-title: Introducción a los servicios de Firefly
-description: Introducción a los servicios de Firefly
+title: Uso de las API de Photoshop
+description: Uso de las API de Photoshop
 kt: 5342
 doc-type: tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: 0fe4bbf6bcc80d4fa88bc30718a1de6621f93f17
+source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '1010'
 ht-degree: 0%
 
 ---
 
-# 1.1.3 Adobe Firefly y Adobe Photoshop
+# 1.1.3 Uso de las API de Photoshop
 
 ## 1.1.3.1 Actualizar la integración de Adobe I/O
 
@@ -73,6 +73,8 @@ Luego tiene un token de acceso válido para interactuar con las API de Photoshop
 
 ![Almacenamiento de Azure](./images/ps9.png)
 
+### API de Photoshop 1.1.3.2.1: Hello World
+
 A continuación, saludemos a las API de Photoshop para comprobar si todos los permisos y accesos están correctamente configurados. En la colección **Photoshop**, abra la solicitud con el nombre **Photoshop Hello (Test Auth.)**. Haga clic en **Enviar**.
 
 ![Almacenamiento de Azure](./images/ps10.png)
@@ -82,6 +84,8 @@ Debería recibir esta respuesta: **Bienvenido a la API de Photoshop!**.
 ![Almacenamiento de Azure](./images/ps11.png)
 
 A continuación, para interactuar mediante programación con el archivo PSD **citisignal-fiber.psd**, debe cargarlo en su cuenta de almacenamiento. Puede hacerlo manualmente, arrastrándolo y soltándolo en el contenedor mediante el Explorador de almacenamiento de Azure, pero esta vez debe hacerlo a través de la API.
+
+### 1.1.3.2.2 PSD de carga en Azure
 
 En Postman, abra la solicitud **Cargar PSD a la cuenta de almacenamiento de Azure**. En el ejercicio anterior configuró estas variables de entorno en Postman, que ahora utilizará:
 
@@ -109,6 +113,8 @@ A continuación, debería recuperar esta respuesta vacía de Azure, lo que signi
 Si usa el Explorador de almacenamiento de Azure para echar un vistazo, verá el archivo después de actualizar la carpeta.
 
 ![Almacenamiento de Azure](./images/ps16.png)
+
+### API de Photoshop 1.1.3.2.3: Obtener manifiesto
 
 A continuación, debe obtener el archivo de manifiesto del archivo de PSD. En Postman, abra la solicitud **Photoshop - Obtener manifiesto del PSD**. Ir a **Cuerpo**.
 
@@ -155,6 +161,8 @@ Cuando la respuesta esté disponible, aparecerá un archivo json que contiene in
 Por ejemplo, busque el texto `2048x2048-cta`. Entonces debería ver esto.
 
 ![Almacenamiento de Azure](./images/ps21.png)
+
+### API de Photoshop 1.1.3.2.4: Cambiar texto
 
 A continuación, debe cambiar el texto de la llamada a la acción mediante las API. En Postman, abra la solicitud **Photoshop - Cambiar texto** y vaya a **Cuerpo**.
 

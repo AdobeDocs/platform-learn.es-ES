@@ -1,12 +1,12 @@
 ---
-title: Introducción a los servicios de Firefly
-description: Introducción a los servicios de Firefly
+title: Automatización de procesos con Workfront Fusion
+description: Automatización de procesos con Workfront Fusion
 kt: 5342
 doc-type: tutorial
 exl-id: 1b7b2630-864f-4982-be5d-c46b760739c3
-source-git-commit: 0fe4bbf6bcc80d4fa88bc30718a1de6621f93f17
+source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '852'
 ht-degree: 0%
 
 ---
@@ -162,10 +162,9 @@ A continuación, el escenario se volverá a ejecutar y creará los dos archivos 
 
 ![WF Fusion](./images/wffusion232.png)
 
-Antes de continuar, cambie el nombre de la solicitud de Postman a `POST - Send Request to Workfront Fusion Webhook`.
+Por último, cambie el nombre de su solicitud de Postman a `POST - Send Request to Workfront Fusion Webhook`.
 
 ![WF Fusion](./images/wffusion233.png)
-
 
 Siguiente paso: [Resumen y beneficios](./summary.md)
 
