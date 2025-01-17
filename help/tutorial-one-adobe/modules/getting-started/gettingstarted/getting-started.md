@@ -3,10 +3,11 @@ title: 'Introducción: resumen'
 description: 'Introducción: resumen'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6758301f639394f0d85b685a115461a63e5d760b
+exl-id: 4b85938e-b7ee-4e05-b73d-112917beea08
+source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 2%
+source-wordcount: '228'
+ht-degree: 3%
 
 ---
 
@@ -47,8 +48,10 @@ En este ejercicio configurará el sitio web para que pueda utilizarlo para demos
 
 En este ejercicio configurará la aplicación móvil para que pueda utilizarla para demostraciones y activación.
 
+![Perspectivas técnicas](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a aprender todo lo que necesita saber sobre Adobe Experience Platform y sus aplicaciones. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, póngase en contacto directamente con Tech Insiders, enviando un correo electrónico a **techinsiders@adobe.com**.
+>Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, póngase en contacto directamente con Tech Insiders, enviando un correo electrónico a **techinsiders@adobe.com**.
 
 [Volver a todos los módulos](../../../overview.md)

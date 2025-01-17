@@ -4,7 +4,7 @@ description: 'Recopilación de datos: composición de audiencia federada'
 kt: 5342
 doc-type: tutorial
 exl-id: cc2ac85e-e902-4bb7-ab54-aa39980f97aa
-source-git-commit: 71fe7b82e09aa9bc26b03dd2358d008265f54629
+source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
 workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 0%
@@ -52,9 +52,9 @@ En este ejercicio, configurará el modelo de datos en AEP para los datos federad
 
 Resumen de este módulo y descripción general de las ventajas.
 
+![Perspectivas técnicas](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+
 >[!NOTE]
->
->![Perspectivas técnicas](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 >
 >Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, póngase en contacto directamente con Tech Insiders, enviando un correo electrónico a **techinsiders@adobe.com**.
 

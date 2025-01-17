@@ -4,7 +4,7 @@ description: Cloud Service y Edge Delivery Services de Adobe Experience Manager
 kt: 5342
 doc-type: tutorial
 exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
-source-git-commit: 71fe7b82e09aa9bc26b03dd2358d008265f54629
+source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 2%
@@ -43,9 +43,9 @@ En este ejercicio, desarrollará un componente de bloque personalizado para su s
 
 Resumen de este módulo y descripción general de las ventajas.
 
+![Perspectivas técnicas](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+
 >[!NOTE]
->
->![Perspectivas técnicas](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 >
 >Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, póngase en contacto directamente con Tech Insiders, enviando un correo electrónico a **techinsiders@adobe.com**.
 

@@ -3,7 +3,7 @@ title: 'Información general: tutorial técnico completo: un Adobe'
 description: 'Tutorial técnico completo: un Adobe'
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 71fe7b82e09aa9bc26b03dd2358d008265f54629
+source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 4%
@@ -94,8 +94,8 @@ En este módulo, utilizará Adobe Journey Optimizer para configurar y utilizar l
 
 En este módulo, utilizará Adobe Journey Optimizer con servicios de offer decisioning de forma práctica para configurar Ofertas personalizadas y su propia decisión.
 
+![Perspectivas técnicas](./assets/images/techinsiders.png){width="50px" align="left"}
+
 >[!NOTE]
->
->![Perspectivas técnicas](./assets/images/techinsiders.png){width="50px" align="left"}
 >
 >Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, póngase en contacto directamente con Tech Insiders, enviando un correo electrónico a **techinsiders@adobe.com**.
