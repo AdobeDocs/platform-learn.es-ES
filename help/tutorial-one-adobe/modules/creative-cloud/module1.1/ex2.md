@@ -4,9 +4,9 @@ description: Optimizar el proceso de Firefly con Microsoft Azure y las direccion
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
+source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1527'
 ht-degree: 1%
 
 ---
@@ -108,6 +108,10 @@ Una vez autenticado, verá un mensaje como este.
 ![Almacenamiento de Azure](./images/az15.png)
 
 Vuelva a la aplicación del Explorador de almacenamiento de Microsoft Azure. Seleccione su suscripción y haga clic en **Abrir explorador**.
+
+>[!NOTE]
+>
+>Si no se muestra tu cuenta, haz clic en el icono **engranaje** junto a tu dirección de correo electrónico y selecciona **Anular filtro**.
 
 ![Almacenamiento de Azure](./images/az16.png)
 

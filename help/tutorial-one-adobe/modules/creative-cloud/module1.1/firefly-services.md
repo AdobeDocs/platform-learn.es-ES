@@ -4,9 +4,9 @@ description: Servicios de Adobe Firefly
 kt: 5342
 doc-type: tutorial
 exl-id: cbc34bda-64e6-42bc-b2f0-90aed5bfeb97
-source-git-commit: 0fe4bbf6bcc80d4fa88bc30718a1de6621f93f17
+source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '172'
 ht-degree: 2%
 
 ---
@@ -32,6 +32,10 @@ En este ejercicio, explore los servicios de Firefly y comprenda sus capacidades.
 En este ejercicio, explore los servicios de Firefly y comprenda sus capacidades.
 
 [1.1.3 Adobe Firefly y Adobe Photoshop](./ex3.md)
+
+En este ejercicio, utilizará los servicios de Firefly junto con Adobe Photoshop.
+
+[Modelos personalizados de Firefly 1.1.4](./ex4.md)
 
 En este ejercicio, utilizará los servicios de Firefly junto con Adobe Photoshop.
 
