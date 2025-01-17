@@ -3,7 +3,8 @@ title: 'Servicios de Firefly: resumen'
 description: 'Servicios de Firefly: resumen'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 1077ada5423cde76d1dd337e8a4f8f83324a8853
+exl-id: 8bcc022d-3f2d-4a3a-9ca4-f17395293276
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '43'
 ht-degree: 2%
@@ -22,6 +23,6 @@ Vamos a destacar las ventajas de utilizar los servicios de Firefly...
 ## Eche un vistazo a esto
 
 
-[Volver al módulo 1](./firefly-services.md)
+[Volver al módulo 1](./firefly-services.md){target="_blank"}
 
-[Volver a todos los módulos](../../../overview.md)
+[Volver a todos los módulos](../../../overview.md){target="_blank"}

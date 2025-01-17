@@ -4,7 +4,7 @@ description: Cree su programa de Cloud Manager
 kt: 5342
 doc-type: tutorial
 exl-id: fda247eb-1865-4936-b46e-84128ccab357
-source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # 2.1.1 Crear su programa de Cloud Manager
 
-Vaya a [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com). La organización que debe seleccionar es `--aepImsOrgName--`. Entonces verás algo como esto. Haga clic en **Agregar programa**.
+Vaya a [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. La organización que debe seleccionar es `--aepImsOrgName--`. Entonces verás algo como esto. Haga clic en **Agregar programa**.
 
 ![AEMCS](./images/aemcs1.png)
 
@@ -35,13 +35,13 @@ La creación de los entornos tardará un poco, de 10 a 20 minutos.
 
 ![AEMCS](./images/aemcs4.png)
 
-Mientras espera, ya puede empezar con el ejercicio [2.1.2 Crear su sitio web basado en documentos](./ex2.md).
+Mientras espera, ya puede empezar con el ejercicio [2.1.2 Crear su sitio web basado en documentos](./ex2.md){target="_blank"}.
 
 Una vez creados los entornos y listos para usarlos, recibirá una confirmación por correo electrónico tras la cual puede volver aquí.
 
 ![AEMCS](./images/aemcs5.png)
 
-Una vez que hayas recibido tu confirmación por correo electrónico, vuelve a [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com). Verá que el estado del programa ha cambiado a **Listo**. Haga clic en el programa para abrirlo.
+Una vez que hayas recibido tu confirmación por correo electrónico, vuelve a [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Verá que el estado del programa ha cambiado a **Listo**. Haga clic en el programa para abrirlo.
 
 ![AEMCS](./images/aemcs6.png)
 
@@ -63,8 +63,8 @@ A continuación, verá los detalles del entorno, incluida la dirección URL del 
 
 Una vez finalizada la ejecución de la canalización, puede continuar con el siguiente ejercicio.
 
-Paso siguiente: [2.1.2 Crear su sitio web basado en documentos](./ex2.md)
+Paso siguiente: [2.1.2 Crear su sitio web basado en documentos](./ex2.md){target="_blank"}
 
-[Volver al módulo 2.1](./aemcs.md)
+[Volver al módulo 2.1](./aemcs.md){target="_blank"}
 
-[Volver a todos los módulos](./../../../overview.md)
+[Volver a todos los módulos](./../../../overview.md){target="_blank"}

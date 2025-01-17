@@ -4,9 +4,9 @@ description: Servicios de Adobe Firefly
 kt: 5342
 doc-type: tutorial
 exl-id: cbc34bda-64e6-42bc-b2f0-90aed5bfeb97
-source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
+source-git-commit: 760271a0f1bedef7db079748776da36feef230cd
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '154'
 ht-degree: 2%
 
 ---
@@ -19,32 +19,33 @@ ht-degree: 2%
 
 ## Requisitos previos
 
-- Acceso al Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/)
+- Acceso al Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}
 
 ## Ejercicios
 
-[1.1.1 Introducción a los servicios de Firefly](./ex1.md)
+[1.1.1 Introducción a los servicios de Firefly](./ex1.md){target="_blank"}
 
 En este ejercicio, explore los servicios de Firefly y comprenda sus capacidades.
 
-[1.1.2 Optimizar los procesos de Firefly con Microsoft Azure y las direcciones URL prefirmadas](./ex2.md)
+[1.1.2 Optimizar los procesos de Firefly con Microsoft Azure y las direcciones URL prefirmadas](./ex2.md){target="_blank"}
 
 En este ejercicio, explore los servicios de Firefly y comprenda sus capacidades.
 
-[1.1.3 Adobe Firefly y Adobe Photoshop](./ex3.md)
+[1.1.3 Adobe Firefly y Adobe Photoshop](./ex3.md){target="_blank"}
 
 En este ejercicio, utilizará los servicios de Firefly junto con Adobe Photoshop.
 
-[Modelos personalizados de Firefly 1.1.4](./ex4.md)
+[Modelos personalizados de Firefly 1.1.4](./ex4.md){target="_blank"}
 
 En este ejercicio, utilizará los servicios de Firefly junto con Adobe Photoshop.
 
-[Resumen y beneficios](./summary.md)
+[Resumen y beneficios](./summary.md){target="_blank"}
 
 Resumen de este módulo y descripción general de las ventajas.
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a aprender todo lo que necesita saber sobre Adobe Experience Platform y sus aplicaciones. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, póngase en contacto directamente con Tech Insiders, enviando un correo electrónico a **techinsiders@adobe.com**.
+>![Perspectivas técnicas](./../../../assets/images/techinsiders.png){width="50px" align="center"}
+>Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, póngase en contacto directamente con Tech Insiders, enviando un correo electrónico a **techinsiders@adobe.com**.
 
-[Volver a todos los módulos](../../../overview.md)
+[Volver a todos los módulos](../../../overview.md){target="_blank"}
