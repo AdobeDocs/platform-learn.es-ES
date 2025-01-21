@@ -4,13 +4,13 @@ description: Obtenga información sobre cómo migrar reglas adicionales basadas 
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16764
-source-git-commit: 7ae56d997884cf1558e72c0ad553df1c5d43c081
+exl-id: d1345da7-018d-4c0c-ba9b-d4ff7b35df03
+source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
-
 
 # Migración de reglas de página adicionales
 
@@ -20,7 +20,7 @@ En este ejercicio aprenderá a migrar reglas adicionales basadas en páginas a l
 
 Hagamos una copia de seguridad y hablemos de las implementaciones de Analytics tal como son con la extensión de etiquetas de Adobe Analytics (también conocida como implementación de &quot;AppMeasurement&quot;, ya que ese es el nombre del archivo de JavaScript).
 
-No supondré saber exactamente cómo se implementa, pero en muchas implementaciones que utilizan etiquetas de Experience Platform (anteriormente conocidas como &quot;Launch&quot;), hay cualquier número de reglas que solo se activan condicionalmente, en función de algo en la página o en la dirección URL. Algunos ejemplos de esto son:
+No supondré saber exactamente cómo se implementa, pero en muchas implementaciones que utilizan etiquetas de Experience Platform, hay cualquier número de reglas que solo se activan condicionalmente, en función de algo en la página o en la dirección URL. Algunos ejemplos de esto son:
 
 * Regla de resultados de búsqueda, que solo se activa cuando se ha realizado una búsqueda interna y aparece la página de resultados de la búsqueda
 * Regla de página de aterrizaje de Campaign, que solo se activa cuando hay un código de seguimiento en la dirección URL
@@ -68,6 +68,3 @@ Este es un ejemplo de migración de una regla que se activa condicionalmente. Ut
 >[!IMPORTANT]
 >
 >Al igual que la regla de carga de página predeterminada, dejamos la acción **Set Variable** de la extensión de Analytics en la regla para que podamos comparar los datos a medida que validamos la migración. Recuerde volver más tarde y eliminar la acción de la extensión de Analytics cuando realice la limpieza final.
-
-
-

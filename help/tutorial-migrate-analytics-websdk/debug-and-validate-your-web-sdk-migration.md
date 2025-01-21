@@ -4,13 +4,13 @@ description: Obtenga información sobre cómo depurar y validar los datos al mig
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16763
-source-git-commit: 7ae56d997884cf1558e72c0ad553df1c5d43c081
+exl-id: 68f87266-4b87-4953-8de4-6a9a62bac9e6
+source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 0%
 
 ---
-
 
 # Depuración y validación de la migración a Web SDK
 
@@ -70,7 +70,7 @@ Es posible que haya varias formas de configurar estas comparaciones, pero voy a 
 1. Cree un nuevo proyecto en Analysis Workspace y añada dos paneles
 1. Configure el grupo de informes del panel 1 con el grupo de informes de producción de Adobe Analytics actual
 1. Configure el grupo de informes del panel 2 con el nuevo grupo de informes de desarrollo de Web SDK
-1. Coloque el mismo informe en ambos paneles, con un período de tiempo en el calendario en el que los datos fluían a Analytics mediante ambas extensiones
+1. Coloque el mismo informe en ambos paneles, utilizando un período de tiempo que incluya solo días completos cuando los datos se hayan enviado a ambos grupos de informes
 1. Comparar los datos
 
 Podría tener este aspecto (teniendo en cuenta que no hay datos en estos grupos de informes de demostración vacíos):

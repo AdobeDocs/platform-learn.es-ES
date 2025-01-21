@@ -4,13 +4,13 @@ description: En este ejercicio, aprenderá a migrar una regla de carga de págin
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16760
-source-git-commit: 7ae56d997884cf1558e72c0ad553df1c5d43c081
+exl-id: 783b464e-2974-41a1-9949-ac3ac0c786fc
+source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1260'
 ht-degree: 0%
 
 ---
-
 
 # Migración de la regla de carga de página predeterminada
 
@@ -18,7 +18,7 @@ En este ejercicio, aprenderá a migrar una regla de carga de página predetermin
 
 ## Información general
 
-Vamos a retroceder un poco. Es probable que tenga una regla en Etiquetas (anteriormente conocida como &quot;Launch&quot;) que se active en todas las páginas, una que establezca una o más variables predeterminadas y luego active una señalización o una visita en Adobe Analytics. Actualmente, esta regla utiliza &quot;acciones&quot; en la extensión de Adobe Analytics para hacer estas cosas. A medida que migramos nuestra implementación a Web SDK, necesitamos poder eliminar cualquier referencia (como las acciones) a la extensión de Analytics y reemplazarla con acciones que pertenezcan a Web SDK. En los pasos siguientes, supondremos lo anterior; es decir, que tiene una regla de carga de página predeterminada que establece variables y envía una señalización de seguimiento a Analytics.
+Vamos a retroceder un poco. Es probable que tenga una regla en Etiquetas que se active en todas las páginas: una que establezca una o más variables predeterminadas y luego active una señalización o una visita en Adobe Analytics. Actualmente, esta regla utiliza &quot;acciones&quot; en la extensión de Adobe Analytics para hacer estas cosas. A medida que migramos nuestra implementación a Web SDK, necesitamos poder eliminar cualquier referencia (como las acciones) a la extensión de Analytics y reemplazarla con acciones que pertenezcan a Web SDK. En los pasos siguientes, supondremos lo anterior; es decir, que tiene una regla de carga de página predeterminada que establece variables y envía una señalización de seguimiento a Analytics.
 
 ## Migración de la acción Establecer variables
 
