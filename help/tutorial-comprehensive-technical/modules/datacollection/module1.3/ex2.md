@@ -4,7 +4,7 @@ description: Foundation - FAC - Crear esquemas, modelos de datos y vínculos
 kt: 5342
 doc-type: tutorial
 exl-id: e863ab3a-44df-4bb4-b081-a62616aaa1f1
-source-git-commit: a157c0874c8c21cf6481ef9f02bbf53ff7344407
+source-git-commit: bec1f7253cd2d3491f875179eff2cf511104662f
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 2%
@@ -130,6 +130,8 @@ Seleccione los esquemas y haga clic en **Agregar**.
 
 Entonces verá esto... Haga clic en **Guardar**.
 
+### `CK_USERS` - `CK_PERSONS`
+
 Ahora puede empezar a definir vínculos entre esquemas. Para empezar a definir un vínculo, debe hacer clic en **Crear vínculos**.
 
 ![CARA](./images/fdb16.png)
@@ -140,6 +142,9 @@ Haga clic en **Agregar**.
 
 ![CARA](./images/fdb18.png)
 
+
+### `CK_HOUSEHOLDS` - `CK_PERSONS`
+
 Entonces volverás a estar aquí. Haga clic en **Crear vínculos** para crear otro vínculo.
 
 ![CARA](./images/fdb17.png)
@@ -147,6 +152,8 @@ Entonces volverás a estar aquí. Haga clic en **Crear vínculos** para crear ot
 A continuación, definamos el vínculo entre la tabla `CK_HOUSEHOLDS` y `CK_PERSONS`.
 
 ![CARA](./images/fdb19.png)
+
+### `CK_USERS` - `CK_MONTHLY_DATA_USAGE`
 
 Entonces volverás a estar aquí. Haga clic en **Crear vínculos** para crear otro vínculo.
 
@@ -156,6 +163,9 @@ A continuación, definamos el vínculo entre la tabla `CK_USERS` y `CK_MONTHLY_D
 
 ![CARA](./images/fdb21.png)
 
+
+### `CK_USERS` - `CK_HOUSEHOLDS`
+
 Entonces volverás a estar aquí. Haga clic en **Crear vínculos** para crear otro vínculo.
 
 ![CARA](./images/fdb22.png)
@@ -163,6 +173,8 @@ Entonces volverás a estar aquí. Haga clic en **Crear vínculos** para crear ot
 A continuación, definamos el vínculo entre la tabla `CK_USERS` y `CK_HOUSEHOLDS`.
 
 ![CARA](./images/fdb23.png)
+
+### `CK_USERS` - `CK_MOBILE_DATA_USAGE`
 
 Entonces volverás a estar aquí. Haga clic en **Crear vínculos** para crear otro vínculo.
 
