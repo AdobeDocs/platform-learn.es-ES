@@ -4,9 +4,9 @@ description: 'Introducción: Instale la extensión de Chrome para la documentaci
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: f80f9aa6d736bf07235ef52e96b027b5e5ae742e
+source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '920'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ El ID de organización de IMS es el identificador único de la instancia de Adob
 
 La búsqueda del ID de organización de IMS se puede realizar de varias formas. Si no está seguro, consulte con uno de los administradores del sistema de su instancia para encontrar el ID.
 
-Puede encontrarlo si va a [Admin Console](https://https://adminconsole.adobe.com/), donde puede encontrarlo como parte de la dirección URL.
+Puede encontrarlo si va a [Admin Console](https://adminconsole.adobe.com/), donde puede encontrarlo como parte de la dirección URL.
 
 ![DSN](./images/aepid1.png)
 
@@ -100,7 +100,7 @@ El ID de inquilino es el identificador único de la instancia de AEP de su organ
 
 ![DSN](./images/aeptenantid.png)
 
-Cuando lo introduzca en la extensión de Chrome, debe asegurarse de que se agrega un guion bajo como prefijo, de modo que en este ejemplo **experienceplatform** se convierta en **_experienceplatform**.
+Cuando lo introduzca en la extensión de Chrome, debe asegurarse de que se agrega un guion bajo como prefijo, de modo que en este ejemplo **experienceplatform** se convierta en **_experienceplatform**. Además, asegúrese de quitar el símbolo **@** al copiar desde la dirección URL.
 
 **Nombre de zona protegida de AEP**
 

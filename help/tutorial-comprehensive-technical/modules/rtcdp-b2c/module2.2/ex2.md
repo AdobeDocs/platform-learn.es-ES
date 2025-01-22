@@ -4,7 +4,7 @@ description: 'AI del cliente: crear una nueva instancia (configurar)'
 kt: 5342
 doc-type: tutorial
 exl-id: 067f3fa2-5c1e-4861-b26a-4315cad73a85
-source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
+source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Haz clic en **Guardar y continuar**.
 
 ![Página de instalación 1](./images/setuppage1.png)
 
-Entonces verá esto... Seleccione el conjunto de datos que creó en el ejercicio anterior, que se llama `--demoProfileLdap - Demo System - Customer Experience Event Dataset`. Haga clic en **Agregar**.
+Entonces verá esto... Seleccione el conjunto de datos que creó en el ejercicio anterior, que se llama `--aepUserLdap-- - Demo System - Customer Experience Event Dataset`. Haga clic en **Agregar**.
 
 ![Página de instalación 1](./images/custai2.png)
 

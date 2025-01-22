@@ -4,9 +4,9 @@ description: 'AI del cliente: preparación de datos (ingesta)'
 kt: 5342
 doc-type: tutorial
 exl-id: 71405859-cfc6-4991-a0b0-11c94818a0fa
-source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
+source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '692'
 ht-degree: 1%
 
 ---
@@ -84,7 +84,7 @@ Haga clic en **Crear conjunto de datos a partir del esquema**.
 
 ![Conjunto de datos](./images/createdatasetfromschema.png)
 
-En la siguiente pantalla, seleccione el conjunto de datos que creó en el ejercicio anterior, que se llama **[!UICONTROL ldap - Sistema de demostración - Evento de experiencia del cliente]**. Haga clic en **Next**.
+En la siguiente pantalla, seleccione el conjunto de datos que creó en el ejercicio anterior, que se llama `--aepUserLdap-- - Demo System - Customer Experience Event`. Haga clic en **Next**.
 
 ![Conjunto de datos](./images/createds1.png)
 

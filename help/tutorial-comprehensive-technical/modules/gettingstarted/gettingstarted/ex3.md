@@ -4,9 +4,9 @@ description: 'Introducción: Creación de una secuencia de datos'
 kt: 5342
 doc-type: tutorial
 exl-id: b3e6f66d-fb7a-43ab-aedb-45141af76d3e
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '844'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Vaya a [https://experience.adobe.com/#/data-collection/](https://experience.adob
 
 ![DSN](./images/launchprop.png)
 
-En el menú de la izquierda, haga clic en **[!UICONTROL Etiquetas]**. Después del ejercicio anterior, ahora tiene dos propiedades de recopilación de datos: una para la web y otra para el móvil.
+En el menú de la izquierda, haga clic en **[!UICONTROL Etiquetas]**. Después del ejercicio anterior, ahora tiene 3 propiedades de recopilación de datos: una para la web, otra para el móvil y otra para la aplicación CX.
 
 ![DSN](./images/launchprop1.png)
 
@@ -57,11 +57,11 @@ Ahora va a ver esto.
 
 ![Asigne un nombre a la configuración de Edge y guarde](./images/edgeconfig5.png)
 
-Eso es todo por ahora. En [Módulo 1.1](./../../../modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md) aprenderá más sobre el SDK web y cómo configurar todas sus funcionalidades.
+Eso es todo por ahora. En [Módulo 1.1](./../../../modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md) aprenderá más sobre Web SDK y cómo configurar todas sus funcionalidades.
 
 En el menú de la izquierda, haga clic en **[!UICONTROL Etiquetas]**.
 
-Filtre los resultados de búsqueda para ver las dos propiedades de recopilación de datos. Abra la propiedad de **Web** al hacer clic en ella.
+Filtre los resultados de búsqueda para ver las propiedades de recopilación de datos. Abra la propiedad de **Web** al hacer clic en ella.
 
 ![Asigne un nombre a la configuración de Edge y guarde](./images/edgeconfig10a.png)
 
@@ -69,7 +69,7 @@ Entonces verá esto... Haga clic en **Extensiones**.
 
 ![Asigne un nombre a la configuración de Edge y guarde](./images/edgeconfig11.png)
 
-Primero, haga clic en la extensión SDK para web de Adobe Experience Platform y, a continuación, haga clic en **Configurar**.
+Primero, haga clic en la extensión Adobe Experience Platform Web SDK y, a continuación, haga clic en **Configurar**.
 
 ![Asigne un nombre a la configuración de Edge y guarde](./images/edgeconfig12.png)
 
@@ -139,7 +139,7 @@ Entonces verá esto...
 
 El conjunto de datos está listo para utilizarse en la propiedad de cliente de recopilación de datos de Adobe Experience Platform para dispositivos móviles.
 
-Vaya a **Etiquetas** y filtre los resultados de búsqueda para ver sus dos propiedades de recopilación de datos. Abra la propiedad de **Mobile** al hacer clic en ella.
+Vaya a **Etiquetas** y filtre los resultados de búsqueda para ver las propiedades de recopilación de datos. Abra la propiedad de **Mobile** al hacer clic en ella.
 
 ![Asigne un nombre a la configuración de Edge y guarde](./images/edgeconfig10am.png)
 

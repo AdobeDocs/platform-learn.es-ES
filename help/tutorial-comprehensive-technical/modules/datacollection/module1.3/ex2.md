@@ -4,16 +4,16 @@ description: Foundation - FAC - Crear esquemas, modelos de datos y vínculos
 kt: 5342
 doc-type: tutorial
 exl-id: e863ab3a-44df-4bb4-b081-a62616aaa1f1
-source-git-commit: bec1f7253cd2d3491f875179eff2cf511104662f
+source-git-commit: 075af9deddeeaf398603f65003781ea75fe0923b
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '638'
 ht-degree: 2%
 
 ---
 
 # 1.3.2 Creación de esquemas, modelos de datos y vínculos
 
-Ahora puede configurar la base de datos federada en AEP.
+Ahora puede configurar la base de datos federada en Adobe Experience Platform.
 
 Inicie sesión en Adobe Experience Platform desde esta dirección URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
