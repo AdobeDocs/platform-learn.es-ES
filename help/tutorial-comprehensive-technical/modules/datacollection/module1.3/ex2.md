@@ -4,9 +4,9 @@ description: Foundation - FAC - Crear esquemas, modelos de datos y vínculos
 kt: 5342
 doc-type: tutorial
 exl-id: e863ab3a-44df-4bb4-b081-a62616aaa1f1
-source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
+source-git-commit: a157c0874c8c21cf6481ef9f02bbf53ff7344407
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '636'
 ht-degree: 2%
 
 ---
@@ -152,7 +152,7 @@ Entonces volverás a estar aquí. Haga clic en **Crear vínculos** para crear ot
 
 ![CARA](./images/fdb20.png)
 
-A continuación, definamos el vínculo entre la tabla `CK_MONTHLY_DATA_USAGE` y `CK_USERS`.
+A continuación, definamos el vínculo entre la tabla `CK_USERS` y `CK_MONTHLY_DATA_USAGE`.
 
 ![CARA](./images/fdb21.png)
 
@@ -164,8 +164,17 @@ A continuación, definamos el vínculo entre la tabla `CK_USERS` y `CK_HOUSEHOLD
 
 ![CARA](./images/fdb23.png)
 
-Entonces volverás a estar aquí. Haga clic en **Guardar**.
+Entonces volverás a estar aquí. Haga clic en **Crear vínculos** para crear otro vínculo.
+
 ![CARA](./images/fdb24.png)
+
+A continuación, definamos el vínculo entre la tabla `CK_USERS` y `CK_MOBILE_DATA_USAGE`.
+
+![CARA](./images/fdb25.png)
+
+Entonces debería ver esto. Haga clic en **Guardar**.
+
+![CARA](./images/fdb26.png)
 
 Ya ha finalizado la configuración en AEP. Ahora puede empezar a utilizar los datos federados en una composición de audiencia federada.
 

@@ -4,9 +4,9 @@ description: 'Introducción: Instale la extensión de Chrome para la documentaci
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '908'
 ht-degree: 0%
 
 ---
@@ -20,12 +20,13 @@ Para poder reutilizar la documentación, se introdujeron **Variables de entorno*
 
 A continuación se puede encontrar un ejemplo de estos valores. Actualmente, estos valores aún no se pueden usar, pero tan pronto como instale y active la extensión de Chrome, verá que estas variables cambian al texto normal y puede copiarlas y reutilizarlas.
 
-| Nombre | Clave |
-|:-------------:| :---------------:|
-| ID de organización de AEP IMS | `--aepImsOrgId--` |
-| ID de inquilino de AEP | `--aepTenantId--` |
-| Nombre de zona protegida AEP | `--aepSandboxName--` |
-| LDAP del perfil del alumno | `--aepUserLdap--` |
+| Nombre | Clave | Ejemplo |
+|:-------------:| :---------------:| :---------------:|
+| ID de organización de AEP IMS | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
+| Nombre de organización de AEP IMS | `--aepImsOrgName--` | `Experience Platform International` |
+| ID de inquilino de AEP | `--aepTenantId--` | `_experienceplatform` |
+| Nombre de zona protegida AEP | `--aepSandboxName--` | `tech-insiders` |
+| LDAP del perfil del alumno | `--aepUserLdap--` | `vangeluw` |
 
 Por ejemplo, en la siguiente captura de pantalla puede ver una referencia a `aepTenantId`.
 

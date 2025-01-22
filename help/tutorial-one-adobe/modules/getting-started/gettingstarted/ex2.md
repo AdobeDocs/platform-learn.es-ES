@@ -3,7 +3,8 @@ title: 'Introducción: Utilice el sistema de demostración junto a para configur
 description: 'Introducción: Utilice el sistema de demostración junto a para configurar la propiedad de Launch'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6758301f639394f0d85b685a115461a63e5d760b
+exl-id: 455b72f6-84fd-463a-a7b5-3c4999035ab2
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%
@@ -20,7 +21,7 @@ Vaya a [https://dsn.adobe.com/](https://dsn.adobe.com/) y luego a **Configuraci�
 
 ![DSN](./images/dsnsetup.png)
 
-En el menú desplegable **Entorno**, seleccione la instancia de AEP y la zona protegida.
+En el menú desplegable **Entorno**, seleccione su instancia de AEP y su zona protegida.
 
 ![DSN](./images/dsnh1.png)
 
@@ -32,7 +33,7 @@ A continuación, haga clic en **Iniciar**.
 
 ![DSN](./images/dsn2.png)
 
-En la ventana emergente, introduzca un nombre para las propiedades de recopilación de datos y los proyectos de Experience Builder. Use esta convención de nombres: **Sistema de demostración (DD/MM/AAAA)**. Información: el LDAP se añadirá automáticamente, no es necesario que lo añada usted mismo.
+En la ventana emergente, introduzca un nombre para las propiedades de recopilación de datos y los proyectos de Experience Builder. Use esta convención de nombres: **Un Adobe (DD/MM/AAAA)**. Información: el LDAP se añadirá automáticamente, no es necesario que lo añada usted mismo.
 
 Haga clic en **Start**.
 

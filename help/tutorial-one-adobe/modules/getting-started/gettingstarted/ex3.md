@@ -3,9 +3,10 @@ title: 'Introducción: Creación de una secuencia de datos'
 description: 'Introducción: Creación de una secuencia de datos'
 kt: 5342
 doc-type: tutorial
-source-git-commit: a1cba79313a651c929d76008943c1c5f8a64a9f7
+exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '825'
 ht-degree: 1%
 
 ---
@@ -16,7 +17,7 @@ Vaya a [https://experience.adobe.com/#/data-collection/](https://experience.adob
 
 ![DSN](./images/launchprop.png)
 
-En el menú de la izquierda, haga clic en **[!UICONTROL Etiquetas]**. Después del ejercicio anterior, ahora tiene dos propiedades de recopilación de datos: una para la web y otra para el móvil.
+En el menú de la izquierda, haga clic en **[!UICONTROL Etiquetas]**. Después del ejercicio anterior, ahora tiene 3 propiedades de recopilación de datos: una para la web, otra para el móvil y otra para la aplicación CX.
 
 ![DSN](./images/launchprop1.png)
 
@@ -38,7 +39,7 @@ Haga clic en **[!UICONTROL Nueva secuencia de datos]**.
 
 ![Haga clic en el icono Configuración de Edge en el panel de navegación izquierdo](./images/edgeconfig1.png)
 
-Para **[!UICONTROL Name]** y para la descripción opcional, escriba `--aepUserLdap-- - Demo System Datastream`. Para **Esquema de asignación**, seleccione **Sistema de demostración - Esquema de evento para el sitio web (Global v1.1)**. Haga clic en **Guardar**.
+Para **[!UICONTROL Name]** y para la descripción opcional, escriba `--aepUserLdap-- - One Adobe Datastream`. Para **Esquema de asignación**, seleccione **Sistema de demostración - Esquema de evento para el sitio web (Global v1.1)**. Haga clic en **Guardar**.
 
 ![Asigne un nombre a la configuración de Edge y guarde](./images/edgeconfig2.png)
 
@@ -58,7 +59,7 @@ Ahora va a ver esto.
 
 En el menú de la izquierda, haga clic en **[!UICONTROL Etiquetas]**.
 
-Filtre los resultados de búsqueda para ver las dos propiedades de recopilación de datos. Abra la propiedad de **Web** al hacer clic en ella.
+Filtre los resultados de búsqueda para ver las propiedades de recopilación de datos. Abra la propiedad de **Web** al hacer clic en ella.
 
 ![Asigne un nombre a la configuración de Edge y guarde](./images/edgeconfig10a.png)
 
@@ -114,7 +115,7 @@ Haga clic en **[!UICONTROL Nueva secuencia de datos]**.
 
 ![Haga clic en el icono Flujo de datos en el panel de navegación izquierdo](./images/edgeconfig1.png)
 
-Para **[!UICONTROL Nombre descriptivo]** y para la descripción opcional, escriba `--aepUserLdap-- - Demo System Datastream (Mobile)`. Para **Esquema de asignación**, seleccione **Sistema de demostración - Esquema de evento para aplicación móvil (Global v1.1)**. Haga clic en **Guardar**.
+Para **[!UICONTROL Nombre descriptivo]** y para la descripción opcional, escriba `--aepUserLdap-- - One Adobe Datastream (Mobile)`. Para **Esquema de asignación**, seleccione **Sistema de demostración - Esquema de evento para aplicación móvil (Global v1.1)**. Haga clic en **Guardar**.
 
 Haga clic en **[!UICONTROL Guardar]**.
 

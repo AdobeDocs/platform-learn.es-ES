@@ -3,9 +3,10 @@ title: 'Introducción: Instale la extensión de Chrome para la documentación de
 description: 'Introducción: Instale la extensión de Chrome para la documentación de Experience League'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6758301f639394f0d85b685a115461a63e5d760b
+exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
@@ -19,14 +20,15 @@ Para poder reutilizar la documentación, se introdujeron **Variables de entorno*
 
 A continuación se puede encontrar un ejemplo de estos valores. Actualmente, estos valores aún no se pueden usar, pero tan pronto como instale y active la extensión de Chrome, verá que estas variables cambian al texto normal y puede copiarlas y reutilizarlas.
 
-| Nombre | Clave |
-|:-------------:| :---------------:|
-| ID de organización de AEP IMS | `--aepImsOrgId--` |
-| ID de inquilino de AEP | `--aepTenantId--` |
-| Nombre de zona protegida AEP | `--aepSandboxName--` |
-| LDAP del perfil del alumno | `--aepUserLdap--` |
+| Nombre | Clave | Ejemplo |
+|:-------------:| :---------------:| :---------------:|
+| ID de organización de AEP IMS | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
+| Nombre de organización de AEP IMS | `--aepImsOrgName--` | `Experience Platform International` |
+| ID de inquilino de AEP | `--aepTenantId--` | `_experienceplatform` |
+| Nombre de zona protegida AEP | `--aepSandboxName--` | `one-adobe` |
+| LDAP del perfil del alumno | `--aepUserLdap--` | `vangeluw` |
 
-Por ejemplo, en la siguiente captura de pantalla puede ver una referencia a `aepTenantId`.
+Por ejemplo, en la siguiente captura de pantalla puede ver una referencia a `aepSandboxName`.
 
 ![DSN](./images/mod7before.png)
 
@@ -108,7 +110,7 @@ Antes de tomar el nombre de la zona protegida de la dirección URL, debe asegura
 
 ![DSN](./images/aepsandboxsw.png)
 
-En este ejemplo, el nombre de la zona protegida de AEP es **tech-insiders**.
+En este ejemplo, el nombre de la zona protegida de AEP es **one-adobe**.
 
 ![DSN](./images/aepsname.png)
 
@@ -118,11 +120,10 @@ Este es el nombre de usuario que se utilizará como parte del tutorial. En este 
 
 El LDAP se utiliza para garantizar que la configuración que va a realizar esté vinculada a usted y no entre en conflicto con otros usuarios que puedan estar utilizando la misma instancia y zona protegida que está utilizando.
 
-Sus valores deben ser similares a estos.
+Sus valores deben ser similares a los siguientes.
 Finalmente, haga clic en **Crear nuevo**.
 
 ![DSN](./images/c8a.png)
-
 
 En el menú de la izquierda de la extensión, ahora verá un nuevo icono con las iniciales de su entorno. Haga clic en ella. Luego verá la asignación entre las **variables de entorno** y los valores de instancia de Adobe Experience Platform específicos. Haga clic en **Activar configuración**.
 
@@ -134,11 +135,11 @@ Después de activar la configuración, verá un punto verde junto a las iniciale
 
 ## Verificar contenido del tutorial
 
-Como prueba, ve a [esta página](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex3).
+Como prueba, ve a [esta página](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/uce/module31/ex2).
 
-Ahora debería ver que todas las **variables de entorno** han sido reemplazadas por sus valores verdaderos, según el entorno activado en la extensión de Chrome.
+Ahora debería ver que todas las **variables de entorno** de esta página han sido reemplazadas por sus valores verdaderos, según el entorno activado en la extensión de Chrome.
 
-Ahora debería tener una vista similar a la siguiente, donde la variable de entorno `aepTenantId` se ha reemplazado por su ID de inquilino de AEP real, que en este caso es **_experienceplatform**.
+Ahora debería tener una vista similar a la siguiente, donde la variable de entorno `aepSandboxName` ha sido reemplazada por el nombre real de la zona protegida de AEP, que en este caso es **one-adobe**.
 
 ![DSN](./images/mod7.png)
 

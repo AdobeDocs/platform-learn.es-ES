@@ -3,7 +3,8 @@ title: 'Introducción: Uso de la aplicación móvil'
 description: 'Introducción: Uso de la aplicación móvil'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6758301f639394f0d85b685a115461a63e5d760b
+exl-id: a619dd84-5c9e-4c1e-a753-2d98f50f4cfb
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%
@@ -60,7 +61,7 @@ En la página **Integraciones**, debe seleccionar la propiedad de recopilación 
 
 ![DSN](./images/web8aa.png)
 
-Haga clic en **Seleccionar** en la propiedad de recopilación de datos creada en el paso anterior, que se llama `--aepUserLdap - Demo System (DD/MM/YYYY) (mobile)`. A continuación, haga clic en **Guardar**.
+Haga clic en **Seleccionar** en la propiedad de recopilación de datos creada en el paso anterior, que se llama `--aepUserLdap - One Adobe (DD/MM/YYYY) (mobile)`. A continuación, haga clic en **Guardar**.
 
 ![DSN](./images/web8b.png)
 
