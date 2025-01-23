@@ -3,9 +3,9 @@ title: 'Información general: tutorial técnico completo: un Adobe'
 description: 'Tutorial técnico completo: un Adobe'
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
+source-git-commit: 007e35504d19c332da39d90d65f34960aaa9c09b
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '481'
 ht-degree: 4%
 
 ---
@@ -49,6 +49,10 @@ Si desea realizar este tutorial utilizando su propia instancia de Adobe Experien
 - Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform){target="_blank"}
 - Recopilación de datos de Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}
 - Acceso al sistema de demostración: [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}
+
+## Trabajo preliminar
+
+Compruebe las aplicaciones necesarias que deben instalarse en el equipo [aquí](./prework.md){target="_blank"}.
 
 ## Contenido
 

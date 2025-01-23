@@ -4,9 +4,9 @@ description: 'Introducción: Uso de la aplicación móvil'
 kt: 5342
 doc-type: tutorial
 exl-id: 2b94f08f-c932-4287-9956-cfe368c96c12
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: 007e35504d19c332da39d90d65f34960aaa9c09b
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,12 @@ Vaya a [https://bit.ly/dx-demo-app](https://bit.ly/dx-demo-app) en su equipo. En
 
 ![DSN](./images/mobileapp.png)
 
-Usa la aplicación **Camera** de tu smartphone para instalar la aplicación móvil en el sistema operativo de tu dispositivo. Para esta habilitación, debe instalar la **Versión 2.x** que usa los SDK de Adobe Experience Platform Mobile.
+Usa la aplicación **Camera** de tu smartphone para instalar la aplicación móvil en el sistema operativo de tu dispositivo. Para esta habilitación, debe instalar la **versión 2.x** que usa Adobe Experience Platform Mobile SDK.
 
 >[!NOTE]
 >
 >Después de instalar la aplicación por primera vez en un dispositivo iOS, es posible que aparezca un mensaje de error al intentar abrir la aplicación que dice: **Desarrollador empresarial que no es de confianza**. Para solucionarlo, tienes que ir a **Configuración > General > Administración de VPN y dispositivos > Adobe Systems Inc.** y hacer clic en **Confiar en Adobe Systems Inc.**.
+>Es probable que el dispositivo iOS tenga que reiniciarse para completar el proceso de confiar en un desarrollador.
 
 Una vez que la aplicación esté instalada, la encontrarás en la pantalla de inicio del dispositivo. Haga clic en el icono para abrir la aplicación.
 

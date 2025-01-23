@@ -4,9 +4,9 @@ description: En este módulo, se utilizarán los conjuntos de datos, esquemas y 
 kt: 5342
 doc-type: tutorial
 exl-id: aa3ab1eb-6fee-4ea9-9a0d-0d8ca803d7c2
-source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '460'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ En este módulo, deberá hacer lo siguiente:
 ## Objetivos de aprendizaje
 
 - Familiarícese con las propiedades del servidor de recopilación de datos de Adobe Experience Platform y con la nueva extensión de conector de Adobe Cloud
-- Aprenda a reutilizar datos del SDK web de Adobe Experience Platform en soluciones de terceros como Google y AWS
+- Aprenda a reutilizar datos de Adobe Experience Platform Web SDK en soluciones de terceros como Google y AWS
 - Comprenda la arquitectura detrás de la recopilación de datos de Adobe Experience Platform y el reenvío del lado del servidor.
 
 ## Requisitos previos
@@ -49,19 +49,21 @@ En este ejercicio, actualizará el flujo de datos existente para que los datos r
 
 [2.5.3 Crear y configurar un webhook personalizado](./ex3.md)
 
-En este ejercicio, creará y configurará un webhook personalizado y empezará a reenviar los datos recopilados por el SDK web a dicho webhook personalizado.
+En este ejercicio, creará y configurará un webhook personalizado y empezará a reenviar los datos recopilados por Web SDK a dicho webhook personalizado.
 
 [2.5.4 Reenviar eventos a GCP Pub/Sub](./ex4.md)
 
-En este ejercicio, creará y configurará una función de nube de Google y empezará a reenviar los datos recopilados por el SDK web a Google.
+En este ejercicio, creará y configurará una función de nube de Google y empezará a reenviar los datos recopilados por Web SDK a Google.
 
 [2.5.5 Reenviar eventos a AWS Kinesis y AWS S3](./ex5.md)
 
-En este ejercicio, configurará el entorno de AWS mediante AWS IAM, AWS Kinesis, AWS Firefox y AWS S3, tras lo cual empezará a reenviar los datos de evento recopilados por el SDK web.
+En este ejercicio, configurará el entorno de AWS mediante AWS IAM, AWS Kinesis, AWS Firefox y AWS S3, después de lo cual empezará a reenviar los datos de evento recopilados por Web SDK.
 
 [Resumen y beneficios](./summary.md)
 
 Resumen de este módulo y descripción general de las ventajas.
+
+![Perspectivas técnicas](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

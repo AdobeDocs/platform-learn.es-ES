@@ -4,9 +4,9 @@ description: Servicios inteligentes
 kt: 5342
 doc-type: tutorial
 exl-id: 3668f06b-df76-43db-be6a-36c339256a22
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '251'
 ht-degree: 3%
 
 ---
@@ -43,6 +43,8 @@ El analista de marketing configura las predicciones deseadas especificando regla
 [2.2.3 Inteligencia artificial aplicada al cliente: panel de puntuación y segmentación (predecir y actuar)](./ex3.md)
 
 Una vez que los modelos han terminado el entrenamiento y la puntuación, las puntuaciones se vuelven a escribir en Platform. Puede decidir qué acciones realizar con las predicciones, como definir segmentos, crear paneles personalizados, etc.
+
+![Perspectivas técnicas](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

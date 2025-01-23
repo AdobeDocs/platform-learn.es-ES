@@ -3,14 +3,16 @@ title: Información general
 description: Punto de partida para ingenieros de datos, analistas de datos, arquitectos de datos, científicos de datos, ingenieros de orquestaciones y especialistas en marketing para comprender plenamente el valor comercial de Adobe Experience Platform y todos sus servicios de aplicaciones.
 doc-type: multipage-overview
 exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
-source-git-commit: 21718a7c3a4df2793ae257a9b7cbe4466f1193f5
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '1251'
 ht-degree: 2%
 
 ---
 
 # Tutorial técnico completo de Adobe Experience Platform
+
+![Perspectivas técnicas](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Información general
 
@@ -182,3 +184,9 @@ En este módulo, configurará su propia instancia de Google Cloud Platform, carg
 En este módulo, aprenderá a utilizar el servicio de consultas de Adobe Experience Platform.
 
 **Inversión de tiempo:** 90 minutos
+
+![Perspectivas técnicas](./assets/images/techinsiders.png){width="50px" align="left"}
+
+>[!NOTE]
+>
+>Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, póngase en contacto directamente con Tech Insiders, enviando un correo electrónico a **techinsiders@adobe.com**.

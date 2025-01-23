@@ -4,9 +4,9 @@ description: 'Introducción: resumen'
 kt: 5342
 doc-type: tutorial
 exl-id: 31616c51-01e0-4f99-91f1-4f21054b0999
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '248'
 ht-degree: 2%
 
 ---
@@ -47,6 +47,8 @@ En este ejercicio configurará el sitio web para que pueda utilizarlo para demos
 [Uso de la aplicación móvil](./ex5.md)
 
 En este ejercicio configurará la aplicación móvil para que pueda utilizarla para demostraciones y activación.
+
+![Perspectivas técnicas](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
