@@ -3,9 +3,10 @@ title: Recopilación de datos - FAC - Crear una composición federada
 description: Foundation - FAC - Crear una composición federada
 kt: 5342
 doc-type: tutorial
-source-git-commit: ab3f13389ae194519dcb9c8988ea38b89f6e5907
+exl-id: dc044a26-f16a-491e-a795-4cd16f211256
+source-git-commit: f6881cc2c993941f60e440ce0c367a139ae80b00
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '493'
 ht-degree: 3%
 
 ---
@@ -139,6 +140,8 @@ Su composición ha finalizado. Haga clic en **Iniciar** para ejecutarlo.
 La consulta ahora se inserta en Snowflake, que consultará los datos de origen allí. Los resultados se devolverán a AEP, pero los datos de origen permanecen en Snowflake.
 
 La audiencia ahora se rellena y se puede segmentar desde el ecosistema de AEP.
+
+![CARA](./images/fedcomp22.png)
 
 Siguiente paso: [Resumen y beneficios](./summary.md)
 

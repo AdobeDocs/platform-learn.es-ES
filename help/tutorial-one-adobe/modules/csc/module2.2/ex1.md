@@ -4,9 +4,9 @@ description: Introducción a Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 7ed76d37-5d3e-49c7-b3d3-ebcfe971896d
-source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
+source-git-commit: ec79d3fcfe971faee584a221eb55ddcb015a1e50
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '768'
 ht-degree: 1%
 
 ---
@@ -54,9 +54,93 @@ Haga clic en **Guardar**.
 
 ![WF](./images/wfb6.png)
 
-Ya está configurada la integración entre Workfront y AEM Assets CS.
+Ya está configurada la integración de Workfront a AEM Assets CS.
 
 ![WF](./images/wfb7.png)
+
+## 2.2.1.2 Configuración de la integración de metadatos con AEM Assets
+
+A continuación, debe configurar los AEM Assets para que los campos de metadatos del recurso en Workfront AEM se compartan con los usuarios de la biblioteca de recursos de la interfaz de usuario de.
+
+Para ello, vaya a [https://experience.adobe.com/](https://experience.adobe.com/). Haga clic en **Experience Manager Assets**.
+
+![WF](./images/wfbaem1.png)
+
+Haga clic para seleccionar el entorno de AEM Assets, que debería llamarse `--aepUserLdap-- - Citi Signal dev`.
+
+![WF](./images/wfbaem2.png)
+
+Entonces debería ver esto. En el menú de la izquierda, ve a **Assets** y haz clic en **Crear carpeta**.
+
+![WF](./images/wfbaem3.png)
+
+Asigne un nombre a la carpeta `--aepUserLdap-- - Workfront Assets` y haga clic en **Crear**.
+
+![WF](./images/wfbaem4.png)
+
+A continuación, ve a **Metadata Forms** en el menú de la izquierda y luego haz clic en **Crear**.
+
+![WF](./images/wfbaem5.png)
+
+Use el nombre `--aepUserLdap-- - Metadata Form` y haga clic en **Crear**.
+
+![WF](./images/wfbaem6.png)
+
+Agregue 3 nuevos campos **Texto de una sola línea** al formulario y seleccione el primer campo. A continuación, haga clic en el icono **Esquema** junto al campo **Propiedad de metadatos**.
+
+![WF](./images/wfbaem7.png)
+
+En el campo de búsqueda, escriba `wm:project` y, a continuación, seleccione el campo **Descripción del proyecto**. Haga clic en **Seleccionar**.
+
+![WF](./images/wfbaem8.png)
+
+Cambie la etiqueta del campo a **Descripción del proyecto**.
+
+![WF](./images/wfbaem9.png)
+
+A continuación, seleccione el segundo campo **Texto de una sola línea** y haga clic en el icono **Esquema** junto al campo **Propiedad de metadatos** de nuevo.
+
+![WF](./images/wfbaem10b.png)
+
+Luego verá esta ventana emergente de nuevo. En el campo de búsqueda, escriba `wm:project` y, a continuación, seleccione el campo **Id. de proyecto**. Haga clic en **Seleccionar**.
+
+![WF](./images/wfbaem10.png)
+
+Cambie la etiqueta del campo a **ID de proyecto**.
+
+![WF](./images/wfbaem10a.png)
+
+Seleccione el tercer campo **Texto de una sola línea** y haga clic en el icono **Esquema** junto al campo **Propiedad de metadatos** de nuevo.
+
+![WF](./images/wfbaem11a.png)
+
+Luego verá esta ventana emergente de nuevo. En el campo de búsqueda, escriba `wm:project` y, a continuación, seleccione el campo **Nombre de proyecto**. Haga clic en **Seleccionar**.
+
+![WF](./images/wfbaem11.png)
+
+Cambie la etiqueta del campo a **Nombre de proyecto**. Haga clic en **Guardar**.
+
+![WF](./images/wfbaem12.png)
+
+Cambie **Tab name** del formulario a `--aepUserLdap-- - Workfront Metadata`. Haga clic en **Guardar** y **Cerrar**.
+
+![WF](./images/wfbaem13.png)
+
+Su **formulario de metadatos** ya está configurado.
+
+![WF](./images/wfbaem14.png)
+
+A continuación, debe asignar el formulario de metadatos a la carpeta creada anteriormente. Marque la casilla de verificación del formulario de metadatos y haga clic en **Asignar a las carpetas**.
+
+![WF](./images/wfbaem15.png)
+
+Seleccione su carpeta, que debe tener el nombre `--aepUserLdap-- - Workfront Assets`. Haga clic en **Asignar**.
+
+![WF](./images/wfbaem16.png)
+
+El formulario de metadatos se ha asignado correctamente a la carpeta.
+
+![WF](./images/wfbaem17.png)
 
 ## 2.2.1.2 Configuración de la integración de AEM Sites
 
@@ -155,6 +239,8 @@ Haga clic en **Aplicar**.
 A continuación, debe tener disponibles dos formularios personalizados.
 
 ![WF](./images/wfb20.png)
+
+Paso siguiente: [2.2.2 Revisión con Workfront](./ex2.md){target="_blank"}
 
 [Volver al módulo 2.2](./workfront.md){target="_blank"}
 
