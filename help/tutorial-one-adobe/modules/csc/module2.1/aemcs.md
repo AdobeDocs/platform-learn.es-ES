@@ -4,9 +4,9 @@ description: Cloud Service y Edge Delivery Services de Adobe Experience Manager
 kt: 5342
 doc-type: tutorial
 exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
-source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
+source-git-commit: cbe8d728d779795cc90ba6b3ad1b687eca5848bf
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '199'
 ht-degree: 2%
 
 ---
@@ -35,9 +35,13 @@ AEM [2.1.3 Configuración de su entorno de CS de la](./ex3.md){target="_blank"}
 
 AEM En este ejercicio, configurará su entorno de CS de y accederá a su sitio web de CitiSignal.
 
-[2.1.4 Desarrollar un bloque personalizado](./ex4.md){target="_blank"}
+[2.1.4 Bloque personalizado básico](./ex4.md){target="_blank"}
 
-En este ejercicio, desarrollará un componente de bloque personalizado para su sitio web.
+En este ejercicio, desarrollará un bloque personalizado básico para su sitio web.
+
+[2.1.5 Bloque personalizado avanzado](./ex5.md){target="_blank"}
+
+En este ejercicio, desarrollará un bloque personalizado avanzado para su sitio web.
 
 [Resumen y beneficios](./summary.md){target="_blank"}
 
