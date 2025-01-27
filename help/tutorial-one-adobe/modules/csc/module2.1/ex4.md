@@ -4,9 +4,9 @@ description: Desarrollo de un bloque personalizado
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
+source-git-commit: 7b76e7714d2a390d84393ce21a19063b56508ac1
 workflow-type: tm+mt
-source-wordcount: '89'
+source-wordcount: '106'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,21 @@ El repositorio de GitHub se abrirá en GitHub Desktop. No dude en cambiar la **R
 
 ![Bloquear](./images/block3.png)
 
-Un fo local
+A continuación, se creará una carpeta local.
+
+![Bloquear](./images/block4.png)
+
+Abra Código de Visual Studio. Vaya a **Archivo** > **Abrir carpeta**.
+
+![Bloquear](./images/block5.png)
+
+
+
+![Bloquear](./images/block6.png)
+
+
+
+![Bloquear](./images/block7.png)
 
 
 [Volver al módulo 2.1](./aemcs.md){target="_blank"}

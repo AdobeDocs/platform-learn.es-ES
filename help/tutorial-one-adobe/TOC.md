@@ -4,9 +4,9 @@ breadcrumb-title: Tutorial técnico completo para aplicaciones de Adobe, desde C
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 55a7e6fccb0c2a91f12a3a65226097ca701e655f
+source-git-commit: 7b76e7714d2a390d84393ce21a19063b56508ac1
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '318'
 ht-degree: 4%
 
 ---
@@ -16,7 +16,6 @@ ht-degree: 4%
 
 + [Información general del tutorial](/help/tutorial-one-adobe/overview.md)
 + [Estado del contenido](/help/tutorial-one-adobe/status.md)
-+ [Trabajo preliminar](/help/tutorial-one-adobe/prework.md)
 
 + Introducción {#gettingstarted}
    + Introducción {#gettingstarted}
@@ -26,6 +25,8 @@ ht-degree: 4%
       + [Crear su secuencia de datos](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex3.md)
       + [Uso del sitio web](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex4.md)
       + [Uso de la aplicación móvil](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex5.md)
+   + [Trabajo preliminar](/help/tutorial-one-adobe/prework.md)
+   + [PostBuster](/help/tutorial-one-adobe/postbuster.md)
 
 + 1 Adobe Creative Cloud {#creativecloud}
    + 1.1 Servicios de Adobe Firefly {#module11}
