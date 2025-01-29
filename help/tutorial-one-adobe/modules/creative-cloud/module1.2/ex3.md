@@ -1,195 +1,207 @@
 ---
 title: Automatización de procesos con Workfront Fusion
-description: Automatización de procesos con Workfront Fusion
-kt: 5342
-doc-type: tutorial
+description: Aprenda a procesar la automatización con Workfront Fusion
+role: Developer
+level: Beginner
+jira: KT-5342
+doc-type: Tutorial
 exl-id: 1b7b2630-864f-4982-be5d-c46b760739c3
-source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
+source-git-commit: e419f07dbef519d9cf2f0100878e4cc880ad5f94
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '944'
 ht-degree: 0%
 
 ---
 
-# 1.2.3 Automatización de procesos con Workfront Fusion
+# Automatización de procesos con Workfront Fusion
 
-Su escenario ahora tiene este aspecto.
+Aprenda a procesar la automatización con Workfront Fusion.
+
+## Iteración en varios valores
+
+El escenario debería tener este aspecto:
 
 ![WF Fusion](./images/wffusion200.png)
 
-## 1.2.3.1 Iteración en varios valores
-
 Hasta ahora, ha cambiado el texto de un archivo Photoshop por un valor estático. Para escalar y automatizar los flujos de trabajo de creación de contenido, es necesario iterar una lista de valores e insertar dichos valores de forma dinámica en el archivo Photoshop. En los pasos siguientes, agregará un deseo de repetir valores en el escenario existente.
 
-Entre el nodo **Enrutador** y el nodo **Texto de cambio de Photoshop**, haga clic en el icono **llave inglesa** y seleccione **Agregar un módulo**.
+1. Entre el nodo **Router** y el nodo **Photoshop Change Text**, seleccione el icono **wrench** y seleccione **Add a module**.
 
-![WF Fusion](./images/wffusion201.png)
+   ![WF Fusion](./images/wffusion201.png)
 
-Busque `flow` y seleccione **Control de flujo**.
+1. Busque `flow` y seleccione **Control de flujo**.
 
-![WF Fusion](./images/wffusion202.png)
+   ![WF Fusion](./images/wffusion202.png)
 
-Seleccione **Iterador**.
+1. Seleccione **Iterador**.
 
-![WF Fusion](./images/wffusion203.png)
+   ![WF Fusion](./images/wffusion203.png)
 
-Entonces deberías tener esto.
+   La pantalla debería tener un aspecto similar al siguiente:
 
-![WF Fusion](./images/wffusion204.png)
+   ![WF Fusion](./images/wffusion204.png)
 
-Aunque es posible leer archivos de entrada como los archivos CSV, por ahora debe utilizar una versión básica de un archivo CSV definiendo una cadena de texto y dividiendo ese archivo de texto.
+   Aunque es posible leer archivos de entrada como los archivos CSV, por ahora debe utilizar una versión básica de un archivo CSV definiendo una cadena de texto y dividiendo ese archivo de texto.
 
-Para encontrar la función **split**, haga clic en el icono **T**, donde verá todas las funciones disponibles para manipular los valores de texto. Haga clic en la función **split** y debería ver esto.
+1. Puede encontrar la función **split** seleccionando el icono **T**, donde verá todas las funciones disponibles para manipular los valores de texto. Seleccione la función **split** y debería ver esto.
 
-![WF Fusion](./images/wffusion206.png)
+   ![WF Fusion](./images/wffusion206.png)
 
-La función split espera una matriz de valores antes del punto y coma y espera que especifique el separador después del punto y coma. Para esta prueba, debe usar una matriz simple con 2 campos, **Comprar ahora** y **Haga clic aquí**, y el separador que debe usar es **,**.
+1. La función split espera una matriz de valores antes del punto y coma y espera que especifique el separador después del punto y coma. Para esta prueba, debe usar una matriz simple con 2 campos, **Comprar ahora** y **Haga clic aquí**, y el separador que debe usar es **,**.
 
-Escriba esto en el campo **Matriz** reemplazando la función **split** actualmente vacía: `{{split("Buy now, Click here "; ",")}}`. Haga clic en **Aceptar**.
+1. Escriba esto en el campo **Matriz** reemplazando la función **split** actualmente vacía: `{{split("Buy now, Click here "; ",")}}`. Seleccione **Aceptar**.
 
-![WF Fusion](./images/wffusion205.png)
+   ![WF Fusion](./images/wffusion205.png)
 
-El iterador está configurado ahora y, si ejecutara el escenario ahora, lo ejecutaría dos veces. Sin embargo, todavía hay un problema, ya que actualmente está usando valores estáticos en su nodo **Photoshop Change Text**. Haga clic en **Texto de cambio de Photoshop** para agregar algunas variables en lugar de valores estáticos para los campos de entrada y salida.
 
-![WF Fusion](./images/wffusion207.png)
 
-En **Solicitar contenido**, verá el texto **Haga clic aquí**. Este texto debe reemplazarse por los valores procedentes de la matriz.
+1. Seleccione **Texto de cambio de Photoshop** para agregar algunas variables en lugar de valores estáticos para los campos de entrada y salida.
 
-![WF Fusion](./images/wffusion208.png)
+   ![WF Fusion](./images/wffusion207.png)
 
-Elimine el texto **Haga clic aquí** y reemplácelo seleccionando la variable **Value** del nodo **Iterator**. Esto garantizará que el texto del botón del documento de Photoshop se actualice dinámicamente.
+   En **Solicitar contenido**, está el texto **Haga clic aquí**. Este texto debe reemplazarse por los valores procedentes de la matriz.
 
-![WF Fusion](./images/wffusion209.png)
+   ![WF Fusion](./images/wffusion208.png)
 
-También debe actualizar el nombre de archivo que se utiliza para escribir el archivo en su cuenta de almacenamiento de Azure. Si el nombre del archivo es estático, cada nueva iteración simplemente sobrescribirá el archivo anterior y, como tal, perderá los archivos personalizados. El nombre de archivo estático actual es **citisignal-fiber-changed-text.psd**, y ahora necesita actualizarlo. Coloque el cursor detrás de la palabra `text`.
+1. Elimine el texto **Haga clic aquí** y reemplácelo seleccionando la variable **Value** del nodo **Iterator**. Esto garantiza que el texto del botón del documento de Photoshop se actualice dinámicamente.
 
-![WF Fusion](./images/wffusion210.png)
+   ![WF Fusion](./images/wffusion209.png)
 
-En primer lugar, agregue un guion `-` y, a continuación, seleccione el valor **Posición de pedido del paquete**. Esto garantizará que, en la primera iteración, Workfront Fusion agregue `-1` al nombre de archivo, en la segunda iteración `-2`, etc. Haga clic en **Aceptar**.
+   También debe actualizar el nombre de archivo utilizado para escribir el archivo en su cuenta de almacenamiento de Azure. Si el nombre del archivo es estático, cada nueva iteración simplemente sobrescribe el archivo anterior y, como tal, pierde los archivos personalizados. El nombre de archivo estático actual es **citisignal-fiber-changed-text.psd**, y ahora necesita actualizarlo.
 
-![WF Fusion](./images/wffusion211.png)
+1. Coloque el cursor detrás de la palabra `text`.
 
-Guarde el escenario y haga clic en **Ejecutar una vez**.
+   ![WF Fusion](./images/wffusion210.png)
 
-![WF Fusion](./images/wffusion212.png)
+1. En primer lugar, agregue un guion `-` y, a continuación, seleccione el valor **Posición de pedido del paquete**. Esto garantiza que para la primera iteración, Workfront Fusion agregue `-1` al nombre del archivo, para la segunda iteración `-2`, etc. Seleccione **Aceptar**.
 
-Una vez que se haya ejecutado el escenario, vuelva al Explorador de almacenamiento de Azure y actualice la carpeta. Luego debería ver los 2 archivos recién creados.
+   ![WF Fusion](./images/wffusion211.png)
 
-![WF Fusion](./images/wffusion213.png)
+1. Guarde el escenario y seleccione **Ejecutar una vez**.
 
-Descargue y abra cada archivo. A continuación, debería ver los distintos textos en los botones. Este es el archivo `citisignal-fiber-changed-text-1.psd`.
+   ![WF Fusion](./images/wffusion212.png)
 
-![WF Fusion](./images/wffusion214.png)
+   Una vez que se haya ejecutado el escenario, vuelva al Explorador de almacenamiento de Azure y actualice la carpeta. Luego debería ver los 2 archivos recién creados.
 
-Este es el archivo `citisignal-fiber-changed-text-2.psd`.
+   ![WF Fusion](./images/wffusion213.png)
 
-![WF Fusion](./images/wffusion215.png)
+1. Descargue y abra cada archivo. Debe escribir varios textos en los botones. Este es el archivo `citisignal-fiber-changed-text-1.psd`.
 
-## 1.2.3.2 Activa tu escenario usando un webhook
+   ![WF Fusion](./images/wffusion214.png)
+
+   Este es el archivo `citisignal-fiber-changed-text-2.psd`.
+
+   ![WF Fusion](./images/wffusion215.png)
+
+## Activa tu escenario usando un webhook
 
 Hasta ahora, ha ejecutado el escenario manualmente para probarlo. Actualicemos ahora su escenario con un webhook, para que pueda activarse desde un entorno externo.
 
-Haga clic en el icono **+**, busque **webhook** y, a continuación, seleccione **Webhooks**.
+1. Seleccione **+**, busque **webhook** y luego seleccione **Webhooks**.
 
-![WF Fusion](./images/wffusion216.png)
+   ![WF Fusion](./images/wffusion216.png)
 
-Seleccione **webhook personalizado**.
+1. Seleccione **webhook personalizado**.
 
-Arrastre y conecte el nodo **Gancho web personalizado** para que se conecte al primer nodo del lienzo, que se llama **Inicializar constantes**.
+1. Arrastre y conecte el nodo **Gancho web personalizado** para que se conecte al primer nodo del lienzo, que se llama **Inicializar constantes**.
 
-![WF Fusion](./images/wffusion217.png)
+   ![WF Fusion](./images/wffusion217.png)
 
-Haga clic en el nodo **webhook personalizado**. A continuación, haga clic en **Agregar**.
+1. Seleccione el nodo **webhook personalizado**. A continuación, seleccione **Agregar**.
 
-![WF Fusion](./images/wffusion218.png)
+   ![WF Fusion](./images/wffusion218.png)
 
-Establezca el **nombre del webhook** en `--aepUserLdap-- - Tutorial 1.2`.
+1. Definir **nombre de webhook** en `--aepUserLdap-- - Tutorial 1.2`.
 
-![WF Fusion](./images/wffusion219.png)
+   ![WF Fusion](./images/wffusion219.png)
 
-Marque la casilla de verificación de **Obtener encabezados de solicitud**. Haga clic en **Guardar**.
+1. Marque la casilla de **Obtener encabezados de solicitud**. Seleccione **Guardar**.
 
-![WF Fusion](./images/wffusion220.png)
+   ![WF Fusion](./images/wffusion220.png)
 
-La URL del gancho web ya está disponible. Copie la dirección URL.
+1. La URL del gancho web ya está disponible. Copie la dirección URL.
 
-![WF Fusion](./images/wffusion221.png)
+   ![WF Fusion](./images/wffusion221.png)
 
-Abra Postman y agregue una nueva carpeta a la colección **FF - Firefly Services Tech Insiders**.
+1. Abra Postman y agregue una nueva carpeta a la colección **FF - Firefly Services Tech Insiders**.
 
-![WF Fusion](./images/wffusion222.png)
+   ![WF Fusion](./images/wffusion222.png)
 
-Asigne un nombre a la carpeta `--aepUserLdap-- - Workfront Fusion`.
+1. Asigne un nombre a la carpeta `--aepUserLdap-- - Workfront Fusion`.
 
-![WF Fusion](./images/wffusion223.png)
+   ![WF Fusion](./images/wffusion223.png)
 
-En la carpeta que acaba de crear, haga clic en los 3 puntos **...** y seleccione **Agregar solicitud**.
+1. En la carpeta que acaba de crear, seleccione los 3 puntos **...** y seleccione **Agregar solicitud**.
 
-![WF Fusion](./images/wffusion224.png)
+   ![WF Fusion](./images/wffusion224.png)
 
-Establece **Method type** en **POST** y pega la URL del webhook en la barra de direcciones.
+1. Establece **Method type** en **POST** y pega la URL del webhook en la barra de direcciones.
 
-![WF Fusion](./images/wffusion225.png)
+   ![WF Fusion](./images/wffusion225.png)
 
-Debe enviar un cuerpo personalizado para que los elementos de la variable se puedan proporcionar desde una fuente externa al escenario de Workfront Fusion. Vaya a **Cuerpo** y seleccione **sin procesar**.
+   Debe enviar un cuerpo personalizado para que los elementos de la variable se puedan proporcionar desde una fuente externa al escenario de Workfront Fusion.
 
-![WF Fusion](./images/wffusion226.png)
+1. Vaya a **Cuerpo** y seleccione **sin procesar**.
 
-Pegue el texto siguiente en el cuerpo de la solicitud. Haga clic en **Enviar**.
+   ![WF Fusion](./images/wffusion226.png)
 
-```json
-{
-    "psdTemplate": "placeholder",
-    "xlsFile": "placeholder"
-}
-```
+1. Pegue el texto siguiente en el cuerpo de la solicitud. Seleccione **Enviar**.
 
-![WF Fusion](./images/wffusion229.png)
+   ```json
+   {
+       "psdTemplate": "placeholder",
+       "xlsFile": "placeholder"
+   }
+   ```
 
-Vuelva a Workfront Fusion. Ahora verás un mensaje en tu webhook personalizado que dice: **Determinado correctamente**.
+   ![WF Fusion](./images/wffusion229.png)
 
-![WF Fusion](./images/wffusion227.png)
+1. Cuando vuelva a Workfront Fusion, aparecerá un mensaje en el gancho web personalizado que dice: **Determinado correctamente**.
 
-Haga clic en **Guardar** y luego en **Ejecutar una vez**. Tu escenario estará activo, pero no se ejecutará hasta que vuelvas a hacer clic en **Enviar** en Postman.
+   ![WF Fusion](./images/wffusion227.png)
 
-![WF Fusion](./images/wffusion230.png)
+1. Seleccione **Guardar** y luego **Ejecutar una vez**. Tu escenario ahora estará activo, pero no se ejecutará hasta que vuelvas a seleccionar **Enviar** en Postman.
 
-Vaya a Postman y vuelva a hacer clic en **Enviar**.
+   ![WF Fusion](./images/wffusion230.png)
 
-![WF Fusion](./images/wffusion228.png)
+1. En Postman, vuelva a seleccionar **Enviar**.
 
-A continuación, el escenario se volverá a ejecutar y creará los dos archivos igual que antes.
+   ![WF Fusion](./images/wffusion228.png)
 
-![WF Fusion](./images/wffusion232.png)
+   Su escenario se volverá a ejecutar y creará los dos archivos igual que antes.
 
-Cambie el nombre de su solicitud de Postman a `POST - Send Request to Workfront Fusion Webhook`.
+   ![WF Fusion](./images/wffusion232.png)
 
-![WF Fusion](./images/wffusion233.png)
+1. Cambie el nombre de su solicitud de Postman a `POST - Send Request to Workfront Fusion Webhook`.
 
-Ahora necesita empezar a usar la variable **psdTemplate**. En lugar de codificar la ubicación del archivo de entrada en el nodo **Texto de cambio de Photoshop**, ahora utilizará la variable entrante de la solicitud de Postman.
+   ![WF Fusion](./images/wffusion233.png)
 
-Abra el nodo **Photoshop Change Text** y vaya a **Solicitar contenido**. Seleccione el nombre de archivo codificado **citisignal-fiber.psd** en **input** y elimínelo.
+   Ahora necesita empezar a usar la variable **psdTemplate**. En lugar de codificar la ubicación del archivo de entrada en el nodo **Texto de cambio de Photoshop**, utilizará la variable entrante de la solicitud de Postman.
 
-![WF Fusion](./images/wffusion234.png)
+1. Abra el nodo **Photoshop Change Text** y vaya a **Solicitar contenido**. Seleccione el nombre de archivo codificado **citisignal-fiber.psd** en **input** y elimínelo.
 
-Seleccione la variable **psdTemplate**. Haga clic en **Aceptar** y, a continuación, guarde el escenario.
+   ![WF Fusion](./images/wffusion234.png)
 
-![WF Fusion](./images/wffusion235.png)
+1. Seleccione la variable **psdTemplate**. Seleccione **Aceptar** y, a continuación, guarde su escenario.
 
-Haz clic en **ACTIVADO** para activar tu escenario. Su escenario se ejecutará sin interrupciones.
+   ![WF Fusion](./images/wffusion235.png)
 
-![WF Fusion](./images/wffusion236.png)
+1. Seleccione **ON** para activar su escenario. Su escenario se está ejecutando sin interrupciones.
 
-Vuelva a Postman. Escriba el nombre de archivo `citisignal-fiber.psd` como valor para la variable **psdTemplate** y haga clic en **Enviar** de nuevo para volver a ejecutar el escenario.
+   ![WF Fusion](./images/wffusion236.png)
 
-![WF Fusion](./images/wffusion237.png)
+1. De nuevo en Postman, ingrese el nombre de archivo `citisignal-fiber.psd` como valor para la variable **psdTemplate** y seleccione **Send** nuevamente para ejecutar su escenario nuevamente.
 
-Al especificar la plantilla del PSD como una variable proporcionada por un sistema externo, ahora ha creado un escenario reutilizable.
+   ![WF Fusion](./images/wffusion237.png)
 
-Ya ha terminado este ejercicio.
+   Al especificar la plantilla del PSD como una variable proporcionada por un sistema externo, ahora ha creado un escenario reutilizable.
 
-Siguiente paso: [Resumen y beneficios](./summary.md)
+   Ahora ha completado este ejercicio.
 
-[Volver al módulo 1.2](./automation.md)
+## Pasos siguientes
 
-[Volver a todos los módulos](./../../../overview.md)
+Vaya a [Resumen y ventajas de la automatización de servicios de Firefly](./summary.md){target="_blank"}
+
+Volver a [Automatizar servicios de Adobe Firefly](./automation.md){target="_blank"}
+
+Volver a [Todos los módulos](./../../../overview.md){target="_blank"}
