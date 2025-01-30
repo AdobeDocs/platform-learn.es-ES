@@ -5,9 +5,9 @@ solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16755
 exl-id: e578b669-42b4-46ae-b6e6-6688e5c5c772
-source-git-commit: 47b970e3659fe7ebfdf491d9c0e9356128013fb9
+source-git-commit: d6471c8e383e22fed4ad5870952d0d0470f593db
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1157'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,17 @@ ht-degree: 0%
 # Migración de Adobe Analytics a Web SDK mediante etiquetas
 
 Conozca los pasos para migrar una implementación de Adobe Analytics con la extensión Analytics en Experience Platform Tags (anteriormente conocida como Launch) a Web SDK, utilizando la extensión Web SDK también en Etiquetas. Cuando se utiliza la extensión Adobe Analytics en Etiquetas, se utiliza el código &quot;AppMeasurement.js&quot; entre bastidores. Por lo tanto, puede considerar esto como un tutorial que migra el AppMeasurement a Web SDK, pero este tutorial está completamente en Etiquetas y NO cubre el paso a o desde una implementación de JavaScript (con la excepción del código JavaScript que se utiliza en la IU de Etiquetas). Para migrar implementaciones de JavaScript, consulte la [documentación](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk).
+
+>[!NOTE]
+>
+>Hay tutoriales de migración similares disponibles para:
+>
+> * [Adobe Target](../tutorial-migrate-target-websdk/introduction.md)
+> * [Adobe Audience Manager](https://experienceleague.adobe.com/es/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk)
+
+>[!CAUTION]
+>
+> Dado que Platform Web SDK admite varias aplicaciones de Adobe, todas las bibliotecas de Adobe de una página determinada deben migrarse al mismo tiempo. Por ejemplo, no se admite una implementación mixta de Web SDK para Target y AppMeasurement para Analytics en una sola página _1._ Sin embargo, se admite una implementación mixta en diferentes páginas, por ejemplo, Web SDK en la página A y at.js con AppMeasurement en la página B.
 
 ## Qué obtendrá de este tutorial
 
