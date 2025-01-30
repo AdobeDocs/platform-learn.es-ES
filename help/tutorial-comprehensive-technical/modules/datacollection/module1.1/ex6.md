@@ -1,10 +1,10 @@
 ---
-title: 'Foundation: configuración de la recopilación de datos de Adobe Experience Platform y la extensión del SDK web: implementación de Adobe Target'
-description: 'Foundation: configuración de la recopilación de datos de Adobe Experience Platform y la extensión del SDK web: implementación de Adobe Target'
+title: 'Foundation: configuración de la recopilación de datos de Adobe Experience Platform y la extensión de Web SDK: implementación de Adobe Target'
+description: 'Foundation: configuración de la recopilación de datos de Adobe Experience Platform y la extensión de Web SDK: implementación de Adobe Target'
 kt: 5342
 doc-type: tutorial
 exl-id: 475e9a34-c80e-41e4-9660-61c79f26922d
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 1%
@@ -13,9 +13,9 @@ ht-degree: 1%
 
 # 1.1.6 Implementación de Adobe Target
 
-## Actualizar la secuencia de datos para utilizar Adobe Target
+## Actualice el flujo de datos para utilizar Adobe Target
 
-Si desea enviar datos recopilados por el SDK web a Adobe Target y obtener una respuesta de Adobe Target con una experiencia personalizada para cada cliente, siga estos pasos.
+Si desea enviar datos recopilados por Web SDK a Adobe Target y obtener una respuesta de Adobe Target con una experiencia personalizada para cada cliente, siga estos pasos.
 
 Vaya a [https://experience.adobe.com/launch/](https://experience.adobe.com/launch/) y luego a **Datastreams**.
 
@@ -23,7 +23,7 @@ En la esquina superior derecha de la pantalla, seleccione el nombre de la zona p
 
 ![Haga clic en el icono Configuración de Edge en el panel de navegación izquierdo](./images/edgeconfig1b.png)
 
-Entonces verá esto... Para habilitar Adobe Target, haga clic en **+Agregar servicio**.
+Entonces verá esto... Para habilitar Adobe Target, haga clic en **Agregar servicio**.
 
 ![Depurador de AEP](./images/aa2.png)
 

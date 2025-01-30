@@ -1,16 +1,17 @@
 ---
 title: Configuración
-description: Configuración de la instancia de AEP
+description: Configuración de la instancia de Adobe Experience Platform
 doc-type: multipage-overview
 hide: false
-source-git-commit: c0649aeacdce00e09c993f2130de3423efc352fa
+exl-id: 1150c5ec-3fba-4506-8f17-c34872f9b3ea
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1048'
 ht-degree: 4%
 
 ---
 
-# Configuración
+# Configurar la instancia de Adobe Experience Platform
 
 >[!IMPORTANT]
 >
@@ -29,9 +30,9 @@ Para utilizar todos estos tutoriales de forma práctica, es necesario aprovision
 
 Si no se proporciona un servicio de aplicación específico para su organización de IMS, no podrá realizar ese ejercicio específico de forma práctica.
 
-## Crear zona protegida
+## Creación de una zona protegida
 
-Para consultar el tutorial en su propia instancia de AEP, es aconsejable configurar primero una nueva zona protegida de desarrollo. Para crear una nueva zona protegida, ve a [https://experience.adobe.com/platform](https://experience.adobe.com/platform), ve a Zonas protegidas y, a continuación, ve a **Examinar**. Haga clic en **Crear zona protegida**.
+Para consultar el tutorial en su propia instancia de Adobe Experience Platform, es aconsejable configurar primero una nueva zona protegida de desarrollo. Para crear una nueva zona protegida, ve a [https://experience.adobe.com/platform](https://experience.adobe.com/platform), ve a Zonas protegidas y, a continuación, ve a **Examinar**. Haga clic en **Crear zona protegida**.
 
 ![Crear zona protegida](./assets/images/sandbox1.png)
 
@@ -39,7 +40,7 @@ Cree su zona protegida de esta manera:
 
 - Tipo: **Desarrollo**
 - Nombre: **aep-tutorial**
-- Título: **Tutorial de AEP**
+- Título: **Tutorial de Adobe Experience Platform**
 
 Haga clic en **Crear**.
 
@@ -57,7 +58,7 @@ Haga clic para abrir el **Rol** específico que utilizarán los alumnos que pasa
 
 ![Crear zona protegida](./assets/images/perm1.png)
 
-Asigne un nombre a su función, como **Tutorial de AEP**, haga clic en **Confirmar**.
+Asigne un nombre al rol como **Tutorial de Adobe Experience Platform**, haga clic en **Confirmar**.
 
 ![Crear zona protegida](./assets/images/perm2.png)
 
@@ -77,14 +78,14 @@ Añada más recursos como se indica y establezca permisos. Haga clic en **Guarda
 
 ![Crear zona protegida](./assets/images/perm6.png)
 
-## Adobe I/O de configuración
+## Configurar Adobe I/O
 
 Ir a
 [https://developer.adobe.com/console/integrations](https://developer.adobe.com/console/integrations). Asegúrese de que está en la instancia correcta. Haga clic en **Crear nuevo proyecto**.
 
 ![Crear zona protegida](./assets/images/io1.png)
 
-Haga clic en **+ Agregar al proyecto** y, a continuación, haga clic en **API**.
+Haga clic en **Agregar al proyecto** y luego haga clic en **API**.
 
 ![Crear zona protegida](./assets/images/io2.png)
 
@@ -100,7 +101,7 @@ Seleccione uno de los perfiles de producto disponibles. Este perfil de producto 
 
 ![Crear zona protegida](./assets/images/io5.png)
 
-Haga clic en **+ Agregar al proyecto** y, a continuación, haga clic de nuevo en **API**.
+Haga clic en **Agregar al proyecto** y, a continuación, haga clic de nuevo en **API**.
 
 ![Crear zona protegida](./assets/images/io6.png)
 
@@ -124,7 +125,7 @@ Haga clic en **Editar proyecto**.
 
 ![Crear zona protegida](./assets/images/io11.png)
 
-Escriba un nuevo **Título del proyecto**, como **Tutorial de DSN AEP**. Haga clic en **Guardar**.
+Escriba un nuevo **Título del proyecto**, como **Tutorial de DSN Adobe Experience Platform**. Haga clic en **Guardar**.
 
 ![Crear zona protegida](./assets/images/io12.png)
 
@@ -237,7 +238,7 @@ A continuación, verá el progreso de la instalación en curso, que tardará un 
 
 ![Crear zona protegida](./assets/images/dsnorg15.png)
 
-Una vez que todo esté completado correctamente, la instancia de AEP se ha configurado correctamente y está lista para que los alumnos realicen el tutorial.
+Una vez que todo esté completado correctamente, la instancia de Adobe Experience Platform se configura correctamente y está lista para que los alumnos realicen el tutorial.
 
 >[!NOTE]
 >

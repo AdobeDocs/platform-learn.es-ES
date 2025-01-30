@@ -1,10 +1,10 @@
 ---
-title: 'Foundation: configuración de la recopilación de datos de Adobe Experience Platform y la extensión del SDK web: implementación de Adobe Analytics y Adobe Audience Manager'
-description: 'Foundation: configuración de la recopilación de datos de Adobe Experience Platform y la extensión del SDK web: implementación de Adobe Analytics y Adobe Audience Manager'
+title: 'Foundation: configuración de la recopilación de datos de Adobe Experience Platform y la extensión de Web SDK: implementación de Adobe Analytics y Adobe Audience Manager'
+description: 'Foundation: configuración de la recopilación de datos de Adobe Experience Platform y la extensión de Web SDK: implementación de Adobe Analytics y Adobe Audience Manager'
 kt: 5342
 doc-type: tutorial
 exl-id: a9022269-6db2-46c6-a82b-ec8d5b881a55
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
 source-wordcount: '525'
 ht-degree: 0%
@@ -19,11 +19,11 @@ Ahora sabe que los datos XDM fluyen a la plataforma. Explorará más sobre qué 
 
 ## Asignación de variables en Analytics
 
-Adobe Experience Platform [!DNL Web SDK] asigna ciertos valores automáticamente, lo que hace que una nueva implementación de Analytics mediante el SDK web sea lo más rápida posible. Las variables asignadas automáticamente se enumeran [aquí](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html#data-collection).
+Adobe Experience Platform [!DNL Web SDK] asigna ciertos valores automáticamente, lo que hace que una nueva implementación de Analytics mediante Web SDK sea lo más rápida posible. Las variables asignadas automáticamente se enumeran [aquí](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html#data-collection).
 
 Para datos XDM que no se asignan automáticamente a Adobe Analytics, puede usar [datos de contexto](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=es) para que coincidan con su [esquema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=es). A continuación, se puede asignar a Analytics mediante [reglas de procesamiento](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html) para rellenar variables de Analytics. Los datos de contexto y las reglas de procesamiento serán conceptos familiares para quienes hayan trabajado con Analytics en el pasado, pero no se preocupe por los detalles por ahora si son conceptos nuevos.
 
-También puede utilizar un conjunto predeterminado de acciones y listas de productos para enviar o recuperar datos con el SDK web de AEP. Para ello, consulte [Productos](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en#data-collection).
+También puede utilizar un conjunto predeterminado de acciones y listas de productos para enviar o recuperar datos con AEP Web SDK. Para ello, consulte [Productos](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en#data-collection).
 
 ### Datos de contexto
 
@@ -60,9 +60,9 @@ Se puede acceder a todos los datos recopilados por la red perimetral mediante [r
 
 El reenvío del lado del servidor no es un concepto nuevo para Audience Manager y se aplica el mismo proceso que antes. También puede sincronizar identidades.
 
-## Revise la secuencia de datos para enviar datos a Adobe Analytics
+## Revise el flujo de datos para enviar datos a Adobe Analytics
 
-Si desea enviar datos recopilados por el SDK web a Adobe Analytics y Adobe Audience Manager, siga estos pasos.
+Si desea enviar datos recopilados por Web SDK a Adobe Analytics y Adobe Audience Manager, siga estos pasos.
 
 Vaya a [https://experience.adobe.com/launch/](https://experience.adobe.com/launch/) y luego a **Datastreams**.
 
@@ -70,7 +70,7 @@ En la esquina superior derecha de la pantalla, seleccione el nombre de la zona p
 
 ![Haga clic en el icono Configuración de Edge en el panel de navegación izquierdo](./images/edgeconfig1b.png)
 
-Entonces verá esto... Para habilitar Adobe Analytics, haga clic en **+Agregar servicio**.
+Entonces verá esto... Para habilitar Adobe Analytics, haga clic en **Agregar servicio**.
 
 ![Depurador de AEP](./images/aa2.png)
 
@@ -78,9 +78,9 @@ Entonces verá esto... Seleccione el servicio **Adobe Analytics**, después del 
 
 ![Depurador de AEP](./images/aa3.png)
 
-## Revise la secuencia de datos para enviar datos a Adobe Audience Manager
+## Revise el flujo de datos para enviar datos a Adobe Audience Manager
 
-Entonces verá esto... Para habilitar Adobe Audience Manager, haga clic en **+Agregar servicio**.
+Entonces verá esto... Para habilitar Adobe Audience Manager, haga clic en **Agregar servicio**.
 
 ![Depurador de AEP](./images/aa2.png)
 

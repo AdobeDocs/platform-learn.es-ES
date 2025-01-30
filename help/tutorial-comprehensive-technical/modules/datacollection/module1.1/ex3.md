@@ -1,12 +1,12 @@
 ---
-title: 'Foundation: configuración de la recopilación de datos de Adobe Experience Platform y la extensión del SDK web: introducción a la recopilación de datos de Adobe Experience Platform'
-description: 'Foundation: configuración de la recopilación de datos de Adobe Experience Platform y la extensión del SDK web: introducción a la recopilación de datos de Adobe Experience Platform'
+title: 'Foundation: configuración de la recopilación de datos de Adobe Experience Platform y la extensión de Web SDK: introducción a la recopilación de datos de Adobe Experience Platform'
+description: 'Foundation: configuración de la recopilación de datos de Adobe Experience Platform y la extensión de Web SDK: introducción a la recopilación de datos de Adobe Experience Platform'
 kt: 5342
 doc-type: tutorial
 exl-id: 391c79d6-9c42-465e-bce8-60fa6474979c
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1272'
 ht-degree: 10%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 10%
 
 ## Contexto
 
-Ahora vamos a echar un vistazo más profundo a los componentes básicos de la recopilación de datos de Adobe Experience Platform para comprender qué se instala en su sitio web de demostración. Observará de cerca la extensión SDK para web de Adobe Experience Platform, configurará un elemento de datos y una regla y aprenderá a publicar una biblioteca.
+Ahora vamos a echar un vistazo más profundo a los componentes básicos de la recopilación de datos de Adobe Experience Platform para comprender qué se instala en su sitio web de demostración. Observará con más detalle la extensión de Adobe Experience Platform Web SDK, configurará un elemento de datos y una regla y aprenderá a publicar una biblioteca.
 
-## Extensión de SDK web de Adobe Experience Platform
+## Extensión de etiqueta de Adobe Experience Platform Web SDK
 
-Una extensión es un conjunto de código empaquetado que amplía la interfaz de recopilación de datos de Adobe Experience Platform y la funcionalidad de la biblioteca. La recopilación de datos de Adobe Experience Platform es la plataforma y las extensiones son como aplicaciones que se ejecutan en la plataforma. Todas las extensiones utilizadas en el tutorial se crean y administran mediante Adobe, pero los terceros pueden crear sus propias extensiones para limitar la cantidad de código personalizado que los usuarios de recopilación de datos de Adobe Experience Platform deben administrar.
+Una extensión de etiqueta es un conjunto de código empaquetado que amplía la interfaz de recopilación de datos de Adobe Experience Platform y la funcionalidad de la biblioteca. La recopilación de datos de Adobe Experience Platform es la plataforma y las extensiones de etiquetas son como las aplicaciones que se ejecutan en la plataforma. Todas las extensiones utilizadas en el tutorial se crean y administran mediante Adobe, pero los terceros pueden crear sus propias extensiones para limitar la cantidad de código personalizado que los usuarios de recopilación de datos de Adobe Experience Platform deben administrar.
 
 Vaya a [Recopilación de datos de Adobe Experience Platform](https://experience.adobe.com/launch/) y seleccione **Etiquetas**.
 
@@ -34,11 +34,11 @@ Haga clic para abrir la propiedad **Web**.
 
 
 
-A continuación, verá la página Información general de la propiedad. Haz clic en **[!UICONTROL Extensiones]** en el carril izquierdo, luego haz clic en **SDK web de Adobe Experience Platform** y, a continuación, haz clic en **[!UICONTROL Configurar]**.
+A continuación, verá la página Información general de la propiedad. Haz clic en **[!UICONTROL Extensiones]** en el carril izquierdo, luego haz clic en **Adobe Experience Platform Web SDK** y luego haz clic en **[!UICONTROL Configurar]**.
 
 ![Página de información general de propiedad](./images/property7.png)
 
-Bienvenido al SDK web de Adobe Experience Platform. Aquí puede configurar la extensión con la secuencia de datos que creó en [Introducción](./../../../modules/gettingstarted/gettingstarted/ex2.md), así como algunas configuraciones más avanzadas.
+Bienvenido a Adobe Experience Platform Web SDK. Aquí puede configurar la extensión con la secuencia de datos que creó en [Introducción](./../../../modules/gettingstarted/gettingstarted/ex2.md), así como algunas configuraciones más avanzadas.
 
 El dominio Edge predeterminado es siempre **edge.adobedc.net**. Si ha implementado una configuración CNAME en su entorno de Adobe Experience Cloud o Adobe Experience Platform, deberá actualizar el **[!UICONTROL dominio de Edge]**.
 
@@ -58,7 +58,7 @@ Los Data Elements son los componentes básicos del diccionario de datos (o mapa 
 
 Un solo elemento de datos es una variable cuyo valor puede asignarse a cadenas de consulta, URL, valores de cookies, variables JavaScript, etc. Puede hacer referencia a este valor por su nombre de variable en toda la recopilación de datos de Adobe Experience Platform. Esta colección de Data Elements se convierte en el diccionario de los datos definidos que puede utilizar para crear reglas (eventos, condiciones y acciones). Este diccionario de datos se comparte en toda la recopilación de datos de Adobe Experience Platform para utilizarlo con cualquier extensión agregada a su propiedad.
 
-Ahora va a editar un elemento de datos ya existente en un formato compatible con SDK web.
+Ahora va a editar un elemento de datos ya existente en un formato compatible con Web SDK.
 
 Haga clic en Elementos de datos en el carril izquierdo para que se le redirija a la página Elementos de datos.
 
@@ -72,7 +72,7 @@ En la barra de búsqueda, escriba **XDM - Vista de producto** y haga clic en el 
 
 ![Buscar ruleArticlePages](./images/dataelement2.png)
 
-Esta pantalla muestra el objeto XDM que va a editar. El Experience Data Model (XDM) es un concepto que se explorará mucho más a lo largo de este Tutorial técnico, pero por ahora es suficiente para entenderlo como el formato que requiere el SDK web de Adobe Experience Platform. Agregarás un poco más de información a los datos recopilados en las páginas de artículos del sitio web de demostración.
+Esta pantalla muestra el objeto XDM que va a editar. El Experience Data Model (XDM) es un concepto que se explorará mucho más a lo largo de este Tutorial técnico, pero por ahora es suficiente para entenderlo como el formato que requiere Adobe Experience Platform Web SDK. Agregarás un poco más de información a los datos recopilados en las páginas de artículos del sitio web de demostración.
 
 Haga clic en el botón &quot;+&quot; junto a **web**, en la parte inferior del árbol.
 
@@ -86,7 +86,7 @@ Desplácese hacia arriba e introduzca el texto `%Product Category%`. Haga clic e
 
 ![Guardar](./images/dataelement4.png)
 
-En este punto, la extensión SDK para web de Adobe Experience Platform está instalada y ha actualizado un elemento de datos para recopilar datos con una estructura XDM. A continuación, vamos a comprobar las reglas que enviarán datos en el momento correcto.
+En este punto, se instala la extensión de Adobe Experience Platform Web SDK y se ha actualizado un elemento de datos para recopilar datos con una estructura XDM. A continuación, vamos a comprobar las reglas que enviarán datos en el momento correcto.
 
 ## Reglas
 
@@ -124,7 +124,7 @@ Haga clic en la acción **Enviar evento de experiencia de &quot;vista de product
 
 ![Acción Enviar evento](./images/rule5a.png)
 
-Aquí puede ver los datos que el SDK web de Adobe Experience Platform envía al perímetro de. Más específicamente, se usa la **aleación** **[!UICONTROL instancia]** del SDK web. El evento **[!UICONTROL Type]** está establecido en **Vistas del producto Commerce (carrito)** y los datos XDM que está enviando son el elemento de datos **XDM - Vista del producto** que cambió anteriormente.
+Aquí puede ver los datos que Adobe Experience Platform Web SDK envía al perímetro. Más específicamente, se usa la **aleación** **[!UICONTROL instancia]** de Web SDK. El evento **[!UICONTROL Type]** está establecido en **Vistas del producto Commerce (carrito)** y los datos XDM que está enviando son el elemento de datos **XDM - Vista del producto** que cambió anteriormente.
 
 ![Acción Enviar evento](./images/rule5.png)
 

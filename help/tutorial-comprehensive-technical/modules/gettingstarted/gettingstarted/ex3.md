@@ -4,14 +4,14 @@ description: 'Introducción: Creación de una secuencia de datos'
 kt: 5342
 doc-type: tutorial
 exl-id: b3e6f66d-fb7a-43ab-aedb-45141af76d3e
-source-git-commit: 007e35504d19c332da39d90d65f34960aaa9c09b
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '848'
 ht-degree: 1%
 
 ---
 
-# Crear su secuencia de datos
+# Cree su flujo de datos
 
 Vaya a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/).
 
@@ -25,7 +25,7 @@ Estas propiedades están casi listas para utilizarse, pero antes de empezar a re
 
 Por ahora, siga estos pasos.
 
-## Creación de un flujo de datos para la web
+## Crear un flujo de datos para la recopilación de datos web
 
 Haga clic en **[!UICONTROL Datastreams]**.
 
@@ -101,7 +101,7 @@ Los cambios se están publicando y estarán listos en un par de minutos. Despué
 
 ![Asigne un nombre a la configuración de Edge y guarde](./images/edgeconfig17a.png)
 
-## Crear un flujo de datos para dispositivos móviles
+## Creación de un flujo de datos para la recopilación de datos móviles
 
 Vaya a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/).
 

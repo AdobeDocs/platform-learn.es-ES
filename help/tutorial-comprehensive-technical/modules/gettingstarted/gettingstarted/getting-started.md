@@ -4,7 +4,7 @@ description: 'Introducción: resumen'
 kt: 5342
 doc-type: tutorial
 exl-id: 31616c51-01e0-4f99-91f1-4f21054b0999
-source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 2%
@@ -36,7 +36,7 @@ En este ejercicio instalará y configurará la extensión de Chrome para poder u
 
 En este ejercicio utilizará Sistema de demostración siguiente para configurar las propiedades de Launch para la web y dispositivos móviles.
 
-[Crear su secuencia de datos](./ex3.md)
+[Cree su flujo de datos](./ex3.md)
 
 En este ejercicio utilizará Sistema de demostración siguiente para configurar las propiedades de Launch para la web y dispositivos móviles.
 

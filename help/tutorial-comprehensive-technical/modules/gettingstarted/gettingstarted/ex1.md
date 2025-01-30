@@ -4,9 +4,9 @@ description: 'Introducción: Instale la extensión de Chrome para la documentaci
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
@@ -72,13 +72,13 @@ Introduzca los valores como se indica a continuación, todos ellos relacionados 
 
 Si no está seguro de qué valores introducir para estos campos, siga las instrucciones siguientes.
 
-**Nombre de organización de IMS de AEP**
+**Nombre de organización de IMS de Adobe Experience Platform**
 
 Cuando inicies sesión en tu instancia de Adobe Experience Platform en [https://platform.adobe.com/](https://platform.adobe.com/), encontrarás el nombre de tu instancia en la esquina superior derecha de la pantalla.
 
 ![DSN](./images/aepname.png)
 
-**ID de organización de IMS de AEP**
+**ID de organización de IMS de Adobe Experience Platform**
 
 El ID de organización de IMS es el identificador único de la instancia de Adobe Experience Cloud y se hace referencia a él en varias ubicaciones a lo largo de este tutorial.
 
@@ -88,29 +88,29 @@ Puede encontrarlo si va a [Admin Console](https://adminconsole.adobe.com/), dond
 
 ![DSN](./images/aepid1.png)
 
-También puede encontrarlo si visita **Administración de datos > Consultas** en su menú de AEP, donde puede encontrarlo en **Nombre de usuario**.
+También puedes encontrarlo yendo a **Administración de datos > Consultas** en tu menú de Adobe Experience Platform, donde puedes encontrarlo en **Nombre de usuario**.
 
 ![DSN](./images/aepid2.png)
 
 Asegúrese de copiar y pegar la parte **@AdobeOrg** junto con el ID.
 
-**ID de inquilino de AEP**
+**ID de inquilino de Adobe Experience Platform**
 
-El ID de inquilino es el identificador único de la instancia de AEP de su organización. Cuando inicie sesión en su instancia de Adobe Experience Platform en [https://platform.adobe.com/](https://platform.adobe.com/), encontrará el ID de inquilino en la dirección URL.
+El ID de inquilino es el identificador único de la instancia de Adobe Experience Platform de su organización. Cuando inicie sesión en su instancia de Adobe Experience Platform en [https://platform.adobe.com/](https://platform.adobe.com/), encontrará el ID de inquilino en la dirección URL.
 
 ![DSN](./images/aeptenantid.png)
 
 Cuando lo introduzca en la extensión de Chrome, debe asegurarse de que se agrega un guion bajo como prefijo, de modo que en este ejemplo **experienceplatform** se convierta en **_experienceplatform**. Además, asegúrese de quitar el símbolo **@** al copiar desde la dirección URL.
 
-**Nombre de zona protegida de AEP**
+**Nombre de zona protegida de Adobe Experience Platform**
 
-El nombre de la zona protegida es el nombre del entorno que utilizará en la instancia de AEP. Cuando inicie sesión en su instancia de Adobe Experience Platform en [https://platform.adobe.com/](https://platform.adobe.com/), encontrará el ID de inquilino en la dirección URL.
+El nombre de la zona protegida es el nombre del entorno que utilizará en la instancia de Adobe Experience Platform. Cuando inicie sesión en su instancia de Adobe Experience Platform en [https://platform.adobe.com/](https://platform.adobe.com/), encontrará el ID de inquilino en la dirección URL.
 
 Antes de tomar el nombre de la zona protegida de la dirección URL, debe asegurarse de que está en la zona protegida que debe utilizar para este tutorial. Puede cambiar a la zona protegida derecha haciendo clic en el menú del conmutador de zona protegida en la esquina superior derecha de la pantalla.
 
 ![DSN](./images/aepsandboxsw.png)
 
-En este ejemplo, el nombre de la zona protegida de AEP es **tech-insiders**.
+En este ejemplo, el nombre de la zona protegida de Adobe Experience Platform es **tech-insiders**.
 
 ![DSN](./images/aepsname.png)
 
@@ -140,7 +140,7 @@ Como prueba, ve a [esta página](https://experienceleague.adobe.com/en/docs/plat
 
 Ahora debería ver que todas las **variables de entorno** han sido reemplazadas por sus valores verdaderos, según el entorno activado en la extensión de Chrome.
 
-Ahora debería tener una vista similar a la siguiente, donde la variable de entorno `aepTenantId` se ha reemplazado por su ID de inquilino de AEP real, que en este caso es **_experienceplatform**.
+Ahora debería tener una vista similar a la siguiente, donde la variable de entorno `aepTenantId` ha sido reemplazada por su ID de inquilino de Adobe Experience Platform real, que en este caso es **_experienceplatform**.
 
 ![DSN](./images/mod7.png)
 

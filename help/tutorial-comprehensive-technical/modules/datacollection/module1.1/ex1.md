@@ -1,10 +1,10 @@
 ---
-title: 'Foundation: configuración de la recopilación de datos de Adobe Experience Platform y la extensión del SDK web: explicación de la recopilación de datos de Adobe Experience Platform'
-description: 'Foundation: configuración de la recopilación de datos de Adobe Experience Platform y la extensión del SDK web: explicación de la recopilación de datos de Adobe Experience Platform'
+title: 'Foundation: configuración de la recopilación de datos de Adobe Experience Platform y la extensión de Web SDK: explicación de la recopilación de datos de Adobe Experience Platform'
+description: 'Foundation: configuración de la recopilación de datos de Adobe Experience Platform y la extensión de Web SDK: explicación de la recopilación de datos de Adobe Experience Platform'
 kt: 5342
 doc-type: tutorial
 exl-id: 098031c6-4d8b-46a5-ae86-8fd7692268d3
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 2%
@@ -20,16 +20,16 @@ Las marcas utilizan la recopilación de datos de Adobe Experience Platform para 
 - Implemente aplicaciones de Adobe Experience Cloud y de Adobe Experience Platform.
 - Administre los diferentes requisitos de las diferentes partes de la organización proporcionando a cada una de ellas su propia **propiedad** que debe administrar.
 - Permitir la administración de ciclos de vida y pruebas.
-- Inserte etiquetas personalizadas de javascript y de terceros, todas administradas en un solo lugar.
+- Inserte etiquetas personalizadas de JavaScript y de terceros, todas administradas en un solo lugar.
 
 ## Exploración de la IU
 
 Vaya a [Recopilación de datos de Adobe Experience Platform](https://experience.adobe.com/#/data-collection/).
 
-Ir a **Etiquetas**. Ahora está viendo la vista **[!UICONTROL Propiedades]**. Las propiedades enumeradas aquí son para la administración de tutoriales. Estas propiedades representan...
+Ir a **Etiquetas**. Ahora está viendo la vista **[!UICONTROL Propiedades]**. Las propiedades enumeradas aquí son para la administración de tutoriales. Estas propiedades representan:
 
 - Propiedades de aplicación y web
-- Diferentes sitios web que sirven a los clientes de diferentes maneras. Por ejemplo, el comercio minorista de Luma tendría una propiedad, mientras que los viajes de Luma tendrían otra
+- Diferentes sitios web que sirven a los clientes de diferentes maneras. Por ejemplo, el comercio minorista de Luma tendría una propiedad, mientras que los viajes de Luma tendrían otra.
 - Heredado y sitios web actuales
 - Un diseño específico de Adobe Analytics común a varios sitios web diferentes
 - Páginas de intranet internas junto con sitios externos
