@@ -4,9 +4,9 @@ description: Foundation - Ingesta de datos - Configuración de esquemas y conjun
 kt: 5342
 doc-type: tutorial
 exl-id: 3cc1fbe3-1f40-45a3-a123-ee6f1463e7b5
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
-source-wordcount: '3127'
+source-wordcount: '3138'
 ht-degree: 4%
 
 ---
@@ -140,7 +140,7 @@ Ahora tiene esta estructura de esquema configurada.
 ![Ingesta de datos](./images/schemastructurem.png)
 
 El nuevo [!UICONTROL grupo de campos] sigue vacío, así que tendrá que agregar campos a ese [!UICONTROL grupo de campos].
-En la lista [!UICONTROL Grupo de campos], haga clic en su [!UICONTROL grupo de campos] personalizado.
+En la lista [!UICONTROL Grupo de campos], haz clic en tu [!UICONTROL grupo de campos] personalizado y luego haz clic en **Examinar**.
 
 ![Ingesta de datos](./images/schemastructurem.png)
 
@@ -305,7 +305,7 @@ Antes de continuar, debe seleccionar una **[!UICONTROL zona protegida]**. La [!U
 
 ![Ingesta de datos](./images/sb1.png)
 
-En Adobe Experience Platform, haga clic en **[!UICONTROL Esquemas]** en el menú de la izquierda de la pantalla.
+En Adobe Experience Platform, haz clic en **[!UICONTROL Esquemas]** en el menú de la izquierda de la pantalla y ve a **Examinar**.
 
 ![Ingesta de datos](./images/menuschemas.png)
 
@@ -333,7 +333,7 @@ Ahora necesita definir la respuesta a la pregunta **¿Qué hace este cliente?** 
 En la introducción de este laboratorio, observamos la necesidad de los siguientes atributos para definir lo que hace un cliente:
 
 - ¿Qué páginas o productos se han visitado?
-- ¿Este cliente ha añadido un producto a su carro de compras o incluso ha comprado un artículo?
+- ¿Este cliente ha agregado un producto al carro de compras o incluso ha comprado un artículo?
 - ¿Qué dispositivo y navegador se ha utilizado para navegar por el sitio web?
 - ¿Qué tipo de información busca este cliente y cómo podemos utilizarla para configurar y ofrecer una experiencia agradable a este cliente?
 - Identificador principal de un cliente
@@ -341,14 +341,14 @@ En la introducción de este laboratorio, observamos la necesidad de los siguient
 
 Para que esa información forme parte del esquema, debe agregar el siguiente [!UICONTROL grupo de campos] al esquema:
 
-- ExperienceEvent del SDK web de AEP
+- ExperienceEvent de SDK web de AEP
 - Identificación de perfil personalizada de su organización [!UICONTROL Grupo de campos]
 
 Haga clic en **+ Agregar** en **Grupos de campos**.
 
 ![Ingesta de datos](./images/eeedfg.png)
 
-En la pantalla **[!UICONTROL Agregar grupo de campos]**, seleccione [!UICONTROL Grupo de campos] **[!UICONTROL ExperienceEvent del SDK web de AEP]**. Haga clic en **[!UICONTROL Agregar grupos de campos]**.
+En la pantalla **[!UICONTROL Agregar grupo de campos]**, seleccione [!UICONTROL Grupo de campos] **[!UICONTROL AEP Web SDK ExperienceEvent]**. Haga clic en **[!UICONTROL Agregar grupos de campos]**.
 
 ![Ingesta de datos](./images/eeed.png)
 
@@ -446,10 +446,10 @@ Haga clic en **[!UICONTROL Guardar]** para guardar los cambios.
 ![Ingesta de datos](./images/applyidenee.png)
 
 Es importante tener en cuenta que, cuando finalmente se incorporan datos en este esquema, algunos campos son obligatorios.
-Por ejemplo, los campos **[!UICONTROL _id]** y **[!UICONTROL timestamp]** son campos obligatorios.
+Por ejemplo, los campos **[!UICONTROL _id]** y **[!UICONTROL timestamp]** son campos obligatorios, que es un requisito impuesto por la clase ExperienceEvent.
 
 - _id necesita contener un id único para una ingesta de datos específica
-- la marca de tiempo debe ser la marca de tiempo de esta visita, con el formato **[!UICONTROL &quot;AAAA-MM-DDTHH:MM:SSSZ&quot;]**, como por ejemplo: **[!UICONTROL &quot;2024-11-18T07:20:000Z&quot;]**
+- la marca de tiempo debe ser la marca de tiempo de esta visita individual, con formato **`"YYYY-MM-DDTHH:MM:SSSZ"`**, como por ejemplo: **`"2024-11-18T07:20:000Z"`**
 
 Ahora ha definido un esquema, ha vinculado los [!UICONTROL grupos de campos] existentes y los recientemente creados, y ha definido identificadores.
 

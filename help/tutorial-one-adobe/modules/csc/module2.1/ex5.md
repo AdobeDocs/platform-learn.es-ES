@@ -3,9 +3,10 @@ title: AEM - Bloque personalizado avanzado
 description: AEM - Bloque personalizado avanzado
 kt: 5342
 doc-type: tutorial
-source-git-commit: baa9b176213883559fafba9be19e0c5749623d56
+exl-id: fa299668-c902-4775-a540-7555ca461d3e
+source-git-commit: 4ab2a12a71c8a89963cbd47d5df2bda97bffd318
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '996'
 ht-degree: 0%
 
 ---
@@ -91,7 +92,7 @@ Guarde los cambios.
 
 Ahora ha realizado varios cambios en el proyecto que deben volver a enviarse al repositorio de GitHub. Para ello, abra **GitHub Desktop**.
 
-Entonces debería ver los 3 archivos que acaba de editar en **Cambios**. Revise los cambios.
+Entonces debería ver los 2 archivos que acaba de editar en **Cambios**. Revise los cambios.
 
 Escriba un nombre para su PR, `js css`. Haga clic en **Compromiso con main**.
 
@@ -344,7 +345,7 @@ Entonces debería ver esto.
 
 ![Bloquear](./images/blockadv20.png)
 
-Siguiente paso: [Resumen y beneficios](./summary.md){target="_blank"}
+AEM Paso siguiente: [2.1.6 complemento de MarTech para Edge Delivery Services de](./ex6.md){target="_blank"}
 
 [Volver al módulo 2.1](./aemcs.md){target="_blank"}
 

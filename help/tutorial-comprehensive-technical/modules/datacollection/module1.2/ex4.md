@@ -4,9 +4,9 @@ description: Foundation - Ingesta de datos - Ingesta de datos desde fuentes sin 
 kt: 5342
 doc-type: tutorial
 exl-id: a4909a47-0652-453b-ae65-ba4c261f087c
-source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
-source-wordcount: '1472'
+source-wordcount: '1513'
 ht-degree: 5%
 
 ---
@@ -82,8 +82,11 @@ Utilizará un conjunto de datos compartido. El conjunto de datos compartido ya s
 
 ![Ingesta de datos](./images/emeacrmoverview.png)
 
-
 En la pantalla de información general, puede ver 3 partes principales de información.
+
+>[!NOTE]
+>
+>Es posible que la vista del conjunto de datos esté vacía si no se ha producido ninguna actividad en los últimos 7 días.
 
 ![Ingesta de datos](./images/dashboard.png)
 
@@ -146,6 +149,10 @@ Haga clic en **Next**.
 Ahora necesita asignar los encabezados de columna del archivo CSV con una propiedad XDM en su **[!UICONTROL sistema de demostración: conjunto de datos de perfil para CRM]**.
 
 Adobe Experience Platform ya ha hecho algunas propuestas para usted al intentar vincular los [!UICONTROL Atributos de Source] con los [!UICONTROL Campos de esquema de destino].
+
+>[!NOTE]
+>
+>Si ve algún error en la pantalla de asignación, no se preocupe. Después de seguir las siguientes instrucciones, se resolverán estos errores.
 
 ![Ingesta de datos](./images/mapschema.png)
 
@@ -251,7 +258,7 @@ Restrinjamos los datos de identidad para todo el conjunto de datos. Pase el rat�
 
 ![Ingesta de datos](./images/pencil.png)
 
-Vaya a **[!UICONTROL Datos de identidad]** y verá que la opción **[!UICONTROL I2]** está marcada. Esto supondrá que todos los fragmentos de información de este conjunto de datos son al menos indirectamente identificables para la persona.
+Vaya a **[!UICONTROL Etiquetas de identidad]** y verá que la opción **[!UICONTROL I2]** está marcada. Esto supondrá que todos los fragmentos de información de este conjunto de datos son al menos indirectamente identificables para la persona.
 
 Haga clic en **[!UICONTROL Guardar cambios]**.
 

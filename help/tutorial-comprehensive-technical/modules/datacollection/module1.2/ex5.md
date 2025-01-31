@@ -4,7 +4,7 @@ description: Foundation - Ingesta de datos - Ingesta de datos desde fuentes sin 
 kt: 5342
 doc-type: tutorial
 exl-id: 21b84a77-4115-4ba7-b847-b236aa14bbdd
-source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
 source-wordcount: '771'
 ht-degree: 2%
@@ -32,7 +32,7 @@ Para copiar blobs o archivos en la zona de aterrizaje de datos de Adobe Experien
 
 ![dlz-install-az-copy.png](./images/dlz1.png)
 
-- Descargue el archivo de datos de ejemplo global-context-websiteinteractions.csv, que contiene interacciones de sitio web de ejemplo y guárdelo en la carpeta en la que descomprimió **azcopy**.
+- Descargue el archivo de datos de ejemplo [global-context-websiteinteractions.csv](./../../../assets/csv/data-ingestion/global-context-websiteinteractions.csv), que contiene interacciones de sitio web de ejemplo y guárdelo en la carpeta en la que descomprimió **azcopy**.
 
 ![dlz-install-az-copy.png](./images/dlz2.png)
 

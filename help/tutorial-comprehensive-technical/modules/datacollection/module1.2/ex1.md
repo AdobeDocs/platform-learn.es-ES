@@ -4,9 +4,9 @@ description: 'Foundation - Ingesta de datos: de desconocido a conocido en el sit
 kt: 5342
 doc-type: tutorial
 exl-id: 08cb7892-4e1c-4646-9e3b-8ab008dfd947
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '762'
 ht-degree: 1%
 
 ---
@@ -61,11 +61,15 @@ Vaya a la categoría de productos **Teléfonos y dispositivos**. A continuación
 
 ![Demostración](./images/pv4.png)
 
-A continuación, verá la página de detalles del producto. Ahora se ha enviado a Adobe Experience Platform un evento de experiencia de tipo **Vista de producto** mediante la implementación del SDK web que revisó en el módulo anterior.
+A continuación, verá la página de detalles del producto. Ahora se ha enviado a Adobe Experience Platform un evento de experiencia de tipo **Vista de producto** mediante la implementación de Web SDK que revisó en el módulo anterior.
 
 ![Demostración](./images/pv5.png)
 
-Abra el panel Visor de Provile y eche un vistazo a los **Eventos de experiencia**.
+Abra el panel Visor de perfiles y eche un vistazo a los **Eventos de experiencia**.
+
+>[!NOTE]
+>
+>Si el evento no se muestra inmediatamente, actualice la página.
 
 ![Demostración](./images/pv6.png)
 
