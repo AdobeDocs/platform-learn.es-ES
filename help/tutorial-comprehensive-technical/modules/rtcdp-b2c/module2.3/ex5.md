@@ -4,7 +4,7 @@ description: 'Real-time CDP: cree una audiencia y tome medidas . Envíe su audie
 kt: 5342
 doc-type: tutorial
 exl-id: b041897b-4ee8-4ff8-a3bc-d953e2e42a1a
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: 4cb6b284f675c78b22482f17c59c0d82f82a232a
 workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 3%
@@ -199,7 +199,7 @@ Si ahora regresa a su sitio web de demostración y visita la página del product
 
 ![RTCDP](./images/atform13.png)
 
-Paso siguiente: [2.3.6 Audiencias externas](./ex6.md)
+Siguiente Paso: [2.3.6 Destinos SDK](./ex6.md)
 
 [Volver al módulo 2.3](./real-time-cdp-build-a-segment-take-action.md)
 

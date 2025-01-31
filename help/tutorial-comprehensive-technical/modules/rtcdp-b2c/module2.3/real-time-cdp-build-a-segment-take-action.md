@@ -6,9 +6,9 @@ audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 147d9153-5742-4857-aae1-0ec434a1e626
-source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
+source-git-commit: 5c4fc7fb2635aec959b31664e354f66efac075fe
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '323'
 ht-degree: 1%
 
 ---
@@ -56,11 +56,7 @@ Utilice la audiencia que ha creado y envíela a un destino S3, que suele utiliza
 
 Utilice la audiencia que ha creado para configurar una actividad de segmentación de experiencias en Adobe Target.
 
-[2.3.6 Audiencias externas](./ex6.md)
-
-Importar audiencias de un sistema de origen externo a Adobe Experience Platform.
-
-[2.3.7 Destinos SDK](./ex7.md)
+[2.3.6 Destinos SDK](./ex6.md)
 
 Configure su propio destino con Destinations SDK.
 
