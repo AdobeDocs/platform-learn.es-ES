@@ -4,9 +4,9 @@ description: Configuración de la instancia de Adobe Experience Platform
 doc-type: multipage-overview
 hide: false
 exl-id: 1150c5ec-3fba-4506-8f17-c34872f9b3ea
-source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
+source-git-commit: bbbcb2e60c514aa0785c26f63c2b5b8a7e50a8db
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1076'
 ht-degree: 4%
 
 ---
@@ -253,5 +253,11 @@ Vaya a [https://experience.adobe.com/platform](https://experience.adobe.com/plat
 >[!NOTE]
 >
 >Gracias por dedicar su tiempo a aprender todo lo que necesita saber sobre Adobe Experience Platform y sus aplicaciones. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, póngase en contacto directamente con Tech Insiders, enviando un correo electrónico a **techinsiders@adobe.com**.
+
+![Perspectivas técnicas](./assets/images/techinsiders.png){width="50px" align="left"}
+
+>[!NOTE]
+>
+>Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, póngase en contacto directamente con Tech Insiders, enviando un correo electrónico a **techinsiders@adobe.com**.
 
 [Volver a todos los módulos](./overview.md)
