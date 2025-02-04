@@ -5,9 +5,9 @@ user-guide-description: Un tutorial práctico que cubre muchos aspectos de Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 4cb6b284f675c78b22482f17c59c0d82f82a232a
+source-git-commit: c85cd82a8d66b456a36d4915c1067f5c195139d1
 workflow-type: tm+mt
-source-wordcount: '912'
+source-wordcount: '913'
 ht-degree: 4%
 
 ---
@@ -27,6 +27,7 @@ ht-degree: 4%
       + [Crear su secuencia de datos](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex3.md)
       + [Uso del sitio web](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex4.md)
       + [Uso de la aplicación móvil](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex5.md)
+   + [PostBuster](/help/tutorial-comprehensive-technical/postbuster.md)
 
 + 1 Recopilación de datos {#datacollection}
    + 1.1 Recopilación de datos de Adobe Experience Platform y Web SDK {#module11}

@@ -3,7 +3,8 @@ title: Revisión con Workfront
 description: Revisión con Workfront
 kt: 5342
 doc-type: tutorial
-source-git-commit: 246bb91496104818f357848f41b79523b7771638
+exl-id: 1b5ca13b-2a32-44a1-a3ae-342bccc6baeb
+source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 0%
@@ -202,7 +203,7 @@ Escriba su descripción. La configuración de la prueba y del documento ha final
 
 ## 2.2.2.5 Ver el archivo en AEM Assets
 
-Vaya a la carpeta en AEM Assets, que se llama `--aepUserLdap - Workfront Assets`.
+Vaya a la carpeta en AEM Assets, que se llama `--aepUserLdap-- - Workfront Assets`.
 
 ![WF](./images/wfppaem1.png)
 

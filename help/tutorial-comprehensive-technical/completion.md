@@ -3,7 +3,7 @@ title: Finalización
 description: ¿Cómo se mide la finalización?
 doc-type: multipage-overview
 exl-id: 862c6daa-be6d-459e-afbb-6eb3431308a0
-source-git-commit: bbbcb2e60c514aa0785c26f63c2b5b8a7e50a8db
+source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 0%
@@ -22,7 +22,7 @@ A continuación se muestran las pruebas de finalización previstas para cada mó
 
 La revisión de finalización esperada para el módulo **Introducción** es el identificador del proyecto Sistema de demostración para la web que creó.
 
-El identificador del proyecto del sistema de demostración para el formato web tiene el siguiente aspecto: `--demoProfileLdap-- - QIMU`.
+El identificador del proyecto del sistema de demostración para el formato web tiene el siguiente aspecto: `--aepUserLdap-- - QIMU`.
 
 ![3](./assets/images/module0dtl.png)
 
@@ -52,7 +52,7 @@ El identificador del modelo de datos federado tiene el siguiente aspecto: **DMO5
 
 ## 2.1 Perfil del cliente en tiempo real
 
-La revisión de finalización esperada para el módulo **Perfil del cliente en tiempo real** es la **ID de audiencia** de la audiencia que creó a través de la interfaz de usuario, `--demoProfileLdap-- - Male customers with interest in iPhone 15 Pro`.
+La revisión de finalización esperada para el módulo **Perfil del cliente en tiempo real** es la **ID de audiencia** de la audiencia que creó a través de la interfaz de usuario, `--aepUserLdap-- - Male customers with interest in iPhone 15 Pro`.
 
 La ID de audiencia tiene el siguiente aspecto: **81a9acbe-12e6-424b-b658-abba3a435c83**.
 
@@ -60,7 +60,7 @@ La ID de audiencia tiene el siguiente aspecto: **81a9acbe-12e6-424b-b658-abba3a4
 
 ## 2.2 Servicios inteligentes
 
-La revisión de finalización esperada para el módulo **Servicios inteligentes** es la **ID de audiencia** de la audiencia que creó a través de la interfaz de usuario, `--demoProfileLdap-- - Customer AI High Propensity`.
+La revisión de finalización esperada para el módulo **Servicios inteligentes** es la **ID de audiencia** de la audiencia que creó a través de la interfaz de usuario, `--aepUserLdap-- - Customer AI High Propensity`.
 
 La ID de audiencia tiene el siguiente aspecto: **cb6db21d-8fa3-484a-93ac-25aa1ab48412**.
 
@@ -92,7 +92,7 @@ Puede encontrar la **ID de propiedad de reenvío de eventos**, que se parece a e
 
 ## 2.6 Transmitir datos de Apache Kafka a Real-Time CDP
 
-La revisión de finalización esperada para el módulo **Transmitir datos de Apache Kafka a Real-Time CDP** es el ID de su conector de origen `--demoProfileLdap-- - Kafka`.
+La revisión de finalización esperada para el módulo **Transmitir datos de Apache Kafka a Real-Time CDP** es el ID de su conector de origen `--aepUserLdap-- - Kafka`.
 
 El identificador tiene el siguiente aspecto **f843d50a-ee30-4ca8-a766-0e4f3d29a2f7**, y lo puede encontrar aquí:
 
@@ -132,7 +132,7 @@ El identificador del recorrido tiene el siguiente aspecto: **5f5efc7e-49f7-44c1-
 
 ## Customer Journey Analytics de 4.1: crear un tablero con Analysis Workspace
 
-Se esperaba la revisión de finalización del módulo **Customer Journey Analytics: cree un tablero con Analysis Workspace** es el identificador del proyecto `--demoProfileLdap-- - Omnichannel Analysis`.
+Se esperaba la revisión de finalización del módulo **Customer Journey Analytics: cree un tablero con Analysis Workspace** es el identificador del proyecto `--aepUserLdap-- - Omnichannel Analysis`.
 
 El formato tiene el siguiente aspecto: **677bcb247064db3c7de2a0e4**, puede encontrarlo en la dirección URL cuando haya abierto el proyecto.
 
@@ -148,7 +148,7 @@ Puedes encontrar la **ID de conexión de BigQuery**, que se parece a esta **b63a
 
 ## 5.1 Servicio de consultas
 
-La revisión de finalización esperada para el módulo **Servicio de consulta** es el ID del conjunto de datos para su `--demoProfileLdap--_callcenter_interaction_analysis` - conjunto de datos que obtiene después de completar el módulo.
+La revisión de finalización esperada para el módulo **Servicio de consulta** es el ID del conjunto de datos para su `--aepUserLdap--_callcenter_interaction_analysis` - conjunto de datos que obtiene después de completar el módulo.
 
 El identificador tiene el siguiente aspecto: **675033c903fb3b2aefed8a0a**.
 
