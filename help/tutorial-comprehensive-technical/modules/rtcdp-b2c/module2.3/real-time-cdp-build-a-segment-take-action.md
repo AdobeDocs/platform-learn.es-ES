@@ -6,23 +6,22 @@ audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 147d9153-5742-4857-aae1-0ec434a1e626
-source-git-commit: 5c4fc7fb2635aec959b31664e354f66efac075fe
+source-git-commit: 5c4d00879be343e7a6cd6a773b383bad1a24e349
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '294'
 ht-degree: 1%
 
 ---
 
-# 2.3 CDP en tiempo real: cree un segmento y tome medidas
+# 2.3 CDP en tiempo real: cree una audiencia y tome medidas
 
-En este módulo, configurará un segmento de flujo continuo y activará el segmento en varios destinos.
+En este módulo, configurará un segmento de flujo continuo y activará la audiencia a varios destinos.
 
 ## Objetivos de aprendizaje
 
-- Obtenga información sobre cómo crear un segmento y habilitarlo para flujo continuo.
+- Aprenda a crear una audiencia y habilitarla para su streaming.
 - Obtenga información sobre cómo configurar un destino de publicidad mediante la interfaz de usuario de Adobe Experience Platform.
-- Obtenga información sobre cómo conectar un segmento a un destino y activarlo.
-- Aprenda a utilizar los segmentos de Adobe Experience Platform en Adobe Audience Manager y a utilizar los segmentos de Adobe Audience Manager en Adobe Experience Platform gracias al uso compartido de segmentos bidireccional.
+- Obtenga información sobre cómo conectar una audiencia a un destino y activarla.
 
 ## Requisitos previos
 

@@ -4,9 +4,9 @@ description: Foundation - Perfil del cliente en tiempo real - Visualice su propi
 kt: 5342
 doc-type: tutorial
 exl-id: fe07d873-f4de-437e-815e-e6e6c06a691c
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: c49b41e1b033573dbebc9ced3a3f4071bf94d04e
 workflow-type: tm+mt
-source-wordcount: '2287'
+source-wordcount: '2299'
 ht-degree: 1%
 
 ---
@@ -132,7 +132,11 @@ Seleccione el proyecto de Adobe I/O recién creado y haga clic en **Guardar**.
 
 ![Permisos](./images/perm4.png)
 
-## Autenticación de Postman en el Adobe I/O
+## Autenticación en el Adobe I/O
+
+>[!IMPORTANT]
+>
+>Si eres un empleado de Adobe, sigue las instrucciones aquí para usar [PostBuster](./../../../postbuster.md).
 
 Vaya a [https://www.postman.com/downloads/](https://www.postman.com/downloads/).
 

@@ -4,7 +4,7 @@ description: 'Real-time CDP: cree una audiencia y tome medidas . Envíe su audie
 kt: 5342
 doc-type: tutorial
 exl-id: b041897b-4ee8-4ff8-a3bc-d953e2e42a1a
-source-git-commit: 4cb6b284f675c78b22482f17c59c0d82f82a232a
+source-git-commit: 5c4d00879be343e7a6cd6a773b383bad1a24e349
 workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 3%
@@ -23,7 +23,7 @@ Antes de continuar, debe seleccionar una **zona protegida**. La zona protegida q
 
 ## Verifique su flujo de datos
 
-El destino de Adobe Target en Real-Time CDP está conectado a la secuencia de datos que se utiliza para introducir datos en la red perimetral de Adobe. Si desea configurar el destino de Adobe Target, primero debe comprobar si el conjunto de datos ya está habilitado para Adobe Target. Su secuencia de datos se configuró en [Ejercicio 0.2 Crear su secuencia de datos](./../../../modules/gettingstarted/gettingstarted/ex2.md) y se llamó `--aepUserLdap-- - Demo System Datastream`.
+El destino de Adobe Target en Real-Time CDP está conectado a la secuencia de datos que se utiliza para introducir datos en la red de Adobe Edge. Si desea configurar el destino de Adobe Target, primero debe comprobar si el conjunto de datos ya está habilitado para Adobe Target. Su secuencia de datos se configuró en [Ejercicio 0.2 Crear su secuencia de datos](./../../../modules/gettingstarted/gettingstarted/ex2.md) y se llamó `--aepUserLdap-- - Demo System Datastream`.
 
 En el menú de la izquierda, desplácese hacia abajo y haga clic en **Datastreams**. En Flujos de datos, busque su secuencia de datos denominada `--aepUserLdap-- - Demo System Datastream`. Haga clic en el conjunto de datos para abrirlo.
 
@@ -159,11 +159,16 @@ A continuación, debe añadir un token de personalización desde los atributos d
 
 Antes de hacer clic en el botón **Agregar**, asegúrese de ir a la línea donde ve `... > h1").innerHTML="Hi there ";` y coloque el cursor entre corchetes después de la palabra `there`, de esta manera:
 
-`... > h1").innerHTML="Hi there ";`
+```
+... > h1").innerHTML="Hi there ";
+```
 
 A continuación, haga clic en el botón **Add**, que debería agregar el token, el cual actualizará el código de la siguiente manera:
 
-`... > h1").innerHTML="Hi there ${aep.person.name.firstName}";`
+```
+... > h1").innerHTML="Hi there ${aep.person.name.firstName}";
+```
+
 
 Haga clic en **Next**.
 

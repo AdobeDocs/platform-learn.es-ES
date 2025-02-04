@@ -1,9 +1,10 @@
 ---
-title: 'Real-time CDP: cree un segmento y tome medidas: resumen'
-description: 'Real-time CDP: cree un segmento y tome medidas: resumen'
+title: 'Real-time CDP: cree una audiencia y tome medidas: resumen'
+description: 'Real-time CDP: cree una audiencia y tome medidas: resumen'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 81638db0-3356-482a-b011-98eed9ea4fe3
+source-git-commit: 5c4d00879be343e7a6cd6a773b383bad1a24e349
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 0%
@@ -13,14 +14,14 @@ ht-degree: 0%
 # Resumen y ventajas
 
 ¡Felicidades y gracias por invertir su tiempo en conocer Real-time CDP y Adobe Experience Platform!
-En este módulo, ha aprendido a configurar un segmento y activarlo para la calificación de flujo continuo, y a tomar medidas y enviar ese segmento a Google DV360, Google AdWords, Amazon S3 y Adobe Target.
+En este módulo, ha aprendido a configurar una audiencia y activarla para la calificación de flujo continuo, y a tomar medidas y enviar esa audiencia a Google DV360, Google AdWords, Amazon S3 y Adobe Target.
 
 ## Ventajas
 
 Vamos a destacar las ventajas de realizar acciones con Adobe Experience Platform:
 
-- Todos los segmentos integrados en Adobe Experience Platform están disponibles automáticamente para aplicaciones como Adobe Target a través del servicio principal Personas y la biblioteca de audiencias de Adobe Experience Cloud. Con eso, genera tu segmento una vez y lo reutiliza en todo el ecosistema de Adobe
-- Los segmentos se pueden enviar a una serie de destinos predeterminados que están disponibles como parte del servicio de aplicación de Real-time CDP. DSP Estos destinos incluyen destinos como Google DV360, Trade Desk, ESP como Adobe Campaign, Salesforce Marketing Cloud, Oracle Eloqua y Oracle Responsys y otros destinos como Amazon S3 y más.
+- Todas las audiencias integradas en Adobe Experience Platform están disponibles automáticamente para aplicaciones como Adobe Target a través del servicio principal Personas y la biblioteca de audiencias de Adobe Experience Cloud. Con eso, construyes tu audiencia una vez y la reutilizas en todo el ecosistema de Adobe
+- Las audiencias se pueden enviar a varios destinos predeterminados que están disponibles como parte del servicio de aplicación de Real-time CDP. DSP Estos destinos incluyen destinos como Google DV360, Trade Desk, ESP como Adobe Campaign, Salesforce Marketing Cloud, Oracle Eloqua y Oracle Responsys y otros destinos como Amazon S3 y más.
 
 ## Eche un vistazo a esto
 

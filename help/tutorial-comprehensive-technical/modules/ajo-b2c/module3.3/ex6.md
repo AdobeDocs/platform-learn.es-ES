@@ -4,9 +4,9 @@ description: Prueba de la decisión mediante la API
 kt: 5342
 doc-type: tutorial
 exl-id: 75515a3e-5df8-42ed-95dc-daae60ee9c72
-source-git-commit: fc24f3c9fb1683db35026dc53d0aaa055aa87e34
+source-git-commit: c49b41e1b033573dbebc9ced3a3f4071bf94d04e
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '397'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # 3.3.6 Pruebe su decisión mediante la API
 
 ## 3.3.6.1 Trabajo con la API de Offer decisioning mediante Postman
+
+>[!IMPORTANT]
+>
+>Si eres un empleado de Adobe, sigue las instrucciones aquí para usar [PostBuster](./../../../postbuster.md).
 
 Descargue [esta colección de Postman para Offer Decisioning](./../../../assets/postman/postman_offer-decisioning.zip) en su equipo de escritorio y descomprímala. A continuación, tendrá esto:
 

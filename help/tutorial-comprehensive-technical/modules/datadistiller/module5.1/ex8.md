@@ -4,9 +4,9 @@ description: 'Servicio de consultas: API del servicio de consultas'
 kt: 5342
 doc-type: tutorial
 exl-id: d356f7e2-523b-41a2-9cc6-1ea2a028c3a7
-source-git-commit: f843c50af04d744a7d769f320b5b55a5e6d25ffd
+source-git-commit: c49b41e1b033573dbebc9ced3a3f4071bf94d04e
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '995'
 ht-degree: 2%
 
 ---
@@ -51,6 +51,10 @@ limit 10;
 ```
 
 ## Consultas
+
+>[!IMPORTANT]
+>
+>Si eres un empleado de Adobe, sigue las instrucciones aquí para usar [PostBuster](./../../../postbuster.md).
 
 Abra Postman en el equipo. Como parte del módulo 2.1, creó un entorno de Postman e importó una colección de Postman. Siga las instrucciones de [Ejercicio 2.1.3](./../../../modules/rtcdp-b2c/module2.1/ex3.md) por si aún no lo ha hecho.
 
