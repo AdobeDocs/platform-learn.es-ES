@@ -5,9 +5,9 @@ solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16760
 exl-id: 783b464e-2974-41a1-9949-ac3ac0c786fc
-source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
+source-git-commit: 2150ead50fee06b434d996183a959ad5f01dd2a8
 workflow-type: tm+mt
-source-wordcount: '1260'
+source-wordcount: '1259'
 ht-degree: 0%
 
 ---
@@ -54,11 +54,9 @@ En esta actividad, crearemos una acción de Web SDK equivalente a la acción **S
 
 1. Seleccione **Adobe Experience Platform Web SDK** de la lista desplegable Extensión.
 1. Seleccione **Actualizar variable** de la lista desplegable Tipo de acción.
+1. Asegúrese de que el **elemento de datos** que aparece en la parte superior del panel derecho sea realmente su nuevo elemento de datos de tipo variable.
 1. En el panel derecho, seleccione el objeto **Analytics** dentro del objeto de datos
-1. Asegúrese también de que el elemento de datos que aparece en la parte superior del panel derecho sea realmente el nuevo elemento de datos de tipo variable.
-
-   ![Acción de actualización de variable](assets/update-variable-action-analytics.jpg)
-
+   ![Acción de actualización de variable](assets/define-update-variable-action.jpg)
 1. Ahora cambie el botón de opción a **Proporcione JSON o elemento de datos** y pegue el código que copió en el paso anterior de Establecer variables en esta ventana de código. Recuerde que lo que se muestra en el tutorial solo son ejemplos. Está copiando y pegando sus propias variables.
 
    ![Nuevo código de Web SDK para pegar](assets/new-websdk-code-paste.jpg)
