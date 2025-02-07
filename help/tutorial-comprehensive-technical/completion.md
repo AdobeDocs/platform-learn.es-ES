@@ -1,18 +1,20 @@
 ---
-title: Finalización
+title: 'Finalización: tutorial técnico completo para Adobe Experience Platform'
 description: ¿Cómo se mide la finalización?
 doc-type: multipage-overview
 exl-id: 862c6daa-be6d-459e-afbb-6eb3431308a0
-source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
+source-git-commit: 3b3c62499bfed86ab13a657a816424879cab4f42
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '891'
 ht-degree: 0%
 
 ---
 
 # ¿Cómo se mide la finalización?
 
-Vaya a [https://certification.adobe.com](https://certification.adobe.com) y luego al curso **XXX**.
+Vaya a [https://certification.adobe.com/courses/1258](https://certification.adobe.com/courses/1258).
+
+![3](./assets/images/certcourse.png)
 
 Para completar un módulo, se espera que proporcione una prueba de finalización.
 

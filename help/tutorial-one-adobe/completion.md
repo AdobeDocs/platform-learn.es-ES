@@ -1,10 +1,11 @@
 ---
-title: Finalización
+title: 'Finalización: tutorial de un Adobe'
 description: ¿Cómo se mide la finalización?
 doc-type: multipage-overview
-source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
+exl-id: 24d0a6a8-effa-4335-881e-914305bcd348
+source-git-commit: 5c7ab69877cbfdf10088c261c0866790b0d89552
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
@@ -21,7 +22,7 @@ A continuación se muestran las pruebas de finalización previstas para cada mó
 
 La revisión de finalización esperada para el módulo **Introducción** es el identificador del proyecto Sistema de demostración para la web que creó.
 
-El identificador del proyecto del sistema de demostración para el formato web tiene el siguiente aspecto: `--demoProfileLdap-- - 8ERG`.
+El identificador del proyecto del sistema de demostración para el formato web tiene el siguiente aspecto: `--aepUserLdap-- - 8ERG`.
 
 ![3](./assets/images/module0dtl.png)
 
@@ -79,7 +80,7 @@ La revisión de finalización esperada para el módulo **Adobe Journey Optimizer
 
 La revisión de finalización esperada para el módulo **Adobe Journey Optimizer: Offer Decisioning** es el identificador de la **Decisión** que creó.
 
-Puede encontrar el **Id. de decisión**, que se parece a este **dps:offer-activity:1a08ba4b529b2fb2**, aquí:
+Puede encontrar la **ID de decisión**, que se parece a esta **`dps:offer-activity:1a08ba4b529b2fb2`**, aquí:
 
 ![14](./assets/images/offers.png)
 

@@ -6,18 +6,18 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 23ebf8b4-3f16-474c-afe1-520d88331417
-source-git-commit: e419f07dbef519d9cf2f0100878e4cc880ad5f94
+source-git-commit: e6a549441d425801f2a554da9af803dca646009e
 workflow-type: tm+mt
-source-wordcount: '1745'
+source-wordcount: '1749'
 ht-degree: 0%
 
 ---
 
-# Uso de las API de Adobe en Workfront Fusion
+# 1.2.2 Uso de las API de Adobe en Workfront Fusion
 
 Aprenda a utilizar las API de Adobe en Workfront Fusion.
 
-## Uso de la API Texto a imagen del Firefly con Workfront Fusion
+## 1.2.2.1 Usar la API Texto a imagen del Firefly con Workfront Fusion
 
 1. Pase el ratón sobre el segundo nodo **Set multiple variables** y seleccione **+** para agregar otro módulo.
 
@@ -115,7 +115,7 @@ La pantalla debería tener un aspecto similar al siguiente.
 
 ![WF Fusion](./images/wffusion61.png)
 
-## Uso de la API de Photoshop con Workfront Fusion
+## 1.2.2.2 Usar la API de Photoshop con Workfront Fusion
 
 1. Seleccione **wrench** entre los nodos **Set Bearer Token** y **Firefly T2I**. Seleccione **Agregar un enrutador**.
 

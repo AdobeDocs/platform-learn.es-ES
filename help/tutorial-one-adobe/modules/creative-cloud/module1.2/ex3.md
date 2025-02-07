@@ -6,18 +6,18 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 1b7b2630-864f-4982-be5d-c46b760739c3
-source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
+source-git-commit: e6a549441d425801f2a554da9af803dca646009e
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
 
-# Automatización de procesos con Workfront Fusion
+# 1.2.3 Automatización de procesos con Workfront Fusion
 
 Aprenda a procesar la automatización con Workfront Fusion.
 
-## Iteración en varios valores
+## 1.2.3.1 Iteración en varios valores
 
 El escenario debería tener este aspecto:
 
@@ -93,7 +93,7 @@ Hasta ahora, ha cambiado el texto de un archivo Photoshop por un valor estático
 
    ![WF Fusion](./images/wffusion215.png)
 
-## Activación de un escenario mediante un gancho web
+## 1.2.3.2 Activa tu escenario usando un webhook
 
 Hasta ahora, ha ejecutado el escenario manualmente para probarlo. Actualicemos ahora su escenario con un webhook, para que pueda activarse desde un entorno externo.
 
