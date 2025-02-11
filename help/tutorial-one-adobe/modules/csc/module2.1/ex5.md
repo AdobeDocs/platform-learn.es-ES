@@ -4,7 +4,7 @@ description: AEM - Bloque personalizado avanzado
 kt: 5342
 doc-type: tutorial
 exl-id: fa299668-c902-4775-a540-7555ca461d3e
-source-git-commit: 4ab2a12a71c8a89963cbd47d5df2bda97bffd318
+source-git-commit: bbbe13842ac6825c6a6a933dc018fd9cdde52249
 workflow-type: tm+mt
 source-wordcount: '996'
 ht-degree: 0%
@@ -17,7 +17,7 @@ En el ejercicio anterior configuró un bloque personalizado básico denominado *
 
 Ahora puede seguir trabajando en este bloque.
 
-![AEMCS](./images/nav7.png)
+![AEMCS](./images/nav7.png){zoomable="yes"}
 
 ## 2.1.5.1 Aplicar estilo al bloque
 
@@ -25,23 +25,23 @@ Ahora que tiene un bloque **fiberoffer** en funcionamiento, puede aplicarle esti
 
 Vuelva al código de Visual Studio y abra la carpeta **blocks**. Ahora debería ver varias carpetas, cada una de las cuales hace referencia a un bloque específico. Para que el bloque **fiberoffer** sea más avanzado, ahora necesita crear una carpeta para el bloque personalizado.
 
-![AEMCS](./images/blockadv1.png)
+![AEMCS](./images/blockadv1.png){zoomable="yes"}
 
 Seleccione la carpeta **bloques** y haga clic en el icono **Crear nueva carpeta**.
 
-![AEMCS](./images/blockadv2.png)
+![AEMCS](./images/blockadv2.png){zoomable="yes"}
 
 Asigne un nombre a la carpeta `fiberoffer` y pulse **intro**.
 
-![AEMCS](./images/blockadv3.png)
+![AEMCS](./images/blockadv3.png){zoomable="yes"}
 
 Seleccione la nueva carpeta **fiberoffer** y haga clic en el icono **Crear nuevo archivo**.
 
-![AEMCS](./images/blockadv4.png)
+![AEMCS](./images/blockadv4.png){zoomable="yes"}
 
 Se crea un nuevo archivo. Escriba el nombre **fiberoffer.js** y pulse intro.
 
-![AEMCS](./images/blockadv5.png)
+![AEMCS](./images/blockadv5.png){zoomable="yes"}
 
 Ahora puede implementar la decoración de bloques agregando la siguiente JavaScript al archivo **fiberoffer.js**.
 
@@ -62,15 +62,15 @@ export default function decorate(block) {
 }
 ```
 
-![AEMCS](./images/blockadv6.png)
+![AEMCS](./images/blockadv6.png){zoomable="yes"}
 
 Seleccione la nueva carpeta **fiberoffer** y haga clic en el icono **Crear nuevo archivo** de nuevo.
 
-![AEMCS](./images/blockadv7.png)
+![AEMCS](./images/blockadv7.png){zoomable="yes"}
 
 Se crea un nuevo archivo. Escriba el nombre **fiberoffer.css** y pulse intro.
 
-![AEMCS](./images/blockadv8.png)
+![AEMCS](./images/blockadv8.png){zoomable="yes"}
 
 Copie y pegue el siguiente código CSS en el archivo recién creado.
 
@@ -88,7 +88,7 @@ Copie y pegue el siguiente código CSS en el archivo recién creado.
 
 Guarde los cambios.
 
-![AEMCS](./images/blockadv9.png)
+![AEMCS](./images/blockadv9.png){zoomable="yes"}
 
 Ahora ha realizado varios cambios en el proyecto que deben volver a enviarse al repositorio de GitHub. Para ello, abra **GitHub Desktop**.
 
@@ -96,15 +96,15 @@ Entonces debería ver los 2 archivos que acaba de editar en **Cambios**. Revise 
 
 Escriba un nombre para su PR, `js css`. Haga clic en **Compromiso con main**.
 
-![Bloquear](./images/blockadv10.png)
+![Bloquear](./images/blockadv10.png){zoomable="yes"}
 
 Entonces debería ver esto. Haga clic en **Origen push**.
 
-![Bloquear](./images/blockadv11.png)
+![Bloquear](./images/blockadv11.png){zoomable="yes"}
 
 En el navegador, vaya a su cuenta de GitHub y al repositorio que ha creado para CitiSignal. Debería ver algo similar a esto, que muestre que se han recibido los cambios.
 
-![Bloquear](./images/blockadv12.png)
+![Bloquear](./images/blockadv12.png){zoomable="yes"}
 
 Ahora podrá ver los cambios en su sitio web yendo a `main--citisignal--XXX.aem.page/us/en` y/o `main--citisignal--XXX.aem.live/us/en`, después de reemplazar XXX por su cuenta de usuario de GitHub, que en este ejemplo es `woutervangeluwe`.
 
@@ -113,7 +113,7 @@ En este ejemplo, la dirección URL completa se convierte en lo siguiente:
 
 Debería ver esto, con el estilo aplicado a la página.
 
-![Bloquear](./images/blockadv13.png)
+![Bloquear](./images/blockadv13.png){zoomable="yes"}
 
 ## 2.1.5.2 Añadir lógica y cargar datos desde un extremo externo
 
@@ -156,11 +156,11 @@ En el módulo **Introducción** ya configuró una secuencia de datos, llamada `-
 
 No es necesario cambiar el campo **edgeConfigId** en este momento. En el próximo ejercicio podrás hacerlo usando el complemento **MarTech**.
 
-![Bloquear](./images/blockadv15.png)
+![Bloquear](./images/blockadv15.png){zoomable="yes"}
 
 Ahora debería tener esto.
 
-![Bloquear](./images/blockadv14.png)
+![Bloquear](./images/blockadv14.png){zoomable="yes"}
 
 A continuación, agregue este bloque debajo del código anterior que agregó en.
 
@@ -185,7 +185,7 @@ Este bloque de código se utiliza para recuperar el valor del ID del Experience 
 
 Como puede ver en el código anterior, una vez recuperado el ECID, se llama a otra función. Esta función se llama **getOffer()** y la agregará a continuación.
 
-![Bloquear](./images/blockadv16.png)
+![Bloquear](./images/blockadv16.png){zoomable="yes"}
 
 A continuación, añada el siguiente código en la
 
@@ -318,7 +318,7 @@ async function getOffer(ECID) {
 
 Es muy importante que este bloque de código se pegue debajo del corchete de cierre que puede ver en la línea 42 de este ejemplo. El código que acaba de pegar es una función independiente que necesita su propio lugar en este archivo y no se puede anidar en la **función predeterminada** anterior.
 
-![Bloquear](./images/blockadv17.png)
+![Bloquear](./images/blockadv17.png){zoomable="yes"}
 
 El bloque de código que acaba de pegar simula una solicitud que normalmente realizaría Web SDK/alloy.js. En este ejemplo, se realizará una solicitud **fetch** a **edge.adobedc.net**.
 
@@ -330,11 +330,11 @@ Recuerde: este método se utiliza solo para fines de habilitación y no es la me
 
 Guarde los cambios. A continuación, abra **Github Desktop**, asígnele un nombre a su PR y haga clic en **Comprometerse con main**.
 
-![Bloquear](./images/blockadv18.png)
+![Bloquear](./images/blockadv18.png){zoomable="yes"}
 
 A continuación, haga clic en **Origen push**.
 
-![Bloquear](./images/blockadv19.png)
+![Bloquear](./images/blockadv19.png){zoomable="yes"}
 
 Ahora podrá ver los cambios en su sitio web yendo a `main--citisignal--XXX.aem.page/us/en` y/o `main--citisignal--XXX.aem.live/us/en`, después de reemplazar XXX por su cuenta de usuario de GitHub, que en este ejemplo es `woutervangeluwe`.
 
@@ -343,7 +343,7 @@ En este ejemplo, la dirección URL completa se convierte en lo siguiente:
 
 Entonces debería ver esto.
 
-![Bloquear](./images/blockadv20.png)
+![Bloquear](./images/blockadv20.png){zoomable="yes"}
 
 AEM Paso siguiente: [2.1.6 complemento de MarTech para Edge Delivery Services de](./ex6.md){target="_blank"}
 

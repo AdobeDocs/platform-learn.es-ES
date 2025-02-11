@@ -4,9 +4,9 @@ description: Foundation - Ingesta de datos - Configuración de esquemas y conjun
 kt: 5342
 doc-type: tutorial
 exl-id: 3cc1fbe3-1f40-45a3-a123-ee6f1463e7b5
-source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
+source-git-commit: 29d5892a98d7ac4b7d1dfe24c2b39549ee6d5c66
 workflow-type: tm+mt
-source-wordcount: '3138'
+source-wordcount: '3117'
 ht-degree: 4%
 
 ---
@@ -140,7 +140,7 @@ Ahora tiene esta estructura de esquema configurada.
 ![Ingesta de datos](./images/schemastructurem.png)
 
 El nuevo [!UICONTROL grupo de campos] sigue vacío, así que tendrá que agregar campos a ese [!UICONTROL grupo de campos].
-En la lista [!UICONTROL Grupo de campos], haz clic en tu [!UICONTROL grupo de campos] personalizado y luego haz clic en **Examinar**.
+En la lista [!UICONTROL Grupo de campos], haga clic en su [!UICONTROL grupo de campos] personalizado.
 
 ![Ingesta de datos](./images/schemastructurem.png)
 
@@ -176,26 +176,26 @@ Ahora agregará un nuevo objeto de campos 3 debajo de ese inquilino, en el objet
 Utilice la siguiente información para crear los 3 campos nuevos bajo el objeto **[!UICONTROL identification]**:
 
 - ecid:
-   - Nombre de campo: **[!UICONTROL ecid]**
-   - Nombre para mostrar: **[!UICONTROL ecid]**
+   - Nombre del campo: **`--aepUserLdap--_ecid`**
+   - Nombre para mostrar: **`--aepUserLdap--ecid`**
    - Tipo: **[!UICONTROL Cadena]**
    - Grupo de campos: **`--aepUserLdap-- - Profile Identification Field Group`**
 
 - emailId
-   - Nombre de campo: **[!UICONTROL emailId]**
-   - Nombre para mostrar: **[!UICONTROL emailId]**
+   - Nombre del campo: **`--aepUserLdap--_emailId`**
+   - Nombre para mostrar: **`--aepUserLdap--_emailId`**
    - Tipo: **[!UICONTROL Cadena]**
    - Grupo de campos: **`--aepUserLdap-- - Profile Identification Field Group`**
 
 - mobilenr
-   - Nombre de campo: **[!UICONTROL mobilenr]**
-   - Nombre para mostrar: **[!UICONTROL mobilenr]**
+   - Nombre del campo: **`--aepUserLdap--_mobilenr`**
+   - Nombre para mostrar: **`--aepUserLdap--_mobilenr`**
    - Tipo: **[!UICONTROL Cadena]**
    - Grupo de campos: **`--aepUserLdap-- - Profile Identification Field Group`**
 
 Así es como debe verse cada campo después de su configuración inicial de campo.
 
-- mobilenr
+- `--aepUserLdap--_mobilenr`
 
 ![Ingesta de datos](./images/mobilenrfield.png)
 
@@ -203,13 +203,13 @@ Para guardar el campo, desplácese hacia abajo en **[!UICONTROL Propiedades del 
 
 ![Ingesta de datos](./images/apply.png)
 
-- ecid
+- `--aepUserLdap--_ecid`
 
 ![Ingesta de datos](./images/ecidfield.png)
 
 No olvides desplazarte hacia abajo y hacer clic en **Aplicar**.
 
-- emailId
+- `--aepUserLdap--_emailId`
 
 ![Ingesta de datos](./images/emailidfield.png)
 
@@ -223,7 +223,7 @@ Sus 3 campos ahora deben definirse como **[!UICONTROL Identity]**-fields.
 
 Para empezar a definir estos campos como **[!UICONTROL campos de identidad]**, siga estos pasos:
 
-- Seleccione el campo **[!UICONTROL emailId]**.
+- Seleccione el campo **`--aepUserLdap--_emailId`**.
 - En el lado derecho, en las propiedades del campo, desplácese hacia abajo hasta que vea **[!UICONTROL Identidad]**. Marque la casilla de verificación de **[!UICONTROL Identidad]**.
 
 ![Ingesta de datos](./images/emailidid.png)
@@ -236,15 +236,15 @@ Para empezar a definir estos campos como **[!UICONTROL campos de identidad]**, s
 
 ![Ingesta de datos](./images/emailidprimidns.png)
 
-A continuación, debe definir los demás campos de **[!UICONTROL ecid]** y **[!UICONTROL mobilenr]** como identificadores estándar.
+A continuación, debe definir los demás campos de **`--aepUserLdap--_ecid`** y **`--aepUserLdap--_mobilenr`** como identificadores estándar.
 
-Seleccione el campo **[!UICONTROL ecid]**. En el lado derecho, en las propiedades del campo, desplácese hacia abajo hasta que vea **[!UICONTROL Identidad]**. Marque la casilla de verificación de **[!UICONTROL Identidad]**.
+Seleccione el campo **`--aepUserLdap--_ecid`**. En el lado derecho, en las propiedades del campo, desplácese hacia abajo hasta que vea **[!UICONTROL Identidad]**. Marque la casilla de verificación de **[!UICONTROL Identidad]**.
 A continuación, seleccione el área de nombres **[!UICONTROL ECID]** de la lista de **[!UICONTROL áreas de nombres]**.
 Haga clic en **[!UICONTROL Aplicar]** para guardar los cambios.
 
 ![Ingesta de datos](./images/ecidid.png)
 
-Seleccione el campo **[!UICONTROL mobilenr]**. En el lado derecho, en las propiedades del campo, desplácese hacia abajo hasta que vea **[!UICONTROL Identidad]**. Marque la casilla de verificación de **[!UICONTROL Identidad]**.
+Seleccione el campo **`--aepUserLdap--_mobilenr`**. En el lado derecho, en las propiedades del campo, desplácese hacia abajo hasta que vea **[!UICONTROL Identidad]**. Marque la casilla de verificación de **[!UICONTROL Identidad]**.
 Seleccione el área de nombres **[!UICONTROL Phone]** de la lista de **[!UICONTROL Namespaces]**.
 Haga clic en **[!UICONTROL Aplicar]** para guardar los cambios.
 
@@ -415,12 +415,12 @@ Ahora tiene un campo vacío. Debe configurar el campo anterior como se indica.
 
 - ecid:
 
-   - Nombre de campo: **[!UICONTROL ecidweb]**
-   - Nombre para mostrar: **[!UICONTROL ecidweb]**
+   - Nombre del campo: **`--aepUserLdap--_ecidweb`**
+   - Nombre para mostrar: **`--aepUserLdap--_ecidweb`**
    - Tipo: **[!UICONTROL Cadena]**
    - Grupo de campos: `--aepUserLdap-- - ExperienceEvent Identification Field Group`
 
-Así debería verse el campo [!UICONTROL ecid] después de la configuración inicial del campo:
+Este es el aspecto que debería tener el campo `--aepUserLdap--_ecidweb` tras la configuración inicial del campo:
 
 ![Ingesta de datos](./images/ecidfieldee.png)
 
@@ -432,7 +432,7 @@ Ahora tiene un nuevo campo, pero aún no se ha definido este campo como **[!UICO
 
 ![Ingesta de datos](./images/3fieldsee.png)
 
-Para empezar a definir estos campos como **[!UICONTROL campos de identidad]**, seleccione el campo **[!UICONTROL ecid]**.
+Para empezar a definir estos campos como **[!UICONTROL campos de identidad]**, seleccione el campo **`--aepUserLdap--_ecidweb`**.
 En el lado derecho, en las propiedades del campo, desplácese hacia abajo hasta que vea **[!UICONTROL Identidad]**. Marque la casilla de verificación de **[!UICONTROL identidad]** y marque la casilla de verificación de **[!UICONTROL identidad principal]**.
 Seleccione el área de nombres **[!UICONTROL ECID]** de la lista de **[!UICONTROL áreas de nombres]**.
 

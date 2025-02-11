@@ -3,15 +3,15 @@ title: Cree su campaña con los servicios de traducción de AJO
 description: Cree su campaña con los servicios de traducción de AJO
 kt: 5342
 doc-type: tutorial
-exl-id: a9d674f4-6f49-4d4d-a24d-84751f3a438e
-source-git-commit: cec5abe4586f5aa73065254c5de1434c52a288be
+exl-id: 441b3b6a-74e5-4294-9a30-9c44ea4bbf84
+source-git-commit: 7438a1289689c5c3fb3deb398aa9898d7ac26cf8
 workflow-type: tm+mt
-source-wordcount: '1552'
+source-wordcount: '1596'
 ht-degree: 0%
 
 ---
 
-# 3.2.2 Creación de la campaña
+# 3.5.2 Creación de la campaña
 
 Vaya a [https://experience.adobe.com/](https://experience.adobe.com/). Haga clic en **Journey Optimizer**.
 
@@ -21,7 +21,11 @@ Se le redirigirá a la vista **Inicio** en Journey Optimizer. Primero, asegúres
 
 ![ACOP](./images/ajolp2.png)
 
-## 3.2.2.1 Crear el fragmento de encabezado
+>[!NOTE]
+>
+>Si ya ha creado los fragmentos Encabezado y Pie de página como parte del ejercicio [ejercicio 3.1.2.1](./../module3.1/ex2.md) y el [ejercicio 3.1.2.2](./../module3.1/ex2.md), vaya al ejercicio 3.5.2.3 Crear campaña de fibra. No vuelva a crear los fragmentos Encabezado y Pie de página.
+
+## 3.5.2.1 Crear el fragmento de encabezado
 
 En el menú de la izquierda, haga clic en **Fragmentos**. Un fragmento es un componente reutilizable dentro de Journey Optimizer, que evita la duplicación y facilita los cambios futuros que deberían afectar a todos los mensajes, como los cambios en un encabezado o pie de página de un mensaje de correo electrónico.
 
@@ -76,7 +80,7 @@ A continuación, debe crear un nuevo fragmento para el pie de página de los men
 
 ![Journey Optimizer](./images/fragm11.png)
 
-## 3.2.2.2 Crear el fragmento Pie de página
+## 3.5.2.2 Crear el fragmento Pie de página
 
 Haga clic en **Crear fragmento**.
 
@@ -230,7 +234,7 @@ Después de un par de minutos, verás que el estado del pie de página ha cambia
 
 ![Journey Optimizer](./images/fragm38.png)
 
-## 3.2.2.3 Crear campaña de fibra
+## 3.5.2.3 Creación de una campaña de fibra
 
 Ahora creará una campaña. A diferencia del recorrido basado en eventos del ejercicio anterior, que se basa en eventos de experiencia entrantes o entradas o salidas de audiencia para almacenar en déclencheur un recorrido para un cliente específico, las campañas se dirigen a una audiencia completa una vez con contenido único como boletines informativos, promociones únicas o información genérica, o periódicamente con contenido similar enviado de forma regular como, por ejemplo, campañas de cumpleaños y recordatorios.
 
@@ -262,7 +266,7 @@ Desplácese hasta **Audiencia**. Haga clic en **Seleccionar audiencia**.
 
 ![Journey Optimizer](./images/campaign2b.png)
 
-Para la **audiencia**, seleccione la audiencia que creó en el paso anterior, `--aepUserLdap-- - CitiSignal Eligible for Fiber`. Haga clic en **Guardar**.
+Para la **audiencia**, seleccione la audiencia que creó en [1.3.3 Crear una composición federada](./../../datacollection/module1.3/ex3.md), que se denomina `--aepUserLdap-- - CitiSignal Eligible for Fiber`. Haga clic en **Guardar**.
 
 ![Journey Optimizer](./images/campaign2a.png)
 
@@ -358,8 +362,8 @@ Ha terminado este ejercicio.
 
 ## Pasos siguientes
 
-Vaya a [3.2.3 Agregar idiomas a su correo electrónico](./ex3.md)
+Ir a [3.5.3 Agregar idiomas a tu correo electrónico](./ex3.md)
 
-Volver a [Módulo 3.2](./ajotranslationsvcs.md){target="_blank"}
+Volver a [Módulo 3.5](./ajotranslationsvcs.md){target="_blank"}
 
 Volver a [Todos los módulos](./../../../overview.md){target="_blank"}

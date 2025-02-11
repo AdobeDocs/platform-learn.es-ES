@@ -4,9 +4,9 @@ description: Foundation - Perfil del cliente en tiempo real - Visualice su propi
 kt: 5342
 doc-type: tutorial
 exl-id: fe07d873-f4de-437e-815e-e6e6c06a691c
-source-git-commit: c49b41e1b033573dbebc9ced3a3f4071bf94d04e
+source-git-commit: 29d5892a98d7ac4b7d1dfe24c2b39549ee6d5c66
 workflow-type: tm+mt
-source-wordcount: '2299'
+source-wordcount: '2343'
 ht-degree: 1%
 
 ---
@@ -109,6 +109,10 @@ La integración de Adobe I/O ha finalizado.
 >Hay un paso adicional para garantizar que este proyecto de Adobe I/O tenga acceso a la configuración de permisos de Adobe Experience Platform. La credencial de API del proyecto debe agregarse a la interfaz de usuario de permisos de Adobe Experience Platform, para la cual se requieren derechos de acceso de administrador del sistema. Los pasos se documentan a continuación, pero es posible que deba ponerse en contacto con el administrador del sistema para que se procese en caso de que no tenga los derechos de acceso requeridos.
 
 ## Permisos de AEP para credenciales de API
+
+>[!IMPORTANT]
+>
+>Si no tiene derechos de acceso de administrador del sistema, no podrá ejecutar este paso por su cuenta y no tendrá permiso para acceder a la interfaz de usuario de **Permisos**. En ese caso, póngase en contacto con el administrador del sistema o publique su pregunta en el canal de asistencia de su organización.
 
 Ir a [Adobe Experience Platform](https://experience.adobe.com/platform). Después de iniciar sesión, llegará a la página principal de Adobe Experience Platform.
 

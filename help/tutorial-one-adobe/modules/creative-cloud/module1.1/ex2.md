@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: e6a549441d425801f2a554da9af803dca646009e
+source-git-commit: bb4b760335fa41b70a1693546047b5bcdfb9f5f2
 workflow-type: tm+mt
-source-wordcount: '1386'
+source-wordcount: '1347'
 ht-degree: 1%
 
 ---
@@ -25,33 +25,33 @@ Obtenga información sobre cómo optimizar el proceso de Firefly mediante Micros
 
 1. Vaya a [https://portal.azure.com](https://portal.azure.com){target="_blank"} e inicie sesión con su cuenta de Azure. Si no dispone de una, utilice su dirección de correo electrónico personal para crear su cuenta de Azure.
 
-   ![Almacenamiento de Azure](./images/02azureportalemail.png)
+   ![Almacenamiento de Azure](./images/02azureportalemail.png){zoomable="yes"}
 
    Después de iniciar sesión correctamente, debería ver la siguiente pantalla:
 
-   ![Almacenamiento de Azure](./images/03azureloggedin.png)
+   ![Almacenamiento de Azure](./images/03azureloggedin.png){zoomable="yes"}
 
 1. En el menú de la izquierda, seleccione **Todos los recursos**. Si aún no se ha suscrito, aparecerá la pantalla de suscripción de Azure.
 
 1. Si no se ha suscrito, seleccione **Comenzar con una versión de prueba gratuita de Azure**.
 
-   ![Almacenamiento de Azure](./images/04azurestartsubscribe.png)
+   ![Almacenamiento de Azure](./images/04azurestartsubscribe.png){zoomable="yes"}
 
 1. Rellene el formulario de suscripción de Azure y proporcione su teléfono móvil y tarjeta de crédito para la activación (tendrá un nivel gratuito durante 30 días y no se le cobrará, a menos que actualice).
 
    Cuando finalice el proceso de suscripción, ya está listo para comenzar.
 
-   ![Almacenamiento de Azure](./images/06azuresubscriptionok.png)
+   ![Almacenamiento de Azure](./images/06azuresubscriptionok.png){zoomable="yes"}
 
 ## 1.1.2.2 Crear cuenta de almacenamiento de Azure
 
 1. Busque `storage account` y luego seleccione **Cuentas de almacenamiento**.
 
-   ![Almacenamiento de Azure](./images/azs1.png)
+   ![Almacenamiento de Azure](./images/azs1.png){zoomable="yes"}
 
 1. Seleccione **+ Crear**.
 
-![Almacenamiento de Azure](./images/azs2.png)
+   ![Almacenamiento de Azure](./images/azs2.png){zoomable="yes"}
 
 1. Seleccione su **suscripción** y seleccione (o cree) un **grupo de recursos**.
 
@@ -59,73 +59,73 @@ Obtenga información sobre cómo optimizar el proceso de Firefly mediante Micros
 
 1. Seleccione **Revisar + crear**.
 
-   ![Almacenamiento de Azure](./images/azs3.png)
+   ![Almacenamiento de Azure](./images/azs3.png){zoomable="yes"}
 
 1. Seleccione **Crear**.
 
-   ![Almacenamiento de Azure](./images/azs4.png)
+   ![Almacenamiento de Azure](./images/azs4.png){zoomable="yes"}
 
 1. Después de la confirmación, seleccione **Ir al recurso**.
 
-       ![Almacenamiento de Azure](./images/azs5.png)
-   
-Su cuenta de almacenamiento de Azure ya está lista para su uso.
+   ![Almacenamiento de Azure](./images/azs5.png){zoomable="yes"}
 
-    ![Almacenamiento de Azure](./images/azs6.png)
+   Su cuenta de almacenamiento de Azure ya está lista para su uso.
+
+   ![Almacenamiento de Azure](./images/azs6.png){zoomable="yes"}
 
 1. Seleccione **Almacenamiento de datos** y luego vaya a **Contenedores**. Seleccionar **+ Contenedor**.
 
-   ![Almacenamiento de Azure](./images/azs7.png)
+   ![Almacenamiento de Azure](./images/azs7.png){zoomable="yes"}
 
 1. Use `--aepUserLdap--` para el nombre y seleccione **Crear**.
 
-   ![Almacenamiento de Azure](./images/azs8.png)
+   ![Almacenamiento de Azure](./images/azs8.png){zoomable="yes"}
 
    El contenedor ya está listo para usarse.
 
-   ![Almacenamiento de Azure](./images/azs9.png)
+   ![Almacenamiento de Azure](./images/azs9.png){zoomable="yes"}
 
 ## 1.1.2.3 Instalar Azure Storage Explorer
 
 1. [Descargue Microsoft Azure Storage Explorer para administrar sus archivos](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"}. Seleccione la versión correcta para su sistema operativo específico, descárguela e instálela.
 
-   ![Almacenamiento de Azure](./images/az10.png)
+   ![Almacenamiento de Azure](./images/az10.png){zoomable="yes"}
 
 1. Abra la aplicación y seleccione **Iniciar sesión con Azure**.
 
-   ![Almacenamiento de Azure](./images/az11.png)
+   ![Almacenamiento de Azure](./images/az11.png){zoomable="yes"}
 
 1. Seleccione **Suscripción**.
 
-   ![Almacenamiento de Azure](./images/az12.png)
+   ![Almacenamiento de Azure](./images/az12.png){zoomable="yes"}
 
 1. Seleccione **Azure** y después **Siguiente**.
 
-   ![Almacenamiento de Azure](./images/az13.png)
+   ![Almacenamiento de Azure](./images/az13.png){zoomable="yes"}
 
 1. Seleccione su cuenta de Microsoft Azure y complete el proceso de autenticación.
 
-   ![Almacenamiento de Azure](./images/az14.png)
+   ![Almacenamiento de Azure](./images/az14.png){zoomable="yes"}
 
    Después de la autenticación, aparece este mensaje.
 
-   ![Almacenamiento de Azure](./images/az15.png)
+   ![Almacenamiento de Azure](./images/az15.png){zoomable="yes"}
 
 1. Vuelva a la aplicación Microsoft Azure Storage Explorer, seleccione su suscripción y elija **Abrir explorador**.
 
->[!NOTE]
->
->Si no se muestra tu cuenta, haz clic en el icono **engranaje** junto a tu dirección de correo electrónico y selecciona **Anular filtro**.
+   >[!NOTE]
+   >
+   >Si no se muestra tu cuenta, haz clic en el icono **engranaje** junto a tu dirección de correo electrónico y selecciona **Anular filtro**.
 
-    ![Almacenamiento de Azure](./images/az16.png)
+   ![Almacenamiento de Azure](./images/az16.png){zoomable="yes"}
 
-Su cuenta de almacenamiento aparece en **Cuentas de almacenamiento**.
+   Su cuenta de almacenamiento aparece en **Cuentas de almacenamiento**.
 
-    ![Almacenamiento de Azure](./images/az17.png)
+   ![Almacenamiento de Azure](./images/az17.png){zoomable="yes"}
 
 1. Abra **Contenedores de blobs** y seleccione el contenedor que creó en el ejercicio anterior.
 
-   ![Almacenamiento de Azure](./images/az18.png)
+   ![Almacenamiento de Azure](./images/az18.png){zoomable="yes"}
 
 ## 1.1.2.4 Carga manual de archivos y uso de un archivo de imagen como referencia de estilo
 
@@ -135,36 +135,36 @@ Su cuenta de almacenamiento aparece en **Cuentas de almacenamiento**.
 
    Una vez cargado, puede verlo en su contenedor:
 
-   ![Almacenamiento de Azure](./images/az19.png)
+   ![Almacenamiento de Azure](./images/az19.png){zoomable="yes"}
 
 1. Haga clic con el botón derecho en `gradient.jpg` y, a continuación, seleccione **Obtener firma de acceso compartido**.
 
-   ![Almacenamiento de Azure](./images/az20.png)
+   ![Almacenamiento de Azure](./images/az20.png){zoomable="yes"}
 
 1. En **Permisos**, solo se requiere **Leer**. Seleccione **Crear**.
 
-   ![Almacenamiento de Azure](./images/az21.png)
+   ![Almacenamiento de Azure](./images/az21.png){zoomable="yes"}
 
 1. Copie la URL firmada previamente para este archivo de imagen para la siguiente solicitud de API al Firefly.
 
-   ![Almacenamiento de Azure](./images/az22.png)
+   ![Almacenamiento de Azure](./images/az22.png){zoomable="yes"}
 
 1. De nuevo en Postman, abra la solicitud **POST - Firefly - T2I (styleref) V3**.
 Esto aparece en **Cuerpo**.
 
-   ![Almacenamiento de Azure](./images/az23.png)
+   ![Almacenamiento de Azure](./images/az23.png){zoomable="yes"}
 
 1. Reemplace la URL del marcador de posición por la URL prefirmada para su archivo de imagen y seleccione **Enviar**.
 
-   ![Almacenamiento de Azure](./images/az24.png)
+   ![Almacenamiento de Azure](./images/az24.png){zoomable="yes"}
 
 1. Abra la nueva imagen de los servicios del Firefly de respuestas en el explorador.
 
-   ![Almacenamiento de Azure](./images/az25.png)
+   ![Almacenamiento de Azure](./images/az25.png){zoomable="yes"}
 
    Aparece otra imagen con `horses in a field`, pero esta vez el estilo es similar al archivo de imagen proporcionado como referencia de estilo.
 
-   ![Almacenamiento de Azure](./images/az26.png)
+   ![Almacenamiento de Azure](./images/az26.png){zoomable="yes"}
 
 ## 1.1.2.5 Carga programática de archivos
 
@@ -172,7 +172,7 @@ Para usar la carga de archivos mediante programación con cuentas de almacenamie
 
 1. En el Explorador de almacenamiento de Azure, haga clic con el botón secundario en el contenedor y seleccione **Obtener firma de acceso compartido**.
 
-   ![Almacenamiento de Azure](./images/az27.png)
+   ![Almacenamiento de Azure](./images/az27.png){zoomable="yes"}
 
 1. En **Permisos**, seleccione los siguientes permisos necesarios:
 
@@ -184,21 +184,21 @@ Para usar la carga de archivos mediante programación con cuentas de almacenamie
 
 1. Seleccione **Crear**.
 
-   ![Almacenamiento de Azure](./images/az28.png)
+   ![Almacenamiento de Azure](./images/az28.png){zoomable="yes"}
 
 1. Después de recibir tu **token SAS**, selecciona **Copiar**.
 
-   ![Almacenamiento de Azure](./images/az29.png)
+   ![Almacenamiento de Azure](./images/az29.png){zoomable="yes"}
 
    Use el **token SAS** para cargar un archivo en su cuenta de almacenamiento de Azure.
 
 1. En Postman, selecciona la carpeta **FF - Firefly Services Tech Insiders**, luego selecciona **...** en la carpeta **Firefly** y, a continuación, selecciona **Agregar solicitud**.
 
-   ![Almacenamiento de Azure](./images/az30.png)
+   ![Almacenamiento de Azure](./images/az30.png){zoomable="yes"}
 
 1. Cambie el nombre de la solicitud vacía a **Cargar archivo a la cuenta de almacenamiento de Azure**, cambie **Tipo de solicitud** a **PUT** y pegue la URL del token SAS en la sección URL y, a continuación, seleccione **Cuerpo**.
 
-   ![Almacenamiento de Azure](./images/az31.png)
+   ![Almacenamiento de Azure](./images/az31.png){zoomable="yes"}
 
 1. A continuación, seleccione un archivo de su equipo local o use otro archivo de imagen ubicado [aquí](./images/gradient2-p.jpg){target="_blank"}.
 
@@ -206,15 +206,15 @@ Para usar la carga de archivos mediante programación con cuentas de almacenamie
 
 1. En **Cuerpo**, seleccione **binario**, a continuación **Seleccionar archivo** y, por último, seleccione **+ Nuevo archivo del equipo local**.
 
-   ![Almacenamiento de Azure](./images/az32.png)
+   ![Almacenamiento de Azure](./images/az32.png){zoomable="yes"}
 
 1. Seleccione el archivo que desee y seleccione **Abrir**.
 
-   ![Almacenamiento de Azure](./images/az33.png)
+   ![Almacenamiento de Azure](./images/az33.png){zoomable="yes"}
 
 1. A continuación, especifique el nombre de archivo que se utilizará en su cuenta de almacenamiento de Azure colocando el cursor delante del signo de interrogación **.** en la dirección URL de esta manera:
 
-   ![Almacenamiento de Azure](./images/az34.png)
+   ![Almacenamiento de Azure](./images/az34.png){zoomable="yes"}
 
    La dirección URL tiene este aspecto, pero debe cambiarse.
 
@@ -224,7 +224,7 @@ Para usar la carga de archivos mediante programación con cuentas de almacenamie
 
    `https://vangeluw.blob.core.windows.net/vangeluw/gradient2-p.jpg?sv=2023-01-03...`
 
-   ![Almacenamiento de Azure](./images/az34a.png)
+   ![Almacenamiento de Azure](./images/az34a.png){zoomable="yes"}
 
 1. A continuación, ve a **Encabezados** para agregar un nuevo encabezado manualmente de esta manera:
 
@@ -233,19 +233,19 @@ Para usar la carga de archivos mediante programación con cuentas de almacenamie
    | `x-ms-blob-type` | `BlockBlob` |
 
 
-   ![Almacenamiento de Azure](./images/az35.png)
+   ![Almacenamiento de Azure](./images/az35.png){zoomable="yes"}
 
 1. Vaya a **Autorización** y establezca **Tipo de autenticación** en **Sin autenticación** y seleccione **Enviar**.
 
-   ![Almacenamiento de Azure](./images/az36.png)
+   ![Almacenamiento de Azure](./images/az36.png){zoomable="yes"}
 
 1. A continuación, esta respuesta vacía aparece en Postman, lo que significa que la carga del archivo es correcta.
 
-   ![Almacenamiento de Azure](./images/az37.png)
+   ![Almacenamiento de Azure](./images/az37.png){zoomable="yes"}
 
 1. Cuando vuelva al Explorador de almacenamiento de Azure, actualice el contenido de la carpeta y aparecerá el archivo recién cargado.
 
-   ![Almacenamiento de Azure](./images/az38.png)
+   ![Almacenamiento de Azure](./images/az38.png){zoomable="yes"}
 
 ## 1.1.2.6 Uso de archivos programáticos
 
@@ -255,7 +255,7 @@ Para leer archivos mediante programación de cuentas de almacenamiento de Azure 
 
 1. Vuelva al Explorador de almacenamiento de Azure, haga clic con el botón secundario en el contenedor y, a continuación, seleccione **Obtener firma de acceso compartido**.
 
-   ![Almacenamiento de Azure](./images/az27.png)
+   ![Almacenamiento de Azure](./images/az27.png){zoomable="yes"}
 
 1. En **Permisos**, seleccione los siguientes permisos necesarios:
 
@@ -266,11 +266,11 @@ Para leer archivos mediante programación de cuentas de almacenamiento de Azure 
 
 1. Seleccione **Crear**.
 
-   ![Almacenamiento de Azure](./images/az100.png)
+   ![Almacenamiento de Azure](./images/az100.png){zoomable="yes"}
 
 1. Copie la dirección URL y escríbala en un archivo del equipo para obtener el token SAS a largo plazo con permisos de lectura.
 
-   ![Almacenamiento de Azure](./images/az101.png)
+   ![Almacenamiento de Azure](./images/az101.png){zoomable="yes"}
 
    La dirección URL debe tener este aspecto:
 
@@ -286,7 +286,7 @@ Para leer archivos mediante programación de cuentas de almacenamiento de Azure 
 
 1. Vuelva al Explorador de almacenamiento de Azure, haga clic con el botón secundario en el contenedor y seleccione **Obtener firma de acceso compartido**.
 
-   ![Almacenamiento de Azure](./images/az27.png)
+   ![Almacenamiento de Azure](./images/az27.png){zoomable="yes"}
 
 1. En **Permisos**, seleccione los siguientes permisos necesarios:
 
@@ -298,22 +298,22 @@ Para leer archivos mediante programación de cuentas de almacenamiento de Azure 
 
 1. Seleccione **Crear**.
 
-   ![Almacenamiento de Azure](./images/az102.png)
+   ![Almacenamiento de Azure](./images/az102.png){zoomable="yes"}
 
 1. Copie la dirección URL y escríbala en un archivo del equipo para obtener el token SAS a largo plazo con permisos de lectura.
 
-   ![Almacenamiento de Azure](./images/az103.png)
+   ![Almacenamiento de Azure](./images/az103.png){zoomable="yes"}
 
    La dirección URL debe tener este aspecto:
 
    `https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
 
-Puede derivar un par de valores de la dirección URL anterior:
+   Puede derivar un par de valores de la dirección URL anterior:
 
-    - `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
-    - `AZURE_STORAGE_CONTAINER`: `vangeluw`
-    - `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&amp;st=2025-01-13T07%3A36%3A35Z&amp;se=2026-01-14T07%3A36%3A00Z&amp;sr=c&amp;sp=rl&amp;sig=4r%2FcSJLlt%2BSt9HdFdN0VRZZ336 `?sv=2023-01-03&amp;st=2025-01-13T07%3A38%3A59Z&amp;se=2026-01-14T07%3A38%3A00Z&amp;sr=c&amp;sp=acw&amp;sig=lR9%2FMEEEfyYLcBK7W9Kv7YJddd
-    
+   - `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
+   - `AZURE_STORAGE_CONTAINER`: `vangeluw`
+   - `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+   - `AZURE_STORAGE_SAS_WRITE`: `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
 
 ### Variables en Postman
 
@@ -334,7 +334,7 @@ Para futuras interacciones de API, lo principal que cambia es el nombre del recu
 
 1. En Postman, seleccione **Entornos**, abra **Todas las variables** y seleccione **Entorno**.
 
-   ![Almacenamiento de Azure](./images/az104.png)
+   ![Almacenamiento de Azure](./images/az104.png){zoomable="yes"}
 
 1. Cree estas 4 variables en la tabla que se muestra y, para las columnas **Valor inicial** y **Valor actual**, introduzca sus valores personales específicos.
 
@@ -345,13 +345,13 @@ Para futuras interacciones de API, lo principal que cambia es el nombre del recu
 
 1. Seleccione **Guardar**.
 
-   ![Almacenamiento de Azure](./images/az105.png)
+   ![Almacenamiento de Azure](./images/az105.png){zoomable="yes"}
 
    En uno de los ejercicios anteriores, el **Cuerpo** de su solicitud **Firefly - T2I (styleref) V3** tenía este aspecto:
 
    `"url": "https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D"`
 
-   ![Almacenamiento de Azure](./images/az24.png)
+   ![Almacenamiento de Azure](./images/az24.png){zoomable="yes"}
 
 1. Cambie la dirección URL a:
 
@@ -359,11 +359,11 @@ Para futuras interacciones de API, lo principal que cambia es el nombre del recu
 
 1. Seleccione **Enviar** para probar los cambios que realizó.
 
-   ![Almacenamiento de Azure](./images/az106.png)
+   ![Almacenamiento de Azure](./images/az106.png){zoomable="yes"}
 
    Si las variables se configuraron correctamente, se devuelve una URL de imagen.
 
-   ![Almacenamiento de Azure](./images/az107.png)
+   ![Almacenamiento de Azure](./images/az107.png){zoomable="yes"}
 
 1. Abra la dirección URL de la imagen para comprobar la imagen.
 

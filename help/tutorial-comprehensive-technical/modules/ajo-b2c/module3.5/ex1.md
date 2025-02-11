@@ -1,19 +1,19 @@
 ---
-title: Proveedor de traducciones de AJO
-description: Proveedor de traducciones de AJO
+title: Introducción a los servicios de traducción de AJO
+description: Introducción a los servicios de traducción de AJO
 kt: 5342
 doc-type: tutorial
-exl-id: ee0b8650-a59f-4888-8228-4caafe4143e4
-source-git-commit: 24b0b774fe19e5938555491b3dc9d04717bb95c6
+exl-id: 28c925dd-8a7b-4b9a-a128-ecbfbfbeaf04
+source-git-commit: 7438a1289689c5c3fb3deb398aa9898d7ac26cf8
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '546'
 ht-degree: 1%
 
 ---
 
-# 3.2.1 Proveedor de traducciones
+# 3.5.1 Proveedor de traducciones
 
-## 3.2.1.1 Configuración de Microsoft Azure Translator
+## 3.5.1.1 Configuración de Microsoft Azure Translator
 
 Vaya a [https://portal.azure.com/#home](https://portal.azure.com/#home).
 
@@ -47,7 +47,7 @@ En el menú de la izquierda, vaya a **Administración de recursos** > **Claves y
 
 ![Traducciones](./images/transl7.png)
 
-## 3.2.1.2 Diccionario local
+## 3.5.1.2 Diccionario local
 
 Vaya a [https://experience.adobe.com/](https://experience.adobe.com/). Haga clic en **Journey Optimizer**.
 
@@ -61,7 +61,7 @@ Entonces debería ver esto.
 
 ![Traducciones](./images/locale2.png)
 
-## 3.2.1.3 Configuración del proveedor de traducciones en AJO
+## 3.5.1.3 Configuración del proveedor de traducciones en AJO
 
 Vaya a [https://experience.adobe.com/](https://experience.adobe.com/). Haga clic en **Journey Optimizer**.
 
@@ -91,7 +91,7 @@ Su **proveedor de traducciones** ya está listo para usarse.
 
 ![Traducciones](./images/transl13.png)
 
-## 3.2.1.4 Configurar el proyecto de traducciones
+## 3.5.1.4 Configurar el proyecto de traducciones
 
 Vaya a [https://experience.adobe.com/](https://experience.adobe.com/). Haga clic en **Journey Optimizer**.
 
@@ -125,7 +125,7 @@ Su proyecto **Traducciones** ya está listo para usarse.
 
 ![Traducciones](./images/ajoprovider9.png)
 
-## 3.2.1.5 Configuración de idioma
+## 3.5.1.5 Configuración de idioma
 
 Vaya a **Canales** > **Configuración general** > **Configuración de idioma**. Haga clic en **Crear configuración de idioma**.
 
@@ -171,8 +171,8 @@ Ha terminado este ejercicio.
 
 ## Pasos siguientes
 
-Vaya a [3.2.2 y cree su campaña](./ex2.md)
+Vaya a [3.5.2 y cree su campaña](./ex2.md)
 
-Volver a [Módulo 3.2](./ajotranslationsvcs.md){target="_blank"}
+Volver a [Módulo 3.5](./ajotranslationsvcs.md){target="_blank"}
 
 Volver a [Todos los módulos](./../../../overview.md){target="_blank"}
