@@ -1,24 +1,27 @@
 ---
 title: 'Seguimiento de eventos: Migración del Adobe Target al Adobe Journey Optimizer, extensión de Decisioning Mobile'
 description: Obtenga información sobre cómo rastrear eventos de conversión de Adobe Target mediante la extensión Adobe Journey Optimizer - Decisioning Mobile
-source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
+exl-id: 7b53aab1-0922-4d9f-8bf0-f5cf98ac04c4
+source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '199'
 ht-degree: 1%
 
 ---
 
 # Seguimiento de eventos de conversión de Target con la extensión Adobe Journey Optimizer - Decisioning Mobile
 
+Consulte esta página para ver el contenido: https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#tracking
+
 Los eventos de conversión para Target se pueden rastrear con... Los eventos de conversión suelen clasificarse en las siguientes categorías:
 
 * Eventos rastreados automáticamente que no requieren ninguna configuración
-* Adquiera eventos de conversión que deban ajustarse para una implementación de SDK web de Platform de prácticas recomendadas.
+* Eventos de conversión de compra que deben ajustarse para una implementación de extensión de decisiones de prácticas recomendadas.
 * Eventos de conversión que no son de compra y que requieren actualizaciones de código
 
 ## Comparación de seguimiento de objetivos
 
-La siguiente tabla compara cómo at.js y el SDK web de Platform rastrean los eventos de conversión
+La siguiente tabla compara cómo at.js y Platform Web SDK rastrean los eventos de conversión
 
 | Objetivo de actividad | Target at.js 2.x | SDK web de Platform |
 |---|---|---|
@@ -31,7 +34,7 @@ Los siguientes objetivos de conversión no requieren ningún ajuste específico 
 
 
 
-A continuación, aprenda a [habilitar el uso compartido de ID entre dominios](cross-domain.md) para perfiles de visitantes consistentes.
+A continuación, aprenda a [habilitar el uso compartido de ID entre dominios](webview.md) para perfiles de visitantes consistentes.
 
 >[!NOTE]
 >

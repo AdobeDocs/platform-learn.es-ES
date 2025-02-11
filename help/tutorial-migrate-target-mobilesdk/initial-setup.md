@@ -2,10 +2,10 @@
 title: 'Configuración inicial: Migrar de Adobe Target a Adobe Journey Optimizer, extensión de Decisioning Mobile'
 description: Obtenga información y configure los elementos básicos importantes necesarios para la implementación de Platform Web SDK
 exl-id: dfc5abc8-0e79-454a-b1bb-6a42b1219771
-source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
+source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 5%
+source-wordcount: '370'
+ht-degree: 6%
 
 ---
 
@@ -20,6 +20,8 @@ La migración de Target SDK a Optimize SDK requiere una configuración inicial p
 - [Crear una secuencia de datos](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/initial-configuration/create-datastream){target="_blank"} para habilitar el reenvío de datos desde Edge Network
 - [Configure la secuencia de datos](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#update-datastream-configuration){target="_blank"} para habilitar el reenvío de datos a Adobe Target
 - [Configurar la propiedad Tag](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#install-adobe-journey-optimizer---decisioning-tags-extension){target="_blank"} para la extensión Decisioning
+
+## Configuración de extensión
 
 >[!BEGINTABS]
 
@@ -50,7 +52,19 @@ Extensiones de etiquetas instaladas al utilizar la extensión de Target:
 
 >[!ENDTABS]
 
-A continuación, aprenda a [reemplazar Target SDK](replace-library.md).
+## Configuración de flujo de datos
+
+La extensión de Target tiene [configuraciones configurables](https://developer.adobe.com/client-sdks/solution/adobe-target/#configure-the-target-extension-in-the-data-collection-ui) que con la extensión de Decisions están [configuradas en la secuencia de datos](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#adobe-experience-platform-data-collection-setup).
+
+| Extensión de Target | Extensión de Decisioning | Notas |
+| --- | --- | --- | 
+| Código de cliente | n/a | Establecido automáticamente por el perímetro de mediante los detalles de organización de IMS |
+| ID de entorno | ID de entorno de destino | Configurado en el conjunto de datos |
+| Propiedad de Workspace de destino | Token de propiedad | Configurado en el conjunto de datos |
+| Tiempo de espera | No configurable | El tiempo de espera con la extensión Decisioning es de 10 segundos |
+| Dominio del servidor | dominio de Edge Network | Establecido en la extensión de Adobe Experience Platform Edge Network |
+
+A continuación, aprenda a [reemplazar Target SDK](replace-sdk.md).
 
 >[!NOTE]
 >
