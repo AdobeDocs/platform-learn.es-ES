@@ -10,9 +10,9 @@ doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: null
 hide: true
-source-git-commit: cb08ad8a1ffd687d7748ca02643b11b2243cd1a7
+source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
 workflow-type: tm+mt
-source-wordcount: '80'
+source-wordcount: '77'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 3%
 
 + [Realizar configuración inicial](initial-setup.md)
 
-+ [Reemplazar la biblioteca y el método de preocultación](replace-library.md)
++ [Reemplazar SDK](replace-library.md)
 
 + [Actividades de procesamiento](render-activities.md)
 
@@ -34,7 +34,7 @@ ht-degree: 3%
 
 + [Seguimiento de eventos de conversión](track-events.md)
 
-+ [Habilitar compatibilidad entre dominios](cross-domain.md)
++ [Habilitar compatibilidad con WebView](cross-domain.md)
 
 + [Actualización de audiencias y scripts de perfil](update-audiences.md)
 
