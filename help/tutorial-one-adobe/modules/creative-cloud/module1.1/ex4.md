@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
-source-git-commit: 18151b91d18ebb53fc485151effd12a6fdc2b6b8
+source-git-commit: 0e9d1b5866d789ca2693d9c1a6ef7119c25ed009
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 0%
@@ -74,11 +74,11 @@ Entonces verá esto... El entrenamiento del modelo puede tardar entre 20 y 30 mi
 
 ![Modelos personalizados de Firefly](./images/ffcm13.png){zoomable="yes"}
 
-Después de 20-30 minutos, el modelo ya está entrenado y se puede publicar. Haga clic en **Publish**.
+Después de 20-30 minutos, el modelo ya está entrenado y se puede publicar. Haga clic en **Publicar**.
 
 ![Modelos personalizados de Firefly](./images/ffcm14.png){zoomable="yes"}
 
-Vuelva a hacer clic en **Publish**.
+Vuelva a hacer clic en **Publicar**.
 
 ![Modelos personalizados de Firefly](./images/ffcm15.png){zoomable="yes"}
 
@@ -134,11 +134,11 @@ La **ID. de cuenta técnica** debería poder acceder ahora al modelo personaliza
 
 ![Modelos personalizados de Firefly](./images/ffcm22.png){zoomable="yes"}
 
-## 1.1.4.4 Interacción con la API de modelos personalizados de servicios de Firefly
+## 1.1.4.4 Interactuar con la API de modelos personalizados de servicios de Firefly
 
 >[!IMPORTANT]
 >
->Si eres un empleado de Adobe, sigue las instrucciones aquí para usar [PostBuster](./../../../postbuster.md).
+>Si eres empleado de Adobe, sigue las instrucciones aquí para usar [PostBuster](./../../../postbuster.md).
 
 En el Ejercicio 1.1.1 Introducción a Firefly Services, descargó este archivo: [postman-ff.zip](./../../../assets/postman/postman-ff.zip) en el escritorio local y después importó esa colección en Postman.
 

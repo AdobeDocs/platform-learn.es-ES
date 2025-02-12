@@ -1,23 +1,23 @@
 ---
-title: AEM Complemento CS - MarTech
-description: AEM Complemento CS - MarTech
+title: Complemento AEM CS - MarTech
+description: Complemento AEM CS - MarTech
 kt: 5342
 doc-type: tutorial
 exl-id: 8a2c6327-8d3d-4048-bf89-9d4371e18e1b
-source-git-commit: bbbe13842ac6825c6a6a933dc018fd9cdde52249
+source-git-commit: c29fb7908ee9a16a265f96d8181dca93fd9256cc
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 1%
 
 ---
 
-# AEM 2.1.6 Complemento de MarTech para Edge Delivery Services de
+# 2.1.6 Complemento AEM Edge Delivery Services MarTech
 
-AEM AEM El complemento MarTech le ayuda a configurar rápidamente una pila MarTech completa para su proyecto de.
+El complemento AEM MarTech le ayuda a configurar rápidamente una pila MarTech completa para su proyecto de AEM.
 
 >[!NOTE]
 >
->AEM Actualmente, este complemento está disponible para los clientes en colaboración con Ingeniería a través de proyectos de innovación conjunta. Puede encontrar más información en [https://github.com/adobe-rnd/aem-martech](https://github.com/adobe-rnd/aem-martech).
+>Actualmente, este complemento está disponible para los clientes de en colaboración con AEM Engineering a través de proyectos de innovación conjunta. Puede encontrar más información en [https://github.com/adobe-rnd/aem-martech](https://github.com/adobe-rnd/aem-martech).
 
 ## 2.1.6.1 Añadir el complemento a su repositorio
 
@@ -28,7 +28,7 @@ Vaya a la carpeta que esté usando para su repositorio de **citisignal** GitHub.
 Entonces verá esto... Pegue el siguiente comando y pulse **enter**.
 
 ```
-git subtree add --squash --prefix plugins/martech https://github.com/adobe/aem-experimentation.git main
+git subtree add --squash --prefix plugins/martech https://github.com/adobe/aem-martech main
 ```
 
 Entonces debería ver esto.
@@ -317,7 +317,7 @@ Haga clic en **Origen push** para insertar los cambios en el repositorio de GitH
 
 ## 2.1.6.4 Extensión ACDL en la propiedad Etiquetas
 
-AEM Para que el complemento MarTech de los Edge Delivery Services de la funcione correctamente, debe añadir la extensión para
+Para que el complemento AEM Edge Delivery Services MarTech funcione correctamente, debe añadir la extensión de para
 
 Vaya a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). Busque y, a continuación, abra la propiedad Etiquetas para la Web, que se denomina `--aepUserLdap-- - One Adobe (DD/MM/YYYY)`.
 
@@ -341,7 +341,7 @@ Vaya a **Flujo de publicación** y abra su biblioteca **Principal**. Haga clic e
 
 Los cambios se han implementado.
 
-## 2.1.6.5 Envío de datos al Edge Network de Adobe Experience Platform
+## 2.1.6.5 Envío de datos a Adobe Experience Platform Edge Network
 
 Ahora podrá ver los cambios en su sitio web yendo a `main--citisignal--XXX.aem.page/us/en` y/o `main--citisignal--XXX.aem.live/us/en`, después de reemplazar XXX por su cuenta de usuario de GitHub, que en este ejemplo es `woutervangeluwe`.
 

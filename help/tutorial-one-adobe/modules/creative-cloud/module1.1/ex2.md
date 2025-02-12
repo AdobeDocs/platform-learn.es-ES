@@ -1,12 +1,12 @@
 ---
-title: Optimizar el proceso de Firefly mediante Microsoft Azure y las direcciones URL con firma previa
+title: Optimizar el proceso de Firefly con Microsoft Azure y las direcciones URL prefirmadas
 description: Obtenga información sobre cómo optimizar el proceso de Firefly mediante Microsoft Azure y las direcciones URL prefirmadas
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: bb4b760335fa41b70a1693546047b5bcdfb9f5f2
+source-git-commit: c29fb7908ee9a16a265f96d8181dca93fd9256cc
 workflow-type: tm+mt
 source-wordcount: '1347'
 ht-degree: 1%
@@ -145,11 +145,11 @@ Obtenga información sobre cómo optimizar el proceso de Firefly mediante Micros
 
    ![Almacenamiento de Azure](./images/az21.png){zoomable="yes"}
 
-1. Copie la URL firmada previamente para este archivo de imagen para la siguiente solicitud de API al Firefly.
+1. Copie la URL firmada previamente para este archivo de imagen para la siguiente solicitud de API a Firefly.
 
    ![Almacenamiento de Azure](./images/az22.png){zoomable="yes"}
 
-1. De nuevo en Postman, abra la solicitud **POST - Firefly - T2I (styleref) V3**.
+1. En Postman, abra la solicitud **POST - Firefly - T2I (styleref) V3**.
 Esto aparece en **Cuerpo**.
 
    ![Almacenamiento de Azure](./images/az23.png){zoomable="yes"}
@@ -158,7 +158,7 @@ Esto aparece en **Cuerpo**.
 
    ![Almacenamiento de Azure](./images/az24.png){zoomable="yes"}
 
-1. Abra la nueva imagen de los servicios del Firefly de respuestas en el explorador.
+1. Abra la imagen nueva de la respuesta de los servicios de Firefly en el explorador.
 
    ![Almacenamiento de Azure](./images/az25.png){zoomable="yes"}
 
@@ -319,7 +319,7 @@ Para leer archivos mediante programación de cuentas de almacenamiento de Azure 
 
 >[!IMPORTANT]
 >
->Si eres un empleado de Adobe, sigue las instrucciones aquí para usar [PostBuster](./../../../postbuster.md).
+>Si eres empleado de Adobe, sigue las instrucciones aquí para usar [PostBuster](./../../../postbuster.md).
 
 Como puede ver en la sección anterior, hay algunas variables comunes en el token de lectura y en el token de escritura.
 
@@ -347,7 +347,7 @@ Para futuras interacciones de API, lo principal que cambia es el nombre del recu
 
    ![Almacenamiento de Azure](./images/az105.png){zoomable="yes"}
 
-   En uno de los ejercicios anteriores, el **Cuerpo** de su solicitud **Firefly - T2I (styleref) V3** tenía este aspecto:
+   En uno de los ejercicios anteriores, **Body** de su solicitud **Firefly - T2I (styleref) V3** tenía este aspecto:
 
    `"url": "https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D"`
 
