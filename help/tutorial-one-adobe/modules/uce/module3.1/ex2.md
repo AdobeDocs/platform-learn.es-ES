@@ -4,7 +4,7 @@ description: Foundation - FAC - Crear esquemas, modelos de datos y vínculos
 kt: 5342
 doc-type: tutorial
 exl-id: 42004cb9-60b3-4ca8-97d9-3d169735c98f
-source-git-commit: 246bb91496104818f357848f41b79523b7771638
+source-git-commit: 50622dc6698a7e1384c4803ea40682a060a08617
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 2%
@@ -51,7 +51,7 @@ Entonces verá esto... Copie la **URL actual** y péguela en el campo **Servidor
 **Contraseña**: la contraseña que creó anteriormente, en el ejercicio 1.3.1.1
 **Base de datos**: use **CITISIGNAL**
 
-Así que finalmente, deberías tener esto. Haga clic en **Probar conexión**. Si la prueba se realiza correctamente, haga clic en **Implementar funciones**, que creará funciones en el lado del Snowflake que son necesarias para el motor de flujo de trabajo.
+Así que finalmente, deberías tener esto. Haga clic en **Probar conexión**. Si la prueba se realiza correctamente, haga clic en **Implementar funciones**, que creará funciones en el lado de Snowflake que son necesarias para el motor de flujo de trabajo.
 
 Una vez que la conexión se haya probado correctamente y se hayan implementado las funciones, la configuración se almacenará.
 
@@ -73,11 +73,11 @@ Seleccione su base de datos federada y haga clic en **+ Agregar tablas**.
 
 Entonces verá esto... Seleccione las 5 tablas que creó en Snowflake anteriormente:
 
-- `CK_HOUSEHOLDS`
-- `CK_MOBILE_DATA_USAGE`
-- `CK_MONTHLY_DATA_USAGE`
-- `CK_PERSONS`
-- `CK_USERS`
+- `--aepUserLdap--_HOUSEHOLDS`
+- `--aepUserLdap--_MOBILE_DATA_USAGE`
+- `--aepUserLdap--_MONTHLY_DATA_USAGE`
+- `--aepUserLdap--_PERSONS`
+- `--aepUserLdap--_USERS`
 
 Haga clic en **Agregar**.
 
@@ -98,11 +98,11 @@ Haga clic en **Crear**.
 
 ![CARA](./images/fdb8.png)
 
-Entonces verá esto... Puede hacer clic en cualquier esquema y revisar la información. Por ejemplo, haga clic en **CK_PERSONS**.
+Entonces verá esto... Puede hacer clic en cualquier esquema y revisar la información. Por ejemplo, haga clic en **—aepUserLdap—_PERSONS**.
 
 ![CARA](./images/fdb9.png)
 
-A continuación, verá esto, con la capacidad de editar la configuración. Haga clic en **Datos** para ver una muestra de los datos de la base de datos del Snowflake.
+A continuación, verá esto, con la capacidad de editar la configuración. Haga clic en **Datos** para ver una muestra de los datos de la base de datos de Snowflake.
 
 ![CARA](./images/fdb10.png)
 
@@ -130,57 +130,57 @@ Seleccione los esquemas y haga clic en **Agregar**.
 
 Entonces verá esto... Haga clic en **Guardar**.
 
-### `CK_USERS` - `CK_PERSONS`
+### `--aepUserLdap--_USERS` - `--aepUserLdap--_PERSONS`
 
 Ahora puede empezar a definir vínculos entre esquemas. Para empezar a definir un vínculo, debe hacer clic en **Crear vínculos**.
 
 ![CARA](./images/fdb16.png)
 
-En primer lugar, definamos el vínculo entre la tabla `CK_USERS` y `CK_PERSONS`.
+En primer lugar, definamos el vínculo entre la tabla `--aepUserLdap--_USERS` y `--aepUserLdap--_PERSONS`.
 
 Haga clic en **Agregar**.
 
 ![CARA](./images/fdb18.png)
 
 
-### `CK_HOUSEHOLDS` - `CK_PERSONS`
+### `--aepUserLdap--_HOUSEHOLDS` - `--aepUserLdap--_PERSONS`
 
 Entonces volverás a estar aquí. Haga clic en **Crear vínculos** para crear otro vínculo.
 
 ![CARA](./images/fdb17.png)
 
-A continuación, definamos el vínculo entre la tabla `CK_HOUSEHOLDS` y `CK_PERSONS`.
+A continuación, definamos el vínculo entre la tabla `--aepUserLdap--_HOUSEHOLDS` y `--aepUserLdap--_PERSONS`.
 
 ![CARA](./images/fdb19.png)
 
-### `CK_USERS` - `CK_MONTHLY_DATA_USAGE`
+### `--aepUserLdap--_USERS` - `--aepUserLdap--_MONTHLY_DATA_USAGE`
 
 Entonces volverás a estar aquí. Haga clic en **Crear vínculos** para crear otro vínculo.
 
 ![CARA](./images/fdb20.png)
 
-A continuación, definamos el vínculo entre la tabla `CK_USERS` y `CK_MONTHLY_DATA_USAGE`.
+A continuación, definamos el vínculo entre la tabla `--aepUserLdap--_USERS` y `--aepUserLdap--_MONTHLY_DATA_USAGE`.
 
 ![CARA](./images/fdb21.png)
 
 
-### `CK_USERS` - `CK_HOUSEHOLDS`
+### `--aepUserLdap--_USERS` - `--aepUserLdap--_HOUSEHOLDS`
 
 Entonces volverás a estar aquí. Haga clic en **Crear vínculos** para crear otro vínculo.
 
 ![CARA](./images/fdb22.png)
 
-A continuación, definamos el vínculo entre la tabla `CK_USERS` y `CK_HOUSEHOLDS`.
+A continuación, definamos el vínculo entre la tabla `--aepUserLdap--_USERS` y `--aepUserLdap--_HOUSEHOLDS`.
 
 ![CARA](./images/fdb23.png)
 
-### `CK_USERS` - `CK_MOBILE_DATA_USAGE`
+### `--aepUserLdap--_USERS` - `--aepUserLdap--_MOBILE_DATA_USAGE`
 
 Entonces volverás a estar aquí. Haga clic en **Crear vínculos** para crear otro vínculo.
 
 ![CARA](./images/fdb24.png)
 
-A continuación, definamos el vínculo entre la tabla `CK_USERS` y `CK_MOBILE_DATA_USAGE`.
+A continuación, definamos el vínculo entre la tabla `--aepUserLdap--_USERS` y `--aepUserLdap--_MOBILE_DATA_USAGE`.
 
 ![CARA](./images/fdb25.png)
 

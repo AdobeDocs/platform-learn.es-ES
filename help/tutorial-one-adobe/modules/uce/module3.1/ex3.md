@@ -4,9 +4,9 @@ description: Foundation - FAC - Crear una composición federada
 kt: 5342
 doc-type: tutorial
 exl-id: dc044a26-f16a-491e-a795-4cd16f211256
-source-git-commit: f6881cc2c993941f60e440ce0c367a139ae80b00
+source-git-commit: 50622dc6698a7e1384c4803ea40682a060a08617
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '494'
 ht-degree: 3%
 
 ---
@@ -47,7 +47,7 @@ Entonces verá esto... Seleccione **Crear audiencia**. Haga clic en el icono **s
 
 ![CARA](./images/fedcomp5.png)
 
-Seleccione el esquema **CK_HOUSEHOLDS**. Haga clic en **Confirmar**.
+Seleccione el esquema **—aepUserLdap—_HOUSEHOLDS**. Haga clic en **Confirmar**.
 
 ![CARA](./images/fedcomp6.png)
 
@@ -55,7 +55,7 @@ A continuación, haga clic en **Continuar**.
 
 ![CARA](./images/fedcomp7.png)
 
-Ahora puede empezar a crear la consulta que se enviará al Snowflake. Haga clic en el icono **+** y, a continuación, haga clic en **Condición personalizada**.
+Ahora puede empezar a crear la consulta que se enviará a Snowflake. Haga clic en el icono **+** y, a continuación, haga clic en **Condición personalizada**.
 
 ![CARA](./images/fedcomp8.png)
 
@@ -63,7 +63,7 @@ Seleccione el atributo **ISELIGIBLEFORFIBER** Haga clic en **Confirmar**.
 
 ![CARA](./images/fedcomp9.png)
 
-Entonces verá esto... Establezca el campo **Value** en **True**. Haga clic en **Calcular** para insertar la consulta en el Snowflake y obtener una estimación de los perfiles que ahora cumplen los requisitos.
+Entonces verá esto... Establezca el campo **Value** en **True**. Haga clic en **Calcular** para insertar la consulta en Snowflake y obtener una estimación de los perfiles aptos.
 
 ![CARA](./images/fedcomp10.png)
 
@@ -71,7 +71,7 @@ A continuación, haga clic de nuevo en el icono **+** y luego en **Condición pe
 
 ![CARA](./images/fedcomp11.png)
 
-La segunda condición que se debe agregar es: `Is the user an existing CitiSignal Mobile subscriber?`. La manera de responder a esa pregunta es usar la relación entre el hogar y el cliente principal del hogar, que se define en otra tabla, **CK_PERSONS**. Puede explorar en profundidad el menú de atributos mediante el vínculo **household2person**.
+La segunda condición que se debe agregar es: `Is the user an existing CitiSignal Mobile subscriber?`. La manera de responder a esa pregunta es utilizar la relación entre el hogar y el cliente principal del hogar, que se define en otra tabla, **—aepUserLdap—_PERSONS**. Puede explorar en profundidad el menú de atributos mediante el vínculo **household2person**.
 
 ![CARA](./images/fedcomp12.png)
 
@@ -137,7 +137,9 @@ Haga clic en **Guardar**.
 
 Su composición ha finalizado. Haga clic en **Iniciar** para ejecutarlo.
 
-La consulta ahora se inserta en Snowflake, que consultará los datos de origen allí. Los resultados se devolverán a AEP, pero los datos de origen permanecen en Snowflake.
+![CARA](./images/fedcomp21a.png)
+
+La consulta ahora se inserta en Snowflake, que consultará los datos de origen allí. Los resultados se devolverán a AEP, pero los datos de origen permanecerán en Snowflake.
 
 La audiencia ahora se rellena y se puede segmentar desde el ecosistema de AEP.
 
