@@ -1,17 +1,17 @@
 ---
-title: AEM Configuración del entorno de
-description: AEM Configuración del entorno de
+title: Configuración del entorno de AEM CS
+description: Configuración del entorno de AEM CS
 kt: 5342
 doc-type: tutorial
 exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: 18151b91d18ebb53fc485151effd12a6fdc2b6b8
+source-git-commit: 0a0909b639e34d92266a326c3338d7f17db7ecc6
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 1%
 
 ---
 
-# AEM 2.1.3 Configuración del entorno de CS de la
+# 2.1.3 Configuración del entorno de AEM CS
 
 ## 2.1.3.1 Configurar el repositorio de GitHub
 
@@ -69,7 +69,7 @@ Ahora necesita actualizar el valor del campo **url** en la línea 4.
 
 ![AEMCS](./images/aemcssetup13.png){zoomable="yes"}
 
-AEM Debe reemplazar el valor actual por la URL de su entorno específico de GitHub CS en combinación con la configuración de su repositorio de GitHub.
+Debe reemplazar el valor actual por la URL de su entorno AEM CS específico en combinación con la configuración de su repositorio de GitHub.
 
 Este es el valor actual de la dirección URL: `https://author-p131639-e1282833.adobeaemcloud.com/bin/franklin.delivery/adobedevxsc/citisignal-one/main`.
 
@@ -77,13 +77,13 @@ Hay tres partes de la dirección URL que deben actualizarse
 
 `https://XXX/bin/franklin.delivery/YYY/ZZZ/main`
 
-AEM XXX debe ser reemplazado por la URL de su entorno de autor de CS de.
+XXX debe ser reemplazado por la URL de su entorno de AEM CS Author.
 
 AAAA debe reemplazarse por su cuenta de usuario de GitHub.
 
 ZZZ debe reemplazarse por el nombre del repositorio de GitHub que utilizó en el ejercicio anterior.
 
-AEM Puede encontrar la URL del entorno de autor de CS de la en [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Haga clic en **Programa** para abrirlo.
+Puede encontrar la URL del entorno de AEM CS Author en [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Haga clic en **Programa** para abrirlo.
 
 ![AEMCS](./images/aemcs6.png){zoomable="yes"}
 
@@ -133,7 +133,7 @@ A continuación, haga clic en la dirección URL del entorno de Author.
 
 ![AEMCS](./images/aemcssetup18.png){zoomable="yes"}
 
-Haga clic en **Iniciar sesión con el Adobe**.
+Haga clic en **Iniciar sesión con Adobe**.
 
 ![AEMCS](./images/aemcssetup19.png){zoomable="yes"}
 
@@ -143,7 +143,7 @@ A continuación, verá su entorno de Author.
 
 La dirección URL será similar a la siguiente: `https://author-p148073-e1511503.adobeaemcloud.com/ui#/aem/aem/start.html?appId=aemshell`
 
-Ahora necesita tener acceso al entorno **CRX AEM Package Manager** de la aplicación de. Para ello, elimine `ui#/aem/aem/start.html?appId=aemshell` de la dirección URL y reemplácelo por `crx/packmgr`, lo que significa que la dirección URL debería tener este aspecto ahora:
+Ahora necesita acceder al entorno **CRX Package Manager** de AEM. Para ello, elimine `ui#/aem/aem/start.html?appId=aemshell` de la dirección URL y reemplácelo por `crx/packmgr`, lo que significa que la dirección URL debería tener este aspecto ahora:
 `https://author-p148073-e1511503.adobeaemcloud.com/crx/packmgr`.
 Pulse **Intro** para cargar el entorno del administrador de paquetes
 
@@ -186,7 +186,7 @@ Después de un par de minutos, el paquete se instalará.
 Ahora puede cerrar esta ventana.
 
 
-## 2.1.3.4 Recursos de Publish CitiSignal
+## 2.1.3.4 Publicación de recursos de CitiSignal
 
 Vaya a [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Haga clic en **Programa** para abrirlo.
 
@@ -196,11 +196,11 @@ A continuación, haga clic en la dirección URL del entorno de Author.
 
 ![AEMCS](./images/aemcssetup18.png){zoomable="yes"}
 
-Haga clic en **Iniciar sesión con el Adobe**.
+Haga clic en **Iniciar sesión con Adobe**.
 
 ![AEMCS](./images/aemcssetup19.png){zoomable="yes"}
 
-A continuación, verá su entorno de Author. Haga clic en **Sitios**.
+A continuación, verá su entorno de Author. Haga clic en **Assets**.
 
 ![AEMCS](./images/aemcsassets1.png){zoomable="yes"}
 
@@ -216,7 +216,7 @@ Haga clic en **Next**.
 
 ![AEMCS](./images/aemcsassets4.png){zoomable="yes"}
 
-Haga clic en **Publish**.
+Haga clic en **Publicar**.
 
 ![AEMCS](./images/aemcsassets5.png){zoomable="yes"}
 
@@ -232,7 +232,7 @@ A continuación, haga clic en la dirección URL del entorno de Author.
 
 ![AEMCS](./images/aemcssetup18.png){zoomable="yes"}
 
-Haga clic en **Iniciar sesión con el Adobe**.
+Haga clic en **Iniciar sesión con Adobe**.
 
 ![AEMCS](./images/aemcssetup19.png){zoomable="yes"}
 
@@ -278,7 +278,7 @@ Actualice la pantalla después de un par de minutos y verá el sitio web de Citi
 
 ![AEMCS](./images/aemcssetup38.png){zoomable="yes"}
 
-## 2.1.3.6 Sitio web de Publish CitiSignal
+## 2.1.3.6 Publicar el sitio web de CitiSignal
 
 A continuación, haga clic en la casilla de verificación que hay delante de **CitiSignal**. A continuación, haga clic en **Administrar publicación**.
 
@@ -296,7 +296,7 @@ Haga clic para seleccionar la casilla de verificación **Incluir elementos secun
 
 ![AEMCS](./images/aemcssetup42.png){zoomable="yes"}
 
-Haga clic en **Publish**.
+Haga clic en **Publicar**.
 
 ![AEMCS](./images/aemcssetup43.png){zoomable="yes"}
 
