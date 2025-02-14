@@ -4,9 +4,9 @@ description: Foundation - Ingesta de datos - Ingesta de datos desde fuentes sin 
 kt: 5342
 doc-type: tutorial
 exl-id: a4909a47-0652-453b-ae65-ba4c261f087c
-source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
+source-git-commit: fc5750ca614be30c3bd25b4f80ab45c5725a7649
 workflow-type: tm+mt
-source-wordcount: '1513'
+source-wordcount: '1562'
 ht-degree: 5%
 
 ---
@@ -53,6 +53,10 @@ En la plantilla, verá los siguientes campos:
 - country_code
 - ciudad
 - país
+- crmId
+- consent.email
+- consent.commercialEmail
+- consent.any
 
 Todos estos campos se han definido para producir datos compatibles con Platform.
 
@@ -68,7 +72,9 @@ Con el archivo CSV listo, puede continuar con la ingesta en AEP.
 
 ### Verificar el conjunto de datos
 
-Abra [Adobe Experience Platform](https://experience.adobe.com/platform) y vaya a **[!UICONTROL Conjuntos de datos]**.
+Vaya a [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
+
+![Ingesta de datos](./images/home.png)
 
 Antes de continuar, debe seleccionar una **[!UICONTROL zona protegida]**. La zona protegida que se va a seleccionar se denomina ``--aepSandboxName--``.
 
@@ -115,8 +121,6 @@ Cada esquema debe tener definido un descriptor principal personalizado. En el ca
 También puede ver que su identidad principal se encuentra en `--aepTenantId--.identification.core.crmId`, vinculada al [!UICONTROL espacio de nombres] de **[!UICONTROL Demo System - CRMID]**.
 
 ![Ingesta de datos](./images/schema_descriptor.png)
-
-
 
 Cada esquema y, como tal, cada conjunto de datos que debería usarse en [!UICONTROL Perfil del cliente en tiempo real] debería tener un [!UICONTROL identificador principal]. Este [!UICONTROL identificador principal] es el usuario identificador de la marca para un cliente en ese conjunto de datos. En el caso de un conjunto de datos de CRM, puede ser la dirección de correo electrónico o el ID de CRM; en el caso de un conjunto de datos de centro de llamadas, puede ser el número móvil de un cliente.
 
@@ -229,6 +233,24 @@ El campo de esquema de Source **id** debe estar vinculado al campo de destino **
 El campo de esquema de Source **last_name** debe estar vinculado al campo de destino **person.name.lastName**.
 
 ![Ingesta de datos](./images/tflname.png)
+
+#### consents.marketing.email.val
+
+El campo de esquema de Source **last_name** debe estar vinculado al campo de destino **conents.marketing.email.val**.
+
+![Ingesta de datos](./images/cons1.png)
+
+#### consents.marketing.commercialEmail.val
+
+El campo de esquema de Source **last_name** debe estar vinculado al campo de destino **conents.marketing.CommercialEmail.val**.
+
+![Ingesta de datos](./images/cons2.png)
+
+#### consents.marketing.any.val
+
+El campo de esquema de Source **last_name** debe estar vinculado al campo de destino **conents.marketing.any.val**.
+
+![Ingesta de datos](./images/cons3.png)
 
 Ahora debería tener esto. Haga clic en **Finalizar**.
 
