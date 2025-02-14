@@ -4,9 +4,9 @@ description: Foundation - Ingesta de datos - Configuración de esquemas y conjun
 kt: 5342
 doc-type: tutorial
 exl-id: 3cc1fbe3-1f40-45a3-a123-ee6f1463e7b5
-source-git-commit: 29d5892a98d7ac4b7d1dfe24c2b39549ee6d5c66
+source-git-commit: b78460ab562c2b435988942b219787ed07af24d4
 workflow-type: tm+mt
-source-wordcount: '3117'
+source-wordcount: '3102'
 ht-degree: 4%
 
 ---
@@ -61,13 +61,9 @@ Antes de continuar, debe seleccionar una **zona protegida**. La zona protegida q
 
 ![Ingesta de datos](./images/sb1.png)
 
-En Adobe Experience Platform, haga clic en **[!UICONTROL Esquemas]** en el menú de la izquierda de la pantalla. Verá la lista de [!UICONTROL esquemas] disponibles.
+En Adobe Experience Platform, haga clic en **[!UICONTROL Esquemas]** en el menú de la izquierda de la pantalla. Verá la lista de [!UICONTROL esquemas] disponibles. Debe crear un nuevo esquema. Para crear un nuevo esquema, haga clic en **[!UICONTROL + Crear esquema]**.
 
 ![Ingesta de datos](./images/menuschemas.png)
-
-Debe crear un nuevo esquema. Para crear un nuevo esquema, haga clic en **[!UICONTROL + Crear esquema]**.
-
-![Ingesta de datos](./images/createschema.png)
 
 Seleccione **Manual** y haga clic en **Seleccionar**.
 
@@ -156,8 +152,8 @@ Después de hacer clic en el botón **[!UICONTROL + Agregar campo]**, ahora ver�
 
 Ahora debe introducir la información de este nuevo campo, utilizando estas definiciones de objeto:
 
-- Nombre de campo: **[!UICONTROL identificación]**
-- Nombre para mostrar: **[!UICONTROL identificación]**
+- Nombre del campo: **`--aepUserLdap--_identification`**
+- Nombre para mostrar: **`--aepUserLdap--_identification`**
 - Tipo: **[!UICONTROL objeto]**
 - Grupo de campos: **`--aepUserLdap-- - Profile Identification Field Group`**
 
@@ -279,7 +275,7 @@ Su esquema está configurado para formar parte de [!UICONTROL Perfil del cliente
 
 ![Ingesta de datos](./images/sureyps.png)
 
-### ¿Qué hace un cliente?
+## ¿Qué hace este cliente?
 
 Registrando la respuesta a la pregunta **¿Qué hace este cliente?** para su organización se completó mediante, por ejemplo, una vista de producto en una página de producto.
 
@@ -291,7 +287,7 @@ Por lo tanto, cuando crea un [!UICONTROL esquema XDM] para capturar la respuesta
 
 Para especificar qué tipo de respuestas se pueden dar a esa pregunta, necesitará definir [!UICONTROL Grupo de campos]. [!UICONTROL Los grupos de campos] son extensiones de la clase [!UICONTROL ExperienceEvent] y tienen configuraciones muy específicas. Por ejemplo, la información sobre el tipo de productos que un cliente vio o agregó al carro de compras forma parte de [!UICONTROL Grupo de campos] **Detalles de Commerce**.
 
-En segundo lugar, su organización debe decidir cómo identificará el comportamiento de este cliente. Dado que se trata de interacciones en un sitio web, es posible que su organización conozca al cliente, pero también es posible que un visitante anónimo desconocido esté activo en el sitio web. Así que no podemos usar un identificador como email-address. En este caso, su organización probablemente decida usar el [!UICONTROL ID de Experience Cloud (ECID)] como identificador principal.
+En segundo lugar, su organización debe decidir cómo identificará el comportamiento de este cliente. Dado que se trata de interacciones en un sitio web, es posible que su organización conozca al cliente, pero también es posible que un visitante anónimo desconocido esté activo en el sitio web. Así que no podemos usar un identificador como email-address. En este caso, su organización probablemente decida usar el [!UICONTROL Experience Cloud ID (ECID)] como identificador principal.
 
 Por último, es importante distinguir el canal en el que se capturaron los datos. En este caso, se hablará de las interacciones del sitio web y el esquema que debe definirse debe reflejar **dónde** se capturaron los datos de interacción. El canal también tendrá un papel importante a la hora de influir en los datos que se capturan. Por lo tanto, es una práctica recomendada definir esquemas para cada combinación de canal, identificador principal y tipo de datos recopilados.
 
@@ -305,13 +301,9 @@ Antes de continuar, debe seleccionar una **[!UICONTROL zona protegida]**. La [!U
 
 ![Ingesta de datos](./images/sb1.png)
 
-En Adobe Experience Platform, haz clic en **[!UICONTROL Esquemas]** en el menú de la izquierda de la pantalla y ve a **Examinar**.
+En Adobe Experience Platform, haz clic en **[!UICONTROL Esquemas]** en el menú de la izquierda de la pantalla y ve a **Examinar**. Debe crear un nuevo esquema. Para crear un nuevo esquema, haga clic en el botón **[!UICONTROL + Crear esquema]**.
 
 ![Ingesta de datos](./images/menuschemas.png)
-
-En [!UICONTROL Esquemas], verá todos los esquemas existentes. Debe crear un nuevo esquema. Para crear un nuevo esquema, haga clic en el botón **[!UICONTROL + Crear esquema]**.
-
-![Ingesta de datos](./images/schemasee.png)
 
 Seleccione **Manual** y haga clic en **Seleccionar**.
 
@@ -390,8 +382,8 @@ Después de hacer clic en el botón **+**, ahora verá un nuevo campo sin títul
 
 Utilice esto para definir el nuevo campo:
 
-- Nombre de campo: **[!UICONTROL identificación]**
-- Nombre para mostrar: **[!UICONTROL identificación]**
+- Nombre del campo: **`--aepUserLdap--_identification`**
+- Nombre para mostrar: **`--aepUserLdap--_identification`**
 - Tipo: **[!UICONTROL objeto]**
 - Grupo de campos: `--aepUserLdap-- - ExperienceEvent Identification Field Group`
 

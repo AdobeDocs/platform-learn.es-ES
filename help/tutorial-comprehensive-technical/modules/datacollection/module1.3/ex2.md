@@ -4,9 +4,9 @@ description: Foundation - FAC - Crear esquemas, modelos de datos y vínculos
 kt: 5342
 doc-type: tutorial
 exl-id: e863ab3a-44df-4bb4-b081-a62616aaa1f1
-source-git-commit: e32d415d2997b43834e9fc2495c4394b13f4d49f
+source-git-commit: b78460ab562c2b435988942b219787ed07af24d4
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '649'
 ht-degree: 2%
 
 ---
@@ -132,7 +132,7 @@ Entonces verá esto... Haga clic en **Guardar**.
 
 ![CARA](./images/fdb16.png)
 
-### `--aepUserLdap--_PERSONS` - `--aepUserLdap--_USERS`
+### PERSONAS - USUARIOS
 
 Ahora puede empezar a definir vínculos entre esquemas. Para empezar a definir un vínculo, debe hacer clic en **Crear vínculos**.
 
@@ -144,7 +144,7 @@ Haga clic en **Agregar**.
 
 ![CARA](./images/fdb18.png)
 
-### `--aepUserLdap--_HOUSEHOLDS` - `--aepUserLdap--_PERSONS`
+### HOGARES - PERSONAS
 
 Entonces volverás a estar aquí. Haga clic en **Crear vínculos** para crear otro vínculo.
 
@@ -154,7 +154,7 @@ A continuación, definamos el vínculo entre la tabla `--aepUserLdap--_HOUSEHOLD
 
 ![CARA](./images/fdb19.png)
 
-### `--aepUserLdap--_USERS` - `--aepUserLdap--_MONTHLY_DATA_USAGE`
+### USUARIOS - MONTHLY_DATA_USAGE
 
 Entonces volverás a estar aquí. Haga clic en **Crear vínculos** para crear otro vínculo.
 
@@ -165,7 +165,7 @@ A continuación, definamos el vínculo entre la tabla `--aepUserLdap--_USERS` y 
 ![CARA](./images/fdb21.png)
 
 
-### `--aepUserLdap--_USERS` - `--aepUserLdap--_HOUSEHOLDS`
+### USUARIOS - HOGARES
 
 Entonces volverás a estar aquí. Haga clic en **Crear vínculos** para crear otro vínculo.
 
@@ -175,7 +175,7 @@ A continuación, definamos el vínculo entre la tabla `--aepUserLdap--_USERS` y 
 
 ![CARA](./images/fdb23.png)
 
-### `--aepUserLdap--_USERS` - `--aepUserLdap--_MOBILE_DATA_USAGE`
+### USUARIOS - MOBILE_DATA_USAGE
 
 Entonces volverás a estar aquí. Haga clic en **Crear vínculos** para crear otro vínculo.
 
