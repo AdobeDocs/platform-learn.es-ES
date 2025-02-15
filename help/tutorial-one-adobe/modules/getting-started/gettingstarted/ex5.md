@@ -4,9 +4,9 @@ description: 'Introducción: Uso de la aplicación móvil'
 kt: 5342
 doc-type: tutorial
 exl-id: a619dd84-5c9e-4c1e-a753-2d98f50f4cfb
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Usa la aplicación **Camera** de tu smartphone para instalar la aplicación móv
 
 >[!NOTE]
 >
->Después de instalar la aplicación por primera vez en un dispositivo iOS, es posible que aparezca un mensaje de error al intentar abrir la aplicación que dice: **Desarrollador empresarial que no es de confianza**. Para solucionarlo, tienes que ir a **Configuración > General > Administración de VPN y dispositivos > Adobe Systems Inc.** y hacer clic en **Confiar en Adobe Systems Inc.**.
+>Después de instalar la aplicación por primera vez en un dispositivo iOS, es posible que aparezca un mensaje de error al intentar abrir la aplicación que dice: **Desarrollador empresarial que no es de confianza**. Para solucionarlo, debe ir a **Configuración > General > Administración de VPN y dispositivos > Adobe Systems Inc.** y hacer clic en **Confiar en Adobe Systems Inc.**.
 
 Una vez que la aplicación esté instalada, la encontrarás en la pantalla de inicio del dispositivo. Haga clic en el icono para abrir la aplicación.
 
@@ -81,8 +81,10 @@ Ahora, vuelve a **Inicio** en la aplicación. La aplicación ya está lista para
 
 ![DSN](./images/mobileappn8.png)
 
-Ahora ha completado el módulo Introducción y está listo para empezar con los próximos ejercicios.
+## Pasos siguientes
 
-[Volver atrás a Introducción](./getting-started.md)
+Vaya a [Configurar el proyecto de Adobe I/O](./ex6.md)
 
-[Volver a todos los módulos](./../../../overview.md)
+Volver a [Introducción](./getting-started.md){target="_blank"}
+
+Volver a [Todos los módulos](./../../../overview.md){target="_blank"}

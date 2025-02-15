@@ -4,14 +4,14 @@ description: 'Introducción: Instale la extensión de Chrome para la documentaci
 kt: 5342
 doc-type: tutorial
 exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
 
-# Instale la extensión de Chrome para la documentación de Experience League
+# Instalación de la extensión de Chrome para la documentación de Experience League
 
 ## Acerca de la extensión Chrome
 
@@ -84,7 +84,7 @@ El ID de organización de IMS es el identificador único de la instancia de Adob
 
 La búsqueda del ID de organización de IMS se puede realizar de varias formas. Si no está seguro, consulte con uno de los administradores del sistema de su instancia para encontrar el ID.
 
-Puede encontrarlo si va a [Admin Console](https://https://adminconsole.adobe.com/), donde puede encontrarlo como parte de la dirección URL.
+Puede encontrarlo en [Admin Console](https://https://adminconsole.adobe.com/), donde puede encontrarlo como parte de la dirección URL.
 
 ![DSN](./images/aepid1.png)
 
@@ -143,8 +143,10 @@ Ahora debería tener una vista similar a la siguiente, donde la variable de ento
 
 ![DSN](./images/mod7.png)
 
-Paso siguiente: [Use el sistema de demostración siguiente para configurar la propiedad de cliente de recopilación de datos de Adobe Experience Platform](./ex2.md)
+## Pasos siguientes
 
-[Volver atrás a Introducción](./getting-started.md)
+Vaya a [Usar el sistema de demostración siguiente para configurar la propiedad de cliente de recopilación de datos de Adobe Experience Platform](./ex2.md)
 
-[Volver a todos los módulos](./../../../overview.md)
+Volver a [Introducción](./getting-started.md){target="_blank"}
+
+Volver a [Todos los módulos](./../../../overview.md){target="_blank"}

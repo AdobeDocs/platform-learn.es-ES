@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: d33df99e9c75e7d5feef503b68174b93860ac245
+source-git-commit: f20a4fc49cc3f3ac411e4017179d0ae2f83df9c3
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '939'
 ht-degree: 0%
 
 ---
@@ -53,10 +53,6 @@ El proyecto de Adobe I/O ahora se actualiza para que funcione con las API de Pho
 
 ## 1.1.3.2 Interactuar mediante programación con un archivo de PSD
 
->[!IMPORTANT]
->
->Si eres empleado de Adobe, sigue las instrucciones aquí para usar [PostBuster](./../../../postbuster.md).
-
 1. Descargue [citisignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd){target="_blank"} en su escritorio.
 
 1. Abra **citisignal-fiber.psd** en Photoshop.
@@ -73,25 +69,25 @@ Enviemos su primera solicitud de API a las API de Photoshop.
 
 `openid,session,AdobeID,read_organizations,additional_info.projectedProductContext, ff_apis, firefly_api`
 
-1. Select **Send**.
+1. Seleccione **Enviar**.
 
-![Azure Storage](./images/ps8.png){zoomable="yes"}
+![Almacenamiento de Azure](./images/ps8.png){zoomable="yes"}
 
-Now you have a valid access token to interact with Photoshop APIs.
+Ahora tiene un token de acceso válido para interactuar con las API de Photoshop.
 
 ![Almacenamiento de Azure](./images/ps9.png){zoomable="yes"}
 
 ### API de Photoshop: Hello World
 
-Next, let&#39;s say hello to Photoshop APIs to test if all permissions and access is set correctly.
+A continuación, saludemos a las API de Photoshop para comprobar si todos los permisos y accesos están correctamente configurados.
 
-1. In the collection **Photoshop**, open the request  **Photoshop Hello (Test Auth.)**. Select **Send**.
+1. En la colección **Photoshop**, abra la solicitud **Photoshop Hello (Autenticación de prueba).**. Seleccione **Enviar**.
 
-![Azure Storage](./images/ps10.png){zoomable="yes"}
+![Almacenamiento de Azure](./images/ps10.png){zoomable="yes"}
 
-You should receive the response **Welcome to the Photoshop API!**.
+Debería recibir la respuesta **Bienvenido a la API de Photoshop!**.
 
-![Azure Storage](./images/ps11.png){zoomable="yes"}
+![Almacenamiento de Azure](./images/ps11.png){zoomable="yes"}
 
 A continuación, para interactuar mediante programación con el archivo PSD **citisignal-fiber.psd**, debe cargarlo en su cuenta de almacenamiento. Puede hacerlo manualmente (arrastrándolo y soltándolo en el contenedor mediante el Explorador de almacenamiento de Azure), pero esta vez debe hacerlo a través de la API.
 
@@ -108,25 +104,25 @@ Como puede ver en la solicitud **Cargar PSD a la cuenta de almacenamiento de Azu
 
 ![Almacenamiento de Azure](./images/ps12.png){zoomable="yes"}
 
-1. In **Body**, select the file **citisignal-fiber.psd**.
+1. En **Cuerpo**, seleccione el archivo **citisignal-fiber.psd**.
 
-![Azure Storage](./images/ps13.png){zoomable="yes"}
+![Almacenamiento de Azure](./images/ps13.png){zoomable="yes"}
 
-1. Your screen should look like this. Select **Send**.
+1. La pantalla debería tener un aspecto similar al siguiente. Seleccione **Enviar**.
 
-![Azure Storage](./images/ps14.png){zoomable="yes"}
+![Almacenamiento de Azure](./images/ps14.png){zoomable="yes"}
 
-You should get this empty response back from Azure, which means that your file is stored in your container in your Azure Storage account.
+Debe recuperar esta respuesta vacía de Azure, lo que significa que el archivo se almacena en el contenedor de su cuenta de almacenamiento de Azure.
 
-![Azure Storage](./images/ps15.png){zoomable="yes"}
+![Almacenamiento de Azure](./images/ps15.png){zoomable="yes"}
 
-If you use Azure Storage Explorer to look at your file, be sure to refresh your folder.
+Si utiliza el Explorador de almacenamiento de Azure para ver el archivo, asegúrese de actualizar la carpeta.
 
-![Azure Storage](./images/ps16.png){zoomable="yes"}
+![Almacenamiento de Azure](./images/ps16.png){zoomable="yes"}
 
-### Photoshop API - Get manifest
+### API de Photoshop: Obtener manifiesto
 
-Next, you need to get the manifest file of your PSD file.
+A continuación, debe obtener el archivo de manifiesto del archivo PSD.
 
 1. En Postman, abra la solicitud **Photoshop - Obtener manifiesto de PSD**. Ir a **Cuerpo**.
 
@@ -213,7 +209,7 @@ La pantalla debería tener un aspecto similar al siguiente:
 }
 ```
 
-The output file has a different name, because you don&#39;t want to override the original input file.
+El nombre del archivo de salida es distinto porque no se desea reemplazar el archivo de entrada original.
 
 1. Seleccione **Enviar**.
 
@@ -225,17 +221,17 @@ Al igual que antes, la respuesta contiene un vínculo que apunta al archivo de e
 
 1. Para leer el archivo de estado, abre la solicitud **Photoshop - Obtener estado de PS** y selecciona **Enviar**. Si el estado no se establece en **correcto** inmediatamente, espere un par de segundos y, a continuación, seleccione **Enviar** de nuevo.
 
-1. Select the URL to download the output file.
+1. Seleccione la URL para descargar el archivo de salida.
 
-![Azure Storage](./images/ps24.png){zoomable="yes"}
+![Almacenamiento de Azure](./images/ps24.png){zoomable="yes"}
 
-1. Open **citisignal-fiber-changed-text.psd** after downloading the file to your computer. Debería ver que el marcador de posición de la llamada a la acción se ha reemplazado con el texto **Obtener fibra ahora!**.
+1. Abra **citisignal-fiber-changed-text.psd** después de descargar el archivo en el equipo. Debería ver que el marcador de posición de la llamada a la acción se ha reemplazado con el texto **Obtener fibra ahora!**.
 
 ![Almacenamiento de Azure](./images/ps25.png){zoomable="yes"}
 
 También puede ver este archivo en el contenedor mediante el Explorador de almacenamiento de Azure.
 
-![Azure Storage](./images/ps26.png){zoomable="yes"}
+![Almacenamiento de Azure](./images/ps26.png){zoomable="yes"}
 
 ## Pasos siguientes
 

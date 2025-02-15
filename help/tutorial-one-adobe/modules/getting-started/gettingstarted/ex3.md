@@ -4,9 +4,9 @@ description: 'Introducción: Creación de una secuencia de datos'
 kt: 5342
 doc-type: tutorial
 exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '827'
 ht-degree: 1%
 
 ---
@@ -173,8 +173,10 @@ Los cambios se están publicando y estarán listos en un par de minutos. Despué
 
 ![Asigne un nombre a la configuración de Edge y guarde](./images/edgeconfig17ma.png)
 
-Paso siguiente: [Usar el sitio web](./ex4.md)
+## Pasos siguientes
 
-[Volver atrás a Introducción](./getting-started.md)
+Ir a [Usar el sitio web](./ex4.md)
 
-[Volver a todos los módulos](./../../../overview.md)
+Volver a [Introducción](./getting-started.md){target="_blank"}
+
+Volver a [Todos los módulos](./../../../overview.md){target="_blank"}

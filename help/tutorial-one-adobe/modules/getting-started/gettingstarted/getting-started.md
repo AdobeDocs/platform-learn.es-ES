@@ -1,13 +1,13 @@
 ---
-title: 'Primeros pasos: un Adobe'
-description: 'Primeros pasos: un Adobe'
+title: 'Primeros pasos: One Adobe'
+description: 'Primeros pasos: One Adobe'
 kt: 5342
 doc-type: tutorial
 exl-id: 4b85938e-b7ee-4e05-b73d-112917beea08
-source-git-commit: 7b76e7714d2a390d84393ce21a19063b56508ac1
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 3%
+source-wordcount: '318'
+ht-degree: 2%
 
 ---
 
@@ -28,7 +28,7 @@ En este módulo configurará todo para que pueda recopilar datos, acceder al ent
 
 ## Ejercicios
 
-[Instale la extensión de Chrome para la documentación de Experience League](./ex1.md)
+[Instalación de la extensión de Chrome para la documentación de Experience League](./ex1.md)
 
 En este ejercicio instalará y configurará la extensión de Chrome para poder utilizarla y personalizar el contenido del tutorial.
 
@@ -47,6 +47,26 @@ En este ejercicio configurará el sitio web para que pueda utilizarlo para demos
 [Uso de la aplicación móvil](./ex5.md)
 
 En este ejercicio configurará la aplicación móvil para que pueda utilizarla para demostraciones y activación.
+
+[Configuración del proyecto de Adobe I/O](./ex6.md)
+
+En este ejercicio configurará el proyecto de Adobe I/O que se utilizará para interactuar con varios extremos de API de Adobe.
+
+[Opción 1: configuración de Postman](./ex7.md)
+
+>[!NOTE]
+>
+>Si no es empleado de Adobe, siga las instrucciones para instalar Postman.
+
+En este ejercicio preparará su entorno de Postman para interactuar con varios extremos de API de Adobe
+
+[Opción 2: configuración de PostBuster](./ex8.md)
+
+>[!NOTE]
+>
+>Si usted es un empleado de Adobe, siga las instrucciones para instalar PostBuster!
+
+En este ejercicio preparará su entorno PostBuster para interactuar con varios extremos de API de Adobe
 
 ![Perspectivas técnicas](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 

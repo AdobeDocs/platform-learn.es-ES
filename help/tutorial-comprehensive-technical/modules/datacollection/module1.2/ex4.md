@@ -4,7 +4,7 @@ description: Foundation - Ingesta de datos - Ingesta de datos desde fuentes sin 
 kt: 5342
 doc-type: tutorial
 exl-id: a4909a47-0652-453b-ae65-ba4c261f087c
-source-git-commit: fc5750ca614be30c3bd25b4f80ab45c5725a7649
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
 source-wordcount: '1562'
 ht-degree: 5%
@@ -236,19 +236,19 @@ El campo de esquema de Source **last_name** debe estar vinculado al campo de des
 
 #### consents.marketing.email.val
 
-El campo de esquema de Source **last_name** debe estar vinculado al campo de destino **conents.marketing.email.val**.
+El campo de esquema de Source **permission.email** debe estar vinculado al campo de destino **conents.marketing.email.val**.
 
 ![Ingesta de datos](./images/cons1.png)
 
 #### consents.marketing.commercialEmail.val
 
-El campo de esquema de Source **last_name** debe estar vinculado al campo de destino **conents.marketing.CommercialEmail.val**.
+El campo de esquema de Source **permission.CommercialEmail** debe estar vinculado al campo de destino **conents.marketing.CommercialEmail.val**.
 
 ![Ingesta de datos](./images/cons2.png)
 
 #### consents.marketing.any.val
 
-El campo de esquema de Source **last_name** debe estar vinculado al campo de destino **conents.marketing.any.val**.
+El campo de esquema de Source **permission.any** debe estar vinculado al campo de destino **conents.marketing.any.val**.
 
 ![Ingesta de datos](./images/cons3.png)
 
