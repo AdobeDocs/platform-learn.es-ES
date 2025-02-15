@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: f20a4fc49cc3f3ac411e4017179d0ae2f83df9c3
+source-git-commit: 07c890d1f3e5dbcec5b3a81badb9a7147eed72db
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1442'
 ht-degree: 1%
 
 ---
@@ -290,6 +290,8 @@ Para leer archivos mediante programación de cuentas de almacenamiento de Azure 
 
 1. En **Permisos**, seleccione los siguientes permisos necesarios:
 
+   - **Leer**
+   - **Lista**
    - **Agregar**
    - **Create**
    - **Write**
@@ -326,7 +328,7 @@ A continuación, debe crear variables en Postman que almacenen los distintos ele
 - `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
 - `AZURE_STORAGE_SAS_WRITE`: `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
 
-Para futuras interacciones de API, lo principal que cambia es el nombre del recurso, mientras que las variables anteriores siguen siendo las mismas. En ese caso, tiene sentido crear variables en Postman para que no tenga que especificarlas manualmente cada vez.
+Para futuras interacciones de API, lo principal que cambia es el nombre del recurso, mientras que las variables anteriores siguen siendo las mismas. En ese caso, tiene sentido crear variables en Postman para que no necesite especificarlas manualmente cada vez.
 
 1. En Postman, seleccione **Entornos**, abra **Todas las variables** y seleccione **Entorno**.
 
@@ -343,11 +345,36 @@ Para futuras interacciones de API, lo principal que cambia es el nombre del recu
 
    ![Almacenamiento de Azure](./images/az105.png){zoomable="yes"}
 
-   En uno de los ejercicios anteriores, **Body** de su solicitud **Firefly - T2I (styleref) V3** tenía este aspecto:
+### Variables en PostBuster
 
-   `"url": "https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D"`
+Como puede ver en la sección anterior, hay algunas variables comunes en el token de lectura y en el token de escritura.
 
-   ![Almacenamiento de Azure](./images/az24.png){zoomable="yes"}
+A continuación, debe crear variables en PostBuster que almacenen los distintos elementos de los tokens SAS anteriores. Hay algunos valores que son los mismos en ambas direcciones URL:
+
+- `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`: `vangeluw`
+- `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_SAS_WRITE`: `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+Abra PostBuster. Seleccione **Entorno base** y haga clic en el icono **editar** para abrir el Entorno base.
+
+![Almacenamiento de Azure](./images/pbbe1.png)
+
+A continuación, verá 4 variables vacías. Introduzca los detalles de su cuenta de almacenamiento de Azure aquí.
+
+![Almacenamiento de Azure](./images/pbbe2.png)
+
+El archivo de entorno base debería tener un aspecto similar al siguiente. Haga clic en **Cerrar**.
+
+![Almacenamiento de Azure](./images/pbbe3.png)
+
+### Pruebe la configuración
+
+En uno de los ejercicios anteriores, **Body** de su solicitud **Firefly - T2I (styleref) V3** tenía este aspecto:
+
+    `&quot;url&quot;: &quot;https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&amp;st=2025-01-13T07%3A16%3A52Z&amp;se=2026-01-14T07%3A16%3A00Z&amp;sr=b&amp;sp=r&amp;sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D&quot;`
+    
+    ![Almacenamiento de Azure](./images/az24.png){zoomable="yes"}
 
 1. Cambie la dirección URL a:
 
