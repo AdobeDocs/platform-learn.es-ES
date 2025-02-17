@@ -3,7 +3,7 @@ title: CSC Bootcamp - Otros pre-trabajo
 description: CSC Bootcamp - Otros pre-trabajo
 doc-type: multipage-overview
 exl-id: 76546141-68d5-4f09-b44a-e06cc08bbaa7
-source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 0%
@@ -24,11 +24,11 @@ Como se describe en el informe creativo, hay algunos activos que se necesitarán
 
 ![agregar documento](./images/wf-add-new-doc.png)
 
-- Seleccione &quot;De experience-manager&quot;, lo que nos permite elegir los activos de marca que ya están disponibles en AEM Assets:
+- Seleccione &quot;De experience-manager&quot;, lo que nos permite elegir los activos de marca que ya están disponibles en los AEM Assets:
 
 ![de experience-manager](./images/wf-from-aem.png)
 
-- AEM Una vez que aparezca la jerarquía de carpetas de la, vaya a la siguiente ruta: experience-manager > Adobe Assets > Bike shots Seleccione 5 recursos y haga clic en &quot;Vincular&quot;.
+- Una vez que aparezca la jerarquía de carpetas de AEM, vaya a la siguiente ruta: experience-manager > Adobe Assets > Bike shots Seleccione 5 recursos y haga clic en &quot;Vincular&quot;.
 
 ![recursos seleccionados](./images/selected-assets.png)
 
@@ -43,7 +43,7 @@ Adobe Commerce es uno de los muchos productos de Adobe Experience Cloud que pued
 
 Este vídeo le hará familiarizarse con Adobe Commerce y le mostrará el producto que hemos creado para utilizarlo durante el bootcamp. En un escenario en tiempo real, cargaría los recursos de marca seleccionados anteriormente en Adobe Commerce a la configuración del producto.
 
->[!VIDEO](https://video.tv.adobe.com/v/3418945?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418945?quality=12&learn=on&enablevpops)
 
 Una vez completada esta tarea, puede marcar la tarea 3 como completada al 100 % en Workfront.
 

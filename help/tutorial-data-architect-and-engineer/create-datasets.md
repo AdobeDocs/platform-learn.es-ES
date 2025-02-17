@@ -8,7 +8,7 @@ feature: Data Management
 jira: KT-4348
 thumbnail: 4348-create-datasets.jpg
 exl-id: 80227af7-4976-4fd2-b1d4-b26bc4626fa0
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 6%
@@ -26,7 +26,7 @@ Todos los datos que se incorporan correctamente a Adobe Experience Platform se c
 **Los arquitectos de datos** deberán crear conjuntos de datos fuera de este tutorial.
 
 Antes de comenzar los ejercicios, vea este breve vídeo para obtener más información sobre los conjuntos de datos:
->[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on&enablevpops)
 
 ## Permisos necesarios
 
@@ -119,7 +119,7 @@ Ahora puede crear el conjunto de datos:
 > * `400: There was a problem retrieving xdm schema`. Asegúrese de haber reemplazado el ID del ejemplo anterior por el ID suyo propio `Luma CRM Schema`
 > * Sin token de autenticación: ejecute la solicitud **OAuth: Solicitar token de acceso** para generar un nuevo token
 > * `401: Not Authorized to PUT/POST/PATCH/DELETE for this path : /global/schemas/`: actualizar la variable de entorno **CONTAINER_ID** de `global` a `tenant`
-> * `403: PALM Access Denied. POST access is denied for this resource from access control`: compruebe los permisos de usuario en el Admin Console
+> * `403: PALM Access Denied. POST access is denied for this resource from access control`: compruebe sus permisos de usuario en Admin Console
 
 
 Puede volver a la pantalla **[!UICONTROL Conjuntos de datos]** en la interfaz de usuario de Platform y comprobar que los cinco conjuntos de datos se hayan creado correctamente.

@@ -9,7 +9,7 @@ solution: Customer Journey Analytics
 feature-set: Customer Journey Analytics
 feature: Connections, Data Views, Workspace Basics, Calculated Metrics, Visualizations, Audiences
 exl-id: cd4b423c-cd0b-44cf-8ac7-23c25876457c
-source-git-commit: 901b90ca165a74bbc4f871469222064b70d0a20a
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 1%
@@ -24,14 +24,14 @@ Customer Journey Analytics proporciona un conjunto de herramientas a los equipos
 
 Eche un vistazo a este vídeo para comprender el valor, el recorrido del cliente y el proceso de configuración:
 
->[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on&enablevpops)
 
-Encontrará más información sobre el Customer Journey Analytics [aquí](https://spark.adobe.com/page/t62eiRu9l6iWJ/).
+Encontrará más información sobre Customer Journey Analytics [aquí](https://spark.adobe.com/page/t62eiRu9l6iWJ/).
 
 ## Objetivos de aprendizaje
 
 - Familiarícese con la IU de Customer Journey Analytics
-- Inclusión de conjuntos de datos de Adobe Experience Platform en Customer Journey Analytics
+- Introducción de conjuntos de datos de Adobe Experience Platform en Customer Journey Analytics
 - Explicación del ID de persona y la vinculación de datos en Customer Journey Analytics
 - Comprender los conceptos de conexión de datos y vista de datos
 - Uso de Analysis Workspace con conjuntos de datos de Adobe Experience Platform
@@ -40,11 +40,11 @@ Encontrará más información sobre el Customer Journey Analytics [aquí](https:
 
 - Se prefiere estar algo familiarizado con Analysis Workspace, pero no es obligatorio
 - Acceso a Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Acceso a la aplicación del Customer Journey Analytics
+- Acceso a la aplicación de Customer Journey Analytics
 
 >[!IMPORTANT]
 >
->Este tutorial se ha creado para facilitar un formato de bootcamp concreto. Utiliza sistemas y cuentas específicos a los que podría no tener acceso. Incluso sin acceso, creemos que aún puede aprender mucho leyendo este contenido tan detallado. Si usted es un participante en uno de los bootcamp y necesita sus credenciales de acceso, por favor póngase en contacto con su representante de Adobe que le proporcionará la información requerida.
+>Este tutorial se ha creado para facilitar un formato de bootcamp concreto. Utiliza sistemas y cuentas específicos a los que podría no tener acceso. Incluso sin acceso, creemos que aún puede aprender mucho leyendo este contenido tan detallado. Si participa en uno de los campamentos de arranque y necesita sus credenciales de acceso, póngase en contacto con su representante de Adobe, que le proporcionará la información necesaria.
 
 ## Ejercicios
 
@@ -64,7 +64,7 @@ Obtenga información sobre cómo configurar una vista de datos en Customer Journ
 
 Aprenda a preparar los datos antes de continuar con el análisis.
 
-[4.5 Visualización con el Customer Journey Analytics](./ex5.md)
+[4.5 Visualización mediante Customer Journey Analytics](./ex5.md)
 
 Obtenga información sobre cómo visualizar datos de Adobe Experience Platform mediante Customer Journey Analytics.
 

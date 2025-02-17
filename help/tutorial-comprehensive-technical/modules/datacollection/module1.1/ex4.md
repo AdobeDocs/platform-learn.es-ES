@@ -1,10 +1,10 @@
 ---
-title: 'Foundation: configuración de la recopilación de datos de Adobe Experience Platform y de la extensión del SDK web: recopilación de datos web del lado del cliente'
-description: 'Foundation: configuración de la recopilación de datos de Adobe Experience Platform y de la extensión del SDK web: recopilación de datos web del lado del cliente'
+title: 'Foundation: configuración de la recopilación de datos de Adobe Experience Platform y de la extensión Web SDK: recopilación de datos web del lado del cliente'
+description: 'Foundation: configuración de la recopilación de datos de Adobe Experience Platform y de la extensión Web SDK: recopilación de datos web del lado del cliente'
 kt: 5342
 doc-type: tutorial
 exl-id: dce7f1b5-72ca-41b2-9aa8-41c13ce25c82
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## Validar los datos de la solicitud
 
-### Instalación del Adobe Experience Platform Debugger
+### Instalación de Adobe Experience Platform Debugger
 
 Experience Platform Debugger es una extensión disponible para los navegadores Chrome y Firefox que permite ver la tecnología de Adobe implementada en las páginas web. Instale la versión de su navegador preferido:
 
@@ -25,7 +25,7 @@ Experience Platform Debugger es una extensión disponible para los navegadores C
 
 Adobe Experience Cloud Si nunca antes ha utilizado Debugger (y este es diferente del anterior), puede que desee ver este vídeo de información general de cinco minutos:
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on&enablevpops)
 
 Dado que cargará el sitio web de demostración en modo incógnito, debe asegurarse de que Experience Platform Debugger también esté disponible en modo incógnito. Para ello, vaya a **chrome://extensions** en el explorador y abra la extensión de Experience Platform Debugger.
 
@@ -88,19 +88,19 @@ Confirme que Debugger está **[!UICONTROL conectado a la página principal]**, c
 
 A continuación, vaya a cualquier página del sitio web de demostración, como la página de categoría **Planes**.
 
-![Extensión del SDK web de AEP de AEP Debugger](./images/validate4.png)
+![Extensión de AEP Web SDK de AEP Debugger](./images/validate4.png)
 
-Ahora haga clic en **[!UICONTROL SDK web de Experience Platform]** en el panel de navegación izquierdo para ver las **[!UICONTROL solicitudes de red]**.
+Ahora haga clic en **[!UICONTROL Experience Platform Web SDK]** en el panel de navegación izquierdo para ver las **[!UICONTROL solicitudes de red]**.
 
 Cada solicitud contiene una fila **[!UICONTROL events]**.
 
-![Extensión del SDK web de AEP de AEP Debugger](./images/validate5.png)
+![Extensión de AEP Web SDK de AEP Debugger](./images/validate5.png)
 
-Haga clic para abrir una fila **[!UICONTROL events]**. Observe cómo puede ver el evento **web.webpagedetails.pageViews**, así como otras variables integradas que se adhieren al formato **Web SDK ExperienceEvent XDM**.
+Haga clic para abrir una fila **[!UICONTROL events]**. Observe cómo puede ver el evento **web.webpagedetails.pageViews**, así como otras variables integradas que se ajustan al formato **Web SDK ExperienceEvent XDM**.
 
 ![Valor de eventos](./images/validate8.png)
 
-Estos tipos de detalles de solicitud también están visibles en la pestaña Red (Network). Filtre las solicitudes con **interaction** para localizar las solicitudes enviadas por el SDK web. Puede encontrar todos los detalles de la carga útil XDM en la sección Carga útil:
+Estos tipos de detalles de solicitud también están visibles en la pestaña Red (Network). Filtre las solicitudes con **interaction** para localizar las solicitudes enviadas por Web SDK. Puede encontrar todos los detalles de la carga útil XDM en la sección Carga útil:
 
 ![Ficha Red](./images/validate9.png)
 

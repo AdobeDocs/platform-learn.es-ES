@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-14689
 last-substantial-update: 2023-12-15T00:00:00Z
 exl-id: 4bd28867-b664-4a45-8892-91af821cbbcc
-source-git-commit: eae0910e2475ce20f7afd289005b6a8869eaa210
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 0%
@@ -16,9 +16,9 @@ ht-degree: 0%
 
 # Añadir desarrolladores y conceder permisos a credenciales de API
 
-Aprenda a añadir desarrolladores a aplicaciones basadas en Adobe Experience Platform como Real-time Customer Data Platform y Journey Optimizer. Los desarrolladores se añaden primero a Admin Console. Una vez que hayan creado su proyecto de Platform en Developer Console, las credenciales de la API se asignan con permisos en Platform o en la interfaz de Journey Optimizer. Para obtener más información, visite la [documentación de control de acceso](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=es).
+Aprenda a añadir desarrolladores a aplicaciones basadas en Adobe Experience Platform como Real-Time Customer Data Platform y Journey Optimizer. Los desarrolladores se agregan primero a Admin Console. Una vez que hayan creado su proyecto de Platform en Developer Console, las credenciales de la API se asignan con permisos en Platform o en la interfaz de Journey Optimizer. Para obtener más información, visite la [documentación de control de acceso](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/3426407?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3426407?learn=on&enablevpops)
 
 >[!ADMIN]
 >

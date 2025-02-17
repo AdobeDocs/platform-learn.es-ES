@@ -8,7 +8,7 @@ feature: Schemas
 jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: 63987fb652a653283a05a5f35f7ce670127ae905
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '2619'
 ht-degree: 1%
@@ -24,7 +24,7 @@ La estandarización y la interoperabilidad son conceptos clave detrás de Adobe 
 
 XDM es una especificación documentada públicamente y diseñada para mejorar la potencia de las experiencias digitales. Proporciona estructuras y definiciones comunes para cualquier aplicación que se utilice para comunicarse con los servicios de Platform. Al adherirse a los estándares XDM, todos los datos de experiencia del cliente se pueden incorporar en una representación común que puede ofrecer perspectivas de una manera más rápida e integrada. Puede obtener información valiosa de las acciones de los clientes, definir las audiencias de los clientes mediante segmentos y expresar los atributos del cliente con fines de personalización.
 
-XDM es el marco de trabajo básico que permite a Adobe Experience Cloud, con tecnología de Experience Platform, enviar el mensaje correcto a la persona adecuada, en el canal correcto, en el momento exacto. La metodología en la que se ha creado el Experience Platform, **Sistema XDM**, pone en funcionamiento los esquemas del modelo de datos de experiencia para que los usen los servicios de Platform.
+XDM es el marco de trabajo básico que permite a Adobe Experience Cloud, con tecnología Experience Platform, entregar el mensaje correcto a la persona adecuada, en el canal correcto, en el momento justo. La metodología en la que se ha creado Experience Platform, **Sistema XDM**, pone en funcionamiento esquemas del Modelo de datos de experiencia para que los usen los servicios de Platform.
 
 <!--
 This seems too lengthy. The video should suffice
@@ -43,7 +43,7 @@ Key terms:
 **Los arquitectos de datos** tendrán que crear esquemas fuera de este tutorial, pero **los ingenieros de datos** trabajarán de cerca con los esquemas creados por el arquitecto de datos.
 
 Antes de comenzar los ejercicios, vea este breve vídeo para obtener más información sobre los esquemas y el modelo de datos de experiencia (XDM):
->[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on&enablevpops)
 
 >[!TIP]
 >
@@ -84,7 +84,7 @@ En este ejercicio, crearemos un esquema para los datos de fidelidad de Luma.
 
 ### Adición de grupos de campos estándar
 
-Una vez creado el esquema, se le redirigirá al Editor de esquemas, donde puede agregar campos al esquema. Puede agregar campos individuales directamente al esquema o utilizar grupos de campos. Es importante tener en cuenta que todos los campos individuales siguen estando asociados a una clase o grupo de campos. Puede elegir entre un gran conjunto de grupos de campos estándar del sector proporcionados por Adobe o crear los suyos propios. A medida que empiece a modelar sus propios datos en Experience Platform, es bueno familiarizarse con los grupos de campo estándar del sector que proporciona Adobe. Siempre que sea posible, se recomienda utilizarlos, ya que a veces alimentan servicios descendentes, como inteligencia artificial aplicada al cliente, Attribution AI y Adobe Analytics.
+Una vez creado el esquema, se le redirigirá al Editor de esquemas, donde puede agregar campos al esquema. Puede agregar campos individuales directamente al esquema o utilizar grupos de campos. Es importante tener en cuenta que todos los campos individuales siguen estando asociados a una clase o grupo de campos. Puede elegir entre un gran conjunto de grupos de campos estándar del sector proporcionados por Adobe o crear los suyos propios. A medida que empiece a modelar sus propios datos en Experience Platform, conviene familiarizarse con los grupos de campos estándar del sector que proporciona Adobe. Siempre que sea posible, se recomienda utilizarlos, ya que a veces alimentan servicios descendentes, como inteligencia artificial aplicada al cliente, inteligencia artificial aplicada a la atribución y Adobe Analytics.
 
 Al trabajar con sus propios datos, un paso significativo será determinar cuáles de sus propios datos deben capturarse en Platform y cómo deben modelarse. Este gran tema se analiza con más detalle en la lista de reproducción [Modelar los datos de la experiencia del cliente con XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm). En este tutorial, solo le guiaré a través de la implementación de algunos esquemas predeterminados.
 
@@ -231,7 +231,7 @@ Primero creamos el esquema vacío:
 >
 > * Sin token de autenticación: ejecute la solicitud **OAuth: Solicitar token de acceso** para generar un nuevo token
 > * `401: Not Authorized to PUT/POST/PATCH/DELETE for this path : /global/schemas/`: actualizar la variable de entorno **CONTAINER_ID** de `global` a `tenant`
-> * `403: PALM Access Denied. POST access is denied for this resource from access control`: compruebe los permisos de usuario en el Admin Console
+> * `403: PALM Access Denied. POST access is denied for this resource from access control`: compruebe sus permisos de usuario en Admin Console
 
 ### Adición de grupos de campos estándar
 
@@ -325,12 +325,12 @@ Ahora vamos a crear un esquema más para los datos del sitio web de Luma. En est
 |---------------|-----------------|
 | Clase | Evento de experiencia |
 | Nombre del esquema | Esquema de eventos web de Luma |
-| Grupo de campo | ExperienceEvent del SDK web de AEP |
+| Grupo de campo | ExperienceEvent de SDK web de AEP |
 | Grupo de campo | Evento de experiencia del consumidor |
 
-Seleccione el grupo de campos **[!UICONTROL Evento de experiencia del consumidor]**. Este grupo de campos contiene los objetos commerce y productListItems que también estaban en [!UICONTROL Detalles de Commerce]. De hecho, [!UICONTROL Evento de experiencia del consumidor] es una combinación de otros grupos de campos estándar que también están disponibles por separado. El grupo de campos [!UICONTROL ExperienceEvent] del SDK web de AEP también contiene otros grupos de campos, incluidos algunos de los mismos en [!UICONTROL Evento de experiencia del consumidor]. Afortunadamente, se mezclan sin problemas.
+Seleccione el grupo de campos **[!UICONTROL Evento de experiencia del consumidor]**. Este grupo de campos contiene los objetos commerce y productListItems que también estaban en [!UICONTROL Detalles de Commerce]. De hecho, [!UICONTROL Evento de experiencia del consumidor] es una combinación de otros grupos de campos estándar que también están disponibles por separado. El grupo de campos [!UICONTROL AEP Web SDK ExperienceEvent] también contiene otros grupos de campos, incluidos algunos de los mismos en [!UICONTROL Evento de experiencia del consumidor]. Afortunadamente, se mezclan sin problemas.
 
-Observe que no se agregó `Luma Identity ExperienceEvent field group` a este esquema. Esto se debe a que el SDK web tiene una forma diferente de recopilar identidades. Si selecciona la clase **[!UICONTROL XDM ExperienceEvent]** en la sección **[!UICONTROL Composition]** del editor de esquemas, verá que uno de los campos que agrega de forma predeterminada se llama **[!UICONTROL IdentityMap]**. Varias aplicaciones de Adobe utilizan [!DNL IdentityMap] para vincularse a Platform. Verá cómo se envían las identidades a Platform a través de identityMap en la lección de ingesta de transmisión.
+Observe que no se agregó `Luma Identity ExperienceEvent field group` a este esquema. Esto se debe a que Web SDK tiene una forma diferente de recopilar identidades. Si selecciona la clase **[!UICONTROL XDM ExperienceEvent]** en la sección **[!UICONTROL Composition]** del editor de esquemas, verá que uno de los campos que agrega de forma predeterminada se llama **[!UICONTROL IdentityMap]**. Varias aplicaciones de Adobe utilizan [!DNL IdentityMap] para vincularse a Platform. Verá cómo se envían las identidades a Platform a través de identityMap en la lección de ingesta de transmisión.
 
 
 ## Crear esquema de catálogo de productos

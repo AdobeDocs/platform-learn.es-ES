@@ -1,5 +1,5 @@
 ---
-title: información general de Adobe Experience Platform Debugger
+title: Información general de Adobe Experience Platform Debugger
 description: Aprenda cómo la extensión para Chrome y el complemento de Firefox de Adobe Experience Platform Debugger le ayudan a depurar las implementaciones web del SDK web de Adobe Experience Platform, Adobe Analytics, Adobe Target, Adobe Audience Manager, etiquetas y muchos más.
 landing-page-description: Depure las implementaciones web del SDK web y las aplicaciones de Experience Cloud de Adobe Experience Platform.
 short-description: Depure las implementaciones web del SDK web y las aplicaciones de Experience Cloud de Adobe Experience Platform.
@@ -8,18 +8,18 @@ level: Beginner
 jira: KT-4723
 thumbnail: 32156.jpg
 exl-id: 9ce0b5db-9f00-4b59-8655-09cd59b3d5df
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 54%
 
 ---
 
-# información general de Adobe Experience Platform Debugger
+# Información general de Adobe Experience Platform Debugger
 
-Descubra cómo la extensión de Adobe Experience Platform Debugger [Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) y el complemento [Firefox](https://addons.mozilla.org/es/firefox/addon/adobe-experience-platform-dbg/) le ayudan a depurar las implementaciones web del SDK web de Adobe Experience Platform, Adobe Analytics, Adobe Target, Adobe Audience Manager, etiquetas y más.
+Descubra cómo la extensión de Adobe Experience Platform Debugger [Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) y el complemento [Firefox](https://addons.mozilla.org/es/firefox/addon/adobe-experience-platform-dbg/) le ayudan a depurar las implementaciones web de Adobe Experience Platform Web SDK, Adobe Analytics, Adobe Target, Adobe Audience Manager, etiquetas y más.
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 ## Recursos adicionales
 

@@ -8,7 +8,7 @@ jira: KT-7923
 thumbnail: 333860.jpg
 last-substantial-update: 2023-12-08T00:00:00Z
 exl-id: 7ede8f72-2b9d-4fb0-b176-c1e31b0e6f6e
-source-git-commit: 54149fd9a3e0df70e42113d6f75dced1248b396e
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 0%
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 # Añadir administradores de productos
 
-Obtenga información sobre cómo agregar administradores de productos para Adobe Experience Platform. Los administradores de productos administran el control de acceso para aplicaciones basadas en la plataforma como Real-time Customer Data Platform y Journey Optimizer. Pueden crear usuarios, desarrolladores y administradores adicionales en Admin Console y, a continuación, concederles permisos (y credenciales de API) en la interfaz de Platform o Journey Optimizer. Para obtener más información, visite la [documentación de control de acceso](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=es).
+Obtenga información sobre cómo agregar administradores de productos para Adobe Experience Platform. Los administradores de productos administran el control de acceso para aplicaciones basadas en la plataforma como Real-Time Customer Data Platform y Journey Optimizer. Pueden crear usuarios, desarrolladores y administradores adicionales en Admin Console y, a continuación, concederles permisos (y credenciales de API) en la interfaz de Platform o Journey Optimizer. Para obtener más información, visite la [documentación de control de acceso](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/333860?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/333860?learn=on&enablevpops)
 
 >[!TIP]
 >

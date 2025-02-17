@@ -9,7 +9,7 @@ solution: Customer Journey Analytics
 feature-set: Customer Journey Analytics
 feature: Workspace Basics, Calculated Metrics
 exl-id: d56128af-dd1e-47ea-922f-85418e9da687
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '808'
 ht-degree: 0%
@@ -28,13 +28,13 @@ ht-degree: 0%
 
 O Analysis Workspace eliminar todas como limitações típicas de um único relatório do Analytics. Ele fornece uma tela robusta e flexível para criar projetos de analytics personalizados. Arraste e solte qualquer número de tabelas de dados, visualizações e componentes (dimensões,, e granularidades de tempo) para um projeto. Criação instantânea de avarias e, criação de cortes para análise, criação de alertas, comparação de, análise de fluxo e de falhas e relatórios de curadoria e agendamento para compartilhar com qualquer pessoa em seu negócio.
 
-O Customer Journey Analytics traz essa solução além dos dados da plataforma. Ése recomienda que asista a este vídeo de visão geral de quatro minutos:
+O Customer Journey Analytics traz essa solución além dos dados da plataforma. Ése recomienda que asista a este vídeo de visão geral de quatro minutos:
 
->[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on&enablevpops)
 
 Se você nunca usou o Analysis Workspace antes, se habla en inglés, se habla en inglés, se habla en inglés:
 
->[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on&enablevpops)
 
 ### Proyecto Crie Seu
 
@@ -129,7 +129,7 @@ Não se esqueça de **Salvar** a Métrica calculada.
 
 ### Filtros: Dimensões calculadas
 
-No hay nada que ver con el resto de los. Antes de iniciar qualquer análise, também é interessante criar algumas **Dimension calculados**. Esto significa, esencialmente, **segmentos** en Adobe Analytics. No hay Customer Journey Analytics, los segmentos de los **Filtros**.
+No hay nada que ver con el resto de los. Antes de iniciar qualquer análise, também é interessante criar algumas **Calculated Dimensions**. Esto significa, esencialmente, **segmentos** en Adobe Analytics. No hay Customer Journey Analytics, las están en chamados de **Filters**.
 
 ![demostración](./images/prfilters.png)
 

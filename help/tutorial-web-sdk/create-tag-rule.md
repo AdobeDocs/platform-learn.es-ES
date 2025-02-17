@@ -1,10 +1,10 @@
 ---
-title: Creación de reglas de etiquetas para el SDK web de Platform
-description: Obtenga información sobre cómo enviar un evento al Edge Network de Platform con el objeto XDM mediante una regla de etiquetas. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
+title: Creación de reglas de etiquetas para Platform Web SDK
+description: Obtenga información sobre cómo enviar un evento a Platform Edge Network con el objeto XDM mediante una regla de etiquetas. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Tags
 jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '1983'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Creación de reglas de etiquetas
 
-Obtenga información sobre cómo enviar eventos al Edge Network de Adobe Experience Platform con el objeto XDM mediante reglas de etiquetas. Una regla de etiqueta es una combinación de eventos, condiciones y acciones que indica a la propiedad de etiqueta que haga algo. Con el SDK web de Platform, las reglas se utilizan para enviar eventos al Edge Network de Platform con los datos adecuados.
+Obtenga información sobre cómo enviar eventos al Edge Network de Adobe Experience Platform con el objeto XDM mediante reglas de etiquetas. Una regla de etiqueta es una combinación de eventos, condiciones y acciones que indica a la propiedad de etiqueta que haga algo. Con Platform Web SDK, las reglas se utilizan para enviar eventos a Platform Edge Network con los datos adecuados.
 
 ## Objetivos de aprendizaje
 
@@ -23,7 +23,7 @@ Al final de esta lección, puede hacer lo siguiente:
 * Envío de un evento con campos XDM mediante las acciones Actualizar variable y Enviar evento
 * Apilar varios conjuntos de campos XDM en varias reglas
 * Asignar elementos de datos de matriz individuales o completos al objeto XDM
-* Publish una regla de etiquetas en una biblioteca de desarrollo
+* Publicación de una regla de etiqueta en una biblioteca de desarrollo
 
 
 ## Requisitos previos
@@ -53,10 +53,10 @@ donde;
 
 ## Creación de reglas de etiquetas
 
-En las etiquetas, las reglas se utilizan para ejecutar acciones (llamadas de activación) bajo varias condiciones. La extensión de etiquetas del SDK web de Platform incluye dos acciones que se utilizan en esta lección:
+En las etiquetas, las reglas se utilizan para ejecutar acciones (llamadas de activación) bajo varias condiciones. La extensión de etiquetas de Platform Web SDK incluye dos acciones que se utilizan en esta lección:
 
 * **[!UICONTROL Variable de actualización]** asigna elementos de datos a propiedades en un objeto XDM
-* **[!UICONTROL Enviar evento]** envía el objeto XDM al Edge Network del Experience Platform
+* **[!UICONTROL Enviar evento]** envía el objeto XDM a Experience Platform Edge Network
 
 En el resto de esta lección:
 
@@ -64,13 +64,13 @@ En el resto de esta lección:
 
 1. Cree reglas adicionales con la acción **[!UICONTROL Actualizar variable]** que anulen nuestra &quot;configuración global&quot; y contribuyan con campos XDM adicionales en ciertas condiciones (por ejemplo, al agregar detalles del producto en páginas de productos).
 
-1. Cree otra regla con la acción **[!UICONTROL Enviar evento]**, que enviará el objeto XDM completo al Edge Network de Adobe Experience Platform.
+1. Cree otra regla con la acción **[!UICONTROL Enviar evento]**, que enviará el objeto XDM completo a Adobe Experience Platform Edge Network.
 
 Todas estas reglas se secuenciarán correctamente usando la opción &quot;[!UICONTROL order]&quot;.
 
 Este vídeo ofrece información general del proceso:
 
->[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
 
 ### Campos de configuración global
 
@@ -103,7 +103,7 @@ Para crear una regla de etiqueta para los campos XDM globales:
 
 1. En la sección **[!UICONTROL Acciones]**, seleccione **[!UICONTROL Agregar]**
 
-1. Como la **[!UICONTROL extensión]**, seleccione **[!UICONTROL SDK web de Adobe Experience Platform]**
+1. Como la **[!UICONTROL extensión]**, seleccione **[!UICONTROL Adobe Experience Platform Web SDK]**
 
 1. Como **[!UICONTROL Tipo de acción]**, seleccione **[!UICONTROL Actualizar variable]**
 
@@ -157,7 +157,7 @@ Ahora, asigne los [!UICONTROL elementos de datos] al [!UICONTROL esquema] que us
 
 ### Campos de página de producto
 
-Ahora, empiece a usar **[!UICONTROL Actualizar variable]** en reglas adicionales secuenciadas para enriquecer el objeto XDM antes de enviarlo a [!UICONTROL Edge Network de plataforma].
+Ahora, empiece a usar **[!UICONTROL Actualizar variable]** en reglas adicionales secuenciadas para enriquecer el objeto XDM antes de enviarlo a [!UICONTROL Platform Edge Network].
 
 >[!TIP]
 >
@@ -332,7 +332,7 @@ Cuando haya terminado, debería ver las siguientes reglas creadas.
 
 ### Enviar regla de evento
 
-Ahora que ha establecido las variables, puede crear la regla para enviar el objeto XDM completo al Edge Network de Platform con la acción **[!UICONTROL Enviar evento]**.
+Ahora que ha establecido las variables, puede crear la regla para enviar el objeto XDM completo a Platform Edge Network con la acción **[!UICONTROL Enviar evento]**.
 
 1. A la derecha, seleccione **[!UICONTROL Agregar regla]** para crear otra regla
 
@@ -349,7 +349,7 @@ Ahora que ha establecido las variables, puede crear la regla para enviar el obje
 
 1. En la sección **[!UICONTROL Acciones]**, seleccione **[!UICONTROL Agregar]**
 
-1. Como la **[!UICONTROL extensión]**, seleccione **[!UICONTROL SDK web de Adobe Experience Platform]**
+1. Como la **[!UICONTROL extensión]**, seleccione **[!UICONTROL Adobe Experience Platform Web SDK]**
 
 1. Como **[!UICONTROL Tipo de acción]**, seleccione **[!UICONTROL Enviar evento]**
 
@@ -362,7 +362,7 @@ Ahora que ha establecido las variables, puede crear la regla para enviar el obje
 
    ![Guarde la regla](assets/create-rule-save-rule.png)
 
-## Publish las reglas de una biblioteca
+## Publicación de las reglas en una biblioteca
 
 A continuación, publique la regla en el entorno de desarrollo para poder verificar si funciona.
 
@@ -391,10 +391,10 @@ La biblioteca puede tardar unos minutos en crearse y, cuando se completa, muestr
 
 Como puede ver en la pantalla [!UICONTROL Flujo de publicación], hay mucho más en el proceso de publicación, que está fuera del ámbito de este tutorial. Este tutorial solo utiliza una biblioteca en el entorno de desarrollo.
 
-Ahora está listo para validar los datos de la solicitud mediante el Adobe Experience Platform Debugger.
+Ahora está listo para validar los datos de la solicitud mediante Adobe Experience Platform Debugger.
 
 [Siguiente ](validate-with-debugger.md)
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer el SDK web de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

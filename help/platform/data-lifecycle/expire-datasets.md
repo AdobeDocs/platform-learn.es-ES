@@ -8,7 +8,7 @@ jira: KT-10697
 thumbnail: 345065.jpeg
 last-substantial-update: 2024-05-29T00:00:00Z
 exl-id: 7764de70-e0c1-48a8-8d1f-a5426f8d580a
-source-git-commit: 252ef67017850c9ac3710d34ffe315463a406828
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '83'
 ht-degree: 1%
@@ -22,7 +22,7 @@ Obtenga información sobre cómo programar eliminaciones de conjuntos de datos m
 La eliminación de conjuntos de datos permite a los administradores de datos y a los ingenieros de datos establecer una fecha de caducidad para un conjunto de datos. Para obtener más información, visite la [documentación sobre higiene de los datos](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html?lang=es).
 
 
->[!VIDEO](https://video.tv.adobe.com/v/345065?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345065?learn=on&enablevpops)
 
 >[!NOTE]
 >

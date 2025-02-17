@@ -8,7 +8,7 @@ feature: Data Governance
 jira: KT-4348
 thumbnail: 4348-apply-data-governance-framework.jpg
 exl-id: 3cc3c794-5ffd-41bf-95d8-be5bca2e3a0f
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 1%
@@ -21,12 +21,12 @@ ht-degree: 1%
 
 En esta lección, aplicará el marco de trabajo de control de datos a los datos que ha introducido en su zona protegida.
 
-Administración de datos de Adobe Experience Platform le permite administrar los datos de los clientes y garantizar el cumplimiento de las regulaciones, restricciones y políticas aplicables al uso de los datos. Desempeña un papel clave dentro del Experience Platform en varios niveles, incluido el control del uso de los datos.
+Administración de datos de Adobe Experience Platform le permite administrar los datos de los clientes y garantizar el cumplimiento de las regulaciones, restricciones y políticas aplicables al uso de los datos. Desempeña un papel clave dentro de Experience Platform en varios niveles, incluido el control del uso de datos.
 
 Antes de comenzar los ejercicios, vea estos vídeos cortos sobre la gobernanza de datos:
->[!VIDEO](https://video.tv.adobe.com/v/36653?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36653?learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
 
 <!--
 ## Permissions required
@@ -60,12 +60,12 @@ Ahora es el momento de etiquetar los datos cuyo uso queremos restringir:
 1. Abrir `Luma Loyalty Dataset`
 1. Vaya a la pestaña **[!UICONTROL Control de datos]**
 1. Puede aplicar etiquetas a campos individuales o aplicarlas a todo el conjunto de datos. Aplicaremos la etiqueta a todo el conjunto de datos. Haga clic en el icono de lápiz. Si no ve el icono, intente hacer que el explorador sea más ancho o desplácese por el panel central hacia la derecha.
-   ![Gobierno de datos](assets/governance-dataset.png)
+   ![Gobernanza de datos](assets/governance-dataset.png)
 1. En el modal, expanda la sección **[!UICONTROL Etiquetas de contrato]** y compruebe la etiqueta **[!UICONTROL C2]**
 1. Seleccione el botón **[!UICONTROL Guardar cambios]**
-   ![Gobierno de datos](assets/governance-applyLabel.png)
+   ![Gobernanza de datos](assets/governance-applyLabel.png)
 1. Al volver a la pantalla principal [!UICONTROL Control de datos], con la opción **[!UICONTROL Mostrar etiquetas heredadas]** activada, puede ver cómo se ha aplicado la etiqueta a todos los campos del conjunto de datos.
-   ![Gobierno de datos](assets/governance-labelsAdded.png)
+   ![Gobernanza de datos](assets/governance-labelsAdded.png)
 
 
 <!--adding extra, unnecessary fields from field groups makes it harder to see which fields really need labels-->
@@ -78,15 +78,15 @@ Ahora que nuestros datos están etiquetados, podemos crear una política.
 1. En la interfaz de usuario de Platform, seleccione **[!UICONTROL Políticas]** en el panel de navegación izquierdo
 1. En la pestaña Examinar, ya existe una directiva predeterminada llamada &quot;restricción de exportación de terceros&quot; que asocia la etiqueta C2 con la acción de marketing [!UICONTROL Exportar a terceros], exactamente lo que necesitamos.
 1. Seleccione la directiva y, a continuación, actívela mediante la opción **[!UICONTROL Estado de la directiva]**
-   ![Gobierno de datos](assets/governance-enablePolicy.png)
+   ![Gobernanza de datos](assets/governance-enablePolicy.png)
 
 Puede crear sus propias directivas si selecciona el botón **[!UICONTROL Crear directiva]**. Esto abre un asistente que le permite combinar varias etiquetas y restricciones de acciones de marketing.
 
 ## Aplicar políticas de gobernanza
 
-La aplicación de las políticas de gobernanza es obviamente un componente clave del marco. La aplicación se produce después del flujo cuando los datos se activan y envían fuera de Platform, especialmente con Real-time Customer Data Platform, para el que puede obtener o no licencias. De cualquier manera, está fuera del alcance de este tutorial. Pero para que no te quedes colgado, puedes aprender más sobre cómo se aplican las políticas en este video, que he puesto en la cola de la porción relevante. También le mostrará lo que sucede cuando se infringe una directiva.
+La aplicación de las políticas de gobernanza es obviamente un componente clave del marco. La aplicación se produce después del flujo cuando los datos se activan y envían fuera de Platform, especialmente con Real-Time Customer Data Platform, para el que puede obtener o no licencias. De cualquier manera, está fuera del alcance de este tutorial. Pero para que no te quedes colgado, puedes aprender más sobre cómo se aplican las políticas en este video, que he puesto en la cola de la porción relevante. También le mostrará lo que sucede cuando se infringe una directiva.
 
->[!VIDEO](https://video.tv.adobe.com/v/33631/?t=151&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33631/?t=151&quality=12&learn=on&enablevpops)
 
 
 ## Recursos adicionales

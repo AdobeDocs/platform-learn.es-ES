@@ -9,7 +9,7 @@ solution: Customer Journey Analytics
 feature-set: Customer Journey Analytics
 feature: Workspace Basics, Calculated Metrics
 exl-id: 6a9fc1a4-9a6a-43f2-9393-815f9dc2cb4e
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '768'
 ht-degree: 1%
@@ -30,11 +30,11 @@ Analysis Workspace elimina todas las limitaciones típicas de un solo informe de
 
 Customer Journey Analytics lleva esta solución sobre los datos de Platform. Recomendamos encarecidamente ver este vídeo de información general de cuatro minutos:
 
->[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on&enablevpops)
 
 Si no ha utilizado Analysis Workspace anteriormente, le recomendamos encarecidamente que vea este vídeo:
 
->[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on&enablevpops)
 
 ### Cree Su Proyecto
 
@@ -124,11 +124,11 @@ No olvides **guardar** la métrica calculada.
 
 ![demostración](./images/pr9.png)
 
-## 4.4.3 Dimension calculados: Filtros (segmentación) e intervalos de fechas
+## 4.4.3 Dimensiones calculadas: Filtros (segmentación) e intervalos de fechas
 
-### Filtros: Dimension calculados
+### Filtros: Dimensiones calculadas
 
-Los cálculos no están pensados para ser solo para métricas. Antes de comenzar cualquier análisis, también es interesante crear **Dimension calculados**. Básicamente, esto significaba **segmentos** de nuevo en Adobe Analytics. En Customer Journey Analytics, estos segmentos se denominan **Filters**.
+Los cálculos no están pensados para ser solo para métricas. Antes de comenzar cualquier análisis, también es interesante crear **Dimensiones calculadas**. Básicamente, esto significaba **segmentos** de nuevo en Adobe Analytics. En Customer Journey Analytics, estos segmentos se denominan **Filtros**.
 
 ![demostración](./images/prfilters.png)
 
@@ -140,11 +140,11 @@ La creación de filtros ayudará a los usuarios empresariales a iniciar el anál
 
 Estos filtros se pueden crear antes o durante la parte de análisis (que se muestra en el siguiente ejercicio).
 
-### Intervalos de fechas: Dimension de tiempo calculadas
+### Intervalos de fechas: dimensiones de tiempo calculadas
 
-Los Dimension de tiempo son otro tipo de dimensiones calculadas. Algunos ya están creados, pero también tiene la capacidad de crear sus propios Dimension de tiempo personalizados en la fase de preparación de datos.
+Las dimensiones temporales son otro tipo de dimensiones calculadas. Algunas ya están creadas, pero también tiene la capacidad de crear sus propias dimensiones de tiempo personalizadas en la fase de preparación de datos.
 
-En estos Dimension de tiempo calculado, ayudaremos a los analistas y usuarios empresariales a recordar fechas importantes y utilizarlas para filtrar y cambiar el tiempo de los informes. Preguntas y dudas típicas que vienen a nuestras mentes cuando hacemos análisis:
+En estas dimensiones de tiempo calculadas, ayudaremos a los analistas y a los usuarios empresariales a recordar fechas importantes y a utilizarlas para filtrar y cambiar el tiempo de los informes. Preguntas y dudas típicas que vienen a nuestras mentes cuando hacemos análisis:
 
 - ¿Cuándo fue el Black Friday el año pasado? ¿Del 21 al 29?
 - ¿Cuándo hicimos esa campaña de televisión en diciembre?
@@ -154,7 +154,7 @@ En estos Dimension de tiempo calculado, ayudaremos a los analistas y usuarios em
 
 Ya ha finalizado el ejercicio de preparación de datos con CJA Analysis Workspace.
 
-Siguiente paso: [4.5 visualización con el Customer Journey Analytics](./ex5.md)
+Siguiente paso: [4.5 visualización mediante Customer Journey Analytics](./ex5.md)
 
 [Volver al flujo de usuario 4](./uc4.md)
 

@@ -2,13 +2,13 @@
 title: Ingesta de datos de flujo
 seo-title: Ingest streaming data | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Ingesta de datos de flujo
-description: En esta lección, debe transmitir datos a Experience Platform mediante el SDK web.
+description: En esta lección, debe transmitir los datos a Experience Platform mediante Web SDK.
 role: Data Engineer
 feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '3309'
 ht-degree: 0%
@@ -19,25 +19,25 @@ ht-degree: 0%
 
 <!--1hr-->
 
-En esta lección, debe transmitir los datos mediante el SDK web de Adobe Experience Platform.
+En esta lección, debe transmitir los datos mediante Adobe Experience Platform Web SDK.
 
 Hay dos tareas principales que debemos completar en la interfaz de recopilación de datos:
 
-* Debemos implementar el SDK web en el sitio web de Luma para enviar datos sobre la actividad del visitante desde el sitio web a la red de Adobe Edge. Haremos una implementación sencilla mediante etiquetas (anteriormente Launch)
+* Debemos implementar Web SDK en el sitio web de Luma para enviar datos sobre la actividad de los visitantes desde el sitio web a la red de Adobe Edge. Haremos una implementación sencilla mediante etiquetas (anteriormente Launch)
 
 * Debemos configurar una secuencia de datos, que indique a la red de Edge dónde reenviar los datos. Lo configuraremos para enviar los datos a nuestro conjunto de datos `Luma Web Events` en nuestra zona protegida de Platform.
 
 **Los ingenieros de datos** deberán ingerir datos de flujo continuo fuera de este tutorial. Al implementar los SDK web o móvil de Adobe Experience Platform, normalmente un desarrollador web o móvil participa en la creación de la capa de datos y en la configuración de las propiedades de etiquetas.
 
-Antes de comenzar los ejercicios, vea estos dos vídeos cortos para obtener más información acerca de la ingesta de datos de flujo continuo y el SDK web:
+Antes de comenzar los ejercicios, vea estos dos vídeos cortos para obtener más información sobre la ingesta de datos de flujo continuo y Web SDK:
 
->[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
 
 >[!NOTE]
 >
->Aunque este tutorial se centra en la ingesta de transmisión desde sitios web con SDK web, también puede transmitir datos mediante el [SDK móvil de Adobe](https://developer.adobe.com/client-sdks/documentation/), [Apache Kafka Connect](https://github.com/adobe/experience-platform-streaming-connect) y otros mecanismos.
+>Aunque este tutorial se centra en la ingesta de transmisión desde sitios web con Web SDK, también puede transmitir datos mediante [Adobe Mobile SDK](https://developer.adobe.com/client-sdks/documentation/), [Apache Kafka Connect](https://github.com/adobe/experience-platform-streaming-connect) y otros mecanismos.
 
 ## Permisos necesarios
 
@@ -78,11 +78,11 @@ En la lección [Configurar permisos](configure-permissions.md), configuró todos
 
 ## Configuración de la secuencia de datos
 
-Primero configuraremos la secuencia de datos. Un conjunto de datos indica a la red de Adobe Edge dónde enviar los datos después de recibirlos desde la llamada del SDK web. Por ejemplo, ¿desea enviar los datos a Experience Platform, Adobe Analytics o Adobe Target? Las secuencias de datos se administran en la interfaz de usuario de recopilación de datos (anteriormente Launch) y son esenciales para la recopilación de datos con el SDK web.
+Primero configuraremos la secuencia de datos. Una secuencia de datos indica a la red de Adobe Edge a dónde enviar los datos después de recibirlos desde la llamada de Web SDK. Por ejemplo, ¿desea enviar los datos a Experience Platform, Adobe Analytics o Adobe Target? Las secuencias de datos se administran en la interfaz de usuario de recopilación de datos (anteriormente, Launch) y son esenciales para la recopilación de datos con Web SDK.
 
 Para crear su [!UICONTROL secuencia de datos]:
 
-1. Inicie sesión en la [interfaz de usuario de recopilación de datos del Experience Platform](https://experience.adobe.com/launch/)
+1. Inicie sesión en la [interfaz de usuario de recopilación de datos de Experience Platform](https://experience.adobe.com/launch/)
    <!--when will the edge config go live?-->
 
 1. Seleccione **[!UICONTROL Datastreams]** en el panel de navegación izquierdo
@@ -96,12 +96,12 @@ Para crear su [!UICONTROL secuencia de datos]:
 
    ![Asigne un nombre al conjunto de datos y guarde](assets/websdk-edgeConfig-name.png)
 
-En la siguiente pantalla, especifique dónde desea enviar los datos. Para enviar datos al Experience Platform:
+En la siguiente pantalla, especifique dónde desea enviar los datos. Para enviar datos a Experience Platform:
 
 1. Activar **[!UICONTROL Adobe Experience Platform]** para mostrar campos adicionales
 1. Para **[!UICONTROL espacio aislado]**, seleccione `Luma Tutorial`
 1. Para **[!UICONTROL Conjunto de datos de evento]**, seleccione `Luma Web Events Dataset`
-1. Si utiliza otras aplicaciones de Adobe, no dude en explorar las otras secciones para ver qué información es necesaria en la Configuración de Edge de estas otras soluciones. Recuerde, el SDK web se desarrolló no solo para transmitir datos a Experience Platform, sino también para reemplazar todas las bibliotecas de JavaScript anteriores utilizadas por otras aplicaciones de Adobe. La configuración de Edge se utiliza para especificar los detalles de cuenta de cada aplicación a la que desea enviar los datos.
+1. Si utiliza otras aplicaciones de Adobe, no dude en explorar las otras secciones para ver qué información es necesaria en la Configuración de Edge de estas otras soluciones. Recuerde, Web SDK se desarrolló no solo para transmitir datos a Experience Platform, sino también para reemplazar todas las bibliotecas de JavaScript anteriores utilizadas por otras aplicaciones de Adobe. La configuración de Edge se utiliza para especificar los detalles de cuenta de cada aplicación a la que desea enviar los datos.
 1. Seleccionar **[!UICONTROL Guardar]**
    ![Configurar la secuencia de datos y guardar](assets/websdk-edgeConfig-addEnvironment.png)
 
@@ -109,7 +109,7 @@ Una vez guardada la configuración de Edge, la pantalla resultante mostrará tre
 ![Cada configuración de Edge puede tener varios entornos](assets/websdk-edgeConfig-environments.png)
 Los tres entornos contienen los detalles de Platform que acaba de introducir. Sin embargo, estos detalles se pueden configurar de forma diferente para cada entorno. Por ejemplo, puede hacer que cada entorno envíe datos a un entorno limitado de Platform diferente. En este tutorial, no realizaremos ninguna personalización adicional de nuestro conjunto de datos.
 
-## Instalación de la extensión del SDK web
+## Instalación de la extensión de Web SDK
 
 ### Añadir una propiedad
 
@@ -147,19 +147,19 @@ Now switch back to your browser tab with the Data Collection interface still ope
 ![Luma Platform Tutorial should appear](assets/websdk-property-showsInList.png)
 -->
 
-## Añadir la extensión del SDK web
+## Añadir la extensión de Web SDK
 
-Ahora que tiene una propiedad, puede agregar el SDK web con una extensión. Una extensión es un paquete de código que amplía la interfaz y la funcionalidad de recopilación de datos. Para añadir la extensión:
+Ahora que tiene una propiedad, puede agregar Web SDK con una extensión. Una extensión es un paquete de código que amplía la interfaz y la funcionalidad de recopilación de datos. Para añadir la extensión:
 
 1. Abra la propiedad de etiquetas
 1. Vaya a **[!UICONTROL Extensiones]** en el panel de navegación izquierdo
 1. Vaya a la ficha **[!UICONTROL Catálogo]**
 1. Hay muchas extensiones disponibles para las etiquetas. Filtrar el catálogo con el término `Web SDK`
 1. En la extensión **[!UICONTROL Adobe Experience Platform Web SDK]**, seleccione el botón **[!UICONTROL Instalar]**
-   ![Instalar la extensión del SDK web de Adobe Experience Platform](assets/websdk-property-addExtension.png)
-1. Hay varias configuraciones disponibles para la extensión del SDK web, pero solo dos que vamos a configurar para este tutorial. Actualizar el **[!UICONTROL dominio de Edge]** a `data.enablementadobe.com`. Esta configuración le permite establecer cookies de origen con la implementación del SDK web, lo que se recomienda. Más adelante en esta lección, asignará un sitio web del dominio `enablementadobe.com` a la propiedad de etiquetas. El CNAME del dominio `enablementadobe.com` ya se ha configurado para que `data.enablementadobe.com` se reenvíe a los servidores de Adobe. Al implementar el SDK web en su propio sitio web, deberá crear un CNAME para sus propios fines de recopilación de datos, por ejemplo, `data.YOUR_DOMAIN.com`
+   ![Instalar la extensión Adobe Experience Platform Web SDK](assets/websdk-property-addExtension.png)
+1. Hay varias configuraciones disponibles para la extensión Web SDK, pero solo dos que vamos a configurar para este tutorial. Actualizar el **[!UICONTROL dominio de Edge]** a `data.enablementadobe.com`. Esta configuración le permite establecer cookies de origen con la implementación de Web SDK, lo que se recomienda. Más adelante en esta lección, asignará un sitio web del dominio `enablementadobe.com` a la propiedad de etiquetas. El CNAME del dominio `enablementadobe.com` ya se ha configurado para que `data.enablementadobe.com` se reenvíe a los servidores de Adobe. Al implementar Web SDK en su propio sitio web, deberá crear un CNAME para sus propios fines de recopilación de datos, por ejemplo, `data.YOUR_DOMAIN.com`
 1. En el menú desplegable **[!UICONTROL Flujo de datos]**, seleccione su flujo de datos `Luma Platform Tutorial`.
-1. No dude en consultar las demás opciones de configuración (pero no las cambie). y luego selecciona **[!UICONTROL Guardar]**
+1. No dude en consultar las otras opciones de configuración (pero no las cambie) y, a continuación, seleccione **[!UICONTROL Guardar]**
    <!--is edge domain required for first party? when will it break?-->
    <!--any other fields that should be highlighted-->
    ![](assets/websdk-property-configureExtension.png)
@@ -181,14 +181,14 @@ Ahora crearemos una regla para enviar datos a Platform. Una regla es una combina
    ![Agregar el evento Library Loaded](assets/websdk-property-addEvent.png)
 1. Deje **[!UICONTROL Condiciones]** vacías, ya que queremos que esta regla se active en todas las páginas, según el nombre que le dimos
 1. En **[!UICONTROL Acciones]**, seleccione el botón **[!UICONTROL Agregar]**
-1. Use **[!UICONTROL Adobe Experience Platform Web SDK]** **[!UICONTROL Extension]** y seleccione **[!UICONTROL Enviar evento]** como **[!UICONTROL Tipo de acción]**
+1. Use **[!UICONTROL Adobe Experience Platform Web SDK]** **[!UICONTROL Extensión]** y seleccione **[!UICONTROL Enviar evento]** como **[!UICONTROL Tipo de acción]**
 1. A la derecha, seleccione **[!UICONTROL web.webpagedetails.pageViews]** de la lista desplegable **[!UICONTROL Tipo]**. Este es uno de los campos XDM de nuestro `Luma Web Events Schema`
 1. Seleccione **[!UICONTROL Conservar cambios]** para volver a la pantalla de regla principal
    ![Agregar la acción Enviar evento](assets/websdk-property-addAction.png)
 1. Seleccione **[!UICONTROL Guardar]** para guardar la regla\
    ![Guarde la regla](assets/websdk-property-saveRule.png)
 
-## Publish la regla en una biblioteca
+## Publicación de la regla en una biblioteca
 
 A continuación, publicaremos la regla en nuestro entorno de desarrollo para que podamos verificar que funcione.
 
@@ -246,7 +246,7 @@ Como puede ver en la pantalla [!UICONTROL Flujo de publicación], hay mucho más
 
 ## Validar los datos de la solicitud
 
-### Añadir el Adobe Experience Platform Debugger
+### Añadir Adobe Experience Platform Debugger
 
 Experience Platform Debugger es una extensión disponible para los navegadores Chrome y Firefox que permite ver la tecnología de Adobe implementada en las páginas web. Descargue la versión para su navegador preferido:
 
@@ -255,7 +255,7 @@ Experience Platform Debugger es una extensión disponible para los navegadores C
 
 Si nunca antes ha utilizado Debugger (y este es diferente del antiguo Adobe Experience Cloud Debugger), puede que desee ver este vídeo de información general de cinco minutos:
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 ### Abra el sitio web de Luma.
 
@@ -288,10 +288,10 @@ Experience Platform Debugger tiene una característica interesante que le permit
    ![propiedad de etiqueta reemplazada](assets/websdk-debugger-propertyReplaced.png)
 1. Vaya a **[!UICONTROL Resumen]** en el panel de navegación izquierdo para ver los detalles de su propiedad de [!UICONTROL Launch]
    ![Pestaña Resumen](assets/websdk-debugger-summary.png)
-1. Ahora, ve a **[!UICONTROL AEP Web SDK]** en el panel de navegación izquierdo para ver las **[!UICONTROL solicitudes de red]**
+1. Ahora ve a **[!UICONTROL AEP Web SDK]** en el panel de navegación izquierdo para ver las **[!UICONTROL solicitudes de red]**
 1. Abrir la fila **[!UICONTROL events]**
 
-   ![Solicitud de SDK web de Adobe Experience Platform](assets/websdk-debugger-platformNetwork.png)
+   ![Solicitud de Adobe Experience Platform Web SDK](assets/websdk-debugger-platformNetwork.png)
 1. Observe cómo podemos ver el tipo de evento `web.webpagedetails.pageView` especificado en nuestra acción [!UICONTROL Enviar evento] y otras variables integradas que se ajustan al formato `AEP Web SDK ExperienceEvent Mixin`
    ![Detalles del evento](assets/websdk-debugger-eventDetails.png)
 1. Estos tipos de detalles de solicitud también están visibles en la ficha **Red** de las herramientas para desarrolladores web del explorador. Ábrala y vuelva a cargar la página. Filtre las llamadas con `interact` para localizar la llamada, selecciónela y, a continuación, busque en la ficha **Encabezados**, área **Solicitar carga útil**.
@@ -389,9 +389,9 @@ También puede validar los datos de nombre de página recibidos en Platform medi
 
 ## Envío de identidades adicionales
 
-La implementación del SDK web ahora envía eventos con el ID de Experience Cloud (ECID) como identificador principal. El SDK web genera automáticamente el ECID, que es único por dispositivo y explorador. Un solo cliente puede tener varios ECID en función del dispositivo y el explorador que utilice. Entonces, ¿cómo podemos obtener una vista unificada de este cliente y vincular su actividad en línea a nuestros datos de CRM, lealtad y compras sin conexión? Lo hacemos recopilando identidades adicionales durante su sesión y vinculando de manera determinista su perfil a través de la vinculación de identidad.
+La implementación de Web SDK ahora envía eventos con el Experience Cloud ID (ECID) como identificador principal. Web SDK genera automáticamente el ECID, que es único por dispositivo y explorador. Un solo cliente puede tener varios ECID en función del dispositivo y el explorador que utilice. Entonces, ¿cómo podemos obtener una vista unificada de este cliente y vincular su actividad en línea a nuestros datos de CRM, lealtad y compras sin conexión? Lo hacemos recopilando identidades adicionales durante su sesión y vinculando de manera determinista su perfil a través de la vinculación de identidad.
 
-Si lo recuerda, mencioné que usaríamos los ID de ECID y CRM como identidades para nuestros datos web en la lección [Identidades de mapa](map-identities.md). Vamos a recopilar el ID de CRM con el SDK web.
+Si lo recuerda, mencioné que usaríamos los ID de ECID y CRM como identidades para nuestros datos web en la lección [Identidades de mapa](map-identities.md). Recopilemos, por tanto, el ID de CRM con el SDK web.
 
 ### Añadir elemento de datos para el ID de CRM
 
@@ -408,13 +408,13 @@ Primero almacenamos el ID de CRM en un elemento de datos:
 Ahora que hemos capturado el valor de ID de CRM, debemos asociarlo con un tipo de elemento de datos especial denominado [!UICONTROL mapa de identidad] elemento de datos:
 
 1. Agregar un elemento de datos denominado `Identities`
-1. Como la **[!UICONTROL extensión]**, seleccione **[!UICONTROL SDK web de Adobe Experience Platform]**
+1. Como la **[!UICONTROL extensión]**, seleccione **[!UICONTROL Adobe Experience Platform Web SDK]**
 1. Como **[!UICONTROL Tipo de elemento de datos]**, seleccione **[!UICONTROL Mapa de identidad]**
 1. Como **[!UICONTROL Área de nombres]**, escriba `Luma CRM Id`, que es el [!UICONTROL área de nombres] que hemos creado en una lección anterior
 
    >[!WARNING]
    >
-   >La extensión SDK para web de Adobe Experience Platform versión 2.2 permite seleccionar Área de nombres de una lista desplegable rellenada previamente con los valores reales de la cuenta de Platform. Desafortunadamente, esta función aún no es compatible con la zona protegida y, por lo tanto, es posible que el valor `Luma CRM Id` no aparezca en la lista desplegable. Esto puede impedir que complete este ejercicio. Publicaremos una solución una vez confirmada.
+   >La extensión Adobe Experience Platform Web SDK versión 2.2 permite seleccionar Área de nombres de una lista desplegable rellenada previamente con los valores reales de la cuenta de Platform. Desafortunadamente, esta función aún no es compatible con la zona protegida y, por lo tanto, es posible que el valor `Luma CRM Id` no aparezca en la lista desplegable. Esto puede impedir que complete este ejercicio. Publicaremos una solución una vez confirmada.
 
 1. Como **[!UICONTROL ID]**, seleccione el icono para abrir el modal de selección de elementos de datos y elija el elemento de datos `CRM Id`
 1. Como **[!UICONTROL estado autenticado]**, seleccione **[!UICONTROL Autenticado]**
@@ -439,13 +439,13 @@ Hay un elemento de datos más que debemos actualizar: el elemento de datos del o
 
 ### Validación de la identidad
 
-Para validar que el SDK web ahora envía el ID de CRM:
+Para validar que Web SDK está enviando ahora el ID de CRM:
 
 1. Abrir el [sitio web de Luma](https://luma.enablementadobe.com/content/luma/us/en.html)
 1. Asígnelo a la propiedad de etiquetas mediante Debugger, según las instrucciones anteriores
 1. Seleccione el vínculo **Iniciar sesión** en la parte superior derecha del sitio web de Luma
 1. Iniciar sesión con las credenciales `test@adobe.com`/`test`
-1. Una vez autenticada, inspeccione la llamada del SDK web de Experience Platform en Debugger (**[!UICONTROL SDK web de Adobe Experience Platform]** > **[!UICONTROL Solicitudes de red]** > **[!UICONTROL eventos]** de la solicitud más reciente) y debería ver `lumaCrmId`:
+1. Una vez autenticada, inspeccione la llamada de Experience Platform Web SDK en Debugger (**[!UICONTROL Adobe Experience Platform Web SDK]** > **[!UICONTROL Solicitudes de red]** > **[!UICONTROL eventos]** de la solicitud más reciente) y debería ver `lumaCrmId`:
    ![Validar la identidad en Debugger](assets/websdk-debugger-confirmIdentity.png)
 1. Busque el perfil de usuario utilizando el área de nombres y el valor de ECID de nuevo. En el perfil, verá el ID de CRM y también el ID de fidelidad y los detalles del perfil, como el nombre y el número de teléfono. Todas las identidades y los datos se han unido en un único perfil de cliente en tiempo real.
    ![Validar la identidad en Platform](assets/websdk-platform-lumaCrmIdProfile.png)
@@ -457,7 +457,7 @@ Para validar que el SDK web ahora envía el ID de CRM:
 * [Documentación de ingesta de transmisión](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=es)
 * [Referencia de API de ingesta de transmisión](https://developer.adobe.com/experience-platform-apis/references/streaming-ingestion/)
 
-¡Buen trabajo! Se trataba de mucha información sobre el SDK web y Launch. Hay mucho más involucrado en una implementación completa, pero estos son los conceptos básicos para ayudarle a empezar y ver los resultados en Platform.
+¡Buen trabajo! Esa era mucha información sobre Web SDK y Launch. Hay mucho más involucrado en una implementación completa, pero estos son los conceptos básicos para ayudarle a empezar y ver los resultados en Platform.
 
 >[!NOTE]
 >

@@ -8,7 +8,7 @@ feature: Profiles
 jira: KT-4348
 thumbnail: 4348-map-identities.jpg
 exl-id: e17ffabc-049c-42ff-bf0a-8cc31d665dfa
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 6%
@@ -26,7 +26,7 @@ El servicio de identidad de Adobe Experience Platform le ayuda a obtener una mej
 **Los arquitectos de datos** deberán asignar identidades fuera de este tutorial.
 
 Antes de comenzar los ejercicios, vea este breve vídeo para obtener más información sobre la identidad en Adobe Experience Platform:
->[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
 
 >[!NOTE]
 >
@@ -146,7 +146,7 @@ Repita el proceso para alguno de los demás esquemas:
 
 >[!NOTE]
 >
->Los datos recopilados con el SDK web son una excepción a la práctica habitual de etiquetar campos de identidad en el esquema. El SDK web utiliza el mapa de identidad para etiquetar identidades *en el lado de la implementación* y, por lo tanto, determinaremos las identidades de `Luma Web Events Schema` cuando implementemos el SDK web en el sitio web de Luma. En esa lección posterior, recopilaremos el ID del visitante Experience Cloud (ECID) como ID principal y el crmId como ID secundario.
+>Los datos recopilados con Web SDK son una excepción a la práctica habitual de etiquetar campos de identidad en el esquema. Web SDK usa el mapa de identidad para etiquetar identidades *en el lado de la implementación* y, por lo tanto, determinaremos las identidades de `Luma Web Events Schema` cuando implementemos Web SDK en el sitio web de Luma. En esa lección posterior, recopilaremos el ID del visitante de Experience Cloud (ECID) como ID principal y el crmId como ID secundario.
 
 Con nuestra selección de identidades principales, es claro ver cómo `Luma CRM Schema` puede conectarse a `Luma Offline Purchase Events Schema`, ya que ambos utilizan `loyaltyId` como identificador. Pero, ¿cómo podemos conectar nuestras compras sin conexión con el comportamiento en línea? ¿Cómo podemos clasificar los productos comprados con nuestro catálogo de productos? Utilizaremos campos de identidad y relaciones de esquema adicionales.
 

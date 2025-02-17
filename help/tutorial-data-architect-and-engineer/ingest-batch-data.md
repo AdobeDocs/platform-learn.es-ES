@@ -8,7 +8,7 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '2465'
 ht-degree: 0%
@@ -26,7 +26,7 @@ La ingesta de datos por lotes le permite introducir una gran cantidad de datos e
 
 Antes de comenzar los ejercicios, vea este breve vídeo para obtener más información sobre la ingesta de datos:
 
->[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on&enablevpops)
 
 
 ## Permisos necesarios
@@ -191,7 +191,7 @@ Para completar el lote:
 1. Seleccionar la solicitud **[!DNL Data Ingestion API > Batch Ingestion > Finish uploading a file to a dataset in a batch.]**
 1. En la ficha **Parámetros**, escriba `COMPLETE` como **acción**
 1. En la pestaña **Params**, ingrese su ID de lote. No se preocupe por el ID del conjunto de datos o la ruta de archivo, si están presentes.
-1. Asegúrese de que la dirección URL del POST sea `https://platform.adobe.io/data/foundation/import/batches/:batchId?action=COMPLETE` y de que no haya ninguna referencia innecesaria a `datasetId` o `filePath`
+1. Asegúrese de que la dirección URL de la publicación sea `https://platform.adobe.io/data/foundation/import/batches/:batchId?action=COMPLETE` y de que no haya referencias innecesarias a `datasetId` o `filePath`
 1. Seleccione **Send** y debería obtener una respuesta de 200 OK con &#39;1&#39; en el cuerpo de la respuesta
 
    ![Lote completado](assets/ingestion-crm-complete.png)
@@ -335,7 +335,7 @@ Vuelva a buscar el perfil con valor `5625458` en el área de nombres `loyaltyId`
 Adobe se asocia con varios proveedores de ETL para admitir la ingesta de datos en Experience Platform. Debido a la variedad de proveedores externos, ETL no se trata en este tutorial, aunque puede revisar algunos de estos recursos:
 
 * [Desarrollar integraciones de ETL para Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
-* [Página del conector Adobe Experience Platform de Informatica en el Adobe Exchange](https://exchange.adobe.com/experiencecloud.details.101570.informatica-adobe-experience-cloud-connector.html)
+* [Página del conector Adobe Experience Platform de Informatica en Adobe Exchange](https://exchange.adobe.com/experiencecloud.details.101570.informatica-adobe-experience-cloud-connector.html)
 * [Documentación informativa del conector de Adobe Experience Platform](https://docs.informatica.com/integration-cloud/cloud-data-integration-connectors/current-version/adobe-experience-platform-connector/preface.html)
 * [[!DNL Snaplogic] Paquete de instantáneas de Adobe Experience Platform](https://www.snaplogic.com/resources/videos/august-2020-aep)
 
@@ -344,4 +344,4 @@ Adobe se asocia con varios proveedores de ETL para admitir la ingesta de datos e
 * [Documentación de ingesta por lotes](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html)
 * [Referencia de API de ingesta por lotes](https://developer.adobe.com/experience-platform-apis/references/batch-ingestion/)
 
-Ahora vamos a [transmitir datos usando el SDK web](ingest-streaming-data.md)
+Ahora vamos a [transmitir datos usando Web SDK](ingest-streaming-data.md)

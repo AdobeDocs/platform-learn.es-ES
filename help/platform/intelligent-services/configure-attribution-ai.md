@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-4174
 thumbnail: 32668.jpg
 exl-id: ea64175d-c2b4-4fcb-bbac-9ef30416f868
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '54'
 ht-degree: 46%
@@ -16,6 +16,6 @@ ht-degree: 46%
 
 # Configuración de Attribution AI
 
-Aprenda a crear instancias de Attribution AI para comprender el impacto de sus canales y campañas de marketing. Para obtener más información, visite la [documentación de Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html).
+Aprenda a crear una instancia de inteligencia artificial aplicada a la atribución para comprender el impacto de sus canales y campañas de marketing. Para obtener más información, visite la [Documentación de inteligencia artificial aplicada a la atribución](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/32668?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32668?learn=on&enablevpops)

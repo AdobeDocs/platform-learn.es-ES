@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-6419
 thumbnail: 331937.jpeg
 exl-id: bd1a7414-b232-4ae3-98e8-b0ec1c60361b
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 41%
@@ -21,8 +21,8 @@ Descubra cómo el reenvío de eventos centraliza la recopilación de datos, redu
 >
 >Adobe Experience Platform Launch se está integrando en Adobe Experience Platform como un conjunto de tecnologías de recopilación de datos. Se han implementado varios cambios terminológicos en la interfaz que debe tener en cuenta al utilizar este contenido:
 >
-> * El platform launch (lado del cliente) ahora es **[!DNL tags]**
-> * El lado del servidor de platform launch ahora es **[!DNL event forwarding]**
+> * Platform Launch (lado del cliente) ahora es **[!DNL tags]**
+> * Platform Launch Server Side ahora está **[!DNL event forwarding]**
 > * Las configuraciones de Edge ahora son **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/331937?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/331937?learn=on&enablevpops)

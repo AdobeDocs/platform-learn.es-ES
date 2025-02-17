@@ -8,7 +8,7 @@ feature: Queries
 jira: KT-4348
 thumbnail: 4348-run-queries.jpg
 exl-id: a37531cb-96ad-4547-86af-84f7ed65f019
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Adobe Experience Platform Query Service le ayuda a dar sentido a sus datos, ya q
 **Los arquitectos de datos** y **ingenieros de datos** necesitarán usar el servicio de consulta fuera de este tutorial.
 
 Antes de comenzar los ejercicios, vea este breve vídeo para obtener más información sobre el servicio de consultas:
->[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
 
 ## Permisos necesarios
 

@@ -3,7 +3,8 @@ title: 'Recopilación de datos de Adobe Experience Platform y reenvío del lado 
 description: Resumen y beneficios
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 7086f844-f21c-45d4-a7d9-3e695233b4b7
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
@@ -18,7 +19,7 @@ En este módulo, ha aprendido a utilizar los conjuntos de datos, esquemas y prop
 
 ## Ventajas
 
-Vamos a destacar las ventajas de utilizar la recopilación de datos de Adobe Experience Platform, el SDK web y el servidor de recopilación de datos de Adobe Experience Platform.
+Vamos a destacar las ventajas de utilizar la recopilación de datos de Adobe Experience Platform, Web SDK y el servidor de recopilación de datos de Adobe Experience Platform.
 
 Los ingresos directos se pueden perder fácilmente debido a que los sitios web y las aplicaciones tienen menos rendimiento, debido a que se ejecuta demasiado código en el lado del cliente. Las leyes de privacidad y consentimiento evolucionan y cambian rápidamente y pueden afectar drásticamente a la recopilación de datos. Y, en general, las marcas tienen un número creciente de aplicaciones para administrar y enviar datos a.
 
@@ -28,10 +29,10 @@ Gracias a la recopilación de datos de Adobe Experience Platform, usted como mar
 
 ## Eche un vistazo a esto
 
-- Blog técnico: [Solución de problemas de implementación con el SDK web de Adobe Experience Platform y Edge Network](https://medium.com/adobetech/solving-implementation-pain-points-with-adobe-experience-platform-web-sdk-and-edge-network-880b635e6819)
-- Blog técnico: [Mejora del rendimiento del sitio web con el SDK web de Adobe Experience Platform y el Edge Network](https://medium.com/adobetech/boosting-website-performance-with-adobe-experience-platform-web-sdk-and-edge-network-329fcf70fdf9)
+- Blog técnico: [Solución de problemas de implementación con Adobe Experience Platform Web SDK y Edge Network](https://medium.com/adobetech/solving-implementation-pain-points-with-adobe-experience-platform-web-sdk-and-edge-network-880b635e6819)
+- Blog técnico: [Mejora del rendimiento del sitio web con Adobe Experience Platform Web SDK y Edge Network](https://medium.com/adobetech/boosting-website-performance-with-adobe-experience-platform-web-sdk-and-edge-network-329fcf70fdf9)
 - Documentación: [Información general sobre Adobe Experience Platform Data Collection Server Side](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en#server-side-info)
-- Vídeo: [Implementar Edge y el servidor de recopilación de datos de Adobe Experience Platform mediante una solución de Tag Management que no sea de Adobe](https://video.tv.adobe.com/v/331986?quality=12&learn=on)
+- Vídeo: [Implementar Edge y el servidor de recopilación de datos de Adobe Experience Platform mediante una solución de Tag Management que no sea de Adobe](https://video.tv.adobe.com/v/331986?quality=12&learn=on&enablevpops)
 
 [Volver al módulo 2.5](./aep-data-collection-ssf.md)
 

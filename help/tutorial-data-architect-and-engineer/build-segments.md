@@ -8,7 +8,7 @@ feature: Data Governance
 jira: KT-4348
 thumbnail: 4348-build-segments.jpg
 exl-id: cd05e814-1ea7-48ba-adf6-1a71504c623e
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Una vez que tenga Perfiles de clientes en tiempo real, puede crear segmentos de 
 **Los arquitectos de datos** deberán crear segmentos fuera de este tutorial y ayudar a sus colegas con esta tarea.
 
 Antes de comenzar los ejercicios, vea este breve vídeo para obtener más información sobre la creación de segmentos:
->[!VIDEO](https://video.tv.adobe.com/v/27254?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27254?learn=on&enablevpops)
 
 
 ## Permisos necesarios

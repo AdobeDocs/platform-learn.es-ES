@@ -8,7 +8,7 @@ jira: KT-3826, KT-13272
 thumbnail: 29711.jpg
 last-substantial-update: 2023-05-24T00:00:00Z
 exl-id: 2a0caa84-dca6-4ba9-9ebf-bdf38dfc3cb2
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 0%
@@ -23,15 +23,15 @@ Aprenda a agrupar fácilmente los datos de ingesta de fuentes CRM en el perfil d
 
 Obtenga información sobre cómo configurar el conector de origen para Salesforce CRM mediante el flujo de trabajo estándar. El flujo de trabajo estándar requiere la creación inicial de esquemas y áreas de nombres de identidad. Otros conectores de origen CRM solo pueden admitir el flujo de trabajo estándar.
 
->[!VIDEO](https://video.tv.adobe.com/v/29711?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29711?learn=on&enablevpops)
 
 ## Flujo de trabajo de plantilla (Salesforce)
 
-Obtenga información sobre cómo configurar el conector de origen para Salesforce CRM mediante el flujo de trabajo de plantilla. Este flujo de trabajo genera automáticamente los recursos necesarios para la ingesta de datos de Salesforce basados en plantillas. Le ahorra tiempo y los recursos se pueden personalizar según sus necesidades. Este flujo de trabajo no es compatible con todos los conectores de origen CRM.
+Obtenga información sobre cómo configurar el conector de origen para Salesforce CRM mediante el flujo de trabajo de plantillas. Este flujo de trabajo genera automáticamente los recursos necesarios para la ingesta de datos de Salesforce basados en plantillas. Le ahorra tiempo y los recursos se pueden personalizar según sus necesidades. Este flujo de trabajo no es compatible con todos los conectores de origen CRM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419422?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3419422?learn=on&enablevpops)
 
 Para obtener más información, consulte la siguiente documentación:
-* [Documentación de creación de conexión de Salesforce](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html).
+* [Salesforce crea una documentación de conexión](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html).
 * [Crear un flujo de datos de origen mediante plantillas en la interfaz de usuario](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#).
 
