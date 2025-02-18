@@ -5,15 +5,57 @@ user-guide-description: Descubra los muchos componentes de Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: ce28c48d554727ce42803400373826315f5b2153
+source-git-commit: 4d403a6694f856a9020fe9dfd541693603c57c69
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '882'
 ht-degree: 18%
 
 ---
 
 
 # Tutoriales de Adobe Experience Platform {#tutorials}
+
+<!--
+
+Data Modeling
+
+Profile vs Data Lake vs Identity
+how a record becomes an audience member
+
+Profiles
+Identities
+Audience
+
+Data Lake
+
+Data Ingestion
+-Batch
+-Streaming
+-Edge (Data Collection)
+-Monitoring
+
+Data Governance
+Privacy
+Consent
+Audit logs
+
+Administration
+-Sandboxes
+-Permissions
+-License usage
+
+
+---
+App specific
+
+Destinations
+
+Journeys
+
+Campaigns
+
+-->
+
 
 + [Tutoriales de Platform](/help/platform/overview.md)
 + Introducción a la plataforma {#intro-to-platform}
@@ -37,15 +79,16 @@ ht-degree: 18%
 + [Autenticar en las API de Experience Platform](/help/platform/authentication/platform-api-authentication.md)
 + [Importación de datos de ejemplo en Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Administración {#admin}
-   + [Uso de alertas](/help/platform/admin/use-alerts.md)
-   + [Usar zonas protegidas](/help/platform/admin/use-sandboxes.md)
-   + [Copia de paquetes entre zonas protegidas](/help/platform/admin/copy-objects-between-sandboxes.md)
-   + [Uso compartido de paquetes entre organizaciones de IMS](/help/platform/admin/share-packages-across-orgs.md)
+   + [Información general](/help/platform/admin/overview.md)
    + [Adición de usuarios](/help/platform/admin/add-users.md)
-   + [Agregar usuarios a la recopilación de datos](https://experienceleague.adobe.com/docs/platform-learn/data-collection/users-and-permissions.html)
+   + [Agregar usuarios a la recopilación de datos](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/users-and-permissions)
    + [Adición de desarrolladores](/help/platform/admin/add-developers.md)
    + [Añadir administradores de productos](/help/platform/admin/add-product-administrators.md)
    + [Configuración del control de acceso basado en atributos](/help/platform/admin/configure-attribute-based-access-control.md)
+   + [Usar zonas protegidas](/help/platform/admin/use-sandboxes.md)
+   + [Copia de paquetes entre zonas protegidas](/help/platform/admin/copy-objects-between-sandboxes.md)
+   + [Uso compartido de paquetes entre organizaciones de IMS](/help/platform/admin/share-packages-across-orgs.md)
+   + [Uso de alertas](/help/platform/admin/use-alerts.md)
 + Asistente de IA{#ai-assistant}
    + [Información general](/help/platform/ai-assistant/overview.md)
    + [Obtener acceso](/help/platform/ai-assistant/access.md)
