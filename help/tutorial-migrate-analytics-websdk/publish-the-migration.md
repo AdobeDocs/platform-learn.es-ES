@@ -1,18 +1,18 @@
 ---
-title: 'Publish: la migración al ensayo y la producción'
+title: Publicar la migración en ensayo y producción
 description: Cuando se haya completado y validado todo el desarrollo de la migración, genérelo en fase de ensayo y, a continuación, publíquelo en producción cuando esté listo.
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16767
-source-git-commit: 15f2122c53a3b2f3dc1942502e908403e55519ab
+exl-id: 47c86999-6a9c-4451-8a59-475e8c65ab6a
+source-git-commit: 3084590685bee9cd139c27b9a27026f08abf897f
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
 
-
-# Publish: la migración al ensayo y la producción
+# Publicar la migración en ensayo y producción
 
 Cuando se haya completado y validado todo el desarrollo de la migración, genérelo en fase de ensayo y, a continuación, publíquelo en producción cuando esté listo.
 
@@ -51,6 +51,6 @@ Voy a añadir una nota importante aquí que tuvimos al principio de este tutoria
 
 >[!IMPORTANT]
 >
->Es importante tener en cuenta que una de las principales razones por las que está realizando esta migración de la implementación es para prepararse para utilizar aplicaciones de Adobe Experience Platform, como Customer Journey Analytics, Real-Time CDP o Journey Optimizer (como se ha indicado anteriormente en #3 ). El uso de los datos del sitio web para este fin incluirá pasos adicionales que no se incluyen en este tutorial, pero este tutorial será sin duda un requisito previo para que progrese aún más su implementación. Por lo tanto, complete este tutorial y, a continuación, puede continuar para realizar los pasos necesarios para enviar estos mismos datos del sitio web al Experience Platform.
+>Es importante tener en cuenta que una de las principales razones por las que está realizando esta migración de la implementación es para prepararse para utilizar aplicaciones de Adobe Experience Platform, como Customer Journey Analytics, Real-Time CDP o Journey Optimizer. El uso de los datos del sitio web para este fin incluirá pasos adicionales que no se incluyen en este tutorial, pero este tutorial será sin duda un requisito previo para que progrese aún más su implementación. Ahora que ha completado este tutorial, está listo para realizar los pasos necesarios para enviar estos mismos datos del sitio web a Experience Platform.
 
 ¡Buena suerte en su recorrido con los análisis y otros esfuerzos de contenido y marketing!
