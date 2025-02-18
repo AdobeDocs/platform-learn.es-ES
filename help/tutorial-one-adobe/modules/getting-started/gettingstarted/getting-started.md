@@ -4,9 +4,9 @@ description: 'Primeros pasos: One Adobe'
 kt: 5342
 doc-type: tutorial
 exl-id: 4b85938e-b7ee-4e05-b73d-112917beea08
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: 9169b0f9be7f192fd7e16ddcc2ae32f6a8cca92c
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '319'
 ht-degree: 2%
 
 ---
@@ -23,8 +23,8 @@ En este módulo configurará todo para que pueda recopilar datos, acceder al ent
 ## Requisitos previos
 
 - Acceso a Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Acceso a las etiquetas de Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Acceso al sistema de demostración Siguiente: [https://dashboard.adobedemo.com/](https://dashboard.adobedemo.com/)
+- Acceso a la recopilación de datos de Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Acceso al sistema de demostración Siguiente: [https://dsn.adobe.com](https://dsn.adobe.com)
 
 ## Ejercicios
 

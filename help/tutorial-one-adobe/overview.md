@@ -3,9 +3,9 @@ title: 'Información general: tutorial técnico completo: One Adobe'
 description: 'Tutorial técnico completo: One Adobe'
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: f25c1705ae6813dc744945e8a4ee9858513f7374
+source-git-commit: 9169b0f9be7f192fd7e16ddcc2ae32f6a8cca92c
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '936'
 ht-degree: 2%
 
 ---
@@ -15,8 +15,6 @@ ht-degree: 2%
 ![Perspectivas técnicas](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Información general
-
-Este tutorial es el punto de partida perfecto para
 
 Este tutorial es muy diverso y ofrece perspectivas claras en las siguientes aplicaciones:
 
@@ -50,25 +48,21 @@ Si desea realizar este tutorial utilizando su propia instancia de Adobe Experien
 - Recopilación de datos de Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}
 - Acceso al sistema de demostración: [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}
 
-## Trabajo preliminar
-
-Compruebe las aplicaciones necesarias que deben instalarse en el equipo [aquí](./prework.md){target="_blank"}.
-
 ## Finalización y certificación
 
 Este tutorial forma parte del curso Adobe Certification. Puede inscribirse en el curso junto con este tutorial yendo a [https://certification.adobe.com](https://certification.adobe.com).
 
 Para cada módulo que complete usando el tutorial siguiente, debe enviar una prueba de finalización como se indica [aquí](./completion.md).
 
-## Contenido
+## Estado del contenido
 
 Para comprobar el estado del contenido siguiente, vaya a la [página de estado](./status.md){target="_blank"}.
 
-### Introducción
+### Primeros pasos
 
 [Introducción](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"}
 
-En este módulo básico, configurará todo para que pueda acceder y utilizar el entorno de demostración.
+En este módulo básico, preparará todo para que pueda acceder y utilizar el entorno de demostración.
 
 ### 1. Flujo de trabajo y planificación
 
