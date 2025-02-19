@@ -1,24 +1,24 @@
 ---
-title: Instalación de SDK de Adobe Experience Platform Mobile
-description: Obtenga información sobre cómo implementar Adobe Experience Platform Mobile SDK en una aplicación móvil.
+title: Instalar los SDK móviles de Adobe Experience Platform
+description: Obtenga información sobre cómo implementar el SDK móvil de Adobe Experience Platform en una aplicación móvil.
 jira: KT-14627
 exl-id: 98d6f59e-b8a3-4c63-ae7c-8aa11e948f59
 source-git-commit: 3dd9c68203d0021e87caaa82bd962b3f9160a397
 workflow-type: tm+mt
 source-wordcount: '916'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
-# Instalación de SDK de Adobe Experience Platform Mobile {#tutorial_install_mobile_sdks}
+# Instalar los SDK móviles de Adobe Experience Platform {#tutorial_install_mobile_sdks}
 
 >[!CONTEXTUALHELP]
 >
 >id="platform_mobile_sdk_tutorial_install"
->title="Instalación de SDK de Adobe Experience Platform Mobile"
->abstract="Obtenga información sobre cómo implementar Adobe Experience Platform Mobile SDK en una aplicación móvil."
+>title="Instalar los SDK móviles de Adobe Experience Platform"
+>abstract="Obtenga información sobre cómo implementar el SDK móvil de Adobe Experience Platform en una aplicación móvil."
 
-Obtenga información sobre cómo implementar Adobe Experience Platform Mobile SDK en una aplicación móvil.
+Obtenga información sobre cómo implementar el SDK móvil de Adobe Experience Platform en una aplicación móvil.
 
 ## Requisitos previos
 
@@ -50,11 +50,11 @@ En Xcode, puede usar **[!UICONTROL Archivo]** > **[!UICONTROL Agregar paquetes..
 | Paquete | Descripción |
 |---|---|
 | [Núcleo de AEP](https://github.com/adobe/aepsdk-core-ios) | Las extensiones `AEPCore`, `AEPServices` y `AEPIdentity` representan la base de Adobe Experience Platform SDK; todas las aplicaciones que utilicen SDK deben incluirlas. Estos módulos contienen un conjunto común de funciones y servicios que son necesarios para todas las extensiones de SDK.<br/><ul><li>`AEPCore` contiene la implementación de Event Hub. Event Hub es el mecanismo que se utiliza para enviar eventos entre la aplicación y SDK. Event Hub también se utiliza para compartir datos entre extensiones.</li><li>`AEPServices` proporciona varias implementaciones reutilizables necesarias para la compatibilidad con la plataforma, incluidas la red, el acceso a disco y la administración de bases de datos.</li><li>`AEPIdentity` implementa la integración con los servicios de identidad de Adobe Experience Platform.</li><li>`AEPSignal` representa la extensión de señal del SDK de Adobe Experience Platform que permite a los especialistas en marketing enviar una &quot;señal&quot; a sus aplicaciones para enviar datos a destinos externos o para abrir direcciones URL.</li><li>`AEPLifecycle` representa la extensión del ciclo vital de los SDK de Adobe Experience Platform que ayuda a recopilar métricas del ciclo vital de la aplicación, como información de actualización o instalación de aplicaciones, información de inicio y sesión de aplicaciones, información del dispositivo y cualquier dato de contexto adicional proporcionado por el desarrollador de la aplicación.</li></ul> |
-| [AEP Edge](https://github.com/adobe/aepsdk-edge-ios) | La extensión móvil de Edge Network de Adobe Experience Platform (`AEPEdge`) le permite enviar datos a Adobe Edge Network desde una aplicación móvil. Esta extensión le permite implementar las funcionalidades de Adobe Experience Cloud de una manera más sólida, ofrecer varias soluciones de Adobe a través de una llamada de red y enviar simultáneamente esta información a Adobe Experience Platform.<br/>La extensión móvil de Edge Network es una extensión para Adobe Experience Platform SDK y requiere las extensiones `AEPCore` y `AEPServices` para la administración de eventos, así como la extensión `AEPEdgeIdentity` para recuperar las identidades, como ECID. |
-| [Identidad de Edge de AEP](https://github.com/adobe/aepsdk-edgeidentity-ios) | La extensión móvil Edge Identity de AEP (`AEPEdgeIdentity`) permite administrar los datos de identidad de un usuario desde una aplicación móvil al utilizar Adobe Experience Platform SDK y la extensión de Edge Network. |
-| [Consentimiento de AEP Edge](https://github.com/adobe/aepsdk-edgeconsent-ios) | La extensión móvil AEP Consent Collection (`AEPConsent`) habilita la recopilación de preferencias de consentimiento de la aplicación móvil al utilizar Adobe Experience Platform SDK y la extensión de Edge Network. |
+| [AEP Edge](https://github.com/adobe/aepsdk-edge-ios) | La extensión móvil Adobe Experience Platform Edge Network (`AEPEdge`) permite enviar datos a Adobe Edge Network desde una aplicación móvil. Esta extensión le permite implementar las funcionalidades de Adobe Experience Cloud de una manera más sólida, ofrecer varias soluciones de Adobe a través de una llamada de red y reenviar simultáneamente esta información a Adobe Experience Platform.<br/>La extensión Edge Network Mobile es una extensión para Adobe Experience Platform SDK y requiere las extensiones `AEPCore` y `AEPServices` para la administración de eventos, así como la extensión `AEPEdgeIdentity` para recuperar las identidades, como ECID. |
+| [Identidad de Edge de AEP](https://github.com/adobe/aepsdk-edgeidentity-ios) | La extensión móvil Edge Identity de AEP (`AEPEdgeIdentity`) permite administrar los datos de identidad de usuario desde una aplicación móvil al utilizar Adobe Experience Platform SDK y la extensión de Edge Network. |
+| [Consentimiento de AEP Edge](https://github.com/adobe/aepsdk-edgeconsent-ios) | La extensión móvil de recopilación de consentimiento de AEP (`AEPConsent`) habilita la recopilación de preferencias de consentimiento de la aplicación móvil al utilizar Adobe Experience Platform SDK y la extensión de Edge Network. |
 | [Perfil de usuario de AEP](https://github.com/adobe/aepsdk-userprofile-ios) | La extensión móvil de perfil de usuario de Adobe Experience Platform (`AEPUserProfile`) es una extensión para administrar perfiles de usuario para Adobe Experience Platform SDK. |
-| [Lugares de AEP](https://github.com/adobe/aepsdk-places-ios) | La extensión Places de AEP (`AEPPlaces`) le permite rastrear eventos de geolocalización según se definen en la interfaz de Places de Adobe y en las reglas de etiquetas de recopilación de datos de Adobe. |
+| [Lugares de AEP](https://github.com/adobe/aepsdk-places-ios) | La extensión Places de AEP (`AEPPlaces`) permite rastrear eventos de geolocalización según se definen en la interfaz de Adobe Places y en las reglas de etiquetas de recopilación de datos de Adobe. |
 | [Mensajería AEP](https://github.com/adobe/aepsdk-messaging-ios) | La extensión de mensajería de AEP (`AEPMessaging`) le permite enviar tokens de notificaciones push y comentarios sobre clics en notificaciones push a Adobe Experience Platform. |
 | [Optimizar AEP](https://github.com/adobe/aepsdk-optimize-ios) | La extensión Optimizar de AEP (`AEPOptimize`) proporciona API para habilitar flujos de trabajo de personalización en tiempo real en los SDK de Adobe Experience Platform Mobile mediante Adobe Target o Adobe Journey Optimizer Offer Decisioning. Se requieren las extensiones `AEPCore` y `AEPEdge` para enviar eventos de consulta de personalización a la red de Experience Edge. |
 | [AEP Assurance](https://github.com/adobe/aepsdk-assurance-ios) | Assurance (también conocido como proyecto Griffon) es una extensión nueva e innovadora (`AEPAssurance`) que le ayudará a inspeccionar, probar, simular y validar la forma en que recopila datos o sirve experiencias en su aplicación móvil. Esta extensión habilita la aplicación para Assurance. |
