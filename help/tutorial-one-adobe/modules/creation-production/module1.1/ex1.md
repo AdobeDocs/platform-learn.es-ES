@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: b083a817700320e8e45645702c2868423c1fae99
+source-git-commit: 6ef4ce94dbbcd65ab30bcfad24f4ddd746c26b82
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '741'
 ht-degree: 0%
 
 ---
@@ -17,17 +17,76 @@ ht-degree: 0%
 
 Aprenda a utilizar Postman y Adobe I/O para consultar las API de servicios de Adobe Firefly.
 
-## 1.1.1.1 Requisitos previos
+## 1.1.1.1 requisitos previos
 
 Antes de continuar con este ejercicio, debes haber completado la configuración de [tu proyecto de Adobe I/O](./../../../modules/getting-started/gettingstarted/ex6.md), y también debes haber configurado una aplicación para interactuar con las API, como [Postman](./../../../modules/getting-started/gettingstarted/ex7.md) o [PostBuster](./../../../modules/getting-started/gettingstarted/ex8.md).
 
-## 1.1.1.2 Adobe I/O: access_token
+## 1.1.1.1 firefly.adobe.com
+
+Vaya a [https://firefly.adobe.com](https://firefly.adobe.com). Haz clic en el icono **perfil** y asegúrate de haber iniciado sesión en la **cuenta** correcta, que debería ser `--aepImsOrgName--`. Si es necesario, haga clic en **Cambiar perfil** para cambiar a esa cuenta.
+
+![Postman](./images/ffui1.png){zoomable="yes"}
+
+Escriba el mensaje `Horses in a field` y haga clic en **Generar**.
+
+![Postman](./images/ffui2.png){zoomable="yes"}
+
+Entonces debería ver algo similar a esto.
+
+![Postman](./images/ffui3.png){zoomable="yes"}
+
+A continuación, abre **Herramientas para desarrolladores** en tu navegador.
+
+![Postman](./images/ffui4.png){zoomable="yes"}
+
+Entonces debería ver esto. Vaya a la ficha **Red**.
+
+![Postman](./images/ffui5.png){zoomable="yes"}
+
+Escriba el término de búsqueda **generate** y luego haga clic en **Generate** de nuevo. Debería ver una solicitud con el nombre **generate-async**. Selecciónelo y luego ve a **Carga** donde verás los detalles de la solicitud.
+
+![Postman](./images/ffui6.png){zoomable="yes"}
+
+La solicitud que está viendo aquí es la solicitud que se envía al servidor back-end de Firefly Services. Contiene varios parámetros importantes:
+
+- **prompt**: Este es su prompt, solicitando qué tipo de imagen debe generar Firefly
+
+- **seed**: En esta solicitud, las semillas se generaron de forma aleatoria. Siempre que Firefly genera una imagen, comienza el proceso de forma predeterminada seleccionando un número aleatorio denominado semilla. Este número aleatorio contribuye a lo que hace que cada imagen sea única, lo que es genial cuando desea generar una amplia variedad de imágenes. Sin embargo, puede haber ocasiones en que desee generar imágenes similares entre sí en varias solicitudes. Por ejemplo, cuando Firefly genera una imagen que desea modificar con otras opciones de Firefly (como ajustes preestablecidos de estilo, imágenes de referencia, etc.), utilice la semilla de esa imagen en solicitudes HTTP futuras para limitar la aleatoriedad de imágenes futuras y centrarse en la imagen que desee.
+
+![Postman](./images/ffui7.png){zoomable="yes"}
+
+Vuelva a consultar la interfaz de usuario. Cambie **Proporción de aspecto** a **Horizontal (4:3)**.
+
+![Postman](./images/ffui8.png){zoomable="yes"}
+
+Desplácese hacia abajo hasta **Efectos**, vaya a **Temas** y seleccione un efecto como **Comic book**.
+
+![Postman](./images/ffui9.png){zoomable="yes"}
+
+Vuelva a abrir **Herramientas para desarrolladores** en el explorador. A continuación, haga clic en **Generar** e inspeccione la solicitud de red que se está enviando.
+
+![Postman](./images/ffui10.png){zoomable="yes"}
+
+Al inspeccionar los detalles de la solicitud de red, ahora verá lo siguiente:
+
+- **prompt** no ha cambiado en comparación con la solicitud anterior
+- **semillas** no han cambiado en comparación con la solicitud anterior
+- **tamaño** ha cambiado, según el cambio en **Proporción de aspecto**.
+- Se han agregado **estilos** y tiene una referencia al efecto **cómic_book** que seleccionó
+
+![Postman](./images/ffui11.png){zoomable="yes"}
+
+Para el siguiente ejercicio, tendrás que usar uno de los números **seed**. Anote un número semilla de su elección.
+
+En el siguiente ejercicio hará cosas similares con los servicios de Firefly, pero utilizando la API en lugar de la interfaz de usuario. En este ejemplo, el número semilla es **45781**.
+
+## 1.1.1.3 Adobe I/O - access_token
 
 En la colección **Adobe IO - OAuth**, seleccione la solicitud **POST - Obtener token de acceso** y seleccione **Enviar**. La respuesta debe contener un nuevo **accestoken**.
 
 ![Postman](./images/ioauthresp.png){zoomable="yes"}
 
-## 1.1.1.3 API de servicios de Firefly, imagen de texto 2
+## 1.1.1.4 API de servicios de Firefly, imagen de texto 2
 
 Ahora que tiene un access_token válido y nuevo, está listo para enviar su primera solicitud a las API de servicios de Firefly.
 
@@ -43,7 +102,35 @@ Debería ver una imagen hermosa que represente a `horses in a field`.
 
 ![Firefly](./images/ff3.png){zoomable="yes"}
 
-Siéntase libre de jugar con la solicitud de API antes de continuar con el siguiente ejercicio.
+En el **Cuerpo** de su solicitud **POST - Firefly - T2I V3**, agregue lo siguiente en el campo `"promptBiasingLocaleCode": "en-US"` y reemplace la variable `XXX` por uno de los números semilla que la interfaz de usuario de Firefly Services utilizó aleatoriamente. En este ejemplo, el número **seed** es `45781`.
+
+```json
+,
+  "seeds": [
+    XXX
+  ]
+```
+
+Haga clic en **Enviar**. Recibirá una respuesta con una nueva imagen generada por los servicios de Firefly. Abra la imagen para verla.
+
+![Firefly](./images/ff4.png){zoomable="yes"}
+
+Entonces debería ver una nueva imagen con ligeras diferencias, basada en la **semilla** que se utilizó.
+
+![Firefly](./images/ff5.png){zoomable="yes"}
+
+A continuación, en **Body** de su solicitud **POST - Firefly - T2I V3**, pegue el siguiente objeto **styles** debajo del objeto **seed**. Esto cambiará el estilo de la imagen generada a **comic_book**.
+
+```json
+,
+  "contentClass": "art",
+  "styles": {
+    "presets": [
+      "comic_book"
+    ],
+    "strength": 50
+  }
+```
 
 ## Pasos siguientes
 
