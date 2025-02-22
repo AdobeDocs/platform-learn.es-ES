@@ -5,10 +5,10 @@ user-guide-description: Descubra los muchos componentes de Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 7317df472ec7c72dd6ecf4c6a298ccca818d28e9
+source-git-commit: bfb079fb603702e7d07bfa74fec771503a5188df
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 18%
+source-wordcount: '883'
+ht-degree: 19%
 
 ---
 
@@ -137,6 +137,7 @@ Campaigns
    + [Aplicar consentimiento](/help/platform/governance/enforce-consent.md)
    + [Integración con el marco de transparencia y consentimiento 2.0 de IAB](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + Higiene de datos {#data-hygiene}
+   + [Información general](/help/platform/data-hygiene/overview.md)
    + [Preparación de datos para la higiene de datos](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
    + [Eliminar conjuntos de datos y lotes](/help/platform/data-hygiene/delete-datasets-and-batches.md)
    + [Caduca conjuntos de datos](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
