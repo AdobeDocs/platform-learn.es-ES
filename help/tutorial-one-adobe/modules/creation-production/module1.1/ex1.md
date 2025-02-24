@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: 6ef4ce94dbbcd65ab30bcfad24f4ddd746c26b82
+source-git-commit: c5a80b87ac8e997922cb8c69b4180c4220dd9862
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '1006'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Aprenda a utilizar Postman y Adobe I/O para consultar las API de servicios de Ad
 
 Antes de continuar con este ejercicio, debes haber completado la configuración de [tu proyecto de Adobe I/O](./../../../modules/getting-started/gettingstarted/ex6.md), y también debes haber configurado una aplicación para interactuar con las API, como [Postman](./../../../modules/getting-started/gettingstarted/ex7.md) o [PostBuster](./../../../modules/getting-started/gettingstarted/ex8.md).
 
-## 1.1.1.1 firefly.adobe.com
+## 1.1.1.2 firefly.adobe.com
 
 Vaya a [https://firefly.adobe.com](https://firefly.adobe.com). Haz clic en el icono **perfil** y asegúrate de haber iniciado sesión en la **cuenta** correcta, que debería ser `--aepImsOrgName--`. Si es necesario, haga clic en **Cambiar perfil** para cambiar a esa cuenta.
 
@@ -131,6 +131,62 @@ A continuación, en **Body** de su solicitud **POST - Firefly - T2I V3**, pegue 
     "strength": 50
   }
 ```
+
+Entonces deberías tener esto. Haga clic en **Enviar**.
+
+![Firefly](./images/ff6.png){zoomable="yes"}
+
+Haga clic en la dirección URL de la imagen para abrirla.
+
+![Firefly](./images/ff7.png){zoomable="yes"}
+
+La imagen ha cambiado un poco. Al aplicar ajustes preestablecidos de estilo, la imagen semilla ya no se aplica del mismo modo que antes.
+
+![Firefly](./images/ff8.png){zoomable="yes"}
+
+Elimine el código del objeto **seed** del **cuerpo** de su solicitud. Haga clic en **Enviar** y, a continuación, haga clic en la URL de la imagen que obtiene de la respuesta.
+
+```json
+,
+  "seeds": [
+    XXX
+  ]
+```
+
+![Firefly](./images/ff9.png){zoomable="yes"}
+
+La imagen ha cambiado un poco de nuevo.
+
+![Firefly](./images/ff10.png){zoomable="yes"}
+
+
+## 1.1.1.5 API de servicios de Firefly, Gen Expand
+
+Seleccione la solicitud **POST - Firefly - Gen Expand** de la colección **FF - Firefly Services Tech Insiders** y vaya al **Cuerpo** de la solicitud.
+
+- **size**: escriba la resolución que desee. El valor introducido aquí debe ser mayor que el tamaño original de la imagen y no puede ser superior a 4096.
+- **image.source.url**: este campo necesita un vínculo a la imagen que debe expandirse. En este ejemplo, se utiliza una variable para hacer referencia a la imagen generada en el ejercicio anterior.
+
+- **alineación horizontal**: Los valores aceptados son: `"center"`,`"left`, `"right"`.
+- **alineación vertical**: Los valores aceptados son: `"center"`,`"top`, `"bottom"`.
+
+![Firefly](./images/ff11.png){zoomable="yes"}
+
+Haga clic en la URL de la imagen que forma parte de la respuesta.
+
+![Firefly](./images/ff12.png){zoomable="yes"}
+
+Ahora verá que la imagen generada en el ejercicio anterior se ha ampliado a la resolución de 3999x3999.
+
+![Firefly](./images/ff13.png){zoomable="yes"}
+
+Al cambiar la alineación de la posición, la salida también será ligeramente diferente. En este ejemplo, la ubicación se cambia a **left, bottom**. Haga clic en **Enviar** y, a continuación, haga clic en para abrir la dirección URL de la imagen generada.
+
+![Firefly](./images/ff14.png){zoomable="yes"}
+
+A continuación, debe ver que la imagen original se utiliza en una ubicación diferente, lo que influye en toda la imagen.
+
+![Firefly](./images/ff15.png){zoomable="yes"}
 
 ## Pasos siguientes
 
