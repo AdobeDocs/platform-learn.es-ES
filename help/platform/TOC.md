@@ -5,10 +5,10 @@ user-guide-description: Descubra los muchos componentes de Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 19d1ea02c33685f250e4fdf2a94c90fa66c5ee7b
+source-git-commit: eb05c2116c8890d631db4da8a174007a37470ab7
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 18%
+source-wordcount: '881'
+ht-degree: 19%
 
 ---
 
@@ -127,7 +127,7 @@ Campaigns
 + [Registros de auditoría](/help/platform/governance/audit-logs.md)
 + [Recopilación de datos](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
 + Collaboration {#collaboration}
-   + [Información general sobre Real-Time CDP Collaboration](/help/platform/collaboration/real-time-cdp-collaboration-overview.md)
+   + [Información general de Real-Time CDP Collaboration](/help/platform/collaboration/real-time-cdp-collaboration-overview.md)
 + Paneles {#dashboards}
    + [Crear un tablero](/help/platform/dashboards/create-a-dashboard.md)
 + Gobernanza de datos {#data-governance}
@@ -290,4 +290,3 @@ Campaigns
    + [Una historia de dos percepciones: marcas frente a consumidores](/help/platform/industry/brands-vs-consumers.md)
    + [La evolución de su centro de excelencia de audiencia](/help/platform/industry/evolving-your-audience-center-of-excellence.md)
    + [Creación de mejores experiencias con perfiles de clientes](/help/platform/industry/building-better-experiences-with-customer-profiles.md)
-   + [Data Collaboration en el contexto de datos de origen](/help/platform/industry/data-collaboration-in-the-first-party-data-context.md)
