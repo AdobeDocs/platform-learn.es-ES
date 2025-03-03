@@ -3,9 +3,9 @@ title: Migrar variables globales
 description: Obtenga información sobre cómo migrar variables globales de la configuración de la extensión de Analytics a Web SDK
 solution: Data Collection, Analytics
 feature: Web SDK
-jira: KT-16764
+jira: KT-17277
 exl-id: 0917e951-c7e0-4723-8354-d308890bdaac
-source-git-commit: d01889ca317e29ed0c37b20e17291c4cb5a3abd1
+source-git-commit: 744b26da58307f0d6f6e8715a534ca814e02371c
 workflow-type: tm+mt
 source-wordcount: '609'
 ht-degree: 3%
@@ -66,7 +66,7 @@ Si no necesita definir los pasos necesarios, vaya a hacerlo y habrá terminado e
    1. Para **Tipo de acción**, elija Actualizar variable
    1. A la derecha, elija la variable **Elemento de datos** (para este tutorial, se llamó &quot;Elemento de datos de vista de página&quot;, pero el suyo puede variar)
    1. Seleccione **Analytics** en el objeto de datos
-   1. Rellene las variables que guardó desde la sección Variables globales en la configuración de la extensión de Analytics (en el ejemplo de este tutorial, estableciendo eVar 10 en el elemento de datos de tipo de página)
+   1. Rellene las variables que guardó desde la sección Variables globales en la configuración de la extensión de Analytics (en el ejemplo de este tutorial, establecer eVar10 en el elemento de datos de tipo de página)
 
    ![websdk-global-variables-action](assets/websdk-global-variables-action.jpg)
 
