@@ -4,9 +4,9 @@ breadcrumb-title: Tutorial técnico completo para aplicaciones de Adobe, desde C
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 6ef4ce94dbbcd65ab30bcfad24f4ddd746c26b82
+source-git-commit: b0d81ccd3c3bf1ef2a836a3565069dd024bd90a6
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1113'
 ht-degree: 2%
 
 ---
@@ -42,12 +42,13 @@ ht-degree: 2%
       + [1.1.3 Uso de las API de Photoshop](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex3.md)
       + [API de modelos personalizados de Firefly 1.1.4](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex4.md)
       + [Resumen y beneficios](/help/tutorial-one-adobe/modules/creation-production/module1.1/summary.md)
-   + 1.2 Automatización del flujo de trabajo creativo con Workfront Fusion {#crpr2}
+   + 1.2 Automatización del flujo de trabajo de Creative con Workfront Fusion {#crpr2}
       + [Información general](/help/tutorial-one-adobe/modules/creation-production/module1.2/automation.md)
       + [1.2.1 Introducción a Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex1.md)
       + [1.2.2 Uso de las API de Adobe en Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex2.md)
       + [1.2.3 Automatización de procesos con Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex3.md)
       + [1.2.4 Automatización mediante conectores](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex4.md)
+      + [1.2.5 E/S de cuadro y Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex5.md)
       + [Resumen y beneficios](/help/tutorial-one-adobe/modules/creation-production/module1.2/summary.md)
 
 + Administración de recursos {#assetmgmt}
