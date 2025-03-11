@@ -1,62 +1,39 @@
 ---
-title: Validación de implementaciones de Target con la extensión Adobe Journey Optimizer - Decisioning Mobile
-description: Obtenga información sobre cómo validar actividades y depurar una implementación de Adobe Target con la extensión Adobe Journey Optimizer - Decisioning Mobile.
-source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
+title: Validación y solución de problemas de la implementación de la extensión Decisioning
+description: Obtenga información sobre cómo validar y solucionar problemas de una implementación móvil de Adobe Target con la extensión Decisioning.
+exl-id: edc6e25a-58d7-4145-97c3-bf48e980914f
+source-git-commit: a4fe85580776e5d84f6deaf3c0224f0513ba8415
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 1%
+source-wordcount: '311'
+ht-degree: 0%
 
 ---
 
-# Validación de la implementación de la extensión de Adobe Journey Optimizer - Decisioning Mobile
+# Validación y solución de problemas de la implementación de la extensión Decisioning
 
-Después de migrar la implementación de Target de la extensión de Target a la extensión de Decisioning, es importante validar que todo funciona correctamente antes de publicar los cambios en la aplicación de producción. El Adobe recomienda lo siguiente, que se trata en detalle en esta página:
+Después de migrar la implementación de Target de la extensión de Target a la extensión de Decisioning, es importante validar que todo funciona correctamente antes de publicar los cambios en la aplicación de producción. Adobe recomienda lo siguiente, que se trata en detalle en esta página:
 
-* Realice una validación técnica para asegurarse de que la implementación básica y las solicitudes y respuestas del SDK de Platform Mobile sean correctas
+* Realice una validación técnica para asegurarse de que la implementación básica y las solicitudes y respuestas de Platform Mobile SDK tengan el aspecto correcto
 * Asegúrese de que las actividades de Target se entreguen y representen correctamente
 * Compruebe que la creación de informes funciona correctamente
-* Vuelva a visitar las audiencias y los scripts de perfil para asegurarse de que son compatibles con el SDK de Platform Mobile y la extensión Optimizer
-* Asegúrese de que las integraciones con aplicaciones de Adobe o de terceros funcionan correctamente
+* Vuelva a visitar las audiencias y los scripts de perfil para asegurarse de que son compatibles con Platform Mobile SDK y la extensión Optimizer
+* Asegúrese de que las integraciones con Adobe o aplicaciones de terceros funcionan correctamente
 
-Cada implementación de Target es diferente según la arquitectura y las funciones del sitio utilizadas. Puede utilizar las tablas siguientes como punto de partida y añadir cualquier elemento exclusivo a la implementación. La [página de depuración](debugging.md) de este tutorial muestra las herramientas que puede utilizar para ayudarle con esta validación.
+Cada implementación de Target es diferente según la arquitectura y las funciones del sitio utilizadas. Puede utilizar las tablas siguientes como punto de partida y añadir cualquier elemento exclusivo a la implementación.
 
-## Validación técnica
+## Validación técnica y solución de problemas
 
-| Elemento de validación | Notas |
-|---|---|
-| | |
+La validación técnica y la resolución de problemas con Platform Mobile SDK y la extensión Decisioning se mejoran considerablemente con Assurance. Consulte las siguientes páginas de documentación para obtener más información sobre esta herramienta esencial:
 
+* [Configuración de complementos de Decisioning en Assurance](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/assurance-setup/){target=_blank}
 
-## Entrega y renderización de actividades
+* [Validando la configuración de optimización de SDK](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/optimize-configuration-view/){target=_blank}
 
-| Elemento de validación | Notas |
-| | |
+* [Revisar solicitudes y simular diferentes experiencias](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/review-simulate/){target=_blank}
 
-## Informes
+Después de realizar los pasos de validación anteriores, puede estar seguro de que la implementación de Platform Mobile SDK con la extensión Decisioning está lista para pasar a producción.
 
-| Elemento de validación | Notas |
-| | |
-
-## Audiencias y scripts de perfil
-
-| Elemento de validación | Notas |
-|---|---|
-| | |
-
-## Integraciones con aplicaciones de Adobe
-
-| Elemento de validación | Notas |
-| | |
-
-## Integraciones con aplicaciones de terceros
-
-| Elemento de validación | Notas |
-|---|---|
-| | |
-
-Después de realizar los pasos de validación anteriores, puede estar seguro de que la implementación del SDK de Platform Mobile con la extensión Decisioning está lista para pasar a producción.
-
-A continuación, aprenda a [solucionar problemas de una implementación de Target mediante el SDK web de Platform](debugging.md).
+¡Felicidades, ha llegado al final del tutorial! ¡Buena suerte al migrar su implementación de Adobe Target a la extensión de Decisioning!
 
 >[!NOTE]
 >

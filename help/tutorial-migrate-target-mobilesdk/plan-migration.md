@@ -1,10 +1,10 @@
 ---
-title: 'Planifique la migración: Migración de Adobe Target a Adobe Journey Optimizer, extensión de Decisioning Mobile'
+title: 'Planifique la migración: Migre la implementación de Adobe Target en su aplicación móvil a la extensión Adobe Journey Optimizer - Decisioning'
 description: Obtenga información sobre las diferencias clave entre at.js y Platform Web SDK y cómo planificar el esfuerzo de migración.
 exl-id: 86849319-d2ad-4338-aa1a-d307d8807d4a
-source-git-commit: cb08ad8a1ffd687d7748ca02643b11b2243cd1a7
+source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Independientemente de lo simple o compleja que sea su implementación, es import
 El proceso de migración incluye los siguientes pasos clave:
 
 1. Evalúe la implementación actual y determine un enfoque de migración
-1. Configuración de los componentes iniciales para conectarse al Edge Network de Adobe Experience Platform
+1. Configuración de los componentes iniciales para conectarse a Adobe Experience Platform Edge Network
 1. Actualice la implementación base para reemplazar la extensión de Target con la extensión Decisioning.
 1. Mejore la implementación de Optimize SDK para sus casos de uso específicos. Esto puede implicar pasar parámetros adicionales, utilizar tokens de respuesta, etc.
 1. Actualizar objetos en la interfaz de Target, como scripts de perfil, actividades y definiciones de audiencia

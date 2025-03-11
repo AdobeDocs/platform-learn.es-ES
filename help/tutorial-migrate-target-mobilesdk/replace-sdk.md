@@ -1,10 +1,10 @@
 ---
-title: Reemplace la extensión SDK - Migrar de Adobe Target a Adobe Journey Optimizer - Decisioning Mobile
+title: 'Reemplace SDK: Migre la implementación de Adobe Target en su aplicación móvil a la extensión Adobe Journey Optimizer - Decisioning'
 description: Obtenga información sobre cómo reemplazar SDK al migrar del Adobe Target a la extensión Adobe Journey Optimizer - Decisioning Mobile.
 exl-id: f1b77cad-792b-4a80-acff-e1a2f29250e1
-source-git-commit: 62afd1f41b3d20c04782a2b18423683ed3b49d1f
+source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '680'
 ht-degree: 2%
 
 ---
@@ -36,15 +36,10 @@ Ejemplo de +++Android
 
 ```Java
 implementation platform('com.adobe.marketing.mobile:sdk-bom:3.+')
-implementation 'com.adobe.marketing.mobile:edgeconsent'
+implementation 'com.adobe.marketing.mobile:core'
 implementation 'com.adobe.marketing.mobile:edgeidentity'
 implementation 'com.adobe.marketing.mobile:edge'
-implementation 'com.adobe.marketing.mobile:assurance'
-implementation 'com.adobe.marketing.mobile:core'
-implementation 'com.adobe.marketing.mobile:identity'
-implementation 'com.adobe.marketing.mobile:lifecycle'
-implementation 'com.adobe.marketing.mobile:signal'
-implementation 'com.adobe.marketing.mobile:userprofile'
+implementation 'com.adobe.marketing.mobile:optimize'
 ```
 
 
@@ -117,49 +112,27 @@ pod 'AEPUserProfile', '~> 5.0'
 Código de inicialización de Java después de migrar
 
 ```Java
-import com.adobe.marketing.mobile.AdobeCallback;
-import com.adobe.marketing.mobile.Assurance;
-import com.adobe.marketing.mobile.Edge;
-import com.adobe.marketing.mobile.Extension;
-import com.adobe.marketing.mobile.Identity;
-import com.adobe.marketing.mobile.Lifecycle;
-import com.adobe.marketing.mobile.LoggingMode;
 import com.adobe.marketing.mobile.MobileCore;
-import com.adobe.marketing.mobile.Signal;
-import com.adobe.marketing.mobile.UserProfile;
-import com.adobe.marketing.mobile.edge.consent.Consent;
+import com.adobe.marketing.mobile.Edge;
 import com.adobe.marketing.mobile.edge.identity.Identity;
-import java.util.Arrays;
-import java.util.List;
-...
-import android.app.Application;
-...
+import com.adobe.marketing.mobile.optimize.Optimize;
+import com.adobe.marketing.mobile.AdobeCallback;
+ 
 public class MainApp extends Application {
-...
+ 
+  private final String ENVIRONMENT_FILE_ID = "YOUR_APP_ENVIRONMENT_ID";
+ 
     @Override
     public void onCreate() {
         super.onCreate();
+ 
         MobileCore.setApplication(this);
-        MobileCore.setLogLevel(LoggingMode.DEBUG);
-        ...
-        List<Class<? extends Extension>> extensions = Arrays.asList(
-            Consent.EXTENSION,
-            com.adobe.marketing.mobile.edge.identity.Identity.EXTENSION,
-            com.adobe.marketing.mobile.Identity.EXTENSION,
-            Edge.EXTENSION,
-            Assurance.EXTENSION,
-            Lifecycle.EXTENSION,
-            Signal.EXTENSION,
-            UserProfile.EXTENSION
+        MobileCore.configureWithAppID(ENVIRONMENT_FILE_ID);
+ 
+        MobileCore.registerExtensions(
+            Arrays.asList(Edge.EXTENSION, Identity.EXTENSION, Optimize.EXTENSION),
+            o -> Log.d("MainApp", "Adobe Journey Optimizer - Decisioning Mobile SDK was initialized.")
         );
- 
- 
-        MobileCore.registerExtensions(extensions, new AdobeCallback () {
-            @Override
-            public void call(Object o) {
-                MobileCore.configureWithAppID(<Environment File ID>);
-            }
-        });
     }
 }
 ```
@@ -226,39 +199,23 @@ Código de inicialización de Swift después de migrar
 
 ```Swift
 import AEPCore
-import AEPAnalytics
-import AEPTarget
-import AEPIdentity
-import AEPLifecycle
-import AEPSignal
-import AEPServices
-import AEPUserProfile
-...
+import AEPEdge
+import AEPEdgeIdentity
+import AEPOptimize
+ 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        MobileCore.setLogLevel(.debug)
-        let appState = application.applicationState
-        ...
-        let extensions = [
-            Consent.self,
-            AEPEdgeIdentity.Identity.self,
-            AEPIdentity.Identity.self,
-            Edge.self,
-            Assurance.self,
-            Lifecycle.self,
-            Signal.self,
-            UserProfile.self
-        ]
-        MobileCore.registerExtensions(extensions, {
-        MobileCore.configureWith(<Environment File ID>)
-        if appState != .background {
-            MobileCore.lifecycleStart(additionalContextData: ["contextDataKey": "contextDataVal"])
-            }
-        })
-        ...
-        return true
-    }
+final class AppDelegate: UIResponder, UIApplicationDelegate {
+  var window: UIWindow?
+ 
+  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
+ 
+      // register the extensions
+      MobileCore.registerExtensions([Edge.self, AEPEdgeIdentity.Identity.self, Optimize.self]) {
+        MobileCore.configureWith(appId: <YOUR_ENVIRONMENT_FILE_ID>) // Replace <YOUR_ENVIRONMENT_FILE_ID> with a String containing your own ID.
+      }
+ 
+      return true
+  }
 }
 ```
 
@@ -326,7 +283,7 @@ Muchas funciones de extensión de Target tienen un enfoque equivalente que utili
 | `setTntId` | n/a | El identificador de respuesta `locationHint:result` lleva la información de indicio de ubicación de Target. Se supone que Target Edge se ubicará en el mismo sitio que Experience Edge. <br> <br>La extensión de red de Edge usa la sugerencia de ubicación EdgeNetwork para determinar el clúster de red de Edge al que enviar solicitudes. Para compartir sugerencias de ubicación de red de Edge entre SDK (aplicaciones híbridas), use las API `getLocationHint` y `setLocationHint` de la extensión de Edge Network. Para obtener más información, consulte [la documentación de la API `getLocationHint`](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#getlocationhint). |
 
 
-A continuación, aprenda a [solicitar y procesar actividades](render-activities.md) en la página.
+A continuación, aprenda a [solicitar y procesar actividades](retrieve-activities.md) en la página.
 
 >[!NOTE]
 >

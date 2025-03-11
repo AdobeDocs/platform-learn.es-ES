@@ -1,40 +1,29 @@
 ---
-title: 'Seguimiento de eventos: Migración del Adobe Target al Adobe Journey Optimizer, extensión de Decisioning Mobile'
+title: 'Seguimiento de eventos de conversión: Migre la implementación de Adobe Target en su aplicación móvil a la extensión Adobe Journey Optimizer - Decisioning.'
 description: Obtenga información sobre cómo rastrear eventos de conversión de Adobe Target mediante la extensión Adobe Journey Optimizer - Decisioning Mobile
 exl-id: 7b53aab1-0922-4d9f-8bf0-f5cf98ac04c4
-source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
+source-git-commit: 4bc5323e1f406b1fc9524838978ba8673e33b44e
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 1%
+source-wordcount: '373'
+ht-degree: 0%
 
 ---
 
-# Seguimiento de eventos de conversión de Target con la extensión Adobe Journey Optimizer - Decisioning Mobile
+# Seguimiento de eventos de conversión de Target con la extensión móvil Decisioning
 
-Consulte esta página para ver el contenido: https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#tracking
+El objetivo de la mayoría de las actividades de Target es impulsar acciones valiosas del usuario en la aplicación, como compras, registros, clics y mucho más. Las implementaciones de Target suelen utilizar eventos de conversión personalizados para realizar un seguimiento de estas acciones, que a menudo contienen detalles adicionales sobre la conversión. Los eventos de conversión para Target se pueden rastrear con Optimizar SDK de forma similar a Target SDK. Es necesario llamar a las API específicas para rastrear los eventos de conversión, como se muestra en la tabla siguiente:
 
-Los eventos de conversión para Target se pueden rastrear con... Los eventos de conversión suelen clasificarse en las siguientes categorías:
-
-* Eventos rastreados automáticamente que no requieren ninguna configuración
-* Eventos de conversión de compra que deben ajustarse para una implementación de extensión de decisiones de prácticas recomendadas.
-* Eventos de conversión que no son de compra y que requieren actualizaciones de código
-
-## Comparación de seguimiento de objetivos
-
-La siguiente tabla compara cómo at.js y Platform Web SDK rastrean los eventos de conversión
-
-| Objetivo de actividad | Target at.js 2.x | SDK web de Platform |
+| Objetivo de actividad | Extensión de Target | Extensión de decisiones |
 |---|---|---|
-| | | |
+
+| Seguimiento de un evento de conversión de vistas para una ubicación (ámbito) de mbox | Llamar a la API [displayedLocations](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#displayedlocations){target=_blank} cuando se visualice la ubicación de mbox | Llame a la API [displayed](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#displayedlocations){target=_blank} cuando se visualice la oferta de la ubicación mbox. Esto envía un evento con el tipo de evento decisioning.propositionDisplay a la red de Experience Edge. |
+
+| Seguimiento de un evento de conversión de clics para una ubicación (ámbito) de mbox | Llame a la API [clickedLocations](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#displayedlocations){target=_blank} en cuando se haga clic en la ubicación de mbox | Llame a la API [tapped](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#displayedlocations){target=_blank} cuando se haga clic en la oferta para la ubicación mbox. Esto envía un evento con el tipo de evento decisioning.propositionInteract a la red de Experience Edge. |
+
+| Realice un seguimiento de un evento de conversión personalizado que también puede incluir datos adicionales, como parámetros de perfil de Target y detalles de pedidos |Pase los datos adicionales en el campo TargetParameters proporcionados por las API [displayedLocations](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#displayedlocations){target=_blank} y [clickedLocations](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#displayedlocations){target=_blank} | Utilice las API [generateDisplayInteractionXdm](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#proposition-tracking-using-edge-extension-api){target=_blank} y [generateTapInteractionXdm](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#proposition-tracking-using-edge-extension-api){target=_blank} de métodos públicos disponibles en la oferta para la ubicación de mbox a fin de generar los datos con formato XDM para su vista y hacer clic respectivamente. A continuación, llame a la API de Edge SDK [sendEvent](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#sendevent){target=_blank} para enviar estos datos XDM de seguimiento junto con cualquier dato XDM y de forma libre adicional a la red de Experience Edge. |
 
 
-## Eventos rastreados automáticamente
-
-Los siguientes objetivos de conversión no requieren ningún ajuste específico en la implementación:
-
-
-
-A continuación, aprenda a [habilitar el uso compartido de ID entre dominios](webview.md) para perfiles de visitantes consistentes.
+A continuación, aprenda a [actualizar audiencias y scripts de perfil](update-audiences.md) para garantizar la compatibilidad con la extensión Decisioning.
 
 >[!NOTE]
 >
