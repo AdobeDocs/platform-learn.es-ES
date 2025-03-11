@@ -3,10 +3,10 @@ title: Migre la implementación de Adobe Target en su aplicación móvil a la ex
 description: Obtenga información sobre cómo migrar la implementación de su aplicación móvil de Adobe Target a la extensión Adobe Journey Optimizer - Decisioning
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: 32363b95-b6ad-44af-a3b0-e1fbbbf5a8f1
-source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
+source-git-commit: d2da62ed2d36f73af1c8053be5af27feea32cb14
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 0%
+source-wordcount: '690'
+ht-degree: 1%
 
 ---
 
@@ -45,12 +45,19 @@ Independientemente de lo simple o compleja que sea su implementación, es import
 
 El proceso de migración incluye los siguientes pasos clave:
 
-1. Evaluar la implementación actual
+1. Evalúe la implementación actual, lo que incluye:
+   1. Todas las API de SDK de Target utilizadas
+   1. Modificaciones en la configuración global de Target
+   1. Integración con Adobe Analytics
+   1. Uso de parámetros de mbox, perfil y entidad
+   1. Uso de scripts de perfil y audiencias
+   1. Código personalizado exclusivo de la implementación
 1. Configuración de los componentes iniciales para conectarse a Adobe Experience Platform Edge Network
 1. Actualice la implementación base para reemplazar la extensión de Target con la extensión Decisioning.
 1. Mejore la implementación de Optimize SDK para sus casos de uso específicos. Esto puede implicar pasar parámetros adicionales, utilizar tokens de respuesta, etc.
 1. Actualizar objetos en la interfaz de Target, como scripts de perfil, actividades y definiciones de audiencia
 1. Valide la implementación final antes de realizar el cambio en la aplicación de producción.
+
 
 >[!INFO]
 >
