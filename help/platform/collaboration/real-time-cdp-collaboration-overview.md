@@ -8,7 +8,7 @@ duration: 92
 last-substantial-update: 2025-03-18T00:00:00Z
 jira: KT-17403
 exl-id: 047839f3-ebf1-4c1d-a5bd-15ee55daf02e
-source-git-commit: ff70af08af560ef69ed269a9425039851477cf43
+source-git-commit: cccb57946ca67afba7988aa2097aa322b4dd2107
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Para obtener más información, consulte la [documentación](https://experiencel
 
 Obtenga una introducción a Adobe Real-Time Collaboration, una aplicación de colaboración de datos diseñada específicamente que le permite descubrir y activar audiencias de alto valor y utilizar capacidades de medición para obtener resultados tangibles.
 
->[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3446801?learn=on&enablevpops)
 
 
 ## Configuración
