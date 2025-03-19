@@ -5,10 +5,10 @@ user-guide-description: Descubra los muchos componentes de Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 7d300c94d4d52ad4785908497afc5ec4ace038bf
+source-git-commit: 65b1ecd8b12173399d0e834a95f78a0d6d1bf6fe
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 19%
+source-wordcount: '897'
+ht-degree: 18%
 
 ---
 
@@ -127,7 +127,11 @@ Campaigns
 + [Registros de auditoría](/help/platform/governance/audit-logs.md)
 + [Recopilación de datos](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
 + Collaboration {#collaboration}
-   + [Información general de Real-Time CDP Collaboration](/help/platform/collaboration/real-time-cdp-collaboration-overview.md)
+   + [Información general de Real-Time CDP Collaboration](collaboration/real-time-cdp-collaboration-overview.md)
+   + [Definición de permisos](collaboration/set-permissions-for-collaboration.md)
+   + [Configurar una cuenta de anunciante](collaboration/set-up-an-advertiser-account.md)
+   + [Hacer referencia a las audiencias como anunciante](collaboration/reference-audiences-as-an-advertiser.md)
+   + [Conectar con editores](collaboration/connect-with-publishers.md)
 + Paneles {#dashboards}
    + [Crear un tablero](/help/platform/dashboards/create-a-dashboard.md)
 + Gobernanza de datos {#data-governance}
