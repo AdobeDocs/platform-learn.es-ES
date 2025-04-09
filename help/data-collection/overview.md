@@ -3,10 +3,10 @@ title: Tutoriales de recopilación de datos
 description: Vídeos y tutoriales explicativos para convertirse en un usuario experto en la recopilación de datos
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: b6b1416dfdd7077db20b7771d9bd36ca59b84ef6
+source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
 workflow-type: tm+mt
 source-wordcount: '263'
-ht-degree: 23%
+ht-degree: 22%
 
 ---
 
@@ -90,11 +90,11 @@ La recopilación de datos es la próxima generación de funcionalidades de admin
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=es" target="_blank">
+    <a href="https://experienceleague.adobe.com/es/docs/platform-learn/implement-web-sdk/overview" target="_blank">
       <img alt="Implementación de Adobe Experience Cloud con SDK web" src="assets/thumb_websdk.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=es" target="_blank">
+      <a href="https://experienceleague.adobe.com/es/docs/platform-learn/implement-web-sdk/overview" target="_blank">
     <strong>Implementar Experience Cloud con Web SDK</strong>
     </a>
     </div>
@@ -103,11 +103,11 @@ La recopilación de datos es la próxima generación de funcionalidades de admin
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=es" target="_blank">
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
       <img alt="Implementación en aplicaciones móviles" src="assets/thumb_swift.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=es" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
     <strong>Implementar Experience Cloud en aplicaciones móviles</strong>
     </a>
     </div>
@@ -116,11 +116,11 @@ La recopilación de datos es la próxima generación de funcionalidades de admin
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
       <img alt="Migrar Target a Web SDK" src="assets/thumb_legacy.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
     <strong>Implementar bibliotecas heredadas con etiquetas</strong>
     </a>
     </div>
