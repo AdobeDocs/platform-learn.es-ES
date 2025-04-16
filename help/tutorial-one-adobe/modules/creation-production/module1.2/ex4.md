@@ -5,9 +5,10 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 6ef4ce94dbbcd65ab30bcfad24f4ddd746c26b82
+exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
+source-git-commit: 7d4970479ff1a7dcb3ebb1f46660f418ba768da3
 workflow-type: tm+mt
-source-wordcount: '1721'
+source-wordcount: '1724'
 ht-degree: 1%
 
 ---
@@ -50,9 +51,9 @@ Abra Postman. Añada una nueva solicitud en la misma carpeta que estaba utilizan
 
 ![WF Fusion](./images/wffc9.png)
 
-Asegúrese de que se aplica la siguiente configuración:
+Asegúrese de que se aplique la siguiente configuración:
 
-- Nombre de solicitud: `POST - Send Request to Workfront Fusion Webhook Firefly + Photoshop`
+- Nombre de la solicitud: `POST - Send Request to Workfront Fusion Webhook Firefly + Photoshop`
 - Tipo de solicitud: `POST`
 - Solicitar URL: pegue la URL que ha copiado del webhook de su Workfront Fusion Scenario.
 
@@ -74,7 +75,7 @@ Entonces deberías tener esto. Haga clic en **Enviar**.
 
 ![WF Fusion](./images/wffc10.png)
 
-El webhook de Workfront Fusion sigue esperando la entrada.
+El webhook de Workfront Fusion todavía está esperando la entrada.
 
 ![WF Fusion](./images/wffc11.png)
 
@@ -82,9 +83,9 @@ Una vez que hayas hecho clic en **Enviar**, el mensaje debería cambiar a **Dete
 
 ![WF Fusion](./images/wffc12.png)
 
-## 1.2.4.2 Actualizar nodo T2I de Firefly
+## 1.2.4.2 Actualización de Firefly T2I nodo
 
-Haga clic en el nodo **Firefly T2I**. Entonces debería ver esto. La petición de datos de esta solicitud estaba previamente codificada para **caballos en un campo**. Ahora eliminará ese texto codificado y lo reemplazará por un campo proveniente del webhook.
+Haga clic en el nodo **Firefly T2I**. Entonces deberías ver esto. El mensaje en esta solicitud anteriormente estaba codificado para **caballos en un campo**. Ahora eliminará ese texto codificado y lo reemplazará por un campo proveniente del webhook.
 
 ![WF Fusion](./images/wffcfft2i1.png)
 
@@ -104,11 +105,11 @@ Verá que el icono **stop** desaparece. A continuación, haga clic en el icono *
 
 ![WF Fusion](./images/wffc14.png)
 
-Entonces debería ver esto. A continuación, pase el ratón sobre el nodo **Firefly T2I** y haga clic en el icono **+**.
+Entonces deberías ver esto. Siguiente, coloca el cursor sobre el **nodo Firefly T2I** y haz clic en el **icono +** .
 
 ![WF Fusion](./images/wffc15.png)
 
-En el menú de búsqueda, escribe `Photoshop` y luego haz clic en la acción **Adobe Photoshop**.
+En el menú búsqueda, introduzca `Photoshop`y, a continuación, haga clic en la acción Adobe Photoshop ****.
 
 ![WF Fusion](./images/wffc16.png)
 
@@ -151,11 +152,11 @@ Desplácese hacia abajo hasta que vea **Capas**. Haga clic en **Agregar elemento
 
 ![WF Fusion](./images/wffc24.png)
 
-Entonces debería ver esto. Ahora debe introducir el nombre de la capa en la plantilla de Photoshop PSD que se utiliza para el fondo del archivo.
+Entonces deberías ver esto. Ahora debe introducir el nombre de la capa en la plantilla de Photoshop PSD que se utiliza para el fondo del archivo.
 
 ![WF Fusion](./images/wffc25.png)
 
-En el archivo **citisignal-fiber.psd**, encontrará la capa que se usa para el fondo. En este ejemplo, esa capa se denomina **2048x2048-background**.
+En el citisignal-fiber.psd **archivo**, encontrará la capa que se utilizó para el fondo. En este ejemplo, esa capa se denomina **2048x2048-background**.
 
 ![WF Fusion](./images/wffc26.png)
 
@@ -165,19 +166,19 @@ Pegue el nombre **2048x2048-background** en el diálogo de Workfront Fusion.
 
 Desplácese hacia abajo hasta que vea **Entrada**. Ahora debe definir lo que debe insertarse en la capa de fondo. En este caso, es necesario seleccionar la salida del objeto Firefly T2I, que contiene la imagen generada dinámicamente.
 
-Para **Almacenamiento**, seleccione **Externo**. Para **ubicación de archivos**, busque y busque la variable `data.outputs[].image.url` en la salida de la solicitud **Firefly T2I**.
+Para **Almacenamiento**, seleccione **Externo**. Para **Archivo ubicación**, búsqueda y busque el variable `data.outputs[].image.url` de la salida del solicitud Firefly **T2I** .
 
 ![WF Fusion](./images/wffc28.png)
 
-A continuación, desplácese hacia abajo hasta que vea **Editar**. Establezca **Edit** en **Yes** y establezca **Type** en **Layer**. Haga clic en **Agregar**.
+Siguiente, desplácese hacia abajo hasta que vea **Editar**. Establezca **Edit** en **Yes** y establezca **Type** en **Layer**. Haga clic en **Agregar**.
 
 ![WF Fusion](./images/wffc29.png)
 
-Entonces debería ver esto. A continuación, debe definir el resultado de la acción. Haga clic en **Agregar elemento** en **resultados**.
+Entonces deberías ver esto. Siguiente, debe definir el resultado de la acción. Haga clic en **añadir elemento** en **Salidas**.
 
 ![WF Fusion](./images/wffc30.png)
 
-Seleccione **Azure** para **Storage**, pegue este(a) `{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-replacedbg.psd{{1.AZURE_STORAGE_SAS_WRITE}}` en **Ubicación de archivo** y seleccione **vnd.adobe.photoshop** en **Type**. Haga clic para habilitar **Mostrar configuración avanzada**.
+Seleccione **Azure** para **almacenamiento**, péguelo `{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-replacedbg.psd{{1.AZURE_STORAGE_SAS_WRITE}}` en  **Archivo ubicación** y seleccione **vnd.adobe.photoshop** en **Tipo**. Haga clic para habilitar **Mostrar configuración** avanzada.
 
 ![WF Fusion](./images/wffc31.png)
 
@@ -206,7 +207,7 @@ Seleccione **Editar capas de texto**.
 
 ![WF Fusion](./images/wffc36.png)
 
-Entonces debería ver esto. En primer lugar, seleccione la conexión de Adobe Photoshop que ya se configuró anteriormente y que debe llamarse `--aepUserLdap-- Adobe IO`.
+Entonces deberías ver esto. En primer lugar, seleccione la conexión de Adobe Photoshop que ya se configuró anteriormente y que debe llamarse `--aepUserLdap-- Adobe IO`.
 
 Ahora necesita definir la ubicación del **archivo de entrada**, que es el resultado del paso anterior y en **Capas**, debe escribir el **Nombre** de la capa de texto que desea cambiar.
 
@@ -252,11 +253,11 @@ Abra el archivo **citisignal-fiber.psd**. En el archivo, verá que la capa que c
 
 ![WF Fusion](./images/wffc44.png)
 
-Escriba el nombre **2048x2048-cta** en **Nombre** en el cuadro de diálogo.
+Introduzca el nombre **2048x2048-cta** en Nombre **en** el cuadro de diálogo.
 
 ![WF Fusion](./images/wffc43.png)
 
-Desplácese hacia abajo hasta que vea **Texto** > **Contenido**. Seleccione la variable **cta** de la carga útil de webhook.
+Desplácese hacia abajo hasta que vea **Texto** > **Contenido**. Seleccione la variable **CTA** de la carga útil del Webhook.
 
 ![WF Fusion](./images/wffc45.png)
 
@@ -278,15 +279,15 @@ Pase el ratón sobre el nodo **Adobe Photoshop - Editar capas de texto** y haga 
 
 ![WF Fusion](./images/wffc48.png)
 
-Busque **webhook** y seleccione **Webhook**.
+Search para **webhook** y seleccione **Webhook**.
 
 ![WF Fusion](./images/wffc49.png)
 
-Seleccione **Respuesta de webhook**.
+Seleccione **la respuesta** del webhook.
 
 ![WF Fusion](./images/wffc50.png)
 
-Entonces debería ver esto. Pegue la siguiente carga útil en **Cuerpo**.
+Entonces deberías ver esto. Pegue la siguiente carga útil en **Cuerpo**.
 
 ```json
 {
@@ -300,7 +301,7 @@ Seleccione la ruta de acceso `data[]._links.renditions[].href` de la salida de l
 
 ![WF Fusion](./images/wffc52.png)
 
-En el campo **Clave**, escriba `Content-Type`. En el campo **Valor**, escriba `application/json`. Haga clic en **Guardar**.
+En el campo **Clave**, introduzca `Content-Type`. En el campo **Valor**, introduzca `application/json`. Haga clic en **Guardar**.
 
 ![WF Fusion](./images/wffc52a.png)
 
@@ -312,7 +313,7 @@ Haga clic en **Alinear automáticamente**.
 
 ![WF Fusion](./images/wffc54.png)
 
-Entonces debería ver esto. Haga clic en **Ejecutar una vez**.
+Entonces deberías ver esto. Haga clic en **Ejecutar una vez**.
 
 ![WF Fusion](./images/wffc55.png)
 
@@ -346,8 +347,8 @@ Y un par de minutos después, se ha generado un nuevo archivo PSD con un nuevo f
 
 ## Pasos siguientes
 
-Vaya a [Resumen y ventajas de la automatización de servicios de Firefly](./summary.md){target="_blank"}
+Vaya a [1.2.5 Frame I/O y Workfront Fusion](./ex5.md){target="_blank"}
 
-Volver a [Automatizar servicios de Adobe Firefly](./automation.md){target="_blank"}
+Volver a [Automatización del flujo de trabajo de Creative con Workfront Fusion](./automation.md){target="_blank"}
 
 Volver a [Todos los módulos](./../../../overview.md){target="_blank"}

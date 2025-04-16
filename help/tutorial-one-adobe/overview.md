@@ -3,10 +3,10 @@ title: 'Información general: tutorial técnico completo: One Adobe'
 description: 'Tutorial técnico completo: One Adobe'
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 9169b0f9be7f192fd7e16ddcc2ae32f6a8cca92c
+source-git-commit: 603e48e0453911177823fe7ceb340f8ca801c5e1
 workflow-type: tm+mt
-source-wordcount: '936'
-ht-degree: 2%
+source-wordcount: '978'
+ht-degree: 3%
 
 ---
 
@@ -18,21 +18,19 @@ ht-degree: 2%
 
 Este tutorial es muy diverso y ofrece perspectivas claras en las siguientes aplicaciones:
 
-- Servicios de Adobe Firefly
-- Adobe Photoshop
+- Adobe Firefly Services, Adobe Photoshop, Adobe Frame I/O, Adobe Substance 3D Staging
 - Adobe Workfront y Adobe Workfront Fusion
-- Adobe Experience Manager Cloud Service, Sites, Assets y Edge Delivery Services
+- Adobe Experience Manager Cloud Service, Sites, Assets y servicios de entrega perimetral
 - Adobe Experience Platform
-- Adobe Real-Time CDP
+- Adobe Systems CDP en tiempo real
 - Adobe Journey Optimizer
 
-
-Este tutorial no solo se centra en las aplicaciones de Adobe, sino que tiene en cuenta el ecosistema más amplio en el que operan las marcas. Para ello, en algunas lecciones se hace hincapié en cómo las aplicaciones que no son de Adobe se integran con las aplicaciones de Adobe. De este modo, obtendrá información detallada sobre cómo las siguientes aplicaciones funcionan junto con Adobe Experience Platform:
+Este tutorial no solo enfocar en Adobe Systems aplicaciones, sino que toma en cuenta la ecosistema más amplia en la que operan las marcas. Para ello, en algunas lecciones se hace hincapié en cómo las aplicaciones que no son de Adobe se integran con las aplicaciones de Adobe. De este modo, obtendrá información detallada sobre cómo las siguientes aplicaciones funcionan junto con Adobe Experience Platform:
 
 - Amazon AWS
 - Google Cloud Platform
 - Microsoft Azure
-- Postman
+- Cartero
 - Snowflake
 - ...
 
@@ -40,23 +38,22 @@ Este tutorial no solo se centra en las aplicaciones de Adobe, sino que tiene en 
 
 Si desea realizar este tutorial utilizando su propia instancia de Adobe Experience Cloud, debe aprovisionar las siguientes aplicaciones en su instancia y debe poder acceder a ellas:
 
-- Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}
-- Adobe Photoshop
+- Adobe Firefly
+- Adobe Photoshop, Adobe Frame I/O, Adobe Substance 3D Staging
 - Adobe Workfront
-- Adobe Workfront Fusion [https://fusion.adobe.com/](https://fusion.adobe.com/){target="_blank"}
-- Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform){target="_blank"}
-- Recopilación de datos de Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}
-- Acceso al sistema de demostración: [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}
+- Adobe Workfront Fusion
+- Adobe Experience Platform, recopilación de datos de Adobe Experience Platform
+- Acceso al sistema de demostración Siguiente: [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}
 
 ## Finalización y certificación
 
 Este tutorial forma parte del curso Adobe Certification. Puede inscribirse en el curso junto con este tutorial yendo a [https://certification.adobe.com](https://certification.adobe.com).
 
-Para cada módulo que complete usando el tutorial siguiente, debe enviar una prueba de finalización como se indica [aquí](./completion.md).
+Para cada módulo que complete utilizando el siguiente tutorial, debe enviar un prueba de finalización como se indica [aquí](./completion.md).
 
-## Estado del contenido
+## Estado de contenido
 
-Para comprobar el estado del contenido siguiente, vaya a la [página de estado](./status.md){target="_blank"}.
+Para comprobar el estado de los siguientes contenido, vaya al [estado Página](./status.md){target="_blank"}.
 
 ### Primeros pasos
 
@@ -68,13 +65,17 @@ En este módulo básico, preparará todo para que pueda acceder y utilizar el en
 
 ### 2. Creación y producción
 
-[1.1 Servicios de Adobe Firefly](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
+[1.1 Servicios Adobe Systems Firefly](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
 
-En este módulo, utilizará las API de servicios de Adobe Firefly, las API de Photoshop y los servicios de almacenamiento de Microsoft Azure para generar imágenes y almacenarlas mediante programación.
+En este módulo, usará Adobe Systems API de Firefly Services, API de Photoshop y Servicios de almacenamiento de Microsoft Azure para generar imágenes y tienda ellas mediante programación.
 
-[1.2 Automatización del flujo de trabajo creativo con Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"}
+[1.2 Automatización del flujo de trabajo Creative con Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"}
 
 En este módulo básico, utilizará Adobe Workfront Fusion para automatizar y escalar los flujos de trabajo de creación de contenido.
+
+[1.3 Adobe Express y Adobe Experience Cloud](./modules/creation-production/module1.3/express.md){target="_blank"}
+
+En este módulo básico, utilizará Adobe Express para crear imágenes y vídeos, y compartirá esos recursos con el ecosistema de Adobe Experience Cloud en general.
 
 ### 3. Administración de recursos
 
@@ -82,15 +83,15 @@ En este módulo básico, utilizará Adobe Workfront Fusion para automatizar y es
 
 En este módulo básico, configurará el programa Cloud Service de Adobe Experience Manager, el sitio y el repositorio de Assets.
 
-[1.2 Administración del flujo de trabajo con Adobe Workfront](./modules/asset-mgmt/module2.2/workfront.md){target="_blank"}
+[1.2 Administración del flujo de trabajo con Adobe Systems Workfront](./modules/asset-mgmt/module2.2/workfront.md){target="_blank"}
 
-En este módulo básico, configurará y utilizará Adobe Workfront para administrar los flujos de aprobación y utilizará integraciones con Adobe Experience Manager Assets, Universal Editor, Photoshop y más.
+En este módulo fundamental, configurará y utilizará Adobe Systems Workfront para administrar flujos de aprobación y utilizará integraciones con Adobe Experience Manager Assets, Universal Editor, Photoshop y más.
 
-### 4. Envío y activación
+### 4. Entrega y Activation
 
 #### Recopilación de datos
 
-[1.1 Foundation: configuración de la recopilación de datos de Adobe Experience Platform y Web SDK](./modules/delivery-activation/datacollection/dc1.1/data-ingestion-launch-web-sdk.md)
+[1.1 Fundamento: configuración de Adobe Experience Platform recopilación de datos y SDK web](./modules/delivery-activation/datacollection/dc1.1/data-ingestion-launch-web-sdk.md)
 
 En este módulo básico, aprenderá sobre la recopilación de datos de Adobe Experience Platform y la nueva extensión de Web SDK.
 
@@ -98,9 +99,9 @@ En este módulo básico, aprenderá sobre la recopilación de datos de Adobe Exp
 
 En este módulo básico, ingerirá datos de varias fuentes en Adobe Experience Platform
 
-[1.3 Composición de audiencia federada](./modules/delivery-activation/datacollection/dc1.3/fac.md)
+[1.3 Composición de audiencias federadas](./modules/delivery-activation/datacollection/dc1.3/fac.md)
 
-En este módulo, aprenderá a configurar un modelo de audiencias federadas y a generar audiencias mediante datos federados.
+En este módulo, aprenderá a configurar un modelo de Audiences Federated y a generar audiencias mediante datos federados.
 
 #### Real-Time CDP B2C
 
@@ -124,13 +125,13 @@ En este módulo, configurará un destino de Microsoft Azure EventHub como un des
 
 En este módulo, reenviará datos del lado del servidor a varios extremos, como Google Cloud Platform Pub/Sub y AWS Kinesis.
 
-[2.6 Transmitir datos de Apache Kafka a Real-Time CDP](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/aep-apache-kafka.md)
+[2.6 Transmitir datos desde Apache Kafka a CDP en tiempo real](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/aep-apache-kafka.md)
 
-En este módulo, aprenderá a configurar su propio clúster de Apache Kafka y a transmitir datos a Adobe Experience Platform.
+En este módulo, aprenderá a configurar su propio clúster de Apache Kafka y transmitir datos a Adobe Experience Platform.
 
 #### Adobe Journey Optimizer B2C
 
-[3.1 Adobe Journey Optimizer: Orchestration](./modules/delivery-activation/ajo-b2c/ajob2c-1/journey-orchestration-create-account.md)
+[3.1 Adobe Systems Journey Optimizer: orquestación](./modules/delivery-activation/ajo-b2c/ajob2c-1/journey-orchestration-create-account.md)
 
 En este módulo utilizará Adobe Journey Optimizer para crear un recorrido basado en déclencheur.
 
@@ -142,9 +143,9 @@ En este módulo, utilizará Adobe Journey Optimizer para escuchar el comportamie
 
 En este módulo, utilizará Adobe Journey Optimizer para configurar Ofertas personalizadas y su propia decisión de oferta.
 
-[3.4 Adobe Journey Optimizer: Recorridos basados en eventos](./modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md)
+[3.4 Adobe Systems Journey Optimizer: recorridos basados en eventos](./modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md)
 
-En este módulo, aprenderá todo lo que debe saber sobre Journey Optimizer, que ayuda a las empresas a diseñar y ofrecer experiencias conectadas, contextuales y personalizadas a sus clientes.
+En este módulo, aprenderá todo lo que hay que saber sobre Journey Optimizer, que ayuda a las empresas a diseñar y ofrecer experiencias conectadas, contextuales y personalizadas a sus clientes.
 
 [3.5 Adobe Journey Optimizer: Servicios de traducción](./modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md)
 
@@ -168,8 +169,8 @@ En este módulo, configurará su propia instancia de Google Cloud Platform, carg
 
 En este módulo, aprenderá a utilizar el servicio de consultas de Adobe Experience Platform.
 
-![Perspectivas técnicas](./assets/images/techinsiders.png){width="50px" align="left"}
+![Expertos en tecnología](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
->Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, póngase en contacto directamente con Tech Insiders, enviando un correo electrónico a **techinsiders@adobe.com**.
+>Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre futuros contenido, comuníquese directamente con Tech Insiders, enviando un correo electrónico a **techinsiders@adobe.com**.
