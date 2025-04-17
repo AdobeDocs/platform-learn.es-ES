@@ -4,7 +4,7 @@ description: 'Introducción: Instale la extensión de Chrome para la documentaci
 kt: 5342
 doc-type: tutorial
 exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: 30f8ceface0b8c696da45699e2e32412413a2c96
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 0%
@@ -22,8 +22,8 @@ A continuación se puede encontrar un ejemplo de estos valores. Actualmente, est
 
 | Nombre | Clave | Ejemplo |
 |:-------------:| :---------------:| :---------------:|
-| ID de organización de AEP IMS | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
-| Nombre de organización de AEP IMS | `--aepImsOrgName--` | `Experience Platform International` |
+| ID de organización de IMS de AEP | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
+| Nombre de organización de IMS de AEP | `--aepImsOrgName--` | `Experience Platform International` |
 | ID de inquilino de AEP | `--aepTenantId--` | `_experienceplatform` |
 | Nombre de zona protegida AEP | `--aepSandboxName--` | `one-adobe` |
 | LDAP del perfil del alumno | `--aepUserLdap--` | `vangeluw` |
@@ -88,7 +88,7 @@ Puede encontrarlo en [Admin Console](https://https://adminconsole.adobe.com/), d
 
 ![DSN](./images/aepid1.png)
 
-También puede encontrarlo si visita **Administración de datos > Consultas** en su menú de AEP, donde puede encontrarlo en **Nombre de usuario**.
+También puedes encontrarlo yendo a **Administración de datos > Consultas** en tu menú de AEP, donde puedes encontrarlo en **Nombre de usuario**.
 
 ![DSN](./images/aepid2.png)
 
@@ -135,7 +135,7 @@ Después de activar la configuración, verá un punto verde junto a las iniciale
 
 ## Verificar contenido del tutorial
 
-Como prueba, ve a [esta página](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/uce/module31/ex2).
+Como prueba, ve a [esta página](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2).
 
 Ahora debería ver que todas las **variables de entorno** de esta página han sido reemplazadas por sus valores verdaderos, según el entorno activado en la extensión de Chrome.
 
