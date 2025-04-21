@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo configurar áreas de nombres de id
 feature: Web SDK,Identities
 jira: KT-15400
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 12%
@@ -57,7 +57,7 @@ Antes de comenzar los ejercicios, vea este breve vídeo para obtener más inform
 
 Ahora, cree un área de nombres para el ID de Luma CRM:
 
-1. Abrir la [interfaz de recopilación de datos](https://launch.adobe.com/){target="_blank"}
+1. Abrir la [interfaz de recopilación de datos](https://experience.adobe.com/data-collection/){target="_blank"}
 1. Seleccione la zona protegida que está utilizando para el tutorial.
 
    >[!NOTE]

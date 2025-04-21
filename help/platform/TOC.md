@@ -5,10 +5,10 @@ user-guide-description: Descubra los muchos componentes de Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 13a78ab0c8886a1711678b1c7c676a18c2a07c95
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '904'
-ht-degree: 18%
+ht-degree: 20%
 
 ---
 
@@ -58,7 +58,7 @@ Campaigns
 
 
 + [Tutoriales de Platform](/help/platform/overview.md)
-+ Introducción a la plataforma {#intro-to-platform}
++ Introducción a Platform {#intro-to-platform}
    + [Una experiencia del cliente con tecnología de Experience Platform](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
    + [Entre bastidores: una experiencia del cliente con tecnología de Experience Platform](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
    + [Información general de Experience Platform](/help/platform/intro-to-platform/overview.md)
@@ -89,7 +89,7 @@ Campaigns
    + [Copia de paquetes entre zonas protegidas](/help/platform/admin/copy-objects-between-sandboxes.md)
    + [Uso compartido de paquetes entre organizaciones de IMS](/help/platform/admin/share-packages-across-orgs.md)
    + [Uso de alertas](/help/platform/admin/use-alerts.md)
-+ Asistente de IA{#ai-assistant}
++ Asistente de IA {#ai-assistant}
    + [Información general](/help/platform/ai-assistant/overview.md)
    + [Obtener acceso](/help/platform/ai-assistant/access.md)
    + [Incorporación con un nuevo producto](/help/platform/ai-assistant/onboard.md)
@@ -127,7 +127,7 @@ Campaigns
    + [Coincidencia de segmentos recibiendo datos](/help/platform/segments/segment-match-receiving-data.md)
 + [Registros de auditoría](/help/platform/governance/audit-logs.md)
 + [Recopilación de datos](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
-+ Collaboration {#collaboration}
++ Colaboración {#collaboration}
    + [Información general de Real-Time CDP Collaboration](collaboration/real-time-cdp-collaboration-overview.md)
    + [Definición de permisos](collaboration/set-permissions-for-collaboration.md)
    + [Configurar una cuenta de anunciante](collaboration/set-up-an-advertiser-account.md)
@@ -143,7 +143,7 @@ Campaigns
    + [Aplicar políticas de uso de datos](/help/platform/governance/enforce-data-usage-policies.md)
    + [Aplicar consentimiento](/help/platform/governance/enforce-consent.md)
    + [Integración con el marco de transparencia y consentimiento 2.0 de IAB](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
-+ Higiene de datos {#data-hygiene}
++ Higiene de los datos {#data-hygiene}
    + [Información general](/help/platform/data-hygiene/overview.md)
    + [Preparación de datos para la higiene de datos](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
    + [Eliminar conjuntos de datos y lotes](/help/platform/data-hygiene/delete-datasets-and-batches.md)
@@ -168,7 +168,7 @@ Campaigns
    + [Transmisión de datos mediante conectores de origen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=es)
    + [Tutoriales de Web SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
    + [Tutoriales de Mobile SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
-+ Ciclo de vida de datos {#data-lifecycle}
++ Ciclo de vida de los datos {#data-lifecycle}
    + [Caducar conjuntos de datos](/help/platform/data-lifecycle/expire-datasets.md)
 + Destinos {#destinations}
    + [Información general sobre los destinos](/help/platform/destinations/understanding-destinations.md)
@@ -193,7 +193,7 @@ Campaigns
    + [Resumen de gráficos de identidad e identidad](/help/platform/identities/understanding-identity-and-identity-graphs.md)
    + [Etiquetado, ingesta y verificación de datos de identidad](/help/platform/identities/label-ingest-and-verify-identity-data.md)
    + [Visualización de gráficos de identidad](/help/platform/identities/view-identity-graphs.md)
-   + Reglas de vinculación de gráfico de identidad {#graph-linking-rules}
+   + Reglas de vinculación de gráficos de identidad {#graph-linking-rules}
       + [Información general](/help/platform/identities/identity-graph-linking-rules/overview.md)
       + [Simulación de gráfico](/help/platform/identities/identity-graph-linking-rules/graph-simulation.md)
 + Servicios inteligentes {#intelligent-services}
@@ -210,7 +210,7 @@ Campaigns
    + [Monitorización de la ingesta de datos](/help/platform/monitoring/monitoring-dashboard.md)
    + [Monitorizar activación de segmentos](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
    + [Monitorización de flujos de datos](/help/platform/monitoring/data-monitoring.md)
-+ Compatibilidad con datos de socio {#partner-data-support}
++ Asistencia de datos de socios {#partner-data-support}
    + [Resumen de soporte de datos de socios](/help/platform/partner-data-support/partner-data-support-overview.md)
    + [Apoyo a la prospección fuera del sitio](/help/platform/partner-data-support/offsite-prospecting-partner-data.md)
    + [Añadir atributos de socio a perfiles](/help/platform/partner-data-support/partner-enrichment-partner-data.md)
@@ -248,7 +248,7 @@ Campaigns
    + [Funciones definidas por Adobe](/help/platform/queries/adobe-defined-functions.md)
    + [Patrones de uso de datos](/help/platform/queries/understanding-data-usage-patterns-with-query-service.md)
    + [Ejecutar consultas](/help/platform/queries/run-queries.md)
-   + [Generar conjuntos de datos a partir de los resultados de la consulta](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html){target="_blank"}
+   + [Generar conjuntos de datos a partir de resultados de consultas](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html){target="_blank"}
    + [Tableau](/help/platform/queries/psql-client-tableau.md)
    + [Analizar y visualizar datos](/help/platform/queries/analyze-and-visualize.md)
    + [Creación de paneles con herramientas de BI](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
@@ -281,7 +281,7 @@ Campaigns
    + [Transmitir datos con API HTTP](/help/platform/sources/streaming-ingestion-http-api.md)
    + [Transmisión de datos mediante conectores de Source](/help/platform/sources/streaming-ingestion-source-connector.md)
    + [Solución de problemas: conector SFTP](/help/platform/sources/troubleshoot-sftp-connector.md)
-+ Manuales de tácticas de casos prácticos de {#use-case-playbooks}
++ Manuales de tácticas de casos de uso {#use-case-playbooks}
    + [Información general](/help/platform/use-case-playbooks/overview.md)
    + [Configuración de una zona protegida de manual](/help/platform/use-case-playbooks/configure-a-playbook-sandbox.md)
    + [Creación y publicación de una instancia de libro de estrategias](/help/platform/use-case-playbooks/create-and-publish-a-playbook-instance.md)
@@ -290,7 +290,7 @@ Campaigns
    + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
    + [Commerce](/help/platform/experience-cloud/business-value-of-platform-and-commerce.md)
    + [Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
-   + [Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
+   + [Target](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)
 + Tendencias del sector {#industry}
    + [El futuro de la administración de datos y el entorno cambiante](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
    + [Una historia de dos percepciones: marcas frente a consumidores](/help/platform/industry/brands-vs-consumers.md)
