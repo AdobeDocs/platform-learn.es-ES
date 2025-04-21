@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 37de6ceb-833e-4e75-9201-88bddd38a817
-source-git-commit: d47b6da364fc6ffdb0c541197edc8a9d2fd34e42
+source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
 workflow-type: tm+mt
 source-wordcount: '2674'
 ht-degree: 0%
@@ -23,7 +23,7 @@ En el ejercicio anterior configuró el escenario `--aepUserLdap-- - Firefly + Ph
 
 ## 1.2.5.1 accediendo a Frame.io
 
-Vaya a [https://app.frame.io/projects](https://app.frame.io/projects).
+Vaya a [https://app.frame.io/projects](https://app.frame.io/projects){target="_blank"}.
 
 Haga clic en el icono **+** para crear su propio proyecto en Frame.io.
 
@@ -42,7 +42,7 @@ En uno de los ejercicios anteriores, descargó [citisignal-fiber.psd](./../../..
 
 En el ejercicio anterior creó el escenario `--aepUserLdap-- - Firefly + Photoshop`, que comenzó con un webhook personalizado y terminó con una respuesta de webhook. El uso de los webhooks fue entonces probado usando Postman, pero obviamente, el punto de tal escenario es ser llamado por una aplicación externa. Como se ha indicado anteriormente, Frame.io será ese ejercicio, pero entre Frame.io y `--aepUserLdap-- - Firefly + Photoshop` se necesita otro escenario de Workfront Fusion. ahora configurará ese escenario.
 
-Vaya a [https://experience.adobe.com/](https://experience.adobe.com/). Abra **Workfront Fusion**.
+Vaya a [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Abra **Workfront Fusion**.
 
 ![WF Fusion](./images/wffusion1.png)
 
@@ -74,7 +74,7 @@ Entonces debería ver esto. Deje esta pantalla abierta y sin tocar, ya que la ne
 
 ![E/S de cuadro](./images/frame10.png)
 
-Vaya a [https://developer.frame.io/](https://developer.frame.io/). Haga clic en **HERRAMIENTAS PARA DESARROLLADORES** y, a continuación, elija **Acciones personalizadas**.
+Vaya a [https://developer.frame.io/](https://developer.frame.io/){target="_blank"}. Haga clic en **HERRAMIENTAS PARA DESARROLLADORES** y, a continuación, elija **Acciones personalizadas**.
 
 ![E/S de cuadro](./images/frame11.png)
 
@@ -98,7 +98,7 @@ Entonces debería ver esto.
 
 ![E/S de cuadro](./images/frame14.png)
 
-Volver a [https://app.frame.io/projects](https://app.frame.io/projects). Actualice la página.
+Volver a [https://app.frame.io/projects](https://app.frame.io/projects){target="_blank"}. Actualice la página.
 
 ![E/S de cuadro](./images/frame16.png)
 
@@ -298,7 +298,7 @@ Seleccione la clave de API **Frame.io** y escriba el nombre `--aepUserLdap-- - F
 
 ![E/S de cuadro](./images/frame49.png)
 
-Para obtener un token de API, ve a [https://developer.frame.io/](https://developer.frame.io/). Haga clic en **HERRAMIENTAS PARA DESARROLLADORES** y luego elija **Tokens**.
+Para obtener un token de API, ve a [https://developer.frame.io/](https://developer.frame.io/){target="_blank"}. Haga clic en **HERRAMIENTAS PARA DESARROLLADORES** y luego elija **Tokens**.
 
 ![E/S de cuadro](./images/frame50.png)
 

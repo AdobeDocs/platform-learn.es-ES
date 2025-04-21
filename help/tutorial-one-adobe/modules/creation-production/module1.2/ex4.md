@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: 156725fe0f89d97f109de1518f7fa79ffd7cea41
+source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
 workflow-type: tm+mt
 source-wordcount: '2050'
 ht-degree: 1%
@@ -19,7 +19,7 @@ Ahora empezará a utilizar los conectores predeterminados en Workfront Fusion pa
 
 ## 1.2.4.1 duplicar y preparar su escenario
 
-En el menú de la izquierda, vaya a **Escenarios** y seleccione la carpeta `--aepUserLdap--`. Debería ver el escenario que creó anteriormente, que se llama `--aepUSerLdap-- - Adobe I/O Authentication`.
+En el menú de la izquierda, vaya a **Escenarios** y seleccione la carpeta `--aepUserLdap--`. Debería ver el escenario que creó anteriormente, que se llama `--aepUserLdap-- - Adobe I/O Authentication`.
 
 ![WF Fusion](./images/wffc1.png)
 
@@ -113,7 +113,7 @@ Rellene los campos siguientes:
 - **ID de cliente**: copie el **ID de cliente** de su proyecto de Adobe I/O, que se llama `--aepUserLdap-- - One Adobe tutorial`.
 - **Secreto de cliente**: copie el **Secreto de cliente** de su proyecto de Adobe I/O, que se llama `--aepUserLdap-- - One Adobe tutorial`.
 
-Puedes encontrar los **ID de cliente** y el **Secreto de cliente** de tu proyecto Adobe I/O [aquí](https://developer.adobe.com/console/projects.).
+Puedes encontrar los **ID de cliente** y el **Secreto de cliente** de tu proyecto Adobe I/O [aquí](https://developer.adobe.com/console/projects.){target="_blank"}.
 
 ![WF Fusion](./images/wffc20.png)
 

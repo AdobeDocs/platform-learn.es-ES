@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: 603e48e0453911177823fe7ceb340f8ca801c5e1
+source-git-commit: 3542de25dab9ca0d94928f526060d2fead2e2f34
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 1%
@@ -19,7 +19,7 @@ Aprenda a utilizar Workfront Fusion y Adobe I/O para consultar las API de Adobe 
 
 ## 1.2.1.1 Crear nuevo escenario
 
-Vaya a [https://experience.adobe.com/](https://experience.adobe.com/). Abra **Workfront Fusion**.
+Vaya a [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Abra **Workfront Fusion**.
 
 ![WF Fusion](./images/wffusion1.png)
 
@@ -71,7 +71,7 @@ Deben definirse las siguientes variables:
 | `CONST_client_secret` | Secreto de cliente del proyecto de Adobe I/O |
 | `CONST_scope` | Ámbito del proyecto de Adobe I/O |
 
-Para encontrar estas variables, vaya a [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects) y abra el proyecto de Adobe I/O, que se llama `--aepUserLdap-- One Adobe tutorial`.
+Para encontrar estas variables, vaya a [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects){target="_blank"} y abra el proyecto de Adobe I/O, que se llama `--aepUserLdap-- One Adobe tutorial`.
 
 ![WF Fusion](./images/wffusion9.png)
 

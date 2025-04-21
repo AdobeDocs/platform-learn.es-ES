@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f02ecbe4-f1d7-4907-9bbc-04e037546091
-source-git-commit: 297fba1810934e6ce4d9b8dfaea0e1250e761ab5
+source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
 workflow-type: tm+mt
 source-wordcount: '1878'
 ht-degree: 1%
@@ -29,7 +29,7 @@ Los equipos empresariales, sin embargo, no necesitan un archivo PSD, sino un arc
 
 ## 1.2.6.1 Crear un nuevo escenario
 
-Vaya a [https://experience.adobe.com/](https://experience.adobe.com/). Abra **Workfront Fusion**.
+Vaya a [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Abra **Workfront Fusion**.
 
 ![WF Fusion](./images/wffusion1.png)
 
@@ -59,7 +59,7 @@ Entonces debería ver esto. Haga clic en **Copiar dirección al portapapeles**.
 
 ## 1.2.6.2 Configurar webhook en Frame.io
 
-Vaya a [https://developer.frame.io/](https://developer.frame.io/). Haga clic en **HERRAMIENTAS PARA DESARROLLADORES** y, a continuación, elija **Acciones personalizadas**.
+Vaya a [https://developer.frame.io/](https://developer.frame.io/){target="_blank"}. Haga clic en **HERRAMIENTAS PARA DESARROLLADORES** y, a continuación, elija **Acciones personalizadas**.
 
 ![E/S de cuadro](./images/aemf7.png)
 
@@ -83,7 +83,7 @@ Entonces debería ver esto.
 
 ![E/S de cuadro](./images/aemf11.png)
 
-Vaya a [https://app.frame.io/projects](https://app.frame.io/projects) y luego a la carpeta que creó anteriormente, que debería llamarse `--aepUserLdap--`. Haga doble clic para abrir el recurso creado en el ejercicio anterior.
+Vaya a [https://app.frame.io/projects](https://app.frame.io/projects){target="_blank"} y luego a la carpeta que creó anteriormente, que debería llamarse `--aepUserLdap--`. Haga doble clic para abrir el recurso creado en el ejercicio anterior.
 
 ![E/S de cuadro](./images/aemf11a.png)
 
@@ -271,7 +271,7 @@ La conexión se validará y, cuando se realice correctamente, la conexión se se
 
 ![E/S de cuadro](./images/aemf51.png)
 
-Para crear una nueva carpeta dedicada, ve a [https://experience.adobe.com](https://experience.adobe.com/). Asegúrese de que esté seleccionada la instancia correcta de Experience Cloud, que debería ser `--aepImsOrgName--`. A continuación, haga clic en **Experience Manager Assets**.
+Para crear una nueva carpeta dedicada, ve a [https://experience.adobe.com](https://experience.adobe.com/){target="_blank"}. Asegúrese de que esté seleccionada la instancia correcta de Experience Cloud, que debería ser `--aepImsOrgName--`. A continuación, haga clic en **Experience Manager Assets**.
 
 ![E/S de cuadro](./images/aemf52.png)
 

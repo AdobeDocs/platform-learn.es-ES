@@ -4,9 +4,9 @@ breadcrumb-title: Tutorial técnico completo para aplicaciones de Adobe, desde C
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: e6aca1f991d90beec146990ffe518a1cec333759
+source-git-commit: 3542de25dab9ca0d94928f526060d2fead2e2f34
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1154'
 ht-degree: 3%
 
 ---
@@ -23,13 +23,13 @@ ht-degree: 3%
    + Primeros pasos {#gettingstarted}
       + [Información general](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/getting-started.md)
       + [Instalación de la extensión de Chrome para la documentación de Experience League](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex1.md)
-      + [Utilice el sistema de demostración Siguiente para configurar su Propiedad de cliente de recopilación de datos de Adobe Experience Platform](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex2.md)
-      + [Crear el flujo de datos](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex3.md)
-      + [Utilizar el sitio web](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex4.md)
+      + [Utilice Demo System Next para configurar la propiedad de cliente de recopilación de datos de Adobe Experience Platform](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex2.md)
+      + [Crear su secuencia de datos](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex3.md)
+      + [Uso del sitio web](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex4.md)
       + [Uso de la aplicación móvil](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex5.md)
-      + [Configurar el proyecto de E/S de Adobe Systems](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex6.md)
-      + [Opción 1: Configuración del cartero](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex7.md)
-      + [Opción 2: Configuración de PostBuster](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex8.md)
+      + [Configuración del proyecto de Adobe I/O](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex6.md)
+      + [Opción 1: configuración de Postman](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex7.md)
+      + [Opción 2: configuración de PostBuster](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex8.md)
       + [Aplicaciones para instalar](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex9.md)
 
 + Flujo de trabajo y planificación {#planning}
@@ -38,9 +38,9 @@ ht-degree: 3%
    + 1.1 Descripción general de Adobe Firefly Services {#crpr1}
       + [Información general](/help/tutorial-one-adobe/modules/creation-production/module1.1/firefly-services.md)
       + [1.1.1 Introducción a Firefly Services](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex1.md)
-      + [1.1.2 Optimice sus procesos de Firefly con Microsoft Azure y URL prefirmadas](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex2.md)
-      + [1.1.3 Trabajo con API de Photoshop](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex3.md)
-      + [1.1.4 API de modelos personalizados Firefly](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex4.md)
+      + [1.1.2 Optimizar los procesos de Firefly con Microsoft Azure y las direcciones URL prefirmadas](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex2.md)
+      + [1.1.3 Uso de las API de Photoshop](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex3.md)
+      + [API de modelos personalizados de Firefly 1.1.4](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex4.md)
       + [Resumen y beneficios](/help/tutorial-one-adobe/modules/creation-production/module1.1/summary.md)
    + 1.2 Automatización del flujo de trabajo de Creative con Workfront Fusion {#crpr2}
       + [Información general](/help/tutorial-one-adobe/modules/creation-production/module1.2/automation.md)
@@ -55,6 +55,7 @@ ht-degree: 3%
       + [Información general](/help/tutorial-one-adobe/modules/creation-production/module1.3/express.md)
       + [1.3.1 Introducción a Adobe Express](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex1.md)
       + [1.3.2 Animación y vídeo en Adobe Express](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex2.md)
+      + [1.3.3 Creación masiva de Assets en Adobe Express](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex3.md)
       + [Resumen y beneficios](/help/tutorial-one-adobe/modules/creation-production/module1.3/summary.md)
 
 + Administración de recursos {#assetmgmt}
@@ -69,8 +70,8 @@ ht-degree: 3%
       + [Resumen y beneficios](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/summary.md)
    + 1.2 Workfront {#assetm2}
       + [Información general](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/workfront.md)
-      + [1.2.1 Primeros pasos en Workfront](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex1.md)
-      + [1.2.2 Pruebas con Workfront](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex2.md)
+      + [1.2.1 Introducción a Workfront](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex1.md)
+      + [1.2.2 Revisión con Workfront](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex2.md)
       + [1.2.5 Integración de Workfront + Photoshop](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex5.md)
       + [Resumen y beneficios](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/summary.md)
 
@@ -89,8 +90,8 @@ ht-degree: 3%
       + 1.2 Ingesta de datos {#dc12}
          + [Información general](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/data-ingestion.md)
          + [1.2.1 Explorar el sitio web](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
-         + [1.2.2 Configurar los esquemas y definir identificadores](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
-         + [1.2.3 Configurar conjuntos de datos](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
+         + [1.2.2 Configurar los identificadores de esquema y de conjunto](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
+         + [1.2.3 Configuración de conjuntos de datos](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
          + [1.2.4 Ingesta de datos de fuentes sin conexión](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 Zona de aterrizaje de datos](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
          + [Resumen y beneficios](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/summary.md)
@@ -100,7 +101,7 @@ ht-degree: 3%
          + [1.3.2 Creación de esquemas, modelos de datos y vínculos](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/ex2.md)
          + [1.3.3 Crear una composición federada](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/ex3.md)
          + [Resumen y beneficios](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/summary.md)
-   + CDP en tiempo real B2C {#rtcdpb2c}
+   + Real-Time CDP B2C {#rtcdpb2c}
       + 2.1 Perfil del cliente en tiempo real {#rtcdp21}
          + [Información general](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/real-time-customer-profile.md)
          + [2.1.1 Visitar el sitio web](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex1.md)
@@ -147,30 +148,30 @@ ht-degree: 3%
          + [2.6.1 Introducción a Apache Kafka](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/ex1.md)
          + [2.6.2 Instalar y configurar el clúster de Kafka](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/ex2.md)
          + [2.6.3 Configuración del punto final de flujo de API HTTP en Adobe Experience Platform](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/ex3.md)
-         + [2.6.4 Instalar y configurar Kafka Connect y el conector del fregadero Adobe Experience Platform](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/ex4.md)
+         + [2.6.4 Instalar y configurar Kafka Connect y el conector del receptor de Adobe Experience Platform](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/ex4.md)
          + [Resumen y beneficios](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/summary.md)
    + Adobe Journey Optimizer B2C {#ajob2c}
-      + 3.1 Adobe Systems Journey Optimizer: orquestación {#ajo31}
+      + 3.1 Adobe Journey Optimizer: Orchestration {#ajo31}
          + [Información general](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/journey-orchestration-create-account.md)
-         + [3.1.1 Crear su evento](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/ex1.md)
-         + [3.1.2 Crear fragmentos que se utilizarán en el mensaje](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/ex2.md)
-         + [3.1.3 Crear su viaje y mensaje correo electrónico](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/ex3.md)
+         + [3.1.1 Creación de un evento](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/ex1.md)
+         + [3.1.2 Crear fragmentos para usarlos en el mensaje](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/ex2.md)
+         + [3.1.3 Crear el recorrido y el mensaje de correo electrónico](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/ex3.md)
          + [3.1.4 Actualizar la propiedad de recopilación de datos y probar el Recorrido](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/ex4.md)
          + [Resumen y beneficios](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/summary.md)
       + 3.2 Adobe Journey Optimizer: Fuentes de datos externas y acciones personalizadas {#ajo32}
          + [Información general](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/journey-orchestration-external-weather-api-sms.md)
          + [3.2.1 Definición de un evento](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex1.md)
-         + [3.2.2 Definir un fuente de datos externo](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex2.md)
+         + [3.2.2 Definición de una fuente de datos externa](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex2.md)
          + [3.2.3 Definir una acción personalizada](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex3.md)
-         + [3.2.4 Crear tu viaje y mensajes](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex4.md)
-         + [3.2.5 Activa tu viaje](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex5.md)
+         + [3.2.4 Crear el recorrido y los mensajes](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex4.md)
+         + [3.2.5 Déclencheur de su recorrido](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex5.md)
          + [Resumen y beneficios](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/summary.md)
-      + 3.3 Adobe Systems Journey Optimizer: toma de decisiones de ofertas {#ajo33}
+      + 3.3 Adobe Journey Optimizer: Offer Decisioning {#ajo33}
          + [Información general](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/offer-decisioning.md)
-         + [3.3.1 Decisión de la oferta 101](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex1.md)
-         + [3.3.2 Configurar las ofertas y la decisión](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex2.md)
-         + [3.3.3 Preparar la Adobe Experience Platform recopilación de datos Configuración de la Propiedad de cliente y del SDK web para la toma de decisiones de ofertas](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex3.md)
-         + [3.3.4 Combinación de Adobe Target y toma de decisiones de oferta](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex4.md)
+         + [3.3.1 Offer Decisioning 101](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex1.md)
+         + [3.3.2 Configurar sus ofertas y decisiones](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex2.md)
+         + [3.3.3 Preparar la propiedad de cliente de recopilación de datos de Adobe Experience Platform y la configuración de Web SDK para Offer Decisioning](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex3.md)
+         + [3.3.4 Combinación de Adobe Target y Offer Decisioning](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex4.md)
          + [3.3.5 Usar su decisión en un correo electrónico](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex5.md)
          + [3.3.6 Prueba de la decisión mediante la API](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex6.md)
          + [Resumen y beneficios](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/summary.md)
@@ -193,7 +194,7 @@ ht-degree: 3%
       + 1.1 Customer Journey Analytics: Crear un tablero con Analysis Workspace {#cja1}
          + [Información general](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/customer-journey-analytics-build-a-dashboard.md)
          + [1.1.1 Customer Journey Analytics 101](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/ex1.md)
-         + [1.1.2 Conexión Adobe Experience Platform conjuntos de datos en Customer Journey Analytics](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/ex2.md)
+         + [1.1.2 Conexión de conjuntos de datos de Adobe Experience Platform en Customer Journey Analytics](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/ex2.md)
          + [1.1.3 Crear una vista de datos](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/ex3.md)
          + [1.1.4 Preparación de datos en Customer Journey Analytics](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/ex4.md)
          + [1.1.5 Visualización mediante Customer Journey Analytics](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/ex5.md)
@@ -202,7 +203,7 @@ ht-degree: 3%
          + [Información general](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-2/customer-journey-analytics-bigquery-gcp.md)
          + [1.2.1 Empezar a utilizar Google Cloud Platform](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-2/ex1.md)
          + [1.2.2 Cree su primera consulta en BigQuery](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-2/ex2.md)
-         + [1.2.3 Conecta GCP y BigQuery a Adobe Experience Platform](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-2/ex3.md)
+         + [1.2.3 Conexión de GCP y BigQuery con Adobe Experience Platform](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-2/ex3.md)
          + [1.2.4 Carga de datos de BigQuery en Adobe Experience Platform](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-2/ex4.md)
          + [1.2.5 Analizar datos de Google Analytics mediante Customer Journey Analytics](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-2/ex5.md)
          + [Resumen y beneficios](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-2/summary.md)
@@ -211,10 +212,10 @@ ht-degree: 3%
          + [Información general](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/query-service.md)
          + [2.1.1 Requisitos previos](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/ex1.md)
          + [2.1.2 Introducción](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/ex2.md)
-         + [2.1.3 Uso del servicio de consulta](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/ex3.md)
-         + [2.1.4 Consultas, consultas, consultas... y churn análisis](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/ex4.md)
-         + [2.1.5 Generación de un conjunto de datos a partir de una consulta](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/ex5.md)
-         + [2.1.6 Servicio de consulta y Power BI](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/ex6.md)
+         + [2.1.3 Uso del servicio de consultas](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/ex3.md)
+         + [2.1.4 Consultas, consultas, consultas, análisis de pérdida](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/ex4.md)
+         + [2.1.5 Generar un conjunto de datos a partir de una consulta](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/ex5.md)
+         + [2.1.6 Servicio de consultas y Power BI](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/ex6.md)
          + [2.1.7 Servicio de consultas y Tableau](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/ex7.md)
          + [API del servicio de consultas 2.1.8](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/ex8.md)
          + [Resumen y beneficios](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/summary.md)
