@@ -1,6 +1,6 @@
 ---
 title: Información general sobre los esquemas y el modelo de datos de experiencia (XDM)
-description: Obtenga información sobre Experience Data Model (XDM), el modelo de datos estándar para describir la experiencia del cliente.
+description: Obtenga información sobre el Modelo de datos de experiencia (XDM), el modelo de datos estándar para describir la experiencia del cliente.
 feature: Schemas
 role: Data Architect, Data Engineer, Developer, User
 level: Beginner
