@@ -4,9 +4,9 @@ description: Foundation - FAC - Crear esquemas, modelos de datos y vínculos
 kt: 5342
 doc-type: tutorial
 exl-id: 3b999c1a-cf9e-44a3-8fc1-6a070c3aeb24
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '646'
 ht-degree: 2%
 
 ---
@@ -21,11 +21,11 @@ Después de iniciar sesión, llegará a la página principal de Adobe Experience
 
 ![Ingesta de datos](./../dc1.2/images/home.png)
 
-Antes de continuar, debe seleccionar una **zona protegida**. La zona protegida que se va a seleccionar se denomina ``--aepSandboxName--``. Después de seleccionar la zona protegida adecuada, verá que la pantalla cambia y ahora está en la zona protegida dedicada.
+Antes de continuar, debe seleccionar una **zona protegida**. La zona protegida que se va a seleccionar se denomina `--aepSandboxName--`. Después de seleccionar la zona protegida adecuada, verá que la pantalla cambia y ahora está en la zona protegida dedicada.
 
 ![Ingesta de datos](./../dc1.2/images/sb1.png)
 
-## 1.3.2.1 Configuración de una base de datos federada en AEP
+## 1.3.2.1 Configurar una base de datos federada en AEP
 
 Haga clic en **Bases de datos federadas** en el menú de la izquierda. A continuación, haga clic en **Agregar base de datos federada**.
 
@@ -43,7 +43,7 @@ En Snowflake, vaya a **Administración > Cuentas**. Haga clic en 3 **...** junto
 
 ![CARA](./images/fdburl1.png)
 
-Entonces verá esto... Copie la **URL actual** y péguela en el campo **Servidor** en AEP.
+Entonces verá esto... Copie la **URL actual** y péguela en el campo **Servidor** de AEP.
 
 ![CARA](./images/fdburl2.png)
 
@@ -83,7 +83,7 @@ Haga clic en **Agregar**.
 
 ![CARA](./images/fdb7.png)
 
-A continuación, AEP cargará la información de cada tabla y la mostrará en la interfaz de usuario.
+A continuación, AEP carga la información de cada tabla y la muestra en la interfaz de usuario.
 
 Para cada tabla, puede:
 
@@ -98,7 +98,7 @@ Haga clic en **Crear**.
 
 ![CARA](./images/fdb8.png)
 
-Entonces verá esto... Puede hacer clic en cualquier esquema y revisar la información. Por ejemplo, haga clic en **—aepUserLdap—_PERSONS**.
+Entonces verá esto... Puede hacer clic en cualquier esquema y revisar la información. Por ejemplo, haga clic en **`--aepUserLdap--_PERSONS`**.
 
 ![CARA](./images/fdb9.png)
 
@@ -110,7 +110,7 @@ A continuación, verá una muestra de los datos.
 
 ![CARA](./images/fdb11.png)
 
-## 1.3.2.3 Crear un modelo en AEP
+## 1.3.2.3: crear un modelo en AEP
 
 En el menú de la izquierda, ve a **Modelos** y luego a **Modelo de datos**. Haga clic en **Crear modelo de datos**.
 

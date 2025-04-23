@@ -4,9 +4,9 @@ description: Foundation - FAC - Crear una composición federada
 kt: 5342
 doc-type: tutorial
 exl-id: 6c1773d1-ca2e-43e5-bfa7-6e5e0fbcf859
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '499'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ Después de iniciar sesión, llegará a la página principal de Adobe Experience
 
 ![Ingesta de datos](./../dc1.2/images/home.png)
 
-Antes de continuar, debe seleccionar una **zona protegida**. La zona protegida que se va a seleccionar se denomina ``--aepSandboxName--``. Después de seleccionar la zona protegida adecuada, verá que la pantalla cambia y ahora está en la zona protegida dedicada.
+Antes de continuar, debe seleccionar una **zona protegida**. La zona protegida que se va a seleccionar se denomina `--aepSandboxName--`. Después de seleccionar la zona protegida adecuada, verá que la pantalla cambia y ahora está en la zona protegida dedicada.
 
 ![Ingesta de datos](./../dc1.2/images/sb1.png)
 
@@ -47,7 +47,7 @@ Entonces verá esto... Seleccione **Crear audiencia**. Haga clic en el icono **s
 
 ![CARA](./images/fedcomp5.png)
 
-Seleccione el esquema **—aepUserLdap—_HOUSEHOLDS**. Haga clic en **Confirmar**.
+Seleccione el esquema **`--aepUserLdap--_HOUSEHOLDS`**. Haga clic en **Confirmar**.
 
 ![CARA](./images/fedcomp6.png)
 
@@ -71,7 +71,7 @@ A continuación, haga clic de nuevo en el icono **+** y luego en **Condición pe
 
 ![CARA](./images/fedcomp11.png)
 
-La segunda condición que se debe agregar es: `Is the user an existing CitiSignal Mobile subscriber?`. La manera de responder a esa pregunta es utilizar la relación entre el hogar y el cliente principal del hogar, que se define en otra tabla, **—aepUserLdap—_PERSONS**. Puede explorar en profundidad el menú de atributos mediante el vínculo **household2person**.
+La segunda condición que se debe agregar es: `Is the user an existing CitiSignal Mobile subscriber?`. La manera de responder a esa pregunta es utilizar la relación entre el hogar y el cliente principal del hogar, que se define en otra tabla, **`--aepUserLdap--_PERSONS`**. Puede explorar en profundidad el menú de atributos mediante el vínculo **household2person**.
 
 ![CARA](./images/fedcomp12.png)
 

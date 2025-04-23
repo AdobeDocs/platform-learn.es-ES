@@ -4,7 +4,7 @@ description: 'Introducción: Uso de la aplicación móvil'
 kt: 5342
 doc-type: tutorial
 exl-id: a619dd84-5c9e-4c1e-a753-2d98f50f4cfb
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## Descargue la aplicación
 
-Vaya a [https://bit.ly/dx-demo-app](https://bit.ly/dx-demo-app) en su equipo. Entonces verá esto...
+Vaya a [https://bit.ly/dx-demo-app](https://bit.ly/dx-demo-app){target="_blank"} en su equipo. Entonces verá esto...
 
 ![DSN](./images/mobileapp.png)
 
@@ -53,7 +53,7 @@ Después del ejercicio anterior, obtuvo este resultado. Haga clic para abrir el 
 
 ![DSN](./images/dsn5b.png)
 
-En caso de que hayas cerrado accidentalmente la ventana de tu navegador, o para futuras sesiones de demostración o habilitación, también puedes acceder a tu proyecto de sitio web yendo a [https://dsn.adobe.com](https://dsn.adobe.com). Después de iniciar sesión con su Adobe ID, verá esto. Haga clic en los tres puntos **...** de su proyecto de aplicación móvil y, a continuación, haga clic en **Editar**.
+En caso de que hayas cerrado accidentalmente la ventana de tu navegador, o para futuras sesiones de demostración o habilitación, también puedes acceder a tu proyecto de sitio web yendo a [https://dsn.adobe.com](https://dsn.adobe.com){target="_blank"}. Después de iniciar sesión con su Adobe ID, verá esto. Haga clic en los tres puntos **...** de su proyecto de aplicación móvil y, a continuación, haga clic en **Editar**.
 
 ![DSN](./images/web8a.png)
 
@@ -83,7 +83,7 @@ Ahora, vuelve a **Inicio** en la aplicación. La aplicación ya está lista para
 
 ## Pasos siguientes
 
-Vaya a [Configurar el proyecto de Adobe I/O](./ex6.md)
+Vaya a [Configurar el proyecto de Adobe I/O](./ex6.md){target="_blank"}
 
 Volver a [Introducción](./getting-started.md){target="_blank"}
 

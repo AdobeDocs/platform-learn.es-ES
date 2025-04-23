@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: c580ac9b-ded1-4b86-b7db-1c38649f50a4
-source-git-commit: ebf183d1eb4382ab0e6ccf3c7bb32229ffa269db
+source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '685'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,8 @@ ht-degree: 0%
 Antes de comenzar este ejercicio, descargue los recursos necesarios de [https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip){target="_blank"} y descomprímalo en el escritorio.
 
 ![Adobe Express](./images/expressassets.png)
+
+## 1.3.3.1 Crear su recurso básico
 
 Vaya a [https://new.express.adobe.com/](https://new.express.adobe.com/){target="_blank"}. Haga clic en el icono **+** para crear una nueva **imagen**.
 
@@ -92,6 +94,8 @@ Escriba el texto `Shop now` en el nuevo cuadro de texto y cambie la ubicación d
 Entonces debería ver esto.
 
 ![Adobe Express](./images/expressbc17.png)
+
+## 1.3.3.2 creación masiva en Adobe Express
 
 A continuación, haga clic en **Crear** de forma masiva.
 

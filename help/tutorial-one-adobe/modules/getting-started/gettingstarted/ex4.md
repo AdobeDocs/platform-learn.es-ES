@@ -4,7 +4,7 @@ description: 'Introducción: Uso del sitio web'
 kt: 5342
 doc-type: tutorial
 exl-id: 4d2152c9-7f9a-48e3-a8e6-4a6add034b4e
-source-git-commit: 49b8be964fe4e92e2c2c437a797ded30af0bc261
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 0%
@@ -61,7 +61,7 @@ Luego verá el sitio web cargado en una ventana de incógnito del explorador. Pa
 
 ## Opción 2: comenzar con una nueva ventana de incógnito del explorador
 
-En caso de que hayas cerrado accidentalmente la ventana del navegador o para sesiones futuras, también puedes acceder a tu proyecto de sitio web yendo a [https://dsn.adobe.com/](https://dsn.adobe.com/). Después de iniciar sesión con su Adobe ID, verá esto. Haga clic en los 3 puntos **...** de su proyecto de sitio web y, a continuación, haga clic en **Editar**.
+En caso de que hayas cerrado accidentalmente la ventana del navegador o para sesiones futuras, también puedes acceder a tu proyecto de sitio web yendo a [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}. Después de iniciar sesión con su Adobe ID, verá esto. Haga clic en los 3 puntos **...** de su proyecto de sitio web y, a continuación, haga clic en **Editar**.
 
 ![DSN](./images/web8.png)
 
@@ -103,7 +103,7 @@ Luego verá el sitio web cargado en una ventana de incógnito del explorador. Pa
 
 ## Pasos siguientes
 
-Ir a [Usar la aplicación móvil](./ex5.md)
+Ir a [Usar la aplicación móvil](./ex5.md){target="_blank"}
 
 Volver a [Introducción](./getting-started.md){target="_blank"}
 

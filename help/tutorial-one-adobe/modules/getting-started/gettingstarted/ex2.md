@@ -4,7 +4,7 @@ description: 'Introducción: Utilice el sistema de demostración junto a para co
 kt: 5342
 doc-type: tutorial
 exl-id: 455b72f6-84fd-463a-a7b5-3c4999035ab2
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 1%
@@ -17,11 +17,11 @@ Para visualizar las lecciones aprendidas en este tutorial y hacer posible probar
 
 Una vez que tenga acceso a Demo System Next, proceda con los siguientes pasos.
 
-Vaya a [https://dsn.adobe.com/](https://dsn.adobe.com/) y luego a **Configuración**.
+Vaya a [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"} y luego a **Configuración**.
 
 ![DSN](./images/dsnsetup.png)
 
-En el menú desplegable **Entorno**, seleccione su instancia de AEP y su zona protegida.
+En el menú desplegable **Entorno**, seleccione la instancia de AEP y la zona protegida.
 
 ![DSN](./images/dsnh1.png)
 
@@ -57,7 +57,7 @@ Mantenga esta pantalla abierta ya que la necesitará en los siguientes pasos.
 
 ## Pasos siguientes
 
-Vaya a [Crear su secuencia de datos](./ex3.md)
+Vaya a [Crear su secuencia de datos](./ex3.md){target="_blank"}
 
 Volver a [Introducción](./getting-started.md){target="_blank"}
 

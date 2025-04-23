@@ -4,7 +4,7 @@ description: 'Introducción: Instale la extensión de Chrome para la documentaci
 kt: 5342
 doc-type: tutorial
 exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
-source-git-commit: 30f8ceface0b8c696da45699e2e32412413a2c96
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Una vez instalada la extensión, el mismo texto se cambia automáticamente para 
 
 ## Instalación de la extensión de Chrome
 
-Para instalar esa extensión de Chrome, abra el explorador Chrome y vaya a: [https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi). Entonces verá esto...
+Para instalar esa extensión de Chrome, abra el explorador Chrome y vaya a: [https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi){target="_blank"}. Entonces verá esto...
 
 Haga clic en **Agregar a Chrome**.
 
@@ -58,7 +58,7 @@ En el menú de **extensiones**, haga clic en el icono de **pieza del rompecabeza
 
 ## Configuración de la extensión de Chrome
 
-Vaya a [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview) y, a continuación, haga clic en el icono de la extensión para abrirla.
+Vaya a [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} y, a continuación, haga clic en el icono de la extensión para abrirla.
 
 ![DSN](./images/tuthome.png)
 
@@ -74,7 +74,7 @@ Si no está seguro de qué valores introducir para estos campos, siga las instru
 
 **Nombre de organización de IMS de AEP**
 
-Cuando inicies sesión en tu instancia de Adobe Experience Platform en [https://platform.adobe.com/](https://platform.adobe.com/), encontrarás el nombre de tu instancia en la esquina superior derecha de la pantalla.
+Cuando inicies sesión en tu instancia de Adobe Experience Platform en [https://platform.adobe.com/](https://platform.adobe.com/){target="_blank"}, encontrarás el nombre de tu instancia en la esquina superior derecha de la pantalla.
 
 ![DSN](./images/aepname.png)
 
@@ -84,7 +84,7 @@ El ID de organización de IMS es el identificador único de la instancia de Adob
 
 La búsqueda del ID de organización de IMS se puede realizar de varias formas. Si no está seguro, consulte con uno de los administradores del sistema de su instancia para encontrar el ID.
 
-Puede encontrarlo en [Admin Console](https://https://adminconsole.adobe.com/), donde puede encontrarlo como parte de la dirección URL.
+Puede encontrarlo en [Admin Console](https://adminconsole.adobe.com/){target="_blank"}, donde puede encontrarlo como parte de la dirección URL.
 
 ![DSN](./images/aepid1.png)
 
@@ -96,7 +96,7 @@ Asegúrese de copiar y pegar la parte **@AdobeOrg** junto con el ID.
 
 **ID de inquilino de AEP**
 
-El ID de inquilino es el identificador único de la instancia de AEP de su organización. Cuando inicie sesión en su instancia de Adobe Experience Platform en [https://platform.adobe.com/](https://platform.adobe.com/), encontrará el ID de inquilino en la dirección URL.
+El ID de inquilino es el identificador único de la instancia de AEP de su organización. Cuando inicie sesión en su instancia de Adobe Experience Platform en [https://platform.adobe.com/](https://platform.adobe.com/){target="_blank"}, encontrará el ID de inquilino en la dirección URL.
 
 ![DSN](./images/aeptenantid.png)
 
@@ -104,7 +104,7 @@ Cuando lo introduzca en la extensión de Chrome, debe asegurarse de que se agreg
 
 **Nombre de zona protegida de AEP**
 
-El nombre de la zona protegida es el nombre del entorno que utilizará en la instancia de AEP. Cuando inicie sesión en su instancia de Adobe Experience Platform en [https://platform.adobe.com/](https://platform.adobe.com/), encontrará el ID de inquilino en la dirección URL.
+El nombre de la zona protegida es el nombre del entorno que utilizará en la instancia de AEP. Cuando inicie sesión en su instancia de Adobe Experience Platform en [https://platform.adobe.com/](https://platform.adobe.com/){target="_blank"}, encontrará el ID de inquilino en la dirección URL.
 
 Antes de tomar el nombre de la zona protegida de la dirección URL, debe asegurarse de que está en la zona protegida que debe utilizar para este tutorial. Puede cambiar a la zona protegida derecha haciendo clic en el menú del conmutador de zona protegida en la esquina superior derecha de la pantalla.
 
@@ -135,7 +135,7 @@ Después de activar la configuración, verá un punto verde junto a las iniciale
 
 ## Verificar contenido del tutorial
 
-Como prueba, ve a [esta página](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2).
+Como prueba, ve a [esta página](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}.
 
 Ahora debería ver que todas las **variables de entorno** de esta página han sido reemplazadas por sus valores verdaderos, según el entorno activado en la extensión de Chrome.
 
@@ -145,7 +145,7 @@ Ahora debería tener una vista similar a la siguiente, donde la variable de ento
 
 ## Pasos siguientes
 
-Vaya a [Usar el sistema de demostración siguiente para configurar la propiedad de cliente de recopilación de datos de Adobe Experience Platform](./ex2.md)
+Vaya a [Usar el sistema de demostración siguiente para configurar la propiedad de cliente de recopilación de datos de Adobe Experience Platform](./ex2.md){target="_blank"}
 
 Volver a [Introducción](./getting-started.md){target="_blank"}
 

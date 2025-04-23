@@ -3,7 +3,8 @@ title: 'Introducción: configuración de Postman'
 description: 'Introducción: configuración de Postman'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 431f7696df12c8c133aced57c0f639c682304dee
+exl-id: c2a28819-5877-4f53-96c0-e4e5095d8cec
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '519'
 ht-degree: 0%
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Si eres empleado de Adobe, sigue las instrucciones para [instalar PostBuster](./ex8.md).
+>Si eres empleado de Adobe, sigue las instrucciones para [instalar PostBuster](./ex8.md){target="_blank"}.
 
 ## Descarga del entorno de Postman
 
@@ -22,7 +23,7 @@ Vaya a [https://developer.adobe.com/console/home](https://developer.adobe.com/co
 
 ![Nueva integración de Adobe I/O](./images/iopr.png){zoomable="yes"}
 
-Haga clic en la API **Firefly - Servicios de Firefly**. A continuación, haga clic en **Descargar para Postman** y elija **Servidor a servidor OAuth** para descargar un entorno de Postman.
+Haga clic en la API **Firefly - Firefly Services**. A continuación, haga clic en **Descargar para Postman** y elija **Servidor a servidor OAuth** para descargar un entorno de Postman.
 
 ![Nueva integración de Adobe I/O](./images/iopm.png){zoomable="yes"}
 
@@ -43,7 +44,7 @@ La colección contiene una serie de solicitudes de API que puede utilizar. Utili
 - 1 colección para la autenticación en Adobe I/O
 - 1 Colección para los ejercicios de este módulo
 
-Descargue [postman-ff.zip](./../../../assets/postman/postman-ff.zip) en su escritorio local.
+Descargue [postman-ff.zip](./../../../assets/postman/postman-ff.zip){target="_blank"} en su escritorio local.
 
 ![Nueva integración de Adobe I/O](./images/pmfolder.png){zoomable="yes"}
 
@@ -74,7 +75,7 @@ Elige los tres archivos de la carpeta, luego selecciona **Abrir** e **Importar**
 
 ![Nueva integración de Adobe I/O](./images/impconfirm.png){zoomable="yes"}
 
-Ahora tiene todo lo que necesita en Postman para empezar a interactuar con los servicios de Firefly a través de las API.
+Ahora tiene todo lo que necesita en Postman para empezar a interactuar con Firefly Services a través de las API.
 
 ## Solicitar un token de acceso
 
