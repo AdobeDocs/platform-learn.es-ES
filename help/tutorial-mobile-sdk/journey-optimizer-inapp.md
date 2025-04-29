@@ -1,21 +1,21 @@
 ---
-title: Creación y envío de mensajes en la aplicación con el SDK de Platform Mobile
-description: Obtenga información sobre cómo crear y enviar mensajes en la aplicación a una aplicación móvil con el SDK móvil de Platform y Adobe Journey Optimizer.
+title: Creación y envío de mensajes en la aplicación con Platform Mobile SDK
+description: Obtenga información sobre cómo crear y enviar mensajes en la aplicación a una aplicación móvil con Platform Mobile SDK y Adobe Journey Optimizer.
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
 jira: KT-14639
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: e316f881372a387b82f8af27f7f0ea032a99be99
+source-git-commit: f73f0fc345fc605e60b19be1abe2e328795898aa
 workflow-type: tm+mt
-source-wordcount: '1447'
-ht-degree: 0%
+source-wordcount: '1607'
+ht-degree: 1%
 
 ---
 
 # Creación y envío de mensajes en la aplicación
 
-Obtenga información sobre cómo crear mensajes en la aplicación para aplicaciones móviles con el SDK móvil de Experience Platform y Journey Optimizer.
+Obtenga información sobre cómo crear mensajes en la aplicación para aplicaciones móviles con Experience Platform Mobile SDK y Journey Optimizer.
 
 Journey Optimizer le permite crear campañas para enviar mensajes en la aplicación a audiencias de destino. Las campañas en Journey Optimizer se utilizan para entregar contenido único a una audiencia específica mediante varios canales. Con las campañas, las acciones se realizan simultáneamente, ya sea de forma inmediata o en función de una programación especificada. Cuando se utilizan recorridos (consulte la lección [Notificaciones push de Journey Optimizer](journey-optimizer-push.md)), las acciones se ejecutan de forma secuencial.
 
@@ -55,31 +55,50 @@ En esta lección, debe
 >Si ya configuró su entorno como parte de la lección [Mensajería push de Journey Optimizer](journey-optimizer-push.md), es posible que ya haya realizado algunos de los pasos de esta sección de configuración.
 
 
-### Añadir una superficie de aplicación en la recopilación de datos
+### Cree una configuración de canal en Journey Optimizer
 
-1. En la [interfaz de recopilación de datos](https://experience.adobe.com/data-collection/), seleccione **[!UICONTROL Superficies de la aplicación]** en el panel izquierdo.
-1. Para crear una configuración, seleccione **[!UICONTROL Crear superficie de aplicación]**.
-   ![inicio de superficie de aplicación](assets/push-app-surface.png)
-1. Escriba un **[!UICONTROL Nombre]** para la configuración, por ejemplo `Luma App Tutorial` .
-1. En **[!UICONTROL Configuración de aplicaciones móviles]**, seleccione **[!UICONTROL Apple iOS]**.
-1. Introduzca el ID del paquete de la aplicación móvil en el campo **[!UICONTROL ID de la aplicación (ID del paquete de iOS)]**. Por ejemplo, `com.adobe.luma.tutorial.swiftui`.
-1. Seleccione **[!UICONTROL Guardar]**.
+Para empezar, debe crear una configuración de canal para poder enviar notificaciones de mensajes en la aplicación desde Journey Optimizer.
 
-   ![configuración de superficie de aplicación](assets/push-app-surface-config-inapp.png)
+1. En la interfaz de Journey Optimizer, abra el menú **[!UICONTROL Canales]** > **[!UICONTROL Configuración general]** > **[!UICONTROL Configuraciones de canal]** y luego seleccione **[!UICONTROL Crear configuración de canal]**.
+
+   ![Crear una configuración de canal](assets/push-config-9.png)
+
+1. Introduzca un nombre y una descripción (opcional) para la configuración.
+
+   >[!NOTE]
+   >
+   > Los nombres deben comenzar por una letra (A-Z). Solo puede contener caracteres alfanuméricos. También puede utilizar caracteres de guion bajo `_`, punto `.` y guion `-`.
+
+
+1. Para asignar etiquetas de uso de datos principales o personalizadas a la configuración, puedes seleccionar **[!UICONTROL Administrar acceso]**. [Obtenga más información acerca del Control de acceso de nivel de objeto (OLAC)](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/object-based-access).
+
+1. Seleccione el canal **mensajería en la aplicación**.
+
+1. Seleccione **[!UICONTROL Acciones de marketing]** para asociar directivas de consentimiento a los mensajes que usan esta configuración. Todas las políticas de consentimiento asociadas con la acción de marketing se aprovechan para respetar las preferencias de los clientes. [Más información sobre las acciones de marketing](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions).
+
+1. Seleccione la plataforma para la que desea definir la configuración. Esto le permite especificar la aplicación de destino para cada plataforma y garantiza una entrega de contenido coherente en varias plataformas.
+
+   >[!NOTE]
+   >
+   >En las plataformas iOS y Android, la entrega se basa únicamente en el ID de aplicación. Si ambas aplicaciones comparten el mismo ID de aplicación, el contenido se enviará a ambas, independientemente de la plataforma seleccionada en la **[!UICONTROL configuración del canal]**.
+
+1. Seleccione **[!UICONTROL Enviar]** para guardar los cambios.
+
+   ![Configurar el canal en la aplicación](assets/inapp_config_10.png)
 
 ### Actualizar configuración de secuencia de datos
 
-Para garantizar que los datos enviados desde la aplicación móvil al Edge Network se reenvíen a Journey Optimizer, actualice la configuración de Experience Edge.
+Para garantizar que los datos enviados desde su aplicación móvil a Edge Network se reenvíen a Journey Optimizer, actualice la configuración de Experience Edge.
 
 
 
 1. En la IU de recopilación de datos, seleccione **[!UICONTROL Datastreams]** y su secuencia de datos, por ejemplo **[!DNL Luma Mobile App]**.
-1. Seleccione ![Más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) para **[!UICONTROL Experience Platform]** y seleccione ![Editar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Editar]** del menú contextual.
+1. Seleccione ![Más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) para **[!UICONTROL Experience Platform]** y seleccione ![Editar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Editar]** en el menú contextual.
 1. En la pantalla **[!UICONTROL Datastreams]** > ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]**, compruebe que **[!UICONTROL Adobe Journey Optimizer]** esté seleccionado. Consulte [Configuración de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) para obtener más información.
 1. Para guardar la configuración de su secuencia de datos, seleccione **[!UICONTROL Guardar]**.
 
 
-   ![Configuración de secuencia de datos AEP](assets/datastream-ajo-inapp-configuration.png)
+   ![Configuración de secuencia de datos de AEP](assets/datastream-ajo-inapp-configuration.png)
 
 
 ### Instalación de la extensión Journey Optimizer tags
@@ -97,14 +116,14 @@ Cuando *solo* usa mensajes en la aplicación, en **[!UICONTROL Instalar extensi�
 
 ### Implementar Journey Optimizer en la aplicación
 
-Como se ha explicado en lecciones anteriores, la instalación de una extensión de etiqueta móvil solo proporciona la configuración. A continuación, debe instalar y registrar el SDK de mensajería. Si estos pasos no están claros, revise la sección [Instalar SDK](install-sdks.md).
+Como se ha explicado en lecciones anteriores, la instalación de una extensión de etiqueta móvil solo proporciona la configuración. A continuación, debe instalar y registrar Messaging SDK. Si estos pasos no están claros, revise la sección [Instalar SDK](install-sdks.md).
 
 >[!NOTE]
 >
->Si ha completado la sección [Instalar SDK](install-sdks.md), el SDK ya está instalado y puede omitir este paso.
+>Si ha completado la sección [Instalar SDK](install-sdks.md), SDK ya está instalado y puede omitir este paso.
 >
 
-1. En Xcode, asegúrese de que [AEP Messaging](https://github.com/adobe/aepsdk-messaging-ios) se añada a la lista de paquetes en Dependencias del paquete. Consulte [Administrador De Paquetes Swift](install-sdks.md#swift-package-manager).
+1. En Xcode, asegúrese de que [Mensajería de AEP](https://github.com/adobe/aepsdk-messaging-ios) se agrega a la lista de paquetes en Dependencias del paquete. Consulte [Administrador De Paquetes Swift](install-sdks.md#swift-package-manager).
 1. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** en el navegador del proyecto Xcode.
 1. Asegúrese de que `AEPMessaging` forme parte de su lista de importaciones.
 
@@ -131,7 +150,7 @@ Como se ha explicado en lecciones anteriores, la instalación de una extensión 
 
 ## Validar la configuración con Assurance
 
-1. Revise la sección [instrucciones de configuración](assurance.md#connecting-to-a-session) para conectar su simulador o dispositivo a Assurance.
+1. Revise la sección [instrucciones de configuración](assurance.md#connecting-to-a-session) para conectar el simulador o dispositivo a Assurance.
 1. En la IU de Assurance, seleccione **[!UICONTROL Configurar]**.
    ![configurar clic](assets/push-validate-config.png)
 1. Seleccione el botón ![Más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) junto a **[!UICONTROL Mensajería en la aplicación]**.
@@ -152,9 +171,9 @@ Para crear su propio mensaje en la aplicación, debe definir una campaña en Jou
 * eventos del ciclo vital de la aplicación, como inicio, instalación, actualización, cierre o bloqueo,
 * eventos de geolocalización, como entrar o salir de un punto de interés.
 
-En este tutorial, usará las API principales genéricas e independientes de la extensión de Mobile (consulte [API principales genéricas de Mobile](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis)) para facilitar el seguimiento de eventos de pantallas de usuario, acciones y datos PII. Los eventos generados por estas API se publican en el centro de eventos del SDK y las extensiones los pueden utilizar. El centro de eventos del SDK proporciona la estructura de datos principal vinculada a todas las extensiones del SDK de la plataforma móvil y mantiene una lista de extensiones registradas y módulos internos, una lista de detectores de eventos registrados y una base de datos de estado compartida.
+En este tutorial, usará las API principales genéricas e independientes de la extensión de Mobile (consulte [API principales genéricas de Mobile](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis)) para facilitar el seguimiento de eventos de pantallas de usuario, acciones y datos PII. Los eventos generados por estas API se publican en el centro de eventos de SDK y las extensiones los pueden utilizar. El centro de eventos de SDK proporciona la estructura de datos principal vinculada a todas las extensiones de SDK de Mobile Platform, y mantiene una lista de extensiones registradas y módulos internos, una lista de detectores de eventos registrados y una base de datos de estado compartida.
 
-El centro de eventos del SDK publica y recibe datos de eventos de extensiones registradas para simplificar las integraciones con soluciones de Adobe y de terceros. Por ejemplo, cuando se instala la extensión Optimize, todas las solicitudes e interacciones con el motor de ofertas de Journey Optimizer - Gestión de decisiones se gestionan mediante el centro de eventos.
+El centro de eventos de SDK publica y recibe datos de eventos de extensiones registradas para simplificar las integraciones con Adobe y soluciones de terceros. Por ejemplo, cuando se instala la extensión Optimize, todas las solicitudes e interacciones con el motor de ofertas de Journey Optimizer - Gestión de decisiones se gestionan mediante el centro de eventos.
 
 1. En la interfaz de usuario de Journey Optimizer, seleccione **[!UICONTROL Campañas]** en el carril izquierdo.
 1. Seleccione **[!UICONTROL Crear campaña]**.
@@ -222,15 +241,15 @@ Dispone de todos los ingredientes para enviar un mensaje en la aplicación. Lo q
    <img src="assets/ajo-in-app-message.png" width="300" />
 
 
-## Validar la implementación en Assurance
+## Validación de la implementación en Assurance
 
 Puede validar los mensajes en la aplicación en la interfaz de usuario de Assurance.
 
-1. Revise la sección [instrucciones de configuración](assurance.md#connecting-to-a-session) para conectar su simulador o dispositivo a Assurance.
+1. Revise la sección [instrucciones de configuración](assurance.md#connecting-to-a-session) para conectar el simulador o dispositivo a Assurance.
 1. Seleccione **[!UICONTROL Mensajería en la aplicación]**.
 1. Seleccione **[!UICONTROL Lista de eventos]**.
 1. Seleccione una entrada de **[!UICONTROL Mostrar mensaje]**.
-1. Inspect devuelve el evento sin procesar, especialmente `html`, que contiene el diseño y el contenido completos del mensaje en la aplicación.
+1. Inspeccione el evento sin procesar, especialmente `html`, que contiene el diseño y el contenido completos del mensaje en la aplicación.
    ![Mensaje en la aplicación de Assurance](assets/assurance-in-app-display-message.png)
 
 
@@ -240,8 +259,8 @@ Ahora debe tener todas las herramientas para empezar a añadir mensajes en la ap
 
 >[!SUCCESS]
 >
->Ha habilitado la aplicación para mensajería en la aplicación y ha agregado una campaña de mensajería en la aplicación mediante Journey Optimizer y la extensión de Journey Optimizer para el SDK de Experience Platform Mobile.
+>Ha habilitado la aplicación para mensajería en la aplicación y ha agregado una campaña de mensajería en la aplicación mediante Journey Optimizer y la extensión Journey Optimizer para Experience Platform Mobile SDK.
 >
->Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Mobile SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Siguiente: **[Crear y mostrar ofertas](journey-optimizer-offers.md)**

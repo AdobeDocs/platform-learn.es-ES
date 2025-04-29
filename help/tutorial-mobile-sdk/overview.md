@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo implementar las aplicaciones móvi
 recommendations: noDisplay,catalog
 last-substantial-update: 2023-11-29T00:00:00Z
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
+source-git-commit: c08671ae28955ff090baa7aa5a47246b2196ba20
 workflow-type: tm+mt
-source-wordcount: '826'
-ht-degree: 3%
+source-wordcount: '815'
+ht-degree: 4%
 
 ---
 
@@ -59,7 +59,7 @@ En estas lecciones, se da por hecho que dispone de un Adobe ID y de los permisos
 * En la recopilación de datos, debe tener:
    * **[!UICONTROL Plataformas]**: elemento de permiso **[!UICONTROL Móvil]**
    * **[!UICONTROL Derechos de propiedad]**: elementos de permiso para **[!UICONTROL desarrollar]**, **[!UICONTROL aprobar]**, **[!UICONTROL publicar]**, **[!UICONTROL administrar extensiones]** y **[!UICONTROL administrar entornos]**.
-   * **[!UICONTROL Derechos de compañía]**: elementos de permiso para **[!UICONTROL Administrar propiedades]** y, si completa la lección de mensajería push opcional, **[!UICONTROL Administrar configuraciones de aplicación]**
+   * **[!UICONTROL Derechos de compañía]**—elementos de permiso para **[!UICONTROL Administrar propiedades]**
 
      Para obtener más información sobre los permisos de etiquetas, consulte [Permisos de usuario para etiquetas](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=es){target="_blank"} en la documentación del producto.
 * En Experience Platform, debe tener:
@@ -92,8 +92,8 @@ En estas lecciones, se da por hecho que dispone de un Adobe ID y de los permisos
 Hay dos versiones de la aplicación de ejemplo disponibles para descargar. Ambas versiones se pueden descargar o clonar desde [Github](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App). Encontrará dos carpetas:
 
 
-1. [Inicio](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: un proyecto sin código o con código de marcador de posición para la mayoría del código de SDK de Experience Platform Mobile que necesita usar para completar los ejercicios prácticos de este tutorial.
-1. [Finalizar](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: una versión con la implementación completa para referencia.
+1. [Inicio](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: un proyecto sin código o con código de marcador de posición para la mayoría del código de Experience Platform Mobile SDK que necesita usar para completar los ejercicios prácticos de este tutorial.
+1. [Finalizar](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: una versión con la implementación completa como referencia.
 
 >[!NOTE]
 >
