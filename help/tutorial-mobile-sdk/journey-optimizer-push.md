@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Push
 jira: KT-14638
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: f73f0fc345fc605e60b19be1abe2e328795898aa
+source-git-commit: 83046a6c56353ba8750c4e500f70ef2ca887fbe8
 workflow-type: tm+mt
-source-wordcount: '2871'
+source-wordcount: '2885'
 ht-degree: 1%
 
 ---
@@ -75,9 +75,9 @@ Los siguientes pasos no son específicos de Adobe Experience Cloud y están dise
 1. Seleccione **[!UICONTROL Continuar]**.
    ![configurar nueva clave](assets/mobile-push-apple-dev-config-key.png)
 1. Revise la configuración y seleccione **[!UICONTROL Registrar]**.
-1. Descargar la clave privada `.p8`. Se utiliza en la configuración del canal de Journey Optimizer en el siguiente ejercicio.
-1. Tome nota de la **[!UICONTROL ID de clave]**. Se utiliza en la configuración del canal de Journey Optimizer.
-1. Tome nota de **[!UICONTROL Id. de equipo]**. Se utiliza en la configuración del canal de Journey Optimizer.
+1. Descargar la clave privada `.p8`. Se utiliza en el siguiente ejercicio cuando configura las credenciales push de Journey Optimizer.
+1. Tome nota de la **[!UICONTROL ID de clave]**. Se utiliza en el siguiente ejercicio cuando configura las credenciales push de Journey Optimizer.
+1. Tome nota de **[!UICONTROL Id. de equipo]**. Se utiliza en el siguiente ejercicio cuando configura las credenciales push de Journey Optimizer.
    ![Detalles de clave](assets/push-apple-dev-key-details.png)
 
 Encontrará documentación adicional [aquí](https://help.apple.com/developer-account/#/devcdfbb56a3).
@@ -96,19 +96,17 @@ Se requiere el registro de credenciales push de aplicaciones móviles para autor
 
    ![Crear una nueva configuración de credenciales push en Journey Optimizer](assets/add-push-credential-ios.png)
 
-1. En el menú desplegable **[!UICONTROL Plataforma]**, seleccione el sistema operativo **iOS**:
+1. En la lista desplegable **[!UICONTROL Plataforma]**, seleccione el sistema operativo **iOS**.
 
+1. Introduzca el ID del paquete de la aplicación móvil en el campo **[!UICONTROL ID de la aplicación]** (ID del paquete de iOS). Por ejemplo, com.adobe.luma.tutorial.swiftui
 
-   1. Introduzca el ID del paquete de la aplicación móvil en el campo **[!UICONTROL ID de la aplicación]** (ID del paquete de iOS). Por ejemplo, com.adobe.luma.tutorial.swiftui
+1. Habilite la opción **[!UICONTROL Aplicar a todas las zonas protegidas]** para que estas credenciales push estén disponibles en todas las zonas protegidas. Si una zona protegida específica tiene sus propias credenciales para el mismo par de plataforma e ID de aplicación, esas credenciales específicas de la zona protegida tendrán prioridad.
 
-   1. Habilite la opción **[!UICONTROL Aplicar a todas las zonas protegidas]** para que estas credenciales push estén disponibles en todas las zonas protegidas. Si una zona protegida específica tiene sus propias credenciales para el mismo par de plataforma e ID de aplicación, esas credenciales específicas de la zona protegida tendrán prioridad.
+1. Arrastre y suelte el archivo .p8 **Clave de autenticación de notificaciones push de Apple** obtenido en el ejercicio anterior.
 
+1. Proporcione la **[!UICONTROL ID de clave]**, una cadena de 10 caracteres asignada durante la creación de la clave de autenticación `p8`. Se encuentra en la ficha **[!UICONTROL Keys]** de la página **Certificados, identificadores y perfiles** de las páginas del portal de Apple Developer. (Debió haberlo notado durante el ejercicio anterior).
 
-   1. Arrastre y suelte el archivo .p8 **Clave de autenticación de notificaciones push de Apple** obtenido en el ejercicio anterior.
-
-   1. Proporcione la **[!UICONTROL ID de clave]**, una cadena de 10 caracteres asignada durante la creación de la clave de autenticación `p8`. Se encuentra en la ficha **[!UICONTROL Keys]** de la página **Certificados, identificadores y perfiles** de las páginas del portal de Apple Developer. (Debió haberlo notado durante el ejercicio anterior).
-
-   1. Proporcione el **[!UICONTROL ID de equipo]**. El identificador de equipo es un valor que se encuentra en la ficha **Pertenencia** o en la parte superior de la página del portal para desarrolladores de Apple. (Debió haberlo notado durante el ejercicio anterior).
+1. Proporcione el **[!UICONTROL ID de equipo]**. El identificador de equipo es un valor que se encuentra en la ficha **Pertenencia** o en la parte superior de la página del portal para desarrolladores de Apple. (Debió haberlo notado durante el ejercicio anterior).
 
    ![Configuración de credenciales push en Journey Optimizer](assets/add-app-config-ios.png)
 
