@@ -19,7 +19,7 @@ Aprenda a automatizar creativa flujos de trabajo con Workfront Fusion.
 
 ## Requisitos previos
 
-- Acceso a Adobe Systems https://firefly.adobe.com/ Firefly [](https://firefly.adobe.com/){target="_blank"}
+- Acceso a Adobe Systems https://firefly.adobe.com/ Firefly [&#128279;](https://firefly.adobe.com/){target="_blank"}
 
 ## Ejercicios
 

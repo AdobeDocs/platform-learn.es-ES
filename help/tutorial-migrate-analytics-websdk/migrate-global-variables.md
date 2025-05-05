@@ -54,6 +54,7 @@ Si no necesita definir los pasos necesarios, vaya a hacerlo y habrá terminado e
    1. **Tipo de evento** podría estar preparado para DOM, según su implementación
    1. Expandir **Opciones avanzadas**
    1. Establezca **Order** en un número inferior al de las demás reglas para que se ejecute primero.
+
       ![Configurar evento de variable global](assets/configure-global-variable-event.jpg)
       >[!NOTE]
       >

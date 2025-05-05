@@ -128,12 +128,12 @@ La **buena noticia** es que debería ejecutarse **en cualquier momento** si real
 
 Bueno, sí y no. Sí, es necesario cambiar un par de cosas pequeñas, pero no, no es necesario cambiar la mayor parte del código siempre y cuando se cambien estas pequeñas cosas:
 
-_**Cambio de código 1:**_
+_&#x200B;**Cambio de código 1:**&#x200B;_
 Después (o antes de que elija) de pegar el código de &quot;complemento&quot; en la ventana de código de la extensión de Web SDK, **elimine** las líneas &quot;doPlugin&quot; de su código. No los necesitará y provocarán un error, ya que forman parte de appMeasurement.js, pero no del código SDK de Web.
 
 ![Quitar líneas de código doPlugins](assets/remove-doplugins.jpg)
 
-_**Cambio de código 2:**_
+_&#x200B;**Cambio de código 2:**&#x200B;_
 El otro cambio que deberá hacer es agregar algún código para que se defina el objeto &quot;s&quot;, muy similar a lo que se discute arriba con respecto al código en las acciones de regla. En este caso, tendremos que definir el código un poco diferente, añadiendo un nodo de &quot;datos&quot; que ya está definido en la acción de regla, pero no aquí.
 Esta definición debe colocarse en la parte superior de la ventana de código. El código que debe copiarse en (al colocarlo en la extensión Web SDK) es el siguiente:
 
@@ -143,7 +143,7 @@ content.data.__adobe.analytics = content.data.__adobe.analytics || {};
 const s = content.data.__adobe.analytics;
 ```
 
-_**Con ambos cambios de código:**_
+_&#x200B;**Con ambos cambios de código:**&#x200B;_
 Este es el código mencionado anteriormente, pero con ambos cambios acabamos de discutir:
 
 ![Código actualizado](assets/update-code.jpg)

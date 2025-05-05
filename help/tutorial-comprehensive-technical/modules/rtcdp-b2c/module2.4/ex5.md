@@ -27,7 +27,7 @@ Antes de continuar, debe seleccionar una **zona protegida**. La zona protegida q
 
 ![Ingesta de datos](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-Vaya a **Destinos** y haga clic en **Examinar**. A continuación, verá todos los destinos disponibles. Busque su destino y haga clic en los 3 puntos**...** como se indica a continuación, luego haga clic en **Activar audiencias**.
+Vaya a **Destinos** y haga clic en **Examinar**. A continuación, verá todos los destinos disponibles. Busque su destino y haga clic en los 3 puntos&#x200B;**...** como se indica a continuación, luego haga clic en **Activar audiencias**.
 
 ![5-01-select-destination.png](./images/501selectdestination.png)
 

@@ -22,12 +22,12 @@ Obtenga información sobre cómo reemplazar los SDK de Adobe Target con los SDK 
 >
 >Dentro del ecosistema de Adobe Experience Platform Mobile SDK, las extensiones se implementan mediante SDK importados en las aplicaciones que pueden tener nombres diferentes:
 >
-> * **Target SDK** implementa la extensión Adobe Target ****
+> * **Target SDK** implementa la extensión Adobe Target **&#x200B;**
 > * **Optimize SDK** implementa la extensión de **Adobe Systems Journey Optimizer: Decisioning**
 
 ## Actualizar dependencias
 
-Ejemplo de +++Android
++++Ejemplo de Android
 
 >[!BEGINTABS]
 

@@ -396,7 +396,7 @@ Después de agregar el enrutador, selecciona el icono **llave inglesa** y selecc
 
 ![WF Fusion](./images/wffusion114.png)
 
-Para la etiqueta, use **Hemos terminado**. Establezca la **condición** con la respuesta del **Photoshop Comprobar Estado** nodo seleccionando el campo **resposne data.outputs.status**[], el operador debe establecerse en **Igual a** y el valor debe ser `succeeded`. Seleccione **Aceptar**.
+Para la etiqueta, use **Hemos terminado**. Establezca la **condición** con la respuesta del **Photoshop Comprobar Estado** nodo seleccionando el campo **resposne data.outputs.status**&#x200B;[], el operador debe establecerse en **Igual a** y el valor debe ser `succeeded`. Seleccione **Aceptar**.
 
 ![WF Fusion](./images/wffusion115.png)
 

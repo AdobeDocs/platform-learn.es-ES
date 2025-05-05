@@ -61,7 +61,7 @@ En **Solicitud contenido**, está el texto **Haga clic aquí**. Este texto debe 
 
 ![WF Fusion](./images/wffusion208.png)
 
-Eliminar el texto **Haga clic aquí** y sustitúyalo seleccionando el Valor de variable **** en el **nodo Iterador**. Esto garantiza que el texto del botón del Photoshop documento se actualice de forma dinámica.
+Eliminar el texto **Haga clic aquí** y sustitúyalo seleccionando el Valor de variable **&#x200B;**&#x200B;en el **nodo Iterador**. Esto garantiza que el texto del botón del Photoshop documento se actualice de forma dinámica.
 
 ![WF Fusion](./images/wffusion209.png)
 

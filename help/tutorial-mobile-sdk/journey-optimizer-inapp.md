@@ -180,6 +180,7 @@ El centro de eventos de SDK publica y recibe datos de eventos de extensiones reg
 1. En la pantalla **[!UICONTROL Crear campaña]**:
    1. Seleccione **[!UICONTROL Mensaje en la aplicación]** y elija una superficie de aplicación en la lista **[!UICONTROL Superficie de aplicación]**, por ejemplo **[!DNL Luma Mobile App]**.
    1. Seleccionar **[!UICONTROL Crear]**
+
       ![Propiedades de campaña](assets/ajo-campaign-properties.png)
 1. En la pantalla de definición de campaña, en **[!UICONTROL Propiedades]**, escriba un **[!UICONTROL Nombre]** para la campaña, por ejemplo `Luma - In-App Messaging Campaign`, y una **[!UICONTROL Descripción]**, por ejemplo `In-app messaging campaign for Luma app`.
    ![Nombre de campaña](assets/ajo-campaign-properties-name.png)
@@ -191,6 +192,7 @@ El centro de eventos de SDK publica y recibe datos de eventos de extensiones reg
    4. Escriba **[!UICONTROL Descartar]** como **[!UICONTROL botón #1 texto (principal)]**.
    5. Observe cómo se actualiza la vista previa.
    6. Seleccione **[!UICONTROL Revisar para activar]**.
+
       ![Editor en la aplicación](assets/ajo-in-app-editor.png)
 1. En la pantalla **[!UICONTROL Revisar para activar (Luma: mensajería en la aplicación)]**, seleccione ![Editar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) en el mosaico **[!UICONTROL Programar]**.
    ![Revisar horario y seleccionar horario](assets/ajo-review-select-schedule.png)
@@ -199,6 +201,7 @@ El centro de eventos de SDK publica y recibe datos de eventos de extensiones reg
    1. Para quitar **[!UICONTROL evento de inicio de aplicación]**, seleccione ![Cerrar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg) .
    1. Use ![Agregar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Agregar condición]** repetidamente para generar la siguiente lógica para **[!UICONTROL Mostrar mensaje si]**.
    1. Haga clic en **[!UICONTROL Finalizado]**.
+
       ![lógica de Déclencheur](assets/ajo-trigger-logic.png)
 
    Ha definido una acción de seguimiento, donde **[!UICONTROL Action]** es igual a `in-app` y **[!UICONTROL Context data]** con la acción es un par de valor clave de `"showMessage" : "true"`.

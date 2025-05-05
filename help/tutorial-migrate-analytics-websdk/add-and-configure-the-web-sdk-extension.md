@@ -19,8 +19,10 @@ Siga estos pasos para agregar y configurar la extensión:
 
 1. Vaya a Recopilación de datos del Experience Platform. Esto se puede lograr de una de las dos maneras siguientes:
    1. Vaya a la [interfaz de Adobe Experience Platform](https://platform.adobe.com/) y, a continuación, seleccione **[!UICONTROL Etiquetas]** cerca de la parte inferior de la navegación izquierda.
+
       ![Etiquetas de acceso 1](assets/access-tags-1.jpg)
    1. Si no tiene acceso a Platform, puede utilizar el conmutador de aplicaciones (9 puntos) en la parte superior derecha de la ventana y seleccionar Recopilación de datos (después de haber iniciado sesión en Experience.Adobe.com).
+
       ![Etiquetas de acceso 2](assets/access-tags-2.jpg)
 1. Busque y seleccione la propiedad de etiquetas que está migrando a Web SDK.
 1. En el panel de navegación izquierdo de la propiedad de etiquetas, seleccione **[!UICONTROL Extensiones]**.

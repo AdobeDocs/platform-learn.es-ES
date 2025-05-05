@@ -37,6 +37,7 @@ En esta lección, deberá hacer lo siguiente:
 1. Cree una nueva propiedad de etiqueta móvil en la interfaz de recopilación de datos:
    1. Seleccione **[!UICONTROL Etiquetas]** en el panel de navegación izquierdo.
    1. Seleccionar **[!UICONTROL nueva propiedad]**
+
       ![crear una propiedad de etiqueta](assets/tags-new-property.png).
    1. Para **[!UICONTROL Name]**, escriba `Luma Mobile App Tutorial`.
    1. Para la **[!UICONTROL plataforma]**, seleccione **[!UICONTROL móvil]**.
@@ -65,6 +66,7 @@ En esta lección, deberá hacer lo siguiente:
       ![Crear la biblioteca](assets/tags-save-library.png)
 
    1. Finalmente, seleccione **[!UICONTROL Versión inicial]** como su biblioteca de trabajo en el menú **[!UICONTROL Seleccionar una biblioteca de trabajo]**.
+
       ![Seleccionar como biblioteca de trabajo](assets/tags-working-library.png)
 1. Compruebe las extensiones:
 

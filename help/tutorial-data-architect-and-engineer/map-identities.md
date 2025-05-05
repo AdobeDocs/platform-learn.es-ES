@@ -57,7 +57,7 @@ En este ejercicio, crearemos espacios de nombres de identidad para los campos de
 Vamos inicio creando un espacio de nombres para el esquema de lealtad de Luma:
 
 1. En la interfaz de usuario Platform, vaya a **[!UICONTROL Identidades]** en el navegación izquierdo
-1. Observará que hay varios espacios de nombres de identidad predeterminados disponibles. Seleccione el espacio ]**de nombres de**[!UICONTROL  identidad Crear botón
+1. Observará que hay varios espacios de nombres de identidad predeterminados disponibles. Seleccione el espacio **de nombres de** identidad Crear botón
 1. Proporcione los siguientes detalles:
 
    | Campo | Valor |
@@ -88,9 +88,9 @@ Crearemos nuestro espacio de nombres CRM a través de API.
 >
 >Si prefiere omitir los ejercicios de API, siéntase gratuito de crear el espacio de nombres CRM a través del método de interfaz de usuario que utilizó con los siguientes detalles:
 >
-> 1. Como nombre ]**para**[!UICONTROL  mostrar, use`Luma CRM Id`
-> 1. Como símbolo ]**de**[!UICONTROL  identidad, utilice`lumaCrmId`
-> 1. Como tipo ]**, use Entre**[!UICONTROL  dispositivos
+> 1. Como nombre **para** mostrar, use`Luma CRM Id`
+> 1. Como símbolo **de** identidad, utilice`lumaCrmId`
+> 1. Como tipo **, use Entre** dispositivos
 
 Vamos a crear el espacio `Luma CRM Id`de nombres de identidad:
 
@@ -108,7 +108,7 @@ Vamos a crear el espacio `Luma CRM Id`de nombres de identidad:
    }
    ```
 
-1. Presione Enviar **** botón y obtendrá una **respuesta de 200 OK**:
+1. Presione Enviar **&#x200B;**&#x200B;botón y obtendrá una **respuesta de 200 OK**:
 
    ![Área de nombres de identidad](assets/identity-createUsingApi.png)
 
@@ -132,7 +132,7 @@ Agreguemos una identidad principal a `Luma Loyalty Schema`:
 1. Seleccione el `loyaltyId` campo
 1. Marque la **[!UICONTROL casilla Identidad]**
 1. Marque también la **[!UICONTROL casilla Identidad]** principal
-1. Seleccione el espacio de nombres en el `Luma Loyalty Id` menú desplegable Espacios ]**de**[!UICONTROL  nombres de identidad
+1. Seleccione el espacio de nombres en el `Luma Loyalty Id` menú desplegable Espacios **de** nombres de identidad
 1. Seleccione **[!UICONTROL Aplicar]**
 1. Seleccione **[!UICONTROL Guardar]**
 
@@ -160,7 +160,7 @@ Se pueden añadir varios campos de identidad a una esquema. Las identidades no p
 1. Escoger `Luma Identity Profile Field group`
 1. Seleccionar `crmId` campo
 1. Marque la **[!UICONTROL casilla Identidad]**
-1. Seleccione el espacio de nombres en el `Luma CRM Id` menú desplegable Espacios ]**de**[!UICONTROL  nombres de identidad
+1. Seleccione el espacio de nombres en el `Luma CRM Id` menú desplegable Espacios **de** nombres de identidad
 1. Seleccione **[!UICONTROL Aplicar]** y, a continuación, seleccione el **[!UICONTROL botón Guardar]** para guardar los cambios
 
    ![Identidad secundaria](assets/identity-loyalty-secondaryId.png)

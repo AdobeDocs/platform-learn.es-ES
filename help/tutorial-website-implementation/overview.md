@@ -130,7 +130,7 @@ En estas lecciones, debe implementar Adobe Experience Cloud en un sitio web de v
    </html>
    ```
 
-+++
+   +++
 
 1. Obtenga un editor de texto en el que pueda realizar cambios en la página HTML de ejemplo. (Si no tiene uno, le recomendamos que pruebe [Brackets](https://brackets.io/)).
 1. Marcar el sitio de [Luma](https://luma.enablementadobe.com/content/luma/us/en.html).

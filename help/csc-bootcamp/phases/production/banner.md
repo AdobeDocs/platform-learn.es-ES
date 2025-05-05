@@ -29,10 +29,13 @@ La automatización de contenido lleva la potencia de Adobe Creative Cloud a Expe
 
 - Los siguientes son de interés para usted:
    - Adobike Banner Dark: crea un banner de Adobike con una superposición oscura, en función del recurso seleccionado
+
      ![banner oscuro](./images/prod-banner-dark.jpg)
    - Adobike Banner Light: crea un banner de Adobike con una superposición de luz en función del recurso seleccionado
+
      ![banner ligero](./images/prod-banner-light.jpg)
    - Adobike Banner Green: crea un banner de Adobike con una superposición verde, en función del recurso seleccionado
+
      ![banner verde](./images/prod-banner-green.jpg)
 
 - Una vez que haya elegido el tipo de titular que desea crear, seleccione ese perfil de procesamiento y, a continuación, seleccione &quot;Aplicar perfil a las carpetas&quot;.

@@ -58,7 +58,7 @@ Este método implica utilizar el objeto XDM completamente definido como estructu
 
 A continuación se muestra un ejemplo del aspecto que tendría la capa de datos al utilizar el formato de capa de datos del cliente de Adobe:
 
-Ejemplo de +++XDM en la capa de datos
++++Ejemplo de XDM en la capa de datos
 
 ```JSON
 window.adobeDataLayer.push({

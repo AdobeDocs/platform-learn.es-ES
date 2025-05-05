@@ -21,7 +21,7 @@ Algunas implementaciones de Target pueden utilizar mboxes regionales (ahora cono
 El SDK web de Platform no puede procesar automáticamente las actividades creadas con el compositor basado en formularios de Target y enviadas a mboxes regionales. Al igual que at.js, las ofertas enviadas a ubicaciones de Target específicas deben procesarse bajo demanda.
 
 
-Ejemplo de +++at.js con `getOffer()` y `applyOffer()`:
++++Ejemplo de at.js con `getOffer()` y `applyOffer()`:
 
 1. Ejecute `getOffer()` para solicitar una oferta para una ubicación
 1. Ejecute `applyOffer()` para procesar la oferta en un selector especificado
@@ -106,7 +106,7 @@ Consulte la [documentación dedicada](https://experienceleague.adobe.com/docs/ex
 
 La página de ejemplo siguiente se basa en la implementación descrita en la sección anterior, solo agrega ámbitos adicionales al comando `sendEvent`.
 
-Ejemplo del SDK web de +++Platform con varios ámbitos
++++Ejemplo del SDK web de Platform con varios ámbitos
 
 ```HTML
 <!doctype html>

@@ -275,7 +275,7 @@ Para informar sobre las pantallas visualizadas en la aplicación:
 
 1. Seleccione **[!UICONTROL Mostrar todo]** debajo de la lista **[!UICONTROL MÉTRICAS]**.
 
-1. Arrastre y suelte el componente **[!UICONTROL Vistas de pantalla]** en [!UICONTROL _Suelte una **métrica**aquí (o cualquier otro componente_)].
+1. Arrastre y suelte el componente **[!UICONTROL Vistas de pantalla]** en [!UICONTROL _Suelte una **métrica**&#x200B;aquí (o cualquier otro componente_)].
    ![Proyectos de CJA 7](assets/cja-projects-7.png)
 La tabla de forma libre ahora muestra las vistas de pantalla de cada día durante el período de tiempo seleccionado. Sin embargo, quiere mostrar el número de vistas de pantalla de cada una de las diferentes pantallas utilizadas en la aplicación.
 
@@ -305,7 +305,7 @@ A continuación, creará una tabla de forma libre para informar sobre cómo inte
 
 1. Cambie el nombre de **[!UICONTROL tabla de forma libre (2)]** a `App Interactions`.
 
-1. Arrastre y suelte la métrica **[!UICONTROL Interacciones de aplicaciones]** en [!UICONTROL _Suelte una **métrica**aquí (o cualquier otro componente_)].
+1. Arrastre y suelte la métrica **[!UICONTROL Interacciones de aplicaciones]** en [!UICONTROL _Suelte una **métrica**&#x200B;aquí (o cualquier otro componente_)].
 
 1. Arrastre y suelte la dimensión **[!UICONTROL Nombre de interacción de aplicación]** en el encabezado **[!UICONTROL Día]** para reemplazar esta dimensión.
 
@@ -337,7 +337,7 @@ Ahora desea crear un informe en un panel independiente sobre los eventos de come
 
 1. Cambie el nombre de **[!UICONTROL tabla de forma libre]** a `Commerce Events`.
 
-1. Arrastre y suelte la métrica **[!UICONTROL Vistas del producto]** en [!UICONTROL _Suelte una **métrica**aquí (o cualquier otro componente_)].
+1. Arrastre y suelte la métrica **[!UICONTROL Vistas del producto]** en [!UICONTROL _Suelte una **métrica**&#x200B;aquí (o cualquier otro componente_)].
 
 1. Arrastre y suelte la métrica **[!UICONTROL Product Add To Lists]** a la derecha de la columna **[!UICONTROL Product Views]** para insertar esta columna en la tabla de forma libre. Asegúrese de que **[!UICONTROL + Add]** (en azul) se muestre al insertar la columna.
    ![Proyectos de CJA 15](assets/cja-projects-15.png)
@@ -411,7 +411,7 @@ También desea disponer de un informe que muestre qué ofertas se mostraron en q
 
 1. Cambie el nombre de **[!UICONTROL tabla de forma libre (2)]** a `People`.
 
-1. Arrastre y suelte la métrica **[!UICONTROL Personas]** en [!UICONTROL _Suelte una **métrica**aquí (o cualquier otro componente_)].
+1. Arrastre y suelte la métrica **[!UICONTROL Personas]** en [!UICONTROL _Suelte una **métrica**&#x200B;aquí (o cualquier otro componente_)].
 
 1. Arrastre y suelte **[!UICONTROL Nombre de actividad]** en la columna **[!UICONTROL Día]** para reemplazar la dimensión.
 
@@ -443,7 +443,7 @@ Por último, desea informar sobre las visitas a las tiendas.
 
 1. Cambie el nombre de **[!UICONTROL tabla de forma libre]** a `Store Entries / Exits Across Cities`.
 
-1. Arrastre y suelte la métrica **[!UICONTROL Eventos de ubicación]** en [!UICONTROL _Suelte una **métrica**aquí (o cualquier otro componente_)]. El informe ahora muestra una descripción general diaria de todos los eventos de ubicación que se produjeron en la aplicación. Recuerde cómo configuró específicamente esta dimensión como parte de su [vista de datos](#create-a-data-view).
+1. Arrastre y suelte la métrica **[!UICONTROL Eventos de ubicación]** en [!UICONTROL _Suelte una **métrica**&#x200B;aquí (o cualquier otro componente_)]. El informe ahora muestra una descripción general diaria de todos los eventos de ubicación que se produjeron en la aplicación. Recuerde cómo configuró específicamente esta dimensión como parte de su [vista de datos](#create-a-data-view).
 
 1. Arrastre y suelte la dimensión **[!UICONTROL City]** en el encabezado de columna **[!UICONTROL Day]** para reemplazar la dimensión. El informe ahora muestra las ciudades para los eventos de ubicación.
 

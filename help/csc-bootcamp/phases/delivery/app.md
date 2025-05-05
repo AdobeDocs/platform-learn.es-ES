@@ -72,7 +72,7 @@ En la aplicación, puede seleccionar su equipo en el menú desplegable. AEM Esto
 ![Aplicación antes de seleccionar el equipo](./images/delivery-app-initial.png)
 ![Aplicación después de seleccionar el equipo](./images/delivery-app-loaded.png)
 
-AEM Paso siguiente: [Fase 3 - Entrega: Crear página en el sitio de trabajo {10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](./page-in-aem.md)
+AEM Paso siguiente: [Fase 3 - Entrega: Crear página en el sitio de trabajo &lbrace;10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](./page-in-aem.md)
 
 [Volver a la fase 2: Producción: crear contenido de aplicaciones móviles](../production/app.md)
 

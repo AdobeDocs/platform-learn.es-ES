@@ -84,6 +84,7 @@ Ahora que tenemos una idea de de qué debería existir nuestro contenido, podemo
 - En el modal que se abre, verá que algunos campos aún no se pueden editar. Esto es lógico: en función de dónde creemos nuestro fragmento, habrá disponibles diferentes modelos.
   ![crear fragmento de contenido](./images/prod-app-create-cf-details.png)
    - En primer lugar, seleccione dónde vamos a crear el fragmento haciendo clic en el icono de carpeta junto al campo &quot;Ubicación&quot;. Expanda el árbol de contenido haciendo clic en las carpetas &quot;adobike&quot; \> &quot;en&quot; \> &quot;mobile-app&quot; y, a continuación, confirme su selección haciendo clic en el botón &quot;Elegir&quot;.
+
      ![seleccione la ubicación correcta](./images/prod-app-folder.png)
    - Observará que el campo &quot;Modelo de fragmento de contenido&quot; ahora se puede editar. Haga clic en la flecha situada junto al campo para abrir la lista desplegable y seleccionar el modelo de contenido que vimos anteriormente: &quot;Página principal de la aplicación móvil&quot;.
    - A continuación, asigne un título significativo al fragmento de contenido (sugerencia: incluya el número de equipo para recuperar el contenido fácilmente). Observará que el campo &quot;Nombre&quot; se rellena automáticamente para facilitarle la vida: es el nombre que utiliza el sistema para identificar el fragmento y no se debe tocar.
@@ -94,6 +95,7 @@ Ahora que tenemos una idea de de qué debería existir nuestro contenido, podemo
    - Para seleccionar recursos de imagen, haga clic en el icono de carpeta para buscar en AEM Assets la imagen correcta.
    - Para el producto destacado, haga clic en el icono de búsqueda de productos para que pueda seleccionar fácilmente nuestro producto de Commerce &quot;Adobe Bike 1&quot;, de modo que los detalles relacionados con el comercio se carguen en la aplicación.
    - Asegúrese de hacer clic en el botón &quot;Guardar&quot; cuando haya terminado de guardar todo el contenido creado y publicar los cambios.
+
      ![cambios de publicación](./images/prod-app-publish.png)
 
 Ahora que hemos previsto la aplicación móvil con algún contenido, estamos listos para entregar nuestra campaña.
