@@ -16,6 +16,6 @@ ht-degree: 25%
 
 # Creación y publicación de una biblioteca de etiquetas
 
-Obtenga información sobre cómo crear una biblioteca en la propiedad de etiquetas e insertar cambios en los entornos de desarrollo, ensayo y producción. Aprenda a utilizar varios entornos de desarrollo para ayudar a varios equipos a actualizar la propiedad en flujos de trabajo paralelos. Para obtener más información, consulte la documentación de [publicación](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html).
+Obtenga información sobre cómo crear una biblioteca en la propiedad de etiquetas e insertar cambios en los entornos de desarrollo, ensayo y producción. Aprenda a utilizar varios entornos de desarrollo para ayudar a varios equipos a actualizar la propiedad en flujos de trabajo paralelos. Para obtener más información, consulte la documentación de [publicación](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=es).
 
 >[!VIDEO](https://video.tv.adobe.com/v/28731/?learn=on&enablevpops)

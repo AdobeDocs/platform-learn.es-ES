@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Configuración del destino de Marketo
 
-Obtenga información sobre cómo configurar el destino de Marketo en Adobe Experience Platform para poder activar los segmentos de Platform en la instancia de Marketo Engage. Para obtener más información, consulte la [Documentación de perfiles](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html).
+Obtenga información sobre cómo configurar el destino de Marketo en Adobe Experience Platform para poder activar los segmentos de Platform en la instancia de Marketo Engage. Para obtener más información, consulte la [Documentación de perfiles](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html?lang=es).
 
 >[!VIDEO](https://video.tv.adobe.com/v/338248?learn=on&enablevpops)
 

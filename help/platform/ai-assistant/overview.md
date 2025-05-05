@@ -18,7 +18,7 @@ ht-degree: 5%
 
 # Asistente de IA
 
-Descubra lo que puede hacer con el AI Assistant en aplicaciones basadas en Adobe Experience Platform como Real-Time Customer Data Platform, Journey Optimizer y Customer Journey Analytics. Para obtener más información, visite la [documentación del Asistente de IA](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home).
+Descubra lo que puede hacer con el AI Assistant en aplicaciones basadas en Adobe Experience Platform como Real-Time Customer Data Platform, Journey Optimizer y Customer Journey Analytics. Para obtener más información, visite la [documentación del Asistente de IA](https://experienceleague.adobe.com/es/docs/experience-platform/ai-assistant/home).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3429845/?learn=on&enablevpops)
 

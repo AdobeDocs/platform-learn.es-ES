@@ -176,7 +176,7 @@ Cuando se utiliza Adobe Commerce AEM integrado con la, puede tener una página d
 
 >[!NOTE]
 >
-> ¿Quiere saber más sobre las Live Copies? Consulte [&quot;Creación y sincronización de Live Copies&quot;.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm/creating-live-copies.html?lang=en)
+> ¿Quiere saber más sobre las Live Copies? Consulte [&quot;Creación y sincronización de Live Copies&quot;.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm/creating-live-copies.html?lang=es)
 
 - Una vez finalizado, debería ver la tienda disponible en el sitio web. Selecciónelo y haga clic en Crear \> página para crear la página inspiradora del producto.
 

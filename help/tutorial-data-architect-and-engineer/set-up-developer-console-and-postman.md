@@ -189,7 +189,7 @@ Ahora, vamos a hacer nuestra primera llamada de API:
 1. Importarlo en [!DNL Postman]
 1. Abra **API de Registro de esquemas > Esquemas > Enumerar esquemas**
 1. Observe las pestañas **Params** y **Headers** y observe cómo incluyen algunas de las variables de entorno que ingresamos anteriormente.
-1. Observe que el campo **Encabezados > Aceptar valor** está establecido en `application/vnd.adobe.xed-id+json`. Las API de Registro de esquemas requieren uno de estos [valores de encabezado Aceptar especificados](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#accept) que proporcionan formatos diferentes en la respuesta.
+1. Observe que el campo **Encabezados > Aceptar valor** está establecido en `application/vnd.adobe.xed-id+json`. Las API de Registro de esquemas requieren uno de estos [valores de encabezado Aceptar especificados](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=es#accept) que proporcionan formatos diferentes en la respuesta.
 1. Seleccione **Enviar** para realizar su primera llamada a la API de Platform.
 
 Esperamos que haya obtenido una respuesta correcta `200 OK` que contenga una lista de los esquemas XDM disponibles proporcionados por el Adobe en su zona protegida, como se muestra a continuación.

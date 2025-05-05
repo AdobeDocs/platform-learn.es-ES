@@ -20,6 +20,6 @@ ht-degree: 0%
 
 Obtenga información sobre cómo configurar una conexión y utilizar el flujo de trabajo para exportaciones de conjuntos de datos mediante un destino de servicio en la nube. También se explican las ventajas y los casos de uso de esta función.
 
-Para obtener más información, visite la [documentación](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets).
+Para obtener más información, visite la [documentación](https://experienceleague.adobe.com/es/docs/experience-platform/destinations/ui/activate/export-datasets).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424392/?learn=on&enablevpops)

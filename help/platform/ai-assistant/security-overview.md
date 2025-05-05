@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Información general de seguridad de AI Assistant
 
-A continuación se ofrece una descripción general de las características de seguridad del Asistente para IA en función de la <a href="https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-ai-assistant-in-aep-security-fact-sheet.pdf">hoja de datos de seguridad</a>.  Para obtener más información, consulte la [documentación de privacidad del Asistente de IA](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/privacy).
+A continuación se ofrece una descripción general de las características de seguridad del Asistente para IA en función de la <a href="https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-ai-assistant-in-aep-security-fact-sheet.pdf">hoja de datos de seguridad</a>.  Para obtener más información, consulte la [documentación de privacidad del Asistente de IA](https://experienceleague.adobe.com/es/docs/experience-platform/ai-assistant/privacy).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441066/?learn=on&enablevpops)

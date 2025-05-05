@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Hacer referencia a las audiencias como anunciante en Real-Time CDP Collaboration
 
-Como anunciante, aprenda a hacer referencia a las audiencias e introducirlas en su interfaz para que se puedan utilizar cuando colabore con sus socios. Para obtener documentación detallada, consulte [Importar y administrar audiencias](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/setup/onboard-audiences){target="_blank"}.
+Como anunciante, aprenda a hacer referencia a las audiencias e introducirlas en su interfaz para que se puedan utilizar cuando colabore con sus socios. Para obtener documentación detallada, consulte [Importar y administrar audiencias](https://experienceleague.adobe.com/es/docs/real-time-cdp-collaboration/using/setup/onboard-audiences){target="_blank"}.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452217/?learn=on&enablevpops)

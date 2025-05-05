@@ -48,7 +48,7 @@ Adobe Experience Platform es una plataforma técnica diseñada para ayudarle a l
 
 ## Requisitos previos
 
-* Ha visto la [lista de reproducción de Adobe Experience Platform](https://experienceleague.adobe.com/en/playlists/experience-platform-introduction) en Experience League y está familiarizado con las funciones de Platform
+* Ha visto la [lista de reproducción de Adobe Experience Platform](https://experienceleague.adobe.com/es/playlists/experience-platform-introduction) en Experience League y está familiarizado con las funciones de Platform
 * Tiene acceso a una cuenta aprovisionada con Adobe Experience Platform (o una aplicación basada en Platform, como Real-Time CDP o Journey Optimizer) y a la recopilación de datos (anteriormente Launch).
 * Usted es administrador del sistema de esa cuenta o puede tener [configurar permisos de usuario](configure-permissions.md) para usted.
 
@@ -58,7 +58,7 @@ Este tutorial combina tareas para ingenieros y arquitectos de datos. Como es un 
 
 A medida que crea varios elementos de Platform durante este tutorial, intente adherirse a los nombres que recomiendo en la medida de lo posible. Sin embargo, hay algunos nombres de elementos de alto nivel que puede que desee personalizar en caso de que haya varias personas en su organización que realicen este tutorial simultáneamente. Por ejemplo, es posible que desee asignar el nombre &quot;Plataforma de tutorial de Luma: Ignatius J Reilly&quot; a la zona protegida de Platform en lugar de &quot;Plataforma de tutorial de Luma&quot;.
 
-Si se queda atascado, intente volver a leer las instrucciones primero y, a continuación, utilice el vínculo ![Registrar un problema](https://experienceleague.adobe.com/assets/img/feedback.svg) de la barra lateral de cada página para ponerse en contacto conmigo.
+Si se queda atascado, intente volver a leer las instrucciones primero y, a continuación, utilice el vínculo ![Registrar un problema](https://experienceleague.adobe.com/assets/img/feedback.svg?lang=es) de la barra lateral de cada página para ponerse en contacto conmigo.
 
 ## Notas técnicas
 

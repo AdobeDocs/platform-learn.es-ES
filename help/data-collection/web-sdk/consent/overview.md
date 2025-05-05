@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Resumen del consentimiento
 
-Descubra cómo la administración de consentimientos en Adobe Experience Platform Web SDK le ayuda a cumplir con los requisitos legales de privacidad y a cumplir con las preferencias de sus clientes. Consulte la descripción general de [gobernanza, privacidad y seguridad en Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/overview.html?lang=en#consent) para obtener más información.
+Descubra cómo la administración de consentimientos en Adobe Experience Platform Web SDK le ayuda a cumplir con los requisitos legales de privacidad y a cumplir con las preferencias de sus clientes. Consulte la descripción general de [gobernanza, privacidad y seguridad en Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/overview.html?lang=es#consent) para obtener más información.
 
 >[!NOTE]
 >

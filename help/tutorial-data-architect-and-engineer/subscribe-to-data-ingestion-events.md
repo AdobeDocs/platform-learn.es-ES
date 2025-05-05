@@ -81,7 +81,7 @@ Eso es todo por ahora; aprenderá más sobre estas notificaciones en las próxim
 ## Recursos adicionales
 
 * [Gancho de Web.Sitio](https://webhook.site/)
-* [Documentación de notificaciones de ingesta de datos](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html)
+* [Documentación de notificaciones de ingesta de datos](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=es)
 * [Introducción a la documentación de eventos de Adobe I/O](https://www.adobe.io/apis/experienceplatform/events/docs.html)
 
 ¡Bien, finalmente empecemos [a ingerir datos](ingest-batch-data.md)!

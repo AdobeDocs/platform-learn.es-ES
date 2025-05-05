@@ -16,7 +16,7 @@ ht-degree: 5%
 
 # Creación de públicos
 
-Obtenga información sobre cómo crear audiencias en Adobe Experience Platform. Cree reglas de audiencia y aplíquelas a sus perfiles de cliente en tiempo real para producir audiencias que mejoren las experiencias de los clientes. Para obtener documentación detallada del producto, consulte [crear un segmento en la interfaz de usuario](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=es) y [crear un segmento con la API](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-a-segment.html).
+Obtenga información sobre cómo crear audiencias en Adobe Experience Platform. Cree reglas de audiencia y aplíquelas a sus perfiles de cliente en tiempo real para producir audiencias que mejoren las experiencias de los clientes. Para obtener documentación detallada del producto, consulte [crear un segmento en la interfaz de usuario](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=es) y [crear un segmento con la API](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-a-segment.html?lang=es).
 
 >[!NOTE]
 >

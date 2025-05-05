@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Crear y activar audiencias de cuenta para [!DNL B2B] y [!DNL B2P]
 
-Obtenga información acerca de las capacidades de Account-Based Marketing en las ediciones [!DNL B2B] y [!DNL B2P] de [!DNL Real-Time Customer Data Platform], incluidas la creación y activación de audiencias de cuenta. Para obtener más información, consulte la [documentación](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/account-audiences.html).
+Obtenga información acerca de las capacidades de Account-Based Marketing en las ediciones [!DNL B2B] y [!DNL B2P] de [!DNL Real-Time Customer Data Platform], incluidas la creación y activación de audiencias de cuenta. Para obtener más información, consulte la [documentación](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/account-audiences.html?lang=es).
 
 >[!VIDEO](https://video.tv.adobe.com/v/338252?learn=on&enablevpops)
 

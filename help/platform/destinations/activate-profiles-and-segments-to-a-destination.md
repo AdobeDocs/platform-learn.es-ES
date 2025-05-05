@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Activación de perfiles y audiencias en un destino
 
-Obtenga información sobre cómo activar perfiles y audiencias en destinos en Real-Time CDP.  Inicie este flujo de trabajo en la interfaz de usuario de destinos o audiencias. Para obtener más información, visite la [documentación](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activation-overview).
+Obtenga información sobre cómo activar perfiles y audiencias en destinos en Real-Time CDP.  Inicie este flujo de trabajo en la interfaz de usuario de destinos o audiencias. Para obtener más información, visite la [documentación](https://experienceleague.adobe.com/es/docs/experience-platform/destinations/ui/activate/activation-overview).
 
 >[!VIDEO](https://video.tv.adobe.com/v/336046/?learn=on&enablevpops)
 

@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Búsqueda de audiencias no utilizadas con el asistente de IA
 
-Aprenda a identificar audiencias que no se utilizan con el asistente de IA para que pueda eliminarlas y hacer que las operaciones de marketing sean más eficientes. Para obtener más información sobre cómo consultar el Asistente de IA, consulte la [Guía de preguntas para el Asistente de IA](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/questions).
+Aprenda a identificar audiencias que no se utilizan con el asistente de IA para que pueda eliminarlas y hacer que las operaciones de marketing sean más eficientes. Para obtener más información sobre cómo consultar el Asistente de IA, consulte la [Guía de preguntas para el Asistente de IA](https://experienceleague.adobe.com/es/docs/experience-platform/ai-assistant/questions).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3435532/?learn=on&enablevpops)

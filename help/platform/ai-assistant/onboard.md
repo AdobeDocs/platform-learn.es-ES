@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Uso del asistente de IA para reducir el tiempo de incorporación
 
-Aprenda a utilizar el asistente de IA para ampliar rápidamente las nuevas funciones y reducir el tiempo de incorporación. Para obtener más información, consulte la [Guía de preguntas para el asistente de IA](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/questions).
+Aprenda a utilizar el asistente de IA para ampliar rápidamente las nuevas funciones y reducir el tiempo de incorporación. Para obtener más información, consulte la [Guía de preguntas para el asistente de IA](https://experienceleague.adobe.com/es/docs/experience-platform/ai-assistant/questions).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3438032/?learn=on&enablevpops)

@@ -108,7 +108,7 @@ Creará el siguiente segmento aplicando la relación que creó entre su `Luma Pr
 Haga clic en **[!UICONTROL Segmentos]** en el panel de navegación izquierdo. Analicemos nuestros tres segmentos:
 
 * Dos de nuestros segmentos son segmentos por lotes y uno es un segmento de flujo continuo.
-* Platform usa la segmentación por secuencias siempre que es posible y califica al cliente para un segmento en cuanto cumple los criterios. Cuando las definiciones de segmentos son demasiado complejas para la transmisión, se convierten automáticamente en lote. En este caso, los dos segmentos tomaron por defecto el lote porque la ventana retrospectiva de los eventos de compra fue mayor de siete días. Para obtener una lista completa y actual de las limitaciones de transmisión, consulte [la documentación](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html).
+* Platform usa la segmentación por secuencias siempre que es posible y califica al cliente para un segmento en cuanto cumple los criterios. Cuando las definiciones de segmentos son demasiado complejas para la transmisión, se convierten automáticamente en lote. En este caso, los dos segmentos tomaron por defecto el lote porque la ventana retrospectiva de los eventos de compra fue mayor de siete días. Para obtener una lista completa y actual de las limitaciones de transmisión, consulte [la documentación](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html?lang=es).
 * Los trabajos por lotes se ejecutan en una programación diaria, que se puede desactivar.
 
 ![Compró el mismo producto en el segmento de los últimos 30 días](assets/segment-review.png)

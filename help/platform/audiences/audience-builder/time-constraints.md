@@ -18,6 +18,6 @@ ht-degree: 18%
 
 # Uso de restricciones de tiempo en definiciones de segmentos
 
-Aprenda a utilizar las distintas opciones de fecha y hora de la interfaz del generador de audiencias de Adobe Experience Platform. Utilice fechas en atributos de perfil para crear audiencias para las personas que cumplan años. Utilice fechas en eventos para crear audiencias para las personas que realizaron varias compras en un intervalo de tiempo determinado o que no realizaron una acción en un intervalo de tiempo determinado. Para obtener más información, consulte la [guía de la interfaz de usuario del Generador de segmentos](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder).
+Aprenda a utilizar las distintas opciones de fecha y hora de la interfaz del generador de audiencias de Adobe Experience Platform. Utilice fechas en atributos de perfil para crear audiencias para las personas que cumplan años. Utilice fechas en eventos para crear audiencias para las personas que realizaron varias compras en un intervalo de tiempo determinado o que no realizaron una acción en un intervalo de tiempo determinado. Para obtener más información, consulte la [guía de la interfaz de usuario del Generador de segmentos](https://experienceleague.adobe.com/es/docs/experience-platform/segmentation/ui/segment-builder).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3432259/?learn=on&enablevpops)

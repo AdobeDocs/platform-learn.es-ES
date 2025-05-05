@@ -47,8 +47,8 @@ Le sugiero que lo conserve y lo utilice para una mayor experimentación con Plat
 
 Los recursos clave:
 
-* [Tutoriales de Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/overview.html)
+* [Tutoriales de Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/overview.html?lang=es)
 * [Documentación de Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=es)
-* [cursos de Experience League](https://experienceleague.adobe.com/?lang=es#dashboard/learning)
+* [cursos de Experience League](https://experienceleague.adobe.com/es?lang=es#dashboard/learning)
 
 Gracias por sus esfuerzos y buena suerte en su recorrido con Adobe Experience Platform!

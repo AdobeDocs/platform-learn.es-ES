@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Agregar atributos de socio a perfiles de origen en [!DNL Real-Time CDP]
 
-Aprenda a agregar atributos de socio a los perfiles de origen para expandir el alcance a través de canales adicionales en [!DNL Real-Time CDP]. Para obtener más información, visite la documentación de [Perfiles de origen complementarios con atributos proporcionados por el socio](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/supplement-first-party-profiles.html).
+Aprenda a agregar atributos de socio a los perfiles de origen para expandir el alcance a través de canales adicionales en [!DNL Real-Time CDP]. Para obtener más información, visite la documentación de [Perfiles de origen complementarios con atributos proporcionados por el socio](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/supplement-first-party-profiles.html?lang=es).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3423075/?learn=on&enablevpops)

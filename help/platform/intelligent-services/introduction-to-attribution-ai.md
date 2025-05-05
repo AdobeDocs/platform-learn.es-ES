@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Introducción a Attribution AI
 
-Una descripción general de alto nivel de cómo los especialistas en marketing y los analistas pueden utilizar la inteligencia artificial aplicada a la atribución para comprender el impacto de sus canales y campañas de marketing. Para obtener más información, visite la [Documentación de inteligencia artificial aplicada a la atribución](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html).
+Una descripción general de alto nivel de cómo los especialistas en marketing y los analistas pueden utilizar la inteligencia artificial aplicada a la atribución para comprender el impacto de sus canales y campañas de marketing. Para obtener más información, visite la [Documentación de inteligencia artificial aplicada a la atribución](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=es).
 
 >[!VIDEO](https://video.tv.adobe.com/v/32667?learn=on&enablevpops)

@@ -54,11 +54,11 @@ Para enviar los datos XDM del Edge Network a Adobe Analytics, configure el servi
 
 ## Asignación automática
 
-Muchos de los campos XDM estándar se asignan automáticamente a variables de Analytics. Consulte la lista completa [aquí](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en).
+Muchos de los campos XDM estándar se asignan automáticamente a variables de Analytics. Consulte la lista completa [aquí](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=es).
 
 ### Ejemplo de #1: s.products
 
-Un buen ejemplo es la variable [products](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=en), que no se puede rellenar con reglas de procesamiento. Con una implementación XDM, pasa todos los datos necesarios en `productListItems` y `s.products` se rellenan automáticamente a través de la asignación de Analytics.
+Un buen ejemplo es la variable [products](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=es), que no se puede rellenar con reglas de procesamiento. Con una implementación XDM, pasa todos los datos necesarios en `productListItems` y `s.products` se rellenan automáticamente a través de la asignación de Analytics.
 
 Este objeto:
 
@@ -87,7 +87,7 @@ s.products = ";5829;1;49.99,9841;3;30.00"
 
 >[!NOTE]
 >
->Si `productListItems[].SKU` y `productListItems[].name` contienen datos, se utiliza el valor de `productListItems[].SKU`. Consulte [Asignación de variables de Analytics en Adobe Experience Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en) para obtener más información.
+>Si `productListItems[].SKU` y `productListItems[].name` contienen datos, se utiliza el valor de `productListItems[].SKU`. Consulte [Asignación de variables de Analytics en Adobe Experience Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=es) para obtener más información.
 
 
 ### Ejemplo de #2 - scAdd
@@ -171,7 +171,7 @@ Tenga en cuenta lo siguiente en la asignación de Analytics:
 
 ## Asignación con datos de contexto
 
-Los datos XDM reenviados a Analytics se convierten en [datos de contexto](https://experienceleague.adobe.com/docs/mobile-services/ios/getting-started-ios/proc-rules.html?lang=en), incluidos los campos estándar y personalizados.
+Los datos XDM reenviados a Analytics se convierten en [datos de contexto](https://experienceleague.adobe.com/docs/mobile-services/ios/getting-started-ios/proc-rules.html?lang=es), incluidos los campos estándar y personalizados.
 
 La clave de datos de contexto se construye siguiendo esta sintaxis:
 
@@ -211,7 +211,7 @@ Para asignar estos datos de contexto XDM a los datos de Analytics en el grupo de
 
 ### eVars de comercialización
 
-Si usa [eVars de comercialización](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/merchandising-evars.html?lang=en) en su configuración de Analytics, por ejemplo, para capturar el color de productos, como `&&products = ...;evar1=red;event10=50,...;evar1=blue;event10=60`, tiene que ampliar la carga útil de XDM que definió en [Rastrear datos de eventos](events.md) para capturar esa información de comercialización.
+Si usa [eVars de comercialización](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/merchandising-evars.html?lang=es) en su configuración de Analytics, por ejemplo, para capturar el color de productos, como `&&products = ...;evar1=red;event10=50,...;evar1=blue;event10=60`, tiene que ampliar la carga útil de XDM que definió en [Rastrear datos de eventos](events.md) para capturar esa información de comercialización.
 
 * En JSON:
 
@@ -301,7 +301,7 @@ Este es el aspecto que podría tener una regla de procesamiento que utilice esto
 >La primera vez que se asigna a una regla de procesamiento, la interfaz no muestra las variables de datos de contexto del objeto XDM. Para corregir que, seleccione cualquier valor, haga clic en Guardar y vuelva a editar. Ahora deberían aparecer todas las variables XDM.
 
 
-Encontrará información adicional sobre reglas de procesamiento y datos de contexto [aquí](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en).
+Encontrará información adicional sobre reglas de procesamiento y datos de contexto [aquí](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=es).
 
 >[!TIP]
 >

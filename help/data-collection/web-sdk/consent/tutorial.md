@@ -21,28 +21,28 @@ Muchas regulaciones legales de privacidad han introducido requisitos para un con
 >Adobe Experience Platform Launch se está integrando en Adobe Experience Platform como un conjunto de tecnologías de recopilación de datos. Se han implementado varios cambios terminológicos en la interfaz que debe tener en cuenta al utilizar este contenido:
 >
 > * El platform launch (lado del cliente) ahora es **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=es)**
-> * El lado del servidor de platform launch ahora es **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * El lado del servidor de platform launch ahora es **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=es)**
 > * Ahora, las configuraciones de Edge son **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=es)**
 
 Este tutorial muestra cómo implementar y activar los datos de consentimiento obtenidos de una plataforma de administración de consentimiento (CMP) mediante la extensión del SDK web de Platform en la recopilación de datos. Para ello, utilizaremos los estándares de Adobe y el estándar de consentimiento IAB TCF 2.0, con OneTrust o Sourcepoint como CMP de ejemplo.
 
-Este tutorial utiliza la extensión del SDK web de Platform para enviar datos de consentimiento a Platform. Para obtener una descripción general del SDK web, consulte [esta página](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html).
+Este tutorial utiliza la extensión del SDK web de Platform para enviar datos de consentimiento a Platform. Para obtener una descripción general del SDK web, consulte [esta página](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=es).
 
 ## Requisitos previos
 
-Los requisitos previos para usar el SDK web se enumeran [aquí](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/prerequisite.html#fundamentals).
+Los requisitos previos para usar el SDK web se enumeran [aquí](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/prerequisite.html?lang=es#fundamentals).
 
-En esa página, hay un requisito para un &quot;Conjunto de datos de evento&quot; y, al igual que suena, este es un conjunto de datos para contener los datos de evento de experiencia. Para enviar información de consentimiento con eventos, el grupo de campos [Detalles de consentimiento TCF de IAB 2.0](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/dataset.html) debe agregarse al esquema de Experience Event:
+En esa página, hay un requisito para un &quot;Conjunto de datos de evento&quot; y, al igual que suena, este es un conjunto de datos para contener los datos de evento de experiencia. Para enviar información de consentimiento con eventos, el grupo de campos [Detalles de consentimiento TCF de IAB 2.0](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/dataset.html?lang=es) debe agregarse al esquema de Experience Event:
 
 ![](./images/event-schema.png)
 
-Para el estándar de consentimiento de plataforma v2.0, también necesitaremos acceso a Adobe Experience Platform para crear un esquema y un conjunto de datos de perfil individual XDM. Para ver un tutorial sobre la creación de esquemas, consulte [Crear un esquema con el Editor de esquemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#tutorials) y, para ver el grupo de campos Detalles de consentimiento y preferencia necesarios, consulte [Configurar un conjunto de datos para capturar datos de consentimiento y preferencia](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html).
+Para el estándar de consentimiento de plataforma v2.0, también necesitaremos acceso a Adobe Experience Platform para crear un esquema y un conjunto de datos de perfil individual XDM. Para ver un tutorial sobre la creación de esquemas, consulte [Crear un esquema con el Editor de esquemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=es#tutorials) y, para ver el grupo de campos Detalles de consentimiento y preferencia necesarios, consulte [Configurar un conjunto de datos para capturar datos de consentimiento y preferencia](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html?lang=es).
 
 Este tutorial supone que tiene acceso a la recopilación de datos y que ha creado una propiedad de etiquetas del lado del cliente con la extensión del SDK web instalada y una biblioteca de trabajo creada y generada para el desarrollo. Estos temas se detallan y muestran en estos documentos:
 
-* [Crear o configurar una propiedad](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=en#create-or-configure-a-property)
-* [Información general de bibliotecas](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html)
-* [Información general sobre la publicación](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html)
+* [Crear o configurar una propiedad](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=es#create-or-configure-a-property)
+* [Información general de bibliotecas](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html?lang=es)
+* [Información general sobre la publicación](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=es)
 
 También usaremos la extensión de Chrome [Platform Debugger](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) para inspeccionar y validar nuestra implementación.
 
@@ -52,9 +52,9 @@ Para implementar el ejemplo TCF de IAB con una CMP en su propio sitio, necesitar
 
 >[!NOTE]
 >
->El estándar 1.0 se está eliminando gradualmente a favor de la versión 2.0. El estándar 2.0 le permite agregar datos de consentimiento adicionales que se pueden utilizar para aplicar manualmente las preferencias de consentimiento. Las capturas de pantalla siguientes de la extensión del SDK web de Platform provienen de la versión [2.4.0](https://experienceleague.adobe.com/docs/experience-platform/edge/release-notes.html#version-2.4.0) de la extensión compatible con la versión 1.0 o 2.0 del Estándar de consentimiento de Adobe.
+>El estándar 1.0 se está eliminando gradualmente a favor de la versión 2.0. El estándar 2.0 le permite agregar datos de consentimiento adicionales que se pueden utilizar para aplicar manualmente las preferencias de consentimiento. Las capturas de pantalla siguientes de la extensión del SDK web de Platform provienen de la versión [2.4.0](https://experienceleague.adobe.com/docs/experience-platform/edge/release-notes.html?lang=es#version-2.4.0) de la extensión compatible con la versión 1.0 o 2.0 del Estándar de consentimiento de Adobe.
 
-Para obtener más información sobre estos estándares, consulte [Preferencias de consentimiento del cliente de soporte](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html).
+Para obtener más información sobre estos estándares, consulte [Preferencias de consentimiento del cliente de soporte](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=es).
 
 ### Paso 1: Configurar el consentimiento en la extensión del SDK web
 
@@ -83,7 +83,7 @@ Una vez que una CMP recopila las preferencias del usuario, podemos comunicarlas 
 
 Tenga en cuenta lo siguiente: esta configuración del SDK no se mantiene para los perfiles de los usuarios; se trata de establecer el comportamiento del SDK antes de que el visitante proporcione las preferencias de consentimiento explícitas.
 
-Para obtener más información sobre cómo configurar la extensión del SDK web, consulte la [descripción general de la extensión del SDK web de Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html?lang=en#configure-the-extension) y [Compatibilidad con las preferencias de consentimiento del cliente](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html).
+Para obtener más información sobre cómo configurar la extensión del SDK web, consulte la [descripción general de la extensión del SDK web de Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html?lang=es#configure-the-extension) y [Compatibilidad con las preferencias de consentimiento del cliente](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=es).
 
 Para este ejemplo, vamos a elegir la opción &quot;Pendiente&quot; y seleccionar **Guardar** para guardar nuestra configuración.
 
@@ -105,17 +105,17 @@ En este ejemplo, seleccionaremos &quot;En&quot; para indicar que el visitante ha
 
 Nota: Una vez que el visitante de un sitio web ha optado por no participar, el SDK no le permitirá establecer el consentimiento del usuario en.
 
-Las reglas de etiquetas se pueden activar mediante una serie de [eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/core/overview.html) integrados o personalizados que se pueden usar para pasar estos datos de consentimiento en el momento apropiado durante una sesión de visitante. En el ejemplo anterior, se utilizó el evento de ventana cargada para almacenar en déclencheur la regla. En una sección posterior, utilizaremos un evento de preferencia de consentimiento de una CMP para almacenar en déclencheur una acción Definir consentimiento. Puede utilizar una acción Definir consentimiento en una regla activada por cualquier evento que prefiera que indique una configuración de preferencia de inclusión.
+Las reglas de etiquetas se pueden activar mediante una serie de [eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/core/overview.html?lang=es) integrados o personalizados que se pueden usar para pasar estos datos de consentimiento en el momento apropiado durante una sesión de visitante. En el ejemplo anterior, se utilizó el evento de ventana cargada para almacenar en déclencheur la regla. En una sección posterior, utilizaremos un evento de preferencia de consentimiento de una CMP para almacenar en déclencheur una acción Definir consentimiento. Puede utilizar una acción Definir consentimiento en una regla activada por cualquier evento que prefiera que indique una configuración de preferencia de inclusión.
 
 #### Configuración del consentimiento con Platform Consent Standard 2.0
 
-La versión 2.0 del estándar de consentimiento de Platform funciona con datos [XDM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html). También requiere agregar el grupo de campos Detalles de consentimiento y preferencia al esquema de perfil en Platform. Consulte [Procesamiento de consentimiento en Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html) para obtener más información sobre el estándar de Adobe versión 2.0 y este grupo de campos.
+La versión 2.0 del estándar de consentimiento de Platform funciona con datos [XDM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html?lang=es). También requiere agregar el grupo de campos Detalles de consentimiento y preferencia al esquema de perfil en Platform. Consulte [Procesamiento de consentimiento en Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html?lang=es) para obtener más información sobre el estándar de Adobe versión 2.0 y este grupo de campos.
 
 Crearemos un elemento de datos de código personalizado para pasar datos a las propiedades de recopilación y metadatos del objeto de consentimientos que se muestra en el esquema siguiente:
 
 ![](./images/collect-metadata.png)
 
-Este grupo de campos Consentimientos y detalles de preferencia contiene campos para el tipo de datos XDM [Consentimientos y preferencias](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html#prerequisites), que contendrán los datos de preferencia de consentimiento que enviamos a Platform con la extensión del SDK web de Platform en nuestra acción de regla. Actualmente, las únicas propiedades requeridas para implementar Platform Consent Standard 2.0 son el valor recopilado (val) y el valor de tiempo de los metadatos, resaltados arriba en rojo.
+Este grupo de campos Consentimientos y detalles de preferencia contiene campos para el tipo de datos XDM [Consentimientos y preferencias](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html?lang=es#prerequisites), que contendrán los datos de preferencia de consentimiento que enviamos a Platform con la extensión del SDK web de Platform en nuestra acción de regla. Actualmente, las únicas propiedades requeridas para implementar Platform Consent Standard 2.0 son el valor recopilado (val) y el valor de tiempo de los metadatos, resaltados arriba en rojo.
 
 Vamos a crear un elemento de datos para estos datos. Seleccione Elementos de datos y el botón azul Agregar elemento de datos. Llamemos a esto &quot;xdm-consent 2.0&quot; y, utilizando la extensión principal, seleccionaremos un tipo de código personalizado. Puede introducir o copiar y pegar los siguientes datos en la ventana del editor de código personalizado:
 
@@ -174,7 +174,7 @@ Estableceremos cada una de las permissionStrings de la siguiente manera:
 
 Los campos `consentStandard` y `consentStandardVersion` son solo cadenas de texto para el estándar que estamos utilizando, que es IAB TCF versión 2.0. `consentStringValue` hace referencia a un elemento de datos denominado &quot;Cadena de consentimiento TCF de IAB&quot;. Los símbolos de porcentaje que rodean el texto indican el nombre de un elemento de datos, y lo veremos en un momento. El campo `containsPersonalData` indica si la cadena de consentimiento TCF 2.0 de IAB contiene datos personales con &quot;Verdadero&quot; o &quot;Falso&quot;. El campo `gdprApplies` indica si se aplica el RGPD &quot;true&quot;, &quot;false&quot; para el RGPD no se aplica o &quot;undefined&quot; para desconocido si se aplica el RGPD. Actualmente, el SDK web trata &quot;undefined&quot; como &quot;true&quot;, por lo que los datos de consentimiento enviados con &quot;gdprApplied: undefined&quot; se tratan como si el visitante se encuentra en un área en la que se aplica el RGPD.
 
-Consulte la [documentación de consentimiento](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/iab-tcf/with-launch.html#getting-started) para obtener más información sobre estas propiedades y sobre IAB TCF 2.0 en etiquetas.
+Consulte la [documentación de consentimiento](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/iab-tcf/with-launch.html?lang=es#getting-started) para obtener más información sobre estas propiedades y sobre IAB TCF 2.0 en etiquetas.
 
 ### Paso 2: Crear una regla para establecer el consentimiento con el estándar IAB TCF 2.0
 
@@ -230,7 +230,7 @@ Seleccione el botón azul Guardar para guardar la acción y el botón azul Guard
 
 ### Paso 3: Guardar en biblioteca y crear
 
-Si usa el requisito previo de [Working Library](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-data-elements-rules.html#use-the-working-library-feature), ya guardó estos cambios y creó la biblioteca de desarrollo:
+Si usa el requisito previo de [Working Library](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-data-elements-rules.html?lang=es#use-the-working-library-feature), ya guardó estos cambios y creó la biblioteca de desarrollo:
 
 ![](./images/save-library.png)
 

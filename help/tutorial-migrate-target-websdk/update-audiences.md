@@ -49,11 +49,11 @@ if((mbox.param('pageName') == 'Product Details') || (mbox.param('web.webPageDeta
 }
 ```
 
-Para obtener más información y prácticas recomendadas, consulte la documentación detallada sobre [scripts de perfil](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html).
+Para obtener más información y prácticas recomendadas, consulte la documentación detallada sobre [scripts de perfil](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html?lang=es).
 
 ## Actualizar tokens de parámetros para contenido dinámico
 
-Si tiene ofertas, diseños de recomendaciones o actividades que utilizan [reemplazo de contenido dinámico](https://experienceleague.adobe.com/docs/target/using/experiences/offers/passing-profile-attributes-to-the-html-offer.html), es posible que se deban actualizar en consecuencia para tener en cuenta los nuevos nombres de parámetros XDM.
+Si tiene ofertas, diseños de recomendaciones o actividades que utilizan [reemplazo de contenido dinámico](https://experienceleague.adobe.com/docs/target/using/experiences/offers/passing-profile-attributes-to-the-html-offer.html?lang=es), es posible que se deban actualizar en consecuencia para tener en cuenta los nuevos nombres de parámetros XDM.
 
 Según la forma en que utilice el reemplazo de tokens para los parámetros de mbox, es posible que pueda mejorar la configuración existente para tener en cuenta los nombres de parámetros antiguos y nuevos. Sin embargo, en situaciones en las que no es posible personalizar el código JavaScript, como en las ofertas JSON, debe crear copias y realizar actualizaciones una vez completada la migración y activa en el sitio de producción.
 
@@ -81,4 +81,4 @@ A continuación, aprenda a [validar la implementación de Target](validate.md).
 
 >[!NOTE]
 >
->Nos comprometemos a ayudarle a tener éxito con su migración de Target de at.js al SDK web. Si encuentra obstáculos con la migración o cree que falta información esencial en esta guía, comuníquenoslo publicando en [esta discusión de la comunidad](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Nos comprometemos a ayudarle a tener éxito con su migración de Target de at.js al SDK web. Si encuentra obstáculos con la migración o cree que falta información esencial en esta guía, comuníquenoslo publicando en [esta discusión de la comunidad](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=es#M463).

@@ -57,7 +57,7 @@ A continuación se incluye información adicional para aquellos interesados en c
 
 - [Guía del usuario de recopilación de datos de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=es)
 - [Tutorial de implementación de Adobe Experience Cloud con el SDK web](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=es)
-- [Configurar permisos de usuario](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html)
+- [Configurar permisos de usuario](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=es)
 - [Documentación de API](https://developer.adobelaunch.com/api/)
 
 Siguiente paso: Edge Network [1.1.2, secuencia de datos y recopilación de datos del servidor](./ex2.md)

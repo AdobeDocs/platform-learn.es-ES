@@ -20,7 +20,7 @@ Obtenga información sobre cómo reemplazar la implementación de Adobe Target e
 
 >[!NOTE]
 >
->Los ejemplos proporcionados tienen fines ilustrativos y la implementación real de Target puede variar. Si la implementación de Target existente usa el administrador de etiquetas de recopilación de datos de Adobe, también puede consultar el [tutorial de implementación de Target del SDK web de Platform](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html) para obtener más información.
+>Los ejemplos proporcionados tienen fines ilustrativos y la implementación real de Target puede variar. Si la implementación de Target existente usa el administrador de etiquetas de recopilación de datos de Adobe, también puede consultar el [tutorial de implementación de Target del SDK web de Platform](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=es) para obtener más información.
 
 
 ## Revisar configuración de administración de Target
@@ -52,7 +52,7 @@ El SDK web de Platform utiliza una configuración de secuencia de datos que le p
 >
 >Si no se especifica un ID de entorno en la configuración de la secuencia de datos, Target utilizará la asignación de dominio a entorno especificada en la sección **Hosts**.
 
-Para obtener más información, consulte la guía [configuración de secuencia de datos](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#target) y la documentación de [Hosts](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html?lang=es) de Target.
+Para obtener más información, consulte la guía [configuración de secuencia de datos](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=es#target) y la documentación de [Hosts](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html?lang=es) de Target.
 
 ## Implementación del SDK web de Platform
 
@@ -173,7 +173,7 @@ En la propiedad tag, agregue la extensión SDK para web de Adobe Experience Plat
 
 La versión independiente creada previamente requiere un &quot;código base&quot; añadido directamente a la página, lo que crea una función global denominada alloy. Utilice esta función para interactuar con el SDK. Si desea asignar otro nombre a la función global, cambie el nombre de `alloy`.
 
-Consulte la documentación de [Instalación del SDK web de Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html) para obtener más información y opciones de implementación.
+Consulte la documentación de [Instalación del SDK web de Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=es) para obtener más información y opciones de implementación.
 
 
 ## Actualizar el método de preocultación de contenido
@@ -213,9 +213,9 @@ El comportamiento de preocultación se controla mediante dos configuraciones al 
 
 Adobe recomienda implementar el SDK web de Platform de forma asíncrona para obtener el mejor rendimiento general de la página. Sin embargo, si la biblioteca alloy.js o el código incrustado de etiquetas se cargan sincrónicamente, no se requiere el fragmento de preocultación. En su lugar, el estilo de preocultación se especifica en la configuración del SDK web de Platform.
 
-El estilo de preocultación para implementaciones sincrónicas se puede configurar usando la opción [`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#prehidingStyle). La configuración del SDK web de Platform se explica en la siguiente sección.
+El estilo de preocultación para implementaciones sincrónicas se puede configurar usando la opción [`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=es#prehidingStyle). La configuración del SDK web de Platform se explica en la siguiente sección.
 
-Para obtener más información sobre cómo el SDK web de Platform puede administrar el parpadeo, puede consultar la sección de guías: [administración del parpadeo para experiencias personalizadas](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/manage-flicker.html)
+Para obtener más información sobre cómo el SDK web de Platform puede administrar el parpadeo, puede consultar la sección de guías: [administración del parpadeo para experiencias personalizadas](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/manage-flicker.html?lang=es)
 
 ## Configuración del SDK web de Platform
 
@@ -274,7 +274,7 @@ A continuación se describen las opciones de configuración relevantes relaciona
 | `thirdPartyCookiesEnabled` | Habilita la configuración de cookies de terceros de Adobe. El SDK puede mantener el ID de visitante en un contexto de terceros para permitir que se utilice el mismo ID de visitante en todos los sitios. Utilice esta opción si tiene varios sitios; sin embargo, a veces esta opción no se desea por motivos de privacidad. | `true` |
 | `prehidingStyle` | Se utiliza para crear una definición de estilo CSS que oculta las áreas de contenido de la página web mientras se carga contenido personalizado desde el servidor. Esto solo se utiliza con implementaciones sincrónicas del SDK. | `body { opacity: 0 !important }` |
 
-Para obtener una lista completa de opciones, consulte la guía [configuración del SDK web de Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html).
+Para obtener una lista completa de opciones, consulte la guía [configuración del SDK web de Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=es).
 
 ## Ejemplo de implementación
 
@@ -400,4 +400,4 @@ A continuación, aprenda a [solicitar y aplicar actividades basadas en VEC](rend
 
 >[!NOTE]
 >
->Nos comprometemos a ayudarle a tener éxito con su migración de Target de at.js al SDK web. Si encuentra obstáculos con la migración o cree que falta información esencial en esta guía, comuníquenoslo publicando en [esta discusión de la comunidad](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Nos comprometemos a ayudarle a tener éxito con su migración de Target de at.js al SDK web. Si encuentra obstáculos con la migración o cree que falta información esencial en esta guía, comuníquenoslo publicando en [esta discusión de la comunidad](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=es#M463).

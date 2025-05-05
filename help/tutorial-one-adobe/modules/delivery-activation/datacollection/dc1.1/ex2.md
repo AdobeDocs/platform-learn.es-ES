@@ -17,7 +17,7 @@ ht-degree: 0%
 
 En este ejercicio creará un **conjunto de datos**. Una **secuencia de datos** indica a los servidores de Adobe Edge Network a dónde enviar los datos una vez que Web SDK los ha recopilado. Por ejemplo, ¿desea enviar los datos a Adobe Experience Platform? ¿Adobe Analytics? ¿Adobe Audience Manager? ¿Adobe Target?
 
-Las secuencias de datos siempre se administran en la interfaz de usuario de recopilación de datos de Experience Platform y son esenciales para la recopilación de datos de Experience Platform con [Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home). Incluso cuando implementa Web SDK con una solución de administración de etiquetas que no sea de Adobe, debe crear una secuencia de datos.
+Las secuencias de datos siempre se administran en la interfaz de usuario de recopilación de datos de Experience Platform y son esenciales para la recopilación de datos de Experience Platform con [Web SDK](https://experienceleague.adobe.com/es/docs/experience-platform/web-sdk/home). Incluso cuando implementa Web SDK con una solución de administración de etiquetas que no sea de Adobe, debe crear una secuencia de datos.
 
 En el próximo ejercicio se implementará Web SDK en el explorador. A continuación, tendrá más claro el aspecto de los datos que se están recopilando. Por ahora, solo estamos diciendo a la secuencia de datos dónde reenviar los datos.
 
@@ -25,7 +25,7 @@ En el próximo ejercicio se implementará Web SDK en el explorador. A continuaci
 
 En [Introducción](./../../../../modules/getting-started/gettingstarted/ex2.md) ya creó un conjunto de datos, pero no se habló del contexto y el motivo por el que lo creó.
 
-Un [conjunto de datos](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) indica a los servidores de Edge Network a dónde enviar los datos una vez que Web SDK los ha recopilado. Consulte la documentación de [agregar servicios a un conjunto de datos](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#add-services) para obtener información detallada sobre dónde puede enviar los datos a través del conjunto de datos.
+Un [conjunto de datos](https://experienceleague.adobe.com/es/docs/experience-platform/datastreams/overview) indica a los servidores de Edge Network a dónde enviar los datos una vez que Web SDK los ha recopilado. Consulte la documentación de [agregar servicios a un conjunto de datos](https://experienceleague.adobe.com/es/docs/experience-platform/datastreams/configure#add-services) para obtener información detallada sobre dónde puede enviar los datos a través del conjunto de datos.
 
 Las secuencias de datos se administran en la interfaz de usuario de recopilación de datos de Experience Platform y son esenciales para la recopilación de datos con Web SDK, independientemente de si va a implementar o no Web SDK mediante la recopilación de datos de Adobe Experience Platform.
 
@@ -62,7 +62,7 @@ Para esta secuencia de datos...
 - Todos los datos de perfil se recopilarán de forma predeterminada en el conjunto de datos **Sistema de demostración - Conjunto de datos de perfil para el sitio web (Global v1.1)** (Web SDK aún no admite la ingesta nativa de datos de perfil con Web SDK)
 - Si desea utilizar el servicio de aplicaciones **Offer Decisioning** para este conjunto de datos, debe marcar la casilla de Offer Decisioning. (Esto formará parte de [Módulo 3.3](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-3/offer-decisioning.md))
 - **La segmentación de Edge** está habilitada de manera predeterminada, lo que significa que las audiencias que cumplan los requisitos se evaluarán en el perímetro, tras la ingesta de tráfico entrante
-- Si desea usar [destinos de personalización](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/overview), marque la casilla de **Destinos de Personalization**.
+- Si desea usar [destinos de personalización](https://experienceleague.adobe.com/es/docs/experience-platform/destinations/catalog/personalization/overview), marque la casilla de **Destinos de Personalization**.
 - Si desea usar las capacidades de **Adobe Journey Optimizer** en esta secuencia de datos, debe marcar la casilla de **Adobe Journey Optimizer**.
 
 Por ahora, no se necesita ninguna otra configuración para el conjunto de datos.

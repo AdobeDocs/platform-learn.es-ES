@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Migración de Adobe Analytics a Web SDK mediante etiquetas
 
-Conozca los pasos para migrar una implementación de Adobe Analytics con la extensión Analytics en Experience Platform Tags (anteriormente conocida como Launch) a Web SDK, utilizando la extensión Web SDK también en Etiquetas. Cuando se utiliza la extensión Adobe Analytics en Etiquetas, se utiliza el código &quot;AppMeasurement.js&quot; entre bastidores. Por lo tanto, puede considerar esto como un tutorial que migra el AppMeasurement a Web SDK, pero este tutorial está completamente en Etiquetas y NO cubre el paso a o desde una implementación de JavaScript (con la excepción del código JavaScript que se utiliza en la IU de Etiquetas). Para migrar implementaciones de JavaScript, consulte la [documentación](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk).
+Conozca los pasos para migrar una implementación de Adobe Analytics con la extensión Analytics en Experience Platform Tags (anteriormente conocida como Launch) a Web SDK, utilizando la extensión Web SDK también en Etiquetas. Cuando se utiliza la extensión Adobe Analytics en Etiquetas, se utiliza el código &quot;AppMeasurement.js&quot; entre bastidores. Por lo tanto, puede considerar esto como un tutorial que migra el AppMeasurement a Web SDK, pero este tutorial está completamente en Etiquetas y NO cubre el paso a o desde una implementación de JavaScript (con la excepción del código JavaScript que se utiliza en la IU de Etiquetas). Para migrar implementaciones de JavaScript, consulte la [documentación](https://experienceleague.adobe.com/es/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk).
 
 >[!NOTE]
 >
@@ -61,7 +61,7 @@ Probablemente haya muchas maneras de realizar este proceso de migración, pero t
 A medida que avanza por los pasos, hay un par de advertencias que son importantes de entender:
 
 1. En primer lugar, puede que necesite o no todos estos pasos. Por ejemplo, hay una lección sobre la migración de código personalizado. Si tiene una implementación de etiquetas que no utiliza código personalizado (incluido el uso de complementos), no necesitará esta lección. Intentamos incluir las lecciones que la mayoría de la gente necesitaría, así que al menos lea las lecciones para ver si necesita hacer ajustes en su sitio durante la migración.
-1. Además, no hay forma de crear un tutorial de migración que cubra el 100 % de los casos de uso que todos utilizan. Como se indica en el elemento anterior, hemos intentado incluir las lecciones que la mayoría de las personas necesitarán y que abarcarán la mayoría de los casos de uso principales. Sin embargo, no cabe duda de que habrá casos de uso que no se tratan en este tutorial. En este caso, compruebe si las lecciones incluidas le dan una buena idea de cómo debe migrar para su caso de uso. También puede pedir a sus colegas de la [Comunidad de Experience League que recopilen datos](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/ct-p/adobe-launch-community).
+1. Además, no hay forma de crear un tutorial de migración que cubra el 100 % de los casos de uso que todos utilizan. Como se indica en el elemento anterior, hemos intentado incluir las lecciones que la mayoría de las personas necesitarán y que abarcarán la mayoría de los casos de uso principales. Sin embargo, no cabe duda de que habrá casos de uso que no se tratan en este tutorial. En este caso, compruebe si las lecciones incluidas le dan una buena idea de cómo debe migrar para su caso de uso. También puede pedir a sus colegas de la [Comunidad de Experience League que recopilen datos](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/ct-p/adobe-launch-community?profile.language=es).
 
 El proceso de migración incluye los siguientes pasos clave:
 
@@ -81,5 +81,5 @@ El proceso de migración incluye los siguientes pasos clave:
 
 >[!NOTE]
 >
->Estamos comprometidos a ayudarle a tener éxito con su migración de Analytics a Web SDK. Si encuentra obstáculos con la migración o cree que falta información esencial en esta guía, indíquenoslo publicando en [esta discusión de la comunidad](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-analytics-to-web-sdk-using/m-p/732308#M604){target="_blank"}.
+>Estamos comprometidos a ayudarle a tener éxito con su migración de Analytics a Web SDK. Si encuentra obstáculos con la migración o cree que falta información esencial en esta guía, indíquenoslo publicando en [esta discusión de la comunidad](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-analytics-to-web-sdk-using/m-p/732308?profile.language=es#M604){target="_blank"}.
 

@@ -12,7 +12,7 @@ ht-degree: 69%
 
 # Añadir Adobe Analytics
 
-En esta lección, debe implementar la [extensión de Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html) y creará reglas para enviar datos a Adobe Analytics.
+En esta lección, debe implementar la [extensión de Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=es) y creará reglas para enviar datos a Adobe Analytics.
 
 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=es) es una solución líder del sector que le permite comprender a sus clientes como personas y dirigir su negocio con inteligencia de clientes.
 
@@ -21,7 +21,7 @@ En esta lección, debe implementar la [extensión de Adobe Analytics](https://ex
 >Adobe Experience Platform Launch se está integrando en Adobe Experience Platform como un conjunto de tecnologías de recopilación de datos. Se han implementado varios cambios terminológicos en la interfaz que debe tener en cuenta al utilizar este contenido:
 >
 > * El platform launch (lado del cliente) ahora es **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=es)**
-> * El lado del servidor de platform launch ahora es **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * El lado del servidor de platform launch ahora es **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=es)**
 > * Ahora, las configuraciones de Edge son **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=es)**
 
 ## Objetivos de aprendizaje
@@ -426,7 +426,7 @@ En realidad va a llamar a dos complementos en este código, pero uno de ellos es
 
 El objetivo de este complemento es evitar que los valores se dupliquen erróneamente en el código cuando un visitante actualiza una página o utiliza el botón Atrás del navegador para regresar a una página en la que se estableció un valor. En esta lección, se usa para evitar que el evento `clickthrough` se duplique.
 
-El código de este complemento está disponible en la [documentación de Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html), pero se incluye aquí para facilitar el proceso de copiar y pegar.
+El código de este complemento está disponible en la [documentación de Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html?lang=es), pero se incluye aquí para facilitar el proceso de copiar y pegar.
 
 1. Copie el siguiente código
 

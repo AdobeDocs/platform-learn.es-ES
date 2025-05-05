@@ -39,7 +39,7 @@ Habilite a los especialistas en marketing para que puedan empezar a usar la IA/M
 
 ## Eche un vistazo a esto
 
-- Información general sobre servicios inteligentes: [https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=en](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=en)
+- Información general sobre servicios inteligentes: [https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=es](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=es)
 
 ## Pasos siguientes
 

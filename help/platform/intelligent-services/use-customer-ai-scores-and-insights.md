@@ -17,7 +17,7 @@ ht-degree: 51%
 
 # Uso de puntuaciones e información de Customer AI
 
-Aprenda a utilizar las puntuaciones y perspectivas de tendencia de la inteligencia artificial aplicada al cliente para convertir y retener clientes. Para obtener más información, visite la [documentación de inteligencia artificial aplicada al cliente](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html).
+Aprenda a utilizar las puntuaciones y perspectivas de tendencia de la inteligencia artificial aplicada al cliente para convertir y retener clientes. Para obtener más información, visite la [documentación de inteligencia artificial aplicada al cliente](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=es).
 
 >[!VIDEO](https://video.tv.adobe.com/v/32666?learn=on&enablevpops)
 

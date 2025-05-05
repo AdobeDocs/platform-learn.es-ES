@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Inspección y validación de señales de consentimiento
 
-Obtenga información sobre cómo validar que la configuración de consentimiento se aplica correctamente a los datos en Adobe Experience Platform. Consulte la documentación de consentimiento para obtener más información sobre [prueba de la implementación](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html?lang=en#test-implementation).
+Obtenga información sobre cómo validar que la configuración de consentimiento se aplica correctamente a los datos en Adobe Experience Platform. Consulte la documentación de consentimiento para obtener más información sobre [prueba de la implementación](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html?lang=es#test-implementation).
 
 >[!NOTE]
 >

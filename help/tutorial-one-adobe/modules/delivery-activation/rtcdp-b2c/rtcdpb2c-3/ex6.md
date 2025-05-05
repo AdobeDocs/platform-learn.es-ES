@@ -160,7 +160,7 @@ Ahora necesita reemplazar el marcador de posición **{{body}}** por el siguiente
         }
     ],
     "uiAttributes": {
-        "documentationLink": "https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en",
+        "documentationLink": "https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=es",
         "category": "streaming",
         "connectionType": "Server-to-server",
         "frequency": "Streaming"

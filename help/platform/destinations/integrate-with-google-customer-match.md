@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Integración de Customer Match de Google
 
-Descubra cómo las funciones de Real-Time Customer Data Platform de Adobe y Customer Match de Google ayudan a las marcas a interactuar con los clientes en las propiedades de Google y en las que opera para escalar sus campañas de divulgación. Para obtener más información, visite la [documentación](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html).
+Descubra cómo las funciones de Real-Time Customer Data Platform de Adobe y Customer Match de Google ayudan a las marcas a interactuar con los clientes en las propiedades de Google y en las que opera para escalar sus campañas de divulgación. Para obtener más información, visite la [documentación](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html?lang=es).
 
 >[!VIDEO](https://video.tv.adobe.com/v/38180?learn=on&enablevpops)

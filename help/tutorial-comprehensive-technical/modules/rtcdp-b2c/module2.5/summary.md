@@ -31,7 +31,7 @@ Gracias a la recopilación de datos de Adobe Experience Platform, usted como mar
 
 - Blog técnico: [Solución de problemas de implementación con Adobe Experience Platform Web SDK y Edge Network](https://medium.com/adobetech/solving-implementation-pain-points-with-adobe-experience-platform-web-sdk-and-edge-network-880b635e6819)
 - Blog técnico: [Mejora del rendimiento del sitio web con Adobe Experience Platform Web SDK y Edge Network](https://medium.com/adobetech/boosting-website-performance-with-adobe-experience-platform-web-sdk-and-edge-network-329fcf70fdf9)
-- Documentación: [Información general sobre Adobe Experience Platform Data Collection Server Side](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en#server-side-info)
+- Documentación: [Información general sobre Adobe Experience Platform Data Collection Server Side](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=es#server-side-info)
 - Vídeo: [Implementar Edge y el servidor de recopilación de datos de Adobe Experience Platform mediante una solución de Tag Management que no sea de Adobe](https://video.tv.adobe.com/v/331986?quality=12&learn=on&enablevpops)
 
 [Volver al módulo 2.5](./aep-data-collection-ssf.md)

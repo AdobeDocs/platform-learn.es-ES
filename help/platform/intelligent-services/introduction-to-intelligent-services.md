@@ -17,7 +17,7 @@ ht-degree: 43%
 
 # Introducción a los servicios inteligentes
 
-Una introducción de alto nivel a Servicios inteligentes, que permite a los analistas y profesionales de marketing aprovechar el poder de la inteligencia artificial y el aprendizaje automático en casos prácticos de experiencias de clientes sin experiencia en ciencia de datos. Para obtener más información, visite la [documentación de servicios inteligentes](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html).
+Una introducción de alto nivel a Servicios inteligentes, que permite a los analistas y profesionales de marketing aprovechar el poder de la inteligencia artificial y el aprendizaje automático en casos prácticos de experiencias de clientes sin experiencia en ciencia de datos. Para obtener más información, visite la [documentación de servicios inteligentes](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=es).
 
 >[!VIDEO](https://video.tv.adobe.com/v/32654?learn=on&enablevpops)
 

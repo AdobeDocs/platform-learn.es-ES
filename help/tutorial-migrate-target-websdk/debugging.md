@@ -40,7 +40,7 @@ El Adobe Experience Platform Debugger se puede instalar en navegadores Google Ch
 
 Después de instalar la extensión de Chrome o el complemento de Firefox, se agrega un icono (![](assets/start-icon.jpg)) a la barra de extensiones. Seleccione este icono para abrir la extensión de.
 
-Consulte la guía especializada para obtener más información sobre la [extensión de Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) y cómo depurar todas las aplicaciones web de Adobe.
+Consulte la guía especializada para obtener más información sobre la [extensión de Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=es) y cómo depurar todas las aplicaciones web de Adobe.
 
 ## Previsualización de actividades de Target con direcciones URL de control de calidad
 
@@ -52,7 +52,7 @@ Direcciones URL de control de calidad de Target que funcionan indicando a at.js 
 >
 >La funcionalidad del modo de control de calidad de Target es compatible con la versión 2.13.0 o superior del SDK web de Platform. El modo de control de calidad de destino está habilitado en función del valor `xdm.web.webPageDetails.URL` pasado en la llamada `sendEvent`. Cualquier modificación en este valor, como la reversión en minúsculas de todos los caracteres, puede impedir que el modo de control de calidad de Target funcione correctamente.
 
-Consulte la guía dedicada para obtener más información sobre el control de calidad de la actividad de [Target](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html).
+Consulte la guía dedicada para obtener más información sobre el control de calidad de la actividad de [Target](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html?lang=es).
 
 ## Implementación de Debug Target
 
@@ -130,7 +130,7 @@ Después de seleccionar **[!UICONTROL Ver]**, aparecerá una superposición que 
 - Solicitar detalles
 - Instantánea de perfil
 
-Consulte la guía dedicada sobre [depuración de la entrega de contenido de Target](https://experienceleague.adobe.com/docs/target/using/activities/troubleshoot-activities/content-trouble.html) para obtener más información sobre los seguimientos de Target.
+Consulte la guía dedicada sobre [depuración de la entrega de contenido de Target](https://experienceleague.adobe.com/docs/target/using/activities/troubleshoot-activities/content-trouble.html?lang=es) para obtener más información sobre los seguimientos de Target.
 
 ### Solucionar problemas con Assurance
 
@@ -181,4 +181,4 @@ La carga útil de solicitud y la respuesta de las llamadas del SDK web de Platfo
 
 >[!NOTE]
 >
->Nos comprometemos a ayudarle a tener éxito con su migración de Target de at.js al SDK web. Si encuentra obstáculos con la migración o cree que falta información esencial en esta guía, comuníquenoslo publicando en [esta discusión de la comunidad](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Nos comprometemos a ayudarle a tener éxito con su migración de Target de at.js al SDK web. Si encuentra obstáculos con la migración o cree que falta información esencial en esta guía, comuníquenoslo publicando en [esta discusión de la comunidad](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=es#M463).

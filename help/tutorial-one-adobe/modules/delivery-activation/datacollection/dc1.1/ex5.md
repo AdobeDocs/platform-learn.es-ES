@@ -19,11 +19,11 @@ Ahora sabe que los datos XDM fluyen a la plataforma. Explorará más sobre qué 
 
 ## Asignación de variables en Analytics
 
-Adobe Experience Platform [!DNL Web SDK] asigna ciertos valores automáticamente, lo que hace que una nueva implementación de Analytics mediante Web SDK sea lo más rápida posible. Las variables asignadas automáticamente se enumeran [aquí](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html#data-collection).
+Adobe Experience Platform [!DNL Web SDK] asigna ciertos valores automáticamente, lo que hace que una nueva implementación de Analytics mediante Web SDK sea lo más rápida posible. Las variables asignadas automáticamente se enumeran [aquí](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html?lang=es#data-collection).
 
-Para datos XDM que no se asignan automáticamente a Adobe Analytics, puede usar [datos de contexto](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=es) para que coincidan con su [esquema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=es). A continuación, se puede asignar a Analytics mediante [reglas de procesamiento](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html) para rellenar variables de Analytics. Los datos de contexto y las reglas de procesamiento serán conceptos familiares para quienes hayan trabajado con Analytics en el pasado, pero no se preocupe por los detalles por ahora si son conceptos nuevos.
+Para datos XDM que no se asignan automáticamente a Adobe Analytics, puede usar [datos de contexto](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=es) para que coincidan con su [esquema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=es). A continuación, se puede asignar a Analytics mediante [reglas de procesamiento](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html?lang=es) para rellenar variables de Analytics. Los datos de contexto y las reglas de procesamiento serán conceptos familiares para quienes hayan trabajado con Analytics en el pasado, pero no se preocupe por los detalles por ahora si son conceptos nuevos.
 
-También puede utilizar un conjunto predeterminado de acciones y listas de productos para enviar o recuperar datos con AEP Web SDK. Para ello, consulte [Productos](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en#data-collection).
+También puede utilizar un conjunto predeterminado de acciones y listas de productos para enviar o recuperar datos con AEP Web SDK. Para ello, consulte [Productos](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=es#data-collection).
 
 ### Datos de contexto
 
@@ -54,7 +54,7 @@ Para que los utilice Analytics, los datos XDM se acoplan con notación de puntos
 
 ### Reglas de procesamiento
 
-Se puede acceder a todos los datos recopilados por la red perimetral mediante [reglas de procesamiento](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html). En Analytics, puede utilizar reglas de procesamiento para incorporar datos de contexto en variables de Analytics.
+Se puede acceder a todos los datos recopilados por la red perimetral mediante [reglas de procesamiento](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html?lang=es). En Analytics, puede utilizar reglas de procesamiento para incorporar datos de contexto en variables de Analytics.
 
 ## Audience Manager en Experience Platform Edge Network
 

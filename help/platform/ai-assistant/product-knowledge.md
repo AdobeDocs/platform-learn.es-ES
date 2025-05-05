@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Aprenda aplicaciones de Experience Platform con el asistente de IA
 
-Obtenga información acerca de las aplicaciones de Adobe Experience Platform en AI Assistant. Para obtener más información, consulte la [documentación del Asistente de IA](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home).
+Obtenga información acerca de las aplicaciones de Adobe Experience Platform en AI Assistant. Para obtener más información, consulte la [documentación del Asistente de IA](https://experienceleague.adobe.com/es/docs/experience-platform/ai-assistant/home).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441024/?learn=on&enablevpops)

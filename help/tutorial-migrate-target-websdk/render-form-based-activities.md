@@ -100,7 +100,7 @@ El SDK web de Platform ofrece un mayor control para aplicar actividades basadas 
 | `replaceHtml` | Retirar el contenedor y sustituirlo por la oferta | No | Sí |
 | `appendHtml` | Adjunta la oferta después del selector especificado | No | Sí |
 
-Consulte la [documentación dedicada](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html) acerca de la representación de contenido mediante el SDK web de Platform para obtener opciones y ejemplos adicionales de representación.
+Consulte la [documentación dedicada](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=es) acerca de la representación de contenido mediante el SDK web de Platform para obtener opciones y ejemplos adicionales de representación.
 
 ## Ejemplo de implementación
 
@@ -201,4 +201,4 @@ A continuación, aprenda a [pasar parámetros de Target mediante el SDK web de P
 
 >[!NOTE]
 >
->Nos comprometemos a ayudarle a tener éxito con su migración de Target de at.js al SDK web. Si encuentra obstáculos con la migración o cree que falta información esencial en esta guía, comuníquenoslo publicando en [esta discusión de la comunidad](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Nos comprometemos a ayudarle a tener éxito con su migración de Target de at.js al SDK web. Si encuentra obstáculos con la migración o cree que falta información esencial en esta guía, comuníquenoslo publicando en [esta discusión de la comunidad](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=es#M463).

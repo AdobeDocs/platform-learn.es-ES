@@ -169,6 +169,6 @@ Los especialistas en marketing y análisis pueden hacer mucho más con los datos
 
 >[!SUCCESS]
 >
->Ahora ha configurado la aplicación para enviar datos no solo al Edge Network, sino también a Adobe Experience Platform.<br>Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Ahora ha configurado la aplicación para enviar datos no solo al Edge Network, sino también a Adobe Experience Platform.<br>Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=es).
 
 Siguiente: **[Crear y enviar notificaciones push](journey-optimizer-push.md)**

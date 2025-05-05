@@ -17,7 +17,7 @@ ht-degree: 20%
 
 # Crear un tablero
 
-Obtenga información sobre cómo crear tableros en Adobe Experience Platform. Para obtener más información, consulte [la documentación](https://experienceleague.adobe.com/docs/experience-platform/dashboards/user-defined-dashboards.html).
+Obtenga información sobre cómo crear tableros en Adobe Experience Platform. Para obtener más información, consulte [la documentación](https://experienceleague.adobe.com/docs/experience-platform/dashboards/user-defined-dashboards.html?lang=es).
 
 >[!IMPORTANT]
 >

@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Configuración de conversiones mejoradas de Google Ads
 
-Mejore los datos de conversión de Google con datos hash de origen mediante el reenvío de eventos y la API de Google Ads. Para obtener más información, consulte [la documentación](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/google-ads-enhanced-conversions/overview.html)
+Mejore los datos de conversión de Google con datos hash de origen mediante el reenvío de eventos y la API de Google Ads. Para obtener más información, consulte [la documentación](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/google-ads-enhanced-conversions/overview.html?lang=es)
 
 >[!VIDEO](https://video.tv.adobe.com/v/3411365/?learn=on&enablevpops)

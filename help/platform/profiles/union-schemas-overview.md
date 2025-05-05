@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Resumen de esquemas de unión
 
-Este vídeo le ofrece una descripción general de los esquemas de unión utilizados por el Perfil del cliente en tiempo real de Adobe Experience Platform. Los esquemas de unión permiten ver una amalgamación de todos los campos contenidos en esquemas que comparten la misma clase. El perfil del cliente en tiempo real utiliza los esquemas de unión para crear una vista holística de cada cliente individual. Para obtener más información, visite la [documentación del esquema de unión](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html).
+Este vídeo le ofrece una descripción general de los esquemas de unión utilizados por el Perfil del cliente en tiempo real de Adobe Experience Platform. Los esquemas de unión permiten ver una amalgamación de todos los campos contenidos en esquemas que comparten la misma clase. El perfil del cliente en tiempo real utiliza los esquemas de unión para crear una vista holística de cada cliente individual. Para obtener más información, visite la [documentación del esquema de unión](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html?lang=es).
 
 >[!VIDEO](https://video.tv.adobe.com/v/329940?learn=on&enablevpops)

@@ -21,7 +21,7 @@ Este vídeo muestra cómo transmitir datos a Adobe Experience Platform en tiempo
 
 ## Más información
 
-* [Cree una conexión de flujo continuo usando la documentación de API de API](https://experienceleague.adobe.com/docs/experience-platform/sources/api-tutorials/create/streaming/http.html).
-* [Transmitir datos de registro mediante la documentación de las API de ingesta de transmisión](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-record-data.html)
-* [Transmitir datos de series temporales mediante la documentación de las API de ingesta de transmisión](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-time-series-data.html)
-* [Enviar varios mensajes en una sola documentación de solicitud HTTP](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-multiple-messages.html)
+* [Cree una conexión de flujo continuo usando la documentación de API de API](https://experienceleague.adobe.com/docs/experience-platform/sources/api-tutorials/create/streaming/http.html?lang=es).
+* [Transmitir datos de registro mediante la documentación de las API de ingesta de transmisión](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-record-data.html?lang=es)
+* [Transmitir datos de series temporales mediante la documentación de las API de ingesta de transmisión](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-time-series-data.html?lang=es)
+* [Enviar varios mensajes en una sola documentación de solicitud HTTP](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-multiple-messages.html?lang=es)

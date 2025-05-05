@@ -41,7 +41,7 @@ AEM as a Cloud Service es una herramienta flexible para el modelo de implementac
 1. API de contenido para envío
    - AEM La API de GraphQL admite la entrega de fragmentos de contenido.
    - La API de REST de AEM Assets admite operaciones de CRUD de fragmentos de contenido.
-   - La entrega de contenido directa también es posible con la exportación [JSON del componente principal del fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=en).
+   - La entrega de contenido directa también es posible con la exportación [JSON del componente principal del fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es).
 
 ## Ejercicio
 

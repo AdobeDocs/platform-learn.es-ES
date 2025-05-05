@@ -18,7 +18,7 @@ ht-degree: 25%
 
 # Resumen de casos de uso
 
-Más información sobre cómo los libros de casos de uso pueden ayudar a los clientes de Real-time Customer Data Platform y Journey Optimizer a obtener una relación tiempo-valor más rápida. Los libros de casos de uso son un catálogo de docenas de plantillas que abarcan varios sectores y objetivos de marketing. Los libros de reproducción generan recursos técnicos como audiencias, recorridos y esquemas, que luego se pueden personalizar y publicar en otros entornos limitados. Para obtener más información, consulte la [Documentación de manuales de casos de uso](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html).
+Más información sobre cómo los libros de casos de uso pueden ayudar a los clientes de Real-time Customer Data Platform y Journey Optimizer a obtener una relación tiempo-valor más rápida. Los libros de casos de uso son un catálogo de docenas de plantillas que abarcan varios sectores y objetivos de marketing. Los libros de reproducción generan recursos técnicos como audiencias, recorridos y esquemas, que luego se pueden personalizar y publicar en otros entornos limitados. Para obtener más información, consulte la [Documentación de manuales de casos de uso](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html?lang=es).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426896/?learn=on&enablevpops)
 

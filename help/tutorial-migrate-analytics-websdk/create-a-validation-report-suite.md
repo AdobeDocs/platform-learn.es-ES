@@ -35,5 +35,5 @@ Según el tamaño y la complejidad de la implementación de Analytics, la migrac
 
 >[!TIP]
 >
->Para ver un vídeo introductorio sobre la creación de grupos de informes, consulte [Explicación y creación de grupos de informes](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/intro-to-analytics/analytics-basics/understanding-and-creating-report-suites){target="_blank"}.
+>Para ver un vídeo introductorio sobre la creación de grupos de informes, consulte [Explicación y creación de grupos de informes](https://experienceleague.adobe.com/es/docs/analytics-learn/tutorials/intro-to-analytics/analytics-basics/understanding-and-creating-report-suites){target="_blank"}.
 

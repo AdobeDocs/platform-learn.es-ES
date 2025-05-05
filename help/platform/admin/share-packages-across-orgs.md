@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Uso compartido de paquetes entre organizaciones de IMS
 
-Obtenga información sobre cómo copiar configuraciones de Experience Platform entre organizaciones de IMS mediante paquetes. Duplique fácilmente esquemas, conjuntos de datos, recorridos y mucho más en varias organizaciones IMS para admitir procesos de versión e implementaciones de varias regiones/marcas. Para obtener información más detallada, consulte la [documentación de herramientas de zona protegida](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/ui/sharing-packages-across-orgs).
+Obtenga información sobre cómo copiar configuraciones de Experience Platform entre organizaciones de IMS mediante paquetes. Duplique fácilmente esquemas, conjuntos de datos, recorridos y mucho más en varias organizaciones IMS para admitir procesos de versión e implementaciones de varias regiones/marcas. Para obtener información más detallada, consulte la [documentación de herramientas de zona protegida](https://experienceleague.adobe.com/es/docs/experience-platform/sandbox/ui/sharing-packages-across-orgs).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3435815/?learn=on&enablevpops)

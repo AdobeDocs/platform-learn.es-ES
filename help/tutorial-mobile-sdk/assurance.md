@@ -17,7 +17,7 @@ Obtenga información sobre cómo configurar Adobe Experience Platform Assurance 
 
 Assurance, anteriormente conocido como Project Griffon, está diseñado para ayudarle a inspeccionar, probar, simular y validar la forma en que recopila datos o sirve experiencias en su aplicación móvil.
 
-Assurance le ayuda a inspeccionar los eventos de SDK sin procesar generados por el SDK para móviles de Adobe Experience Platform. Todos los eventos recopilados por el SDK están disponibles para su inspección. Los eventos del SDK se cargan en una vista de lista, ordenados por tiempo. Cada evento tiene una vista detallada que proporciona más detalles. También se proporcionan vistas adicionales para examinar la configuración del SDK, los elementos de datos, los estados compartidos y las versiones de extensión del SDK. Obtenga más información acerca de [Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html) en la documentación del producto.
+Assurance le ayuda a inspeccionar los eventos de SDK sin procesar generados por el SDK para móviles de Adobe Experience Platform. Todos los eventos recopilados por el SDK están disponibles para su inspección. Los eventos del SDK se cargan en una vista de lista, ordenados por tiempo. Cada evento tiene una vista detallada que proporciona más detalles. También se proporcionan vistas adicionales para examinar la configuración del SDK, los elementos de datos, los estados compartidos y las versiones de extensión del SDK. Obtenga más información acerca de [Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=es) en la documentación del producto.
 
 
 ## Requisitos previos
@@ -35,7 +35,7 @@ En esta lección, deberá hacer lo siguiente:
 
 ## Confirmar acceso
 
-Confirme que su organización tiene acceso a Assurance. Usted, como usuario, debe añadirse al perfil de Adobe Experience Platform. Consulte [Acceso de usuario](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html?lang=en) en la guía de Assurance para obtener más información.
+Confirme que su organización tiene acceso a Assurance. Usted, como usuario, debe añadirse al perfil de Adobe Experience Platform. Consulte [Acceso de usuario](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html?lang=es) en la guía de Assurance para obtener más información.
 
 ## Implementación
 
@@ -169,7 +169,7 @@ En su explorador:
 
          ![eventos de garantía](assets/assurance-events.png)
 
-Si encuentra algún desafío, revise la [documentación técnica](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} y la [documentación general](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
+Si encuentra algún desafío, revise la [documentación técnica](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} y la [documentación general](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=es){target="_blank"}.
 
 
 ## Verificar extensiones
@@ -203,7 +203,7 @@ Para comprobar si su aplicación utiliza las extensiones más actualizadas:
 >
 >Ahora ha configurado la aplicación para que utilice Assurance durante el resto del tutorial.
 >
->Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=es)
 
 
 Siguiente: **[Implementar consentimiento](consent.md)**

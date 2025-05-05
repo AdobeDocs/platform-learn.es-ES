@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Definición del consentimiento mediante el estándar de Adobe
 
-Aprenda a utilizar Adobe Experience Platform Web SDK para establecer valores de consentimiento según el estándar de Adobe 1.0 y 2.0. Consulte la documentación sobre el procesamiento de [consentimiento en Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/overview.html) para obtener más información sobre el uso del estándar de Adobe.
+Aprenda a utilizar Adobe Experience Platform Web SDK para establecer valores de consentimiento según el estándar de Adobe 1.0 y 2.0. Consulte la documentación sobre el procesamiento de [consentimiento en Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/overview.html?lang=es) para obtener más información sobre el uso del estándar de Adobe.
 
 >[!NOTE]
 >

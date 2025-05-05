@@ -22,8 +22,8 @@ Se mencionarán los aspectos destacados cuando se publique este ejercicio.
 
 ## Eche un vistazo a esto
 
-- Documentación del producto: [Glosario del Offer decisioning](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html#glossary?lang=en)
-- Documentación del producto: [SDK web - Información general del Offer decisioning](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/offer-decisioning/offer-decisioning-overview.html?lang=en)
+- Documentación del producto: [Glosario del Offer decisioning](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html#glossary?lang=es)
+- Documentación del producto: [SDK web - Información general del Offer decisioning](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/offer-decisioning/offer-decisioning-overview.html?lang=es)
 
 [Volver al módulo 3.3](./offer-decisioning.md)
 

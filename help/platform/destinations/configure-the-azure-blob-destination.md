@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Obtenga información sobre cómo configurar una conexión y enviar datos al destino de almacenamiento del blob de Azure en Real-Time Customer Data Platform. Este destino admite la exportación de conjuntos de datos y audiencias, y le permite personalizar los encabezados de archivo y los atributos de datos.
 
-Para obtener más información, visite la [documentación](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob).
+Para obtener más información, visite la [documentación](https://experienceleague.adobe.com/es/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob).
 
 >[!VIDEO](https://video.tv.adobe.com/v/331082/?learn=on&enablevpops)
 

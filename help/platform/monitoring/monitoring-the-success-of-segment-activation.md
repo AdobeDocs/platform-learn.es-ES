@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Monitorización del éxito de la activación de segmentos
 
-Al enviar perfiles de segmento a sus socios de activación, es imperativo ver información sobre el éxito de esta transferencia de datos, especialmente para que pueda solucionar cualquier problema. Este vídeo muestra dos formas principales de monitorizar el flujo de sus segmentos hacia los destinos. Para obtener más información, visite la [documentación](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-segments.html?lang=en).
+Al enviar perfiles de segmento a sus socios de activación, es imperativo ver información sobre el éxito de esta transferencia de datos, especialmente para que pueda solucionar cualquier problema. Este vídeo muestra dos formas principales de monitorizar el flujo de sus segmentos hacia los destinos. Para obtener más información, visite la [documentación](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-segments.html?lang=es).
 
 >[!VIDEO](https://video.tv.adobe.com/v/343248/?learn=on&enablevpops)
 

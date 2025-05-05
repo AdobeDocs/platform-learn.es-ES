@@ -16,6 +16,6 @@ ht-degree: 38%
 
 # Creación de elementos de datos
 
-Obtenga información sobre cómo crear elementos de datos para almacenar valores extraídos de la capa de datos y ponerlos a disposición de reglas y extensiones en la propiedad de etiquetas. Para obtener más información, consulte la documentación de [elementos de datos](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html).
+Obtenga información sobre cómo crear elementos de datos para almacenar valores extraídos de la capa de datos y ponerlos a disposición de reglas y extensiones en la propiedad de etiquetas. Para obtener más información, consulte la documentación de [elementos de datos](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=es).
 
 >[!VIDEO](https://video.tv.adobe.com/v/28733/?learn=on&enablevpops)

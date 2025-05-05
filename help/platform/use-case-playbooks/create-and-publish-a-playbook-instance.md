@@ -18,6 +18,6 @@ ht-degree: 32%
 
 # Crear y publicar instancias de libro de reproducción
 
-Aprenda a descubrir, crear, publicar y solucionar problemas de una instancia de un manual de casos de uso desde este vídeo de demostración completo. Para obtener más información, consulte [Crear, compartir y reutilizar instancias del libro de reproducción](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/create-share-reuse.html).
+Aprenda a descubrir, crear, publicar y solucionar problemas de una instancia de un manual de casos de uso desde este vídeo de demostración completo. Para obtener más información, consulte [Crear, compartir y reutilizar instancias del libro de reproducción](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/create-share-reuse.html?lang=es).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427058/?learn=on&enablevpops)

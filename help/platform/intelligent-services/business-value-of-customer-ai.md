@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Valor comercial de Customer AI
 
-Este vídeo muestra cómo la inteligencia artificial aplicada al cliente enriquece los perfiles de los clientes con las tendencias basadas en IA y potencia la segmentación de clientes y los esfuerzos de segmentación. Para obtener más información, visite la [documentación de inteligencia artificial aplicada al cliente](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html).
+Este vídeo muestra cómo la inteligencia artificial aplicada al cliente enriquece los perfiles de los clientes con las tendencias basadas en IA y potencia la segmentación de clientes y los esfuerzos de segmentación. Para obtener más información, visite la [documentación de inteligencia artificial aplicada al cliente](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=es).
 
 >[!VIDEO](https://video.tv.adobe.com/v/40374?learn=on&enablevpops)
 

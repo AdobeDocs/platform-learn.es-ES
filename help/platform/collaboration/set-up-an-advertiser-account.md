@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Configuración de una cuenta de anunciante en Real-Time CDP Collaboration
 
-Obtenga información sobre cómo configurar una cuenta de anunciante (organización) en Real-Time CDP Collaboration. Para obtener documentación detallada, consulte [Incorporar y administrar la organización](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/setup/onboard-organization){target="_blank"}.
+Obtenga información sobre cómo configurar una cuenta de anunciante (organización) en Real-Time CDP Collaboration. Para obtener documentación detallada, consulte [Incorporar y administrar la organización](https://experienceleague.adobe.com/es/docs/real-time-cdp-collaboration/using/setup/onboard-organization){target="_blank"}.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452264/?learn=on&enablevpops)

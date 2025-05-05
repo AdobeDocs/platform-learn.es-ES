@@ -28,11 +28,11 @@ La recopilación de datos es la próxima generación de funcionalidades de admin
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+    <a href="https://experienceleague.adobe.com/es/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
       <img alt="Migrar Target a Web SDK" src="assets/thumb_targetWebSdk.jpg" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+      <a href="https://experienceleague.adobe.com/es/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
     <strong>Migrar Adobe Target a Web SDK</strong>
     </a>
     </div>
@@ -66,11 +66,11 @@ La recopilación de datos es la próxima generación de funcionalidades de admin
 </tr>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview" target="_blank">
+    <a href="https://experienceleague.adobe.com/es/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview" target="_blank">
       <img alt="Migración de Target a Mobile SDK en Edge Network" src="assets/thumb_targetMobileSdk.jpg" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview" target="_blank">
+      <a href="https://experienceleague.adobe.com/es/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview" target="_blank">
     <strong>Migrar Adobe Target a SDK móvil en Edge Network</strong>
     </a>
     </div>
@@ -103,11 +103,11 @@ La recopilación de datos es la próxima generación de funcionalidades de admin
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
+    <a href="https://experienceleague.adobe.com/es/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
       <img alt="Implementación en aplicaciones móviles" src="assets/thumb_swift.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
+      <a href="https://experienceleague.adobe.com/es/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
     <strong>Implementar Experience Cloud en aplicaciones móviles</strong>
     </a>
     </div>
@@ -116,11 +116,11 @@ La recopilación de datos es la próxima generación de funcionalidades de admin
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+    <a href="https://experienceleague.adobe.com/es/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
       <img alt="Migrar Target a Web SDK" src="assets/thumb_legacy.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+      <a href="https://experienceleague.adobe.com/es/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
     <strong>Implementar bibliotecas heredadas con etiquetas</strong>
     </a>
     </div>

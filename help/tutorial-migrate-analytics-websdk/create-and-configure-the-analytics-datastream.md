@@ -35,7 +35,7 @@ En esta lección, aprenderá a crear y configurar el sistema para que los datos 
 
    >[!NOTE]
    >
-   >Solo necesita seleccionar un esquema si usa la característica [Preparación de datos para la recopilación de datos](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/edge-network/data-prep), lo que no se hará en este tutorial. Para obtener más información, visite el vínculo.
+   >Solo necesita seleccionar un esquema si usa la característica [Preparación de datos para la recopilación de datos](https://experienceleague.adobe.com/es/docs/platform-learn/data-collection/edge-network/data-prep), lo que no se hará en este tutorial. Para obtener más información, visite el vínculo.
 
 1. Seleccionar **[!UICONTROL Guardar]**
 

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Ingesta de datos mediante el conector de datos de Adobe Audience Manager
 
-En este vídeo de integración, aprenderá a utilizar el conector de datos de Audience Manager para incorporar características y segmentos de AAM a la plataforma y combinarlos con otros datos enriquecidos. Para obtener más información, consulte la [documentación del conector de origen de Audience Manager](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html).
+En este vídeo de integración, aprenderá a utilizar el conector de datos de Audience Manager para incorporar características y segmentos de AAM a la plataforma y combinarlos con otros datos enriquecidos. Para obtener más información, consulte la [documentación del conector de origen de Audience Manager](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=es).
 
 >[!VIDEO](https://video.tv.adobe.com/v/331214/?learn=on&enablevpops)
 
@@ -28,4 +28,4 @@ A medida que reconfigura los procesos y el personal para que se traslade de Adob
 >
 >En el vídeo anterior, muestra una opción para elegir TODOS los segmentos y/o rasgos. No recomendamos utilizar esta opción a menos que tenga un número limitado de segmentos con un número comprendido de visitantes únicos en esos segmentos. Incluir un gran número de perfiles de visitantes en &quot;todos los segmentos&quot; o &quot;todas las características&quot; puede aumentar considerablemente el servicio de perfiles en Real-Time CDP, lo que puede tener un enorme efecto en los precios de la aplicación (ya que el número de perfiles afecta al coste de la aplicación). Por lo tanto, se recomienda que, en lugar de elegir &quot;todo&quot;, elija segmentos específicos para transferirlos a Real-Time CDP.
 >
->Vea el episodio de [28 de abril de 2022 de Experience League LIVE](https://experienceleague.adobe.com/docs/experience-league-live-events/events/episodes/exl-live-episode-04-28-22.html), donde se analiza en detalle.
+>Vea el episodio de [28 de abril de 2022 de Experience League LIVE](https://experienceleague.adobe.com/docs/experience-league-live-events/events/episodes/exl-live-episode-04-28-22.html?lang=es), donde se analiza en detalle.
