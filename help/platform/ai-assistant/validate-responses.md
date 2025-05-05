@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Obtenga información sobre cómo verificar y validar las respuestas que proporciona el Asistente de IA en Adobe Experience Platform. Para obtener más información, consulte la [guía de la interfaz de usuario del Asistente de IA](https://experienceleague.adobe.com/es/docs/experience-platform/ai-assistant/ui-guide#verify-responses).
 
->[!VIDEO](https://video.tv.adobe.com/v/3441738/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441741/?learn=on&enablevpops&captions=spa)

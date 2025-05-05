@@ -20,5 +20,5 @@ Descubra cómo la administración de consentimientos en Adobe Experience Platfor
 >
 > El lanzamiento ahora es **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/332693/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3437791/?learn=on&enablevpops&captions=spa)
 

@@ -18,5 +18,5 @@ ht-degree: 0%
 
 Obtenga información general sobre los cinco casos de uso clave de Experience Platform: renovación inteligente de la participación, campañas &quot;No pierda&quot;, optimización de la conversión del cliente, reconocimiento contextual y valor único a valor de duración.
 
->[!VIDEO](https://video.tv.adobe.com/v/32806?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430466?learn=on&enablevpops&captions=spa)
 

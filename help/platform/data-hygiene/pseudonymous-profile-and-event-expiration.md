@@ -22,4 +22,4 @@ Obtenga información sobre cómo configurar la caducidad de los perfiles seudón
 Esta configuración permite a los administradores de datos establecer fechas de caducidad para perfiles no autenticados y sus eventos asociados. Esto ayuda a mantener a [!DNL Profile Service] relevante para los casos de uso de marketing y publicidad. Para obtener más información, visite la [caducidad del evento de experiencia](https://experienceleague.adobe.com/es/docs/experience-platform/profile/event-expirations) y la documentación de [caducidad de datos de perfiles seudónimos](https://experienceleague.adobe.com/es/docs/experience-platform/profile/event-expirations).
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3428361?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449856?learn=on&enablevpops&captions=spa)

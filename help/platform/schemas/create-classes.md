@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Este vídeo muestra cómo crear clases en Adobe Experience Platform para utilizarlas en esquemas XDM (Experience Data Model). Para obtener más información, visite la [documentación de esquemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/333538?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413623?learn=on&enablevpops&captions=spa)

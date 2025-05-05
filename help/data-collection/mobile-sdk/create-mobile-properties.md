@@ -20,4 +20,4 @@ Obtenga información sobre cómo crear una propiedad de etiqueta móvil en Recop
 >
 > El lanzamiento ahora es **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/26264/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/40318/?learn=on&enablevpops&captions=spa)

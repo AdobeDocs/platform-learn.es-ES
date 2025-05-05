@@ -17,7 +17,7 @@ ht-degree: 42%
 
 Este vídeo muestra cómo transmitir datos a Adobe Experience Platform en tiempo real mediante el punto final de la API HTTP.
 
->[!VIDEO](https://video.tv.adobe.com/v/331028?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3410927?learn=on&enablevpops&captions=spa)
 
 ## Más información
 

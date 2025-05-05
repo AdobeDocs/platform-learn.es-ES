@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Este vídeo muestra cómo los arquitectos de datos pueden tomar su modelo de datos transaccionales existente y convertirlo en un modelo de datos de experiencia. Muestra las diferencias en los enfoques de modelado utilizando diagramas de relación entre entidades. Para obtener más información, visite la [documentación de prácticas recomendadas para el modelado de datos](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/333483?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413643?learn=on&enablevpops&captions=spa)

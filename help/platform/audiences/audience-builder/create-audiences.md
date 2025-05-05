@@ -22,5 +22,5 @@ Obtenga información sobre cómo crear audiencias en Adobe Experience Platform. 
 >
 > Se cambió el nombre de &quot;[!UICONTROL Segmentos]&quot; a &quot;[!UICONTROL Audiencias]&quot; en la interfaz de Platform. Seleccione **[!UICONTROL Crear audiencia]** > **[!UICONTROL Generar regla]** para ingresar al generador de reglas que se muestra en este vídeo.
 
->[!VIDEO](https://video.tv.adobe.com/v/27254?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31832?learn=on&enablevpops&captions=spa)
 

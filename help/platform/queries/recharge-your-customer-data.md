@@ -24,7 +24,7 @@ Este vídeo explora:
 * Funciones de preparación de datos de Adobe Experience Platform que puede aprovechar
 * Aumento del ROI de Adobe Real-Time CDP, Adobe Journey Optimizer y Customer Journey Analytics
 
->[!VIDEO](https://video.tv.adobe.com/v/342533?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3454939?learn=on&enablevpops&captions=spa)
 
 ## Ejemplo de SQL
 

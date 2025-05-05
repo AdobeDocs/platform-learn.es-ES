@@ -16,4 +16,4 @@ ht-degree: 0%
 
 Obtenga información acerca de los casos de uso y las capacidades del reenvío de eventos en Adobe Experience Platform, como la administración de llamadas de API de conversión a destinos de terceros y el envío de datos de eventos a su Data Warehouse. Para obtener más información, visite la [documentación del reenvío de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/3434936?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3456498?learn=on&enablevpops&captions=spa)

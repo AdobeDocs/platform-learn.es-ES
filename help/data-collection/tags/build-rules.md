@@ -18,4 +18,4 @@ ht-degree: 37%
 
 Aprenda a crear reglas para poder ejecutar comandos en etiquetas. Los eventos y las condiciones determinan *cuándo* hacer cosas mientras que las acciones determinan *qué* hacer. Para obtener más información, consulte la documentación de [rules](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/28730/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430497/?learn=on&enablevpops&captions=spa)

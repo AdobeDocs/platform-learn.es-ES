@@ -31,7 +31,7 @@ Nos ceñiremos a la interfaz de usuario para esta lección, pero también existe
 **Los arquitectos de datos** deberán crear políticas de combinación fuera de este tutorial.
 
 Antes de comenzar los ejercicios, vea este breve vídeo para obtener más información sobre las políticas de combinación:
->[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/345075?learn=on&enablevpops&captions=spa)
 
 ## Permisos necesarios
 

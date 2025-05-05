@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Aprenda a configurar los destinos de LiveRamp en Real-Time CDP para enviar audiencias a sus socios de activación. Para obtener documentación detallada, consulte [LiveRamp - Conexión de incorporación](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/liveramp-onboarding.html?lang=es) y [LiveRamp - Conexión de distribución](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/liveramp-distribution.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/3425367/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3452659/?learn=on&enablevpops&captions=spa)

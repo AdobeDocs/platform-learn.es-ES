@@ -26,7 +26,7 @@ Los entornos limitados proporcionan entornos aislados en los que puede probar la
 **Los arquitectos de datos** y **ingenieros de datos** deberán crear zonas protegidas fuera de este tutorial.
 
 Antes de comenzar los ejercicios, vea este breve vídeo para obtener más información sobre las zonas protegidas:
->[!VIDEO](https://video.tv.adobe.com/v/29838/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430293/?learn=on&enablevpops&captions=spa)
 
 ## Permisos necesarios
 

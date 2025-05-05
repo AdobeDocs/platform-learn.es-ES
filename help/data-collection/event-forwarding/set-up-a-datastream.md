@@ -26,4 +26,4 @@ Obtenga información sobre cómo configurar un flujo de datos para el reenvío d
 > * Platform Launch Server Side ahora está **[!DNL event forwarding]**
 > * Las configuraciones de Edge ahora son **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/331939?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3410359?learn=on&enablevpops&captions=spa)

@@ -19,4 +19,4 @@ ht-degree: 1%
 
 Aprenda a crear esquemas para los datos empresariales con Real-Time Customer Data Platform, B2B edition. Obtenga información sobre las clases de negocio, los grupos de campos y las áreas de nombres de identidad, y cómo crearlas automáticamente en su cuenta con la utilidad Postman. Para obtener más información, visite la [documentación de esquemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/338241?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3453394?learn=on&enablevpops&captions=spa)

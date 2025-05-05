@@ -18,7 +18,7 @@ ht-degree: 2%
 
 Obtenga información sobre cómo crear directivas para aplicar las preferencias de consentimiento del cliente. Para obtener más información, consulte [la documentación](https://experienceleague.adobe.com/docs/experience-platform/data-governance/enforcement/auto-enforcement.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/345677?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3412098?learn=on&enablevpops&captions=spa)
 
 >[!IMPORTANT]
 >

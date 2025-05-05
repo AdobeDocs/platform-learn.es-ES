@@ -19,4 +19,4 @@ ht-degree: 1%
 
 Aprenda a realizar llamadas a puntos finales de API, incluidas listas y búsquedas, creación de una solicitud de trabajo y creación de una solicitud de consentimiento. Para obtener más información, visite la [documentación de Privacy Services](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/336080?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448876?learn=on&enablevpops&captions=spa)

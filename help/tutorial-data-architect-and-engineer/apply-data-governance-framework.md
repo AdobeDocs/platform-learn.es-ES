@@ -24,9 +24,9 @@ En esta lección, aplicará el marco de trabajo de control de datos a los datos 
 Administración de datos de Adobe Experience Platform le permite administrar los datos de los clientes y garantizar el cumplimiento de las regulaciones, restricciones y políticas aplicables al uso de los datos. Desempeña un papel clave dentro de Experience Platform en varios niveles, incluido el control del uso de datos.
 
 Antes de comenzar los ejercicios, vea estos vídeos cortos sobre la gobernanza de datos:
->[!VIDEO](https://video.tv.adobe.com/v/36653?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/41323?learn=on&enablevpops&captions=spa)
 
->[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32682?learn=on&enablevpops&captions=spa)
 
 <!--
 ## Permissions required

@@ -18,4 +18,4 @@ ht-degree: 14%
 
 Obtenga información sobre cómo añadir y configurar extensiones en su propiedad de etiquetas. Las extensiones son &quot;aplicaciones&quot; empaquetadas previamente que se instalan en el sitio para proporcionarle el seguimiento, la personalización u otras capacidades que necesite. El mercado de las extensiones siempre está creciendo, a medida que Adobe, socios y clientes crean extensiones para impulsar casos de uso. Para obtener más información, consulte la documentación de [extensiones](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/overview.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/28732/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3428583/?learn=on&enablevpops&captions=spa)

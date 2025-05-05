@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Evalúe audiencias por lotes bajo demanda con la función flexible de evaluación de audiencias de Adobe Experience Platform. Para obtener más información y protecciones, consulte [la guía flexible de evaluación de audiencias](https://experienceleague.adobe.com/es/docs/experience-platform/segmentation/methods/flexible-audience-evaluation).
 
->[!VIDEO](https://video.tv.adobe.com/v/3453640/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3453643/?learn=on&enablevpops&captions=spa)

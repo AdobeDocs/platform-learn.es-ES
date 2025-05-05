@@ -18,4 +18,4 @@ ht-degree: 53%
 
 Cuando decida con qué socio estratégico va a compartir datos, es importante saber cómo coinciden sus clientes, de modo que sepa cuán útil será ese uso compartido de datos. La coincidencia de segmentos le permite ver la superposición con posibles socios de datos antes de compartir datos. Para obtener más información, consulte la [documentación](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/342378/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346343/?learn=on&enablevpops&captions=spa)

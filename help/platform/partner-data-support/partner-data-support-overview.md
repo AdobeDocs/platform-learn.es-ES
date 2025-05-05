@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Descubra cómo [!DNL Real-Time Customer Data Platform] admite el marketing de canal completo mediante los datos de socios para el enriquecimiento de datos de origen y los casos de uso de prospección, ya que las cookies de terceros siguen en desuso. 
 
->[!VIDEO](https://video.tv.adobe.com/v/3422855/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449692/?learn=on&enablevpops&captions=spa)

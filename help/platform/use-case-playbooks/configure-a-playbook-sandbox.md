@@ -26,4 +26,4 @@ Aprenda a configurar una zona protegida para libros de reproducción de casos de
 
 Para obtener más información, consulte [Introducción a los manuales de casos de uso](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/3426987/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449829/?learn=on&enablevpops&captions=spa)

@@ -24,4 +24,4 @@ Este vídeo muestra cómo crear audiencias de varias entidades en el generador d
 >
 > Se cambió el nombre de &quot;[!UICONTROL Segmentos]&quot; a &quot;[!UICONTROL Audiencias]&quot; en la interfaz de Platform. Seleccione **[!UICONTROL Crear audiencia]** > **[!UICONTROL Generar regla]** para ingresar al generador de reglas que se muestra en este vídeo.
 
->[!VIDEO](https://video.tv.adobe.com/v/32179?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/345106?learn=on&enablevpops&captions=spa)

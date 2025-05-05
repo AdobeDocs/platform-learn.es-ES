@@ -18,4 +18,4 @@ ht-degree: 8%
 
 Este vídeo muestra cómo crear esquemas en Adobe Experience Platform utilizando la clase XDM Individual Profile y varios grupos de campos. Para obtener documentación detallada del producto, consulte [crear un esquema en la interfaz de usuario](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=es) y [crear un esquema con la API](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-api.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/27012?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430223?learn=on&enablevpops&captions=spa)

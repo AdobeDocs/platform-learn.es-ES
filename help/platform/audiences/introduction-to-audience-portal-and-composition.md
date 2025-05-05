@@ -19,4 +19,4 @@ ht-degree: 1%
 
 Consulte cómo Adobe está reinventando las audiencias en Adobe Experience Platform, incluido cómo importar, crear y administrar audiencias. Para obtener más información, consulte la [documentación del Generador de segmentos](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/3421713/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3423371/?learn=on&enablevpops&captions=spa)

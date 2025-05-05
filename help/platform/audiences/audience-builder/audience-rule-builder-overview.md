@@ -23,5 +23,5 @@ Obtenga una introducción al generador de reglas de Audiencia en Experience Plat
 > Se cambió el nombre de &quot;[!UICONTROL Segmentos]&quot; a &quot;[!UICONTROL Audiencias]&quot; en la interfaz de Platform. Seleccione **[!UICONTROL Crear audiencia]** > **[!UICONTROL Generar regla]** para ingresar al generador de reglas que se muestra en este vídeo.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/333301/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413201/?learn=on&enablevpops&captions=spa)
 

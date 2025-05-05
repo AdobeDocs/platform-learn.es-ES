@@ -18,4 +18,4 @@ ht-degree: 38%
 
 Obtenga información sobre las regulaciones de privacidad y su efecto en las operaciones de datos. Además, descubra cómo Privacy Service gestiona estos desafíos. Para obtener más información, visite la [documentación de Privacy Services](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/336074?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3445714?learn=on&enablevpops&captions=spa)

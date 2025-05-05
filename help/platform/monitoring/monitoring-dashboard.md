@@ -18,4 +18,4 @@ ht-degree: 55%
 
 Obtenga información sobre cómo monitorizar y rastrear los datos que se incorporan en Adobe Experience Platform mediante el panel de monitorización. Este panel de monitorización proporciona una vista descendente del procesamiento de los datos de origen a través del lago de datos hasta los servicios de perfil e identidad, con perspectivas procesables. Para obtener más información, consulte la [documentación](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-sources.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/331776?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/347007?learn=on&enablevpops&captions=spa)

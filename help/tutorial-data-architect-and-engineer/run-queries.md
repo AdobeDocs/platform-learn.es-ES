@@ -25,7 +25,7 @@ Adobe Experience Platform Query Service le ayuda a dar sentido a sus datos, ya q
 **Los arquitectos de datos** y **ingenieros de datos** necesitarán usar el servicio de consulta fuera de este tutorial.
 
 Antes de comenzar los ejercicios, vea este breve vídeo para obtener más información sobre el servicio de consultas:
->[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/33590?learn=on&enablevpops&captions=spa)
 
 ## Permisos necesarios
 

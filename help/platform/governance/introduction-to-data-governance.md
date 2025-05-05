@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Descubra cómo las funcionalidades de control de datos de Adobe Experience Platform y cómo ayudan a las marcas a ofrecer experiencias personalizadas a sus clientes, a la vez que proporcionan un control completo sobre los datos de los clientes. Para obtener más información, visite la [documentación de control de datos](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/36653?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/41323?learn=on&enablevpops&captions=spa)

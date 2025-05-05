@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Este vídeo ofrece información general sobre la ingesta de datos por lotes en Adobe Experience Platform y muestra cómo ingerir datos por lotes mediante la API. Para obtener más información, visite la [Documentación sobre ingesta de datos](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/330995?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/345660?learn=on&enablevpops&captions=spa)

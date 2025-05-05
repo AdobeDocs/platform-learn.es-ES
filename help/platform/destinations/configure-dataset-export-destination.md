@@ -22,4 +22,4 @@ Obtenga información sobre cómo configurar una conexión y utilizar el flujo de
 
 Para obtener más información, visite la [documentación](https://experienceleague.adobe.com/es/docs/experience-platform/destinations/ui/activate/export-datasets).
 
->[!VIDEO](https://video.tv.adobe.com/v/3424392/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448821/?learn=on&enablevpops&captions=spa)

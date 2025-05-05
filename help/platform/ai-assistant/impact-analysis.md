@@ -20,4 +20,4 @@ ht-degree: 0%
 
 En este vídeo analizaremos cómo el asistente de IA de Adobe Experience Platform puede ayudarle a ser más eficaz en el análisis de impacto. Los cambios en objetos compartidos, como atributos y audiencias, pueden interrumpir los flujos de trabajo de otros equipos, complicar los procesos y arriesgar importantes esfuerzos de marketing.
 
->[!VIDEO](https://video.tv.adobe.com/v/3441680/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441683/?learn=on&enablevpops&captions=spa)

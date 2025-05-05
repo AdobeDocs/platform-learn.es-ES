@@ -20,4 +20,4 @@ Aprenda a utilizar CocoaPods y Gradle para administrar las extensiones y depende
 >
 > El lanzamiento ahora es **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/26263/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/40322/?learn=on&enablevpops&captions=spa)

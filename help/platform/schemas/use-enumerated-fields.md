@@ -19,4 +19,4 @@ ht-degree: 33%
 
 Aprenda a utilizar campos enumerados y valores sugeridos para crear menús desplegables prácticos en la interfaz del generador de segmentos. Para obtener más información, consulte [la documentación](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/3409501/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413676/?learn=on&enablevpops&captions=spa)

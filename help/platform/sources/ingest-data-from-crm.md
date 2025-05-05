@@ -23,13 +23,13 @@ Aprenda a agrupar fácilmente los datos de ingesta de fuentes CRM en el perfil d
 
 Obtenga información sobre cómo configurar el conector de origen para Salesforce CRM mediante el flujo de trabajo estándar. El flujo de trabajo estándar requiere la creación inicial de esquemas y áreas de nombres de identidad. Otros conectores de origen CRM solo pueden admitir el flujo de trabajo estándar.
 
->[!VIDEO](https://video.tv.adobe.com/v/29711?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32646?learn=on&enablevpops&captions=spa)
 
 ## Flujo de trabajo de plantilla (Salesforce)
 
 Obtenga información sobre cómo configurar el conector de origen para Salesforce CRM mediante el flujo de trabajo de plantillas. Este flujo de trabajo genera automáticamente los recursos necesarios para la ingesta de datos de Salesforce basados en plantillas. Le ahorra tiempo y los recursos se pueden personalizar según sus necesidades. Este flujo de trabajo no es compatible con todos los conectores de origen CRM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419422?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3453326?learn=on&enablevpops&captions=spa)
 
 Para obtener más información, consulte la siguiente documentación:
 * [Salesforce crea una documentación de conexión](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html?lang=es).

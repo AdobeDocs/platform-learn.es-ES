@@ -31,20 +31,20 @@ La capacidad de [Adobe Developer Console](https://developer.adobe.com/console/ho
 >
 > Después de crear la credencial de la API, un administrador del sistema debe asociarla con una función en Experience Platform.
 
->[!VIDEO](https://video.tv.adobe.com/v/28832/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31627/?learn=on&enablevpops&captions=spa)
 
 ## Generación de un token de acceso con Postman{#generate-an-access-token-with-postman}
 
 Use las [API del servicio Adobe Identity Management](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims) para obtener un token de acceso y poder acceder a las API de Adobe Experience Platform.
 
->[!VIDEO](https://video.tv.adobe.com/v/29698/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32727/?learn=on&enablevpops&captions=spa)
 
 
 ## Interacción con las API de Experience Platform mediante Postman
 
 Explore la interacción con las API de Adobe Experience Platform mediante las [colecciones Postman de la API de Experience Platform proporcionadas por Adobe](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform), basadas en las [variables de entorno de Adobe Developer Console](#export-integration-details-to-postman) y en el [token de acceso generado](#generate-an-access-token-with-postman).
 
->[!VIDEO](https://video.tv.adobe.com/v/29704/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32723/?learn=on&enablevpops&captions=spa)
 
 
 ## Recursos a los que se hace referencia en estos vídeos

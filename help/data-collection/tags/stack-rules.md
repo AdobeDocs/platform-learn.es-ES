@@ -19,4 +19,4 @@ ht-degree: 36%
 
 Obtenga información sobre cómo apilar reglas en una propiedad de etiqueta. El apilamiento de reglas utiliza la característica `order` en eventos de reglas de etiquetas para secuenciar las reglas y administrar así las implementaciones de etiquetas escalables. Configure algunas variables en una regla global, agregue y sobrescriba variables en una regla específica de página y, a continuación, envíe los datos a la aplicación de marketing deseada. Para obtener más información sobre la ordenación de reglas, consulte la documentación de [rules](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=es#rule-ordering).
 
->[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3454030/?learn=on&enablevpops&captions=spa)

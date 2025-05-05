@@ -18,6 +18,6 @@ ht-degree: 0%
 
 Este vídeo muestra cómo los especialistas en marketing pueden medir y optimizar el gasto en marketing y publicidad al comprender el impacto de cada interacción individual con los clientes en cada fase de los recorridos de los clientes con la inteligencia artificial aplicada a la atribución. Para obtener más información, visite la [Documentación de inteligencia artificial aplicada a la atribución](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/40375?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/328472?learn=on&enablevpops&captions=spa)
 
 

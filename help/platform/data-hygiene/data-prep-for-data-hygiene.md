@@ -20,4 +20,4 @@ ht-degree: 85%
 
 Aprenda a aplicar los principios de minimización de datos con la función de preparación de datos de Experience Platform. Aprenda a ingestar solo los campos que necesita y a aplicar una fórmula hash a los datos durante la ingesta.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429485/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449278/?learn=on&enablevpops&captions=spa)

@@ -20,6 +20,6 @@ ht-degree: 0%
 
 Para poder enviar datos a los socios de destino desde Real-Time CDP, primero debe realizar las conexiones con dichos socios. Este vídeo lo acompaña durante ese proceso, que suelen realizar los administradores.
 
->[!VIDEO](https://video.tv.adobe.com/v/342471/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346364/?learn=on&enablevpops&captions=spa)
 
 Para obtener más información, visite la [documentación](https://experienceleague.adobe.com/es/docs/experience-platform/destinations/ui/connect-destination).

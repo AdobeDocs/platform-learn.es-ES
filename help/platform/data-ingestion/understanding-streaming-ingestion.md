@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Con la introducción de streaming continuo de Experience Platform, puede estar seguro de que los datos que envíe estarán disponibles en el Perfil del cliente en tiempo real. Estos datos se pueden capturar desde sistemas CRM y ERP, o desde cualquier otra fuente que pueda comunicarse a través de HTTP o infraestructura de streaming en la nube pública. A continuación, puede utilizar estos datos para la segmentación en tiempo real y para activar otros procesos de marketing. Para obtener más información, visite la [documentación sobre ingesta de transmisión](https://experienceleague.adobe.com/es/docs/experience-platform/ingestion/streaming/overview).
 
->[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31628?learn=on&enablevpops&captions=spa)

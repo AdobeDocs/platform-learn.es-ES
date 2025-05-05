@@ -26,7 +26,7 @@ Todos los datos que se incorporan correctamente a Adobe Experience Platform se c
 **Los arquitectos de datos** deberán crear conjuntos de datos fuera de este tutorial.
 
 Antes de comenzar los ejercicios, vea este breve vídeo para obtener más información sobre los conjuntos de datos:
->[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/34380?learn=on&enablevpops&captions=spa)
 
 ## Permisos necesarios
 

@@ -18,4 +18,4 @@ ht-degree: 6%
 
 Aprenda a limpiar, preparar y combinar datos de varios conjuntos de datos para crear uno nuevo mediante CTAS (Crear tabla AS) y las funciones SQL de Creative Cloud Express para informes y tableros. Para obtener más información, visite la [documentación del servicio de consultas](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/333699?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3414066?learn=on&enablevpops&captions=spa)

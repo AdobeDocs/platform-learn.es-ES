@@ -18,4 +18,4 @@ ht-degree: 1%
 
 En este vídeo se analizan los elementos clave de los componentes de construcción de los esquemas XDM (Experience Data Model), incluidos los campos, los tipos de datos, los grupos de campos de esquema, las clases y el comportamiento. Para obtener más información, visite la [documentación de esquemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/333469?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413658?learn=on&enablevpops&captions=spa)

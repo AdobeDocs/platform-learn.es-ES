@@ -18,6 +18,6 @@ ht-degree: 1%
 
 Aprenda a utilizar el visualizador de gráficos de identidad para buscar, explorar y filtrar gráficos de identidad para la validación y la depuración. Para obtener más información, visite la [documentación del visualizador de gráficos de identidad](https://experienceleague.adobe.com/docs/experience-platform/identity/ui/identity-graph-viewer.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/331030?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/345653?learn=on&enablevpops&captions=spa)
 
 

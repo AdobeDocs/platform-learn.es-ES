@@ -29,7 +29,7 @@ Customer Journey Analytics lleva esta solución sobre los datos de Platform. Rec
 
 Si no ha utilizado Analysis Workspace anteriormente, le recomendamos encarecidamente que vea este vídeo:
 
->[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35552?quality=12&learn=on&captions=spa)
 
 ### Cree Su Proyecto
 

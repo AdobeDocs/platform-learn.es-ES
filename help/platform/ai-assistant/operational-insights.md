@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Aprenda a utilizar el Asistente de IA para descubrir perspectivas operativas acerca de objetos empresariales como audiencias, conjuntos de datos, esquemas, destinos y recorridos en Adobe Experience Platform
 
->[!VIDEO](https://video.tv.adobe.com/v/3444031/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3444035/?learn=on&enablevpops&captions=spa)

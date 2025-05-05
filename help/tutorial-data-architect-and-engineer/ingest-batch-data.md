@@ -26,7 +26,7 @@ La ingesta de datos por lotes le permite introducir una gran cantidad de datos e
 
 Antes de comenzar los ejercicios, vea este breve vídeo para obtener más información sobre la ingesta de datos:
 
->[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346830?learn=on&enablevpops&captions=spa)
 
 
 ## Permisos necesarios

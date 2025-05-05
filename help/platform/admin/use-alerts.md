@@ -19,4 +19,4 @@ ht-degree: 43%
 
 Obtenga información sobre cómo suscribirse y administrar alertas en Adobe Experience Platform. Las alertas le ayudan a monitorizar varios procesos para asegurarse de que la implementación de Platform se esté ejecutando sin problemas. Para obtener más información, visite la [Documentación de alertas](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/336218?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3423918?learn=on&enablevpops&captions=spa)

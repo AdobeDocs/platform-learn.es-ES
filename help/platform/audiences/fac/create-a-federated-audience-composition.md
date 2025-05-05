@@ -20,4 +20,4 @@ ht-degree: 1%
 
 Obtenga información sobre cómo crear una composición de audiencia federada y cómo crear la consulta en la interfaz de usuario que llegará a su almacén de datos y seleccionará los datos adecuados. Para obtener más información, visite [Documentación de la composición de audiencias federadas](https://experienceleague.adobe.com/es/docs/federated-audience-composition/using/home){target="_blank"}.
 
->[!VIDEO](https://video.tv.adobe.com/v/3433247/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448581/?learn=on&enablevpops&captions=spa)

@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Obtenga información acerca del flujo de trabajo utilizado para ingerir nuevos clientes potenciales de los socios en [!DNL Real-Time CDP] para el direccionamiento previo a la visita. Para obtener más información, visite la documentación de [Participación y adquisición de nuevos clientes mediante casos de uso de prospección](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/prospecting.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/3423071/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3452860/?learn=on&enablevpops&captions=spa)

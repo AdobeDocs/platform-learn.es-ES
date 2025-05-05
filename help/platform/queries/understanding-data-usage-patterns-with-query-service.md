@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Este vídeo comparte sugerencias y prácticas recomendadas para ejecutar consultas en la interfaz del editor de consultas, los clientes SQL, las soluciones de inteligencia empresarial (BI) y la API HTTP. Para obtener más información, visite la [documentación del servicio de consultas](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/29811?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/33588?learn=on&enablevpops&captions=spa)

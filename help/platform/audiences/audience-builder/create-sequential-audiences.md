@@ -22,5 +22,5 @@ En este vídeo, aprenderá a añadir eventos de experiencia a una cronología de
 >
 > Se cambió el nombre de &quot;[!UICONTROL Segmentos]&quot; a &quot;[!UICONTROL Audiencias]&quot; en la interfaz de Platform. Seleccione **[!UICONTROL Crear audiencia]** > **[!UICONTROL Generar regla]** para ingresar al generador de reglas que se muestra en este vídeo.
 
->[!VIDEO](https://video.tv.adobe.com/v/333305/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413211/?learn=on&enablevpops&captions=spa)
 

@@ -17,5 +17,5 @@ ht-degree: 42%
 
 Obtenga información sobre cómo la función de registros de auditoría puede ayudarle a cumplir los requisitos de conformidad y solucionar problemas de la implementación de Adobe Experience Platform. Para obtener más información, visite la [documentación de registros de auditoría](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/audit-logs/overview.html?lang=es) o la [referencia de API](https://developer.adobe.com/experience-platform-apis/references/audit-query/).
 
->[!VIDEO](https://video.tv.adobe.com/v/341450?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/344645?learn=on&enablevpops&captions=spa)
 

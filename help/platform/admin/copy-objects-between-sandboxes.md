@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Obtenga información sobre cómo copiar configuraciones entre entornos limitados de Experience Platform mediante paquetes. Duplique fácilmente esquemas, conjuntos de datos, recorridos y mucho más en sus entornos limitados para admitir procesos de versiones e implementaciones de varias regiones/marcas. Para obtener información más detallada, consulte la [documentación de herramientas de zona protegida](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/3424763/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3446086/?learn=on&enablevpops&captions=spa)

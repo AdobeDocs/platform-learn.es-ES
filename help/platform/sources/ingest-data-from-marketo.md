@@ -26,13 +26,13 @@ Aprenda a realizar fácilmente una ingesta de datos de Marketo Engage a Real-tim
 
 Obtenga información sobre cómo configurar el conector de origen para Marketo mediante el flujo de trabajo de plantillas. Este flujo de trabajo genera automáticamente los recursos necesarios para la ingesta de datos de Marketo basados en plantillas. Le ahorra tiempo y los recursos se pueden personalizar según sus necesidades.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419550?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3451863?learn=on&enablevpops&captions=spa)
 
 ## Flujo de trabajo estándar
 
 Obtenga información sobre cómo configurar el conector de origen para Marketo mediante el flujo de trabajo estándar. El flujo de trabajo estándar requiere la creación inicial de esquemas y áreas de nombres de identidad.
 
->[!VIDEO](https://video.tv.adobe.com/v/338250?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3452905?learn=on&enablevpops&captions=spa)
 
 Para obtener más información, consulte la siguiente documentación:
 * [Documentación del conector de origen de Marketo Engage](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=es).

@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Obtenga información sobre cómo recopilar atributos de terceros de [!DNL Adobe Experience Platform Web SDK] y personalizar la experiencia en el sitio para visitantes desconocidos mediante el reconocimiento de visitantes ayudado por socios. Para obtener más información, visite la documentación de [Use reconocimiento de visitantes con ayuda de socios para personalizar experiencias en el sitio](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/onsite-personalization.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/3423076/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449255/?learn=on&enablevpops&captions=spa)

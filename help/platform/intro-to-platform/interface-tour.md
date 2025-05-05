@@ -18,5 +18,5 @@ ht-degree: 0%
 
 Obtenga información sobre cómo navegar por la interfaz de usuario de Adobe Experience Platform.
 
->[!VIDEO](https://video.tv.adobe.com/v/32792?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430439?learn=on&enablevpops&captions=spa)
 

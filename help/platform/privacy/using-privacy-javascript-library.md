@@ -19,4 +19,4 @@ ht-degree: 1%
 
 Aprenda a utilizar la biblioteca de JavaScript de privacidad para recopilar las identidades de los clientes en su aplicación antes de enviarlas a Privacy Service. Por ejemplo, aprenda a configurar la extensión de etiqueta en la recopilación de datos (anteriormente, Launch). Para obtener más información, visite la [documentación de Privacy Services](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/336078?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3452079?learn=on&enablevpops&captions=spa)

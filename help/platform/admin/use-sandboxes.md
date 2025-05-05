@@ -20,6 +20,6 @@ ht-degree: 100%
 
 Descubra cómo las zonas protegidas de Experience Platform proporcionan entornos aislados para probar funcionalidades nuevas o existentes y trabajar con un enfoque “fail fast” (informe rápido de errores). Aprenda a restablecer y reiniciar los entornos de desarrollo y a utilizar zonas protegidas con llamadas a la API. Para obtener más información, consulte la [Guía de usuario de zonas protegidas](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/29838/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430293/?learn=on&enablevpops&captions=spa)
 
 

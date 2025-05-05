@@ -43,7 +43,7 @@ Key terms:
 **Los arquitectos de datos** tendrán que crear esquemas fuera de este tutorial, pero **los ingenieros de datos** trabajarán de cerca con los esquemas creados por el arquitecto de datos.
 
 Antes de comenzar los ejercicios, vea este breve vídeo para obtener más información sobre los esquemas y el modelo de datos de experiencia (XDM):
->[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/38506?learn=on&enablevpops&captions=spa)
 
 >[!TIP]
 >

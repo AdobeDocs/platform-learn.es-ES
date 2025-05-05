@@ -17,4 +17,4 @@ ht-degree: 0%
 
 Obtenga información acerca de las ventajas de enviar datos a Platform Edge Network mediante una API de servidor segura y autenticada. Para obtener más información, visite la [documentación de la API de servidor](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/341448?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/344657?learn=on&enablevpops&captions=spa)

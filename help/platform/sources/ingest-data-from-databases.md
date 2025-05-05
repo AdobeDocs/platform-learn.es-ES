@@ -18,4 +18,4 @@ ht-degree: 0%
 
 En este vídeo se explica cómo realizar una ingesta por lotes de datos desde una fuente de base de datos en el Perfil del cliente en tiempo real y el lago de datos de Adobe Experience Platform, de forma sencilla y escalable. Para obtener documentación más detallada del producto, consulte [base de datos](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=es#database) en la página de descripción general de Source Connectors o la [documentación del conector de origen de Google Big Query](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/databases/bigquery.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/329317?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/345119?learn=on&enablevpops&captions=spa)

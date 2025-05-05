@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Aprenda a utilizar el panel de detección en el asistente de IA. Para obtener más información, consulte la [guía de la interfaz de usuario del Asistente de IA](https://experienceleague.adobe.com/es/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).
 
->[!VIDEO](https://video.tv.adobe.com/v/3440962/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3440965/?learn=on&enablevpops&captions=spa)

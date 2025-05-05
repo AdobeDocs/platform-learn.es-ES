@@ -19,7 +19,7 @@ ht-degree: 8%
 
 Administre el cifrado de datos en reposo con sus propias claves de cifrado. Para obtener más información, visite la [documentación de claves administradas por el cliente](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/3410673/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413981/?learn=on&enablevpops&captions=spa)
 
 >[!IMPORTANT]
 >

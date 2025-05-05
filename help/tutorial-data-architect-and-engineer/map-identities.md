@@ -26,7 +26,7 @@ Adobe Experience Platform servicio de identidad le ayuda a obtener una mejor vis
 **Los arquitectos** de datos deberán asignar identidades fuera de este tutorial.
 
 Antes de comenzar los ejercicios, vea este breve vídeo para obtener más información sobre la identidad en Adobe Experience Platform:
->[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3422777?learn=on&enablevpops&captions=spa)
 
 >[!NOTE]
 >

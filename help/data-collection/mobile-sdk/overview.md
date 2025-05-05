@@ -20,4 +20,4 @@ Descubra cómo el SDK de Adobe Experience Platform Mobile potencia la participac
 >
 > El lanzamiento ahora es **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/28948?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/33545?learn=on&enablevpops&captions=spa)

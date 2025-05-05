@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Este vídeo muestra cómo crear políticas de combinación en Adobe Experience Platform. Las políticas de combinación son las reglas que utiliza Platform para determinar qué datos se utilizarán y priorizarán al combinar conjuntos de datos de fuentes dispares para crear perfiles de clientes. Para obtener más información, visite la [documentación de políticas de combinación](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/345075?learn=on&enablevpops&captions=spa)

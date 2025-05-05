@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Obtenga información sobre cómo añadir usuarios y administrar permisos para las funciones de recopilación de datos de Adobe Experience Platform, de modo que los empleados de su empresa tengan el acceso que necesitan para realizar sus trabajos.
 
->[!VIDEO](https://video.tv.adobe.com/v/28734/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/33398/?learn=on&enablevpops&captions=spa)

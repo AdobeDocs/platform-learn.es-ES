@@ -18,7 +18,7 @@ ht-degree: 16%
 
 Aprenda a tomar el control completo de los datos desde el punto en el que se recopilan en las fuentes de datos hasta el momento en el que se asocian a destinos fuera de Adobe Experience Platform. La gobernanza de datos es un marco de trabajo fácilmente ampliable profundamente incrustado en los flujos de trabajo de uso de datos. El marco de trabajo se basa en tres aspectos clave: etiquetas, políticas y aplicación. Para obtener más información, visite la [documentación de control de datos](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32682?learn=on&enablevpops&captions=spa)
 
 ## Demostración
 
@@ -35,7 +35,7 @@ Consulte y demostración completa de la capacidad de control de datos en Adobe E
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="introduction-to-data-governance.md" title="Demostración completa del control de datos" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36653?format=jpeg&nocache=1740179989077" alt="Demostración completa del control de datos"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/41323?format=jpeg&nocache=1740179989077&captions=spa" alt="Demostración completa del control de datos"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -73,7 +73,7 @@ Obtenga información sobre cómo las etiquetas, las políticas y las acciones de
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="classify-data-using-labels.md" title="Clasificación de datos mediante etiquetas" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29709?format=jpeg&nocache=1740179989358" alt="Clasificación de datos mediante etiquetas"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3422794?format=jpeg&nocache=1740179989358&captions=spa" alt="Clasificación de datos mediante etiquetas"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -96,7 +96,7 @@ Obtenga información sobre cómo las etiquetas, las políticas y las acciones de
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-data-usage-policies.md" title="Creación de políticas de uso de datos" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32977?format=jpeg&nocache=1740179989347" alt="Creación de políticas de uso de datos"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/37128?format=jpeg&nocache=1740179989347&captions=spa" alt="Creación de políticas de uso de datos"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -156,7 +156,7 @@ Obtenga información sobre cómo Experience Platform respeta el consentimiento d
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="integrate-with-iab-transparency-and-consent-framework-2.md" title="Integración del marco de transparencia y consentimiento 2.0 de IAB" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/38346?format=jpeg&nocache=1740179989597" alt="Integración del marco de transparencia y consentimiento 2.0 de IAB"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/326482?format=jpeg&nocache=1740179989597&captions=spa" alt="Integración del marco de transparencia y consentimiento 2.0 de IAB"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -179,7 +179,7 @@ Obtenga información sobre cómo Experience Platform respeta el consentimiento d
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="enforce-consent.md" title="Aplicar consentimiento" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345677?format=jpeg&nocache=1740179989584" alt="Aplicar consentimiento"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3412098?format=jpeg&nocache=1740179989584&captions=spa" alt="Aplicar consentimiento"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

@@ -18,4 +18,4 @@ ht-degree: 46%
 
 Obtenga información sobre cómo validar datos ingeridos, obtener una vista previa de datos y explorar propiedades estadísticas y analíticas de datos mediante funciones SQL. Para obtener más información, visite la [documentación del servicio de consultas](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/333415?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3414054?learn=on&enablevpops&captions=spa)

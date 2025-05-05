@@ -25,4 +25,4 @@ Obtenga información sobre cómo crear una regla de reenvío de eventos en la re
 > * Platform Launch Server Side ahora está **[!DNL event forwarding]**
 > * Las configuraciones de Edge ahora son **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/331942?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3410371?learn=on&enablevpops&captions=spa)

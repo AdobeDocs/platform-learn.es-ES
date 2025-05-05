@@ -20,7 +20,7 @@ ht-degree: 25%
 
 Más información sobre cómo los libros de casos de uso pueden ayudar a los clientes de Real-time Customer Data Platform y Journey Optimizer a obtener una relación tiempo-valor más rápida. Los libros de casos de uso son un catálogo de docenas de plantillas que abarcan varios sectores y objetivos de marketing. Los libros de reproducción generan recursos técnicos como audiencias, recorridos y esquemas, que luego se pueden personalizar y publicar en otros entornos limitados. Para obtener más información, consulte la [Documentación de manuales de casos de uso](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/3426896/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441818/?learn=on&enablevpops&captions=spa)
 
 ## Introducción 
 
@@ -37,7 +37,7 @@ Aprenda a configurar la cuenta de Platform para los libros de reproducción de c
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-a-playbook-sandbox.md" title="Configuración de una zona protegida de manual" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3426987/?format=jpeg&nocache=1739379898120" alt="Configuración de una zona protegida de manual"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449829/?format=jpeg&nocache=1739379898120&captions=spa" alt="Configuración de una zona protegida de manual"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

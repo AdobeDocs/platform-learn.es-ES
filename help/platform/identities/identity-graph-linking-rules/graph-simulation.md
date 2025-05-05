@@ -24,5 +24,5 @@ ht-degree: 0%
 
 Aprenda a utilizar el simulador de gráficos para probar las reglas de vinculación de gráficos de identidad en Adobe Experience Platform. Experimente con diferentes escenarios y juegue con &quot;gráficos únicos por gráfico&quot; y configuraciones de prioridad para verificar qué reglas necesita para que su empresa evite el colapso del gráfico. Para obtener más información, consulte la [Guía de la interfaz de usuario de simulación de gráficos](https://experienceleague.adobe.com/es/docs/experience-platform/identity/features/identity-graph-linking-rules/graph-simulation).
 
->[!VIDEO](https://video.tv.adobe.com/v/3444032/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3444046/?learn=on&enablevpops&captions=spa)
 

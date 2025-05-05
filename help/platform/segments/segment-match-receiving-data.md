@@ -18,5 +18,5 @@ ht-degree: 90%
 
 Coincidencia de segmentos permite a sus socios estratégicos compartir datos con usted. En este vídeo, aprenderá a aprobar y recibir los datos y descubrirá dónde puede verlos y agregarlos a sus propios segmentos.
 
->[!VIDEO](https://video.tv.adobe.com/v/344419/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3411139/?learn=on&enablevpops&captions=spa)
 

@@ -19,5 +19,5 @@ ht-degree: 21%
 
 Obtenga información sobre cómo suscribirse a eventos de privacidad para automatizar los flujos de trabajo basados en el estado del trabajo. Para obtener más información, visite la [documentación de Privacy Services](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/336073?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448175?learn=on&enablevpops&captions=spa)
 

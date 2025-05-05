@@ -56,7 +56,7 @@ Platform Web SDK no es una evolución de la biblioteca at.js de Target. Se trata
 
 El siguiente vídeo ofrece información general sobre Adobe Experience Platform Web SDK y Adobe Experience Platform Edge Network.
 
->[!VIDEO](https://video.tv.adobe.com/v/34141/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/37261/?learn=on&enablevpops&captions=spa)
 
 Ahora que comprende las grandes diferencias entre at.js y Platform Web SDK, puede [planificar la migración](plan-migration.md).
 

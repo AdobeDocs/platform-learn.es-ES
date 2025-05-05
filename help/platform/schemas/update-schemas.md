@@ -18,4 +18,4 @@ ht-degree: 2%
 
 En este vídeo se revisan algunos de los aspectos básicos que hay que tener en cuenta al actualizar esquemas existentes en Adobe Experience Platform. Para obtener más información, visite la [documentación de esquemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/333612?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413637?learn=on&enablevpops&captions=spa)

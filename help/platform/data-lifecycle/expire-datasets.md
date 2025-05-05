@@ -22,7 +22,7 @@ Obtenga información sobre cómo programar eliminaciones de conjuntos de datos m
 La eliminación de conjuntos de datos permite a los administradores de datos y a los ingenieros de datos establecer una fecha de caducidad para un conjunto de datos. Para obtener más información, visite la [documentación sobre higiene de los datos](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html?lang=es).
 
 
->[!VIDEO](https://video.tv.adobe.com/v/345065?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430304?learn=on&enablevpops&captions=spa)
 
 >[!NOTE]
 >

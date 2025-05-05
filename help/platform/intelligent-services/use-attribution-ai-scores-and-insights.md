@@ -18,4 +18,4 @@ ht-degree: 51%
 
 Aprenda a utilizar la página de perspectivas de Attribution AI para comprender el ROI de los canales y campañas de marketing. Para obtener más información, visite la [Documentación de inteligencia artificial aplicada a la atribución](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/32669?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/345099?learn=on&enablevpops&captions=spa)

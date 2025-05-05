@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Una vez que se ha conectado un recurso compartido de segmentos con un socio de datos, puede explorar y comenzar a compartir datos con socios. Este vídeo lo acompaña durante el proceso de configuración de una instancia de Coincidencia de segmentos para un recurso compartido de datos. Para obtener más información, consulte la [documentación](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/342336/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346704/?learn=on&enablevpops&captions=spa)

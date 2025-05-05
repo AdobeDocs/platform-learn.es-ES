@@ -23,4 +23,4 @@ Obtenga información sobre cómo crear tableros en Adobe Experience Platform. Pa
 >
 >La función de paneles definida por el usuario está en versión beta. Sus funciones y documentación están sujetas a cambios.
 
->[!VIDEO](https://video.tv.adobe.com/v/3409637/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413780/?learn=on&enablevpops&captions=spa)
