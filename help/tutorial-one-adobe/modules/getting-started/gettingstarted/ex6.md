@@ -3,9 +3,10 @@ title: 'Primeros pasos: Adobe I/O'
 description: 'Primeros pasos: Adobe I/O'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 431f7696df12c8c133aced57c0f639c682304dee
+exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
+source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '435'
 ht-degree: 0%
 
 ---
@@ -21,11 +22,16 @@ Vaya a [https://developer.adobe.com/console/home](https://developer.adobe.com/co
 ![Nueva integración de Adobe I/O](./images/iohome.png){zoomable="yes"}
 
 Asegúrese de seleccionar la instancia correcta en la esquina superior derecha de la pantalla. Su instancia es `--aepImsOrgName--`.
+
+>[!NOTE]
+>
+> La siguiente captura de pantalla muestra una organización específica seleccionada. Cuando vaya a través de este tutorial, es muy probable que su organización tenga un nombre diferente. Cuando se registró en este tutorial, se le proporcionaron los detalles del entorno que debe utilizar, siga esas instrucciones.
+
 A continuación, seleccione **Crear nuevo proyecto**.
 
 ![Nueva integración de Adobe I/O](./images/iocomp.png){zoomable="yes"}
 
-### API de servicios de Firefly
+### API de Firefly Services
 
 Entonces debería ver esto. Seleccione **+ Agregar al proyecto** y elija **API**.
 
@@ -35,7 +41,7 @@ La pantalla debería tener un aspecto similar al siguiente.
 
 ![Nueva integración de Adobe I/O](./images/api1.png){zoomable="yes"}
 
-Seleccione **Creative Cloud**, elija **Firefly - Servicios de Firefly** y luego seleccione **Siguiente**.
+Seleccione **Creative Cloud**, elija **Firefly - Firefly Services** y luego seleccione **Siguiente**.
 
 ![Nueva integración de Adobe I/O](./images/api3.png){zoomable="yes"}
 
@@ -57,7 +63,7 @@ Seleccione **+ Agregar al proyecto** y luego seleccione **API**.
 
 ![Almacenamiento de Azure](./images/ps2.png){zoomable="yes"}
 
-Seleccione **Creative Cloud** y elija **Photoshop - Servicios de Firefly**. Seleccione **Siguiente**.
+Seleccione **Creative Cloud** y elija **Photoshop - Firefly Services**. Seleccione **Siguiente**.
 
 ![Almacenamiento de Azure](./images/ps3.png){zoomable="yes"}
 

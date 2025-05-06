@@ -4,9 +4,9 @@ description: 'Introducción: Creación de una secuencia de datos'
 kt: 5342
 doc-type: tutorial
 exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
-source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
+source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '1001'
 ht-degree: 1%
 
 ---
@@ -16,6 +16,15 @@ ht-degree: 1%
 Vaya a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}.
 
 ![DSN](./images/launchprop.png)
+
+Antes de continuar, asegúrese de haber seleccionado el entorno correcto mediante el conmutador de entornos en la esquina superior derecha de la pantalla. El entorno adecuado para usar se llama `--aepImsOrgName--`.
+
+>[!NOTE]
+>
+> La siguiente captura de pantalla muestra una organización específica seleccionada. Cuando vaya a través de este tutorial, es muy probable que su organización tenga un nombre diferente. Cuando se registró en este tutorial, se le proporcionaron los detalles del entorno que debe utilizar, siga esas instrucciones.
+
+
+![DSN](./images/org.png)
 
 En el menú de la izquierda, haga clic en **[!UICONTROL Etiquetas]**. Después del ejercicio anterior, ahora tiene 3 propiedades de recopilación de datos: una para la web, otra para el móvil y otra para la aplicación CX.
 
@@ -33,13 +42,17 @@ Haga clic en **[!UICONTROL Datastreams]**.
 
 En la esquina superior derecha de la pantalla, seleccione el nombre de la zona protegida, que debe ser `--aepSandboxName--`.
 
+>[!NOTE]
+>
+> La siguiente captura de pantalla muestra una zona protegida específica que se está seleccionando. Cuando revise este tutorial, es muy probable que la zona protegida tenga un nombre diferente. Cuando se registró en este tutorial, se le proporcionaron los detalles del entorno que debe utilizar, siga esas instrucciones.
+
 ![Haga clic en el icono Configuración de Edge en el panel de navegación izquierdo](./images/edgeconfig1b.png)
 
 Haga clic en **[!UICONTROL Nueva secuencia de datos]**.
 
 ![Haga clic en el icono Configuración de Edge en el panel de navegación izquierdo](./images/edgeconfig1.png)
 
-Para **[!UICONTROL Name]** y para la descripción opcional, escriba `--aepUserLdap-- - One Adobe Datastream`. Para **Esquema de asignación**, seleccione **Sistema de demostración - Esquema de evento para el sitio web (Global v1.1)**. Haga clic en **Guardar**.
+Para **Name** y para la descripción opcional, escriba `--aepUserLdap-- - One Adobe Datastream`. Para **Esquema de asignación**, seleccione **Sistema de demostración - Esquema de evento para el sitio web (Global v1.1)**. Haga clic en **Guardar**.
 
 ![Asigne un nombre a la configuración de Edge y guarde](./images/edgeconfig2.png)
 
@@ -108,6 +121,10 @@ Haga clic en **[!UICONTROL Datastreams]**.
 ![Haga clic en el icono Flujo de datos en el panel de navegación izquierdo](./images/edgeconfig1a.png)
 
 En la esquina superior derecha de la pantalla, seleccione el nombre de la zona protegida, que debe ser `--aepSandboxName--`.
+
+>[!NOTE]
+>
+> La siguiente captura de pantalla muestra una zona protegida específica que se está seleccionando. Cuando revise este tutorial, es muy probable que la zona protegida tenga un nombre diferente. Cuando se registró en este tutorial, se le proporcionaron los detalles del entorno que debe utilizar, siga esas instrucciones.
 
 ![Haga clic en el icono Configuración de Edge en el panel de navegación izquierdo](./images/edgeconfig1b.png)
 

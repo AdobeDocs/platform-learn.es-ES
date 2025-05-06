@@ -4,9 +4,9 @@ description: 'Introducción: Uso de la aplicación móvil'
 kt: 5342
 doc-type: tutorial
 exl-id: a619dd84-5c9e-4c1e-a753-2d98f50f4cfb
-source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
+source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## Descargue la aplicación
 
-Vaya a [https://bit.ly/dx-demo-app](https://bit.ly/dx-demo-app){target="_blank"} en su equipo. Entonces verá esto...
+Vaya a [https://dsn.adobe.com/install](https://dsn.adobe.com/install){target="_blank"} en su equipo. Inicie sesión con su Adobe ID y verá lo siguiente.
 
 ![DSN](./images/mobileapp.png)
 
