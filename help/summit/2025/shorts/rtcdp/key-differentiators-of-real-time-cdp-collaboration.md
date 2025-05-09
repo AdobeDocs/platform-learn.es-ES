@@ -1,0 +1,23 @@
+---
+title: Diferenciadores clave de Real-Time CDP Collaboration
+description: Explore las características exclusivas de Real-Time CDP Collaboration de Adobe, incluida su interfaz de usuario fácil de usar para expertos en marketing, interoperabilidad y diseño centrado en la privacidad.
+doc-type: Short Video
+duration: 76
+index: false
+hide: true
+hidefromtoc: true
+recommendations: noCatalog, noDisplay
+source-git-commit: 2af7500de12a9fd78e64c6a12a42b2fbbf121eba
+workflow-type: tm+mt
+source-wordcount: '46'
+ht-degree: 0%
+
+---
+
+
+# Diferenciadores clave de Real-Time CDP Collaboration
+
+Explore las características exclusivas de Real-Time CDP Collaboration de Adobe, incluida su interfaz de usuario fácil de usar para expertos en marketing, interoperabilidad y diseño centrado en la privacidad.
+
+<!-- 62_OS511_3442426_75_key-differentiators-of-realtime-cdp-collaboration -->
+>[!VIDEO](https://video.tv.adobe.com/v/3458280/?learn=on&enablevpops=true)
