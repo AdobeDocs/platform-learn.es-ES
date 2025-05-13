@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
+source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
 workflow-type: tm+mt
-source-wordcount: '2050'
+source-wordcount: '2109'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,10 @@ Haga clic en la flecha para abrir el menú desplegable y seleccione **Clonar**.
 ![WF Fusion](./images/wffc2.png)
 
 Establezca **Name** del escenario clonado en `--aepUserLdap-- - Firefly + Photoshop` y seleccione el **equipo de destino** adecuado. Haga clic en **Agregar** para agregar un nuevo enlace web.
+
+>[!NOTE]
+>
+>Es posible que no vea la opción de seleccionar un **Equipo de destino**. Esta opción solo se muestra si es un usuario de más de 1 equipo en Workfront Fusion. Si no ve esta opción, simplemente significa que solo se le ha agregado a 1 equipo, por lo que no se necesita ninguna opción.
 
 ![WF Fusion](./images/wffc3.png)
 
@@ -214,7 +218,7 @@ Pegue el nombre **2048x2048-background** en el diálogo de Workfront Fusion.
 
 Desplácese hacia abajo hasta que vea **Entrada**. Ahora debe definir lo que debe insertarse en la capa de fondo. En este caso, debe seleccionar la salida del módulo **Adobe Firefly**, que contiene la imagen generada dinámicamente.
 
-Para **Almacenamiento**, seleccione **Externo**. Para **ubicación de archivos**, copie y pegue la variable `{{XX.details[].url}}` de la salida del módulo **Adobe Firefly**. Reemplace **XX** en la variable por el número de secuencia del módulo **Adobe Firefly**, que en este ejemplo es **22**.
+Para **Almacenamiento**, seleccione **Externo**. Para **Ubicación de archivo**, tendrá que copiar y pegar la variable `{{XX.details[].url}}` de la salida del módulo **Adobe Firefly**, pero tendrá que reemplazar **XX** en la variable por el número de secuencia del módulo **Adobe Firefly**, que en este ejemplo es **22**.
 
 ![WF Fusion](./images/wffc28.png)
 
@@ -257,7 +261,7 @@ Ahora puede ver que un nuevo archivo de PSD se generó correctamente y se almace
 
 ## 1.2.4.3 Cambiar las capas de texto del archivo PSD
 
-### Texto de la llamada a la acción
+### Texto de call to action
 
 A continuación, pase el ratón sobre el módulo **Adobe Photoshop - Aplicar ediciones de PSD** y haga clic en el icono **+**.
 
@@ -281,7 +285,7 @@ Para el **archivo de entrada**, seleccione **Azure** para **almacenamiento de ar
 
 ![WF Fusion](./images/wffc37a.png)
 
-Abra el archivo **citisignal-fiber.psd**. En el archivo, verá que la capa que contiene la llamada a la acción se llama **2048x2048-cta**.
+Abra el archivo **citisignal-fiber.psd**. En el archivo, verá que la capa que contiene call to action se llama **2048x2048-cta**.
 
 ![WF Fusion](./images/wffc38.png)
 
@@ -317,7 +321,7 @@ Ahora necesita definir la ubicación del **archivo de entrada**, que es el resul
 
 Para el **archivo de entrada**, seleccione **Azure** para **almacenamiento de archivos de entrada** y asegúrese de seleccionar el resultado de la solicitud anterior, **Adobe Photoshop - Editar capas de texto**, que puede tomar desde aquí: `data[]._links.renditions[].href`
 
-Abra el archivo **citisignal-fiber.psd**. En el archivo, verá que la capa que contiene la llamada a la acción se llama **2048x2048-button-text**.
+Abra el archivo **citisignal-fiber.psd**. En el archivo, verá que la capa que contiene el call to action se llama **2048x2048-button-text**.
 
 ![WF Fusion](./images/wffc44.png)
 
