@@ -22,7 +22,7 @@ ht-degree: 17%
 >
 >Las reglas de vinculación de gráficos de identidad están actualmente en disponibilidad limitada. Póngase en contacto con el equipo de su cuenta de Adobe para obtener información sobre cómo acceder a la función en los entornos limitados de desarrollo.
 
-Obtenga información general sobre cómo las reglas de vinculación de gráficos de identidad ayudan a los arquitectos de datos a mantener perfiles de clientes precisos y a evitar el colapso del gráfico. Para obtener más información, consulte la [documentación de reglas de vinculación de gráficos de identidad](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview).
+Obtenga información general sobre cómo las reglas de vinculación de gráficos de identidad ayudan a los arquitectos de datos a mantener perfiles de clientes precisos y a evitar el colapso del gráfico. Para obtener más información, consulte la [documentación de reglas de vinculación de gráficos de identidad](https://experienceleague.adobe.com/es/docs/experience-platform/identity/features/identity-graph-linking-rules/overview).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3448250/?learn=on&enablevpops)
 
