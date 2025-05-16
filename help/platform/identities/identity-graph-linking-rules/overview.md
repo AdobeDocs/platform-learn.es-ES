@@ -24,7 +24,7 @@ ht-degree: 17%
 
 Obtenga información general sobre cómo las reglas de vinculación de gráficos de identidad ayudan a los arquitectos de datos a mantener perfiles de clientes precisos y a evitar el colapso del gráfico. Para obtener más información, consulte la [documentación de reglas de vinculación de gráficos de identidad](https://experienceleague.adobe.com/es/docs/experience-platform/identity/features/identity-graph-linking-rules/overview).
 
->[!VIDEO](https://video.tv.adobe.com/v/3448250/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448275/?learn=on&enablevpops&captions=spa)
 
 ## Configuración
 
@@ -41,7 +41,7 @@ Obtenga información sobre cómo simular y aplicar reglas.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="graph-simulation.md" title="Reglas de vinculación de gráficos de identidad: simulación de gráficos" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444032/?format=jpeg&nocache=1747355376342" alt="Reglas de vinculación de gráficos de identidad: simulación de gráficos"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444046/?format=jpeg&nocache=1747355376342&captions=spa" alt="Reglas de vinculación de gráficos de identidad: simulación de gráficos"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
