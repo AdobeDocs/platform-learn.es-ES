@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: 64cce12ba89112583a9cabb4558622ba970335f0
+source-git-commit: e7f83f362e5c9b2dff93d43a7819f6c23186b456
 workflow-type: tm+mt
-source-wordcount: '2222'
+source-wordcount: '2596'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,37 @@ Aprenda a utilizar Postman y Adobe I/O para consultar las API de Adobe Firefly S
 
 Antes de continuar con este ejercicio, debes haber completado la configuración de [tu proyecto de Adobe I/O](./../../../modules/getting-started/gettingstarted/ex6.md), y también debes haber configurado una aplicación para interactuar con las API, como [Postman](./../../../modules/getting-started/gettingstarted/ex7.md) o [PostBuster](./../../../modules/getting-started/gettingstarted/ex8.md).
 
-## 1.1.1.2 Explorar firefly.adobe.com - fase 1
+## 1.1.1.2 conceptos básicos de API
+
+Existen varios tipos de solicitudes de API:
+
+- **GET**: se usa al intentar recuperar información de un extremo de API, como obtener un informe de estado
+- **POST**: se usa cuando hay que hacer algo nuevo, como hacer que Adobe Firefly Services genere una imagen nueva
+- **PUT**: se usa para actualizar por completo los datos existentes
+- **PATCH**: se usa para actualizar de forma selectiva los datos existentes
+- **DELETE**: se usa para eliminar datos
+
+Al trabajar con API, también verá que los distintos extremos de API devuelven códigos de respuesta.
+
+Hay 5 categorías diferentes de respuestas que puede esperar:
+
+- **1xx respuesta informativa**: se recibió la solicitud, continuando el proceso
+- **2xx correcta**: la solicitud se recibió, entendió y aceptó correctamente
+- **redirección de 3xx**: se deben realizar más acciones para completar la solicitud
+- **Error de cliente de 4xx**: la solicitud contiene una sintaxis incorrecta o no se puede completar
+- **Error del servidor 5xx**: el servidor no pudo cumplir una solicitud aparentemente válida
+
+Este es un ejemplo de códigos de respuesta comunes que puede esperar:
+
+- **200 OK**: correcto, la solicitud se completó correctamente
+- **201 Creado**: esto es bueno, por ejemplo, su imagen se ha creado
+- **202 Aceptada**: esto es bueno, su solicitud es aceptada y se procesará
+- **401 No autorizado**: no es correcto, probablemente el token de acceso no es válido
+- **403 Prohibido**: no es correcto, probablemente no tenga los permisos necesarios para la acción que intenta ejecutar
+- **404 no encontrado**: no es correcto, probablemente la dirección URL que intenta alcanzar no existe
+- **429 Demasiadas solicitudes**: esto no es bueno, es probable que haya enviado a muchas solicitudes en un corto período de tiempo. Inténtelo de nuevo más tarde.
+
+## 1.1.1.3 Explorar firefly.adobe.com - fase 1
 
 Empecemos a explorar Adobe Firefly Services. Para la exploración, comience con un ejemplo de generación de imágenes de CitiSignal. El equipo de diseño de CitiSignal desea generar una versión en neón del nombre de la marca CitiSignal. Les gustaría usar Adobe Firefly Services para ello.
 
@@ -29,7 +59,7 @@ Lo primero que se necesita para lograrlo, es una versión en blanco y negro del 
 
 ![Postman](./images/CitiSignal.jpg)
 
-### 1.1.1.2.1 Crear su imagen de referencia de composición
+### 1.1.1.3.1 Crear su imagen de referencia de composición
 
 Puede usar [esta imagen de muestra](./images/CitiSignal.jpg) o crear su propio texto para experimentar. Siga los siguientes pasos en Adobe Illustrator para crear su propio archivo de imagen. Si decide utilizar la imagen predefinida, omita la siguiente sección y vaya al paso **1.1.1.2.2 Genere la imagen** directamente.
 
@@ -81,7 +111,7 @@ Asigne un nombre al archivo y guárdelo en el escritorio. Haga clic en **Guardar
 
 ![Postman](./images/ill13.png)
 
-### 1.1.1.2.2 Generar su imagen
+### 1.1.1.3.2 Generar su imagen
 
 Vaya a [https://firefly.adobe.com](https://firefly.adobe.com). Haz clic en el icono **perfil** y asegúrate de haber iniciado sesión en la **cuenta** correcta, que debería ser `--aepImsOrgName--`. Si es necesario, haga clic en **Cambiar perfil** para cambiar a esa cuenta.
 
@@ -109,7 +139,7 @@ Ahora tiene varias imágenes que muestran una versión en neón del nombre de la
 
 Ahora ha aprendido a utilizar Firefly para solucionar un problema de diseño en cuestión de minutos.
 
-## 1.1.1.3 Explorar firefly.adobe.com - fase 2
+## 1.1.1.4 Explorar firefly.adobe.com - fase 2
 
 Vaya a [https://firefly.adobe.com/generate/image](https://firefly.adobe.com/generate/image). Entonces debería ver esto. Haga clic en la lista desplegable **Modelo**. Verá que hay 3 versiones disponibles de Adobe Firefly Services:
 
@@ -184,13 +214,13 @@ Para el siguiente ejercicio, tendrás que usar uno de los números **seed**. Ano
 
 En el siguiente ejercicio hará cosas similares con Firefly Services, pero utilizando la API en lugar de la interfaz de usuario. En este ejemplo, el número de semilla es **142194** para la primera imagen, que tiene 2 caballos mirándose unos a otros con sus cabezas mirando hacia otros.
 
-## 1.1.1.4 Adobe I/O - access_token
+## 1.1.1.5 Adobe I/O - access_token
 
 En la colección **Adobe IO - OAuth**, seleccione la solicitud **POST - Obtener token de acceso** y seleccione **Enviar**. La respuesta debe contener un nuevo **accestoken**.
 
 ![Postman](./images/ioauthresp.png)
 
-## 1.1.1.5 API de Firefly Services, Texto 2 Imagen, Imagen 3
+## 1.1.1.6 API de Firefly Services, Texto 2 Imagen, Imagen 3
 
 Ahora que tiene un access_token válido y nuevo, está listo para enviar su primera solicitud a las API de Firefly Services.
 
@@ -269,7 +299,7 @@ La imagen ha cambiado un poco de nuevo.
 
 ![Firefly](./images/ff10.png)
 
-## 1.1.1.6 API de Firefly Services, Gen Expand
+## 1.1.1.7 API de Firefly Services, Gen Expand
 
 Seleccione la solicitud **POST - Firefly - Gen Expand** de la colección **FF - Firefly Services Tech Insiders** y vaya al **Cuerpo** de la solicitud.
 
@@ -297,15 +327,25 @@ A continuación, debe ver que la imagen original se utiliza en una ubicación di
 
 ![Firefly](./images/ff15.png)
 
-## 1.1.1.7 API de Firefly Services, imagen de texto 2, imagen 4 e imagen 4 Ultra
+## 1.1.1.8 API de Firefly Services, imagen de texto 2, imagen 4 e imagen 4 Ultra
 
-### 1.1.1.7.1 image4_standard
+Con la reciente versión de Firefly Image Model 4, se han puesto a disposición varias mejoras:
+
+- Firefly Image Model 4 ofrece una salida de resolución 2K con definición y detalles mejorados.
+- Firefly Image Model 4 ofrece mejoras significativas en el procesamiento de texto, humanos, animales y arquitectura.
+- Firefly Image Model 4 mantiene el compromiso de Adobe con la IA generativa, compatible con la IP y segura desde el punto de vista comercial.
+
+Firefly Image Model 4 le ofrece imágenes excepcionales de personas, animales y escenas detalladas, y puede utilizar Image Model 4 Ultra para generar imágenes con interacciones humanas hiperrealistas, elementos arquitectónicos y paisajes complejos&#x200B;
+
+### 1.1.1.8.1 image4_standard
 
 Seleccione la solicitud **POST - Firefly - T2I V4** de la colección **FF - Firefly Services Tech Insiders** y vaya a los **Encabezados** de la solicitud.
 
 Verá que la dirección URL de la solicitud es diferente de la solicitud **API de Firefly Services, texto 2, imagen 3**, que era **https://firefly-api.adobe.io/v3/images/generate**. Esta dirección URL apunta a **https://firefly-api.adobe.io/v3/images/generate-async**. La adición de **-async** en la dirección URL significa que está usando el extremo asincrónico.
 
 En las variables **Header** verá una nueva variable llamada **x-model-version**. Se trata de un encabezado obligatorio al interactuar con Firefly Image 4 e Image 4 Ultra. Para usar Firefly Image 4 o Image 4 Ultra al generar imágenes, el valor del encabezado debe establecerse en `image4_standard` o `image4_ultra`. En este ejemplo, se usa `image4_standard`.
+
+Si no establece **x-model-version** en `image4_standard` o `image4_ultra`, Firefly Services usará de forma predeterminada `image3` actualmente.
 
 ![Firefly](./images/ffim4_1.png)
 
@@ -333,7 +373,7 @@ Debería ver una imagen hiperrealista de **caballos en un campo**.
 
 ![Firefly](./images/ffim4_7.png)
 
-### 1.1.1.7.2 image4_ultra
+### 1.1.1.8.2 image4_ultra
 
 Vuelva a la solicitud **POST - Firefly - T2I V4** de la colección **FF - Firefly Services Tech Insiders** y vaya a los **Encabezados** de la solicitud.
 

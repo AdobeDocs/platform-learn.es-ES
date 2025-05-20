@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
+source-git-commit: e7f83f362e5c9b2dff93d43a7819f6c23186b456
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1918'
 ht-degree: 1%
 
 ---
@@ -17,11 +17,47 @@ ht-degree: 1%
 
 Obtenga información sobre cómo optimizar el proceso de Firefly mediante Microsoft Azure y las direcciones URL prefirmadas.
 
-## 1.1.2.1 crear una suscripción de Azure
+## 1.1.2.1 ¿Qué son las direcciones URL prefirmadas?
+
+Una dirección URL prefirmada es una dirección URL que concede acceso temporal a un objeto específico en una ubicación de almacenamiento. Mediante la dirección URL, un usuario puede, por ejemplo, LEER el objeto o ESCRIBIR un objeto (o actualizar un objeto existente). La dirección URL contiene parámetros específicos que establece la aplicación.
+
+En el contexto de la creación de automatización de la cadena de suministro de contenido, a menudo hay varias operaciones de archivo que deben realizarse para un caso de uso específico. Por ejemplo, puede que sea necesario cambiar el fondo de un archivo, el texto de varias capas, etc. No siempre es posible realizar todas las operaciones de archivo al mismo tiempo, lo que crea la necesidad de un enfoque de varios pasos. Después de cada paso intermedio, la salida es un archivo temporal necesario para ejecutar el siguiente paso. Una vez ejecutado el siguiente paso, el archivo temporal pierde valor rápidamente y, a menudo, ya no es necesario, por lo que debe eliminarse.
+
+Actualmente, Adobe Firefly Services admite estos dominios:
+
+- Amazon AWS: *.amazonaws.com
+- Microsoft Azure: *.windows.net
+- Dropbox: *.dropboxusercontent.com
+
+El motivo por el que a menudo se utilizan soluciones de almacenamiento en la nube es que los recursos intermedios que se crean pierden valor rápidamente. El problema que se resuelve con las URL prefirmadas suele resolverse mejor con una solución de almacenamiento de productos, que suele ser uno de los servicios en la nube anteriores.
+
+Dentro del ecosistema de Adobe también hay soluciones de almacenamiento, como Frame.io, Workfront Fusion y recursos de Adobe Experience Manager. Estas soluciones también admiten direcciones URL prefirmadas, por lo que a menudo se convierten en una opción que debe realizarse durante la implementación. La elección suele basarse en una combinación de aplicaciones ya disponibles y costes de almacenamiento.
+
+Como tal, las direcciones URL prefirmadas se utilizan en combinación con las operaciones de Adobe Firefly Services porque:
+
+- las organizaciones suelen necesitar procesar varios cambios en la misma imagen en pasos intermedios, y se necesita un almacenamiento intermedio para que sea posible.
+- el acceso a la lectura y escritura desde ubicaciones de almacenamiento en la nube debe ser seguro y, en un entorno del lado del servidor, no es posible iniciar sesión manualmente, por lo que la seguridad debe codificarse directamente en la dirección URL.
+
+Una URL firmada previamente utiliza tres parámetros para limitar el acceso al usuario:
+
+- Ubicación de almacenamiento: podría ser una ubicación de bloque de AWS S3, una ubicación de cuenta de almacenamiento de Microsoft Azure con contenedor
+- Nombre de archivo: el archivo específico que debe leerse, actualizarse y eliminarse.
+- Query string parameter: un parámetro de cadena de consulta siempre comienza con un signo de interrogación y va seguido de una serie compleja de parámetros
+
+Por ejemplo:
+
+- **Amazon AWS**: `https://bucket.s3.eu-west-2.amazonaws.com/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AXXXXXXXXXX%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250510T171315Z&X-Amz-Expires=1800&X-Amz-Signature=XXXXXXXXX&X-Amz-SignedHeaders=host`
+- **Microsoft Azure**: `https://storageaccount.blob.core.windows.net/container/image.png?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=XXXXXX%3D`
+
+## 1.1.2.2 crear una suscripción de Azure
 
 >[!NOTE]
 >
 >Si ya tiene una suscripción a Azure, puede omitir este paso. Continúe con el siguiente ejercicio en ese caso.
+
+>[!NOTE]
+>
+>Si está siguiendo este tutorial como parte de un taller guiado en persona o de una formación guiada bajo demanda, es probable que ya tenga acceso a una cuenta de almacenamiento de Microsoft Azure. En ese caso, no es necesario que cree su propia cuenta; utilice la cuenta que se le ha proporcionado como parte de la formación.
 
 Vaya a [https://portal.azure.com](https://portal.azure.com){target="_blank"} e inicie sesión con su cuenta de Azure. Si no dispone de una, utilice su dirección de correo electrónico personal para crear su cuenta de Azure.
 
@@ -43,7 +79,7 @@ Cuando finalice el proceso de suscripción, ya está listo para comenzar.
 
 ![Almacenamiento de Azure](./images/06azuresubscriptionok.png){zoomable="yes"}
 
-## 1.1.2.2 Crear cuenta de almacenamiento de Azure
+## 1.1.2.3 Crear cuenta de almacenamiento de Azure
 
 Busque `storage account` y luego seleccione **Cuentas de almacenamiento**.
 
@@ -85,7 +121,7 @@ El contenedor ya está listo para usarse.
 
 ![Almacenamiento de Azure](./images/azs9.png){zoomable="yes"}
 
-## 1.1.2.3 Instalar Azure Storage Explorer
+## 1.1.2.4 Instalar Azure Storage Explorer
 
 [Descargue Microsoft Azure Storage Explorer para administrar sus archivos](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"}. Seleccione la versión correcta para su sistema operativo específico, descárguela e instálela.
 
@@ -127,7 +163,7 @@ Abra **Contenedores de blobs** y seleccione el contenedor que creó en el ejerci
 
 ![Almacenamiento de Azure](./images/az18.png){zoomable="yes"}
 
-## 1.1.2.4: carga manual de archivos y uso de un archivo de imagen como referencia de estilo
+## 1.1.2.5: carga manual de archivos y uso de un archivo de imagen como referencia de estilo
 
 Cargue un archivo de imagen de su elección o [este archivo](./images/gradient.jpg){target="_blank"} en el contenedor.
 
@@ -166,7 +202,7 @@ Aparece otra imagen con `horses in a field`, pero esta vez el estilo es similar 
 
 ![Almacenamiento de Azure](./images/az26.png){zoomable="yes"}
 
-## 1.1.2.5: carga de archivo mediante programación
+## 1.1.2.6: carga de archivo mediante programación
 
 Para usar la carga de archivos mediante programación con cuentas de almacenamiento de Azure, debe crear un nuevo token de **firma de acceso compartido (SAS)** con permisos que le permitan escribir un archivo.
 
@@ -247,7 +283,7 @@ Cuando vuelva al Explorador de almacenamiento de Azure, actualice el contenido d
 
 ![Almacenamiento de Azure](./images/az38.png){zoomable="yes"}
 
-## 1.1.2.6 uso de archivos de programación
+## 1.1.2.7 uso de archivos de programación
 
 Para leer archivos mediante programación de cuentas de almacenamiento de Azure a largo plazo, debe crear un nuevo token de **firma de acceso compartido (SAS)**, con permisos que le permitan leer un archivo. Técnicamente, podría utilizar el token SAS creado en el ejercicio anterior, pero se recomienda tener un token independiente con solo permisos de **Read** y un token independiente con solo permisos de **Write**.
 
