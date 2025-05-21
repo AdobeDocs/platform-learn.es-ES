@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Reglas de vinculación de gráficos de identidad: configuración de identidad
 
-Obtenga información sobre cómo habilitar y configurar las reglas de vinculación de gráficos de identidad en Adobe Experience Platform para crear perfiles de cliente precisos. Este vídeo explica la priorización, la configuración de unicidad y la validación del área de nombres para que pueda empezar a utilizar estas funciones en sus entornos limitados de forma eficaz. Para obtener más información, consulte la [Guía de la interfaz de usuario de la configuración de identidad](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-settings-ui).
+Obtenga información sobre cómo habilitar y configurar las reglas de vinculación de gráficos de identidad en Adobe Experience Platform para crear perfiles de cliente precisos. Este vídeo explica la priorización, la configuración de unicidad y la validación del área de nombres para que pueda empezar a utilizar estas funciones en sus entornos limitados de forma eficaz. Para obtener más información, consulte la [Guía de la interfaz de usuario de la configuración de identidad](https://experienceleague.adobe.com/es/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-settings-ui).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3458487/?learn=on&enablevpops)
