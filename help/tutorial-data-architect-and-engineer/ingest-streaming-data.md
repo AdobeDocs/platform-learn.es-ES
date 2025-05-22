@@ -8,9 +8,9 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: e26f2add184031fd95561bd560b24ad73bb73d01
 workflow-type: tm+mt
-source-wordcount: '3309'
+source-wordcount: '3272'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,9 @@ Hay dos tareas principales que debemos completar en la interfaz de recopilación
 
 Antes de comenzar los ejercicios, vea estos dos vídeos cortos para obtener más información sobre la ingesta de datos de flujo continuo y Web SDK:
 
->[!VIDEO](https://video.tv.adobe.com/v/31628?learn=on&enablevpops&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/37261?learn=on&enablevpops&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
 
 >[!NOTE]
 >
@@ -255,7 +255,7 @@ Experience Platform Debugger es una extensión disponible para los navegadores C
 
 Si nunca antes ha utilizado Debugger (y este es diferente del antiguo Adobe Experience Cloud Debugger), puede que desee ver este vídeo de información general de cinco minutos:
 
->[!VIDEO](https://video.tv.adobe.com/v/35998?learn=on&enablevpops&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 ### Abra el sitio web de Luma.
 
@@ -418,7 +418,14 @@ Ahora que hemos capturado el valor de ID de CRM, debemos asociarlo con un tipo d
 
 1. Como **[!UICONTROL ID]**, seleccione el icono para abrir el modal de selección de elementos de datos y elija el elemento de datos `CRM Id`
 1. Como **[!UICONTROL estado autenticado]**, seleccione **[!UICONTROL Autenticado]**
-1. Dejar **[!UICONTROL Principal]** _sin marcar_. Dado que el ID de CRM no está presente para la mayoría de los visitantes del sitio web de Luma, definitivamente _no desea anular el ECID como identificador principal_. Sería un caso de uso poco frecuente utilizar cualquier cosa que no sea el ECID como identificador principal. Por lo general, no menciono la configuración predeterminada en estas instrucciones, pero llamo a esta para ayudarle a evitar dolores de cabeza más adelante en su propia implementación.
+1. Seleccionar **[!UICONTROL principal]**
+
+   >[!TIP]
+   >
+   > Adobe recomienda enviar identidades que representen a una persona, como `Luma CRM Id`, como la identidad [!UICONTROL principal].
+   >
+   > Si el mapa de identidad contiene el identificador de persona (por ejemplo, `Luma CRM Id`), entonces el identificador de persona se convierte en la identidad [!UICONTROL principal]. De lo contrario, `ECID` se convierte en la identidad [!UICONTROL principal].
+
 1. Seleccione el botón **[!UICONTROL Guardar en biblioteca]** (`Luma Platform Tutorial` debe seguir siendo su biblioteca de trabajo)
    ![Añadir el ID de CRM al elemento de datos del mapa de identidad](assets/websdk-property-dataElement-identityMap.png)
 
