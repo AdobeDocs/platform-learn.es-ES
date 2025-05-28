@@ -20,4 +20,4 @@ ht-degree: 0%
 
 El agente de asistencia del producto es un agente de IA siempre activo que puede ayudar a resolver los problemas de atención al cliente aprovechando una amplia gama de fuentes de conocimiento depuradas por equipos de soporte expertos de Adobe e incluso sus propios datos para permitirle solucionar problemas dentro de sus flujos de trabajo. Si necesita ayuda adicional, el Agente de soporte técnico puede crear un caso de soporte con información contextual detallada, lo que reduce en gran medida el tiempo y el trabajo necesarios para crear vales de soporte.
 
->[!VIDEO](https://video.tv.adobe.com/v/3443183/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3443186/?learn=on&enablevpops&captions=spa)
