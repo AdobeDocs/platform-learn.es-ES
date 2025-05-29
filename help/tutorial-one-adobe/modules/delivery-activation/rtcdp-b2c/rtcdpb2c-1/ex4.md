@@ -4,9 +4,9 @@ description: Foundation - Perfil del cliente en tiempo real - Creación de una a
 kt: 5342
 doc-type: tutorial
 exl-id: 4870ea42-810b-400b-8285-ab1f89c6a018
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 9c4d585d99920f0cdfd9de083c3f020f0d8171ab
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '709'
 ht-degree: 3%
 
 ---
@@ -31,7 +31,7 @@ Seleccione **Generar regla** y haga clic en **Crear**.
 
 ![Segmentación](./images/menusegbr.png)
 
-Una vez que esté en el nuevo generador de audiencias, verá inmediatamente la opción de menú **Atributos** y la referencia de **Perfil individual XDM**.
+Una vez que esté en el generador de audiencias, verá inmediatamente la opción de menú **Atributos** y la referencia de **Perfil individual XDM**.
 
 ![Segmentación](./images/segmentationui.png)
 
@@ -83,6 +83,10 @@ El parámetro de comparación debe ser **igual a** y en el campo de entrada, esc
 
 ![Segmentación](./images/pv.png)
 
+Establezca la condición horaria de su segmento en **En las últimas 24 horas**.
+
+![Segmentación](./images/pv1.png)
+
 Cada vez que añada un elemento al generador de audiencias, puede hacer clic en el botón **Actualizar estimación** para obtener una nueva estimación de la población de su audiencia.
 
 Hasta ahora, solo ha utilizado la interfaz de usuario de para crear su audiencia, pero también hay una opción de código para crear una audiencia.
@@ -102,7 +106,7 @@ También puede obtener una vista previa de una muestra de los perfiles de client
 ![Segmentación](./images/previewprofilesdtl.png)
 
 Finalmente, vamos a darle un nombre a su audiencia,
-establezca el **método de evaluación** en **Transmisión** y haga clic en **Publicar**.
+establezca el **método de evaluación** en **Edge** y haga clic en **Publicar**.
 
 Como convención de nombres, utilice:
 

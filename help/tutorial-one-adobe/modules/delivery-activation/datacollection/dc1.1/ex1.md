@@ -4,9 +4,9 @@ description: 'Foundation: configuración de la recopilación de datos de Adobe E
 kt: 5342
 doc-type: tutorial
 exl-id: 1f5dd730-d84a-4d3a-b5ef-2be3e089c7fd
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 9c4d585d99920f0cdfd9de083c3f020f0d8171ab
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '573'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,13 @@ Las marcas utilizan la recopilación de datos de Adobe Experience Platform para 
 
 ## Exploración de la IU
 
-Vaya a [Recopilación de datos de Adobe Experience Platform](https://experience.adobe.com/#/data-collection/).
+Vaya a [Recopilación de datos de Adobe Experience Platform](https://experience.adobe.com/#/data-collection/). Asegúrese de que está usando el entorno correcto, que debería ser `--aepImsOrgName--`.
+
+>[!NOTE]
+>
+>Este tutorial se ha documentado con el entorno **Experience Platform International**. Es probable que el nombre de su entorno sea diferente, por lo que siempre que vea el nombre **Experience Platform International** en una captura de pantalla, debe reemplazarlo por el nombre de su propio entorno, que debería ser `--aepImsOrgName--`.
+
+![Vista de propiedades de Launch](./images/launch0.png)
 
 Ir a **Etiquetas**. Ahora está viendo la vista **[!UICONTROL Propiedades]**. Las propiedades enumeradas aquí son para la administración de tutoriales. Estas propiedades representan:
 
@@ -57,7 +63,7 @@ A continuación se incluye información adicional para aquellos interesados en c
 
 - [Guía del usuario de recopilación de datos de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=es)
 - [Tutorial de implementación de Adobe Experience Cloud con el SDK web](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=es)
-- [Configurar permisos de usuario](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=es)
+- [Configurar permisos de usuario](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html)
 - [Documentación de API](https://developer.adobelaunch.com/api/)
 
 ## Pasos siguientes

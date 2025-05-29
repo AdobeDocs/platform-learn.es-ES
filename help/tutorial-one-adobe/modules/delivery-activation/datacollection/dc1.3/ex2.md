@@ -4,10 +4,10 @@ description: Foundation - FAC - Crear esquemas, modelos de datos y vínculos
 kt: 5342
 doc-type: tutorial
 exl-id: 3b999c1a-cf9e-44a3-8fc1-6a070c3aeb24
-source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
+source-git-commit: 915054a0342a0e5bb003d2fbc73d1540725aa5f0
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 2%
+source-wordcount: '683'
+ht-degree: 3%
 
 ---
 
@@ -67,7 +67,7 @@ En el menú de la izquierda, haz clic en **Modelos** y luego ve a **Esquemas**. 
 
 ![CARA](./images/fdb5.png)
 
-Seleccione su base de datos federada y haga clic en **+ Agregar tablas**.
+Seleccione la base de datos federada y haga clic en **Siguiente**.
 
 ![CARA](./images/fdb6.png)
 
@@ -79,7 +79,7 @@ Entonces verá esto... Seleccione las 5 tablas que creó en Snowflake anteriorme
 - `--aepUserLdap--_PERSONS`
 - `--aepUserLdap--_USERS`
 
-Haga clic en **Agregar**.
+Haga clic en **Next**.
 
 ![CARA](./images/fdb7.png)
 
@@ -94,7 +94,7 @@ Para cada tabla, puede:
 
 Para este ejercicio, no es necesario realizar cambios.
 
-Haga clic en **Crear**.
+Haga clic en **Finalizado**.
 
 ![CARA](./images/fdb8.png)
 
@@ -106,7 +106,7 @@ A continuación, verá esto, con la capacidad de editar la configuración. Haga 
 
 ![CARA](./images/fdb10.png)
 
-A continuación, verá una muestra de los datos.
+A continuación, verá una muestra de los datos. Estos datos se cargan directamente desde Snowflake y no persisten en AEP.
 
 ![CARA](./images/fdb11.png)
 
@@ -136,9 +136,9 @@ Entonces verá esto... Haga clic en **Guardar**.
 
 Ahora puede empezar a definir vínculos entre esquemas. Para empezar a definir un vínculo, debe hacer clic en **Crear vínculos**.
 
-![CARA](./images/fdb16.png)
+![CARA](./images/fdb16a.png)
 
-En primer lugar, definamos el vínculo entre la tabla `--aepUserLdap--_USERS` y `--aepUserLdap--_PERSONS`.
+Primero, debe definir el vínculo entre la tabla `--aepUserLdap--_USERS` y `--aepUserLdap--_PERSONS`.
 
 Haga clic en **Agregar**.
 
@@ -150,7 +150,9 @@ Entonces volverás a estar aquí. Haga clic en **Crear vínculos** para crear ot
 
 ![CARA](./images/fdb17.png)
 
-A continuación, definamos el vínculo entre la tabla `--aepUserLdap--_HOUSEHOLDS` y `--aepUserLdap--_PERSONS`.
+A continuación, debe definir el vínculo entre la tabla `--aepUserLdap--_HOUSEHOLDS` y `--aepUserLdap--_PERSONS`.
+
+Haga clic en **Agregar**.
 
 ![CARA](./images/fdb19.png)
 
@@ -160,10 +162,11 @@ Entonces volverás a estar aquí. Haga clic en **Crear vínculos** para crear ot
 
 ![CARA](./images/fdb20.png)
 
-A continuación, definamos el vínculo entre la tabla `--aepUserLdap--_USERS` y `--aepUserLdap--_MONTHLY_DATA_USAGE`.
+A continuación, debe definir el vínculo entre la tabla `--aepUserLdap--_USERS` y `--aepUserLdap--_MONTHLY_DATA_USAGE`.
+
+Haga clic en **Agregar**.
 
 ![CARA](./images/fdb21.png)
-
 
 ### USUARIOS - HOGARES
 
@@ -171,7 +174,9 @@ Entonces volverás a estar aquí. Haga clic en **Crear vínculos** para crear ot
 
 ![CARA](./images/fdb22.png)
 
-A continuación, definamos el vínculo entre la tabla `--aepUserLdap--_USERS` y `--aepUserLdap--_HOUSEHOLDS`.
+A continuación, debe definir el vínculo entre la tabla `--aepUserLdap--_USERS` y `--aepUserLdap--_HOUSEHOLDS`.
+
+Haga clic en **Agregar**.
 
 ![CARA](./images/fdb23.png)
 
@@ -181,7 +186,9 @@ Entonces volverás a estar aquí. Haga clic en **Crear vínculos** para crear ot
 
 ![CARA](./images/fdb24.png)
 
-A continuación, definamos el vínculo entre la tabla `--aepUserLdap--_USERS` y `--aepUserLdap--_MOBILE_DATA_USAGE`.
+A continuación, debe definir el vínculo entre la tabla `--aepUserLdap--_USERS` y `--aepUserLdap--_MOBILE_DATA_USAGE`.
+
+Haga clic en **Agregar**.
 
 ![CARA](./images/fdb25.png)
 
@@ -189,7 +196,7 @@ Entonces debería ver esto. Haga clic en **Guardar**.
 
 ![CARA](./images/fdb26.png)
 
-Ya ha finalizado la configuración en AEP. Ahora puede empezar a utilizar los datos federados en una composición de audiencia federada.
+Ya está configurada la base de datos federada en Adobe Experience Platform. Ahora puede empezar a utilizar los datos federados en una composición de audiencia federada.
 
 ## Pasos siguientes
 
