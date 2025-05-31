@@ -20,4 +20,4 @@ ht-degree: 0%
 Consulte cómo el asistente de IA de Adobe simplifica las tareas de gestión de audiencia, proporciona perspectivas y pronostica tendencias para los especialistas en marketing.
 
 <!-- 82_OS512_3442427_158_ai-assistant-boosting-productivity-in-audience-management -->
->[!VIDEO](https://video.tv.adobe.com/v/3458182/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459597/?learn=on&enablevpops=true&captions=spa)

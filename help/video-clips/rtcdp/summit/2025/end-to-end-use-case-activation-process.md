@@ -20,4 +20,4 @@ ht-degree: 0%
 Comprenda las seis fases del proceso de activación de casos de uso de extremo a extremo de Adobe, desde la ideación hasta la optimización.
 
 <!-- 65_S651_3442537_212_endtoend-use-case-activation-process -->
->[!VIDEO](https://video.tv.adobe.com/v/3458248/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460245/?learn=on&enablevpops=true&captions=spa)

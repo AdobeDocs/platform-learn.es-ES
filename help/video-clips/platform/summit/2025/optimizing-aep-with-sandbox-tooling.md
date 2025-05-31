@@ -20,4 +20,4 @@ ht-degree: 0%
 Aprenda a utilizar las herramientas de zona protegida para optimizar los flujos de trabajo y permitir la colaboración entre equipos en Adobe Experience Platform.
 
 <!-- 62_S601_3442532_175_optimizing-aep-with-sandbox-tooling -->
->[!VIDEO](https://video.tv.adobe.com/v/3458320/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460555/?learn=on&enablevpops=true&captions=spa)

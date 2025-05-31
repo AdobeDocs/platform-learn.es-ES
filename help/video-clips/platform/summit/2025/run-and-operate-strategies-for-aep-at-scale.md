@@ -20,4 +20,4 @@ ht-degree: 0%
 Comprenda la importancia de ejecutar y operar estrategias, incluida la gobernanza, la monitorización y la medición del ROI, para escalar AEP de forma eficaz.
 
 <!-- 62_S655_3442541_289_run-and-operate-strategies-for-aep-at-scale -->
->[!VIDEO](https://video.tv.adobe.com/v/3458330/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3461139/?learn=on&enablevpops=true&captions=spa)

@@ -20,4 +20,4 @@ ht-degree: 0%
 Explore cómo Adobe utiliza perspectivas basadas en datos y AJO para mejorar la incorporación de los miembros y la retención de unidades.
 
 <!-- 62_S655_3442541_35_adobes-approach-to-member-onboarding-and-retention -->
->[!VIDEO](https://video.tv.adobe.com/v/3458282/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459641/?learn=on&enablevpops=true&captions=spa)

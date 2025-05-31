@@ -20,4 +20,4 @@ ht-degree: 0%
 Descubra el marco de cinco preguntas de Adobe para definir casos de uso de experiencias del cliente para alinear equipos e impulsar resultados empresariales.
 
 <!-- 85_S651_3442537_47_defining-customer-experience-use-cases -->
->[!VIDEO](https://video.tv.adobe.com/v/3458292/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459783/?learn=on&enablevpops=true&captions=spa)

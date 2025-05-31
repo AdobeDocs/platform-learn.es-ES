@@ -20,4 +20,4 @@ ht-degree: 0%
 Descubra cómo el asistente de IA para audiencias en Adobe Real-Time CDP ayuda a los especialistas en marketing a optimizar las estrategias de audiencia con estimación de tamaño, puntuación de tendencia y perspectivas en tiempo real.
 
 <!-- 62_S508_3442517_109_the-power-of-ai-in-realtime-cdp-for-audience-optimization -->
->[!VIDEO](https://video.tv.adobe.com/v/3458207/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3463015/?learn=on&enablevpops=true&captions=spa)

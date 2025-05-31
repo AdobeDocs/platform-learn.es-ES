@@ -20,4 +20,4 @@ ht-degree: 0%
 Descubra cómo Adobe utiliza perfiles unificados para impulsar la colaboración entre más de 70 equipos y ofrecer experiencias personalizadas para los usuarios de Creative Cloud.
 
 <!-- 62_S655_3442541_146_adobes-internal-use-of-unified-profiles-for-creative-cloud -->
->[!VIDEO](https://video.tv.adobe.com/v/3458283/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459674/?learn=on&enablevpops=true&captions=spa)

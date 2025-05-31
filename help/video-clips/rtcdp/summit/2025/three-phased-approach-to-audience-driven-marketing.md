@@ -20,4 +20,4 @@ ht-degree: 0%
 Descubra un marco de trabajo sencillo de tres fases para crear, escalar y optimizar estrategias de audiencia con Real-Time CDP.
 
 <!-- 72_S508_3442517_213_threephased-approach-to-audiencedriven-marketing -->
->[!VIDEO](https://video.tv.adobe.com/v/3458299/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3462993/?learn=on&enablevpops=true&captions=spa)

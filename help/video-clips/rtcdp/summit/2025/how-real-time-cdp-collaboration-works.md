@@ -20,4 +20,4 @@ ht-degree: 0%
 Conozca el proceso paso a paso de incorporación de audiencias, colaboración con editores y activación de campañas con Real-Time CDP Collaboration de Adobe.
 
 <!-- 62_OS511_3442426_61_how-realtime-cdp-collaboration-works -->
->[!VIDEO](https://video.tv.adobe.com/v/3458278/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459948/?learn=on&enablevpops=true&captions=spa)
