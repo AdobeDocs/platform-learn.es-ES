@@ -3,16 +3,16 @@ title: 'Primeros pasos: aplicaciones para instalar'
 description: 'Primeros pasos: aplicaciones para instalar'
 doc-type: multipage-overview
 exl-id: 25f80da8-88c3-4273-962a-476675cf6047
-source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
+source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '190'
 ht-degree: 1%
 
 ---
 
 # Aplicaciones para instalar
 
-A continuación se ofrece una descripción general del trabajo preliminar necesario antes de unirse a un taller en directo.
+A continuación se ofrece una descripción general de las aplicaciones que deberá tener instaladas en el equipo antes de iniciar el tutorial.
 
 ## Adobe Creative Cloud
 

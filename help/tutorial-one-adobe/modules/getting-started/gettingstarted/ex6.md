@@ -4,9 +4,9 @@ description: 'Primeros pasos: Adobe I/O'
 kt: 5342
 doc-type: tutorial
 exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
-source-git-commit: 3b6ae4bb4eb2d9f189438dddc461bb0f2a0a9aac
+source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '661'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,10 @@ A continuación, seleccione **Crear nuevo proyecto**.
 ![Nueva integración de Adobe I/O](./images/iocomp.png){zoomable="yes"}
 
 ### API de Firefly Services
+
+>[!IMPORTANT]
+>
+>Según la ruta de aprendizaje seleccionada, es posible que no tenga acceso a la API de Firefly Services. Solo tendrá acceso a la API de Firefly Services si se encuentra en la ruta de aprendizaje **Firefly**, **Workfront Fusion**, **ALL** o si asiste a un **taller presencial en directo**. Puede omitir este paso si no se encuentra en una de estas rutas de aprendizaje.
 
 Entonces debería ver esto. Seleccione **+ Agregar al proyecto** y elija **API**.
 
@@ -59,6 +63,10 @@ Entonces debería ver esto.
 
 ### API de Photoshop Services
 
+>[!IMPORTANT]
+>
+>Según la ruta de aprendizaje seleccionada, es posible que no tenga acceso a la API de Photoshop Services. Solo tendrá acceso a la API de Photoshop Services si se encuentra en la ruta de aprendizaje **Firefly**, **Workfront Fusion**, **ALL** o si asiste a un **taller presencial en directo**. Puede omitir este paso si no se encuentra en una de estas rutas de aprendizaje.
+
 Seleccione **+ Agregar al proyecto** y luego seleccione **API**.
 
 ![Almacenamiento de Azure](./images/ps2.png){zoomable="yes"}
@@ -84,6 +92,10 @@ Entonces debería ver esto.
 ![Nueva integración de Adobe I/O](./images/ps7.png){zoomable="yes"}
 
 ### API de Adobe Experience Platform
+
+>[!IMPORTANT]
+>
+>Según la ruta de aprendizaje seleccionada, es posible que no tenga acceso a la API de Adobe Experience Platform. Solo tendrá acceso a la API de Adobe Experience Platform si se encuentra en la ruta de aprendizaje **AEP + Aplicaciones**, **TODAS** o si asiste a un **taller presencial en vivo**. Puede omitir este paso si no se encuentra en una de estas rutas de aprendizaje.
 
 Seleccione **+ Agregar al proyecto** y luego seleccione **API**.
 
