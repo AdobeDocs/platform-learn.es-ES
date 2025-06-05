@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo validar la implementación de Plat
 feature: Web SDK,Tags,Debugger
 jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '1172'
 ht-degree: 3%
@@ -22,7 +22,7 @@ Experience Platform Debugger es una extensión disponible para los navegadores C
 
 Si nunca antes ha utilizado Debugger, es posible que desee ver este vídeo de información general de cinco minutos:
 
->[!VIDEO](https://video.tv.adobe.com/v/35998?learn=on&enablevpops&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 En esta lección, utiliza la [extensión de Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) para reemplazar la propiedad de etiquetas codificada en el [sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html) con su propia propiedad.
 
@@ -38,7 +38,7 @@ Al final de esta lección, podrá utilizar Debugger para lo siguiente:
 
 ## Requisitos previos
 
-Está familiarizado con las etiquetas de recopilación de datos y con el [sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} y ha completado las lecciones anteriores en el tutorial:
+Está familiarizado con las etiquetas de recopilación de datos y con el [sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}, y ha completado las lecciones anteriores en el tutorial:
 
 * [Configuración de un esquema XDM](configure-schemas.md)
 * [Configuración de un área de nombres de identidad](configure-identities.md)
@@ -52,7 +52,7 @@ Está familiarizado con las etiquetas de recopilación de datos y con el [sitio 
 
 Experience Platform Debugger tiene una característica interesante que le permite reemplazar una biblioteca de etiquetas existente por otra diferente. Esta técnica es útil para la validación y nos permite omitir muchos pasos de implementación en este tutorial.
 
-1. Asegúrese de tener abierto el [sitio web de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} y seleccionar el icono de extensión de Experience Platform Debugger.
+1. Asegúrese de tener abierto el [sitio web de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} y seleccione el icono de extensión de Experience Platform Debugger
 1. Debugger se abrirá y mostrará algunos detalles de la implementación codificada (es posible que tenga que volver a cargar el sitio de Luma después de abrir Debugger).
 1. Confirme que Debugger está &quot;**[!UICONTROL conectado a Luma]**&quot; como se muestra a continuación y, a continuación, seleccione el icono &quot;**[!UICONTROL bloquear]**&quot; para bloquear Debugger en el sitio de Luma.
 1. Seleccione el botón **[!UICONTROL Iniciar sesión]** e inicie sesión en Adobe Experience Cloud con su Adobe Id.
@@ -108,7 +108,7 @@ Puede utilizar Debugger para validar las señalizaciones del lado del cliente ac
 
 También puede validar los detalles del mapa de identidad:
 
-1. Inicie sesión en el sitio de Luma con las credenciales `test@adobe.com`/`test`
+1. Inicie sesión en el sitio de Luma con las credenciales `test@test.com`/`test`
 
 1. Vuelva a la [página principal de Luma](https://luma.enablementadobe.com/content/luma/us/en.html)
 
@@ -143,7 +143,7 @@ Estos tipos de detalles de solicitud también están visibles en la ficha **Red*
 
 Como aprendió en la lección [Configuración de un conjunto de datos](configure-datastream.md), Platform Web SDK envía primero datos de su propiedad digital a Platform Edge Network. A continuación, Platform Edge Network realiza solicitudes adicionales del lado del servidor a los servicios correspondientes habilitados en el conjunto de datos. Puede validar las solicitudes del lado del servidor realizadas por Platform Edge Network mediante Edge Trace en Debugger.
 
-<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/es/docs/experience-platform/assurance/home). -->
+<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home). -->
 
 
 ### Habilitar seguimiento de Edge
@@ -169,4 +169,4 @@ En este punto, no puede ver ninguna solicitud de Platform Edge Network que vaya 
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=es)
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

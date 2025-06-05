@@ -1,9 +1,9 @@
 ---
 title: Adición del servicio de identidad de Adobe Experience Platform con etiquetas
-description: Obtenga información sobre cómo añadir la extensión del servicio de identidad de Adobe Experience Platform y utilizar la acción “Set Customer ID” (establecer ID de cliente) para recopilar los ID de cliente. Esta lección forma parte del tutorial Implementación del Experience Cloud en sitios web.
+description: Obtenga información sobre cómo añadir la extensión del servicio de identidad de Adobe Experience Platform y utilizar la acción “Set Customer ID” (establecer ID de cliente) para recopilar los ID de cliente. Esta lección forma parte del tutorial Implementación de Experience Cloud en sitios web.
 solution: Data Collection, Experience Cloud Services
 exl-id: f226c171-2bd2-44fa-ae2e-cbfa2fe882f0
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '1945'
 ht-degree: 65%
@@ -12,7 +12,7 @@ ht-degree: 65%
 
 # Añadir el servicio de identidad de Adobe Experience Platform
 
-Esta lección le guiará por los pasos necesarios para implementar la [extensión del servicio de identidad de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=es) y enviar los ID de cliente.
+Esta lección le guiará por los pasos necesarios para implementar la [extensión del servicio de identidad de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html) y enviar los ID de cliente.
 
 El [servicio de identidad de Adobe Experience Platform](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=es) establece un identificador de visitante común en todas las soluciones de Adobe para potenciar las funciones de Experience Cloud, como el uso compartido de audiencias entre soluciones. También puede enviar sus propios ID de cliente al servicio para permitir integraciones y segmentaciones en todos los dispositivos con los sistemas de administración de la relación con los clientes (CRM).
 
@@ -20,8 +20,8 @@ El [servicio de identidad de Adobe Experience Platform](https://experienceleague
 >
 >Adobe Experience Platform Launch se está integrando en Adobe Experience Platform como un conjunto de tecnologías de recopilación de datos. Se han implementado varios cambios terminológicos en la interfaz que debe tener en cuenta al utilizar este contenido:
 >
-> * El platform launch (lado del cliente) ahora es **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=es)**
-> * El lado del servidor de platform launch ahora es **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=es)**
+> * Platform Launch (lado del cliente) ahora es **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=es)**
+> * El lado del servidor de Platform Launch ahora es **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * Ahora, las configuraciones de Edge son **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=es)**
 
 ## Objetivos de aprendizaje
@@ -90,14 +90,13 @@ La extensión del servicio de ID es una de las pocas extensiones de etiqueta que
    1. Amplíe `Cookies` en el lado izquierdo.
    1. Haga clic en el dominio `https://luma.enablementadobe.com`.
    1. Busque la cookie “AMCV_” en el lado derecho. Es posible que haya visto varias desde que ha cargado el sitio de Luma usando tanto su propiedad de etiqueta codificada como también la asignada a la suya propia.
-
       ![Verifique la cookie “AMCV_”](images/idservice-AMCVCookie.png)
 
-¡Ya está! ¡Ha añadido su primera extensión! Para obtener más información sobre las opciones de configuración del servicio de identidad, consulte [la documentación](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html?lang=es).
+¡Ya está! ¡Ha añadido su primera extensión! Para obtener más información sobre las opciones de configuración del servicio de identidad, consulte [la documentación](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html).
 
 ## Envío de los ID de cliente
 
-A continuación, enviará un [ID de cliente](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=es) al servicio de identidad. Esto le permite [integrar su CRM](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=es) con Experience Cloud, así como rastrear a los visitantes entre dispositivos.
+A continuación, enviará un [ID de cliente](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html) al servicio de identidad. Esto le permite [integrar su CRM](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=es) con Experience Cloud, así como rastrear a los visitantes entre dispositivos.
 
 En la lección anterior [Añadir elementos de datos, reglas y bibliotecas](add-data-elements-rules.md) ha creado un elemento de datos y lo ha utilizado en una regla. Ahora se utilizan las mismas técnicas para enviar un ID de cliente cuando se autentica al visitante.
 
@@ -206,7 +205,7 @@ El servicio de identidad de Adobe Experience Platform pasa los ID de cliente en 
 
    ![Añadir una acción nueva](images/idservice-customerId-addAction.png)
 
-   1. Para la **[!UICONTROL extensión]**, seleccione **[!UICONTROL Servicio de ID de Experience Cloud]**
+   1. Para la **[!UICONTROL extensión]**, seleccione **[!UICONTROL Servicio de Experience Cloud ID]**
    1. Para el **[!UICONTROL tipo de acción]**, seleccione **[!UICONTROL Establecer ID de cliente]**
    1. Para el **[!UICONTROL código de integración]**, escriba `crm_id`
    1. Para **[!UICONTROL Value]**, abra el modal del selector de elementos de datos y seleccione `Email (Hashed)`
@@ -237,7 +236,7 @@ Para validar su trabajo, iniciará sesión en el sitio de Luma para confirmar el
 
    ![Haga clic en LOGIN en la barra de navegación superior](images/idservice-loginNav.png)
 
-1. Escriba `test@adobe.com` como nombre de usuario.
+1. Escriba `test@test.com` como nombre de usuario.
 1. Escriba `test` como contraseña.
 1. Haga clic en el botón **[!UICONTROL INICIAR SESIÓN]**
 

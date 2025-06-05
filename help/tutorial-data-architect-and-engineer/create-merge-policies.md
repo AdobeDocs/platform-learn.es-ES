@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Nos ceñiremos a la interfaz de usuario para esta lección, pero también existe
 **Los arquitectos de datos** deberán crear políticas de combinación fuera de este tutorial.
 
 Antes de comenzar los ejercicios, vea este breve vídeo para obtener más información sobre las políticas de combinación:
->[!VIDEO](https://video.tv.adobe.com/v/345075?learn=on&enablevpops&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on&enablevpops)
 
 ## Permisos necesarios
 
@@ -68,7 +68,7 @@ Ahora, ¿qué sucede si no le gusta esa política de combinación predeterminada
 1. En la pantalla Políticas de combinación, seleccione el botón **[!UICONTROL Crear política de combinación]** en la esquina superior derecha
 1. Como **[!UICONTROL Nombre]**, escriba `Loyalty Prioritized`
 1. Como **[!UICONTROL Esquema]**, seleccione **[!UICONTROL Perfil XDM]** (tenga en cuenta que su clase personalizada, como es datos de registro, también está disponible para políticas de combinación)
-1. Para la vinculación de ID **[!UICONTROL 1, seleccione**&#x200B;[!UICONTROL &#x200B; Gráfico privado &#x200B;]&#x200B;**]**
+1. Para la vinculación de ID **[!UICONTROL 1, seleccione**[!UICONTROL  Gráfico privado ]**]**
 1. Para **[!UICONTROL Combinar atributos]**, seleccione **[!UICONTROL Prioridad de conjuntos de datos]**
 1. Arrastre y suelte `Luma Loyalty Dataset` y `Luma CRM Dataset` en el panel **[!UICONTROL Conjunto de datos]**.
 1. Asegúrese de que `Luma Loyalty Dataset` esté en la parte superior arrastrándolo y soltándolo encima de `Luma CRM Dataset`
@@ -83,7 +83,7 @@ Veamos si la política de combinación está haciendo lo que esperaríamos:
 1. Vaya a la ficha **[!UICONTROL Examinar]**
 1. Cambiar la **[!UICONTROL política de combinación]** a la nueva política `Loyalty Prioritized`
 1. Como **[!UICONTROL área de nombres de identidad]**, use su `Luma CRM Id`
-1. Como **[!UICONTROL valor de identidad]**, use `112ca06ed53d3db37e4cea49cc45b71e`
+1. Como **[!UICONTROL valor de identidad]**, use `b642b4217b34b1e8d3bd915fc65c4452`
 1. Seleccione el botón **[!UICONTROL Mostrar perfil]**
 1. `Daniel` ha vuelto.
 
@@ -110,7 +110,7 @@ Veamos ahora lo que hace esta política de combinación:
 1. Vaya a la ficha **[!UICONTROL Examinar]**
 1. Cambiar la **[!UICONTROL política de combinación]** a la nueva política `Loyalty Only`
 1. Como **[!UICONTROL área de nombres de identidad]**, use su `Luma CRM Id`
-1. Como **[!UICONTROL valor de identidad]**, use `112ca06ed53d3db37e4cea49cc45b71e`
+1. Como **[!UICONTROL valor de identidad]**, use `b642b4217b34b1e8d3bd915fc65c4452`
 1. Seleccione el botón **[!UICONTROL Mostrar perfil]**
 1. Confirme que no se han encontrado perfiles:
    ![Fidelidad solamente sin búsqueda de ID de CRM.](assets/mergepolicies-loyaltyOnly-noCrmLookup.png)
@@ -140,7 +140,7 @@ Un caso de uso clave de las políticas de combinación es la gobernanza de datos
 
 ## Recursos adicionales
 
-* [Documentación de políticas de combinación](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=es)
+* [Documentación de políticas de combinación](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)
 * [Referencia de la API de políticas de combinación (parte de la API del perfil del cliente en tiempo real)](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
 
 Ahora pasemos al [marco de control de datos](apply-data-governance-framework.md).

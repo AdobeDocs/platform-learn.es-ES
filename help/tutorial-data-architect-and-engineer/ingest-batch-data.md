@@ -8,7 +8,7 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '2446'
 ht-degree: 0%
@@ -26,7 +26,7 @@ La ingesta de datos por lotes le permite introducir una gran cantidad de datos e
 
 Antes de comenzar los ejercicios, vea este breve vídeo para obtener más información sobre la ingesta de datos:
 
->[!VIDEO](https://video.tv.adobe.com/v/346830?learn=on&enablevpops&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on&enablevpops)
 
 
 ## Permisos necesarios
@@ -79,8 +79,8 @@ En primer lugar, obtenga los datos de ejemplo y personalícelos para su inquilin
 >
 >Hay algunas opciones, **[!UICONTROL Diagnóstico de errores]** e **[!UICONTROL Ingesta parcial]**, que verá en varias pantallas en esta lección. Estas opciones no se tratan en el tutorial. Información rápida:
 >
->* Al habilitar los diagnósticos de error, se generan datos sobre la ingesta de sus datos, que puede revisar mediante la API de acceso a datos. Obtenga más información al respecto en [la documentación](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html?lang=es).
->* La ingesta parcial permite introducir datos que contienen errores, hasta un determinado umbral que puede especificar. Obtenga más información al respecto en [la documentación](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html?lang=es)
+>* Al habilitar los diagnósticos de error, se generan datos sobre la ingesta de sus datos, que puede revisar mediante la API de acceso a datos. Obtenga más información al respecto en [la documentación](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html).
+>* La ingesta parcial permite introducir datos que contienen errores, hasta un determinado umbral que puede especificar. Obtenga más información al respecto en [la documentación](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html)
 
 ### Validación de los datos
 
@@ -115,7 +115,7 @@ Si se ha suscrito a los eventos de ingesta de datos de la lección anterior, com
 
 ![webhook de ingesta de datos](assets/ingestion-loyalty-webhook.png)
 
-Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=es#available-status-notification-events) para obtener más información sobre las notificaciones.
+Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) para obtener más información sobre las notificaciones.
 
 ## Ingesta de datos por lotes con la API de Platform
 
@@ -210,7 +210,7 @@ A continuación, confirme el lote mediante Vista previa del conjunto de datos:
 
 ![Vista previa por lotes](assets/ingestion-crm-preview.png)
 
-Por último, confirme que uno de sus perfiles se ha creado buscando uno en el área de nombres `Luma CRM Id`, por ejemplo `112ca06ed53d3db37e4cea49cc45b71e`
+Por último, confirme que uno de sus perfiles se ha creado buscando uno en el área de nombres `Luma CRM Id`, por ejemplo `b642b4217b34b1e8d3bd915fc65c4452`
 
 ![Perfil ingerido](assets/ingestion-crm-profile.png)
 
@@ -226,7 +226,7 @@ Si se ha suscrito a los eventos de ingesta de datos de la lección anterior, com
 
 ![webhook de ingesta de datos](assets/ingestion-crm-webhook.png)
 
-Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=es#available-status-notification-events) para obtener más información sobre las notificaciones.
+Consulte la [documentación](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) para obtener más información sobre las notificaciones.
 
 ## Ingesta de datos con flujos de trabajo
 
@@ -282,7 +282,7 @@ Muchos de los orígenes tienen un flujo de trabajo de configuración similar, en
 
 >[!NOTE]
 >
->Los datos de compra sin conexión que utilizaremos en este ejercicio contienen datos de fecha y hora. Los datos de fecha y hora deben estar en [cadenas con formato ISO 8061](https://www.iso.org/iso-8601-date-and-time-format.html) (&quot;2018-07-10T15:05:59.000-08:00&quot;) o Tiempo Unix formateado en milisegundos (1531263959000) y se convierten en el momento de la ingesta al tipo XDM de destino. Para obtener más información sobre la conversión de datos y otras restricciones, consulte [la documentación de la API de ingesta por lotes](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html?lang=es#types).
+>Los datos de compra sin conexión que utilizaremos en este ejercicio contienen datos de fecha y hora. Los datos de fecha y hora deben estar en [cadenas con formato ISO 8061](https://www.iso.org/iso-8601-date-and-time-format.html) (&quot;2018-07-10T15:05:59.000-08:00&quot;) o Tiempo Unix formateado en milisegundos (1531263959000) y se convierten en el momento de la ingesta al tipo XDM de destino. Para obtener más información sobre la conversión de datos y otras restricciones, consulte [la documentación de la API de ingesta por lotes](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html#types).
 
 ### Descargue, prepare y cargue los datos a su proveedor de almacenamiento en la nube preferido
 
@@ -334,12 +334,12 @@ Vuelva a buscar el perfil con valor `5625458` en el área de nombres `loyaltyId`
 
 Adobe se asocia con varios proveedores de ETL para admitir la ingesta de datos en Experience Platform. Debido a la variedad de proveedores externos, ETL no se trata en este tutorial, aunque puede revisar algunos de estos recursos:
 
-* [Desarrollar integraciones de ETL para Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html?lang=es)
+* [Desarrollar integraciones de ETL para Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
 * [[!DNL Snaplogic] Paquete de instantáneas de Adobe Experience Platform](https://www.snaplogic.com/resources/videos/august-2020-aep)
 
 ## Recursos adicionales
 
-* [Documentación de ingesta por lotes](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html?lang=es)
+* [Documentación de ingesta por lotes](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html)
 * [Referencia de API de ingesta por lotes](https://developer.adobe.com/experience-platform-apis/references/batch-ingestion/)
 
 Ahora vamos a [transmitir datos usando Web SDK](ingest-streaming-data.md)
