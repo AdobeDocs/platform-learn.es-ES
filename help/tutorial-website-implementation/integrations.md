@@ -28,8 +28,8 @@ Debe completar todas las lecciones anteriores de este tutorial antes de seguir l
 >
 >Existen muchos requisitos de permisos de usuario, configuraciones de cuenta y pasos de aprovisionamiento necesarios para utilizar completamente estas integraciones y que están fuera del ámbito de este tutorial. Si aún no utiliza estas integraciones en su implementación actual de Experience Cloud, debe tener en cuenta lo siguiente:
 >
->* Examinar todos los requisitos de las [integraciones de servicios principales](https://experienceleague.adobe.com/en/docs/core-services/interface/services/getting-started).
->* Revise todos los requisitos de la [integración de Analytics para Target](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/before-implement).
+>* Examinar todos los requisitos de las [integraciones de servicios principales](https://experienceleague.adobe.com/es/docs/core-services/interface/services/getting-started).
+>* Revise todos los requisitos de la [integración de Analytics para Target](https://experienceleague.adobe.com/es/docs/target/using/integrate/a4t/before-implement).
 
 ## Públicos
 
@@ -71,7 +71,7 @@ Estos pasos de validación se centran en la parte fundamental visible de la impl
 
 ## Analytics para Target (A4T)
 
-La integración de [Analytics para Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) le permite aprovechar sus datos de Analytics como fuente para crear informes de métricas en Target.
+La integración de [Analytics para Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=es) le permite aprovechar sus datos de Analytics como fuente para crear informes de métricas en Target.
 
 Los requisitos principales para implementar A4T (que ya ha hecho) son:
 
