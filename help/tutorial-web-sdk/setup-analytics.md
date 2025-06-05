@@ -106,8 +106,8 @@ Las secciones individuales de la cadena de producto de Analytics se establecen a
 >[!NOTE]
 >
 >A partir del 18 de agosto de 2022, `productListItems[].SKU` tiene prioridad para la asignación al nombre del producto en la variable s.products.
->>El valor establecido en `productListItems[].name` se asigna al nombre del producto solamente si `productListItems[].SKU` no existe. De lo contrario, no está asignado y disponible en los datos de contexto.
->>No establezca una cadena vacía o nula en `productListItems[].SKU`. Esto tiene el efecto no deseado de asignar al nombre del producto en la variable s.products.
+>&#x200B;>El valor establecido en `productListItems[].name` se asigna al nombre del producto solamente si `productListItems[].SKU` no existe. De lo contrario, no está asignado y disponible en los datos de contexto.
+>&#x200B;>No establezca una cadena vacía o nula en `productListItems[].SKU`. Esto tiene el efecto no deseado de asignar al nombre del producto en la variable s.products.
 
 
 ### Establecer variables en el objeto de datos

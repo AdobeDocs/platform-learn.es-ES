@@ -68,7 +68,7 @@ Ahora, ¿qué sucede si no le gusta esa política de combinación predeterminada
 1. En la pantalla Políticas de combinación, seleccione el botón **[!UICONTROL Crear política de combinación]** en la esquina superior derecha
 1. Como **[!UICONTROL Nombre]**, escriba `Loyalty Prioritized`
 1. Como **[!UICONTROL Esquema]**, seleccione **[!UICONTROL Perfil XDM]** (tenga en cuenta que su clase personalizada, como es datos de registro, también está disponible para políticas de combinación)
-1. Para la vinculación de ID **[!UICONTROL 1, seleccione**[!UICONTROL  Gráfico privado ]**]**
+1. Para la vinculación de ID **[!UICONTROL 1, seleccione**&#x200B;[!UICONTROL &#x200B; Gráfico privado &#x200B;]&#x200B;**]**
 1. Para **[!UICONTROL Combinar atributos]**, seleccione **[!UICONTROL Prioridad de conjuntos de datos]**
 1. Arrastre y suelte `Luma Loyalty Dataset` y `Luma CRM Dataset` en el panel **[!UICONTROL Conjunto de datos]**.
 1. Asegúrese de que `Luma Loyalty Dataset` esté en la parte superior arrastrándolo y soltándolo encima de `Luma CRM Dataset`

@@ -90,6 +90,7 @@ La extensión del servicio de ID es una de las pocas extensiones de etiqueta que
    1. Amplíe `Cookies` en el lado izquierdo.
    1. Haga clic en el dominio `https://luma.enablementadobe.com`.
    1. Busque la cookie “AMCV_” en el lado derecho. Es posible que haya visto varias desde que ha cargado el sitio de Luma usando tanto su propiedad de etiqueta codificada como también la asignada a la suya propia.
+
       ![Verifique la cookie “AMCV_”](images/idservice-AMCVCookie.png)
 
 ¡Ya está! ¡Ha añadido su primera extensión! Para obtener más información sobre las opciones de configuración del servicio de identidad, consulte [la documentación](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html).
