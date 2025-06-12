@@ -4,9 +4,9 @@ description: 'AEM CS: Bloque personalizado avanzado'
 kt: 5342
 doc-type: tutorial
 exl-id: 31fd1dea-70c9-4f82-87ad-16276ffa7f5b
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1000'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Ahora puede seguir trabajando en este bloque.
 
 ![AEMCS](./images/nav7.png){zoomable="yes"}
 
-## 1.1.5.1 Aplicar estilo al bloque
+## 1.1.5.1 - Aplicar estilo a tu bloque
 
 Ahora que tiene un bloque **fiberoffer** en funcionamiento, puede aplicarle estilo.
 
@@ -106,16 +106,16 @@ En el navegador, vaya a su cuenta de GitHub y al repositorio que ha creado para 
 
 ![Bloquear](./images/blockadv12.png){zoomable="yes"}
 
-Ahora podrá ver los cambios en su sitio web yendo a `main--citisignal--XXX.aem.page/us/en` y/o `main--citisignal--XXX.aem.live/us/en`, después de reemplazar XXX por su cuenta de usuario de GitHub, que en este ejemplo es `woutervangeluwe`.
+Ahora podrá ver los cambios en su sitio web yendo a `main--citisignal--XXX.aem.page/us/en/` y/o `main--citisignal--XXX.aem.live/us/en/`, después de reemplazar XXX por su cuenta de usuario de GitHub, que en este ejemplo es `woutervangeluwe`.
 
 En este ejemplo, la dirección URL completa se convierte en lo siguiente:
-`https://main--citisignal--woutervangeluwe.aem.page/us/en` o `https://main--citisignal--woutervangeluwe.aem.live/us/en`.
+`https://main--citisignal--woutervangeluwe.aem.page/us/en/` o `https://main--citisignal--woutervangeluwe.aem.live/us/en/`.
 
 Debería ver esto, con el estilo aplicado a la página.
 
 ![Bloquear](./images/blockadv13.png){zoomable="yes"}
 
-## 1.1.5.2 Añadir lógica y cargar datos desde un punto final externo
+## 1.1.5.2 Agregar lógica y cargar datos desde un extremo externo
 
 Para este ejercicio, se realiza una configuración &quot;sin procesar&quot; de Web SDK de Adobe y se solicita la siguiente mejor oferta de Adobe Journey Optimizer Offer Decisioning.
 
@@ -336,10 +336,10 @@ A continuación, haga clic en **Origen push**.
 
 ![Bloquear](./images/blockadv19.png){zoomable="yes"}
 
-Ahora podrá ver los cambios en su sitio web yendo a `main--citisignal--XXX.aem.page/us/en` y/o `main--citisignal--XXX.aem.live/us/en`, después de reemplazar XXX por su cuenta de usuario de GitHub, que en este ejemplo es `woutervangeluwe`.
+Ahora podrá ver los cambios en su sitio web yendo a `main--citisignal--XXX.aem.page/us/en/` y/o `main--citisignal--XXX.aem.live/us/en/`, después de reemplazar XXX por su cuenta de usuario de GitHub, que en este ejemplo es `woutervangeluwe`.
 
 En este ejemplo, la dirección URL completa se convierte en lo siguiente:
-`https://main--citisignal--woutervangeluwe.aem.page/us/en` o `https://main--citisignal--woutervangeluwe.aem.live/us/en`.
+`https://main--citisignal--woutervangeluwe.aem.page/us/en/` o `https://main--citisignal--woutervangeluwe.aem.live/us/en/`.
 
 Entonces debería ver esto.
 

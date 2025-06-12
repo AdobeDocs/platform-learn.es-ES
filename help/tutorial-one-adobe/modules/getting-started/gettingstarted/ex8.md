@@ -4,9 +4,9 @@ description: 'Introducción: configuración de Postman'
 kt: 5342
 doc-type: tutorial
 exl-id: fc1ee238-cce8-40a9-aba7-3605019a0077
-source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
+source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '440'
 ht-degree: 3%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 ## Instalar PostBuster
 
-Vaya a [https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542){target="_blank"}.
+Vaya a [https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"}.
 
 Haga clic para descargar la última versión de **PostBuster**.
 
@@ -69,7 +69,7 @@ Entonces debería ver esto.
 
 ![PostBuster](./images/pb11.png)
 
-Copie el siguiente marcador de posición de entorno y péguelo en el **Entorno base**.
+Copie el siguiente marcador de posición de entorno y péguelo en el **Entorno base**; para ello, reemplace lo que se encuentra allí.
 
 ```json
 {
@@ -83,7 +83,8 @@ Copie el siguiente marcador de posición de entorno y péguelo en el **Entorno b
 		"additional_info.projectedProductContext", 
 		"session",
 		"ff_apis",
-		"firefly_api"
+		"firefly_api",
+		"frame.s2s.all"
 	],
 	"TECHNICAL_ACCOUNT_ID": "",
 	"IMS": "ims-na1.adobelogin.com",
@@ -93,7 +94,10 @@ Copie el siguiente marcador de posición de entorno y péguelo en el **Entorno b
 	"AZURE_STORAGE_URL": "",
 	"AZURE_STORAGE_CONTAINER": "",
 	"AZURE_STORAGE_SAS_READ": "",
-	"AZURE_STORAGE_SAS_WRITE": ""
+	"AZURE_STORAGE_SAS_WRITE": "",
+	"FRAME_IO_BASE_URL": "https://api.frame.io",
+	"FRAME_IO_ACCOUNT_ID": "",
+	"FRAME_IO_WORKSPACE_ID": ""
 }
 ```
 
@@ -105,11 +109,11 @@ Entonces deberías tener esto.
 
 Vaya a [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"} y abra el proyecto.
 
-![Nueva integración de Adobe I/O](./images/iopr.png){zoomable="yes"}
+![Nueva integración de Adobe I/O](./images/iopr.png)
 
 Vaya a **OAuth Server-to-Server**.
 
-![Nueva integración de Adobe I/O](./images/iopbvar1.png){zoomable="yes"}
+![Nueva integración de Adobe I/O](./images/iopbvar1.png)
 
 Ahora debe copiar los siguientes valores del proyecto de Adobe I/O y pegarlos en el entorno base de PostBuster.
 
@@ -118,7 +122,7 @@ Ahora debe copiar los siguientes valores del proyecto de Adobe I/O y pegarlos en
 - ID de cuenta técnica
 - ID de organización (desplácese hacia abajo para buscar el ID de su organización)
 
-![Nueva integración de Adobe I/O](./images/iopbvar2.png){zoomable="yes"}
+![Nueva integración de Adobe I/O](./images/iopbvar2.png)
 
 Copie las variables anteriores una por una y péguelas en su **Entorno base** en PostBuster.
 
@@ -129,11 +133,15 @@ Copie las variables anteriores una por una y péguelas en su **Entorno base** en
 | ID de cuenta técnica | `TECHNICAL_ACCOUNT_ID` |
 | ID de organización | `IMS_ORG` |
 
-Después de haber copiado estas variables una por una, el entorno base de PostBuster debería tener este aspecto:
+Después de haber copiado estas variables una por una, su entorno base PostBuster debería tener este aspecto.
 
-![Nueva integración de Adobe I/O](./images/iopbvar3.png){zoomable="yes"}
+Haga clic en **Cerrar**.
+
+![Nueva integración de Adobe I/O](./images/iopbvar3.png)
 
 En la colección **Adobe IO - OAuth**, seleccione la solicitud **POST - Obtener token de acceso** y seleccione **Enviar**.
+
+![Nueva integración de Adobe I/O](./images/iopbvar3a.png)
 
 Debería ver una respuesta similar que contenga la siguiente información:
 
@@ -145,9 +153,9 @@ Debería ver una respuesta similar que contenga la siguiente información:
 
 El **token de portador** de Adobe I/O tiene un valor específico (el token de acceso muy largo) y un período de caducidad, y ahora es válido durante 24 horas. Esto significa que, después de 24 horas, si desea utilizar Postman para interactuar con las API de Adobe, deberá generar un nuevo token ejecutando esta solicitud de nuevo.
 
-![Nueva integración de Adobe I/O](./images/iopbvar4.png){zoomable="yes"}
+![Nueva integración de Adobe I/O](./images/iopbvar4.png)
 
-El entorno de PostBuster ya está configurado y funcionando. Ahora ha completado el módulo Introducción.
+El entorno PostBuster ya está configurado y funciona. Ahora ha completado este ejercicio.
 
 ## Pasos siguientes
 

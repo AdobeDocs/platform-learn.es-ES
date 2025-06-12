@@ -4,16 +4,16 @@ description: Configuración del entorno de AEM CS
 kt: 5342
 doc-type: tutorial
 exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: dd075b0296c6ba06d72b229145635060c2c6abb1
+source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '991'
 ht-degree: 1%
 
 ---
 
 # 1.1.3 Configuración del entorno de AEM CS
 
-## 1.1.3.1 Configurar el repositorio de GitHub
+## 1.1.3.1 Configurar su repositorio de GitHub
 
 Vaya a [https://github.com](https://github.com){target="_blank"}. Haga clic en **Iniciar sesión**.
 
@@ -39,7 +39,7 @@ Después de un par de segundos, se crea el repositorio.
 
 ![AEMCS](./images/aemcssetup6.png){zoomable="yes"}
 
-A continuación, ve a [https://github.com/apps/aem-code-sync](https://github.com/apps/aem-code-sync){target="_blank"}. Haga clic en **Configurar**.
+A continuación, vaya a [https://github.com/apps/aem-code-sync](https://github.com/apps/aem-code-sync){target="_blank"}. Haga clic en **Configurar**.
 
 ![AEMCS](./images/aemcssetup7.png){zoomable="yes"}
 
@@ -123,7 +123,7 @@ Haga clic en **Confirmar cambios**.
 
 Se ha actualizado el archivo `fstab.yaml`.
 
-## 1.1.3.3 Carga de recursos de CitiSignal
+## 1.1.3.3 cargar recursos de CitiSignal
 
 Vaya a [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Haga clic en **Programa** para abrirlo.
 
@@ -186,7 +186,7 @@ Después de un par de minutos, el paquete se instalará.
 Ahora puede cerrar esta ventana.
 
 
-## 1.1.3.4 Publicación de recursos de CitiSignal
+## 1.1.3.4 publicar recursos de CitiSignal
 
 Vaya a [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Haga clic en **Programa** para abrirlo.
 
@@ -222,7 +222,7 @@ Haga clic en **Publicar**.
 
 Sus recursos se han publicado.
 
-## 1.1.3.5 Creación del sitio web de CitiSignal
+## 1.1.3.5 Crear sitio web de CitiSignal
 
 Vaya a [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Haga clic en **Programa** para abrirlo.
 
@@ -278,7 +278,7 @@ Actualice la pantalla después de un par de minutos y verá el sitio web de Citi
 
 ![AEMCS](./images/aemcssetup38.png){zoomable="yes"}
 
-## 1.1.3.6 Publicación del sitio web de CitiSignal
+## 1.1.3.6 Publicar sitio web de CitiSignal
 
 A continuación, haga clic en la casilla de verificación que hay delante de **CitiSignal**. A continuación, haga clic en **Administrar publicación**.
 
@@ -308,10 +308,10 @@ Su sitio web se abrirá en el **Editor universal**.
 
 ![AEMCS](./images/aemcssetup45.png){zoomable="yes"}
 
-Ahora podrá acceder a su sitio web yendo a `main--citisignal--XXX.aem.page/us/en` y/o `main--citisignal--XXX.aem.live/us/en`, después de reemplazar XXX por su cuenta de usuario de GitHub, que en este ejemplo es `woutervangeluwe`.
+Ahora podrá acceder a su sitio web yendo a `main--citisignal--XXX.aem.page/us/en/` y/o `main--citisignal--XXX.aem.live/us/en/`, después de reemplazar XXX por su cuenta de usuario de GitHub, que en este ejemplo es `woutervangeluwe`.
 
 En este ejemplo, la dirección URL completa se convierte en lo siguiente:
-`https://main--citisignal--woutervangeluwe.aem.page/us/en` o `https://main--citisignal--woutervangeluwe.aem.live/us/en`.
+`https://main--citisignal--woutervangeluwe.aem.page/us/en/` o `https://main--citisignal--woutervangeluwe.aem.live/us/en/`.
 
 Puede llevar algún tiempo antes de que todos los recursos se muestren correctamente, ya que primero deben publicarse.
 
@@ -323,7 +323,7 @@ Después de un par de minutos, los recursos se cargarán correctamente.
 
 ![AEMCS](./images/aemcssetup47.png){zoomable="yes"}
 
-## 1.1.3.7 Rendimiento de la página de prueba
+## 1.1.3.7 Rendimiento de página de prueba
 
 Vaya a [https://pagespeed.web.dev/](https://pagespeed.web.dev/){target="_blank"}. Escriba su dirección URL y haga clic en **Analizar**.
 

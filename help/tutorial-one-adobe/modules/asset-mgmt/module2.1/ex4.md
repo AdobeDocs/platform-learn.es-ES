@@ -4,16 +4,16 @@ description: 'AEM CS: bloque personalizado básico'
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: dd075b0296c6ba06d72b229145635060c2c6abb1
+source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '814'
 ht-degree: 1%
 
 ---
 
 # 1.1.4 Desarrollar un bloque personalizado básico
 
-## 1.1.4.1 Configuración del entorno de desarrollo local
+## 1.1.4.1 Configure su entorno de desarrollo local
 
 Vaya a [https://desktop.github.com/download/](https://desktop.github.com/download/){target="_blank"}, descargue e instale **Github Desktop**.
 
@@ -145,7 +145,7 @@ Guarde los cambios.
 
 ![Bloquear](./images/block15.png){zoomable="yes"}
 
-## 1.1.4.3 Confirmar los cambios
+## 1.1.4.3: confirmar los cambios
 
 Ahora ha realizado varios cambios en el proyecto que deben volver a enviarse al repositorio de GitHub. Para ello, abra **GitHub Desktop**.
 
@@ -169,7 +169,7 @@ En el navegador, vaya a su cuenta de GitHub y al repositorio que ha creado para 
 
 ![Bloquear](./images/block20.png){zoomable="yes"}
 
-## 1.1.4.4 Añadir el bloque a una página
+## 1.1.4.4 Agregar el bloque a una página
 
 Ahora que el bloque de presupuesto básico está definido y comprometido con el proyecto CitiSignal, puede agregar un bloque **fiberoffer** a una página existente.
 
@@ -249,7 +249,7 @@ Vuelva a hacer clic en **Publicar**.
 
 Se ha publicado su nueva página.
 
-## 1.1.4.5 Añada la nueva página al menú de navegación
+## 1.1.4.5 Agregar su nueva página al menú de navegación
 
 En la descripción general de AEM Sites, ve a **CitiSignal** > **Fragmentos** y marca la casilla de verificación de **Encabezado**. Haga clic en **Edit**.
 
@@ -259,7 +259,7 @@ Agregue una opción de menú al menú de navegación con el texto `Fiber`. Selec
 
 ![AEMCS](./images/nav1.png){zoomable="yes"}
 
-Escriba esto para la **URL** `/us/en/citisignal-fiber` y haga clic en el icono **V** para confirmar.
+Escriba esto para la **URL** `/us/en//citisignal-fiber` y haga clic en el icono **V** para confirmar.
 
 ![AEMCS](./images/nav3.png){zoomable="yes"}
 
@@ -271,10 +271,10 @@ Vuelva a hacer clic en **Publicar**.
 
 ![AEMCS](./images/nav5.png){zoomable="yes"}
 
-Ahora podrá ver los cambios en su sitio web yendo a `main--citisignal--XXX.aem.page/us/en` y/o `main--citisignal--XXX.aem.live/us/en`, después de reemplazar XXX por su cuenta de usuario de GitHub, que en este ejemplo es `woutervangeluwe`.
+Ahora podrá ver los cambios en su sitio web yendo a `main--citisignal--XXX.aem.page/us/en/` y/o `main--citisignal--XXX.aem.live/us/en/`, después de reemplazar XXX por su cuenta de usuario de GitHub, que en este ejemplo es `woutervangeluwe`.
 
 En este ejemplo, la dirección URL completa se convierte en lo siguiente:
-`https://main--citisignal--woutervangeluwe.aem.page/us/en` o `https://main--citisignal--woutervangeluwe.aem.live/us/en`.
+`https://main--citisignal--woutervangeluwe.aem.page/us/en/` o `https://main--citisignal--woutervangeluwe.aem.live/us/en/`.
 
 Entonces debería ver esto. Haga clic en **Fibra**.
 
