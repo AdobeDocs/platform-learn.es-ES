@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: e22ec4d64c60fdc720896bd8b339f49b05d7e48d
+source-git-commit: a9f2e42d001e260f79439850bc5a364a64d1fc0e
 workflow-type: tm+mt
-source-wordcount: '3182'
+source-wordcount: '3788'
 ht-degree: 0%
 
 ---
@@ -239,13 +239,13 @@ En la colección **Adobe IO - OAuth**, seleccione la solicitud **POST - Obtener 
 
 Ahora que tiene un access_token válido y nuevo, está listo para enviar su primera solicitud a las API de Firefly Services.
 
-La solicitud que usará aquí es una solicitud **sincrónica**, que le proporcionará una respuesta que contiene la imagen solicitada en unos segundos.
+La solicitud que va a usar aquí es una **solicitud** asincrónica, que le proporciona una respuesta que contiene la dirección URL del trabajo que se ha enviado, lo que significa que necesitará usar una segunda solicitud para comprobar el estado del trabajo y acceder a la imagen que se generó.
 
 >[!NOTE]
 >
->Con el lanzamiento de Firefly Image 4 y Image 4 Ultra, las solicitudes sincrónicas quedarán obsoletas y pasarán a ser solicitudes asincrónicas. Encontrará ejercicios sobre solicitudes asincrónicas más adelante en este tutorial.
+>Con el lanzamiento de Firefly Image 4 y Image 4 Ultra, las solicitudes sincrónicas quedarán obsoletas y pasarán a ser solicitudes asincrónicas.
 
-Seleccione la solicitud **POST - Firefly - T2I V3** de la colección **FF - Firefly Services Tech Insiders**. Vaya a **Encabezados** y verifique las combinaciones de par clave/valor.
+Seleccione la solicitud **POST - Firefly - T2I V3 async** de la colección **FF - Firefly Services Tech Insiders**. Vaya a **Encabezados** y verifique las combinaciones de par clave/valor.
 
 | Clave | Valor |
 |:-------------:| :---------------:| 
@@ -254,7 +254,7 @@ Seleccione la solicitud **POST - Firefly - T2I V3** de la colección **FF - Fire
 
 Ambos valores de esta solicitud hacen referencia a variables de entorno que se han definido por adelantado. `{{API_KEY}}` hace referencia al campo **ID de cliente** de su proyecto de Adobe I/O. Como parte de la sección **Introducción** de este tutorial, lo configuró en Postman.
 
-El valor del campo **Autorización** es un poco especial: `Bearer {{ACCESS_TOKEN}}`. Contiene una referencia al **token de acceso** que generó en el paso anterior. Cuando recibió su **token de acceso** mediante la solicitud **POST - Obtener token de acceso** en la colección **Adobe IO - OAuth**, se ejecutó un script en Postman que almacenó el campo **access_token** como una variable de entorno, a la que ahora se hace referencia en la solicitud **POST - Firefly - T2I V3**. Tenga en cuenta la adición específica de la palabra **Portador** y un espacio antes de `{{ACCESS_TOKEN}}`. La palabra bearer distingue entre mayúsculas y minúsculas y se requiere espacio. Si no se hace correctamente, Adobe I/O devolverá un error **401 No autorizado** porque no podrá procesar tu **token de acceso** correctamente.
+El valor del campo **Autorización** es un poco especial: `Bearer {{ACCESS_TOKEN}}`. Contiene una referencia al **token de acceso** que generó en el paso anterior. Cuando recibió su **token de acceso** mediante la solicitud **POST - Obtener token de acceso** en la colección **Adobe IO - OAuth**, se ejecutó un script en Postman que almacenó el campo **access_token** como variable de entorno, al que ahora se hace referencia en la solicitud **POST - Firefly - T2I V3 async**. Tenga en cuenta la adición específica de la palabra **Portador** y un espacio antes de `{{ACCESS_TOKEN}}`. La palabra bearer distingue entre mayúsculas y minúsculas y se requiere espacio. Si no se hace correctamente, Adobe I/O devolverá un error **401 No autorizado** porque no podrá procesar tu **token de acceso** correctamente.
 
 ![Firefly](./images/ff0.png)
 
@@ -262,7 +262,23 @@ A continuación, vaya a **Body** y verifique el indicador. Haga clic en **Enviar
 
 ![Firefly](./images/ff1.png)
 
-Copie (o haga clic) en la dirección URL de la imagen de la respuesta y ábrala en el explorador web para ver la imagen.
+A continuación, obtendrá una respuesta inmediata. Esta respuesta no contiene las direcciones URL de imagen de la imagen generada, sino una dirección URL del informe de estado del trabajo que ha iniciado e incluye otra dirección URL que le permite cancelar el trabajo en ejecución.
+
+>[!NOTE]
+>
+>La colección de Postman que está utilizando se ha configurado para utilizar variables dinámicas. Por ejemplo, el campo **statusUrl** se ha almacenado como variable dinámica en Postman gracias a los **Scripts** que se han configurado en Postman.
+
+![Firefly](./images/ff1a.png)
+
+Para comprobar el informe de estado del trabajo en ejecución, seleccione la solicitud **GET - Firefly - Obtener informe de estado** de la colección **FF - Firefly Services Tech Insiders**. Haga clic para abrirlo y luego haga clic en **Enviar**. Seleccione la dirección URL de la imagen generada y ábrala en el explorador.
+
+>[!NOTE]
+>
+>La colección de Postman que está utilizando se ha configurado para utilizar variables dinámicas. Por ejemplo, el campo **statusUrl** de la solicitud anterior se almacenó como una variable dinámica en Postman y ahora se está usando como la URL para la solicitud **GET - Firefly - Obtener informe de estado**.
+
+![Firefly](./images/ff1b.png)
+
+Debería haber recibido una respuesta similar. Esta es la descripción general del trabajo que se ejecutó. Puede ver el campo **url**, que contiene la imagen generada. Copie (o haga clic) en la dirección URL de la imagen de la respuesta y ábrala en el explorador web para ver la imagen.
 
 ![Firefly](./images/ff2.png)
 
@@ -270,7 +286,7 @@ Debería ver una imagen hermosa que represente a `horses in a field`.
 
 ![Firefly](./images/ff3.png)
 
-En el **Cuerpo** de su solicitud **POST - Firefly - T2I V3**, agregue lo siguiente bajo el campo `"promptBiasingLocaleCode": "en-US"` y reemplace la variable `XXX` por uno de los números semilla que la interfaz de usuario de Firefly Services utilizó aleatoriamente. En este ejemplo, el número **seed** es `142194`.
+En **Cuerpo** de su solicitud **POST - Firefly - T2I V3 async**, agregue lo siguiente en el campo `"promptBiasingLocaleCode": "en-US"` y reemplace la variable `XXX` por uno de los números semilla que la interfaz de usuario de Firefly Services utilizó aleatoriamente. En este ejemplo, el número **seed** es `142194`.
 
 ```json
 ,
@@ -279,7 +295,11 @@ En el **Cuerpo** de su solicitud **POST - Firefly - T2I V3**, agregue lo siguien
   ]
 ```
 
-Haga clic en **Enviar**. A continuación, recibirá una respuesta con una nueva imagen generada por Firefly Services. Abra la imagen para verla.
+Haga clic en **Enviar**. A continuación, volverá a recibir una respuesta con un vínculo al informe de estado del trabajo que acaba de enviar.
+
+![Firefly](./images/ff3a.png)
+
+Para comprobar el informe de estado del trabajo en ejecución, seleccione la solicitud **GET - Firefly - Obtener informe de estado** de la colección **FF - Firefly Services Tech Insiders**. Haga clic para abrirlo y luego haga clic en **Enviar**. Seleccione la dirección URL de la imagen generada y ábrala en el explorador.
 
 ![Firefly](./images/ff4.png)
 
@@ -287,7 +307,7 @@ Entonces debería ver una nueva imagen con ligeras diferencias, basada en la **s
 
 ![Firefly](./images/ff5.png)
 
-A continuación, en **Body** de su solicitud **POST - Firefly - T2I V3**, pegue el siguiente objeto **styles** debajo del objeto **seed**. Esto cambiará el estilo de la imagen generada a **art_deco**.
+A continuación, en **Body** de su solicitud **POST - Firefly - T2I V3 async**, pegue el siguiente objeto **styles** debajo del objeto **seed**. Esto cambiará el estilo de la imagen generada a **art_deco**.
 
 ```json
 ,
@@ -300,11 +320,11 @@ A continuación, en **Body** de su solicitud **POST - Firefly - T2I V3**, pegue 
   }
 ```
 
-Entonces deberías tener esto. Haga clic en **Enviar**.
+Entonces deberías tener esto. Haga clic en **Enviar**. A continuación, volverá a recibir una respuesta con un vínculo al informe de estado del trabajo que acaba de enviar.
 
 ![Firefly](./images/ff6.png)
 
-Haga clic en la dirección URL de la imagen para abrirla.
+Para comprobar el informe de estado del trabajo en ejecución, seleccione la solicitud **GET - Firefly - Obtener informe de estado** de la colección **FF - Firefly Services Tech Insiders**. Haga clic para abrirlo y luego haga clic en **Enviar**. Seleccione la dirección URL de la imagen generada y ábrala en el explorador.
 
 ![Firefly](./images/ff7.png)
 
@@ -312,7 +332,7 @@ La imagen ha cambiado un poco. Al aplicar ajustes preestablecidos de estilo, la 
 
 ![Firefly](./images/ff8.png)
 
-Elimine el código del objeto **seed** del **cuerpo** de su solicitud. Haga clic en **Enviar** y, a continuación, haga clic en la URL de la imagen que obtiene de la respuesta.
+Elimine el código del objeto **seed** del **cuerpo** de su solicitud **POST - Firefly - T2I V3 async**. Haga clic en **Enviar** y, a continuación, haga clic en la URL de la imagen que obtiene de la respuesta. A continuación, volverá a recibir una respuesta con un vínculo al informe de estado del trabajo que acaba de enviar.
 
 ```json
 ,
@@ -323,13 +343,17 @@ Elimine el código del objeto **seed** del **cuerpo** de su solicitud. Haga clic
 
 ![Firefly](./images/ff9.png)
 
+Para comprobar el informe de estado del trabajo en ejecución, seleccione la solicitud **GET - Firefly - Obtener informe de estado** de la colección **FF - Firefly Services Tech Insiders**. Haga clic para abrirlo y luego haga clic en **Enviar**. Seleccione la dirección URL de la imagen generada y ábrala en el explorador.
+
+![Firefly](./images/ff9a.png)
+
 La imagen ha cambiado un poco de nuevo.
 
 ![Firefly](./images/ff10.png)
 
 ## 1.1.1.7 API de Firefly Services, Gen Expand
 
-Seleccione la solicitud **POST - Firefly - Gen Expand** de la colección **FF - Firefly Services Tech Insiders** y vaya al **Cuerpo** de la solicitud.
+Seleccione la solicitud **POST - Firefly - Gen Expand async** de la colección **FF - Firefly Services Tech Insiders** y vaya al **Cuerpo** de la solicitud.
 
 - **size**: escriba la resolución que desee. El valor introducido aquí debe ser mayor que el tamaño original de la imagen y no puede ser superior a 3999.
 - **image.source.url**: este campo necesita un vínculo a la imagen que debe expandirse. En este ejemplo, se utiliza una variable para hacer referencia a la imagen generada en el ejercicio anterior.
@@ -339,7 +363,11 @@ Seleccione la solicitud **POST - Firefly - Gen Expand** de la colección **FF - 
 
 ![Firefly](./images/ff11.png)
 
-Haga clic en la URL de la imagen que forma parte de la respuesta.
+A continuación, volverá a recibir una respuesta con un vínculo al informe de estado del trabajo que acaba de enviar.
+
+![Firefly](./images/ff11a.png)
+
+Para comprobar el informe de estado del trabajo en ejecución, seleccione la solicitud **GET - Firefly - Obtener informe de estado** de la colección **FF - Firefly Services Tech Insiders**. Haga clic para abrirlo y luego haga clic en **Enviar**. Seleccione la dirección URL de la imagen generada y ábrala en el explorador.
 
 ![Firefly](./images/ff12.png)
 
@@ -347,9 +375,27 @@ Ahora verá que la imagen generada en el ejercicio anterior se ha ampliado a la 
 
 ![Firefly](./images/ff13.png)
 
-Al cambiar la alineación de la posición, la salida también será ligeramente diferente. En este ejemplo, la ubicación se cambia a **left, bottom**. Haga clic en **Enviar** y, a continuación, haga clic en para abrir la dirección URL de la imagen generada.
+Genere una nueva imagen usando la solicitud **Firefly - T2I V3 async**.
+
+![Firefly](./images/ff13a.png)
+
+Para comprobar el informe de estado del trabajo en ejecución, seleccione la solicitud **GET - Firefly - Obtener informe de estado** de la colección **FF - Firefly Services Tech Insiders**. Haga clic para abrirlo y luego haga clic en **Enviar**. Seleccione la dirección URL de la imagen generada y ábrala en el explorador.
+
+![Firefly](./images/ff13b.png)
+
+A continuación, debería ver una imagen similar.
+
+![Firefly](./images/ff13c.png)
+
+Seleccione la solicitud **POST - Firefly - Gen Expand async** de la colección **FF - Firefly Services Tech Insiders** y vaya al **Cuerpo** de la solicitud.
+
+Al cambiar la alineación de la posición, la salida también será ligeramente diferente. En este ejemplo, la ubicación se cambia a **left, bottom**. Haga clic en **Enviar**. A continuación, volverá a recibir una respuesta con un vínculo al informe de estado del trabajo que acaba de enviar.
 
 ![Firefly](./images/ff14.png)
+
+Para comprobar el informe de estado del trabajo en ejecución, seleccione la solicitud **GET - Firefly - Obtener informe de estado** de la colección **FF - Firefly Services Tech Insiders**. Haga clic para abrirlo y luego haga clic en **Enviar**. Seleccione la dirección URL de la imagen generada y ábrala en el explorador.
+
+![Firefly](./images/ff14a.png)
 
 A continuación, debe ver que la imagen original se utiliza en una ubicación diferente, lo que influye en toda la imagen.
 
@@ -381,7 +427,7 @@ Vaya a **Cuerpo** de la solicitud. Hay que ver que en el cuerpo se están solici
 
 ![Firefly](./images/ffim4_2.png)
 
-A continuación, obtendrá una respuesta inmediata. A diferencia de la solicitud sincrónica anterior que utilizó, esta respuesta no contiene direcciones URL de imagen de imágenes generadas. Contiene una dirección URL del informe de estado del trabajo que ha iniciado y contiene otra dirección URL que le permite cancelar el trabajo en ejecución.
+A continuación, obtendrá una respuesta inmediata. Esta respuesta no contiene las direcciones URL de imagen de la imagen generada, sino una dirección URL del informe de estado del trabajo que ha iniciado e incluye otra dirección URL que le permite cancelar el trabajo en ejecución.
 
 ![Firefly](./images/ffim4_3.png)
 
