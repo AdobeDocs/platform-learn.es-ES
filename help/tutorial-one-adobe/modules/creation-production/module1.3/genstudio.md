@@ -5,15 +5,28 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 51ad32eb3a017c973d0822b6d1e5a39d5c3947b7
+exl-id: 6c0051e8-3dce-4b1f-a9fa-e86565a9fff4
+source-git-commit: b18b2e00f22c0a5ce2f17a95892be344387718e3
 workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 9%
+source-wordcount: '437'
+ht-degree: 2%
 
 ---
 
 # 1.3 GenStudio for Performance Marketing
 
+Adobe GenStudio for Performance Marketing ofrece un completo conjunto de herramientas diseñadas para optimizar la creación, administración y análisis de contenido. Infunde al ciclo vital de creación de contenido funciones de IA generativas que transforman la forma en que se crea, revisa, comparte y analiza el contenido de marketing.
+
+GenStudio for Performance Marketing utiliza información sobre su marca y sus mercados para mejorar la creación de contenido compatible con la marca. La IA generativa aprovecha las descripciones de los perfiles de los clientes, los productos y las directrices de marca para guiar la generación de contenido en consonancia con los requisitos de su organización.
+
+Para utilizar de forma eficaz las funciones de IA generativa para crear y revisar recursos de campaña, se deben realizar una serie de pasos:
+
+- Directrices de configuración: Las directrices de marca capturan características de marca como productos, personalidades y detalles de marca. Las capacidades generativas de IA subyacentes de GenStudio for Performance Marketing utilizan estas directrices para establecer protecciones que guíen la generación de contenido. Puede cargar documentos de directrices para marcas o introducir manualmente información de marca.
+- Cargar plantillas: Las plantillas aceleran la creación de contenido. Una plantilla contiene funciones aprobadas, como encabezados y pies de página, y está optimizada para canales específicos. Normalmente, los administradores de sistemas cargan y administran plantillas para su organización. Los editores de contenido utilizan plantillas para iniciar el proceso de creación de contenido dentro de los límites establecidos de la marca de la organización.
+- Cargar recursos aprobados: los recursos aprobados en Contenido están disponibles para todos los editores de GenStudio for Performance Marketing. Puede rellenar Contenido con recursos para que los editores de contenido los utilicen en la creación de nuevas experiencias o recursos.
+- Conéctese a una cuenta de medios de pago: configure una conexión entre GenStudio for Performance Marketing y sus cuentas de medios de pago para recibir datos de campañas de marketing, recursos y experiencias activos. Utilice Insights para analizar datos derivados del canal.
+
+En este módulo, aprenderá a realizar todos los pasos anteriores usted mismo y terminará el módulo publicando su anuncio en un destino de medios de pago.
 
 ## Requisitos previos
 
@@ -28,6 +41,10 @@ En este ejercicio, configurará una marca CitiSignal en GenStudio for Performanc
 [1.3.2 Configuración: personalidades, productos y plantillas](./ex2.md){target="_blank"}
 
 En este ejercicio, configurará personas y productos en GenStudio for Performance Marketing.
+
+[1.3.3 Activación de campaña en Meta](./ex3.md){target="_blank"}
+
+En este ejercicio, debe configurar una conexión con Meta y recorrer todos los pasos necesarios para poder crear un anuncio, aprobarlo con Adobe Workfront y publicar un anuncio en Meta.
 
 [Resumen y beneficios](./summary.md){target="_blank"}
 

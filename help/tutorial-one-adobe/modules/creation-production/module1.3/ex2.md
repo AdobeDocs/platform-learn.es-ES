@@ -5,18 +5,27 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 32f7cfc1aafb7a58dca99be3be9149c90bcfd040
+exl-id: 181c1623-eb47-47e0-889b-6e9ebb6a143c
+source-git-commit: b18b2e00f22c0a5ce2f17a95892be344387718e3
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '948'
 ht-degree: 2%
 
 ---
 
 # 1.3.2 Configuración: personalidades, productos y plantillas
 
+Vaya a [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Abra **GenStudio**.
+
+![GSPeM](./images/gspem1.png)
+
 ## 1.3.2.1 productos
 
-Haga clic en los 3 puntos **...** y, a continuación, seleccione **Productos**.
+Los productos de GenStudio for Performance Marketing aprovechan una comprensión profunda de las especificaciones del producto, las ventajas y los factores de diferenciación para generar contenido impactante.
+
+Los productos abarcan todos los elementos de un producto específico, como imágenes, descripciones y propuestas de valor, para crear una representación de marca coherente. Al aprovechar la tecnología de IA avanzada de Adobe, las directrices de GenStudio for Performance Marketing (marcas, productos y personas) trabajan juntas para generar contenido atractivo que muestre los puntos fuertes de sus productos y garantice la coherencia en todos los mensajes.
+
+Para empezar a crear sus propios productos, haga clic en los 3 puntos **...** y, a continuación, seleccione **Productos**.
 
 ![GSPeM](./images/gspem101.png)
 
@@ -102,7 +111,11 @@ Entonces debería ver los 2 productos que configuró.
 
 ## 1.3.2.2 personalidades
 
-Haga clic en los 3 puntos **...** y, a continuación, seleccione **Personas**.
+Las personas ofrecen una representación auténtica de los segmentos de sus clientes, incluida su información, intereses, puntos problemáticos, preferencias y rasgos de comportamiento.
+
+GenStudio for Performance Marketing aprovecha el poder de las directrices (marcas, productos y personas) y la tecnología de IA generativa de Adobe para depurar contenido de marketing personalizado para sus clientes objetivo&#x200B;
+
+Para empezar a crear tus personalidades, haz clic en los 3 puntos **...** y luego selecciona **personalidades**.
 
 ![GSPeM](./images/gspem111.png)
 
@@ -213,6 +226,10 @@ A continuación, debería ver las 3 personalidades que ha configurado.
 ![GSPeM](./images/gspem124.png)
 
 ## 1.3.2.3 plantillas
+
+GenStudio for Performance Marketing permite a los creadores de contenido producir rápidamente contenido de marketing coherente de la marca mediante plantillas. Una plantilla reduce significativamente el tiempo y el esfuerzo necesarios para generar contenido nuevo al proporcionar un punto de partida que incluye diseños y elementos de diseño preconfigurados.
+
+Aunque GenStudio for Performance Marketing no admite la creación directa de plantillas dentro de la aplicación, puede diseñar y preparar fácilmente plantillas con herramientas de diseño populares, como Adobe InDesign, Illustrator o Express. Una vez completado el diseño, puede adaptarlo para utilizarlo en GenStudio for Performance Marketing. En este ejercicio, importará varias plantillas predefinidas en GenStudio for Performance Marketing.
 
 En el ejercicio anterior, descargó el archivo [CitiSignal-GSPeM-assets.zip](../../../assets/gspem/CitiSignal-GSPeM-assets.zip) en su escritorio y lo descomprimió. Esa carpeta contiene 4 plantillas de ejemplo que ahora debe importar en GenStudio.
 
