@@ -5,10 +5,10 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 174c818dfc9edd78afd32cb919f14acc4aabca72
+source-git-commit: 51ad32eb3a017c973d0822b6d1e5a39d5c3947b7
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 11%
+source-wordcount: '106'
+ht-degree: 9%
 
 ---
 
@@ -21,9 +21,13 @@ ht-degree: 11%
 
 ## Ejercicios
 
-[1.3.1 Introducción a GenStudio for Performance Marketing](./ex1.md){target="_blank"}
+[1.3.1 Configuración: marcas](./ex1.md){target="_blank"}
 
-En este ejercicio, explore GenStudio for Performance Marketing.
+En este ejercicio, configurará una marca CitiSignal en GenStudio for Performance Marketing.
+
+[1.3.2 Configuración: personalidades, productos y plantillas](./ex2.md){target="_blank"}
+
+En este ejercicio, configurará personas y productos en GenStudio for Performance Marketing.
 
 [Resumen y beneficios](./summary.md){target="_blank"}
 

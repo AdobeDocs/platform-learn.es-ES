@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 37de6ceb-833e-4e75-9201-88bddd38a817
-source-git-commit: badef353b0df7b678e05d2e89280393b56fd65b6
+source-git-commit: 31ff3c9764b07f29d1235ac146d1631529b6038f
 workflow-type: tm+mt
-source-wordcount: '3367'
+source-wordcount: '3352'
 ht-degree: 0%
 
 ---
@@ -524,14 +524,12 @@ La conexión de Frame.io se seleccionará automáticamente.
 
 Para la configuración del módulo **Frame.io: realice una llamada de API personalizada**, use la dirección URL: `/v4/accounts/{{1.account_id}}/folders/{{4.body.data.parent_id}}/files/remote_upload`.
 
-Debe reemplazar XXX en la URL anterior por el ID de la carpeta
-
 >[!NOTE]
 >
 >Como se ha indicado anteriormente, las variables de Workfront Fusion se pueden especificar manualmente con esta sintaxis: `{{1.account_id}}` y `{{4.body.data.parent_id}}`. El número de la variable hace referencia al módulo en el escenario.
->&#x200B;>En este ejemplo, puede ver que el primer módulo del escenario se llama **Webhooks** y tiene un número de secuencia de **1**. Esto significa que la variable `{{1.account_id}}` accederá a ese campo desde el módulo con el número de secuencia 1.
->&#x200B;>En este ejemplo, puede ver que el cuarto módulo del escenario se llama **Frame.io - Realizar una llamada de API personalizada** y tiene un número de secuencia de **4**. Esto significa que la variable `{{4.body.data.parent_id}}` accederá a ese campo desde el módulo con el número de secuencia 4.
->&#x200B;>Si los números de secuencia de los módulos son diferentes, deberá actualizar las variables en la URL anterior para que se vinculen al módulo correcto.
+>>En este ejemplo, puede ver que el primer módulo del escenario se llama **Webhooks** y tiene un número de secuencia de **1**. Esto significa que la variable `{{1.account_id}}` accederá a ese campo desde el módulo con el número de secuencia 1.
+>>En este ejemplo, puede ver que el cuarto módulo del escenario se llama **Frame.io - Realizar una llamada de API personalizada** y tiene un número de secuencia de **4**. Esto significa que la variable `{{4.body.data.parent_id}}` accederá a ese campo desde el módulo con el número de secuencia 4.
+>>Si los números de secuencia de los módulos son diferentes, deberá actualizar las variables en la URL anterior para que se vinculen al módulo correcto.
 
 ![E/S de cuadro](./images/frame78.png)
 
@@ -551,7 +549,7 @@ Copie y pegue el siguiente fragmento JSON en el campo **Cuerpo**.
 >[!NOTE]
 >
 >Las variables de Workfront Fusion se pueden especificar manualmente con esta sintaxis: `{{6.data.newPsdTemplate}}`. El número de la variable hace referencia al módulo en el escenario. En este ejemplo, puede ver que el sexto módulo del escenario se llama **HTTP - Realizar una solicitud** y tiene un número de secuencia de **6**. Esto significa que la variable `{{6.data.newPsdTemplate}}` tendrá acceso al campo **data.newPsdTemplate** desde el módulo con el número de secuencia 6.
->&#x200B;>Si los números de secuencia del módulo son diferentes, deberá actualizar la variable en la URL anterior para que esté vinculada al módulo correcto.
+>>Si los números de secuencia del módulo son diferentes, deberá actualizar la variable en la URL anterior para que esté vinculada al módulo correcto.
 
 Haga clic en **Aceptar**.
 

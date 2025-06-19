@@ -3,7 +3,7 @@ title: 'Información general: tutorial técnico completo: One Adobe'
 description: 'Tutorial técnico completo: One Adobe'
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 174c818dfc9edd78afd32cb919f14acc4aabca72
+source-git-commit: 31ff3c9764b07f29d1235ac146d1631529b6038f
 workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 2%
@@ -41,9 +41,9 @@ Este tutorial no solo se centra en las aplicaciones de Adobe, sino que tiene en 
 Después de completar algunos de los módulos de este tutorial, puede realizar un examen de credenciales de Adobe para recibir la insignia **Adobe Qualified**.
 
 - Cuando complete el módulo [Información general de Adobe Firefly Services](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}, estará listo para realizar y aprobar el examen **Adobe Qualified** **AD2-E901**:
-  [https://certification.adobe.com/certification/services-qualified-credential](https://certification.adobe.com/certification/services-qualified-credential).
-- Cuando complete el módulo [Automatización del flujo de trabajo de Creative con Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"}, estará listo para realizar y aprobar el examen **Adobe Qualified** **XXX**:
-  [TBC](https://certification.adobe.com/certification/services-qualified-credential).
+  [https://certification.adobe.com/certification/services-qualified-credential](https://certification.adobe.com/certification/services-qualified-credential){target="_blank"}.
+- Cuando complete el módulo [Automatización del flujo de trabajo de Creative con Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"}, estará listo para realizar y aprobar el examen **Adobe Qualified** **AD2-E902**:
+  [https://certification.adobe.com/certification/fusion-qualified-credential](https://certification.adobe.com/certification/fusion-qualified-credential){target="_blank"}.
 
 ## Estado del contenido
 
