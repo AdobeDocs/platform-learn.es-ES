@@ -4,10 +4,10 @@ description: Cree su programa de Cloud Manager
 kt: 5342
 doc-type: tutorial
 exl-id: fda247eb-1865-4936-b46e-84128ccab357
-source-git-commit: 1bcc5123f16dbde30877662159e06d61d75e7287
+source-git-commit: 7b9df90424c1d8c2fbe7672f00e9b2ce0ec66d19
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 4%
+source-wordcount: '360'
+ht-degree: 3%
 
 ---
 
@@ -76,7 +76,34 @@ A continuación, haga clic en los 3 puntos **...** en la ficha **Entornos** y ha
 
 A continuación, verá los detalles del entorno, incluida la dirección URL del entorno **Author**, que necesitará en el siguiente ejercicio.
 
+Eche un vistazo a la línea **Content Hub** y seleccione **Haga clic para activar**.
+
 ![AEMCS](./images/aemcs10.png)
+
+Haga clic en **Activar**.
+
+![AEMCS](./images/aemcsact1.png)
+
+La activación de **Content Hub** se ha iniciado. Esto puede tardar 10 minutos o más.
+
+![AEMCS](./images/aemcsact2.png)
+
+Después de unos 10 minutos, se activará **Content Hub**.
+A continuación, observe la línea **Dynamic Media** y seleccione **Haga clic para activar**.
+
+![AEMCS](./images/aemcsact3.png)
+
+Haga clic en **Activar**.
+
+![AEMCS](./images/aemcsact4.png)
+
+Se ha iniciado la activación de **Dynamic Media**. Esto puede tardar 10 minutos o más.
+
+![AEMCS](./images/aemcsact5.png)
+
+Después de unos 10 minutos, se activará **Dynamic Media**.
+
+![AEMCS](./images/aemcsact6.png)
 
 Una vez finalizada la ejecución de la canalización, puede continuar con el siguiente ejercicio.
 

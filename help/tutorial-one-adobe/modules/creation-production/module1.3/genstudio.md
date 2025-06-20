@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 6c0051e8-3dce-4b1f-a9fa-e86565a9fff4
-source-git-commit: b18b2e00f22c0a5ce2f17a95892be344387718e3
+source-git-commit: b8f7b370a5aba82a0dcd6e7f4f0222fe209976f7
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '462'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,9 @@ En este módulo, aprenderá a realizar todos los pasos anteriores usted mismo y 
 
 ## Requisitos previos
 
-- Acceso a Adobe GenStudio for Performance Marketing [https://new.express.adobe.com/](https://new.express.adobe.com/){target="_blank"}
+- Acceso a Adobe GenStudio for Performance Marketing
+- Acceso a Adobe Workfront y Adobe Workfront Planning
+- Acceso a una zona protegida de Adobe Experience Manager Cloud Service con Content Hub habilitado
 
 ## Ejercicios
 
@@ -40,11 +42,11 @@ En este ejercicio, configurará una marca CitiSignal en GenStudio for Performanc
 
 [1.3.2 Configuración: personalidades, productos y plantillas](./ex2.md){target="_blank"}
 
-En este ejercicio, configurará personas y productos en GenStudio for Performance Marketing.
+En este ejercicio, configurará personas, productos y plantillas en GenStudio for Performance Marketing.
 
 [1.3.3 Activación de campaña en Meta](./ex3.md){target="_blank"}
 
-En este ejercicio, debe configurar una conexión con Meta y recorrer todos los pasos necesarios para poder crear un anuncio, aprobarlo con Adobe Workfront y publicar un anuncio en Meta.
+En este ejercicio, debe crear una campaña. También configurará una conexión con Meta y realizará todos los pasos necesarios para poder crear un anuncio, aprobar un anuncio con Adobe Workfront y publicar un anuncio en Meta.
 
 [Resumen y beneficios](./summary.md){target="_blank"}
 
