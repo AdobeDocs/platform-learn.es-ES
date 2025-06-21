@@ -20,6 +20,6 @@ ht-degree: 0%
 
 Conozca los conceptos básicos de la creación de proyectos en Collaboration, incluido un breve vistazo a la detección, la activación y la medición.
 
->[!VIDEO](https://video.tv.adobe.com/v/3464033/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464037/?learn=on&enablevpops&captions=spa)
 
 Para obtener más información, visite la [documentación](https://experienceleague.adobe.com/es/docs/real-time-cdp-collaboration/using/collaborate/manage-projects){target="_blank"}.
