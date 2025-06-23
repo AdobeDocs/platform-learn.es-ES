@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Configuración de Adobe Analytics con Adobe Experience Platform Web SDK
 
-Obtenga información sobre cómo configurar Adobe Analytics con [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview), crear reglas de etiquetas para enviar datos a Adobe Analytics y validar que Analytics esté capturando los datos según lo esperado.
+Obtenga información sobre cómo configurar Adobe Analytics con [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/es/docs/platform-learn/data-collection/web-sdk/overview), crear reglas de etiquetas para enviar datos a Adobe Analytics y validar que Analytics esté capturando los datos según lo esperado.
 
 [Adobe Analytics](https://experienceleague.adobe.com/es/docs/analytics) es una aplicación líder del sector que te permite entender a tus clientes como personas y dirigir tu negocio con inteligencia de clientes.
 
@@ -35,7 +35,7 @@ Para completar esta lección, primero debe:
 
 * Estar familiarizado con Adobe Analytics y tener acceso a él.
 
-* Tener al menos un ID de grupo de informes de prueba o desarrollo. Si no dispone de un grupo de informes de prueba o desarrollo que pueda usar para este tutorial, [cree uno](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+* Tener al menos un ID de grupo de informes de prueba o desarrollo. Si no dispone de un grupo de informes de prueba o desarrollo que pueda usar para este tutorial, [cree uno](https://experienceleague.adobe.com/es/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
 * Complete las lecciones anteriores de las secciones Configuración inicial y Configuración de etiquetas de este tutorial.
 
@@ -78,7 +78,7 @@ A partir de mayo de 2024, ya no necesita crear un esquema XDM para implementar A
 
 ### Campos asignados automáticamente
 
-Muchos campos XDM se asignan automáticamente a variables de Analytics. Para obtener la lista más actualizada de asignaciones, consulte [Asignación de variables de Analytics en Adobe Experience Edge](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
+Muchos campos XDM se asignan automáticamente a variables de Analytics. Para obtener la lista más actualizada de asignaciones, consulte [Asignación de variables de Analytics en Adobe Experience Edge](https://experienceleague.adobe.com/es/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
 
 Esto ocurre si _aunque no haya definido un esquema personalizado_. Experience Platform Web SDK registra automáticamente algunos datos y los envía a Platform Edge Network como campos XDM. Por ejemplo, Web SDK lee la dirección URL de la página actual y la envía como campo XDM `web.webPageDetails.URL`. Este campo se reenvía a Adobe Analytics y rellena automáticamente los informes de URL de la página en Adobe Analytics.
 
@@ -491,4 +491,4 @@ Siga validando la implementación revisando el carro de compras, el cierre de co
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=es)
