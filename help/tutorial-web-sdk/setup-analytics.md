@@ -4,16 +4,16 @@ description: Obtenga información sobre cómo configurar Adobe Analytics mediant
 solution: Data Collection, Analytics
 jira: KT-15408
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 7c302bf9503e7a95162ab83af59d466bb4ff1f7e
 workflow-type: tm+mt
-source-wordcount: '2865'
+source-wordcount: '2904'
 ht-degree: 1%
 
 ---
 
 # Configuración de Adobe Analytics con Adobe Experience Platform Web SDK
 
-Obtenga información sobre cómo configurar Adobe Analytics con [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/es/docs/platform-learn/data-collection/web-sdk/overview), crear reglas de etiquetas para enviar datos a Adobe Analytics y validar que Analytics esté capturando los datos según lo esperado.
+Obtenga información sobre cómo configurar Adobe Analytics con [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview), crear reglas de etiquetas para enviar datos a Adobe Analytics y validar que Analytics esté capturando los datos según lo esperado.
 
 [Adobe Analytics](https://experienceleague.adobe.com/es/docs/analytics) es una aplicación líder del sector que te permite entender a tus clientes como personas y dirigir tu negocio con inteligencia de clientes.
 
@@ -35,7 +35,7 @@ Para completar esta lección, primero debe:
 
 * Estar familiarizado con Adobe Analytics y tener acceso a él.
 
-* Tener al menos un ID de grupo de informes de prueba o desarrollo. Si no dispone de un grupo de informes de prueba o desarrollo que pueda usar para este tutorial, [cree uno](https://experienceleague.adobe.com/es/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+* Tener al menos un ID de grupo de informes de prueba o desarrollo. Si no dispone de un grupo de informes de prueba o desarrollo que pueda usar para este tutorial, [cree uno](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
 * Complete las lecciones anteriores de las secciones Configuración inicial y Configuración de etiquetas de este tutorial.
 
@@ -78,7 +78,7 @@ A partir de mayo de 2024, ya no necesita crear un esquema XDM para implementar A
 
 ### Campos asignados automáticamente
 
-Muchos campos XDM se asignan automáticamente a variables de Analytics. Para obtener la lista más actualizada de asignaciones, consulte [Asignación de variables de Analytics en Adobe Experience Edge](https://experienceleague.adobe.com/es/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
+Muchos campos XDM se asignan automáticamente a variables de Analytics. Para obtener la lista más actualizada de asignaciones, consulte [Asignación de variables de Analytics en Adobe Experience Edge](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
 
 Esto ocurre si _aunque no haya definido un esquema personalizado_. Experience Platform Web SDK registra automáticamente algunos datos y los envía a Platform Edge Network como campos XDM. Por ejemplo, Web SDK lee la dirección URL de la página actual y la envía como campo XDM `web.webPageDetails.URL`. Este campo se reenvía a Adobe Analytics y rellena automáticamente los informes de URL de la página en Adobe Analytics.
 
@@ -106,8 +106,8 @@ Las secciones individuales de la cadena de producto de Analytics se establecen a
 >[!NOTE]
 >
 >A partir del 18 de agosto de 2022, `productListItems[].SKU` tiene prioridad para la asignación al nombre del producto en la variable s.products.
->&#x200B;>El valor establecido en `productListItems[].name` se asigna al nombre del producto solamente si `productListItems[].SKU` no existe. De lo contrario, no está asignado y disponible en los datos de contexto.
->&#x200B;>No establezca una cadena vacía o nula en `productListItems[].SKU`. Esto tiene el efecto no deseado de asignar al nombre del producto en la variable s.products.
+>>El valor establecido en `productListItems[].name` se asigna al nombre del producto solamente si `productListItems[].SKU` no existe. De lo contrario, no está asignado y disponible en los datos de contexto.
+>>No establezca una cadena vacía o nula en `productListItems[].SKU`. Esto tiene el efecto no deseado de asignar al nombre del producto en la variable s.products.
 
 
 ### Establecer variables en el objeto de datos
@@ -366,6 +366,10 @@ Vaya a una página de producto como la [página de productos Didi Sport Watch](h
 1. Busque `[!UICONTROL c.a.x.web.webpagedetails.pageviews.value]=1`.
 1. Desplácese hacia abajo para ver la variable `[!UICONTROL gn]`. Es la sintaxis dinámica de Analytics para la variable `[!UICONTROL s.pageName]`. Captura el nombre de página de la capa de datos.
 
+   >[!NOTE]
+   >
+   > El valor `gn` podría ser `test` si sobrescribió el objeto `xdm` con el objeto `data` en el ejercicio anterior.
+
    ![Cadena de producto de Analytics](assets/analytics-debugger-edge-page-view.png)
 
 ### Validación de eventos de cadena de producto y comercio electrónico
@@ -389,7 +393,7 @@ Como ya está en una página de producto, este ejercicio sigue utilizando el mis
 
    >[!TIP]
    >
-   > La regla `ecommerce - pdp library loaded - AA (order 20)` está sobrescribiendo el valor de `eventType` establecido por la regla `all pages global content variables - library loaded - AA (order 1)`, ya que se establece en déclencheur más adelante en la secuencia
+   > La regla `ecommerce - library loaded - set product details variables - 20` está sobrescribiendo el valor de `eventType` establecido por la regla `all pages - library loaded - set global variables - 1`, ya que se establece en déclencheur más adelante en la secuencia
 
 
    ![Vista de producto de Analytics](assets/analytics-debugger-prodView.png)
@@ -449,8 +453,14 @@ A continuación, desplácese hacia abajo hasta **[!UICONTROL mcvisId]** para val
 ### Validación de vistas de página de contenido
 
 Con la misma señalización, compruebe que las vistas de página de contenido estén asignadas a la variable de Adobe Analytics correcta.
-Desplácese hacia abajo hasta **[!UICONTROL pageName]** para comprobar que `Page Name` se ha capturado correctamente
-![Validación de nombre de página con Assurance](assets/assurance-hitdebugger-content-pagename.png)
+Desplácese hacia abajo hasta **[!UICONTROL pageName]** para comprobar que `Page Name` se ha capturado correctamente:
+
+
+    >[!NOTE]
+    >
+    > El valor &quot;pageName&quot; podría ser &quot;test&quot; si sobrescribió el objeto &quot;xdm&quot; con el objeto &quot;data&quot; en el ejercicio anterior.
+    
+    ![Validación de nombre de página con Assurance](assets/assurance-hitdebugger-content-pagename.png)
 
 ### Validación de eventos de cadena de producto y comercio electrónico
 
@@ -481,4 +491,4 @@ Siga validando la implementación revisando el carro de compras, el cierre de co
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=es)
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -3,10 +3,10 @@ title: Transmitir datos a Adobe Experience Platform con Platform Web SDK
 description: Obtenga información sobre cómo transmitir datos web a Adobe Experience Platform con Web SDK. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 7c302bf9503e7a95162ab83af59d466bb4ff1f7e
 workflow-type: tm+mt
-source-wordcount: '2107'
-ht-degree: 5%
+source-wordcount: '2307'
+ht-degree: 4%
 
 ---
 
@@ -44,7 +44,7 @@ Para completar esta lección, primero debe:
 
 ## Crear un conjunto de datos
 
-Todos los datos que se incorporan correctamente a Adobe Experience Platform se conservan dentro del lago de datos como conjuntos de datos. Un [conjunto de datos](https://experienceleague.adobe.com/es/docs/experience-platform/catalog/datasets/overview) es una construcción de almacenamiento y administración para una colección de datos, normalmente una tabla que contiene un esquema (columnas) y campos (filas). Los conjuntos de datos también contienen metadatos que describen varios aspectos de los datos que almacenan.
+Todos los datos que se incorporan correctamente a Adobe Experience Platform se conservan dentro del lago de datos como conjuntos de datos. Un [conjunto de datos](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) es una construcción de almacenamiento y administración para una colección de datos, normalmente una tabla que contiene un esquema (columnas) y campos (filas). Los conjuntos de datos también contienen metadatos que describen varios aspectos de los datos que almacenan.
 
 Vamos a configurar un conjunto de datos para los datos de evento web de Luma:
 
@@ -160,14 +160,14 @@ Para confirmar que los datos han llegado al lago de datos de Platform, una opci�
 
 >[!INFO]
 >
->  Para obtener más información acerca del servicio de consultas de Adobe Experience Platform, consulte [Explorar datos](https://experienceleague.adobe.com/es/docs/platform-learn/tutorials/queries/explore-data) en la sección Tutoriales de Platform.
+>  Para obtener más información acerca del servicio de consultas de Adobe Experience Platform, consulte [Explorar datos](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) en la sección Tutoriales de Platform.
 
 
 ## Habilitar el conjunto de datos y el esquema para el perfil del cliente en tiempo real
 
 Para los clientes de Real-Time Customer Data Platform y Journey Optimizer, el siguiente paso es habilitar el conjunto de datos y el esquema para el perfil del cliente en tiempo real. La transmisión de datos desde Web SDK será una de las muchas fuentes de datos que fluirán a Platform y desea unir los datos web con otras fuentes de datos para crear perfiles de clientes de 360 grados. Para obtener más información sobre el Perfil del cliente en tiempo real, vea este breve vídeo:
 
->[!VIDEO](https://video.tv.adobe.com/v/31833?learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&captions=eng)
 
 >[!CAUTION]
 >
@@ -252,11 +252,15 @@ Primero debe generar más datos de ejemplo. Repita los pasos anteriores de esta 
 
 Ahora ha habilitado Platform Web SDK para Experience Platform (y Real-Time CDP! ¡Y Journey Optimizer! Y Customer Journey Analytics!).
 
+## Crear una audiencia evaluada por Edge
+
+Se recomienda completar este ejercicio para los clientes de Real-Time Customer Data Platform y Journey Optimizer.
+
+Cuando los datos de Web SDK se incorporan en Adobe Experience Platform, se pueden ampliar con otras fuentes de datos que haya introducido en Platform. Por ejemplo, cuando un usuario inicia sesión en el sitio de Luma, se construye un gráfico de identidades en Experience Platform y todos los demás conjuntos de datos con perfil habilitado pueden unirse para crear perfiles de cliente en tiempo real. Para ver esto en acción, creará rápidamente otro conjunto de datos en Adobe Experience Platform con algunos datos de fidelidad de ejemplo para que pueda utilizar Perfiles del cliente en tiempo real con Real-Time Customer Data Platform y Journey Optimizer. A continuación, creará una audiencia basada en estos datos.
+
 ### Crear un esquema de fidelización e introducir datos de ejemplo
 
-Se espera que los clientes de Real-Time Customer Data Platform y Journey Optimizer completen este ejercicio.
-
-Cuando los datos de Web SDK se incorporan en Adobe Experience Platform, se pueden ampliar con otras fuentes de datos que haya introducido en Platform. Por ejemplo, cuando un usuario inicia sesión en el sitio de Luma, se construye un gráfico de identidades en Experience Platform y todos los demás conjuntos de datos con perfil habilitado pueden unirse para crear perfiles de cliente en tiempo real. Para ver esto en acción, cree rápidamente otro conjunto de datos en Adobe Experience Platform con algunos datos de fidelidad de ejemplo para poder utilizar Perfiles del cliente en tiempo real con Real-Time Customer Data Platform y Journey Optimizer. Dado que ya ha realizado ejercicios similares, las instrucciones serán breves.
+Dado que ya ha realizado ejercicios similares, las instrucciones serán breves.
 
 Cree el esquema de fidelización:
 
@@ -282,9 +286,33 @@ Para crear el conjunto de datos e introducir los datos de ejemplo:
 
    ![Esquema de fidelización](assets/web-channel-loyalty-dataset.png)
 
+
+### Definir una política de combinación activa en Edge
+
+Todas las audiencias se crean con una política de combinación. Las políticas de combinación crean diferentes &quot;vistas&quot; de un perfil, pueden contener un subconjunto de conjuntos de datos y prescriben un orden de prioridad cuando diferentes conjuntos de datos aportan los mismos atributos de perfil. Para ser evaluada en el perímetro de, una audiencia debe usar una política de combinación con que tenga la configuración **[!UICONTROL Política de combinación activa en Edge]**.
+
+
+>[!IMPORTANT]
+>
+>Solo una política de combinación por zona protegida puede tener la configuración **[!UICONTROL Política de combinación activa en Edge]**
+
+
+1. Abra la interfaz de Experience Platform o Journey Optimizer y asegúrese de que está en el entorno de desarrollo que utiliza para el tutorial.
+1. Vaya a la página **[!UICONTROL Cliente]** > **[!UICONTROL Perfiles]** > **[!UICONTROL Políticas de combinación]**
+1. Abrir la **[!UICONTROL política de combinación predeterminada]** (probablemente denominada `Default Timebased`)
+   ![Crear un público](assets/merge-policy-open-default.png)
+1. Habilitar la configuración **[!UICONTROL Política de combinación activa en Edge]**
+1. Seleccionar **[!UICONTROL Siguiente]**
+
+   ![Crear un público](assets/merge-policy-set-active-on-edge.png)
+1. Sigue seleccionando **[!UICONTROL Siguiente]** para continuar con los otros pasos del flujo de trabajo y selecciona **[!UICONTROL Finalizar]** para guardar la configuración
+   ![Crear un público](assets/merge-policy-finish.png)
+
+Ahora puede crear audiencias que se evaluarán en Edge.
+
 ### Crear un público
 
-Las audiencias agrupan perfiles en torno a rasgos comunes. Cree una audiencia rápida que pueda utilizar en su campaña web:
+Las audiencias agrupan perfiles en torno a rasgos comunes. Cree una audiencia sencilla que pueda utilizar en Real-Time CDP o Journey Optimizer:
 
 1. En la interfaz de Experience Platform o Journey Optimizer, vaya a **[!UICONTROL Cliente]** > **[!UICONTROL Audiencias]** en el panel de navegación izquierdo
 1. Seleccionar **[!UICONTROL Crear audiencia]**
@@ -302,6 +330,11 @@ Las audiencias agrupan perfiles en torno a rasgos comunes. Cree una audiencia r�
 
    ![Definición de la audiencia](assets/web-campaign-define-audience.png)
 
+>[!NOTE]
+>
+> Dado que establecemos la política de combinación predeterminada como **[!UICONTROL Política de combinación activa en Edge]**, la audiencia que creó se asocia automáticamente a esta política de combinación.
+
+
 Como se trata de una audiencia muy sencilla, podemos utilizar el método de evaluación de Edge. Las audiencias de Edge se evalúan en el perímetro, por lo que en la misma solicitud realizada por Web SDK a Platform Edge Network, podemos evaluar la definición de la audiencia y confirmar inmediatamente si el usuario cumple los requisitos.
 
 
@@ -309,4 +342,4 @@ Como se trata de una audiencia muy sencilla, podemos utilizar el método de eval
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=es)
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
