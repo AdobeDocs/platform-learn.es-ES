@@ -4,14 +4,14 @@ description: Journey Optimizer Cree su mensaje de correo electrónico
 kt: 5342
 doc-type: tutorial
 exl-id: e264ab9e-e7f1-4a0b-b3b7-17003c40f17a
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1283'
 ht-degree: 0%
 
 ---
 
-# 3.1.3 Crear el Recorrido, los fragmentos y el mensaje
+# 3.1.3 Crear el recorrido y el mensaje de correo electrónico
 
 En este ejercicio, configurará el recorrido y el mensaje que debe activarse cuando alguien cree una cuenta en el sitio web de demostración.
 
@@ -23,7 +23,7 @@ Se le redirigirá a la vista **Inicio** en Journey Optimizer. Primero, asegúres
 
 ![ACOP](./images/acoptriglp.png)
 
-## 3.1.3.1 Creación de un Recorrido
+## 3.1.3.1 Crear su Recorrido
 
 En el menú de la izquierda, haga clic en **Recorridos**. A continuación, haga clic en **Crear Recorrido** para crear un nuevo recorrido.
 
@@ -33,7 +33,7 @@ A continuación, verá una pantalla de recorrido vacía.
 
 ![ACOP](./images/journeyempty.png)
 
-En el ejercicio anterior creó un nuevo **evento**. Le puso este nombre `--aepUserLdap--AccountCreationEvent` y reemplazó `ldap` por su LDAP. Este fue el resultado de la creación del Evento:
+En el ejercicio anterior creó un nuevo **evento**. Le puso este nombre a `--aepUserLdap--AccountCreationEvent`. Este fue el resultado de la creación del Evento:
 
 ![ACOP](./images/eventdone.png)
 
@@ -41,7 +41,7 @@ Ahora debe tomar este evento como inicio de este Recorrido. Para ello, vaya al l
 
 ![ACOP](./images/eventlist.png)
 
-Seleccione el evento, arrástrelo y suéltelo en el lienzo de Recorrido. El Recorrido ahora tiene este aspecto:
+Seleccione el evento, arrástrelo y suéltelo en el lienzo de recorrido. El recorrido ahora tiene este aspecto:
 
 ![ACOP](./images/journeyevent.png)
 
@@ -57,11 +57,11 @@ Como tercer paso del recorrido, debes agregar una acción **Correo electrónico*
 
 ![ACOP](./images/journeyactions.png)
 
-Establece **Category** en **Marketing** y selecciona una configuración de correo electrónico que te permita enviar correo electrónico. En este caso, la configuración de correo electrónico que se debe seleccionar es **Correo electrónico**. Asegúrese de que las casillas de verificación de **Clics en el correo electrónico** y **aperturas del correo electrónico** estén habilitadas.
+Establece **Category** en **Marketing** y selecciona una configuración de correo electrónico que te permita enviar correo electrónico. En este caso, la configuración de correo electrónico que se debe seleccionar es **Email-TI**.
 
 ![ACOP](./images/journeyactions1.png)
 
-## 3.1.3.2 Crear el mensaje
+## 3.1.3.2 Crear su mensaje
 
 Para crear tu mensaje, haz clic en **Editar contenido**.
 
@@ -194,7 +194,7 @@ Haga clic en la **flecha** para regresar a su recorrido.
 
 ![Journey Optimizer](./images/msg57a.png)
 
-## 3.1.3.3 Publicación del recorrido
+## 3.1.3.3 Publicar su recorrido
 
 Haga clic en **Guardar**.
 

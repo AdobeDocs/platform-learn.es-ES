@@ -4,9 +4,9 @@ description: 'Adobe Journey Optimizer: API meteorológica externa, acción de SM
 kt: 5342
 doc-type: tutorial
 exl-id: bde4290a-59d1-4471-83a7-1cad69f94ff1
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '754'
 ht-degree: 2%
 
 ---
@@ -38,7 +38,7 @@ Asegúrese de que **Type** está establecido en **Unitary** y, para la selecció
 
 ![Demostración](./images/evname.png)
 
-A continuación, debe seleccionar un esquema. Todos los esquemas que se muestran aquí son Esquemas de Adobe Experience Platform.
+A continuación, debe seleccionar un esquema.
 
 ![Demostración](./images/evschema.png)
 
@@ -109,7 +109,7 @@ Al hacer clic en el icono **Ver carga útil**, se abre una carga útil XDM de ej
 
 Escriba `eventID`, ya que lo necesitará en el último para probar la configuración.
 
-En este ejemplo, `eventID` es `4df8dc10731eba7b0c37af83a9db38d4de7aa6aebcce38196d9d47929b9c598e`.
+En este ejemplo, `eventID` es `209a2eecb641e20a517909e186a559ced155384a26429a557eb259e5a470bca7`.
 
 Ahora ha definido el evento que almacenará en déclencheur el recorrido que estamos creando. Una vez activado el recorrido, los campos de geovalla como Ciudad y cualquier otro que haya elegido (como País, Latitud y Longitud) estarán disponibles para el recorrido.
 

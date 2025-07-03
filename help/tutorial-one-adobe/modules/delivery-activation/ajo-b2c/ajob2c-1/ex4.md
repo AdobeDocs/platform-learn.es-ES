@@ -4,9 +4,9 @@ description: Actualizar el ID de configuración y probar el Recorrido
 kt: 5342
 doc-type: tutorial
 exl-id: da018975-7421-4d70-b04d-ad8b0597f460
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '634'
 ht-degree: 1%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 1%
 
 ## 3.1.3.1 Actualizar la propiedad de recopilación de datos
 
-Vaya a [Recopilación de datos de Adobe Experience Platform](https://experience.adobe.com/launch/) y seleccione **Etiquetas**.
+Vaya a [Recopilación de datos de Adobe Experience Platform](https://experience.adobe.com/data-collection/home) y seleccione **Etiquetas**.
 
 ![Página de propiedades](./../../../../modules/delivery-activation/datacollection/dc1.1/images/launch1.png)
 
-En **Introducción**, Demo System creó dos propiedades de cliente para usted: una para el sitio web y otra para la aplicación móvil. Encuéntralos buscando `--aepUserLdap--` en el cuadro **[!UICONTROL Buscar]**. Haga clic para abrir la propiedad **Web**.
+En **Introducción**, Sistema de demostración creó un par de propiedades de etiquetas para usted, incluida una para el sitio web y otra para la aplicación móvil. Encuéntralos buscando `--aepUserLdap-- - One Adobe` en el cuadro **[!UICONTROL Buscar]**. Haga clic para abrir la propiedad **Web**.
 
 ![Cuadro de búsqueda](./../../../../modules/delivery-activation/datacollection/dc1.1/images/property6.png)
 
@@ -49,7 +49,7 @@ A continuación, verá esto:
 
 Vaya al campo `_experience.campaign.orchestration.eventID`. Elimine el valor actual y pegue su eventID allí.
 
-Como recordatorio, el ID de evento se puede encontrar en Adobe Journey Optimizer en **Configuraciones > Eventos** y encontrará el ID de evento en la carga útil de ejemplo del evento, que tiene este aspecto: `"eventID": "5ae9b8d3f68eb555502b0c07d03ef71780600c4bd0373a4065c692ae0bfbd34d"`.
+Como recordatorio, el ID de evento se puede encontrar en Adobe Journey Optimizer en **Configuraciones > Eventos** y encontrará el ID de evento en la carga útil de ejemplo del evento, que tiene este aspecto: `"eventID": "d40815dbcd6ffd813035b4b590b181be21f5305328e16c5b75e4f32fd9e98557"`.
 
 ![ACOP](./images/payloadeventID.png)
 
@@ -67,7 +67,7 @@ Haga clic en **Agregar todos los recursos modificados** y, a continuación, haga
 
 La biblioteca se actualizará y, después de uno o dos minutos, podrá probar la configuración.
 
-## 3.1.3.2 Prueba del Recorrido
+## 3.1.3.2 Probar el Recorrido
 
 Vaya a [https://dsn.adobe.com](https://dsn.adobe.com). Después de iniciar sesión con su Adobe ID, verá esto. Haga clic en los 3 puntos **...** del proyecto del sitio web y, a continuación, haga clic en **Ejecutar** para abrirlo.
 

@@ -4,10 +4,10 @@ description: 'Adobe Journey Optimizer: fuentes de datos externas y acciones pers
 kt: 5342
 doc-type: tutorial
 exl-id: 5c8cbec6-58c1-4992-a0c7-1a2b7c34e5b6
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: e3d3b8e3abdea1766594eca53255df024129cb2c
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 0%
+source-wordcount: '638'
+ht-degree: 1%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 En este ejercicio, probará y almacenará en déclencheur el recorrido que configuró en este módulo.
 
-## 3.2.5.1 Actualizar la configuración del evento de geovalla
+## 3.2.5.1 Actualice la configuración del evento de geovalla
 
 Vaya a [Recopilación de datos de Adobe Experience Platform](https://experience.adobe.com/launch/) y seleccione **Etiquetas**.
 
@@ -23,7 +23,7 @@ Esta es la página de Propiedades de recopilación de datos de Adobe Experience 
 
 ![Página de propiedades](./../../../../modules/delivery-activation/datacollection/dc1.1/images/launch1.png)
 
-En **Introducción**, Demo System creó dos propiedades de cliente para usted: una para el sitio web y otra para la aplicación móvil. Encuéntralos buscando `--aepUserLdap--` en el cuadro **[!UICONTROL Buscar]**. Haga clic para abrir la propiedad **Web**.
+En **Introducción**, Sistema de demostración creó propiedades de etiquetas para usted: una para el sitio web y otra para la aplicación móvil. Encuéntralos buscando `--aepUserLdap--` en el cuadro **[!UICONTROL Buscar]**. Haga clic para abrir la propiedad **Web**.
 
 ![Cuadro de búsqueda](./../../../../modules/delivery-activation/datacollection/dc1.1/images/property6.png)
 
@@ -53,7 +53,7 @@ A continuación, verá esto:
 
 Vaya al campo `_experience.campaign.orchestration.eventID`. Elimine el valor actual y pegue su eventID allí.
 
-Como recordatorio, el ID de evento se puede encontrar en Adobe Journey Optimizer en **Configuraciones > Eventos** y encontrará el ID de evento en la carga útil de ejemplo del evento, que tiene este aspecto: `"eventID": "4df8dc10731eba7b0c37af83a9db38d4de7aa6aebcce38196d9d47929b9c598e"`.
+Como recordatorio, el ID de evento se puede encontrar en Adobe Journey Optimizer en **Configuraciones > Eventos** y encontrará el ID de evento en la carga útil de ejemplo del evento, que tiene este aspecto: `"eventID": "209a2eecb641e20a517909e186a559ced155384a26429a557eb259e5a470bca7"`.
 
 ![ACOP](./images/payloadeventID.png)
 
@@ -69,7 +69,7 @@ Haga clic en **Agregar todos los recursos modificados** y, a continuación, haga
 
 ![Configuración de lanzamiento](./images/rule9.png)
 
-## 3.2.5.2 Déclencheur de su recorrido
+## 3.2.5.2 Déclencheur su recorrido
 
 Vaya a [https://dsn.adobe.com](https://dsn.adobe.com). Después de iniciar sesión con su Adobe ID, verá esto. Haga clic en los 3 puntos **...** del proyecto del sitio web y, a continuación, haga clic en **Ejecutar** para abrirlo.
 
@@ -103,11 +103,17 @@ Abra el panel Visualizador de perfiles y vaya a Perfil del cliente en tiempo rea
 
 ![Demostración](./images/pv2.png)
 
-En el panel Visor de perfiles, haga clic en **UTILIDADES**. Escriba `geofenceevent` y haga clic en **Enviar**.
+En el panel Visor de perfiles, haga clic en **UTILIDADES** y, a continuación, seleccione **Llamada directa**.
 
 >[!NOTE]
 >
 >Si no tienes la opción en el panel Visor de perfiles para enviar un evento de llamada directa, puedes enviar uno manualmente abriendo la vista de desarrollador del navegador y yendo a la **consola**, y luego pegar y enviar este comando: `_satellite.track('geofenceevent')`.
+
+![Demostración](./images/pv3.png)
+
+Escriba `geofenceevent` y haga clic en **Enviar**.
+
+![Demostración](./images/pv4.png)
 
 Unos segundos más tarde, verá el mensaje de Adobe Journey Optimizer en el canal de Slack.
 

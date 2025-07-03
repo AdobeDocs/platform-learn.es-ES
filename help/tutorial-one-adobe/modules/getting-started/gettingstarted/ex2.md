@@ -4,7 +4,7 @@ description: 'Introducción: Utilice el sistema de demostración junto a para co
 kt: 5342
 doc-type: tutorial
 exl-id: 455b72f6-84fd-463a-a7b5-3c4999035ab2
-source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
+source-git-commit: e3d3b8e3abdea1766594eca53255df024129cb2c
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 1%
@@ -17,7 +17,7 @@ Para visualizar las lecciones aprendidas en este tutorial y hacer posible probar
 
 Una vez que tenga acceso a Demo System Next, proceda con los siguientes pasos.
 
-Vaya a [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"} y luego a **Configuración**.
+Vaya a [https://dsn.adobe.com/quick-setup](https://dsn.adobe.com/quick-setup){target="_blank"} y luego a **Configuración**.
 
 ![DSN](./images/dsnsetup.png)
 
@@ -25,7 +25,7 @@ En el menú desplegable **Entorno**, seleccione su instancia y su zona protegida
 
 ![DSN](./images/dsnh1.png)
 
-A continuación, seleccione el ajuste preestablecido **Usuario de tutorial de AEP**.
+A continuación, seleccione el ajuste preestablecido **One Adobe Tutorial**.
 
 ![DSN](./images/dsnhome.png)
 

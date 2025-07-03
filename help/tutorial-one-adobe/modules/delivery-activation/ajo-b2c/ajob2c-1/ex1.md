@@ -4,9 +4,9 @@ description: Journey Optimizer Cree su evento
 kt: 5342
 doc-type: tutorial
 exl-id: 2c03cc8d-0106-4fa5-80c6-e25712ca2eab
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '410'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ Después de seleccionar el esquema, verá una serie de campos seleccionados en l
 
 ![ACOP](./images/eventpayload.png)
 
-Verá una ventana emergente de **Campos**, en la cual tendrá que seleccionar algunos de los campos que necesitamos para personalizar el correo electrónico.  Elegiremos otros atributos de perfil más adelante, utilizando los datos que ya están en Adobe Experience Platform.
+Verá una ventana emergente de **Campos**, en la cual tendrá que seleccionar algunos de los campos que necesitamos para personalizar el correo electrónico.  Elegirá otros atributos de perfil más adelante, con los datos que ya están en Adobe Experience Platform.
 
 ![ACOP](./images/eventfields.png)
 
@@ -58,7 +58,7 @@ En el objeto `--aepTenantId--.identification.core`, asegúrese de seleccionar el
 
 ![ACOP](./images/eventpayloadbrid.png)
 
-Entonces debería ver esto. Establezca **Namespace** en **ECID (ECID)**. Haga clic en **Guardar**.
+Entonces debería ver esto. Asegúrese de que **Namespace** está establecido en **ECID (ECID)**. Haga clic en **Guardar**.
 
 ![ACOP](./images/eventsave.png)
 
@@ -77,17 +77,15 @@ Ahora verá un ejemplo de la carga útil esperada.
 Su evento tiene un identificador de evento de orquestación único, que puede encontrar desplazándose hacia abajo en esa carga hasta que vea `_experience.campaign.orchestration.eventID`.
 
 El ID de evento es lo que debe enviarse a Adobe Experience Platform para almacenar en déclencheur el recorrido que creará a continuación. Recuerde este ID de evento, ya que lo necesitará en uno de los próximos ejercicios.
-`"eventID": "5ae9b8d3f68eb555502b0c07d03ef71780600c4bd0373a4065c692ae0bfbd34d"`
+`"eventID": "d40815dbcd6ffd813035b4b590b181be21f5305328e16c5b75e4f32fd9e98557"`
 
 Haga clic en **Ok**.
 
 ![ACOP](./images/payloadeventID.png)
 
-Haga clic en **Cancelar**.
+Haga clic en **Cancelar** para cerrar esta ventana.
 
 ![ACOP](./images/payloadeventID1.png)
-
-Ya ha terminado este ejercicio.
 
 ## Pasos siguientes
 

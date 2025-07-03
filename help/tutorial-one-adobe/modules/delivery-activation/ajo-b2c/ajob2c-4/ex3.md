@@ -4,9 +4,9 @@ description: Este ejercicio explica cómo utilizar la personalización de segmen
 kt: 5342
 doc-type: tutorial
 exl-id: a1ad649e-d0c4-4e87-b784-1e2d99f34a2e
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '395'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Se le redirigirá a la vista **Inicio** en Journey Optimizer. Antes de continuar
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
-## 3.4.3.1 Personalización basada en segmentos
+## 3.4.3.1 personalización basada en segmentos
 
 En este ejercicio mejorará el mensaje de correo electrónico de la newsletter que creó en el ejercicio anterior con un texto personalizado basado en el abono a segmentos.
 
@@ -71,12 +71,12 @@ Seleccione el segmento `--aepUserLdap-- - Interest in Plans` y haga clic en el i
 
 A continuación, debe dejar la primera línea tal cual, y sustituir las líneas 2 y 3 por este código:
 
-&grave;&grave;
+``
     PS: It may be a good idea to check if your plan still meets your needs! Click here to be contacted by one of our experts!
 {%else%}
     PS: Thanks for taking the time to read our newsletter. Here is a 10% promo code to use on the website: NEWSLETTER10
 {%/if%}
-&grave;&grave;
+``
 
 Entonces, tendrás esto. Haga clic en **Guardar**.
 
@@ -108,7 +108,7 @@ Ha terminado este ejercicio.
 
 ## Pasos siguientes
 
-Vaya a la configuración de [3.4.4 y use notificaciones push para iOS](./ex4.md){target="_blank"}
+Ir a [Resumen y beneficios](./summary.md){target="_blank"}
 
 Volver a [Adobe Journey Optimizer](journeyoptimizer.md){target="_blank"}
 

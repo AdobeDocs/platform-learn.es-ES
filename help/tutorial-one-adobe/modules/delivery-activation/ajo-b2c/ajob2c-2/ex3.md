@@ -4,9 +4,9 @@ description: 'Adobe Journey Optimizer: API meteorológica externa, acción de SM
 kt: 5342
 doc-type: tutorial
 exl-id: 92752e84-3bbe-4d11-b187-bd9fdbbee709
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: e3d3b8e3abdea1766594eca53255df024129cb2c
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '416'
 ht-degree: 3%
 
 ---
@@ -54,10 +54,6 @@ Para la **configuración de URL**, use esto:
 
 ![Demostración](./images/slackname.png)
 
-No es necesario cambiar los campos de encabezado.
-
-![Demostración](./images/slackurl.png)
-
 **Autenticación** debe establecerse en **Sin autenticación**.
 
 ![Demostración](./images/slackauth.png)
@@ -84,7 +80,7 @@ Copie el texto siguiente y péguelo en la ventana emergente vacía.
 }
 ```
 
-A continuación, verá esto:
+Entonces verá esto... Haga clic en **Guardar**.
 
 ![Demostración](./images/slackmsgpopup1.png)
 
@@ -96,7 +92,7 @@ La acción personalizada ahora forma parte de la lista **Acciones**.
 
 ![Demostración](./images/slackdone.png)
 
-Ha definido eventos y fuentes de datos y acciones externas. Ahora vamos a consolidar todo eso en un recorrido.
+Ha definido eventos y fuentes de datos y acciones externas. A continuación, combinará todo eso en un recorrido.
 
 ## Pasos siguientes
 

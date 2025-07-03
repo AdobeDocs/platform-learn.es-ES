@@ -1,341 +1,156 @@
 ---
-title: 'Offer Decisioning: Configuración de ofertas e ID de decisión'
-description: 'Offer Decisioning: Configuración de ofertas e ID de decisión'
+title: Configuración de un recorrido con mensajes push
+description: Configuración de un recorrido con mensajes push
 kt: 5342
 doc-type: tutorial
-exl-id: 63d7ee24-b6b5-4503-b104-a345c2b26960
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
 workflow-type: tm+mt
-source-wordcount: '1427'
-ht-degree: 4%
+source-wordcount: '622'
+ht-degree: 2%
 
 ---
 
-# 3.3.2 Configurar las ofertas y la decisión
+# 3.3.2 Configuración de un recorrido con mensajes push
 
-## 3.3.2.1 Creación de ofertas personalizadas
 
-En este ejercicio, creará cuatro **Ofertas personalizadas**. Estos son los detalles que se deben tener en cuenta al crear esas ofertas:
+## 3.4.4.6 Crear un nuevo evento
 
-| Nombre | Date Range | Vínculo de imagen para correo electrónico | Vínculo de imagen para web | Texto | Prioridad | Idoneidad | Idioma | Frecuencia de límite | Nombre de imagen |
-|-----|------------|----------------------|--------------------|------|:--------:|--------------|:-------:|:-------:|:-------:|
-| `--aepUserLdap-- - AirPods Max` | hoy - 1 mes después | https://bit.ly/4a9RJ5d | Elija de la biblioteca de Assets | `{{ profile.person.name.firstName }}, 10% discount on AirPods Max` | 25 | todos: mujeres clientes | Inglés (Estados Unidos) | 3 | Apple AirPods Max - Mujer.jpg |
-| `--aepUserLdap-- - Galaxy S24` | hoy - 1 mes después | https://bit.ly/3W8yuDv | Elija de la biblioteca de Assets | `{{ profile.person.name.firstName }}, 5% discount on Galaxy S24` | 15 | todos: mujeres clientes | Inglés (Estados Unidos) | 3 | Galaxy S24 - Mujer.jpg |
-| `--aepUserLdap-- - Apple Watch` | hoy - 1 mes después | https://bit.ly/4fGwfxX | https://bit.ly/4fGwfxX | `{{ profile.person.name.firstName }}, 10% discount on Apple Watch` | 25 | todos: clientes hombres | Inglés (Estados Unidos) | 3 | Apple Watch - Hombre.jpg |
-| `--aepUserLdap-- - Galaxy Watch 7` | hoy - 1 mes después | https://bit.ly/4gTrkeo | Elija de la biblioteca de Assets | `{{ profile.person.name.firstName }}, 5% discount on Galaxy Watch 7` | 15 | todos: clientes hombres | Inglés (Estados Unidos) | 3 | Galaxy Watch7 - Hombre.jpg |
+Ir a **Journey Optimizer**. En el menú de la izquierda, ve a **Configuraciones** y haz clic en **Administrar** en **Eventos**.
 
-{style="table-layout:auto"}
+![ACOP](./images/acopmenu.png)
 
-Inicie sesión en Adobe Journey Optimizer en [Adobe Experience Cloud](https://experience.adobe.com). Haga clic en **Journey Optimizer**.
+En la pantalla **Eventos**, verá una vista similar a esta. Haga clic en **Crear evento**.
 
-![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
+![ACOP](./images/add.png)
 
-Se le redirigirá a la vista **Inicio** en Journey Optimizer. Primero, asegúrese de que está usando la zona protegida correcta. La zona protegida que se va a usar se llama `--aepSandboxName--`. Estará en la vista **Inicio** de su zona protegida `--aepSandboxName--`.
+A continuación, verá una configuración de evento vacía.
+En primer lugar, asigne al evento un Nombre como este: `--aepUserLdap--StoreEntryEvent` y establezca la descripción en `Store Entry Event`.
+A continuación se muestra la selección **Tipo de evento**. Seleccione **Unitario**.
+A continuación se muestra la selección **Tipo de ID de evento**. Seleccione **Sistema generado**.
 
-![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
+![ACOP](./images/eventname.png)
 
-En el menú de la izquierda, haz clic en **Ofertas** y luego ve a **Ofertas**. Haga clic en **+ Crear oferta**.
+A continuación se muestra la selección Esquema. Se ha preparado un esquema para este ejercicio. Use el esquema `Demo System - Event Schema for Mobile App (Global v1.1) v.1`.
 
-![Regla de decisión](./images/offers1.png)
+Después de seleccionar el esquema, verá una serie de campos seleccionados en la sección **Carga útil**. El evento está ahora completamente configurado.
 
-Entonces verá esta ventana emergente. Seleccione **Oferta personalizada** y haga clic en **Siguiente**.
+Haga clic en **Guardar**.
 
-![Regla de decisión](./images/offers2.png)
+![ACOP](./images/eventschema.png)
 
-Ahora estás en la vista **Detalles**.
+El evento se ha configurado y guardado. Vuelve a hacer clic en el evento para abrir de nuevo la pantalla **Editar evento**.
 
-![Regla de decisión](./images/offers3.png)
+![ACOP](./images/eventdone.png)
 
-En este caso, debe configurar la oferta `--aepUserLdap-- - AirPods Max`. Utilice la información de la tabla anterior para rellenar los campos. En este ejemplo, el nombre de la oferta personalizada es **vangeluw - AirPods Max**. Además, establezca la **fecha y hora de inicio** en hoy y la **fecha y hora de finalización** en una fecha dentro de un mes a partir de ahora.
+Pase el ratón sobre el campo **Carga útil** y haga clic en el icono **Ver carga útil**.
 
-Una vez finalizado, debería tener esto. Haga clic en **Next**.
+![ACOP](./images/hover.png)
 
-![Regla de decisión](./images/offers4.png)
+Ahora verá un ejemplo de la carga útil esperada.
 
-A continuación, verá esto:
+Su evento tiene un identificador de evento de orquestación único, que puede encontrar desplazándose hacia abajo en esa carga hasta que vea `_experience.campaign.orchestration.eventID`.
 
-![Regla de decisión](./images/constraints.png)
+![ACOP](./images/payloadeventID.png)
 
-Seleccione **By defined decision rule** y haga clic en el icono **+** para agregar la regla **all - Female Customers**.
+El ID de evento es lo que debe enviarse a Adobe Experience Platform para almacenar en déclencheur el Recorrido que va a generar en el siguiente paso. Escriba este eventID, tal como lo necesitará en el paso siguiente.
+`"eventID": "89acd341ec2b7d1130c9a73535029debf2ac35f486bc99236b1a5091d6f4bc68"`
 
-Complete la **Prioridad** como se indica en la tabla anterior. A continuación, haga clic en **+ Crear límite** para definir el número de veces que esta oferta se puede mostrar a un cliente.
+Haga clic en **Aceptar**, seguido de **Cancelar**.
 
-![Regla de decisión](./images/constraints1.png)
+## 3.4.4.7 Crear un recorrido
 
-Para el límite, seleccione lo siguiente:
+En el menú, ve a **Recorridos** y haz clic en **Crear Recorrido**.
 
-- **Elegir evento de límite**: **Evento de decisión**
-- **Tipo de límite**: **Por perfil (aplique un límite para cada perfil)**
-- **Recuento de eventos de límite**: **3**
-- **Restablecer frecuencia límite**: **Diario**
-- **Cada**: **1 día**
+![DSN](./images/sjourney1.png)
 
-Esto garantiza que esta oferta no se muestre más de tres veces al día por cliente.
+Entonces verá esto... Dé un nombre a su recorrido. Usar `--aepUserLdap-- - Store Entry journey`. Haga clic en **Guardar**.
 
-Haga clic en **Crear**.
+![DSN](./images/sjourney3.png)
 
-![Regla de decisión](./images/constraints2.png)
+En primer lugar, debe agregar el evento como punto de partida del recorrido. Busque el evento `--aepUserLdap--StoreEntryEvent`, arrástrelo y suéltelo en el lienzo. Haga clic en **Guardar**.
 
-Entonces volverás a estar aquí. Haga clic en **Next**.
+![DSN](./images/sjourney4.png)
 
-![Regla de decisión](./images/constraints3.png)
+A continuación, en **Acciones**, busque la acción **Push**. Arrastre y suelte la acción **Push** en el lienzo.
 
-Ahora necesita crear **Representaciones**. Las representaciones son una combinación de **Placement** y un recurso real.
+Establezca **Category** en **Marketing** y seleccione una superficie push que le permita enviar notificaciones push. En este caso, la superficie de correo electrónico que se va a seleccionar es **Push-iOS-Android**.
 
-Para **Representación 1**, seleccione:
+>[!NOTE]
+>
+>Debe existir un canal en Journey Optimizer que esté usando la **superficie de aplicación** tal como se revisó anteriormente.
 
-- Canal: web
-- Ubicación: Web - Imagen
-- Contenido: URL
-- Ubicación pública: copie la dirección URL de la columna **Vínculo de imagen para la web** en la tabla anterior
+![ACOP](./images/journeyactions1push.png)
 
-![Regla de decisión](./images/addcontent1.png)
+El siguiente paso es crear el mensaje. Para ello, haga clic en **Editar contenido**.
 
-También puede seleccionar **Biblioteca de recursos** para el contenido y luego hacer clic en **Examinar**.
+![ACOP](./images/journeyactions2push.png)
 
-![Regla de decisión](./images/addcontent2.png)
+Entonces verá esto... Haga clic en el icono **personalización** para el campo **Título**.
 
-Verá una ventana emergente de la biblioteca de Assets, vaya a la carpeta **enablement-assets** y seleccione el archivo de imagen **Apple AirPods Max - Female.jpg**. A continuación, haga clic en **Seleccionar**.
+![Push](./images/bp5.png)
 
-![Regla de decisión](./images/addcontent3.png)
+Entonces verá esto... Ahora puede seleccionar cualquier atributo de perfil directamente desde el Perfil del cliente en tiempo real.
 
-Entonces verá esto... Haga clic en **+ Agregar representación**.
+Busque el campo **Nombre** y, a continuación, haga clic en el icono **+** situado junto al campo **Nombre**. Verá el token de personalización del nombre que se está agregando: **{{profile.person.name.firstName}}**.
 
-![Regla de decisión](./images/addcontentrep20.png)
+![Push](./images/bp9.png)
 
-Para **Representación 2**, seleccione:
+A continuación, agregue el texto **, ¡bienvenido a nuestra tienda!** detrás de **{{profile.person.name.firstName}}**.
 
-- Canal: correo electrónico
-- Ubicación: correo electrónico, imagen
-- Contenido: URL
-- Ubicación pública: seleccione **Biblioteca de recursos**. Haga clic en **Examinar**
+Haga clic en **Guardar**.
 
-![Regla de decisión](./images/addcontentrep21.png)
+![Push](./images/bp10.png)
 
-Verá una ventana emergente de la biblioteca de Assets, vaya a la carpeta **enablement-assets** y seleccione el archivo de imagen **Apple AirPods Max - Female.jpg**. A continuación, haga clic en **Seleccionar**.
+Ahora tiene esto. Haga clic en el icono **personalización** para el campo **Cuerpo**.
 
-![Regla de decisión](./images/addcontent3b.png)
+![Push](./images/bp11.png)
 
-Entonces verá esto... A continuación, haga clic en **+ Agregar representación**.
+Escriba este texto **Haga clic aquí para obtener un descuento del 10% al comprar hoy.** y haga clic en **Guardar**.
 
-![Regla de decisión](./images/addcontentrep20b.png)
+![Push](./images/bp12.png)
 
-Para **Representación 3**, seleccione:
+Entonces, tendrás esto. Haga clic en la flecha de la esquina superior izquierda para volver al recorrido.
 
-- Canal: no digital
-- Ubicación: no digital, texto
+![Journey Optimizer](./images/bp12a.png)
 
-A continuación, debe añadir contenido. En este caso, eso significa añadir el texto que se va a utilizar como llamada a la acción.
+Haga clic en **Guardar** para cerrar la acción de inserción.
 
-Seleccione **Personalizado** y haga clic en **Agregar contenido**.
+![DSN](./images/sjourney8.png)
 
-![Regla de decisión](./images/addcontentrep31.png)
+Haga clic en **Publicar**.
 
-Entonces verá esta ventana emergente.
+![DSN](./images/sjourney10.png)
 
-![Regla de decisión](./images/addcontent3text.png)
+Vuelva a hacer clic en **Publicar**.
 
-Observe el campo **Texto** de la tabla anterior e introduzca ese texto aquí, en este caso: `{{ profile.person.name.firstName }}, 10% discount on AirPods Max`.
+![DSN](./images/sjourney10a.png)
 
-También notará que puede seleccionar cualquier atributo de perfil e incluirlo como un campo dinámico en el texto de la oferta. En este ejemplo, el campo `{{ profile.person.name.firstName }}` se asegurará de que el nombre del cliente que recibirá esta oferta se incluya en el texto de la oferta.
+El recorrido se ha publicado.
 
-Entonces verá esto... Haga clic en **Guardar**.
+![DSN](./images/sjourney11.png)
 
-![Regla de decisión](./images/addcontentrep3text.png)
+## 3.4.4.8: probar el recorrido y el mensaje push
 
-Ahora tiene esto. Haga clic en **Next**.
+En la aplicación móvil DX Demo 2.0, ve a la pantalla **Configuración**. Haga clic en el botón **Entrada de tienda**.
 
-![Regla de decisión](./images/addcontentrep3textdone.png)
+>[!NOTE]
+>
+>El botón **Entrada de tienda** se está implementando en este momento. Aún no lo encontrará en la aplicación.
 
-Verás una descripción general de tu nueva **oferta personalizada**. Haga clic en **Finalizar**.
+![DSN](./images/demo1b.png)
 
-![Regla de decisión](./images/offeroverview.png)
+Asegúrese de cerrar la aplicación inmediatamente después de hacer clic en el icono **Entrada de la tienda**; de lo contrario, no se mostrará el mensaje push.
 
-Haga clic en **Guardar y aprobar**.
+Después de un par de segundos, verá el mensaje.
 
-![Regla de decisión](./images/saveapprove.png)
+![DSN](./images/demo2.png)
 
-A continuación, verá que la oferta personalizada recién creada está disponible en la Información general de ofertas:
-
-![Regla de decisión](./images/offeroverview1.png)
-
-Ahora debe repetir los pasos anteriores para crear las otras tres ofertas personalizadas para los productos que puede encontrar en la tabla anterior.
-
-Cuando termine, la pantalla **Información general de ofertas** para **Ofertas personalizadas** debe mostrar todas las ofertas.
-
-![Ofertas finales](./images/finaloffers.png)
-
-## 3.3.2.2 Crear su oferta de reserva
-
-Después de haber creado cuatro ofertas personalizadas, ahora debes configurar una **Oferta de reserva**.
-
-Asegúrese de que está en la vista **Ofertas**. Haga clic en **+ Crear oferta**.
-
-![Regla de decisión](./images/createoffer.png)
-
-Entonces verá esta ventana emergente. Seleccione **Oferta de reserva** y haga clic en **Siguiente**.
-
-![Regla de decisión](./images/foffers2.png)
-
-Entonces verá esto... Escriba este nombre para la oferta de reserva: `--aepUserLdap-- - CitiSignal Fallback Offer`. Haga clic en **Next**.
-
-![Regla de decisión](./images/foffers4.png)
-
-Ahora necesita crear **Representaciones**. Las representaciones son una combinación de **Placement** y un recurso real.
-
-Para **Representación 1**, seleccione:
-
-- **Canal**: **Web**
-- **Ubicación**: **Web - Imagen**
-- **Contenido**: **Biblioteca de recursos**
-
-Haz clic en **Examinar** para seleccionar tu imagen.
-
-![Regla de decisión](./images/addcontent1fb.png)
-
-Verá una ventana emergente de la biblioteca Assets, irá a la carpeta **citi-signal-images** y seleccionará el archivo de imagen **App-Banner-Ad.jpg**. A continuación, haga clic en **Seleccionar**.
-
-![Regla de decisión](./images/addcontent3fb.png)
-
-Entonces verá esto... Haga clic en **+ Agregar representación**.
-
-![Regla de decisión](./images/addcontentrep20fb.png)
-
-Para **Representación 2**, seleccione:
-
-- **Canal**: **Correo electrónico**
-- **Ubicación**: **Correo electrónico - Imagen**
-- **Contenido**: **Biblioteca de recursos**
-
-Haz clic en **Examinar** para seleccionar tu imagen.
-
-![Regla de decisión](./images/addcontentrep21fb.png)
-
-Verá una ventana emergente de la biblioteca Assets, irá a la carpeta **citi-signal-images** y seleccionará el archivo de imagen **App-Banner-Ad.jpg**. A continuación, haga clic en **Seleccionar**.
-
-![Regla de decisión](./images/addcontent3bfb.png)
-
-Entonces verá esto... Haga clic en **+ Agregar representación**.
-
-![Regla de decisión](./images/addcontentrep20bfb.png)
-
-Para **Representación 3**, seleccione:
-
-- **Canal**: **No digital**
-- **Ubicación**: **No digital - Texto**
-- **Contenido**: **Personalizado**
-
-Haga clic en **Agregar contenido**.
-
-![Regla de decisión](./images/addcontentrep21text.png)
-
-Entonces verá esta ventana emergente. Escriba el texto `{{ profile.person.name.firstName }}, download the CitiSignal app now!` y haga clic en **Guardar**.
-
-![Regla de decisión](./images/faddcontent3text.png)
-
-Entonces verá esto... Haga clic en **Next**.
-
-![Regla de decisión](./images/faddcontentrep3.png)
-
-Verá una descripción general de su nueva **oferta de reserva**. Haga clic en **Finalizar**.
-
-![Regla de decisión](./images/fofferoverview.png)
-
-Finalmente, haga clic en **Guardar y aprobar**.
-
-![Regla de decisión](./images/saveapprovefb.png)
-
-En la pantalla **Información general de ofertas**, ahora verá esto:
-
-![Ofertas finales](./images/ffinaloffers.png)
-
-## 3.3.2.3 Crear su colección
-
-Se usa una colección para **filtrar** un subconjunto de ofertas de la lista de ofertas personalizadas y usarlas como parte de una decisión para acelerar el proceso de decisión.
-
-Ir a **Colecciones**. Haga clic en **+ Crear colección**.
-
-![Regla de decisión](./images/collections.png)
-
-Entonces verá esta ventana emergente. Configure la colección de esta manera. Haga clic en **Next**.
-
-- Nombre de colección: usar `--aepUserLdap-- - CitiSignal Collection`
-- Seleccione **Crear colección estática**.
-
-Haga clic en **Next**.
-
-![Regla de decisión](./images/createcollectionpopup1.png)
-
-En la pantalla siguiente, seleccione las cuatro **Ofertas personalizadas** que creó en el ejercicio anterior. Haga clic en **Guardar**.
-
-![Regla de decisión](./images/createcollectionpopup2.png)
-
-Ahora verá lo siguiente:
-
-![Regla de decisión](./images/colldone.png)
-
-## 3.3.2.4 Crear su decisión
-
-Una decisión combina ubicaciones, una colección de ofertas personalizadas y una oferta de reserva que el motor de Offer Decisioning utilizará en última instancia para encontrar la mejor oferta para un perfil específico, en función de cada una de las características de oferta personalizadas individuales como prioridad, restricción de elegibilidad y límite total/de usuario.
-
-Para configurar su **decisión**, vaya a **decisiones**. Haga clic en **+ Crear decisión**.
-
-![Regla de decisión](./images/activitydd.png)
-
-Entonces verá esto... Rellene los campos de esta manera. Haga clic en **Next**.
-
-- Nombre: `--aepUserLdap-- - CitiSignal Decision`
-- Fecha y hora de inicio: hoy
-- Fecha y hora de finalización: hoy + 1 mes
-
-![Regla de decisión](./images/activity2.png)
-
-En la siguiente pantalla, debe agregar ubicaciones en ámbitos de decisión. Deberá crear ámbitos de decisión para las ubicaciones **Web - Imagen**, **Correo electrónico - Imagen** y **No digital - Texto**.
-
-![Regla de decisión](./images/addplacements.png)
-
-Primero, cree el ámbito de decisión para **No digital - Texto** al seleccionar esa ubicación en la lista desplegable. A continuación, haga clic en el botón **Agregar** para agregar criterios de evaluación.
-
-![Regla de decisión](./images/activity3.png)
-
-Seleccione su colección `--aepUserLdap-- - CitiSignal Collection` y haga clic en **Agregar**.
-
-![Regla de decisión](./images/activity4text.png)
-
-Entonces verá esto... Haga clic en el botón **+** para agregar un nuevo ámbito de decisión.
-
-![Regla de decisión](./images/activity5text.png)
-
-Seleccione la ubicación **Web - Imagen** y agregue la colección `--aepUserLdap-- - CitiSignal Collection` bajo criterios de evaluación. A continuación, haga clic de nuevo en el botón **+** para agregar un nuevo ámbito de decisión.
-
-![Regla de decisión](./images/activity6text.png)
-
-Seleccione la ubicación **Correo electrónico - Imagen** y agregue la colección `--aepUserLdap-- - CitiSignal Collection` bajo criterios de evaluación. A continuación, haga clic en **Siguiente**.
-
-![Regla de decisión](./images/activity4.png)
-
-Ahora necesita seleccionar su **Oferta de reserva**, que se llama `--aepUserLdap-- - CitiSignal Fallback Offer`. Haga clic en **Next**.
-
-![Regla de decisión](./images/activity10.png)
-
-Revise su decisión. Haga clic en **Finalizar**.
-
-![Regla de decisión](./images/activity11.png)
-
-En la ventana emergente, haz clic en **Guardar y activar**.
-
-![Regla de decisión](./images/activity12.png)
-
-Y, por último, ahora verá su decisión en la descripción general:
-
-![Regla de decisión](./images/activity13.png)
-
-Ahora ha configurado correctamente su decisión. Su decisión ya está activa y se puede utilizar para ofrecer ofertas optimizadas y personalizadas a sus clientes, en tiempo real.
+Ha terminado este ejercicio.
 
 ## Pasos siguientes
 
-Vaya a [3.3.3 y prepare su propiedad de cliente de recopilación de datos y la configuración de Web SDK para Offer Decisioning](./ex3.md){target="_blank"}
+Ir a [3.3.3 Configurar una campaña con mensajes en la aplicación](./ex3.md){target="_blank"}
 
-Volver a [Offer Decisioning](offer-decisioning.md){target="_blank"}
+Volver a [Adobe Journey Optimizer: mensajes push y en la aplicación](ajopushinapp.md){target="_blank"}
 
 Volver a [Todos los módulos](./../../../../overview.md){target="_blank"}

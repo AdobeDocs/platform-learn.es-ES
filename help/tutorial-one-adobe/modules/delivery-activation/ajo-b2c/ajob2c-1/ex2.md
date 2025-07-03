@@ -4,9 +4,9 @@ description: 'Journey Optimizer: Creación de fragmentos'
 kt: 5342
 doc-type: tutorial
 exl-id: 4e71164d-9e25-46aa-a4b8-a2f6535c491e
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1052'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Se le redirigirá a la vista **Inicio** en Journey Optimizer. Primero, asegúres
 
 ![ACOP](./images/acoptriglp.png)
 
-## 3.1.2.1 Crear el fragmento de encabezado
+## 3.1.2.1 Crear su fragmento de encabezado
 
 En el menú de la izquierda, haga clic en **Fragmentos**. Un fragmento es un componente reutilizable dentro de Journey Optimizer, que evita la duplicación y facilita los cambios futuros que deberían afectar a todos los mensajes, como los cambios en un encabezado o pie de página de un mensaje de correo electrónico.
 
@@ -49,7 +49,7 @@ A continuación, verá una ventana emergente que muestra la biblioteca multimedi
 
 >[!NOTE]
 >
->Si no ves las imágenes de Citi Signal en tu biblioteca de AEM Assets, puedes encontrarlas [aquí](./../../../../assets/ajo/CitiSignal-images.zip). Descárguelas en su escritorio, cree la carpeta **citi-signal-images** y cargue todas las imágenes de esa carpeta.
+>Si no ves las imágenes de CitiSignal en tu biblioteca de AEM Assets, puedes encontrarlas [aquí](./../../../../assets/ajo/CitiSignal-images.zip). Descárguelas en su escritorio, cree la carpeta **citi-signal-images** y cargue todas las imágenes de esa carpeta.
 
 ![Journey Optimizer](./images/fragm5.png)
 
@@ -78,7 +78,7 @@ A continuación, debe crear un nuevo fragmento para el pie de página de los men
 
 ![Journey Optimizer](./images/fragm11.png)
 
-## 3.1.2.2 Crear el fragmento Pie de página
+## 3.1.2.2 Crear el fragmento de pie de página
 
 Haga clic en **Crear fragmento**.
 
@@ -231,8 +231,6 @@ Haga clic en **Publicar** para publicar el pie de página y utilizarlo en un men
 Después de un par de minutos, verás que el estado del pie de página ha cambiado a **Activo**.
 
 ![Journey Optimizer](./images/fragm38.png)
-
-Ya ha terminado este ejercicio.
 
 ## Pasos siguientes
 
