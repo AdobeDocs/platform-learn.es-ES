@@ -4,9 +4,9 @@ description: 'Foundation - Perfil del cliente en tiempo real: de desconocido a c
 kt: 5342
 doc-type: tutorial
 exl-id: f33a7448-e1b9-47e7-97c7-509ad36cf991
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2264f26a0778c2570c36abe1bae4d6a1dc3a465c
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '1002'
 ht-degree: 2%
 
 ---
@@ -59,41 +59,39 @@ También puede ver todos los eventos de experiencia recopilados según el compor
 
 ![Demostración](../../datacollection/dc1.2/images/pv3.png)
 
-Vaya a la categoría de productos **Teléfonos y dispositivos**. A continuación, haz clic en el producto **iPhone 15 Pro**.
+Vaya a la categoría de productos **Teléfonos y dispositivos**. A continuación, haz clic en el producto **iPhone 16 Pro**.
 
 ![Demostración](../../datacollection/dc1.2/images/pv4.png)
 
-A continuación, verá la página de detalles del producto. Ahora se ha enviado a Adobe Experience Platform un evento de experiencia de tipo **Vista de producto** mediante la implementación de Web SDK que revisó en el módulo 1.
+A continuación, verá la página de detalles del producto. Ahora se ha enviado un evento de tipo **Vista de producto** a Adobe Experience Platform mediante la implementación de Web SDK que revisó en el módulo 1.
 
 ![Demostración](../../datacollection/dc1.2/images/pv5.png)
 
-Abra el panel Visor de Provile y eche un vistazo a los **Eventos de experiencia**.
+Abra el panel Visor de Provile y eche un vistazo a los **Eventos**.
 
 ![Demostración](../../datacollection/dc1.2/images/pv6.png)
 
-Vuelva a la página de categoría **Teléfonos y dispositivos** y haga clic en otro producto. Se ha enviado otro evento de experiencia a Adobe Experience Platform. Abra el panel Visor de perfiles. Ahora verá 2 eventos de experiencia del tipo **Vista de producto**. Aunque el comportamiento es anónimo, con el consentimiento adecuado, puede rastrear cada clic y almacenarlo en Adobe Experience Platform. Una vez que se conozca al cliente anónimo, podremos fusionar automáticamente todos los comportamientos anónimos con el perfil conocido.
+Vuelva a la página de categoría **Teléfonos y dispositivos** y haga clic en otro producto. Se ha enviado otro evento de experiencia a Adobe Experience Platform. Abra el panel Visor de perfiles. Ahora verá 2 eventos de tipo **Vista de producto**. Aunque el comportamiento es anónimo, con el consentimiento adecuado, puede rastrear cada clic y almacenarlo en Adobe Experience Platform. Una vez que se conozca al cliente anónimo, podremos fusionar automáticamente todos los comportamientos anónimos con el perfil conocido.
+
+Haga clic en **Iniciar sesión**.
 
 ![Demostración](../../datacollection/dc1.2/images/pv7.png)
 
-Vaya a la página Registrar/Iniciar sesión. Haga clic en **Iniciar sesión**.
+Haga clic en **Crear una cuenta**.
 
 ![Demostración](../../datacollection/dc1.2/images/pv8.png)
 
-Haga clic en **Crear una cuenta**.
+Complete sus detalles y haga clic en **Registrarse** después de lo cual se le redirigirá a la página anterior.
 
 ![Demostración](../../datacollection/dc1.2/images/pv9.png)
 
-Complete sus detalles y haga clic en **Registrarse** después de lo cual se le redirigirá a la página anterior.
+Abra el panel Visualizador de perfiles y vaya a Perfil del cliente en tiempo real. En el panel Visor de perfiles, debería ver todos los datos personales que se muestran, como los identificadores de correo electrónico y teléfono que acaba de agregar.
 
 ![Demostración](../../datacollection/dc1.2/images/pv10.png)
 
-Abra el panel Visualizador de perfiles y vaya a Perfil del cliente en tiempo real. En el panel Visor de perfiles, debería ver todos los datos personales que se muestran, como los identificadores de correo electrónico y teléfono que acaba de agregar.
-
-![Demostración](../../datacollection/dc1.2/images/pv11.png)
-
 En el panel Visor de perfiles, vaya a Eventos de experiencia. Verá los 2 productos que vio antes en el panel Visor de perfiles. Ambos eventos ahora también están conectados al perfil &quot;conocido&quot;.
 
-![Demostración](../../datacollection/dc1.2/images/pv12.png)
+![Demostración](../../datacollection/dc1.2/images/pv11.png)
 
 Ahora ha introducido datos en Adobe Experience Platform y los ha vinculado a identificadores como ECID y direcciones de correo electrónico. El objetivo de esto es comprender el contexto empresarial de lo que está a punto de hacer. En el siguiente ejercicio, empezará a configurar todo lo que necesita para que sea posible toda esa ingesta de datos.
 
@@ -105,21 +103,33 @@ Si ya no tienes la aplicación instalada, o si no recuerdas cómo instalarla, mi
 
 Después de instalar la aplicación según las instrucciones, verá la página de aterrizaje de la aplicación con la marca Citi Signal cargada. Haga clic en el icono de cuenta en la parte superior izquierda de la pantalla.
 
-![Demostración](./images/app_hp1.png)
+![Demostración](./images/app_hpz.png)
 
 En la pantalla Inicio de sesión, inicie sesión con la dirección de correo electrónico que utilizó en el sitio web de escritorio. Haga clic en **Iniciar sesión**.
 
 ![Demostración](./images/app_acc.png)
 
-Vaya a la pantalla de inicio de la aplicación y haga clic en para abrir cualquier producto.
+A continuación, recibirá una confirmación de que ha iniciado sesión.
 
-![Demostración](./images/app_hp.png)
+![Demostración](./images/app_acc1.png)
+
+Vaya a la pantalla de inicio de la aplicación y a la página **Teléfonos y dispositivos**.
+
+![Demostración](./images/app_hp1.png)
+
+Haga clic en cualquier producto de la página.
+
+![Demostración](./images/app_hp2.png)
 
 A continuación, verá la página de detalles del producto.
 
 ![Demostración](./images/app_galaxy.png)
 
-Vaya a la pantalla de inicio de la aplicación y deslice hacia la izquierda en la pantalla para ver el panel Visor de perfiles. Verá el producto que acaba de ver en la sección **Eventos de experiencia**, junto con todas las vistas de productos de la sesión del sitio web anterior.
+Vaya a la pantalla de inicio de la aplicación y haga clic en el icono de Adobe para ver el panel Visor de perfiles. Verá la vista **Atributos de perfil**, que ahora muestra una vista combinada de su actividad de aplicaciones web y móviles. Ir a **Eventos**
+
+![Demostración](./images/app_hp3.png)
+
+Verá el producto que acaba de ver en la sección **Eventos de experiencia**, junto con todas las vistas de productos de la sesión del sitio web anterior.
 
 >[!NOTE]
 >

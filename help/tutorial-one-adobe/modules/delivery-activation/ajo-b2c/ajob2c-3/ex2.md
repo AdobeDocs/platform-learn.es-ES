@@ -3,19 +3,27 @@ title: Configuración de un recorrido con mensajes push
 description: Configuración de un recorrido con mensajes push
 kt: 5342
 doc-type: tutorial
-source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
+exl-id: 63d7ee24-b6b5-4503-b104-a345c2b26960
+source-git-commit: fb14ba45333bdd5834ff0c6c2dc48dda35cfe85f
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '770'
 ht-degree: 2%
 
 ---
 
 # 3.3.2 Configuración de un recorrido con mensajes push
 
+Inicie sesión en Adobe Journey Optimizer en [Adobe Experience Cloud](https://experience.adobe.com). Haga clic en **Journey Optimizer**.
 
-## 3.4.4.6 Crear un nuevo evento
+![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
-Ir a **Journey Optimizer**. En el menú de la izquierda, ve a **Configuraciones** y haz clic en **Administrar** en **Eventos**.
+Se le redirigirá a la vista **Inicio** en Journey Optimizer. Primero, asegúrese de que está usando la zona protegida correcta. La zona protegida que se va a usar se llama `--aepSandboxName--`. Estará en la vista **Inicio** de su zona protegida `--aepSandboxName--`.
+
+![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
+
+## 3.3.2.1 Crear un nuevo evento
+
+En el menú de la izquierda, ve a **Configuraciones** y haz clic en **Administrar** en **Eventos**.
 
 ![ACOP](./images/acopmenu.png)
 
@@ -32,7 +40,7 @@ A continuación se muestra la selección **Tipo de ID de evento**. Seleccione **
 
 A continuación se muestra la selección Esquema. Se ha preparado un esquema para este ejercicio. Use el esquema `Demo System - Event Schema for Mobile App (Global v1.1) v.1`.
 
-Después de seleccionar el esquema, verá una serie de campos seleccionados en la sección **Carga útil**. El evento está ahora completamente configurado.
+Después de seleccionar el esquema, verá una serie de campos seleccionados en la sección **Carga útil**. Compruebe que el campo **Namespace** esté establecido en **ECID**. El evento está ahora completamente configurado.
 
 Haga clic en **Guardar**.
 
@@ -50,20 +58,24 @@ Ahora verá un ejemplo de la carga útil esperada.
 
 Su evento tiene un identificador de evento de orquestación único, que puede encontrar desplazándose hacia abajo en esa carga hasta que vea `_experience.campaign.orchestration.eventID`.
 
+El ID de evento es lo que debe enviarse a Adobe Experience Platform para almacenar en déclencheur el Recorrido que va a generar en el siguiente paso. Escriba este eventID, tal como lo necesitará en el paso siguiente.
+`"eventID": "aa895251f76831e6440f169f1bb9d2a4388f0696d8e2782cfab192a275817dfa"`
+
+Haga clic en **Ok**.
+
 ![ACOP](./images/payloadeventID.png)
 
-El ID de evento es lo que debe enviarse a Adobe Experience Platform para almacenar en déclencheur el Recorrido que va a generar en el siguiente paso. Escriba este eventID, tal como lo necesitará en el paso siguiente.
-`"eventID": "89acd341ec2b7d1130c9a73535029debf2ac35f486bc99236b1a5091d6f4bc68"`
+Haga clic en **Cancelar**.
 
-Haga clic en **Aceptar**, seguido de **Cancelar**.
+![ACOP](./images/payloadeventIDa.png)
 
-## 3.4.4.7 Crear un recorrido
+## 3.3.2.2 Crear un recorrido
 
-En el menú, ve a **Recorridos** y haz clic en **Crear Recorrido**.
+En el menú de la izquierda, ve a **Recorridos** y haz clic en **Crear Recorrido**.
 
 ![DSN](./images/sjourney1.png)
 
-Entonces verá esto... Dé un nombre a su recorrido. Usar `--aepUserLdap-- - Store Entry journey`. Haga clic en **Guardar**.
+Entonces verá esto... Asigne un nombre al recorrido: `--aepUserLdap-- - Store Entry journey`. Haga clic en **Guardar**.
 
 ![DSN](./images/sjourney3.png)
 
@@ -129,23 +141,61 @@ El recorrido se ha publicado.
 
 ![DSN](./images/sjourney11.png)
 
-## 3.4.4.8: probar el recorrido y el mensaje push
+## 3.3.2.3 Actualizar la propiedad de recopilación de datos para dispositivos móviles
 
-En la aplicación móvil DX Demo 2.0, ve a la pantalla **Configuración**. Haga clic en el botón **Entrada de tienda**.
+En **Introducción**, Sistema de demostración creó propiedades de etiquetas para usted: una para el sitio web y otra para la aplicación móvil. Encuéntralos buscando `--aepUserLdap--` en el cuadro **Buscar**. Haga clic para abrir la propiedad **Mobile**.
 
->[!NOTE]
->
->El botón **Entrada de tienda** se está implementando en este momento. Aún no lo encontrará en la aplicación.
+![DSN](./images/pushpoi1.png)
 
-![DSN](./images/demo1b.png)
+Entonces debería ver esto.
 
-Asegúrese de cerrar la aplicación inmediatamente después de hacer clic en el icono **Entrada de la tienda**; de lo contrario, no se mostrará el mensaje push.
+![DSN](./images/pushpoi2.png)
 
-Después de un par de segundos, verá el mensaje.
+En el menú de la izquierda, ve a **Reglas** y haz clic para abrir la regla **Entrada de ubicación**.
 
-![DSN](./images/demo2.png)
+![DSN](./images/pushpoi3.png)
 
-Ha terminado este ejercicio.
+Entonces debería ver esto. Haga clic en la acción **Núcleo móvil: adjuntar datos**.
+
+![DSN](./images/pushpoi4.png)
+
+Entonces debería ver esto.
+
+![DSN](./images/pushpoi5.png)
+
+Pegue el eventID del evento `--aepUserLdap--StoreEntryEvent` en la ventana **Carga JSON**. Haga clic en **Conservar cambios**.
+
+![DSN](./images/pushpoi6.png)
+
+Haga clic en **Guardar** o en **Guardar en biblioteca**.
+
+![DSN](./images/pushpoi7.png)
+
+Vaya a **Flujo de publicación** y haga clic para abrir la biblioteca **Principal**.
+
+![DSN](./images/pushpoi8.png)
+
+Haga clic en **Agregar todos los recursos modificados** y, a continuación, haga clic en **Guardar y generar en desarrollo**.
+
+![DSN](./images/pushpoi9.png)
+
+## 3.3.2.4: probar el recorrido y el mensaje push
+
+Abra la aplicación **DSN Mobile**.
+
+![DSN](./images/dxdemo1.png)
+
+Vaya a la página **Localizador de tiendas**.
+
+![DSN](./images/dxdemo2.png)
+
+Haga clic en **Simular entrada de punto de interés**.
+
+![DSN](./images/dxdemo3.png)
+
+Después de un par de segundos, verá aparecer la notificación push.
+
+![DSN](./images/dxdemo4.png)
 
 ## Pasos siguientes
 

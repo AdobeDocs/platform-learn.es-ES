@@ -4,9 +4,10 @@ description: Introducción a las notificaciones push
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
-source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
+exl-id: b46e0205-b0a1-4a14-95f6-9afe21cd2b5e
+source-git-commit: fb14ba45333bdd5834ff0c6c2dc48dda35cfe85f
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1235'
 ht-degree: 1%
 
 ---
@@ -33,27 +34,27 @@ Se le redirigirá a la vista **Inicio** en Journey Optimizer. Primero, asegúres
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
-## 3.4.4.1 conjunto de datos push
+## 3.3.1.1 conjunto de datos push
 
 Adobe Journey Optimizer utiliza conjuntos de datos para almacenar elementos como los tokens push de dispositivos móviles o las interacciones con mensajes push (como: mensaje enviado, mensaje abierto, etc.) en un conjunto de datos en Adobe Journey Optimizer.
 
-Puede encontrar estos conjuntos de datos en **[!UICONTROL Conjuntos de datos]** en el menú de la izquierda de la pantalla. Para mostrar conjuntos de datos del sistema, haga clic en el icono de filtro.
+Puede encontrar estos conjuntos de datos en **Conjuntos de datos** en el menú de la izquierda de la pantalla. Para mostrar los conjuntos de datos del sistema, haga clic en el icono **Habilitar filtros**.
 
-Habilite la opción **Mostrar conjuntos de datos del sistema** y busque **AJO**. A continuación, verá los conjuntos de datos utilizados para las notificaciones push.
+Habilite la opción para **System** y busque **AJO**. A continuación, verá los conjuntos de datos utilizados para las notificaciones push.
 
 ![Ingesta de datos](./images/menudsjo1.png)
 
-## 3.4.4.2 flujo de datos para dispositivos móviles
+## 3.3.1.2 flujo de datos para dispositivos móviles
 
 Vaya a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/).
 
-En el menú de la izquierda, ve a **[!UICONTROL Flujo de datos]** y busca el flujo de datos que creaste en [Introducción](./../../../../modules/getting-started/gettingstarted/ex2.md), que se llama `--aepUserLdap-- - Demo System Datastream (Mobile)`. Haga clic en para abrirlo.
+En el menú de la izquierda, ve a **Datastreams** y busca la secuencia de datos que creaste en [Introducción](./../../../../modules/getting-started/gettingstarted/ex2.md), que se llama `--aepUserLdap-- - One Adobe Datastream (Mobile)`. Haga clic en para abrirlo.
 
-![Haga clic en el icono Flujo de datos en el panel de navegación izquierdo](./images/edgeconfig1a.png)
+![Corrientes de datos](./images/edgeconfig1a.png)
 
 Haga clic en **Editar** en el servicio **Adobe Experience Platform**.
 
-![Haga clic en el icono Flujo de datos en el panel de navegación izquierdo](./images/edgeconfig1.png)
+![Corrientes de datos](./images/edgeconfig1.png)
 
 A continuación, verá la configuración del flujo de datos que se definió y en qué conjuntos de datos se almacenarán los eventos y atributos de perfil.
 
@@ -67,16 +68,17 @@ Haga clic en **Guardar**.
 
 ![Asigne un nombre al conjunto de datos y guarde](./images/edgeconfig2.png)
 
-## 3.4.4.3 Revisar la propiedad de recopilación de datos para dispositivos móviles
+## 3.3.1.3 Revisar la propiedad de recopilación de datos para dispositivos móviles
 
-Vaya a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). Como parte de [Introducción](./../../../../modules/getting-started/gettingstarted/ex1.md), se crearon 2 propiedades de recopilación de datos.
-Ya ha estado utilizando estas propiedades del cliente de recopilación de datos como parte de módulos anteriores.
+Vaya a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/), a **Etiquetas**. Como parte del módulo [Introducción](./../../../../modules/getting-started/gettingstarted/ex1.md), se crearon las propiedades de Etiquetas de recopilación de datos.
+
+Ya ha estado utilizando estas propiedades de etiquetas de recopilación de datos como parte de módulos anteriores.
 
 Haga clic para abrir la propiedad Recopilación de datos para dispositivos móviles.
 
 ![DSN](./images/launchprop.png)
 
-En su propiedad de recopilación de datos, vaya a **Extensiones**. A continuación, verá las distintas extensiones necesarias para la aplicación móvil. Haga clic para abrir la extensión **Adobe Experience Platform Edge Network**.
+En su propiedad de recopilación de datos, vaya a **Extensiones**. A continuación, verá las distintas extensiones necesarias para la aplicación móvil. Haga clic para seleccionar la extensión **Adobe Experience Platform Edge Network** y luego seleccione **Configurar**.
 
 ![Recopilación de datos de Adobe Experience Platform](./images/launchprop1.png)
 
@@ -84,21 +86,19 @@ A continuación, verá que el flujo de datos para móviles está vinculado aquí
 
 ![Recopilación de datos de Adobe Experience Platform](./images/launchprop2.png)
 
-Entonces volverás a estar aquí de nuevo. Verá la extensión de **AEP Assurance**. AEP Assurance le ayuda a inspeccionar, probar, simular y validar el modo en que recopila datos o sirve las experiencias en su aplicación móvil. Puede leer más sobre AEP Assurance y Project Griffon aquí [https://aep-sdks.gitbook.io/docs/beta/project-griffon](https://aep-sdks.gitbook.io/docs/beta/project-griffon).
+Entonces volverás a estar aquí de nuevo. Verá la extensión de **AEP Assurance**. AEP Assurance le ayuda a inspeccionar, probar, simular y validar el modo en que recopila datos o sirve las experiencias en su aplicación móvil. Puede leer más sobre AEP Assurance aquí: [https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home](https://experienceleague.adobe.com/es/docs/experience-platform/assurance/home).
 
 ![Recopilación de datos de Adobe Experience Platform](./images/launchprop8.png)
 
-A continuación, haga clic en **Configurar** para abrir la extensión **Adobe Journey Optimizer**.
+A continuación, haga clic en **Configurar** para abrir la extensión **Adobe Journey Optimizer**. Esta extensión permite las notificaciones push y la medición para Adobe Journey Optimizer.
 
 ![Recopilación de datos de Adobe Experience Platform](./images/launchprop9.png)
 
-Luego verá que aquí es donde se vincula el conjunto de datos para el seguimiento de eventos push.
+Luego verá que aquí es donde se vincula el conjunto de datos para el seguimiento de eventos push. No es necesario realizar ningún cambio en la propiedad de recopilación de datos. Haga clic en **Cancelar** para volver a la pantalla anterior.
 
 ![Recopilación de datos de Adobe Experience Platform](./images/launchprop10.png)
 
-No es necesario realizar ningún cambio en la propiedad de recopilación de datos.
-
-## 3.4.4.4 Revisar la configuración de la superficie de la aplicación
+## 3.3.1.4 Revisar la configuración de la superficie de la aplicación
 
 Vaya a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). En el menú de la izquierda, ve a **Superficies de aplicación** y abre la Superficie de aplicación para **APNS de aplicación de demostración DX**.
 
@@ -108,31 +108,27 @@ A continuación, verá la superficie de aplicación configurada para iOS y Andro
 
 ![Recopilación de datos de Adobe Experience Platform](./images/appsf1.png)
 
-## 3.4.4.5: probar la configuración de notificaciones push mediante AEP Assurance.
+## 3.3.1.5: probar la configuración de notificaciones push mediante AEP Assurance.
 
-Una vez que la aplicación esté instalada, la encontrarás en la pantalla de inicio del dispositivo. Haga clic en el icono para abrir la aplicación.
+Ya instaló la aplicación móvil **DX Demo** como parte del módulo **Introducción**. Una vez que la aplicación esté instalada, la encontrarás en la pantalla de inicio del dispositivo. Haga clic en el icono para abrir la aplicación.
 
 ![DSN](./../../../../modules/getting-started/gettingstarted/images/mobileappn1.png)
 
-Cuando uses la aplicación por primera vez, se te pedirá que inicies sesión con tu Adobe ID. Complete el proceso de inicio de sesión.
+Después de iniciar sesión, verá una notificación que solicita su permiso para enviar notificaciones. Enviaremos notificaciones como parte del tutorial, así que haz clic en **Permitir**.
 
 ![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn2.png)
 
-Después de iniciar sesión, verá una notificación que solicita su permiso para enviar notificaciones. Enviaremos notificaciones como parte del tutorial, así que haz clic en **Permitir**.
+A continuación, verá la página principal de la aplicación. Vaya a **Configuración**.
 
 ![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn3.png)
 
-A continuación, verá la página principal de la aplicación. Vaya a **Configuración**.
+En la configuración, verá que actualmente hay un **Proyecto público** cargado en la aplicación. Haga clic en **Proyecto personalizado**.
 
 ![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn4.png)
 
-En la configuración, verá que actualmente hay un **Proyecto público** cargado en la aplicación. Haga clic en **Proyecto personalizado**.
-
-![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn5.png)
-
 Ahora puede cargar un proyecto personalizado. Haga clic en el código QR para cargar fácilmente el proyecto.
 
-![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn6.png)
+![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn5.png)
 
 Después de pasar por la sección **Introducción**, obtuviste este resultado. Haga clic para abrir el **proyecto de venta minorista móvil** que se creó para usted.
 
@@ -150,28 +146,28 @@ A continuación, verá esta ventana emergente, que contiene un código QR. Escan
 
 ![DSN](./../../../modules/../getting-started/gettingstarted/images/web8c.png)
 
-Luego verás el identificador de tu proyecto en la aplicación, después de lo cual podrás hacer clic en **Guardar**.
+Verá el identificador de proyecto en la aplicación, tras lo cual podrá hacer clic en **Cambiar**.
 
 ![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn7.png)
 
-Ahora, vuelve a **Inicio** en la aplicación. La aplicación ya está lista para utilizarse.
+La aplicación ya está lista para utilizarse.
 
 ![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn8.png)
 
-Ahora debe escanear un código QR para conectar su dispositivo móvil a su sesión de AEP Assurance.
+Ahora necesita escanear un código QR para conectar su dispositivo móvil a su sesión de Assurance.
 
 Para iniciar una sesión de AEP Assurance, ve a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). Haga clic en **Assurance** en el menú de la izquierda. A continuación, haga clic en **Crear sesión**.
 
 ![Recopilación de datos de Adobe Experience Platform](./images/griffon3.png)
 
-Haga clic en **Start**.
+Seleccione **Conexión de vínculo profundo** y luego haga clic en **Iniciar**.
 
 ![Recopilación de datos de Adobe Experience Platform](./images/griffon5.png)
 
 Rellene los valores:
 
-- Nombre de sesión: use `--aepUserLdap-- - push debugging` y reemplace ldap por su ldap
-- URL básica: usar `dxdemo://default`
+- Nombre de sesión: `--aepUserLdap-- - Push Debugging`
+- URL básica: `dxdemo://default`
 
 Haga clic en **Next**.
 
@@ -181,7 +177,7 @@ Luego verá un código QR en la pantalla, que debe escanear con su dispositivo i
 
 ![Recopilación de datos de Adobe Experience Platform](./images/griffon6.png)
 
-En su dispositivo móvil, abra la aplicación de la cámara y escanee el código QR que muestra AEP Assurance.
+En su dispositivo móvil, abra la aplicación de la cámara y escanee el código QR que muestra Assurance.
 
 ![Recopilación de datos de Adobe Experience Platform](./images/ipadPushTest8a.png)
 
@@ -193,31 +189,29 @@ Entonces verá esto...
 
 ![Recopilación de datos de Adobe Experience Platform](./images/ipadPushTest11.png)
 
-En Assurance, ahora verá que un dispositivo está conectado a la sesión de Assurance. Haga clic en **Finalizado**.
+En Assurance, ahora verá que hay un dispositivo cliente conectado a la sesión de Assurance. A continuación, haga clic en **Configurar**.
 
 ![Recopilación de datos de Adobe Experience Platform](./images/griffon7.png)
 
-Vaya a **Depuración push**.
+Desplácese hacia abajo hasta **Depuración push**. Haga clic en el icono **+** y, a continuación, haga clic en **Guardar**.
 
->[!NOTE]
->
->Si no encuentra **Push Debug** en el menú de la izquierda, haga clic en **Configurar** en la esquina inferior izquierda de la pantalla y agregue **Push Debug** al menú.
+![Recopilación de datos de Adobe Experience Platform](./images/griffon7a.png)
 
-Vas a ver algo como esto.
+Vaya a **Depuración push**. Deberías ver esto.
 
 ![Recopilación de datos de Adobe Experience Platform](./images/griffon10.png)
 
 Alguna explicación:
 
 - La primera columna, **Cliente**, muestra los identificadores disponibles en su dispositivo iOS. Verá un ECID y un token push.
-- La segunda columna muestra las **credenciales y configuración de App Store**, que se configuraron como parte del ejercicio **3.4.5.4Crear configuración de aplicación en Launch**
+- La segunda columna muestra las **credenciales y configuración de App Store**
 - La segunda columna muestra información de **Perfil**, con información adicional sobre la plataforma en la que se encuentra el token push (APNS o APNSandbox). Si hace clic en el botón **Inspeccionar perfil**, se le redirigirá a Adobe Experience Platform y verá el perfil del cliente en tiempo real completo.
 
 Para probar la configuración push, ve al botón **Enviar configuración push de prueba**. Haga clic en **Enviar notificación push de prueba**
 
 ![Recopilación de datos de Adobe Experience Platform](./images/griffon11.png)
 
-Debe asegurarse de que la aplicación **DX Demo** no esté abierta cuando haga clic en el botón **Enviar notificación push**. Si la aplicación está abierta, es posible que la notificación push se reciba en segundo plano y no esté visible.
+Debe asegurarse de que la aplicación **DX Demo** no esté abierta cuando haga clic en el botón **Enviar notificación push**. Si la aplicación está abierta, es posible que la notificación push se reciba en segundo plano y no sea visible.
 
 Verá una notificación push como esta en su dispositivo móvil.
 
