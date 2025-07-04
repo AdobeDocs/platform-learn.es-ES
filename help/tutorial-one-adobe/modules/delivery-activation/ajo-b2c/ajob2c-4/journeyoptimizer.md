@@ -4,9 +4,9 @@ description: En este módulo, aprenderá todo lo que debe saber sobre Journey Op
 kt: 5342
 doc-type: tutorial
 exl-id: b1422971-ffce-4f4f-9bd8-986f5f1537c3
-source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
+source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '252'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,6 @@ En este módulo, aprenderá todo lo que debe saber sobre Adobe Journey Optimizer
 - Familiarícese con Adobe Journey Optimizer
 - Creación de mensajes de correo electrónico y push
 - Configuración de recorridos por lotes y basados en déclencheur
-- Envío de notificaciones push y de correo electrónico como parte de un recorrido con el cliente
 
 ## Requisitos previos
 

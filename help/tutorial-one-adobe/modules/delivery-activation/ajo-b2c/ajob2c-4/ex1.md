@@ -4,9 +4,9 @@ description: 'En esta sección configurará un recorrido basado en déclencheur:
 kt: 5342
 doc-type: tutorial
 exl-id: e8cf1274-2a18-4870-b1e3-378e1779fac1
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
 workflow-type: tm+mt
-source-wordcount: '1922'
+source-wordcount: '1895'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Se le redirigirá a la vista **Inicio** en Journey Optimizer. Primero, asegúres
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
-## 3.4.1.1 Creación de un evento
+## 3.4.1.1 Crear su evento
 
 En el menú, ve a **Configuraciones** y haz clic en **Administrar** en **Eventos**.
 
@@ -40,7 +40,7 @@ Para **Tipo de ID de evento**, seleccione **Sistema generado**.
 
 ![Journey Optimizer](./images/eventidtype.png)
 
-A continuación se muestra la selección Esquema. Se ha preparado un esquema para este ejercicio. Use el esquema `Demo System - Event Schema for Website (Global v1.1) v.1`.
+A continuación se muestra la selección del esquema. Se ha preparado un esquema para este ejercicio. Use el esquema `Demo System - Event Schema for Website (Global v1.1) v.1`.
 
 Después de seleccionar el esquema, verá una serie de campos seleccionados en la sección **Carga útil**. Haga clic en el icono **Editar/Lápiz** para agregar campos adicionales a este evento.
 
@@ -78,13 +78,13 @@ Ahora verá un ejemplo de la carga útil esperada. El evento tiene un identifica
 ![Journey Optimizer](./images/oc42.png)
 
 El ID de evento es lo que debe enviarse a Adobe Journey Optimizer para almacenar en déclencheur el recorrido que va a generar en el siguiente paso. Anote este eventID, ya que lo necesitará en uno de los pasos siguientes.
-`"eventID": "1c8148a8ab1993537d0ba4e6ac293dd4f2a88d80b2ca7be6293c3b28d4ff5ae6"`
+`"eventID": "618da2a203c3392e43a538d40ff5deef0bd1e7c64f6b6bfe131d4a38a67193ae"`
 
 Haga clic en **Aceptar**, seguido de **Cancelar**.
 
 El evento está ahora configurado y listo para utilizarse.
 
-## 3.4.1.2 Crear el recorrido
+## 3.4.1.2 Crear su recorrido
 
 En el menú, ve a **Recorridos** y haz clic en **Crear Recorrido**.
 
@@ -102,19 +102,15 @@ A continuación, en **Acciones**, busque la acción **Correo electrónico** y ag
 
 ![Journey Optimizer](./images/oc47.png)
 
-Defina **Category** en **Marketing** y seleccione una superficie de correo electrónico que le permita enviar correo electrónico. En este caso, la superficie de correo electrónico que se va a seleccionar es **Correo electrónico**. Asegúrese de que las casillas de verificación de **Clics en el correo electrónico** y **aperturas del correo electrónico** estén habilitadas.
+Defina **Category** en **Marketing** y seleccione una superficie de correo electrónico que le permita enviar correo electrónico. En este caso, la superficie de correo electrónico que se va a seleccionar es **Correo electrónico**. El siguiente paso es crear el mensaje. Para ello, haga clic en **Editar contenido**.
 
 ![ACOP](./images/journeyactions1.png)
-
-El siguiente paso es crear el mensaje. Para ello, haga clic en **Editar contenido**.
-
-![ACOP](./images/journeyactions2.png)
 
 Ahora puede ver esto. Haga clic en el campo de texto **Línea de asunto**.
 
 ![ACOP](./images/journeyactions3.png)
 
-En el área de texto empieza a escribir **Gracias por tu pedido,** y haz clic en el icono **Personalization**.
+En el área de texto, empiece a escribir `Thanks for your order, ` y haga clic en el icono **Personalization**.
 
 ![Journey Optimizer](./images/oc5.png)
 
@@ -136,7 +132,7 @@ Arrastrar y soltar 8 veces una columna **1:1** en el lienzo, lo que debería pro
 
 ![Journey Optimizer](./images/oc9.png)
 
-En el menú de la izquierda, ve a **Fragmentos**. Arrastre el encabezado que creó anteriormente en [ejercicio 3.1.2.1](./../ajob2c-1/ex2.md) al primer componente del lienzo. Arrastre el pie de página creado anteriormente en [ejercicio 3.1.2.2](./../ajob2c-1/ex2.md) al último componente del lienzo.
+En el menú de la izquierda, ve a **Fragmentos**. Arrastre el encabezado que creó anteriormente en el [ejercicio 3.1.2.1](./../ajob2c-1/ex2.md) al primer componente del lienzo. Arrastre el pie de página que creó anteriormente en el [ejercicio 3.1.2.2](./../ajob2c-1/ex2.md) al último componente del lienzo.
 
 ![Journey Optimizer](./images/fragm1.png)
 
@@ -349,7 +345,7 @@ El recorrido se ha publicado.
 
 Vaya a [Recopilación de datos de Adobe Experience Platform](https://experience.adobe.com/launch/) y seleccione **Etiquetas**.
 
-Esta es la página de Propiedades de recopilación de datos de Adobe Experience Platform que vio antes.
+Esta es la página de propiedades de recopilación de datos de Adobe Experience Platform que vio antes.
 
 ![Página de propiedades](./../../../../modules/delivery-activation/datacollection/dc1.1/images/launch1.png)
 
@@ -361,7 +357,7 @@ Vaya a **Elementos de datos**. Busque y abra el elemento de datos **XDM - Purcha
 
 ![Journey Optimizer](./images/oc91.png)
 
-Entonces verá esto... Vaya al campo **_experience.campaign.orchestration.eventID** y rellene su eventID aquí. El eventID que se va a rellenar aquí es el eventID que creó como parte del ejercicio 3.4.1.1 Haga clic en **Guardar** o en **Guardar en biblioteca**.
+Entonces verá esto... Vaya al campo **_experience.campaign.orchestration.eventID** y rellene su eventID aquí. El eventID que se va a rellenar aquí es el eventID que creó como parte del ejercicio 3.4.1.1. Haga clic en **Guardar** o **Guardar en biblioteca**.
 
 ![Journey Optimizer](./images/oc92.png)
 
@@ -371,7 +367,7 @@ Guarde los cambios en la propiedad y, a continuación, publique los cambios actu
 
 Los cambios se han implementado y se pueden probar.
 
-## 3.4.1.6 Pruebe el correo electrónico de confirmación de pedido en el sitio web de demostración
+## 3.4.1.6 Pruebe el correo electrónico de confirmación de pedido usando el sitio web de demostración
 
 Probemos el recorrido actualizado comprando un producto en el sitio web de demostración.
 
@@ -403,15 +399,11 @@ Eche un vistazo al panel del visor de perfiles y al perfil del cliente en tiempo
 
 ![Demostración](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv2.png)
 
-Vaya a la página Registrar/Iniciar sesión. Haga clic en **CREAR UNA CUENTA**.
+Vaya a la página **Iniciar sesión**, haga clic en **CREAR UNA CUENTA** y rellene estos campos. Haga clic en **Registrar** después de lo cual se le redirigirá a la página anterior.
 
 ![Demostración](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv9.png)
 
-Complete sus detalles y haga clic en **Registrarse** después de lo cual se le redirigirá a la página anterior.
-
-![Demostración](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv10.png)
-
-Añadir cualquier producto al carro de compras
+Añada cualquier producto al carro de compras.
 
 ![Journey Optimizer](./images/cart1a.png)
 

@@ -4,9 +4,9 @@ description: En esta sección configurará un recorrido de correo electrónico p
 kt: 5342
 doc-type: tutorial
 exl-id: 40ca710d-63c8-41bd-bd4e-f02186509345
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '877'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,6 @@ Inicie sesión en Adobe Journey Optimizer en [Adobe Experience Cloud](https://ex
 Se le redirigirá a la vista **Inicio** en Journey Optimizer. Primero, asegúrese de que está usando la zona protegida correcta. La zona protegida que se va a usar se llama `--aepSandboxName--`. Estará en la vista **Inicio** de su zona protegida `--aepSandboxName--`.
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
-
 
 ## 3.4.2.1 Crear audiencia
 
@@ -44,7 +43,7 @@ Establezca el nombre de su audiencia en `--aepUserLdap-- - All customers with em
 
 La audiencia ahora se ha publicado y puede utilizarse en una campaña.
 
-## 3.4.2.2 Creación de una campaña de newsletter
+## 3.4.2.2 Crear campaña de newsletter
 
 Ahora creará una campaña. A diferencia del recorrido basado en eventos del ejercicio anterior, que se basa en eventos de experiencia entrantes o entradas o salidas de audiencia para almacenar en déclencheur un recorrido para un cliente específico, las campañas se dirigen a una audiencia completa una vez con contenido único como boletines informativos, promociones únicas o información genérica, o periódicamente con contenido similar enviado de forma regular como, por ejemplo, campañas de cumpleaños y recordatorios.
 
@@ -96,7 +95,7 @@ Arrastrar y soltar 3 veces una columna **1:1** en el lienzo, 1 vez una columna 1
 
 ![Journey Optimizer](./images/campaign8.png)
 
-En el menú de la izquierda, ve a **Fragmentos**. Arrastre el encabezado que creó anteriormente en [ejercicio 3.1.2.1](./../ajob2c-1/ex2.md) al primer componente del lienzo. Arrastre el pie de página creado anteriormente en [ejercicio 3.1.2.2](./../ajob2c-1/ex2.md) al último componente del lienzo.
+En el menú de la izquierda, ve a **Fragmentos**. Arrastre el encabezado que creó anteriormente en el [ejercicio 3.1.2.1](./../ajob2c-1/ex2.md) al primer componente del lienzo. Arrastre el pie de página que creó anteriormente en el [ejercicio 3.1.2.2](./../ajob2c-1/ex2.md) al último componente del lienzo.
 
 ![Journey Optimizer](./images/campaign9.png)
 
