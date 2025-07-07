@@ -41,7 +41,7 @@ Para obtener más información, consulte la [documentación](https://experiencel
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="real-time-cdp-collaboration-intro.md" title="Introducción a Real-Time CDP Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446801/?format=jpeg&nocache=1751925455077" alt="Introducción a Real-Time CDP Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446804/?format=jpeg&nocache=1751925455077&captions=spa" alt="Introducción a Real-Time CDP Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -125,7 +125,7 @@ Para obtener más información, consulte la [documentación](https://experiencel
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="set-permissions-for-collaboration.md" title="Definición de permisos para Real-Time CDP Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452216/?format=jpeg&nocache=1751925455752" alt="Definición de permisos para Real-Time CDP Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452233/?format=jpeg&nocache=1751925455752&captions=spa" alt="Definición de permisos para Real-Time CDP Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -231,7 +231,7 @@ Para obtener más información, consulte la [documentación](https://experiencel
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-a-project.md" title="Creación de un proyecto en Real-Time CDP Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464033/?format=jpeg&nocache=1751925456092" alt="Creación de un proyecto en Real-Time CDP Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464037/?format=jpeg&nocache=1751925456092&captions=spa" alt="Creación de un proyecto en Real-Time CDP Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
