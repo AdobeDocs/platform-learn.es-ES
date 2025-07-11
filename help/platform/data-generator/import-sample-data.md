@@ -7,7 +7,7 @@ level: Experienced
 jira: KT-7349
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: 4db88dbae923d37884391a65ff8fc16f53e19187
+source-git-commit: 1836e80bbf3d38b600f120d83d6628a9cb3c257b
 workflow-type: tm+mt
 source-wordcount: '1776'
 ht-degree: 3%
@@ -16,11 +16,11 @@ ht-degree: 3%
 
 # Importación de datos de ejemplo en Adobe Experience Platform
 
-Aprenda a configurar un entorno de zona protegida de Experience Platform con datos de ejemplo. Con una colección de Postman puede crear grupos de campos, esquemas, conjuntos de datos y luego importar datos de ejemplo a Experience Platform.
+Aprenda a configurar un entorno de zona protegida de Experience Platform con datos de muestra. Con una colección de Postman puede crear grupos de campos, esquemas, conjuntos de datos y luego importar datos de muestra a Experience Platform.
 
 ## Caso de uso de datos de ejemplo
 
-Los usuarios empresariales de Experience Platform suelen tener que pasar por una serie de pasos que incluyen la identificación de grupos de campos, la creación de esquemas, la preparación de datos, la creación de conjuntos de datos y la ingesta de datos antes de poder explorar las capacidades de marketing que ofrece Experience Platform. Este tutorial automatiza algunos de los pasos para que pueda obtener datos en un entorno limitado de Platform lo antes posible.
+Los usuarios empresariales de Experience Platform suelen tener que pasar por una serie de pasos que incluyen la identificación de grupos de campos, la creación de esquemas, la preparación de datos, la creación de conjuntos de datos y la ingesta de datos para poder explorar las funcionalidades de marketing que ofrece Experience Platform. Este tutorial automatiza algunos de los pasos para que pueda obtener datos en un entorno limitado de Platform lo antes posible.
 
 Este tutorial se centra en una marca comercial ficticia llamada Luma. Invierten en Adobe Experience Platform para combinar lealtad, CRM, catálogo de productos y datos de compras sin conexión en perfiles de clientes en tiempo real y activar estos perfiles para llevar su marketing al siguiente nivel. Hemos generado datos de muestra para Luma y, en el resto de este tutorial, importará estos datos en uno de los entornos de zona protegida de Experience Platform.
 
@@ -33,7 +33,7 @@ Este tutorial se centra en una marca comercial ficticia llamada Luma. Invierten 
 
 * Tiene acceso a las API de Experience Platform y sabe cómo autenticarse. Si no, revise este [tutorial](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=es).
 * Tiene acceso a una zona protegida de desarrollo de Experience Platform.
-* Conoce su ID de inquilino de Experience Platform. Puede obtenerla realizando una [solicitud de API](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=es#know-your-tenant_id) autenticada
+* Conoce su ID de inquilino de Experience Platform. Puede obtenerla realizando una [solicitud de API](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#know-your-tenant_id) autenticada
 o extrayéndolo de la dirección URL cuando inicie sesión en su cuenta de Platform. Por ejemplo, en la siguiente URL, el inquilino es &quot;`techmarketingdemos`&quot; `https://experience.adobe.com/#/@techmarketingdemos/sname:prod/platform/home`.
 
 ## Usando [!DNL Postman] {#postman}
@@ -81,7 +81,7 @@ Antes de seguir los pasos, asegúrese de haber descargado la aplicación [Postma
 1. En Postman, seleccione su entorno en la lista desplegable superior derecha y haga clic en el icono del ojo para ver las variables de entorno:
    ![Selección de entorno](../assets/data-generator/images/env-selection.png)
 
-1. Asegúrese de que se rellenan las siguientes variables de entorno. Para obtener información sobre cómo obtener el valor de las variables de entorno, consulte el tutorial [Autenticar en las API de Experience Platform](/help/platform/authentication/platform-api-authentication.md) para obtener instrucciones paso a paso.
+1. Asegúrese de que se rellenan las siguientes variables de entorno. Para obtener más información sobre cómo obtener el valor de las variables de entorno, consulte el tutorial [Autenticar en las API de Experience Platform](/help/platform/api/platform-api-authentication.md) para obtener instrucciones paso a paso.
 
    * `CLIENT_SECRET`
    * `API_KEY`—`Client ID` en Adobe Developer Console
@@ -120,7 +120,7 @@ A continuación, debe importar las colecciones en Postman.
 
 ### Autenticar
 
-A continuación, debe autenticarse y generar un token de usuario. Tenga en cuenta que los métodos de generación de tokens utilizados en este tutorial solo son adecuados para el uso que no sea de producción. La firma local carga una biblioteca de JavaScript desde un host de terceros y la firma remota envía la clave privada a un servicio web de Adobe. Aunque la Adobe de no almacena esta clave privada, las claves de producción nunca deben compartirse con nadie.
+A continuación, debe autenticarse y generar un token de usuario. Tenga en cuenta que los métodos de generación de tokens utilizados en este tutorial solo son adecuados para el uso que no sea de producción. La firma local carga una biblioteca de JavaScript desde un host de terceros y la firma remota envía la clave privada a un servicio web operado y propiedad de Adobe. Aunque Adobe no almacena esta clave privada, las claves de producción nunca deben compartirse con nadie.
 
 1. Abra la colección `0-Authentication`, seleccione la solicitud `OAuth: Request Access Token` y haga clic en `SEND` para autenticar y obtener el token de acceso.
 
@@ -187,16 +187,16 @@ Si explora los datos de las fichas **[!UICONTROL Atributos]** y **[!UICONTROL Ev
 
 Si desea obtener más información sobre Adobe Journey Optimizer, esta zona protegida contiene todo lo necesario para superar los [desafíos de Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=es)
 
-Si desea obtener información sobre las políticas de combinación, el control de datos, el servicio de consultas y el generador de segmentos, pase a la [lección 11 del tutorial Introducción a los arquitectos de datos y a los ingenieros de datos](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=es). Las lecciones anteriores de este otro tutorial le han permitido crear manualmente todo lo que acaba de completar con estas colecciones de Postman: ¡disfrute del principio!
+Si desea obtener información sobre las políticas de combinación, el control de datos, el servicio de consultas y el generador de segmentos, pase a la [lección 11 del tutorial Introducción a los arquitectos de datos y a los ingenieros de datos](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en). Las lecciones anteriores de este otro tutorial le han permitido crear manualmente todo lo que acaba de completar con estas colecciones de Postman: ¡disfrute del principio!
 
-Si desea crear una implementación de SDK web de ejemplo para vincularla a esta zona protegida, visite el
-[Implementar Adobe Experience Cloud con tutorial de SDK web](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=es). Después de configurar las lecciones &quot;Configuración inicial&quot;, &quot;Configuración de etiquetas&quot; y &quot;Configuración de Experience Platform&quot; del tutorial del SDK web, inicie sesión en el sitio web de Luma con las diez primeras direcciones de correo electrónico del archivo `luma-crm.json` con la contraseña `test` para ver cómo los fragmentos de perfil se combinan con los datos cargados en este tutorial.
+Si desea crear una implementación de Web SDK de ejemplo para vincular a esta zona protegida, consulte el
+[Implementar Adobe Experience Cloud con el tutorial de Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=es). Después de configurar las lecciones &quot;Configuración inicial&quot;, &quot;Configuración de etiquetas&quot; y &quot;Configuración de Experience Platform&quot; del tutorial de Web SDK, inicie sesión en el sitio web de Luma con las diez primeras direcciones de correo electrónico del archivo `luma-crm.json` con la contraseña `test` para ver cómo los fragmentos de perfil se combinan con los datos cargados en este tutorial.
 
-Si desea crear una implementación de SDK móvil de ejemplo para vincularla a este simulador de pruebas, consulte el
-[Implementar Adobe Experience Cloud en el tutorial de aplicaciones móviles](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=es). Después de configurar las lecciones &quot;Configuración inicial&quot;, &quot;Implementación de aplicación&quot; y &quot;Experience Platform&quot; del tutorial del SDK web, inicie sesión en el sitio web de Luma con las primeras direcciones de correo electrónico del archivo `luma-crm.json` para ver cómo se combina un fragmento de perfil con los datos cargados en este tutorial.
+Si desea crear una implementación de SDK móvil de ejemplo para vincularla a esta zona protegida, consulte el
+[Implementar Adobe Experience Cloud en el tutorial de aplicaciones móviles](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=es). Después de configurar las lecciones &quot;Configuración inicial&quot;, &quot;Implementación de aplicación&quot; y &quot;Experience Platform&quot; del tutorial de Web SDK, inicie sesión en el sitio web de Luma con las primeras direcciones de correo electrónico del archivo `luma-crm.json` para ver cómo se combina un fragmento de perfil con los datos cargados en este tutorial.
 
 ## Restablecer entorno de espacio aislado {#reset-sandbox}
 
 Al restablecer una zona protegida que no sea de producción, se eliminarán todos los recursos asociados a ella (esquemas, conjuntos de datos, etc.), pero se conservarán el nombre y los permisos asociados a la zona protegida. Esta zona protegida &quot;limpia&quot; sigue estando disponible con el mismo nombre para los usuarios que tienen acceso a ella.
 
-Siga los pasos [aquí](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=es#reset-a-sandbox) para restablecer un entorno de espacio aislado.
+Siga los pasos [aquí](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=en#reset-a-sandbox) para restablecer un entorno de espacio aislado.
