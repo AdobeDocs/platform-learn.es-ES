@@ -22,4 +22,4 @@ Obtenga sugerencias durante un tutorial sobre la configuración de un destino ba
 * [Activar datos de audiencia en destinos de exportación de perfiles por lotes](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations.html?lang=es) para obtener instrucciones sobre cómo activar datos en destinos de marketing por lotes o por correo electrónico mediante la interfaz de usuario de Experience Platform
 * [Conéctese a destinos por lotes y active datos mediante la API de Flow Service](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/connect-activate-batch-destinations.html?lang=es) para obtener instrucciones sobre cómo activar datos en destinos de marketing por lotes o por correo electrónico mediante la API de Flow Service
 
->[!VIDEO](https://video.tv.adobe.com/v/328175/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/340712/?learn=on&enablevpops&captions=spa)
