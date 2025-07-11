@@ -20,5 +20,5 @@ ht-degree: 2%
 
 Use las [API del servicio Adobe Identity Management](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims) para obtener un token de acceso y poder acceder a las API de Adobe Experience Platform.
 
->[!VIDEO](https://video.tv.adobe.com/v/29698/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32727/?learn=on&enablevpops&captions=spa)
 
