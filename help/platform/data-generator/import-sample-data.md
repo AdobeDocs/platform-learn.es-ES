@@ -33,7 +33,7 @@ Este tutorial se centra en una marca comercial ficticia llamada Luma. Invierten 
 
 * Tiene acceso a las API de Experience Platform y sabe cómo autenticarse. Si no, revise este [tutorial](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=es).
 * Tiene acceso a una zona protegida de desarrollo de Experience Platform.
-* Conoce su ID de inquilino de Experience Platform. Puede obtenerla realizando una [solicitud de API](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#know-your-tenant_id) autenticada
+* Conoce su ID de inquilino de Experience Platform. Puede obtenerla realizando una [solicitud de API](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=es#know-your-tenant_id) autenticada
 o extrayéndolo de la dirección URL cuando inicie sesión en su cuenta de Platform. Por ejemplo, en la siguiente URL, el inquilino es &quot;`techmarketingdemos`&quot; `https://experience.adobe.com/#/@techmarketingdemos/sname:prod/platform/home`.
 
 ## Usando [!DNL Postman] {#postman}
@@ -187,7 +187,7 @@ Si explora los datos de las fichas **[!UICONTROL Atributos]** y **[!UICONTROL Ev
 
 Si desea obtener más información sobre Adobe Journey Optimizer, esta zona protegida contiene todo lo necesario para superar los [desafíos de Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=es)
 
-Si desea obtener información sobre las políticas de combinación, el control de datos, el servicio de consultas y el generador de segmentos, pase a la [lección 11 del tutorial Introducción a los arquitectos de datos y a los ingenieros de datos](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en). Las lecciones anteriores de este otro tutorial le han permitido crear manualmente todo lo que acaba de completar con estas colecciones de Postman: ¡disfrute del principio!
+Si desea obtener información sobre las políticas de combinación, el control de datos, el servicio de consultas y el generador de segmentos, pase a la [lección 11 del tutorial Introducción a los arquitectos de datos y a los ingenieros de datos](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=es). Las lecciones anteriores de este otro tutorial le han permitido crear manualmente todo lo que acaba de completar con estas colecciones de Postman: ¡disfrute del principio!
 
 Si desea crear una implementación de Web SDK de ejemplo para vincular a esta zona protegida, consulte el
 [Implementar Adobe Experience Cloud con el tutorial de Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=es). Después de configurar las lecciones &quot;Configuración inicial&quot;, &quot;Configuración de etiquetas&quot; y &quot;Configuración de Experience Platform&quot; del tutorial de Web SDK, inicie sesión en el sitio web de Luma con las diez primeras direcciones de correo electrónico del archivo `luma-crm.json` con la contraseña `test` para ver cómo los fragmentos de perfil se combinan con los datos cargados en este tutorial.
@@ -199,4 +199,4 @@ Si desea crear una implementación de SDK móvil de ejemplo para vincularla a es
 
 Al restablecer una zona protegida que no sea de producción, se eliminarán todos los recursos asociados a ella (esquemas, conjuntos de datos, etc.), pero se conservarán el nombre y los permisos asociados a la zona protegida. Esta zona protegida &quot;limpia&quot; sigue estando disponible con el mismo nombre para los usuarios que tienen acceso a ella.
 
-Siga los pasos [aquí](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=en#reset-a-sandbox) para restablecer un entorno de espacio aislado.
+Siga los pasos [aquí](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=es#reset-a-sandbox) para restablecer un entorno de espacio aislado.
