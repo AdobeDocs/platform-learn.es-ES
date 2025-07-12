@@ -64,7 +64,7 @@ Para obtener más información, consulte la [documentación](https://experiencel
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="rtcdp-overview-for-agency-practitioners.md" title="Información general de Real-Time CDP para profesionales de la agencia" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464657/?format=jpeg&nocache=1751925455060" alt="Información general de Real-Time CDP para profesionales de la agencia"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464661/?format=jpeg&nocache=1751925455060&captions=spa" alt="Información general de Real-Time CDP para profesionales de la agencia"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -87,7 +87,7 @@ Para obtener más información, consulte la [documentación](https://experiencel
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="rtcdp-collaboration-process-and-people.md" title="Real-Time CDP Collaboration: Proceso y personas" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464658/?format=jpeg&nocache=1751925455067" alt="Real-Time CDP Collaboration: Proceso y personas"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464672/?format=jpeg&nocache=1751925455067&captions=spa" alt="Real-Time CDP Collaboration: Proceso y personas"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
