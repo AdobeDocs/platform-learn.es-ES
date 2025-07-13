@@ -26,14 +26,14 @@ La capacidad de [Adobe Developer Console](https://developer.adobe.com/console/ho
 
 >[!IMPORTANT]
 >
->Para acceder a [Adobe Developer Console](https://developer.adobe.com/console/home), debes ser [administrador del sistema](https://helpx.adobe.com/es/enterprise/using/admin-roles.html) o [desarrollador](https://helpx.adobe.com/es/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) en [Adobe Admin Console](https://adminconsole.adobe.com).
+>Para acceder a [Adobe Developer Console](https://developer.adobe.com/console/home), debes ser [administrador del sistema](https://helpx.adobe.com/enterprise/using/admin-roles.html) o [desarrollador](https://helpx.adobe.com/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) en [Adobe Admin Console](https://adminconsole.adobe.com).
 >
 > Después de crear la credencial de la API, un administrador del sistema debe asociarla con una función en Experience Platform.
 >
 >Consulte el tutorial [Agregar desarrolladores y conceder permisos a las credenciales de la API](../admin/add-developers.md) para obtener instrucciones detalladas.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/31627/?learn=on&enablevpops&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/28832/?learn=on&enablevpops)
 
 <!-- CARDS
 * generate-an-access-token.md
@@ -46,7 +46,7 @@ La capacidad de [Adobe Developer Console](https://developer.adobe.com/console/ho
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="generate-an-access-token.md" title="Generación de un token de acceso a la API de Experience Platform con Postman" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32727/?format=jpeg&nocache=1752259602830&captions=spa" alt="Generación de un token de acceso a la API de Experience Platform con Postman"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29698/?format=jpeg&nocache=1752259602830" alt="Generación de un token de acceso a la API de Experience Platform con Postman"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -69,7 +69,7 @@ La capacidad de [Adobe Developer Console](https://developer.adobe.com/console/ho
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-apis-with-postman.md" title="Uso de las API de Experience Platform con Postman" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32723/?format=jpeg&nocache=1752259602844&captions=spa" alt="Uso de las API de Experience Platform con Postman"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29704/?format=jpeg&nocache=1752259602844" alt="Uso de las API de Experience Platform con Postman"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
