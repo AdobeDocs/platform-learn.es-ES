@@ -33,7 +33,7 @@ La capacidad de [Adobe Developer Console](https://developer.adobe.com/console/ho
 >Consulte el tutorial [Agregar desarrolladores y conceder permisos a las credenciales de la API](../admin/add-developers.md) para obtener instrucciones detalladas.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/28832/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31627/?learn=on&enablevpops&captions=spa)
 
 <!-- CARDS
 * generate-an-access-token.md
@@ -46,7 +46,7 @@ La capacidad de [Adobe Developer Console](https://developer.adobe.com/console/ho
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="generate-an-access-token.md" title="Generación de un token de acceso a la API de Experience Platform con Postman" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29698/?format=jpeg&nocache=1752259602830" alt="Generación de un token de acceso a la API de Experience Platform con Postman"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32727/?format=jpeg&nocache=1752259602830&captions=spa" alt="Generación de un token de acceso a la API de Experience Platform con Postman"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -69,7 +69,7 @@ La capacidad de [Adobe Developer Console](https://developer.adobe.com/console/ho
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-apis-with-postman.md" title="Uso de las API de Experience Platform con Postman" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29704/?format=jpeg&nocache=1752259602844" alt="Uso de las API de Experience Platform con Postman"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32723/?format=jpeg&nocache=1752259602844&captions=spa" alt="Uso de las API de Experience Platform con Postman"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
