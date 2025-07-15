@@ -80,6 +80,7 @@ Puede definir algunos puntos de interés en el servicio Places.
    1. Seleccione **[!DNL Luma]** de la lista **[!UICONTROL Seleccionar una biblioteca]**.
    1. Asegúrese de haber seleccionado su biblioteca de trabajo, por ejemplo **[!UICONTROL Versión inicial]**.
    1. Seleccione **[!UICONTROL Guardar en biblioteca y compilar]** de **[!UICONTROL Guardar en biblioteca]**.
+
       ![Instalar extensión Places](assets/places-install-extension.png).
 
 1. Se volverá a crear su biblioteca.
@@ -139,6 +140,7 @@ A continuación, va a definir reglas para trabajar con estos elementos de datos.
 1. Seleccione ![Agregar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) debajo de **[!UICONTROL EVENTOS]**.
    1. Seleccione **[!UICONTROL Places]** de la lista **[!UICONTROL Extension]** y seleccione **[!UICONTROL Enter POI]** de la lista **[!UICONTROL Event Type]**.
    1. Seleccione **[!UICONTROL Conservar cambios]**.
+
       ![Evento de etiqueta](assets/tags-event-mobile-core.png).
 1. Seleccione ![Agregar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) debajo de **[!UICONTROL ACCIONES]**.
    1. Seleccione **[!UICONTROL Mobile Core]** de la lista **[!UICONTROL Extension]**, seleccione **[!UICONTROL Adjuntar datos]** de **[!UICONTROL Tipo de acción]** en la lista. Esta acción adjunta datos de carga útil.
@@ -169,6 +171,7 @@ A continuación, va a definir reglas para trabajar con estos elementos de datos.
       También puede insertar `{%% ... %%}` valores de marcador de posición de elementos de datos en el JSON al seleccionar ![Datos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg). Un cuadro de diálogo emergente le permite elegir cualquier elemento de datos que haya creado.
 
    1. Seleccione **[!UICONTROL Conservar cambios]**.
+
       ![Acción de etiquetas](assets/tags-action-mobile-core.png)
 
 1. Seleccione ![Agregar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) junto a la acción **[!UICONTROL Núcleo móvil: adjuntar datos]**.

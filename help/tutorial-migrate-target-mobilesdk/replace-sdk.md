@@ -27,7 +27,7 @@ Obtenga información sobre cómo reemplazar los SDK de Adobe Target con los SDK 
 
 ## Actualizar dependencias
 
-Ejemplo de +++Android
++++Ejemplo de Android
 
 >[!BEGINTABS]
 
