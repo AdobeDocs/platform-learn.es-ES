@@ -134,6 +134,7 @@ Para crear la ubicación JSON de Mobile:
 1. En el paso **[!UICONTROL Detalles]** de **[!UICONTROL Crear nueva oferta personalizada]**:
    1. Escriba un **[!UICONTROL Nombre]** para la oferta, por ejemplo `Luma - Juno Jacket`, y una **[!UICONTROL fecha y hora de inicio]** y una **[!UICONTROL fecha y hora de finalización]**. Fuera de estas fechas, el motor de decisión no selecciona la oferta. 
    1. Seleccione **[!UICONTROL Siguiente]**.
+
       ![Ofertas - Detalles](assets/ajo-offers-details.png)
 
 1. En el paso **[!UICONTROL Agregar representaciones]** de **[!UICONTROL Crear nueva oferta personalizada]**:
@@ -152,14 +153,17 @@ Para crear la ubicación JSON de Mobile:
          ```
 
       1. Seleccione **[!UICONTROL Guardar]**.
+
          ![Ofertas - Contenido personalizado](assets/ajo-offers-customcontent.png)
    1. Seleccione **[!UICONTROL Siguiente]**.
+
       ![Representaciones de ofertas](assets/ajo-offers-representations.png)
 
 1. En el paso **[!UICONTROL Agregar restricciones]** de **[!UICONTROL Crear nueva oferta personalizada]**:
    1. Establezca **[!UICONTROL Prioridad]** en `10`.
    1. Desactivar **[!UICONTROL Incluir límite]**.
    1. Seleccione **[!UICONTROL Siguiente]**.
+
       ![Ofertas - Restricciones](assets/ajo-offers-constraints.png)
 
 1. En el paso **[!UICONTROL Revisar]** de **[!UICONTROL Crear nueva oferta personalizada]**:
@@ -253,9 +257,11 @@ Consulte [Pasos clave para crear y administrar ofertas](https://experienceleague
    1. En el mosaico **[!UICONTROL Criterios de evaluación]**, seleccione ![Agregar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Agregar]**.
       1. En el cuadro de diálogo **[!UICONTROL Agregar colección de ofertas]**, seleccione su colección de ofertas. Por ejemplo, **[!DNL Luma - Mobile App Collection]**.
       1. Seleccione **[!UICONTROL Agregar]**.
+
          ![Decisión - Seleccionar colección](assets/ajo-decision-selectcollection.png)
    1. Asegúrese de que **[!UICONTROL None]** esté seleccionado para **[!UICONTROL Elegibilidad]** y que **[!UICONTROL Prioridad de ofertas]** esté seleccionado como **[!UICONTROL método de clasificación]**.
    1. Seleccione **[!UICONTROL Siguiente]**.
+
       ![ámbitos de decisión](assets/ajo-decision-scopes.png).
 1. En el paso **[!UICONTROL Agregar oferta de reserva]** de **[!UICONTROL Crear una nueva decisión de oferta]**:
    1. Seleccione su oferta de reserva, por ejemplo **[!DNL Luma - Fallback offer]**.
