@@ -1,21 +1,21 @@
 ---
-title: 'Envío de parámetros: Migre la implementación de Adobe Target en su aplicación móvil a la extensión Adobe Journey Optimizer - Decisioning.'
+title: 'Envío de parámetros: Migre la implementación de Adobe Target en su aplicación móvil a la extensión de Offer Decisioning y Target'
 description: Obtenga información sobre cómo enviar parámetros de mbox, perfil y entidad a Adobe Target mediante Experience Platform Web SDK.
 exl-id: 927d83f9-c019-4a6b-abef-21054ce0991b
-source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
+source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '786'
 ht-degree: 1%
 
 ---
 
-# Envío de parámetros a Target mediante la extensión Decisioning
+# Envío de parámetros a Target mediante la extensión Offer Decisioning y Target
 
 Las implementaciones de Target difieren entre las aplicaciones móviles debido a la arquitectura de la aplicación, los requisitos empresariales y las funciones utilizadas. La mayoría de las implementaciones de Target incluyen pasar varios parámetros para información contextual, audiencias y recomendaciones de contenido.
 
 Con la extensión de Target, todos los parámetros de Target se pasaron mediante la función `TargetParameters`.
 
-Con la extensión Decisioning:
+Con la extensión Offer Decisioning y Target:
 
 * Los parámetros destinados a varias aplicaciones de Adobe se pueden pasar en el objeto XDM
 * Los parámetros destinados únicamente a Target se pueden pasar en el objeto `data.__adobe.target`
@@ -35,13 +35,13 @@ Los parámetros de perfil almacenan datos durante un período de tiempo prolonga
 
 ## Parámetros de entidad
 
-[Los parámetros de entidad](https://experienceleague.adobe.com/es/docs/target/using/recommendations/entities/entity-attributes) se usan para pasar datos de comportamiento e información de catálogo suplementaria para las recomendaciones de Target. De forma similar a los parámetros de perfil, la mayoría de los parámetros de entidad deben pasarse bajo el objeto `data.__adobe.target`. La única excepción es que la matriz `xdm.productListItems` está presente y el primer valor `SKU` se usa como `entity.id`.
+[Los parámetros de entidad](https://experienceleague.adobe.com/en/docs/target/using/recommendations/entities/entity-attributes) se usan para pasar datos de comportamiento e información de catálogo suplementaria para las recomendaciones de Target. De forma similar a los parámetros de perfil, la mayoría de los parámetros de entidad deben pasarse bajo el objeto `data.__adobe.target`. La única excepción es que la matriz `xdm.productListItems` está presente y el primer valor `SKU` se usa como `entity.id`.
 
 Los parámetros de entidad para un elemento específico deben tener el prefijo `entity.` para que la captura de datos sea correcta. Los parámetros reservados `cartIds` y `excludedIds` para los algoritmos de Recommendations no deben tener un prefijo y el valor de cada uno debe contener una lista separada por comas de los identificadores de entidad.
 
 ## Parámetros de compra
 
-Los parámetros de compra se pasan en una página de confirmación de pedido después de un pedido correcto y se utilizan para los objetivos de conversión y optimización de Target. Con una implementación de Platform Mobile SDK que utiliza la extensión Decisioning, estos parámetros y se asignan automáticamente a partir de los datos XDM pasados como parte del grupo de campos `commerce`.
+Los parámetros de compra se pasan en una página de confirmación de pedido después de un pedido correcto y se utilizan para los objetivos de conversión y optimización de Target. Con una implementación de Platform Mobile SDK que utiliza la extensión Offer Decisioning y Target, estos parámetros y se asignan automáticamente a partir de los datos XDM pasados como parte del grupo de campos `commerce`.
 
 La información de compra se pasa a Target cuando el grupo de campos `commerce` tiene `purchases.value` establecido en `1`. El id. de pedido y el total del pedido se asignan automáticamente desde el objeto `order`. Si la matriz `productListItems` está presente, los valores `SKU` se utilizan para `productPurchasedId`.
 
@@ -55,7 +55,7 @@ Target permite la sincronización de perfiles entre dispositivos y sistemas medi
 
 | Ejemplo de parámetro at.js | Opción Platform Web SDK | Notas |
 | --- | --- | --- |
-| `at_property` | N/A | Los tokens de propiedad están configurados en [datastream](https://experienceleague.adobe.com/es/docs/experience-platform/datastreams/configure#target) y no se pueden establecer en la llamada a `sendEvent`. |
+| `at_property` | N/A | Los tokens de propiedad están configurados en [datastream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#target) y no se pueden establecer en la llamada a `sendEvent`. |
 | `pageName` | `xdm.web.webPageDetails.name` o <br> `data.__adobe.target.pageName` | Los parámetros de mbox de destino se pueden pasar como parte del objeto `xdm` o del objeto `data.__adobe.target`. |
 | `profile.gender` | `data.__adobe.target.profile.gender` | Todos los parámetros de perfil de Target deben pasarse como parte del objeto `data` y tener el prefijo `profile.` para que se asignen correctamente. |
 | `user.categoryId` | `data.__adobe.target.user.categoryId` | Parámetro reservado utilizado para la característica de afinidad de categoría de Target, que debe pasarse como parte del objeto `data`. |
@@ -64,11 +64,11 @@ Target permite la sincronización de perfiles entre dispositivos y sistemas medi
 | `entity.customEntity` | `data.__adobe.target.entity.customEntity` | Los parámetros de entidad personalizados se utilizan para actualizar el catálogo de productos de Recommendations. Estos parámetros personalizados deben pasarse como parte del objeto `data`. |
 | `cartIds` | `data.__adobe.target.cartIds` | Se utiliza para los algoritmos de recomendaciones de Target basados en el carro de compras. |
 | `excludedIds` | `data.__adobe.target.excludedIds` | Se utiliza para evitar que se devuelvan ID de entidad específicos en un diseño de recomendaciones. |
-| `mbox3rdPartyId` | Establecer en el objeto `xdm.identityMap` | Se utiliza para sincronizar perfiles de Target entre dispositivos y Atributos del cliente. El área de nombres que se va a usar para el ID de cliente debe especificarse en la configuración de [Target del conjunto de datos](https://experienceleague.adobe.com/es/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid). |
+| `mbox3rdPartyId` | Establecer en el objeto `xdm.identityMap` | Se utiliza para sincronizar perfiles de Target entre dispositivos y Atributos del cliente. El área de nombres que se va a usar para el ID de cliente debe especificarse en la configuración de [Target del conjunto de datos](https://experienceleague.adobe.com/en/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid). |
 | `orderId` | `xdm.commerce.order.purchaseID`<br> (cuando `commerce.purchases.value` está establecido en `1`)<br> o<br> `data.__adobe.target.orderId` | Se utiliza para identificar un pedido único para el seguimiento de conversión de Target. |
 | `orderTotal` | `xdm.commerce.order.priceTotal`<br> (cuando `commerce.purchases.value` está establecido en `1`)<br> o<br> `data.__adobe.target.orderTotal` | Se utiliza para rastrear los totales de pedidos de los objetivos de optimización y conversión de Target. |
 | `productPurchasedId` | `xdm.productListItems[0-n].SKU`<br> (cuando `commerce.purchases.value` está establecido en `1`) <br>O<br> `data.__adobe.target.productPurchasedId` | Se utiliza para los algoritmos de seguimiento de conversión de Target y de recomendaciones. |
-| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | Se usa para la meta de actividad [puntuación personalizada](https://experienceleague.adobe.com/es/docs/target/using/activities/success-metrics/capture-score). |
+| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | Se usa para la meta de actividad [puntuación personalizada](https://experienceleague.adobe.com/en/docs/target/using/activities/success-metrics/capture-score). |
 
 {style="table-layout:auto"}
 
@@ -206,4 +206,4 @@ A continuación, aprenda a [rastrear eventos de conversión de Target](track-eve
 
 >[!NOTE]
 >
->Nos comprometemos a ayudarle a tener éxito con su migración de Target móvil de la extensión de Target a la extensión de Decisioning. Si encuentra obstáculos con la migración o cree que falta información esencial en esta guía, comuníquenoslo publicando en [esta discusión de la comunidad](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484?profile.language=es#M625).
+>Nos comprometemos a ayudarle a tener éxito con su migración de Target móvil de la extensión de Target a la extensión de Offer Decisioning y Target. Si encuentra obstáculos con la migración o cree que falta información esencial en esta guía, comuníquenoslo publicando en [esta discusión de la comunidad](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625).

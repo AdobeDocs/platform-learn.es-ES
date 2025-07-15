@@ -3,9 +3,9 @@ title: Tutoriales de recopilación de datos
 description: Vídeos y tutoriales explicativos para convertirse en un usuario experto en la recopilación de datos
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: d818b07dbd7f58254083fd0696b81b0bab1ee9d3
+source-git-commit: 4c2cc6da2a5590dbd4405555f6813a4b06dc2dff
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '264'
 ht-degree: 23%
 
 ---
@@ -41,11 +41,11 @@ La recopilación de datos es la próxima generación de funcionalidades de admin
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/es/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
       <img alt="Implementación en aplicaciones móviles" src="assets/thumb_swift.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/es/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
     <strong>Implementar Experience Cloud en aplicaciones móviles</strong>
     </a>
     </div>
@@ -54,11 +54,11 @@ La recopilación de datos es la próxima generación de funcionalidades de admin
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/es/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
       <img alt="Migrar Target a Web SDK" src="assets/thumb_legacy.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/es/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
     <strong>Implementar bibliotecas heredadas con etiquetas</strong>
     </a>
     </div>
@@ -74,11 +74,11 @@ La recopilación de datos es la próxima generación de funcionalidades de admin
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/es/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
       <img alt="Migrar Target a Web SDK" src="assets/thumb_targetWebSdk.jpg" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/es/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
     <strong>Migrar Adobe Target a Web SDK</strong>
     </a>
     </div>
@@ -121,7 +121,7 @@ La recopilación de datos es la próxima generación de funcionalidades de admin
     </a>
     </div>
     <p>
-    <em>Reemplace la extensión de Target con la extensión Journey Optimizer - Decisioning</em>
+    <em>Reemplace la extensión de Target con la extensión Offer Decisioning y Target</em>
     <p>
   </td>
   <td>
