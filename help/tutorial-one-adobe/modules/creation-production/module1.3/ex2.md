@@ -6,10 +6,10 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 181c1623-eb47-47e0-889b-6e9ebb6a143c
-source-git-commit: b8f7b370a5aba82a0dcd6e7f4f0222fe209976f7
+source-git-commit: 8052d82b1b820a9077766d8966b331ad2a21b220
 workflow-type: tm+mt
-source-wordcount: '961'
-ht-degree: 1%
+source-wordcount: '1038'
+ht-degree: 2%
 
 ---
 
@@ -233,6 +233,8 @@ En el ejercicio anterior, descargó el archivo [CitiSignal-GSPeM-assets.zip](../
 
 ![GSPeM](./images/gspem17.png)
 
+### Meta plantilla
+
 Vaya a **Contenido** > **Plantillas**. Haga clic en **+ Agregar plantilla**.
 
 ![GSPeM](./images/gspem125.png)
@@ -261,6 +263,8 @@ Use esto para el campo **Nombre de plantilla**:
 La plantilla se ha guardado y está disponible en la biblioteca de plantillas.
 
 ![GSPeM](./images/gspem131.png)
+
+### Mostrar plantillas de anuncios de banner
 
 Haga clic en **+ Agregar plantilla**.
 
@@ -348,6 +352,39 @@ Use esto para el campo **Nombre de plantilla**:
 La plantilla se ha guardado y está disponible en la biblioteca de plantillas.
 
 ![GSPeM](./images/gspem152.png)
+
+### Plantilla de correo electrónico
+
+Haga clic en **+ Agregar plantilla**.
+
+![GSPeM](./images/gspem153.png)
+
+Seleccione **Correo electrónico** y haga clic en **Examinar**.
+
+![GSPeM](./images/gspem154.png)
+
+En la carpeta que contiene los **archivos CitiSignal-GSPeM-assets** descargados, vaya a la carpeta **templates**. Seleccione el archivo **citisignal-email-template.html** y haga clic en **Abrir**.
+
+![GSPeM](./images/gspem155.png)
+
+Entonces debería ver esto. Haga clic en **Next**.
+
+![GSPeM](./images/gspem156.png)
+
+Haga clic en **Next**.
+
+![GSPeM](./images/gspem157.png)
+
+Use esto para el campo **Nombre de plantilla**:
+`--aepUserLdap---citisignal-email-template`.
+
+Haga clic en **Publicar plantilla**.
+
+![GSPeM](./images/gspem158.png)
+
+La plantilla se ha guardado y está disponible en la biblioteca de plantillas.
+
+![GSPeM](./images/gspem159.png)
 
 Ya ha configurado las plantillas que necesita para el siguiente ejercicio.
 
