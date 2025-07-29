@@ -20,7 +20,7 @@ ht-degree: 1%
 
 Obtenga información sobre cómo suscribirse a las alertas de Composición de audiencia federada para recibir notificaciones en la aplicación o por correo electrónico para ejecuciones correctas y fallidas. Para habilitar esto, configure sus preferencias en la sección Configuración de notificaciones del producto de Experience Platform.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470054/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3470057/?learn=on&enablevpops&captions=spa)
 
 
 ## Cómo activar las notificaciones

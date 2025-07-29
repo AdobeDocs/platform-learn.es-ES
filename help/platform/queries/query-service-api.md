@@ -19,4 +19,4 @@ ht-degree: 1%
 
 Obtenga información sobre cómo escribir y ejecutar consultas, crear consultas de programación y crear una plantilla de consulta mediante la API del servicio de consultas de Adobe Experience Platform. Para obtener más información, visite la [documentación del servicio de consultas](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/333700?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3414084?learn=on&enablevpops&captions=spa)
