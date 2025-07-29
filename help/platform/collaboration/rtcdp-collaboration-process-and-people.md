@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Este vídeo orienta a los usuarios de Real-Time CDP Collaboration, tanto a los profesionales de la agencia como a los equipos de tecnología de marketing, sobre cómo estos equipos interfuncionales deben trabajar juntos en distintos casos de uso, fuentes de datos, audiencias y objetivos para garantizar el éxito y la eficacia operativa al adoptar Real-Time CDP Collaboration.
 
->[!VIDEO](https://video.tv.adobe.com/v/3464658/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464672/?learn=on&enablevpops&captions=spa)

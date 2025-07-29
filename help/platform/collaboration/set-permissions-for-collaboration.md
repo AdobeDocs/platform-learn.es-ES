@@ -20,5 +20,5 @@ ht-degree: 0%
 
 Obtenga información sobre cómo configurar los permisos necesarios para acceder y utilizar Real-Time CDP Collaboration. Para obtener documentación detallada, vaya a [descripción general del control de acceso](https://experienceleague.adobe.com/es/docs/real-time-cdp-collaboration/using/permissions/overview){target="_blank"}.
 
->[!VIDEO](https://video.tv.adobe.com/v/3452216/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3452233/?learn=on&enablevpops&captions=spa)
 
