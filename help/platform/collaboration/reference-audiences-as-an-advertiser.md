@@ -18,6 +18,6 @@ ht-degree: 32%
 
 # Audiencias de Source como anunciante en Real-Time CDP Collaboration
 
-Como anunciante, aprenda a crear audiencias e introducirlas en su interfaz para que se puedan utilizar mientras colabora con socios. Para obtener documentación detallada, consulte [origen y administración de audiencias](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/setup/onboard-audiences){target="_blank"}.
+Como anunciante, aprenda a crear audiencias e introducirlas en su interfaz para que se puedan utilizar mientras colabora con socios. Para obtener documentación detallada, consulte [origen y administración de audiencias](https://experienceleague.adobe.com/es/docs/real-time-cdp-collaboration/using/setup/onboard-audiences){target="_blank"}.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452217/?learn=on&enablevpops)
