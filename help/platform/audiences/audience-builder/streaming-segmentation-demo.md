@@ -22,6 +22,6 @@ Descubra cómo la función de segmentación de streaming de Adobe Experience Pla
 >
 > Se cambió el nombre de &quot;[!UICONTROL Segmentos]&quot; a &quot;[!UICONTROL Audiencias]&quot; en la interfaz de Platform. Seleccione **[!UICONTROL Crear audiencia]** > **[!UICONTROL Generar regla]** para ingresar al generador de reglas que se muestra en este vídeo.
 
->[!VIDEO](https://video.tv.adobe.com/v/36184?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/40065?learn=on&enablevpops&captions=spa)
 
 

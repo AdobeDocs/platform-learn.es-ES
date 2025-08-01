@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Obtenga información sobre cómo cargar audiencias en formato CSV en Adobe Experience Platform. Para obtener más información, consulte la [documentación del Generador de segmentos](https://experienceleague.adobe.com/es/docs/experience-platform/segmentation/ui/audience-portal#import-audience).
 
->[!VIDEO](https://video.tv.adobe.com/v/3421714/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3423362/?learn=on&enablevpops&captions=spa)

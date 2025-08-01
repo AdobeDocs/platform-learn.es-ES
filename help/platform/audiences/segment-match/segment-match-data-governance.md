@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Aprenda a configurar y utilizar controles de control de datos en Real-Time CDP para que pueda limitar qué conjuntos de datos (y, por lo tanto, qué segmentos que utilizan dichos conjuntos de datos) se pueden compartir con socios de datos. Para obtener más información, consulte la [documentación](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/342212/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346357/?learn=on&enablevpops&captions=spa)

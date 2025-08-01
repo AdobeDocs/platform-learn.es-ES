@@ -18,4 +18,4 @@ ht-degree: 1%
 
 En este vídeo, aprenderá a configurar la conexión entre usted y un socio para que pueda compartir audiencias. Después de configurar esta función de coincidencia de segmentos podrá compartir datos de un lado a otro con su socio de datos. Para obtener más información, consulte la [documentación](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/342211/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346350/?learn=on&enablevpops&captions=spa)
