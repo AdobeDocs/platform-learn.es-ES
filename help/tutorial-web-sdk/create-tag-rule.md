@@ -238,7 +238,7 @@ Comparar el elemento de datos con la estructura de `productListItems` (sugerenci
 >[!IMPORTANT]
 >
 >Observe cómo se traducen las variables numéricas, con valores de cadena en la capa de datos como `price` y `qty` reformateados a números en el elemento de datos. Estos requisitos de formato son importantes para la integridad de los datos en Platform y se determinan durante el paso [configurar esquemas](configure-schemas.md). En el ejemplo, **[!UICONTROL quantity]** usa el tipo de datos **[!UICONTROL Integer]**.
->> ![Tipo de datos de esquema XDM ](assets/set-up-analytics-quantity-integer.png)
+>&#x200B;> ![Tipo de datos de esquema XDM ](assets/set-up-analytics-quantity-integer.png)
 
 Ahora, asignemos la matriz al objeto XDM:
 
