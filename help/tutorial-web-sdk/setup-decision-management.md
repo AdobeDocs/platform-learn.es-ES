@@ -1,34 +1,34 @@
 ---
-title: Configuración de Journey Optimizer Decision Management con el SDK web de Platform
-description: Obtenga información sobre cómo implementar Administración de decisiones mediante el SDK web de Platform. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
+title: Configuración de Journey Optimizer Decision Management con Platform Web SDK
+description: Obtenga información sobre cómo implementar Administración de decisiones mediante Platform Web SDK. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
 jira: KT-15412
 exl-id: f7852ef4-44b0-49df-aec8-cb211726247d
-source-git-commit: 901b90ca165a74bbc4f871469222064b70d0a20a
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '2513'
+source-wordcount: '2511'
 ht-degree: 1%
 
 ---
 
-# Configuración de Administración de decisiones con el SDK web de Platform
+# Configuración de Administración de decisiones con Platform Web SDK
 
-Obtenga información sobre cómo implementar la capacidad Administración de decisiones de Adobe Journey Optimizer mediante el SDK web de Platform. Esta guía cubre los requisitos previos fundamentales de Administración de decisiones, los pasos detallados para la configuración y una explicación detallada de un caso de uso centrado en el estado de lealtad.
+Obtenga información sobre cómo implementar la capacidad Administración de decisiones de Adobe Journey Optimizer mediante Platform Web SDK. Esta guía cubre los requisitos previos fundamentales de Administración de decisiones, los pasos detallados para la configuración y una explicación detallada de un caso de uso centrado en el estado de lealtad.
 
 Al seguir este tutorial, los usuarios de Journey Optimizer están equipados para utilizar las funciones de Gestión de decisiones, lo que mejora la personalización y relevancia de sus interacciones con los clientes.
 
 
-![Diagrama de SDK web y Adobe Analytics](assets/dc-websdk-ajo.png)
+![Diagrama de Web SDK y Adobe Analytics](assets/dc-websdk-ajo.png)
 
 ## Objetivos de aprendizaje
 
 Al final de esta lección, puede hacer lo siguiente:
 
-* Comprenda los conceptos principales de gestión de decisiones en Adobe Journey Optimizer y su integración con el SDK web de Adobe Experience Platform.
+* Comprenda los conceptos principales de gestión de decisiones en Adobe Journey Optimizer y su integración con Adobe Experience Platform Web SDK.
 
-* Conozca el proceso paso a paso para configurar el SDK web para Offer Decisioning, lo que garantiza una integración perfecta con Journey Optimizer.
+* Conozca el proceso paso a paso para configurar Web SDK para Offer Decisioning, lo que garantiza una integración perfecta con Journey Optimizer.
 
 * Explore un caso de uso detallado centrado en ofertas de estado de lealtad, obteniendo perspectivas sobre la creación y administración de ofertas, decisiones y ubicaciones de forma eficaz.
 
@@ -42,9 +42,9 @@ Al final de esta lección, puede hacer lo siguiente:
 
 Para completar las lecciones de esta sección, primero debe:
 
-* Asegúrese de que su organización tenga acceso a Adobe Journey Optimizer Ultimate (Journey Optimizer y Offer decisioning) o Adobe Experience Platform y el complemento de Offer decisioning.
+* Asegúrese de que su organización tenga acceso a Adobe Journey Optimizer Ultimate (Journey Optimizer y Offer Decisioning) o a Adobe Experience Platform y al complemento de Offer Decisioning.
 
-* Completar todas las lecciones para la configuración inicial del SDK web de Platform.
+* Completar todas las lecciones para la configuración inicial de Platform Web SDK.
 
 * Habilite su organización para Edge Decisioning.
 
@@ -56,19 +56,19 @@ Actualmente, Adobe Journey Optimizer no admite ofertas basadas en eventos. Si cr
 
 ## Concesión de acceso a Gestión de decisiones
 
-Para conceder acceso a la funcionalidad de Administración de decisiones, debe crear un **perfil de producto** y asignar los permisos correspondientes a los usuarios. [Obtenga más información sobre la administración de usuarios y permisos de Journey Optimizer en esta sección](https://experienceleague.adobe.com/es/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
+Para conceder acceso a la funcionalidad de Administración de decisiones, debe crear un **perfil de producto** y asignar los permisos correspondientes a los usuarios. [Obtenga más información sobre la administración de usuarios y permisos de Journey Optimizer en esta sección](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
 
 ## Configuración de la secuencia de datos
 
-El offer decisioning debe estar habilitado en la configuración de **datastream** para que el SDK web de Platform pueda entregar cualquier actividad de Administración de decisiones.
+Offer Decisioning debe estar habilitado en la configuración de **datastream** para que Platform Web SDK pueda entregar cualquier actividad de Administración de decisiones.
 
-Para configurar el Offer decisioning en el conjunto de datos:
+Para configurar Offer Decisioning en el conjunto de datos:
 
 1. Vaya a la interfaz [Recopilación de datos](https://experience.adobe.com/#/data-collection).
 
 1. En el panel de navegación izquierdo, seleccione **Datastreams**.
 
-1. Seleccione el conjunto de datos del SDK web de Luma creado anteriormente.
+1. Seleccione el conjunto de datos de Luma Web SDK creado anteriormente.
 
    ![Seleccionar secuencia de datos](assets/decisioning-datastream-select.png)
 
@@ -76,7 +76,7 @@ Para configurar el Offer decisioning en el conjunto de datos:
 
    ![Editar servicio](assets/decisioning-edit-datastream.png)
 
-1. Marque la casilla **Offer decisioning**.
+1. Marque la casilla **Offer Decisioning**.
 
    ![AGREGAR CAPTURA DE PANTALLA](assets/decisioning-check-offer-box.png)
 
@@ -84,11 +84,11 @@ Para configurar el Offer decisioning en el conjunto de datos:
 
 Esto garantiza que **Adobe Experience Platform Edge** gestione correctamente los eventos entrantes para Journey Optimizer.
 
-## Configuración del SDK para la administración de decisiones
+## Configuración de SDK para la administración de decisiones
 
-Gestión de decisiones requiere pasos adicionales del SDK, según el tipo de implementación del SDK web. Hay dos opciones disponibles para configurar el SDK para gestión de decisiones.
+Gestión de decisiones requiere pasos adicionales de SDK, según el tipo de implementación de Web SDK. Hay dos opciones disponibles para configurar SDK para gestión de decisiones.
 
-* Instalación independiente del SDK
+* Instalación independiente de SDK
    1. Configure la acción `sendEvent` con su `decisionScopes`.
 
       ```javascript
@@ -101,7 +101,7 @@ Gestión de decisiones requiere pasos adicionales del SDK, según el tipo de imp
       })
       ```
 
-* Instalación de etiquetas SDK
+* Instalación de etiquetas de SDK
    1. Vaya a la interfaz de recopilación de datos.
 
    1. En el panel de navegación izquierdo, seleccione **Etiquetas**.
@@ -111,7 +111,7 @@ Gestión de decisiones requiere pasos adicionales del SDK, según el tipo de imp
    1. Seleccione la **propiedad de etiqueta**.
 
    1. Cree sus **reglas**.
-      * Agregue un SDK web de Platform **Enviar acción de evento** y agregue el `decisionScopes` relevante a la configuración de esa acción.
+      * Agregue una acción de Platform Web SDK **Enviar evento** y agregue la acción `decisionScopes` relevante a la configuración de dicha acción.
 
    1. Cree y publique una **biblioteca** que contenga todas las **reglas**, **elementos de datos** y **extensiones** relevantes que haya configurado.
 
@@ -137,13 +137,13 @@ En primer lugar, debe comprender la terminología utilizada en la interfaz de Ad
 
 ## Resumen de caso de uso: recompensas de fidelización
 
-En esta lección, debe implementar un ejemplo de caso de uso de las Recompensas de fidelidad para comprender la Gestión de decisiones mediante el SDK web.
+En esta lección, debe implementar un ejemplo de caso de uso de las Recompensas de fidelidad para comprender la Gestión de decisiones mediante Web SDK.
 
 Este caso de uso le permite comprender mejor cómo Journey Optimizer puede ayudar a ofrecer la mejor oferta a sus clientes, utilizando la biblioteca de ofertas centralizada y el motor de decisión de Gestión de decisiones.
 
 >[!NOTE]
 >
-> Dado que este tutorial está dirigido a los implementadores, vale la pena señalar que esta lección implica un trabajo sustancial de la interfaz en Journey Optimizer. Aunque estas tareas de interfaz suelen gestionarlas los especialistas en marketing, puede resultar beneficioso para los implementadores obtener información sobre el proceso, incluso si no son responsables de la creación de campañas de administración de decisiones a largo plazo.
+> Dado que este tutorial está dirigido a los implementadores, vale la pena señalar que esta lección implica un trabajo sustancial de la interfaz en Journey Optimizer. Aunque estas tareas de interfaz suelen gestionarlas los especialistas en marketing, puede resultar beneficioso para los implementadores incorporar insight en el proceso, aunque no sean responsables de la creación de campañas de administración de decisiones a largo plazo.
 
 ## Componentes
 
@@ -240,15 +240,15 @@ Para crear la primera **oferta**, siga estos pasos:
 
    ![Agregar detalles de oferta](assets/decisioning-add-offer-details.png)
 
-1. Ahora debe agregar **representaciones** para definir dónde se muestra la oferta. Vamos a elegir el **canal web**. Vamos a elegir también la **ubicación** del titular de la página principal *que configuró anteriormente.* La **ubicación** seleccionada es del tipo HTML, por lo que puede agregar contenido de HTML, JSON o TEXT directamente al editor para crear la oferta con el botón de opción **Personalizado**.
+1. Ahora debe agregar **representaciones** para definir dónde se muestra la oferta. Vamos a elegir el **canal web**. Vamos a elegir también la *ubicación* del titular de la página principal **que configuró anteriormente.** La **ubicación** seleccionada es del tipo HTML, por lo que puede agregar contenido HTML, JSON o TEXT directamente al editor para crear la oferta con el botón de opción **Personalizado**.
 
    ![Agregar detalles de representación](assets/decisioning-add-representation-details.png)
 
-1. Edite el contenido de la oferta directamente con el **Editor de expresiones**. Recuerde que puede agregar contenido de HTML, JSON o TEXT a esta ubicación. Asegúrese de seleccionar el **modo** correcto en la parte inferior del editor, según el tipo de contenido. También puede presionar **validate** para asegurarse de que no haya errores.
+1. Edite el contenido de la oferta directamente con el **Editor de expresiones**. Recuerde que puede agregar contenido HTML, JSON o TEXT a esta ubicación. Asegúrese de seleccionar el **modo** correcto en la parte inferior del editor, según el tipo de contenido. También puede presionar **validate** para asegurarse de que no haya errores.
 
-   ![Agregar HTML de ofertas](assets/decisioning-add-offer-html.png)
+   ![Agregar oferta HTML](assets/decisioning-add-offer-html.png)
 
-1. Además, puede utilizar el Editor de expresiones para recuperar atributos almacenados en Adobe Experience Platform. Añadamos el nombre de un perfil al contenido de la oferta para personalizar mejor a los miembros socio en un nivel 1:1.
+1. Además, puede utilizar el Editor de expresiones para recuperar atributos almacenados en Adobe Experience Platform. Vamos a agregar el nombre de un perfil al contenido de la oferta para personalizar mejor a los miembros socio en un nivel de 1:1.
 
    ![Agregar personalización de oferta](assets/decisioning-add-offer-personalization.png)
 
@@ -274,7 +274,7 @@ Para crear la oferta de reserva, siga estos pasos:
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Agregar el contenido de la oferta de reserva al **Editor de expresiones**. Recuerde que puede agregar contenido de HTML, JSON o TEXT a esta ubicación. Asegúrese de seleccionar el **modo** correcto en la parte inferior del editor, según el tipo de contenido. También puede presionar **validate** para asegurarse de que no haya errores.
+1. Agregar el contenido de la oferta de reserva al **Editor de expresiones**. Recuerde que puede agregar contenido HTML, JSON o TEXT a esta ubicación. Asegúrese de seleccionar el **modo** correcto en la parte inferior del editor, según el tipo de contenido. También puede presionar **validate** para asegurarse de que no haya errores.
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -339,7 +339,7 @@ Para comenzar la prueba, seleccione la ficha **Simulaciones** en el menú **Ofer
 
 ### Prueba de ofertas de fidelización
 
-1. Seleccione un perfil de prueba para utilizarlo en la simulación. Haga clic en **Administrar perfil**. [Para crear o designar un nuevo perfil de prueba para la prueba de ofertas, siga esta guía](https://experienceleague.adobe.com/es/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
+1. Seleccione un perfil de prueba para utilizarlo en la simulación. Haga clic en **Administrar perfil**. [Para crear o designar un nuevo perfil de prueba para la prueba de ofertas, siga esta guía](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -371,7 +371,7 @@ La extensión **Adobe Experience Platform Debugger**, disponible tanto para Chro
 
 Puede utilizar el depurador del sitio de Luma para validar la lógica de toma de decisiones en producción. Esta validación es una buena práctica una vez que el caso de uso de las Recompensas de fidelidad está en funcionamiento, para garantizar que todo esté configurado correctamente.
 
-[Aprenda a configurar el depurador en su explorador con la guía aquí](https://experienceleague.adobe.com/es/docs/platform-learn/data-collection/debugger/overview).
+[Aprenda a configurar el depurador en su explorador con la guía aquí](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
 Para iniciar la validación con el depurador:
 
@@ -383,11 +383,11 @@ Para iniciar la validación con el depurador:
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Vaya a **Resumen**. Compruebe que el **ID de secuencia de datos** coincide con la **secuencia de datos** en la **recopilación de datos de Adobe** para la que habilitó el Offer decisioning.
+1. Vaya a **Resumen**. Compruebe que el **ID de secuencia de datos** coincide con la **secuencia de datos** en la **recopilación de datos de Adobe** para la cual habilitó Offer Decisioning.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. En **Soluciones**, vaya al **SDK web de Experience Platform**.
+1. En **Soluciones**, vaya a **Experience Platform Web SDK**.
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -400,8 +400,6 @@ Para iniciar la validación con el depurador:
    ![ADD SCREENSHOT](#)
 -->
 
-[Siguiente: ](setup-consent.md)
-
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer el SDK web de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=es)
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

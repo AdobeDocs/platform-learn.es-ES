@@ -1,43 +1,43 @@
 ---
-title: Configuración de un reenvío de eventos con datos del SDK web de Platform
-description: Obtenga información sobre cómo utilizar la propiedad de reenvío de eventos mediante datos del SDK web de Experience Platform. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
+title: Configuración de un reenvío de eventos con datos de Platform Web SDK
+description: Aprenda a utilizar la propiedad de reenvío de eventos mediante datos de Experience Platform Web SDK. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK,Tags,Event Forwarding
 jira: KT-15414
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '1873'
+source-wordcount: '1872'
 ht-degree: 4%
 
 ---
 
-# Configuración del reenvío de eventos con datos del SDK web de Platform
+# Configuración del reenvío de eventos con datos de Platform Web SDK
 
 Obtenga información sobre cómo utilizar el reenvío de eventos con los datos del SDK web de Adobe Experience Platform.
 
-El reenvío de eventos es un nuevo tipo de propiedad disponible en la recopilación de datos. El reenvío de eventos le permite enviar datos a proveedores de terceros que no sean de Adobe directamente desde el Edge Network de Adobe Experience Platform, en lugar del explorador tradicional del lado del cliente. Obtenga más información acerca de las ventajas del reenvío de eventos en la [descripción general del reenvío de eventos](https://experienceleague.adobe.com/es/docs/experience-platform/tags/event-forwarding/overview).
+El reenvío de eventos es un nuevo tipo de propiedad disponible en la recopilación de datos. El reenvío de eventos le permite enviar datos a proveedores de terceros que no sean de Adobe directamente desde Adobe Experience Platform Edge Network, en lugar del explorador tradicional del lado del cliente. Obtenga más información acerca de las ventajas del reenvío de eventos en la [descripción general del reenvío de eventos](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
 
 
-![Diagrama del SDK web y del reenvío de eventos](assets/dc-websdk-eventforwarding.png)
+![Diagrama de Web SDK y reenvío de eventos](assets/dc-websdk-eventforwarding.png)
 
-Para utilizar el reenvío de eventos en Adobe Experience Platform, primero deben enviarse datos al Edge Network de Adobe Experience Platform mediante una o varias de las tres opciones siguientes:
+Para utilizar el reenvío de eventos en Adobe Experience Platform, primero deben enviarse datos a Adobe Experience Platform Edge Network mediante una o varias de las tres opciones siguientes:
 
 * [SDK web de Adobe Experience Platform](overview.md)
 * [SDK móvil de Adobe Experience Platform](https://developer.adobe.com/client-sdks/home/)
-  <!--* [Server-to-Server API](https://experienceleague.adobe.com/es/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
+  <!--* [Server-to-Server API](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
 
 
 >[!NOTE]
->El SDK web de Platform y el SDK móvil de Platform no requieren implementación mediante etiquetas; sin embargo, se recomienda utilizar etiquetas para implementar estos SDK.
+>Platform Web SDK y Platform Mobile SDK no requieren implementación mediante etiquetas; sin embargo, se recomienda utilizar etiquetas para implementar estos SDK.
 
-Después de completar las lecciones anteriores de este tutorial, debe enviar datos al Edge Network de Platform mediante el SDK web. Una vez que los datos están en Platform Edge Network, puede habilitar el reenvío de eventos y utilizar una propiedad de reenvío de eventos para enviar datos a soluciones que no sean de Adobe.
+Después de completar las lecciones anteriores de este tutorial, debe enviar datos a Platform Edge Network mediante Web SDK. Una vez que los datos están en Platform Edge Network, puede habilitar el reenvío de eventos y utilizar una propiedad de reenvío de eventos para enviar datos a soluciones que no sean de Adobe.
 
 ## Objetivos de aprendizaje
 
 Al final de esta lección, debe ser capaz de:
 
 * Creación de una propiedad de reenvío de eventos
-* Vinculación de una propiedad de reenvío de eventos a un conjunto de datos del SDK web de Platform
+* Vincular una propiedad de reenvío de eventos a un conjunto de datos de Platform Web SDK
 * Comprender las diferencias entre los elementos de datos de propiedades de etiquetas y las reglas y los elementos y reglas de datos de propiedades de reenvío de eventos
 * Creación de un elemento de datos de reenvío de eventos
 * Configuración de una regla de reenvío de eventos
@@ -47,11 +47,11 @@ Al final de esta lección, debe ser capaz de:
 ## Requisitos previos
 
 * Licencia de software que incluye el reenvío de eventos. El reenvío de eventos es una función de pago de la recopilación de datos. Póngase en contacto con el equipo de su cuenta de Adobe para obtener más información.
-* El reenvío de eventos está activado en su organización de Experience Cloud.
+* El reenvío de eventos está habilitado en su organización de Experience Cloud.
 * Permiso de usuario para el reenvío de eventos. (En [Admin Console](https://adminconsole.adobe.com/), en el producto Adobe Experience Platform Launch, los elementos de permiso para [!UICONTROL Plataformas] > [!UICONTROL Edge] y todos los [!UICONTROL Derechos de propiedad]). Una vez concedido, debería ver [!UICONTROL Reenvío de eventos] en la navegación izquierda de la interfaz de recopilación de datos:
   ![Propiedades de reenvío de eventos](assets/event-forwarding-menu.png)
 
-* El SDK web o móvil de Adobe Experience Platform está configurado para enviar datos al Edge Network. Debe haber completado las siguientes lecciones de este tutorial:
+* Adobe Experience Platform Web o Mobile SDK están configurados para enviar datos a Edge Network. Debe haber completado las siguientes lecciones de este tutorial:
 
    * Configuración inicial
 
@@ -84,15 +84,15 @@ Para empezar, cree una propiedad de reenvío de eventos:
 
 ## Configuración de la secuencia de datos
 
-Para que el reenvío de eventos utilice los datos que envía al Edge Network de Platform, debe vincular la propiedad de reenvío de eventos recién creada al mismo conjunto de datos utilizado para enviar datos a las soluciones de Adobe.
+Para que el reenvío de eventos utilice los datos que envía a Platform Edge Network, debe vincular la propiedad de reenvío de eventos recién creada al mismo conjunto de datos utilizado para enviar datos a las soluciones de Adobe.
 
 Para configurar Target en el conjunto de datos:
 
-1. Ir a la interfaz de [recopilación de datos](https://experience.adobe.com/#/data-collection){target="blank"}
+1. Vaya a la interfaz [Recopilación de datos](https://experience.adobe.com/#/data-collection){target="blank"}
 1. En el panel de navegación izquierdo, seleccione **[!UICONTROL Datastreams]**
 1. Seleccione la secuencia de datos `Luma Web SDK: Development Environment` creada anteriormente
 
-   ![Seleccione la secuencia de datos del SDK web de Luma](assets/datastream-luma-web-sdk-development.png)
+   ![Seleccione la secuencia de datos de Luma Web SDK](assets/datastream-luma-web-sdk-development.png)
 
 1. Seleccionar **[!UICONTROL Agregar servicio]**
    ![Agregar un servicio al conjunto de datos](assets/event-forwarding-datastream-addService.png)
@@ -104,7 +104,7 @@ Para configurar Target en el conjunto de datos:
 
    >[!TIP]
    >
-   >    Para enviar datos a un entorno de reenvío de eventos fuera de la organización de Adobe, selecciona **[!UICONTROL Introducir manualmente los identificadores]** y pega los datos en un identificador. El ID se proporciona al crear una propiedad de reenvío de eventos.
+   >    Para enviar datos a un entorno de reenvío de eventos fuera de la organización de Adobe, seleccione **[!UICONTROL Introducir manualmente los ID]** y pegue el valor en un ID. El ID se proporciona al crear una propiedad de reenvío de eventos.
 
 1. Seleccione **[!UICONTROL Guardar]**.
 
@@ -112,7 +112,7 @@ Para configurar Target en el conjunto de datos:
 
 Repita estos pasos para los flujos de datos de ensayo y producción cuando esté listo para promocionar los cambios a través del flujo de publicación.
 
-## Reenviar datos del Edge Network de Platform a una solución que no sea de Adobe
+## Reenviar datos de Platform Edge Network a una solución que no sea de Adobe
 
 En este ejercicio aprenderá a configurar un elemento de datos de reenvío de eventos, configurar una regla de reenvío de eventos y validar mediante una herramienta de terceros llamada [Webhook.site](https://webhook.site/).
 
@@ -122,12 +122,12 @@ En este ejercicio aprenderá a configurar un elemento de datos de reenvío de ev
 
 >[!IMPORTANT]
 >
->Ya debe haber creado y asignado elementos de datos a un objeto XDM, así como haber configurado reglas de etiquetas y haber creado esos cambios dentro de una biblioteca en un entorno de etiquetas para continuar. Si no lo ha hecho, consulte los pasos de la configuración de **etiquetas** en la sección de [requisitos previos](setup-event-forwarding.md#prerequisites). Estos pasos garantizan que los datos se envíen al Edge Network de Platform y, desde allí, puede configurar una propiedad de reenvío de eventos para reenviar datos a una solución que no sea de Adobe.
+>Ya debe haber creado y asignado elementos de datos a un objeto XDM, así como haber configurado reglas de etiquetas y haber creado esos cambios dentro de una biblioteca en un entorno de etiquetas para continuar. Si no lo ha hecho, consulte los pasos de la configuración de **etiquetas** en la sección de [requisitos previos](setup-event-forwarding.md#prerequisites). Estos pasos garantizan el envío de datos a Platform Edge Network y, desde allí, se puede configurar una propiedad de reenvío de eventos para reenviar datos a una solución que no sea de Adobe.
 
 
 ### Creación de un elemento de datos de reenvío de eventos
 
-El objeto XDM configurado anteriormente con la extensión de etiqueta del SDK web de Platform se convierte en la fuente de datos para los elementos de datos en una propiedad de reenvío de eventos. Los mismos datos que ya se han configurado en la propiedad de etiquetas se utilizan como fuente de datos para el reenvío de eventos.
+El objeto XDM configurado anteriormente con la extensión de etiquetas Platform Web SDK se convierte en la fuente de datos para los elementos de datos de una propiedad de reenvío de eventos. Los mismos datos que ya se han configurado en la propiedad de etiquetas se utilizan como fuente de datos para el reenvío de eventos.
 
 >[!IMPORTANT]
 >
@@ -138,12 +138,12 @@ El objeto XDM configurado anteriormente con la extensión de etiqueta del SDK we
 >
 >Si esta ruta de acceso no se especifica correctamente, no se recopilarán datos.
 
-En este ejercicio, reenviará la altura de la ventanilla del explorador y el ID del Experience Cloud del objeto XDM a un webhook. La ruta del campo XDM está determinada por el esquema XDM creado durante la lección [Configurar un esquema XDM](configure-schemas.md).
+En este ejercicio, reenviará la altura de la ventanilla del explorador y el ID de Experience Cloud del objeto XDM a un webhook. La ruta del campo XDM está determinada por el esquema XDM creado durante la lección [Configurar un esquema XDM](configure-schemas.md).
 
 >[!TIP]
 >
 >También puede encontrar la ruta del objeto XDM utilizando las herramientas de red del explorador web, filtrando las solicitudes `/ee`, abriendo la señalización [!UICONTROL **Payload**] y explorando en profundidad la variable que está buscando. A continuación, haga clic con el botón derecho del ratón y seleccione &quot;Copiar ruta de propiedad&quot;. Este es un ejemplo de la altura de la ventanilla del explorador:
-> ![Ruta XDM de reenvío de eventos ](assets/event-forwarding-xdm-path.png)
+>> ![Ruta XDM de reenvío de eventos ](assets/event-forwarding-xdm-path.png)
 
 1. Vaya a la propiedad **[!UICONTROL Reenvío de eventos]** que creó recientemente
 
@@ -174,7 +174,7 @@ En este ejercicio, reenviará la altura de la ventanilla del explorador y el ID 
 
 1. En **[!UICONTROL Tipo de elemento de datos]**, seleccione `Path`
 
-1. Escriba la ruta del objeto XDM que contiene el ID de Experience Cloud `arc.event.xdm.identityMap.ECID.0.id`
+1. Escriba la ruta de acceso del objeto XDM que contiene el Experience Cloud ID `arc.event.xdm.identityMap.ECID.0.id`
 
 1. Seleccionar **[!UICONTROL Guardar]**
 
@@ -192,13 +192,13 @@ En este ejercicio, reenviará la altura de la ventanilla del explorador y el ID 
 
 ### Instalación de la extensión de conector de Adobe Cloud
 
-Para enviar datos a ubicaciones de terceros, primero debe instalar la extensión [!UICONTROL Conector de Adobe Cloud].
+Para enviar datos a ubicaciones de terceros, primero debe instalar la extensión [!UICONTROL Adobe Cloud Connector].
 
 1. Seleccione **[!UICONTROL Extensiones]** en el panel de navegación izquierdo
 
 1. Seleccione la ficha **[!UICONTROL Catálogo]**
 
-1. Busque **[!UICONTROL Conector de Adobe Cloud]**, seleccione **[!UICONTROL Instalar]**
+1. Busque **[!UICONTROL Adobe Cloud Connector]**, seleccione **[!UICONTROL Instalar]**
 
    ![Ruta de ECID de reenvío de eventos](assets/event-forwarding-adobe-cloud-connector.png)
 
@@ -211,7 +211,7 @@ Existen algunas diferencias principales entre la configuración de reglas en una
 * **[!UICONTROL Eventos] y [!UICONTROL Condiciones]**:
 
    * **Etiquetas**: todas las reglas se activan mediante un Evento que debe especificarse en la regla, por ejemplo, `Library Loaded - Page Top`. Las condiciones son opcionales.
-   * **Reenvío de eventos**: Se supone que cada evento enviado al Edge Network de Platform es un déclencheur para reenviar datos. Por lo tanto, no hay [!UICONTROL Eventos] que se deban seleccionar en las reglas de reenvío de eventos. Para administrar qué eventos almacenan en déclencheur una regla de reenvío de eventos, debe configurar las condiciones.
+   * **Reenvío de eventos**: Se supone que cada evento enviado a Platform Edge Network es un déclencheur para reenviar datos. Por lo tanto, no hay [!UICONTROL Eventos] que se deban seleccionar en las reglas de reenvío de eventos. Para administrar qué eventos almacenan en déclencheur una regla de reenvío de eventos, debe configurar las condiciones.
 
 * **Token de elemento de datos**:
 
@@ -250,7 +250,7 @@ Para configurar una regla para reenviar datos a su webhook, primero debe obtener
 
 1. Añadir una acción
 
-1. En **[!UICONTROL Extensión]**, seleccione **[!UICONTROL Conector de nube de Adobe]**
+1. En **[!UICONTROL Extensión]**, seleccione **[!UICONTROL Conector de Adobe Cloud]**
 
 1. En **[!UICONTROL Tipo de acción]**, seleccione **[!UICONTROL Realizar llamada de recuperación]**
 
@@ -290,17 +290,17 @@ Cree una biblioteca y todos los cambios en el entorno de desarrollo del reenvío
 
 Ahora puede validar la propiedad de reenvío de eventos mediante Platform Debugger y Webhook.site:
 
-1. Siga los pasos para [cambiar la biblioteca de etiquetas](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property) en el [sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en/men.html) a la propiedad de etiquetas del SDK web a la que asignó la propiedad de reenvío de eventos en la secuencia de datos.
+1. Siga los pasos para [cambiar la biblioteca de etiquetas](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property) en el [sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en/men.html) a la propiedad de etiquetas de Web SDK a la que asignó su propiedad de reenvío de eventos en la secuencia de datos.
 
 1. Antes de volver a cargar la página, en Experience Platform Debugger abra **[!UICONTROL Registros]** desde el panel de navegación izquierdo
 
-1. Seleccione la ficha **[!UICONTROL Edge]** y, a continuación, seleccione **[!UICONTROL Connect]** para ver las solicitudes del Edge Network de la plataforma
+1. Seleccione la ficha **[!UICONTROL Edge]** y, a continuación, seleccione **[!UICONTROL Conectar]** para ver las solicitudes de Platform Edge Network
 
    ![Sesión de red perimetral de reenvío de eventos](assets/event-forwarding-edge-session.png)
 
 1. Volver a cargar la página
 
-1. Verá solicitudes adicionales que le proporcionan visibilidad de las solicitudes del lado del servidor que el Edge Network de Platform envía al enlace web
+1. Verá solicitudes adicionales que le proporcionan visibilidad de las solicitudes del lado del servidor que Platform Edge Network envía al enlace web
 
 1. La solicitud en la que se centra la validación es la que muestra la dirección URL completamente construida que envía la red de Edge
 
@@ -321,8 +321,6 @@ Ahora puede validar la propiedad de reenvío de eventos mediante Platform Debugg
 
 ¡Felicidades! Ha configurado el reenvío de eventos.
 
-[Siguiente: ](conclusion.md)
-
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer el SDK web de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=es)
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

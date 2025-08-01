@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo instalar y configurar la extensió
 feature: Web SDK, Tags
 jira: KT-15404
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '606'
 ht-degree: 11%
 
 ---
@@ -71,7 +71,7 @@ Deje la mayoría de las configuraciones predeterminadas y actualícelas más tar
 
    ![Selección de secuencia de datos](assets/extension-luma-web-sdk-datastream-extension.png)
 
-Para obtener más información sobre cada sección de la extensión, consulte [Configuración de la extensión de Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/es/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
+Para obtener más información sobre cada sección de la extensión, consulte [Configuración de la extensión de Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
 
 >[!NOTE]
 >
@@ -83,8 +83,6 @@ Para obtener más información sobre cada sección de la extensión, consulte [C
 
 Ahora que ha instalado Platform Web SDK y lo ha asociado al conjunto de datos, está listo para empezar a recopilar datos.
 
-[Siguiente: ](create-data-elements.md)
-
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=es)
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

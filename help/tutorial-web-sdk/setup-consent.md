@@ -1,19 +1,19 @@
 ---
-title: Configuración del consentimiento con el SDK web de Platform
-description: Obtenga información sobre cómo establecer la configuración de privacidad de la extensión de etiquetas de SDK web de Experience Platform. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
+title: Configuración del consentimiento con Platform Web SDK
+description: Obtenga información sobre cómo configurar la privacidad de la extensión de etiquetas Experience Platform Web SDK. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Web SDK,Tags,Consent
 jira: KT-15413
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '1604'
+source-wordcount: '1603'
 ht-degree: 1%
 
 ---
 
-# Configuración del consentimiento con el SDK web de Platform
+# Configuración del consentimiento con Platform Web SDK
 
-Obtenga información sobre cómo establecer la configuración de privacidad de la extensión de etiqueta SDK web de Adobe Experience Platform. Establezca el consentimiento en función de la interacción del visitante con un titular de una plataforma de administración de consentimiento (CMP).
+Obtenga información sobre cómo configurar la privacidad de la extensión de etiquetas Adobe Experience Platform Web SDK. Establezca el consentimiento en función de la interacción del visitante con un titular de una plataforma de administración de consentimiento (CMP).
 
 >[!NOTE]
 > 
@@ -25,8 +25,8 @@ Obtenga información sobre cómo establecer la configuración de privacidad de l
 Al final de esta lección, puede hacer lo siguiente:
 
 * Carga de una CMP mediante etiquetas
-* Configuración de privacidad en la extensión de etiquetas del SDK web de Experience Platform
-* Establezca el consentimiento para el SDK web de Experience Platform en función de la acción del visitante
+* Configuración de la privacidad en la extensión de etiquetas Experience Platform Web SDK
+* Establezca el consentimiento para Experience Platform Web SDK según la acción del visitante
 
 ## Requisitos previos
 
@@ -63,7 +63,7 @@ Antes de ir a las configuraciones de etiquetas, obtenga más información acerca
 
 >[!WARNING]
 >
->La práctica recomendada para implementar una plataforma de administración de consentimiento es cargar la CMP _antes de_ cargar el administrador de etiquetas. Para facilitar este tutorial, cargará la CMP _con_ el administrador de etiquetas. Esta lección está diseñada para mostrarle cómo utilizar las funciones de consentimiento del SDK web de Platform y no debe utilizarse como guía para configurar correctamente Klaro o cualquier otra CMP.
+>La práctica recomendada para implementar una plataforma de administración de consentimiento es cargar la CMP _antes de_ cargar el administrador de etiquetas. Para facilitar este tutorial, cargará la CMP _con_ el administrador de etiquetas. Esta lección está diseñada para mostrarle cómo utilizar las funciones de consentimiento de Platform Web SDK y no debe utilizarse como guía para configurar correctamente Klaro o cualquier otra CMP.
 
 
 Ahora, una vez que haya terminado con las configuraciones de Klaro, cree reglas de etiquetas con las siguientes configuraciones:
@@ -106,7 +106,7 @@ La inclusión implícita significa que la empresa no necesita obtener el consent
 
 Ahora configurará e implementará el consentimiento para este escenario:
 
-1. En la sección **[!UICONTROL Privacy]** de la extensión de etiquetas del SDK web de Experience Platform, asegúrese de que **[!UICONTROL Default consent]** está establecido en **[!UICONTROL In]** :
+1. En la sección **[!UICONTROL Privacidad]** de la extensión de etiquetas Experience Platform Web SDK, asegúrese de que **[!UICONTROL Consentimiento predeterminado]** está establecido en **[!UICONTROL En]**:
 
 
    ![Configuración de privacidad de la extensión AEP de consentimiento](assets/consent-web-sdk-privacy-in.png)
@@ -115,14 +115,14 @@ Ahora configurará e implementará el consentimiento para este escenario:
    > 
    >Para una solución dinámica, seleccione la opción &quot;Proporcionar un elemento de datos&quot; y pase un elemento de datos que devuelva el valor de ```klaro.getManager().consents```
    >
-   >Esta opción se utiliza si CMP se inserta en el código fuente *antes de* el código incrustado de etiqueta para que el consentimiento predeterminado esté disponible antes de que la extensión del SDK web de Experience Platform comience a cargarse. En este ejemplo, no se puede utilizar esta opción porque CMP se carga con etiquetas y no antes de las etiquetas.
+   >Esta opción se utiliza si CMP se inserta en el código fuente *antes de* el código incrustado de etiqueta para que el consentimiento predeterminado esté disponible antes de que la extensión de Experience Platform Web SDK comience a cargarse. En este ejemplo, no se puede utilizar esta opción porque CMP se carga con etiquetas y no antes de las etiquetas.
 
 
 
 2. Guarde y cree este cambio en la biblioteca de etiquetas
 3. Cargue la biblioteca de etiquetas en el sitio de demostración de Luma.
 4. Habilite la depuración de etiquetas en el sitio de Luma y vuelva a cargar la página. En la consola para desarrolladores del explorador, debería ver que defaultConsent es igual a **[!UICONTROL In]**
-5. Con esta configuración, la extensión SDK para web de Experience Platform sigue realizando solicitudes de red, a menos que un visitante decida rechazar las cookies y la exclusión:
+5. Con esta configuración, la extensión Experience Platform Web SDK sigue realizando solicitudes de red, a menos que un visitante decida rechazar las cookies y la exclusión:
 
    ![Consentimiento de inclusión implícito](assets/consent-Implied-optin-default.png)
 
@@ -156,7 +156,7 @@ Si un visitante decide excluirse (rechazar las cookies de seguimiento), debe cam
 
    ![El usuario de condición de regla hace clic en &quot;Rechazar&quot;](assets/consent-optOut-clickEvent.png)
 
-1. Ahora, use el SDK web de Experience Platform [!UICONTROL Set consent] [!UICONTROL tipo de acción] para establecer el consentimiento como &quot;desactivado&quot;:
+1. Ahora, use Experience Platform Web SDK, [!UICONTROL Establecer consentimiento] [!UICONTROL tipo de acción] para establecer el consentimiento como &quot;saliente&quot;:
 
    ![Acción de exclusión de regla de consentimiento](assets/consent-rule-optout-action.png)
 
@@ -164,31 +164,31 @@ Si un visitante decide excluirse (rechazar las cookies de seguimiento), debe cam
 
    ![Guarde y cree su biblioteca](assets/consent-rule-optout-saveAndBuild.png)
 
-Ahora, cuando un visitante se excluye, la regla configurada de la manera anterior se activaría y establecería el consentimiento del SDK web como **[!UICONTROL Out]**.
+Ahora, cuando un visitante se excluye, la regla configurada de la manera anterior se activaría y establecería el consentimiento de Web SDK como **[!UICONTROL Out]**.
 
-Para validarlo, vaya al sitio de demostración de Luma, rechace las cookies y confirme que no se activa ninguna solicitud del SDK web después de la exclusión.
+Para validarlo, vaya al sitio de demostración de Luma, rechace las cookies y confirme que no se activa ninguna solicitud de Web SDK después de la exclusión.
 
 ### Escenario 2: exclusión implícita
 
 
-La exclusión implícita significa que los visitantes deben tratarse como excluidos de forma predeterminada y no se deben configurar cookies. Las solicitudes del SDK web no se deben activar a menos que los visitantes decidan incluirse manualmente aceptando las cookies a través del banner de consentimiento. Es posible que tenga que tratar un caso de uso de este tipo en la región de la Unión Europea donde se aplique el RGPD.
+La exclusión implícita significa que los visitantes deben tratarse como excluidos de forma predeterminada y no se deben configurar cookies. Las solicitudes de SDK web no se deben activar a menos que los visitantes decidan incluirse manualmente aceptando las cookies a través del banner de consentimiento. Es posible que tenga que tratar un caso de uso de este tipo en la región de la Unión Europea donde se aplique el RGPD.
 
 A continuación se muestra cómo puede configurar la configuración para un escenario de exclusión implícito:
 
 1. En Klaro, desactive el **Estado predeterminado del servicio** en su servicio `aep web sdk` y guarde la configuración actualizada.
 
-1. En la sección **[!UICONTROL Privacidad]** de la extensión del SDK web de Experience Platform, establezca el consentimiento predeterminado en **[!UICONTROL Fuera]** o **[!UICONTROL Pendiente]**, según sea necesario.
+1. En la sección **[!UICONTROL Privacidad]** de la extensión Experience Platform Web SDK, establezca el consentimiento predeterminado en **[!UICONTROL Fuera]** o **[!UICONTROL Pendiente]**, según sea necesario.
 
    ![Configuración de privacidad de la extensión AEP de consentimiento](assets/consent-implied-opt-out.png)
 
 1. **Guarde** la configuración actualizada en su biblioteca de etiquetas y vuelva a compilarla.
 
-   Con esta configuración, el SDK web de Experience Platform garantiza que no se active ninguna solicitud a menos que el permiso de  cambie a **[!UICONTROL In]**. Esto puede ocurrir como resultado de la aceptación manual por parte de un visitante de las cookies mediante la inclusión.
+   Con esta configuración, Experience Platform Web SDK garantiza que no se active ninguna solicitud a menos que el permiso de consentimiento cambie a **[!UICONTROL In]**. Esto puede ocurrir como resultado de la aceptación manual por parte de un visitante de las cookies mediante la inclusión.
 
 1. En Debugger, asegúrese de que el sitio de Luma esté asignado a la propiedad de etiquetas y de que el registro de consola de etiquetas esté activado.
 1. Use la consola para desarrolladores del explorador para **borrar datos del sitio** en **Aplicación** > **Almacenamiento**
 
-1. Vuelva a cargar el sitio de Luma y verá que `defaultConsent` está establecido en **[!UICONTROL Out]** y no se han realizado solicitudes de SDK web
+1. Vuelva a cargar el sitio de Luma y verá que `defaultConsent` está establecido en **[!UICONTROL Out]** y no se han realizado solicitudes de Web SDK
 
    ![Exclusión implícita de consentimiento](assets/consent-implied-out-cmp.png)
 
@@ -200,7 +200,7 @@ Si un visitante decide aceptar las cookies de seguimiento, debe cambiar el conse
 
    ![El usuario de condición de regla hace clic en &quot;No pasa nada&quot;](assets/consent-optIn-clickEvent.png)
 
-1. Agregue una acción mediante el SDK web de Experience Platform [!UICONTROL Extension], **[!UICONTROL Tipo de acción]** de **[!UICONTROL Establecer consentimiento]**, **[!UICONTROL Consentimiento general]** como **[!UICONTROL En]**.
+1. Agregue una acción utilizando Experience Platform Web SDK [!UICONTROL Extension], **[!UICONTROL Tipo de acción]** de **[!UICONTROL Establecer consentimiento]**, **[!UICONTROL Consentimiento general]** como **[!UICONTROL En]**.
 
    ![Acción de inclusión de regla de consentimiento](assets/consent-rule-optin-action.png)
 
@@ -214,16 +214,14 @@ Si un visitante decide aceptar las cookies de seguimiento, debe cambiar el conse
 
 Una vez que haya establecido esta regla, la recopilación de eventos debe comenzar cuando un visitante se incluye.
 
-![Opción de visitante de Post de consentimiento](assets/consent-post-user-optin.png)
+![Opción de visitante de publicación de consentimiento](assets/consent-post-user-optin.png)
 
 
-Para obtener más información sobre el consentimiento en el SDK web, consulte [Compatibilidad con las preferencias de consentimiento del cliente](https://experienceleague.adobe.com/es/docs/experience-platform/edge/consent/supporting-consent).
+Para obtener más información sobre el consentimiento en Web SDK, consulte [Apoyo a las preferencias de consentimiento del cliente](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
 
 
-Para obtener más información sobre la acción [!UICONTROL Establecer consentimiento], consulte [Establecer consentimiento](https://experienceleague.adobe.com/es/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
-
-[Siguiente: ](setup-event-forwarding.md)
+Para obtener más información sobre la acción [!UICONTROL Establecer consentimiento], consulte [Establecer consentimiento](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer el SDK web de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=es)
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

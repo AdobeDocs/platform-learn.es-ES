@@ -1,19 +1,19 @@
 ---
-title: Creación de elementos de datos para el SDK web de Platform
+title: Creación de elementos de datos para Platform Web SDK
 description: Obtenga información sobre cómo crear un objeto XDM y asignarle elementos de datos en etiquetas. Esta lección forma parte del tutorial Implementación de Adobe Experience Cloud con SDK web.
 feature: Tags
 jira: KT-15401
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '1337'
+source-wordcount: '1336'
 ht-degree: 2%
 
 ---
 
 # Creación de elementos de datos
 
-Aprenda a crear elementos de datos en etiquetas para datos de contenido, comercio e identidad en el [sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html). A continuación, rellene los campos del esquema XDM con la extensión del SDK web de Adobe Experience Platform Variable data element type.
+Aprenda a crear elementos de datos en etiquetas para datos de contenido, comercio e identidad en el [sitio de demostración de Luma](https://luma.enablementadobe.com/content/luma/us/en.html). A continuación, rellene los campos del esquema XDM con el tipo de elemento de datos Variable de la extensión Adobe Experience Platform Web SDK.
 
 ## Objetivos de aprendizaje
 
@@ -31,7 +31,7 @@ Tiene una comprensión de lo que es una capa de datos y ha completado las leccio
 * [Configuración de un esquema XDM](configure-schemas.md)
 * [Configuración de un área de nombres de identidad](configure-identities.md)
 * [Configuración de una secuencia de datos](configure-datastream.md)
-* [Extensión del SDK web instalada en la propiedad de etiqueta](install-web-sdk.md)
+* [Extensión web SDK instalada en la propiedad tag](install-web-sdk.md)
 
 
 >[!IMPORTANT]
@@ -54,11 +54,11 @@ Existen varias formas de asignar datos de la capa de datos al XDM mediante la fu
 
 ### Implementación de XDM en la capa de datos
 
-Este método implica utilizar el objeto XDM completamente definido como estructura para la capa de datos. A continuación, asigne toda la capa de datos a un elemento de datos de objeto XDM en las etiquetas. Si la implementación no utiliza un administrador de etiquetas, este método puede ser ideal porque puede enviar datos a XDM directamente desde la aplicación mediante el [comando XDM sendEvent](https://experienceleague.adobe.com/es/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). Si utiliza etiquetas, puede crear un elemento de datos de código personalizado que capture toda la capa de datos como un objeto JSON de paso al XDM. A continuación, asigne el JSON de paso a través al campo de objeto XDM en la acción Enviar evento.
+Este método implica utilizar el objeto XDM completamente definido como estructura para la capa de datos. A continuación, asigne toda la capa de datos a un elemento de datos de objeto XDM en las etiquetas. Si la implementación no utiliza un administrador de etiquetas, este método puede ser ideal porque puede enviar datos a XDM directamente desde la aplicación mediante el [comando XDM sendEvent](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). Si utiliza etiquetas, puede crear un elemento de datos de código personalizado que capture toda la capa de datos como un objeto JSON de paso al XDM. A continuación, asigne el JSON de paso a través al campo de objeto XDM en la acción Enviar evento.
 
 A continuación se muestra un ejemplo del aspecto que tendría la capa de datos al utilizar el formato de capa de datos del cliente de Adobe:
 
-+++Ejemplo de XDM en la capa de datos
+Ejemplo de +++XDM en la capa de datos
 
 ```JSON
 window.adobeDataLayer.push({
@@ -129,17 +129,17 @@ Este método implica la asignación de variables de capa de datos individuales U
 >
 > Capa de datos de Google
 > 
-> Si su organización ya utiliza Google Analytics y tiene el objeto dataLayer tradicional de Google en su sitio web, puede utilizar la [extensión de capa de datos de Google](https://experienceleague.adobe.com/es/docs/experience-platform/tags/extensions/client/google-data-layer/overview) en las etiquetas. Esto le permite implementar la tecnología de Adobe más rápido sin tener que solicitar asistencia a su equipo de TI. La asignación de la capa de datos de Google a XDM seguiría los mismos pasos que se describen arriba.
+> Si su organización ya utiliza Google Analytics y tiene el objeto dataLayer tradicional de Google en su sitio web, puede utilizar la [extensión de capa de datos de Google](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/google-data-layer/overview) en las etiquetas. Esto le permite implementar la tecnología de Adobe más rápido sin tener que solicitar asistencia a su equipo de TI. La asignación de la capa de datos de Google a XDM seguiría los mismos pasos que se describen arriba.
 
 ### Asignar a XDM en el conjunto de datos
 
-Este método usa funcionalidad integrada en la configuración del flujo de datos llamada [Preparación de datos para la recopilación de datos](https://experienceleague.adobe.com/es/docs/experience-platform/datastreams/data-prep) y omite la asignación de variables de capa de datos a XDM en las etiquetas.
+Este método usa funcionalidad integrada en la configuración del flujo de datos llamada [Preparación de datos para la recopilación de datos](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) y omite la asignación de variables de capa de datos a XDM en las etiquetas.
 
 #### Pros
 
 * Flexible, ya que puede asignar variables individuales al XDM
-* Capacidad para [calcular nuevos valores](https://experienceleague.adobe.com/es/docs/experience-platform/data-prep/functions) o [transformar tipos de datos](https://experienceleague.adobe.com/es/docs/experience-platform/data-prep/data-handling) de una capa de datos antes de que pase a XDM
-* Aproveche una [IU de asignación](https://experienceleague.adobe.com/es/docs/experience-platform/datastreams/data-prep#create-mapping) para asignar campos de los datos de origen a XDM con una IU de apuntar y hacer clic
+* Capacidad para [calcular nuevos valores](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) o [transformar tipos de datos](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) de una capa de datos antes de que pase a XDM
+* Aproveche una [IU de asignación](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep#create-mapping) para asignar campos de los datos de origen a XDM con una IU de apuntar y hacer clic
 
 #### Contras
 
@@ -288,7 +288,7 @@ A continuación, cree el elemento de datos Variable para el objeto de datos:
 
 Al final de estos pasos, debe tener los siguientes elementos de datos creados:
 
-| Elementos de datos de la extensión principal | Elementos de datos de la extensión SDK para web de Platform |
+| Elementos de datos de la extensión principal | Elementos de datos de la extensión Platform Web SDK |
 -----------------------------|-------------------------------
 | `cart.orderId` | `data.variable` |
 | `cart.productInfo` | `xdm.variable.content` |
@@ -306,10 +306,8 @@ Al final de estos pasos, debe tener los siguientes elementos de datos creados:
 >
 >En una lección futura de [Crear reglas de etiquetas](create-tag-rule.md), aprenderá cómo los elementos de datos de **[!UICONTROL Variable]** le permiten apilar varias reglas en etiquetas utilizando **[!UICONTROL Actualizar tipo de acción de variable]**.
 
-Con estos elementos de datos en su lugar, está listo para empezar a enviar datos al Edge Network de Platform con una regla de etiquetas. Pero primero, aprenda a recopilar identidades con el SDK web.
-
-[Siguiente: ](create-identities.md)
+Con estos elementos de datos en su lugar, está listo para empezar a enviar datos a Platform Edge Network con una regla de etiquetas. Pero primero, aprenda a recopilar identidades con Web SDK.
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer el SDK web de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=es)
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
