@@ -38,7 +38,7 @@ Ya conoce la capa de datos, se ha familiarizado con la capa de datos del [sitio 
 
 ## Experience Cloud ID
 
-El [Experience Cloud ID (ECID)](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/ecid) es un área de nombres de identidad compartida que se usa en las aplicaciones de Adobe Experience Platform y Adobe Experience Cloud. ECID proporciona la base para la identidad del cliente y es la identidad predeterminada para las propiedades digitales. ECID es el identificador ideal para rastrear el comportamiento de usuarios no autenticados, ya que siempre está presente.
+El [Experience Cloud ID (ECID)](https://experienceleague.adobe.com/es/docs/experience-platform/identity/features/ecid) es un área de nombres de identidad compartida que se usa en las aplicaciones de Adobe Experience Platform y Adobe Experience Cloud. ECID proporciona la base para la identidad del cliente y es la identidad predeterminada para las propiedades digitales. ECID es el identificador ideal para rastrear el comportamiento de usuarios no autenticados, ya que siempre está presente.
 
 <!-- FYI I commented this out because it was breaking the build - Jack
 >[!TIP]
@@ -47,7 +47,7 @@ El [Experience Cloud ID (ECID)](https://experienceleague.adobe.com/en/docs/exper
 >![View ECID](assets/validate-dev-console-ecid.png)
 -->
 
-Obtenga más información sobre cómo se realiza el seguimiento de [ECID mediante Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview).
+Obtenga más información sobre cómo se realiza el seguimiento de [ECID mediante Platform Web SDK](https://experienceleague.adobe.com/es/docs/experience-platform/edge/identity/overview).
 
 Los ECID se configuran con una combinación de cookies de origen y Platform Edge Network. De forma predeterminada, Web SDK establece las cookies de identidad de origen en el lado del cliente. Para tener en cuenta las restricciones del explorador sobre la duración de las cookies, puede optar por establecer sus propias cookies de identidad de origen del lado del servidor en su lugar. Estas cookies de identidad se denominan ID de dispositivos de origen (FPID).
 
@@ -61,7 +61,7 @@ Los FPID son cookies de origen _configuradas por el usuario con sus propios serv
 
 Una vez establecida una cookie FPID, su valor se puede recuperar y enviar a Adobe a medida que se recopilan datos de evento. Los FPID recopilados se utilizan como semillas para generar ECID en Platform Edge Network, que siguen siendo los identificadores predeterminados en las aplicaciones de Adobe Experience Cloud.
 
-Aunque los FPID no se utilizan en este tutorial, se le recomienda utilizar FPID en su propia implementación de Web SDK. Obtenga más información sobre [ID de dispositivos de origen en Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/first-party-device-ids)
+Aunque los FPID no se utilizan en este tutorial, se le recomienda utilizar FPID en su propia implementación de Web SDK. Obtenga más información sobre [ID de dispositivos de origen en Platform Web SDK](https://experienceleague.adobe.com/es/docs/experience-platform/edge/identity/first-party-device-ids)
 
 >[!CAUTION]
 >
@@ -71,7 +71,7 @@ Aunque los FPID no se utilizan en este tutorial, se le recomienda utilizar FPID 
 
 Como se ha indicado anteriormente, Adobe asigna un ECID a todos los visitantes de las propiedades digitales al utilizar Platform Web SDK. ECID es la identidad predeterminada para rastrear comportamientos digitales no autenticados.
 
-También puede enviar un ID de usuario autenticado para que Platform pueda crear [gráficos de identidad](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs) y Target pueda establecer su [ID de terceros](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/3rd-party-id). La configuración del identificador autenticado se realiza mediante el tipo de elemento de datos [!UICONTROL Mapa de identidad].
+También puede enviar un ID de usuario autenticado para que Platform pueda crear [gráficos de identidad](https://experienceleague.adobe.com/es/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs) y Target pueda establecer su [ID de terceros](https://experienceleague.adobe.com/es/docs/target/using/audiences/visitor-profiles/3rd-party-id). La configuración del identificador autenticado se realiza mediante el tipo de elemento de datos [!UICONTROL Mapa de identidad].
 
 Para crear el elemento de datos [!UICONTROL Identity Map]:
 
@@ -149,4 +149,4 @@ Con estos elementos de datos en su lugar, está listo para empezar a enviar dato
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=es)

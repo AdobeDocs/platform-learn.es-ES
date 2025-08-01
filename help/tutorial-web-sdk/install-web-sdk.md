@@ -71,7 +71,7 @@ Deje la mayoría de las configuraciones predeterminadas y actualícelas más tar
 
    ![Selección de secuencia de datos](assets/extension-luma-web-sdk-datastream-extension.png)
 
-Para obtener más información sobre cada sección de la extensión, consulte [Configuración de la extensión de Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
+Para obtener más información sobre cada sección de la extensión, consulte [Configuración de la extensión de Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/es/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
 
 >[!NOTE]
 >
@@ -85,4 +85,4 @@ Ahora que ha instalado Platform Web SDK y lo ha asociado al conjunto de datos, e
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=es)

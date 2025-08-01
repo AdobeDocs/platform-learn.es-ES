@@ -15,7 +15,7 @@ ht-degree: 4%
 
 Obtenga información sobre cómo utilizar el reenvío de eventos con los datos del SDK web de Adobe Experience Platform.
 
-El reenvío de eventos es un nuevo tipo de propiedad disponible en la recopilación de datos. El reenvío de eventos le permite enviar datos a proveedores de terceros que no sean de Adobe directamente desde Adobe Experience Platform Edge Network, en lugar del explorador tradicional del lado del cliente. Obtenga más información acerca de las ventajas del reenvío de eventos en la [descripción general del reenvío de eventos](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
+El reenvío de eventos es un nuevo tipo de propiedad disponible en la recopilación de datos. El reenvío de eventos le permite enviar datos a proveedores de terceros que no sean de Adobe directamente desde Adobe Experience Platform Edge Network, en lugar del explorador tradicional del lado del cliente. Obtenga más información acerca de las ventajas del reenvío de eventos en la [descripción general del reenvío de eventos](https://experienceleague.adobe.com/es/docs/experience-platform/tags/event-forwarding/overview).
 
 
 ![Diagrama de Web SDK y reenvío de eventos](assets/dc-websdk-eventforwarding.png)
@@ -24,7 +24,7 @@ Para utilizar el reenvío de eventos en Adobe Experience Platform, primero deben
 
 * [SDK web de Adobe Experience Platform](overview.md)
 * [SDK móvil de Adobe Experience Platform](https://developer.adobe.com/client-sdks/home/)
-  <!--* [Server-to-Server API](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
+  <!--* [Server-to-Server API](https://experienceleague.adobe.com/es/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
 
 
 >[!NOTE]
@@ -323,4 +323,4 @@ Ahora puede validar la propiedad de reenvío de eventos mediante Platform Debugg
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=es)

@@ -56,7 +56,7 @@ Actualmente, Adobe Journey Optimizer no admite ofertas basadas en eventos. Si cr
 
 ## Concesión de acceso a Gestión de decisiones
 
-Para conceder acceso a la funcionalidad de Administración de decisiones, debe crear un **perfil de producto** y asignar los permisos correspondientes a los usuarios. [Obtenga más información sobre la administración de usuarios y permisos de Journey Optimizer en esta sección](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
+Para conceder acceso a la funcionalidad de Administración de decisiones, debe crear un **perfil de producto** y asignar los permisos correspondientes a los usuarios. [Obtenga más información sobre la administración de usuarios y permisos de Journey Optimizer en esta sección](https://experienceleague.adobe.com/es/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
 
 ## Configuración de la secuencia de datos
 
@@ -339,7 +339,7 @@ Para comenzar la prueba, seleccione la ficha **Simulaciones** en el menú **Ofer
 
 ### Prueba de ofertas de fidelización
 
-1. Seleccione un perfil de prueba para utilizarlo en la simulación. Haga clic en **Administrar perfil**. [Para crear o designar un nuevo perfil de prueba para la prueba de ofertas, siga esta guía](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
+1. Seleccione un perfil de prueba para utilizarlo en la simulación. Haga clic en **Administrar perfil**. [Para crear o designar un nuevo perfil de prueba para la prueba de ofertas, siga esta guía](https://experienceleague.adobe.com/es/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -371,7 +371,7 @@ La extensión **Adobe Experience Platform Debugger**, disponible tanto para Chro
 
 Puede utilizar el depurador del sitio de Luma para validar la lógica de toma de decisiones en producción. Esta validación es una buena práctica una vez que el caso de uso de las Recompensas de fidelidad está en funcionamiento, para garantizar que todo esté configurado correctamente.
 
-[Aprenda a configurar el depurador en su explorador con la guía aquí](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
+[Aprenda a configurar el depurador en su explorador con la guía aquí](https://experienceleague.adobe.com/es/docs/platform-learn/data-collection/debugger/overview).
 
 Para iniciar la validación con el depurador:
 
@@ -402,4 +402,4 @@ Para iniciar la validación con el depurador:
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=es)
