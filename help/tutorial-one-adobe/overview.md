@@ -3,9 +3,9 @@ title: 'Información general: tutorial técnico completo: One Adobe'
 description: 'Tutorial técnico completo: One Adobe'
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 34f37a33e874f55eea37290b5626ab613f575764
+source-git-commit: 8ed0b38056c6e2db4937bfaa9cfb53f5878250ee
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1166'
 ht-degree: 2%
 
 ---
@@ -84,7 +84,11 @@ En este módulo utilizará Adobe GenStudio for Performance Marketing, una aplica
 
 [1.4 Adobe Express y Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"}
 
-En este módulo básico, utilizará Adobe Express para crear imágenes y vídeos, y compartirá esos recursos con el ecosistema de Adobe Experience Cloud en general.
+En este módulo, utilizará Adobe Express para crear imágenes y vídeos, y compartirá esos recursos con el ecosistema de Adobe Experience Cloud en general.
+
+[1.5 Optimice su flujo de trabajo con Frame.io](./modules/creation-production/module1.5/frameio.md){target="_blank"}
+
+En este módulo, utilizará Adobe Frame.io en combinación con Adobe Premiere Pro para colaborar y revisar imágenes y vídeos.
 
 ### &#x200B;3. Administración de recursos
 
@@ -185,6 +189,12 @@ En este módulo, configurará su propia instancia de Google Cloud Platform, carg
 [2.1 Servicio de consultas](./modules/reporting-insights/datadistiller/dd-1/query-service.md)
 
 En este módulo, aprenderá a utilizar el servicio de consultas de Adobe Experience Platform.
+
+#### Content Analytics
+
+[3.1 Content Analytics](./modules/reporting-insights/content/module3.1/contentanalytics.md)
+
+En este módulo, aprenderá a implementar y utilizar Adobe Content Analytics.
 
 ![Perspectivas técnicas](./assets/images/techinsiders.png){width="50px" align="left"}
 

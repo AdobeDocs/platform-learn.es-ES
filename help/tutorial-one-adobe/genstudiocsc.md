@@ -2,9 +2,10 @@
 title: Habilitación técnica de GenStudio para la cadena de suministro de contenido
 description: Habilitación técnica de GenStudio para la cadena de suministro de contenido
 doc-type: multipage-overview
-source-git-commit: 34f37a33e874f55eea37290b5626ab613f575764
+exl-id: be6284eb-60c8-49d7-bde1-d8dc148a07c2
+source-git-commit: 42f6d8a07baa03a9ab31cff0ef518ae2c5ad930e
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '439'
 ht-degree: 1%
 
 ---
@@ -57,6 +58,10 @@ En este módulo utilizará Adobe GenStudio for Performance Marketing, una aplica
 
 En este módulo básico, utilizará Adobe Express para crear imágenes y vídeos, y compartirá esos recursos con el ecosistema de Adobe Experience Cloud en general.
 
+[Optimice su flujo de trabajo con Frame.io](./modules/creation-production/module1.5/frameio.md){target="_blank"}
+
+En este módulo, utilizará Adobe Frame.io en combinación con Adobe Premiere Pro para colaborar y revisar imágenes y vídeos.
+
 ### Administración de recursos
 
 [Adobe Experience Manager Cloud Service &amp; Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
@@ -67,9 +72,9 @@ En este módulo básico, configurará el programa Cloud Service de Adobe Experie
 
 #### Adobe Content Analytics
 
-[Content Analytics](./modules/reporting-insights/cja-b2c/cjab2c-1/customer-journey-analytics-build-a-dashboard.md)
+[Content Analytics](./modules/reporting-insights/content/module3.1/contentanalytics.md)
 
-En este módulo, configurará y configurará Content Analytics.
+En este módulo, aprenderá a implementar y utilizar Adobe Content Analytics.
 
 ![Perspectivas técnicas](./assets/images/techinsiders.png){width="50px" align="left"}
 
