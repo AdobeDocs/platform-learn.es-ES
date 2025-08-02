@@ -4,9 +4,9 @@ breadcrumb-title: Un tutorial técnico de Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+source-git-commit: 1fcb7b56cdf9ecf3520e3f293b120ddd0b67da74
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1239'
 ht-degree: 3%
 
 ---
@@ -15,6 +15,7 @@ ht-degree: 3%
 # Un tutorial técnico de Adobe {#tutorial-one-adobe}
 
 + [Información general del tutorial](/help/tutorial-one-adobe/overview.md)
++ [Habilitación técnica de GenStudio para la cadena de suministro de contenido](/help/tutorial-one-adobe/genstudiocsc.md)
 + [Estado del contenido](/help/tutorial-one-adobe/status.md)
 + [Finalización](/help/tutorial-one-adobe/completion.md)
 
@@ -36,10 +37,11 @@ ht-degree: 3%
       + [Información general](/help/tutorial-one-adobe/modules/workflow-planning/module1.1/wfplanning.md)
       + [1.1.1 Introducción a Workfront Planning](/help/tutorial-one-adobe/modules/workflow-planning/module1.1/ex1.md)
       + [Resumen y beneficios](/help/tutorial-one-adobe/modules/workflow-planning/module1.1/summary.md)
-   + 1.2 Workfront {#wfpl2}
+   + Flujo de trabajo de Workfront 1.2 {#wfpl2}
       + [Información general](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/workfront.md)
-      + [1.2.1 Introducción a Workfront](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex1.md)
+      + [1.2.1 Integración de metadatos Workfront + AEM Assets CS](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex1.md)
       + [1.2.2 Revisión con Workfront](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex2.md)
+      + [1.2.4 Integración de Workfront + AEM Sites CS](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex4.md)
       + [1.2.5 Integración de Workfront + Photoshop](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex5.md)
       + [Resumen y beneficios](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/summary.md)
 

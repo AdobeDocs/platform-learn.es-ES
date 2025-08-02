@@ -3,20 +3,23 @@ title: Revisión con Workfront
 description: Revisión con Workfront
 kt: 5342
 doc-type: tutorial
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
+source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '810'
 ht-degree: 0%
 
 ---
 
 # 1.2.2 Revisión con Workfront
 
+>[!IMPORTANT]
+>
+>Si ha configurado anteriormente un programa AEM CS con un entorno de AEM Assets CS, es posible que la zona protegida de AEM CS esté en hibernación. Dado que la dehibernación de una zona protegida de este tipo tarda de 10 a 15 minutos, sería aconsejable iniciar el proceso de dehibernación ahora para que no tenga que esperar más adelante.
+
 ## 1.2.2.1 Crear un nuevo flujo de aprobación
 
-Vaya a [https://experienceplatform.my.workfront.com/](https://experienceplatform.my.workfront.com/){target="_blank"}.
-
-Haga clic en el icono de 9 puntos **hamburguesa** y seleccione **Revisión**.
+Volver a **Adobe Workfront**. Haga clic en el icono **menú** y seleccione **Revisión**.
 
 ![WF](./images/wfp1.png)
 
@@ -28,7 +31,7 @@ Establezca **Template name** en `--aepUserLdap-- - Approval Workflow` y establez
 
 ![WF](./images/wfp3.png)
 
-Desplácese hacia abajo y en **Fases** > **Fase 1**, agregue **Wouter Van Geluwe** con la **Función** de **Revisor y aprobador**.
+Desplácese hacia abajo y en **Fases** > **Fase 1**, agréguese con la **Función** de **Revisor y aprobador**.
 
 Haga clic en **Crear**.
 
@@ -40,13 +43,35 @@ El flujo de trabajo básico de aprobación ya está listo para su uso.
 
 ## 1.2.2.2 Crear un nuevo proyecto
 
-En la página de inicio de Workfront, haga clic en **Nuevo** en la ficha **Mis proyectos**. Seleccionar **proyecto en blanco**.
+Abra el **menú** y vaya a **Programas**.
+
+![WF](./images/wfp6a.png)
+
+Haga clic en el programa que creó anteriormente, que se denomina `--aepUserLdap-- CitiSignal Fiber Launch`.
+
+>[!NOTE]
+>
+>Creó un programa como parte del ejercicio en [Workfront Planning](./../module1.1/ex1.md) con la automatización que creó y ejecutó. Si aún no lo ha hecho, puede encontrar las instrucciones allí.
+
+![WF](./images/wfp6b.png)
+
+En su programa, vaya a **Proyectos**. Haga clic en **+ Nuevo proyecto** y luego seleccione **Nuevo proyecto**.
 
 ![WF](./images/wfp6.png)
 
 Entonces debería ver esto. Cambie el nombre a `--aepUserLdap-- - CitiSignal Fiber Launch`.
 
-![WF](./images/wfp6a.png)
+![WF](./images/wfp6c.png)
+
+Vaya a **Detalles del proyecto**. Haga clic en **+Agregar** en **Descripción**.
+
+![WF](./images/wfp6d.png)
+
+Definir la descripción en `The CitiSignal Fiber Launch project is used to plan the upcoming launch of CitiSignal Fiber.`
+
+Haga clic en **Guardar cambios**.
+
+![WF](./images/wfp6e.png)
 
 El proyecto se ha creado.
 
@@ -54,7 +79,15 @@ El proyecto se ha creado.
 
 ## 1.2.2.3 Crear una nueva tarea
 
-Escriba este nombre para la tarea: **Crear recursos para la campaña de fibra**. Haga clic en **Crear tarea**.
+Vaya a **Tareas** y haga clic en **+ Nueva tarea**.
+
+![WF](./images/wfp7a.png)
+
+Escriba este nombre para la tarea: `Create assets for Fiber campaign`.
+
+Establecer el campo **Descripción** en: `This task is used to track the progress of the creation of the assets for the CitiSignal Fiber Launch Campaign.`
+
+Haga clic en **Crear tarea**.
 
 ![WF](./images/wfp8.png)
 
@@ -62,9 +95,25 @@ Entonces debería ver esto.
 
 ![WF](./images/wfp9.png)
 
+En la columna **Asignación**, agregue su propio nombre.
+
+![WF](./images/wfp9a.png)
+
+A continuación, se le asignará la tarea.
+
+![WF](./images/wfp9b.png)
+
 ## 1.2.2.4 Agregar un nuevo documento a su tarea para pasar por el flujo de aprobación
 
-Haga clic en **+ Agregar nuevo** y luego seleccione **Documento**.
+Haz clic en el logotipo de **Workfront** para volver a la página de información general. A continuación, debería ver el proyecto que acaba de crear en la descripción general. Haga clic en el proyecto para abrirlo.
+
+![WF](./images/wfp9c.png)
+
+En **Tareas**, haga clic para abrir la tarea.
+
+![WF](./images/wfp9d.png)
+
+Ir a **Documentos**. Haga clic en **+ Agregar nuevo** y luego seleccione **Documento**.
 
 ![WF](./images/wfp10.png)
 
@@ -76,21 +125,13 @@ Seleccione el archivo **2048x2048.png** y haga clic en **Abrir**.
 
 ![WF](./images/wfp12.png)
 
-Entonces deberías tener esto. Haga clic en **Crear revisión** y luego elija **Revisión avanzada**.
+Entonces deberías tener esto. Pase el ratón sobre el documento cargado. Haga clic en **Crear revisión** y luego elija **Revisión avanzada**.
 
 ![WF](./images/wfp13.png)
 
-En la ventana **nueva prueba**, seleccione la plantilla de flujo de trabajo que creó anteriormente, que debe llamarse `--aepUserLdap-- - Approval Workflow`. Haga clic en **Crear revisión**.
+En la ventana **nueva prueba**, seleccione **Automatizada** y luego seleccione la plantilla de flujo de trabajo que creó anteriormente, que debería llamarse `--aepUserLdap-- - Approval Workflow`. Haga clic en **Crear revisión**.
 
 ![WF](./images/wfp14.png)
-
-Luego volverás a estar en tu tarea. Haga clic en el botón **Asignar a** y seleccione **Asignármelo**.
-
-![WF](./images/wfp15.png)
-
-Haga clic en **Guardar**.
-
-![WF](./images/wfp16.png)
 
 Haga clic en **Trabajar en ello**.
 
@@ -124,7 +165,7 @@ Seleccione **Cambios necesarios** y haga clic en **tomar decisión**.
 
 ![WF](./images/wfp24.png)
 
-Entonces deberías estar de vuelta aquí. Ahora necesita cargar una segunda imagen que tenga en cuenta los comentarios proporcionados.
+Regresa a tu **Tarea** y al **Documento**. Ahora necesita cargar una segunda imagen que tenga en cuenta los comentarios proporcionados.
 
 ![WF](./images/wfp25.png)
 
@@ -160,7 +201,7 @@ Haga clic en **Tomar decisión**, seleccione **Aprobado** y haga clic en **Tomar
 
 ![WF](./images/wfp32.png)
 
-Cierre la previsualización de prueba.
+Haga clic en **Nombre de tarea** para volver a la descripción general de la tarea.
 
 ![WF](./images/wfp33.png)
 
@@ -168,11 +209,11 @@ A continuación, volverá a la vista de tareas con un recurso aprobado. Este rec
 
 ![WF](./images/wfp34.png)
 
-Haga clic en el icono **Compartir flecha** y seleccione la integración de AEM Assets, que debe llamarse `--aepUserLdap-- - Citi Signal AEM`.
+Seleccione el documento aprobado. Haga clic en el icono **Compartir flecha** y seleccione la integración de AEM Assets, que debe llamarse `--aepUserLdap-- - CitiSignal AEM`.
 
 ![WF](./images/wfp35.png)
 
-Haga doble clic en la carpeta que creó anteriormente, que debe tener el nombre `--aepUserLdap-- - Workfront Assets`.
+Haga doble clic en la carpeta que creó anteriormente, que debe tener el nombre `--aepUserLdap-- - CitiSignal Fiber Launch Assets`.
 
 ![WF](./images/wfp36.png)
 
@@ -184,29 +225,13 @@ Después de 1-2 minutos, el documento se publicará en AEM Assets. Verá un icon
 
 ![WF](./images/wfp37a.png)
 
-Haga clic en **Abrir resumen**.
-
-![WF](./images/wfp38.png)
-
-Vaya a **Metadatos**, debería ver lo siguiente:
-
-![WF](./images/wfp39.png)
-
-Vaya a **Información general** y haga clic en **+ Agregar** para agregar una descripción.
-
-![WF](./images/wfp40.png)
-
-Escriba su descripción. La configuración de la prueba y del documento ha finalizado.
-
-![WF](./images/wfp41.png)
-
 ## 1.2.2.5 Ver el archivo en AEM Assets
 
-Vaya a la carpeta en AEM Assets, que se llama `--aepUserLdap-- - Workfront Assets`.
+Vaya a la carpeta en AEM Assets CS, que se llama `--aepUserLdap-- - CitiSignal Fiber Launch Assets`.
 
 ![WF](./images/wfppaem1.png)
 
-Haga clic en los 3 puntos debajo de la imagen y seleccione **Detalles**.
+Seleccione la imagen y, a continuación, elija **Detalles**.
 
 ![WF](./images/wfppaem2.png)
 
