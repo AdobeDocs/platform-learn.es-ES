@@ -19,7 +19,7 @@ ht-degree: 0%
 
 En esta lección, configuramos una conexión entre Adobe Experience Platform y su Data Warehouse empresarial para habilitar la Composición federada de audiencias. Esto le permite consultar datos directamente desde los almacenes compatibles sin replicación. Además, creamos esquemas y modelos de datos basados en las tablas de Data Warehouse.
 
-Para este laboratorio, conectamos a una cuenta de Snowflake. La Composición de audiencias federada admite una lista cada vez más extensa de conexiones de almacén en la nube. Ver la [lista actualizada de integraciones](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
+Para este laboratorio, conectamos a una cuenta de Snowflake. La Composición de audiencias federada admite una lista cada vez más extensa de conexiones de almacén en la nube. Ver la [lista actualizada de integraciones](https://experienceleague.adobe.com/es/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
 
 
 ## Pasos
