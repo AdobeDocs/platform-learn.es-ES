@@ -1,0 +1,89 @@
+---
+title: Conexión de Data Warehouse
+seo-title: Configure a Data Warehouse connection | Unlock cross-channel insights with Federated Audience Composition
+breadcrumb-title: Conexión de Data Warehouse
+description: En esta lección, configuramos una conexión entre Adobe Experience Platform y su Data Warehouse empresarial para habilitar la Composición federada de audiencias.
+role: Data Architect, Data Engineer
+jira: KT-18743
+thumbnail: 18743-configure-a-data-warehouse-connection.jpg
+hide: true
+source-git-commit: fcfadca95c12d0123cfb221e44909f7e0fa8abab
+workflow-type: tm+mt
+source-wordcount: '514'
+ht-degree: 0%
+
+---
+
+
+# Conexión de Data Warehouse
+
+En esta lección, configuramos una conexión entre Adobe Experience Platform y su Data Warehouse empresarial para habilitar la Composición federada de audiencias. Esto le permite consultar datos directamente desde los almacenes compatibles sin replicación. Además, creamos esquemas y modelos de datos basados en las tablas de Data Warehouse.
+
+Para este laboratorio, conectamos a una cuenta de Snowflake. La Composición de audiencias federada admite una lista cada vez más extensa de conexiones de almacén en la nube. Ver la [lista actualizada de integraciones](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
+
+
+## Pasos
+
+1. Vaya a la sección **DATOS FEDERADOS** en el carril izquierdo.
+2. En el vínculo **Bases de datos federadas**, haga clic en el botón **Agregar base de datos federada**.
+3. Agregue un nombre y seleccione **Snowflake**.
+4. Rellene los detalles, haga clic en el botón **Probar conexión** y, a continuación, en el botón **Implementar funciones**.
+
+   ![configuración-conexión-copo de nieve](assets/snowflake-connection-setup.png)
+
+   ![snowflake-connection-setup-step2](assets/snowflake-connection-setup-step2.png)
+
+   ![snowflake-connection-setup-step3](assets/snowflake-connection-setup-step3.png)
+
+## Crear un esquema
+
+Para crear esquemas en Composición de audiencia federada, siga estos pasos:
+
+1. En la sección **DATOS FEDERADOS**, haga clic en **Modelos**.
+2. Examine la pestaña **Esquema** y haga clic en el botón **Crear esquema**.
+3. Seleccione la base de datos de origen en la lista y haga clic en la ficha **Agregar tablas**.
+4. Seleccione las tablas siguientes:
+   - FSI_CRM
+   - FSI_CRM_CONSENT_PREFERENCE
+
+   ![create-schema](assets/create-schema.png)
+
+   ![seleccionar-tabla](assets/select-table.png)
+
+Después de seleccionar las tablas, revise las columnas de cada tabla y seleccione la clave principal. Para este ejercicio, seleccionamos **CORREO ELECTRÓNICO** como clave principal en ambas tablas.
+
+![create-schema](assets/create-schema.png)
+
+![create-schema-step2](assets/create-schema-step2.png)
+
+## Vista previa de datos en un esquema
+
+Para obtener una vista previa de los datos de la tabla representada por el esquema, vaya a la ficha **Datos**.
+
+Haga clic en el vínculo **Calcular** para obtener una vista previa del número total de registros.
+
+![preview-data-in-schema](assets/preview-data-in-schema.png)
+
+## Crear un modelo de datos
+
+Los modelos de datos permiten crear un vínculo entre tablas. El vínculo se puede crear entre tablas de la misma base de datos, como tablas de Snowflake, o entre tablas de diferentes bases de datos, como un vínculo entre una tabla de Snowflake y una tabla de Amazon Redshift.
+
+Para crear un modelo de datos en Composición de audiencia federada, siga estos pasos:
+
+1. En la sección **DATOS FEDERADOS**, haga clic en **Modelos** y, a continuación, haga clic en **Modelo de datos**.
+2. Haga clic en el botón **Crear modelo de datos**.
+3. Proporcione un nombre para el modelo de datos.
+4. Haga clic en **Agregar esquemas** y seleccione los esquemas **FSI_CRM** y **FSI_CRM_CONSENT_PREFERENCE**.
+5. Crea un vínculo entre estas tablas haciendo clic en **Crear vínculos**.
+
+Al crear un vínculo, elija la cardinalidad aplicable:
+
+- **1-N**: una incidencia de la tabla de origen puede tener varias incidencias correspondientes de la tabla de destino, pero una incidencia de la tabla de destino puede tener como máximo una incidencia correspondiente de la tabla de origen.
+- **N-1**: una incidencia de la tabla de destino puede tener varias incidencias correspondientes de la tabla de origen, pero una incidencia de la tabla de origen puede tener como máximo una incidencia correspondiente de la tabla de destino.
+- **1-1**: una incidencia de la tabla de origen puede tener como máximo una incidencia correspondiente de la tabla de destino.
+
+A continuación se muestra una vista previa del vínculo creado para los ejercicios de laboratorio. El vínculo habilita una unión entre CRM y tablas de consentimiento, utilizando la clave principal de **EMAIL** para realizar una unión.
+
+![modelo de datos de vista previa](assets/preview-data-model.png)
+
+Ahora, estamos listos para [crear y audiencia](audience-creation-exercise.md).
