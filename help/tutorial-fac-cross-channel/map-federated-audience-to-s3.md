@@ -7,9 +7,9 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 hide: true
-source-git-commit: a5ae2695763bc3d6dce786861dcbc15f3422c035
+source-git-commit: b5611dccdba66d31f7dfcd96506e06d1bdd5fb3d
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '219'
 ht-degree: 0%
 
 ---
@@ -37,8 +37,7 @@ En este ejercicio, aprenderá a aprovechar los atributos de audiencia en su alma
 
 5. En la sección **Programación**, deje todas las configuraciones predeterminadas y haga clic en **Siguiente**.
 
-6. En el paso **Asignación**, asegúrese de que lo siguiente esté incluido y seleccionado como **Clave de anulación de duplicación**. Luego haz clic en **Siguiente**:
-   - `xdm: personalEmail.address`
+6. En el paso **Asignación**, asegúrese de que `xdm: personalEmail.address` esté incluido y seleccionado como **Clave de anulación de duplicación**. Luego haz clic en **Siguiente**:
 
    ![clave de anulación de duplicación](assets/deduplication-key.png)
 
