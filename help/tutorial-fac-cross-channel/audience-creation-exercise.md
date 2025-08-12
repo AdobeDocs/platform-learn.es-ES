@@ -65,6 +65,6 @@ Este ejercicio le guiará a través de la creación de una audiencia a partir de
 
 **Nota:** Utilizamos información de productos y crédito para crear nuestra audiencia que no movió datos confidenciales, como la puntuación crediticia, a plataformas de flujo descendente para su activación.
 
-Para obtener más información sobre la composición de audiencias, visita [Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
+Para obtener más información sobre la composición de audiencias, visita [Experience League](https://experienceleague.adobe.com/es/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
 
 Ahora que se ha creado nuestra audiencia federada, avanzaremos con [la asignación a una cuenta S3](map-federated-audience-to-s3.md).
