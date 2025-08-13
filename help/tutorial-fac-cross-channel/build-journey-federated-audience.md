@@ -71,7 +71,7 @@ Para continuar con la historia de SecurFinancial, específicamente el caso de us
 
 11. Ahora que se ha agregado la personalización del nombre, agregue `Hi, ` delante de la variable de personalización. Luego haz clic en **Guardar**.
 
-   ![recorrido-email-save](assets/journey-email-save.png)
+    ![recorrido-email-save](assets/journey-email-save.png)
 
 12. Haga clic dos veces en el botón **Atrás** para regresar al lienzo de recorrido. A continuación, en el menú **Acción: enviar correo electrónico** que se encuentra a la derecha, haga clic en **Guardar**.
 
