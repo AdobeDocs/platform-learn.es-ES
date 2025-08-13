@@ -7,10 +7,10 @@ level: Beginner, Intermediate
 doc-type: multipage
 recommendations: noDisplay,noCatalog
 hide: true
-source-git-commit: a5ae2695763bc3d6dce786861dcbc15f3422c035
+source-git-commit: 0bbdc93969b4716407ecf51499d572cb50f5a0d3
 workflow-type: tm+mt
-source-wordcount: '71'
-ht-degree: 4%
+source-wordcount: '81'
+ht-degree: 3%
 
 ---
 
@@ -22,5 +22,6 @@ ht-degree: 4%
 + [&#x200B;2. Ejercicio de creación de audiencias](audience-creation-exercise.md)
 + [&#x200B;3. Asignar audiencia federada a S3](map-federated-audience-to-s3.md)
 + [&#x200B;4. Crear un Recorrido con datos de audiencias federadas](build-journey-federated-audience.md)
-+ [&#x200B;5. Demostración del enriquecimiento de audiencia](audience-enrichment-demo.md)
++ [&#x200B;5. Enriquecimiento de las audiencias con datos federados](federated-audience-composition.md)
++ [&#x200B;6. Impulse la personalización &quot;en el momento&quot; en Edge](drive-in-the-moment-personalization.md)
 + [Conclusión](conclusion.md)

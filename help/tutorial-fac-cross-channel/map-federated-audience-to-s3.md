@@ -2,22 +2,22 @@
 title: Asignación de una audiencia federada a S3
 seo-title: Map a federated audience to S3 | Unlock cross-channel insights with Federated Audience Composition
 breadcrumb-title: Asignación de una audiencia federada a S3
-description: En esta lección, asignaremos una audiencia federada a un destino de Real-Time CDP descendente para ofrecer compatibilidad con una experiencia sin conexión personalizada.
+description: En este ejercicio visual, asignaremos una audiencia federada a un destino de Real-Time CDP descendente para ofrecer compatibilidad con una experiencia sin conexión personalizada.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 hide: true
-source-git-commit: b5611dccdba66d31f7dfcd96506e06d1bdd5fb3d
+exl-id: a47b8f7b-7bd0-43a0-bc58-8b57d331b444
+source-git-commit: a3c8d8b03472d01f491bf787ed647a696d3a5524
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '268'
 ht-degree: 0%
 
 ---
 
-
 # Asignar una audiencia federada a S3 para aprovechar los atributos de audiencia para el enriquecimiento
 
-En este ejercicio, aprenderá a aprovechar los atributos de audiencia en su almacén de datos para enriquecer la experiencia de su audiencia en flujos de trabajo de activación descendentes mediante destinos de RTCDP. Para SecurFinancial, estos atributos federados se pueden utilizar para mejorar la experiencia de personalización sin conexión de la audiencia del cliente. En este ejemplo, asignaremos la audiencia federada a un destino preconfigurado de Amazon S3.
+Puede aprovechar los atributos de audiencia en su almacén de datos para enriquecer la experiencia de su audiencia en flujos de trabajo de activación descendentes mediante destinos de RTCDP. Para SecurFinancial, estos atributos federados se pueden utilizar para mejorar la experiencia de personalización sin conexión de la audiencia del cliente. A continuación, la audiencia federada se asigna a un destino preconfigurado de Amazon S3.
 
 ## Pasos
 
@@ -31,22 +31,26 @@ En este ejercicio, aprenderá a aprovechar los atributos de audiencia en su alma
 
    ![select-s3-destination](assets/select-s3-destination.png)
 
-4. Seleccione la audiencia **Clientes financieros seguros - Sin préstamos, buen crédito**.
+4. Seleccione la audiencia adecuada. En nuestro ejemplo: **Clientes financieros seguros - Sin préstamos, buen crédito** audiencia.
 
    ![select-s3-audience](assets/select-s3-audience.png)
 
-5. En la sección **Programación**, deje todas las configuraciones predeterminadas y haga clic en **Siguiente**.
+5. En la sección **Programación**, use la configuración predeterminada y haga clic en **Siguiente**.
 
-6. En el paso **Asignación**, asegúrese de que `xdm: personalEmail.address` esté incluido y seleccionado como **Clave de anulación de duplicación**. Luego haz clic en **Siguiente**:
+6. En el paso **Mapping**, elija la clave de anulación de duplicación. En nuestro ejemplo, `xdm: personalEmail.address` se incluye y se selecciona como **Clave de deduplicación**. Luego haz clic en **Siguiente**:
 
    ![clave de anulación de duplicación](assets/deduplication-key.png)
 
-7. En el siguiente paso de asignación, puede seleccionar atributos de enriquecimiento basados en asignaciones de campos de audiencia en la composición de audiencia federada. Haga clic en el icono **lápiz (editar)** para ver los atributos preseleccionados.
+7. En el paso de asignación, seleccione atributos de enriquecimiento basados en asignaciones de campos de audiencia en la composición de audiencia federada. Haga clic en el icono **lápiz (editar)** para ver los atributos preseleccionados.
 
    ![edit-attributes](assets/edit-attributes.png)
 
    ![atributos-finales](assets/final-attribution.png)
 
 8. Revise su asignación de audiencia y pulse **Finalizar**.
+
+>[**RESUMEN**]
+>
+> Creamos con éxito una audiencia y la activamos en un destino S3 con facilidad. La interfaz de usuario de la plataforma permite a los equipos de marketing crear y activar audiencias rápidamente, lo que reduce el tiempo de obtención de valor. Los clientes que siguen este enfoque han utilizado tres casos de uso por primera vez en menos de dos meses.
 
 Estamos listos para pasar a [crear un recorrido](build-journey-federated-audience.md).
