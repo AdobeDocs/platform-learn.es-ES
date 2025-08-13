@@ -1,21 +1,21 @@
 ---
-title: Crear un público
-seo-title: Create an audience | Unlock cross-channel insights with Federated Audience Composition
-breadcrumb-title: Crear un público
+title: Crear una audiencia federada
+seo-title: Create a federated audience | Unlock cross-channel insights with Federated Audience Composition
+breadcrumb-title: Crear una audiencia federada
 description: En este ejercicio visual, configuramos una conexión entre Adobe Experience Platform y su Data Warehouse empresarial para habilitar la Composición federada de audiencias.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 hide: true
 exl-id: a507cab5-dba9-4bf7-a043-d7c967e9e07d
-source-git-commit: a3c8d8b03472d01f491bf787ed647a696d3a5524
+source-git-commit: 0b596d45409b5033cec132edcb75d90b679f9c7d
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 2%
+source-wordcount: '344'
+ht-degree: 0%
 
 ---
 
-# Ejercicio de creación de audiencias
+# Crear una audiencia federada
 
 A continuación, le guiaremos a través de la creación de una audiencia desde nuestro Data Warehouse mediante la Composición de audiencia federada. La audiencia está compuesta por clientes de SecurFinancial que tienen una puntuación crediticia de 650 o más y que actualmente no tienen un préstamo en su cartera de SecurFinancial.
 
@@ -65,6 +65,6 @@ A continuación, le guiaremos a través de la creación de una audiencia desde n
 >
 > En este ejemplo, la información de producto y crédito se utilizó para crear nuestra audiencia a través del acceso directo a los datos empresariales de Snowflake, sin hacer una copia de ella en Adobe Experience Platform. Una vez que el sistema externo procesa la consulta, solo se transfieren los valores relevantes de correo electrónico, productos actuales y nombre a la definición de audiencia para la activación descendente. Esto se aplica a todos los destinos compatibles con RTCDP.
 
-Para obtener más información sobre la composición de audiencias, visita [Experience League](https://experienceleague.adobe.com/es/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
+Para obtener más información sobre la composición de audiencias, visita [Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
 
 Ahora que se ha creado nuestra audiencia federada, [la asignaremos a una cuenta S3](map-federated-audience-to-s3.md).

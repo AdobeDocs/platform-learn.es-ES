@@ -7,9 +7,9 @@ level: Beginner, Intermediate
 doc-type: multipage
 recommendations: noDisplay,noCatalog
 hide: true
-source-git-commit: 0bbdc93969b4716407ecf51499d572cb50f5a0d3
+source-git-commit: 0b596d45409b5033cec132edcb75d90b679f9c7d
 workflow-type: tm+mt
-source-wordcount: '81'
+source-wordcount: '82'
 ht-degree: 3%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 + [Tutorial de composición de audiencia federada](overview.md)
 + [&#x200B;1. Conexión de Data Warehouse](data-warehouse-connection.md)
-+ [&#x200B;2. Ejercicio de creación de audiencias](audience-creation-exercise.md)
++ [&#x200B;2. Crear una audiencia federada](audience-creation-exercise.md)
 + [&#x200B;3. Asignar audiencia federada a S3](map-federated-audience-to-s3.md)
 + [&#x200B;4. Crear un Recorrido con datos de audiencias federadas](build-journey-federated-audience.md)
 + [&#x200B;5. Enriquecimiento de las audiencias con datos federados](federated-audience-composition.md)
