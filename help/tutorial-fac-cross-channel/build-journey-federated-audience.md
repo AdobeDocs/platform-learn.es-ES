@@ -6,9 +6,8 @@ description: En este ejercicio visual, se utiliza una audiencia federada en un r
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
-hide: true
 exl-id: a153667a-9b3a-4db7-9f58-b83e695009e0
-source-git-commit: a3c8d8b03472d01f491bf787ed647a696d3a5524
+source-git-commit: 15619a8419f608da6a77745fabf72c356a2ac4b4
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 1%
@@ -71,7 +70,7 @@ Para continuar con la historia de SecurFinancial, específicamente el caso de us
 
 11. Ahora que se ha agregado la personalización del nombre, agregue `Hi, ` delante de la variable de personalización. Luego haz clic en **Guardar**.
 
-    ![recorrido-email-save](assets/journey-email-save.png)
+   ![recorrido-email-save](assets/journey-email-save.png)
 
 12. Haga clic dos veces en el botón **Atrás** para regresar al lienzo de recorrido. A continuación, en el menú **Acción: enviar correo electrónico** que se encuentra a la derecha, haga clic en **Guardar**.
 
