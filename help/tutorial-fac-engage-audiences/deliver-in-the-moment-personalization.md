@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Ofrezca personalización &quot;en el momento&quot; mediante Edge Network
 
-La composición de audiencias federada permite enriquecer audiencias existentes en Adobe Experience Platform (AEP) utilizando datos de audiencia compuestos que se han federado desde Enterprise Data Warehouse. Estos datos no se mantendrán en Adobe Experience Platform, pero puede usar las capacidades de [reenvío de eventos](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview){target="_blank"} para enviar estos datos directamente a su Data Warehouse.
+La composición de audiencias federada permite enriquecer audiencias existentes en Adobe Experience Platform (AEP) utilizando datos de audiencia compuestos que se han federado desde Enterprise Data Warehouse. Estos datos no se mantendrán en Adobe Experience Platform, pero puede usar las capacidades de [reenvío de eventos](https://experienceleague.adobe.com/es/docs/experience-platform/tags/event-forwarding/overview){target="_blank"} para enviar estos datos directamente a su Data Warehouse.
 
 En este ejercicio, utilizamos una audiencia federada que consulta con la puntuación crediticia y la actividad de préstamo para enriquecer la audiencia de comportamiento de los visitantes de la página web de la solicitud de préstamo.
 
