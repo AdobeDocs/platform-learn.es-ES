@@ -7,9 +7,9 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a47b8f7b-7bd0-43a0-bc58-8b57d331b444
-source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
+source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
@@ -50,6 +50,7 @@ Puede aprovechar los atributos de audiencia en su almacén de datos para enrique
 
 >[**!SUMMARY**]
 >
-> Creamos con éxito una audiencia y la activamos en un destino S3 con facilidad. Cualquier otra solución puede captar esta audiencia y utilizarla de inmediato. La interfaz de usuario sencilla permite a los equipos de marketing crear y activar audiencias rápidamente sin mover los datos subyacentes. Los clientes que siguen este enfoque han entrado en funcionamiento con su primer uso en aproximadamente un mes.
+> Creamos con éxito una audiencia y la activamos en un destino S3 con facilidad. Cualquier otra solución puede captar esta audiencia y utilizarla de inmediato. La interfaz de usuario sencilla permite a los equipos de marketing crear y activar audiencias rápidamente sin mover los datos subyacentes. Los clientes que siguen este enfoque han publicado su primer caso de uso en aproximadamente un mes.
+
 
 Ahora [crearemos un recorrido](build-journey-federated-audience.md).

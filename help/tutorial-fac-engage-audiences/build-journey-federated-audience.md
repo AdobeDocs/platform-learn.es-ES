@@ -7,9 +7,9 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
 exl-id: a153667a-9b3a-4db7-9f58-b83e695009e0
-source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
+source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '419'
 ht-degree: 1%
 
 ---
@@ -70,7 +70,7 @@ Para continuar con la historia de SecurFinancial, específicamente el caso de us
 
 11. Ahora que se ha agregado la personalización del nombre, agregue `Hi, ` delante de la variable de personalización. Luego haz clic en **Guardar**.
 
-    ![recorrido-email-save](assets/journey-email-save.png)
+   ![recorrido-email-save](assets/journey-email-save.png)
 
 12. Haga clic dos veces en el botón **Atrás** para regresar al lienzo de recorrido. A continuación, en el menú **Acción: enviar correo electrónico** que se encuentra a la derecha, haga clic en **Guardar**.
 
@@ -78,4 +78,4 @@ Para continuar con la historia de SecurFinancial, específicamente el caso de us
 
 Se ha creado un recorrido en AJO con una audiencia federada y atributos de enriquecimiento federados.
 
-Ahora veremos cómo [enriquecer audiencias existentes](federated-audience-composition.md) en Experience Platform con datos federados del almacén de datos.
+Ahora veremos cómo [enriquecer una audiencia](federated-audience-composition.md) en Experience Platform con datos del almacén de datos.
