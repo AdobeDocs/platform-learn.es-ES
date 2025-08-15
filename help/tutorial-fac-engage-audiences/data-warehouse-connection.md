@@ -1,24 +1,24 @@
 ---
-title: Conexión de Data Warehouse
-seo-title: Configure a Data Warehouse connection | Engage with Audiences from your Data Warehouse using Federated Audience Composition
-breadcrumb-title: Conexión de Data Warehouse
+title: Conexión del Data Warehouse
+seo-title: Configure a data warehouse connection | Engage with audiences directly from your data warehouse using Federated Audience Composition
+breadcrumb-title: Conexión del Data Warehouse
 description: En este ejercicio, configuramos una conexión entre Adobe Experience Platform y su Data Warehouse empresarial para habilitar la Composición de audiencias federada.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-configure-a-data-warehouse-connection.jpg
 exl-id: 3935f3ff-7728-4cd1-855e-2cd02c2ecc59
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%
 
 ---
 
-# Conexión de Data Warehouse
+# Conexión del Data Warehouse
 
 Empezamos por configurar una conexión entre Adobe Experience Platform y su Enterprise Data Warehouse. Utilizamos esquemas y modelos de datos basados en la forma en que los datos se encuentran en Data Warehouse para admitir la creación de consultas.
 
-Para demostrarlo, conectamos a una cuenta de Snowflake. La Composición de audiencias federada admite una lista cada vez más extensa de conexiones de almacén en la nube. Ver la [lista actualizada de integraciones](https://experienceleague.adobe.com/es/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
+Para demostrarlo, conectamos a una cuenta de Snowflake. La Composición de audiencias federada admite una lista cada vez más extensa de conexiones de Data Warehouse. Ver la [lista actualizada de integraciones](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
 
 ## Pasos
 

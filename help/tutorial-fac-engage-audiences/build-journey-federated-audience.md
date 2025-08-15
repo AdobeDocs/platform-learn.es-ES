@@ -1,24 +1,24 @@
 ---
-title: Creación de un Recorrido con una audiencia federada
-seo-title: Build a Journey with a Federated Audience | Engage with Audiences from your Data Warehouse using Federated Audience Composition
-breadcrumb-title: Creación de un Recorrido con una audiencia federada
+title: Creación de un recorrido con una audiencia federada
+seo-title: Build a journey with a Federated Audience | Engage with audiences directly from your data warehouse using Federated Audience Composition
+breadcrumb-title: Creación de un recorrido con una audiencia federada
 description: En este ejercicio, se utiliza una audiencia federada en un recorrido de Journey Optimizer.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
 exl-id: a153667a-9b3a-4db7-9f58-b83e695009e0
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 1%
 
 ---
 
-# Creación de un Recorrido con una audiencia federada
+# Creación de un recorrido con una audiencia federada
 
 Las audiencias federadas se pueden utilizar en recorridos dentro de Adobe Journey Optimizer (AJO). Esto incluye el uso de atributos consultados de la Composición de audiencias federada para personalizar la mensajería.
 
-Para continuar con la historia de SecurFinancial, específicamente el caso de uso de retargeting y personalización de clientes, organizamos un recorrido para clientes precalificados. El objetivo es enviar un correo electrónico personalizado basado en atributos federados de Data Warehouse de SecurFinancial.
+Para continuar con la historia de SecurFinancial, específicamente el caso de uso de retargeting y personalización de clientes, organizamos un recorrido para clientes precalificados. El objetivo es enviar un correo electrónico personalizado basado en atributos federados desde el almacén de datos de SecurFinancial.
 
 ## Pasos
 
@@ -70,7 +70,7 @@ Para continuar con la historia de SecurFinancial, específicamente el caso de us
 
 11. Ahora que se ha agregado la personalización del nombre, agregue `Hi, ` delante de la variable de personalización. Luego haz clic en **Guardar**.
 
-    ![recorrido-email-save](assets/journey-email-save.png)
+   ![recorrido-email-save](assets/journey-email-save.png)
 
 12. Haga clic dos veces en el botón **Atrás** para regresar al lienzo de recorrido. A continuación, en el menú **Acción: enviar correo electrónico** que se encuentra a la derecha, haga clic en **Guardar**.
 

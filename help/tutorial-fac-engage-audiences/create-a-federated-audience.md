@@ -1,22 +1,22 @@
 ---
 title: Crear una audiencia federada
-seo-title: Create a federated audience | Engage with Audiences from your Data Warehouse using Federated Audience Composition
+seo-title: Create a federated audience | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: Crear una audiencia federada
-description: En este ejercicio, configuramos una conexión entre Adobe Experience Platform y su Data Warehouse empresarial para habilitar la Composición de audiencias federada.
+description: En este ejercicio, creamos una audiencia desde el almacén de datos de Snowflake utilizando la Composición de audiencia federada.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a507cab5-dba9-4bf7-a043-d7c967e9e07d
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '339'
 ht-degree: 0%
 
 ---
 
 # Crear una audiencia federada
 
-A continuación, le guiaremos a través de la creación de una audiencia desde nuestro Data Warehouse mediante la Composición de audiencia federada. La audiencia está compuesta por clientes de SecurFinancial que tienen una puntuación crediticia de 650 o más y que actualmente no tienen un préstamo en su cartera de SecurFinancial.
+A continuación, le guiaremos a través de la creación de una audiencia desde el almacén de datos de Snowflake mediante Federated Audience Composition. La audiencia está compuesta por clientes de SecurFinancial que tienen una puntuación crediticia de 650 o más y que actualmente no tienen un préstamo en su cartera de SecurFinancial.
 
 ## Pasos
 
@@ -64,6 +64,6 @@ A continuación, le guiaremos a través de la creación de una audiencia desde n
 >
 > En este ejemplo, la información de producto y crédito se utilizó para crear nuestra audiencia a través del acceso directo a los datos empresariales de Snowflake, sin hacer una copia de ella en Adobe Experience Platform. Una vez que el sistema externo procesa la consulta, solo se transfieren los valores relevantes de correo electrónico, productos actuales y nombre a la definición de audiencia para la activación descendente. Esto se aplica a todos los destinos compatibles con RTCDP.
 
-Para obtener más información sobre la composición de audiencias, visita [Experience League](https://experienceleague.adobe.com/es/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
+Para obtener más información sobre la composición de audiencias, visita [Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
 
 Ahora que se ha creado nuestra audiencia federada, [la asignaremos a una cuenta S3](map-federated-audience-to-s3.md).

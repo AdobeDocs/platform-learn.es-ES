@@ -1,20 +1,20 @@
 ---
-title: Asignación de una audiencia federada a S3
-seo-title: Map a federated audience to S3 | Engage with Audiences from your Data Warehouse using Federated Audience Composition
+title: Asignación de una audiencia federada a un destino de S3
+seo-title: Map a Federated Audience to an S3 Destination | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: Asignación de una audiencia federada a S3
 description: En este ejercicio, asignaremos una audiencia federada a un destino de Real-Time CDP descendente para ofrecer compatibilidad con una experiencia sin conexión personalizada.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a47b8f7b-7bd0-43a0-bc58-8b57d331b444
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
 
-# Asignar una audiencia federada a S3 para aprovechar los atributos de audiencia para el enriquecimiento
+# Asignación de una audiencia federada a un destino de S3 para aprovechar los atributos de audiencia para el enriquecimiento
 
 Puede aprovechar los atributos de audiencia en su almacén de datos para enriquecer la experiencia de su audiencia en flujos de trabajo de activación descendentes mediante destinos de RTCDP. Para SecurFinancial, estos atributos federados se pueden utilizar para mejorar la experiencia de personalización sin conexión de la audiencia del cliente. A continuación, la audiencia federada se asigna a un destino preconfigurado de Amazon S3.
 
@@ -50,6 +50,6 @@ Puede aprovechar los atributos de audiencia en su almacén de datos para enrique
 
 >[**!SUMMARY**]
 >
-> Creamos con éxito una audiencia y la activamos en un destino S3 con facilidad. La interfaz de usuario sencilla permite a los equipos de marketing crear y activar audiencias rápidamente sin mover los datos subyacentes.
+> Creamos con éxito una audiencia y la activamos en un destino S3 con facilidad. Cualquier otra solución puede captar esta audiencia y utilizarla de inmediato. La interfaz de usuario sencilla permite a los equipos de marketing crear y activar audiencias rápidamente sin mover los datos subyacentes. Los clientes que siguen este enfoque han entrado en funcionamiento con su primer uso en aproximadamente un mes.
 
 Ahora [crearemos un recorrido](build-journey-federated-audience.md).

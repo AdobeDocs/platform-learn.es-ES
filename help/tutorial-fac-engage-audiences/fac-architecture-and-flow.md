@@ -1,12 +1,13 @@
 ---
 title: Composición de audiencia federada Arquitectura y flujo de alto nivel
-seo-title: Federated Audience Composition High-level Architecture & Flow | Engage with Audiences from your Data Warehouse using Federated Audience Composition
-breadcrumb-title: Composición de audiencia federada Arquitectura y flujo de alto nivel
+seo-title: Federated Audience Composition high-level architecture & flow | Engage with audiences directly from your data warehouse using Federated Audience Composition
+breadcrumb-title: Flujo y arquitectura de alto nivel de composición de audiencia federada
 description: Descripción general de la arquitectura de alto nivel y del flujo de Composición de audiencias federada.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-high-level-architecture.jpg
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+exl-id: 4cb0b730-4206-476b-93d9-776dfbd464ff
+source-git-commit: 0564f516cfba7ea09ac9da19d94f46d984e9e00a
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 0%
@@ -14,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# Composición de audiencia federada Arquitectura y flujo de alto nivel
+# Flujo y arquitectura de alto nivel de composición de audiencia federada
 
 Antes de sumergirnos en los pasos para dar soporte al escenario comercial de SecurFinancial, revisaremos la arquitectura de alto nivel y el flujo para este enfoque de CDP componible.
 
@@ -27,4 +28,3 @@ Permite a las empresas procesar rápidamente la información almacenada en uno o
 ![fac-Architecture](assets/fac-architecture.png)
 
 Ahora pasaremos a crear una [conexión de Data Warehouse](data-warehouse-connection.md).
-

@@ -1,24 +1,24 @@
 ---
 title: Ofrezca personalización "en el momento" mediante Edge Network
-seo-title: Deliver "in-the moment" personalization using Edge Network | Engage with Audiences from your Data Warehouse using Federated Audience Composition
+seo-title: Deliver "in-the moment" personalization using Edge Network | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: Ofrezca personalización "en el momento" mediante Edge Network
 description: En este ejercicio, la audiencia federada se evalúa en Edge para un retargeting instantáneo "en el momento".
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-drive-in-the-moment-personalization.jpg
 exl-id: 20bfafb1-1d1b-48d8-84eb-97d4c9e03b76
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '192'
 ht-degree: 0%
 
 ---
 
 # Ofrezca personalización &quot;en el momento&quot; mediante Edge Network
 
-La composición de audiencias federada permite enriquecer audiencias existentes en Adobe Experience Platform (AEP) utilizando datos de audiencia compuestos que se han federado desde Enterprise Data Warehouse. Estos datos no se mantendrán en Adobe Experience Platform.
+La composición de audiencias federada permite enriquecer audiencias existentes en Adobe Experience Platform (AEP) utilizando datos de audiencia compuestos que se han federado desde Enterprise Data Warehouse. Estos datos no se mantendrán en Adobe Experience Platform, pero puede usar las capacidades de [reenvío de eventos](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview){target="_blank"} para enviar estos datos directamente a su Data Warehouse.
 
-En este ejercicio visual, utilizamos una audiencia federada que consulta con la puntuación crediticia y la actividad de préstamo para enriquecer la audiencia de comportamiento de los visitantes de la página web de la solicitud de préstamo.
+En este ejercicio, utilizamos una audiencia federada que consulta con la puntuación crediticia y la actividad de préstamo para enriquecer la audiencia de comportamiento de los visitantes de la página web de la solicitud de préstamo.
 
 Al evaluar esta audiencia en Edge, redireccionamos instantáneamente los visitantes de la página de solicitud de préstamo aprobada previamente con ofertas personalizadas en el sitio.
 
