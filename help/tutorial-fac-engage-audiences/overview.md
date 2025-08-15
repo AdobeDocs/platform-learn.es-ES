@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Interactúe con las audiencias de su Data Warehouse mediante la composición de audiencias federada
 
-La Composición de audiencias federada (FAC) es una potente función disponible para los entornos de Adobe Real-Time Customer Data Platform (Real-Time CDP) y Adobe Journey Optimizer. Permite a los arquitectos e ingenieros de datos revisar y activar audiencias de alto valor directamente desde [almacenes de datos empresariales admitidos](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}, sin copiar ni mover datos de clientes a Adobe Experience Platform (AEP). Este enfoque de CDP componible (una solución a medida para los clientes) se alinea con las tendencias del sector, lo que permite a las empresas aprovechar su infraestructura de datos para experiencias digitales personalizadas y, al mismo tiempo, mantener la gobernanza de los datos.
+La Composición de audiencias federada (FAC) es una potente función disponible para los entornos de Adobe Real-Time Customer Data Platform (Real-Time CDP) y Adobe Journey Optimizer. Permite a los arquitectos e ingenieros de datos revisar y activar audiencias de alto valor directamente desde [almacenes de datos empresariales admitidos](https://experienceleague.adobe.com/es/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}, sin copiar ni mover datos de clientes a Adobe Experience Platform (AEP). Este enfoque de CDP componible (una solución a medida para los clientes) se alinea con las tendencias del sector, lo que permite a las empresas aprovechar su infraestructura de datos para experiencias digitales personalizadas y, al mismo tiempo, mantener la gobernanza de los datos.
 
 ## Contexto empresarial
 
@@ -46,10 +46,10 @@ Para realizar actividades similares en su entorno, asegúrese de que dispone de 
 
 - Acceso a una cuenta de Adobe Experience Platform aprovisionada con Real-Time CDP o Journey Optimizer.
 - Permisos de administrador del sistema o la capacidad de configurar permisos.
-- Familiaridad con conceptos de Adobe Experience Platform, tales como esquemas, conjuntos de datos y audiencias (recomendado: complete la [Introducción a la lista de reproducción de Adobe Experience Platform](https://experienceleague.adobe.com/en/playlists/experience-platform-introduction?lang=en){target="_blank"} en Experience League).
-- Acceso a un [almacén de datos empresarial](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"} compatible.
+- Familiaridad con conceptos de Adobe Experience Platform, tales como esquemas, conjuntos de datos y audiencias (recomendado: complete la [Introducción a la lista de reproducción de Adobe Experience Platform](https://experienceleague.adobe.com/es/playlists/experience-platform-introduction?lang=en){target="_blank"} en Experience League).
+- Acceso a un [almacén de datos empresarial](https://experienceleague.adobe.com/es/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"} compatible.
 - Conocimientos básicos de SQL para consultar almacenes de datos.
 - **Entornos de espacio aislado**: cree un espacio aislado en la instancia de su organización para experimentar con seguridad sin afectar a los datos de producción.
-- **Conexión de Data Warehouse**: este tutorial usa una conexión de Snowflake, pero puede usar cualquier [almacén de datos compatible](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites).
+- **Conexión de Data Warehouse**: este tutorial usa una conexión de Snowflake, pero puede usar cualquier [almacén de datos compatible](https://experienceleague.adobe.com/es/docs/federated-audience-composition/using/start/access-prerequisites).
 
 Primero, vamos a revisar la [Arquitectura y flujo de alto nivel para la composición de audiencias federada](fac-architecture-and-flow.md).

@@ -64,6 +64,6 @@ A continuación, le guiaremos a través de la creación de una audiencia desde n
 >
 > En este ejemplo, la información de producto y crédito se utilizó para crear nuestra audiencia a través del acceso directo a los datos empresariales de Snowflake, sin hacer una copia de ella en Adobe Experience Platform. Una vez que el sistema externo procesa la consulta, solo se transfieren los valores relevantes de correo electrónico, productos actuales y nombre a la definición de audiencia para la activación descendente. Esto se aplica a todos los destinos compatibles con RTCDP.
 
-Para obtener más información sobre la composición de audiencias, visita [Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
+Para obtener más información sobre la composición de audiencias, visita [Experience League](https://experienceleague.adobe.com/es/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
 
 Ahora que se ha creado nuestra audiencia federada, [la asignaremos a una cuenta S3](map-federated-audience-to-s3.md).
