@@ -123,7 +123,7 @@ Establezca **Name** en `Consumer Services`.
 
 Establezca **Description** en `Handles residential offerings like mobile plans, internet packages, and customer support.`.
 
-Establezca el posible cliente de la unidad de negocio **1} en usted mismo.**
+Establezca el posible cliente de la unidad de negocio **1&rbrace; en usted mismo.**
 
 Una vez finalizado, haga clic en la flecha para volver a la pantalla anterior.
 
@@ -137,7 +137,7 @@ Establecer **Name** en `Enterprise & Business Solutions`
 
 Definir **Descripción** en `Provides connectivity, cloud, and managed services to corporate clients and government entities.`
 
-Establezca el posible cliente de la unidad de negocio **1} en usted mismo.**
+Establezca el posible cliente de la unidad de negocio **1&rbrace; en usted mismo.**
 
 Una vez finalizado, haga clic en la flecha para volver a la pantalla anterior.
 
@@ -151,7 +151,7 @@ Establecer **Name** en `Sales & Marketing`
 
 Definir **Descripción** en `Drives customer acquisition, brand strategy, advertising, and market segmentation.`
 
-Establezca el posible cliente de la unidad de negocio **1} en usted mismo.**
+Establezca el posible cliente de la unidad de negocio **1&rbrace; en usted mismo.**
 
 Una vez finalizado, haga clic en la flecha para volver a la pantalla anterior.
 
