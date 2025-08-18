@@ -4,9 +4,9 @@ description: Introducción a Workfront Planning
 kt: 5342
 doc-type: tutorial
 exl-id: 26fa872b-c872-46b6-8f56-fa41696100da
-source-git-commit: 645d078b55b7126a692dedded71208e1f3c04971
+source-git-commit: 62651668752d5f711c102b763564d01c561f7eb4
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1234'
 ht-degree: 1%
 
 ---
@@ -85,7 +85,7 @@ Haga clic para abrir el tipo de registro **Unidad de negocio** recién creado.
 
 ![Planificación de Workfront](./images/wfpl10.png)
 
-Ahora verá una vista de tabla vacía, porque el tipo de registro recién creado aún no tiene ningún campo definido.
+Ahora verá una vista de tabla vacía, ya que el tipo de registro recién creado aún no tiene definido ningún registro de unidad de negocio.
 
 ![Planificación de Workfront](./images/wfpl11.png)
 
@@ -115,7 +115,49 @@ Haga clic en **Guardar**.
 
 ![Planificación de Workfront](./images/wfpl17.png)
 
-Ahora ha creado un nuevo tipo de registro y ha eliminado y creado campos. Vuelva a la pantalla de información general de Workspace haciendo clic en la flecha de la esquina superior izquierda.
+Haga clic en los 3 puntos **...** del primer registro y seleccione **Ver**.
+
+![Planificación de Workfront](./images/wfpla1.png)
+
+Establezca **Name** en `Consumer Services`.
+
+Establezca **Description** en `Handles residential offerings like mobile plans, internet packages, and customer support.`.
+
+Establezca el posible cliente de la unidad de negocio **1} en usted mismo.**
+
+Una vez finalizado, haga clic en la flecha para volver a la pantalla anterior.
+
+![Planificación de Workfront](./images/wfpla2.png)
+
+Haga clic en los 3 puntos **...** del segundo registro y seleccione **Ver**.
+
+![Planificación de Workfront](./images/wfpla3.png)
+
+Establecer **Name** en `Enterprise & Business Solutions`
+
+Definir **Descripción** en `Provides connectivity, cloud, and managed services to corporate clients and government entities.`
+
+Establezca el posible cliente de la unidad de negocio **1} en usted mismo.**
+
+Una vez finalizado, haga clic en la flecha para volver a la pantalla anterior.
+
+![Planificación de Workfront](./images/wfpla4.png)
+
+Haga clic en los 3 puntos **...** del tercer registro y seleccione **Ver**.
+
+![Planificación de Workfront](./images/wfpla5.png)
+
+Establecer **Name** en `Sales & Marketing`
+
+Definir **Descripción** en `Drives customer acquisition, brand strategy, advertising, and market segmentation.`
+
+Establezca el posible cliente de la unidad de negocio **1} en usted mismo.**
+
+Una vez finalizado, haga clic en la flecha para volver a la pantalla anterior.
+
+![Planificación de Workfront](./images/wfpla6.png)
+
+Ha creado un nuevo tipo de registro, ha eliminado y creado campos y ha creado 3 unidades de negocio. Vuelva a la pantalla de información general de Workspace haciendo clic en la flecha de la esquina superior izquierda.
 
 ![Planificación de Workfront](./images/wfpl18.png)
 
@@ -129,7 +171,7 @@ Haga clic para abrir **Campañas**.
 
 ![Planificación de Workfront](./images/wfpl20.png)
 
-Haga clic en el icono **+** para crear un nuevo campo. Seleccione **Nueva conexión** y luego seleccione **Personas**.
+Haga clic en el icono **+** para crear un nuevo campo. Seleccione **Nueva conexión** y luego seleccione **Unidad de negocio**.
 
 ![Planificación de Workfront](./images/wfpl21.png)
 
@@ -151,7 +193,7 @@ En la pantalla de información general de campañas, haga clic en los 3 puntos *
 
 ![Planificación de Workfront](./images/wfpl25.png)
 
-Cambie el nombre a `Campaign Request Form`. Haga clic en **Guardar**.
+Cambie el nombre a `Campaign Request Form`. Haga clic en **Crear**.
 
 ![Planificación de Workfront](./images/wfpl26.png)
 
@@ -187,6 +229,8 @@ Definir **resumen de campaña** en:
 The CitiSignal Fiber Launch campaign introduces CitiSignal’s flagship fiber internet service—CitiSignal Fiber Max—to key residential markets. This campaign is designed to build awareness, drive sign-ups, and establish CitiSignal as the go-to provider for ultra-fast, reliable, and future-ready internet. The campaign will highlight the product’s benefits for remote professionals, online gamers, and smart home families, using persona-driven messaging across digital and physical channels.
 ```
 
+Rellene los demás campos como desee.
+
 Haga clic en **Enviar solicitud**.
 
 ![Planificación de Workfront](./images/wfpl33.png)
@@ -195,7 +239,7 @@ Haga clic en **X** para cerrar la ventana emergente.
 
 ![Planificación de Workfront](./images/wfpl34.png)
 
-Luego debe ver la campaña recién creada en la descripción general.
+Luego debería ver la campaña recién creada en la descripción general.
 
 ![Planificación de Workfront](./images/wfpl35.png)
 
@@ -297,19 +341,15 @@ Después de un par de segundos, debería ver una confirmación de que la automat
 
 ![Planificación de Workfront](./images/wfpl47.png)
 
-Para comprobar el programa en Workfront, abra el menú y haga clic en **Portafolios**.
+Para comprobar el programa en Workfront, desplácese hacia la derecha y haga clic en el programa en la columna **Programa conectado**.
 
 ![Planificación de Workfront](./images/wfpl48.png)
 
-Abra su portafolio, que debe llamarse `--aepUserLdap-- - Marketing`.
-
-![Planificación de Workfront](./images/wfpl49.png)
-
-Vaya a **Programas** y debería ver el programa que acaba de crear la automatización que configuró.
+Luego debería ver el programa que acaba de crear la automatización configurada.
 
 ![Planificación de Workfront](./images/wfpl50.png)
 
-Paso siguiente: [1.2.2 TBD](./ex1.md){target="_blank"}
+Siguiente paso: [Resumen y beneficios](./summary.md){target="_blank"}
 
 Volver a [Introducción a Workfront Planning](./wfplanning.md){target="_blank"}
 
