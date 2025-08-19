@@ -3,10 +3,9 @@ title: Resumen y ventajas
 description: Resumen y ventajas
 kt: 5342
 doc-type: tutorial
-exl-id: a465768c-349a-4671-99ef-d7a2f8bd8292
-source-git-commit: dd075b0296c6ba06d72b229145635060c2c6abb1
+source-git-commit: 93e074dac589b0a8773cfd097d24f7efec5400e9
 workflow-type: tm+mt
-source-wordcount: '24'
+source-wordcount: '23'
 ht-degree: 4%
 
 ---
@@ -21,6 +20,6 @@ Felicitaciones...
 
 ## Eche un vistazo a esto
 
-Volver a la administración de [flujos de trabajo con Adobe Workfront](./workfront.md){target="_blank"}
+Volver a [Adobe Experience Manager Assets](./aemassets.md){target="_blank"}
 
 [Volver a todos los módulos](../../../overview.md)

@@ -3,16 +3,17 @@ title: Configuración del complemento Photoshop + Workfront
 description: Configuración del complemento Photoshop + Workfront
 kt: 5342
 doc-type: tutorial
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+exl-id: 0695845e-d18e-416d-a8f4-34464618995a
+source-git-commit: 917ebcd2dd5d8316413a183bd2c1a048c090428c
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 1%
 
 ---
 
-# 2.2.5 Configuración del complemento Photoshop + Workfront
+# 1.2.5 Configuración del complemento Photoshop + Workfront
 
-## 2.2.5.1 Instalar el complemento de Workfront para Photoshop
+## 1.2.5.1 Instalar el complemento de Workfront para Photoshop
 
 Para configurar la integración entre Workfront y Photoshop, instale la aplicación de Creative Cloud en su equipo. Inicie sesión con su Adobe ID.
 
@@ -42,7 +43,7 @@ Entonces verá esto...
 
 ![WF](./images/wf7.png)
 
-## 2.2.5.2 Configurar el complemento en Photoshop
+## 1.2.5.2 Configurar el complemento en Photoshop
 
 Abra Photoshop. En la barra de tareas, vaya a **Complementos** > **Workfront para Adobe Photoshop** > haga clic en **Adobe Workfront**.
 
