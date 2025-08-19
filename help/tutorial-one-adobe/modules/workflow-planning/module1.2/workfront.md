@@ -4,10 +4,10 @@ description: Administración de flujos de trabajo con Adobe Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 8cffcb71-63bd-41cb-b7cd-ab34a0c74499
-source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
+source-git-commit: a63c01ebe81df39569981d62b85d0461119ecf66
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 2%
+source-wordcount: '225'
+ht-degree: 1%
 
 ---
 
@@ -15,11 +15,17 @@ ht-degree: 2%
 
 ## Objetivos de aprendizaje
 
-- Aprenda a utilizar Adobe Workfront de varias formas.
+Después de completar este laboratorio, se familiarizará con los siguientes elementos:
+
+- Explicación de la jerarquía de objetos de Workfront, incluidos portafolios, programas, proyectos y tareas
+- Cree un nuevo proyecto con una plantilla adaptada para una campaña de marketing.
+- Asignar tareas a los recursos por función y disponibilidad.
+- Cargar un documento y solicitar aprobación
+- Envíe el documento aprobado a AEM Assets CS con la integración integrada
 
 ## Requisitos previos
 
-- Acceso a Workfront y Workfront Fusion
+- Acceso a Adobe Workfront con una licencia de planificador/estándar de Workfront.
 
 ## Ejercicios
 
