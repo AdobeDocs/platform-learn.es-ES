@@ -7,7 +7,7 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a507cab5-dba9-4bf7-a043-d7c967e9e07d
-source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
+source-git-commit: 41298ea7c79a5b540c546be93dcb14201ce27ce3
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 0%
@@ -60,10 +60,10 @@ A continuación, le guiaremos a través de la creación de una audiencia desde e
 
 10. Haga clic en **Guardar** y, a continuación, haga clic en **Iniciar** para ejecutar la consulta de la composición.
 
->[**RESUMEN**]
->
-> En este ejemplo, la información de producto y crédito se utilizó para crear nuestra audiencia a través del acceso directo a los datos empresariales de Snowflake, sin hacer una copia de ella en Adobe Experience Platform. Una vez que el sistema externo procesa la consulta, solo se transfieren los valores relevantes de correo electrónico, productos actuales y nombre a la definición de audiencia para la activación descendente. Esto se aplica a todos los destinos compatibles con RTCDP.
+### RESUMEN
 
-Para obtener más información sobre la composición de audiencias, visita [Experience League](https://experienceleague.adobe.com/es/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
+En este ejemplo, la información de producto y crédito se utilizó para crear nuestra audiencia a través del acceso directo a los datos empresariales de Snowflake, sin hacer una copia de ella en Adobe Experience Platform. Una vez que el sistema externo procesa la consulta, solo se transfieren los valores relevantes de correo electrónico, productos actuales y nombre a la definición de audiencia para la activación descendente. Esto se aplica a todos los destinos compatibles con RTCDP.
+
+Para obtener más información sobre la composición de audiencias, visita [Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
 
 Ahora que se ha creado nuestra audiencia federada, la [asignaremos a un destino S3 en Experience Platform](map-federated-audience-to-s3.md).
