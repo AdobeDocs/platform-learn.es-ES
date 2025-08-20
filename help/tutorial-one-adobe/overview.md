@@ -3,9 +3,9 @@ title: 'Información general: tutorial técnico completo: One Adobe'
 description: 'Tutorial técnico completo: One Adobe'
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 8ed0b38056c6e2db4937bfaa9cfb53f5878250ee
+source-git-commit: 8e0356921360017fa00d59fb323839b6ac1cd2c1
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1207'
 ht-degree: 2%
 
 ---
@@ -90,11 +90,19 @@ En este módulo, utilizará Adobe Express para crear imágenes y vídeos, y comp
 
 En este módulo, utilizará Adobe Frame.io en combinación con Adobe Premiere Pro para colaborar y revisar imágenes y vídeos.
 
+[1.6 GenStudio for Performance Marketing - Extensibilidad](./modules/creation-production/module1.6/genstudioext.md){target="_blank"}
+
+En este módulo, creará una aplicación personalizada para ampliar la capacidad en GenStudio for Performance Marketing mediante Adobe IO y App Builder.
+
 ### &#x200B;3. Administración de recursos
 
 [1.1 Adobe Experience Manager Cloud Service &amp; Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
 
-En este módulo básico, configurará el programa Cloud Service de Adobe Experience Manager, el sitio y el repositorio de Assets.
+En este módulo, configurará el programa Adobe Experience Manager Cloud Service, el sitio y el repositorio de Assets.
+
+[1.2 Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"}
+
+En este módulo, explorará los AEM Assets.
 
 ### &#x200B;4. Envío y activación
 

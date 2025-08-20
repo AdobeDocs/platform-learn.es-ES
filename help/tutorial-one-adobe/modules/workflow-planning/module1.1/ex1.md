@@ -4,16 +4,20 @@ description: Introducción a Workfront Planning
 kt: 5342
 doc-type: tutorial
 exl-id: 26fa872b-c872-46b6-8f56-fa41696100da
-source-git-commit: 62651668752d5f711c102b763564d01c561f7eb4
+source-git-commit: bdb5b2c2ae1cb1380c69bc1ef2d12e7d8b6ea05d
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1258'
 ht-degree: 1%
 
 ---
 
 # 1.1.1 Introducción a Workfront Planning
 
-## 1.1.1.1 Terminología de planificación de Workfront
+## 1.1.1.1 resumen de campaña de CitiSignal
+
+Para entender el contexto de CitiSignal y lo que están tratando de lograr, descargue y lea el Resumen de Campaña de CitiSignal aquí: [CitiSignal-Fiber-Launch-Winter-2026.pdf](./../../../assets/brief/CitiSignal-Fiber-Launch-Winter-2026.pdf).
+
+## 1.1.1.2 Terminología de planificación de Workfront
 
 A continuación se muestran los objetos y conceptos principales de Workfront Planning:
 
@@ -31,7 +35,7 @@ A continuación se muestran los objetos y conceptos principales de Workfront Pla
 
 Ahora, se pondrán manos a la obra y empezarán a crear algunos de estos objetos.
 
-## 1.1.1.2 Workspace, tipo de registro, campos
+## 1.1.1.3 Workspace, tipo de registro, campos
 
 Vaya a [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Haga clic para abrir **Workfront**.
 
@@ -61,7 +65,7 @@ Entonces deberías tener esto.
 
 ![Planificación de Workfront](./images/wfpl7a.png)
 
-## 1.1.1.3 taxonomías: Tipo de registro y campos
+## 1.1.1.4 taxonomías: Tipo de registro y campos
 
 En **Taxonomías**, haga clic en **+ Agregar tipo de registro** y, a continuación, seleccione **Agregar manualmente**.
 
@@ -123,7 +127,7 @@ Establezca **Name** en `Consumer Services`.
 
 Establezca **Description** en `Handles residential offerings like mobile plans, internet packages, and customer support.`.
 
-Establezca el posible cliente de la unidad de negocio **1&rbrace; en usted mismo.**
+Establezca el posible cliente de la unidad de negocio **1} en usted mismo.**
 
 Una vez finalizado, haga clic en la flecha para volver a la pantalla anterior.
 
@@ -137,7 +141,7 @@ Establecer **Name** en `Enterprise & Business Solutions`
 
 Definir **Descripción** en `Provides connectivity, cloud, and managed services to corporate clients and government entities.`
 
-Establezca el posible cliente de la unidad de negocio **1&rbrace; en usted mismo.**
+Establezca el posible cliente de la unidad de negocio **1} en usted mismo.**
 
 Una vez finalizado, haga clic en la flecha para volver a la pantalla anterior.
 
@@ -151,7 +155,7 @@ Establecer **Name** en `Sales & Marketing`
 
 Definir **Descripción** en `Drives customer acquisition, brand strategy, advertising, and market segmentation.`
 
-Establezca el posible cliente de la unidad de negocio **1&rbrace; en usted mismo.**
+Establezca el posible cliente de la unidad de negocio **1} en usted mismo.**
 
 Una vez finalizado, haga clic en la flecha para volver a la pantalla anterior.
 
@@ -165,7 +169,7 @@ Entonces debería ver esto.
 
 ![Planificación de Workfront](./images/wfpl19.png)
 
-## 1.1.1.4 tipos de registros operativos: Campos
+## 1.1.1.5 tipos de registros operativos: Campos
 
 Haga clic para abrir **Campañas**.
 
@@ -187,7 +191,7 @@ El nuevo campo se muestra en la vista de tabla.
 
 ![Planificación de Workfront](./images/wfpl24.png)
 
-## 1.1.1.5 crear un formulario de solicitud
+## 1.1.1.6 crear un formulario de solicitud
 
 En la pantalla de información general de campañas, haga clic en los 3 puntos **...** y, a continuación, seleccione **Crear formulario de solicitud**.
 
@@ -209,7 +213,7 @@ Haga clic en la flecha de la esquina superior izquierda para volver a la pantall
 
 ![Planificación de Workfront](./images/wfpl29.png)
 
-## 1.1.1.6 Enviar un nuevo registro mediante el formulario de solicitud
+## 1.1.1.7 Enviar un nuevo registro mediante el formulario de solicitud
 
 En la pantalla de información general de Campañas, haga clic en **+ Nuevo registro**.
 
@@ -243,7 +247,7 @@ Luego debería ver la campaña recién creada en la descripción general.
 
 ![Planificación de Workfront](./images/wfpl35.png)
 
-## 1.1.1.7: crear Portfolio y formulario personalizado
+## 1.1.1.8: crear Portfolio y formulario personalizado
 
 En el siguiente paso, creará una automatización que tomará información de la campaña que creó en Workfront Planning y que utilizará esa información en Workfront para crear un programa. Antes de crear la automatización, hay dos cosas que hay que configurar primero en Workfront: un portafolio y un formulario personalizado.
 

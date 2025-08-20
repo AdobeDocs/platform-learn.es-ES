@@ -1,0 +1,57 @@
+---
+title: GenStudio for Performance Marketing
+description: GenStudio for Performance Marketing
+role: Developer
+level: Beginner
+jira: KT-5342
+doc-type: Tutorial
+source-git-commit: 8e0356921360017fa00d59fb323839b6ac1cd2c1
+workflow-type: tm+mt
+source-wordcount: '317'
+ht-degree: 3%
+
+---
+
+# 1.6 GenStudio for Performance Marketing: extensibilidad
+
+Adobe GenStudio for Performance Marketing facilita la generación de contenido de marketing, la distribución y el análisis de rendimiento impulsados por IA para las organizaciones. Admite la generación de contenido que se adhiere a los estándares de su marca y cumple con las políticas de su empresa. Los desarrolladores de aplicaciones ampliables pueden utilizar el marco de herramientas y puntos de conexión de GenStudio for Performance Marketing para ampliar la funcionalidad principal del producto y satisfacer las necesidades específicas de creación de contenido y conformidad de su organización.
+
+GenStudio for Performance Marketing es un producto de Adobe Experience Cloud y utiliza el marco de trabajo de extensibilidad de ese ecosistema de productos. Los desarrolladores de aplicaciones extensibles utilizan Adobe App Builder y la Extensibilidad de la interfaz de usuario de Adobe GenStudio SDK para desarrollar y distribuir aplicaciones personalizadas compatibles con casos de uso específicos.
+
+Los complementos de GenStudio for Performance Marketing son las aplicaciones de Adobe App Builder que crea para ampliar las capacidades de los productos y admitir la creación y validación de contenido de su organización. En el ecosistema de GenStudio, los términos aplicaciones de App Builder, extensiones y aplicaciones ampliables hacen referencia a Complementos.
+
+## Requisitos previos
+
+- Acceso a Adobe GenStudio for Performance Marketing
+- Acceso a App Builder
+- Acceso a un bloque de Amazon AWS S3
+
+## Ejercicios
+
+[1.6.1 Adobe IO y App Builder](./ex1.md){target="_blank"}
+
+En este ejercicio, configurará el proyecto de Adobe IO con App Builder.
+
+[1.6.2 Cree su AWS S3 bucket](./ex2.md){target="_blank"}
+
+En este ejercicio, creará su contenedor de Amazon AWS S3 y su usuario de IAM.
+
+[1.6.3 Cree su aplicación DAM externa](./ex3.md){target="_blank"}
+
+En este ejercicio, creará la aplicación DAM externa mediante una plantilla predefinida.
+
+[1.6.4 Implementa tu código y publica tu aplicación en privado](./ex4.md){target="_blank"}
+
+En este ejercicio, implementará el código en Adobe IO y App Builder y publicará la aplicación de forma privada.
+
+[Resumen y beneficios](./summary.md){target="_blank"}
+
+Resumen de este módulo y descripción general de las ventajas.
+
+![Perspectivas técnicas](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+
+>[!NOTE]
+>
+>Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, póngase en contacto directamente con Tech Insiders, enviando un correo electrónico a **techinsiders@adobe.com**.
+
+Volver a [Todos los módulos](../../../overview.md){target="_blank"}

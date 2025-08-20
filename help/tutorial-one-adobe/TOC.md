@@ -4,9 +4,9 @@ breadcrumb-title: Un tutorial técnico de Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 93e074dac589b0a8773cfd097d24f7efec5400e9
+source-git-commit: cc45eefc9042d27ae38fc9bb2dd9b6c1af9a9e4b
 workflow-type: tm+mt
-source-wordcount: '1298'
+source-wordcount: '1339'
 ht-degree: 3%
 
 ---
@@ -81,6 +81,13 @@ ht-degree: 3%
       + [1.5.2 Aprobaciones con Frame.io](/help/tutorial-one-adobe/modules/creation-production/module1.5/ex2.md)
       + [1.5.3 Frame.io y Premiere Pro](/help/tutorial-one-adobe/modules/creation-production/module1.5/ex3.md)
       + [Resumen y beneficios](/help/tutorial-one-adobe/modules/creation-production/module1.5/summary.md)
+   + 1.6 GenStudio for Performance Marketing: extensibilidad {#crpr6}
+      + [Información general](/help/tutorial-one-adobe/modules/creation-production/module1.6/genstudioext.md)
+      + [1.6.1 Adobe IO y App Builder](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex1.md)
+      + [1.6.2 Crear el contenedor de AWS S3](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex2.md)
+      + [1.6.3 Crear su aplicación DAM externa](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex3.md)
+      + [1.6.4 Implementar el código y publicar la aplicación de forma privada](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex4.md)
+      + [Resumen y beneficios](/help/tutorial-one-adobe/modules/creation-production/module1.6/summary.md)
 
 + Administración de recursos {#assetmgmt}
    + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
