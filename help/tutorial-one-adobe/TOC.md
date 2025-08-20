@@ -4,9 +4,9 @@ breadcrumb-title: Un tutorial técnico de Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: cc45eefc9042d27ae38fc9bb2dd9b6c1af9a9e4b
+source-git-commit: 10c3f0a3ae1540562f0f46a5936b1556e37a251b
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1337'
 ht-degree: 3%
 
 ---
@@ -85,8 +85,8 @@ ht-degree: 3%
       + [Información general](/help/tutorial-one-adobe/modules/creation-production/module1.6/genstudioext.md)
       + [1.6.1 Adobe IO y App Builder](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex1.md)
       + [1.6.2 Crear el contenedor de AWS S3](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex2.md)
-      + [1.6.3 Crear su aplicación DAM externa](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex3.md)
-      + [1.6.4 Implementar el código y publicar la aplicación de forma privada](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex4.md)
+      + [1.6.3 Creación e implementación de la aplicación DAM externa](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex3.md)
+      + [1.6.4 Publicar la aplicación de forma privada](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex4.md)
       + [Resumen y beneficios](/help/tutorial-one-adobe/modules/creation-production/module1.6/summary.md)
 
 + Administración de recursos {#assetmgmt}
