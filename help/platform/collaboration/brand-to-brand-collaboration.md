@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Conozca los casos de uso admitidos por la colaboración entre marcas y las funciones específicas introducidas para admitir estos flujos de trabajo.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470936/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3470939/?learn=on&enablevpops&captions=spa)

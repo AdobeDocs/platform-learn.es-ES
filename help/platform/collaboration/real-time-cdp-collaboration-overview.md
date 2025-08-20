@@ -41,7 +41,7 @@ Para obtener más información, consulte la [documentación](https://experiencel
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="real-time-cdp-collaboration-intro.md" title="Introducción a Real-Time CDP Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446801/?format=jpeg&nocache=1755703749870" alt="Introducción a Real-Time CDP Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446804/?format=jpeg&nocache=1755703749870&captions=spa" alt="Introducción a Real-Time CDP Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -64,7 +64,7 @@ Para obtener más información, consulte la [documentación](https://experiencel
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="rtcdp-overview-for-agency-practitioners.md" title="Información general de Real-Time CDP para profesionales de la agencia" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464657/?format=jpeg&nocache=1755703749854" alt="Información general de Real-Time CDP para profesionales de la agencia"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464661/?format=jpeg&nocache=1755703749854&captions=spa" alt="Información general de Real-Time CDP para profesionales de la agencia"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -87,7 +87,7 @@ Para obtener más información, consulte la [documentación](https://experiencel
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="rtcdp-collaboration-process-and-people.md" title="Real-Time CDP Collaboration: Proceso y personas" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464658/?format=jpeg&nocache=1755703749860" alt="Real-Time CDP Collaboration: Proceso y personas"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464672/?format=jpeg&nocache=1755703749860&captions=spa" alt="Real-Time CDP Collaboration: Proceso y personas"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -128,7 +128,7 @@ Para empezar, póngase en contacto con su administrador de Adobe Experience Plat
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../admin/add-product-administrators.md" title="Añadir administradores de productos para aplicaciones basadas en Adobe Experience Platform" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333860?format=jpeg&nocache=1755703750314" alt="Añadir administradores de productos para aplicaciones basadas en Adobe Experience Platform"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3423933?format=jpeg&nocache=1755703750314&captions=spa" alt="Añadir administradores de productos para aplicaciones basadas en Adobe Experience Platform"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -151,7 +151,7 @@ Para empezar, póngase en contacto con su administrador de Adobe Experience Plat
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="set-permissions-for-collaboration.md" title="Definición de permisos para Real-Time CDP Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452216/?format=jpeg&nocache=1755703750284" alt="Definición de permisos para Real-Time CDP Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452233/?format=jpeg&nocache=1755703750284&captions=spa" alt="Definición de permisos para Real-Time CDP Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -258,7 +258,7 @@ Para empezar, póngase en contacto con su administrador de Adobe Experience Plat
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-a-project.md" title="Creación de un proyecto en Real-Time CDP Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464033/?format=jpeg&nocache=1755703750674" alt="Creación de un proyecto en Real-Time CDP Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464037/?format=jpeg&nocache=1755703750674&captions=spa" alt="Creación de un proyecto en Real-Time CDP Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -281,7 +281,7 @@ Para empezar, póngase en contacto con su administrador de Adobe Experience Plat
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="brand-to-brand-collaboration.md" title="De marca a marca Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3470936/?format=jpeg&nocache=1755703750685" alt="De marca a marca Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3470939/?format=jpeg&nocache=1755703750685&captions=spa" alt="De marca a marca Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
