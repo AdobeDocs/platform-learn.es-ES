@@ -5,10 +5,11 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 1dd8b487cbd16e438e9c006c34e458ddb82cce64
+exl-id: 044677e4-7ca3-4dfe-9067-640983681ea7
+source-git-commit: 1f9a868c5e4ef4aa0e09d7f5d73a951006ee6c5a
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 6%
+source-wordcount: '502'
+ht-degree: 7%
 
 ---
 
@@ -139,19 +140,39 @@ Entonces debería ver esto.
 
 ![ETL](./images/bucket4.png)
 
-Puede descargar los archivos de imagen de CitiSignal [aquí](./../../asset-mgmt/module2.2/images/CitiSignal_Neon_Rabbit.zip){target="_blank"}.
+Puede descargar los archivos de imagen de CitiSignal [aquí](./images/package.zip){target="_blank"}.
 
 Exporte los archivos al escritorio.
 
 ![ETL](./images/bucket5.png)
 
-Tome los 2 archivos de imágenes de esa carpeta y suéltelos en la ventana de carga del compartimento S3. Haga clic en **Cargar**.
+Haga clic en **Agregar carpeta**.
 
 ![ETL](./images/bucket6.png)
 
-Entonces debería ver esto. El contenedor S3, los archivos de imagen y el usuario de IAM ya están listos para su uso en la aplicación DAM externa.
+Seleccione la carpeta **assets** de la carpeta de descarga **package**. Haga clic en **Cargar**.
 
 ![ETL](./images/bucket7.png)
+
+Entonces debería ver esto. Vuelva a hacer clic en **Agregar carpeta**.
+
+![ETL](./images/bucket8.png)
+
+Seleccione la carpeta **miniaturas** de la carpeta de descarga **paquete**. Haga clic en **Cargar**.
+
+![ETL](./images/bucket9.png)
+
+Entonces debería ver esto. Haga clic en **Cargar**.
+
+![ETL](./images/bucket10.png)
+
+La carga ha finalizado. Haga clic en **Cerrar**.
+
+![ETL](./images/bucket11.png)
+
+Ahora debería tener esta estructura de carpetas en el compartimento de S3.
+
+![ETL](./images/bucket12.png)
 
 ## Pasos siguientes
 
