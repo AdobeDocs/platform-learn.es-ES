@@ -3,9 +3,9 @@ title: Estado del contenido
 description: Estado del contenido
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 8e0356921360017fa00d59fb323839b6ac1cd2c1
+source-git-commit: d3f1a571cdb937c49b39cc149ce3f07f0f10dfab
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '433'
 ht-degree: 12%
 
 ---
@@ -36,7 +36,7 @@ A continuación se muestra una descripción general del estado del contenido en 
 | [1.3 GenStudio for Performance Marketing](./modules/creation-production/module1.3/genstudio.md){target="_blank"} | 16/06/2025 | Sí | - |
 | [1.4 Adobe Express y Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"} | 04/01/2025 | Sí | - |
 | [1.5 Optimice su flujo de trabajo con Frame.io](./modules/creation-production/module1.5/frameio.md){target="_blank"} | 08/02/2025 | Sí | - |
-| [1.6 GenStudio for Performance Marketing - Extensibilidad](./modules/creation-production/module1.6/genstudioext.md){target="_blank"} | 20/08/2025 | - | - |
+| [1.6 GenStudio for Performance Marketing - Extensibilidad](./modules/creation-production/module1.6/genstudioext.md){target="_blank"} | 21/08/2025 | Sí | - |
 
 
 ## &#x200B;3. Administración de recursos
