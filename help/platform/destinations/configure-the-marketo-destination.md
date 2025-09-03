@@ -23,7 +23,7 @@ ht-degree: 1%
 
 Descubra cómo el destino [!DNL Marketo Engage] permite una sincronización perfecta en tiempo real de los datos de audiencia y los atributos de perfil, lo que potencia el marketing unificado en toda su pila tecnológica. Con opciones de sincronización flexibles y una configuración optimizada, admite casos de uso como la renovación de la participación de posibles clientes, la actualización de perfiles y la ampliación del alcance de los recorridos B2B personalizados.
 
-Para obtener más información, revise la [documentación](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/adobe/marketo-engage-connection).
+Para obtener más información, revise la [documentación](https://experienceleague.adobe.com/es/docs/experience-platform/destinations/catalog/adobe/marketo-engage-connection).
 
 >[!VIDEO](https://video.tv.adobe.com/v/338248?learn=on&enablevpops)
 
