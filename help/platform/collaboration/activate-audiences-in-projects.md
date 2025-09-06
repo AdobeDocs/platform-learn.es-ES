@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Obtenga información sobre cómo activar audiencias en sus socios de colaboración en proyectos de Real-Time CDP Collaboration. Para obtener más información, visite la [documentación](https://experienceleague.adobe.com/es/docs/real-time-cdp-collaboration/using/collaborate/activate){target="_blank"}.
 
->[!VIDEO](https://video.tv.adobe.com/v/3471677/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3471681/?learn=on&enablevpops&captions=spa)

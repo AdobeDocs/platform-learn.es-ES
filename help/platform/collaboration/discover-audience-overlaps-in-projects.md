@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Obtenga información sobre cómo comparar superposiciones de audiencias dentro de proyectos de Real-Time CDP Collaboration. Para obtener más información, visite la [documentación](https://experienceleague.adobe.com/es/docs/real-time-cdp-collaboration/using/collaborate/discover){target="_blank"}.
 
->[!VIDEO](https://video.tv.adobe.com/v/3471675/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3471692/?learn=on&enablevpops&captions=spa)
