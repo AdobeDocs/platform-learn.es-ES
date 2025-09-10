@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo recopilar datos de identidad en un
 feature: Mobile SDK,Identities
 jira: KT-14633
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '960'
 ht-degree: 1%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 1%
 
 Obtenga información sobre cómo recopilar datos de identidad en una aplicación móvil.
 
-El servicio de identidad de Adobe Experience Platform le ayuda a obtener una mejor vista de sus clientes y sus comportamientos al unir identidades entre dispositivos y sistemas, lo que le permite ofrecer experiencias digitales personales impactantes en tiempo real. Los campos de identidad y las áreas de nombres son el pegamento que une diferentes fuentes de datos para crear un perfil de cliente en tiempo real de 360 grados.
+El servicio de identidad de Adobe Experience Platform le ayuda a obtener una mejor vista de sus clientes y de sus comportamientos. Los servicios vinculan identidades entre dispositivos y sistemas, y le permiten ofrecer experiencias digitales personales impactantes en tiempo real. Los campos de identidad y las áreas de nombres son el pegamento que une diferentes fuentes de datos para crear un perfil de cliente en tiempo real de 360 grados.
 
-Obtenga más información acerca de la [extensión de identidad](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) y el [servicio de identidad](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=es) en la documentación.
+Obtenga más información acerca de la [extensión de identidad](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) y el [servicio de identidad](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) en la documentación.
 
 ## Requisitos previos
 
@@ -35,7 +35,7 @@ En esta lección, deberá hacer lo siguiente:
 
 ## Configurar un área de nombres de identidad personalizada
 
-Las áreas de nombres de identidad son componentes de [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=es) que sirven como indicadores del contexto al que se relaciona una identidad. Por ejemplo, distinguen un valor de `name@email.com` como dirección de correo electrónico o `443522` como ID numérico de CRM.
+Las áreas de nombres de identidad son componentes de [Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) que sirven como indicadores del contexto al que se relaciona una identidad. Por ejemplo, distinguen un valor de `name@email.com` como dirección de correo electrónico o `443522` como ID numérico de CRM.
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ Para crear un área de nombres de identidad nueva:
 1. Seleccione **[!UICONTROL ID entre dispositivos]**.
 1. Seleccione **[!UICONTROL Crear]**.
 
-   ![crear área de nombres de identidad](assets/identity-create.png)
+   ![crear área de nombres de identidad](assets/identity-create.png){zoomable="yes"}
 
 
 
@@ -58,6 +58,10 @@ Para crear un área de nombres de identidad nueva:
 ## Actualización de identidades
 
 Desea actualizar la identidad estándar (correo electrónico) y la identidad personalizada (ID de Luma CRM) cuando el usuario inicia sesión en la aplicación.
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
 
 1. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** en el navegador del proyecto Xcode y busque la implementación de la función `func updateIdentities(emailAddress: String, crmId: String)`. Agregue el siguiente código a la función.
 
@@ -109,6 +113,65 @@ Desea actualizar la identidad estándar (correo electrónico) y la identidad per
    ```
 
 
+>[!TAB Android]
+
+1. Vaya a **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** en el navegador de Android Studio y busque la implementación de la función `fun updateIdentities(emailAddress: String, crmId: String) `. Agregue el siguiente código a la función.
+
+   ```kotlin
+   // Set up identity map, add identities to map and update identities
+   val identityMap = IdentityMap()
+   
+   val emailIdentity = IdentityItem(emailAddress, AuthenticatedState.AUTHENTICATED, true)
+   val crmIdentity = IdentityItem(crmId, AuthenticatedState.AUTHENTICATED, true)
+   identityMap.addItem(emailIdentity, "Email")
+   identityMap.addItem(crmIdentity, "lumaCRMId")
+   
+   Identity.updateIdentities(identityMap)
+   ```
+
+   Este código:
+
+   1. Crea un objeto `IdentityMap` vacío.
+
+      ```kotlin
+      val identityMap = IdentityMap()
+      ```
+
+   1. Configura `IdentityItem` objetos para el correo electrónico y el ID de CRM.
+
+      ```kotlin
+      val emailIdentity = IdentityItem(emailAddress, AuthenticatedState.AUTHENTICATED, true)
+      val crmIdentity = IdentityItem(crmId, AuthenticatedState.AUTHENTICATED, true)
+      ```
+
+   1. Agrega estos `IdentityItem` objetos al objeto `IdentityMap`.
+
+      ```kotlin
+      identityMap.addItem(emailIdentity, "Email")
+      identityMap.addItem(crmIdentity, "lumaCRMId")
+      ```
+
+   1. Envía el objeto `IdentityItem` como parte de la llamada de API `Identity.updateIdentities` a Edge Network.
+
+      ```kotlin
+      Identity.updateIdentities(identityMap)
+      ```
+
+1. Vaya a **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL views]** > **[!UICONTROL LoginSheet.kt]** en el navegador de Android Studio y busque el código que se ejecutará al seleccionar el botón **[!UICONTROL Login]**. Añada el siguiente código:
+
+   ```kotlin
+   // Update identities
+   MobileSDK.shared.updateIdentities(
+      MobileSDK.shared.currentEmailId.value,
+      MobileSDK.shared.currentCRMId.value
+   )                             
+   ```
+
+
+>[!ENDTABS]
+
+
+
 >[!NOTE]
 >
 >Puede enviar varias identidades en una sola llamada a `updateIdentities`. También puede modificar las identidades enviadas anteriormente.
@@ -116,7 +179,12 @@ Desea actualizar la identidad estándar (correo electrónico) y la identidad per
 
 ## Eliminación de una identidad
 
-Puede usar la API [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) para quitar la identidad del mapa de identidad del lado del cliente almacenado. La extensión de identidad deja de enviar el identificador a Edge Network. El uso de esta API no elimina el identificador del gráfico de identidades del lado del servidor. Consulte [Ver gráficos de identidad](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=es) para obtener más información sobre los gráficos de identidad.
+Puede usar la API [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) para quitar la identidad del mapa de identidad del lado del cliente almacenado. La extensión de identidad deja de enviar el identificador a Edge Network. El uso de esta API no elimina el identificador del gráfico de identidades del lado del servidor. Consulte [Ver gráficos de identidad](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/view-identity-graphs) para obtener más información sobre los gráficos de identidad.
+
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
 
 1. Vaya a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** en el navegador del proyecto Xcode y agregue el siguiente código a la función `func removeIdentities(emailAddress: String, crmId: String)`:
 
@@ -135,6 +203,30 @@ Puede usar la API [`Identity.removeIdentity`](https://developer.adobe.com/client
    MobileSDK.shared.removeIdentities(emailAddress: currentEmailId, crmId: currentCRMId)                  
    ```
 
+>[!TAB Android]
+
+1. Vaya a **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** en el navegador de Android Studio y agregue el siguiente código a la función `fun removeIdentities(emailAddress: String, crmId: String)`:
+
+   ```kotlin
+   // Remove identities and reset email and CRM Id to their defaults
+   Identity.removeIdentity(IdentityItem(emailAddress), "Email")
+   Identity.removeIdentity(IdentityItem(crmId), "lumaCRMId")
+   currentEmailId.value = "testUser@gmail.com"
+   currentCRMId.value = "112ca06ed53d3db37e4cea49cc45b71e"
+   ```
+
+1.Vaya a **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL vistas]** > **[!UICONTROL LoginSheet.kt]** en el navegador de Android Studio y busque el código que se ejecutará al seleccionar el botón **[!UICONTROL Cerrar sesión]**. Añada el siguiente código:
+
+```kotlin
+// Remove identities
+MobileSDK.shared.removeIdentities(
+   MobileSDK.shared.currentEmailId.value,
+   MobileSDK.shared.currentCRMId.value
+)              
+```
+
+
+>[!ENDTABS]
 
 ## Validar con Assurance
 
@@ -143,39 +235,61 @@ Puede usar la API [`Identity.removeIdentity`](https://developer.adobe.com/client
    1. Seleccione la ficha **[!UICONTROL Página de inicio]** y mueva el icono Assurance a la izquierda.
    1. Seleccione el Icono <img src="assets/login.png" width="15" /> de la parte superior derecha.
 
-      <img src="./assets/identity1.png" width="300">
+>[!BEGINTABS]
 
-   1. Proporcione una dirección de correo electrónico y un ID de CRM, o
-   1. Seleccionar <img src="assets/insert.png" width="15" /> para generar aleatoriamente un **[!UICONTROL correo electrónico]** y **[!UICONTROL ID de CRM]**.
-   1. Seleccione **[!UICONTROL Iniciar sesión]**.
+>[!TAB iOS]
 
-      <img src="./assets/identity2.png" width="300">
+<img src="./assets/identity1.png" width="300">
+
+>[!TAB Android]
+
+<img src="./assets/identity1-android.png" width="300">
+
+>[!ENDTABS]
+
+1. Proporcione una dirección de correo electrónico y un ID de CRM, o
+1. Seleccionar <img src="assets/insert.png" width="15" /> (iOS) o **[!UICONTROL Generar correo electrónico aleatorio]** (Android) para generar **[!UICONTROL correo electrónico]** y **[!UICONTROL ID de CRM]** de forma aleatoria.
+1. Seleccione **[!UICONTROL Iniciar sesión]**.
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
+
+<img src="./assets/identity2.png" width="300">
+
+>[!TAB Android]
+
+<img src="./assets/identity2-android.png" width="300">
 
 
-1. Busque en la interfaz web de Assurance el evento **[!UICONTROL Edge Identity Update Identities]** del proveedor **[!UICONTROL com.adobe.griffon.mobile]**.
+>[!ENDTABS]
+
+Vuelva a Assurance:
+
+1. Inspeccione la interfaz web de Assurance en busca del evento **[!UICONTROL Identidades de actualización de identidad de Edge]** del proveedor **[!UICONTROL com.adobe.griffon.mobile]**.
 1. Seleccione el evento y revise los datos en el objeto **[!UICONTROL ACPExtensionEventData]**. Debería ver las identidades que ha actualizado.
-   ![validar actualización de identidades](assets/identity-validate-assurance.png)
+   ![validar actualización de identidades](assets/identity-validate-assurance.png){zoomable="yes"}
 
 ## Validar con gráfico de identidad
 
-Una vez que complete los pasos de la [lección de Experience Platform](platform.md), podrá confirmar la captura de identidad en el visualizador de gráficos de identidades de Platform:
+Una vez que complete los pasos de la [lección de Experience Platform](platform.md), podrá confirmar la captura de identidad en el visor de gráficos de identidades de Experience Platform:
 
 1. Seleccione **[!UICONTROL Identidades]** en la IU de recopilación de datos.
 1. Seleccione **[!UICONTROL Gráfico de identidad]** en la barra superior.
 1. Escriba `Luma CRM ID` como **[!UICONTROL área de nombres de identidad]** y su ID de CRM (por ejemplo `24e620e255734d8489820e74f357b5c8`) como **[!UICONTROL valor de identidad]**.
 1. Verá las **[!UICONTROL Identidades]** en la lista.
 
-   ![validar gráfico de identidad](assets/identity-validate-graph.png)
+   ![validar gráfico de identidad](assets/identity-validate-graph.png){zoomable="yes"}
 
 >[!INFO]
 >
->No hay código en la aplicación para restablecer el ECID, lo que significa que solo puede restablecer el ECID (y crear de forma eficaz un nuevo perfil con un nuevo ECID) mediante una desinstalación y una reinstalación de la aplicación. Para implementar el restablecimiento de identificadores, consulte las llamadas a la API [`Identity.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities) y [`MobileCore.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities). Sin embargo, tenga en cuenta que, al usar un identificador de notificación push (consulte [Envío de notificaciones push](journey-optimizer-push.md)), ese identificador se convierte en otro identificador de perfil &quot;adhesivo&quot; en el dispositivo.
+>No hay código en la aplicación para restablecer el ECID. Solo puede restablecer el ECID (y crear efectivamente un nuevo perfil con un nuevo ECID) mediante una desinstalación y una reinstalación de la aplicación. Para implementar el restablecimiento de identificadores, consulte las llamadas a la API [`Identity.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities) y [`MobileCore.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities). Tenga en cuenta que cuando utiliza un identificador de notificación push (consulte [Envío de notificaciones push](journey-optimizer-push.md)), ese identificador se convierte en otro identificador de perfil &quot;adhesivo&quot; en el dispositivo.
 
 
 >[!SUCCESS]
 >
 >Ahora ha configurado la aplicación para actualizar identidades en Edge Network y (cuando está configurada) con Adobe Experience Platform.
 >
->Gracias por dedicar su tiempo a conocer Adobe Experience Platform Mobile SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=es)
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Mobile SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Siguiente: **[Recopilar datos de perfil](profile.md)**

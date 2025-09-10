@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo crear un esquema XDM para eventos 
 feature: Mobile SDK,Schemas
 jira: KT-14624
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: 63987fb652a653283a05a5f35f7ce670127ae905
+source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1445'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 Obtenga información sobre cómo crear un esquema XDM para eventos de aplicaciones móviles.
 
-La estandarización y la interoperabilidad son conceptos clave detrás de Adobe Experience Platform. El modelo de datos de experiencia (XDM), impulsado por el Adobe, es un esfuerzo para estandarizar los datos de experiencia del cliente y definir esquemas para la administración de experiencias del cliente.
+La estandarización y la interoperabilidad son conceptos clave detrás de Adobe Experience Platform. El modelo de datos de experiencia (XDM), impulsado por Adobe, es un esfuerzo para estandarizar los datos de experiencia del cliente y definir esquemas para la administración de experiencias del cliente.
 
 ## ¿Qué son los esquemas XDM?
 
@@ -25,11 +25,11 @@ Experience Platform utiliza esquemas para describir la estructura de los datos d
 
 Antes de poder introducir datos en Platform, se debe crear un esquema para describir la estructura de los datos y proporcionar restricciones al tipo de datos que se pueden contener en cada campo. Los esquemas constan de una clase base y cero o más grupos de campos de esquema.
 
-Para obtener más información sobre el modelo de composición de esquemas, incluidos los principios de diseño y las prácticas recomendadas, consulte los [conceptos básicos de la composición de esquemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=es) o la lista de reproducción [Modelar los datos de la experiencia del cliente con XDM](https://experienceleague.adobe.com/es/playlists/experience-platform-model-your-customer-experience-data-with-xdm).
+Para obtener más información sobre el modelo de composición de esquemas, incluidos los principios de diseño y las prácticas recomendadas, consulte los [conceptos básicos de la composición de esquemas](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition) o la lista de reproducción [Modelar los datos de la experiencia del cliente con XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm).
 
 >[!TIP]
 >
->Si está familiarizado con la Referencia de diseño de soluciones (SDR) de Analytics, puede pensar en un esquema como un SDR más robusto. Consulte [Crear y mantener un documento Diseño de referencia de la solución (DRS)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html?lang=es) para obtener más información.
+>Si está familiarizado con la Referencia de diseño de soluciones (SDR) de Analytics, puede pensar en un esquema como un SDR más robusto. Consulte [Crear y mantener un documento Diseño de referencia de la solución (DRS)](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr) para obtener más información.
 
 ## Requisitos previos
 
@@ -53,16 +53,16 @@ En esta lección, deberá hacer lo siguiente:
 
 1. Seleccione **[!UICONTROL Recopilación de datos]** en el menú.
 
-   ![Iniciar sesión en el Experience Cloud](assets/experiencecloud-login.png)
+   ![Iniciar sesión en Experience Cloud](assets/experiencecloud-login.png){zoomable="yes"}
 
    >[!NOTE]
    >
    > Los clientes de aplicaciones basadas en Platform como Real-Time CDP deben utilizar una zona protegida de desarrollo para este tutorial. Otros clientes utilizan la zona protegida de producción predeterminada.
 
 
-1. Seleccione **[!UICONTROL Esquemas]** en **[!UICONTROL Administración de datos]** en el carril izquierdo.
+1. Seleccione ![Esquemas](/help/assets/icons/Schemas.svg) **[!UICONTROL Esquemas]** en **[!UICONTROL Administración de datos]** en el carril izquierdo.
 
-   ![pantalla de inicio de etiquetas](assets/mobile-schema-navigate.png)
+   ![pantalla de inicio de etiquetas](assets/mobile-schema-navigate.png){zoomable="yes"}
 
 Ahora se encuentra en la página de esquemas principales y se le presenta una lista de los esquemas existentes. También puede ver las pestañas correspondientes a los bloques de creación principales de un esquema:
 
@@ -70,13 +70,13 @@ Ahora se encuentra en la página de esquemas principales y se le presenta una li
 * **Las clases** definen los aspectos de comportamiento de los datos que contiene el esquema. Por ejemplo: `XDM ExperienceEvent` captura series temporales, datos de eventos y `XDM Individual Profile` captura datos de atributos de un individuo.
 * **Los tipos de datos** se utilizan como tipos de campos de referencia en clases o grupos de campos de la misma manera que los campos literales básicos.
 
-Las descripciones anteriores son una descripción general de alto nivel. Para obtener más información, consulte el vídeo [Componentes básicos del esquema](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schema-building-blocks.html?lang=es) o lea [Aspectos básicos de la composición del esquema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=es) en la documentación del producto.
+Las descripciones anteriores son una descripción general de alto nivel. Para obtener más información, consulte el vídeo [Componentes básicos del esquema](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/schemas/schema-building-blocks) o lea [Aspectos básicos de la composición del esquema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition) en la documentación del producto.
 
 En este tutorial, se utiliza el grupo de campos Evento de experiencia del consumidor y se crea uno personalizado para mostrar el proceso.
 
 >[!NOTE]
 >
->El Adobe sigue añadiendo grupos de campos más estándar y deben utilizarse siempre que sea posible, ya que los servicios de Experience Platform entienden implícitamente estos campos y proporcionan una mayor coherencia cuando se utilizan en todos los componentes de Platform. El uso de grupos de campos estándar proporciona beneficios tangibles, como la asignación automática en Analytics y las funciones de IA en Platform.
+>Adobe sigue añadiendo grupos de campos más estándar y se deben utilizar siempre que sea posible. Estos campos los entienden implícitamente los servicios de Experience Platform y proporcionan una mayor coherencia cuando se utilizan en componentes de Platform. El uso de grupos de campos estándar ofrece ventajas tangibles, como la asignación automática en Analytics y las funciones de IA en Platform.
 
 ## Arquitectura de esquema de aplicación de Luma
 
@@ -95,13 +95,17 @@ Para fines de aprendizaje, utiliza grupos de campos creados previamente y person
 
 ## Creación de un esquema
 
-1. Seleccione **[!UICONTROL Crear esquema]**.
+1. Seleccione ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Crear esquema]**.
+
+1. En el diálogo **[!UICONTROL Crear un esquema]**, seleccione **[!UICONTROL Manual]**. Use **[!UICONTROL Seleccionar]** para continuar.
+
+   ![Manual de esquema](assets/schema-manual.png){zoomable="yes"}
 
 1. En el paso **[!UICONTROL Seleccionar una clase]** del asistente **[!UICONTROL Crear esquema]**, seleccione **[!UICONTROL Evento de experiencia]** debajo de **[!UICONTROL Seleccionar una clase base para este esquema]**.
 
 1. Seleccione **[!UICONTROL Siguiente]**.
 
-   ![Clase base del Asistente para esquemas](assets/schema-wizard-base-class.png)
+   ![Clase base del Asistente para esquemas](assets/schema-wizard-base-class.png){zoomable="yes"}
 
 1. En el paso **[!UICONTROL Nombrar y revisar]** del asistente **[!UICONTROL Crear esquema]**, escriba un **[!UICONTROL Nombre para mostrar esquema]**, por ejemplo `Luma Mobile Event Schema` y una [!UICONTROL Descripción], por ejemplo `Schema for Luma mobile app experience events`.
 
@@ -111,12 +115,12 @@ Para fines de aprendizaje, utiliza grupos de campos creados previamente y person
 
 1. Seleccione **[!UICONTROL Finalizar]** para finalizar el asistente.
 
-   ![Nombre y revisión del esquema](assets/schema-wizard-name-and-review.png)
+   ![Nombre y revisión del esquema](assets/schema-wizard-name-and-review.png){zoomable="yes"}
 
 
 1. Seleccione ![Más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Agregar** junto a **[!UICONTROL Grupos de campos]**.
 
-   ![Agregar grupo de campos](assets/add-field-group.png)
+   ![Agregar grupo de campos](assets/add-field-group.png){zoomable="yes"}
 
 1. Busque `Consumer Experience Event`.
 
@@ -126,11 +130,12 @@ Para fines de aprendizaje, utiliza grupos de campos creados previamente y person
 
 1. Seleccione **[!UICONTROL Agregar grupos de campos]**.
 
-   ![Seleccionando grupo de campos](assets/schema-select-field-groups.png)
+   ![Seleccionando grupo de campos](assets/schema-select-field-groups.png){zoomable="yes"}
 
    Volverá a la pantalla de composición del esquema principal, donde podrá ver todos los campos disponibles.
 
 1. Seleccione **[!UICONTROL Guardar]**.
+1. Seleccione ![Esquemas](/help/assets/icons/Schemas.svg) **[!UICONTROL Esquemas]** en **[!UICONTROL Administración de datos]** para volver a la interfaz principal de **[!UICONTROL Esquemas]**.
 
 >[!NOTE]
 >
@@ -139,6 +144,7 @@ Para fines de aprendizaje, utiliza grupos de campos creados previamente y person
 El grupo de campos [!UICONTROL Evento de experiencia del consumidor] tiene un tipo de datos denominado [!UICONTROL Información web], que describe eventos como la vista de página y los clics en vínculos. En el momento de escribir este artículo, esta función no tiene paridad de aplicación móvil, por lo que va a crear la suya propia.
 
 ## Creación de un tipo de datos personalizado
+
 
 Para empezar, cree un tipo de datos personalizado que describa los dos eventos:
 
@@ -149,15 +155,15 @@ Para empezar, cree un tipo de datos personalizado que describa los dos eventos:
 
 1. Seleccione **[!UICONTROL Crear tipo de datos]**.
 
-   ![Seleccionar el menú de tipo de datos](assets/schema-datatype-create.png)
+   ![Seleccionar el menú de tipo de datos](assets/schema-datatype-create.png){zoomable="yes"}
 
 1. Proporcione un **[!UICONTROL nombre para mostrar]** y **[!UICONTROL Descripción]**, por ejemplo `App Information` y `Custom data type describing "Screen Views" & "App Actions"`
 
-   ![Proporcionando nombre y descripción](assets/schema-datatype-name.png)
+   ![Proporcionando nombre y descripción](assets/schema-datatype-name.png){zoomable="yes"}
 
    >[!TIP]
    >
-   > Use siempre [!UICONTROL nombres para mostrar] descriptivos y legibles para sus campos personalizados, ya que esta práctica los hace más accesibles para los especialistas en marketing cuando los campos aparecen en servicios descendentes como el generador de segmentos.
+   > Use siempre [!UICONTROL nombres para mostrar] descriptivos y legibles para los campos personalizados. Esta práctica hace que los campos personalizados sean más accesibles para los especialistas en marketing cuando aparecen en servicios descendentes como el generador de segmentos.
 
 
 1. Para agregar un campo, selecciona el botón ![Más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg).
@@ -167,7 +173,7 @@ Para empezar, cree un tipo de datos personalizado que describa los dos eventos:
 
 1. Seleccione **[!UICONTROL Aplicar]**.
 
-   ![Agregando nuevo evento de acción de aplicación](assets/schema-datatype-app-action.png)
+   ![Agregando nuevo evento de acción de aplicación](assets/schema-datatype-app-action.png){zoomable="yes"}
 
 1. Para medir la frecuencia con la que se ha producido una acción, agrega un campo seleccionando el botón ![Más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) junto al objeto **[!UICONTROL appInteraction]** que has creado.
 
@@ -177,7 +183,7 @@ Para empezar, cree un tipo de datos personalizado que describa los dos eventos:
 
 1. Seleccione **[!UICONTROL Aplicar]**.
 
-   ![Agregando campo de nombre de acción](assets/schema-datatype-action-name.png)
+   ![Agregando campo de nombre de acción](assets/schema-datatype-action-name.png){zoomable="yes"}
 
 1. Agregue un campo que describa el tipo de interacción seleccionando el botón ![Más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) junto al objeto **[!UICONTROL appInteraction]**.
 
@@ -185,7 +191,7 @@ Para empezar, cree un tipo de datos personalizado que describa los dos eventos:
 
    Este paso es el equivalente de una dimensión en Adobe Analytics.
 
-   ![Seleccionando aplicar](assets/schema-datatype-apply.png)
+   ![Seleccionando aplicar](assets/schema-datatype-apply.png){zoomable="yes"}
 
 1. Desplácese hasta la parte inferior del carril derecho y seleccione **[!UICONTROL Aplicar]**.
 
@@ -193,17 +199,17 @@ Para empezar, cree un tipo de datos personalizado que describa los dos eventos:
 
 1. Seleccione **[!UICONTROL Guardar]**.
 
-   ![Estado final del tipo de datos](assets/schema-datatype-final.png)
+   ![Estado final del tipo de datos](assets/schema-datatype-final.png){zoomable="yes"}
 
 ## Agregar un grupo de campos personalizados
 
-Ahora añada un grupo de campos personalizados con su tipo de datos personalizado:
+Ahora, agregue un grupo de campos personalizados con su tipo de datos personalizado:
 
 1. Abra el esquema que creó anteriormente en esta lección.
 
 1. Seleccione ![Más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Agregar]** junto a **[!UICONTROL Grupos de campos]**.
 
-   ![Agregando nuevo grupo de campos](assets/schema-fieldgroup-add.png)
+   ![Agregando nuevo grupo de campos](assets/schema-fieldgroup-add.png){zoomable="yes"}
 
 1. Seleccione **[!UICONTROL Crear nuevo grupo de campo]**.
 
@@ -211,7 +217,7 @@ Ahora añada un grupo de campos personalizados con su tipo de datos personalizad
 
 1. Seleccione **Agregar grupos de campos**.
 
-   ![Proporcionando nombre y descripción](assets/schema-fieldgroup-name.png)
+   ![Proporcionando nombre y descripción](assets/schema-fieldgroup-name.png){zoomable="yes"}
 
 1. En la pantalla de composición principal, seleccione **[!UICONTROL Interacciones de la aplicación**].
 
@@ -225,7 +231,7 @@ Ahora añada un grupo de campos personalizados con su tipo de datos personalizad
 
 1. Seleccione **[!UICONTROL Guardar]**.
 
-   ![Seleccionando aplicar](assets/schema-fieldgroup-apply.png)
+   ![Seleccionando aplicar](assets/schema-fieldgroup-apply.png){zoomable="yes"}
 
 >[!NOTE]
 >
@@ -236,6 +242,6 @@ Ahora añada un grupo de campos personalizados con su tipo de datos personalizad
 >
 >Ahora tiene un esquema para utilizar para el resto del tutorial.
 >
->Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=es).
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Mobile SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Siguiente: **[Crear un [!UICONTROL conjunto de datos]](create-datastream.md)**

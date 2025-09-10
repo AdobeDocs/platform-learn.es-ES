@@ -1,13 +1,13 @@
 ---
-title: Asignación de datos recopilados con el SDK de Platform Mobile a Adobe Analytics
+title: Asignación de datos recopilados con Platform Mobile SDK a Adobe Analytics
 description: Obtenga información sobre cómo recopilar y asignar datos para Adobe Analytics en una aplicación móvil.
 solution: Data Collection,Experience Platform,Analytics
 jira: KT-14636
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: 7dfa14081e87489f908084e93722f67643fd5984
+source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 1%
+source-wordcount: '1033'
+ht-degree: 0%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 1%
 
 Obtenga información sobre cómo asignar datos móviles a Adobe Analytics.
 
-Los datos de [event](events.md) que recopiló y envió al Edge Network de Platform en lecciones anteriores se reenvían a los servicios configurados en su secuencia de datos, incluido Adobe Analytics. Los datos se asignan a las variables correctas del grupo de informes.
+Los datos de [event](events.md) que recopiló y envió a Platform Edge Network en lecciones anteriores se reenvían a los servicios configurados en su secuencia de datos, incluido Adobe Analytics. Los datos se asignan a las variables correctas del grupo de informes.
 
-![Arquitectura](assets/architecture-aa.png)
+![Arquitectura](assets/architecture-aa.png){zoomable="yes"}
 
 ## Requisitos previos
 
@@ -35,7 +35,7 @@ En esta lección, deberá hacer lo siguiente:
 
 ## Añadir el servicio de flujo de datos de Adobe Analytics
 
-Para enviar los datos XDM del Edge Network a Adobe Analytics, configure el servicio Adobe Analytics en el conjunto de datos que configuró como parte de [Crear un conjunto de datos](create-datastream.md).
+Para enviar los datos XDM de Edge Network a Adobe Analytics, configure el servicio Adobe Analytics en el conjunto de datos que configuró como parte de [Crear un conjunto de datos](create-datastream.md).
 
 1. En la IU de recopilación de datos, seleccione **[!UICONTROL Datastreams]** y su secuencia de datos.
 
@@ -49,16 +49,16 @@ Para enviar los datos XDM del Edge Network a Adobe Analytics, configure el servi
 
 1. Seleccione **[!UICONTROL Guardar]**.
 
-   ![Agregar Adobe Analytics como servicio de secuencia de datos](assets/datastream-service-aa.png)
+   ![Agregar Adobe Analytics como servicio de secuencia de datos](assets/datastream-service-aa.png){zoomable="yes"}
 
 
 ## Asignación automática
 
-Muchos de los campos XDM estándar se asignan automáticamente a variables de Analytics. Consulte la lista completa [aquí](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=es).
+Muchos de los campos XDM estándar se asignan automáticamente a variables de Analytics. Ver [lista completa](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping).
 
 ### Ejemplo de #1: s.products
 
-Un buen ejemplo es la variable [products](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=es), que no se puede rellenar con reglas de procesamiento. Con una implementación XDM, pasa todos los datos necesarios en `productListItems` y `s.products` se rellenan automáticamente a través de la asignación de Analytics.
+Un buen ejemplo es la variable [products](https://experienceleague.adobe.com/en/docs/analytics/implementation/vars/page-vars/products), que no se puede rellenar con reglas de procesamiento. Con una implementación XDM, pasa todos los datos necesarios en `productListItems` y `s.products` se rellenan automáticamente a través de la asignación de Analytics.
 
 Este objeto:
 
@@ -87,7 +87,7 @@ s.products = ";5829;1;49.99,9841;3;30.00"
 
 >[!NOTE]
 >
->Si `productListItems[].SKU` y `productListItems[].name` contienen datos, se utiliza el valor de `productListItems[].SKU`. Consulte [Asignación de variables de Analytics en Adobe Experience Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=es) para obtener más información.
+>Si `productListItems[].SKU` y `productListItems[].name` contienen datos, se utiliza el valor de `productListItems[].SKU`. Consulte [Asignación de variables de Analytics en Adobe Experience Edge](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping) para obtener más información.
 
 
 ### Ejemplo de #2 - scAdd
@@ -137,7 +137,7 @@ Con [Assurance](assurance.md) puede confirmar que está enviando un evento de ex
 
 1. Vea la visita de ExperienceEvent.
 
-   ![visita de xdm de analytics](assets/analytics-assurance-experiencevent.png)
+   ![visita de xdm de analytics](assets/analytics-assurance-experiencevent.png){zoomable="yes"}
 
 1. Revise la parte XDM del JSON.
 
@@ -160,7 +160,7 @@ Con [Assurance](assurance.md) puede confirmar que está enviando un evento de ex
 
 1. Revise el evento **[!UICONTROL analytics.mapping]**.
 
-   ![visita de xdm de analytics](assets/analytics-assurance-mapping.png)
+   ![visita de xdm de analytics](assets/analytics-assurance-mapping.png){zoomable="yes"}
 
 Tenga en cuenta lo siguiente en la asignación de Analytics:
 
@@ -171,7 +171,7 @@ Tenga en cuenta lo siguiente en la asignación de Analytics:
 
 ## Asignación con datos de contexto
 
-Los datos XDM reenviados a Analytics se convierten en [datos de contexto](https://experienceleague.adobe.com/docs/mobile-services/ios/getting-started-ios/proc-rules.html?lang=es), incluidos los campos estándar y personalizados.
+Los datos XDM reenviados a Analytics se convierten en [datos de contexto](https://github.com/Adobe-Marketing-Cloud/mobile-services/blob/master/docs/ios/getting-started/proc-rules.md?lang=en), incluidos los campos estándar y personalizados.
 
 La clave de datos de contexto se construye siguiendo esta sintaxis:
 
@@ -191,9 +191,9 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 
 >[!NOTE]
 >
->Los campos personalizados se colocan debajo del identificador de organización de Experience Cloud.
+>Los campos personalizados se colocan bajo el identificador de organización de Experience Cloud.
 >
->`_techmarketingdemos` se ha reemplazado con el valor único de su organización.
+El nombre de inquilino `_techmarketingdemos` se reemplaza con el valor único de su organización.
 
 
 
@@ -203,7 +203,7 @@ Para asignar estos datos de contexto XDM a los datos de Analytics en el grupo de
 
 * Agregue el grupo de campos **[!UICONTROL Adobe Analytics ExperienceEvent Full Extension]** al esquema.
 
-  ![Grupo de campos ExperienceEvent FullExtension de Analytics](assets/schema-analytics-extension.png)
+  ![Grupo de campos ExperienceEvent FullExtension de Analytics](assets/schema-analytics-extension.png){zoomable="yes"}
 
 * Cree cargas XDM en la aplicación que se ajusten al grupo de campos Extensión completa de Adobe Analytics ExperienceEvent, similar a lo que ha hecho en la lección [Rastrear datos de evento](events.md), o
 * Genere reglas en la propiedad Etiquetas que utilicen acciones de regla para adjuntar o modificar datos en el grupo de campos Extensión completa de Adobe Analytics ExperienceEvent. Consulte para obtener más información [Adjuntar datos a eventos de SDK](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/) o [Modificar datos en eventos de SDK](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/).
@@ -211,7 +211,7 @@ Para asignar estos datos de contexto XDM a los datos de Analytics en el grupo de
 
 ### eVars de comercialización
 
-Si usa [eVars de comercialización](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/merchandising-evars.html?lang=es) en su configuración de Analytics, por ejemplo, para capturar el color de productos, como `&&products = ...;evar1=red;event10=50,...;evar1=blue;event10=60`, tiene que ampliar la carga útil de XDM que definió en [Rastrear datos de eventos](events.md) para capturar esa información de comercialización.
+Si usa [eVars de comercialización](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/merchandising-evars) en la configuración de Analytics, debe ampliar la carga útil de XDM que definió en [Rastrear datos de eventos](events.md) para capturar esa información de comercialización. Ejemplo de una variable de comercialización `evar1` en la que desea capturar el color de productos, como `&&products = ...;evar1=red;event10=50,...;evar1=blue;event10=60`
 
 * En JSON:
 
@@ -286,11 +286,11 @@ Si usa [eVars de comercialización](https://experienceleague.adobe.com/docs/anal
 
 Este es el aspecto que podría tener una regla de procesamiento que utilice estos datos:
 
-* Ha **[!UICONTROL sobrescrito el valor de]** (1) **[!UICONTROL Nombre de pantalla de la aplicación (eVar 2)]** (2) con el valor de **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (3) si **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (4) **[!UICONTROL se ha establecido]** (5).
+* Ha **[!UICONTROL sobrescrito el valor de]** (1) **[!UICONTROL Nombre de pantalla de la aplicación (eVar2)]** (2) con el valor de **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (3) si **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (4) **[!UICONTROL se ha establecido]** (5).
 
 * Ha **[!UICONTROL establecido evento]** (6) **[!UICONTROL Agregar a la lista de deseos (Evento 3)]** (7) a **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (8) si **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (9) **[!UICONTROL se ha establecido]** (10).
 
-![reglas de procesamiento de analytics](assets/analytics-processing-rules.png)
+![reglas de procesamiento de analytics](assets/analytics-processing-rules.png){zoomable="yes"}
 
 >[!IMPORTANT]
 >
@@ -301,7 +301,7 @@ Este es el aspecto que podría tener una regla de procesamiento que utilice esto
 >La primera vez que se asigna a una regla de procesamiento, la interfaz no muestra las variables de datos de contexto del objeto XDM. Para corregir que, seleccione cualquier valor, haga clic en Guardar y vuelva a editar. Ahora deberían aparecer todas las variables XDM.
 
 
-Encontrará información adicional sobre reglas de procesamiento y datos de contexto [aquí](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=es).
+Ver [Asignar variables contextData a props y eVars con reglas de procesamiento](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules).
 
 >[!TIP]
 >
@@ -309,11 +309,11 @@ Encontrará información adicional sobre reglas de procesamiento y datos de cont
 
 ## Migrar desde la extensión móvil de Analytics
 
-Si ha desarrollado su aplicación móvil con la [extensión móvil de Adobe Analytics](https://developer.adobe.com/client-sdks/solution/adobe-analytics/#add-analytics-to-your-application), lo más probable es que haya utilizado [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackaction) y [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackstate) llamadas de API.
+Si ha desarrollado su aplicación móvil con la [extensión móvil de Adobe Analytics](https://developer.adobe.com/client-sdks/solution/adobe-analytics/#add-analytics-to-your-application), lo más probable es que haya utilizado las llamadas a la API [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackaction) y [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackstate).
 
-Si decide migrar para utilizar el Edge Network recomendado, tiene opciones:
+Si decide migrar para utilizar el Edge Network recomendado, no tiene opciones:
 
-* Implemente la [extensión de Edge Network](configure-tags.md#extension-configuration) y use las API [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#sendevent), como se muestra en la lección sobre cómo [rastrear datos de evento](events.md). Este tutorial se centra en esta implementación.
+* Implemente la [extensión de Edge Network](configure-tags.md#extension-configuration) y use las API [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#sendevent), como se muestra en la lección sobre cómo [rastrear datos de eventos](events.md). Este tutorial se centra en esta implementación.
 * Implemente la extensión [Edge Bridge](https://developer.adobe.com/client-sdks/solution/adobe-analytics/migrate-to-edge-network/#implement-the-edge-bridge-extension) y siga usando sus llamadas a la API [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackaction) y [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackstate). Consulte [Implementar la extensión de Edge Bridge](https://developer.adobe.com/client-sdks/solution/adobe-analytics/migrate-to-edge-network/#implement-the-edge-bridge-extension) para obtener más información y un tutorial independiente.
 
 
@@ -321,6 +321,6 @@ Si decide migrar para utilizar el Edge Network recomendado, tiene opciones:
 
 >[!SUCCESS]
 >
->Ha configurado la aplicación para asignar los objetos XDM de Experience Edge a variables de Adobe Analytics que habiliten el servicio Adobe Analytics en el conjunto de datos y utilicen reglas de procesamiento cuando corresponda.<br/> Gracias por dedicar su tiempo a conocer el SDK móvil de Adobe Experience Platform. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Ha configurado la aplicación para asignar los objetos XDM de Experience Edge a variables de Adobe Analytics habilitando el servicio de Adobe Analytics en el conjunto de datos. Y usar reglas de procesamiento cuando corresponda.<br/> Gracias por dedicar su tiempo a conocer Adobe Experience Platform Mobile SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Siguiente: **[Enviar datos al Experience Platform](platform.md)**
+Siguiente: **[Enviar datos a Experience Platform](platform.md)**
