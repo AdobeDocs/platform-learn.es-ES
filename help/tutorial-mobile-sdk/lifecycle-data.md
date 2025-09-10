@@ -3,7 +3,7 @@ title: Recopilación de datos del ciclo vital con Platform Mobile SDK
 description: Obtenga información sobre cómo recopilar datos del ciclo vital en una aplicación móvil.
 jira: KT-14630
 exl-id: 75b2dbaa-2f84-4b95-83f6-2f38a4f1d438
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 7e7c7600457b361c2ba9616c067b9fe33fd70c5c
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 2%
@@ -86,7 +86,7 @@ Ahora puede actualizar el proyecto para registrar los eventos de ciclo vital.
 
 1. Cuando la aplicación entre en segundo plano, deberá pausar la recopilación de datos del ciclo vital desde la función `override fun onActivityPaused` de la aplicación. Agregar este código a `override fun onActivityPaused(activity: Activity)`:
 
-   ```swift
+   ```kotlin
    // When in background pause lifecycle data collection
    MobileCore.lifecyclePause()
    ```
@@ -150,6 +150,6 @@ Debería ver los eventos **[!UICONTROL Application Close (Background)]** y **[!U
 >
 >Ahora ha configurado la aplicación para enviar eventos de estado de aplicación (primer plano, segundo plano) al Edge Network de Adobe Experience Platform y a todos los servicios definidos en la secuencia de datos.
 >
-> Gracias por dedicar su tiempo a conocer Adobe Experience Platform Mobile SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=es)
+> Gracias por dedicar su tiempo a conocer Adobe Experience Platform Mobile SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Siguiente: **[Rastrear datos de eventos](events.md)**
