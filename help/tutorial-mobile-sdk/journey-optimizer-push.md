@@ -419,7 +419,7 @@ Debe registrar el token del dispositivo para las notificaciones push.
 >[!IMPORTANT]
 >
 >**Solo para iOS**: `MobileCore.updateConfigurationWith(configDict: ["messaging.useSandbox": true])` determina si las notificaciones push utilizan una zona protegida de APNS o un servidor de producción para enviar notificaciones push. Al probar la aplicación en el simulador o en un dispositivo, asegúrese de que `messaging.useSandbox` está establecido en `true` para que reciba notificaciones push. Al implementar su aplicación para producción con fines de prueba mediante Testflight de Apple, asegúrese de establecer `messaging.useSandbox` en `false`; de lo contrario, la aplicación de producción no podrá recibir notificaciones push.<br/><br/>
->>Firebase Cloud Messaging (FCM) **no** admite el concepto de zonas protegidas para notificaciones push.
+>&#x200B;>Firebase Cloud Messaging (FCM) **no** admite el concepto de zonas protegidas para notificaciones push.
 
 
 ## Cree su propia notificación push

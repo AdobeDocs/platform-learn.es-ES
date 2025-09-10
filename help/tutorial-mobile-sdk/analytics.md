@@ -193,7 +193,7 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 >
 >Los campos personalizados se colocan bajo el identificador de organización de Experience Cloud.
 >
-El nombre de inquilino `_techmarketingdemos` se reemplaza con el valor único de su organización.
+>El nombre de inquilino `_techmarketingdemos` se reemplaza con el valor único de su organización.
 
 
 

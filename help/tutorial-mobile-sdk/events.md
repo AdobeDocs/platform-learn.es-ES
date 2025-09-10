@@ -610,7 +610,7 @@ De nuevo, implemente este código en el proyecto.
       * configura un evento de experiencia utilizando el mapa,
       * envía el evento de experiencia mediante la API [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent).
 
-1. Vaya a **[!UICONTROL Android]** ![ChevronDown ](/help/assets/icons/ChevronDown.svg)**[!DNL app]**>**[!DNL kotlin+java]**>**[!DNL com.adobe.luma.tutorial.android]**>**[!UICONTROL  views ]**>**[!UICONTROL  LoginSheet.kt ]**
+1. Vaya a **[!UICONTROL Android]** ![ChevronDown ](/help/assets/icons/ChevronDown.svg)**[!DNL app]**>**[!DNL kotlin+java]**>**[!DNL com.adobe.luma.tutorial.android]**>**[!UICONTROL &#x200B; views &#x200B;]**>**[!UICONTROL &#x200B; LoginSheet.kt &#x200B;]**
 
    1. Agregue el siguiente código resaltado al evento **[!UICONTROL Button]** **[!UICONTROL onClick]**:
 
