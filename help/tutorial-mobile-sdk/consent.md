@@ -187,6 +187,6 @@ En el ejemplo anterior, simplemente registra el estado de consentimiento en la c
 >
 >Ahora ha habilitado la aplicación para solicitar al usuario de Adobe Experience Platform Mobile SDK su consentimiento al inicio tras la instalación (o reinstalación).
 >
->Gracias por dedicar su tiempo a conocer Adobe Experience Platform Mobile SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Mobile SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=es)
 
 Siguiente: **[Recopilar datos del ciclo vital](lifecycle-data.md)**

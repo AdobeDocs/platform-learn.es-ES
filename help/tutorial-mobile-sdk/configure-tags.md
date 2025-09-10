@@ -15,7 +15,7 @@ ht-degree: 4%
 
 Obtenga información sobre cómo configurar una propiedad de etiqueta en la interfaz de [!UICONTROL Recopilación de datos].
 
-Las etiquetas de Adobe Experience Platform son la próxima generación de funcionalidades de administración de etiquetas de Adobe. Las etiquetas ofrecen a los clientes una alternativa sencilla para implementar y gestionar las etiquetas de análisis, marketing y publicidad necesarias para potenciar las importantes experiencias del cliente. Obtenga más información acerca de [Etiquetas](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home) en la documentación del producto.
+Las etiquetas de Adobe Experience Platform son la próxima generación de funcionalidades de administración de etiquetas de Adobe. Las etiquetas ofrecen a los clientes una alternativa sencilla para implementar y gestionar las etiquetas de análisis, marketing y publicidad necesarias para potenciar las importantes experiencias del cliente. Obtenga más información acerca de [Etiquetas](https://experienceleague.adobe.com/es/docs/experience-platform/tags/home) en la documentación del producto.
 
 ## Requisitos previos
 
@@ -23,7 +23,7 @@ Para completar la lección, debe tener permiso para crear una propiedad de etiqu
 
 >[!NOTE]
 >
-> Platform Launch (lado del cliente) ahora tiene [Etiquetas](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)
+> Platform Launch (lado del cliente) ahora tiene [Etiquetas](https://experienceleague.adobe.com/es/docs/experience-platform/tags/home)
 
 ## Objetivos de aprendizaje
 
@@ -186,6 +186,6 @@ Si está familiarizado con la versión web de las etiquetas, anteriormente Launc
 >
 >Ahora tiene una propiedad de etiqueta móvil para usar en el resto de este tutorial.
 >
->Gracias por dedicar su tiempo a conocer Adobe Experience Platform Mobile SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Mobile SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=es)
 
 Siguiente: **[Instalar SDK](install-sdks.md)**

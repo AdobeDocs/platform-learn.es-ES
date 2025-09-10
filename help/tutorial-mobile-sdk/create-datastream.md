@@ -15,7 +15,7 @@ ht-degree: 6%
 
 Aprenda a crear una secuencia de datos en Experience Platform.
 
-Un conjunto de datos es una configuración del lado del servidor en Platform Edge Network. La secuencia de datos garantiza que los datos entrantes en Platform Edge Network se enruten correctamente a las aplicaciones y servicios de Adobe Experience Cloud. Para obtener más información, consulte la [documentación](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) o este [vídeo](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/edge-network/configure-datastreams).
+Un conjunto de datos es una configuración del lado del servidor en Platform Edge Network. La secuencia de datos garantiza que los datos entrantes en Platform Edge Network se enruten correctamente a las aplicaciones y servicios de Adobe Experience Cloud. Para obtener más información, consulte la [documentación](https://experienceleague.adobe.com/es/docs/experience-platform/datastreams/overview) o este [vídeo](https://experienceleague.adobe.com/es/docs/platform-learn/data-collection/edge-network/configure-datastreams).
 
 ![Arquitectura](assets/architecture.png){zoomable="yes"}
 
@@ -102,7 +102,7 @@ You might also want to enable the Adobe Experience Platform service.
 
 >[!NOTE]
 >
->Al habilitar cada uno de los servicios que utiliza su organización, se garantiza que los datos recopilados en la aplicación móvil se puedan utilizar en todas partes. Consulte [configuración de secuencia de datos](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) para obtener más información.
+>Al habilitar cada uno de los servicios que utiliza su organización, se garantiza que los datos recopilados en la aplicación móvil se puedan utilizar en todas partes. Consulte [configuración de secuencia de datos](https://experienceleague.adobe.com/es/docs/experience-platform/datastreams/overview) para obtener más información.
 
 Al implementar Platform Mobile SDK en su propia aplicación, debe crear tres flujos de datos para asignarlos a sus tres entornos de etiquetas (desarrollo, fase y producción). Si utiliza Platform Mobile SDK con aplicaciones basadas en Platform, como Adobe Real-Time Customer Data Platform o Adobe Journey Optimizer, debe asegurarse de crear esas secuencias de datos en los entornos limitados adecuados.
 
@@ -110,6 +110,6 @@ Al implementar Platform Mobile SDK en su propia aplicación, debe crear tres flu
 >
 >Ahora tiene una secuencia de datos para utilizar durante el resto del tutorial.
 >
->Gracias por dedicar su tiempo a conocer Adobe Experience Platform Mobile SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Mobile SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=es)
 
 Siguiente: **[Configurar una propiedad de etiqueta](configure-tags.md)**

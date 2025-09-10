@@ -54,11 +54,11 @@ Para enviar los datos XDM de Edge Network a Adobe Analytics, configure el servic
 
 ## Asignación automática
 
-Muchos de los campos XDM estándar se asignan automáticamente a variables de Analytics. Ver [lista completa](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping).
+Muchos de los campos XDM estándar se asignan automáticamente a variables de Analytics. Ver [lista completa](https://experienceleague.adobe.com/es/docs/analytics/implementation/aep-edge/xdm-var-mapping).
 
 ### Ejemplo de #1: s.products
 
-Un buen ejemplo es la variable [products](https://experienceleague.adobe.com/en/docs/analytics/implementation/vars/page-vars/products), que no se puede rellenar con reglas de procesamiento. Con una implementación XDM, pasa todos los datos necesarios en `productListItems` y `s.products` se rellenan automáticamente a través de la asignación de Analytics.
+Un buen ejemplo es la variable [products](https://experienceleague.adobe.com/es/docs/analytics/implementation/vars/page-vars/products), que no se puede rellenar con reglas de procesamiento. Con una implementación XDM, pasa todos los datos necesarios en `productListItems` y `s.products` se rellenan automáticamente a través de la asignación de Analytics.
 
 Este objeto:
 
@@ -87,7 +87,7 @@ s.products = ";5829;1;49.99,9841;3;30.00"
 
 >[!NOTE]
 >
->Si `productListItems[].SKU` y `productListItems[].name` contienen datos, se utiliza el valor de `productListItems[].SKU`. Consulte [Asignación de variables de Analytics en Adobe Experience Edge](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping) para obtener más información.
+>Si `productListItems[].SKU` y `productListItems[].name` contienen datos, se utiliza el valor de `productListItems[].SKU`. Consulte [Asignación de variables de Analytics en Adobe Experience Edge](https://experienceleague.adobe.com/es/docs/analytics/implementation/aep-edge/xdm-var-mapping) para obtener más información.
 
 
 ### Ejemplo de #2 - scAdd
@@ -211,7 +211,7 @@ Para asignar estos datos de contexto XDM a los datos de Analytics en el grupo de
 
 ### eVars de comercialización
 
-Si usa [eVars de comercialización](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/merchandising-evars) en la configuración de Analytics, debe ampliar la carga útil de XDM que definió en [Rastrear datos de eventos](events.md) para capturar esa información de comercialización. Ejemplo de una variable de comercialización `evar1` en la que desea capturar el color de productos, como `&&products = ...;evar1=red;event10=50,...;evar1=blue;event10=60`
+Si usa [eVars de comercialización](https://experienceleague.adobe.com/es/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/merchandising-evars) en la configuración de Analytics, debe ampliar la carga útil de XDM que definió en [Rastrear datos de eventos](events.md) para capturar esa información de comercialización. Ejemplo de una variable de comercialización `evar1` en la que desea capturar el color de productos, como `&&products = ...;evar1=red;event10=50,...;evar1=blue;event10=60`
 
 * En JSON:
 
@@ -301,7 +301,7 @@ Este es el aspecto que podría tener una regla de procesamiento que utilice esto
 >La primera vez que se asigna a una regla de procesamiento, la interfaz no muestra las variables de datos de contexto del objeto XDM. Para corregir que, seleccione cualquier valor, haga clic en Guardar y vuelva a editar. Ahora deberían aparecer todas las variables XDM.
 
 
-Ver [Asignar variables contextData a props y eVars con reglas de procesamiento](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules).
+Ver [Asignar variables contextData a props y eVars con reglas de procesamiento](https://experienceleague.adobe.com/es/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules).
 
 >[!TIP]
 >
