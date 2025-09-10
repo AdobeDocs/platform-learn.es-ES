@@ -4,7 +4,7 @@ description: Introducción a Workfront Planning
 kt: 5342
 doc-type: tutorial
 exl-id: 26fa872b-c872-46b6-8f56-fa41696100da
-source-git-commit: bdb5b2c2ae1cb1380c69bc1ef2d12e7d8b6ea05d
+source-git-commit: 42c9c3bbf0958794d5a65c37d4771345c6ff584c
 workflow-type: tm+mt
 source-wordcount: '1258'
 ht-degree: 1%
@@ -127,7 +127,7 @@ Establezca **Name** en `Consumer Services`.
 
 Establezca **Description** en `Handles residential offerings like mobile plans, internet packages, and customer support.`.
 
-Establezca el posible cliente de la unidad de negocio **1&rbrace; en usted mismo.**
+Establezca el posible cliente de la unidad de negocio **1} en usted mismo.**
 
 Una vez finalizado, haga clic en la flecha para volver a la pantalla anterior.
 
@@ -141,7 +141,7 @@ Establecer **Name** en `Enterprise & Business Solutions`
 
 Definir **Descripción** en `Provides connectivity, cloud, and managed services to corporate clients and government entities.`
 
-Establezca el posible cliente de la unidad de negocio **1&rbrace; en usted mismo.**
+Establezca el posible cliente de la unidad de negocio **1} en usted mismo.**
 
 Una vez finalizado, haga clic en la flecha para volver a la pantalla anterior.
 
@@ -155,7 +155,7 @@ Establecer **Name** en `Sales & Marketing`
 
 Definir **Descripción** en `Drives customer acquisition, brand strategy, advertising, and market segmentation.`
 
-Establezca el posible cliente de la unidad de negocio **1&rbrace; en usted mismo.**
+Establezca el posible cliente de la unidad de negocio **1} en usted mismo.**
 
 Una vez finalizado, haga clic en la flecha para volver a la pantalla anterior.
 

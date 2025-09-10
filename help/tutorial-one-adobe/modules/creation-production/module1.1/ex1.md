@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: 4d8952cdd136e9bf3a82fa864de4d51641bcbfd8
+source-git-commit: ceb8d1ca1efdd94d608eca41ec60b6d96cb207ff
 workflow-type: tm+mt
-source-wordcount: '3788'
+source-wordcount: '3787'
 ht-degree: 0%
 
 ---
@@ -158,7 +158,7 @@ Ahora ha aprendido a utilizar Firefly para solucionar un problema de diseño en 
 
 Vaya a [https://firefly.adobe.com/generate/image](https://firefly.adobe.com/generate/image). Entonces debería ver esto. Haga clic en la lista desplegable **Modelo**. Verá que hay 3 versiones disponibles de Adobe Firefly Services:
 
-- Imagen de Firefly 3
+- Firefly Image 3
 - Imagen de Firefly 4
 - Firefly Image 4 Ultra
 
@@ -168,7 +168,7 @@ Vaya a [https://firefly.adobe.com/generate/image](https://firefly.adobe.com/gene
 >
 >Firefly Image 3 e Image 4 están disponibles para todos los que utilizan Adobe Firefly Services, mientras que Firefly Image 4 Ultra requiere una licencia de Firefly Pro.
 
-Haga clic para seleccionar **Imagen de Firefly 3** para este ejercicio.
+Haga clic para seleccionar **Firefly Image 3** para este ejercicio.
 
 ![Postman](./images/ffui1a.png)
 
