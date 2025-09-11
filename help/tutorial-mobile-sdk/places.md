@@ -3,7 +3,7 @@ title: Uso de Places con Platform Mobile SDK
 description: Aprenda a utilizar el servicio de geolocalización de Places en su aplicación móvil.
 jira: KT-14635
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
 workflow-type: tm+mt
 source-wordcount: '1825'
 ht-degree: 2%
@@ -400,15 +400,15 @@ Para validar las funciones de geolocalización en la aplicación:
 
 1. Mueva (arrastre) el mapa para asegurarse de que el círculo central azul esté encima de uno de sus puntos de interés, por ejemplo Londres.
 
-1. Tocar <img src="assets/geobutton.png" width="20" /> hasta que vea que la categoría y el nombre aparecen en la etiqueta en la ubicación roja con el pin.
+1. Tocar <img src="assets/geobutton.png" width="20"> hasta que vea que la categoría y el nombre aparecen en la etiqueta en la ubicación roja con el pin.
 
 1. Pulse la etiqueta del punto de interés (POI), que abre la hoja **[!UICONTROL Punto de interés cercano]**.
 
-   <img src="assets/appgeolocation.png" width="300" />
+   <img src="assets/appgeolocation.png" width="300">
 
 1. Pulse los botones **[!UICONTROL Entrada]** o **[!UICONTROL Salida]** para simular los eventos de entrada y salida de geovalla desde la aplicación.
 
-   <img src="assets/appentryexit.png" width="300" />
+   <img src="assets/appentryexit.png" width="300">
 
 1. Debería ver los eventos en la interfaz de usuario de Assurance. Tanto en los Eventos como en los Eventos del servicio de Places.
 
@@ -420,12 +420,12 @@ Para validar las funciones de geolocalización en la aplicación:
 
 1. Toque en algún lugar dentro del círculo rojo que aparece.
 
-   <img src="assets/appgeolocation-android.png" width="300" />
+   <img src="assets/appgeolocation-android.png" width="300">
 
 
 1. Pulse los botones **[!UICONTROL Entrada]** o **[!UICONTROL Salida]** para simular los eventos de entrada y salida de geovalla desde la aplicación.
 
-   <img src="assets/appentryexit-android.png" width="300" />
+   <img src="assets/appentryexit-android.png" width="300">
 
 1. Debería ver los eventos en la interfaz de usuario de Assurance.
 
@@ -446,6 +446,6 @@ Esta implementación de la funcionalidad de geolocalización para su aplicación
 >
 >Ahora ha habilitado la aplicación para servicios de geolocalización mediante la extensión Places en Experience Platform Mobile SDK.
 >
->Gracias por dedicar su tiempo a conocer Adobe Experience Platform Mobile SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=es).
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Mobile SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Siguiente: **[Asignar datos a Adobe Analytics](analytics.md)**
