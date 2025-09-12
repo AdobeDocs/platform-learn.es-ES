@@ -6,7 +6,7 @@ feature-set: Target
 feature: A/B Tests
 hide: true
 hidefromtoc: true
-source-git-commit: 4a0fa85c76c00fd505118692ea4b6cbe410f5839
+source-git-commit: 2b2267e84b26f8c2571e40d7f4c0e08281d36c6c
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 2%
@@ -93,6 +93,6 @@ Revise la sección [instrucciones de configuración](assurance.md#connecting-to-
 1. Seleccione **[!UICONTROL Inicio]** en la barra de pestañas y verifique que ve un **[!UICONTROL ECID]**, **[!UICONTROL correo electrónico]** y **[!UICONTROL ID de CRM]** en la pantalla Inicio.
 1. Seleccione **[!DNL Products]** en la barra de fichas.
 1. Seleccione un producto.
-1. Seleccione ![Guardar para más tarde](assets/saveforlater.png) (iOS) o ![Guardar para más tarde](assets/heart.png){width=25} (Android).
+1. Seleccione ![Guardar para más tarde](assets/saveforlater.png) (iOS) o ![Guardar para más tarde](assets/heart.png) (Android).
 1. Seleccione ![Agregar al carro](assets/addtocart.png).
 1. Seleccione ![Comprar](assets/purchase.png).
