@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo recopilar datos de identidad en un
 feature: Mobile SDK,Identities
 jira: KT-14633
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 4a0fa85c76c00fd505118692ea4b6cbe410f5839
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '962'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Obtenga información sobre cómo recopilar datos de identidad en una aplicación
 
 El servicio de identidad de Adobe Experience Platform le ayuda a obtener una mejor vista de sus clientes y de sus comportamientos. Los servicios vinculan identidades entre dispositivos y sistemas, y le permiten ofrecer experiencias digitales personales impactantes en tiempo real. Los campos de identidad y las áreas de nombres son el pegamento que une diferentes fuentes de datos para crear un perfil de cliente en tiempo real de 360 grados.
 
-Obtenga más información acerca de la [extensión de identidad](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) y el [servicio de identidad](https://experienceleague.adobe.com/es/docs/experience-platform/identity/home) en la documentación.
+Obtenga más información acerca de la [extensión de identidad](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) y el [servicio de identidad](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) en la documentación.
 
 ## Requisitos previos
 
@@ -35,7 +35,7 @@ En esta lección, deberá hacer lo siguiente:
 
 ## Configurar un área de nombres de identidad personalizada
 
-Las áreas de nombres de identidad son componentes de [Identity Service](https://experienceleague.adobe.com/es/docs/experience-platform/identity/home) que sirven como indicadores del contexto al que se relaciona una identidad. Por ejemplo, distinguen un valor de `name@email.com` como dirección de correo electrónico o `443522` como ID numérico de CRM.
+Las áreas de nombres de identidad son componentes de [Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) que sirven como indicadores del contexto al que se relaciona una identidad. Por ejemplo, distinguen un valor de `name@email.com` como dirección de correo electrónico o `443522` como ID numérico de CRM.
 
 >[!NOTE]
 >
@@ -179,7 +179,7 @@ Desea actualizar la identidad estándar (correo electrónico) y la identidad per
 
 ## Eliminación de una identidad
 
-Puede usar la API [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) para quitar la identidad del mapa de identidad del lado del cliente almacenado. La extensión de identidad deja de enviar el identificador a Edge Network. El uso de esta API no elimina el identificador del gráfico de identidades del lado del servidor. Consulte [Ver gráficos de identidad](https://experienceleague.adobe.com/es/docs/platform-learn/tutorials/identities/view-identity-graphs) para obtener más información sobre los gráficos de identidad.
+Puede usar la API [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) para quitar la identidad del mapa de identidad del lado del cliente almacenado. La extensión de identidad deja de enviar el identificador a Edge Network. El uso de esta API no elimina el identificador del gráfico de identidades del lado del servidor. Consulte [Ver gráficos de identidad](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/view-identity-graphs) para obtener más información sobre los gráficos de identidad.
 
 
 >[!BEGINTABS]
@@ -233,7 +233,7 @@ MobileSDK.shared.removeIdentities(
 1. Revise la sección [instrucciones de configuración](assurance.md#connecting-to-a-session) para conectar el simulador o dispositivo a Assurance.
 1. En la aplicación de Luma.
    1. Seleccione la ficha **[!UICONTROL Página de inicio]** y mueva el icono Assurance a la izquierda.
-   1. Seleccione el Icono <img src="assets/login.png" width="15" /> de la parte superior derecha.
+   1. Seleccione el icono ![Usuario](/help/assets/icons/User.svg) de la parte superior derecha.
 
 >[!BEGINTABS]
 
@@ -248,7 +248,7 @@ MobileSDK.shared.removeIdentities(
 >[!ENDTABS]
 
 1. Proporcione una dirección de correo electrónico y un ID de CRM, o
-1. Seleccionar <img src="assets/insert.png" width="15" /> (iOS) o **[!UICONTROL Generar correo electrónico aleatorio]** (Android) para generar **[!UICONTROL correo electrónico]** y **[!UICONTROL ID de CRM]** de forma aleatoria.
+1. Seleccionar **[!UICONTROL A |]** (iOS) o **[!UICONTROL Generar correo electrónico aleatorio]** (Android) para generar **[!UICONTROL correo electrónico]** y **[!UICONTROL ID de CRM]** de forma aleatoria.
 1. Seleccione **[!UICONTROL Iniciar sesión]**.
 
 >[!BEGINTABS]
@@ -290,6 +290,6 @@ Una vez que complete los pasos de la [lección de Experience Platform](platform.
 >
 >Ahora ha configurado la aplicación para actualizar identidades en Edge Network y (cuando está configurada) con Adobe Experience Platform.
 >
->Gracias por dedicar su tiempo a conocer Adobe Experience Platform Mobile SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=es)
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Mobile SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Siguiente: **[Recopilar datos de perfil](profile.md)**

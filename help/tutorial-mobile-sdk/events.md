@@ -3,9 +3,9 @@ title: Seguimiento de datos de eventos en aplicaciones móviles con Experience P
 description: Obtenga información sobre cómo rastrear datos de evento en una aplicación móvil.
 jira: KT-14631
 exl-id: 4779cf80-c143-437b-8819-1ebc11a26852
-source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
+source-git-commit: 4a0fa85c76c00fd505118692ea4b6cbe410f5839
 workflow-type: tm+mt
-source-wordcount: '1678'
+source-wordcount: '1698'
 ht-degree: 1%
 
 ---
@@ -200,9 +200,9 @@ Ahora va a implementar este código en su proyecto.
 Tiene diferentes acciones comerciales relacionadas con productos en la aplicación y quiere enviar eventos, según estas acciones realizadas por el usuario:
 
 * vista: se produce cuando un usuario ve un producto específico,
-* añadir al carro: cuando un usuario pulse <img src="assets/addtocart.png" width="20"> en una pantalla de detalles del producto,
-* guardar para más tarde: cuando un usuario pulse <img src="assets/saveforlater.png" width="15" /> / <img src="assets/heart.png" width="25"> en una pantalla de detalles del producto,
-* compra: cuando un usuario pulse <img src="assets/purchase.png" width="20"> en una pantalla de detalles del producto.
+* añadir al carro: cuando un usuario pulsa ![Carro de compras](/help/assets/icons/ShoppingCart.svg) en una pantalla de detalles del producto,
+* guardar para más tarde: cuando un usuario pulse ![Corazón](/help/assets/icons/Heart.svg) / ![Miniatura](/help/assets/icons/ThumbUp.svg) en una pantalla de detalles del producto,
+* compra: cuando un usuario pulse ![CreditCard](/help/assets/icons/CreditCard.svg) en una pantalla de detalles del producto.
 
 Para implementar el envío de eventos de experiencia relacionados con el comercio de forma reutilizable, se utiliza una función dedicada:
 
@@ -249,23 +249,23 @@ Para implementar el envío de eventos de experiencia relacionados con el comerci
       MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productViews", product: product)
       ```
 
-   1. Para cada uno de los botones (<img src="assets/saveforlater.png" width="15" />, <img src="assets/addtocart.png" width="20"> y <img src="assets/purchase.png" width="20">) en la barra de herramientas, agregue la llamada relevante dentro del cierre `ATTrackingManager.trackingAuthorizationStatus == .authorized`:
+   1. Para cada uno de los botones (![Corazón](/help/assets/icons/Heart.svg), ![Carro de compras](/help/assets/icons/ShoppingCart.svg) y ![Tarjeta de crédito](/help/assets/icons/CreditCard.svg)) de la barra de herramientas, agregue la llamada correspondiente dentro del cierre de `ATTrackingManager.trackingAuthorizationStatus == .authorized`:
 
-      1. Para <img src="assets/saveforlater.png" width="15" />:
+      1. Para ![Heart](/help/assets/icons/Heart.svg):
 
          ```swift
          // Send saveForLater commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "saveForLaters", product: product)
          ```
 
-      1. Para <img src="assets/addtocart.png" width="20">:
+      1. Para ![ShoppingCart](/help/assets/icons/ShoppingCart.svg):
 
          ```swift
          // Send productListAdds commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productListAdds", product: product)
          ```
 
-      1. Para <img src="assets/purchase.png" width="20">:
+      1. Para ![CreditCard](/help/assets/icons/CreditCard.svg):
 
          ```swift
          // Send purchase commerce experience event
@@ -308,23 +308,23 @@ Para implementar el envío de eventos de experiencia relacionados con el comerci
       MobileSDK.shared.sendCommerceExperienceEvent("productViews", product)
       ```
 
-   1. Para cada uno de los botones (<img src="assets/heart.png" width="25">, <img src="assets/addtocart.png" width="20"> y <img src="assets/purchase.png" width="20">) en la barra de herramientas, agregue la llamada relevante dentro del `scope.launch` del `if (MobileSDK.shared.trackingEnabled == TrackingStatus.AUTHORIZED)  statement`:
+   1. Para cada uno de los botones (![ThumbUp](/help/assets/icons/ThumbUp.svg), ![ShoppingCart](/help/assets/icons/ShoppingCart.svg) y ![CreditCard](/help/assets/icons/CreditCard.svg)) de la barra de herramientas, agregue la llamada correspondiente dentro del `scope.launch` de `if (MobileSDK.shared.trackingEnabled == TrackingStatus.AUTHORIZED)  statement`:
 
-      1. Para <img src="assets/heart.png" width="25">:
+      1. Para ![ThumbUp](/help/assets/icons/ThumbUp.svg):
 
          ```kotlin
          // Send saveForLater commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent("saveForLaters", product)
          ```
 
-      1. Para <img src="assets/addtocart.png" width="20">:
+      1. Para ![ShoppingCart](/help/assets/icons/ShoppingCart.svg):
 
          ```kotlin
          // Send productListAdds commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent("productListAdds", product)
          ```
 
-      1. Para <img src="assets/purchase.png" width="20">:
+      1. Para ![CreditCard](/help/assets/icons/CreditCard.svg):
 
          ```kotlin
          // Send purchase commerce experience event
@@ -610,7 +610,7 @@ De nuevo, implemente este código en el proyecto.
       * configura un evento de experiencia utilizando el mapa,
       * envía el evento de experiencia mediante la API [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent).
 
-1. Vaya a **[!UICONTROL Android]** ![ChevronDown ](/help/assets/icons/ChevronDown.svg)**[!DNL app]**>**[!DNL kotlin+java]**>**[!DNL com.adobe.luma.tutorial.android]**>**[!UICONTROL &#x200B; views &#x200B;]**>**[!UICONTROL &#x200B; LoginSheet.kt &#x200B;]**
+1. Vaya a **[!UICONTROL Android]** ![ChevronDown ](/help/assets/icons/ChevronDown.svg)**[!DNL app]**>**[!DNL kotlin+java]**>**[!DNL com.adobe.luma.tutorial.android]**>**[!UICONTROL  views ]**>**[!UICONTROL  LoginSheet.kt ]**
 
    1. Agregue el siguiente código resaltado al evento **[!UICONTROL Button]** **[!UICONTROL onClick]**:
 
@@ -638,9 +638,9 @@ De nuevo, implemente este código en el proyecto.
    1. Seleccione **[!UICONTROL Inicio]** en la barra de pestañas y verifique que ve un **[!UICONTROL ECID]**, **[!UICONTROL correo electrónico]** y **[!UICONTROL ID de CRM]** en la pantalla Inicio.
    1. Seleccione **[!DNL Products]** en la barra de fichas.
    1. Seleccione un producto.
-   1. Seleccionar <img src="assets/saveforlater.png" width="15"> (iOS) o <img src="assets/heart.png" width="25"> (Android).
-   1. Seleccionar <img src="assets/addtocart.png" width="20">.
-   1. Seleccionar <img src="assets/purchase.png" width="15">.
+   1. Seleccione ![Corazón](/help/assets/icons/Heart.svg) (iOS) o ![Miniatura](/help/assets/icons/ThumbUp.svg) (Android).
+   1. Seleccione ![ShoppingCartAdd](/help/assets/icons/ShoppingCart.svg).
+   1. Seleccione ![CreditCard](/help/assets/icons/CreditCard.svg).
 
 >[!BEGINTABS]
 
@@ -681,6 +681,6 @@ Ahora que ha recopilado los eventos y los ha enviado a Platform Edge Network, se
 >
 >Ahora ha configurado la aplicación para rastrear eventos de comercio, interacción de aplicaciones y seguimiento de pantalla en Adobe Experience Platform Edge Network. Y a todos los servicios que haya definido en su conjunto de datos.
 >
->Gracias por dedicar su tiempo a conocer Adobe Experience Platform Mobile SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=es).
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Mobile SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Siguiente: **[Administrar vistas web](web-views.md)**
