@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo implementar la extensión de Assur
 feature: Mobile SDK,Assurance
 jira: KT-14628
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 456c5437cec745f667435e97d21edfba1700750a
 workflow-type: tm+mt
 source-wordcount: '1660'
 ht-degree: 4%
@@ -35,7 +35,7 @@ En esta lección, deberá hacer lo siguiente:
 
 ## Confirmar acceso
 
-Confirme que su organización tiene acceso a Assurance. Usted, como usuario, debe añadirse al perfil de Adobe Experience Platform. Consulte [Acceso de usuario](https://experienceleague.adobe.com/es/docs/experience-platform/assurance/user-access) en la guía de Assurance para obtener más información.
+Confirme que su organización tiene acceso a Assurance. Usted, como usuario, debe añadirse al perfil de Adobe Experience Platform. Consulte [Acceso de usuario](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/user-access) en la guía de Assurance para obtener más información.
 
 ## Implementación
 
@@ -105,7 +105,7 @@ Debe proporcionar un identificador de paquete único para la aplicación.
 
 Asegúrese de utilizar un identificador de paquete _unique_ y reemplace el identificador de paquete `com.adobe.luma.tutorial.swiftui`, ya que cada identificador de paquete debe ser único. Normalmente, utiliza un formato DNS inverso para cadenas de ID de paquete, como `com.organization.brand.uniqueidentifier`. La versión final de este tutorial, por ejemplo, utiliza `com.adobe.luma.tutorial.swiftui`.
 
-![Funciones de firma de Xcode](assets/xcode-signing-capabilities.png){zoomable="yes"}{zoomable="yes"}
+![Funciones de firma de Xcode](assets/xcode-signing-capabilities.png){zoomable="yes"}
 
 >[!TAB Android]
 
@@ -388,7 +388,7 @@ Si ve extensiones obsoletas, consulte la [documentación de Android Studio](http
 >
 >Ahora ha configurado la aplicación para que utilice Assurance durante el resto del tutorial.
 >
->Gracias por dedicar su tiempo a conocer Adobe Experience Platform Mobile SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=es)
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Mobile SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 
 Siguiente: **[Implementar consentimiento](consent.md)**

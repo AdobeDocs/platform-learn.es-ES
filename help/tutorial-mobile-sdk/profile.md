@@ -3,9 +3,9 @@ title: Recopilación de datos de perfil con Platform Mobile SDK
 description: Obtenga información sobre cómo recopilar datos de perfil en una aplicación móvil.
 jira: KT-14634
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
-source-git-commit: 4a0fa85c76c00fd505118692ea4b6cbe410f5839
+source-git-commit: 456c5437cec745f667435e97d21edfba1700750a
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '787'
 ht-degree: 1%
 
 ---
@@ -160,7 +160,7 @@ Consulte la [referencia de API](https://developer.adobe.com/client-sdks/document
 
    <img src="./assets/mobile-app-events-1.png" width="300">
 
-1. Para insertar un correo electrónico e ID de cliente aleatorio, seleccione el botón >
+1. Para insertar un correo electrónico y un ID de cliente aleatorios, seleccione **[!UICONTROL A Botón |]** .
 1. Seleccione **[!UICONTROL Iniciar sesión]**.
 
    <img src="./assets/mobile-app-events-2.png" width="300">
@@ -214,6 +214,6 @@ En la interfaz de usuario de Assurance, debería ver los eventos **[!UICONTROL U
 >
 >Ahora ha configurado la aplicación para actualizar los atributos de los perfiles en Edge Network y (cuando está configurada) con Adobe Experience Platform.
 >
->Gracias por dedicar su tiempo a conocer Adobe Experience Platform Mobile SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=es).
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Mobile SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Siguiente: **[Usar lugares](places.md)**
