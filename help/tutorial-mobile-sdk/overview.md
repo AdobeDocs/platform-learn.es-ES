@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo implementar las aplicaciones móvi
 recommendations: noDisplay,catalog
 last-substantial-update: 2023-11-29T00:00:00Z
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 9129d7ab2ac33626240b0375e6424c0f6943290f
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1018'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Experience Platform Mobile SDK es un SDK del lado del cliente que permite a los 
 ![Arquitectura](assets/architecture.png){zoomable="yes"}
 
 
-Este tutorial le guía a través de la implementación de Platform Mobile SDK en una aplicación de ejemplo llamada Luma. La [aplicación de Luma](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) tiene una funcionalidad que le permite generar una implementación realista. Después de completar este tutorial, debe estar preparado para empezar a implementar todas las soluciones de marketing a través de Experience Platform Mobile SDK en sus propias aplicaciones móviles.
+Este tutorial le guía a través de la implementación de Platform Mobile SDK en una aplicación de ejemplo llamada Luma. La aplicación de Luma tiene una funcionalidad que le permite crear una implementación realista. Después de completar este tutorial, debe estar preparado para empezar a implementar todas las soluciones de marketing a través de Experience Platform Mobile SDK en sus propias aplicaciones móviles.
 
 Las lecciones están diseñadas para:
 
@@ -64,7 +64,7 @@ En estas lecciones, se da por hecho que dispone de un Adobe ID y de los permisos
    * **[!UICONTROL Derechos de propiedad]**: elementos de permiso para **[!UICONTROL desarrollar]**, **[!UICONTROL aprobar]**, **[!UICONTROL publicar]**, **[!UICONTROL administrar extensiones]** y **[!UICONTROL administrar entornos]**.
    * **[!UICONTROL Derechos de compañía]**—elementos de permiso para **[!UICONTROL Administrar propiedades]**
 
-     Para obtener más información sobre los permisos de etiquetas, consulte [Permisos de usuario para etiquetas](https://experienceleague.adobe.com/es/docs/experience-platform/tags/admin/user-permissions){target="_blank"} en la documentación del producto.
+     Para obtener más información sobre los permisos de etiquetas, consulte [Permisos de usuario para etiquetas](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions){target="_blank"} en la documentación del producto.
 * En Experience Platform, debe tener:
    * **[!UICONTROL Modelado de datos]**: elementos de permiso para administrar y ver esquemas.
    * **[!UICONTROL Identity Management]**: elementos de permiso para administrar y ver áreas de nombres de identidad.
@@ -74,7 +74,7 @@ En estas lecciones, se da por hecho que dispone de un Adobe ID y de los permisos
       * **[!UICONTROL Administración de datos]**: elementos de permiso para administrar y ver conjuntos de datos.
       * Una **zona protegida** de desarrollo que puede usar para este tutorial.
 
-   * Para las lecciones de Journey Optimizer, necesita permisos para configurar el **servicio de notificaciones push** y crear una **superficie de aplicación**, un **recorrido**, un **mensaje** y **ajustes preestablecidos de mensaje**. Además, para Administración de decisiones, necesita los permisos adecuados para **administrar ofertas** y **decisiones**, tal como se describe en [Niveles de permisos](https://experienceleague.adobe.com/es/docs/journey-optimizer/using/access-control/high-low-permissions).
+   * Para las lecciones de Journey Optimizer, necesita permisos para configurar el **servicio de notificaciones push** y crear una **superficie de aplicación**, un **recorrido**, un **mensaje** y **ajustes preestablecidos de mensaje**. Además, para Administración de decisiones, necesita los permisos adecuados para **administrar ofertas** y **decisiones**, tal como se describe en [Niveles de permisos](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions).
 
 * Para Adobe Analytics, debe saber qué **grupos de informes** puede utilizar para completar este tutorial.
 
@@ -119,9 +119,8 @@ Hay dos versiones de la aplicación de ejemplo disponibles para descargar. Ambas
 
 Utiliza Android como plataforma, [!DNL Kotlin]+[!DNL Java] como lenguaje de programación, [!DNL JetPack Compose] como marco de la interfaz de usuario y [!DNL Android Studio] como entorno de desarrollo integrado (IDE). Sin embargo, muchos de los conceptos de implementación explicados son similares para otras plataformas de desarrollo. Muchos ya han completado con éxito este tutorial con poca o ninguna experiencia previa de Android / Kotlin+Java / JetPack Compose. No necesita ser un experto para completar las lecciones, pero obtiene más información si puede leer y comprender el código con comodidad.
 
-Puede descargar una versión final de prueba de productos de la aplicación desde Google Play.
+Si lo prefiere, puede [unirse a una prueba para obtener una versión de la aplicación con productos](https://play.google.com/apps/internaltest/4700642199234438150) de Google Play.
 
-[![Descargar](assets/download-app-android.svg)](https://play.google.com/store/apps/details?id=com.adobe.luma.tutorial.android)
 
 >[!ENDTABS]
 
@@ -129,6 +128,6 @@ Puede descargar una versión final de prueba de productos de la aplicación desd
 
 >[!SUCCESS]
 >
->Gracias por dedicar su tiempo a conocer Adobe Experience Platform Mobile SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=es).
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Mobile SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Siguiente: **[Crear un esquema XDM](create-schema.md)**
