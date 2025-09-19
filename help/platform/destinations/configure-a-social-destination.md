@@ -21,5 +21,5 @@ ht-degree: 0%
 
 Aprenda a conectar y activar audiencias a un destino social. En este vídeo se muestra el flujo de trabajo utilizando un destino de audiencias coincidentes de LinkedIn en Adobe Real-Time Customer Data Platform.  Para obtener más información, revise la [documentación](https://experienceleague.adobe.com/es/docs/experience-platform/destinations/catalog/social/overview).
 
->[!VIDEO](https://video.tv.adobe.com/v/332599/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3411784/?learn=on&enablevpops&captions=spa)
 
