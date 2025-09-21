@@ -4,9 +4,9 @@ breadcrumb-title: Un tutorial técnico de Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 28553f8042be7bfc0b553272a6c72e6677fe1cb3
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
-source-wordcount: '1377'
+source-wordcount: '1371'
 ht-degree: 3%
 
 ---
@@ -93,11 +93,10 @@ ht-degree: 3%
    + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
       + [Información general](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/aemcs.md)
       + [1.1.1 Creación de su programa de Cloud Manager](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex1.md)
-      + [1.1.2 Crear un sitio web basado en documentos](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex2.md)
-      + [1.1.3 Configuración del entorno de AEM CS](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex3.md)
-      + [1.1.4 Bloque personalizado básico](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex4.md)
-      + [1.1.5 Bloque personalizado avanzado](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex5.md)
-      + [1.1.6 Complemento AEM Edge Delivery Services MarTech](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex6.md)
+      + [1.1.2 Configuración del entorno de AEM CS](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex3.md)
+      + [1.1.3 Bloque personalizado básico](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex4.md)
+      + [1.1.4 Bloque personalizado avanzado](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex5.md)
+      + [1.1.5 Complemento AEM Edge Delivery Services MarTech](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex6.md)
       + [Resumen y beneficios](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/summary.md)
    + 1.2 Adobe Experience Manager Assets {#assetm2}
       + [Información general](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/aemassets.md)

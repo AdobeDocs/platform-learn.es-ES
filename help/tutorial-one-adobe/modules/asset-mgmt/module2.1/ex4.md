@@ -4,16 +4,16 @@ description: 'AEM CS: bloque personalizado básico'
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '812'
 ht-degree: 1%
 
 ---
 
-# 1.1.4 Desarrollar un bloque personalizado básico
+# 1.1.3 Desarrollar un bloque personalizado básico
 
-## 1.1.4.1 Configure su entorno de desarrollo local
+## 1.1.3.1 Configure su entorno de desarrollo local
 
 Vaya a [https://desktop.github.com/download/](https://desktop.github.com/download/){target="_blank"}, descargue e instale **Github Desktop**.
 
@@ -43,7 +43,7 @@ Ahora verá esa carpeta abierta en Visual Studio Code y ya estará listo para cr
 
 ![Bloquear](./images/block7.png){zoomable="yes"}
 
-## 1.1.4.2 Crear un bloque personalizado básico
+## 1.1.3.2 Crear un bloque personalizado básico
 
 Adobe recomienda desarrollar bloques en un enfoque de tres fases:
 
@@ -145,7 +145,7 @@ Guarde los cambios.
 
 ![Bloquear](./images/block15.png){zoomable="yes"}
 
-## 1.1.4.3: confirmar los cambios
+## 1.1.3.3: confirmar los cambios
 
 Ahora ha realizado varios cambios en el proyecto que deben volver a enviarse al repositorio de GitHub. Para ello, abra **GitHub Desktop**.
 
@@ -169,7 +169,7 @@ En el navegador, vaya a su cuenta de GitHub y al repositorio que ha creado para 
 
 ![Bloquear](./images/block20.png){zoomable="yes"}
 
-## 1.1.4.4 Agregar el bloque a una página
+## 1.1.3.4 Agregar el bloque a una página
 
 Ahora que el bloque de presupuesto básico está definido y comprometido con el proyecto CitiSignal, puede agregar un bloque **fiberoffer** a una página existente.
 
@@ -249,7 +249,7 @@ Vuelva a hacer clic en **Publicar**.
 
 Se ha publicado su nueva página.
 
-## 1.1.4.5 Agregar su nueva página al menú de navegación
+## 1.1.3.5 Agregar su nueva página al menú de navegación
 
 En la descripción general de AEM Sites, ve a **CitiSignal** > **Fragmentos** y marca la casilla de verificación de **Encabezado**. Haga clic en **Edit**.
 
@@ -284,7 +284,7 @@ Este es el bloque personalizado básico, pero que ahora se representa en el siti
 
 ![AEMCS](./images/nav7.png){zoomable="yes"}
 
-Paso siguiente: [1.1.5 Bloque personalizado avanzado](./ex5.md){target="_blank"}
+Paso siguiente: [Bloque personalizado avanzado](./ex5.md){target="_blank"}
 
 Volver a [Adobe Experience Manager Cloud Service &amp; Edge Delivery Services](./aemcs.md){target="_blank"}
 

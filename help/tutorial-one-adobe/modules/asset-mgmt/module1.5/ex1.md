@@ -3,10 +3,10 @@ title: Introducción a Adobe Commerce as a Cloud Service
 description: Introducción a Adobe Commerce as a Cloud Service
 kt: 5342
 doc-type: tutorial
-source-git-commit: 28553f8042be7bfc0b553272a6c72e6677fe1cb3
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 16%
+source-wordcount: '688'
+ht-degree: 15%
 
 ---
 
@@ -100,6 +100,16 @@ Haga clic en **Guardar vista de tienda**.
 Entonces debería ver este mensaje. Haga clic en **Aceptar**.
 
 ![AEM Assets](./images/accs15.png)
+
+Entonces deberías estar de vuelta aquí. Haga clic en el sitio web **CitiSignal** para abrirlo.
+
+![AEM Assets](./images/accs16.png)
+
+Marque la casilla de verificación para establecer este sitio web como el sitio web predeterminado.
+
+Haga clic en **Guardar sitio web**.
+
+![AEM Assets](./images/accs16a.png)
 
 Entonces deberías estar de vuelta aquí.
 

@@ -4,14 +4,14 @@ description: Complemento AEM CS - MarTech
 kt: 5342
 doc-type: tutorial
 exl-id: 77dc780b-ce6c-403f-847d-8eb64cbe2a97
-source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 1%
 
 ---
 
-# 1.1.6 Complemento AEM Edge Delivery Services MarTech
+# 1.1.5 Complemento AEM Edge Delivery Services MarTech
 
 El complemento AEM MarTech le ayuda a configurar rápidamente una pila MarTech completa para su proyecto de AEM.
 
@@ -19,7 +19,7 @@ El complemento AEM MarTech le ayuda a configurar rápidamente una pila MarTech c
 >
 >Actualmente, este complemento está disponible para los clientes de en colaboración con AEM Engineering a través de proyectos de innovación conjunta. Puede encontrar más información en [https://github.com/adobe-rnd/aem-martech](https://github.com/adobe-rnd/aem-martech).
 
-## 1.1.6.1 Agregar el complemento a su repositorio
+## 1.1.5.1 Agregar el complemento a su repositorio
 
 Vaya a la carpeta que esté usando para su repositorio de **citisignal** GitHub. Haga clic con el botón derecho en el nombre de la carpeta y seleccione **Nuevo terminal en la carpeta**.
 
@@ -39,7 +39,7 @@ Vaya a la carpeta que esté usando para el repositorio de **citisignal** GitHub 
 
 ![AEMCS](./images/mtplugin4.png){zoomable="yes"}
 
-## 1.1.6.2 head.html
+## 1.1.5.2 head.html
 
 En Visual Studio Code, abra el archivo **head.html**. Copie el siguiente código y péguelo en el archivo **head.html**.
 
@@ -54,7 +54,7 @@ Guarde los cambios.
 
 ![AEMCS](./images/mtplugin5.png){zoomable="yes"}
 
-## 1.1.6.3 scripts.js
+## 1.1.5.3 scripts.js
 
 En Visual Studio Code, vaya a la carpeta **scripts** y abra el archivo **scripts.js**. Copie el siguiente código y péguelo en el archivo **scripts.js**, en los scripts de importación existentes.
 
@@ -88,25 +88,25 @@ En **const AUDIENCES = {...};**, pegue el siguiente código:
   const isConsentGiven = true;
   const martechLoadedPromise = initMartech(
     // The WebSDK config
-    // Documentation: https://experienceleague.adobe.com/es/docs/experience-platform/web-sdk/commands/configure/overview#configure-js
+    // Documentation: https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/overview#configure-js
     {
       datastreamId: "XXX",
       orgId: "XXX",
       defaultConsent: 'in',
       onBeforeEventSend: (payload) => {
         // set custom Target params 
-        // see doc at https://experienceleague.adobe.com/es/docs/platform-learn/migrate-target-to-websdk/send-parameters#parameter-mapping-summary
+        // see doc at https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/send-parameters#parameter-mapping-summary
         payload.data.__adobe.target ||= {};
 
         // set custom Analytics params
-        // see doc at https://experienceleague.adobe.com/es/docs/analytics/implementation/aep-edge/data-var-mapping
+        // see doc at https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping
         payload.data.__adobe.analytics ||= {};
       },
 
       // set custom datastream overrides
       // see doc at:
-      // - https://experienceleague.adobe.com/es/docs/experience-platform/web-sdk/commands/datastream-overrides
-      // - https://experienceleague.adobe.com/es/docs/experience-platform/datastreams/overrides
+      // - https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/datastream-overrides
+      // - https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides
       edgeConfigOverrides: {
         // Override the datastream id
         // datastreamId: '...'
@@ -315,7 +315,7 @@ Haga clic en **Origen push** para insertar los cambios en el repositorio de GitH
 
 ![AEMCS](./images/mtplugin13.png){zoomable="yes"}
 
-## Extensión ACDL 1.1.6.4 en la propiedad Etiquetas
+## Extensión ACDL 1.1.5.4 en la propiedad Etiquetas
 
 Para que el complemento AEM Edge Delivery Services MarTech funcione correctamente, debe añadir la extensión de para
 
@@ -341,7 +341,7 @@ Vaya a **Flujo de publicación** y abra su biblioteca **Principal**. Haga clic e
 
 Los cambios se han implementado.
 
-## 1.1.6.5 Enviar datos a Adobe Experience Platform Edge Network
+## 1.1.5.5 Enviar datos a Adobe Experience Platform Edge Network
 
 Ahora podrá ver los cambios en su sitio web yendo a `main--citisignal--XXX.aem.page/us/en/` y/o `main--citisignal--XXX.aem.live/us/en/`, después de reemplazar XXX por su cuenta de usuario de GitHub, que en este ejemplo es `woutervangeluwe`.
 
@@ -366,7 +366,7 @@ Abra la carga útil, explore en profundidad el campo `events[0].xdm._experiencep
 
 ![AEMCS](./images/plweb3.png){zoomable="yes"}
 
-## 1.1.6.6 Ver perfil de cliente en Adobe Experience Platform
+## 1.1.5.6 Ver perfil de cliente en Adobe Experience Platform
 
 Inicie sesión en Adobe Experience Platform desde esta dirección URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
