@@ -1,351 +1,402 @@
 ---
-title: 'AEM CS: Bloque personalizado avanzado'
-description: 'AEM CS: Bloque personalizado avanzado'
+title: Complemento AEM CS - MarTech
+description: Complemento AEM CS - MarTech
 kt: 5342
 doc-type: tutorial
-exl-id: 31fd1dea-70c9-4f82-87ad-16276ffa7f5b
-source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
+exl-id: 77dc780b-ce6c-403f-847d-8eb64cbe2a97
+source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
 workflow-type: tm+mt
-source-wordcount: '998'
-ht-degree: 0%
+source-wordcount: '1063'
+ht-degree: 1%
 
 ---
 
-# 1.1.4 Bloque personalizado avanzado
+# 1.1.5 Complemento AEM Edge Delivery Services MarTech
 
-En el ejercicio anterior configuró un bloque personalizado básico denominado **Oferta de fibra** que muestra campos como **Texto de oferta**, **CTA de oferta** y **Imagen de oferta** en el sitio web.
+El complemento AEM MarTech le ayuda a configurar rápidamente una pila MarTech completa para su proyecto de AEM.
 
-Ahora puede seguir trabajando en este bloque.
+>[!NOTE]
+>
+>Actualmente, este complemento está disponible para los clientes de en colaboración con AEM Engineering a través de proyectos de innovación conjunta. Puede encontrar más información en [https://github.com/adobe-rnd/aem-martech](https://github.com/adobe-rnd/aem-martech).
 
-![AEMCS](./images/nav7.png){zoomable="yes"}
+## 1.1.5.1 Agregar el complemento a su repositorio
 
-## 1.1.4.1 - Aplicar estilo a tu bloque
+Vaya a la carpeta que esté usando para su repositorio de **citisignal** GitHub. Haga clic con el botón derecho en el nombre de la carpeta y seleccione **Nuevo terminal en la carpeta**.
 
-Ahora que tiene un bloque **fiberoffer** en funcionamiento, puede aplicarle estilo.
+![AEMCS](./images/mtplugin1.png){zoomable="yes"}
 
-Vuelva al código de Visual Studio y abra la carpeta **blocks**. Ahora debería ver varias carpetas, cada una de las cuales hace referencia a un bloque específico. Para que el bloque **fiberoffer** sea más avanzado, ahora necesita crear una carpeta para el bloque personalizado.
+Entonces verá esto... Pegue el siguiente comando y pulse **enter**.
 
-![AEMCS](./images/blockadv1.png){zoomable="yes"}
-
-Seleccione la carpeta **bloques** y haga clic en el icono **Crear nueva carpeta**.
-
-![AEMCS](./images/blockadv2.png){zoomable="yes"}
-
-Asigne un nombre a la carpeta `fiberoffer` y pulse **intro**.
-
-![AEMCS](./images/blockadv3.png){zoomable="yes"}
-
-Seleccione la nueva carpeta **fiberoffer** y haga clic en el icono **Crear nuevo archivo**.
-
-![AEMCS](./images/blockadv4.png){zoomable="yes"}
-
-Se crea un nuevo archivo. Escriba el nombre **fiberoffer.js** y pulse intro.
-
-![AEMCS](./images/blockadv5.png){zoomable="yes"}
-
-Ahora puede implementar la decoración de bloques agregando la siguiente JavaScript al archivo **fiberoffer.js**.
-
-Guarde el archivo.
-
-```js
-export default function decorate(block) {
-  const offerText = block.children[0];
-  const offerCTA = block.children[1];
-  const offerImage = block.children[2];
-
-  offerText.id = 'offerText';
-  offerText.className = 'offerText';
-  offerCTA.id = 'offerCTA';
-  offerCTA.className = 'offerCTA';
-  offerImage.id = 'offerImage';
-  offerImage.className = 'offerImage';
-}
+```
+git subtree add --squash --prefix plugins/martech https://github.com/adobe-rnd/aem-martech.git main
 ```
 
-![AEMCS](./images/blockadv6.png){zoomable="yes"}
+Entonces debería ver esto.
 
-Seleccione la nueva carpeta **fiberoffer** y haga clic en el icono **Crear nuevo archivo** de nuevo.
+![AEMCS](./images/mtplugin3.png){zoomable="yes"}
 
-![AEMCS](./images/blockadv7.png){zoomable="yes"}
+Vaya a la carpeta que esté usando para el repositorio de **citisignal** GitHub y abra la carpeta **plugins**. Ahora debería ver una carpeta llamada **martech**.
 
-Se crea un nuevo archivo. Escriba el nombre **fiberoffer.css** y pulse intro.
+![AEMCS](./images/mtplugin4.png){zoomable="yes"}
 
-![AEMCS](./images/blockadv8.png){zoomable="yes"}
+## 1.1.5.2 head.html
 
-Copie y pegue el siguiente código CSS en el archivo recién creado.
+En Visual Studio Code, abra el archivo **head.html**. Copie el siguiente código y péguelo en el archivo **head.html**.
 
-```js
-.offerText, .offerCTA, .offerImage{
-    color: #14161A;
-    font-size: 30px;
-    padding: 0 0 24px;
-    display: flex;
-    flex-direction: column;
-    margin: 1rem 0;
-    text-align: center;
-}
+```javascript
+<link rel="preload" as="script" crossorigin="anonymous" href="/plugins/martech/src/index.js"/>
+<link rel="preload" as="script" crossorigin="anonymous" href="/plugins/martech/src/alloy.min.js"/>
+<link rel="preconnect" href="https://edge.adobedc.net"/>
+<!-- change to adobedc.demdex.net if you enable third party cookies -->
 ```
 
 Guarde los cambios.
 
-![AEMCS](./images/blockadv9.png){zoomable="yes"}
+![AEMCS](./images/mtplugin5.png){zoomable="yes"}
 
-Ahora ha realizado varios cambios en el proyecto que deben volver a enviarse al repositorio de GitHub. Para ello, abra **GitHub Desktop**.
+## 1.1.5.3 scripts.js
 
-Entonces debería ver los 2 archivos que acaba de editar en **Cambios**. Revise los cambios.
-
-Escriba un nombre para su PR, `js css`. Haga clic en **Compromiso con main**.
-
-![Bloquear](./images/blockadv10.png){zoomable="yes"}
-
-Entonces debería ver esto. Haga clic en **Origen push**.
-
-![Bloquear](./images/blockadv11.png){zoomable="yes"}
-
-En el navegador, vaya a su cuenta de GitHub y al repositorio que ha creado para CitiSignal. Debería ver algo similar a esto, que muestre que se han recibido los cambios.
-
-![Bloquear](./images/blockadv12.png){zoomable="yes"}
-
-Ahora podrá ver los cambios en su sitio web yendo a `main--citisignal--XXX.aem.page/us/en/` y/o `main--citisignal--XXX.aem.live/us/en/`, después de reemplazar XXX por su cuenta de usuario de GitHub, que en este ejemplo es `woutervangeluwe`.
-
-En este ejemplo, la dirección URL completa se convierte en lo siguiente:
-`https://main--citisignal--woutervangeluwe.aem.page/us/en/` o `https://main--citisignal--woutervangeluwe.aem.live/us/en/`.
-
-Debería ver esto, con el estilo aplicado a la página.
-
-![Bloquear](./images/blockadv13.png){zoomable="yes"}
-
-## 1.1.4.2 Agregar lógica y cargar datos desde un extremo externo
-
-Para este ejercicio, se realiza una configuración &quot;sin procesar&quot; de Web SDK de Adobe y se solicita la siguiente mejor oferta de Adobe Journey Optimizer Offer Decisioning.
-
-Para ser claros: no se trata de una implementación de prácticas recomendadas de Web SDK para AEM as a Cloud Service. En el siguiente ejercicio, se implementará la recopilación de datos mediante un complemento específico desarrollado para esto.
-
-Este ejercicio pretende mostrarle un par de cosas básicas en JavaScript, como cargar una biblioteca JS externa, usar la biblioteca **alloy.js**, enviar una solicitud y más.
-
-La biblioteca **alloy.js** es la biblioteca detrás de Web SDK que permite enviar solicitudes desde un sitio web a Edge Network de Adobe y, desde allí, a aplicaciones como Adobe Experience Platform, Adobe Analytics, Adobe Target y más.
-
-Añada este código en el código anterior que agregó para el estilo del bloque:
+En Visual Studio Code, vaya a la carpeta **scripts** y abra el archivo **scripts.js**. Copie el siguiente código y péguelo en el archivo **scripts.js**, en los scripts de importación existentes.
 
 ```javascript
-var script1 = document.createElement('script');
-  script1.text = "!function(n,o){o.forEach(function(o){n[o]||((n.__alloyNS=n.__alloyNS||[]).push(o),n[o]=function(){var u=arguments;return new Promise(function(i,l){n[o].q.push([i,l,u])})},n[o].q=[])})}(window,['alloy']);"
-  document.head.appendChild(script1);
+import {
+  initMartech,
+  updateUserConsent,
+  martechEager,
+  martechLazy,
+  martechDelayed,
+} from '../plugins/martech/src/index.js';
+```
 
-  var script2 = document.createElement('script');
-  script2.async = true;
-  script2.src = "https://cdn1.adoberesources.net/alloy/2.14.0/alloy.min.js";
-  document.head.appendChild(script2);
+Guarde los cambios.
 
-  alloy("configure", {
-    "edgeConfigId": "045c5ee9-468f-47d5-ae9b-a29788f5948f",
-    "orgId": "907075E95BF479EC0A495C73@AdobeOrg",
-    "defaultConsent": "in"
+![AEMCS](./images/mtplugin6.png){zoomable="yes"}
+
+En Visual Studio Code, en el archivo **scripts.js**, busque el siguiente código:
+
+```javascript
+const AUDIENCES = {
+  mobile: () => window.innerWidth < 600,
+  desktop: () => window.innerWidth >= 600,
+  // define your custom audiences here as needed
+};
+```
+
+En **const AUDIENCES = {...};**, pegue el siguiente código:
+
+```javascript
+  const isConsentGiven = true;
+  const martechLoadedPromise = initMartech(
+    // The WebSDK config
+    // Documentation: https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/overview#configure-js
+    {
+      datastreamId: "XXX",
+      orgId: "XXX",
+      defaultConsent: 'in',
+      onBeforeEventSend: (payload) => {
+        // set custom Target params 
+        // see doc at https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/send-parameters#parameter-mapping-summary
+        payload.data.__adobe.target ||= {};
+
+        // set custom Analytics params
+        // see doc at https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping
+        payload.data.__adobe.analytics ||= {};
+      },
+
+      // set custom datastream overrides
+      // see doc at:
+      // - https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/datastream-overrides
+      // - https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides
+      edgeConfigOverrides: {
+        // Override the datastream id
+        // datastreamId: '...'
+
+        // Override AEP event datasets
+        // com_adobe_experience_platform: {
+        //   datasets: {
+        //     event: {
+        //       datasetId: '...'
+        //     }
+        //   }
+        // },
+
+        // Override the Analytics report suites
+        // com_adobe_analytics: {
+        //   reportSuites: ['...']
+        // },
+
+        // Override the Target property token
+        // com_adobe_target: {
+        //   propertyToken: '...'
+        // }
+      },
+    },
+    // The library config
+    {
+      launchUrls: ["XXX"],
+      personalization: !!getMetadata('target') && isConsentGiven,
+    },
+  );
+```
+
+![AEMCS](./images/mtplugin8.png){zoomable="yes"}
+
+Hay un par de variables que debe reemplazar en el código anterior, por las variables de su propio entorno:
+
+- `datastreamId: "XXX"`
+- `orgId: "XXX"`
+- `launchUrls: ["XXX"]`
+
+Puede encontrar estas variables siguiendo estas instrucciones:
+
+### datastreamId
+
+Vaya a [https://platform.adobe.com/](https://platform.adobe.com/) y luego a **Datastreams** en el menú de la izquierda. Asegúrese de que se encuentra en la zona protegida correcta, que debería ser `--aepSandboxName--`. Busque la secuencia de datos creada en la sección Introducción de este tutorial, que debe llamarse `--aepUserLdap-- - One Adobe Datastream`. Haga clic en el icono **copiar** para copiar el **ID de secuencia de datos** y pegarlo en Visual Studio Code, en el archivo **scripts.js**, reemplazando el valor de marcador de posición `XXX` junto a `datastreamId:`.
+
+![AEMCS](./images/scriptsvar1.png){zoomable="yes"}
+
+### orgId
+
+Vaya a [https://platform.adobe.com/](https://platform.adobe.com/) y luego a **Consultas** en el menú de la izquierda. En **Credenciales**, encontrará la **ID de organización de IMS** como **Nombre de usuario**. Haga clic en el icono **copiar** para copiar la **ID de organización de IMS** y pegarla en Visual Studio Code, en el archivo **scripts.js**, reemplazando el valor de marcador de posición `XXX` junto a `orgId:`.
+
+![AEMCS](./images/scriptsvar2.png){zoomable="yes"}
+
+### launchUrls
+
+Vaya a [https://platform.adobe.com/](https://platform.adobe.com/) y luego a **Etiquetas** en el menú de la izquierda. Busque su propiedad usando su LDAP, que debería ser `--aepUserLdap--`. Abra la propiedad web.
+
+![AEMCS](./images/scriptsvar3.png){zoomable="yes"}
+
+En el menú de la izquierda, ve a **Entornos** y luego haz clic en el icono **Instalar** para el entorno **Desarrollo**.
+
+![AEMCS](./images/scriptsvar4.png){zoomable="yes"}
+
+Encontrará la dirección URL que necesita, pero está dentro de una etiqueta de HTML `<script></script>`. Solo debe copiar la parte que comienza a las `https` hasta `.min.js`.
+
+![AEMCS](./images/scriptsvar5.png){zoomable="yes"}
+
+La dirección URL tiene el siguiente aspecto: `https://assets.adobedtm.com/b754ed1bed61/b9f7c7c484de/launch-5fcd90e5b482-development.min.js`. Asegúrese de que no se copie ningún otro texto, ya que esto provocaría errores. En Visual Studio Code, en el archivo **scripts.js**, reemplace el valor de marcador de posición `XXX` en la matriz `launchUrls:`.
+
+Ahora tiene las tres variables que necesita. El archivo `scripts.js` debería tener un aspecto similar al siguiente:
+
+![AEMCS](./images/mtplugin7.png){zoomable="yes"}
+
+A continuación, busque este bloque de código:
+
+```javascript
+const main = doc.querySelector('main');
+  if (main) {
+    decorateMain(main);
+    document.body.classList.add('appear');
+    await loadSection(main.querySelector('.section'), waitForFirstImage);	
+  }
+```
+
+![AEMCS](./images/mtplugin7a.png){zoomable="yes"}
+
+Sustitúyalo por este bloque de código:
+
+```javascript
+const main = doc.querySelector('main');
+  if (main) {
+    decorateMain(main);
+    document.body.classList.add('appear');
+    await Promise.all([
+      martechLoadedPromise.then(martechEager),
+      loadSection(main.querySelector('.section'), waitForFirstImage)
+    ]);
+  }
+```
+
+![AEMCS](./images/mtplugin10.png){zoomable="yes"}
+
+A continuación, busque y desplácese hacia abajo hasta `async function loadLazy(doc) {`.
+
+![AEMCS](./images/mtplugin9a.png){zoomable="yes"}
+
+En la línea `autolinkModals(doc);`, agregue esta línea de código:
+
+```javascript
+await martechLazy();
+```
+
+![AEMCS](./images/mtplugin9.png){zoomable="yes"}
+
+A continuación, busque y desplácese hacia abajo hasta la línea `function loadDelayed() {`.
+
+![AEMCS](./images/mtplugin11a.png){zoomable="yes"}
+
+Agregue este bloque de código bajo la línea `// load anything that can be postponed to the latest here`.
+
+```javascript
+window.setTimeout(() => {
+    martechDelayed();
+    return import('./delayed.js');
+  }, 3000);
+```
+
+![AEMCS](./images/mtplugin11.png){zoomable="yes"}
+
+A continuación, busque y vaya a la línea que contiene `window.adobeDataLayer.push`.
+
+![AEMCS](./images/mtplugin14.png){zoomable="yes"}
+
+Verá que el objeto `pageContext` se define de esta manera. Ahora necesita agregar dos objetos bajo `pageContext`.
+
+```javascript
+	pageContext: {
+      pageType,
+      pageName: document.title,
+      eventType: 'visibilityHidden',
+      maxXOffset: 0,
+      maxYOffset: 0,
+      minXOffset: 0,
+      minYOffset: 0,
+    }
+```
+
+Este es el código que debe añadirse:
+
+```javascript
+	,
+    _experienceplatform: {
+      identification:{
+        core:{
+          ecid: sessionStorage.getItem("com.adobe.reactor.dataElements.ECID")
+        }
+      }
+    },
+    web: {
+      webPageDetails:{
+        name: document.title,
+        URL: window.location.href
+      }
+    }
+```
+
+**window.adobeDataLayer.push** debería tener un aspecto similar al siguiente:
+
+```javascript
+  window.adobeDataLayer.push({
+    pageContext: {
+      pageType,
+      pageName: document.title,
+      eventType: 'visibilityHidden',
+      maxXOffset: 0,
+      maxYOffset: 0,
+      minXOffset: 0,
+      minYOffset: 0,
+    },
+    _experienceplatform: {
+      identification:{
+        core:{
+          ecid: sessionStorage.getItem("com.adobe.reactor.dataElements.ECID")
+        }
+      }
+    },
+    web: {
+      webPageDetails:{
+        name: document.title,
+        URL: window.location.href
+      }
+    }
   });
 ```
 
-Entonces deberías tener esto.
+![AEMCS](./images/mtplugin15.png){zoomable="yes"}
 
-La primera etiqueta de script (script1) que agregó es una función que usa Web SDK y que crea un objeto window, denominado **alloy**.
+Ahora ha realizado todos los cambios necesarios en el archivo **scripts.js**.
 
-La segunda etiqueta de script (script2) cargará asincrónicamente la biblioteca alloy.js desde la CDN de Adobe.
+Abra el cliente de GitHub Desktop y confirme los cambios.
 
-El tercer bloque de código configura básicamente el objeto de aleación para enviar datos a una organización de IMS y un conjunto de datos de Adobe específicos.
+![AEMCS](./images/mtplugin12.png){zoomable="yes"}
 
-En el módulo **Introducción** ya configuró una secuencia de datos, llamada `--aepUserLdap-- - One Adobe Datastream`. El campo **edgeConfigId** del código anterior hace referencia al ID de la secuencia de datos que se configuró.
+Haga clic en **Origen push** para insertar los cambios en el repositorio de GitHub.
 
-No es necesario cambiar el campo **edgeConfigId** en este momento. En el próximo ejercicio podrás hacerlo usando el complemento **MarTech**.
+![AEMCS](./images/mtplugin13.png){zoomable="yes"}
 
-![Bloquear](./images/blockadv15.png){zoomable="yes"}
+## Extensión ACDL 1.1.5.4 en la propiedad Etiquetas
 
-Ahora debería tener esto.
+Para que el complemento AEM Edge Delivery Services MarTech funcione correctamente, debe añadir la extensión de para
 
-![Bloquear](./images/blockadv14.png){zoomable="yes"}
+Vaya a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). Busque y, a continuación, abra la propiedad Etiquetas para la Web, que se denomina `--aepUserLdap-- - One Adobe (DD/MM/YYYY)`.
 
-A continuación, agregue este bloque debajo del código anterior que agregó en.
+![AEMCS](./images/acdl3.png){zoomable="yes"}
 
-```javascript
-var ECID = "";
+Vaya a **Extensions**, para **Catalog**. Haga clic en la extensión **Capa de datos del cliente de Adobe** y luego haga clic en **Instalar**.
 
-  alloy("getIdentity")
-    .then(function (result) {
-      // The command succeeded.
-      console.log("ECID:", result.identity.ECID);
-      ECID = result.identity.ECID;
-      getOffer(ECID);
+![AEMCS](./images/acdl4.png){zoomable="yes"}
 
-    })
-    .catch(function (error) {
-      // The command failed.
-      // "error" will be an error object with additional information.
-    });
-```
+Entonces debería ver esto. No hay necesidad de cambiar nada en este momento. Haga clic en **Guardar en biblioteca**.
 
-Este bloque de código se utiliza para recuperar el valor del Experience Cloud ID (ECID). El ECID es el identificador de dispositivo único del explorador.
+![AEMCS](./images/acdl5.png){zoomable="yes"}
 
-Como puede ver en el código anterior, una vez recuperado el ECID, se llama a otra función. Esta función se llama **getOffer()** y la agregará a continuación.
+A continuación, la extensión se agrega a la propiedad Etiquetas.
 
-![Bloquear](./images/blockadv16.png){zoomable="yes"}
+![AEMCS](./images/acdl6.png){zoomable="yes"}
 
-A continuación, añada el siguiente código en la
+Vaya a **Flujo de publicación** y abra su biblioteca **Principal**. Haga clic en **Agregar todos los recursos modificados** y, a continuación, haga clic en **Guardar y generar en desarrollo**.
 
-```javascript
-async function getOffer(ECID) {
-  var url = "https://edge.adobedc.net/ee/irl1/v1/interact?configId=045c5ee9-468f-47d5-ae9b-a29788f5948f";
+![AEMCS](./images/acdl7.png){zoomable="yes"}
 
-  var timestamp = new Date().toISOString();
+Los cambios se han implementado.
 
-  var offerRequest = {
-    "events": [
-      {
-        "xdm": {
-          "eventType": "decisioning.propositionDisplay",
-          "timestamp": timestamp,
-          "_experienceplatform": {
-            "identification": {
-              "core": {
-                "ecid": ECID
-              }
-            }
-          },
-          "identityMap": {
-            "ECID": [
-              {
-                "id": ECID
-              }
-            ]
-          }
-        },
-        "query": {
-          "personalization": {
-            "schemas": [
-              "https://ns.adobe.com/personalization/default-content-item",
-              "https://ns.adobe.com/personalization/html-content-item",
-              "https://ns.adobe.com/personalization/json-content-item",
-              "https://ns.adobe.com/personalization/redirect-item",
-              "https://ns.adobe.com/personalization/ruleset-item",
-              "https://ns.adobe.com/personalization/message/in-app",
-              "https://ns.adobe.com/personalization/message/content-card",
-              "https://ns.adobe.com/personalization/dom-action"
-            ],
-            "decisionScopes": [
-              "eyJ4ZG06YWN0aXZpdHlJZCI6ImRwczpvZmZlci1hY3Rpdml0eToxYTI3ODk3NzAzYTY5NWZmIiwieGRtOnBsYWNlbWVudElkIjoiZHBzOm9mZmVyLXBsYWNlbWVudDoxYTI0ZGM2MWJmYjJlMjIwIn0=",
-              "eyJ4ZG06YWN0aXZpdHlJZCI6ImRwczpvZmZlci1hY3Rpdml0eToxYTI3ODk3NzAzYTY5NWZmIiwieGRtOnBsYWNlbWVudElkIjoiZHBzOm9mZmVyLXBsYWNlbWVudDoxYTI0ZGM0MzQyZjJlMjFlIn0="
-            ]
-          }
-        }
-      }
-    ]
-  }
-
-  try {
-    const response = await fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(offerRequest),
-    });
-
-    if (response.status === 200) {
-      var body = await response.json();
-      console.log("Offer Decisioning Response: ", body);
-
-      const decisions = body["handle"];
-
-      decisions.forEach(decision => {
-        if (decision["type"] == "personalization:decisions") {
-          console.log("Offer Decisioning decision detail: ", decision);
-          const payloads = decision["payload"];
-
-          if (payloads === undefined || payloads.length == 0) {
-            //do nothing
-          } else {
-            payloads.forEach(payload => {
-              if (payload["placement"]["name"] == "Web - Image") {
-                console.log("Web-Image payload");
-                const items = payload["items"];
-                items.forEach(item => {
-                  if (item["id"].includes("dps:fallback-offer")) {
-                    console.log("Item details: ", item);
-                    const deliveryURL = item["data"]["deliveryURL"];
-
-                    document.querySelector("#offerImage").innerHTML = "<img style='max-width:100%;' src='" + item["data"]["deliveryURL"] + "'/>";
-                  } else if (item["id"].includes("dps:personalized-offer")) {
-                    console.log("Item details: ", item);
-                    const deliveryURL = item["data"]["deliveryURL"];
-                    console.log("Web-Image Personalized Offer Content: ", deliveryURL)
-
-                    document.querySelector("#offerImage").innerHTML = "<img style='max-width:100%;' src='" + item["data"]["deliveryURL"] + "'/>";
-                  }
-                });
-              } else if (payload["placement"]["name"] == "Web - JSON") {
-                console.log("Web-JSON payload");
-                const items = payload["items"];
-                items.forEach(item => {
-                  if (item["id"].includes("dps:fallback-offer")) {
-                    const content = JSON.parse(item["data"]["content"]);
-
-                    console.log("Web-JSON Fallback Content: ", content)
-
-                    document.querySelector("#offerText").innerHTML = content.text;
-                    document.querySelector("#offerCTA").innerHTML = content.cta;
-                  } else if (item["id"].includes("dps:personalized-offer")) {
-                    const content = JSON.parse(item["data"]["content"]);
-
-                    console.log("Web-JSON Personalized Offer Content: " + content);
-
-                    document.querySelector("#offerText").innerHTML = content.text;
-                    document.querySelector("#offerCTA").innerHTML = content.cta;
-                  }
-                });
-              }
-            });
-          }
-          document.querySelector("#offerImage").style.display = "block";
-          document.querySelector("#offerText").style.display = "block";
-          document.querySelector("#offerCTA").style.display = "block";
-        }
-      });
-    } else {
-      console.warn("Offer Decisioning Response unsuccessful:", response.body);
-    }
-  } catch (error) {
-    console.error("Error when getting Offer Decisioning Response:", error);
-  }
-}
-```
-
-Es muy importante que este bloque de código se pegue debajo del corchete de cierre que puede ver en la línea 42 de este ejemplo. El código que acaba de pegar es una función independiente que necesita su propio lugar en este archivo y no se puede anidar en la **función predeterminada** anterior.
-
-![Bloquear](./images/blockadv17.png){zoomable="yes"}
-
-El bloque de código que acaba de pegar simula una solicitud que normalmente realizaría Web SDK/alloy.js. En este ejemplo, se realizará una solicitud **fetch** a **edge.adobedc.net**.
-
-En la solicitud, se especifican 2 **Ámbitos de decisión** que solicitarán a Adobe Journey Optimizer Offer Decisioning que proporcione una decisión sobre qué oferta debe ver este ECID.
-
-Una vez recibida la respuesta de, este código analiza la respuesta y filtra elementos como la dirección URL de la imagen que debe mostrarse y la respuesta JSON que contiene elementos como el texto de la oferta y el CTA de ofertas, tras lo cual los muestra en el sitio web.
-
-Recuerde: este método se utiliza solo para fines de habilitación y no es la mejor manera de implementar la recopilación de datos.
-
-Guarde los cambios. A continuación, abra **Github Desktop**, asígnele un nombre a su PR y haga clic en **Comprometerse con main**.
-
-![Bloquear](./images/blockadv18.png){zoomable="yes"}
-
-A continuación, haga clic en **Origen push**.
-
-![Bloquear](./images/blockadv19.png){zoomable="yes"}
+## 1.1.5.5 Enviar datos a Adobe Experience Platform Edge Network
 
 Ahora podrá ver los cambios en su sitio web yendo a `main--citisignal--XXX.aem.page/us/en/` y/o `main--citisignal--XXX.aem.live/us/en/`, después de reemplazar XXX por su cuenta de usuario de GitHub, que en este ejemplo es `woutervangeluwe`.
 
 En este ejemplo, la dirección URL completa se convierte en lo siguiente:
 `https://main--citisignal--woutervangeluwe.aem.page/us/en/` o `https://main--citisignal--woutervangeluwe.aem.live/us/en/`.
 
-Entonces debería ver esto.
+>[!NOTE]
+>
+>Considere la posibilidad de abrir una página web de incógnito para asegurarse de que está empezando la recopilación de datos con un perfil nuevo y limpio. Esto facilita la depuración y la resolución de problemas.
 
-![Bloquear](./images/blockadv20.png){zoomable="yes"}
+![AEMCS](./images/plweb1.png){zoomable="yes"}
 
-Paso siguiente: [Complemento AEM Edge Delivery Services MarTech](./ex6.md){target="_blank"}
+En Chrome, abra **Herramientas para desarrolladores**. Para ello, vaya a **Más herramientas** > **Herramientas para desarrolladores**.
+
+![AEMCS](./images/plweb2.png){zoomable="yes"}
+
+En la vista **Consola**, verá varias líneas que comienzan con `[alloy]`. Eche un vistazo a las solicitudes, una de ellas debería tener un aspecto similar al siguiente y tener el cuerpo de la solicitud tal como se indica en la imagen.
+
+`[alloy] Request 55a9ddbc-0521-4ba3-b527-3da2cb35328a: Sending request.`
+
+Abra la carga útil, explore en profundidad el campo `events[0].xdm._experienceplatform.identification.core.ecid` y copie el ECID.
+
+![AEMCS](./images/plweb3.png){zoomable="yes"}
+
+## 1.1.5.6 Ver perfil de cliente en Adobe Experience Platform
+
+Inicie sesión en Adobe Experience Platform desde esta dirección URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
+
+Después de iniciar sesión, llegará a la página principal de Adobe Experience Platform.
+
+![Ingesta de datos](./images/home.png){zoomable="yes"}
+
+Antes de continuar, debe seleccionar una **zona protegida**. La zona protegida que se va a seleccionar se denomina ``--aepSandboxName--``. Después de seleccionar la zona protegida adecuada, verá que la pantalla cambia y ahora está en la zona protegida dedicada.
+
+![Ingesta de datos](./images/sb1.png){zoomable="yes"}
+
+En el menú de la izquierda, ve a **Cliente** > **Perfiles** > **Examinar**. Seleccione el **área de nombres de identidad** de **ECID** y, a continuación, pase el **ECID** que copió en el paso anterior. Haga clic en **Ver**. A continuación, debería ver un perfil que se muestra en la lista. Haga clic en él para abrirlo.
+
+![AEMCS](./images/plweb4.png){zoomable="yes"}
+
+Verá la descripción general del **Tablero de perfil**, que muestra el ECID. A continuación, ve a **Eventos**.
+
+![AEMCS](./images/plweb5.png){zoomable="yes"}
+
+En **Eventos**, verá varios Eventos de experiencia, incluido un evento con eventType **web.webpagedetails.pageViews**. Haga clic en **Ver JSON** para ver todos los eventos que se recopilaron.
+
+![AEMCS](./images/plweb6.png){zoomable="yes"}
+
+En la vista **JSON**, verifique el evento con eventType **web.webpagedetails.pageViews** para ver cosas como **Nombre de página** y **URL de página**.
+
+![AEMCS](./images/plweb7.png){zoomable="yes"}
+
+Ahora ha completado este ejercicio.
+
+Siguiente paso: [Resumen y beneficios](./summary.md){target="_blank"}
 
 Volver a [Adobe Experience Manager Cloud Service &amp; Edge Delivery Services](./aemcs.md){target="_blank"}
 

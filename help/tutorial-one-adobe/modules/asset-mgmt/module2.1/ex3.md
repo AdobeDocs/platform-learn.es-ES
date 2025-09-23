@@ -1,370 +1,290 @@
 ---
-title: Configuración del entorno de AEM CS
-description: Configuración del entorno de AEM CS
+title: 'AEM CS: bloque personalizado básico'
+description: 'AEM CS: bloque personalizado básico'
 kt: 5342
 doc-type: tutorial
-exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
+exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
+source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '812'
 ht-degree: 1%
 
 ---
 
-# 1.1.2 Configuración del entorno de AEM CS
+# 1.1.3 Desarrollar un bloque personalizado básico
 
-## 1.1.2.1 Configurar su repositorio de GitHub
+## 1.1.3.1 Configure su entorno de desarrollo local
 
-Vaya a [https://github.com](https://github.com){target="_blank"}. Haga clic en **Iniciar sesión**.
+Vaya a [https://desktop.github.com/download/](https://desktop.github.com/download/){target="_blank"}, descargue e instale **Github Desktop**.
 
-![AEMCS](./images/aemcssetup1.png)
+![Bloquear](./images/block1.png){zoomable="yes"}
 
-Introduzca sus credenciales. Haga clic en **Iniciar sesión**.
+Una vez instalado Github Desktop, vaya al repositorio de GitHub que creó en el ejercicio anterior. Haga clic en **&lt;> código** y, a continuación, haga clic en **Abrir con GitHub Desktop**.
 
-![AEMCS](./images/aemcssetup2.png)
+![Bloquear](./images/block2.png){zoomable="yes"}
 
-Cuando haya iniciado sesión, verá su panel de GitHub.
+El repositorio de GitHub se abrirá en GitHub Desktop. No dude en cambiar la **Ruta local**. Haga clic en **Clonar**.
 
-![AEMCS](./images/aemcssetup3.png)
+![Bloquear](./images/block3.png){zoomable="yes"}
 
-Vaya a [https://github.com/adobe-rnd/aem-boilerplate-xcom](https://github.com/adobe-rnd/aem-boilerplate-xcom){target="_blank"}. Entonces verá esto... Haga clic en **Usar esta plantilla** y luego haga clic en **Crear un nuevo repositorio**.
+A continuación, se creará una carpeta local.
 
-![AEMCS](./images/aemcssetup4.png)
+![Bloquear](./images/block4.png){zoomable="yes"}
 
-Para el **nombre del repositorio**, use `citisignal-aem-accs`. Establezca la visibilidad en **Privado**. Haga clic en **Crear repositorio**.
+Abra Código de Visual Studio. Vaya a **Archivo** > **Abrir carpeta**.
 
-![AEMCS](./images/aemcssetup5.png)
+![Bloquear](./images/block5.png){zoomable="yes"}
 
-Después de un par de segundos, se crea el repositorio.
+Seleccione la carpeta que usa la configuración de GitHub para **citisignal**.
 
-![AEMCS](./images/aemcssetup6.png)
+![Bloquear](./images/block6.png){zoomable="yes"}
 
-A continuación, vaya a [https://github.com/apps/aem-code-sync](https://github.com/apps/aem-code-sync){target="_blank"}. Haga clic en **Instalar** o **Configurar**.
+Ahora verá esa carpeta abierta en Visual Studio Code y ya estará listo para crear un nuevo bloque.
 
-![AEMCS](./images/aemcssetup7.png)
+![Bloquear](./images/block7.png){zoomable="yes"}
 
-Haga clic en el botón **Continuar** situado junto a la cuenta de usuario de GitHub.
+## 1.1.3.2 Crear un bloque personalizado básico
 
-![AEMCS](./images/aemcssetup8.png)
+Adobe recomienda desarrollar bloques en un enfoque de tres fases:
 
-Haga clic en **Configurar** junto a su cuenta de usuario de GitHub.
+- Cree la definición y el modelo para el bloque, revíselo y llevelo a producción.
+- Cree contenido con el nuevo bloque.
+- Implemente la decoración y los estilos para el nuevo bloque.
 
-![AEMCS](./images/aemcssetup8a.png)
+### component-definition.json
 
-Haga clic en **Seleccionar solo repositorios** y, a continuación, agregue el repositorio que acaba de crear.
+En Visual Studio Code, abra el archivo **component-definition.json**.
 
-![AEMCS](./images/aemcssetup9.png)
+![Bloquear](./images/block8.png){zoomable="yes"}
 
-Desplácese hacia abajo y haga clic en **Guardar**.
+Desplácese hacia abajo hasta que vea el componente **Cita**. Coloque el cursor junto al corchete de cierre del último componente.
 
-![AEMCS](./images/aemcssetup9a.png)
+![Bloquear](./images/block9.png){zoomable="yes"}
 
-Luego recibirás esta confirmación.
+Pegue este código e introduzca una coma **,** después del bloque de código:
 
-![AEMCS](./images/aemcssetup10.png)
+```json
+{
+  "title": "FiberOffer",
+  "id": "fiberoffer",
+  "plugins": {
+    "xwalk": {
+      "page": {
+        "resourceType": "core/franklin/components/block/v1/block",
+        "template": {
+          "name": "FiberOffer",
+          "model": "fiberoffer",
+          "offerText": "<p>Fiber will soon be available in your region!</p>",
+          "offerCallToAction": "Get your offer now!",
+          "offerImage": ""
+        }
+      }
+    }
+  }
+}
+```
 
-## 1.1.2.2 Actualizar archivo fstab.yaml
+Guarde los cambios.
 
-En su repositorio de GitHub, haga clic para abrir el archivo `fstab.yaml`.
+![Bloquear](./images/block10.png){zoomable="yes"}
 
-![AEMCS](./images/aemcssetup11.png)
+### component-models.json
 
-Haga clic en el icono **editar**.
+En Visual Studio Code, abra el archivo **component-models.json**.
 
-![AEMCS](./images/aemcssetup12.png)
+![Bloquear](./images/block11.png){zoomable="yes"}
 
-Ahora necesita actualizar el valor del campo **url** en la línea 3.
+Desplácese hacia abajo hasta que vea el último elemento. Coloque el cursor junto al corchete de cierre del último componente.
 
-![AEMCS](./images/aemcssetup13.png)
+![Bloquear](./images/block12.png){zoomable="yes"}
 
-Debe reemplazar el valor actual por la URL de su entorno AEM Sites CS específico en combinación con la configuración de su repositorio de GitHub.
+Escriba una coma **,** y, a continuación, presione Intro y, en la línea siguiente, pegue este código:
 
-Este es el valor actual de la dirección URL: `https://author-p130360-e1272151.adobeaemcloud.com/bin/franklin.delivery/adobe-rnd/aem-boilerplate-xcom/main`.
+```json
+{
+  "id": "fiberoffer",
+  "fields": [
+     {
+       "component": "richtext",
+       "name": "offerText",
+       "value": "",
+       "label": "Offer Text",
+       "valueType": "string"
+     },
+     {
+       "component": "richtext",
+       "valueType": "string",
+       "name": "offerCallToAction",
+       "label": "Offer CTA",
+       "value": ""
+     },
+     {
+       "component": "reference",
+       "valueType": "string",
+       "name": "offerImage",
+       "label": "Offer Image",
+        "multi": false
+     }
+   ]
+}
+```
 
-Hay tres partes de la dirección URL que deben actualizarse
+Guarde los cambios.
 
-`https://XXX/bin/franklin.delivery/YYY/ZZZ/main`
+![Bloquear](./images/block13.png){zoomable="yes"}
 
-XXX debe ser reemplazado por la URL de su entorno de AEM CS Author.
+### component-filters.json
 
-AAAA debe reemplazarse por su cuenta de usuario de GitHub.
+En Visual Studio Code, abra el archivo **component-filters.json**.
 
-ZZZ debe reemplazarse por el nombre del repositorio de GitHub que utilizó en el ejercicio anterior.
+![Bloquear](./images/block14.png){zoomable="yes"}
 
-Puede encontrar la URL del entorno de AEM CS Author en [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Haga clic en **Programa** para abrirlo.
+En la **sección**, escriba una coma **,** y el identificador de su componente **fiberoffer** después de la última línea actual.
 
-![AEMCS](./images/aemcs6.png)
+Guarde los cambios.
+
+![Bloquear](./images/block15.png){zoomable="yes"}
+
+## 1.1.3.3: confirmar los cambios
+
+Ahora ha realizado varios cambios en el proyecto que deben volver a enviarse al repositorio de GitHub. Para ello, abra **GitHub Desktop**.
+
+Entonces debería ver los 3 archivos que acaba de editar en **Cambios**. Revise los cambios.
+
+![Bloquear](./images/block16.png){zoomable="yes"}
+
+Escriba un nombre para su PR, `Fiber Offer custom block`. Haga clic en **Compromiso con main**.
+
+![Bloquear](./images/block17.png){zoomable="yes"}
+
+Entonces debería ver esto. Haga clic en **Origen push**.
+
+![Bloquear](./images/block18.png){zoomable="yes"}
+
+Después de un par de segundos, los cambios se han insertado en el repositorio de GitHub.
+
+![Bloquear](./images/block19.png){zoomable="yes"}
+
+En el navegador, vaya a su cuenta de GitHub y al repositorio que ha creado para CitiSignal. Debería ver algo similar a esto, que muestre que se han recibido los cambios.
+
+![Bloquear](./images/block20.png){zoomable="yes"}
+
+## 1.1.3.4 Agregar el bloque a una página
+
+Ahora que el bloque de presupuesto básico está definido y comprometido con el proyecto CitiSignal, puede agregar un bloque **fiberoffer** a una página existente.
+
+Vaya a [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Haga clic en **Programa** para abrirlo.
+
+![AEMCS](./images/aemcs6.png){zoomable="yes"}
 
 A continuación, haga clic en los 3 puntos **...** en la ficha **Entornos** y haga clic en **Ver detalles**.
 
-![AEMCS](./images/aemcs9.png)
+![AEMCS](./images/aemcs9.png){zoomable="yes"}
 
-A continuación, verá los detalles del entorno, incluida la dirección URL del entorno **Autor**. Copie la dirección URL.
+A continuación, verá los detalles del entorno. Haga clic en la dirección URL del entorno **Author**.
 
-![AEMCS](./images/aemcs10.png)
+>[!NOTE]
+>
+>Es posible que el entorno esté en hibernación. En ese caso, primero deberá anular la hibernación del entorno.
 
-XXX = `author-p166717-e1786231.adobeaemcloud.com`
+![AEMCS](./images/aemcs10.png){zoomable="yes"}
 
-Para el nombre de cuenta de usuario de GitHub, puede encontrarlo fácilmente en la URL de su explorador. En este ejemplo, el nombre de cuenta de usuario es `woutervangeluwe`.
+Luego debería ver el entorno de AEM Author. Ir a **Sitios**.
 
-AAAA = `woutervangeluwe`
+![AEMCS](./images/block21.png){zoomable="yes"}
 
-![AEMCS](./images/aemcs11.png)
+Vaya a **CitiSignal** > **us** > **en**.
 
-Para el nombre del repositorio de GitHub, también puede encontrarlo en la ventana del explorador que ha abierto en GitHub. En este caso, el nombre del repositorio es `citisignal`.
+![AEMCS](./images/block22.png){zoomable="yes"}
 
-ZZZ = `citisignal-aem-accs`
+Haga clic en **Crear** y seleccione **Página**.
 
-![AEMCS](./images/aemcs12.png)
+![AEMCS](./images/block23.png){zoomable="yes"}
 
-Estos tres valores combinados dan lugar a esta nueva dirección URL que debe configurarse en el archivo `fstab.yaml`.
+Seleccione **Página** y haga clic en **Siguiente**.
 
-`https://author-p166717-e1786231.adobeaemcloud.com/bin/franklin.delivery/woutervangeluwe/citisignal-aem-accs/main`
+![AEMCS](./images/block24.png){zoomable="yes"}
 
-Haga clic en **Confirmar cambios...**.
+Introduzca los siguientes valores:
 
-![AEMCS](./images/aemcs13.png)
+- Título: **CitiSignal Fiber**
+- Nombre: **citisignal-fiber**
+- Título de página: **CitiSignal Fiber**
 
-Haga clic en **Confirmar cambios**.
+Haga clic en **Crear**.
 
-![AEMCS](./images/aemcs14.png)
+![AEMCS](./images/block25.png){zoomable="yes"}
 
-Se ha actualizado el archivo `fstab.yaml`.
+Entonces debería ver esto.
 
-## 1.1.2.3 cargar recursos de CitiSignal
+![AEMCS](./images/block26.png){zoomable="yes"}
 
-Vaya a [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Haga clic en **Programa** para abrirlo.
+Haga clic en el área en blanco para seleccionar el componente **section**. A continuación, haga clic en el icono más **+** en el menú derecho.
 
-![AEMCS](./images/aemcs6.png)
+![AEMCS](./images/block27.png){zoomable="yes"}
 
-A continuación, haga clic en la dirección URL del entorno de Author.
+Debería ver el bloque personalizado en la lista de bloques disponibles. Haga clic en para seleccionarlo.
 
-![AEMCS](./images/aemcssetup18.png)
+![AEMCS](./images/block28.png){zoomable="yes"}
 
-Haga clic en **Iniciar sesión con Adobe**.
+Verá campos como **Texto de oferta**, **CTA de oferta** e **Imagen de oferta** que se agregan al editor. Haga clic en **+ Agregar** en el campo **Imagen de la oferta** para seleccionar una imagen.
 
-![AEMCS](./images/aemcssetup19.png)
+![AEMCS](./images/block29.png){zoomable="yes"}
 
-A continuación, verá su entorno de Author.
+Entonces debería ver esto. Haga clic para abrir la carpeta **citisignal**.
 
-![AEMCS](./images/aemcssetup20.png)
+![AEMCS](./images/blockpub1.png){zoomable="yes"}
 
-La dirección URL será similar a la siguiente: `https://author-p166717-e1786231.adobeaemcloud.com/ui#/aem/aem/start.html?appId=aemshell`
+Seleccione la imagen **product-enrichment-1.png**. Haga clic en **Seleccionar**.
 
-Ahora necesita acceder al entorno **CRX Package Manager** de AEM. Para ello, elimine `ui#/aem/aem/start.html?appId=aemshell` de la dirección URL y reemplácelo por `crx/packmgr`, lo que significa que la dirección URL debería tener este aspecto ahora:
-`https://author-p166717-e1786231.adobeaemcloud.com/crx/packmgr`.
-Pulse **Intro** para cargar el entorno del administrador de paquetes
+![AEMCS](./images/blockpub2.png){zoomable="yes"}
 
-![AEMCS](./images/aemcssetup22.png)
+Entonces deberías tener esto. Haga clic en **Publicar**.
 
-A continuación, haga clic en **Cargar paquete**.
+![AEMCS](./images/blockpub3.png){zoomable="yes"}
 
-![AEMCS](./images/aemcssetup21.png)
+Vuelva a hacer clic en **Publicar**.
 
-Haga clic en **Examinar** para localizar el paquete que desea cargar.
+![AEMCS](./images/blockpub4.png){zoomable="yes"}
 
-El paquete que se va a cargar se llama **citisignal-assets.zip** y se puede descargar aquí: [https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip){target="_blank"}.
+Se ha publicado su nueva página.
 
-![AEMCS](./images/aemcssetup23.png)
+## 1.1.3.5 Agregar su nueva página al menú de navegación
 
-Seleccione el paquete y haga clic en **Abrir**.
+En la descripción general de AEM Sites, ve a **CitiSignal** > **Fragmentos** y marca la casilla de verificación de **Encabezado**. Haga clic en **Edit**.
 
-![AEMCS](./images/aemcssetup24.png)
+![AEMCS](./images/nav0.png){zoomable="yes"}
 
-A continuación, haga clic en **Aceptar**.
+Agregue una opción de menú al menú de navegación con el texto `Fiber`. Seleccione el texto **Fibra** y haga clic en el icono **vínculo**.
 
-![AEMCS](./images/aemcssetup25.png)
+![AEMCS](./images/nav1.png){zoomable="yes"}
 
-A continuación, se carga el paquete.
+Escriba esto para la **URL** `/us/en/citisignal-fiber` y haga clic en el icono **V** para confirmar.
 
-![AEMCS](./images/aemcssetup26.png)
+![AEMCS](./images/nav3.png){zoomable="yes"}
 
-A continuación, haga clic en **Instalar** en el paquete que acaba de cargar.
+Entonces deberías tener esto. Haga clic en **Publicar**.
 
-![AEMCS](./images/aemcssetup27.png)
+![AEMCS](./images/nav4.png){zoomable="yes"}
 
-Haga clic en **Instalar**.
+Vuelva a hacer clic en **Publicar**.
 
-![AEMCS](./images/aemcssetup28.png)
+![AEMCS](./images/nav5.png){zoomable="yes"}
 
-Después de un par de minutos, el paquete se instalará.
-
-![AEMCS](./images/aemcssetup29.png)
-
-Ahora puede cerrar esta ventana.
-
-## 1.1.2.4 publicar recursos de CitiSignal
-
-Vaya a [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Haga clic en **Programa** para abrirlo.
-
-![AEMCS](./images/aemcs6.png)
-
-A continuación, haga clic en la dirección URL del entorno de Author.
-
-![AEMCS](./images/aemcssetup18.png)
-
-Haga clic en **Iniciar sesión con Adobe**.
-
-![AEMCS](./images/aemcssetup19.png)
-
-A continuación, verá su entorno de Author. Haga clic en **Assets**.
-
-![AEMCS](./images/aemcsassets1.png)
-
-Haga clic en **Archivos**.
-
-![AEMCS](./images/aemcsassets2.png)
-
-Haga clic para seleccionar la carpeta **CitiSignal** y luego haga clic en **Administrar publicación**.
-
-![AEMCS](./images/aemcsassets3.png)
-
-Haga clic en **Next**.
-
-![AEMCS](./images/aemcsassets4.png)
-
-Haga clic en **Publicar**.
-
-![AEMCS](./images/aemcsassets5.png)
-
-Sus recursos se han publicado.
-
-## 1.1.2.5 Crear sitio web de CitiSignal
-
-Vaya a [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Haga clic en **Programa** para abrirlo.
-
-![AEMCS](./images/aemcs6.png)
-
-A continuación, haga clic en la dirección URL del entorno de Author.
-
-![AEMCS](./images/aemcssetup18.png)
-
-Haga clic en **Iniciar sesión con Adobe**.
-
-![AEMCS](./images/aemcssetup19.png)
-
-A continuación, verá su entorno de Author. Haga clic en **Sitios**.
-
-![AEMCS](./images/aemcssetup30.png)
-
-Haga clic en **Crear** y luego en **Sitio a partir de la plantilla**.
-
-![AEMCS](./images/aemcssetup31.png)
-
-Haga clic en **Importar**.
-
-![AEMCS](./images/aemcssetup32.png)
-
-Ahora debe importar una plantilla preconfigurada para el sitio. Puede descargar la plantilla [aquí](./../../../assets/aem/citisignal-aem-sites-commerce-with-edge-delivery-services-template-0.4.0.zip){target="_blank"}. Guarde el archivo en el escritorio.
-
-A continuación, seleccione el archivo `citisignal-aem-sites-commerce-with-edge-delivery-services-template-0.4.0.zip` y haga clic en **Abrir**.
-
-![AEMCS](./images/aemcssetup33.png)
-
-Entonces verá esto... Haga clic para seleccionar la plantilla que acaba de subir y luego haga clic en **Siguiente**.
-
-![AEMCS](./images/aemcssetup34.png)
-
-Ahora debe completar algunos detalles.
-
-- Título del sitio: usar **CitiSignal**
-- Nombre del sitio: usar **CitiSignal**
-- URL de GitHub: copie la URL del repositorio de GitHub que estaba utilizando antes
-
-![AEMCS](./images/aemcssetup35.png)
-
-Entonces, tendrás esto. Haga clic en **Crear**.
-
-![AEMCS](./images/aemcssetup36.png)
-
-Su sitio se está creando. Esto puede tardar un par de minutos. Haga clic en **Aceptar**.
-
-![AEMCS](./images/aemcssetup37.png)
-
-Actualice la pantalla después de un par de minutos y verá el sitio web de CitiSignal recién creado.
-
-![AEMCS](./images/aemcssetup38.png)
-
-## 1.1.2.6 Actualizar rutas de archivo.json
-
-En su repositorio de GitHub, haga clic para abrir el archivo `paths.json`.
-
-![AEMCS](./images/aemcssetupjson1.png)
-
-Haga clic en el icono **editar**.
-
-![AEMCS](./images/aemcssetupjson2.png)
-
-Ahora necesita actualizar el texto de reemplazo `aem-boilerplate-commerce` por `CitiSignal` en las líneas 3, 4, 5, 6, 7 y 10.
-
-Haga clic en **Confirmar cambios**.
-
-![AEMCS](./images/aemcssetupjson3.png)
-
-Haga clic en **Confirmar cambios**.
-
-![AEMCS](./images/aemcssetupjson4.png)
-
-Se ha actualizado el archivo `paths.json`.
-
-## 1.1.2.7 Publicar sitio web de CitiSignal
-
-A continuación, haga clic en la casilla de verificación que hay delante de **CitiSignal**. A continuación, haga clic en **Administrar publicación**.
-
-![AEMCS](./images/aemcssetup39.png)
-
-Haga clic en **Next**.
-
-![AEMCS](./images/aemcssetup40.png)
-
-Haga clic en **Incluir configuración secundaria**.
-
-![AEMCS](./images/aemcssetup41.png)
-
-Haga clic para seleccionar la casilla de verificación **Incluir elementos secundarios** y, a continuación, haga clic para anular la selección de las demás casillas de verificación. Haga clic en **Aceptar**.
-
-![AEMCS](./images/aemcssetup42.png)
-
-Haga clic en **Publicar**.
-
-![AEMCS](./images/aemcssetup43.png)
-
-Luego te enviarán de vuelta aquí. Haga clic en **CitiSignal**, seleccione la casilla de verificación que hay delante de **índice** y, a continuación, haga clic en **Editar**.
-
-![AEMCS](./images/aemcssetup44.png)
-
-Su sitio web se abrirá en el **Editor universal**.
-
-![AEMCS](./images/aemcssetup45.png)
-
-Ahora podrá acceder a su sitio web yendo a `main--citisignal-aem-accs--XXX.aem.page` y/o `main--citisignal-aem-accs--XXX.aem.live`, después de reemplazar XXX por su cuenta de usuario de GitHub, que en este ejemplo es `woutervangeluwe`.
+Ahora podrá ver los cambios en su sitio web yendo a `main--citisignal--XXX.aem.page/us/en/` y/o `main--citisignal--XXX.aem.live/us/en/`, después de reemplazar XXX por su cuenta de usuario de GitHub, que en este ejemplo es `woutervangeluwe`.
 
 En este ejemplo, la dirección URL completa se convierte en lo siguiente:
-`https://main--citisignal-aem-accs--woutervangeluwe.aem.page` o `https://main--citisignal-aem-accs--woutervangeluwe.aem.live`.
+`https://main--citisignal--woutervangeluwe.aem.page/us/en/` o `https://main--citisignal--woutervangeluwe.aem.live/us/en/`.
 
-Puede llevar algún tiempo antes de que todos los recursos se muestren correctamente, ya que primero deben publicarse.
+Entonces debería ver esto. Haga clic en **Fibra**.
 
-A continuación, verá esto:
+![AEMCS](./images/nav6.png){zoomable="yes"}
 
-![AEMCS](./images/aemcssetup46.png)
+Este es el bloque personalizado básico, pero que ahora se representa en el sitio web.
 
-## 1.1.2.8 Rendimiento de página de prueba
+![AEMCS](./images/nav7.png){zoomable="yes"}
 
-Vaya a [https://pagespeed.web.dev/](https://pagespeed.web.dev/){target="_blank"}. Escriba su dirección URL y haga clic en **Analizar**.
-
-![AEMCS](./images/aemcssetup48.png)
-
-A continuación, verá que el sitio web, tanto en una visualización móvil como de escritorio, obtiene una puntuación alta:
-
-**Móvil**:
-
-![AEMCS](./images/aemcssetup49.png)
-
-**Escritorio**:
-
-![AEMCS](./images/aemcssetup50.png)
-
-Paso siguiente: [Desarrollar un bloque personalizado](./ex4.md){target="_blank"}
+Paso siguiente: [Bloque personalizado avanzado](./ex5.md){target="_blank"}
 
 Volver a [Adobe Experience Manager Cloud Service &amp; Edge Delivery Services](./aemcs.md){target="_blank"}
 
