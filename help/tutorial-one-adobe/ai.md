@@ -2,7 +2,8 @@
 title: Panorama general de los laboratorios técnicos de inteligencia artificial
 description: Panorama general de los laboratorios técnicos de inteligencia artificial
 doc-type: multipage-overview
-source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
+exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
+source-git-commit: 252ca08d13fbb7bc966a777003da1dd9e3df20a0
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 Los laboratorios técnicos de inteligencia artificial aplicada a la agencia están en curso y se lanzarán en noviembre o diciembre de 2025.
 
-## 1.1 Introducción a los agentes y la IA
+[1.1 Introducción a los agentes y la IA](./modules/agentic-ai/module1.1/agenticai.md)
 
 **Meta**
 
@@ -37,7 +38,7 @@ Elementos técnicos:
 - Servidor MCP, Python Notebook
 - API de Adobe
 
-## 1.2 Agente Collaboration
+[1.2 Agente Collaboration](./modules/agentic-ai/module1.2/agentcollaboration.md)
 
 **Meta**
 

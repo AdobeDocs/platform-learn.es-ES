@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: c580ac9b-ded1-4b86-b7db-1c38649f50a4
-source-git-commit: 174c818dfc9edd78afd32cb919f14acc4aabca72
+source-git-commit: 15adbf950115f0b6bb6613e69a60b310f25de058
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 10%
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 # 1.4.3 Creación masiva de Assets en Adobe Express
 
-Antes de comenzar este ejercicio, descargue los recursos necesarios de [https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip){target="_blank"} y descomprímalo en el escritorio.
+Antes de comenzar este ejercicio, descargue los recursos necesarios de [https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip){target="_blank"} y descomprímalo en el escritorio.
 
 ![Adobe Express](./images/expressassets.png)
 

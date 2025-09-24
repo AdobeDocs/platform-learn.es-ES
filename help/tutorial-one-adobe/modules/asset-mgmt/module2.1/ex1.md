@@ -4,7 +4,7 @@ description: Cree su programa de Cloud Manager
 kt: 5342
 doc-type: tutorial
 exl-id: fda247eb-1865-4936-b46e-84128ccab357
-source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
+source-git-commit: 7384eabe00354374f7012be10c24870c68ea7f2c
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 3%
@@ -105,7 +105,7 @@ Después de unos 10 minutos, se activará **Dynamic Media**.
 
 Una vez finalizada la ejecución de la canalización, puede continuar con el siguiente ejercicio.
 
-Siguiente paso: [Configurar el entorno de AEM CS](./ex3.md){target="_blank"}
+Siguiente paso: [Configurar el entorno de AEM CS](./ex2.md){target="_blank"}
 
 Volver a [Adobe Experience Manager Cloud Service &amp; Edge Delivery Services](./aemcs.md){target="_blank"}
 
