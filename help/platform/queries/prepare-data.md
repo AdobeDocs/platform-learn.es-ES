@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Derivar datos con Data Distiller
 
-Descubra cómo los ingenieros de datos pueden utilizar el servicio de consulta para transformar datos y generar nuevos conjuntos de datos. Ejecute estas consultas en una programación para potenciar los paneles automatizados y la segmentación. Para obtener más información, visite la [documentación del servicio de consultas](https://experienceleague.adobe.com/en/docs/experience-platform/query/home).
+Descubra cómo los ingenieros de datos pueden utilizar el servicio de consulta para transformar datos y generar nuevos conjuntos de datos. Ejecute estas consultas en una programación para potenciar los paneles automatizados y la segmentación. Para obtener más información, visite la [documentación del servicio de consultas](https://experienceleague.adobe.com/es/docs/experience-platform/query/home).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333699?learn=on&enablevpops)
