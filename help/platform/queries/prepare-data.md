@@ -1,21 +1,21 @@
 ---
-title: Preparación de datos
-description: Aprenda a limpiar, preparar y combinar datos de varios conjuntos de datos para crear uno nuevo mediante CTAS (Crear tabla AS) y las funciones SQL de Creative Cloud Express para informes y tableros.
+title: Derivar datos con Data Distiller
+description: Descubra cómo los ingenieros de datos pueden utilizar el servicio de consulta para transformar datos y generar nuevos conjuntos de datos. Ejecute estas consultas en una programación para potenciar los paneles automatizados y la segmentación.
 feature: Queries
 role: Data Engineer, Developer
 level: Beginner
 jira: KT-8005
-thumbnail: 333699.jpg
+last-substantial-update: 2025-09-23T00:00:00Z
 exl-id: c4f36725-19dd-47da-aaa8-a925b7baca24
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 1712f2b22b8042e0cf96e619ca1a2e99e5368a18
 workflow-type: tm+mt
-source-wordcount: '72'
-ht-degree: 6%
+source-wordcount: '76'
+ht-degree: 0%
 
 ---
 
-# Preparación de datos
+# Derivar datos con Data Distiller
 
-Aprenda a limpiar, preparar y combinar datos de varios conjuntos de datos para crear uno nuevo mediante CTAS (Crear tabla AS) y las funciones SQL de Creative Cloud Express para informes y tableros. Para obtener más información, visite la [documentación del servicio de consultas](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=es).
+Descubra cómo los ingenieros de datos pueden utilizar el servicio de consulta para transformar datos y generar nuevos conjuntos de datos. Ejecute estas consultas en una programación para potenciar los paneles automatizados y la segmentación. Para obtener más información, visite la [documentación del servicio de consultas](https://experienceleague.adobe.com/en/docs/experience-platform/query/home).
 
->[!VIDEO](https://video.tv.adobe.com/v/3414066?learn=on&enablevpops&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/333699?learn=on&enablevpops)
