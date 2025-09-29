@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Explicación de los patrones de uso de datos con el servicio de consultas
 
-Este vídeo comparte sugerencias y prácticas recomendadas para ejecutar consultas en la interfaz del editor de consultas, los clientes SQL, las soluciones de inteligencia empresarial (BI) y la API HTTP. Para obtener más información, visite la [documentación del servicio de consultas](https://experienceleague.adobe.com/en/docs/experience-platform/query/home).
+Este vídeo comparte sugerencias y prácticas recomendadas para ejecutar consultas en la interfaz del editor de consultas, los clientes SQL, las soluciones de inteligencia empresarial (BI) y la API HTTP. Para obtener más información, visite la [documentación del servicio de consultas](https://experienceleague.adobe.com/es/docs/experience-platform/query/home).
 
 >[!VIDEO](https://video.tv.adobe.com/v/29811?learn=on&enablevpops)
