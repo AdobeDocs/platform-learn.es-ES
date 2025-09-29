@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Los paneles de monitorización de capacidad y streaming ofrecen a las empresas visibilidad y control sobre el uso de la plataforma. Ayudan a asignar el rendimiento, detectar picos o infrautilización y proporcionan información en tiempo real sobre el rendimiento, lo que permite tomar decisiones proactivas y crear alertas para evitar sobrecargas y garantizar que los servicios esenciales permanezcan estables.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475272/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475276/?learn=on&enablevpops&captions=spa)
