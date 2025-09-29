@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Obtenga información sobre cómo validar datos ingeridos mediante funciones SQL. Para obtener más información, visite la [documentación del servicio de consultas](https://experienceleague.adobe.com/es/docs/experience-platform/query/home).
 
->[!VIDEO](https://video.tv.adobe.com/v/333415?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3414054?learn=on&enablevpops&captions=spa)

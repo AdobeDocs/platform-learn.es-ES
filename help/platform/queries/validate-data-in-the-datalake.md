@@ -19,4 +19,4 @@ ht-degree: 1%
 
 Obtenga información sobre cómo validar si los datos se han introducido correctamente en el conjunto de datos mediante el servicio de consultas de Adobe Experience Platform. Para obtener documentación detallada del producto, consulte la [Guía de la interfaz de usuario del editor de consultas](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/3416130?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3445680?learn=on&enablevpops&captions=spa)
