@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Información general de Journey Agent
 
-Journey Agent utiliza IA para crear, analizar y optimizar los recorridos B2B/B2C a través de una interfaz conversacional. Para obtener más información, consulte la [documentación de Journey Agent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze).
+Journey Agent utiliza IA para crear, analizar y optimizar los recorridos B2B/B2C a través de una interfaz conversacional. Para obtener más información, consulte la [documentación de Journey Agent](https://experienceleague.adobe.com/es/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze).
 
 >[!SLIDE](journey-agent-overview)

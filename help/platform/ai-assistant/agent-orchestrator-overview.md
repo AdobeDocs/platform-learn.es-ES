@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Información general de Adobe Experience Platform Agent Orchestrator
 
-Agent Orchestrator es la capa agéntica de Adobe Experience Platform que potencia la orquestación de la experiencia del cliente con agentes creados específicamente, un motor de razonamiento avanzado y una potente interfaz conversacional. Para obtener más información, consulte la [documentación de Agent Orchestrator](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator).
+Agent Orchestrator es la capa agéntica de Adobe Experience Platform que potencia la orquestación de la experiencia del cliente con agentes creados específicamente, un motor de razonamiento avanzado y una potente interfaz conversacional. Para obtener más información, consulte la [documentación de Agent Orchestrator](https://experienceleague.adobe.com/es/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator).
 
 >[!SLIDE](agent-orchestrator-overview)

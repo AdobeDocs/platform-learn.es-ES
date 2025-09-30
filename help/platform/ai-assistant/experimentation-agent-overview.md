@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Información general de Experimentation Agent
 
-Experimentation Agent acelera la optimización digital con perspectivas, configuración guiada y análisis automatizado para especialistas en marketing, analistas y administradores. Para obtener más información, consulte la [documentación del acelerador de experimentos](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/experiment/experiment-accelerator).
+Experimentation Agent acelera la optimización digital con perspectivas, configuración guiada y análisis automatizado para especialistas en marketing, analistas y administradores. Para obtener más información, consulte la [documentación del acelerador de experimentos](https://experienceleague.adobe.com/es/docs/journey-optimizer/using/content-management/content-experiment/experiment/experiment-accelerator).
 
 >[!SLIDE](experimentation-agent-overview)

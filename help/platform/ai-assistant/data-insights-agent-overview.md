@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Información general de Data Insights Agent
 
-Data Insight Agent aprovecha los datos de evento, perfil, recorrido y sin conexión, lo que simplifica la detección y permite paneles personalizados al instante. Para obtener más información, consulte la [documentación de Data Insights Agent](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/data-analysis-ai).
+Data Insight Agent aprovecha los datos de evento, perfil, recorrido y sin conexión, lo que simplifica la detección y permite paneles personalizados al instante. Para obtener más información, consulte la [documentación de Data Insights Agent](https://experienceleague.adobe.com/es/docs/analytics-platform/using/cja-overview/cja-b2c-overview/data-analysis-ai).
 
 >[!SLIDE](data-insights-agent-overview)
