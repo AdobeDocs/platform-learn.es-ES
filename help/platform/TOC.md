@@ -226,7 +226,7 @@ Campaigns
    + [Valor de Attribution AI](/help/platform/intelligent-services/business-value-of-attribution-ai.md)
    + [Configuración de Attribution AI](/help/platform/intelligent-services/configure-attribution-ai.md)
    + [Uso de puntuaciones e información de Attribution AI](/help/platform/intelligent-services/use-attribution-ai-scores-and-insights.md)
-   + [Información general sobre Customer AI ](/help/platform/intelligent-services/introduction-to-customer-ai.md)
+   + [Información general sobre Customer AI &#x200B;](/help/platform/intelligent-services/introduction-to-customer-ai.md)
    + [Valor de Customer AI](/help/platform/intelligent-services/business-value-of-customer-ai.md)
    + [Configuración de Customer AI](/help/platform/intelligent-services/configure-customer-ai.md)
    + [Uso de puntuaciones e información de Customer AI](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)

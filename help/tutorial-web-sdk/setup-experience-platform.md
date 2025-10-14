@@ -66,7 +66,7 @@ Vamos a configurar un conjunto de datos para los datos de evento web de Luma:
 
 1. Proporcione un **[!UICONTROL Nombre]** y una **[!UICONTROL Descripción]** opcionales para el conjunto de datos. Para este ejercicio, use `Luma Web Event Data` y luego seleccione **[!UICONTROL Finalizar]**
 
-   ![Nombre de conjunto de datos ](assets/experience-platform-create-dataset-schema-name.png)
+   ![Nombre de conjunto de datos &#x200B;](assets/experience-platform-create-dataset-schema-name.png)
 
 Ahora hay configurado un conjunto de datos para empezar a recopilar datos de su implementación de Platform Web SDK.
 

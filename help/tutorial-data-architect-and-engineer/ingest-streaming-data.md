@@ -348,7 +348,7 @@ Ahora asignaremos el nombre de página al SDK web.
 >[!IMPORTANT]
 >
 >Para completar esta tarea, debemos asegurarnos de que el usuario tenga acceso primero a la zona protegida de producción. Si todavía no tiene acceso a la zona protegida de Prod desde un perfil de producto diferente, abra rápidamente su perfil de `Luma Tutorial Platform` y agregue el elemento de permiso **[!UICONTROL Zonas protegidas]** > **[!UICONTROL Prod]**. Después, haga una SHIFT-Reload en la página Elementos de datos para borrar la caché
->&#x200B;>![Agregar la zona protegida de producción ](assets/websdk-property-permissionToLoadSchema.png)
+>&#x200B;>![Agregar la zona protegida de producción &#x200B;](assets/websdk-property-permissionToLoadSchema.png)
 
 En la página **[!UICONTROL Elementos de datos]**:
 

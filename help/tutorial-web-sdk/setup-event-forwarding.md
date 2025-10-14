@@ -143,7 +143,7 @@ En este ejercicio, reenviará la altura de la ventanilla del explorador y el ID 
 >[!TIP]
 >
 >También puede encontrar la ruta del objeto XDM utilizando las herramientas de red del explorador web, filtrando las solicitudes `/ee`, abriendo la señalización [!UICONTROL **Payload**] y explorando en profundidad la variable que está buscando. A continuación, haga clic con el botón derecho del ratón y seleccione &quot;Copiar ruta de propiedad&quot;. Este es un ejemplo de la altura de la ventanilla del explorador:
->&#x200B;> ![Ruta XDM de reenvío de eventos ](assets/event-forwarding-xdm-path.png)
+>&#x200B;> ![Ruta XDM de reenvío de eventos &#x200B;](assets/event-forwarding-xdm-path.png)
 
 1. Vaya a la propiedad **[!UICONTROL Reenvío de eventos]** que creó recientemente
 

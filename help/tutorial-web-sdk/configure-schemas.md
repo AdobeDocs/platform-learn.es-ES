@@ -151,7 +151,7 @@ Es un objeto que se debe tener para cualquier recopilación de datos relacionado
 >
 >
 >Esta configuración se analiza más en la lección [Configuración de Experience Platform](setup-experience-platform.md).
->&#x200B;>![Esquema de perfil ](assets/schema-profile.png)
+>&#x200B;>![Esquema de perfil &#x200B;](assets/schema-profile.png)
 
 Para completar esta lección, selecciona **[!UICONTROL Guardar]** en la parte superior derecha.
 

@@ -218,7 +218,7 @@ Hay una cosa interesante que acaba de pasar que quiero señalar. Abra ese perfil
 
 ¡Enhorabuena, acaba de combinar perfiles!
 
-![Perfil combinado ](assets/ingestion-crm-profileLinkedIdentities.png)
+![Perfil combinado &#x200B;](assets/ingestion-crm-profileLinkedIdentities.png)
 
 #### Validación con eventos de ingesta de datos
 

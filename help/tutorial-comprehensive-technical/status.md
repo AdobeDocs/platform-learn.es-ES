@@ -16,7 +16,7 @@ A continuación se muestra una descripción general del estado del contenido en 
 
 | Nombre | Última actualización | Trabajando al 100% | Observaciones |
 | ---------------------- | ------------ | ------------ |------------ |
-| [0. Primeros pasos ](./modules/gettingstarted/gettingstarted/getting-started.md) | 11/14/2024 | Sí | - |
+| [0. Primeros pasos &#x200B;](./modules/gettingstarted/gettingstarted/getting-started.md) | 11/14/2024 | Sí | - |
 | [1.1 Foundation - Configuración de la recopilación de datos de Adobe Experience Platform y Web SDK](./modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md) | 11/18/2024 | Sí | - |
 | [1.2 Foundation - Ingesta de datos](./modules/datacollection/module1.2/data-ingestion.md) | 11/18/2024 | Sí | - |
 | [1.3 Composición de audiencia federada](./modules/datacollection/module1.3/fac.md) | 01/07/2025 | Sí | - |

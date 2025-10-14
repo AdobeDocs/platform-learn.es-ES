@@ -16,7 +16,7 @@ ht-degree: 4%
 
 ## Deslizar cubierta
 
-Esta documentación puede ayudarle a familiarizarse con el concepto de este bootcamp, así como con la cadena de suministro de contenido. Sin embargo, siempre hay algunas cosas que queríamos mostrar, pero que ya no podíamos incluir. Puede encontrar esta información en la [siguiente presentación](https://adobe.sharepoint.com/:p:/r/sites/SWEnterpriseMarketingTeam/Shared%20Documents/Bootcamps/Content%20Supply%20Chain%20Bootcamp/Experience%20Makers%20Content%20Supply%20Chain%20Slide%20Deck.pptx?d=w1a3787d39c3a43ab941cfd0069f8383a&amp;csf=1&amp;web=1&amp;e=57aFUU) y en nuestra [demostración de arte de lo posible](https://xd.adobe.com/view/45ea642f-69fb-4bbe-bba6-6915a3709a6d-10b9/?fullscreen).
+Esta documentación puede ayudarle a familiarizarse con el concepto de este bootcamp, así como con la cadena de suministro de contenido. Sin embargo, siempre hay algunas cosas que queríamos mostrar, pero que ya no podíamos incluir. Puede encontrar esta información en la [siguiente presentación](https://adobe.sharepoint.com/:p:/r/sites/SWEnterpriseMarketingTeam/Shared%20Documents/Bootcamps/Content%20Supply%20Chain%20Bootcamp/Experience%20Makers%20Content%20Supply%20Chain%20Slide%20Deck.pptx?d=w1a3787d39c3a43ab941cfd0069f8383a&csf=1&web=1&e=57aFUU) y en nuestra [demostración de arte de lo posible](https://xd.adobe.com/view/45ea642f-69fb-4bbe-bba6-6915a3709a6d-10b9/?fullscreen).
 
 ## Conozca a Adobike
 

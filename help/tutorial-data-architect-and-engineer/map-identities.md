@@ -113,7 +113,7 @@ Vamos a crear el espacio `Luma CRM Id`de nombres de identidad:
    ![Área de nombres de identidad](assets/identity-createUsingApi.png)
 
 Si vuelve a la interfaz de usuario, debería ver los tres nuevos espacios de nombres personalizados:
-![Espacio de nombre de identidad ](assets/identity-newIdentities.png)
+![Espacio de nombre de identidad &#x200B;](assets/identity-newIdentities.png)
 
 
 ## Etiquetar campos de identidad en esquemas
@@ -136,7 +136,7 @@ Agreguemos una identidad principal a `Luma Loyalty Schema`:
 1. Seleccione **[!UICONTROL Aplicar]**
 1. Seleccione **[!UICONTROL Guardar]**
 
-   ![Identidad principal ](assets/identity-loyalty-primary.png)
+   ![Identidad principal &#x200B;](assets/identity-loyalty-primary.png)
 
 Repita el proceso para alguno de los demás esquemas:
 

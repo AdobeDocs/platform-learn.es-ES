@@ -175,7 +175,7 @@ Para crear la ubicación, siga estos pasos:
 1. Una vez creada la ubicación, se muestra en la lista de ubicaciones.
 1. Seleccione la fila que contiene la nueva ubicación y tome nota del ID de ubicación, ya que esto puede ser necesario para la configuración dentro del ámbito de decisión.
 
-   ![Ver Id. de ubicación ](assets/decisioning-placement-id.png)
+   ![Ver Id. de ubicación &#x200B;](assets/decisioning-placement-id.png)
 
 ### Reglas de decisión para el estado de fidelización
 

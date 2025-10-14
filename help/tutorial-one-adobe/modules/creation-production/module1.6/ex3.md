@@ -201,7 +201,7 @@ Entonces debería ver esto. Seleccione la imagen **neon_rabbit_banner.jpg** y ha
 
 ![Ext DAM](./images/extdam31.png)
 
-Ahora ha seleccionado una imagen de la DAM externa ejecutándose en un compartimento de S3. Con la imagen seleccionada, ahora puede seguir el flujo de trabajo normal como se documenta en el ejercicio [1.3.3.4 Crear y aprobar metadatos ](./../module1.3/ex3.md#create--approve-meta-ad).
+Ahora ha seleccionado una imagen de la DAM externa ejecutándose en un compartimento de S3. Con la imagen seleccionada, ahora puede seguir el flujo de trabajo normal como se documenta en el ejercicio [1.3.3.4 Crear y aprobar metadatos &#x200B;](./../module1.3/ex3.md#create--approve-meta-ad).
 
 ![Ext DAM](./images/extdam32.png)
 

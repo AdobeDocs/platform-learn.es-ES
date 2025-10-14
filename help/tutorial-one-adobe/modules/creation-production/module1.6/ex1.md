@@ -100,7 +100,7 @@ Ahora ha configurado los elementos básicos para poder ejecutar un proyecto de A
 
 ## Pasos siguientes
 
-Vaya a [Crear su AWS S3 ](./ex2.md){target="_blank"}
+Vaya a [Crear su AWS S3 &#x200B;](./ex2.md){target="_blank"}
 
 Volver a [GenStudio for Performance Marketing - Extensibilidad](./genstudioext.md){target="_blank"}
 

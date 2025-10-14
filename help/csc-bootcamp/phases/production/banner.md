@@ -83,7 +83,7 @@ Ahora que hemos realizado la configuración necesaria, vamos a generar nuestro b
 >[!NOTE]
 >
 > ¿No está satisfecho con el resultado? No dude en aplicar otro perfil de procesamiento a su carpeta y volver a cargar su recurso para generar un titular diferente (o cargar otro recurso, por supuesto). Durante la recarga, el sistema le preguntará qué desea hacer con el recurso existente y seleccionará &quot;Reemplazar&quot;.
-> ![reemplazar ](./images/prod-replace-asset.png) existente
+> ![reemplazar &#x200B;](./images/prod-replace-asset.png) existente
 
 Ahora tenemos nuestro banner generado que podemos usar más adelante durante la entrega de nuestra campaña. Asegúrese de publicar el banner seleccionándolo y haciendo clic en el botón &quot;Quick Publish&quot; en la cinta de opciones.
 

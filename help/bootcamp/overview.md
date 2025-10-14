@@ -101,7 +101,7 @@ Puedes encontrar vídeos interesantes adicionales [en nuestro canal de YouTube](
 
 ## Flujos de usuario
 
-[1. Adquisición ](./uc/uc1/uc1.md)
+[1. Adquisición &#x200B;](./uc/uc1/uc1.md)
 
 En este flujo de usuario, comprenderá todos los elementos que necesita para implementar casos de uso centrados en la adquisición para usuarios desconocidos y no autenticados junto con usuarios conocidos y autenticados mediante Real-Time CDP.
 
