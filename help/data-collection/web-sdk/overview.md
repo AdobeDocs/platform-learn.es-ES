@@ -24,7 +24,7 @@ Descubra cómo el SDK web de Adobe Experience Platform y la red perimetral permi
 
 >[!NOTE]
 >
->Este vídeo es un extracto de la sesión de Adobe Summit 2020 *[Meet Alloy.js and Never Tag for an eVar or Mbox Again](https://business.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*.
+>Este vídeo es un extracto de la sesión de Adobe Summit 2020 *[Meet Alloy.js and Never Tag for an eVar or Mbox Again](https://business.adobe.com/es/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*.
 >
 >La capacidad de reenvío del lado del servidor que se describe en este vídeo ya está disponible de forma general para todos los clientes con licencia. Consulte la [documentación del reenvío de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=es)
 

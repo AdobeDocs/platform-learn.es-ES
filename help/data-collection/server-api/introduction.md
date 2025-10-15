@@ -47,7 +47,7 @@ Al hacer clic en un vínculo, el explorador realiza una solicitud a un servidor 
 
 La mayoría de los navegadores tienen una &quot;barra de direcciones&quot; que muestra parte o toda la &quot;dirección&quot; de una página web. Cuando el navegador &quot;obtiene&quot; la página para el enlace en el que hemos hecho clic, muestra la &quot;dirección&quot; de la página en esta barra de direcciones. Entonces, ¿cuál es la &quot;dirección&quot; de una página web?
 
-Ese(a) `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` de arriba es la dirección de una página en la web y se llama URL o Localizador uniforme de recursos. Las direcciones URL pueden hacer referencia a una página como esta, a un archivo de imagen, a un vídeo u otros tipos de archivo.
+Ese(a) `https://business.adobe.com/es/products/experience-platform/adobe-experience-platform.html` de arriba es la dirección de una página en la web y se llama URL o Localizador uniforme de recursos. Las direcciones URL pueden hacer referencia a una página como esta, a un archivo de imagen, a un vídeo u otros tipos de archivo.
 
 ![Partes de una dirección URL](../assets/api101-url-parts.jpg)
 
@@ -69,7 +69,7 @@ Es muy común ver que el término _host_ hace referencia a un nombre de dominio 
 
 **Origen**
 
-Origen es otro término que hay que tener en cuenta que está estrechamente relacionado con las partes de una dirección URL. En un nivel básico, un origen es aproximadamente `scheme` más `host` más `domain` como `https://business.adobe.com`. Los distintos valores suelen representar orígenes diferentes, como `https://business.adobe.com` y `http://business.adobe.com`, no son el mismo origen porque tienen esquemas diferentes. `https://www.adobe.com` y `https://business.adobe.com` tampoco son el mismo origen en muchos usos debido a los diferentes subdominios.
+Origen es otro término que hay que tener en cuenta que está estrechamente relacionado con las partes de una dirección URL. En un nivel básico, un origen es aproximadamente `scheme` más `host` más `domain` como `https://business.adobe.com/es`. Los distintos valores suelen representar orígenes diferentes, como `https://business.adobe.com/es` y `http://business.adobe.com/es`, no son el mismo origen porque tienen esquemas diferentes. `https://www.adobe.com` y `https://business.adobe.com/es` tampoco son el mismo origen en muchos usos debido a los diferentes subdominios.
 
 **Ruta**
 
@@ -133,13 +133,13 @@ Hay varios más, pero esta es una lista de los métodos más comunes al trabajar
 
 Ahora que tiene los términos, conceptos y pasos básicos involucrados con las API, podemos ver un ejemplo de solicitud de API en la práctica.
 
-La página del ejemplo de nuestro explorador tiene una dirección URL de `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html`. Cuando se hace clic en el vínculo de Adobe Experience Platform, el explorador realiza una solicitud `GET` para esta página. Como tenemos el navegador para hacer el trabajo por nosotros, todo lo que tenemos que hacer es hacer clic, pero si un programador quiere que esa solicitud se produzca en una aplicación de software, tiene que proporcionar todos los detalles necesarios para que la solicitud de API se cumpla con éxito.
+La página del ejemplo de nuestro explorador tiene una dirección URL de `https://business.adobe.com/es/products/experience-platform/adobe-experience-platform.html`. Cuando se hace clic en el vínculo de Adobe Experience Platform, el explorador realiza una solicitud `GET` para esta página. Como tenemos el navegador para hacer el trabajo por nosotros, todo lo que tenemos que hacer es hacer clic, pero si un programador quiere que esa solicitud se produzca en una aplicación de software, tiene que proporcionar todos los detalles necesarios para que la solicitud de API se cumpla con éxito.
 
 Este es el aspecto que podría tener el código:
 
 ```js
 fetch(
-  "https://business.adobe.com/products/experience-platform/adobe-experience-platform.html",
+  "https://business.adobe.com/es/products/experience-platform/adobe-experience-platform.html",
   {
     headers: {
       accept:
