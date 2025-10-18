@@ -38,7 +38,7 @@ Prepárese con el asistente de IA y conozca sus funciones básicas.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="access.md" title="Obtener acceso al asistente de IA" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3436470/?format=jpeg&nocache=1748392732990" alt="Obtener acceso al asistente de IA"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475922/?captions=spa&format=jpeg&nocache=1748392732990" alt="Obtener acceso al asistente de IA"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -227,7 +227,7 @@ El asistente de IA es una herramienta útil para aprender nuevos productos o par
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="onboard.md" title="Uso del asistente de IA para reducir el tiempo de incorporación" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3438032/?format=jpeg&nocache=1748392735030" alt="Uso del asistente de IA para reducir el tiempo de incorporación"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475933/?captions=spa&format=jpeg&nocache=1748392735030" alt="Uso del asistente de IA para reducir el tiempo de incorporación"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

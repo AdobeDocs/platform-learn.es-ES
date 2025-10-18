@@ -290,7 +290,7 @@ Obtenga información sobre las audiencias en Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="fac/overview-of-federated-audience-composition.md" title="Descripción general de la composición de audiencias federada" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3432261/?format=jpeg&nocache=1740173579477" alt="Descripción general de la composición de audiencias federada"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3450884/?captions=spa&format=jpeg&nocache=1740173579477" alt="Descripción general de la composición de audiencias federada"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -313,7 +313,7 @@ Obtenga información sobre las audiencias en Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="fac/connect-and-configure-federated-audience-composition.md" title="Conexión y configuración de la composición de audiencia federada" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3433246/?format=jpeg&nocache=1740173579488" alt="Conexión y configuración de la composición de audiencia federada"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451559/?captions=spa&format=jpeg&nocache=1740173579488" alt="Conexión y configuración de la composición de audiencia federada"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

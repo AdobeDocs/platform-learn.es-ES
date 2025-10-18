@@ -60,7 +60,7 @@ Obtenga información sobre cómo simular y aplicar reglas.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="identity-settings.md" title="Reglas de vinculación de gráficos de identidad: configuración de identidad" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3458487/?format=jpeg&nocache=1747355376336" alt="Reglas de vinculación de gráficos de identidad: configuración de identidad"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475965/?captions=spa&format=jpeg&nocache=1747355376336" alt="Reglas de vinculación de gráficos de identidad: configuración de identidad"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

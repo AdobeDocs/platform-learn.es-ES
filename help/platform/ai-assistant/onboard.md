@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Aprenda a utilizar el asistente de IA para ampliar rápidamente las nuevas funciones y reducir el tiempo de incorporación. Para obtener más información, consulte la [Guía de preguntas para el asistente de IA](https://experienceleague.adobe.com/es/docs/experience-platform/ai-assistant/questions).
 
->[!VIDEO](https://video.tv.adobe.com/v/3438032/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475933/?captions=spa&learn=on&enablevpops)

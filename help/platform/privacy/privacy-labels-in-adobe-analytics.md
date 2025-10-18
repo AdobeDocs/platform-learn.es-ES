@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Conozca el proceso de añadir etiquetas de privacidad de datos a las variables de Analytics, incluido un desglose de qué significa cada tipo de etiqueta y cuándo utilizarlas. Para obtener más información, visite la [documentación de Privacy Services](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/336077?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3450665?captions=spa&learn=on&enablevpops)

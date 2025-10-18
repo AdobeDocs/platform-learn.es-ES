@@ -22,5 +22,5 @@ Obtenga información sobre cómo configurar una conexión y enviar datos al dest
 
 Para obtener más información, visite la [documentación](https://experienceleague.adobe.com/es/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob).
 
->[!VIDEO](https://video.tv.adobe.com/v/331082/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346816/?captions=spa&learn=on&enablevpops)
 

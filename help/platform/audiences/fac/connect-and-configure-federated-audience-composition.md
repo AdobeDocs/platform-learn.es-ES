@@ -20,4 +20,4 @@ ht-degree: 1%
 
 Aprenda a conectarse al almacén de datos y a configurar esa conexión para la Composición de audiencias federada. Para obtener más información, visite [Documentación de la composición de audiencias federadas](https://experienceleague.adobe.com/es/docs/federated-audience-composition/using/home){target="_blank"}.
 
->[!VIDEO](https://video.tv.adobe.com/v/3433246/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3451559/?captions=spa&learn=on&enablevpops)

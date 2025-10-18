@@ -20,4 +20,4 @@ ht-degree: 45%
 
 La composición de público federado de Experience Platform proporciona flexibilidad y eficacia en la administración de datos a los usuarios de Adobe Real-Time CDP y Adobe Journey Optimizer. Con Federated Audience Composition, puede acceder a su almacén de datos empresarial mediante una interfaz de usuario fácil de usar para expertos en marketing y crear audiencias y aprovechar conjuntos de datos en flujos de trabajo de Adobe Experience Platform sin tener que importar todos los datos del almacén de datos en Experience Platform.
 
->[!VIDEO](https://video.tv.adobe.com/v/3432261/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3450884/?captions=spa&learn=on&enablevpops)
