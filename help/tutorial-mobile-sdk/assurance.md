@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo implementar la extensión de Assur
 feature: Mobile SDK,Assurance
 jira: KT-14628
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: 456c5437cec745f667435e97d21edfba1700750a
+source-git-commit: 2784282b91692832786aa478363374f5f4066662
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1661'
 ht-degree: 4%
 
 ---
@@ -35,7 +35,7 @@ En esta lección, deberá hacer lo siguiente:
 
 ## Confirmar acceso
 
-Confirme que su organización tiene acceso a Assurance. Usted, como usuario, debe añadirse al perfil de Adobe Experience Platform. Consulte [Acceso de usuario](https://experienceleague.adobe.com/es/docs/experience-platform/assurance/user-access) en la guía de Assurance para obtener más información.
+Confirme que su organización tiene acceso a Assurance. Usted, como usuario, debe añadirse al perfil de Adobe Experience Platform. Consulte [Acceso de usuario](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/user-access) en la guía de Assurance para obtener más información.
 
 ## Implementación
 
@@ -172,7 +172,7 @@ Assurance funciona abriendo una dirección URL a través de un explorador o cód
 
 Asegúrese de especificar un `android:scheme` (por ejemplo. `lumatutorialandroid`) y `android:host` (por ejemplo `default`) para definir la dirección URL base.
 
-Para obtener más información sobre los vínculos profundos en Android, consulte [Crear vínculos profundos al contenido de la aplicación](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
+Para obtener más información sobre los vínculos profundos en Android, consulte [Crear vínculos profundos](https://developer.android.com/training/app-links/create-deeplinks){target="_blank"} en la documentación de Android.
 
 Assurance funciona abriendo una dirección URL a través de un explorador o código QR. Esa URL comienza con la URL base, que abre la aplicación y contiene parámetros adicionales. Estos parámetros únicos se utilizan para conectar la sesión.  En la aplicación de ejemplo, el vínculo profundo es `lumatutorialandroid://default`.
 
@@ -388,7 +388,7 @@ Si ve extensiones obsoletas, consulte la [documentación de Android Studio](http
 >
 >Ahora ha configurado la aplicación para que utilice Assurance durante el resto del tutorial.
 >
->Gracias por dedicar su tiempo a conocer Adobe Experience Platform Mobile SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=es)
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Mobile SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 
 Siguiente: **[Implementar consentimiento](consent.md)**
