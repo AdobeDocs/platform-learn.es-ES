@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 2860dcb7-4f7a-4b48-93d4-141cd7f4899e
-source-git-commit: fe162f285d67cc2a37736f80715a5c5717835e95
+source-git-commit: 6b93c7ed76ef38dda8903d63f4800a98f4e46e1d
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,16 @@ Los complementos de GenStudio for Performance Marketing son las aplicaciones de 
 - Acceso a Adobe GenStudio for Performance Marketing
 - Acceso a App Builder
 - Acceso a un bloque de Amazon AWS S3
+
+## Vídeo
+
+En este vídeo, obtendrá una explicación y una demostración de todos los pasos involucrados en este ejercicio.
+
+>[!NOTE]
+>
+>Este vídeo aún no tiene audio. Una vez que el audio esté disponible, se cargará una nueva versión.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476498?quality=12&learn=on)
 
 ## Ejercicios
 

@@ -4,14 +4,20 @@ description: 'Primeros pasos: Adobe I/O'
 kt: 5342
 doc-type: tutorial
 exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
-source-git-commit: 947ce5880c88fcf0211c5d16270dfcf2d6416131
+source-git-commit: 899cb9b17702929105926f216382afcde667a1b6
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '806'
 ht-degree: 0%
 
 ---
 
 # Configuración del proyecto de Adobe I/O
+
+## Vídeo
+
+En este vídeo, obtendrá una explicación y una demostración de todos los pasos involucrados en este ejercicio.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476494?quality=12&learn=on)
 
 ## Creación de un proyecto de Adobe I/O
 
@@ -63,7 +69,7 @@ Entonces debería ver esto.
 >
 >Según la ruta de aprendizaje seleccionada, es posible que no tenga acceso a la API de Photoshop Services. Solo tendrá acceso a la API de Photoshop Services si se encuentra en la ruta de aprendizaje **Firefly**, **Workfront Fusion**, **ALL** o si asiste a un **taller presencial en directo**. Puede omitir este paso si no se encuentra en una de estas rutas de aprendizaje.
 >
->Seleccione **+ Agregar al proyecto** y luego seleccione **API**.
+Seleccione **+ Agregar al proyecto** y luego seleccione **API**.
 
 ![Almacenamiento de Azure](./images/ps2.png)
 

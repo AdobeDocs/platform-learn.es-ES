@@ -4,9 +4,9 @@ description: 'Introducción: configuración de Postman'
 kt: 5342
 doc-type: tutorial
 exl-id: fc1ee238-cce8-40a9-aba7-3605019a0077
-source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
+source-git-commit: 899cb9b17702929105926f216382afcde667a1b6
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '458'
 ht-degree: 3%
 
 ---
@@ -17,9 +17,15 @@ ht-degree: 3%
 >
 >Si no eres empleado de Adobe, sigue las instrucciones para [instalar Postman](./ex7.md){target="_blank"}. Las siguientes instrucciones están destinadas únicamente a empleados de Adobe.
 
+## Vídeo
+
+En este vídeo, obtendrá una explicación y una demostración de todos los pasos involucrados en este ejercicio.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476496?quality=12&learn=on)
+
 ## Instalar PostBuster
 
-Vaya a [https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"}.
+Vaya a [https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"}.
 
 Haga clic para descargar la última versión de **PostBuster**.
 
