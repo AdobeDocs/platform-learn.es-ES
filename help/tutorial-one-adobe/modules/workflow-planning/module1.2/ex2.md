@@ -4,9 +4,9 @@ description: Revisión con Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
-source-git-commit: 6b93c7ed76ef38dda8903d63f4800a98f4e46e1d
+source-git-commit: 919bfdb5f047669f670482695edfa7820e0aad93
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1293'
 ht-degree: 0%
 
 ---
@@ -197,25 +197,25 @@ Entonces debería ver esto.
 
 Como parte de esta tarea, debe crear una nueva imagen y luego cargarla como documento en Workfront. Ahora creará ese recurso usted mismo mediante Adobe Express.
 
-## 1.2.2.5 Agregar un nuevo documento a su tarea e iniciar el flujo de aprobación
+## 1.2.2.5: agregue un nuevo documento a su proyecto e inicie el flujo de aprobación
 
 Para realizar este ejercicio, debe descargar y utilizar este recurso: [timetravelnow.png](./images/timetravelnow.png)
 
 ![WF](./images/timetravelnow.png)
 
-Vuelva a la pantalla **Detalles de la tarea**. Ir a **Documentos**. Haga clic en **+ Agregar nuevo** y, a continuación, seleccione el repositorio de AEM Assets CS, que debe llamarse `--aepUserLdap-- - CitiSignal`.
+Volver a la pantalla **Detalles del proyecto**. Ir a **Documentos**. Haga clic en **+ Agregar nuevo** y luego seleccione **Documento**.
 
 ![WF](./images/wfp10.png)
 
-Haga doble clic para abrir la carpeta `--aepUserLdap-- CitiSignal Fiber Campaign`.
+Haga clic para seleccionar el archivo `timetravelnow.png`. Haga clic en **Abrir**.
 
 ![WF](./images/wfp10a.png)
 
-Seleccione el archivo que creó en el paso anterior, que se llama **CitiSignal - Neon rabbit - Timetravel Now!.png**. Haga clic en **Seleccionar**.
+Entonces deberías tener esto.
 
-![WF](./images/2048x2048.png){width="50px" align="left"}
+![WF](./images/wfp10b.png)
 
-Entonces deberías tener esto. Pase el ratón sobre el documento cargado. Haga clic en **Crear revisión** y luego elija **Revisión avanzada**.
+Pase el ratón sobre el documento cargado. Haga clic en **Crear revisión** y luego elija **Revisión avanzada**.
 
 ![WF](./images/wfp13.png)
 

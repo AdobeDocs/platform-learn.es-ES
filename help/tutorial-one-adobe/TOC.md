@@ -4,9 +4,9 @@ breadcrumb-title: Un tutorial técnico de Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
+source-git-commit: 843140d3befd415a1879410f34c2b60c6adf18d0
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1388'
 ht-degree: 3%
 
 ---
@@ -15,8 +15,8 @@ ht-degree: 3%
 # Un tutorial técnico de Adobe {#tutorial-one-adobe}
 
 + [Información general del tutorial](/help/tutorial-one-adobe/overview.md)
-+ [Habilitación técnica de GenStudio para la cadena de suministro de contenido](/help/tutorial-one-adobe/genstudiocsc.md)
-+ [Estado de contenido](/help/tutorial-one-adobe/status.md)
++ [Habilitación técnica de GenStudio para Content Supply chain](/help/tutorial-one-adobe/genstudiocsc.md)
++ [Estado del contenido](/help/tutorial-one-adobe/status.md)
 + [Finalización](/help/tutorial-one-adobe/completion.md)
 
 + Primeros pasos {#gettingstarted}
@@ -46,27 +46,25 @@ ht-degree: 3%
       + [Resumen y beneficios](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/summary.md)
 
 + Creación y producción {#production}
-   + 1.1 Descripción general de Adobe Systems servicios Firefly {#crpr1}
+   + 1.1 Descripción general de Adobe Firefly Services {#crpr1}
       + [Información general](/help/tutorial-one-adobe/modules/creation-production/module1.1/firefly-services.md)
-      + [1.1.1 Introducción con los Servicios Firefly](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex1.md)
-      + [1.1.2 Optimice sus procesos de Firefly con Microsoft Azure y URL prefirmadas](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex2.md)
-      + [1.1.3 Trabajo con API de Photoshop](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex3.md)
-      + [1.1.4 API de modelos personalizados Firefly](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex4.md)
+      + [1.1.1 Introducción a Firefly Services](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex1.md)
+      + [1.1.2 Optimizar los procesos de Firefly con Microsoft Azure y las direcciones URL prefirmadas](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex2.md)
+      + [1.1.3 Uso de las API de Photoshop](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex3.md)
+      + [API de modelos personalizados de Firefly 1.1.4](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex4.md)
       + [Resumen y beneficios](/help/tutorial-one-adobe/modules/creation-production/module1.1/summary.md)
-   + 1.2 Automatización del flujo de trabajo Creative con Workfront Fusion {#crpr2}
+   + 1.2 Automatización del flujo de trabajo de Creative con Workfront Fusion {#crpr2}
       + [Información general](/help/tutorial-one-adobe/modules/creation-production/module1.2/automation.md)
-      + [1.2.1 Introducción con Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex1.md)
-      + [1.2.2 Uso Adobe Systems API en Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex2.md)
-      + [1.2.3 Automatización de procesos con Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex3.md)
-      + [1.2.4 Automatización mediante conectores](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex4.md)
-      + [1.2.5 Frame.io y Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex5.md)
-      + [1.2.6 Frame.io a Workfront Fusion para AEM Assets](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex6.md)
+      + [1.2.1 Introducción a Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex1.md)
+      + [1.2.2 Automatización mediante conectores](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex4.md)
+      + [1.2.3 Frame.io y Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex5.md)
+      + [1.2.4 Frame.io a Workfront Fusion para AEM Assets](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex6.md)
       + [Resumen y beneficios](/help/tutorial-one-adobe/modules/creation-production/module1.2/summary.md)
    + 1.3 GenStudio for Performance Marketing {#crpr3}
       + [Información general](/help/tutorial-one-adobe/modules/creation-production/module1.3/genstudio.md)
       + [1.3.1 Configuración: marcas](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex1.md)
       + [1.3.2 Configuración: personalidades, productos y plantillas](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex2.md)
-      + [1.3.3 Activación de la campaña en Meta](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex3.md)
+      + [1.3.3 Activación de Campaign en Meta](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex3.md)
       + [1.3.4 Crear experiencia de correo electrónico para AJO](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex4.md)
       + [Resumen y beneficios](/help/tutorial-one-adobe/modules/creation-production/module1.3/summary.md)
    + 1.4 Adobe Express y Adobe Experience Cloud {#crpr4}
@@ -109,12 +107,12 @@ ht-degree: 3%
       + [1.5.3 Conexión del ACCS a AEM Assets CS](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/ex3.md)
       + [Resumen y beneficios](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/summary.md)
 
-+ Entrega y Activation {#activation}
++ Envío y activación {#activation}
    + Recopilación de datos {#dc}
-      + 1.1 Adobe Experience Platform recopilación de datos y SDK web {#dc11}
+      + 1.1 Recopilación de datos de Adobe Experience Platform y Web SDK {#dc11}
          + [Información general](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/data-ingestion-launch-web-sdk.md)
-         + [1.1.1 Recopilación Adobe Experience Platform datos](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/ex1.md)
-         + [1.1.2 Red perimetral, flujos de datos y recopilación de datos del servidor](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/ex2.md)
+         + [1.1.1 Explicación de la recopilación de datos de Adobe Experience Platform](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/ex1.md)
+         + [1.1.2 Recopilación de datos de Edge Network, flujos de datos y servidores](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/ex2.md)
          + [1.1.3 Introducción a la recopilación de datos de Adobe Experience Platform](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/ex3.md)
          + [1.1.4 Recopilación de datos web del lado del cliente](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/ex4.md)
          + [1.1.5 Implementación de Adobe Analytics y Adobe Audience Manager](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/ex5.md)
@@ -142,7 +140,7 @@ ht-degree: 3%
          + [2.1.2 Visualizar su propio perfil de cliente en tiempo real: IU](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex2.md)
          + [2.1.3 Visualice su propio perfil de cliente en tiempo real: API](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex3.md)
          + [2.1.4 Crear una audiencia: IU](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex4.md)
-         + [2.1.5 Vea su perfil de cliente en tiempo real en acción en la centro de llamadas](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex5.md)
+         + [2.1.5 Ver el perfil del cliente en tiempo real en acción en el centro de llamadas](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex5.md)
          + [Resumen y beneficios](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/summary.md)
       + 2.2 Servicios inteligentes {#rtcdp22}
          + [Información general](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-2/intelligent-services.md)
@@ -202,7 +200,7 @@ ht-degree: 3%
          + [Resumen y beneficios](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/summary.md)
       + 3.3 Adobe Journey Optimizer: mensajes push y en la aplicación {#ajo33}
          + [Información general](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ajopushinapp.md)
-         + [3.3.1 Introducción con notificaciones push](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex1.md)
+         + [3.3.1 Introducción a las notificaciones push](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex1.md)
          + [3.3.2 Configuración de un recorrido con mensajes push](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex2.md)
          + [3.3.3 Configuración de una campaña con mensajes en la aplicación](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex3.md)
          + [Resumen y beneficios](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/summary.md)
@@ -266,15 +264,15 @@ ht-degree: 3%
          + [API del servicio de consultas 2.1.8](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/ex8.md)
          + [Resumen y beneficios](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/summary.md)
    + Content Analytics {#contentanalytics}
-      + 3.1 Contenido Analytics {#ca1}
+      + 3.1 Content Analytics {#ca1}
          + [Información general](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
-         + [3.1.1 Introducción a la Analytics de contenido](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
+         + [3.1.1 Introducción a Content Analytics](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
          + [Resumen y beneficios](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
-+ [Trabajo en curso: IA de agente](/help/tutorial-one-adobe/ai.md)
-+ Trabajo en curso: IA de agente {#agenticai}
-   + 1.1 Introducción con agentes e IA {#agenticai1}
++ [WIP - Inteligencia artificial aplicada a la agencia](/help/tutorial-one-adobe/ai.md)
++ WIP - Inteligencia artificial aplicada a la agencia {#agenticai}
+   + 1.1 Introducción a los agentes y la IA {#agenticai1}
       + [Información general](/help/tutorial-one-adobe/modules/agentic-ai/module1.1/agenticai.md)
-      + [1.1.1 Introducción a la IA Agentic](/help/tutorial-one-adobe/modules/agentic-ai/module1.1/ex1.md)
-   + 1.2 Colaboración de agentes {#agenticai2}
+      + [1.1.1 Introducción a la inteligencia artificial aplicada a la agencia](/help/tutorial-one-adobe/modules/agentic-ai/module1.1/ex1.md)
+   + 1.2 Agente Collaboration {#agenticai2}
       + [Información general](/help/tutorial-one-adobe/modules/agentic-ai/module1.2/agentcollaboration.md)
       + [1.2.1 Introducción a Agent Collaboration](/help/tutorial-one-adobe/modules/agentic-ai/module1.2/ex1.md)

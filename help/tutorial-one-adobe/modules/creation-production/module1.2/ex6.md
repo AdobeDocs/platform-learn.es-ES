@@ -6,14 +6,14 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f02ecbe4-f1d7-4907-9bbc-04e037546091
-source-git-commit: 1d1ee3462bd890556037c8e24ba2fe94c3423187
+source-git-commit: 843140d3befd415a1879410f34c2b60c6adf18d0
 workflow-type: tm+mt
-source-wordcount: '1981'
+source-wordcount: '1983'
 ht-degree: 1%
 
 ---
 
-# 1.2.6 E/S de cuadro a Workfront Fusion para AEM Assets
+# 1.2.4 E/S de cuadro a Workfront Fusion para AEM Assets
 
 >[!IMPORTANT]
 >
@@ -27,7 +27,7 @@ En el ejercicio anterior configuró un escenario que genera automáticamente var
 
 Los equipos empresariales, sin embargo, no necesitan un archivo PSD, sino un archivo PNG o un archivo JPG. En este ejercicio, configurará una nueva automatización que dará como resultado la generación de un archivo PNG una vez aprobado el recurso en E/S de fotograma y que el archivo PNG se almacenará automáticamente en AEM Assets.
 
-## 1.2.6.1 Crear un nuevo escenario
+## 1.2.4.1 Crear un nuevo escenario
 
 Vaya a [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Abra **Workfront Fusion**.
 
@@ -57,7 +57,7 @@ Entonces debería ver esto. Haga clic en **Copiar dirección al portapapeles**.
 
 ![E/S de cuadro](./images/aemf6.png)
 
-## 1.2.6.2 Configurar webhook en Frame.io
+## 1.2.4.2 Configurar webhook en Frame.io
 
 Vaya a Postman y abra la solicitud **POST - Obtener token de acceso** en la colección **Adobe IO - OAuth**. A continuación, haga clic en **Enviar** para solicitar un nuevo **token de acceso**.
 
@@ -101,7 +101,7 @@ La vista detallada de la burbuja muestra los datos recibidos de Frame.io. Debe v
 
 ![E/S de cuadro](./images/aemf16.png)
 
-## 1.2.6.3: obtener detalles de recursos de Frame.io
+## 1.2.4.3: obtener detalles de recursos de Frame.io
 
 Ahora que la comunicación entre Frame.io y Workfront Fusion se ha establecido a través de un webhook personalizado, debería obtener más detalles sobre el recurso para el que se actualizó la etiqueta de estado. Para ello, utilizará una vez más el conector Frame.io en Workfront Fusion, de forma similar al ejercicio anterior.
 
@@ -178,7 +178,7 @@ Entonces deberías tener esto. Haga clic en **Guardar** para guardar los cambios
 
 ![E/S de cuadro](./images/aemf35a.png)
 
-## 1.2.6.4 convertir a PNG
+## 1.2.4.4 convertir a PNG
 
 Pase el ratón sobre el módulo **Frame.io - Realizar una llamada de API personalizada** y haga clic en el icono **+**.
 
@@ -224,7 +224,7 @@ En los detalles de la ejecución del módulo **Adobe Photoshop - Convert image f
 
 ![E/S de cuadro](./images/aemf39.png)
 
-## 1.2.6.5 Almacenar PNG en AEM Assets CS
+## 1.2.4.5 Almacenar PNG en AEM Assets CS
 
 Pase el ratón sobre el módulo **Adobe Photoshop - Convertir formato de imagen** y haga clic en el icono **+**.
 
@@ -383,10 +383,11 @@ Ahora puede ver más detalles sobre los metadatos del archivo PNG generado.
 
 Ahora ha completado correctamente este ejercicio.
 
-## Pasos siguientes
+## Próximos pasos
 
 Vaya a [Resumen y ventajas de la automatización del flujo de trabajo de Creative con Workfront Fusion](./summary.md){target="_blank"}
 
 Volver a [Automatización del flujo de trabajo de Creative con Workfront Fusion](./automation.md){target="_blank"}
 
 Volver a [Todos los módulos](./../../../overview.md){target="_blank"}
+1.2.4

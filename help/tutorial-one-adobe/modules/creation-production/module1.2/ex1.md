@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: 4b38b40c47b5c373f74a85261adce46f291303a8
+source-git-commit: 843140d3befd415a1879410f34c2b60c6adf18d0
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '699'
 ht-degree: 1%
 
 ---
@@ -83,7 +83,7 @@ Con las claves y los valores anteriores, puede configurar el objeto **Set multip
 
 ![WF Fusion](./images/wffusion11.png)
 
-Escriba el **nombre de variable**: **CONST_client_id** y su **valor de variable**, seleccione **Agregar**.
+Escriba el **nombre de variable**: **`CONST_client_id`** y su **valor de variable**, seleccione **Agregar**.
 
 ![WF Fusion](./images/wffusion12.png)
 
@@ -91,7 +91,7 @@ Seleccione **Agregar elemento**.
 
 ![WF Fusion](./images/wffusion13.png)
 
-Escriba **Nombre de variable**: **CONST_client_secret** y su **Valor de variable**, seleccione **Agregar**.
+Escriba **Nombre de variable**: **`CONST_client_secret`** y su **Valor de variable**, seleccione **Agregar**.
 
 ![WF Fusion](./images/wffusion14.png)
 
@@ -99,7 +99,7 @@ Seleccione **Agregar elemento**.
 
 ![WF Fusion](./images/wffusion15.png)
 
-Escriba **Nombre de variable**: **CONST_scope** y su **valor de variable**, seleccione **Agregar**.
+Escriba **Nombre de variable**: **`CONST_scope`** y su **Valor de variable**, seleccione **Agregar**.
 
 ![WF Fusion](./images/wffusion16.png)
 
@@ -230,7 +230,7 @@ La pantalla debería tener un aspecto similar al siguiente:
 
 ![WF Fusion](./images/wffusion45.png)
 
-A continuación, cambie el nombre de su escenario a `--aepUserLdap-- - Adobe I/O Authentication`.
+A continuación, cambie el nombre de su escenario a `--aepUserLdap-- - Firefly + Photoshop`.
 
 ![WF Fusion](./images/wffusion46.png)
 
@@ -240,7 +240,7 @@ Seleccione **Guardar**.
 
 ## Pasos siguientes
 
-Vaya a [Usar las API de Adobe en Workfront Fusion](./ex2.md){target="_blank"}
+Vaya a [Automatización con conectores](./ex4.md){target="_blank"}
 
 Volver a [Automatización del flujo de trabajo de Creative con Workfront Fusion](./automation.md){target="_blank"}
 
