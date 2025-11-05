@@ -1,180 +1,25 @@
 ---
-title: Uso de las API de Adobe en Workfront Fusion
-description: Aprenda a utilizar las API de Adobe en Workfront Fusion
+title: Automatización con conectores
+description: Automatización con conectores
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-exl-id: 23ebf8b4-3f16-474c-afe1-520d88331417
-source-git-commit: 603e48e0453911177823fe7ceb340f8ca801c5e1
+exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
+source-git-commit: c9807ef0787f4390d12bc7285cfe71260aa3eabf
 workflow-type: tm+mt
-source-wordcount: '1749'
-ht-degree: 0%
+source-wordcount: '1991'
+ht-degree: 1%
 
 ---
 
-# 1.2.2 Uso de las API de Adobe en Workfront Fusion
+# 1.2.4 Automatización mediante conectores
 
-Aprenda a utilizar las API de Adobe en Workfront Fusion.
+Ahora empezará a utilizar los conectores predeterminados en Workfront Fusion para Photoshop y conectará la solicitud de Firefly Text-2-Image y las solicitudes de Photoshop en un escenario.
 
-## 1.2.2.1 Usar la API Texto a imagen de Firefly con Workfront Fusion
+## 1.2.4.1 variables de actualización
 
-Pase el ratón sobre el segundo nodo **Set multiple variables** y seleccione **+** para agregar otro módulo.
-
-![WF Fusion](./images/wffusion48.png)
-
-Busque **http** y seleccione **HTTP**.
-
-![WF Fusion](./images/wffusion49.png)
-
-Seleccione **Realizar una solicitud**.
-
-![WF Fusion](./images/wffusion50.png)
-
-Seleccione estas variables:
-
-- **URL**: `https://firefly-api.adobe.io/v3/images/generate`
-- **Método**: `POST`
-
-Seleccione **añadir un encabezado**.
-
-![WF Fusion](./images/wffusion51.png)
-
-Introduzca los siguientes encabezados:
-
-| Clave | Valor |
-|:-------------:| :---------------:| 
-| `x-api-key` | su variable almacenada para `CONST_client_id` |
-| `Authorization` | `Bearer ` + su variable almacenada para `bearer_token` |
-| `Content-Type` | `application/json` |
-| `Accept` | `*/*` |
-
-Escriba los detalles de `x-api-key`. Seleccione **Agregar**.
-
-![WF Fusion](./images/wffusion52.png)
-
-Seleccione **Agregar un encabezado**.
-
-![WF Fusion](./images/wffusion53.png)
-
-Escriba los detalles de `Authorization`. Seleccione **Agregar**.
-
-![WF Fusion](./images/wffusion54.png)
-
-Seleccione **Agregar un encabezado**. Escriba los detalles de `Content-Type`. Seleccione **Agregar**.
-
-![WF Fusion](./images/wffusion541.png)
-
-Seleccione **Agregar un encabezado**. Escriba los detalles de `Accept`. Seleccione **Agregar**.
-
-![WF Fusion](./images/wffusion542.png)
-
-Establezca **Body type** en **Raw**. Para **Content type**, seleccione **JSON (application/json)**.
-
-![WF Fusion](./images/wffusion55.png)
-
-Pegue esta carga en el campo **Solicitar contenido**.
-
-```json
-{
-	"numVariations": 1,
-	"size": {
-		"width": 2048,
-      "height": 2048
-    },
-    "prompt": "Horses in a field",
-    "promptBiasingLocaleCode": "en-US"
-}
-```
-
-Marque la casilla de **Respuesta de análisis**. Seleccione **Aceptar**.
-
-![WF Fusion](./images/wffusion56.png)
-
-Seleccionar **Ejecutar una vez**.
-
-![WF Fusion](./images/wffusion57.png)
-
-La pantalla debería tener un aspecto similar al siguiente.
-
-![WF Fusion](./images/wffusion58.png)
-
-¿Desea seleccionar **?Icono** en el cuarto nodo, HTTP, para ver la respuesta. Debería ver un archivo de imagen en la respuesta.
-
-![WF Fusion](./images/wffusion59.png)
-
-Copie la dirección URL de la imagen y ábrala en una ventana del explorador. La pantalla debería tener un aspecto similar al siguiente:
-
-![WF Fusion](./images/wffusion60.png)
-
-Haga clic con el botón derecho en **HTTP** y cambie el nombre a **Firefly T2I**.
-
-![WF Fusion](./images/wffusion62.png)
-
-Seleccione **Guardar** para guardar los cambios.
-
-![WF Fusion](./images/wffusion61.png)
-
-## 1.2.2.2 Usar la API de Photoshop con Workfront Fusion
-
-Seleccione **wrench** entre los nodos **Set Bearer Token** y **Firefly T2I**. Seleccione **Agregar un enrutador**.
-
-![WF Fusion](./images/wffusion63.png)
-
-Haga clic con el botón derecho en el objeto **Firefly T2I** y seleccione **Clonar**.
-
-![WF Fusion](./images/wffusion64.png)
-
-Arrastre y suelte el objeto clonado cerca del objeto **Router**; se conecta automáticamente al **Router**. La pantalla debería tener un aspecto similar al siguiente:
-
-![WF Fusion](./images/wffusion65.png)
-
-Ahora tiene una copia idéntica basada en la solicitud HTTP **Firefly T2I**. Algunas de las configuraciones de la solicitud HTTP **Firefly T2I** son similares a las que necesita para interactuar con la **API de Photoshop**, que ahorra tiempo. Ahora solo debe cambiar las variables que no son las mismas, como la dirección URL de solicitud y la carga útil.
-
-Cambie **URL** a `https://image.adobe.io/pie/psdService/text`.
-
-![WF Fusion](./images/wffusion66.png)
-
-Reemplazar **contenido de solicitud** por la siguiente carga útil:
-
-```json
-  {
-    "inputs": [
-      {
-        "storage": "external",
-        "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber.psd{{AZURE_STORAGE_SAS_READ}}"
-      }
-    ],
-    "options": {
-      "layers": [
-        {
-          "name": "2048x2048-button-text",
-          "text": {
-            "content": "Click here"
-          }
-        },
-        {
-          "name": "2048x2048-cta",
-          "text": {
-            "content": "Buy this stuff"
-          }
-        }
-      ]
-    },
-    "outputs": [
-      {
-        "storage": "azure",
-        "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text.psd{{AZURE_STORAGE_SAS_WRITE}}",
-        "type": "vnd.adobe.photoshop",
-        "overwrite": true
-      }
-    ]
-  }
-```
-
-![WF Fusion](./images/wffusion67.png)
-
-Para que este **contenido de solicitud** funcione correctamente, faltan algunas variables:
+Antes de continuar con la configuración del conector, es necesario agregar las siguientes variables al módulo **Inicializar constantes**.
 
 - `AZURE_STORAGE_URL`
 - `AZURE_STORAGE_CONTAINER`
@@ -185,270 +30,418 @@ Vuelva al primer nodo, seleccione **Inicializar constantes** y, a continuación,
 
 ![WF Fusion](./images/wffusion69.png)
 
-| Clave | Ejemplo Valor |
+| Clave | Valor de ejemplo |
 |:-------------:| :---------------:| 
 | `AZURE_STORAGE_URL` | `https://vangeluw.blob.core.windows.net` |
 | `AZURE_STORAGE_CONTAINER` | `vangeluw` |
 | `AZURE_STORAGE_SAS_READ` | `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D` |
 | `AZURE_STORAGE_SAS_WRITE` | `?sv=2023-01-03&st=2025-01-13T17%3A21%3A09Z&se=2025-01-14T17%3A21%3A09Z&sr=c&sp=racwl&sig=FD4m0YyyqUj%2B5T8YyTFJDi55RiTDC9xKtLTgW0CShps%3D` |
 
-Para encontrar las variables, vuelva a Postman y abra las **variables de** entorno.
+Para encontrar las variables, vuelva a Postman y abra las **Variables de entorno**.
 
 ![Almacenamiento de Azure](./../module1.1/images/az105.png)
 
-Copie estos valores en Workfront Fusion y agregue un nuevo elemento para cada una de estas 4 variables.
+Copie estos valores en Workfront Fusion y añada un nuevo elemento para cada una de estas 4 variables.
 
-Tu pantalla debería verse gustar esto. Seleccione **Aceptar**.
+La pantalla debería tener un aspecto similar al siguiente. Seleccione **Aceptar**.
 
 ![WF Fusion](./images/wffusion68.png)
 
-A continuación, vuelva a la solicitud HTTP clonada para actualizar **Solicitar contenido**. Observe las variables negras en **Solicitar contenido**, que son las variables que copió desde Postman. Debe cambiar a las variables que acaba de definir en Workfront Fusion. Reemplace cada variable una por una eliminando el texto en negro y reemplazándolo por la variable correcta.
+## 1.2.4.2 Activar su escenario mediante un gancho web
 
-![WF Fusion](./images/wffusion70.png)
+Hasta ahora, ha ejecutado el escenario manualmente para probarlo. Actualicemos ahora su escenario con un webhook, para que pueda activarse desde un entorno externo.
 
-Realice estos 3 cambios en la sección **input**. Seleccione **Aceptar**.
+Seleccione **+**, busque **webhook** y luego seleccione **Webhooks**.
 
-![WF Fusion](./images/wffusion71.png)
+![WF Fusion](./images/wffusion216.png)
 
-Realice estos 3 cambios en la sección **resultados**. Seleccione **Aceptar**.
+Seleccione **webhook personalizado**.
 
-![WF Fusion](./images/wffusion72.png)
+![WF Fusion](./images/wffusion217.png)
 
-Haga clic con el botón derecho en el nodo clonado y seleccione **Rename**. Cambie el nombre a **Photoshop Change Text**.
+Arrastre el módulo **Gancho web personalizado** al principio del escenario. A continuación, selecciona el icono **clock** y arrástralo al módulo **Custom Webhook**.
 
-![WF Fusion](./images/wffusion73.png)
+![WF Fusion](./images/wffusion217a.png)
 
-La pantalla debería tener un aspecto similar al siguiente:
+Entonces debería ver esto. A continuación, arrastre el punto rojo del primer módulo hacia el punto morado del segundo módulo.
 
-![WF Fusion](./images/wffusion74.png)
+![WF Fusion](./images/wffusion217b.png)
 
-Seleccionar **Ejecutar una vez**.
+Entonces debería ver esto. Newt, haz clic en el módulo **Gancho web personalizado**.
 
-![WF Fusion](./images/wffusion75.png)
+![WF Fusion](./images/wffusion217c.png)
 
-Seleccione el icono **search** en el nodo **Photoshop Change Text** para ver la respuesta. Debe tener una respuesta similar a esta, con un vínculo a un archivo de estado.
+Haga clic en **Agregar**.
 
-![WF Fusion](./images/wffusion76.png)
+![WF Fusion](./images/wffusion218.png)
 
-Antes de continuar con las interacciones de la API de Photoshop, deshabilite la ruta al nodo **Firefly T2I** para no enviar llamadas de API innecesarias a ese extremo de API. Seleccione el icono **llave inglesa** y, a continuación, seleccione **Deshabilitar ruta**.
+Establezca el **nombre del webhook** en `--aepUserLdap-- - Firefly + Photoshop Webhook`. Haga clic en **Guardar**.
 
-![WF Fusion](./images/wffusion77.png)
+![WF Fusion](./images/wffusion219.png)
 
-La pantalla debería tener un aspecto similar al siguiente:
+La URL del gancho web ya está disponible. Haga clic en **Copiar dirección al portapapeles** para copiar la dirección URL.
 
-![WF Fusion](./images/wffusion78.png)
+![WF Fusion](./images/wffusion221.png)
 
-A continuación, agregue otro nodo **Set multiple variables**.
+Abra Postman y agregue una nueva carpeta a la colección **FF - Firefly Services Tech Insiders**.
 
-![WF Fusion](./images/wffusion79.png)
+![WF Fusion](./images/wffusion222.png)
 
-Colóquelo después del nodo **Photoshop Change Text**.
+Asigne un nombre a la carpeta `--aepUserLdap-- - Workfront Fusion`.
 
-![WF Fusion](./images/wffusion80.png)
+![WF Fusion](./images/wffusion223.png)
 
-Seleccione la **nodo Establecer varias variables** y seleccione **añadir elemento**. Seleccione el valor variable de la respuesta del solicitud anterior.
+En la carpeta que acaba de crear, seleccione los 3 puntos **...** y seleccione **Agregar solicitud**.
 
-| Nombre de variable | Valor variable |
-|:-------------:| :---------------:| 
-| `psdStatusUrl` | `data > _links > self > href` |
+![WF Fusion](./images/wffusion224.png)
 
-Seleccione **Agregar**.
+Establece **Method type** en **POST** y pega la URL de tu webhook en la barra de direcciones.
 
-![WF Fusion](./images/wffusion81.png)
+![WF Fusion](./images/wffusion225.png)
 
-Seleccione **Aceptar**.
+Debe enviar un cuerpo personalizado para que los elementos de la variable se puedan proporcionar desde una fuente externa al escenario de Workfront Fusion.
 
-![WF Fusion](./images/wffusion82.png)
+Vaya a **Cuerpo** y seleccione **sin procesar**.
 
-Haga clic con el botón derecho en el nodo **Photoshop Change Text** y seleccione **Clone**.
+![WF Fusion](./images/wffusion226.png)
 
-![WF Fusion](./images/wffusion83.png)
+Pegue el texto siguiente en el cuerpo de la solicitud. Seleccione **Enviar**.
 
-Arrastre la solicitud HTTP clonada después del nodo **Set multiple variables** que acaba de crear.
+```json
+{
+    "psdTemplate": "citisignal-fiber.psd",
+    "xlsFile": "placeholder",
+    "prompt":"misty meadows",
+    "cta": "Buy this now!",
+    "button": "Click here to buy!"
+}
+```
 
-![WF Fusion](./images/wffusion83.png)
+![WF Fusion](./images/wffusion229.png)
 
-Haga clic con el botón derecho en la solicitud HTTP clonada, seleccione **Rename** y cambie el nombre a **Photoshop Check Status**.
+Cuando vuelva a Workfront Fusion, aparecerá un mensaje en el gancho web personalizado que dice: **Determinado correctamente**.
 
-![WF Fusion](./images/wffusion84.png)
+![WF Fusion](./images/wffusion227.png)
 
-Seleccione para abrir la solicitud HTTP. Cambie la dirección URL de modo que haga referencia a la variable que creó en el paso anterior y establezca el **Método** en **GET**.
+## 1.2.4.3 Conector De Adobe Firefly
 
-![WF Fusion](./images/wffusion85.png)
+Haga clic en el icono **+** para agregar un módulo nuevo.
 
-Elimine **Body** seleccionando la opción vacía.
+![WF Fusion](./images/wffcff2.png)
 
-![WF Fusion](./images/wffusion86.png)
+Escriba el término de búsqueda `Adobe Firefly` y seleccione **Adobe Firefly**.
 
-Seleccione **Aceptar**.
+![WF Fusion](./images/wffcff2a.png)
 
-![WF Fusion](./images/wffusion87.png)
+Seleccione **Generar una imagen**.
 
-Seleccionar **Ejecutar una vez**.
+![WF Fusion](./images/wffcff3.png)
 
-![WF Fusion](./images/wffusion88.png)
+Haga clic en el módulo **Adobe Firefly** para abrirlo y, a continuación, haga clic en **Agregar** para crear una nueva conexión.
 
-Aparece una respuesta que contiene el campo **status**, con el estado establecido en **running**. Photoshop tarda un par de segundos en completar el proceso.
+![WF Fusion](./images/wffcff5.png)
 
-![WF Fusion](./images/wffusion89.png)
+Rellene los campos siguientes:
 
-Ahora que sabe que la respuesta necesita un poco más de tiempo para completarse, puede ser una buena idea agregar un temporizador delante de esta solicitud HTTP para que no se ejecute de inmediato.
+- **Nombre de conexión**: use `--aepUserLdap-- - Firefly connection`.
+- **Entorno**: use **Producción**.
+- **Tipo**: use **cuenta personal**.
+- **ID de cliente**: copie el **ID de cliente** de su proyecto de Adobe I/O, que se llama `--aepUserLdap-- - One Adobe tutorial`.
+- **Secreto de cliente**: copie el **Secreto de cliente** de su proyecto de Adobe I/O, que se llama `--aepUserLdap-- - One Adobe tutorial`.
 
-Seleccione el nodo **Herramientas** y luego seleccione **Suspensión**.
+Puedes encontrar los **ID de cliente** y el **Secreto de cliente** de tu proyecto Adobe I/O [aquí](https://developer.adobe.com/console/projects.){target="_blank"}.
 
-![WF Fusion](./images/wffusion90.png)
+![WF Fusion](./images/wffc20.png)
 
-Coloque el nodo **Sleep** entre **Establecer varias variables** y **Comprobar el estado de Photoshop**. Establezca el **retraso** en **5** segundos. Seleccione **Aceptar**.
+Una vez que hayas rellenado todos los campos, haz clic en **Continuar**. La conexión se validará automáticamente.
 
-![WF Fusion](./images/wffusion91.png)
+![WF Fusion](./images/wffcff6.png)
 
-Tu pantalla debería verse gustar esto. El desafío con la siguiente configuración es que 5 segundos de espera pueden ser suficientes, pero tal vez no sea suficiente. En realidad, sería mejor tener una solución más inteligente gustar hacer un ... bucle while que comprueba el estado cada 5 segundos hasta que el estado sea igual a **éxito**. Por lo tanto, puede implementar tal táctica en los próximos pasos.
+A continuación, seleccione la variable **prompt** proporcionada al escenario por el **webhook personalizado** entrante.
 
-![WF Fusion](./images/wffusion92.png)
+![WF Fusion](./images/wffcff7.png)
 
-Seleccione el icono **wrench** entre **Set multiple variables** y **Sleep**. Seleccione **Agregar módulo**.
+Establezca **Versión de modelo** **prompt** en **image4 standard**. Haga clic en **Aceptar**.
 
-![WF Fusion](./images/wffusion93.png)
+![WF Fusion](./images/wffcff7b.png)
 
-Busque `flow` y luego seleccione **Control de flujo**.
+Haga clic en **Guardar** para guardar los cambios y, a continuación, haga clic en **Ejecutar una vez** para probar la configuración.
 
-![WF Fusion](./images/wffusion94.png)
+![WF Fusion](./images/wffcff8.png)
 
-Seleccione **Repetidor**.
+Vaya a Postman, compruebe el mensaje de su solicitud y, a continuación, haga clic en **Enviar**.
 
-![WF Fusion](./images/wffusion95.png)
+![WF Fusion](./images/wffcff8a.png)
 
-Definir **repeticiones** en **20**. Seleccione **Aceptar**.
+Una vez que haya hecho clic en enviar, vuelva a Workfront Fusion y haga clic en el icono de burbuja del módulo **Adobe Firefly** para comprobar los detalles.
 
-![WF Fusion](./images/wffusion96.png)
+![WF Fusion](./images/wffcff9.png)
 
-A continuación, seleccione **+** en **Photoshop Comprobar estado** para agregar otro módulo.
+Vaya a **OUTPUT** para **Detalles** > **url** para encontrar la URL de la imagen generada por **Adobe Firefly**.
 
-![WF Fusion](./images/wffusion97.png)
+![WF Fusion](./images/wffcff10.png)
 
-Busque **flow** y seleccione **Flow Control**.
+Copie la dirección URL y péguela en el explorador. Ahora debería ver una imagen que representa el mensaje que envió desde la solicitud de Postman, en este caso **misty meadows**.
 
-![WF Fusion](./images/wffusion98.png)
+![WF Fusion](./images/wffcff11.png)
 
-Seleccione **Agregador de matrices**.
+## 1.2.4.2 Cambiar el fondo del archivo PSD
 
-![WF Fusion](./images/wffusion99.png)
+Ahora actualizará su escenario para hacerlo más inteligente mediante el uso de más conectores predeterminados. También conectará la salida de Firefly a Photoshop, de modo que la imagen de fondo del archivo de PSD cambie dinámicamente mediante la salida de la acción Generar imagen de Firefly.
 
-Definir **Módulo Source** en **Repetidor**. Seleccione **Aceptar**.
+Entonces debería ver esto. A continuación, pase el ratón sobre el módulo **Adobe Firefly** y haga clic en el icono **+**.
 
-![WF Fusion](./images/wffusion100.png)
+![WF Fusion](./images/wffc15.png)
 
-La pantalla debería tener un aspecto similar al siguiente:
+En el menú de búsqueda, escriba `Photoshop` y haga clic en la acción **Adobe Photoshop**.
 
-![WF Fusion](./images/wffusion101.png)
+![WF Fusion](./images/wffc16.png)
 
-Seleccione el icono **llave inglesa** y seleccione **Agregar un módulo**.
+Seleccione **Aplicar ediciones de PSD**.
 
-![WF Fusion](./images/wffusion102.png)
+![WF Fusion](./images/wffc17.png)
 
-Busque **herramientas** y seleccione **Herramientas**.
+Entonces debería ver esto. Haga clic en **Agregar** para agregar una nueva conexión a Adobe Photoshop.
 
-![WF Fusion](./images/wffusion103.png)
+![WF Fusion](./images/wffc18.png)
 
-Seleccione **Obtener múltiples variables**.
+Configure la conexión de la siguiente manera:
 
-![WF Fusion](./images/wffusion104.png)
+- Tipo de conexión: seleccionar **Adobe Photoshop (servidor a servidor)**
+- Nombre de conexión: escriba `--aepUserLdap-- - Adobe I/O`
+- ID de cliente: pegue su ID de cliente
+- Secreto del cliente: pegue el secreto del cliente
 
-Seleccione **+ Agregar elemento** y establezca **Nombre de variable** en `done`.
+Haga clic en **Continuar**.
 
-![WF Fusion](./images/wffusion105.png)
+![WF Fusion](./images/wffc19.png)
 
-Seleccione **OK**.
+Para encontrar tu **ID de cliente** y **Secreto de cliente**, ve a [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"} y abre tu proyecto de Adobe I/O, que se llama `--aepUserLdap-- One Adobe tutorial`. Vaya a **Servidor a servidor de OAuth** para encontrar su ID de cliente y Secreto de cliente. Copie esos valores y péguelos en la configuración de conexión de Workfront Fusion.
 
-![WF Fusion](./images/wffusion106.png)
+![WF Fusion](./images/wffc20.png)
 
-Seleccione el nodo **Set multiple variables** que configuró anteriormente. Para inicializar la variable **done**, debe establecerla en `false` aquí. Seleccionar **+ Agregar elemento**.
+Después de hacer clic en **Continuar**, se mostrará brevemente una ventana emergente mientras se verifican sus credenciales. Una vez finalizado, debería ver esto.
 
-![WF Fusion](./images/wffusion107.png)
+![WF Fusion](./images/wffc21.png)
 
-Usar `done` para **nombre de variable**
+Ahora debe introducir la ubicación del archivo PSD con el que desea que Fusion trabaje. Para **Storage**, seleccione **Azure** y para **Ubicación de archivo**, escriba `{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/{{1.AZURE_STORAGE_SAS_READ}}`. Coloque el cursor junto al segundo `/`. A continuación, eche un vistazo a las variables disponibles y desplácese hacia abajo para encontrar la variable **psdTemplate**. Haga clic en la variable **psdTemplate** para seleccionarla.
 
-Para establecer el estado, se necesita un valor booleano. Para encontrar el valor booleano, seleccione **gear** y luego seleccione `false`. Seleccione **Agregar**.
+![WF Fusion](./images/wffc22.png)
 
-![WF Fusion](./images/wffusion108.png)
+Entonces debería ver esto.
 
-Seleccione **Aceptar**.
+![WF Fusion](./images/wffc23.png)
 
-![WF Fusion](./images/wffusion109.png)
+Desplácese hacia abajo hasta que vea **Capas**. Haga clic en **Agregar elemento**.
 
-A continuación, seleccione el icono **wrench** después del nodo **Get multiple variables** que configuró.
+![WF Fusion](./images/wffc24.png)
 
-![WF Fusion](./images/wffusion110.png)
+Entonces debería ver esto. Ahora debe introducir el nombre de la capa en la plantilla de Photoshop PSD que se utiliza para el fondo del archivo.
 
-Seleccione **Configurar un filtro**. Ahora necesita comprobar el valor de la variable **done**. Si ese valor se establece en **false**, se debe ejecutar la siguiente parte del bucle. Si el valor se establece en **true**, significa que el proceso ya ha finalizado correctamente, por lo que no es necesario continuar con la siguiente parte del bucle.
+![WF Fusion](./images/wffc25.png)
 
-![WF Fusion](./images/wffusion111.png)
+En el archivo **citisignal-fiber.psd**, encontrará la capa que se usa para el fondo. En este ejemplo, esa capa se denomina **2048x2048-background**.
 
-Para la etiqueta, use **¿Ya terminamos?**. Establezca la **condición** con la variable ya existente **hecho**, el operador debe establecerse en **Igual a** y el valor debe ser la variable booleana `false`. Seleccione **Aceptar**.
+![WF Fusion](./images/wffc26.png)
 
-![WF Fusion](./images/wffusion112.png)
+Pegue el nombre **2048x2048-background** en el diálogo de Workfront Fusion.
 
-A continuación, deje espacio entre los nodos **Photoshop Comprobar estado** y **Agregador de matrices**. A continuación, seleccione el icono **llave inglesa** y seleccione **Agregar un enrutador**. Esto se debe a que, después de comprobar el estado del archivo Photoshop, debe haber dos rutas. Si el estado es `succeeded`, la variable de **done** debe establecerse en `true`. Si el estado no es igual a `succeeded`, el bucle debe continuar. El enrutador hará posible comprobar y configurar esto.
+![WF Fusion](./images/wffc27.png)
 
-![WF Fusion](./images/wffusion113.png)
+Desplácese hacia abajo hasta que vea **Entrada**. Ahora debe definir lo que debe insertarse en la capa de fondo. En este caso, debe seleccionar la salida del módulo **Adobe Firefly**, que contiene la imagen generada dinámicamente.
 
-Después de agregar el enrutador, selecciona el icono **llave inglesa** y selecciona **Configurar un filtro**.
+Para **Almacenamiento**, seleccione **Externo**. Para **Ubicación de archivo**, tendrá que copiar y pegar la variable `{{XX.details[].url}}` de la salida del módulo **Adobe Firefly**, pero tendrá que reemplazar **XX** en la variable por el número de secuencia del módulo **Adobe Firefly**, que en este ejemplo es **5**.
 
-![WF Fusion](./images/wffusion114.png)
+![WF Fusion](./images/wffc28.png)
 
-Para la etiqueta, use **Hemos terminado**. Establezca la **condición** con la respuesta del **Photoshop Comprobar Estado** nodo seleccionando el campo **resposne data.outputs.status**&#x200B;[], el operador debe establecerse en **Igual a** y el valor debe ser `succeeded`. Seleccione **Aceptar**.
+A continuación, desplácese hacia abajo hasta que vea **Editar**. Establezca **Edit** en **Yes** y establezca **Type** en **Layer**. Haga clic en **Agregar**.
 
-![WF Fusion](./images/wffusion115.png)
+![WF Fusion](./images/wffc29.png)
 
-Siguiente, seleccione el nodo vacío con el signo de interrogación y la búsqueda para **las herramientas**. A continuación, seleccione **Herramientas**.
+Entonces debería ver esto. A continuación, debe definir el resultado de la acción. Haga clic en **Agregar elemento** en **resultados**.
 
-![WF Fusion](./images/wffusion116.png)
+![WF Fusion](./images/wffc30.png)
 
-Seleccione **Establecer múltiples variables**.
+Seleccione **Azure** para **Storage**, pegue este(a) `{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-replacedbg.psd{{1.AZURE_STORAGE_SAS_WRITE}}` en **Ubicación de archivo** y seleccione **vnd.adobe.photoshop** en **Type**. Haga clic para habilitar **Mostrar configuración avanzada**.
 
-![WF Fusion](./images/wffusion117.png)
+![WF Fusion](./images/wffc31.png)
 
-Cuando se utiliza esta rama del enrutador, significa que el estado de creación del archivo Photoshop se ha completado correctamente. Esto significa que el bucle do...while ya no necesita continuar comprobando el estado en Photoshop, por lo que debe establecer la variable `done` en `true`.
+En **Configuración avanzada**, seleccione **Sí** para sobrescribir archivos con el mismo nombre.
+Haga clic en **Agregar**.
 
-Para **nombre de variable**, use `done`.
+![WF Fusion](./images/wffc32.png)
 
-Para el **valor de variable**, debe usar el valor booleano `true`. Seleccione el icono **engranaje** y luego seleccione `true`. Seleccione **Agregar**.
+Entonces deberías tener esto. Haga clic en **Aceptar**.
 
-![WF Fusion](./images/wffusion118.png)
+![WF Fusion](./images/wffc33.png)
 
-Seleccione **Aceptar**.
+Haga clic en **Guardar** para guardar los cambios y, a continuación, haga clic en **Ejecutar una vez** para probar la configuración.
 
-![WF Fusion](./images/wffusion119.png)
+![WF Fusion](./images/wffc33a.png)
 
-A continuación, haga clic con el botón derecho en el nodo **Set multiple variables** que acaba de crear y seleccione **Clone**.
+Vaya a Postman, compruebe el mensaje de su solicitud y, a continuación, haga clic en **Enviar**.
 
-![WF Fusion](./images/wffusion120.png)
+![WF Fusion](./images/wffcff8a.png)
 
-Arrastre el nodo clonado para que se conecte con **Array aggregator**. A continuación, haga clic con el botón secundario en el nodo, seleccione **Rename** y cambie el nombre a `Placeholder End`.
+Entonces debería ver esto. Haga clic en la burbuja en el módulo **Adobe Photoshop - Aplicar ediciones de PSD**.
 
-![WF Fusion](./images/wffusion122.png)
+![WF Fusion](./images/wffc33b.png)
 
-Elimine la variable existente y seleccione **+ Agregar elemento**. Para **Variable name**, use `placeholder`, para **Variable value**, use `end`. Seleccione **Agregar** y, a continuación, seleccione **Aceptar**.
+Ahora puede ver que un nuevo archivo de PSD se generó correctamente y se almacenó en su cuenta de almacenamiento de Microsoft Azure.
 
-![WF Fusion](./images/wffusion123.png)
+![WF Fusion](./images/wffc33c.png)
 
-Seleccione **Guardar** para guardar su escenario. A continuación, seleccione   **Ejecutar una vez**.
+## 1.2.4.3 Cambiar las capas de texto del archivo PSD
 
-![WF Fusion](./images/wffusion124.png)
+A continuación, pase el ratón sobre el módulo **Adobe Photoshop - Aplicar ediciones de PSD** y haga clic en el icono **+**.
 
-A continuación, se ejecuta el escenario, que debe finalizar correctamente. Observe que el bucle do...while que configuró funciona correctamente. En la siguiente ejecución, puede ver que **Repeater** se ejecutó 20 veces según la burbuja del nodo **Tools > Get multiple variables**. Después de ese nodo, configuró un filtro que comprobó el estado y solo si el estado no era igual a **correcto**, se ejecutaron los siguientes nodos. En esta ejecución, la parte posterior al filtro solo se ejecutó una vez, porque el estado ya era **correcto** en la primera ejecución.
+![WF Fusion](./images/wffc34.png)
 
-![WF Fusion](./images/wffusion125.png)
+Seleccione **Adobe Photoshop**.
 
-Puede comprobar el estado de creación del nuevo archivo Photoshop si hace clic en la burbuja de la solicitud HTTP **Photoshop Check Status** y explora el campo **estado**.
+![WF Fusion](./images/wffc35.png)
 
-![WF Fusion](./images/wffusion126.png)
+Seleccione **Editar capas de texto**.
 
-Ya ha configurado la versión básica de un escenario repetible que automatiza una serie de pasos. En el siguiente ejercicio, iterará agregando complejidad a esto.
+![WF Fusion](./images/wffc36.png)
 
-## Pasos siguientes
+Entonces debería ver esto. En primer lugar, seleccione la conexión de Adobe Photoshop que ya se configuró anteriormente y que debe llamarse `--aepUserLdap-- Adobe I/O`.
 
-Vaya a [Automatización de procesos con Workfront Fusion](./ex3.md){target="_blank"}
+![WF Fusion](./images/wffc37.png)
+
+Para el **archivo de entrada**, seleccione **Azure** para **almacenamiento de archivos de entrada** y asegúrese de seleccionar la salida de la solicitud anterior, **Adobe Photoshop - Aplicar ediciones de PSD**, que puede definir de esta manera: ``{{XX.data[].`_links`.renditions[].href}}`` (reemplace XX por el número de secuencia del módulo anterior Adobe Photoshop - Aplicar ediciones de PSD).
+
+A continuación, haga clic en **+Agregar elemento** en **Capas** para empezar a agregar las capas de texto que deben actualizarse.
+
+![WF Fusion](./images/wffc37a.png)
+
+Hay dos cambios que se deben realizar, el texto de CTA y el texto del botón del archivo **citisignal-fiber.psd** deben actualizarse.
+
+Para encontrar los nombres de las capas, abra el archivo **citisignal-fiber.psd**. En el archivo, verá que la capa que contiene call to action se llama **2048x2048-cta**.
+
+![WF Fusion](./images/wffc38.png)
+
+En el archivo **citisignal-fiber.psd**, también notará que la capa que contiene el call to action se llama **2048x2048-button-text**.
+
+![WF Fusion](./images/wffc44.png)
+
+Primero debe configurar los cambios que deben ocurrir en la capa **2048x2048-cta**. Escriba el nombre **2048x2048-cta** en **Nombre** en el cuadro de diálogo.
+
+![WF Fusion](./images/wffc39.png)
+
+Desplácese hacia abajo hasta que vea **Texto** > **Contenido**. Seleccione la variable **cta** de la carga útil de webhook. Haga clic en **Agregar**.
+
+![WF Fusion](./images/wffc40.png)
+
+Entonces debería ver esto. Haga clic en **+Agregar elemento** en **Capas** para empezar a agregar la siguiente capa de texto que necesite actualizarse.
+
+![WF Fusion](./images/wffc40a.png)
+
+Escriba el nombre **2048x2048-button-text** en **Nombre** en el cuadro de diálogo.
+
+![WF Fusion](./images/wffc40b.png)
+
+Desplácese hacia abajo hasta que vea **Texto** > **Contenido**. Seleccione la variable **button** de la carga útil de webhook. Haga clic en **Agregar**.
+
+![WF Fusion](./images/wffc40c.png)
+
+Entonces debería ver esto.
+
+![WF Fusion](./images/wffc40d.png)
+
+Desplácese hacia abajo hasta que vea **Salida**. Para **Almacenamiento**, seleccione **Azure**. Para **ubicación de archivo**, ingrese la siguiente ubicación. Tenga en cuenta la adición de la variable `{{timestamp}}` al nombre de archivo que se utiliza para garantizar que cada archivo generado tenga un nombre único. Además, establezca **Type** en **vnd.adobe.photoshop**.
+
+`{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text-{{timestamp}}.psd{{1.AZURE_STORAGE_SAS_WRITE}}`
+
+Establezca **Type** en **vnd.adobe.photoshop**. Haga clic en **Aceptar**.
+
+![WF Fusion](./images/wffc41.png)
+
+Haga clic en **Guardar** para guardar los cambios.
+
+![WF Fusion](./images/wffc47.png)
+
+## 1.2.4.4 respuesta de webhook
+
+Después de aplicar estos cambios a su archivo Photoshop, debe configurar una **respuesta de webhook** que se devolverá a la aplicación que haya activado este escenario.
+
+Pase el ratón sobre el módulo **Adobe Photoshop - Editar capas de texto** y haga clic en el icono **+**.
+
+![WF Fusion](./images/wffc48.png)
+
+Busque `webhooks` y seleccione **Webhook**.
+
+![WF Fusion](./images/wffc49.png)
+
+Seleccione **Respuesta de webhook**.
+
+![WF Fusion](./images/wffc50.png)
+
+Entonces debería ver esto. Pegue la siguiente carga útil en **Cuerpo**.
+
+```json
+{
+    "newPsdTemplate": ""
+}
+```
+
+![WF Fusion](./images/wffc51.png)
+
+Copie y pegue la variable `{{XX.data[]._links.renditions[].href}}` y reemplace **XX** por el número de secuencia del último módulo **Adobe Photoshop - Editar capas de texto**, que en este caso es **7**.
+
+![WF Fusion](./images/wffc52.png)
+
+Habilite la casilla de verificación para **Mostrar configuración avanzada** y luego haga clic en **Agregar elemento**.
+
+![WF Fusion](./images/wffc52b.png)
+
+En el campo **Clave**, escriba `Content-Type`. En el campo **Valor**, escriba `application/json`. Haga clic en **Agregar**.
+
+![WF Fusion](./images/wffc52a.png)
+
+Entonces deberías tener esto. Haga clic en **Aceptar**.
+
+![WF Fusion](./images/wffc53.png)
+
+Haga clic en **Alinear automáticamente**.
+
+![WF Fusion](./images/wffc54.png)
+
+Entonces debería ver esto. Haga clic en **Guardar** para guardar los cambios y, a continuación, haga clic en **Ejecutar una vez** para probar el escenario.
+
+![WF Fusion](./images/wffc55.png)
+
+Vuelva a Postman y haga clic en **Enviar**. La solicitud que se está usando aquí es **prados brumosos**.
+
+![WF Fusion](./images/wffc56.png)
+
+A continuación, se activará el escenario y, pasado un tiempo, se mostrará una respuesta en Postman que contenga la URL del archivo PSD recién creado.
+
+![WF Fusion](./images/wffc58.png)
+
+Como recordatorio: una vez que el escenario se haya ejecutado en Workfront Fusion, podrá ver información sobre cada módulo haciendo clic en la burbuja situada encima de cada módulo.
+
+![WF Fusion](./images/wffc59.png)
+
+Con el Explorador de almacenamiento de Azure, puede buscar y abrir el archivo de PSD recién creado haciendo doble clic en él en el Explorador de almacenamiento de Azure.
+
+![WF Fusion](./images/wffc60.png)
+
+El archivo debería tener este aspecto, con el fondo reemplazado por un fondo con **prados empañados**.
+
+![WF Fusion](./images/wffc61.png)
+
+Si vuelve a ejecutar el escenario y, a continuación, envía una nueva solicitud desde Postman con un mensaje diferente, verá lo fácil y reutilizable que se ha vuelto su escenario. En este ejemplo, el nuevo indicador que se está usando es **desierto soleado**.
+
+![WF Fusion](./images/wffc62.png)
+
+Y un par de minutos después, se ha generado un nuevo archivo PSD con un nuevo fondo.
+
+![WF Fusion](./images/wffc63.png)
+
+## Próximos pasos
+
+Vaya a [1.2.3 Frame.io y Workfront Fusion](./ex3.md){target="_blank"}
 
 Volver a [Automatización del flujo de trabajo de Creative con Workfront Fusion](./automation.md){target="_blank"}
 

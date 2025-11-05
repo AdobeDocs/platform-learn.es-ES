@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: 843140d3befd415a1879410f34c2b60c6adf18d0
+source-git-commit: 5af7b64e88dc0f260be030bca73d9fe9219ba255
 workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 1%
@@ -27,15 +27,15 @@ Aprenda a automatizar los flujos de trabajo creativos con Workfront Fusion.
 
 En este ejercicio, explore Workfront Fusion en combinación con Firefly Services y comprenda sus funcionalidades.
 
-[1.2.2 Automatización mediante conectores](./ex4.md){target="_blank"}
+[1.2.2 Automatización mediante conectores](./ex2.md){target="_blank"}
 
 En este ejercicio, siga perfeccionando el recorrido para automatizar el proceso de creación de imágenes.
 
-[1.2.3 Frame.io y Workfront Fusion](./ex5.md){target="_blank"}
+[1.2.3 Frame.io y Workfront Fusion](./ex3.md){target="_blank"}
 
 En este ejercicio, conectará Frame.io a su escenario de Workfront Fusion.
 
-[1.2.4 Frame.io a Workfront Fusion para AEM Assets](./ex6.md){target="_blank"}
+[1.2.4 Frame.io a Workfront Fusion para AEM Assets](./ex4.md){target="_blank"}
 
 En este ejercicio, afinará aún más la configuración, de modo que el recurso aprobado en Frame.io utilice un escenario de Workfront Fusion para luego exportar una representación PNG del recurso a los AEM Assets.
 
