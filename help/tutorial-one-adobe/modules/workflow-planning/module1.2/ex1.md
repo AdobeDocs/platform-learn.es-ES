@@ -4,7 +4,7 @@ description: Introducción a Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 0867d7fd-4d12-46d8-a5ae-bb8db1575635
-source-git-commit: a63c01ebe81df39569981d62b85d0461119ecf66
+source-git-commit: da966703aed5342000c19732b6b48682c3958c7f
 workflow-type: tm+mt
 source-wordcount: '1099'
 ht-degree: 1%
@@ -109,7 +109,7 @@ A continuación, haga clic en **Crear carpeta**.
 
 ![WF](./images/wfbaem3a.png)
 
-Asigne un nombre a la carpeta `--aepUserLdap-- - CitiSignal Fiber Launch Assets` y haga clic en **Crear**.
+Asigne un nombre a la carpeta `--aepUserLdap-- - CitiSignal Fiber Campaign` y haga clic en **Crear**.
 
 ![WF](./images/wfbaem4.png)
 
@@ -161,7 +161,7 @@ A continuación, seleccione el cuarto campo y haga clic en el icono **Esquema** 
 
 ![WF](./images/wfbaem11a.png)
 
-Luego verá esta ventana emergente de nuevo. En el campo de búsqueda, escriba `wm:document` y, a continuación, seleccione el campo **Id. de proyecto**. Haga clic en **Seleccionar**.
+Luego verá esta ventana emergente de nuevo. En el campo de búsqueda, escriba `wm:document` y, a continuación, seleccione el campo **Estado del documento**. Haga clic en **Seleccionar**.
 
 ![WF](./images/wfbaem101.png)
 
@@ -173,7 +173,7 @@ A continuación, seleccione el quinto campo y haga clic en el icono **Esquema** 
 
 ![WF](./images/wfbaem103.png)
 
-Luego verá esta ventana emergente de nuevo. En el campo de búsqueda, escriba `wm:document` y, a continuación, seleccione el campo **Id. de proyecto**. Haga clic en **Seleccionar**.
+Luego verá esta ventana emergente de nuevo. En el campo de búsqueda, escriba `wm:document` y, a continuación, seleccione el campo **Nombre de documento**. Haga clic en **Seleccionar**.
 
 ![WF](./images/wfbaem104.png)
 
@@ -221,7 +221,7 @@ A continuación, debe asignar el formulario de metadatos a la carpeta creada ant
 
 ![WF](./images/wfbaem15.png)
 
-Seleccione su carpeta, que debe tener el nombre `--aepUserLdap-- - CitiSignal Fiber Launch Assets`. Haga clic en **Asignar**.
+Seleccione su carpeta, que debe tener el nombre `--aepUserLdap-- - CitiSignal Fiber Campaign`. Haga clic en **Asignar**.
 
 ![WF](./images/wfbaem16.png)
 
