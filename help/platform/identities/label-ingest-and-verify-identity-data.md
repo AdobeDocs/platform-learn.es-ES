@@ -18,4 +18,4 @@ ht-degree: 35%
 
 Obtenga información sobre cómo etiquetar campos de datos como identidades, ingerir datos de identidad y comprobar los datos en el gráfico privado del servicio de Adobe Experience Platform ID. Para obtener más información, visite la [documentación del servicio de identidad](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=es)
 
->[!VIDEO](https://video.tv.adobe.com/v/28167?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31673?captions=spa&learn=on&enablevpops)

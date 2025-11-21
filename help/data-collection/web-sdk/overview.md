@@ -20,7 +20,7 @@ ht-degree: 41%
 
 Descubra cómo el SDK web de Adobe Experience Platform y la red perimetral permiten a los clientes utilizar una biblioteca JavaScript y una señalización para enviar datos a aplicaciones de Adobe y destinos de terceros.
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/37261?captions=spa&learn=on&enablevpops)
 
 >[!NOTE]
 >

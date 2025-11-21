@@ -38,7 +38,7 @@ Prepárese con el asistente de IA y conozca sus funciones básicas.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="access.md" title="Obtener acceso al asistente de IA" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3436470/?format=jpeg&nocache=1748392732990" alt="Obtener acceso al asistente de IA"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475922/?captions=spa&format=jpeg&nocache=1748392732990" alt="Obtener acceso al asistente de IA"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -61,7 +61,7 @@ Prepárese con el asistente de IA y conozca sus funciones básicas.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="discoverability-panel.md" title="Uso del panel de detección en el asistente de IA" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440962/?format=jpeg&nocache=1748392732984" alt="Uso del panel de detección en el asistente de IA"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440965/?captions=spa&format=jpeg&nocache=1748392732984" alt="Uso del panel de detección en el asistente de IA"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -84,7 +84,7 @@ Prepárese con el asistente de IA y conozca sus funciones básicas.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="validate-responses.md" title="Validar respuestas del asistente de IA" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441738/?format=jpeg&nocache=1748392733006" alt="Validar respuestas del asistente de IA"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441741/?captions=spa&format=jpeg&nocache=1748392733006" alt="Validar respuestas del asistente de IA"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -122,7 +122,7 @@ Hay muchos otros casos de uso en los que el asistente de IA puede ayudarle a adm
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="operational-insights.md" title="Obtenga información operativa con el asistente de IA" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444031/?format=jpeg&nocache=1748392734347" alt="Obtenga información operativa con el asistente de IA"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444035/?captions=spa&format=jpeg&nocache=1748392734347" alt="Obtenga información operativa con el asistente de IA"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -145,7 +145,7 @@ Hay muchos otros casos de uso en los que el asistente de IA puede ayudarle a adm
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="find-unused-audiences.md" title="Asistente de IA: caso de uso de limpieza de audiencias" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435532/?format=jpeg&nocache=1748392734324" alt="Asistente de IA: caso de uso de limpieza de audiencias"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441990/?captions=spa&format=jpeg&nocache=1748392734324" alt="Asistente de IA: caso de uso de limpieza de audiencias"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -168,7 +168,7 @@ Hay muchos otros casos de uso en los que el asistente de IA puede ayudarle a adm
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="impact-analysis.md" title="Análisis de impacto con el asistente de IA" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441680/?format=jpeg&nocache=1748392734336" alt="Análisis de impacto con el asistente de IA"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441683/?captions=spa&format=jpeg&nocache=1748392734336" alt="Análisis de impacto con el asistente de IA"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -204,7 +204,7 @@ El asistente de IA es una herramienta útil para aprender nuevos productos o par
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="product-knowledge.md" title="Aprenda aplicaciones de Experience Platform con el asistente de IA" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441024/?format=jpeg&nocache=1748392735046" alt="Aprenda aplicaciones de Experience Platform con el asistente de IA"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441027/?captions=spa&format=jpeg&nocache=1748392735046" alt="Aprenda aplicaciones de Experience Platform con el asistente de IA"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -227,7 +227,7 @@ El asistente de IA es una herramienta útil para aprender nuevos productos o par
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="onboard.md" title="Uso del asistente de IA para reducir el tiempo de incorporación" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3438032/?format=jpeg&nocache=1748392735030" alt="Uso del asistente de IA para reducir el tiempo de incorporación"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475933/?captions=spa&format=jpeg&nocache=1748392735030" alt="Uso del asistente de IA para reducir el tiempo de incorporación"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -262,7 +262,7 @@ Solucione problemas y abra tickets de atención al cliente.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="product-support-agent.md" title="Agente de soporte del producto" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443183/?format=jpeg&nocache=1748392735554" alt="Agente de soporte del producto"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443186/?captions=spa&format=jpeg&nocache=1748392735554" alt="Agente de soporte del producto"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -297,7 +297,7 @@ Obtenga información acerca de las funciones de seguridad de AI Assistant.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="security-overview.md" title="Información general de seguridad de AI Assistant" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441066/?format=jpeg&nocache=1748392736016" alt="Información general de seguridad de AI Assistant"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441083/?captions=spa&format=jpeg&nocache=1748392736016" alt="Información general de seguridad de AI Assistant"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

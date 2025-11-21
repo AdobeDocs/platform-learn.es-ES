@@ -18,7 +18,7 @@ ht-degree: 13%
 
 Aprenda a utilizar fuentes o conectores de fuente en la interfaz de Adobe Experience Platform. Las fuentes son integraciones fácilmente configurables que le permiten ingerir datos de aplicaciones de Adobe, propias y de terceros en el perfil del cliente en tiempo real y el lago de datos de Platform. Para obtener más información, consulte la [documentación de orígenes](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/29694?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32686?captions=spa&learn=on&enablevpops)
 
 <!--should have a whole section for data prep-->
 
@@ -38,7 +38,7 @@ Aprenda a utilizar fuentes o conectores de fuente en la interfaz de Adobe Experi
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-crm.md" title="Ingesta de datos mediante conectores de Source de CRM" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29711?format=jpeg&nocache=1740415500926" alt="Ingesta de datos mediante conectores de Source de CRM"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32646?captions=spa&format=jpeg&nocache=1740415500926" alt="Ingesta de datos mediante conectores de Source de CRM"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -61,7 +61,7 @@ Aprenda a utilizar fuentes o conectores de fuente en la interfaz de Adobe Experi
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-cloud-storage.md" title="Ingesta de datos mediante los conectores Source de Cloud Storage" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29695?format=jpeg&nocache=1740415500914" alt="Ingesta de datos mediante los conectores Source de Cloud Storage"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32642?captions=spa&format=jpeg&nocache=1740415500914" alt="Ingesta de datos mediante los conectores Source de Cloud Storage"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -84,7 +84,7 @@ Aprenda a utilizar fuentes o conectores de fuente en la interfaz de Adobe Experi
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-databases.md" title="Ingesta de datos mediante un conector de origen de base de datos" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/329317?format=jpeg&nocache=1740415500936" alt="Ingesta de datos mediante un conector de origen de base de datos"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345119?captions=spa&format=jpeg&nocache=1740415500936" alt="Ingesta de datos mediante un conector de origen de base de datos"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -107,7 +107,7 @@ Aprenda a utilizar fuentes o conectores de fuente en la interfaz de Adobe Experi
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="streaming-ingestion-source-connector.md" title="Transmisión de datos mediante conectores de Source" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331943?format=jpeg&nocache=1740415500903" alt="Transmisión de datos mediante conectores de Source"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3410102?captions=spa&format=jpeg&nocache=1740415500903" alt="Transmisión de datos mediante conectores de Source"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -130,7 +130,7 @@ Aprenda a utilizar fuentes o conectores de fuente en la interfaz de Adobe Experi
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="streaming-ingestion-http-api.md" title="Ingesta de datos mediante el extremo de la API HTTP de conexión de flujo continuo" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331028?format=jpeg&nocache=1740415500889" alt="Ingesta de datos mediante el extremo de la API HTTP de conexión de flujo continuo"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3410927?captions=spa&format=jpeg&nocache=1740415500889" alt="Ingesta de datos mediante el extremo de la API HTTP de conexión de flujo continuo"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -165,7 +165,7 @@ Aprenda a utilizar fuentes o conectores de fuente en la interfaz de Adobe Experi
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-adobe-analytics.md" title="Ingesta de datos mediante el conector de origen de Adobe Analytics" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29687?format=jpeg&nocache=1740415502122" alt="Ingesta de datos mediante el conector de origen de Adobe Analytics"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430250?captions=spa&format=jpeg&nocache=1740415502122" alt="Ingesta de datos mediante el conector de origen de Adobe Analytics"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -188,7 +188,7 @@ Aprenda a utilizar fuentes o conectores de fuente en la interfaz de Adobe Experi
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-marketo.md" title="Ingesta de datos desde Marketo Engage" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3419550?format=jpeg&nocache=1740415502109" alt="Ingesta de datos desde Marketo Engage"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451863?captions=spa&format=jpeg&nocache=1740415502109" alt="Ingesta de datos desde Marketo Engage"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -211,7 +211,7 @@ Aprenda a utilizar fuentes o conectores de fuente en la interfaz de Adobe Experi
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-aam.md" title="Ingesta de datos mediante el conector de datos de Adobe Audience Manager" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331214/?format=jpeg&nocache=1740415502093" alt="Ingesta de datos mediante el conector de datos de Adobe Audience Manager"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346983/?captions=spa&format=jpeg&nocache=1740415502093" alt="Ingesta de datos mediante el conector de datos de Adobe Audience Manager"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -244,7 +244,7 @@ Aprenda a utilizar fuentes o conectores de fuente en la interfaz de Adobe Experi
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="troubleshoot-sftp-connector.md" title="Solución de problemas: no se puede conectar al conector de origen SFTP" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416134?format=jpeg&nocache=1740415502267" alt="Solución de problemas: no se puede conectar al conector de origen SFTP"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443471?captions=spa&format=jpeg&nocache=1740415502267" alt="Solución de problemas: no se puede conectar al conector de origen SFTP"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
