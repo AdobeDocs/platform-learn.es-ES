@@ -16,7 +16,7 @@ ht-degree: 31%
 
 # Creación de una propiedad de etiqueta
 
-Obtenga información sobre cómo crear propiedades de etiquetas para administrar las etiquetas de marketing del sitio web. Para obtener más información, consulte la documentación de [properties](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=es).
+Obtenga información sobre cómo crear propiedades de etiquetas para administrar las etiquetas de marketing del sitio web. Para obtener más información, consulte la documentación de [properties](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/3428594/?learn=on&enablevpops&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/28727/?learn=on&enablevpops)
 

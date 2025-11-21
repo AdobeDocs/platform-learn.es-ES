@@ -21,6 +21,6 @@ Aprenda a crear una instancia de AI del cliente para predecir su comportamiento.
 
 >[!TIP]
 >
->La inteligencia artificial aplicada al cliente admite conjuntos de datos de Adobe Analytics y Adobe Audience Manager sin necesidad de extraer, transformar o cargar los datos para ajustarse al esquema de Evento de experiencia del consumidor (CEE). Para obtener más información, visite la [Guía de preparación de datos de servicios inteligentes](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/data-preparation.html?lang=es).
+>La inteligencia artificial aplicada al cliente admite conjuntos de datos de Adobe Analytics y Adobe Audience Manager sin necesidad de extraer, transformar o cargar los datos para ajustarse al esquema de Evento de experiencia del consumidor (CEE). Para obtener más información, visite la [Guía de preparación de datos de servicios inteligentes](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/data-preparation.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/36570?learn=on&enablevpops&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/32665?learn=on&enablevpops)

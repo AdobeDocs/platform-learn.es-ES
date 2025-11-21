@@ -10,12 +10,12 @@ recommendations: noDisplay,noCatalog
 source-git-commit: 4ed0c204613e283bbd9f51f4225215068284ac69
 workflow-type: tm+mt
 source-wordcount: '95'
-ht-degree: 24%
+ht-degree: 29%
 
 ---
 
 
-# Tutorial de implementación de Adobe Experience Cloud con SDK web. {#implement-web-sdk}
+# Tutorial de implementación de Adobe Experience Cloud con Web SDK. {#implement-web-sdk}
 
 + [Información general del tutorial](overview.md)
 + Configuración inicial {#initial-configuration}
@@ -32,14 +32,14 @@ ht-degree: 24%
    + [Validar con Assurance](validate-with-assurance.md)
 
 + Configuración de aplicaciones {#applications-setup}
-   + [Configurar Experience Platform](setup-experience-platform.md)
+   + [Configuración de Experience Platform](setup-experience-platform.md)
    + [Configuración de Adobe Analytics](setup-analytics.md)
-   + [Configurar Audience Manager](setup-audience-manager.md)
+   + [Configuración de Audience Manager](setup-audience-manager.md)
    + [Configuración de Target](setup-target.md)
    + [Configuración del canal web de Journey Optimizer](setup-web-channel.md)
    + [Configuración de Journey Optimizer Decision Management](setup-decision-management.md)
 
-+ Administración de consentimiento {#consent-management}
++ Gestión del consentimiento {#consent-management}
    + [Configuración del consentimiento](setup-consent.md)
 
 + Reenvío de eventos {#event-forwarding}
