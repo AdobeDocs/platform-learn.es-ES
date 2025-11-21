@@ -4,7 +4,7 @@ description: Introducci처n a Workfront Planning
 kt: 5342
 doc-type: tutorial
 exl-id: 26fa872b-c872-46b6-8f56-fa41696100da
-source-git-commit: 42c9c3bbf0958794d5a65c37d4771345c6ff584c
+source-git-commit: 9af7cc3e221ddacd8b6ddc02a2215b7d9c134d0a
 workflow-type: tm+mt
 source-wordcount: '1258'
 ht-degree: 1%
@@ -115,7 +115,7 @@ A continuaci처n, haga clic en el icono **+** para agregar un nuevo campo. Despl�
 
 Establezca el **Nombre** del campo en `Business Unit Lead` y establezca la descripci처n del campo en `Business Unit Lead responsible for budget and resources (VP, Head).`
 
-Haga clic en **Guardar**.
+Haga clic en **Crear**.
 
 ![Planificaci처n de Workfront](./images/wfpl17.png)
 
@@ -127,7 +127,7 @@ Establezca **Name** en `Consumer Services`.
 
 Establezca **Description** en `Handles residential offerings like mobile plans, internet packages, and customer support.`.
 
-Establezca el posible cliente de la unidad de negocio **1&rbrace; en usted mismo.**
+Establezca el posible cliente de la unidad de negocio **1} en usted mismo.**
 
 Una vez finalizado, haga clic en la flecha para volver a la pantalla anterior.
 
@@ -141,7 +141,7 @@ Establecer **Name** en `Enterprise & Business Solutions`
 
 Definir **Descripci처n** en `Provides connectivity, cloud, and managed services to corporate clients and government entities.`
 
-Establezca el posible cliente de la unidad de negocio **1&rbrace; en usted mismo.**
+Establezca el posible cliente de la unidad de negocio **1} en usted mismo.**
 
 Una vez finalizado, haga clic en la flecha para volver a la pantalla anterior.
 
@@ -155,7 +155,7 @@ Establecer **Name** en `Sales & Marketing`
 
 Definir **Descripci처n** en `Drives customer acquisition, brand strategy, advertising, and market segmentation.`
 
-Establezca el posible cliente de la unidad de negocio **1&rbrace; en usted mismo.**
+Establezca el posible cliente de la unidad de negocio **1} en usted mismo.**
 
 Una vez finalizado, haga clic en la flecha para volver a la pantalla anterior.
 

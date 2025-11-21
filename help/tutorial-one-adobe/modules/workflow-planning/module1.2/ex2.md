@@ -4,9 +4,9 @@ description: Revisión con Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
-source-git-commit: da966703aed5342000c19732b6b48682c3958c7f
+source-git-commit: 9af7cc3e221ddacd8b6ddc02a2215b7d9c134d0a
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1282'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,8 @@ Haga clic en **Continuar**.
 
 ![WF](./images/blueprint3.png)
 
+Cambie **Nombre de plantilla de proyecto** por `--aepUserLdap-- - Integrated Campaign Execution`.
+
 Haga clic en **Instalar tal cual...**.
 
 ![WF](./images/blueprint4.png)
@@ -89,7 +91,7 @@ En su programa, vaya a **Proyectos**. Haga clic en **+ Nuevo proyecto** y, a con
 
 ![WF](./images/wfp6.png)
 
-Seleccione la plantilla **Ejecución de campaña integrada** y haga clic en **Usar plantilla**.
+Seleccione la plantilla `--aepUserLdap-- - Integrated Campaign Execution` y haga clic en **Usar plantilla**.
 
 ![WF](./images/wfp6g.png)
 

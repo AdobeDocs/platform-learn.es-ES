@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: 843140d3befd415a1879410f34c2b60c6adf18d0
+source-git-commit: d4cb1ff51c9367fd0d249806e50b676d8a83c557
 workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 1%
@@ -170,11 +170,11 @@ Una vez que se haya ejecutado el escenario, la pantalla debería tener este aspe
 
 ![WF Fusion](./images/wffusion30.png)
 
-Seleccione el icono **signo de interrogación** en el objeto **Set multiple variables** para ver qué ocurrió cuando se ejecutó ese objeto.
+Seleccione el icono **lupa** en el objeto **Establecer varias variables** para ver qué ocurrió cuando se ejecutó ese objeto.
 
 ![WF Fusion](./images/wffusion31.png)
 
-Seleccione el icono **signo de interrogación** en el objeto **HTTP - Realice una solicitud** para ver qué ocurrió cuando se ejecutó ese objeto. En **OUTPUT**, vea el **token de acceso** devuelto por Adobe I/O.
+Seleccione el icono **lupa** en el objeto **HTTP - Realice una solicitud** para ver qué ocurrió cuando se ejecutó ese objeto. En **OUTPUT**, vea el **token de acceso** devuelto por Adobe I/O.
 
 ![WF Fusion](./images/wffusion32.png)
 
@@ -206,7 +206,7 @@ Seleccione **Ejecutar una vez** de nuevo.
 
 ![WF Fusion](./images/wffusion39.png)
 
-Una vez que se ejecute el escenario, seleccione el icono **signo de interrogación** en el último objeto **Set multiple variables**. Debería ver que access_token se está almacenando en la variable `bearer_token`.
+Una vez que se ejecute el escenario, seleccione el icono **lupa** en el último objeto **Set multiple variables**. Debería ver que access_token se está almacenando en la variable `bearer_token`.
 
 ![WF Fusion](./images/wffusion40.png)
 
