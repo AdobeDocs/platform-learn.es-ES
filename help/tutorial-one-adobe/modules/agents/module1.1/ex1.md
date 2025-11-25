@@ -3,9 +3,9 @@ title: Introducción a Agent Orchestrator
 description: Introducción a Agent Orchestrator
 kt: 5342
 doc-type: tutorial
-source-git-commit: 9011c4093b5fd6612426baf7003cd7b99523b6e8
+source-git-commit: ffdc6b34a82c945c142f433f65a4f2f8d5cdcd18
 workflow-type: tm+mt
-source-wordcount: '1296'
+source-wordcount: '1514'
 ht-degree: 0%
 
 ---
@@ -373,7 +373,7 @@ Suprimir si el suscriptor de fibra actual o si el ticket existe para la instalac
 
 Respetar las preferencias de exclusión.
 
-Plan de medición (CJA):
+**Plan de medición (CJA)**:
 
 Seguimiento: envío, apertura, clic, vista de PDP, inicio de cierre de compra, finalización de pedidos.
 
@@ -381,13 +381,11 @@ KPI: tasa de conversión a Fiber Max, aumento frente a control, tiempo de instal
 
 Diagnóstico: informe de abandonos por dispositivo o segmento de género.
 
-Forma
-
 Cómo encaja todo esto (el modelo mental del experto en marketing)
 
 Diagnosticar la demanda (categorías generales → fibra específicamente).
 
-Probar contenido a señal de conversión (pedidos por género).
+Probar contenido para señal de conversión (pedidos por género).
 
 Mis recorridos exitosos (encontrar recorridos nombrados por Fiber y la audiencia promocional de SciFi).
 
@@ -395,11 +393,103 @@ Validar los puntos de fricción (abandonos de CJA en el recorrido SciFi).
 
 Activar contra segmentos de alta tendencia (Heavy Downloaders ∩ SciFi).
 
+Vaya a [https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
+
+Entonces debería ver esto. Asegúrese de que se encuentra en la organización **Experience Platform International**.
+
+Haga clic en la ventana **context**.
+
+![Agent Orchestrator](./images/ao2.png)
+
+Establezca el contexto en:
+
+- **Source de documentación**: **Journey Optimizer**
+- **Espacio aislado**: **Acelerar**
+- **Vista de datos**: **Acelerar B2C 2026**
+
+Haga clic en **Establecer contexto**.
+
+![Agent Orchestrator](./images/aoea3.png)
+
 Escriba el **indicador** siguiente y haga clic en el botón **generar**.
 
 ```javascript
 Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_kbaa_5207bf. The journey is for the rollout of fiber broadband. There will 2 versions of an email  based on  a split of the audience based on who is in the "Eligble for Fiber upgrade" audience.  After 3 days, profiles from both email treatments who have not purchased fibre max will be sent a follow up email. 
 ```
+
+![Agent Orchestrator](./images/aocj1.png)
+
+Entonces debería ver esto. Escriba `yes` y haga clic en generar.
+
+![Agent Orchestrator](./images/aocj2.png)
+
+Entonces debería ver esto. Escriba `yes` y haga clic en generar.
+
+![Agent Orchestrator](./images/aocj3.png)
+
+Entonces debería ver esto. Escriba `The first one` y haga clic en generar.
+
+![Agent Orchestrator](./images/aocj4.png)
+
+Entonces debería ver esto. Escriba `yes` y haga clic en generar.
+
+![Agent Orchestrator](./images/aocj5.png)
+
+Revise la respuesta. Escriba `yes` y haga clic en generar.
+
+![Agent Orchestrator](./images/aocj6.png)
+
+Haga clic en **Revisar**.
+
+![Agent Orchestrator](./images/aocj7.png)
+
+Actualice el nombre del recorrido con su LDAP para que sea único. Haga clic en **Guardar**.
+
+![Agent Orchestrator](./images/aocj8.png)
+
+El recorrido se ha creado en modo de borrador.
+
+![Agent Orchestrator](./images/aocj9.png)
+
+## 1.1.1.10 experimentos
+
+Vaya a [https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
+
+Entonces debería ver esto. Asegúrese de que se encuentra en la organización **Experience Platform International**.
+
+Haga clic en la ventana **context**.
+
+![Agent Orchestrator](./images/ao2.png)
+
+Establezca el contexto en:
+
+- **Source de documentación**: **Journey Optimizer**
+- **Espacio aislado**: **Acelerar**
+- **Vista de datos**: **Acelerar B2C 2026**
+
+Haga clic en **Establecer contexto**.
+
+![Agent Orchestrator](./images/aoea3.png)
+
+Escriba el **indicador** siguiente y haga clic en el botón **generar**.
+
+```javascript
+How are the experiments performing for the journey named 'CitiSignal - Fiber Max Launch Promotion'?
+```
+
+![Agent Orchestrator](./images/aoea0.png)
+
+Debería ver lo siguiente:
+
+![Agent Orchestrator](./images/aoea1.png)
+
+Haga clic en la sugerencia para comparar las tasas de conversión de cada tratamiento y luego haga clic en **generar**.
+
+![Agent Orchestrator](./images/aoea2.png)
+
+Entonces debería ver una comparación detallada como esta:
+
+![Agent Orchestrator](./images/aoea4.png)
 
 Volver a [Agent Orchestrator](./agentorchestrator.md){target="_blank"}
 
