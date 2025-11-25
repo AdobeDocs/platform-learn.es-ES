@@ -18,7 +18,7 @@ A continuación se muestra una descripción general del estado del contenido en 
 
 | Nombre | Última actualización | Trabajando al 100% | Observaciones | Inversión de tiempo |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [0. Primeros pasos ](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 06/04/2025 | Sí | - | 45 min |
+| [0. Primeros pasos &#x200B;](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 06/04/2025 | Sí | - | 45 min |
 
 ## &#x200B;1. Flujo de trabajo y planificación
 
