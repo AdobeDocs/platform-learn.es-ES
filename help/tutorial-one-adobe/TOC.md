@@ -4,9 +4,9 @@ breadcrumb-title: Un tutorial técnico de Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: d295b93f2370b2f464d4e52714029ca70880d71d
+source-git-commit: 8b05c619c8101e4ba8e5c301954d15b27fe395cf
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1397'
 ht-degree: 3%
 
 ---
@@ -268,11 +268,14 @@ ht-degree: 3%
          + [Información general](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
          + [3.1.1 Introducción a Content Analytics](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
          + [Resumen y beneficios](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
-+ (WIP) Inteligencia artificial aplicada a agentes {#agenticai}
++ Agentes {#agents}
    + [Información general de inteligencia artificial aplicada al agente](/help/tutorial-one-adobe/ai.md)
-   + 1.1 Introducción a los agentes y la IA {#agenticai1}
-      + [Información general](/help/tutorial-one-adobe/modules/agentic-ai/module1.1/agenticai.md)
-      + [1.1.1 Introducción a la inteligencia artificial aplicada a la agencia](/help/tutorial-one-adobe/modules/agentic-ai/module1.1/ex1.md)
-   + 1.2 Agente Collaboration {#agenticai2}
-      + [Información general](/help/tutorial-one-adobe/modules/agentic-ai/module1.2/agentcollaboration.md)
-      + [1.2.1 Introducción a Agent Collaboration](/help/tutorial-one-adobe/modules/agentic-ai/module1.2/ex1.md)
+   + 1.1 Agent Orchestrator {#agents1}
+      + [Información general](/help/tutorial-one-adobe/modules/agents/module1.1/agentorchestrator.md)
+      + [1.1.1 Introducción a Agent Orchestrator](/help/tutorial-one-adobe/modules/agents/module1.1/ex1.md)
+   + 1.2 Introducción a los agentes y la IA {#agents2}
+      + [Información general](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
+      + [1.2.1 Introducción a la inteligencia artificial aplicada a la agencia](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
+   + 1.3 Agente Collaboration {#agents3}
+      + [Información general](/help/tutorial-one-adobe/modules/agents/module1.3/agentcollaboration.md)
+      + [1.3.1 Introducción a Agent Collaboration](/help/tutorial-one-adobe/modules/agents/module1.3/ex1.md)

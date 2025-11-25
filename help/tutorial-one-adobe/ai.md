@@ -3,9 +3,9 @@ title: Panorama general de los laboratorios técnicos de inteligencia artificial
 description: Panorama general de los laboratorios técnicos de inteligencia artificial
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 252ca08d13fbb7bc966a777003da1dd9e3df20a0
+source-git-commit: 350292be24f19462abe3c5ea1a795b4bd93b613f
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,22 @@ ht-degree: 0%
 
 ## Información general - Trabajo en curso
 
-Los laboratorios técnicos de inteligencia artificial aplicada a la agencia están en curso y se lanzarán en noviembre o diciembre de 2025.
+[1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md)
 
-[1.1 Introducción a los agentes y la IA](./modules/agentic-ai/module1.1/agenticai.md)
+**Meta**
+
+Aprenda a utilizar los agentes de Adobe Experience Platform y Agent Orchestrator para lo siguiente:
+
+- Analizar tendencias de compra
+- Identificación de audiencias de alta tendencia
+- Validar el rendimiento del recorrido
+- Cree un nuevo recorrido para el despliegue de CitiSignal Fiber Max
+
+[1.2 Introducción a los agentes y la IA](./modules/agents/module1.2/agenticai.md)
+
+>[!NOTE]
+>
+>Este módulo aún no se ha publicado.
 
 **Meta**
 
@@ -38,7 +51,11 @@ Elementos técnicos:
 - Servidor MCP, Python Notebook
 - API de Adobe
 
-[1.2 Agente Collaboration](./modules/agentic-ai/module1.2/agentcollaboration.md)
+[1.3 Agente Collaboration](./modules/agents/module1.3/agentcollaboration.md)
+
+>[!NOTE]
+>
+>Este módulo aún no se ha publicado.
 
 **Meta**
 
