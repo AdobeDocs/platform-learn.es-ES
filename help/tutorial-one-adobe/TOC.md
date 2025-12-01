@@ -4,9 +4,9 @@ breadcrumb-title: Un tutorial técnico de Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 8b05c619c8101e4ba8e5c301954d15b27fe395cf
+source-git-commit: fd1b004a975635871d0d00a8c6b5c1d559521ce9
 workflow-type: tm+mt
-source-wordcount: '1397'
+source-wordcount: '1408'
 ht-degree: 3%
 
 ---
@@ -279,3 +279,6 @@ ht-degree: 3%
    + 1.3 Agente Collaboration {#agents3}
       + [Información general](/help/tutorial-one-adobe/modules/agents/module1.3/agentcollaboration.md)
       + [1.3.1 Introducción a Agent Collaboration](/help/tutorial-one-adobe/modules/agents/module1.3/ex1.md)
+   + 1.4 Brand Concierge {#agents4}
+      + [Información general](/help/tutorial-one-adobe/modules/agents/module1.4/brandconcierge.md)
+      + [1.4.1 Introducción a Brand Concierge](/help/tutorial-one-adobe/modules/agents/module1.4/ex1.md)
