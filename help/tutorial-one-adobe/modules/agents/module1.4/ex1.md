@@ -3,18 +3,14 @@ title: Introducción a Brand Concierge
 description: Introducción a Brand Concierge
 kt: 5342
 doc-type: tutorial
-source-git-commit: 75b76978c2ec2f5b89900dea75083932af608bf4
+source-git-commit: ea5fa4694205a94f63d277fdcf2018951fa31fbc
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '988'
 ht-degree: 1%
 
 ---
 
 # 1.4.1 Introducción a Brand Concierge
-
->[!IMPORTANT]
->
->Este ejercicio se está trabajando en él y aún no ha finalizado.
 
 ## Vídeo
 
@@ -211,6 +207,34 @@ Entonces volverás a estar aquí.
 
 ![Brand Concierge](./images/bc25.png)
 
+Después de 10-20 minutos, el **estado** de ambas fuentes de conocimiento debería ser **Completado**. Haga clic en **Inicio**.
+
+![Brand Concierge](./images/bc27.png)
+
+Entonces debería ver esto. Haga clic en **+ Conectar** en la tarjeta **Vínculos al sitio web**.
+
+![Brand Concierge](./images/bc28.png)
+
+Seleccione la fuente de conocimiento **Sitio web de CitiSignal** y haga clic en **Guardar**.
+
+![Brand Concierge](./images/bc29.png)
+
+Entonces debería ver esto. Haga clic en **+ Conectar** en la tarjeta **Catálogo de productos**.
+
+![Brand Concierge](./images/bc30.png)
+
+Seleccione la fuente de conocimientos **Productos CitiSignal** y haga clic en **Guardar**.
+
+![Brand Concierge](./images/bc31.png)
+
+Entonces debería ver esto. Haga clic en **Vista previa** para comenzar a interactuar con su Brand Concierge.
+
+![Brand Concierge](./images/bc32.png)
+
+Ahora puede empezar a hacer preguntas relacionadas con las fuentes de conocimiento proporcionadas.
+
+![Brand Concierge](./images/bc33.png)
+
 ## 1.4.1.3 pasos de incorporación a AEP
 
 Brand Concierge usa Adobe Experience Platform para almacenar datos de interacción de conversaciones. La conexión entre Brand Concierge y Experience Platform requiere que Brand Concierge configure y utilice un conjunto de datos.
@@ -242,6 +266,10 @@ La secuencia de datos ya está configurada. Copie el nombre del flujo de datos y
 ### API de administración de configuración de Brand Concierge
 
 El siguiente paso es habilitar la API de administración de configuración de Brand Concierge para configurar el conjunto de datos que acaba de crear. Esto es necesario para resolver cosas como el ID de organización de IMS y los detalles de la zona protegida durante el procesamiento de la solicitud.
+
+Actualmente, este es un paso interno de Adobe que debe producirse. Este paso es necesario porque, de lo contrario, la configuración del conjunto de datos no es correcta para que la utilice Brand Concierge.
+
+Paso siguiente: [Implementar Brand Concierge en el sitio web](./ex2.md){target="_blank"}
 
 Volver a [Brand Concierge](./brandconcierge.md){target="_blank"}
 
