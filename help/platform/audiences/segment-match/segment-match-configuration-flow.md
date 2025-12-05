@@ -16,13 +16,13 @@ ht-degree: 10%
 
 # Flujo de configuración de Coincidencia de segmentos
 
-Una vez conectado un recurso compartido de segmentos con un partner de datos, puede explorar y comenzar a compartir datos con los partners. Este vídeo lo acompaña durante el proceso de configuración de una instancia de Coincidencia de segmentos para un recurso compartido de datos. Para obtener más información, consulte la [documentación](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-match/overview){target="_blank"}.
+Una vez conectado un recurso compartido de segmentos con un partner de datos, puede explorar y comenzar a compartir datos con los partners. Este vídeo lo acompaña durante el proceso de configuración de una instancia de Coincidencia de segmentos para un recurso compartido de datos. Para obtener más información, consulte la [documentación](https://experienceleague.adobe.com/es/docs/experience-platform/segmentation/ui/segment-match/overview){target="_blank"}.
 
 >[!IMPORTANT]
 >
 >Adobe introdujo la coincidencia de segmentos en 2021 para que los clientes colaboren e intercambien audiencias. A principios de 2025, Adobe presentó Real-Time CDP Collaboration, el enfoque a más largo plazo para satisfacer este caso de uso.
 >
-> * Para clientes de Estados Unidos, Canadá, EMEA, Australia y Nueva Zelanda: Adobe recomienda a los clientes de Real-Time CDP Prime y Ultimate realizar la transición de casos prácticos de colaboración de datos de Coincidencia de segmentos a Real-Time CDP Collaboration. Consulta la [documentación](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/home){target="_blank"} y la [guía de inicio rápido](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/quick-start-guide){target="_blank"} para Real-Time CDP Collaboration y ponte en contacto con el equipo de tu cuenta de Adobe para obtener más información.
+> * Para clientes de Estados Unidos, Canadá, EMEA, Australia y Nueva Zelanda: Adobe recomienda a los clientes de Real-Time CDP Prime y Ultimate realizar la transición de casos prácticos de colaboración de datos de Coincidencia de segmentos a Real-Time CDP Collaboration. Consulta la [documentación](https://experienceleague.adobe.com/es/docs/real-time-cdp-collaboration/using/home){target="_blank"} y la [guía de inicio rápido](https://experienceleague.adobe.com/es/docs/real-time-cdp-collaboration/using/quick-start-guide){target="_blank"} para Real-Time CDP Collaboration y ponte en contacto con el equipo de tu cuenta de Adobe para obtener más información.
 > * Para clientes de todas las demás regiones geográficas: La coincidencia de segmentos es la opción recomendada hasta que se publique Real-Time CDP Collaboration en esas regiones geográficas en 2026.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342336/?learn=on&enablevpops)
