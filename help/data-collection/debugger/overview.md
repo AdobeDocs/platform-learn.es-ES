@@ -8,18 +8,18 @@ level: Beginner
 jira: KT-4723
 thumbnail: 32156.jpg
 exl-id: 9ce0b5db-9f00-4b59-8655-09cd59b3d5df
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 89a8c57fb50ac02382e4e33d7dcdaac046821867
 workflow-type: tm+mt
-source-wordcount: '134'
-ht-degree: 54%
+source-wordcount: '141'
+ht-degree: 51%
 
 ---
 
 # Información general de Adobe Experience Platform Debugger
 
-Descubra cómo la extensión de Adobe Experience Platform Debugger [Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) y el complemento [Firefox](https://addons.mozilla.org/es/firefox/addon/adobe-experience-platform-dbg/) le ayudan a depurar las implementaciones web de Adobe Experience Platform Web SDK, Adobe Analytics, Adobe Target, Adobe Audience Manager, etiquetas y más.
+Descubra cómo la extensión de Adobe Experience Platform Debugger [Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) le ayuda a depurar las implementaciones de Adobe Experience Platform Web SDK, AppMeasurement.js y at.js, las bibliotecas que alimentan Real-Time CDP, Journey Optimizer, Customer Journey Analytics, Adobe Analytics, Adobe Target, Adobe Audience Manager, tags y más.
 
->[!VIDEO](https://video.tv.adobe.com/v/35998?captions=spa&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 ## Recursos adicionales
 
