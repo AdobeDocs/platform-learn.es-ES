@@ -3,9 +3,9 @@ title: Implementación de Brand Concierge en el sitio web
 description: Implementación de Brand Concierge en el sitio web
 kt: 5342
 doc-type: tutorial
-source-git-commit: ea5fa4694205a94f63d277fdcf2018951fa31fbc
+source-git-commit: fb1fc5c72723cc4e1ede87f90410feb0cc314eea
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1347'
 ht-degree: 0%
 
 ---
@@ -180,7 +180,9 @@ A continuación, verá los detalles del entorno. Haga clic en la dirección URL 
 
 >[!NOTE]
 >
->Es posible que el entorno esté en hibernación. En ese caso, primero deberá anular la hibernación del entorno.
+>Es posible que el entorno esté en hibernación. En ese caso, primero deberá anular la hibernación del entorno. Puede encontrar instrucciones sobre cómo anular la hibernación en el siguiente vídeo.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3478141?quality=12&learn=on)
 
 ![AEMCS](./images/aemcs10.png)
 

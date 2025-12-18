@@ -4,9 +4,9 @@ description: 'AEM CS: bloque personalizado básico'
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: 7384eabe00354374f7012be10c24870c68ea7f2c
+source-git-commit: fb1fc5c72723cc4e1ede87f90410feb0cc314eea
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '855'
 ht-degree: 1%
 
 ---
@@ -185,7 +185,9 @@ A continuación, verá los detalles del entorno. Haga clic en la dirección URL 
 
 >[!NOTE]
 >
->Es posible que el entorno esté en hibernación. En ese caso, primero deberá anular la hibernación del entorno.
+>Es posible que el entorno esté en hibernación. En ese caso, primero deberá anular la hibernación del entorno. Puede encontrar instrucciones sobre cómo anular la hibernación en el siguiente vídeo.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3478141?quality=12&learn=on)
 
 ![AEMCS](./images/aemcs10.png)
 
