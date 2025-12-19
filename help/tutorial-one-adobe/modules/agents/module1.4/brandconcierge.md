@@ -3,9 +3,9 @@ title: Brand Concierge
 description: Brand Concierge
 kt: 5342
 doc-type: tutorial
-source-git-commit: fb1fc5c72723cc4e1ede87f90410feb0cc314eea
+source-git-commit: 0bbc806a4eb41ac8e51a10f6418cfa4795543316
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '227'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,10 @@ ht-degree: 2%
 
 Brand Concierge es un complemento digital con tecnología de IA que transforma la forma en que las marcas interactúan con los visitantes de su sitio web. A diferencia de los bots de chat genéricos, Brand Concierge ofrece experiencias conversacionales personalizadas y adaptadas a las intenciones de cada visitante. Ayuda a los visitantes a descubrir productos, comparar opciones, obtener respuestas instantáneas y recibir recomendaciones guiadas en tiempo real. La plataforma sirve tanto a B2C como a B2B y actúa como una extensión inteligente de su marca en cualquier canal digital, al tiempo que preserva la voz, la integridad del contenido y el cumplimiento de la marca.
 
-Aprenda a utilizar los agentes de Adobe Experience Platform y Brand Concierge para lo siguiente:
+En este ejercicio aprenderá a hacer lo siguiente:
+
+- Configuración de la instancia de Brand Concierge en la zona protegida de Adobe Experience Platform
+- Implemente Brand Concierge en el sitio web de AEM CS/EDS
 
 ## Vídeo
 
@@ -27,7 +30,7 @@ En este vídeo, obtendrá una explicación y una demostración de todos los paso
 ## Requisitos previos
 
 - Acceso a Adobe Journey Optimizer y Customer Journey Analytics
-- Familiaridad con [conceptos de Brand Concierge](https://experienceleague.adobe.com/es/docs/brand-concierge/content/home)
+- Familiaridad con [conceptos de Brand Concierge](https://experienceleague.adobe.com/en/docs/brand-concierge/content/home)
 - Acceso a los datos de demostración de CitiSignal: compras, pedidos, audiencias y Recorridos
 
 ## Ejercicios
