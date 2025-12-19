@@ -30,7 +30,7 @@ En este vídeo, obtendrá una explicación y una demostración de todos los paso
 ## Requisitos previos
 
 - Acceso a Adobe Journey Optimizer y Customer Journey Analytics
-- Familiaridad con [conceptos de Brand Concierge](https://experienceleague.adobe.com/en/docs/brand-concierge/content/home)
+- Familiaridad con [conceptos de Brand Concierge](https://experienceleague.adobe.com/es/docs/brand-concierge/content/home)
 - Acceso a los datos de demostración de CitiSignal: compras, pedidos, audiencias y Recorridos
 
 ## Ejercicios
