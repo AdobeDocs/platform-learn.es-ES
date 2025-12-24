@@ -3,10 +3,10 @@ title: Agent Orchestrator
 description: Agent Orchestrator
 kt: 5342
 doc-type: tutorial
-source-git-commit: fb1fc5c72723cc4e1ede87f90410feb0cc314eea
+source-git-commit: fe8716bfae92588a3f0ec0ca1c5d37bf1296f6f6
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 6%
+source-wordcount: '176'
+ht-degree: 5%
 
 ---
 
@@ -38,6 +38,10 @@ En este vídeo, obtendrá una explicación y una demostración de todos los paso
 [1.1.1 Introducción a Agent Orchestrator](./ex1.md){target="_blank"}
 
 En este ejercicio, explorará las capacidades de Agent Orchestrator en el contexto de la campaña de lanzamiento de CitiSignal para Fiber Max.
+
+[1.1.2 Adobe Marketing Agent con ChatGPT](./ex2.md){target="_blank"}
+
+En este ejercicio, explorará las capacidades de Agent Orchestrator en el contexto de la campaña de lanzamiento de CitiSignal para Fiber Max, utilizando Adobe Marketing Agent con ChatGPT.
 
 ![Perspectivas técnicas](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
