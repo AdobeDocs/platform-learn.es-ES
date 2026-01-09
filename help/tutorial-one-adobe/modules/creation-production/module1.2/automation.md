@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: 5af7b64e88dc0f260be030bca73d9fe9219ba255
+source-git-commit: fff1930bed3b8b0a059217b67f0a0b00a359a019
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '209'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,15 @@ Aprenda a automatizar los flujos de trabajo creativos con Workfront Fusion.
 
 ## Requisitos previos
 
-- Acceso a Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}
+- Acceso a Adobe Firefly
+- Acceso a Adobe Workfront Fusion
+- Acceso a Adobe Frame.io
+
+## Vídeo
+
+En este vídeo, obtendrá una explicación y una demostración de todos los pasos involucrados en este ejercicio.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3478697?quality=12&learn=on)
 
 ## Ejercicios
 
