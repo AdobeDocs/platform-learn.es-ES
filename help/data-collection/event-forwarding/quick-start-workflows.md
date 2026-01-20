@@ -22,6 +22,6 @@ Este vídeo muestra a los usuarios dos casos de uso avanzados para sacar el máx
 1. Uso del flujo de trabajo para crear objetos de referencia. 
 1. Copiar los objetos de referencia en una implementación existente.
 
-Para obtener más información sobre el flujo de trabajo de inicio rápido de la API de conversiones de Meta, visite [la documentación](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/meta/overview#quick-start).
+Para obtener más información sobre el flujo de trabajo de inicio rápido de la API de conversiones de Meta, visite [la documentación](https://experienceleague.adobe.com/es/docs/experience-platform/tags/extensions/server/meta/overview#quick-start).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424501?learn=on&enablevpops)

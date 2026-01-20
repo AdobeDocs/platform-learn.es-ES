@@ -14,7 +14,7 @@ ht-degree: 19%
 
 # Creación de una regla de reenvío de eventos
 
-Obtenga información sobre cómo crear una regla de reenvío de eventos en la recopilación de datos. Para obtener más información, visite la [documentación del reenvío de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
+Obtenga información sobre cómo crear una regla de reenvío de eventos en la recopilación de datos. Para obtener más información, visite la [documentación del reenvío de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=es).
 
 >[!NOTE]
 >

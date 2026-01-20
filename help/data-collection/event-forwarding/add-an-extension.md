@@ -14,7 +14,7 @@ ht-degree: 19%
 
 # Añadir una extensión de reenvío de eventos
 
-Obtenga información sobre cómo añadir una extensión de reenvío de eventos en la recopilación de datos. Para obtener más información, visite la [documentación del reenvío de eventos](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
+Obtenga información sobre cómo añadir una extensión de reenvío de eventos en la recopilación de datos. Para obtener más información, visite la [documentación del reenvío de eventos](https://experienceleague.adobe.com/es/docs/experience-platform/tags/event-forwarding/overview).
 
 >[!NOTE]
 >

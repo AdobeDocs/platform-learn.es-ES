@@ -14,7 +14,7 @@ ht-degree: 18%
 
 # Configuración de una secuencia de datos para el reenvío de eventos
 
-Obtenga información sobre cómo configurar un flujo de datos para el reenvío de eventos. Para obtener más información, visite [la documentación del reenvío de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-a-datastream)
+Obtenga información sobre cómo configurar un flujo de datos para el reenvío de eventos. Para obtener más información, visite [la documentación del reenvío de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html?lang=es#create-a-datastream)
 
 
 >[!NOTE]

@@ -15,6 +15,6 @@ ht-degree: 15%
 
 # Preparación de datos para la recopilación de datos
 
-Aprenda a añadir la capa de datos a un nuevo conjunto de datos en Recopilación de datos. Además, aprenda a realizar funciones básicas de asignación de funciones utilizando la función Preparación de datos para la recopilación de datos. Para obtener más información, consulte la [Documentación de preparación de datos para la recopilación de datos](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html#data-prep).
+Aprenda a añadir la capa de datos a un nuevo conjunto de datos en Recopilación de datos. Además, aprenda a realizar funciones básicas de asignación de funciones utilizando la función Preparación de datos para la recopilación de datos. Para obtener más información, consulte la [Documentación de preparación de datos para la recopilación de datos](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=es#data-prep).
 
 >[!VIDEO](https://video.tv.adobe.com/v/342120/?learn=on&enablevpops)

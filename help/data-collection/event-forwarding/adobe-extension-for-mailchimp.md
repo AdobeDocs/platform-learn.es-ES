@@ -14,6 +14,6 @@ ht-degree: 0%
 
 # Extensión de Adobe para Mailchimp
 
-Vídeo de descripción general de la extensión de reenvío de eventos de Adobe para Mailchimp. Para obtener más información, visita la [documentación de la extensión de reenvío de eventos de Mailchimp](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/mailchimp-edge/overview.html).
+Vídeo de descripción general de la extensión de reenvío de eventos de Adobe para Mailchimp. Para obtener más información, visita la [documentación de la extensión de reenvío de eventos de Mailchimp](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/mailchimp-edge/overview.html?lang=es).
 
 >[!VIDEO](https://video.tv.adobe.com/v/345140/?learn=on&enablevpops)

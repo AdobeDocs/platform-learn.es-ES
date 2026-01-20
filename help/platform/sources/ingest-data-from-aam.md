@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Ingesta de datos mediante el conector de datos de Adobe Audience Manager
 
-En este vídeo de integración, aprenderá a utilizar el conector de datos de Audience Manager para incorporar características y segmentos de AAM a la plataforma y combinarlos con otros datos enriquecidos. Para obtener más información, consulte la [documentación del conector de origen de Audience Manager](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html).
+En este vídeo de integración, aprenderá a utilizar el conector de datos de Audience Manager para incorporar características y segmentos de AAM a la plataforma y combinarlos con otros datos enriquecidos. Para obtener más información, consulte la [documentación del conector de origen de Audience Manager](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=es).
 
 >[!VIDEO](https://video.tv.adobe.com/v/331214/?learn=on&enablevpops)
 

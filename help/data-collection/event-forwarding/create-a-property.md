@@ -14,7 +14,7 @@ ht-degree: 19%
 
 # Creación de una propiedad de reenvío de eventos
 
-Obtenga información sobre cómo crear una propiedad de reenvío de eventos en la recopilación de datos. Para obtener más información, visite la [Documentación sobre la creación de una propiedad de reenvío de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-an-event-forwarding-property).
+Obtenga información sobre cómo crear una propiedad de reenvío de eventos en la recopilación de datos. Para obtener más información, visite la [Documentación sobre la creación de una propiedad de reenvío de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html?lang=es#create-an-event-forwarding-property).
 
 >[!NOTE]
 >
