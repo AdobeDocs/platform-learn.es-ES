@@ -4,9 +4,8 @@ description: Obtenga información sobre cómo crear una regla de reenvío de eve
 feature: Event Forwarding
 level: Intermediate
 jira: KT-6423
-thumbnail: 331942.jpeg
 exl-id: 35c76ce1-c7c0-47cc-bed8-86ab7656c824
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: fe848fe7376fbeb54fb53ee0947a9f8284fcef61
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 19%
@@ -15,7 +14,7 @@ ht-degree: 19%
 
 # Creación de una regla de reenvío de eventos
 
-Obtenga información sobre cómo crear una regla de reenvío de eventos en la recopilación de datos. Para obtener más información, visite la [documentación del reenvío de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=es).
+Obtenga información sobre cómo crear una regla de reenvío de eventos en la recopilación de datos. Para obtener más información, visite la [documentación del reenvío de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
 
 >[!NOTE]
 >
@@ -25,4 +24,4 @@ Obtenga información sobre cómo crear una regla de reenvío de eventos en la re
 > * Platform Launch Server Side ahora está **[!DNL event forwarding]**
 > * Las configuraciones de Edge ahora son **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/3410371?learn=on&enablevpops&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/331942?learn=on&enablevpops)

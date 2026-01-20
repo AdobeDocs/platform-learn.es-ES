@@ -4,9 +4,8 @@ description: Obtenga información sobre cómo generar ID de dispositivos de orig
 feature: Web SDK
 level: Experienced
 jira: KT-9728
-thumbnail: KT-9728.jpeg
 exl-id: 2e3c1f71-e224-4631-b680-a05ecd4c01e7
-source-git-commit: fd60f7ad338c81f5b32e7951d5a00b49c5aa1756
+source-git-commit: fe848fe7376fbeb54fb53ee0947a9f8284fcef61
 workflow-type: tm+mt
 source-wordcount: '704'
 ht-degree: 0%
@@ -21,7 +20,7 @@ Las aplicaciones de Adobe Experience Cloud han generado tradicionalmente cookies
 1. Cookies de origen configuradas por un servidor de Adobe mediante la configuración CNAME de un nombre de dominio
 1. Cookies de origen configuradas por JavaScript
 
-Los cambios recientes en el explorador restringen la duración de estos tipos de cookies. Las cookies de origen son más efectivas cuando se establecen mediante un servidor propiedad del cliente que utiliza un registro A/AAAA DNS, en lugar de un CNAME DNS. La [funcionalidad de ID de dispositivo de origen (FPID)](https://experienceleague.adobe.com/es/docs/experience-platform/web-sdk/identity/first-party-device-ids) permite a los clientes que implementan Adobe Experience Platform Web SDK usar ID de dispositivo en cookies de servidores que usan registros A/AAAA de DNS. A continuación, estos ID se pueden enviar a Adobe y utilizar como semillas para generar Experience Cloud ID (ECID), que sigue siendo el identificador principal en las aplicaciones de Adobe Experience Cloud.
+Los cambios recientes en el explorador restringen la duración de estos tipos de cookies. Las cookies de origen son más efectivas cuando se establecen mediante un servidor propiedad del cliente que utiliza un registro A/AAAA DNS, en lugar de un CNAME DNS. La [funcionalidad de ID de dispositivo de origen (FPID)](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/identity/first-party-device-ids) permite a los clientes que implementan Adobe Experience Platform Web SDK usar ID de dispositivo en cookies de servidores que usan registros A/AAAA de DNS. A continuación, estos ID se pueden enviar a Adobe y utilizar como semillas para generar Experience Cloud ID (ECID), que sigue siendo el identificador principal en las aplicaciones de Adobe Experience Cloud.
 
 A continuación se muestra un ejemplo rápido de cómo funciona la funcionalidad:
 
@@ -152,4 +151,4 @@ Valide la implementación confirmando que se genera el mismo ECID a partir del I
 1. Envíe otra solicitud a Platform Edge Network.
 1. Confirme que el valor de la cookie `AMCV_<IMSORGID@AdobeOrg>` sea el mismo valor `ECID` que el de la cookie `AMCV_` que se eliminó. Si el valor de la cookie es el mismo para un FPID determinado, el proceso de inicialización del ECID se realizó correctamente.
 
-Para obtener más información acerca de esta característica, consulte [la documentación](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=es).
+Para obtener más información acerca de esta característica, consulte [la documentación](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html).

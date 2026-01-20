@@ -4,9 +4,8 @@ description: Descubra cómo el reenvío de eventos centraliza la recopilación d
 feature: Event Forwarding
 level: Beginner
 jira: KT-6419
-thumbnail: 331937.jpeg
 exl-id: bd1a7414-b232-4ae3-98e8-b0ec1c60361b
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: fe848fe7376fbeb54fb53ee0947a9f8284fcef61
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 41%
@@ -15,7 +14,7 @@ ht-degree: 41%
 
 # Información general sobre el reenvío de eventos
 
-Descubra cómo el reenvío de eventos centraliza la recopilación de datos, reduce la cantidad de código necesario en sus aplicaciones web y móviles y transmite datos a soluciones que no son de Adobe a través de Adobe Experience Platform Edge Network. Para obtener más información, visite la [documentación del reenvío de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=es).
+Descubra cómo el reenvío de eventos centraliza la recopilación de datos, reduce la cantidad de código necesario en sus aplicaciones web y móviles y transmite datos a soluciones que no son de Adobe a través de Adobe Experience Platform Edge Network. Para obtener más información, visite la [documentación del reenvío de eventos](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
 
 >[!NOTE]
 >
@@ -25,4 +24,4 @@ Descubra cómo el reenvío de eventos centraliza la recopilación de datos, redu
 > * Platform Launch Server Side ahora está **[!DNL event forwarding]**
 > * Las configuraciones de Edge ahora son **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/3410920?learn=on&enablevpops&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/331937?learn=on&enablevpops)

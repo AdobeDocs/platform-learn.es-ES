@@ -6,12 +6,11 @@ short-description: Depure las implementaciones web del SDK web y las aplicacione
 feature: Debugger
 level: Beginner
 jira: KT-4723
-thumbnail: 32156.jpg
 exl-id: 9ce0b5db-9f00-4b59-8655-09cd59b3d5df
-source-git-commit: 89a8c57fb50ac02382e4e33d7dcdaac046821867
+source-git-commit: fe848fe7376fbeb54fb53ee0947a9f8284fcef61
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 51%
+source-wordcount: '136'
+ht-degree: 52%
 
 ---
 
@@ -19,11 +18,10 @@ ht-degree: 51%
 
 Descubra cómo la extensión de Adobe Experience Platform Debugger [Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) le ayuda a depurar las implementaciones de Adobe Experience Platform Web SDK, AppMeasurement.js y at.js, las bibliotecas que alimentan Real-Time CDP, Journey Optimizer, Customer Journey Analytics, Adobe Analytics, Adobe Target, Adobe Audience Manager, tags y más.
 
->[!VIDEO](https://video.tv.adobe.com/v/35998?captions=spa&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 ## Recursos adicionales
 
-* [Descargar el complemento de Firefox](https://addons.mozilla.org/es/firefox/addon/adobe-experience-platform-dbg/)
 * [Descargar la extensión de Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 * [Documentación de Experience Platform Debugger](https://experienceleague.adobe.com/docs/debugger/using-v2/experience-cloud-debugger.html?lang=es)
 * [Depurar una implementación de etiquetas](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/debug-launch-implementation.html?lang=es)
