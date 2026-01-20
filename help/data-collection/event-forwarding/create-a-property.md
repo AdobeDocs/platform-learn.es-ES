@@ -24,4 +24,4 @@ Obtenga información sobre cómo crear una propiedad de reenvío de eventos en l
 > * Platform Launch Server Side ahora está **[!DNL event forwarding]**
 > * Las configuraciones de Edge ahora son **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/331938?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3410365?captions=spa&learn=on&enablevpops)

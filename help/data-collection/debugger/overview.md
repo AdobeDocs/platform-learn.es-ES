@@ -18,7 +18,7 @@ ht-degree: 52%
 
 Descubra cómo la extensión de Adobe Experience Platform Debugger [Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) le ayuda a depurar las implementaciones de Adobe Experience Platform Web SDK, AppMeasurement.js y at.js, las bibliotecas que alimentan Real-Time CDP, Journey Optimizer, Customer Journey Analytics, Adobe Analytics, Adobe Target, Adobe Audience Manager, tags y más.
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/35998?captions=spa&learn=on&enablevpops)
 
 ## Recursos adicionales
 

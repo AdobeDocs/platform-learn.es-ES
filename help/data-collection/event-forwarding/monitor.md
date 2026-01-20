@@ -16,4 +16,4 @@ ht-degree: 28%
 
 Obtenga información sobre cómo monitorizar el reenvío de eventos en la interfaz de recopilación de datos. Para obtener más información, visite la [documentación del reenvío de eventos](https://experienceleague.adobe.com/es/docs/experience-platform/tags/event-forwarding/monitoring).
 
->[!VIDEO](https://video.tv.adobe.com/v/343999?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3411266?captions=spa&learn=on&enablevpops)

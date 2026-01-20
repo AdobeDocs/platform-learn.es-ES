@@ -18,4 +18,4 @@ ht-degree: 26%
 
 Obtenga información sobre cómo administrar datos confidenciales en flujos de datos.  Para obtener más información, consulte [la documentación de flujos de datos](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/3409588/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413101/?captions=spa&learn=on&enablevpops)

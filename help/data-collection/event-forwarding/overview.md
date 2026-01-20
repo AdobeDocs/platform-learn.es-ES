@@ -24,4 +24,4 @@ Descubra cómo el reenvío de eventos centraliza la recopilación de datos, redu
 > * Platform Launch Server Side ahora está **[!DNL event forwarding]**
 > * Las configuraciones de Edge ahora son **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/331937?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3410920?captions=spa&learn=on&enablevpops)
