@@ -3,14 +3,21 @@ title: Adobe Marketing Agent con ChatGPT
 description: Adobe Marketing Agent con ChatGPT
 kt: 5342
 doc-type: tutorial
-source-git-commit: 9663ef2838024e293acc72c203b1e3578911d57f
+source-git-commit: 1eafbf27de93b45288bec8cb3cd70f04e8cc715e
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '1003'
 ht-degree: 0%
 
 ---
 
 # 1.1.2 Adobe Marketing Agent con ChatGPT
+
+[!BADGE Beta]
+
++++Ver detalles
+Al utilizar Adobe Marketing Agent con ChatGPT Beta, Usted reconoce por la presente que Beta se proporciona &quot;tal cual&quot; sin garantía de ningún tipo. Adobe no tiene obligación de mantener, corregir, actualizar, cambiar, modificar o apoyar de otro modo Beta. Se recomienda tener precaución y no confiar en modo alguno en el correcto funcionamiento o rendimiento de dichos Beta y/o materiales de acompañamiento. Beta se considera información confidencial de Adobe.  Cualquier &quot;comentario&quot; (información sobre Beta, incluidos, entre otros, problemas o defectos que encuentre al utilizar Beta, sugerencias, mejoras y recomendaciones) proporcionado por usted a Adobe se asigna a Adobe, incluidos todos los derechos, el título y el interés en y para dichos comentarios.
+
++++
 
 >[!IMPORTANT]
 >
@@ -30,7 +37,7 @@ En este vídeo, obtendrá una explicación y una demostración de todos los paso
 >- una versión de pago de ChatGPT de OpenAI
 >- uso del cliente web ChatGPT
 
-Vaya a https://chatgpt.com/ e inicie sesión con los detalles de su cuenta. Una vez que haya iniciado sesión, debería ver esto. Haga clic en su nombre de usuario.
+Vaya a [https://chatgpt.com/](https://chatgpt.com/){target="_blank"} e inicie sesión con los detalles de su cuenta. Una vez que haya iniciado sesión, debería ver esto. Haga clic en su nombre de usuario.
 
 ![ChatGPT](./images/chatgpt1.png)
 
@@ -86,11 +93,11 @@ Para este ejercicio, el contexto debe configurarse para utilizar:
 
 - **Espacio aislado**: **Prod - Accelerate (VA7)**
 
-La configuración de la zona protegida ayuda a identificar qué simulador de pruebas debe consultar el asistente al hacer preguntas.
+La configuración de Zona protegida ayuda a identificar qué zona protegida debe ver ChatGPT al hacer preguntas.
 
 - **Vista de datos**: **Acelerar B2C 2026**
 
-La configuración de vista de datos ayuda a identificar qué vista de datos debe ver el asistente de IA al hacer preguntas.
+La configuración de Vista de datos ayuda a identificar qué vista de datos debe ver ChatGPT al hacer preguntas.
 
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
@@ -122,9 +129,9 @@ list dataviews
 
 ![Agent Orchestrator](./images/chatgpt14.png)
 
-Debería ver una lista similar de las zonas protegidas disponibles. La zona protegida actual de este ejemplo está configurada en **prod**.
+Debería ver una lista similar de vistas de datos disponibles.
 
-Para cambiar eso a la zona protegida que necesita usarse, ingrese el siguiente **indicador** y haga clic en el botón **enviar**.
+Para establecer la vista de datos que debe usarse, ingrese el siguiente **indicador** y haga clic en el botón **enviar**.
 
 ```javascript
 switch to Accelerate 2026 B2C

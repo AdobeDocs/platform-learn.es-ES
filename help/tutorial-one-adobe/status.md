@@ -3,10 +3,10 @@ title: Estado del contenido
 description: Estado del contenido
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 6642acb3fdce2c9d3a9b919d5c9457191e4780a6
+source-git-commit: 72fbe8d1dfddd83b85bcb423167cdf4f6e44886d
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 10%
+source-wordcount: '545'
+ht-degree: 9%
 
 ---
 
@@ -18,7 +18,7 @@ A continuación se muestra una descripción general del estado del contenido en 
 
 | Nombre | Última actualización | Trabajando al 100% | Observaciones | Inversión de tiempo |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [0. Primeros pasos &#x200B;](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 06/04/2025 | Sí | - | 45 min |
+| [0. Primeros pasos ](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 06/04/2025 | Sí | - | 45 min |
 
 ## &#x200B;1. Flujo de trabajo y planificación
 
@@ -82,10 +82,10 @@ A continuación se muestra una descripción general del estado del contenido en 
 
 | Nombre | Última actualización | Trabajando al 100% | Observaciones | Inversión de tiempo |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md){target="_blank"} | 25/11/2025 | Sí | - | 30 min |
-| [1.2 inteligencia artificial aplicada a la agencia](./modules/agents/module1.2/agenticai.md){target="_blank"} | 25/11/2025 | No | Trabajo en curso | Por determinar |
-| [1.3 Agente Collaboration](./modules/agents/module1.3/agentcollaboration.md){target="_blank"} | 25/11/2025 | No | Trabajo en curso | Por determinar |
-| [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md){target="_blank"} | 25/11/2025 | No | Trabajo en curso | Por determinar |
+| [1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md){target="_blank"} | 23/01/2026 | Sí | - | 90 min |
+| [1.2 inteligencia artificial aplicada a la agencia](./modules/agents/module1.2/agenticai.md){target="_blank"} | 23/01/2026 | No | Contenido en desarrollo | Por determinar |
+| [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md){target="_blank"} | 23/01/2026 | Sí | - | 90 min |
+| [1.5 Análisis y agentes](./modules/agents/module1.5/analyticsagents.md){target="_blank"} | 23/01/2026 | No | Contenido en desarrollo | Por determinar |
 
 {style="table-layout:auto"}
 

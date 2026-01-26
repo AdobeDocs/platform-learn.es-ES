@@ -4,9 +4,9 @@ breadcrumb-title: Un tutorial técnico de Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: fe8716bfae92588a3f0ec0ca1c5d37bf1296f6f6
+source-git-commit: f3a0f2d0b06d93f51ee2ed4904eb4a8e1f42beb4
 workflow-type: tm+mt
-source-wordcount: '1423'
+source-wordcount: '1446'
 ht-degree: 3%
 
 ---
@@ -19,8 +19,8 @@ ht-degree: 3%
 + [Estado del contenido](/help/tutorial-one-adobe/status.md)
 + [Arquitectura](/help/tutorial-one-adobe/architecture.md)
 
-+ Primeros pasos {#gettingstarted}
-   + Primeros pasos {#gettingstarted}
++ Introducción {#gettingstarted}
+   + Introducción {#gettingstarted}
       + [Información general](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/getting-started.md)
       + [Instalación de la extensión de Chrome para la documentación de Experience League](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex1.md)
       + [Utilice Demo System Next para configurar la propiedad de cliente de recopilación de datos de Adobe Experience Platform](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex2.md)
@@ -274,13 +274,16 @@ ht-degree: 3%
       + [Información general](/help/tutorial-one-adobe/modules/agents/module1.1/agentorchestrator.md)
       + [1.1.1 Introducción a Agent Orchestrator](/help/tutorial-one-adobe/modules/agents/module1.1/ex1.md)
       + [1.1.2 Adobe Marketing Agent con ChatGPT](/help/tutorial-one-adobe/modules/agents/module1.1/ex2.md)
+      + [1.1.3 Adobe Marketing Agent con Microsoft Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
    + 1.2 Introducción a los agentes y la IA {#agents2}
       + [Información general](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
       + [1.2.1 Introducción a la inteligencia artificial aplicada a la agencia](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
-   + 1.3 Agente Collaboration {#agents3}
-      + [Información general](/help/tutorial-one-adobe/modules/agents/module1.3/agentcollaboration.md)
-      + [1.3.1 Introducción a Agent Collaboration](/help/tutorial-one-adobe/modules/agents/module1.3/ex1.md)
    + 1.4 Brand Concierge {#agents4}
       + [Información general](/help/tutorial-one-adobe/modules/agents/module1.4/brandconcierge.md)
       + [1.4.1 Introducción a Brand Concierge](/help/tutorial-one-adobe/modules/agents/module1.4/ex1.md)
       + [1.4.2 Implementar Brand Concierge en el sitio web](/help/tutorial-one-adobe/modules/agents/module1.4/ex2.md)
+   + 1.5 Análisis y agentes {#agents5}
+      + [Información general](/help/tutorial-one-adobe/modules/agents/module1.5/analyticsagents.md)
+      + [1.5.1 CJA y ChatGPT con servidor MCP](/help/tutorial-one-adobe/modules/agents/module1.5/ex1.md)
+      + [1.5.2 CJA y Claude.ai con servidor MCP](/help/tutorial-one-adobe/modules/agents/module1.5/ex2.md)
+      + [1.5.3 Adobe Analytics y ChatGPT con servidor MCP](/help/tutorial-one-adobe/modules/agents/module1.5/ex3.md)

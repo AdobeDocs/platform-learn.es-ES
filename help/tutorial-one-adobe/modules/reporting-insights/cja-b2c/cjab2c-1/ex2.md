@@ -4,9 +4,9 @@ description: 'Customer Journey Analytics: Conectar conjuntos de datos de Adobe E
 kt: 5342
 doc-type: tutorial
 exl-id: 0f8dbf05-c96f-4cb9-b038-7576a4a91bcb
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 58c89444d36f92d8df7546964eb4b2b5cea8c82c
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '714'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 - Explicación del ID de persona y la vinculación de datos
 - Conozca el concepto de flujo de datos en Customer Journey Analytics
 
-## 1.1.2.1 Conexión
+## 1.1.2.1 conexión
 
 Vaya a [analytics.adobe.com](https://analytics.adobe.com) para obtener acceso a Customer Journey Analytics.
 
@@ -50,7 +50,7 @@ Después de seleccionar la zona protegida, puede empezar a añadir conjuntos de 
 
 ![demostración](./images/cjasb1.png)
 
-## 1.1.2.2 Selección de conjuntos de datos de Adobe Experience Platform
+## 1.1.2.2 Seleccionar conjuntos de datos de Adobe Experience Platform
 
 Busque el conjunto de datos `Demo System - Event Dataset for Website (Global v1.1)`. Active la casilla de este conjunto de datos para agregarlo a esta conexión.
 
@@ -64,7 +64,7 @@ Entonces, tendrás esto. Haga clic en **Next**.
 
 ## 1.1.2.3 ID de persona y vinculación de datos
 
-### ID de la persona
+### ID de persona
 
 El objetivo ahora es unirse a estos conjuntos de datos. Para cada conjunto de datos que seleccionó, verá un campo llamado **ID de persona**. Cada conjunto de datos tiene su propio campo de ID de persona.
 
@@ -82,7 +82,7 @@ Como se ha mencionado, puede establecer diferentes ID de persona para cada conju
 
 El nombre del campo ID de persona no es importante, siempre y cuando el valor de los campos ID de persona se corresponda con. Supongamos que tenemos `email` en un conjunto de datos y `emailAddress` en otro conjunto de datos definido como ID de persona. Si `delaigle@adobe.com` tiene el mismo valor para el campo ID de persona en ambos conjuntos de datos, CJA podrá unir los datos.
 
-Revise las preguntas frecuentes de CJA aquí para comprender los matices con la vinculación de identidad: [Preguntas frecuentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=es).
+Revise las preguntas frecuentes de CJA aquí para comprender los matices de la vinculación de identidad: [preguntas frecuentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html).
 
 ### Configuración de los datos mediante el ID de persona
 
@@ -96,10 +96,10 @@ Vaya a cada conjunto de datos para actualizar el ID de persona. Ahora rellene el
 
 Una vez que haya vinculado los dos conjuntos de datos, está listo para continuar.
 
-| conjunto de datos | ID de la persona |
+| conjunto de datos | ID de persona |
 | ----------------- |-------------| 
-| Sistema de demostración: conjunto de datos de eventos para el sitio web (Global v1.1) | email |
-| Sistema de demostración: conjunto de datos de eventos para el centro de llamadas (Global v1.1) | email |
+| Sistema de demostración: conjunto de datos de eventos para el sitio web (Global v1.1) | correo electrónico |
+| Sistema de demostración: conjunto de datos de eventos para el centro de llamadas (Global v1.1) | correo electrónico |
 
 También debe asegurarse de que estas opciones estén habilitadas para ambos conjuntos de datos:
 
@@ -122,13 +122,13 @@ Haga clic en **Agregar conjuntos de datos**.
 
 Haz clic en **Guardar** y ve al siguiente ejercicio.
 
-Después de haber creado su **conexión**, es posible que pasen unas horas antes de que sus datos estén disponibles en CJA.
+Después de haber creado su **conexión**, es posible que pasen unas horas antes de que los datos estén disponibles en CJA.
 
 ![demostración](./images/cja20.png)
 
 ## Pasos siguientes
 
-Ir a [1.1.3 Crear una vista de datos](./ex3.md)(./ex2.md){target="_blank"}
+Ir a [1.1.3 Crear una vista de datos](./ex3.md){target="_blank"}
 
 Volver a [Customer Journey Analytics](./customer-journey-analytics-build-a-dashboard.md){target="_blank"}
 

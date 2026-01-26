@@ -3,9 +3,9 @@ title: Panorama general de los laboratorios técnicos de inteligencia artificial
 description: Panorama general de los laboratorios técnicos de inteligencia artificial
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 350292be24f19462abe3c5ea1a795b4bd93b613f
+source-git-commit: 58c89444d36f92d8df7546964eb4b2b5cea8c82c
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -51,25 +51,16 @@ Elementos técnicos:
 - Servidor MCP, Python Notebook
 - API de Adobe
 
-[1.3 Agente Collaboration](./modules/agents/module1.3/agentcollaboration.md)
-
->[!NOTE]
->
->Este módulo aún no se ha publicado.
+[1.3 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
 
 **Meta**
 
-Conecte su propio agente a los agentes de Adobe. Los alumnos configurarán el protocolo Agent2Agent (A2A) para conectar sus agentes con AEP Agent Orchestrator.
+Brand Concierge es un complemento digital con tecnología de IA que transforma la forma en que las marcas interactúan con los visitantes de su sitio web. A diferencia de los bots de chat genéricos, Brand Concierge ofrece experiencias conversacionales personalizadas y adaptadas a las intenciones de cada visitante. Ayuda a los visitantes a descubrir productos, comparar opciones, obtener respuestas instantáneas y recibir recomendaciones guiadas en tiempo real. La plataforma sirve tanto a B2C como a B2B y actúa como una extensión inteligente de su marca en cualquier canal digital, al tiempo que preserva la voz, la integridad del contenido y el cumplimiento de la marca.
 
-- Encadenamiento del agente
-- Agent Collaboration
+En este ejercicio aprenderá a hacer lo siguiente:
 
-¿Cuál es la arquitectura detrás de un agente de Adobe?
-¿Cuál es la arquitectura detrás de A2A?
-
-Elementos técnicos:
-
-- Interoperabilidad del agente con el protocolo A2A de Google
+- Configuración de la instancia de Brand Concierge en la zona protegida de Adobe Experience Platform
+- Implemente Brand Concierge en el sitio web de AEM CS/EDS
 
 ![Perspectivas técnicas](./assets/images/techinsiders.png){width="50px" align="left"}
 
