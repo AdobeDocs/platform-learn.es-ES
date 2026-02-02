@@ -1,12 +1,12 @@
 ---
-title: 'Offer Decisioning: Prueba de la decisión'
-description: 'Offer Decisioning: Prueba de la decisión'
+title: Configuración de una campaña con mensajes en la aplicación
+description: Configuración de una campaña con mensajes en la aplicación
 kt: 5342
 doc-type: tutorial
 exl-id: c40b9b8c-9717-403c-bf02-6b8f42a59c05
-source-git-commit: 2e856759e1a9b5509ad0632e28b269bcfc4ae861
+source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---

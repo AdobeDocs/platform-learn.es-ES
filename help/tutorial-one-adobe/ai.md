@@ -3,9 +3,9 @@ title: Panorama general de los laboratorios técnicos de inteligencia artificial
 description: Panorama general de los laboratorios técnicos de inteligencia artificial
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 58c89444d36f92d8df7546964eb4b2b5cea8c82c
+source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '398'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Elementos técnicos:
 - Servidor MCP, Python Notebook
 - API de Adobe
 
-[1.3 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
+[1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
 
 **Meta**
 
@@ -61,6 +61,17 @@ En este ejercicio aprenderá a hacer lo siguiente:
 
 - Configuración de la instancia de Brand Concierge en la zona protegida de Adobe Experience Platform
 - Implemente Brand Concierge en el sitio web de AEM CS/EDS
+
+[1.5 Análisis y agentes](./modules/agents/module1.5/analyticsagents.md)
+
+**Meta**
+
+Como analista de datos, desarrollador de IA o arquitecto de aplicaciones de IA, aprenderá a automatizar las tareas de creación de informes como la creación de informes y la programación de análisis mediante agentes externos. Aprenderá a incorporar nuevos datos de campañas, datos de audiencias o datos de rendimiento a sus flujos de trabajo reales.
+
+En este ejercicio aprenderá a hacer lo siguiente:
+
+- Conecte ChatGPT y/o Claude.ai a **Customer Journey Analytics** y realice tareas de análisis de datos
+- Conecte ChatGPT y/o Claude.ai a **Adobe Analytics** y realice tareas de análisis de datos
 
 ![Perspectivas técnicas](./assets/images/techinsiders.png){width="50px" align="left"}
 
