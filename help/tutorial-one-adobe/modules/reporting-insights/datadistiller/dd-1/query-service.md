@@ -4,9 +4,9 @@ description: Servicio de consultas
 kt: 5342
 doc-type: tutorial
 exl-id: 881dcff5-3637-4b67-9e61-88690babe83b
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 5eb5432251ee7193909ed4ec7decd0d94d0843a2
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '531'
 ht-degree: 1%
 
 ---
@@ -32,10 +32,6 @@ Utilizaremos datos que se hayan insertado en la plataforma mediante datos de int
 - Conjuntos de datos (conjunto de datos utilizado durante el laboratorio, precargado para usted)
 - PostgreSQL
 - Tableau o Microsoft Power BI Desktop
-- **Descargar estos recursos**:
-   - [JSON: datos de muestra: interacciones con el sitio web](./../../../../assets/json/ee.json)
-   - [JSON: datos de muestra: interacciones del centro de llamadas](./../../../../assets/json/callcenter.json)
-   - [JSON: datos de muestra: lealtad](./../../../../assets/json/loyalty.json)
 
 >[!NOTE]
 >

@@ -4,7 +4,7 @@ breadcrumb-title: Un tutorial técnico de Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
+source-git-commit: 5eb5432251ee7193909ed4ec7decd0d94d0843a2
 workflow-type: tm+mt
 source-wordcount: '1459'
 ht-degree: 3%
@@ -290,4 +290,4 @@ ht-degree: 3%
       + [Información general](/help/tutorial-one-adobe/modules/agents/module1.5/analyticsagents.md)
       + [1.5.1 CJA y ChatGPT con servidor MCP](/help/tutorial-one-adobe/modules/agents/module1.5/ex1.md)
       + [1.5.2 CJA y Claude.ai con servidor MCP](/help/tutorial-one-adobe/modules/agents/module1.5/ex2.md)
-      + [1.5.3 Adobe Analytics y ChatGPT con servidor MCP](/help/tutorial-one-adobe/modules/agents/module1.5/ex3.md)
+      + [1.5.3 Adobe Analytics y Claude.ai con servidor MCP](/help/tutorial-one-adobe/modules/agents/module1.5/ex3.md)
