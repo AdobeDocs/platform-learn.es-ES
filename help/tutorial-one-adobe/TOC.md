@@ -4,9 +4,9 @@ breadcrumb-title: Un tutorial técnico de Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: bed1141b0b51063637684a29a9bd946c934fc2ba
+source-git-commit: 9d3e39cf99f3cfa6c1198c53f30b21fa8fbf7854
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1529'
 ht-degree: 3%
 
 ---
@@ -89,11 +89,10 @@ ht-degree: 3%
    + 1.7 Generador de flujos de trabajo {#crpr7}
       + [Información general](/help/tutorial-one-adobe/modules/creation-production/module1.7/workflowbuilder.md)
       + [1.7.1 Introducción a Workflow Builder](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
-   + 1.8 Gestión del almacenamiento empresarial {#crpr8}
+   + 1.8 Revisión y aprobación unificadas con Workfront, Frame.io y gestión de almacenamiento empresarial {#crpr8}
       + [Información general](/help/tutorial-one-adobe/modules/creation-production/module1.8/esm.md)
-      + [1.8.1 Workfront Y ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex1.md)
-      + [1.8.2 Frame.io y ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex2.md)
-      + [1.8.3 Adobe Express Y ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex3.md)
+      + [1.8.1 Introducción a Workfront, Frame.io y ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex1.md)
+      + [1.8.2 Crear un nuevo recurso, revisarlo y aprobarlo](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex2.md)
 
 + Administración de activos {#assetmgmt}
    + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
