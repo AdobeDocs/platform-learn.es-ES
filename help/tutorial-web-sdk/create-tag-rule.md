@@ -75,7 +75,7 @@ Todas estas reglas se secuenciarán correctamente usando la opción &quot;[!UICO
 
 Este vídeo ofrece información general del proceso:
 
->[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3454030/?captions=spa&learn=on&enablevpops)
 
 ### Campos de configuración global
 
