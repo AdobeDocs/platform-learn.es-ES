@@ -8,9 +8,9 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: d70d5df8b11c8500dbe4764b08e2627893f436f0
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '3266'
+source-wordcount: '3298'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,11 @@ ht-degree: 0%
 <!--1hr-->
 
 En esta lección, debe transmitir los datos mediante Adobe Experience Platform Web SDK.
+
+
+>[!WARNING]
+>
+> Se espera que el sitio web de Luma utilizado en este tutorial se sustituya durante la semana del 16 de febrero de 2026. Es posible que el trabajo realizado como parte de este tutorial no sea aplicable al nuevo sitio web.
 
 Hay dos tareas principales que debemos completar en la interfaz de recopilación de datos:
 
@@ -31,9 +36,9 @@ Hay dos tareas principales que debemos completar en la interfaz de recopilación
 
 Antes de comenzar los ejercicios, vea estos dos vídeos cortos para obtener más información sobre la ingesta de datos de flujo continuo y Web SDK:
 
->[!VIDEO](https://video.tv.adobe.com/v/31628?captions=spa&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/37261?captions=spa&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
 
 >[!NOTE]
 >
@@ -254,7 +259,7 @@ Experience Platform Debugger es una extensión disponible para Chrome que le ayu
 
 Si nunca antes ha utilizado Debugger (y este es diferente del antiguo Adobe Experience Cloud Debugger), puede que desee ver este vídeo de información general de cinco minutos:
 
->[!VIDEO](https://video.tv.adobe.com/v/35998?captions=spa&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 ### Abra el sitio web de Luma.
 
@@ -347,7 +352,7 @@ Ahora asignaremos el nombre de página al SDK web.
 >[!IMPORTANT]
 >
 >Para completar esta tarea, debemos asegurarnos de que el usuario tenga acceso primero a la zona protegida de producción. Si todavía no tiene acceso a la zona protegida de Prod desde un perfil de producto diferente, abra rápidamente su perfil de `Luma Tutorial Platform` y agregue el elemento de permiso **[!UICONTROL Zonas protegidas]** > **[!UICONTROL Prod]**. Después, haga una SHIFT-Reload en la página Elementos de datos para borrar la caché
->![Agregar la zona protegida de producción &#x200B;](assets/websdk-property-permissionToLoadSchema.png)
+>![Agregar la zona protegida de producción ](assets/websdk-property-permissionToLoadSchema.png)
 
 En la página **[!UICONTROL Elementos de datos]**:
 

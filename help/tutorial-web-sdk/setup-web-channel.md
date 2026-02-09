@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 jira: KT-15411
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '2562'
+source-wordcount: '2594'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,14 @@ ht-degree: 0%
 
 # Configuración del canal web de Journey Optimizer con Web SDK
 
-Aprenda a implementar el [canal web](https://experienceleague.adobe.com/es/docs/journey-optimizer/using/web/get-started-web) de Adobe Journey Optimizer mediante Adobe Experience Platform Web SDK. Esta lección cubre los requisitos previos básicos del canal web, los pasos detallados para la configuración y una explicación detallada de un caso de uso centrado en el estado de lealtad.
+Aprenda a implementar el [canal web](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) de Adobe Journey Optimizer mediante Adobe Experience Platform Web SDK. Esta lección cubre los requisitos previos básicos del canal web, los pasos detallados para la configuración y una explicación detallada de un caso de uso centrado en el estado de lealtad.
 
 Al seguir esta lección, los usuarios de Journey Optimizer están equipados para utilizar el canal web para una personalización en línea avanzada mediante el diseñador web de Journey Optimizer.
+
+
+>[!WARNING]
+>
+> Se espera que el sitio web de Luma utilizado en este tutorial se sustituya durante la semana del 16 de febrero de 2026. Es posible que el trabajo realizado como parte de este tutorial no sea aplicable al nuevo sitio web.
 
 ![Diagrama de Web SDK y Adobe Analytics](assets/dc-websdk-ajo.png)
 
@@ -52,7 +57,7 @@ Para completar las lecciones de esta sección, primero debe:
   > 1. El sitio web está incrustado en un iframe.
   > 1. El control de calidad o el sitio de fase del cliente no son accesibles externamente (son sitios internos).
 
-* Al crear experiencias web e incluir contenido de la biblioteca de Adobe Experience Manager Assets Essentials, es necesario [configurar el subdominio para publicar este contenido](https://experienceleague.adobe.com/es/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains).
+* Al crear experiencias web e incluir contenido de la biblioteca de Adobe Experience Manager Assets Essentials, es necesario [configurar el subdominio para publicar este contenido](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains).
 * Si utiliza la función de experimentación de contenido, asegúrese de que el conjunto de datos web también se incluya en la configuración de creación de informes.
 * Actualmente, se admiten dos tipos de implementaciones para habilitar la creación y el envío de campañas de canal web en las propiedades web:
    * Solo del lado del cliente: para modificar el sitio web, debe implementar Adobe Experience Platform Web SDK.
@@ -123,7 +128,7 @@ Para configurar la opción en la política de combinación:
 
 Para utilizar experimentos de contenido dentro de campañas del canal web, debe asegurarse de que el conjunto de datos web utilizado también se incluya en la configuración de informes. El sistema de informes de Journey Optimizer utiliza el conjunto de datos en modo de solo lectura para rellenar informes de experimentación de contenido listos para usar.
 
-[En esta sección se detalla la adición de conjuntos de datos para los informes de experimentos de contenido](https://experienceleague.adobe.com/es/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration#add-datasets).
+[En esta sección se detalla la adición de conjuntos de datos para los informes de experimentos de contenido](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration#add-datasets).
 
 ## Resumen de caso de uso: recompensas de fidelización
 
@@ -302,7 +307,7 @@ La extensión de Adobe Experience Platform Debugger, disponible tanto para Chrom
 
 Puede utilizar el depurador del sitio de Luma para validar la experiencia del canal web en producción. Esta es una práctica recomendada una vez que el caso de uso de las Recompensas de fidelidad está en funcionamiento, para garantizar que todo esté configurado correctamente.
 
-[Aprenda a configurar el depurador en su explorador con la guía aquí](https://experienceleague.adobe.com/es/docs/platform-learn/data-collection/debugger/overview).
+[Aprenda a configurar el depurador en su explorador con la guía aquí](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
 Para iniciar la validación con el depurador:
 
@@ -337,4 +342,4 @@ Para iniciar la validación con el depurador:
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=es)
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

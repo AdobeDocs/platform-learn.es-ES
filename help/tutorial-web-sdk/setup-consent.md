@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo configurar la privacidad de la ext
 feature: Web SDK,Tags,Consent
 jira: KT-15413
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '1603'
+source-wordcount: '1635'
 ht-degree: 1%
 
 ---
@@ -14,6 +14,11 @@ ht-degree: 1%
 # Configuración del consentimiento con Platform Web SDK
 
 Obtenga información sobre cómo configurar la privacidad de la extensión de etiquetas Adobe Experience Platform Web SDK. Establezca el consentimiento en función de la interacción del visitante con un titular de una plataforma de administración de consentimiento (CMP).
+
+
+>[!WARNING]
+>
+> Se espera que el sitio web de Luma utilizado en este tutorial se sustituya durante la semana del 16 de febrero de 2026. Es posible que el trabajo realizado como parte de este tutorial no sea aplicable al nuevo sitio web.
 
 >[!NOTE]
 > 
@@ -217,11 +222,11 @@ Una vez que haya establecido esta regla, la recopilación de eventos debe comenz
 ![Opción de visitante de publicación de consentimiento](assets/consent-post-user-optin.png)
 
 
-Para obtener más información sobre el consentimiento en Web SDK, consulte [Apoyo a las preferencias de consentimiento del cliente](https://experienceleague.adobe.com/es/docs/experience-platform/edge/consent/supporting-consent).
+Para obtener más información sobre el consentimiento en Web SDK, consulte [Apoyo a las preferencias de consentimiento del cliente](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
 
 
-Para obtener más información sobre la acción [!UICONTROL Establecer consentimiento], consulte [Establecer consentimiento](https://experienceleague.adobe.com/es/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
+Para obtener más información sobre la acción [!UICONTROL Establecer consentimiento], consulte [Establecer consentimiento](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=es)
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

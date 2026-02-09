@@ -1,11 +1,11 @@
 ---
 title: Añadir un elemento de datos, una regla y una biblioteca
-description: Obtenga información sobre cómo crear elementos de datos, reglas y una biblioteca en etiquetas. Esta lección forma parte del tutorial Implementación del Experience Cloud en sitios web.
+description: Obtenga información sobre cómo crear elementos de datos, reglas y una biblioteca en etiquetas. Esta lección forma parte del tutorial Implementación de Experience Cloud en sitios web.
 exl-id: 4d9eeb52-144a-4876-95d3-83d8eec4832f
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '1441'
-ht-degree: 54%
+source-wordcount: '1473'
+ht-degree: 53%
 
 ---
 
@@ -15,20 +15,25 @@ En esta lección, debe crear su primer elemento de datos, regla y biblioteca.
 
 Los elementos de datos y las reglas son los componentes básicos de las etiquetas. Los elementos de datos almacenan los atributos que desea enviar a sus soluciones de marketing y publicidad, mientras que las reglas activan las solicitudes a dichas soluciones en las condiciones adecuadas.  Las bibliotecas son los archivos JavaScript que se cargan en la página para realizar todo el trabajo. En esta lección, debe usar los tres para hacer que nuestra página de muestra haga algo.
 
+
+>[!WARNING]
+>
+> Se espera que el sitio web de Luma utilizado en este tutorial se sustituya durante la semana del 16 de febrero de 2026. Es posible que el trabajo realizado como parte de este tutorial no sea aplicable al nuevo sitio web.
+
 >[!NOTE]
 >
 >Adobe Experience Platform Launch se está integrando en Adobe Experience Platform como un conjunto de tecnologías de recopilación de datos. Se han implementado varios cambios terminológicos en la interfaz que debe tener en cuenta al utilizar este contenido:
 >
-> * El platform launch (lado del cliente) ahora es **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=es)**
-> * El lado del servidor de platform launch ahora es **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=es)**
+> * Platform Launch (lado del cliente) ahora es **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=es)**
+> * El lado del servidor de Platform Launch ahora es **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * Ahora, las configuraciones de Edge son **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=es)**
 
 ## Objetivos de aprendizaje
 
 Al final de esta lección, debe poder:
 
-* Crear un elemento de datos.
-* Crear una regla.
+* Crear un elemento de datos
+* Crear una regla
 * Crear una biblioteca.
 * Añadir cambios a una biblioteca.
 * Validar que la biblioteca se esté cargando en el navegador web.
@@ -123,7 +128,7 @@ En la página Reglas, debería ver la nueva regla:
 
 Después de configurar una colección de extensiones, elementos de datos y reglas en la interfaz de recopilación de datos, debe empaquetar estas funciones y lógica en un conjunto de código JavaScript que puede implementar en el sitio web para que las etiquetas de marketing se activen cuando los visitantes accedan al sitio. Una biblioteca es el conjunto de código JavaScript que puede hacerlo.
 
-En lecciones anteriores, hemos implementado el código de incrustación del entorno de desarrollo en la página de muestra. Cuando cargó la página de muestra, apareció un error 404 para la URL de código incrustado porque la biblioteca de etiquetas aún no se había creado ni asignado al entorno. Ahora colocará el nuevo elemento de datos y la regla en una biblioteca para que la página de muestra pueda hacer algo.
+En lecciones anteriores, hemos implementado el código incrustado del entorno de desarrollo en la página de muestra. Cuando cargó la página de muestra, apareció un error 404 para la URL de código incrustado porque la biblioteca de etiquetas aún no se había creado ni asignado al entorno. Ahora colocará el nuevo elemento de datos y la regla en una biblioteca para que la página de muestra pueda hacer algo.
 
 **Para añadir y crear una biblioteca**
 
@@ -195,4 +200,4 @@ Espere un momento hasta que el punto verde vuelva a aparecer junto al menú desp
 
 Esta es una forma mucho más rápida de trabajar y utilizará este método para el resto del tutorial.
 
-[Siguiente: &quot;Cambiar entornos con el Experience Cloud Debugger&quot; >](switch-environments.md)
+[Siguiente: &quot;Cambiar entornos con Experience Cloud Debugger&quot; >](switch-environments.md)

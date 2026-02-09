@@ -4,10 +4,10 @@ description: Aprenda a utilizar la propiedad de reenvío de eventos mediante dat
 feature: Web SDK,Tags,Event Forwarding
 jira: KT-15414
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '1872'
-ht-degree: 4%
+source-wordcount: '1904'
+ht-degree: 3%
 
 ---
 
@@ -15,8 +15,12 @@ ht-degree: 4%
 
 Obtenga información sobre cómo utilizar el reenvío de eventos con los datos del SDK web de Adobe Experience Platform.
 
-El reenvío de eventos es un nuevo tipo de propiedad disponible en la recopilación de datos. El reenvío de eventos le permite enviar datos a proveedores de terceros que no sean de Adobe directamente desde Adobe Experience Platform Edge Network, en lugar del explorador tradicional del lado del cliente. Obtenga más información acerca de las ventajas del reenvío de eventos en la [descripción general del reenvío de eventos](https://experienceleague.adobe.com/es/docs/experience-platform/tags/event-forwarding/overview).
+El reenvío de eventos es un nuevo tipo de propiedad disponible en la recopilación de datos. El reenvío de eventos le permite enviar datos a proveedores de terceros que no sean de Adobe directamente desde Adobe Experience Platform Edge Network, en lugar del explorador tradicional del lado del cliente. Obtenga más información acerca de las ventajas del reenvío de eventos en la [descripción general del reenvío de eventos](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
 
+
+>[!WARNING]
+>
+> Se espera que el sitio web de Luma utilizado en este tutorial se sustituya durante la semana del 16 de febrero de 2026. Es posible que el trabajo realizado como parte de este tutorial no sea aplicable al nuevo sitio web.
 
 ![Diagrama de Web SDK y reenvío de eventos](assets/dc-websdk-eventforwarding.png)
 
@@ -24,7 +28,7 @@ Para utilizar el reenvío de eventos en Adobe Experience Platform, primero deben
 
 * [SDK web de Adobe Experience Platform](overview.md)
 * [SDK móvil de Adobe Experience Platform](https://developer.adobe.com/client-sdks/home/)
-  <!--* [Server-to-Server API](https://experienceleague.adobe.com/es/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
+  <!--* [Server-to-Server API](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
 
 
 >[!NOTE]
@@ -143,7 +147,7 @@ En este ejercicio, reenviará la altura de la ventanilla del explorador y el ID 
 >[!TIP]
 >
 >También puede encontrar la ruta del objeto XDM utilizando las herramientas de red del explorador web, filtrando las solicitudes `/ee`, abriendo la señalización [!UICONTROL **Payload**] y explorando en profundidad la variable que está buscando. A continuación, haga clic con el botón derecho del ratón y seleccione &quot;Copiar ruta de propiedad&quot;. Este es un ejemplo de la altura de la ventanilla del explorador:
->&#x200B;> ![Ruta XDM de reenvío de eventos &#x200B;](assets/event-forwarding-xdm-path.png)
+> ![Ruta XDM de reenvío de eventos ](assets/event-forwarding-xdm-path.png)
 
 1. Vaya a la propiedad **[!UICONTROL Reenvío de eventos]** que creó recientemente
 
@@ -323,4 +327,4 @@ Ahora puede validar la propiedad de reenvío de eventos mediante Platform Debugg
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=es)
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

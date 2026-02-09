@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo enviar un evento a Platform Edge N
 feature: Tags
 jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '1982'
+source-wordcount: '2014'
 ht-degree: 2%
 
 ---
@@ -14,6 +14,11 @@ ht-degree: 2%
 # Creación de reglas de etiquetas
 
 Obtenga información sobre cómo enviar eventos al Edge Network de Adobe Experience Platform con el objeto XDM mediante reglas de etiquetas. Una regla de etiqueta es una combinación de eventos, condiciones y acciones que indica a la propiedad de etiqueta que haga algo. Con Platform Web SDK, las reglas se utilizan para enviar eventos a Platform Edge Network con los datos adecuados.
+
+
+>[!WARNING]
+>
+> Se espera que el sitio web de Luma utilizado en este tutorial se sustituya durante la semana del 16 de febrero de 2026. Es posible que el trabajo realizado como parte de este tutorial no sea aplicable al nuevo sitio web.
 
 ## Objetivos de aprendizaje
 
@@ -70,7 +75,7 @@ Todas estas reglas se secuenciarán correctamente usando la opción &quot;[!UICO
 
 Este vídeo ofrece información general del proceso:
 
->[!VIDEO](https://video.tv.adobe.com/v/3454030/?learn=on&enablevpops&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
 
 ### Campos de configuración global
 
@@ -238,7 +243,7 @@ Comparar el elemento de datos con la estructura de `productListItems` (sugerenci
 >[!IMPORTANT]
 >
 >Observe cómo se traducen las variables numéricas, con valores de cadena en la capa de datos como `price` y `qty` reformateados a números en el elemento de datos. Estos requisitos de formato son importantes para la integridad de los datos en Platform y se determinan durante el paso [configurar esquemas](configure-schemas.md). En el ejemplo, **[!UICONTROL quantity]** usa el tipo de datos **[!UICONTROL Integer]**.
->&#x200B;> ![Tipo de datos de esquema XDM &#x200B;](assets/set-up-analytics-quantity-integer.png)
+> ![Tipo de datos de esquema XDM ](assets/set-up-analytics-quantity-integer.png)
 
 Ahora, asignemos la matriz al objeto XDM:
 
@@ -395,4 +400,4 @@ Ahora está listo para validar los datos de la solicitud mediante Adobe Experien
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=es)
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

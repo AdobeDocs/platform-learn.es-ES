@@ -1,11 +1,11 @@
 ---
 title: Añadir el código de incrustación
-description: Obtenga información sobre cómo obtener los códigos de incrustación de la propiedad de etiquetas e implementarlos en el sitio web. Esta lección forma parte del tutorial Implementación del Experience Cloud en sitios web.
+description: Obtenga información sobre cómo obtener los códigos de incrustación de la propiedad de etiquetas e implementarlos en el sitio web. Esta lección forma parte del tutorial Implementación de Experience Cloud en sitios web.
 exl-id: a2959553-2d6a-4c94-a7df-f62b720fd230
-source-git-commit: 277f5f2c07bb5818e8c5cc129bef1ec93411c90d
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 45%
+source-wordcount: '1069'
+ht-degree: 43%
 
 ---
 
@@ -13,12 +13,17 @@ ht-degree: 45%
 
 En esta lección, debe implementar el código incrustado asincrónico del entorno de desarrollo de su propiedad de etiquetas. A lo largo del camino, aprenderá sobre dos conceptos principales de etiquetas: entornos y códigos de incrustación.
 
+
+>[!WARNING]
+>
+> Se espera que el sitio web de Luma utilizado en este tutorial se sustituya durante la semana del 16 de febrero de 2026. Es posible que el trabajo realizado como parte de este tutorial no sea aplicable al nuevo sitio web.
+
 >[!NOTE]
 >
 >Adobe Experience Platform Launch se está integrando en Adobe Experience Platform como un conjunto de tecnologías de recopilación de datos. Se han implementado varios cambios terminológicos en la interfaz que debe tener en cuenta al utilizar este contenido:
 >
-> * El platform launch (lado del cliente) ahora es **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=es)**
-> * El lado del servidor de platform launch ahora es **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=es)**
+> * Platform Launch (lado del cliente) ahora es **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=es)**
+> * El lado del servidor de Platform Launch ahora es **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * Ahora, las configuraciones de Edge son **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=es)**
 
 ## Objetivos de aprendizaje
@@ -30,11 +35,11 @@ Al final de esta lección, debe poder:
 * Añadir un código incrustado de etiqueta en un documento HTML
 * Explicar la ubicación óptima del código incrustado de etiqueta en relación con otro código en `<head>` de un documento HTML
 
-## Copiar el código de incrustación
+## Copiar el código incrustado
 
-El código incrustado es una etiqueta `<script>` que se coloca en las páginas web para cargar y ejecutar la lógica que se haya generado en las etiquetas. Si carga la biblioteca de forma asíncrona, el explorador continúa cargando la página, recupera la biblioteca de etiquetas y la ejecuta en paralelo. En este caso, solo hay un código de incrustación, que usted pone en `<head>`. (Cuando las etiquetas se implementan sincrónicamente, existen dos códigos incrustados, uno que se coloca en `<head>` y otro que se coloca antes de `</body>`).
+El código incrustado es una etiqueta `<script>` que se coloca en las páginas web para cargar y ejecutar la lógica que se haya generado en las etiquetas. Si carga la biblioteca de forma asíncrona, el explorador continúa cargando la página, recupera la biblioteca de etiquetas y la ejecuta en paralelo. En este caso, solo hay un código incrustado, que usted pone en `<head>`. (Cuando las etiquetas se implementan sincrónicamente, existen dos códigos incrustados, uno que se coloca en `<head>` y otro que se coloca antes de `</body>`).
 
-En la pantalla Información general de la propiedad, haga clic en **[!UICONTROL Entornos]** en el panel de navegación izquierdo para ir a la página de entornos. Tenga en cuenta que los entornos de desarrollo, de estado y de producción ya se han creado.
+En la pantalla Información general de la propiedad, haga clic en **[!UICONTROL Entornos]** en el panel de navegación izquierdo para ir a la página de entornos. Tenga en cuenta que los entornos de desarrollo, de ensayo y de producción ya se han creado.
 
 ![Haga clic en Entornos en la barra de navegación superior](images/launch-environments.png)
 
@@ -44,21 +49,21 @@ Las etiquetas permiten entornos de desarrollo adicionales, lo que resulta útil 
 
 Son los únicos entornos necesarios para completar el tutorial. Los entornos permiten tener diferentes versiones de trabajo de las bibliotecas de etiquetas en distintas URL, para poder agregar nuevas funciones y ponerlas a disposición de los usuarios adecuados (como desarrolladores, ingenieros de control de calidad, el público, etc.) en el momento adecuado.
 
-Ahora vamos a copiar el código de incrustación:
+Ahora vamos a copiar el código incrustado:
 
 1. En la fila **[!UICONTROL Desarrollo]**, haga clic en el icono Instalar ![Icono Instalar](images/launch-installIcon.png) para abrir el modal.
 
 1. Tenga en cuenta que las etiquetas se configurarán de forma predeterminada como códigos incrustados asincrónicos
 
-1. Haga clic en el ![icono Copiar](images/launch-copyIcon.png) para copiar el código de incrustación en el portapapeles.
+1. Haga clic en el ![icono Copiar](images/launch-copyIcon.png) para copiar el código incrustado en el portapapeles.
 
 1. Haga clic en **[!UICONTROL Cerrar]** para cerrar el modal.
 
    ![Icono Instalar](images/launch-copyInstallCode.png)
 
-## Implemente el código de incrustación en el `<head>` de la página HTML de ejemplo.
+## Implemente el código incrustado en el `<head>` de la página HTML de ejemplo.
 
-El código de incrustación debe implementarse en el elemento `<head>` de todas las páginas HTML que comparten la propiedad. Puede tener uno o varios archivos de plantilla que controlan el `<head>` globalmente en todo el sitio, lo que lo convierte en un proceso directo para agregar etiquetas.
+El código incrustado debe implementarse en el elemento `<head>` de todas las páginas HTML que comparten la propiedad. Puede tener uno o varios archivos de plantilla que controlan el `<head>` globalmente en todo el sitio, lo que lo convierte en un proceso directo para agregar etiquetas.
 
 Si aún no lo ha hecho, copie el código de página HTML de ejemplo y péguelo en un editor de código. [Brackets](https://brackets.io/) es un editor de código abierto gratuito si lo necesita.
 
@@ -104,14 +109,14 @@ Si aún no lo ha hecho, copie el código de página HTML de ejemplo y péguelo e
 <body>
     <h1>Tags: Sample HTML Page</h1>
     <p>This is a very simple page to demonstrate basic implementation concepts of Tags</p>
-    <p>See <a href="https://docs.adobe.com/content/help/es-ES/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
+    <p>See <a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
 </body>
 </html>
 ```
 
 +++
 
-Reemplace el código de incrustación existente en la línea 34 (o alrededor) con el que lleva en el portapapeles y guarde la página. A continuación, abra la página en un navegador web. Si está cargando la página mediante el protocolo `file://`, debe agregar “https:” al principio de la URL del código de incrustación en el editor de código). Las líneas 33-36 de la página de ejemplo pueden tener un aspecto similar al siguiente:
+Reemplace el código incrustado existente en la línea 34 (o alrededor) con el que lleva en el portapapeles y guarde la página. A continuación, abra la página en un navegador web. Si está cargando la página mediante el protocolo `file://`, debe agregar “https:” al principio de la URL del código incrustado en el editor de código). Las líneas 33-36 de la página de ejemplo pueden tener un aspecto similar al siguiente:
 
 ```html
     <!--Tags Header Embed Code: REPLACE LINE 39 WITH THE EMBED CODE FROM YOUR OWN DEVELOPMENT ENVIRONMENT-->
@@ -122,7 +127,7 @@ Reemplace el código de incrustación existente en la línea 34 (o alrededor) co
 Abra las herramientas para desarrolladores del navegador web y vaya a la pestaña Red (Network). En este punto debería ver un error 404 para la URL del entorno de etiquetas:
 ![Error 404](images/samplepage-404.png)
 
-Se espera el error 404 porque aún no ha creado ninguna biblioteca en este entorno de Etiquetas. Lo hará en la siguiente lección. Si ve un mensaje “failed” en lugar de un error 404, probablemente olvidó agregar el protocolo `https://` en el código de incrustación. De nuevo, solo debe especificar el protocolo `https://` si está cargando la página de muestra mediante el protocolo `file://`. Realice un cambio y vuelva a cargar la página hasta que aparezca el error 404.
+Se espera el error 404 porque aún no ha creado ninguna biblioteca en este entorno de Etiquetas. Lo hará en la siguiente lección. Si ve un mensaje “failed” en lugar de un error 404, probablemente olvidó agregar el protocolo `https://` en el código incrustado. De nuevo, solo debe especificar el protocolo `https://` si está cargando la página de muestra mediante el protocolo `file://`. Realice un cambio y vuelva a cargar la página hasta que aparezca el error 404.
 
 ## Prácticas recomendadas de implementación de etiquetas
 

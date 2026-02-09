@@ -1,24 +1,29 @@
 ---
-title: Publish su propiedad de etiquetas
-description: Obtenga información sobre cómo publicar la propiedad de etiquetas del entorno de desarrollo en los entornos de ensayo y producción. Esta lección forma parte del tutorial Implementación del Experience Cloud en sitios web.
+title: Publicación de la propiedad de etiquetas
+description: Obtenga información sobre cómo publicar la propiedad de etiquetas del entorno de desarrollo en los entornos de ensayo y producción. Esta lección forma parte del tutorial Implementación de Experience Cloud en sitios web.
 exl-id: dec70472-cecc-4630-b68e-723798f17a56
-source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 58%
+source-wordcount: '603'
+ht-degree: 55%
 
 ---
 
-# Publish su propiedad de etiquetas
+# Publicación de la propiedad de etiquetas
 
 Después de haber implementado varias soluciones clave de Adobe Experience Cloud en su entorno de desarrollo, es hora de analizar el flujo de trabajo de publicación.
+
+
+>[!WARNING]
+>
+> Se espera que el sitio web de Luma utilizado en este tutorial se sustituya durante la semana del 16 de febrero de 2026. Es posible que el trabajo realizado como parte de este tutorial no sea aplicable al nuevo sitio web.
 
 >[!NOTE]
 >
 >Adobe Experience Platform Launch se está integrando en Adobe Experience Platform como un conjunto de tecnologías de recopilación de datos. Se han implementado varios cambios terminológicos en la interfaz que debe tener en cuenta al utilizar este contenido:
 >
-> * El platform launch (lado del cliente) ahora es **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=es)**
-> * El lado del servidor de platform launch ahora es **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=es)**
+> * Platform Launch (lado del cliente) ahora es **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=es)**
+> * El lado del servidor de Platform Launch ahora es **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * Ahora, las configuraciones de Edge son **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=es)**
 
 ## Objetivos de aprendizaje
@@ -61,7 +66,7 @@ En un escenario en tiempo real, el siguiente paso del proceso sería que el equi
 
    ![Vaya a la página Entornos y haga clic para abrir el modal](images/publishing-getStagingCode.png)
 
-1. Haga clic en el icono ![Copiar](images/launch-copyIcon.png) para copiar el código de incrustación en el portapapeles.
+1. Haga clic en el icono ![Copiar](images/launch-copyIcon.png) para copiar el código incrustado en el portapapeles.
 
 1. Haga clic en **[!UICONTROL Cerrar]** para cerrar el modal
 
@@ -69,13 +74,13 @@ En un escenario en tiempo real, el siguiente paso del proceso sería que el equi
 
 1. Abra [el sitio de ejemplo de Luma](https://luma.enablementadobe.com/content/luma/us/en.html) en el navegador Chrome.
 
-1. Abra [Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) haciendo clic en el icono ![Debugger](images/icon-debugger.png)
+1. Abra la [extensión de Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) haciendo clic en el icono ![Debugger](images/icon-debugger.png)
 
    ![Haga clic en el icono de Debugger](images/switchEnvironments-openDebugger.png)
 
 1. Vaya a la pestaña Herramientas.
 
-1. En la sección **[!UICONTROL Launch de Adobe > Reemplazar código de incrustación de Launch]**, pegue el código de incrustación de ensayo que se encuentra en el portapapeles.
+1. En la sección **[!UICONTROL Adobe Launch > Reemplazar código de incrustación de Launch]**, pegue el código de incrustación de ensayo que se encuentra en el portapapeles.
 1. Activar el conmutador **[!UICONTROL Aplicar en luma.enablementadobe.com]**
 
 1. Haga clic en el icono de disco para guardar.
@@ -102,11 +107,11 @@ En realidad, una vez que el equipo de control de calidad ha cerrado sesión al r
 
 1. La biblioteca ahora aparece en la columna [!UICONTROL Aprobado] en el estado sin compilar (punto amarillo):
 
-1. Abra el menú desplegable y seleccione **[!UICONTROL Generar y Publish en producción]**:
+1. Abra el menú desplegable y seleccione **[!UICONTROL Generar y publicar en producción]**:
 
    ![Haga clic en Generar y publicar en producción](images/publishing-buildAndPublishToProduction.png)
 
-1. Haga clic en **[!UICONTROL Publish]** en el cuadro de diálogo:
+1. Haga clic en **[!UICONTROL Publicar]** en el cuadro de diálogo:
 
    ![Haga clic en Publicar](images/publishing-publish.png)
 

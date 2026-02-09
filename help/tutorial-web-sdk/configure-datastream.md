@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo habilitar un flujo de datos y conf
 feature: Web SDK,Datastreams
 jira: KT-15399
 exl-id: 20f770d1-eb0f-41a9-b451-4069a0a91fc4
-source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '567'
 ht-degree: 8%
 
 ---
@@ -15,7 +15,11 @@ ht-degree: 8%
 
 Obtenga información sobre cómo configurar una secuencia de datos para el SDK web de Adobe Experience Platform.
 
-[Flujos de datos](https://experienceleague.adobe.com/es/docs/experience-platform/datastreams/overview) indican a Adobe Experience Platform Edge Network dónde enviar los datos recopilados por Platform Web SDK. En la configuración de flujos de datos, se habilitan las aplicaciones de Experience Cloud, la cuenta de Experience Platform y el reenvío de eventos.
+[Flujos de datos](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) indican a Adobe Experience Platform Edge Network dónde enviar los datos recopilados por Platform Web SDK. En la configuración de flujos de datos, se habilitan las aplicaciones de Experience Cloud, la cuenta de Experience Platform y el reenvío de eventos.
+
+>[!WARNING]
+>
+> Se espera que el sitio web de Luma utilizado en este tutorial se sustituya durante la semana del 16 de febrero de 2026. Es posible que el trabajo realizado como parte de este tutorial no sea aplicable al nuevo sitio web.
 
 ![Web SDK, flujos de datos y diagrama de Edge Network](assets/dc-websdk-datastreams.png)
 
@@ -65,7 +69,7 @@ En la siguiente pantalla, puede agregar servicios como aplicaciones de Adobe al 
 
 ## Anular una secuencia de datos
 
-[Anulaciones de secuencia de datos](https://experienceleague.adobe.com/es/docs/experience-platform/datastreams/overrides) le permiten definir configuraciones adicionales para su secuencia de datos y luego anular la configuración predeterminada en ciertas condiciones.
+[Anulaciones de secuencia de datos](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides) le permiten definir configuraciones adicionales para su secuencia de datos y luego anular la configuración predeterminada en ciertas condiciones.
 
 La anulación de la configuración del flujo de datos es un proceso de dos pasos:
 
@@ -78,4 +82,4 @@ Ya está listo para instalar la extensión de Platform Web SDK en su propiedad d
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=es)
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
