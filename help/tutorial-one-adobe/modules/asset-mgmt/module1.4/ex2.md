@@ -70,7 +70,7 @@ Agregar 2x **1:1 columna** al lienzo.
 
 ![Journey Optimizer](./images/gsemail29.png)
 
-Vaya a **Fragmentos**, arrastre el fragmento **encabezado** a la primera columna {1:1 y, a continuación, arrastre el fragmento **pie de página** a la segunda columna {1:1.
+Vaya a **Fragmentos**, arrastre el fragmento **encabezado** a la primera columna &lbrace;1:1 y, a continuación, arrastre el fragmento **pie de página** a la segunda columna &lbrace;1:1.
 
 ![Journey Optimizer](./images/gsemail30.png)
 
