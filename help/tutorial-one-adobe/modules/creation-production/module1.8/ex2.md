@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 39854816-4572-46e5-8fe4-861da1eb41cf
-source-git-commit: c92e21cbc385eb1cf31887c1f829af0e9ddf6ae6
+source-git-commit: 8f746831d4a1481f8ccc14539273c4b16ca5170b
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -143,9 +143,13 @@ Entonces debería ver esto. Pase el ratón sobre el archivo **timetravelnow.png*
 
 ![WF](./images/wffio14.png)
 
-Como jefe de proyecto, ahora puede ver la versión actual de esa imagen para saber qué está sucediendo y en qué se está trabajando activamente.
+Como jefe de proyecto, ahora puede ver la versión actual de esa imagen para saber qué está sucediendo y en qué se está trabajando activamente. Haga clic en **Abrir en Frame.io**.
 
 ![WF](./images/wffio15.png)
+
+A continuación, se abrirá una nueva ventana en la que se mostrará el recurso en Frame.io.
+
+![WF](./images/wffio15a.png)
 
 ## 1.8.2.5 aprobar el recurso
 

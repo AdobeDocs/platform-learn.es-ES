@@ -3,10 +3,11 @@ title: Uso de la plantilla de medios dinámicos con Adobe Journey Optimizer
 description: Uso de la plantilla de medios dinámicos con Adobe Journey Optimizer
 kt: 5342
 doc-type: tutorial
-source-git-commit: 261475b85bfb15f7e9f630d1c5203732c2d4c254
+exl-id: 0dd499cc-ec3b-42c3-9c08-6512ea5b9377
+source-git-commit: 8f746831d4a1481f8ccc14539273c4b16ca5170b
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 0%
+source-wordcount: '637'
+ht-degree: 2%
 
 ---
 
@@ -70,7 +71,7 @@ Agregar 2x **1:1 columna** al lienzo.
 
 ![Journey Optimizer](./images/gsemail29.png)
 
-Vaya a **Fragmentos**, arrastre el fragmento **encabezado** a la primera columna &lbrace;1:1 y, a continuación, arrastre el fragmento **pie de página** a la segunda columna &lbrace;1:1.
+Vaya a **Fragmentos**, arrastre el fragmento **encabezado** a la primera columna {1:1 y, a continuación, arrastre el fragmento **pie de página** a la segunda columna {1:1.
 
 ![Journey Optimizer](./images/gsemail30.png)
 
@@ -82,9 +83,69 @@ Vaya a la carpeta en la que ha almacenado la plantilla de Dynamic Media. Selecci
 
 ![Journey Optimizer](./images/gsemail32.png)
 
-Entonces debería ver esto.
+Entonces debería ver esto. Tú también. observe los **PARÁMETROS** que le permiten cambiar los parámetros de la plantilla de dynamic media.
 
 ![Journey Optimizer](./images/gsemail33.png)
+
+## 1.4.2.2 Personalizar la plantilla de medios dinámicos
+
+Como se trató en el ejercicio anterior, AJO ahora necesita decidir dinámicamente cuáles deben ser los valores que formen parte de la plantilla de Dynamic Media.
+
+Al igual que en el paso **Vista previa** del ejercicio anterior, los campos **city_paris**, **city_dubai** y **city_ny** deben establecerse en 1, lo que significa que estas imágenes se ocultarán.
+
+Para el campo **title**, haga clic en el icono de personalización.
+
+![Journey Optimizer](./images/gsemail34.png)
+
+Reemplazar el texto predeterminado por: `Hi {{profile.person.name.firstName}}`. Haga clic en **Guardar**.
+
+![Journey Optimizer](./images/gsemail35.png)
+
+Para el campo **body**, haga clic en el icono de personalización.
+
+![Journey Optimizer](./images/gsemail36.png)
+
+Reemplazar el texto predeterminado por: `CitiSignal is coming to {{profile.homeAddress.city}}!`. Haga clic en **Guardar**.
+
+![Journey Optimizer](./images/gsemail37.png)
+
+Asegúrese de que el campo **`dynamic_city_hide`** esté establecido en 0. Haga clic en el icono de personalización del campo **`dynamic_city_image`**.
+
+![Journey Optimizer](./images/gsemail38.png)
+
+Reemplazar el texto predeterminado por: `--aepUserLdap--CitiSignalDM/citisignal-fiber-max-is-coming_citisignal-{{profile._experienceplatform.individualCharacteristics.fiber_rollout.closest_rollout_city}}-1`. Haga clic en **Guardar**.
+
+![Journey Optimizer](./images/gsemail39.png)
+
+Entonces debería ver esto. La imagen ya no se representa aquí, lo que se espera, ya que las variables dinámicas no están disponibles en el contexto del editor de correo electrónico.
+
+Haga clic en **Guardar**.
+
+![Journey Optimizer](./images/gsemail40.png)
+
+Para probar la configuración, haz clic en **Simular contenido** y luego selecciona **Simular contenido**.
+
+![Journey Optimizer](./images/gsemail41.png)
+
+Entonces deberías ver algo como esto. Si no tiene perfiles de prueba disponibles, puede agregarlos en **Administrar perfiles de prueba**.
+
+Una vez que tenga disponibles perfiles de prueba que contengan los datos necesarios para probar este caso de uso, puede cambiar de un perfil a otro para ver que los cambios se producen de forma dinámica.
+
+Este es un perfil vinculado a la ciudad de lanzamiento en Nueva York.
+
+![Journey Optimizer](./images/gsemail42.png)
+
+Este es un perfil vinculado a la ciudad de despliegue París.
+
+![Journey Optimizer](./images/gsemail43.png)
+
+Este es un perfil vinculado a la ciudad de despliegue de Dubai.
+
+Haga clic en **Cerrar**.
+
+![Journey Optimizer](./images/gsemail44.png)
+
+Ya ha terminado este ejercicio. No es necesario publicar la campaña de correo electrónico.
 
 ## Pasos siguientes
 
