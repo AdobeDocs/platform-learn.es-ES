@@ -47,7 +47,7 @@ Entonces debería ver esto.
 
 ![Medios dinámicos para AEM Assets](./images/aaemassdmcomp4.png)
 
-Ahora debería recibir un correo electrónico como el de abajo, que contiene su contraseña temporal. Para cambiar la contraseña o recuperarla en caso de que no hayas recibido un correo electrónico, debes instalar **Adobe Dynamic Media Classic desktop app**. Puede encontrar las instrucciones de instalación aquí: [https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app).
+Ahora debería recibir un correo electrónico como el de abajo, que contiene su contraseña temporal. Para cambiar la contraseña o recuperarla en caso de que no hayas recibido un correo electrónico, debes instalar **Adobe Dynamic Media Classic desktop app**. Puede encontrar las instrucciones de instalación aquí: [https://experienceleague.adobe.com/es/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app](https://experienceleague.adobe.com/es/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app).
 
 Siga las instrucciones allí y vuelva aquí una vez que la aplicación esté instalada en el sistema.
 
