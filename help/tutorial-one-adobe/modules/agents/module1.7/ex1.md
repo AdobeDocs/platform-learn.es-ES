@@ -4,7 +4,7 @@ description: Configuración del entorno de desarrollo
 kt: 5342
 doc-type: tutorial
 exl-id: c9bfb327-362f-4475-89da-8e9788940d56
-source-git-commit: ce3ee3dde103383a6f7897cba36d548058879ea7
+source-git-commit: 25901342e8d9c46b0edce3b2092b9f1d66ba5849
 workflow-type: tm+mt
 source-wordcount: '640'
 ht-degree: 2%
@@ -31,7 +31,7 @@ Seleccione **App Builder**.
 
 ![Extensibilidad GSPeM](./images/commerceagent2.png)
 
-Escriba el nombre `--aepUserLdap-- vangeluw Commerce Events`. Haga clic en **Guardar**.
+Escriba el nombre `--aepUserLdap-- Commerce Events`. Haga clic en **Guardar**.
 
 ![Extensibilidad GSPeM](./images/commerceagent4.png)
 
@@ -175,7 +175,7 @@ Ahora ha configurado los elementos básicos para poder ejecutar un proyecto de A
 
 ## Pasos siguientes
 
-Vaya a [Usar Cursor.ai para desarrollar el proyecto](./ex2.md){target="_blank"}
+Vaya a [Usar cursor para desarrollar el proyecto](./ex2.md){target="_blank"}
 
 Volver a [Herramientas inteligentes para desarrolladores para Adobe Commerce](./aiassisteddev.md){target="_blank"}
 

@@ -3,7 +3,7 @@ title: Panorama general de los laboratorios técnicos de inteligencia artificial
 description: Panorama general de los laboratorios técnicos de inteligencia artificial
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 2bfa7f4bee54df8411c96b001224d2986e9fcaf9
+source-git-commit: 79e869a8764224b630c1523d272316e37c93d65a
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%
@@ -77,7 +77,7 @@ En este ejercicio aprenderá a hacer lo siguiente:
 
 **Meta**
 
-En este módulo usará herramientas inteligentes para desarrolladores como Cursor.ai para desarrollar una extensión para su entorno de as a Cloud Service de Adobe Commerce. El objetivo de esa extensión es reenviar los eventos de pedidos entrantes a un extremo de terceros. El reenvío de eventos en Adobe Commerce as a Cloud Service se basa en Adobe I/O App Builder, Adobe I/O Events y Adobe I/O Runtime. La configuración de todos estos servicios será asistida por Cursor.ai.
+En este módulo utilizará herramientas inteligentes para desarrolladores como Cursor para desarrollar una extensión para su entorno de as a Cloud Service de Adobe Commerce. El objetivo de esa extensión es reenviar los eventos de pedidos entrantes a un extremo de terceros. El reenvío de eventos en Adobe Commerce as a Cloud Service se basa en Adobe I/O App Builder, Adobe I/O Events y Adobe I/O Runtime. La configuración de todos estos servicios será asistida por Cursor.
 
 ![Perspectivas técnicas](./assets/images/techinsiders.png){width="50px" align="left"}
 
