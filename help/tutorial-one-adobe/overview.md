@@ -3,9 +3,9 @@ title: 'Información general: tutorial técnico completo: One Adobe'
 description: 'Tutorial técnico completo: One Adobe'
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
+source-git-commit: 2bfa7f4bee54df8411c96b001224d2986e9fcaf9
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1325'
 ht-degree: 2%
 
 ---
@@ -94,6 +94,14 @@ En este módulo, utilizará Adobe Frame.io en combinación con Adobe Premiere Pr
 
 En este módulo, creará una aplicación personalizada para ampliar la capacidad en GenStudio for Performance Marketing mediante Adobe IO y App Builder.
 
+[1.7 Generador de flujo de trabajo](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"}
+
+En este módulo, utilizará Workflow Builder para resolver casos de uso repetibles de diseño creativo y automatización.
+
+[1.8 Revisión y aprobación unificadas con Workfront, Frame.io y administración de almacenamiento empresarial](./modules/creation-production/module1.8/esm.md){target="_blank"}
+
+En este módulo, conectará las funcionalidades de administración de proyectos y trabajo de Workfront directamente con la experiencia de colaboración y revisión en tiempo real de Frame.io.
+
 ### &#x200B;3. Administración de recursos y sitios
 
 [1.1 Adobe Experience Manager Cloud Service &amp; Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
@@ -103,6 +111,10 @@ En este módulo, configurará el programa Adobe Experience Manager Cloud Service
 [1.2 Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"}
 
 En este módulo, explorará los AEM Assets.
+
+[1.4 Adobe Experience Manager Assets y Dynamic Media](./modules/asset-mgmt/module1.4/aemassetsdm.md){target="_blank"}
+
+En este módulo, configurará AEM Assets y Dynamic Media y utilizará su plantilla de Dynamic Media en Adobe Journey Optimizer.
 
 [1.5 Adobe Commerce as a Cloud Service](./modules/asset-mgmt/module1.5/accs.md){target="_blank"}
 
@@ -138,7 +150,7 @@ En este módulo, aprenderá a configurar y utilizar Adobe Experience Platform In
 
 En este módulo, configurará una audiencia y la activará en varios destinos, incluidos Google DV360, Adobe Target y AWS S3.
 
-[2.4 Real-Time CDP: Audience Activation a Microsoft Azure Event Hub](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/segment-activation-microsoft-azure-eventhub.md)
+[2.4 Real-Time CDP: Centro de eventos de Audience Activation a Microsoft Azure](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/segment-activation-microsoft-azure-eventhub.md)
 
 En este módulo, configurará un destino de Microsoft Azure EventHub como un destino en tiempo real para Adobe Experience Platform Real-time CDP.
 

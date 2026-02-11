@@ -4,9 +4,9 @@ breadcrumb-title: Un tutorial técnico de Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 5f3add0f1304d95fdd4da06909dca80151c8a9f1
+source-git-commit: 2bfa7f4bee54df8411c96b001224d2986e9fcaf9
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1505'
 ht-degree: 3%
 
 ---
@@ -289,3 +289,4 @@ ht-degree: 3%
    + 1.7 Herramientas inteligentes para desarrolladores para Adobe Commerce {#agents7}
       + [Información general](/help/tutorial-one-adobe/modules/agents/module1.7/aiassisteddev.md)
       + [1.7.1 Configuración del entorno de desarrollo](/help/tutorial-one-adobe/modules/agents/module1.7/ex1.md)
+      + [1.7.2 Use Cursor.ai para desarrollar su proyecto](/help/tutorial-one-adobe/modules/agents/module1.7/ex2.md)

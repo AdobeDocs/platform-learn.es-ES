@@ -3,9 +3,9 @@ title: Panorama general de los laboratorios técnicos de inteligencia artificial
 description: Panorama general de los laboratorios técnicos de inteligencia artificial
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
+source-git-commit: 2bfa7f4bee54df8411c96b001224d2986e9fcaf9
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,12 @@ En este ejercicio aprenderá a hacer lo siguiente:
 
 - Conecte ChatGPT y/o Claude.ai a **Customer Journey Analytics** y realice tareas de análisis de datos
 - Conecte ChatGPT y/o Claude.ai a **Adobe Analytics** y realice tareas de análisis de datos
+
+[1.7 Herramientas inteligentes para desarrolladores para Adobe Commerce](./modules/agents/module1.7/aiassisteddev.md)
+
+**Meta**
+
+En este módulo usará herramientas inteligentes para desarrolladores como Cursor.ai para desarrollar una extensión para su entorno de as a Cloud Service de Adobe Commerce. El objetivo de esa extensión es reenviar los eventos de pedidos entrantes a un extremo de terceros. El reenvío de eventos en Adobe Commerce as a Cloud Service se basa en Adobe I/O App Builder, Adobe I/O Events y Adobe I/O Runtime. La configuración de todos estos servicios será asistida por Cursor.ai.
 
 ![Perspectivas técnicas](./assets/images/techinsiders.png){width="50px" align="left"}
 
