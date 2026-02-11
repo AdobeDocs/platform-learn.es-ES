@@ -4,9 +4,9 @@ description: 'Foundation: configuración de la recopilación de datos de Adobe E
 kt: 5342
 doc-type: tutorial
 exl-id: 8c613648-9007-49fb-898f-039c366297da
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 23816907de778cbe3b9708f4a7273bdcb8e86d5c
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ Este módulo presenta algunos conceptos y tecnologías que tienen un impacto que
 - Conozca los flujos de datos que utiliza una marca para introducir datos en sus productos de Adobe.
 - Obtenga información sobre cómo enviar datos a Adobe Experience Platform y otros productos a través de Adobe Experience Platform Edge Network.
 - Obtenga información sobre cómo crear elementos de datos y reglas que recopilen datos de aplicaciones web y móviles.
-- Obtenga información acerca de los eventos de seguimiento de [Web SDK](https://experienceleague.adobe.com/es/docs/experience-platform/web-sdk/home) y cómo depurar su contenido.
+- Obtenga información acerca de los eventos de seguimiento de [Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) y cómo depurar su contenido.
 - Descubra qué es una capa de datos y qué recomienda Adobe al implementar una.
-- Conozca cuáles son los pasos para implementar [Web SDK](https://experienceleague.adobe.com/es/docs/experience-platform/web-sdk/home) desde cero.
+- Conozca cuáles son los pasos para implementar [Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) desde cero.
 - Descubra la diferencia entre una implementación web y una implementación móvil.
 
 ## Requisitos previos
@@ -67,10 +67,6 @@ En este ejercicio, configure una actividad en Adobe Target, implementada mediant
 [1.1.7 Requisitos de esquema XDM en Adobe Experience Platform](./ex7.md)
 
 Para garantizar que Web SDK pueda introducir datos en Adobe Experience Platform, se necesita que una mezcla XDM específica forme parte del esquema XDM en Adobe Experience Platform.
-
-[Resumen y beneficios](./summary.md)
-
-Resumen de este módulo y descripción general de las ventajas.
 
 ![Perspectivas técnicas](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

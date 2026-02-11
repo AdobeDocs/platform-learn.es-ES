@@ -4,9 +4,9 @@ description: 'Real-time CDP: destinos SDK'
 kt: 5342
 doc-type: tutorial
 exl-id: c18acbf5-92f5-4cd2-a5aa-a5e9debb98c9
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '1131'
+source-wordcount: '1126'
 ht-degree: 5%
 
 ---
@@ -160,7 +160,7 @@ Ahora necesita reemplazar el marcador de posición **{{body}}** por el siguiente
         }
     ],
     "uiAttributes": {
-        "documentationLink": "https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=es",
+        "documentationLink": "https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en",
         "category": "streaming",
         "connectionType": "Server-to-server",
         "frequency": "Streaming"
@@ -299,8 +299,6 @@ Ahora, vuelva al gancho web abierto en [https://eodts05snjmjz67.m.pipedream.net]
 ![Ingesta de datos](./images/destsdk10.png)
 
 ## Pasos siguientes
-
-Ir a [Resumen y beneficios](./summary.md){target="_blank"}
 
 Volver a [CDP en tiempo real: cree una audiencia y tome medidas](./real-time-cdp-build-a-segment-take-action.md){target="_blank"}
 

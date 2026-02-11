@@ -4,9 +4,9 @@ description: Foundation - Ingesta de datos - Ingesta de datos desde fuentes sin 
 kt: 5342
 doc-type: tutorial
 exl-id: 9fce6ece-f454-45de-9c95-35d604b3ae95
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 23816907de778cbe3b9708f4a7273bdcb8e86d5c
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '767'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 En este ejercicio, el objetivo es configurar el conector Source de la zona de aterrizaje de datos con el almacenamiento del blob de Azure.
 
-La zona de aterrizaje de datos es una interfaz de almacenamiento del blob de Azure proporcionada por Adobe Experience Platform, que le permite acceder a una función de almacenamiento de archivos segura y basada en la nube para introducir archivos en Platform. La zona de aterrizaje de datos admite la autenticación basada en SAS y sus datos están protegidos con mecanismos de seguridad de almacenamiento del blob de Azure estándar en reposo y en tránsito. La autenticación basada en SAS le permite acceder de forma segura a su contenedor de zona de aterrizaje de datos a través de una conexión pública a Internet.
+La zona de aterrizaje de datos es una interfaz de almacenamiento del blob de Azure proporcionada por Adobe Experience Platform que le permite acceder a una función de almacenamiento de archivos segura y basada en la nube para introducir archivos en Platform. La zona de aterrizaje de datos admite la autenticación basada en SAS y sus datos están protegidos con mecanismos de seguridad de almacenamiento estándar del blob de Azure en reposo y en tránsito. La autenticación basada en SAS le permite acceder de forma segura a su contenedor de zona de aterrizaje de datos a través de una conexión pública a Internet.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Para copiar blobs o archivos en la zona de aterrizaje de datos de Adobe Experien
 
 ![dlz-unzip-azcopy.png](./images/dlzunzipazcopy.png)
 
-## 1.2.5.2 Conexión de la zona de aterrizaje de datos a Adobe Experience Platform
+## 1.2.5.2: conectar la zona de aterrizaje de datos a Adobe Experience Platform
 
 Inicie sesión en Adobe Experience Platform desde esta dirección URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
@@ -66,9 +66,9 @@ Haga clic en el icono como se indica para copiar **SASUri**.
 
 ## Copie el archivo CSV en la zona de aterrizaje de datos de AEP
 
-Ahora, ingerirá datos en Adobe Experience Platform mediante las herramientas de línea de comandos de Azure con AZCopy.
+Ahora, ingerirá datos en Adobe Experience Platform mediante las herramientas de línea de comandos de Azure y AZCopy.
 
-Abra un terminal en la ubicación de su ubicación de instalación de AEP y ejecute el siguiente comando para copiar un archivo en la zona de aterrizaje de datos de AEP:
+Abra un terminal en la ubicación de su ubicación de instalación de azcopy y ejecute el siguiente comando para copiar un archivo en la zona de aterrizaje de datos de AEP:
 
 ``./azcopy copy <your-local-file> <your SASUri>``
 
@@ -138,7 +138,7 @@ Seleccione el campo ``--aepTenantId--``.identification.core.ecid en la estructur
 
 Debe asignar otros campos, haga clic en **+ Nuevo tipo de campo** seguido de **Agregar nuevo campo** y agregue campos para esta asignación
 
-| origen | destino |
+| origen | Target |
 |---|---|
 | resource.info.pagename | web.webPageDetails.name |
 | timestamp | timestamp |
@@ -169,8 +169,6 @@ La carga de los datos puede tardar un par de minutos. Si se realiza correctament
 ![dlz-monitor-dataflow-result.png](./images/dlzmonitordataflowresult.png)
 
 ## Pasos siguientes
-
-Ir a [Resumen y beneficios](./summary.md){target="_blank"}
 
 Volver a [Ingesta de datos](./data-ingestion.md){target="_blank"}
 

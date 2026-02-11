@@ -4,9 +4,9 @@ description: En este módulo, aprenderá todo lo que debe saber sobre Journey Op
 kt: 5342
 doc-type: tutorial
 exl-id: b1422971-ffce-4f4f-9bd8-986f5f1537c3
-source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '240'
 ht-degree: 2%
 
 ---
@@ -44,10 +44,6 @@ En este ejercicio, configurará una campaña de correo electrónico tradicional.
 [3.4.3 Aplicar la personalización basada en segmentos en un mensaje de correo electrónico](./ex3.md)
 
 En este ejercicio, utilizará las suscripciones a segmentos para definir qué contenido se mostrará dentro de un correo electrónico.
-
-[Resumen y beneficios](./summary.md)
-
-Resumen de este módulo y descripción general de las ventajas.
 
 ![Perspectivas técnicas](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

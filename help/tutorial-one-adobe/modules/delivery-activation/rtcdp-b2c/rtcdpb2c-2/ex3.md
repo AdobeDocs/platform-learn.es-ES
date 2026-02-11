@@ -4,9 +4,9 @@ description: 'Inteligencia artificial aplicada al cliente: panel de puntuación 
 kt: 5342
 doc-type: tutorial
 exl-id: a6df3ff1-f907-4185-8189-f0b39c67c943
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '269'
 ht-degree: 1%
 
 ---
@@ -55,13 +55,11 @@ Ahora puede utilizar este segmento para la segmentación mediante, por ejemplo, 
 
 ## Cleanup
 
-Para asegurarse de que no se conserven datos de demostración innecesarios en su entorno, asegúrese de eliminar el conjunto de datos `--aepUserLdap-- - Demo System - Customer Experience Event Dataset` una vez que haya completado correctamente este ejercicio. Si no elimina los datos de demostración, su instancia de AEP tendrá un impacto en los costes.
+Para asegurarse de que no se conserven datos de demostración innecesarios en su entorno, asegúrese de eliminar el conjunto de datos `--aepUserLdap-- - Demo System - Customer Experience Event Dataset` una vez que haya completado correctamente este ejercicio. Si no elimina los datos de demostración, la instancia de AEP tendrá un impacto en los costes.
 
 ![Perfil](./images/cleanup.png)
 
 ## Pasos siguientes
-
-Ir a [Resumen y beneficios](./summary.md){target="_blank"}
 
 Volver a [Servicios inteligentes](./intelligent-services.md){target="_blank"}
 

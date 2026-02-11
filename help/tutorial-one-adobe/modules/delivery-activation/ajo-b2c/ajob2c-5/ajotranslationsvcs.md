@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer Translation Services
 kt: 5342
 doc-type: tutorial
 exl-id: c0b3e37f-69f5-41e3-8663-0dcf736d1fc0
-source-git-commit: b407941266a3d6151363f07592bd445034d44909
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '154'
+source-wordcount: '142'
 ht-degree: 2%
 
 ---
@@ -35,10 +35,6 @@ En este ejercicio, configurará el proveedor de traducciones con Microsoft Trans
 [3.5.3 Añadir idiomas a tu correo electrónico](./ex3.md)
 
 En este ejercicio, agregará idiomas al correo electrónico en la campaña.
-
-[Resumen y beneficios](./summary.md)
-
-Resumen de este módulo y descripción general de las ventajas.
 
 ![Perspectivas técnicas](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

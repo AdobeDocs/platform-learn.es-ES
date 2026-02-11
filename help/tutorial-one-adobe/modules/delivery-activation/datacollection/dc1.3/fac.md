@@ -4,9 +4,9 @@ description: 'Recopilación de datos: composición de audiencia federada'
 kt: 5342
 doc-type: tutorial
 exl-id: a2449e72-794a-4ff0-a208-28303fd574d1
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 23816907de778cbe3b9708f4a7273bdcb8e86d5c
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
@@ -47,10 +47,6 @@ En este ejercicio, configurará el modelo de datos en AEP para los datos federad
 [1.3.3 Crear una composición federada](./ex3.md)
 
 En este ejercicio, configurará el modelo de datos en AEP para los datos federados.
-
-[Resumen y beneficios](./summary.md)
-
-Resumen de este módulo y descripción general de las ventajas.
 
 ![Perspectivas técnicas](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

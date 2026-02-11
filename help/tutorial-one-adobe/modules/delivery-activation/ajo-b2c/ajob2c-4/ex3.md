@@ -4,9 +4,9 @@ description: Este ejercicio explica cómo utilizar la personalización de segmen
 kt: 5342
 doc-type: tutorial
 exl-id: a1ad649e-d0c4-4e87-b784-1e2d99f34a2e
-source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '388'
 ht-degree: 1%
 
 ---
@@ -53,7 +53,7 @@ Abra **Componentes de contenido** y arrastre una columna **1:1** sobre la oferta
 
 ![Journey Optimizer](./images/sbp6.png)
 
-Arrastre y suelte un componente **Text** en esa columna 1:1.
+Arrastre y suelte un componente **Text** en esa columna :1.
 
 ![Journey Optimizer](./images/sbp6a.png)
 
@@ -71,12 +71,12 @@ Seleccione el segmento `--aepUserLdap-- - Interest in Plans` y haga clic en el i
 
 A continuación, debe dejar la primera línea tal cual, y sustituir las líneas 2 y 3 por este código:
 
-&grave;&grave;
+``
     PS: It may be a good idea to check if your plan still meets your needs! Click here to be contacted by one of our experts!
 {%else%}
     PS: Thanks for taking the time to read our newsletter. Here is a 10% promo code to use on the website: NEWSLETTER10
 {%/if%}
-&grave;&grave;
+``
 
 Entonces, tendrás esto. Haga clic en **Guardar**.
 
@@ -107,8 +107,6 @@ Si cumple los requisitos para el segmento utilizado, verá esto en el correo ele
 Ha terminado este ejercicio.
 
 ## Pasos siguientes
-
-Ir a [Resumen y beneficios](./summary.md){target="_blank"}
 
 Volver a [Adobe Journey Optimizer](journeyoptimizer.md){target="_blank"}
 

@@ -1,21 +1,21 @@
 ---
-title: 'Audience Activation a Microsoft Azure Event Hub: acción'
-description: 'Audience Activation a Microsoft Azure Event Hub: acción'
+title: 'Centro de eventos de Audience Activation a Microsoft Azure: acción'
+description: 'Centro de eventos de Audience Activation a Microsoft Azure: acción'
 kt: 5342
 doc-type: tutorial
 exl-id: bff4d2ee-eaff-4b56-9fa0-4ffc3c368141
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '422'
 ht-degree: 0%
 
 ---
 
 # 2.4.7 Escenario de extremo a extremo
 
-## Iniciar déclencheur de Azure Event Hub
+## Iniciar el déclencheur de Azure Event Hub
 
-Para mostrar la carga útil enviada por Adobe Experience Platform Real-time CDP a nuestro Azure Event Hub tras la calificación de audiencia, necesitamos iniciar nuestra función de déclencheur simple de Azure Event Hub. Esta función simplemente &quot;volcará&quot; la carga útil a la consola en Visual Studio Code. Pero recuerde que esta función se puede ampliar de cualquier manera para interactuar con todo tipo de entornos utilizando API y protocolos dedicados.
+Para mostrar la carga útil enviada por Adobe Experience Platform Real-time CDP a nuestro centro de eventos de Azure tras la calificación de audiencia, necesitamos iniciar nuestra función de déclencheur simple del centro de eventos de Azure. Esta función simplemente &quot;volcará&quot; la carga útil a la consola en Visual Studio Code. Pero recuerde que esta función se puede ampliar de cualquier manera para interactuar con todo tipo de entornos utilizando API y protocolos dedicados.
 
 ### Iniciar código de Visual Studio e iniciar proyecto
 
@@ -109,8 +109,6 @@ Si examina más de cerca la carga de la audiencia, verá que `--aepUserLdap-- - 
 Un estado de audiencia de **realizado** significa que tu perfil forma parte de la audiencia, mientras que el estado de **saliente** significa que nuestro perfil se ha eliminado de la audiencia.
 
 ## Pasos siguientes
-
-Ir a [Resumen y beneficios](./summary.md){target="_blank"}
 
 Volver a [Real-Time CDP: Audience Activation a Microsoft Azure Event Hub](./segment-activation-microsoft-azure-eventhub.md){target="_blank"}
 

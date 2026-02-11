@@ -4,9 +4,9 @@ description: Configuración de una campaña con mensajes en la aplicación
 kt: 5342
 doc-type: tutorial
 exl-id: c40b9b8c-9717-403c-bf02-6b8f42a59c05
-source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -124,8 +124,6 @@ Luego se le redirigirá a la página **Planes**.
 ![EnLaAplicación](./images/inapp22.png)
 
 ## Pasos siguientes
-
-Ir a [Resumen y beneficios](./summary.md){target="_blank"}
 
 Volver a [Adobe Journey Optimizer: mensajes push y en la aplicación](ajopushinapp.md){target="_blank"}
 

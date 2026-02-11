@@ -6,9 +6,9 @@ audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: fcf4fd2d-8225-408c-b394-539860ee2997
-source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '217'
 ht-degree: 3%
 
 ---
@@ -44,10 +44,6 @@ En este ejercicio configurará su propio recorrido, que enviará notificaciones 
 [3.3.3 Configuración de una campaña con mensajes en la aplicación](./ex3.md)
 
 En este ejercicio configurará una campaña que envíe mensajes en la aplicación a sus clientes.
-
-[Resumen y beneficios](./summary.md)
-
-Resumen de este módulo y descripción general de las ventajas.
 
 ![Perspectivas técnicas](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

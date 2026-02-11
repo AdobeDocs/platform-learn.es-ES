@@ -4,9 +4,9 @@ description: Foundation - FAC - Crear una composición federada
 kt: 5342
 doc-type: tutorial
 exl-id: 6c1773d1-ca2e-43e5-bfa7-6e5e0fbcf859
-source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
+source-git-commit: 23816907de778cbe3b9708f4a7273bdcb8e86d5c
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '495'
 ht-degree: 3%
 
 ---
@@ -146,8 +146,6 @@ La audiencia ahora se rellena y se puede segmentar desde el ecosistema de AEP.
 ![CARA](./images/fedcomp22.png)
 
 ## Pasos siguientes
-
-Ir a [Resumen y beneficios](./summary.md){target="_blank"}
 
 Volver a [composición de audiencia federada](./fac.md){target="_blank"}
 

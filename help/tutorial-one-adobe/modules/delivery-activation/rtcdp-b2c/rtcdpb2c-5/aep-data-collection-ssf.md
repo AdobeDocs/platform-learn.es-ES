@@ -4,9 +4,9 @@ description: En este módulo, se utilizarán los conjuntos de datos, esquemas y 
 kt: 5342
 doc-type: tutorial
 exl-id: dbf5e995-9c2e-4f72-b336-e942cb22cde5
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -58,10 +58,6 @@ En este ejercicio, creará y configurará una función de nube de Google y empez
 [2.5.5 Reenviar eventos a AWS Kinesis y AWS S3](./ex5.md)
 
 En este ejercicio, configurará el entorno de AWS mediante AWS IAM, AWS Kinesis, AWS Firefox y AWS S3, después de lo cual empezará a reenviar los datos de evento recopilados por Web SDK.
-
-[Resumen y beneficios](./summary.md)
-
-Resumen de este módulo y descripción general de las ventajas.
 
 ![Perspectivas técnicas](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

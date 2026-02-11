@@ -4,9 +4,9 @@ description: En este módulo, aprenderá a configurar su propio clúster de Apac
 kt: 5342
 doc-type: tutorial
 exl-id: 28c63675-272e-46ff-88fc-6cd4096d66ca
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '356'
 ht-degree: 1%
 
 ---
@@ -49,10 +49,6 @@ En este ejercicio, debe configurar un conector Source de la API HTTP en Adobe Ex
 [2.6.4 Instalar y configurar Kafka Connect y el conector del receptor de Adobe Experience Platform](./ex4.md)
 
 En este ejercicio, utilizará Kafka Connect para instalar y utilizar el conector del receptor de Adobe Experience Platform y enviará eventos a Adobe Experience Platform manualmente.
-
-[Resumen y beneficios](./summary.md)
-
-Resumen de este módulo y descripción general de las ventajas.
 
 ![Perspectivas técnicas](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 exl-id: 18b22ac4-313b-4b54-b480-dd6c27858e31
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '346'
 ht-degree: 1%
 
 ---
@@ -53,10 +53,6 @@ En este ejercicio, creará un segmento utilizando el Generador de segmentos de A
 [2.1.5 Ver el perfil del cliente en tiempo real en acción en el centro de llamadas](./ex5.md)
 
 En este ejercicio, suplantará a un empleado del centro de llamadas que recibe una llamada de un cliente. Para influir realmente en la experiencia de este cliente, debe tener acceso a toda la información disponible en tiempo real.
-
-[Resumen y beneficios](./summary.md)
-
-Resumen de este módulo y descripción general de las ventajas.
 
 ![Perspectivas técnicas](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

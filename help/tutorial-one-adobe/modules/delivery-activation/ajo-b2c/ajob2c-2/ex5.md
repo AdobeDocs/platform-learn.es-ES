@@ -4,9 +4,9 @@ description: 'Adobe Journey Optimizer: fuentes de datos externas y acciones pers
 kt: 5342
 doc-type: tutorial
 exl-id: 5c8cbec6-58c1-4992-a0c7-1a2b7c34e5b6
-source-git-commit: e3d3b8e3abdea1766594eca53255df024129cb2c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '633'
 ht-degree: 1%
 
 ---
@@ -120,8 +120,6 @@ Unos segundos más tarde, verá el mensaje de Adobe Journey Optimizer en el cana
 ![Demostración](./images/smsdemo4.png)
 
 ## Pasos siguientes
-
-Ir a [Resumen y beneficios](./summary.md){target="_blank"}
 
 Volver a [Adobe Journey Optimizer: fuentes de datos externas y acciones personalizadas](journey-orchestration-external-weather-api-sms.md){target="_blank"}
 

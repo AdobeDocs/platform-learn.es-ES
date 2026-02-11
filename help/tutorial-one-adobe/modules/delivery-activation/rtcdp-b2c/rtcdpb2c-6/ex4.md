@@ -4,9 +4,9 @@ description: Instalación y configuración de Kafka Connect y el conector del re
 kt: 5342
 doc-type: tutorial
 exl-id: 51ddfdfc-fa5c-4bf4-bfc2-b4a88b0b8a4d
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1075'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Coloque el archivo de descarga **streaming-connect-sink-0.0.27-java-11.jar** en 
 
 ## Configuración de Kafka Connect
 
-Vaya a la carpeta del escritorio **Kafka_AEP** y luego a la carpeta `kafka_2.13-3.9.0/config`.
+Vaya a la carpeta del escritorio **Kafka_AEP** y navegue hasta la carpeta `kafka_2.13-3.9.0/config`.
 En esa carpeta, abra el archivo **connect-distributed.properties** con cualquier Editor de texto.
 
 ![Kafka](./images/kc3a.png)
@@ -232,8 +232,6 @@ A continuación, vuelva al sitio web de demostración y actualice la página. Ah
 Ha terminado este ejercicio.
 
 ## Pasos siguientes
-
-Ir a [Resumen y beneficios](./summary.md){target="_blank"}
 
 Volver a [Transmitir datos de Apache Kafka a Adobe Experience Platform](./aep-apache-kafka.md){target="_blank"}
 
