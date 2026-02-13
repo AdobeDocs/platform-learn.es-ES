@@ -4,9 +4,9 @@ breadcrumb-title: Un tutorial técnico de Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 79e869a8764224b630c1523d272316e37c93d65a
+source-git-commit: 9373f13336165d3fd49deebc450e3046f0471900
 workflow-type: tm+mt
-source-wordcount: '1505'
+source-wordcount: '1507'
 ht-degree: 3%
 
 ---
@@ -86,9 +86,9 @@ ht-degree: 3%
       + [1.6.3 Creación e implementación de la aplicación DAM externa](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex3.md)
       + [1.6.4 Publicar la aplicación de forma privada](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex4.md)
       + [Resumen y beneficios](/help/tutorial-one-adobe/modules/creation-production/module1.6/summary.md)
-   + 1.7 Generador de flujos de trabajo {#crpr7}
+   + 1.7 Flujos de trabajo personalizados de Firefly {#crpr7}
       + [Información general](/help/tutorial-one-adobe/modules/creation-production/module1.7/workflowbuilder.md)
-      + [1.7.1 Introducción a Workflow Builder](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
+      + [1.7.1 Introducción a los flujos de trabajo personalizados de Firefly](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
    + 1.8 Revisión y aprobación unificadas con Workfront, Frame.io y gestión de almacenamiento empresarial {#crpr8}
       + [Información general](/help/tutorial-one-adobe/modules/creation-production/module1.8/esm.md)
       + [1.8.1 Introducción a Workfront, Frame.io y ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex1.md)

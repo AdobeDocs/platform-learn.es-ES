@@ -4,14 +4,14 @@ description: Adobe Journey Optimizer Campaigns
 kt: 5342
 doc-type: tutorial
 exl-id: 7b39e5df-408f-4534-9407-b39c5ce0eed0
-source-git-commit: bf3bebfa3bd79829da5352e950aed3f4ef5bf6d1
+source-git-commit: 9373f13336165d3fd49deebc450e3046f0471900
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 5%
+source-wordcount: '193'
+ht-degree: 4%
 
 ---
 
-# 3.8 Adobe Journey Optimizer: Campaign Orchestration
+# 3.8 Adobe Journey Optimizer: Campañas organizadas
 
 Adobe Journey Optimizer Campaign Orchestration permite a las marcas solucionar casos de uso de orquestación de campañas sofisticadas centrados en la participación de clientes iniciada por la marca para aumentar los ingresos y la lealtad de los clientes.
 
@@ -26,11 +26,13 @@ Adobe Journey Optimizer Campaign Orchestration viene con un esquema XDM relacion
 
 ## Objetivos de aprendizaje
 
-- Aprenda a configurar y utilizar campañas en Adobe Journey Optimizer.
+- Aprenda a configurar esquemas relacionales en Adobe Journey Optimizer
+- Obtenga información sobre cómo introducir datos en Adobe Journey Optimizer
+- Aprenda a configurar y utilizar campañas organizadas en Adobe Journey Optimizer.
 
 ## Requisitos previos
 
-- Acceso a Adobe Journey Optimizer
+- Acceso a campañas orquestadas de Adobe Journey Optimizer
 
 ## Ejercicios
 
