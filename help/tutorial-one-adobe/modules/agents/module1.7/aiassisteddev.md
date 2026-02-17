@@ -4,9 +4,9 @@ description: Herramientas inteligentes para desarrolladores para Adobe Commerce
 kt: 5342
 doc-type: tutorial
 exl-id: d6ff0907-260f-4f83-98e2-d22954a03678
-source-git-commit: 25901342e8d9c46b0edce3b2092b9f1d66ba5849
+source-git-commit: fe098c68af1964bda4813c06f95ef90caa891741
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '290'
 ht-degree: 1%
 
 ---
@@ -25,6 +25,12 @@ En este módulo utilizará herramientas inteligentes para desarrolladores como C
 - Acceso al cursor.
 - Debería haber completado este módulo, ya que hay dependencias: [Adobe Experience Manager Cloud Service &amp; Edge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md).
 - Debería haber completado este módulo, ya que hay dependencias: [Adobe Commerce as a Cloud Service](./../../../modules/asset-mgmt/module1.5/accs.md).
+
+## Vídeo
+
+En este vídeo, obtendrá una explicación y una demostración de todos los pasos involucrados en este ejercicio.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3479939?quality=12&learn=on)
 
 ## Ejercicios
 
