@@ -63,8 +63,8 @@ A continuación se incluye información adicional para aquellos interesados en c
 
 - [Guía del usuario de recopilación de datos de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=es)
 - [Tutorial de implementación de Adobe Experience Cloud con el SDK web](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=es)
-- [Configurar permisos de usuario](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html)
-- [Documentación de API](https://experienceleague.adobe.com/en/docs/experience-platform/tags/api/overview)
+- [Configurar permisos de usuario](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=es)
+- [Documentación de API](https://experienceleague.adobe.com/es/docs/experience-platform/tags/api/overview)
 
 ## Pasos siguientes
 
