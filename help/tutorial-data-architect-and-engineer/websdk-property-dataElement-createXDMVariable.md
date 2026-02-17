@@ -35,9 +35,9 @@ Existen dos tareas principales de recopilación de datos:
 
 Antes de comenzar los ejercicios, vea estos dos vídeos cortos para obtener más información sobre la ingesta de datos de flujo continuo y Web SDK:
 
->[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31628?captions=spa&learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/37261?captions=spa&learn=on&enablevpops)
 
 >[!NOTE]
 >
@@ -175,7 +175,7 @@ Experience Platform Debugger es una extensión disponible para Chrome que le ayu
 
 Si nunca ha utilizado Debugger, es posible que desee ver este vídeo de información general de cinco minutos:
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/35998?captions=spa&learn=on&enablevpops)
 
 ### Abra el sitio web de Luma.
 
