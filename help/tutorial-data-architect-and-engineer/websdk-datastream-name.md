@@ -44,7 +44,7 @@ Antes de comenzar los ejercicios, vea estos dos vídeos cortos para obtener más
 
 >[!NOTE]
 >
->Aunque este tutorial se centra en la ingesta de transmisión desde sitios web con Web SDK, también puede transmitir datos mediante [Mobile SDK](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview), [Edge Network Server API](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/server-api/overview) y [HTTP API](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/streaming/http).
+>Aunque este tutorial se centra en la ingesta de transmisión desde sitios web con Web SDK, también puede transmitir datos mediante [Mobile SDK](https://experienceleague.adobe.com/es/docs/platform-learn/implement-mobile-sdk/overview), [Edge Network Server API](https://experienceleague.adobe.com/es/docs/platform-learn/data-collection/server-api/overview) y [HTTP API](https://experienceleague.adobe.com/es/docs/experience-platform/sources/connectors/streaming/http).
 
 ## Permisos necesarios
 

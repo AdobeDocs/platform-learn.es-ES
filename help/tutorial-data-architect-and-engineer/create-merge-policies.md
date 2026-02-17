@@ -140,7 +140,7 @@ Un caso de uso clave de las políticas de combinación es la gobernanza de datos
 
 ## Recursos adicionales
 
-* [Documentación de políticas de combinación](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)
+* [Documentación de políticas de combinación](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=es)
 * [Referencia de la API de políticas de combinación (parte de la API del perfil del cliente en tiempo real)](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
 
 Ahora pasemos al [marco de control de datos](apply-data-governance-framework.md).
