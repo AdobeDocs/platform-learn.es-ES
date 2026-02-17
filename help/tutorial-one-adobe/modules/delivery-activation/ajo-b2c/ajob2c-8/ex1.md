@@ -4,9 +4,9 @@ description: Configuración de la base de datos relacional
 kt: 5342
 doc-type: tutorial
 exl-id: 532e5f2c-971f-488f-bef4-3a8141408cc8
-source-git-commit: 9373f13336165d3fd49deebc450e3046f0471900
+source-git-commit: 4d420ad101c87b58a2bcc425cd4d8da08ad04c8e
 workflow-type: tm+mt
-source-wordcount: '1806'
+source-wordcount: '2051'
 ht-degree: 4%
 
 ---
@@ -679,7 +679,59 @@ Después de un par de minutos, puede ver los datos que se están ingiriendo en e
 
 ![AJO OC](./images/ajoocdatas21e.png)
 
-Ahora se han introducido todos los datos. En el siguiente ejercicio, empezará a utilizar esos datos como parte de una campaña orquestada.
+Ahora se han introducido todos los datos.
+
+## Dimension de destino de perfil 3.8.1.3
+
+Con las campañas orquestadas, puede diseñar y entregar comunicaciones dirigidas en el nivel de entidad, aprovechando las capacidades de esquema relacional de Adobe Experience Platform. Experience Platform utiliza esquemas para describir la estructura de los datos de una manera uniforme y reutilizable. Cuando se incorporan datos en Experience Platform, se estructuran según un esquema XDM.
+
+Aunque la segmentación para Campañas orquestadas funciona principalmente en esquemas relacionales, la entrega de mensajes real siempre se produce en el nivel de Perfil.
+
+Al configurar el direccionamiento, se definen dos aspectos clave:
+
+- Esquemas objetivo: Especifique qué esquemas relacionales son aptos para la segmentación. De forma predeterminada, se utiliza el esquema denominado Recipient, pero puede configurar alternativas como Visitors, Customers, etc.
+
+- Vinculación de perfil: el sistema debe comprender cómo se asigna el esquema de destino al esquema de perfil. Esto se logra a través de un campo de identidad compartido, que existe tanto en el esquema de destinatario como en el esquema de perfil y se configura como un área de nombres de identidad.
+
+Ahora debe configurar las dimensiones de destino del perfil. Vaya a **Administración** > **Configuración** y haga clic en **Administrar** en **Dimension de destino de perfil**.
+
+![AJO OC](./images/ajoocptd1.png)
+
+Entonces debería ver esto. Haga clic en **Crear**.
+
+![AJO OC](./images/ajoocptd2.png)
+
+Para el **esquema**, seleccione `--aepUserLdap--_citisignal_accounts`. Para el **valor de identidad**, seleccione **account_id**.
+
+Haga clic en **Guardar**.
+
+![AJO OC](./images/ajoocptd3.png)
+
+Vuelva a hacer clic en **Crear**.
+
+![AJO OC](./images/ajoocptd4.png)
+
+Para el **esquema**, seleccione `--aepUserLdap--_citisignal_recipients`. Para el **valor de identidad**, seleccione **account_id**.
+
+Haga clic en **Guardar**.
+
+![AJO OC](./images/ajoocptd5.png)
+
+Vuelva a hacer clic en **Crear**.
+
+![AJO OC](./images/ajoocptd6.png)
+
+Para el **esquema**, seleccione `--aepUserLdap--_citisignal_recipients`. Para el **valor de identidad**, seleccione **correo electrónico**.
+
+Haga clic en **Guardar**.
+
+![AJO OC](./images/ajoocptd7.png)
+
+Entonces deberías tener esto.
+
+![AJO OC](./images/ajoocptd8.png)
+
+En el siguiente ejercicio, empezará a utilizar esos datos como parte de una campaña orquestada.
 
 ## Pasos siguientes
 
