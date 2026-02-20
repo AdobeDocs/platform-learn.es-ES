@@ -4,18 +4,28 @@ description: Adobe Experience Manager y agentes
 kt: 5342
 doc-type: tutorial
 exl-id: 79aa34cc-53d6-4cae-8e29-b63cecce891a
-source-git-commit: fe098c68af1964bda4813c06f95ef90caa891741
+source-git-commit: 7ea3bdc9557ea9e88ddd9693f9ffbfbc634857f8
 workflow-type: tm+mt
-source-wordcount: '82'
-ht-degree: 8%
+source-wordcount: '232'
+ht-degree: 2%
 
 ---
 
 # 1.6 Adobe Experience Manager y agentes
 
+Adobe Experience Manager ahora incluye varios agentes diseñados específicamente, cada uno de ellos diseñado para asumir un trabajo que históricamente ha requerido toneladas de esfuerzo manual. No son asistentes de IA genéricos, sino agentes formados en el dominio que comprenden bien AEM y funcionan en el contenido, el código, los activos, la gobernanza y la optimización.
+
+- **Agente de producción de experiencia**, que acelera las actualizaciones, los cambios de contenido e incluso las migraciones completas del sitio.
+- **Agente de control**, aplica automáticamente la marca, los derechos y las reglas de cumplimiento.
+- **Agente de detección**, prepara el contenido para la detección nativa de IA y actúa como estratega inteligente.
+- **Agente de optimización de contenido**, crea al instante variaciones de recursos específicos de canales y preparados para el rendimiento.
+- **Agente de desarrollo**, acelera a los desarrolladores con solución de problemas asistida por IA y ajuste del rendimiento.
+
+Juntos, estos agentes trasladan AEM mucho más allá de las capacidades tradicionales de CMS y a operaciones de experiencia automatizadas. Cada uno de estos agentes está diseñado con los seres humanos en control, asegurando precisión, confianza y supervisión.
+
 ## Objetivos de aprendizaje
 
-Por confirmar
+- Aprenda a utilizar los distintos agentes de AEM disponibles
 
 ## Requisitos previos
 
@@ -29,9 +39,9 @@ En este vídeo, obtendrá una explicación y una demostración de todos los paso
 
 ## Ejercicios
 
-[1.6.1 Content Production Agent](./ex1.md){target="_blank"}
+[1.6.1 Introducción a los agentes de AEM](./ex1.md){target="_blank"}
 
-Por confirmar
+En este ejercicio, explorará **Discovery Agent** y **Experience Production Agent**.
 
 ![Perspectivas técnicas](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
