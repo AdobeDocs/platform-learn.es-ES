@@ -1,22 +1,22 @@
 ---
-title: Habilitación técnica de GenStudio para la cadena de suministro de contenido
-description: Habilitación técnica de GenStudio para la cadena de suministro de contenido
+title: Habilitación técnica de GenStudio para Content Supply chain
+description: Habilitación técnica de GenStudio para Content Supply chain
 doc-type: multipage-overview
 exl-id: be6284eb-60c8-49d7-bde1-d8dc148a07c2
-source-git-commit: 42f6d8a07baa03a9ab31cff0ef518ae2c5ad930e
+source-git-commit: 9ff92b0c295f854219631f1463c3ccabc1a65938
 workflow-type: tm+mt
 source-wordcount: '439'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# Información general: Habilitación técnica de GenStudio para la cadena de suministro de contenido
+# Información general: Habilitación técnica de GenStudio para Supply chain de contenido
 
 ![Perspectivas técnicas](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Información general
 
-Si asiste a uno de nuestros talleres en directo centrados en GenStudio para la capacitación técnica de la cadena de suministro de contenido, este es el punto de partida de los laboratorios tecnológicos que llevará a cabo.
+Si asiste a uno de nuestros talleres en directo centrados en GenStudio para la habilitación técnica de Content Supply chain, este es el punto de partida de los Tech Labs que llevará.
 
 En Tech Labs, como parte de este taller de capacitación técnica, aprenderá de forma práctica las siguientes aplicaciones:
 
@@ -28,7 +28,7 @@ En Tech Labs, como parte de este taller de capacitación técnica, aprenderá de
 
 Los Tech Labs que llevará a cabo forman parte de un tutorial de One Adobe más amplio, donde puede obtener más información sobre las amplias soluciones de Adobe Creative Cloud y Adobe Experience Cloud. Si está interesado en ver qué hay disponible, eche un vistazo aquí: [Información general sobre un tutorial de Adobe](./overview.md)
 
-## GenStudio para laboratorios técnicos de la cadena de suministro de contenido
+## GenStudio for Content: Supply chain Tech Labs
 
 A continuación se muestran los Tech Labs que participará en este taller de capacitación técnica.
 
@@ -62,7 +62,7 @@ En este módulo básico, utilizará Adobe Express para crear imágenes y vídeos
 
 En este módulo, utilizará Adobe Frame.io en combinación con Adobe Premiere Pro para colaborar y revisar imágenes y vídeos.
 
-### Administración de recursos
+### Administración de activos
 
 [Adobe Experience Manager Cloud Service &amp; Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
 
