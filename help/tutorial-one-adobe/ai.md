@@ -3,9 +3,9 @@ title: Panorama general de los laboratorios técnicos de inteligencia artificial
 description: Panorama general de los laboratorios técnicos de inteligencia artificial
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 79e869a8764224b630c1523d272316e37c93d65a
+source-git-commit: 1abfd8d1f270a810dd65d9921c69834df2a9147d
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,20 @@ En este ejercicio aprenderá a hacer lo siguiente:
 
 - Conecte ChatGPT y/o Claude.ai a **Customer Journey Analytics** y realice tareas de análisis de datos
 - Conecte ChatGPT y/o Claude.ai a **Adobe Analytics** y realice tareas de análisis de datos
+
+[1.6 AEM y agentes](./modules/agents/module1.6/aemagents.md){target="_blank"}
+
+**Meta**
+
+Adobe Experience Manager ahora incluye varios agentes diseñados específicamente, cada uno de ellos diseñado para asumir un trabajo que históricamente ha requerido toneladas de esfuerzo manual. No son asistentes de IA genéricos, sino agentes formados en el dominio que comprenden bien AEM y funcionan en el contenido, el código, los activos, la gobernanza y la optimización.
+
+- **Agente de producción de experiencia**, que acelera las actualizaciones, los cambios de contenido e incluso las migraciones completas del sitio.
+- **Agente de control**, aplica automáticamente la marca, los derechos y las reglas de cumplimiento.
+- **Agente de detección**, prepara el contenido para la detección nativa de IA y actúa como estratega inteligente.
+- **Agente de optimización de contenido**, crea al instante variaciones de recursos específicos de canales y preparados para el rendimiento.
+- **Agente de desarrollo**, acelera a los desarrolladores con solución de problemas asistida por IA y ajuste del rendimiento.
+
+En este ejercicio aprenderá a utilizar estos agentes utilizando el asistente de IA y el cursor a través de la configuración personalizada del servidor MCP.
 
 [1.7 Herramientas inteligentes para desarrolladores para Adobe Commerce](./modules/agents/module1.7/aiassisteddev.md)
 
