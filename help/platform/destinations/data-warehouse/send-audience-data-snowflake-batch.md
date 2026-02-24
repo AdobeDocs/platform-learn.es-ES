@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Obtenga información sobre cómo configurar y utilizar el destino de lote de Snowflake en Adobe Real-Time CDP para entregar instantáneas de audiencia diarias con actualización completa en su cuenta de Snowflake. Consulte el flujo de trabajo completo en Adobe Experience Platform, cómo aparecen los datos como una tabla dinámica en Snowflake, y los pasos y validaciones de configuración clave para garantizar una integración sin problemas.
 
-Para obtener más información, revise la [documentación](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/warehouse/snowflake-batch).
+Para obtener más información, revise la [documentación](https://experienceleague.adobe.com/es/docs/experience-platform/destinations/catalog/warehouse/snowflake-batch).
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3480182/?learn=on&enablevpops)
