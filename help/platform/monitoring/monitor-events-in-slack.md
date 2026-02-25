@@ -326,7 +326,7 @@ Ahora que la acción está implementada, regístrela como destino para los event
 1. Seleccione **[!UICONTROL Adobe Experience Platform]** como producto.
 1. Seleccione **[!UICONTROL Notificaciones de plataforma]** como tipo de eventos.
 1. Seleccione los eventos específicos (o todos) de los que desea recibir una notificación en Slack y seleccione **[!UICONTROL Siguiente]**.
-1. Seleccione o [cree su credencial de OAuth](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/api/platform-api-authentication){target=_blank}.
+1. Seleccione o [cree su credencial de OAuth](https://experienceleague.adobe.com/es/docs/platform-learn/tutorials/api/platform-api-authentication){target=_blank}.
 1. Configurar **[!UICONTROL detalles de registro de eventos]**:
    1. **[!UICONTROL Nombre de registro]**: asigne un nombre descriptivo al registro.
    1. **[!UICONTROL Descripción del registro]**: asegúrese de que esto sea explícito para que otros colaboradores puedan saber lo que hace.
