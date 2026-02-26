@@ -4,9 +4,9 @@ description: Configuración de la base de datos relacional
 kt: 5342
 doc-type: tutorial
 exl-id: 532e5f2c-971f-488f-bef4-3a8141408cc8
-source-git-commit: 4d420ad101c87b58a2bcc425cd4d8da08ad04c8e
+source-git-commit: defdae3329e1409159f59c4a0ef2aa21c7e3949b
 workflow-type: tm+mt
-source-wordcount: '2051'
+source-wordcount: '2159'
 ht-degree: 4%
 
 ---
@@ -730,6 +730,52 @@ Haga clic en **Guardar**.
 Entonces deberías tener esto.
 
 ![AJO OC](./images/ajoocptd8.png)
+
+## 3.8.1.4 canal de correo electrónico
+
+En el menú de la izquierda, ve a **Canales**. Haga clic en **Crear configuración de canal**.
+
+![AJO OC](./images/ajoocchannel1.png)
+
+Usar el nombre: `--aepUserLdap---citisignal-email-oc`. Seleccione el canal **Correo electrónico**
+
+![AJO OC](./images/ajoocchannel2.png)
+
+Seleccione un **subdominio** y un **grupo de IP** disponibles.
+
+![AJO OC](./images/ajoocchannel3.png)
+
+Desplácese hacia abajo y rellene los **parámetros de encabezado**.
+
+- **De nombre**: `info@techinsiders.org`
+- **Del prefijo del correo electrónico**: `info`
+- **Responder al nombre**: `info@techinsiders.org`
+- **Responder al correo electrónico**: `info@techinsiders.org`
+- **Prefijo de correo electrónico con error**: `error`
+
+![AJO OC](./images/ajoocchannel4.png)
+
+Desplácese hacia abajo. Vaya a **Campaña orquestada**. Marque la casilla de verificación de **Habilitado**. Seleccione **Dimensión de segmentación**.
+
+![AJO OC](./images/ajoocchannel5.png)
+
+Para **Dimension de destino de perfil**, seleccione `--aepUserLdap--_citisignal_recipients - email`.
+
+Seleccione **Target Dimension** y haga clic en el icono **abrir carpeta**.
+
+![AJO OC](./images/ajoocchannel6.png)
+
+Haga clic en `--aepUserLdap--_citisignal_recipients`.
+
+![AJO OC](./images/ajoocchannel7.png)
+
+Seleccione el campo **email** y haga clic en **Seleccionar**.
+
+![AJO OC](./images/ajoocchannel8.png)
+
+Desplácese hacia arriba y haga clic en **Enviar**.
+
+![AJO OC](./images/ajoocchannel9.png)
 
 En el siguiente ejercicio, empezará a utilizar esos datos como parte de una campaña orquestada.
 
