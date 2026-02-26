@@ -4,9 +4,9 @@ description: Cree su campaña orquestada
 kt: 5342
 doc-type: tutorial
 exl-id: f3ca3230-db30-4e41-91f1-9324b12211a6
-source-git-commit: 0328260e8699107bc82103af98caae684319a60d
+source-git-commit: 72aee2daa489f00dfc753e6986f0cab2271c6a7f
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1112'
 ht-degree: 2%
 
 ---
@@ -578,6 +578,30 @@ Para la **línea de asunto**, pegue esto:
 Haga clic en **Editar cuerpo del correo electrónico**.
 
 ![AJO OC](./images/ajooc126.png)
+
+Descargue el archivo [family_account_review.zip](./assets/family_account_review.zip) en su escritorio.
+
+![AJO OC](./images/ajooc127.png)
+
+Haga clic en **Importar HTML**.
+
+![AJO OC](./images/ajooc128.png)
+
+Haga clic en para seleccionar el archivo.
+
+![AJO OC](./images/ajooc129.png)
+
+Seleccione el archivo **`family_account_review.zip`**.
+
+![AJO OC](./images/ajooc130.png)
+
+Haga clic en **Next**.
+
+![AJO OC](./images/ajooc131.png)
+
+Entonces debería ver esto.
+
+![AJO OC](./images/ajooc132.png)
 
 ## Pasos siguientes
 
