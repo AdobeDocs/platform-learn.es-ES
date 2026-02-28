@@ -24,4 +24,4 @@ Obtenga información sobre cómo configurar y utilizar el destino de lote de Sno
 Para obtener más información, revise la [documentación](https://experienceleague.adobe.com/es/docs/experience-platform/destinations/catalog/warehouse/snowflake-batch).
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3480182/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480187/?captions=spa&learn=on&enablevpops)
