@@ -51,7 +51,7 @@ Por ejemplo, muchas empresas se ocupan de pedidos. ¿Qué pasaría si, colectiva
 }
 ```
 
-Si todas las empresas que tratan con pedidos decidieran modelar sus datos de pedidos de una manera consistente para términos que son comunes en la industria, cosas mágicas podrían comenzar a suceder. La información se podría intercambiar de forma más fluida dentro y fuera de su organización en lugar de interpretar y traducir constantemente los datos (props y evars, ¿alguien?). El aprendizaje automático podría comprender mejor lo que significan sus datos _1} y proporcionar perspectivas procesables._ Las interfaces de usuario para la aparición de datos relevantes podrían ser más intuitivas. Sus datos se podrían integrar perfectamente con socios y proveedores que utilicen el mismo modelo.
+Si todas las empresas que tratan con pedidos decidieran modelar sus datos de pedidos de una manera consistente para términos que son comunes en la industria, cosas mágicas podrían comenzar a suceder. La información se podría intercambiar de forma más fluida dentro y fuera de su organización en lugar de interpretar y traducir constantemente los datos (props y evars, ¿alguien?). El aprendizaje automático podría comprender mejor lo que significan sus datos _1&rbrace; y proporcionar perspectivas procesables._ Las interfaces de usuario para la aparición de datos relevantes podrían ser más intuitivas. Sus datos se podrían integrar perfectamente con socios y proveedores que utilicen el mismo modelo.
 
 Este es el objetivo del [modelo de datos de experiencia](https://business.adobe.com/products/experience-platform/experience-data-model.html) o XDM de Adobe. XDM proporciona modelado prescriptivo para datos que son comunes en la industria, al tiempo que le permite ampliar el modelo para sus necesidades específicas. Adobe Experience Platform se basa en XDM y, como tal, los datos enviados a Experience Platform deben estar en XDM. En lugar de pensar en dónde y cómo puede transformar sus modelos de datos actuales en XDM antes de enviar los datos a Experience Platform, considere la posibilidad de adoptar XDM de forma más generalizada en toda su organización para que la traducción rara vez tenga que producirse.
 
@@ -115,7 +115,7 @@ Cuando sea posible, se recomienda utilizar grupos de campos existentes y adherir
 
 >[!TIP]
 > 
->En este ejercicio, agrega los grupos de campos predefinidos recomendados para la recopilación de datos web: _**[!UICONTROL AEP Web SDK ExperienceEvent]**_ y _**[!UICONTROL Evento de experiencia del consumidor]**_.
+>En este ejercicio, agrega los grupos de campos predefinidos recomendados para la recopilación de datos web: _&#x200B;**[!UICONTROL AEP Web SDK ExperienceEvent]**&#x200B;_ y _&#x200B;**[!UICONTROL Evento de experiencia del consumidor]**&#x200B;_.
 >
 
 
@@ -153,7 +153,7 @@ Es un objeto que se debe tener para cualquier recopilación de datos relacionado
 >
 >
 >Esta configuración se analiza más en la lección [Configuración de Experience Platform](setup-experience-platform.md).
->![Esquema de perfil ](assets/schema-profile.png)
+>![Esquema de perfil &#x200B;](assets/schema-profile.png)
 
 Para completar esta lección, selecciona **[!UICONTROL Guardar]** en la parte superior derecha.
 
