@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo validar la implementación de SDK 
 feature: Web SDK,Tags,Assurance
 jira: KT-15406
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: 36069689f7b85d4a00b17b90b348e176254108ba
+source-git-commit: 1feddab414a8a7e49f04b8886c275d06516d0114
 workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 7%
@@ -95,4 +95,4 @@ Ahora que un objeto XDM se activa en una página y con los conocimientos necesar
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=es)
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

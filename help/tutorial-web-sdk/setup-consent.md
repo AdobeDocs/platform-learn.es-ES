@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo configurar la privacidad de la ext
 feature: Web SDK,Tags,Consent
 jira: KT-15413
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: 36069689f7b85d4a00b17b90b348e176254108ba
+source-git-commit: 1feddab414a8a7e49f04b8886c275d06516d0114
 workflow-type: tm+mt
 source-wordcount: '1605'
 ht-degree: 1%
@@ -215,7 +215,7 @@ Una vez que haya establecido esta regla, la recopilación de eventos debe comenz
 ![Opción de visitante de publicación de consentimiento](assets/consent-post-user-optin.png)
 
 
-Para obtener más información sobre el consentimiento en Web SDK, consulte [Apoyo a las preferencias de consentimiento del cliente](https://experienceleague.adobe.com/es/docs/experience-platform/edge/consent/supporting-consent).
+Para obtener más información sobre el consentimiento en Web SDK, consulte [Apoyo a las preferencias de consentimiento del cliente](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
 
 >[!TIP]
 >
@@ -223,8 +223,8 @@ Para obtener más información sobre el consentimiento en Web SDK, consulte [Apo
 
 
 
-Para obtener más información sobre la acción [!UICONTROL Establecer consentimiento], consulte [Establecer consentimiento](https://experienceleague.adobe.com/es/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
+Para obtener más información sobre la acción [!UICONTROL Establecer consentimiento], consulte [Establecer consentimiento](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=es)
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

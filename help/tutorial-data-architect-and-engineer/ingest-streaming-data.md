@@ -8,7 +8,7 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: 45fec5b2a82e12bdc4a9d017664e8c11d5625cef
+source-git-commit: 97fba09ddba62cffe4428592ce25e4f26c3a5850
 workflow-type: tm+mt
 source-wordcount: '3316'
 ht-degree: 0%
@@ -38,13 +38,13 @@ Hay dos tareas principales que debemos completar en la interfaz de recopilación
 
 Antes de comenzar los ejercicios, vea estos dos vídeos cortos para obtener más información sobre la ingesta de datos de flujo continuo y Web SDK:
 
->[!VIDEO](https://video.tv.adobe.com/v/31628?captions=spa&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/37261?captions=spa&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
 
 >[!NOTE]
 >
->Aunque este tutorial se centra en la ingesta de transmisión desde sitios web con Web SDK, también puede transmitir datos mediante [Mobile SDK](https://experienceleague.adobe.com/es/docs/platform-learn/implement-mobile-sdk/overview), [Edge Network Server API](https://experienceleague.adobe.com/es/docs/platform-learn/data-collection/server-api/overview) y [HTTP API](https://experienceleague.adobe.com/es/docs/experience-platform/sources/connectors/streaming/http).
+>Aunque este tutorial se centra en la ingesta de transmisión desde sitios web con Web SDK, también puede transmitir datos mediante [Mobile SDK](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview), [Edge Network Server API](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/server-api/overview) y [HTTP API](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/streaming/http).
 
 ## Permisos necesarios
 
@@ -263,13 +263,13 @@ Experience Platform Debugger es una extensión disponible para Chrome que le ayu
 
 Si nunca antes ha utilizado Debugger (y este es diferente del antiguo Adobe Experience Cloud Debugger), puede que desee ver este vídeo de información general de cinco minutos:
 
->[!VIDEO](https://video.tv.adobe.com/v/35998?captions=spa&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 ### Abra el sitio web de Luma.
 
 Para este tutorial, utilizamos una versión alojada públicamente del sitio web de demostración de Luma. Vamos a abrirlo y marcarlo como favorito:
 
-1. En una nueva pestaña del explorador, abra el [sitio web de Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
+1. En una nueva pestaña del explorador, abra el [sitio web de Luma](https://newluma.enablementadobe.com).
 1. Marcar la página para usarla en el resto del tutorial.
 
 Este sitio web hospedado es la razón por la que usamos `enablementadobe.com` en el campo [!UICONTROL Dominios] de nuestra configuración inicial de propiedad de etiquetas y por la que usamos `data.enablementadobe.com` como nuestro dominio de origen en la extensión [!UICONTROL Adobe Experience Platform Web SDK]. ¡Mira, tenía un plan!
@@ -356,7 +356,7 @@ Ahora asignaremos el nombre de página al SDK web.
 >[!IMPORTANT]
 >
 >Para completar esta tarea, debemos asegurarnos de que el usuario tenga acceso primero a la zona protegida de producción. Si todavía no tiene acceso a la zona protegida de Prod desde un perfil de producto diferente, abra rápidamente su perfil de `Luma Tutorial Platform` y agregue el elemento de permiso **[!UICONTROL Zonas protegidas]** > **[!UICONTROL Prod]**. Después, haga una SHIFT-Reload en la página Elementos de datos para borrar la caché
->![Agregar la zona protegida de producción &#x200B;](assets/websdk-property-permissionToLoadSchema.png)
+>![Agregar la zona protegida de producción ](assets/websdk-property-permissionToLoadSchema.png)
 
 En la página **[!UICONTROL Elementos de datos]**:
 
@@ -456,7 +456,7 @@ Hay un elemento de datos más que debemos actualizar: el elemento de datos del o
 
 Para validar que Web SDK está enviando ahora el ID de CRM:
 
-1. Abrir el [sitio web de Luma](https://luma.enablementadobe.com/content/luma/us/en.html)
+1. Abrir el [sitio web de Luma](https://newluma.enablementadobe.com)
 1. Asígnelo a la propiedad de etiquetas mediante Debugger, según las instrucciones anteriores
 1. Seleccione el vínculo **Iniciar sesión** en la parte superior derecha del sitio web de Luma
 1. Iniciar sesión con las credenciales `test@test.com`/`test`

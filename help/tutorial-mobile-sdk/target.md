@@ -6,10 +6,10 @@ feature-set: Target
 feature: A/B Tests
 jira: KT-14641
 exl-id: 87546baa-2d8a-4cce-b531-bec3782d2e90
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 97fba09ddba62cffe4428592ce25e4f26c3a5850
 workflow-type: tm+mt
 source-wordcount: '2102'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Aprenda a optimizar y personalizar las experiencias en sus aplicaciones móviles con Platform Mobile SDK y Adobe Target.
 
-Target proporciona todo lo que debe adaptar y personalizar las experiencias de los clientes. Target le ayuda a maximizar los ingresos de sus sitios web y móviles, aplicaciones, medios sociales y otros canales digitales. Target puede realizar pruebas A/B y multivariadas, recomendar productos y contenido, segmentar contenido, personalizar automáticamente el contenido con IA y mucho más. Esta lección se centra en la funcionalidad de prueba A/B de Target. Consulte la [descripción general de la prueba A/B](https://experienceleague.adobe.com/es/docs/target/using/activities/abtest/test-ab) para obtener más información.
+Target proporciona todo lo que debe adaptar y personalizar las experiencias de los clientes. Target le ayuda a maximizar los ingresos de sus sitios web y móviles, aplicaciones, medios sociales y otros canales digitales. Target puede realizar pruebas A/B y multivariadas, recomendar productos y contenido, segmentar contenido, personalizar automáticamente el contenido con IA y mucho más. Esta lección se centra en la funcionalidad de prueba A/B de Target. Consulte la [descripción general de la prueba A/B](https://experienceleague.adobe.com/en/docs/target/using/activities/abtest/test-ab) para obtener más información.
 
 ![Arquitectura](assets/architecture-at.png){zoomable="yes"}
 
@@ -31,7 +31,7 @@ Antes de poder realizar pruebas A/B con Target, debe asegurarse de que las confi
 ## Requisitos previos
 
 * La aplicación se ha creado y ejecutado correctamente con los SDK instalados y configurados.
-* Acceso a Adobe Target con [permisos, funciones, espacios de trabajo y propiedades correctamente configurados](https://experienceleague.adobe.com/es/docs/target/using/administer/manage-users/enterprise/property-channel).
+* Acceso a Adobe Target con [permisos, funciones, espacios de trabajo y propiedades correctamente configurados](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/property-channel).
 
 
 ## Objetivos de aprendizaje
@@ -66,7 +66,7 @@ Para garantizar que los datos enviados desde la aplicación móvil a Experience 
 
    Puede encontrar sus propiedades en la interfaz de usuario de Target, en **[!UICONTROL Administración]** > **[!UICONTROL Propiedades]**. Seleccione ![Código](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) para mostrar el token de propiedad de la propiedad que desee usar. El token de propiedad tiene un formato como `"at_property": "xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"`; solo debe especificar el valor `xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx`.
 
-   De forma opcional, puede especificar un ID de entorno de destino. Target utiliza entornos para organizar sus sitios y entornos de preproducción para facilitar la administración y la creación de informes por separado. Los entornos preestablecidos incluyen Producción, Ensayo y Desarrollo. Consulte [Entornos](https://experienceleague.adobe.com/es/docs/target/using/administer/environments) y [Id. de entorno de destino](https://experienceleague.adobe.com/es/docs/platform-learn/implement-web-sdk/applications-setup/setup-target) para obtener más información.
+   De forma opcional, puede especificar un ID de entorno de destino. Target utiliza entornos para organizar sus sitios y entornos de preproducción para facilitar la administración y la creación de informes por separado. Los entornos preestablecidos son los de producción, ensayo y desarrollo. Consulte [Entornos](https://experienceleague.adobe.com/en/docs/target/using/administer/environments) y [Id. de entorno de destino](https://experienceleague.adobe.com/es/docs/platform-learn/implement-web-sdk/applications-setup/setup-target) para obtener más información.
 
    De forma opcional, puede especificar un área de nombres de ID de terceros de Target para admitir la sincronización de perfiles en un área de nombres de identidad (por ejemplo, ID de CRM). Consulte [Área de nombres de ID de terceros de Target](https://experienceleague.adobe.com/es/docs/platform-learn/implement-web-sdk/applications-setup/setup-target) para obtener más información.
 
@@ -81,7 +81,7 @@ Para garantizar que los datos enviados desde su aplicación móvil a Edge Networ
 
 1. En la IU de recopilación de datos, seleccione **[!UICONTROL Datastreams]** y su secuencia de datos, por ejemplo **[!DNL Luma Mobile App]**.
 1. Seleccione ![Más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) para **[!UICONTROL Experience Platform]** y seleccione ![Editar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Editar]** en el menú contextual.
-1. En la pantalla de **[!UICONTROL Datastreams]** > ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]**, compruebe que **[!UICONTROL Offer Decisioning]**, **[!UICONTROL Edge Segmentation]** y **[!UICONTROL Personalization Destinations]** estén seleccionados. Si también sigues las lecciones de Journey Optimizer, seleccionas **[!UICONTROL Adobe Journey Optimizer]**. Consulte [Configuración de Adobe Experience Platform](https://experienceleague.adobe.com/es/docs/experience-platform/datastreams/configure) para obtener más información.
+1. En la pantalla de **[!UICONTROL Datastreams]** > ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]**, compruebe que **[!UICONTROL Offer Decisioning]**, **[!UICONTROL Edge Segmentation]** y **[!UICONTROL Personalization Destinations]** estén seleccionados. Si también sigues las lecciones de Journey Optimizer, seleccionas **[!UICONTROL Adobe Journey Optimizer]**. Consulte [Configuración de Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure) para obtener más información.
 1. Para guardar la configuración de su secuencia de datos, seleccione **[!UICONTROL Guardar]** .
 
    ![Configuración de secuencia de datos de AEP](assets/datastream-aep-configuration-target.png){zoomable="yes"}
@@ -142,7 +142,7 @@ Existen muchos tipos de actividades que puede crear en Adobe Target e implementa
       { 
           "title": "Luma Anaolog Watch",
           "text": "Designed to stand up to your active lifestyle, this women's Luma Analog Watch features a tasteful brushed chrome finish and a stainless steel, water-resistant construction for lasting durability.", 
-          "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/gear/watches/Luma_Analog_Watch.jpg" 
+          "image": "https://newluma.enablementadobe.com/images/Luma_Analog_Watch.jpg" 
       }
       ```
 
@@ -160,7 +160,7 @@ Existen muchos tipos de actividades que puede crear en Adobe Target e implementa
       { 
           "title": "Aim Analog Watch",
           "text": "The flexible, rubberized strap is contoured to conform to the shape of your wrist for a comfortable all-day fit. The face features three illuminated hands, a digital read-out of the current time, and stopwatch functions.", 
-          "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/gear/watches/Aim_Watch.jpg" 
+          "image": "https://newluma.enablementadobe.com/images/Aim_Watch.jpg" 
       }
       ```
 
@@ -399,6 +399,6 @@ Ahora debe tener todas las herramientas para empezar a agregar más pruebas A/B 
 >
 >Ha habilitado la aplicación para pruebas A/B y ha mostrado los resultados de una prueba A/B con la extensión Offer Decisioning y Target para Adobe Experience Platform Mobile SDK.
 >
->Gracias por dedicar su tiempo a conocer Adobe Experience Platform Mobile SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=es).
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Mobile SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Siguiente: **[Conclusión y pasos siguientes](conclusion.md)**
