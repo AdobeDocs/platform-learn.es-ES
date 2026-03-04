@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo configurar Adobe Audience Manager 
 solution: Data Collection, Audience Manager
 jira: KT-15409
 exl-id: 45db48e9-73cf-4a9c-88f4-b5872a8224d3
-source-git-commit: 033d517b56a68ecf6455efb42fa14bca9b5ae35a
+source-git-commit: 17adeb23768ee005428a204a98d18f4e76b9d945
 workflow-type: tm+mt
 source-wordcount: '1339'
 ht-degree: 4%
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 Obtenga información sobre cómo configurar Adobe Audience Manager con el SDK web de Adobe Experience Platform y validar la implementación mediante un destino de cookie.
 
-[Adobe Audience Manager](https://experienceleague.adobe.com/es/docs/audience-manager) es la solución de Adobe Experience Cloud que proporciona todo lo necesario para recopilar información comercial relevante acerca de los visitantes del sitio, crear segmentos comercializables y ofrecer contenido y publicidad segmentada a la audiencia adecuada.
+[Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager) es la solución de Adobe Experience Cloud que proporciona todo lo necesario para recopilar información comercial relevante acerca de los visitantes del sitio, crear segmentos comercializables y ofrecer contenido y publicidad segmentada a la audiencia adecuada.
 
 
 
@@ -34,11 +34,11 @@ Al final de esta lección, debe poder:
 Para completar esta lección, primero debe:
 
 * Complete las lecciones anteriores de las secciones Configuración inicial y Configuración de etiquetas de este tutorial.
-* Tener acceso a Adobe Audience Manager y los permisos adecuados para crear, leer y escribir características, segmentos y destinos. Para obtener más información, consulte [Control de acceso basado en roles de Audience Manager](https://experienceleague.adobe.com/es/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
+* Tener acceso a Adobe Audience Manager y los permisos adecuados para crear, leer y escribir características, segmentos y destinos. Para obtener más información, consulte [Control de acceso basado en roles de Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
 
 ## Configuración de la secuencia de datos
 
-La implementación de Audience Manager mediante Platform Web SDK difiere de la implementación mediante [reenvío del lado del servidor (SSF)](https://experienceleague.adobe.com/es/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf). El reenvío del lado del servidor pasa los datos de solicitud de Adobe Analytics a Audience Manager. Una implementación de Platform Web SDK pasa los datos XDM enviados a Platform Edge Network a Audience Manager. Audience Manager está habilitado en el conjunto de datos:
+La implementación de Audience Manager mediante Platform Web SDK difiere de la implementación mediante [reenvío del lado del servidor (SSF)](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf). El reenvío del lado del servidor pasa los datos de solicitud de Adobe Analytics a Audience Manager. Una implementación de Platform Web SDK pasa los datos XDM enviados a Platform Edge Network a Audience Manager. Audience Manager está habilitado en el conjunto de datos:
 
 1. Vaya a la interfaz [Recopilación de datos](https://experience.adobe.com/#/data-collection){target="blank"}
 1. En el panel de navegación izquierdo, seleccione **[!UICONTROL Datastreams]**
@@ -55,7 +55,7 @@ La implementación de Audience Manager mediante Platform Web SDK difiere de la i
 
 ## Crear una fuente de datos
 
-A continuación, cree un [Source de datos](https://experienceleague.adobe.com/es/docs/audience-manager/user-guide/features/data-sources/datasources-list-and-settings), una herramienta fundamental para organizar los datos en Audience Manager:
+A continuación, cree un [Source de datos](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/features/data-sources/datasources-list-and-settings), una herramienta fundamental para organizar los datos en Audience Manager:
 
 1. Ir a la interfaz de [Audience Manager](https://experience.adobe.com/#/audience-manager/)
 1. Seleccione **[!UICONTROL Datos de audiencia]** en la barra de navegación superior
@@ -75,7 +75,7 @@ A continuación, cree un [Source de datos](https://experienceleague.adobe.com/es
 
 ## Crear un rasgo
 
-Una vez guardado el Data Source, configure un [rasgo](https://experienceleague.adobe.com/es/docs/audience-manager/user-guide/features/traits/traits-overview). Las características son una combinación de una o más señales en Audience Manager. Cree una característica para los visitantes de la página principal.
+Una vez guardado el Data Source, configure un [rasgo](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/features/traits/traits-overview). Las características son una combinación de una o más señales en Audience Manager. Cree una característica para los visitantes de la página principal.
 
 >[!NOTE]
 >
@@ -90,7 +90,7 @@ Una vez guardado el Data Source, configure un [rasgo](https://experienceleague.a
 1. Seleccione el **[!UICONTROL Source de datos]** que creó en la sección anterior.
 1. **[!UICONTROL Seleccione una carpeta]** en la que guardar el rasgo en el panel de la derecha. Es posible que desee crear una carpeta **seleccionando el icono +** junto a una carpeta principal existente. Puede asignar un nombre a esta nueva carpeta `Platform Web SDK tutorial`.
 1. Expanda el símbolo de intercalación **[!UICONTROL Expresión de característica]** y seleccione **[!UICONTROL Generador de expresiones]**. Debe proporcionar un par de valor clave que signifique una visita a la página principal.
-1. Abra [la página principal de Luma](https://newluma.enablementadobe.com) (asignada a su propiedad de etiquetas) y **Adobe Experience Platform Debugger**, y actualice la página.
+1. Abra [la página principal de Luma](https://luma.enablementadobe.com) (asignada a su propiedad de etiquetas) y **Adobe Experience Platform Debugger**, y actualice la página.
 1. Consulte las Solicitudes de red y los detalles del evento para Platform Web SDK para encontrar el valor de clave y nombre para la página principal.
    ![Datos XDM de Adobe Experience Platform Audience Manager](assets/xdm-keyvalue.jpg)
 1. Vuelva al Generador de expresiones en la interfaz de usuario de Audience Manager e introduzca la clave como **`web.webPageDetails.name`** y el valor de **`content:luma:us:en`**. Este paso garantiza que active una característica cada vez que cargue la página principal.
@@ -162,7 +162,7 @@ Unas horas después de la creación inicial del segmento, puede validar que func
 
 En primer lugar, confirme que puede optar al segmento
 
-1. Abra la [página principal del sitio de demostración de Luma](https://newluma.enablementadobe.com) con él asignado a su propiedad de etiquetas para cumplir los requisitos para el segmento recién creado.
+1. Abra la [página principal del sitio de demostración de Luma](https://luma.enablementadobe.com) con él asignado a su propiedad de etiquetas para cumplir los requisitos para el segmento recién creado.
 1. Abra la ficha **herramientas para desarrolladores** > **Red** de su explorador
 1. Filtre a la solicitud de Platform Web SDK usando `interact` como filtro de texto
 1. Seleccione una llamada y abra la ficha **Vista previa** para ver los detalles de la respuesta
@@ -171,7 +171,7 @@ En primer lugar, confirme que puede optar al segmento
    ![Adobe Experience Platform Audience Manager Agregar característica](assets/segment-validate-response.jpg)
 
 1. Abra la ficha **Aplicación** y abra **Cookies** desde el menú **Almacenamiento**.
-1. Seleccione el dominio **`https://newluma.enablementadobe.com`** y confirme que la cookie se ha escrito correctamente en la lista
+1. Seleccione el dominio **`https://luma.enablementadobe.com`** y confirme que la cookie se ha escrito correctamente en la lista
 
    ![Adobe Experience Platform Audience Manager Agregar característica](assets/validate-cookie.jpg)
 
@@ -185,4 +185,4 @@ Ahora que ha completado esta lección, debe poder ver cómo Platform Web SDK pas
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=es)
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

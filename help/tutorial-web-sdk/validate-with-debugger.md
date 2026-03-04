@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo validar la implementación de Plat
 feature: Web SDK,Tags,Debugger
 jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 1feddab414a8a7e49f04b8886c275d06516d0114
+source-git-commit: 9985ee11daf48c181cbf209b2a354f5762d31b40
 workflow-type: tm+mt
 source-wordcount: '1158'
 ht-degree: 3%
@@ -23,9 +23,9 @@ Experience Platform Debugger es una extensión disponible para Chrome que le ayu
 
 Si nunca antes ha utilizado Debugger, es posible que desee ver este vídeo de información general de cinco minutos:
 
->[!VIDEO](https://video.tv.adobe.com/v/35998?captions=spa&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
-En esta lección, utiliza la [extensión de Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) para reemplazar la propiedad de etiquetas codificada en el [sitio de demostración de Luma](https://newluma.enablementadobe.com) con su propia propiedad.
+En esta lección, utiliza la [extensión de Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) para reemplazar la propiedad de etiquetas codificada en el [sitio de demostración de Luma](https://luma.enablementadobe.com) con su propia propiedad.
 
 Esta técnica se denomina cambio de entorno y será útil más adelante, cuando trabaje con etiquetas en su propio sitio web. Permite cargar el sitio web de producción en el explorador, pero con la biblioteca de etiquetas *development*. Esta capacidad permite realizar y validar cambios de etiquetas con seguridad en de forma independiente de las revisiones de código normales. Después de todo, esta separación de las versiones de etiquetas de marketing de las versiones de código normal es una de las principales razones por las que los clientes utilizan etiquetas.
 
@@ -39,21 +39,21 @@ Al final de esta lección, podrá utilizar Debugger para lo siguiente:
 
 ## Requisitos previos
 
-Está familiarizado con las etiquetas de recopilación de datos y con el [sitio de demostración de Luma](https://newluma.enablementadobe.com/){target="_blank"}, y ha completado las lecciones anteriores en el tutorial:
+Está familiarizado con las etiquetas de recopilación de datos y con el [sitio de demostración de Luma](https://luma.enablementadobe.com/){target="_blank"}, y ha completado las lecciones anteriores en el tutorial:
 
 * [Configuración de un esquema XDM](configure-schemas.md)
 * [Configuración de un área de nombres de identidad](configure-identities.md)
 * [Configuración de una secuencia de datos](configure-datastream.md)
 * [Extensión web SDK instalada en la propiedad tag](install-web-sdk.md)
 * [Creación de elementos de datos](create-data-elements.md)
-* [Creación de identidades](create-identities.md)
+* [Captura de identidades](create-identities.md)
 * [Creación de reglas de etiquetas](create-tag-rule.md)
 
 ## Carga de bibliotecas de etiquetas alternativas con Debugger
 
 Experience Platform Debugger tiene una característica interesante que le permite reemplazar una biblioteca de etiquetas existente por otra diferente. Esta técnica es útil para la validación y nos permite omitir muchos pasos de implementación en este tutorial.
 
-1. Asegúrese de tener abierto el [sitio web de demostración de Luma](https://newluma.enablementadobe.com){target="_blank"} y seleccione el icono de extensión de Experience Platform Debugger
+1. Asegúrese de tener abierto el [sitio web de demostración de Luma](https://luma.enablementadobe.com){target="_blank"} y seleccione el icono de extensión de Experience Platform Debugger
 1. Debugger se abrirá y mostrará algunos detalles de la implementación codificada (es posible que tenga que volver a cargar el sitio de Luma después de abrir Debugger).
 1. Confirme que Debugger está &quot;**[!UICONTROL conectado a Luma]**&quot; como se muestra a continuación y, a continuación, seleccione el icono &quot;**[!UICONTROL bloquear]**&quot; para bloquear Debugger en el sitio de Luma.
 1. Seleccione el botón **[!UICONTROL Iniciar sesión]** e inicie sesión en Adobe Experience Cloud con su Adobe Id.
@@ -111,7 +111,7 @@ También puede validar los detalles del mapa de identidad:
 
 1. Inicie sesión en el sitio de Luma con las credenciales `test@test.com`/`test`
 
-1. Vuelva a la [página principal de Luma](https://newluma.enablementadobe.com)
+1. Vuelva a la [página principal de Luma](https://luma.enablementadobe.com)
 
 1. Abra la sección **[!UICONTROL Experience Platform Web SDK]** en el panel de navegación izquierdo
 
@@ -144,7 +144,7 @@ Estos tipos de detalles de solicitud también están visibles en la ficha **Red*
 
 Como aprendió en la lección [Configuración de un conjunto de datos](configure-datastream.md), Platform Web SDK envía primero datos de su propiedad digital a Platform Edge Network. A continuación, Platform Edge Network realiza solicitudes adicionales del lado del servidor a los servicios correspondientes habilitados en el conjunto de datos. Puede validar las solicitudes del lado del servidor realizadas por Platform Edge Network mediante Edge Trace en Debugger.
 
-<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/es/docs/experience-platform/assurance/home). -->
+<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home). -->
 
 
 ### Habilitar seguimiento de Edge
@@ -160,7 +160,7 @@ Para habilitar el seguimiento de Edge:
 
    ![Seguimiento de Edge conectado](assets/analytics-debugger-edge-connected.png)
 
-1. Actualice la [página principal de Luma](https://newluma.enablementadobe.com/) y vuelva a comprobar **[!UICONTROL Experience Platform Debugger]** para ver cómo llegan los datos.
+1. Actualice la [página principal de Luma](https://luma.enablementadobe.com/) y vuelva a comprobar **[!UICONTROL Experience Platform Debugger]** para ver cómo llegan los datos.
 
    ![Seguimiento de Edge de señalizaciones de Analytics](assets/validate-edge-trace.png)
 
@@ -168,4 +168,4 @@ En este punto, no puede ver ninguna solicitud de Platform Edge Network que vaya 
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=es)
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

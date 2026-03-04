@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo instalar y configurar la extensió
 feature: Web SDK, Tags
 jira: KT-15404
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 1feddab414a8a7e49f04b8886c275d06516d0114
+source-git-commit: 6e04d7cc2e0bc2b5e080d7501f1d330cdb4edc5f
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 11%
+source-wordcount: '635'
+ht-degree: 10%
 
 ---
 
@@ -33,7 +33,7 @@ Debe haber completado las lecciones anteriores en este tutorial:
 
 ### Añadir una propiedad de etiqueta
 
-Primero debe tener una propiedad de etiqueta. Una propiedad es un contenedor para todas las JavaScript, reglas y otras funciones necesarias para recopilar detalles de una página web y enviarlos a varias ubicaciones.
+Una propiedad tag es un contenedor para todas las JavaScript, reglas y otras funciones necesarias para recopilar detalles de una página web y enviarlos a varias ubicaciones.
 
 Cree una nueva propiedad de etiqueta para el tutorial:
 
@@ -53,6 +53,7 @@ Con el esquema XDM, la secuencia de datos y la propiedad de etiqueta creados, ya
 1. Abra la nueva propiedad de etiquetas
 1. Ir a **[!UICONTROL Extensiones]** > **[!UICONTROL Catálogo]**
 1. Buscar `Adobe Experience Platform Web SDK`
+1. Seleccione la extensión `Adobe Experience Platform Web SDK` para que se abra la barra lateral
 1. Seleccionar **[!UICONTROL Instalar]**
 
    ![Instalar extensión de Web SDK](assets/extension-platform-web-sdk.png)
@@ -60,7 +61,7 @@ Con el esquema XDM, la secuencia de datos y la propiedad de etiqueta creados, ya
 
 ## Vinculación de la extensión al conjunto de datos
 
-Deje la mayoría de las configuraciones predeterminadas y actualícelas más tarde, según sea necesario. Lo único que debe hacer ahora es vincular la extensión al conjunto de datos:
+Deje la mayoría de las configuraciones predeterminadas y actualícelas más tarde, según sea necesario. Lo único que debe hacer ahora es vincular la extensión al conjunto de datos. Esto agrega el ID de secuencia de datos/configuración correcto a las llamadas de red realizadas desde el explorador, de modo que las llamadas se enrutan a la secuencia de datos correcta cuando llegan a Platform Edge Network:
 
 1. En **[!UICONTROL Datastreams]**, seleccione el método de entrada **[!UICONTROL Choose from list]**
 1. Configure el **[!UICONTROL Entorno de producción]**. (Los demás entornos de etiquetas de la propiedad heredarán la configuración de producción):
@@ -70,7 +71,7 @@ Deje la mayoría de las configuraciones predeterminadas y actualícelas más tar
 
    ![Selección de secuencia de datos](assets/extension-luma-web-sdk-datastream-extension.png)
 
-Para obtener más información sobre cada sección de la extensión, consulte [Configuración de la extensión de Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/es/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
+Para obtener más información sobre cada sección de la extensión, consulte [Configuración de la extensión de Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
 
 >[!NOTE]
 >
@@ -84,4 +85,4 @@ Ahora que ha instalado Platform Web SDK y lo ha asociado al conjunto de datos, e
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=es)
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

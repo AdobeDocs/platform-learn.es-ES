@@ -3,7 +3,7 @@ title: Tutorial de implementación de Adobe Experience Cloud con SDK web
 description: 'Obtenga información sobre cómo implementar aplicaciones de Experience Cloud mediante el SDK web de Adobe Experience Platform. '
 recommendations: catalog, noDisplay
 exl-id: cf0ff74b-e81e-4f6d-ab7d-6c70e9b52d78
-source-git-commit: 1feddab414a8a7e49f04b8886c275d06516d0114
+source-git-commit: 17adeb23768ee005428a204a98d18f4e76b9d945
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 6%
@@ -14,11 +14,11 @@ ht-degree: 6%
 
 Obtenga información sobre cómo implementar aplicaciones de Experience Cloud mediante el SDK web de Adobe Experience Platform. 
 
-Experience Platform Web SDK es una biblioteca JavaScript del lado del cliente que permite a los clientes de Adobe Experience Cloud interactuar con aplicaciones de Adobe y servicios de terceros a través de Adobe Experience Platform Edge Network. Consulte [Información general de Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/es/docs/experience-platform/edge/home) para obtener información más detallada.
+Experience Platform Web SDK es una biblioteca JavaScript del lado del cliente que permite a los clientes de Adobe Experience Cloud interactuar con aplicaciones de Adobe y servicios de terceros a través de Adobe Experience Platform Edge Network. Consulte [Información general de Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/edge/home) para obtener información más detallada.
 
 ![Arquitectura de Experience Platform Web SDK](assets/dc-websdk.png)
 
-Este tutorial le guía a través de la implementación de Platform Web SDK en un sitio web de venta minorista de muestra denominado Luma. El [sitio de Luma](https://newluma.enablementadobe.com) tiene una capa de datos y una funcionalidad enriquecidas que permiten crear una implementación realista. En este tutorial:
+Este tutorial le guía a través de la implementación de Platform Web SDK en un sitio web de venta minorista de muestra denominado Luma. El [sitio de Luma](https://luma.enablementadobe.com) tiene una capa de datos y una funcionalidad enriquecidas que permiten crear una implementación realista. En este tutorial:
 
 * Cree su propia propiedad de etiquetas, en su propia cuenta, con una implementación de Platform Web SDK para el sitio web de Luma.
 * Configure las principales funciones de recopilación de datos utilizadas en las implementaciones de Web SDK, como flujos de datos, esquemas y áreas de nombres de identidad.
@@ -48,7 +48,7 @@ En estas lecciones, se da por hecho que tiene una cuenta de usuario de Adobe y l
    * **[!UICONTROL Derechos de propiedad]**—permiso para **[!UICONTROL aprobar]**, **[!UICONTROL desarrollar]**, **[!UICONTROL editar propiedad]**, **[!UICONTROL administrar entornos]**, **[!UICONTROL administrar extensiones]** y **[!UICONTROL publicar]**,
    * **[!UICONTROL Derechos de compañía]**—permiso para **[!UICONTROL administrar propiedades]**
 
-     Para obtener más información acerca de los permisos de etiquetas, consulte [la documentación](https://experienceleague.adobe.com/es/docs/experience-platform/tags/admin/user-permissions).
+     Para obtener más información acerca de los permisos de etiquetas, consulte [la documentación](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions).
 
 * Para **Experience Platform**, debe tener:
 
@@ -62,19 +62,19 @@ En estas lecciones, se da por hecho que tiene una cuenta de usuario de Adobe y l
 
      Las funciones requeridas deben estar disponibles para todos los clientes de Experience Cloud, incluso si no es cliente de una aplicación basada en Platform como Real-Time CDP.
 
-     Para obtener más información sobre el control de acceso a la plataforma, consulte [la documentación](https://experienceleague.adobe.com/es/docs/experience-platform/access-control/home).
+     Para obtener más información sobre el control de acceso a la plataforma, consulte [la documentación](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home).
 
 * Para la lección opcional de **Journey Optimizer**, debe tener elementos de permiso para **[!UICONTROL Administrar campañas]**, **[!UICONTROL Publicar campañas]** y **[!UICONTROL Ver informes de campañas]**.
   <!--
   * For the optional **Decisioning** lesson, you must have permission items to **[!UICONTROL Manage decisions]**, **[!UICONTROL View decisions]**, **[!UICONTROL Manage offers]**, **[!UICONTROL Manage ranking strategies]**.
-  * See the documentation for more information on [Journey Optimizer permission configuration](https://experienceleague.adobe.com/es/docs/journey-optimizer/using/access-control/high-low-permissions#campaign-capability).
+  * See the documentation for more information on [Journey Optimizer permission configuration](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions#campaign-capability).
   -->
 
-* Para la lección opcional de **Adobe Analytics**, debe tener [acceso de administrador a la configuración del grupo de informes, las reglas de procesamiento y Analysis Workspace](https://experienceleague.adobe.com/es/docs/analytics/admin/admin-console/home)
+* Para la lección opcional de **Adobe Analytics**, debe tener [acceso de administrador a la configuración del grupo de informes, las reglas de procesamiento y Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/home)
 
-* Para la lección opcional de **Adobe Target**, debes tener acceso de [Editor o Aprobador](https://experienceleague.adobe.com/es/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80).
+* Para la lección opcional de **Adobe Target**, debes tener acceso de [Editor o Aprobador](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80).
 
-* Para la lección opcional de **Audience Manager**, debe tener acceso para crear, leer y escribir características, segmentos y destinos. Para obtener más información, consulte el tutorial sobre [Control de acceso basado en roles de Audience Manager](https://experienceleague.adobe.com/es/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
+* Para la lección opcional de **Audience Manager**, debe tener acceso para crear, leer y escribir características, segmentos y destinos. Para obtener más información, consulte el tutorial sobre [Control de acceso basado en roles de Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
 
 
 >[!NOTE]
@@ -90,12 +90,12 @@ En estas lecciones, se da por hecho que tiene una cuenta de usuario de Adobe y l
 
 
 
-Cargue el [sitio web de Luma](https://newluma.enablementadobe.com){target="blank"} en una ficha de navegador independiente y márquelo como favorito para que pueda cargarlo fácilmente siempre que lo necesite durante el tutorial. No necesita ningún acceso adicional a Luma aparte de poder cargar nuestro sitio de producción alojado.
+Cargue el [sitio web de Luma](https://luma.enablementadobe.com){target="blank"} en una ficha de navegador independiente y márquelo como favorito para que pueda cargarlo fácilmente siempre que lo necesite durante el tutorial. No necesita ningún acceso adicional a Luma aparte de poder cargar nuestro sitio de producción alojado.
 
-[![Sitio web de Luma](assets/overview-luma.png)](https://newluma.enablementadobe.com){target="blank"}
+[![Sitio web de Luma](assets/overview-luma.png)](https://luma.enablementadobe.com){target="blank"}
 
 ¡Vamos a empezar! Siguiente: [Crear un esquema XDM para datos web](configure-schemas.md)
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=es)
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

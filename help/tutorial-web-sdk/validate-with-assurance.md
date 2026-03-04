@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo validar la implementación de SDK 
 feature: Web SDK,Tags,Assurance
 jira: KT-15406
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: 1feddab414a8a7e49f04b8886c275d06516d0114
+source-git-commit: 9985ee11daf48c181cbf209b2a354f5762d31b40
 workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 7%
@@ -26,14 +26,14 @@ Al final de esta lección, debe poder:
 
 ## Requisitos previos
 
-Está familiarizado con las etiquetas de recopilación de datos y con el [sitio de demostración de Luma](https://newluma.enablementadobe.com){target="_blank"}, y ha completado las lecciones anteriores en el tutorial:
+Está familiarizado con las etiquetas de recopilación de datos y con el [sitio de demostración de Luma](https://luma.enablementadobe.com){target="_blank"}, y ha completado las lecciones anteriores en el tutorial:
 
 * [Configuración de un esquema XDM](configure-schemas.md)
 * [Configuración de un área de nombres de identidad](configure-identities.md)
 * [Configuración de una secuencia de datos](configure-datastream.md)
 * [Extensión web SDK instalada en la propiedad tag](install-web-sdk.md)
 * [Creación de elementos de datos](create-data-elements.md)
-* [Creación de identidades](create-identities.md)
+* [Captura de identidades](create-identities.md)
 * [Creación de una regla de etiqueta](create-tag-rule.md)
 * [Validar con Debugger](validate-with-debugger.md)
 
@@ -48,7 +48,7 @@ Cada vez que se activa el seguimiento de Edge en Adobe Experience Platform Debug
 
 Consulte cómo hemos realizado esto en la lección de Debugger:
 
-1. Vaya al [sitio de demostración de Luma](https://newluma.enablementadobe.com) y use el depurador para [cambiar la propiedad de etiquetas del sitio a su propia propiedad de desarrollo](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. Vaya al [sitio de demostración de Luma](https://luma.enablementadobe.com) y use el depurador para [cambiar la propiedad de etiquetas del sitio a su propia propiedad de desarrollo](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. En la navegación izquierda de **[!UICONTROL Experience Platform Debugger]**, seleccione **[!UICONTROL Registros]**
 1. Seleccione la ficha **[!UICONTROL Edge]** y seleccione **[!UICONTROL Conectar]**
 
@@ -67,7 +67,7 @@ Consulte cómo hemos realizado esto en la lección de Debugger:
    ![Crear una sesión de Assurance](assets/assurance-create-session.png)
 1. Seleccione Inicio
 1. Asigne un nombre a la sesión, por ejemplo, `Luma Web SDK validation`
-1. Como **[!UICONTROL URL base]**, escriba `https://newluma.enablementadobe.com/`
+1. Como **[!UICONTROL URL base]**, escriba `https://luma.enablementadobe.com/`
    ![Asigne un nombre a la sesión de Assurance](assets/assurance-name-session.png)
 1. En la pantalla siguiente, seleccione **[!UICONTROL Copiar vínculo]**
 1. Seleccione el icono para copiar el vínculo en el portapapeles.
@@ -95,4 +95,4 @@ Ahora que un objeto XDM se activa en una página y con los conocimientos necesar
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=es)
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
