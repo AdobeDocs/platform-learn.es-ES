@@ -225,7 +225,7 @@ Comparar el elemento de datos con la estructura de `productListItems` (sugerenci
 >[!IMPORTANT]
 >
 >Al asignar campos de la capa de datos al XDM, asegúrese de que los campos coincidan con el tipo de datos del campo XDM. En el ejemplo anterior `quantity` y `priceTotal` deben ser enteros, de lo contrario el registro no se introducirá en Platform.
-> ![Tipo de datos de esquema XDM ](assets/set-up-analytics-quantity-integer.png)
+> ![Tipo de datos de esquema XDM &#x200B;](assets/set-up-analytics-quantity-integer.png)
 
 Ahora, asignemos la matriz al objeto XDM:
 
