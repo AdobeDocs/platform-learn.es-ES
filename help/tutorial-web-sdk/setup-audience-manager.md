@@ -15,7 +15,7 @@ ht-degree: 4%
 
 Obtenga información sobre cómo configurar Adobe Audience Manager con el SDK web de Adobe Experience Platform y validar la implementación mediante un destino de cookie.
 
-[Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager) es la solución de Adobe Experience Cloud que proporciona todo lo necesario para recopilar información comercial relevante acerca de los visitantes del sitio, crear segmentos comercializables y ofrecer contenido y publicidad segmentada a la audiencia adecuada.
+[Adobe Audience Manager](https://experienceleague.adobe.com/es/docs/audience-manager) es la solución de Adobe Experience Cloud que proporciona todo lo necesario para recopilar información comercial relevante acerca de los visitantes del sitio, crear segmentos comercializables y ofrecer contenido y publicidad segmentada a la audiencia adecuada.
 
 
 
@@ -34,11 +34,11 @@ Al final de esta lección, debe poder:
 Para completar esta lección, primero debe:
 
 * Complete las lecciones anteriores de las secciones Configuración inicial y Configuración de etiquetas de este tutorial.
-* Tener acceso a Adobe Audience Manager y los permisos adecuados para crear, leer y escribir características, segmentos y destinos. Para obtener más información, consulte [Control de acceso basado en roles de Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
+* Tener acceso a Adobe Audience Manager y los permisos adecuados para crear, leer y escribir características, segmentos y destinos. Para obtener más información, consulte [Control de acceso basado en roles de Audience Manager](https://experienceleague.adobe.com/es/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
 
 ## Configuración de la secuencia de datos
 
-La implementación de Audience Manager mediante Platform Web SDK difiere de la implementación mediante [reenvío del lado del servidor (SSF)](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf). El reenvío del lado del servidor pasa los datos de solicitud de Adobe Analytics a Audience Manager. Una implementación de Platform Web SDK pasa los datos XDM enviados a Platform Edge Network a Audience Manager. Audience Manager está habilitado en el conjunto de datos:
+La implementación de Audience Manager mediante Platform Web SDK difiere de la implementación mediante [reenvío del lado del servidor (SSF)](https://experienceleague.adobe.com/es/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf). El reenvío del lado del servidor pasa los datos de solicitud de Adobe Analytics a Audience Manager. Una implementación de Platform Web SDK pasa los datos XDM enviados a Platform Edge Network a Audience Manager. Audience Manager está habilitado en el conjunto de datos:
 
 1. Vaya a la interfaz [Recopilación de datos](https://experience.adobe.com/#/data-collection){target="blank"}
 1. En el panel de navegación izquierdo, seleccione **[!UICONTROL Datastreams]**
@@ -55,7 +55,7 @@ La implementación de Audience Manager mediante Platform Web SDK difiere de la i
 
 ## Crear una fuente de datos
 
-A continuación, cree un [Source de datos](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/features/data-sources/datasources-list-and-settings), una herramienta fundamental para organizar los datos en Audience Manager:
+A continuación, cree un [Source de datos](https://experienceleague.adobe.com/es/docs/audience-manager/user-guide/features/data-sources/datasources-list-and-settings), una herramienta fundamental para organizar los datos en Audience Manager:
 
 1. Ir a la interfaz de [Audience Manager](https://experience.adobe.com/#/audience-manager/)
 1. Seleccione **[!UICONTROL Datos de audiencia]** en la barra de navegación superior
@@ -75,7 +75,7 @@ A continuación, cree un [Source de datos](https://experienceleague.adobe.com/en
 
 ## Crear un rasgo
 
-Una vez guardado el Data Source, configure un [rasgo](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/features/traits/traits-overview). Las características son una combinación de una o más señales en Audience Manager. Cree una característica para los visitantes de la página principal.
+Una vez guardado el Data Source, configure un [rasgo](https://experienceleague.adobe.com/es/docs/audience-manager/user-guide/features/traits/traits-overview). Las características son una combinación de una o más señales en Audience Manager. Cree una característica para los visitantes de la página principal.
 
 >[!NOTE]
 >
@@ -185,4 +185,4 @@ Ahora que ha completado esta lección, debe poder ver cómo Platform Web SDK pas
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=es)
