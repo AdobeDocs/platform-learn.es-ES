@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo enviar un evento a Platform Edge N
 feature: Tags
 jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: d15ce3b51424dba51b5b621b6d92eff85edd5b27
+source-git-commit: da65f13f95a6d1258655e8eebc76cf024221a610
 workflow-type: tm+mt
-source-wordcount: '1865'
+source-wordcount: '1863'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ Al final de esta lección, puede hacer lo siguiente:
 
 ## Requisitos previos
 
-Está familiarizado con las etiquetas de recopilación de datos y con el [sitio de demostración de Luma](https://luma.enablementadobe.com), y ha completado las lecciones anteriores en el tutorial:
+Está familiarizado con las etiquetas de recopilación de datos y con el [sitio web de demostración de Luma](https://luma.enablementadobe.com), y ha completado las lecciones anteriores en el tutorial:
 
 * [Configuración de un esquema XDM](configure-schemas.md)
 * [Configuración de un área de nombres de identidad](configure-identities.md)
@@ -91,7 +91,7 @@ Todas estas reglas se secuenciarán correctamente usando la opción &quot;[!UICO
 
 Este vídeo ofrece información general del proceso:
 
->[!VIDEO](https://video.tv.adobe.com/v/3454030/?captions=spa&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
 
 ### Campos de configuración global
 
@@ -225,7 +225,7 @@ Comparar el elemento de datos con la estructura de `productListItems` (sugerenci
 >[!IMPORTANT]
 >
 >Al asignar campos de la capa de datos al XDM, asegúrese de que los campos coincidan con el tipo de datos del campo XDM. En el ejemplo anterior `quantity` y `priceTotal` deben ser enteros, de lo contrario el registro no se introducirá en Platform.
-> ![Tipo de datos de esquema XDM &#x200B;](assets/set-up-analytics-quantity-integer.png)
+> ![Tipo de datos de esquema XDM ](assets/set-up-analytics-quantity-integer.png)
 
 Ahora, asignemos la matriz al objeto XDM:
 
@@ -329,7 +329,7 @@ Ahora que ha establecido las variables, puede crear la regla para enviar el obje
 
 Debe tener las siguientes reglas en la propiedad:
 
-    ![Comprobar lista de reglas](assets/create-rule-list-of-rules.png)
+![Verificar lista de reglas](assets/create-rule-list-of-rules.png)
 
 ## Publicación de las reglas en una biblioteca
 
@@ -364,4 +364,4 @@ Ahora está listo para validar los datos de la solicitud mediante Adobe Experien
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=es)
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

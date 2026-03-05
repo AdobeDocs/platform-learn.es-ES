@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo configurar la privacidad de la ext
 feature: Web SDK,Tags,Consent
 jira: KT-15413
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: 1feddab414a8a7e49f04b8886c275d06516d0114
+source-git-commit: da65f13f95a6d1258655e8eebc76cf024221a610
 workflow-type: tm+mt
 source-wordcount: '1605'
 ht-degree: 1%
@@ -122,7 +122,7 @@ Ahora configurará e implementará el consentimiento para este escenario:
 
 
 2. Guarde y cree este cambio en la biblioteca de etiquetas
-3. Cargue la biblioteca de etiquetas en el sitio de demostración de Luma.
+3. Cargue la biblioteca de etiquetas en el sitio web de demostración de Luma.
 4. Habilite la depuración de etiquetas en el sitio de Luma y vuelva a cargar la página. En la consola para desarrolladores del explorador, debería ver que defaultConsent es igual a **[!UICONTROL In]**
 5. Con esta configuración, la extensión Experience Platform Web SDK realiza solicitudes de red a Platform Edge Network hasta que un visitante decida rechazar las cookies y la exclusión:
 
@@ -167,7 +167,7 @@ Si un visitante decide excluirse (rechazar las cookies de seguimiento), debe cam
 
 Ahora, cuando un visitante se excluye, la regla configurada de la manera anterior se activaría y establecería el consentimiento de Web SDK como **[!UICONTROL Out]**.
 
-Para validarlo, vaya al sitio de demostración de Luma, rechace las cookies y confirme que no se activa ninguna solicitud de Web SDK después de la exclusión.
+Para validarlo, vaya al sitio web de demostración de Luma, rechace las cookies y confirme que no se activa ninguna solicitud de Web SDK después de la exclusión.
 
 ### Escenario 2: exclusión implícita
 
@@ -215,7 +215,7 @@ Una vez que haya establecido esta regla, la recopilación de eventos debe comenz
 ![Opción de visitante de publicación de consentimiento](assets/consent-post-user-optin.png)
 
 
-Para obtener más información sobre el consentimiento en Web SDK, consulte [Apoyo a las preferencias de consentimiento del cliente](https://experienceleague.adobe.com/es/docs/experience-platform/edge/consent/supporting-consent).
+Para obtener más información sobre el consentimiento en Web SDK, consulte [Apoyo a las preferencias de consentimiento del cliente](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
 
 >[!TIP]
 >
@@ -223,8 +223,8 @@ Para obtener más información sobre el consentimiento en Web SDK, consulte [Apo
 
 
 
-Para obtener más información sobre la acción [!UICONTROL Establecer consentimiento], consulte [Establecer consentimiento](https://experienceleague.adobe.com/es/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
+Para obtener más información sobre la acción [!UICONTROL Establecer consentimiento], consulte [Establecer consentimiento](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
 
 >[!NOTE]
 >
->Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=es)
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Web SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
