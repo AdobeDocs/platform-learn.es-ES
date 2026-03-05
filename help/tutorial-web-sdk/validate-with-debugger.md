@@ -23,7 +23,7 @@ Experience Platform Debugger es una [extensión de Chrome](https://chromewebstor
 
 Si nunca antes ha utilizado Debugger, es posible que desee ver este vídeo de información general de cinco minutos:
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/35998?captions=spa&learn=on&enablevpops)
 
 En esta lección, usa la [extensión de Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) para reemplazar la propiedad de etiquetas codificada en el [sitio web de demostración de Luma](https://luma.enablementadobe.com) con su propia propiedad.
 
