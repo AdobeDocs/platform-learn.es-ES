@@ -16,6 +16,6 @@ ht-degree: 28%
 
 # Analizar y visualizar perspectivas omnicanal en Tableau mediante el servicio de consulta
 
-Descubra cómo puede utilizar el servicio de consulta de Adobe Experience Platform con herramientas de visualización de datos externas mediante un ejemplo de análisis de pérdida. Para obtener más información, visite la [documentación del servicio de consultas](https://experienceleague.adobe.com/en/docs/experience-platform/query/home).
+Descubra cómo puede utilizar el servicio de consulta de Adobe Experience Platform con herramientas de visualización de datos externas mediante un ejemplo de análisis de pérdida. Para obtener más información, visite la [documentación del servicio de consultas](https://experienceleague.adobe.com/es/docs/experience-platform/query/home).
 
 >[!VIDEO](https://video.tv.adobe.com/v/342115?learn=on&enablevpops)

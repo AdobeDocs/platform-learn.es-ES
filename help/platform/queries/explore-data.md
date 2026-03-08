@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Validación de datos con el servicio de consultas
 
-Obtenga información sobre cómo validar datos ingeridos mediante funciones SQL. Para obtener más información, visite la [documentación del servicio de consultas](https://experienceleague.adobe.com/en/docs/experience-platform/query/home).
+Obtenga información sobre cómo validar datos ingeridos mediante funciones SQL. Para obtener más información, visite la [documentación del servicio de consultas](https://experienceleague.adobe.com/es/docs/experience-platform/query/home).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333415?learn=on&enablevpops)

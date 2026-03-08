@@ -82,7 +82,7 @@ Como se ha mencionado, puede establecer diferentes ID de persona para cada conju
 
 El nombre del campo ID de persona no es importante, siempre y cuando el valor de los campos ID de persona se corresponda con. Supongamos que tenemos `email` en un conjunto de datos y `emailAddress` en otro conjunto de datos definido como ID de persona. Si `delaigle@adobe.com` tiene el mismo valor para el campo ID de persona en ambos conjuntos de datos, CJA podrá unir los datos.
 
-Revise las preguntas frecuentes de CJA aquí para comprender los matices de la vinculación de identidad: [preguntas frecuentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html).
+Revise las preguntas frecuentes de CJA aquí para comprender los matices de la vinculación de identidad: [preguntas frecuentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=es).
 
 ### Configuración de los datos mediante el ID de persona
 

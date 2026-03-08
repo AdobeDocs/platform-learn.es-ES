@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Información general sobre Real-Time Customer Data Platform (CDP), B2B edition
 
-Aprenda a que los especialistas en marketing de empresa a empresa (B2B) puedan unificar a las personas y los perfiles de cuenta en todos los sistemas y comprender plenamente a sus clientes. Para obtener más información, visite la [documentación de Real-Time CDP B2B edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html).
+Aprenda a que los especialistas en marketing de empresa a empresa (B2B) puedan unificar a las personas y los perfiles de cuenta en todos los sistemas y comprender plenamente a sus clientes. Para obtener más información, visite la [documentación de Real-Time CDP B2B edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=es).
 
 >[!VIDEO](https://video.tv.adobe.com/v/338249?learn=on&enablevpops)

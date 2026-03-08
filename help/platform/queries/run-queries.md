@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Ejecutar consultas
 
-Aprenda a utilizar el Editor de consultas de Adobe Experience Platform para crear, ejecutar y administrar consultas SQL de forma eficaz. Los visualizadores aprenderán a utilizar funciones como el explorador de objetos, la función de autocompletar, las consultas parametrizadas y las herramientas de programación para optimizar los flujos de trabajo de datos y generar perspectivas procesables en toda la organización. Para obtener más información, visite la [documentación del servicio de consultas](https://experienceleague.adobe.com/en/docs/experience-platform/query/home).
+Aprenda a utilizar el Editor de consultas de Adobe Experience Platform para crear, ejecutar y administrar consultas SQL de forma eficaz. Los visualizadores aprenderán a utilizar funciones como el explorador de objetos, la función de autocompletar, las consultas parametrizadas y las herramientas de programación para optimizar los flujos de trabajo de datos y generar perspectivas procesables en toda la organización. Para obtener más información, visite la [documentación del servicio de consultas](https://experienceleague.adobe.com/es/docs/experience-platform/query/home).
 
 >[!VIDEO](https://video.tv.adobe.com/v/29796?learn=on&enablevpops)

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Empezamos por configurar una conexión entre Adobe Experience Platform y su Enterprise Data Warehouse. Utilizamos esquemas y modelos de datos basados en la forma en que los datos se encuentran en Data Warehouse para admitir la creación de consultas.
 
-Para demostrarlo, conectamos a una cuenta de Snowflake. La Composición de audiencias federada admite una lista cada vez más extensa de conexiones de Data Warehouse. Ver la [lista actualizada de integraciones](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
+Para demostrarlo, conectamos a una cuenta de Snowflake. La Composición de audiencias federada admite una lista cada vez más extensa de conexiones de Data Warehouse. Ver la [lista actualizada de integraciones](https://experienceleague.adobe.com/es/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
 
 ## Pasos
 

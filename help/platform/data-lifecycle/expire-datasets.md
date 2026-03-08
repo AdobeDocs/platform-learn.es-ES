@@ -26,4 +26,4 @@ La eliminación de conjuntos de datos permite a los administradores de datos y a
 
 >[!NOTE]
 >
-> Todos los clientes de Platform pueden [eliminar conjuntos de datos a petición](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html#delete). Actualmente, la programación de eliminaciones de conjuntos de datos solo está disponible para los clientes de Healthcare Shield o Privacy and Security Shield.
+> Todos los clientes de Platform pueden [eliminar conjuntos de datos a petición](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=es#delete). Actualmente, la programación de eliminaciones de conjuntos de datos solo está disponible para los clientes de Healthcare Shield o Privacy and Security Shield.

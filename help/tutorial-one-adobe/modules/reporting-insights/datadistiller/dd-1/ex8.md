@@ -23,7 +23,7 @@ En este ejercicio, ejecutará llamadas de API para administrar plantillas de con
 
 ## Documentación
 
-- [Ayuda del servicio de consultas de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html)
+- [Ayuda del servicio de consultas de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=es)
 - [API de servicio de consultas](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/qs-api.yaml)
 
 ## API del servicio de consultas
