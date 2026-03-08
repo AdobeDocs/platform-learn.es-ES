@@ -4,7 +4,7 @@ description: 'Customer Journey Analytics: Visualización mediante Customer Journ
 kt: 5342
 doc-type: tutorial
 exl-id: 40498a6d-c306-47db-ae12-4cfea6983f03
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1505'
 ht-degree: 0%
@@ -80,7 +80,7 @@ A continuación, haga clic en **Bloquear selección** y seleccione **Elementos s
 Recuerde guardar el proyecto de vez en cuando.
 
 | Sistema operativo | Método abreviado |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | Windows | Control + S |
 | Mac | Comando + S |
 
@@ -125,10 +125,10 @@ A continuación, haga clic en **Bloquear selección** para bloquear esta visuali
 
 Obtenga más información acerca de las visualizaciones con Analysis Workspace aquí:
 
-- [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=es](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=es)
-- [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html?lang=es](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html?lang=es)
+- [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html)
+- [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html)
 
-## Canal de interacción de productos, desde la visualización hasta la compra
+## Funnel de interacción de productos, desde la visualización hasta la compra
 
 Hay muchas maneras de resolver esta pregunta. Uno de ellos es utilizar el tipo de interacción de producto y utilizarlo en una tabla de forma libre. Otra forma es usar una **Visualización de abandonos**. Usemos el último ya que queremos visualizar y analizar al mismo tiempo.
 
@@ -241,7 +241,7 @@ Primero segmentemos los datos para obtener solamente usuarios con llamadas **pos
 Dentro del Generador de filtros, asigne un nombre al filtro
 
 | Nombre | Descripción |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | Sensación de llamada: positiva | Sensación de llamada: positiva |
 
 ![demostración](./images/pro47.png)
@@ -282,7 +282,7 @@ Haz lo mismo con **Personas**, **Agregar al carro** y **Compras**. Vas a termina
 
 ![demostración](./images/pro55.png)
 
-Gracias al primer análisis de flujo, surgió una nueva pregunta. Por lo tanto, decidimos crear esta tabla y comparar algunos KPI con un segmento para responder esa pregunta. Como puede ver, el tiempo para obtener información es mucho más rápido que usar SQL o usar otras soluciones de BI.
+Gracias al primer análisis de flujo, surgió una nueva pregunta. Por lo tanto, decidimos crear esta tabla y comparar algunos KPI con un segmento para responder esa pregunta. Como puede ver, el tiempo para insight es mucho más rápido que usar SQL o usar otras soluciones de BI.
 
 ## Resumen de Customer Journey Analytics y Analysis Workspace
 

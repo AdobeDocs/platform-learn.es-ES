@@ -4,9 +4,9 @@ description: 'Servicio de consultas: API del servicio de consultas'
 kt: 5342
 doc-type: tutorial
 exl-id: c3afc4fe-df10-4d0e-8c2a-0b056ff797ea
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '995'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ En este ejercicio, ejecutará llamadas de API para administrar plantillas de con
 
 ## Documentación
 
-- [Ayuda del servicio de consultas de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=es)
+- [Ayuda del servicio de consultas de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html)
 - [API de servicio de consultas](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/qs-api.yaml)
 
 ## API del servicio de consultas
@@ -93,9 +93,9 @@ Vaya a la sección **Body** de esta solicitud. En **Cuerpo** de esta solicitud, 
 ```sql
 {
     "name" : "ldap - QS API demo - Citi Signal - Product Views Per Day",
-	"description": "ldap - QS API demo - Citi Signal - Product Views Per Day",
-	"dbName": "--aepSandboxName--:all",
-	"sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where --aepTenantId--.demoEnvironment.brandName IN ('Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10"
+    "description": "ldap - QS API demo - Citi Signal - Product Views Per Day",
+    "dbName": "--aepSandboxName--:all",
+    "sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where --aepTenantId--.demoEnvironment.brandName IN ('Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10"
 }
 ```
 
@@ -106,15 +106,15 @@ Después de agregar su **ldap** específico, el cuerpo debería tener un aspecto
 ```json
 {
     "name" : "vangeluw - QS API demo - Citi Signal - Product Views Per Day",
-	"description": "vangeluw - QS API demo - Citi Signal - Product Views Per Day",
-	"dbName": "tech-insiders:all",
-	"sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where _experienceplatform.demoEnvironment.brandName IN ('Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10"
+    "description": "vangeluw - QS API demo - Citi Signal - Product Views Per Day",
+    "dbName": "tech-insiders:all",
+    "sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where _experienceplatform.demoEnvironment.brandName IN ('Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10"
 }
 ```
 
 >[!NOTE]
 >
->La clave **dbName** del cuerpo de JSON anterior hace referencia a la zona protegida que se usa en la instancia de Adobe Experience Platform. Si está usando la zona protegida de PROD, dbName debería ser **prod:all**, si usa otra zona protegida como por ejemplo **tech-insiders**, dbName debería ser igual a **tech-insiders:all**.
+>La clave **dbName** del cuerpo de JSON anterior hace referencia a la zona protegida que se usa en la instancia de Adobe Experience Platform. Si está usando la zona protegida de PROD, dbName debe ser **prod:all**, si usa otra zona protegida como por ejemplo **tech-insiders**, dbName debe ser igual a **tech-insiders:all**.
 
 A continuación, haga clic en el botón azul **Enviar** para crear el segmento y ver los resultados.
 

@@ -4,7 +4,7 @@ description: Complemento AEM CS - MarTech
 kt: 5342
 doc-type: tutorial
 exl-id: 77dc780b-ce6c-403f-847d-8eb64cbe2a97
-source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 1%
@@ -88,25 +88,25 @@ En **const AUDIENCES = {...};**, pegue el siguiente código:
   const isConsentGiven = true;
   const martechLoadedPromise = initMartech(
     // The WebSDK config
-    // Documentation: https://experienceleague.adobe.com/es/docs/experience-platform/web-sdk/commands/configure/overview#configure-js
+    // Documentation: https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/overview#configure-js
     {
       datastreamId: "XXX",
       orgId: "XXX",
       defaultConsent: 'in',
       onBeforeEventSend: (payload) => {
         // set custom Target params 
-        // see doc at https://experienceleague.adobe.com/es/docs/platform-learn/migrate-target-to-websdk/send-parameters#parameter-mapping-summary
+        // see doc at https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/send-parameters#parameter-mapping-summary
         payload.data.__adobe.target ||= {};
 
         // set custom Analytics params
-        // see doc at https://experienceleague.adobe.com/es/docs/analytics/implementation/aep-edge/data-var-mapping
+        // see doc at https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping
         payload.data.__adobe.analytics ||= {};
       },
 
       // set custom datastream overrides
       // see doc at:
-      // - https://experienceleague.adobe.com/es/docs/experience-platform/web-sdk/commands/datastream-overrides
-      // - https://experienceleague.adobe.com/es/docs/experience-platform/datastreams/overrides
+      // - https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/datastream-overrides
+      // - https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides
       edgeConfigOverrides: {
         // Override the datastream id
         // datastreamId: '...'
@@ -188,7 +188,7 @@ const main = doc.querySelector('main');
   if (main) {
     decorateMain(main);
     document.body.classList.add('appear');
-    await loadSection(main.querySelector('.section'), waitForFirstImage);	
+    await loadSection(main.querySelector('.section'), waitForFirstImage);    
   }
 ```
 
@@ -244,7 +244,7 @@ A continuación, busque y vaya a la línea que contiene `window.adobeDataLayer.p
 Verá que el objeto `pageContext` se define de esta manera. Ahora necesita agregar dos objetos bajo `pageContext`.
 
 ```javascript
-	pageContext: {
+    pageContext: {
       pageType,
       pageName: document.title,
       eventType: 'visibilityHidden',
@@ -258,7 +258,7 @@ Verá que el objeto `pageContext` se define de esta manera. Ahora necesita agreg
 Este es el código que debe añadirse:
 
 ```javascript
-	,
+    ,
     _experienceplatform: {
       identification:{
         core:{

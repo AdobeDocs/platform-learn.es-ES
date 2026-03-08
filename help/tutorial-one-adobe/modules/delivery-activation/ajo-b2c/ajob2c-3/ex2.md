@@ -4,7 +4,7 @@ description: Configuración de un recorrido con mensajes push
 kt: 5342
 doc-type: tutorial
 exl-id: 63d7ee24-b6b5-4503-b104-a345c2b26960
-source-git-commit: fb14ba45333bdd5834ff0c6c2dc48dda35cfe85f
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 2%
@@ -103,11 +103,11 @@ Entonces verá esto... Haga clic en el icono **personalización** para el campo 
 
 Entonces verá esto... Ahora puede seleccionar cualquier atributo de perfil directamente desde el Perfil del cliente en tiempo real.
 
-Busque el campo **Nombre** y, a continuación, haga clic en el icono **+** situado junto al campo **Nombre**. Verá el token de personalización del nombre que se está agregando: **{{profile.person.name.firstName}}**.
+Busque el campo **Nombre** y, a continuación, haga clic en el icono **+** situado junto al campo **Nombre**. Verá el token de personalización del nombre que se está agregando: **`{{profile.person.name.firstName}}`**.
 
 ![Push](./images/bp9.png)
 
-A continuación, agregue el texto **, ¡bienvenido a nuestra tienda!** detrás de **{{profile.person.name.firstName}}**.
+A continuación, agregue el texto **, ¡bienvenido a nuestra tienda!** detrás de **`{{profile.person.name.firstName}}`**.
 
 Haga clic en **Guardar**.
 

@@ -4,10 +4,10 @@ description: Foundation - Perfil del cliente en tiempo real - Visualice su propi
 kt: 5342
 doc-type: tutorial
 exl-id: dd80f379-76f2-4023-b958-6ee558e23e88
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '2346'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -29,7 +29,7 @@ En el panel Visor de perfiles del sitio web, puede encontrar varias identidades.
 
 En el panel de rayos X, podemos ver 4 combinaciones diferentes de ID y áreas de nombres:
 
-| Identidad | Área de nombres |
+| Identidad | Espacio de nombres |
 |:-------------:| :---------------:|
 | Experience Cloud ID (ECID) | 79943948563923140522865572770524243489 |
 | Experience Cloud ID (ECID) | 70559351147248820114888181867542007989 |
@@ -72,7 +72,7 @@ Seleccione los perfiles de producto necesarios.
 
 >[!NOTE]
 >
-> Los nombres de los perfiles de producto variarán en la instancia de Adobe Experience Platform, ya que son específicos de cada instancia. Debe seleccionar al menos un perfil de producto con los derechos de acceso adecuados, que se configuran en la interfaz de usuario de permisos de Adobe Admin Console y AEP.
+> Los nombres de los perfiles de producto variarán en la instancia de Adobe Experience Platform, ya que son específicos de cada instancia. Debe seleccionar al menos un perfil de producto con los derechos de acceso adecuados, que se configuran en la interfaz de usuario de permisos de Adobe Admin Console y de AEP.
 
 Haga clic en **Guardar API configurada**.
 
@@ -120,7 +120,7 @@ Vaya a **Permisos**, a **Roles** y haga clic en el perfil de producto correspond
 
 >[!NOTE]
 >
-> Los nombres de los perfiles de producto variarán en la instancia de Adobe Experience Platform, ya que son específicos de cada instancia. Debe seleccionar al menos un perfil de producto con los derechos de acceso adecuados, que se configuran en la interfaz de usuario de permisos de Adobe Admin Console y AEP.
+> Los nombres de los perfiles de producto variarán en la instancia de Adobe Experience Platform, ya que son específicos de cada instancia. Debe seleccionar al menos un perfil de producto con los derechos de acceso adecuados, que se configuran en la interfaz de usuario de permisos de Adobe Admin Console y de AEP.
 
 ![Permisos](./images/perm1.png)
 
@@ -210,7 +210,7 @@ Después de un par de segundos, debería ver una respuesta en la sección **Body
 Si la configuración se ha realizado correctamente, debería ver una respuesta similar que contenga la siguiente información:
 
 | Clave | Valor |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | token_type | **portador** |
 | access_token | **keyJhbGciOiJSU...jrNZ6mdaQ** |
 | expires_in | **86399** |
@@ -234,7 +234,7 @@ En **1. Servicio de perfil unificado**, haga clic en la primera solicitud con el
 Para esta solicitud, hay tres variables requeridas:
 
 | Clave | Valor | Definición |
-|:-------------:| :---------------:| :---------------:| 
+|:-------------:| :---------------:| :---------------:|
 | entityId | **id** | el ID de cliente específico |
 | entityIdNS | **espacio de nombres** | el área de nombres específica aplicable al ID |
 | schema.name | **_xdm.context.profile** | el esquema específico para el que desea recibir información |
@@ -242,7 +242,7 @@ Para esta solicitud, hay tres variables requeridas:
 Por lo tanto, si desea solicitar a las API de Adobe Experience Platform que le devuelvan toda la información de perfil para su propio ECID, deberá configurar la solicitud de la siguiente manera:
 
 | Clave | Valor |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | entityId | **yourECID** |
 | entityIdNS | **ecid** |
 | schema.name | **_xdm.context.profile** |
@@ -398,7 +398,7 @@ Volvamos a Postman y supongamos que somos el centro de llamadas y enviemos una s
 Por lo tanto, si desea solicitar a las API de Platform que le devuelvan toda la información de perfil de un teléfono específico, deberá configurar la solicitud de la siguiente manera:
 
 | Clave | Valor |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | entityId | **tu número de teléfono** |
 | entityIdNS | **teléfono** (reemplazar ecid por teléfono) |
 | schema.name | **_xdm.context.profile** |
@@ -433,7 +433,7 @@ Hagamos lo mismo con tu dirección de correo electrónico especificando el área
 Por lo tanto, si desea solicitar a las API de Platform que le devuelvan toda la información de perfil de una dirección de correo electrónico específica, deberá configurar la solicitud de la siguiente manera:
 
 | Clave | Valor |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | entityId | **su correo electrónico** |
 | entityIdNS | **correo electrónico** (reemplazar teléfono por correo electrónico) |
 | schema.name | **_xdm.context.profile** |
@@ -487,7 +487,7 @@ En **1. Servicio de perfil unificado**, seleccione la segunda solicitud con el n
 Para esta solicitud, hay cuatro variables requeridas:
 
 | Clave | Valor | Definición |
-|:-------------:| :---------------:|  :---------------:| 
+|:-------------:| :---------------:|  :---------------:|
 | schema.name | **_xdm.context.experienceevent** | el esquema específico para el que desea recibir información. En este caso, buscamos datos que estén asignados al esquema ExperienceEvent. |
 | relatedSchema.name | **_xdm.context.profile** | Mientras buscamos datos asignados al esquema de ExperienceEvent, necesitamos especificar una identidad para la que queramos recibir esos datos. El esquema que tiene acceso a la identidad es el esquema de perfil, por lo que relatedSchema es el esquema de perfil. |
 | relatedEntityId | **id** | el ID de cliente específico |
@@ -496,7 +496,7 @@ Para esta solicitud, hay cuatro variables requeridas:
 Por lo tanto, si desea solicitar a las API de Platform que le devuelvan toda la información de perfil para su propio ecid, deberá configurar la solicitud de la siguiente manera:
 
 | Clave | Valor |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | schema.name | **_xdm.context.experienceevent** |
 | relatedSchema.name | **_xdm.context.profile** |
 | relatedEntityId | **yourECID** |

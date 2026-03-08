@@ -4,16 +4,16 @@ description: Foundation - FAC - Configure su cuenta de Snowflake
 kt: 5342
 doc-type: tutorial
 exl-id: 2c614917-de00-4fce-a4e0-1c2037a74740
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
 
 # 1.3.1 Configuración del entorno de Snowflake
 
-## 1.3.1.1 Cree su cuenta
+## 1.3.1.1 Crear su cuenta
 
 Vaya a [https://snowflake.com](https://snowflake.com). Haz clic en **COMENZAR GRATIS**.
 
@@ -43,7 +43,7 @@ A continuación, se iniciará sesión en Snowflake. Haga clic en **Omitir por ah
 
 ![CARA](./images/sf7.png)
 
-## 1.3.1.2 Creación de la base de datos
+## 1.3.1.2 Crear su base de datos
 
 Vaya a **Datos > Bases de datos**. Haga clic en **+ Base de datos**.
 
@@ -53,7 +53,7 @@ Use el nombre **CITISIGNAL** para su base de datos. Haga clic en **CREAR**.
 
 ![CARA](./images/db2.png)
 
-## 1.3.1.3 Creación de tablas
+## 1.3.1.3 Crear sus tablas
 
 Ahora puede empezar a crear tablas en Snowflake. A continuación encontrará secuencias de comandos para ejecutar la creación de tablas.
 
@@ -67,15 +67,15 @@ Entonces verá esto... Copie la siguiente consulta y péguela en Snowflake. Aseg
 
 ```sql
 create or replace TABLE CITISIGNAL.PUBLIC.--aepUserLdap--_PERSONS (
-	PERSON_ID NUMBER(38,0) NOT NULL,
-	NAME VARCHAR(255),
-	AGE NUMBER(38,0),
-	EMAIL VARCHAR(255),
-	PHONE_NUMBER VARCHAR(20),
-	GENDER VARCHAR(10),
-	OCCUPATION VARCHAR(100),
-	ISMOBILESUB BOOLEAN,
-	primary key (PERSON_ID)
+    PERSON_ID NUMBER(38,0) NOT NULL,
+    NAME VARCHAR(255),
+    AGE NUMBER(38,0),
+    EMAIL VARCHAR(255),
+    PHONE_NUMBER VARCHAR(20),
+    GENDER VARCHAR(10),
+    OCCUPATION VARCHAR(100),
+    ISMOBILESUB BOOLEAN,
+    primary key (PERSON_ID)
 );
 ```
 
@@ -97,16 +97,16 @@ Entonces verá esto... Copie la siguiente consulta y péguela en Snowflake. Aseg
 
 ```sql
 create or replace TABLE CITISIGNAL.PUBLIC.--aepUserLdap--_HOUSEHOLDS (
-	HOUSEHOLD_ID NUMBER(38,0) NOT NULL,
-	ADDRESS VARCHAR(255),
-	CITY VARCHAR(100),
-	STATE VARCHAR(50),
-	POSTAL_CODE VARCHAR(20),
-	COUNTRY VARCHAR(100),
-	ISELIGIBLEFORFIBER BOOLEAN,
-	PRIMARY_PERSON_ID NUMBER(38,0),
-	ISFIBREENABLED BOOLEAN,
-	primary key (HOUSEHOLD_ID)
+    HOUSEHOLD_ID NUMBER(38,0) NOT NULL,
+    ADDRESS VARCHAR(255),
+    CITY VARCHAR(100),
+    STATE VARCHAR(50),
+    POSTAL_CODE VARCHAR(20),
+    COUNTRY VARCHAR(100),
+    ISELIGIBLEFORFIBER BOOLEAN,
+    PRIMARY_PERSON_ID NUMBER(38,0),
+    ISFIBREENABLED BOOLEAN,
+    primary key (HOUSEHOLD_ID)
 );
 ```
 
@@ -128,12 +128,12 @@ Entonces verá esto... Copie la siguiente consulta y péguela en Snowflake. Aseg
 
 ```sql
 create or replace TABLE CITISIGNAL.PUBLIC.--aepUserLdap--_USERS (
-	USER_ID NUMBER(38,0) NOT NULL,
-	PERSON_ID NUMBER(38,0),
-	HOUSEHOLD_ID NUMBER(38,0),
-	primary key (USER_ID),
-	foreign key (PERSON_ID) references CITISIGNAL.PUBLIC.--aepUserLdap--_PERSONS(PERSON_ID),
-	foreign key (HOUSEHOLD_ID) references CITISIGNAL.PUBLIC.--aepUserLdap--_HOUSEHOLDS(HOUSEHOLD_ID)
+    USER_ID NUMBER(38,0) NOT NULL,
+    PERSON_ID NUMBER(38,0),
+    HOUSEHOLD_ID NUMBER(38,0),
+    primary key (USER_ID),
+    foreign key (PERSON_ID) references CITISIGNAL.PUBLIC.--aepUserLdap--_PERSONS(PERSON_ID),
+    foreign key (HOUSEHOLD_ID) references CITISIGNAL.PUBLIC.--aepUserLdap--_HOUSEHOLDS(HOUSEHOLD_ID)
 );
 ```
 
@@ -155,11 +155,11 @@ Entonces verá esto... Copie la siguiente consulta y péguela en Snowflake. Aseg
 
 ```sql
 create or replace TABLE CITISIGNAL.PUBLIC.--aepUserLdap--_MONTHLY_DATA_USAGE (
-	USAGE_ID NUMBER(38,0) NOT NULL autoincrement start 1 increment 1 noorder,
-	USER_ID NUMBER(38,0),
-	MONTH DATE,
-	DATA_USAGE_GB NUMBER(10,2),
-	primary key (USAGE_ID)
+    USAGE_ID NUMBER(38,0) NOT NULL autoincrement start 1 increment 1 noorder,
+    USER_ID NUMBER(38,0),
+    MONTH DATE,
+    DATA_USAGE_GB NUMBER(10,2),
+    primary key (USAGE_ID)
 );
 ```
 
@@ -182,16 +182,16 @@ Entonces verá esto... Copie la siguiente consulta y péguela en Snowflake. Aseg
 
 ```sql
 create or replace TABLE CITISIGNAL.PUBLIC.--aepUserLdap--_MOBILE_DATA_USAGE (
-	USAGE_ID NUMBER(38,0) NOT NULL autoincrement start 1 increment 1 noorder,
-	USER_ID NUMBER(38,0),
-	DATE DATE,
-	TIME TIME(9),
-	APP_NAME VARCHAR(255),
-	DATA_USAGE_MB NUMBER(10,2),
-	NETWORK_TYPE VARCHAR(50),
-	DEVICE_TYPE VARCHAR(50),
-	COUNTRY_CODE VARCHAR(10),
-	primary key (USAGE_ID)
+    USAGE_ID NUMBER(38,0) NOT NULL autoincrement start 1 increment 1 noorder,
+    USER_ID NUMBER(38,0),
+    DATE DATE,
+    TIME TIME(9),
+    APP_NAME VARCHAR(255),
+    DATA_USAGE_MB NUMBER(10,2),
+    NETWORK_TYPE VARCHAR(50),
+    DEVICE_TYPE VARCHAR(50),
+    COUNTRY_CODE VARCHAR(10),
+    primary key (USAGE_ID)
 );
 ```
 

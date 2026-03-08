@@ -3,7 +3,8 @@ title: Introducción a Workfront
 description: Introducción a Workfront
 kt: 5342
 doc-type: tutorial
-source-git-commit: 34f37a33e874f55eea37290b5626ab613f575764
+exl-id: 4d431d9d-2e4b-41a4-a31d-b641e2369ced
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 1%
@@ -35,7 +36,7 @@ Asegúrese de que **toggle** para este complemento esté establecido en **Enable
 Verá una ventana emergente de **Configuración de la extensión**. Configure los campos siguientes para utilizar este complemento.
 
 | Clave | Valor |
-| --------------- | ------------------------------ | 
+| --------------- | ------------------------------ |
 | **`IMS_ENV`** | **PROD** |
 | **`WORKFRONT_INSTANCE_URL`** | **https://experienceplatform.my.workfront.com** |
 | **`SHOW_CUSTOM_FORMS`** | **&#39;{&quot;previewUrl&quot;: true, &quot;publishUrl&quot;: true}&#39;** |

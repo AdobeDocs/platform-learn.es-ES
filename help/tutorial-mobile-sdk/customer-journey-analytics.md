@@ -3,7 +3,7 @@ title: Crear informes y analizar los datos de sus aplicaciones móviles con Cust
 description: Obtenga información sobre cómo informar y analizar las interacciones con su aplicación móvil mediante Customer Journey Analytics.
 solution: Data Collection,Experience Platform,Analytics
 exl-id: c41b76eb-2ed7-4a82-80c1-b67476c464ad
-source-git-commit: 5a797a464322225708208298d21d6b6a2ad223b6
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '3281'
 ht-degree: 1%
@@ -18,7 +18,7 @@ Los datos del evento de la aplicación móvil, que ha recopilado y enviado a Pla
 
 A diferencia de Adobe Analytics, Customer Journey Analytics *usa* datos de conjuntos de datos creados en Experience Platform. Los datos no se envían directamente a Customer Journey Analytics mediante Adobe Experience Platform Mobile SDK, sino que se envían a conjuntos de datos. A continuación, las conexiones se configuran en Customer Journey Analytics para seleccionar los conjuntos de datos que utilizará en sus proyectos de informes y análisis.
 
-Esta lección del tutorial se centra en la creación de informes y el análisis de los datos capturados desde la aplicación de tutorial de Luma. Una de las capacidades únicas de Customer Journey Analytics es la combinación de datos de varias fuentes (CRM, punto de venta, aplicación de fidelidad, centro de llamadas) y canales (web, móvil, sin conexión) para obtener información exhaustiva sobre los recorridos de los clientes. Esa capacidad está fuera del alcance de esta lección. Consulte [Información general de Customer Journey Analytics](https://experienceleague.adobe.com/es/docs/analytics-platform/using/cja-overview/cja-overview) para obtener más información.
+Esta lección del tutorial se centra en la creación de informes y el análisis de los datos capturados desde la aplicación de tutorial de Luma. Una de las capacidades únicas de Customer Journey Analytics es la combinación de datos de varias fuentes (CRM, punto de venta, aplicación de fidelidad, centro de llamadas) y canales (web, móvil, sin conexión) para obtener información exhaustiva sobre los recorridos de los clientes. Esa capacidad está fuera del alcance de esta lección. Consulte [Información general de Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) para obtener más información.
 
 
 ## Requisitos previos
@@ -113,7 +113,7 @@ Una vez agregados los registros de los conjuntos de datos a Customer Journey Ana
 
 Una vista de datos es un contenedor específico de Customer Journey Analytics que le permite determinar cómo interpretar los datos de una conexión. Puede configurar campos estándar y de esquema de cualquiera de los conjuntos de datos que haya definido en su Conexión como componentes (dimensiones, métricas) en Analysis Workspace.
 
-Una vista de datos en Customer Journey Analytics ofrece una enorme flexibilidad para configurar y definir correctamente los datos de su conexión. En este tutorial, solo se utiliza la funcionalidad necesaria para los informes y análisis. Consulte [Vistas de datos](https://experienceleague.adobe.com/es/docs/analytics-platform/using/cja-dataviews/data-views) para obtener más información.
+Una vista de datos en Customer Journey Analytics ofrece una enorme flexibilidad para configurar y definir correctamente los datos de su conexión. En este tutorial, solo se utiliza la funcionalidad necesaria para los informes y análisis. Consulte [Vistas de datos](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views) para obtener más información.
 
 
 Para crear la vista de datos:
@@ -160,17 +160,17 @@ Para crear la vista de datos:
 
       | Nombre del componente | Conjunto de datos | Tipo de datos del esquema | Ruta de esquema | Configuración de componentes |
       |---|---|---|---|---|
-      | Descartar | Conjunto de datos de evento de experiencia de seguimiento push de AJO, conjunto de datos de evento de aplicación móvil de Luma | Entero | _experience.decisioning.<br/>propositionEventType.dismiss | Nombre de componente: `Dismiss` |
-      | Cancelar suscripción | Conjunto de datos de evento de experiencia de seguimiento push de AJO, conjunto de datos de evento de aplicación móvil de Luma | Entero | _experience.decisioning.<br/>propositionEventType.unsubscribe | Nombre de componente: `Unsubscribe` |
-      | Déclencheur | Conjunto de datos de evento de experiencia de seguimiento push de AJO, conjunto de datos de evento de aplicación móvil de Luma | Entero | _experience.decisioning.<br/>propositionEventType.déclencheur | Nombre de componente: `Trigger` |
-      | Mostrar | Conjunto de datos de evento de experiencia de seguimiento push de AJO, conjunto de datos de evento de aplicación móvil de Luma | Entero | _experience.decisioning.<br/>propositionEventType.display | Nombre de componente: `Display` |
-      | Enviar | Conjunto de datos de evento de experiencia de seguimiento push de AJO, conjunto de datos de evento de aplicación móvil de Luma | Entero | _experience.decisioning.<br/>propositionEventType.send | Nombre de componente: `Send` |
-      | Interactuar | Conjunto de datos de evento de experiencia de seguimiento push de AJO, conjunto de datos de evento de aplicación móvil de Luma | Entero | _experience.decisioning.<br/>propositionEventType.interaction | Nombre de componente: `Interact` |
+      | Descartar | Conjunto de datos de evento de experiencia de seguimiento push de AJO, conjunto de datos de evento de aplicación móvil de Luma | Número entero | _experience.decisioning.<br/>propositionEventType.dismiss | Nombre de componente: `Dismiss` |
+      | Cancelar suscripción | Conjunto de datos de evento de experiencia de seguimiento push de AJO, conjunto de datos de evento de aplicación móvil de Luma | Número entero | _experience.decisioning.<br/>propositionEventType.unsubscribe | Nombre de componente: `Unsubscribe` |
+      | Déclencheur | Conjunto de datos de evento de experiencia de seguimiento push de AJO, conjunto de datos de evento de aplicación móvil de Luma | Número entero | _experience.decisioning.<br/>propositionEventType.déclencheur | Nombre de componente: `Trigger` |
+      | Mostrar | Conjunto de datos de evento de experiencia de seguimiento push de AJO, conjunto de datos de evento de aplicación móvil de Luma | Número entero | _experience.decisioning.<br/>propositionEventType.display | Nombre de componente: `Display` |
+      | Enviar | Conjunto de datos de evento de experiencia de seguimiento push de AJO, conjunto de datos de evento de aplicación móvil de Luma | Número entero | _experience.decisioning.<br/>propositionEventType.send | Nombre de componente: `Send` |
+      | Interactuar | Conjunto de datos de evento de experiencia de seguimiento push de AJO, conjunto de datos de evento de aplicación móvil de Luma | Número entero | _experience.decisioning.<br/>propositionEventType.interaction | Nombre de componente: `Interact` |
       | Eventos de ubicación | Conjunto de datos de evento de experiencia de seguimiento push de AJO, conjunto de datos de evento de aplicación móvil de Luma, eventos de decisión de ODE: decisiones sobre sdk para móviles y web | Cadena | Tipo de evento | Nombre de componente: `Location Events`<br/><br/>![Incluir/excluir](assets/cja-dataview-include-exclude.png){zoomable="yes"} |
       | Vistas del producto | Conjunto de datos de evento de aplicación móvil Luma | Duplicada | commerce.productViews.value | Nombre de componente: `Product Views` |
       | Producto Añadido A Listas | Conjunto de datos de evento de aplicación móvil Luma | Duplicada | commerce.productListAdds.value | Nombre de componente: `Product Add To Lists` |
       | Compras | Conjunto de datos de evento de aplicación móvil Luma | Duplicada | commerce.purchases.value | Nombre de componente: `Purchases` |
-      | Guardados para después | Conjunto de datos de evento de aplicación móvil Luma | Duplicada | commerce.saveForLaters.value | Nombre de componente: `Save For Laters` |
+      | Guardar para más tarde | Conjunto de datos de evento de aplicación móvil Luma | Duplicada | commerce.saveForLaters.value | Nombre de componente: `Save For Laters` |
       | Interacciones de aplicación | Conjunto de datos de evento de aplicación móvil Luma | Duplicada | _techmarketingdemos.appInformation.<br/>appInteraction.appAction.value | Nombre de componente: `App Interactions` |
       | Vistas de pantalla | Conjunto de datos de evento de aplicación móvil Luma | Duplicada | _techmarketingdemos.appInformation.<br/>appStateDetails.screenView.value | Nombre de componente: `Screen Views` |
 
@@ -213,7 +213,7 @@ Ha definido la vista de datos y ya está todo listo para empezar a crear los inf
 
 ## Crear un proyecto
 
-Los proyectos de Workspace se utilizan en Customer Journey Analytics para generar informes y visualizaciones. Existen muchas posibilidades para crear informes completos y visualizaciones atractivas, pero esto está fuera del ámbito de este tutorial. Consulte [Información general de Workspace](https://experienceleague.adobe.com/es/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview) y [Crear un nuevo proyecto](https://experienceleague.adobe.com/es/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project) para obtener más información.
+Los proyectos de Workspace se utilizan en Customer Journey Analytics para generar informes y visualizaciones. Existen muchas posibilidades para crear informes completos y visualizaciones atractivas, pero esto está fuera del ámbito de este tutorial. Consulte [Información general de Workspace](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview) y [Crear un nuevo proyecto](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project) para obtener más información.
 
 En esta sección de la lección, debe crear un proyecto que muestre informes y visualizaciones sobre:
 
@@ -275,7 +275,7 @@ Para informar sobre las pantallas visualizadas en la aplicación:
 
 1. Seleccione **[!UICONTROL Mostrar todo]** debajo de la lista **[!UICONTROL MÉTRICAS]**.
 
-1. Arrastre y suelte el componente **[!UICONTROL Vistas de pantalla]** en [!UICONTROL _Suelte una **métrica**&#x200B;aquí (o cualquier otro componente_)].
+1. Arrastre y suelte el componente **[!UICONTROL Vistas de pantalla]** en [!UICONTROL _Suelte una **métrica**aquí (o cualquier otro componente_)].
    ![Proyectos CJA 7](assets/cja-projects-7.png){zoomable="yes"}
 La tabla de forma libre ahora muestra las vistas de pantalla de cada día durante el período de tiempo seleccionado. Sin embargo, quiere mostrar el número de vistas de pantalla de cada una de las diferentes pantallas utilizadas en la aplicación.
 
@@ -305,7 +305,7 @@ A continuación, creará una tabla de forma libre para informar sobre cómo inte
 
 1. Cambie el nombre de **[!UICONTROL tabla de forma libre (2)]** a `App Interactions`.
 
-1. Arrastre y suelte la métrica **[!UICONTROL Interacciones de aplicaciones]** en [!UICONTROL _Suelte una **métrica**&#x200B;aquí (o cualquier otro componente_)].
+1. Arrastre y suelte la métrica **[!UICONTROL Interacciones de aplicaciones]** en [!UICONTROL _Suelte una **métrica**aquí (o cualquier otro componente_)].
 
 1. Arrastre y suelte la dimensión **[!UICONTROL Nombre de interacción de aplicación]** en el encabezado **[!UICONTROL Día]** para reemplazar esta dimensión.
 
@@ -337,7 +337,7 @@ Ahora desea crear un informe en un panel independiente sobre los eventos de come
 
 1. Cambie el nombre de **[!UICONTROL tabla de forma libre]** a `Commerce Events`.
 
-1. Arrastre y suelte la métrica **[!UICONTROL Vistas del producto]** en [!UICONTROL _Suelte una **métrica**&#x200B;aquí (o cualquier otro componente_)].
+1. Arrastre y suelte la métrica **[!UICONTROL Vistas del producto]** en [!UICONTROL _Suelte una **métrica**aquí (o cualquier otro componente_)].
 
 1. Arrastre y suelte la métrica **[!UICONTROL Product Add To Lists]** a la derecha de la columna **[!UICONTROL Product Views]** para insertar esta columna en la tabla de forma libre. Asegúrese de que **[!UICONTROL + Add]** (en azul) se muestre al insertar la columna.
    ![Proyectos CJA 15](assets/cja-projects-15.png){zoomable="yes"}
@@ -356,7 +356,7 @@ Se ha completado el informe Eventos de Commerce.
 
 #### Visita en orden previsto
 
-A continuación, creará una visualización de visitas en el orden previsto para el canal de comercio que muestra cuántos usuarios que vieron los productos agregaron estos productos al carro de compras y, a partir de ahí, cuántos usuarios guardaron estos productos para más adelante.
+A continuación, creará una visualización de visitas en el orden previsto de Commerce funnel que muestra cuántos usuarios que vieron los productos agregaron estos productos al carro de compras y, a partir de ahí, cuántos usuarios guardaron estos productos para más adelante.
 
 1. Seleccione ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) en el panel **[!UICONTROL Commerce]** y, en la ventana emergente, seleccione ![Visitas en el orden previsto](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ConversionFunnel_18_N.svg) (que representa la visualización de las visitas en el orden previsto).
 
@@ -411,7 +411,7 @@ También desea disponer de un informe que muestre qué ofertas se mostraron en q
 
 1. Cambie el nombre de **[!UICONTROL tabla de forma libre (2)]** a `People`.
 
-1. Arrastre y suelte la métrica **[!UICONTROL Personas]** en [!UICONTROL _Suelte una **métrica**&#x200B;aquí (o cualquier otro componente_)].
+1. Arrastre y suelte la métrica **[!UICONTROL Personas]** en [!UICONTROL _Suelte una **métrica**aquí (o cualquier otro componente_)].
 
 1. Arrastre y suelte **[!UICONTROL Nombre de actividad]** en la columna **[!UICONTROL Día]** para reemplazar la dimensión.
 
@@ -443,7 +443,7 @@ Por último, desea informar sobre las visitas a las tiendas.
 
 1. Cambie el nombre de **[!UICONTROL tabla de forma libre]** a `Store Entries / Exits Across Cities`.
 
-1. Arrastre y suelte la métrica **[!UICONTROL Eventos de ubicación]** en [!UICONTROL _Suelte una **métrica**&#x200B;aquí (o cualquier otro componente_)]. El informe ahora muestra una descripción general diaria de todos los eventos de ubicación que se produjeron en la aplicación. Recuerde cómo configuró específicamente esta dimensión como parte de su [vista de datos](#create-a-data-view).
+1. Arrastre y suelte la métrica **[!UICONTROL Eventos de ubicación]** en [!UICONTROL _Suelte una **métrica**aquí (o cualquier otro componente_)]. El informe ahora muestra una descripción general diaria de todos los eventos de ubicación que se produjeron en la aplicación. Recuerde cómo configuró específicamente esta dimensión como parte de su [vista de datos](#create-a-data-view).
 
 1. Arrastre y suelte la dimensión **[!UICONTROL City]** en el encabezado de columna **[!UICONTROL Day]** para reemplazar la dimensión. El informe ahora muestra las ciudades para los eventos de ubicación.
 
@@ -468,6 +468,6 @@ Ahora debería tener una comprensión básica de cómo informar y visualizar sob
 >[!SUCCESS]
 >
 >
->Gracias por dedicar su tiempo a conocer Adobe Experience Platform Mobile SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=es).
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Mobile SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Siguiente: **[Conclusión y pasos siguientes](conclusion.md)**

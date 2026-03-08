@@ -4,9 +4,9 @@ description: 'Ingesta y análisis de datos de Google Analytics en Adobe Experien
 kt: 5342
 doc-type: tutorial
 exl-id: 00695ec0-34e0-4a20-afe3-bee4016eef58
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '1409'
+source-wordcount: '1405'
 ht-degree: 2%
 
 ---
@@ -52,7 +52,7 @@ En este ejercicio aprenderá a obtener los otros 3 campos obligatorios:
 - clientSecret
 - refreshToken
 
-## 1.2.3.1 Google Auth Platform
+## 1.2.3.1 plataforma de autenticación de Google
 
 Para empezar, vuelva a la página de inicio de Google Cloud Platform. Para ello, simplemente haga clic en el logotipo en la esquina superior izquierda de la pantalla.
 
@@ -69,8 +69,8 @@ Ahora verá la página principal de **Google Auth Platform**. Haga clic en **GET
 Para **nombre de aplicación**, use esto:
 
 | Nombre | Ejemplo |
-| ----------------- |-------------| 
-| `--aepUserLdap-- - AEP BigQuery Connector` | vangeluw: conector BigQuery de AEP |
+| ----------------- |-------------|
+| `--aepUserLdap-- - AEP BigQuery Connector` | vangeluw - Conector de AEP BigQuery |
 
 Seleccione su dirección de correo electrónico para el campo **Correo electrónico de asistencia al usuario**.
 
@@ -109,7 +109,7 @@ Aparecerán varios campos nuevos. Ahora necesita escribir el **Nombre** del ID d
 Para el campo **Nombre**, use esto:
 
 | Campo | Valor | Ejemplo |
-| ----------------- |-------------| -------------| 
+| ----------------- |-------------| -------------|
 | Nombre | ldap: Conector de AEP BigQuery | vangeluw - Conector de Platform BigQuery |
 
 ![demostración](./images/ex2122.png)
@@ -118,7 +118,7 @@ Para el campo **Nombre**, use esto:
 Haga clic en **+ AGREGAR URI** en **URI de redireccionamiento autorizados**. Añada el nuevo URI siguiente.
 
 | Campo | Valor |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | URI de redireccionamiento autorizados | https://developers.google.com/oauthplayground |
 
 El campo **URI de redireccionamiento autorizados** es muy importante porque lo necesitará más adelante para obtener el RefreshToken que necesita para finalizar la configuración del conector Source de BigQuery en Adobe Experience Platform.
@@ -138,7 +138,7 @@ Copie estos dos campos y péguelos en un archivo de texto en su escritorio. Siem
 Como recapitulación de la configuración del conector de Source de BigQuery en Adobe Experience Platform, ahora tiene estos valores ya disponibles:
 
 | Credenciales del conector de BigQuery | Valor |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | Identificador de proyecto | su propio ID de proyecto (por ejemplo,: possible-bee-447102-h3) |
 | clientid | yourclientid |
 | client secret | yourclientsecret |
@@ -177,7 +177,7 @@ Aparecerán dos campos.
 Rellene los campos siguientes a esta tabla:
 
 | Configuración de API de Playground | Sus credenciales de la API de Google |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | ID de cliente de OAuth | su propio ID de cliente (en el archivo de texto de su escritorio) |
 | Secreto de cliente de OAuth | su propio Secreto de cliente (en el archivo de texto de su escritorio) |
 
@@ -234,7 +234,7 @@ Ahora verá **Actualizar token**.
 Copie el **token de actualización** y péguelo en el archivo de texto del escritorio junto con las demás credenciales del conector de Source de BigQuery:
 
 | Credenciales del conector de Source de BigQuery | Valor |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | Identificador de proyecto | su propio ID de proyecto aleatorio (por ejemplo,: apt-Summer-273608) |
 | clientid | yourclientid |
 | client secret | yourclientsecret |
@@ -242,7 +242,7 @@ Copie el **token de actualización** y péguelo en el archivo de texto del escri
 
 A continuación, vamos a configurar el conector de Source en Adobe Experience Platform.
 
-## 1.2.3.5: Conexión de Platform con su propia tabla de BigQuery
+## 1.2.3.5: conecte Platform con su propia tabla de BigQuery
 
 Inicie sesión en Adobe Experience Platform desde esta dirección URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
@@ -269,7 +269,7 @@ Empecemos por nombrar la conexión:
 Utilice esta convención de nombres:
 
 | Credenciales del conector de BigQuery | Valor | Ejemplo |
-| ----------------- |-------------| -------------| 
+| ----------------- |-------------| -------------|
 | Nombre de la cuenta | `--aepUserLdap-- - BigQuery Connection` | vangeluw - Conexión de BigQuery |
 | Descripción | `--aepUserLdap-- - BigQuery Connection` | vangeluw - Conexión de BigQuery |
 
@@ -280,7 +280,7 @@ A continuación, tendrá esto:
 A continuación, rellene los detalles de la API de GCP y BigQuery **Autenticación de cuenta** que almacenó en un archivo de texto en su escritorio:
 
 | Credenciales del conector de BigQuery | Valor |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | Identificador de proyecto | su propio ID de proyecto aleatorio (por ejemplo,: possible-bee-447102-h3) |
 | clientId | ... |
 | clientSecret | ... |

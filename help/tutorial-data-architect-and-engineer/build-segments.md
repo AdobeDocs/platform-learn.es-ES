@@ -3,15 +3,15 @@ title: Generación de segmentos
 seo-title: Build segments | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Generación de segmentos
 description: En esta lección, generaremos algunos segmentos basados en los datos de perfil que hemos ingerido en las lecciones anteriores.
-role: Data Architect
+role: Developer
 feature: Data Governance
 jira: KT-4348
 thumbnail: 4348-build-segments.jpg
 exl-id: cd05e814-1ea7-48ba-adf6-1a71504c623e
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '905'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -25,7 +25,7 @@ Una vez que tenga Perfiles de clientes en tiempo real, puede crear segmentos de 
 **Los arquitectos de datos** deberán crear segmentos fuera de este tutorial y ayudar a sus colegas con esta tarea.
 
 Antes de comenzar los ejercicios, vea este breve vídeo para obtener más información sobre la creación de segmentos:
->[!VIDEO](https://video.tv.adobe.com/v/31832?learn=on&enablevpops&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/27254?learn=on&enablevpops)
 
 
 ## Permisos necesarios
@@ -108,7 +108,7 @@ Creará el siguiente segmento aplicando la relación que creó entre su `Luma Pr
 Haga clic en **[!UICONTROL Segmentos]** en el panel de navegación izquierdo. Analicemos nuestros tres segmentos:
 
 * Dos de nuestros segmentos son segmentos por lotes y uno es un segmento de flujo continuo.
-* Platform usa la segmentación por secuencias siempre que es posible y califica al cliente para un segmento en cuanto cumple los criterios. Cuando las definiciones de segmentos son demasiado complejas para la transmisión, se convierten automáticamente en lote. En este caso, los dos segmentos tomaron por defecto el lote porque la ventana retrospectiva de los eventos de compra fue mayor de siete días. Para obtener una lista completa y actual de las limitaciones de transmisión, consulte [la documentación](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html?lang=es).
+* Platform usa la segmentación por secuencias siempre que es posible y califica al cliente para un segmento en cuanto cumple los criterios. Cuando las definiciones de segmentos son demasiado complejas para la transmisión, se convierten automáticamente en lote. En este caso, los dos segmentos tomaron por defecto el lote porque la ventana retrospectiva de los eventos de compra fue mayor de siete días. Para obtener una lista completa y actual de las limitaciones de transmisión, consulte [la documentación](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html).
 * Los trabajos por lotes se ejecutan en una programación diaria, que se puede desactivar.
 
 ![Compró el mismo producto en el segmento de los últimos 30 días](assets/segment-review.png)

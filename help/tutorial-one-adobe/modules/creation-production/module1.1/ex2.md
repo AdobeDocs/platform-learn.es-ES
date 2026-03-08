@@ -1,12 +1,12 @@
 ---
-title: Optimizar el proceso de Firefly con Microsoft Azure y las direcciones URL prefirmadas
+title: Optimizar el proceso de Firefly con Microsoft Azure y direcciones URL con firma previa
 description: Obtenga información sobre cómo optimizar el proceso de Firefly mediante Microsoft Azure y las direcciones URL prefirmadas
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1944'
 ht-degree: 1%
@@ -21,7 +21,7 @@ Obtenga información sobre cómo optimizar el proceso de Firefly mediante Micros
 
 Una dirección URL prefirmada es una dirección URL que concede acceso temporal a un objeto específico en una ubicación de almacenamiento. Mediante la dirección URL, un usuario puede, por ejemplo, LEER el objeto o ESCRIBIR un objeto (o actualizar un objeto existente). La dirección URL contiene parámetros específicos que establece la aplicación.
 
-En el contexto de la creación de automatización de la cadena de suministro de contenido, a menudo hay varias operaciones de archivo que deben realizarse para un caso de uso específico. Por ejemplo, puede que sea necesario cambiar el fondo de un archivo, el texto de varias capas, etc. No siempre es posible realizar todas las operaciones de archivo al mismo tiempo, lo que crea la necesidad de un enfoque de varios pasos. Después de cada paso intermedio, la salida es un archivo temporal necesario para ejecutar el siguiente paso. Una vez ejecutado el siguiente paso, el archivo temporal pierde valor rápidamente y, a menudo, ya no es necesario, por lo que debe eliminarse.
+En el contexto de la creación de automatización de supply chain de contenido, a menudo hay varias operaciones de archivo que deben realizarse para un caso de uso específico. Por ejemplo, puede que sea necesario cambiar el fondo de un archivo, el texto de varias capas, etc. No siempre es posible realizar todas las operaciones de archivo al mismo tiempo, lo que crea la necesidad de un enfoque de varios pasos. Después de cada paso intermedio, la salida es un archivo temporal necesario para ejecutar el siguiente paso. Una vez ejecutado el siguiente paso, el archivo temporal pierde valor rápidamente y, a menudo, ya no es necesario, por lo que debe eliminarse.
 
 Actualmente, Adobe Firefly Services admite estos dominios:
 
@@ -49,7 +49,7 @@ Por ejemplo:
 - **Amazon AWS**: `https://bucket.s3.eu-west-2.amazonaws.com/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AXXXXXXXXXX%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250510T171315Z&X-Amz-Expires=1800&X-Amz-Signature=XXXXXXXXX&X-Amz-SignedHeaders=host`
 - **Microsoft Azure**: `https://storageaccount.blob.core.windows.net/container/image.png?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=XXXXXX%3D`
 
-## 1.1.2.2 crear una suscripción de Azure
+## 1.1.2.2 crear una suscripción a Azure
 
 >[!NOTE]
 >
@@ -121,7 +121,7 @@ El contenedor ya está listo para usarse.
 
 ![Almacenamiento de Azure](./images/azs9.png){zoomable="yes"}
 
-## 1.1.2.4 Instalar Azure Storage Explorer
+## 1.1.2.4 Instalar el Explorador de almacenamiento de Azure
 
 [Descargue Microsoft Azure Storage Explorer para administrar sus archivos](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"}. Seleccione la versión correcta para su sistema operativo específico, descárguela e instálela.
 
@@ -135,7 +135,7 @@ Seleccione **Suscripción**.
 
 ![Almacenamiento de Azure](./images/az12.png){zoomable="yes"}
 
-Seleccione **Azure** y después **Siguiente**.
+Seleccione **Azure** y luego **Siguiente**.
 
 ![Almacenamiento de Azure](./images/az13.png){zoomable="yes"}
 
@@ -147,7 +147,7 @@ Después de la autenticación, aparece este mensaje.
 
 ![Almacenamiento de Azure](./images/az15.png){zoomable="yes"}
 
-Vuelva a la aplicación Microsoft Azure Storage Explorer, seleccione su suscripción y elija **Abrir explorador**.
+En la aplicación Microsoft Azure Storage Explorer, selecciona tu suscripción y elige **Abrir Explorer**.
 
 >[!NOTE]
 >
@@ -272,7 +272,7 @@ Cambie el nombre de archivo a `gradient2-p.jpg` y cambie la dirección URL para 
 A continuación, ve a **Encabezados** para agregar un nuevo encabezado manualmente de esta manera:
 
 | Clave | Valor |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | `x-ms-blob-type` | `BlockBlob` |
 
 
@@ -292,11 +292,11 @@ Cuando vuelva al Explorador de almacenamiento de Azure, actualice el contenido d
 
 ## 1.1.2.7 uso de archivos de programación
 
-Para leer archivos mediante programación de cuentas de almacenamiento de Azure a largo plazo, debe crear un nuevo token de **firma de acceso compartido (SAS)**, con permisos que le permitan leer un archivo. Técnicamente, podría utilizar el token SAS creado en el ejercicio anterior, pero se recomienda tener un token independiente con solo permisos de **Read** y un token independiente con solo permisos de **Write**.
+Para leer archivos de cuentas de almacenamiento de Azure mediante programación a largo plazo, debe crear un nuevo token de **firma de acceso compartido (SAS)**, con permisos que le permitan leer un archivo. Técnicamente, podría utilizar el token SAS creado en el ejercicio anterior, pero se recomienda tener un token independiente con solo permisos de **Read** y un token independiente con solo permisos de **Write**.
 
 ### Token SAS de lectura a largo plazo
 
-Vuelva al Explorador de almacenamiento de Azure, haga clic con el botón secundario en el contenedor y, a continuación, seleccione **Obtener firma de acceso compartido**.
+Vuelva al Explorador de almacenamiento de Azure, haga clic con el botón secundario en el contenedor y seleccione **Obtener firma de acceso compartido**.
 
 ![Almacenamiento de Azure](./images/az27.png){zoomable="yes"}
 

@@ -2,14 +2,14 @@
 title: Elevación de la función del experto en marketing como administrador de datos
 description: Las fuerzas volátiles del mercado y los dispares requisitos de privacidad del consumidor pueden presentar escenarios desalentadores para el experto en marketing. Para mantener las campañas en el lado correcto de las regulaciones, los equipos de marketing necesitan que sus contrapartes informáticas tengan un proceso optimizado para afianzar el futuro del proceso de gobernanza de datos, que, idealmente, faculta a todos para seguir y aplicar reglas de uso responsable de los datos de los consumidores. Adobe y Scotiabank Digital le explican las consideraciones clave para la administración de datos responsable.
 feature: Privacy
-role: User, Developer, Data Engineer, Architect, Data Architect, Admin, Leader
+role: User, Developer, Admin, Leader
 level: Beginner, Intermediate, Experienced
 doc-type: Event
 thumbnail: 338292.jpg
 jira: KT-9301
 type: Event
 exl-id: 12c258c5-cf91-4403-99bd-6322a92aabfe
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 18%

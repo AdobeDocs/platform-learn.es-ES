@@ -2,12 +2,12 @@
 title: Información general sobre Query Service y Data Distiller
 description: Adobe Experience Platform Query Service permite a los usuarios explorar, validar y transformar los datos de experiencia del cliente almacenados en el lago de datos mediante SQL, con funciones mejoradas como la salida de datos y la programación disponibles a través del complemento Data Distiller. Este vídeo proporciona información general sobre las funciones principales para ayudar a los usuarios a comprender cómo aprovechar el servicio de consultas en varias aplicaciones basadas en Platform.
 feature: Queries
-role: Data Engineer, Developer
+role: Developer
 level: Beginner
 jira: KT-3139
 last-substantial-update: 2025-06-23T00:00:00Z
 exl-id: 988bc316-9eec-4dca-8049-95c2d613379d
-source-git-commit: c21e15b0cac5e97cf2234a951b54d5a66aff9810
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 10%
@@ -16,9 +16,9 @@ ht-degree: 10%
 
 # Información general sobre Query Service y Data Distiller
 
-Adobe Experience Platform Query Service permite a los usuarios explorar, validar y transformar los datos de experiencia del cliente almacenados en el lago de datos mediante SQL, con funciones mejoradas como la salida de datos y la programación disponibles a través del complemento Data Distiller. Este vídeo proporciona información general sobre las funciones principales para ayudar a los usuarios a comprender cómo aprovechar el servicio de consultas en varias aplicaciones basadas en Platform. Para obtener más información, visite la [documentación del servicio de consultas](https://experienceleague.adobe.com/es/docs/experience-platform/query/home).
+Adobe Experience Platform Query Service permite a los usuarios explorar, validar y transformar los datos de experiencia del cliente almacenados en el lago de datos mediante SQL, con funciones mejoradas como la salida de datos y la programación disponibles a través del complemento Data Distiller. Este vídeo proporciona información general sobre las funciones principales para ayudar a los usuarios a comprender cómo aprovechar el servicio de consultas en varias aplicaciones basadas en Platform. Para obtener más información, visite la [documentación del servicio de consultas](https://experienceleague.adobe.com/en/docs/experience-platform/query/home).
 
->[!VIDEO](https://video.tv.adobe.com/v/33590?learn=on&enablevpops&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
 
 ## Uso básico
 
@@ -35,7 +35,7 @@ Adobe Experience Platform Query Service permite a los usuarios explorar, validar
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="run-queries.md" title="Ejecutar consultas con el servicio de consultas" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34045?format=jpeg&nocache=1759180596408&captions=spa" alt="Ejecutar consultas con el servicio de consultas"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29796?format=jpeg&nocache=1759180596408" alt="Ejecutar consultas con el servicio de consultas"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -58,7 +58,7 @@ Adobe Experience Platform Query Service permite a los usuarios explorar, validar
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="explore-data.md" title="Validación de datos con el servicio de consultas" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3414054?format=jpeg&nocache=1759180596397&captions=spa" alt="Validación de datos con el servicio de consultas"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333415?format=jpeg&nocache=1759180596397" alt="Validación de datos con el servicio de consultas"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -81,7 +81,7 @@ Adobe Experience Platform Query Service permite a los usuarios explorar, validar
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="prepare-data.md" title="Derivar datos con Data Distiller" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3414066?format=jpeg&nocache=1759180596403&captions=spa" alt="Derivar datos con Data Distiller"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333699?format=jpeg&nocache=1759180596403" alt="Derivar datos con Data Distiller"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -117,7 +117,7 @@ Adobe Experience Platform Query Service permite a los usuarios explorar, validar
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="psql-client-tableau.md" title="Conexión de Tableau con el servicio de consultas" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3414043?format=jpeg&nocache=1759180596876&captions=spa" alt="Conexión de Tableau con el servicio de consultas"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333702?format=jpeg&nocache=1759180596876" alt="Conexión de Tableau con el servicio de consultas"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -148,9 +148,9 @@ Adobe Experience Platform Query Service permite a los usuarios explorar, validar
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="analyze-and-visualize.md" target="_blank" rel="referrer" title="Analizar y visualizar perspectivas omnicanal en Tableau mediante el servicio de consulta">Analizar y visualizar perspectivas omnicanal en Tableau mediante el servicio de consulta</a>
+                        <a href="analyze-and-visualize.md" target="_blank" rel="referrer" title="Analizar y visualizar perspectivas omnicanal en Tableau mediante el servicio de consulta">Analizar y visualizar perspectivas omnicanal en Tableau mediante el Servicio de consultas</a>
                     </p>
-                    <p class="is-size-6">Descubra cómo puede utilizar el servicio de consulta de Adobe Experience Platform con herramientas de visualización de datos externas mediante un ejemplo de análisis de pérdida.</p>
+                    <p class="is-size-6">Descubra cómo puede utilizar el Servicio de consultas de Adobe Experience Platform con herramientas de visualización de datos externas mediante un ejemplo de análisis de pérdida.</p>
                 </div>
                 <a href="analyze-and-visualize.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Más información</span>
@@ -163,7 +163,7 @@ Adobe Experience Platform Query Service permite a los usuarios explorar, validar
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="recharge-your-customer-data.md" title="Recargue los datos de sus clientes para ofrecer experiencias electrizantes" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3454939?format=jpeg&nocache=1759180596865&captions=spa" alt="Recargue los datos de sus clientes para ofrecer experiencias electrizantes"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342533?format=jpeg&nocache=1759180596865" alt="Recargue los datos de sus clientes para ofrecer experiencias electrizantes"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

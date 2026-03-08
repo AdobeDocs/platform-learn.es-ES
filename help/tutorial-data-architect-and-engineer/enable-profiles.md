@@ -3,14 +3,14 @@ title: Activar perfiles de cliente en tiempo real
 seo-title: Enable Real-Time Customer Profiles | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Activar perfiles de cliente en tiempo real
 description: En esta lección, debe habilitar los esquemas y conjuntos de datos para el Perfil del cliente en tiempo real.
-role: Data Architect
+role: Developer
 feature: Profiles
 jira: KT-4348
 thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1085'
 ht-degree: 0%
 
 ---
@@ -26,14 +26,14 @@ Con el Perfil del cliente en tiempo real, puede ver una vista integral de cada c
 
 Por increíble que suene todo eso, no necesitas activar *todos tus datos* para el perfil. De hecho, solo debe habilitar los datos que necesite para casos de uso de activación. Habilite los datos que desee utilizar para casos de uso de marketing, integraciones de centros de llamadas, etc., en los que necesite un acceso rápido a un perfil de cliente sólido. Si solo carga datos para su análisis, probablemente no debería habilitarse para el perfil.
 
-Existen [protecciones importantes para los datos del perfil del cliente en tiempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=es) que debe revisar al decidir cuáles de sus propios datos debe habilitar para el perfil.
+Existen [protecciones importantes para los datos del perfil del cliente en tiempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) que debe revisar al decidir cuáles de sus propios datos debe habilitar para el perfil.
 
 <!--is this accurate. Are there other considerations to point out? -->
 
 **Los arquitectos de datos** tendrán que habilitar el perfil del cliente en tiempo real fuera de este tutorial.
 
 Antes de comenzar los ejercicios, vea este breve vídeo para obtener más información acerca del Perfil del cliente en tiempo real:
->[!VIDEO](https://video.tv.adobe.com/v/31833?learn=on&enablevpops&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&enablevpops)
 
 ## Permisos necesarios
 
@@ -90,7 +90,7 @@ Primero vamos a obtener `meta:altId` de `Luma CRM Schema`:
 1. Seleccione el botón **Enviar**
 1. Deberías obtener una respuesta de 200
 1. Busque la respuesta para el elemento `Luma CRM Schema` y copie el valor `meta:altId`
-   ![Copiar el meta:altId](assets/profile-crm-getMetaAltId.png)
+   ![Copiar el meta:altIid](assets/profile-crm-getMetaAltId.png)
 
 ### Habilitar el esquema
 
@@ -111,7 +111,7 @@ Ahora que tenemos el meta:altId del esquema, podemos habilitarlo para el perfil:
 1. Seleccione el botón **Enviar**
 1. Deberías obtener una respuesta de 200
 
-   ![Habilite el esquema CRM para el perfil con su meta:altId personalizado utilizado como parámetro SCHEMA_ID](assets/profile-crm-enableProfile.png)
+   ![Habilite el esquema CRM para el perfil con el meta:altIid personalizado que se usa como el parámetro SCHEMA_ID](assets/profile-crm-enableProfile.png)
 
 Debería poder ver en la interfaz de usuario que los cinco esquemas están habilitados para el perfil (es posible que necesite MAYÚS-Recargar para ver que `Luma CRM Schema` está habilitado):
 ![Todos los esquemas habilitados](assets/profile-allSchemasEnabled.png)
@@ -125,7 +125,7 @@ Los conjuntos de datos también deben habilitarse para el perfil y el proceso es
 1. Alternar el conmutador **[!UICONTROL Perfil]**
 1. En el modal de confirmación, presione el botón **[!UICONTROL Habilitar]** para confirmar
 
-   ![&#x200B; cambio de perfil](assets/profile-loyalty-enableDataset.png)
+   ![ cambio de perfil](assets/profile-loyalty-enableDataset.png)
 
 Repita los pasos anteriores para estos otros conjuntos de datos:
 

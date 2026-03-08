@@ -4,9 +4,9 @@ description: 'Ingesta y análisis de datos de Google Analytics en Adobe Experien
 kt: 5342
 doc-type: tutorial
 exl-id: 681f50d4-3c3f-43ae-a87e-36aff2840b88
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '540'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Cuando los datos de Google Analytics están en BigQuery, todas las dimensiones, 
 
 La solución a este problema es transformar los datos de Google Analytics en un formato legible para facilitar la ingesta en Adobe Experience Platform.
 
-## 1.2.2.1 Crear un conjunto de datos para guardar las nuevas tablas de BigQuery
+## 1.2.2.1: crear un conjunto de datos para guardar nuevas tablas de BigQuery
 
 Vaya a la [consola de BigQuery](https://console.cloud.google.com/bigquery).
 
@@ -47,7 +47,7 @@ A la derecha de la pantalla, verá el menú **Crear conjunto de datos**.
 Para el **ID del conjunto de datos**, use la siguiente convención de nombres. Para los demás campos, mantenga la configuración predeterminada.
 
 | Nombre | Ejemplo |
-| ----------------- | ------------- | 
+| ----------------- | ------------- |
 | `--aepUserLdap--_BigQueryDataSet` | vangeluw_BigQueryDataSet |
 
 Haga clic en **CREAR CONJUNTO DE DATOS**.
@@ -58,7 +58,7 @@ A continuación, volverá a la consola de BigQuery con el conjunto de datos crea
 
 ![demostración](./images/ex38.png)
 
-## 1.2.2.2 Cree su primera SQL BigQuery
+## 1.2.2.2 Crear su primera consulta SQL BigQuery
 
 A continuación, creará su primera consulta en BigQuery. El objetivo de esta consulta es tomar los datos de muestra de Google Analytics y transformarlos para que se puedan introducir en Adobe Experience Platform. Vaya a la ficha **Consulta sin título**.
 
@@ -239,7 +239,7 @@ Una vez que la consulta haya terminado de ejecutarse, verá el siguiente resulta
 
 ![demostración](./images/ex312.png)
 
-## 1.2.2.3 Guarde los resultados de la consulta SQL de BigQuery
+## 1.2.2.3 Guardar los resultados de su consulta SQL de BigQuery
 
 El siguiente paso es guardar el resultado de la consulta haciendo clic en el botón **GUARDAR RESULTADOS**.
 
@@ -252,13 +252,13 @@ Como ubicación de salida, seleccione **tabla BigQuery**.
 Verá una nueva ventana emergente donde ya están rellenados **Nombre de proyecto** y **Nombre de conjunto de datos**. El nombre del conjunto de datos debe ser el conjunto de datos que creó al principio de este ejercicio, con esta convención de nombres:
 
 | Nombre | Ejemplo |
-| ----------------- | ------------- | 
+| ----------------- | ------------- |
 | `--aepUserLdap--_BigQueryDataSet` | `vangeluw_BigQueryDataSet` |
 
 Ahora debe introducir un Nombre de tabla. Utilice esta convención de nombres:
 
 | Nombre | Ejemplo |
-| ----------------- |------------- | 
+| ----------------- |------------- |
 | `--aepUserLdap--_GAdataTableBigQuery` | `vangeluw_GAdataTableBigQuery` |
 
 Haga clic en **GUARDAR**.

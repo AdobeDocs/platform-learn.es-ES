@@ -4,7 +4,7 @@ description: 'Customer Journey Analytics: Conectar conjuntos de datos de Adobe E
 kt: 5342
 doc-type: tutorial
 exl-id: 0f8dbf05-c96f-4cb9-b038-7576a4a91bcb
-source-git-commit: 58c89444d36f92d8df7546964eb4b2b5cea8c82c
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '714'
 ht-degree: 1%
@@ -82,7 +82,7 @@ Como se ha mencionado, puede establecer diferentes ID de persona para cada conju
 
 El nombre del campo ID de persona no es importante, siempre y cuando el valor de los campos ID de persona se corresponda con. Supongamos que tenemos `email` en un conjunto de datos y `emailAddress` en otro conjunto de datos definido como ID de persona. Si `delaigle@adobe.com` tiene el mismo valor para el campo ID de persona en ambos conjuntos de datos, CJA podrá unir los datos.
 
-Revise las preguntas frecuentes de CJA aquí para comprender los matices de la vinculación de identidad: [preguntas frecuentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=es).
+Revise las preguntas frecuentes de CJA aquí para comprender los matices de la vinculación de identidad: [preguntas frecuentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html).
 
 ### Configuración de los datos mediante el ID de persona
 
@@ -97,7 +97,7 @@ Vaya a cada conjunto de datos para actualizar el ID de persona. Ahora rellene el
 Una vez que haya vinculado los dos conjuntos de datos, está listo para continuar.
 
 | conjunto de datos | ID de persona |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | Sistema de demostración: conjunto de datos de eventos para el sitio web (Global v1.1) | correo electrónico |
 | Sistema de demostración: conjunto de datos de eventos para el centro de llamadas (Global v1.1) | correo electrónico |
 

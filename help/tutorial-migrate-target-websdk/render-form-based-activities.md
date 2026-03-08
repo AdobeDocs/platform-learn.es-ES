@@ -1,8 +1,8 @@
 ---
-title: Migración de Target de at.js 2.x a SDK web
-description: Obtenga información sobre cómo migrar una implementación de Adobe Target de at.js 2.x al SDK web de Adobe Experience Platform. Los temas incluyen información general de la biblioteca, diferencias de implementación y otras llamadas importantes.
+title: Migración de Target de at.js 2.x a Web SDK
+description: Obtenga información sobre cómo migrar una implementación de Adobe Target de at.js 2.x a Adobe Experience Platform Web SDK. Los temas incluyen información general de la biblioteca, diferencias de implementación y otras llamadas importantes.
 exl-id: 43b9ae91-4524-4071-9eb4-12a0a8aec242
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 1%
@@ -13,12 +13,12 @@ ht-degree: 1%
 
 Algunas implementaciones de Target pueden utilizar mboxes regionales (ahora conocidos como &quot;ámbitos&quot;) para entregar contenido desde actividades que utilizan el Compositor de experiencias basadas en formularios. Si su implementación de at.js en Target usa mboxes, debe hacer lo siguiente:
 
-* Actualice cualquier referencia de su implementación de at.js que use `getOffer()` o `getOffers()` a los métodos del SDK web de Platform equivalentes.
+* Actualice cualquier referencia de su implementación de at.js que use `getOffer()` o `getOffers()` a los métodos de Platform Web SDK equivalentes.
 * Agregue código para almacenar en déclencheur un evento `propositionDisplay` de modo que se cuente una impresión.
 
 ## Solicitud y aplicación de contenido bajo demanda
 
-El SDK web de Platform no puede procesar automáticamente las actividades creadas con el compositor basado en formularios de Target y enviadas a mboxes regionales. Al igual que at.js, las ofertas enviadas a ubicaciones de Target específicas deben procesarse bajo demanda.
+Platform Web SDK no puede procesar automáticamente las actividades creadas con el compositor basado en formularios de Target y enviadas a mboxes regionales. Al igual que at.js, las ofertas enviadas a ubicaciones de Target específicas deben procesarse bajo demanda.
 
 
 +++Ejemplo de at.js con `getOffer()` y `applyOffer()`:
@@ -49,7 +49,7 @@ adobe.target.getOffer({
 
 +++
 
-+++Equivalente del SDK web de Platform con el comando `applyPropositions`:
++++Equivalente de Platform Web SDK con el comando `applyPropositions`: 
 
 1. Ejecute el comando `sendEvent` para solicitar ofertas (propuestas) para una o varias ubicaciones (ámbitos)
 1. Ejecute el comando `applyPropositions` con el objeto de metadatos, que proporciona instrucciones sobre cómo aplicar contenido a la página para cada ámbito
@@ -92,21 +92,21 @@ alloy("sendEvent", {
 
 +++
 
-El SDK web de Platform ofrece un mayor control para aplicar actividades basadas en formularios a la página mediante el comando `applyPropositions` con un `actionType` especificado:
+Platform Web SDK ofrece un mayor control para aplicar actividades basadas en formularios a la página mediante el comando `applyPropositions` con un `actionType` especificado:
 
-| `actionType` | Descripción | `applyOffer()` de at.js | SDK web de Platform `applyPropositions` |
+| `actionType` | Descripción | `applyOffer()` de at.js | Platform Web SDK `applyPropositions` |
 | --- | --- | --- | --- |
 | `setHtml` | Borre el contenido del contenedor y, a continuación, añada la oferta al contenedor | Sí (siempre se usa) | Sí |
 | `replaceHtml` | Retirar el contenedor y sustituirlo por la oferta | No | Sí |
 | `appendHtml` | Adjunta la oferta después del selector especificado | No | Sí |
 
-Consulte la [documentación dedicada](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=es) acerca de la representación de contenido mediante el SDK web de Platform para obtener opciones y ejemplos adicionales de representación.
+Consulte la [documentación específica](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html) acerca de la representación de contenido mediante Platform Web SDK para ver ejemplos y opciones de representación adicionales.
 
 ## Ejemplo de implementación
 
 La página de ejemplo siguiente se basa en la implementación descrita en la sección anterior, solo agrega ámbitos adicionales al comando `sendEvent`.
 
-+++Ejemplo del SDK web de Platform con varios ámbitos
++++Ejemplo de Platform Web SDK con varios ámbitos
 
 ```HTML
 <!doctype html>
@@ -197,8 +197,10 @@ La página de ejemplo siguiente se basa en la implementación descrita en la sec
 </html>
 ```
 
-A continuación, aprenda a [pasar parámetros de Target mediante el SDK web de Platform](send-parameters.md).
++++
+
+A continuación, aprenda a [pasar parámetros de Target mediante Platform Web SDK](send-parameters.md).
 
 >[!NOTE]
 >
->Nos comprometemos a ayudarle a tener éxito con su migración de Target de at.js al SDK web. Si encuentra obstáculos con la migración o cree que falta información esencial en esta guía, comuníquenoslo publicando en [esta discusión de la comunidad](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=es#M463).
+>Nos comprometemos a ayudarle a tener éxito con la migración de Target de at.js a Web SDK. Si encuentra obstáculos con la migración o cree que falta información esencial en esta guía, comuníquenoslo publicando en [esta discusión de la comunidad](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

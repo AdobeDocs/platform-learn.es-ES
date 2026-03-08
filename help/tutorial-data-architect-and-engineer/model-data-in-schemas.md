@@ -3,12 +3,12 @@ title: Datos de modelo en esquemas
 seo-title: Model data in schemas | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Datos de modelo en esquemas
 description: En esta lección, modelará los datos de Luma en esquemas. Esta es una de las lecciones más largas del tutorial, ¡así que toma un vaso de agua y abróchate!
-role: Data Architect
+role: Developer
 feature: Schemas
 jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '2619'
 ht-degree: 1%
@@ -43,11 +43,11 @@ Key terms:
 **Los arquitectos de datos** tendrán que crear esquemas fuera de este tutorial, pero **los ingenieros de datos** trabajarán de cerca con los esquemas creados por el arquitecto de datos.
 
 Antes de comenzar los ejercicios, vea este breve vídeo para obtener más información sobre los esquemas y el modelo de datos de experiencia (XDM):
->[!VIDEO](https://video.tv.adobe.com/v/38506?learn=on&enablevpops&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on&enablevpops)
 
 >[!TIP]
 >
-> Para profundizar en el modelado de datos en Experience Platform, recomendamos ver la lista de reproducción [Modelar los datos de la experiencia del cliente con XDM](https://experienceleague.adobe.com/es/playlists/experience-platform-model-your-customer-experience-data-with-xdm), disponible de forma gratuita en Experience League.
+> Para profundizar en el modelado de datos en Experience Platform, recomendamos ver la lista de reproducción [Modelar los datos de la experiencia del cliente con XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm), disponible de forma gratuita en Experience League.
 
 ## Permisos necesarios
 
@@ -86,7 +86,7 @@ En este ejercicio, crearemos un esquema para los datos de fidelidad de Luma.
 
 Una vez creado el esquema, se le redirigirá al Editor de esquemas, donde puede agregar campos al esquema. Puede agregar campos individuales directamente al esquema o utilizar grupos de campos. Es importante tener en cuenta que todos los campos individuales siguen estando asociados a una clase o grupo de campos. Puede elegir entre un gran conjunto de grupos de campos estándar del sector proporcionados por Adobe o crear los suyos propios. A medida que empiece a modelar sus propios datos en Experience Platform, conviene familiarizarse con los grupos de campos estándar del sector que proporciona Adobe. Siempre que sea posible, se recomienda utilizarlos, ya que a veces alimentan servicios descendentes, como inteligencia artificial aplicada al cliente, inteligencia artificial aplicada a la atribución y Adobe Analytics.
 
-Al trabajar con sus propios datos, un paso significativo será determinar cuáles de sus propios datos deben capturarse en Platform y cómo deben modelarse. Este gran tema se analiza con más detalle en la lista de reproducción [Modelar los datos de la experiencia del cliente con XDM](https://experienceleague.adobe.com/es/playlists/experience-platform-model-your-customer-experience-data-with-xdm). En este tutorial, solo le guiaré a través de la implementación de algunos esquemas predeterminados.
+Al trabajar con sus propios datos, un paso significativo será determinar cuáles de sus propios datos deben capturarse en Platform y cómo deben modelarse. Este gran tema se analiza con más detalle en la lista de reproducción [Modelar los datos de la experiencia del cliente con XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm). En este tutorial, solo le guiaré a través de la implementación de algunos esquemas predeterminados.
 
 Para agregar grupos de campos:
 
@@ -144,10 +144,8 @@ El nuevo grupo de campo vacío se agrega al esquema. Los botones **[!UICONTROL +
    1. **[!UICONTROL Nombre para mostrar]**: `System Identifier`
    1. **[!UICONTROL Tipo]**: **[!UICONTROL Objeto]**
    1. En el menú desplegable **[!UICONTROL Grupo de campos]**, seleccione el **grupo de campos de perfil de identidad de Luma** que hemos creado.
-
       ![Agregar nuevo grupo de campos](assets/schemas-loyalty-addSystemIdentifier.png)
    1. Seleccionar **[!UICONTROL Aplicar]**
-
       ![Aplicar nuevas propiedades de campo](assets/schemas-loyalty-applySystemIdentifier.png)
 
 Ahora agregue dos campos bajo el objeto `systemIdentifier`:
@@ -327,7 +325,7 @@ Ahora vamos a crear un esquema más para los datos del sitio web de Luma. En est
 |---------------|-----------------|
 | Clase | Evento de experiencia |
 | Nombre del esquema | Esquema de eventos web de Luma |
-| Grupo de campo | ExperienceEvent de SDK web de AEP |
+| Grupo de campo | ExperienceEvent de AEP Web SDK |
 | Grupo de campo | Evento de experiencia del consumidor |
 
 Seleccione el grupo de campos **[!UICONTROL Evento de experiencia del consumidor]**. Este grupo de campos contiene los objetos commerce y productListItems que también estaban en [!UICONTROL Detalles de Commerce]. De hecho, [!UICONTROL Evento de experiencia del consumidor] es una combinación de otros grupos de campos estándar que también están disponibles por separado. El grupo de campos [!UICONTROL AEP Web SDK ExperienceEvent] también contiene otros grupos de campos, incluidos algunos de los mismos en [!UICONTROL Evento de experiencia del consumidor]. Afortunadamente, se mezclan sin problemas.

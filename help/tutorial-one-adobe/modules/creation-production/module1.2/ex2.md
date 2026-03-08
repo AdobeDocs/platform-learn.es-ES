@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: d4cb1ff51c9367fd0d249806e50b676d8a83c557
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1991'
 ht-degree: 1%
@@ -31,7 +31,7 @@ Vuelva al primer nodo, seleccione **Inicializar constantes** y, a continuación,
 ![WF Fusion](./images/wffusion69.png)
 
 | Clave | Valor de ejemplo |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | `AZURE_STORAGE_URL` | `https://vangeluw.blob.core.windows.net` |
 | `AZURE_STORAGE_CONTAINER` | `vangeluw` |
 | `AZURE_STORAGE_SAS_READ` | `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D` |
@@ -262,7 +262,7 @@ Entonces debería ver esto. A continuación, debe definir el resultado de la acc
 
 ![WF Fusion](./images/wffc30.png)
 
-Seleccione **Azure** para **Storage**, pegue este(a) `{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-replacedbg.psd{{1.AZURE_STORAGE_SAS_WRITE}}` en **Ubicación de archivo** y seleccione **vnd.adobe.photoshop** en **Type**. Haga clic para habilitar **Mostrar configuración avanzada**.
+Seleccione **Azure** para **Almacenamiento**, pegue este(a) `{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-replacedbg.psd{{1.AZURE_STORAGE_SAS_WRITE}}` en **Ubicación de archivo** y seleccione **vnd.adobe.photoshop** en **Tipo**. Haga clic para habilitar **Mostrar configuración avanzada**.
 
 ![WF Fusion](./images/wffc31.png)
 

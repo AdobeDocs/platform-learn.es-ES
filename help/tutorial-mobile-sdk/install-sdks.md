@@ -3,7 +3,7 @@ title: Instalar los SDK móviles de Adobe Experience Platform
 description: Obtenga información sobre cómo implementar el SDK móvil de Adobe Experience Platform en una aplicación móvil.
 jira: KT-14627
 exl-id: 98d6f59e-b8a3-4c63-ae7c-8aa11e948f59
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1768'
 ht-degree: 3%
@@ -253,6 +253,6 @@ Asegúrese de actualizar `MobileCore.configureWith(environmentFileId)` con `envi
 >
 >Ahora ha instalado los paquetes necesarios y ha actualizado el proyecto para registrar las extensiones de Adobe Experience Platform Mobile SDK necesarias que va a utilizar para el resto del tutorial.
 >
->Gracias por dedicar su tiempo a conocer Adobe Experience Platform Mobile SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=es)
+>Gracias por dedicar su tiempo a conocer Adobe Experience Platform Mobile SDK. Si tiene preguntas, desea compartir comentarios generales o tiene sugerencias sobre contenido futuro, compártalas en esta [publicación de debate de la comunidad de Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Siguiente: **[Configurar Assurance](assurance.md)**

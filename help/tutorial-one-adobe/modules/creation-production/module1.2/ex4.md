@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f02ecbe4-f1d7-4907-9bbc-04e037546091
-source-git-commit: 5af7b64e88dc0f260be030bca73d9fe9219ba255
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1983'
 ht-degree: 1%
@@ -138,7 +138,7 @@ A continuación, haga clic en **+ Agregar elemento** en **Cadena de consulta**.
 Escriba estos valores y haga clic en **Agregar**.
 
 | Clave | Valor |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | `include` | `media_links.original` |
 
 ![E/S de cuadro](./images/aemf21b.png)

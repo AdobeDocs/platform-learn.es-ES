@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: d4cb1ff51c9367fd0d249806e50b676d8a83c557
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 1%
@@ -66,7 +66,7 @@ Ahora debe configurar las variables necesarias para autenticarse en Adobe I/O. E
 Deben definirse las siguientes variables:
 
 | Clave | Valor |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | `CONST_client_id` | su ID de cliente del proyecto de Adobe I/O |
 | `CONST_client_secret` | Secreto de cliente del proyecto de Adobe I/O |
 | `CONST_scope` | Ámbito del proyecto de Adobe I/O |
@@ -124,7 +124,7 @@ Seleccione **Realizar una solicitud**.
 ![WF Fusion](./images/wffusion20.png)
 
 | Clave | Valor |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | `URL` | `https://ims-na1.adobelogin.com/ims/token/v3` |
 | `Method` | `POST` |
 | `Body Type` | `x-www-form-urlencoded` |
@@ -136,7 +136,7 @@ Seleccione **Agregar elemento**.
 Agregue elementos para cada uno de los siguientes valores:
 
 | Clave | Valor |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | `client_id` | su variable predefinida para `CONST_client_id` |
 | `client_secret` | su variable predefinida para `CONST_client_secret` |
 | `scope` | su variable predefinida para `CONST_scope` |

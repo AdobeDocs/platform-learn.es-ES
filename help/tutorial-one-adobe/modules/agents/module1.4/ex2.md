@@ -3,7 +3,8 @@ title: Implementación de Brand Concierge en el sitio web
 description: Implementación de Brand Concierge en el sitio web
 kt: 5342
 doc-type: tutorial
-source-git-commit: fb1fc5c72723cc4e1ede87f90410feb0cc314eea
+exl-id: 21c388b0-3604-448d-8d82-514a032e34f8
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1347'
 ht-degree: 0%
@@ -339,7 +340,7 @@ Hay 2 campos en el siguiente código que debe actualizar:
 <script src="/scripts/styleconfigurations.js"></script>
 
 <script>
-		!function (n, o) {
+    !function (n, o) {
       o.forEach(function (o) {
         n[o] || ((n.__alloyNS = n.__alloyNS ||
           []).push(o), n[o] = function () {
@@ -349,14 +350,14 @@ Hay 2 campos en el siguiente código que debe actualizar:
       })
     }
       (window, ["alloy"]);
-	</script>
+    </script>
 
 
 <script src="/scripts/alloy.js"></script>
 
 <script>
-	alloy("configure", {
-		defaultConsent: "in",
+    alloy("configure", {
+        defaultConsent: "in",
         edgeDomain: "edge.adobedc.net",
         edgeBasePath: "ee",
         datastreamId: "XXXXX", // replace datastreamId

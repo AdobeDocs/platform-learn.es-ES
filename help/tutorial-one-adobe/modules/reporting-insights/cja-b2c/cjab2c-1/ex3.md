@@ -4,10 +4,10 @@ description: 'Customer Journey Analytics: Crear una vista de datos'
 kt: 5342
 doc-type: tutorial
 exl-id: 048e4f0f-4713-4249-a118-88906b3ba5c0
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '1595'
-ht-degree: 3%
+source-wordcount: '1591'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 3%
 - Comprender la configuración básica de la definición de visita
 - Explicación de la atribución y la persistencia en una vista de datos
 
-## 1.1.3.1 Vista de datos
+## Vista de datos de 1.1.3.1
 
 Con la conexión terminada, ahora puede progresar para influir en la visualización de. Una diferencia entre Adobe Analytics y CJA es que CJA necesita una vista de datos para limpiar y preparar los datos antes de la visualización.
 
@@ -40,7 +40,7 @@ Se le redirigirá al flujo de trabajo **Crear vista de datos**.
 
 ![demostración](./images/0v2.png)
 
-## 1.1.3.2 Definición de vista de datos
+## Definición de vista de datos 1.1.3.2
 
 Ahora puede configurar las definiciones básicas para la vista de datos.
 
@@ -55,12 +55,12 @@ A continuación, asigne un nombre a la vista de datos según esta convención de
 Escriba el mismo valor para la descripción: `--aepUserLdap-- – Omnichannel Data View`.
 
 | Nombre | Descripción | ID externo |
-| ----------------- |-------------|-------------| 
+| ----------------- |-------------|-------------|
 | `--aepUserLdap-- – Omnichannel Data View` | `--aepUserLdap-- – Omnichannel Data View` | `--aepUserLdap--123` |
 
 ![demostración](./images/1v2.png)
 
-Para la **Zona horaria**, seleccione la zona horaria **Hora del meridiano de Greenwich; Monrovia, Casablanca [GMT]**. Este es un entorno realmente interesante, ya que algunas empresas operan en diferentes países y regiones geográficas. Asignar el huso horario adecuado para cada país evitará errores típicos en los datos, como creer que, por ejemplo, en Perú, la mayoría de la gente compra camisetas a las 4:00 a.m.
+Para la **Zona horaria**, seleccione la zona horaria **Hora del meridiano de Greenwich; Monrovia, Casablanca [GMT]**. Este es un entorno realmente interesante, ya que algunas empresas operan en diferentes países y regiones geográficas. Asignar el huso horario adecuado para cada país evitará errores típicos en los datos, como creer que, por ejemplo, en Perú, la mayoría de la gente compra camisetas a las 4:00 AM.
 
 ![demostración](./images/ext7.png)
 
@@ -78,7 +78,7 @@ Haga clic en **Guardar**.
 
 ![demostración](./images/12v2a.png)
 
-## 1.1.3.3 Componentes de vista de datos
+## 1.1.3.3 componentes de vista de datos
 
 En este ejercicio, configurará los componentes que necesita para analizar los datos y visualizarlos con Analysis Workspace. En esta interfaz de usuario, hay tres áreas principales:
 
@@ -106,14 +106,14 @@ Algo muy importante es la **configuración de persistencia**. El concepto de eva
 
 ![demostración](./images/30v21.png)
 
-Si no cambia esta configuración, CJA interpretará la dimensión como **Prop** (nivel de visita individual). Además, podemos cambiar la Persistencia para que la dimensión sea una **eVar** (persista el valor a través del recorrido).
+Si no cambia esta configuración, CJA interpretará la dimensión como **Prop** (nivel de visita). Además, podemos cambiar la Persistencia para que la dimensión sea una **eVar** (persista el valor a través del recorrido).
 
-Si no está familiarizado con eVars y Props, puede [leer más sobre ellos en la documentación](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html?lang=es).
+Si no está familiarizado con eVars y Props, puede [leer más sobre ellos en la documentación](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html).
 
 Dejemos el nombre de página como una prop. Por lo tanto, no es necesario que cambie ninguna **Configuración de persistencia**.
 
 | Nombre del componente a buscar | Nuevo nombre | Configuración de persistencia |
-| ----------------- |-------------| --------------------| 
+| ----------------- |-------------| --------------------|
 | Nombre (web.webPageDetails.name) | Nombre de página |          |
 
 A continuación, elija la dimensión **phoneNumber** y suéltela en el lienzo. El nuevo nombre debe ser **Número de teléfono**.
@@ -129,7 +129,7 @@ Para cambiar la Persistencia, desplácese hacia abajo en el menú derecho y abra
 Marque la casilla de verificación para modificar la configuración de persistencia. Seleccione **Más reciente** y el ámbito **Persona (ventana de informes)**, ya que solo nos importa el último número de móvil de esa persona. Si el cliente no rellena el móvil en visitas futuras, aún verá rellenado este valor.
 
 | Nombre del componente a buscar | Nuevo nombre | Configuración de persistencia |
-| ----------------- |-------------| --------------------| 
+| ----------------- |-------------| --------------------|
 | phoneNumber | Número de teléfono | Más reciente, ventana Informes de personas |
 
 ![demostración](./images/6v2.png)
@@ -141,7 +141,7 @@ En el menú del lado izquierdo, busque `web.webPageDetails.pageViews.value`. Arr
 Cambie el nombre a **Vistas de página** en la **configuración de componentes**.
 
 | Nombre del componente a buscar | Nuevo nombre | Configuración de atribución |
-| ----------------- |-------------| --------------------| 
+| ----------------- |-------------| --------------------|
 | web.webPageDetails.pageViews.value | Page Views |         |
 
 ![demostración](./images/7v2.png)
@@ -156,17 +156,17 @@ A continuación, tendrá que configurar muchas dimensiones y métricas, como se 
 
 
 | Nombre del componente a buscar | Nuevo nombre | Configuración de persistencia |
-| ----------------- |-------------| --------------------| 
+| ----------------- |-------------| --------------------|
 | brandName | Nombre de marca | Más reciente, sesión |
 | sensación de llamada | Sensación de llamada |          |
 | ID de llamada | Tipo de interacción de llamada |          |
 | callTopic | Tema de llamada | Más reciente, sesión |
 | ecid | ECID | Más reciente, ventana Informes de personas |
-| email | ID de correo electrónico | Más reciente, ventana Informes de personas |
+| correo electrónico | ID de correo electrónico | Más reciente, ventana Informes de personas |
 | Tipo de pago | Tipo de pago |          |
 | Método de adición de producto | Método de adición de producto | Más reciente, sesión |
 | Tipo de evento | Tipo de evento |         |
-| Nombre (productListItems.name) | Nombre de producto |         |
+| Nombre (productListItems.name) | Nombre del producto |         |
 | SKU | SKU (sesión) | Más reciente, sesión |
 | El ID de transacción | El ID de transacción |         |
 | URL (web.webPageDetails.URL) | URL |         |
@@ -175,7 +175,7 @@ A continuación, tendrá que configurar muchas dimensiones y métricas, como se 
 ### MÉTRICAS
 
 | Nombre del componente a buscar | Nuevo nombre | Configuración de atribución |
-| ----------------- |-------------| --------------------| 
+| ----------------- |-------------| --------------------|
 | Cantidad | Cantidad |          |
 | commerce.order.priceTotal | Ingresos |         |
 
@@ -183,7 +183,7 @@ La configuración debería tener este aspecto. No olvides **guardar** tu vista d
 
 ![demostración](./images/11v2.png)
 
-## 1.1.3.4 Métricas calculadas
+## 1.1.3.4 métricas calculadas
 
 
 Aunque ha organizado todos los componentes de la vista de datos, aún debe adaptar algunos de ellos para que los usuarios empresariales estén listos para iniciar el análisis.
@@ -201,7 +201,7 @@ Haga clic para seleccionar la nueva métrica **Tipo de evento**.
 Ahora cambie el nombre y la descripción del componente a los siguientes valores:
 
 | Nombre del componente | Descripción del componente |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | Vistas del producto | Vistas del producto |
 
 ![demostración](./images/calcmetr3.png)
@@ -262,7 +262,7 @@ La configuración final debería ser similar a esta. Haz clic en **Guardar y con
 
 ![demostración](./images/calcmetr8.png)
 
-## 1.1.3.5 Configuración de vista de datos
+## Configuración de vista de datos 1.1.3.5
 
 Se le debe redirigir a esta pantalla:
 

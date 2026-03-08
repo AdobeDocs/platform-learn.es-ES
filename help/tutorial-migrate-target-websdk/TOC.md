@@ -1,16 +1,16 @@
 ---
-user-guide-title: Migración de Target de at.js 2.x a SDK web
-breadcrumb-title: Migración de Target de at.js 2.x a SDK web
-user-guide-description: Un tutorial práctico para clientes de Target que explica cómo migrar correctamente de at.js a la implementación del SDK web.
+user-guide-title: Migración de Target de at.js 2.x a Web SDK
+breadcrumb-title: Migración de Target de at.js 2.x a Web SDK
+user-guide-description: Un tutorial práctico para clientes de Target que explica cómo migrar correctamente de at.js a una implementación de Web SDK.
 solution: Target,Data Collection,Experience Platform
 feature-set: Target,Experience Platform
 feature: Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
-role: Data Engineer, Developer
+role: Developer
 level: Intermediate,Experienced
 doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: KT-11159
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '88'
 ht-degree: 5%
@@ -18,7 +18,7 @@ ht-degree: 5%
 ---
 
 
-# Migración de Target de at.js 2.x al SDK web de Platform {#migrate-target-to-websdk}
+# Migración de Target de at.js 2.x a Platform Web SDK {#migrate-target-to-websdk}
 
 + [Introducción al tutorial](introduction.md)
 
@@ -26,7 +26,7 @@ ht-degree: 5%
 
 + [Planificación de la migración](plan-migration.md)
 
-+ [Comparar at.js con el SDK web de Platform](detailed-comparison.md)
++ [Comparar at.js con Platform Web SDK](detailed-comparison.md)
 
 + [Realizar configuración inicial](initial-setup.md)
 

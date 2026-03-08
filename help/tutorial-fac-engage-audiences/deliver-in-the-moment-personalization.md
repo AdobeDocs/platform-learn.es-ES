@@ -3,11 +3,11 @@ title: Ofrezca personalización "en el momento" mediante Edge Network
 seo-title: Deliver "in-the moment" personalization using Edge Network | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: Ofrezca personalización "en el momento" mediante Edge Network
 description: En este ejercicio, la audiencia federada se evalúa en Edge para un retargeting instantáneo "en el momento".
-role: Data Architect, Data Engineer
+role: Developer
 jira: KT-18743
 thumbnail: 18743-drive-in-the-moment-personalization.jpg
 exl-id: 20bfafb1-1d1b-48d8-84eb-97d4c9e03b76
-source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Ofrezca personalización &quot;en el momento&quot; mediante Edge Network
 
-La composición de audiencias federada permite enriquecer audiencias existentes en Adobe Experience Platform (AEP) utilizando datos de audiencia compuestos que se han federado desde Enterprise Data Warehouse. Estos datos no se mantendrán en Adobe Experience Platform, pero puede usar las capacidades de [reenvío de eventos](https://experienceleague.adobe.com/es/docs/experience-platform/tags/event-forwarding/overview){target="_blank"} para enviar estos datos directamente a su Data Warehouse.
+La composición de audiencias federada permite enriquecer audiencias existentes en Adobe Experience Platform (AEP) utilizando datos de audiencia compuestos que se han federado desde Enterprise Data Warehouse. Estos datos no se mantendrán en Adobe Experience Platform, pero puede usar las capacidades de [reenvío de eventos](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview){target="_blank"} para enviar estos datos directamente a su Data Warehouse.
 
 En este ejercicio, utilizamos una audiencia federada que consulta con la puntuación crediticia y la actividad de préstamo para enriquecer la audiencia de comportamiento de los visitantes de la página web de la solicitud de préstamo.
 

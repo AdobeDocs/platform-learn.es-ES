@@ -4,7 +4,7 @@ description: 'Introducción: configuración de Postman'
 kt: 5342
 doc-type: tutorial
 exl-id: fc1ee238-cce8-40a9-aba7-3605019a0077
-source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 3%
@@ -25,7 +25,7 @@ En este vídeo, obtendrá una explicación y una demostración de todos los paso
 
 ## Instalar PostBuster
 
-Vaya a [https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"}.
+Vaya a [https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"}.
 
 Haga clic para descargar la última versión de **PostBuster**.
 
@@ -83,31 +83,31 @@ Copie el siguiente marcador de posición de entorno y péguelo en el **Entorno b
 
 ```json
 {
-	"CLIENT_SECRET": "",
-	"API_KEY": "",
-	"ACCESS_TOKEN": "",
-	"SCOPES": [
-		"openid",
-		"AdobeID",
-		"read_organizations", 
-		"additional_info.projectedProductContext", 
-		"session",
-		"ff_apis",
-		"firefly_api",
-		"frame.s2s.all"
-	],
-	"TECHNICAL_ACCOUNT_ID": "",
-	"IMS": "ims-na1.adobelogin.com",
-	"IMS_ORG": "",
-	"access_token": "",
-	"IMS_TOKEN": "",
-	"AZURE_STORAGE_URL": "",
-	"AZURE_STORAGE_CONTAINER": "",
-	"AZURE_STORAGE_SAS_READ": "",
-	"AZURE_STORAGE_SAS_WRITE": "",
-	"FRAME_IO_BASE_URL": "https://api.frame.io",
-	"FRAME_IO_ACCOUNT_ID": "",
-	"FRAME_IO_WORKSPACE_ID": ""
+    "CLIENT_SECRET": "",
+    "API_KEY": "",
+    "ACCESS_TOKEN": "",
+    "SCOPES": [
+        "openid",
+        "AdobeID",
+        "read_organizations", 
+        "additional_info.projectedProductContext", 
+        "session",
+        "ff_apis",
+        "firefly_api",
+        "frame.s2s.all"
+    ],
+    "TECHNICAL_ACCOUNT_ID": "",
+    "IMS": "ims-na1.adobelogin.com",
+    "IMS_ORG": "",
+    "access_token": "",
+    "IMS_TOKEN": "",
+    "AZURE_STORAGE_URL": "",
+    "AZURE_STORAGE_CONTAINER": "",
+    "AZURE_STORAGE_SAS_READ": "",
+    "AZURE_STORAGE_SAS_WRITE": "",
+    "FRAME_IO_BASE_URL": "https://api.frame.io",
+    "FRAME_IO_ACCOUNT_ID": "",
+    "FRAME_IO_WORKSPACE_ID": ""
 }
 ```
 
@@ -137,7 +137,7 @@ Ahora debe copiar los siguientes valores del proyecto de Adobe I/O y pegarlos en
 Copie las variables anteriores una por una y péguelas en su **Entorno base** en PostBuster.
 
 | Nombre de variable en Adobe I/O | Nombre de variable en el entorno base PostBuster |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | ID de cliente | `API_KEY` |
 | Secreto del cliente | `CLIENT_SECRET` |
 | ID de cuenta técnica | `TECHNICAL_ACCOUNT_ID` |
@@ -156,7 +156,7 @@ En la colección **Adobe IO - OAuth**, seleccione la solicitud **POST - Obtener 
 Debería ver una respuesta similar que contenga la siguiente información:
 
 | Clave | Valor |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | token_type | **portador** |
 | access_token | **KeyJhbGciOiJS...** |
 | expires_in | **86399** |

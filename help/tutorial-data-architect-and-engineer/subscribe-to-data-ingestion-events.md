@@ -3,15 +3,15 @@ title: Suscripción a eventos de ingesta de datos
 seo-title: Subscribe to data ingestion events | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Suscripción a eventos de ingesta de datos
 description: En esta lección, debe suscribirse a los eventos de ingesta de datos configurando un gancho web con Adobe Developer Console y una herramienta de desarrollo de ganchos web en línea. Utilizará estos eventos para monitorizar el estado de los trabajos de ingesta de datos en las lecciones posteriores.
-role: Data Engineer
+role: Developer
 feature: Data Management
 jira: KT-4348
 thumbnail: 4348-subscribe-to-data-ingestion-events.jpg
 exl-id: f4b90832-4415-476f-b496-2f079b4fcbbc
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '501'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -45,12 +45,12 @@ En este ejercicio, crearemos un webhook usando una herramienta en línea llamada
 
    ![Gancho de Web.Sitio](assets/ioevents-webhook-home.png)
 1. Seleccione el botón **Editar** en la barra de navegación superior
-1. Como cuerpo de la respuesta, escriba `$request.query.challenge$`. Las notificaciones de eventos de Adobe I/O que configuramos más adelante en esta lección envían un desafío al webhook y requieren que se incluya en el cuerpo de respuesta.
+1. Como cuerpo de la respuesta, escriba `$request.query.challenge$`. Las notificaciones de Adobe I/O Events que configuramos más adelante en esta lección envían un desafío al webhook y requieren que se incluya en el cuerpo de la respuesta.
 1. Seleccione el botón **Guardar**
 
    ![Editar la respuesta](assets/ioevents-webhook-editResponse.png)
 
-## Configurar
+## Configuración
 
 1. En otra pestaña del explorador, abra [Adobe Developer Console](https://console.adobe.io/)
 1. Abra su `Luma Tutorial API Project`
@@ -81,7 +81,7 @@ Eso es todo por ahora; aprenderá más sobre estas notificaciones en las próxim
 ## Recursos adicionales
 
 * [Gancho de Web.Sitio](https://webhook.site/)
-* [Documentación de notificaciones de ingesta de datos](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=es)
-* [Introducción a la documentación de eventos de Adobe I/O](https://www.adobe.io/apis/experienceplatform/events/docs.html)
+* [Documentación de notificaciones de ingesta de datos](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html)
+* [Introducción a la documentación de Adobe I/O Events](https://www.adobe.io/apis/experienceplatform/events/docs.html)
 
 ¡Bien, finalmente empecemos [a ingerir datos](ingest-batch-data.md)!

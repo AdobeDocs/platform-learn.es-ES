@@ -2,13 +2,13 @@
 title: Configure los permisos
 seo-title: Configure permissions | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Configure los permisos
-description: En esta lección, debe configurar los permisos de usuario de Adobe Experience Platform mediante el Admin Console de Adobe.
-role: Data Architect, Data Engineer
+description: En esta lección, debe configurar los permisos de usuario de Adobe Experience Platform mediante Admin Console de Adobe.
+role: Developer
 feature: Access Control
 jira: KT-4348
 thumbnail: 4348-configure-permissions.jpg
 exl-id: ca01f99e-f10c-4bf0-bef2-b011ac29a565
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1196'
 ht-degree: 2%
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 En esta lección, debe configurar los permisos de usuario de Adobe Experience Platform mediante [!DNL Adobe's Admin Console] y la pantalla [!UICONTROL Permisos] en la interfaz de Platform.
 
-El control de acceso es una función clave de privacidad en Experience Platform y se recomienda limitar los permisos al mínimo requerido para que las personas realicen sus funciones laborales. Consulte la [documentación de control de acceso](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=es) para obtener más información.
+El control de acceso es una función clave para la privacidad en Experience Platform y se recomienda limitar los permisos al mínimo requerido para que las personas realicen sus funciones laborales. Consulte la [documentación de control de acceso](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=es) para obtener más información.
 
 Los arquitectos y los ingenieros de datos son usuarios avanzados de Adobe Experience Platform y necesitará muchos permisos para completar este tutorial y, posteriormente, su trabajo diario. Es probable que los arquitectos de datos estén involucrados en la administración de *otros usuarios de Platform* en su compañía, como especialistas en marketing, analistas y científicos de datos. A medida que complete esta lección, piense en cómo puede utilizar estas funciones para administrar otros usuarios de su compañía.
 
@@ -31,9 +31,9 @@ Los arquitectos y los ingenieros de datos son usuarios avanzados de Adobe Experi
 >
 >Un administrador del sistema de productos de Adobe Experience Cloud debe completar algunos de los pasos de esta lección, que se indican en los encabezados de sección. Si no es administrador del sistema, póngase en contacto con uno de sus empleados de la empresa y pídale que realice estas tareas. También hay que completar una tarea durante la lección [Configurar Developer Console y Postman](set-up-developer-console-and-postman.md).
 
-## Acerca del Admin Console
+## Acerca de Admin Console
 
-[!DNL Admin Console] es la interfaz utilizada para administrar el acceso de usuario a todos los productos de Adobe Experience Cloud. Para acceder a Platform, se debe añadir un usuario o un usuario en el Admin Console y, a continuación, todos sus elementos de permisos granulares se administran en la pantalla Permisos de Adobe Experience Platform.
+[!DNL Admin Console] es la interfaz utilizada para administrar el acceso de usuario a todos los productos de Adobe Experience Cloud. Para acceder a Platform, se debe añadir un usuario o un usuario en Admin Console y, a continuación, todos sus elementos de permisos granulares se administran en la pantalla Permisos de Adobe Experience Platform.
 
 
 Este es un breve resumen de las funciones que existen para Platform:
@@ -49,7 +49,7 @@ En este ejercicio, usted, un administrador del sistema o un administrador de pro
 
 >[!NOTE]
 >
->Si es administrador del sistema y ayuda a un compañero a seguir este tutorial, considere la posibilidad de añadir a su compañero como *administrador de productos* para Adobe Experience Platform. Como administrador de productos, podría completar estos pasos por su cuenta y administrar a otros usuarios de Experience Platform en el futuro.
+>Si es administrador del sistema y ayuda a un compañero a seguir este tutorial, considere la posibilidad de añadir a su compañero como *administrador de productos* para Adobe Experience Platform. Como administrador de productos, podría completar estos pasos por su cuenta y administrar otros usuarios de Experience Platform en el futuro.
 
 Para agregar al participante del tutorial como [!UICONTROL Usuario] y [!UICONTROL Desarrollador]:
 
@@ -73,7 +73,7 @@ Para agregar al participante del tutorial como [!UICONTROL Usuario] y [!UICONTRO
 
 ## Agregar una función en Adobe Experience Platform (requiere un administrador del sistema o un administrador de productos)
 
-Los permisos granulares para el Experience Platform se administran en la pantalla Permisos de la interfaz de Platform. Solo los administradores de sistemas y productos tienen acceso a esta pantalla, por lo que si no tiene privilegios de administrador, necesitará la asistencia de alguien que sí lo tenga.
+Los permisos granulares para Experience Platform se administran en la pantalla Permisos de la interfaz de Platform. Solo los administradores de sistemas y productos tienen acceso a esta pantalla, por lo que si no tiene privilegios de administrador, necesitará la asistencia de alguien que sí lo tenga.
 
 Los permisos se administran en Funciones. Cree una función para el tutorial:
 
@@ -96,8 +96,8 @@ Los permisos se administran en Funciones. Cree una función para el tutorial:
    1. Administración de zona protegida
    1. Servicio de consultas
    1. Recopilación de datos
-   1. Control de datos
-   1. Paneles
+   1. Gobernanza de datos
+   1. Paneles de control
    1. Alertas
 
       ![Agregar elementos de permiso](assets/permissions-addPermissionItems.png)

@@ -4,13 +4,13 @@ description: El conector Source de Adobe Analytics le permite transmitir, asigna
 feature: Sources
 topic: Integrations
 badgeIntegration: label="Integración" type="positive"
-role: Data Engineer, Data Architect, Developer
+role: Developer
 level: Intermediate
 last-substantial-update: 2023-02-23T00:00:00Z
 jira: KT-3824
 thumbnail: 29687.jpg
 exl-id: b5fb1df4-b05d-426f-bdee-43e0de6bf0d6
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 0%
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Ingesta de datos mediante el conector de origen de Adobe Analytics
 
-El conector Source de Adobe Analytics le permite transmitir, asignar y filtrar fácilmente datos de Adobe Analytics al Perfil del cliente en tiempo real y al lago de datos de Experience de Adobe Experience Platform. Aprenda a utilizar las funciones de preparación de datos para crear campos semánticos y calculados para mejorar la experiencia del usuario en las aplicaciones de Generador de segmentos y Plataforma. Este conector admite grupos de informes interregionales. Para obtener documentación más detallada del producto, consulte [Crear un conector de origen de Adobe Analytics en la interfaz de usuario](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=es).
+El conector Source de Adobe Analytics le permite transmitir, asignar y filtrar fácilmente datos de Adobe Analytics al Perfil del cliente en tiempo real y al lago de datos de Experience de Adobe Experience Platform. Aprenda a utilizar las funciones de preparación de datos para crear campos semánticos y calculados para mejorar la experiencia del usuario en las aplicaciones de Generador de segmentos y Plataforma. Este conector admite grupos de informes interregionales. Para obtener documentación más detallada del producto, consulte [Crear un conector de origen de Adobe Analytics en la interfaz de usuario](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/3430250?learn=on&enablevpops&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/29687?learn=on&enablevpops)

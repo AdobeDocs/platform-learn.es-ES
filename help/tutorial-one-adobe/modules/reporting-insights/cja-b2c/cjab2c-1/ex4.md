@@ -4,10 +4,10 @@ description: 'Customer Journey Analytics: Preparación de datos en Analysis Work
 kt: 5342
 doc-type: tutorial
 exl-id: 0bc05318-154a-425c-9e8c-3ddcfe8ad19c
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 1%
+source-wordcount: '759'
+ht-degree: 2%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## Objetivos
 
-- Comprensión de la IU de Analysis Workspace en CJA
+- Información sobre la IU de Analysis Workspace en CJA
 - Comprender los conceptos de preparación de datos en Analysis Workspace
 - Aprenda a realizar cálculos de datos
 
@@ -29,11 +29,11 @@ Customer Journey Analytics lleva esta solución sobre los datos de Platform. Rec
 
 Si no ha utilizado Analysis Workspace anteriormente, le recomendamos encarecidamente que vea este vídeo:
 
->[!VIDEO](https://video.tv.adobe.com/v/35552?quality=12&learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on)
 
 ### Cree Su Proyecto
 
-Ahora es el momento de crear su primer espacio de trabajo de CJA. Vaya a la pestaña **Workspace** dentro de CJA.
+Ahora es el momento de crear su primer espacio de trabajo de CJA. Vaya a la ficha **Workspace** dentro de CJA.
 Haga clic en **Crear proyecto**.
 
 ![demostración](./images/prmenu.png)
@@ -53,7 +53,7 @@ En primer lugar, asegúrese de seleccionar la Vista de datos correcta en la esqu
 A continuación, guarde el proyecto y asígnele un nombre. Puede utilizar el siguiente comando para guardar:
 
 | Sistema operativo | Método abreviado |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | Windows | Control + S |
 | Mac | Comando + S |
 
@@ -64,14 +64,14 @@ Verá esta ventana emergente:
 Utilice esta convención de nombres:
 
 | Nombre | Descripción |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | `--aepUserLdap-- - Omnichannel Analysis` | `--aepUserLdap-- - Omnichannel Analysis` |
 
 A continuación, haga clic en **Guardar**.
 
 ![demostración](./images/prsave2.png)
 
-## 1.1.4.2 Métricas calculadas
+## 1.1.4.2 métricas calculadas
 
 Aunque hemos organizado todos los componentes de la vista de datos, aún necesita adaptar algunos de ellos para que los usuarios empresariales estén listos para iniciar el análisis. Además, durante cualquier análisis, puede crear una métrica calculada para profundizar en la búsqueda de perspectivas.
 
@@ -110,7 +110,7 @@ La tasa de conversión suele representarse en forma de porcentaje. Por lo tanto,
 Finalmente, cambie el nombre y la descripción de la métrica calculada:
 
 | Título | Descripción | ID externo |
-| ----------------- |-------------| -------------| 
+| ----------------- |-------------| -------------|
 | Tasa de conversión | Tasa de conversión | conversionRate |
 
 Entonces tendrá esto. Haga clic en **Guardar**.
@@ -121,7 +121,7 @@ Vuelva a hacer clic en **Guardar**.
 
 ![demostración](./images/calcbuildercr6a.png)
 
-## 1.1.4.3 Dimensiones calculadas: Filtros (segmentación) e intervalos de fechas
+## 1.1.4.3 dimensiones calculadas: filtros (segmentación) e intervalos de fechas
 
 ### Filtros: Dimensiones calculadas
 
@@ -149,7 +149,7 @@ En estas dimensiones de tiempo calculadas, ayudaremos a los analistas y a los us
 
 ![demostración](./images/timedimensions.png)
 
-Ya ha finalizado el ejercicio de preparación de datos con CJA Analysis Workspace.
+Ya ha terminado el ejercicio de preparación de datos con CJA Analysis Workspace.
 
 ## Pasos siguientes
 

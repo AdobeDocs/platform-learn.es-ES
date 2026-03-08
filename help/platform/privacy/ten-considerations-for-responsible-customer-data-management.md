@@ -2,14 +2,14 @@
 title: 10 consideraciones para la administración de datos del cliente responsable
 description: Las fuerzas volátiles del mercado y los dispares requisitos de privacidad del consumidor pueden presentar escenarios desalentadores para el experto en marketing. Para mantener las campañas en el lado correcto de las regulaciones, los equipos de marketing necesitan que sus contrapartes informáticas tengan un proceso optimizado para afianzar el futuro del proceso de gobernanza de datos, que, idealmente, faculta a todos para seguir y aplicar reglas de uso responsable de los datos de los consumidores. Adobe y Scotiabank Digital le explican las consideraciones clave para la administración de datos responsable.
 feature: Privacy
-role: User, Developer, Data Engineer, Architect, Data Architect, Admin, Leader
+role: User, Developer, Admin, Leader
 level: Beginner, Intermediate, Experienced
 doc-type: Event
 jira: KT-7334
 thumbnail: 332062.jpg
 type: Event
 exl-id: 00664b18-f230-44b8-a963-7ef0298ea39b
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 37%
@@ -20,4 +20,4 @@ ht-degree: 37%
 
 Las fuerzas volátiles del mercado y los dispares requisitos de privacidad del consumidor pueden presentar escenarios desalentadores para el experto en marketing. Para mantener las campañas en el lado correcto de las regulaciones, los equipos de marketing necesitan que sus contrapartes informáticas tengan un proceso optimizado para afianzar el futuro del proceso de gobernanza de datos, que, idealmente, faculta a todos para seguir y aplicar reglas de uso responsable de los datos de los consumidores. Adobe y Scotiabank Digital le explican las consideraciones clave para la administración de datos responsable.
 
->[!VIDEO](https://video.tv.adobe.com/v/3457048/?learn=on&enablevpops&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/332062/?learn=on&enablevpops)

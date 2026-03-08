@@ -4,9 +4,9 @@ description: 'Ingesta y análisis de datos de Google Analytics en Adobe Experien
 kt: 5342
 doc-type: tutorial
 exl-id: f58af1cf-6f2e-420c-9eed-29382806a9f4
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '720'
 ht-degree: 2%
 
 ---
@@ -41,7 +41,7 @@ Verá la pantalla **Seleccionar datos**.
 
 ![demostración](./images/datasets.png)
 
-## 1.2.4.1 Selección de tabla de BigQuery
+## Selección de tabla de 1.2.4.1 BigQuery
 
 En la pantalla **Seleccionar datos**, seleccione su conjunto de datos de BigQuery. Ahora puede ver una previsualización de datos de ejemplo de los datos de Google Analytics en BigQuery.
 
@@ -49,7 +49,7 @@ Haga clic en **Next**.
 
 ![demostración](./images/datasets1.png)
 
-## Asignación XDM 1.2.4.2
+## Asignación XDM de 1.2.4.2
 
 Ahora verá lo siguiente:
 
@@ -68,7 +68,7 @@ Desplácese hacia abajo. Ahora necesita asignar cada **campo de Source** desde G
 Utilice la siguiente tabla de asignación para este ejercicio.
 
 | Campo de origen | Campo de destino |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | `_id` | `_id` |
 | `_id` | canal._id |
 | `timeStamp` | timestamp |
@@ -88,7 +88,7 @@ Utilice la siguiente tabla de asignación para este ejercicio.
 Para algunos campos, debe quitar la asignación original y crear una nueva, para un **Campo calculado**.
 
 | Campo calculado | Campo de destino |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | `iif(Unique_Purchases == null, 0, Unique_Purchases)` | commerce.purchases.value |
 | `iif(Product_Detail_Views == null, 0, Product_Detail_Views)` | commerce.productViews.value |
 | `iif(Adds_To_Cart == null, 0, Adds_To_Cart)` | commerce.productListAdds.value |
@@ -111,7 +111,7 @@ Haga clic en **Next**.
 
 ![demostración](./images/xdm34.png)
 
-## 1.2.4.3 Programación de la conexión y la ingesta de datos
+## 1.2.4.3 conexión y programación de ingesta de datos
 
 Ahora verá la ficha **Programación**:
 
@@ -134,7 +134,7 @@ Haga clic en **Next**.
 
 ![demostración](./images/ex437.png)
 
-## 1.2.4.4 Revisar e iniciar la conexión
+## 1.2.4.4 revisar e iniciar conexión
 
 Ahora verá una descripción general detallada de su conexión. Asegúrese de que todo es correcto antes de continuar, ya que algunos ajustes ya no se pueden cambiar posteriormente, como la asignación XDM.
 

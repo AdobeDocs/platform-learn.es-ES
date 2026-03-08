@@ -2,7 +2,7 @@
 title: Comparación de la extensión de Target con la extensión de Offer Decisioning y Target
 description: Obtenga información sobre las diferencias entre la extensión de Target y la extensión de Offer Decisioning y Target, incluidas las funciones, la configuración y el flujo de datos.
 exl-id: 6c854049-4126-45cf-8b2b-683cf29549f3
-source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '833'
 ht-degree: 3%
@@ -90,4 +90,4 @@ El diagrama siguiente debería ayudarle a comprender el flujo de datos mediante 
 
 >[!NOTE]
 >
->Nos comprometemos a ayudarle a tener éxito con su migración de Target móvil de la extensión de Target a la extensión de Offer Decisioning y Target. Si encuentra obstáculos con la migración o cree que falta información esencial en esta guía, comuníquenoslo publicando en [esta discusión de la comunidad](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484?profile.language=es#M625).
+>Nos comprometemos a ayudarle a tener éxito con su migración de Target móvil de la extensión de Target a la extensión de Offer Decisioning y Target. Si encuentra obstáculos con la migración o cree que falta información esencial en esta guía, comuníquenoslo publicando en [esta discusión de la comunidad](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625).

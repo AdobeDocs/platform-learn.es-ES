@@ -3,12 +3,12 @@ title: Aplicación del marco de gobernanza de datos
 seo-title: Apply the data governance framework | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Aplicación del marco de gobernanza de datos
 description: En esta lección, aplicará el marco de trabajo de control de datos a los datos que ha introducido en su zona protegida.
-role: Data Architect
+role: Developer
 feature: Data Governance
 jira: KT-4348
 thumbnail: 4348-apply-data-governance-framework.jpg
 exl-id: 3cc3c794-5ffd-41bf-95d8-be5bca2e3a0f
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 1%
@@ -24,9 +24,9 @@ En esta lección, aplicará el marco de trabajo de control de datos a los datos 
 Administración de datos de Adobe Experience Platform le permite administrar los datos de los clientes y garantizar el cumplimiento de las regulaciones, restricciones y políticas aplicables al uso de los datos. Desempeña un papel clave dentro de Experience Platform en varios niveles, incluido el control del uso de datos.
 
 Antes de comenzar los ejercicios, vea estos vídeos cortos sobre la gobernanza de datos:
->[!VIDEO](https://video.tv.adobe.com/v/41323?learn=on&enablevpops&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/36653?learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/32682?learn=on&enablevpops&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
 
 <!--
 ## Permissions required

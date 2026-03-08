@@ -4,7 +4,7 @@ description: 'Real-time CDP: destinos SDK'
 kt: 5342
 doc-type: tutorial
 exl-id: c18acbf5-92f5-4cd2-a5aa-a5e9debb98c9
-source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 5%
@@ -70,7 +70,7 @@ Para ello, abra su aplicación de Postman, vaya a la **API de creación de desti
 >
 >Si no tiene esa colección de Postman, vuelva a [Ejercicio 3 en el módulo 2.1](../rtcdpb2c-1/ex3.md) y siga las instrucciones para configurar Postman con las colecciones de Postman proporcionadas.
 
-Entonces verá esto... En **Encabezados**, debe actualizar manualmente el valor de la clave **x-sandbox-name** y establecerlo en `--aepSandboxName--`. Seleccione el valor **{{SANDBOX_NAME}}**.
+Entonces verá esto... En **Encabezados**, debe actualizar manualmente el valor de la clave **x-sandbox-name** y establecerlo en `--aepSandboxName--`. Seleccione el valor **`{{SANDBOX_NAME}}`**.
 
 ![Ingesta de datos](./images/sdkpm1.png)
 
@@ -124,7 +124,7 @@ Después de hacer clic en **Enviar**, se creará la plantilla de servidor y, com
 
 ## Cree la configuración de destino
 
-En Postman, en **API de creación de destino**, vaya a **Configuraciones de destino** y haga clic para abrir la solicitud **POST - Crear una configuración de destino**. Entonces verá esto... En **Encabezados**, debe actualizar manualmente el valor de la clave **x-sandbox-name** y establecerlo en `--aepSandboxName--`. Seleccione el valor **{{SANDBOX_NAME}}** y reemplácelo por `--aepSandboxName--`.
+En Postman, en **API de creación de destino**, vaya a **Configuraciones de destino** y haga clic para abrir la solicitud **POST - Crear una configuración de destino**. Entonces verá esto... En **Encabezados**, debe actualizar manualmente el valor de la clave **x-sandbox-name** y establecerlo en `--aepSandboxName--`. Seleccione el valor **`{{SANDBOX_NAME}}`** y reemplácelo por `--aepSandboxName--`.
 
 ![Ingesta de datos](./images/sdkpm7.png)
 
@@ -160,7 +160,7 @@ Ahora necesita reemplazar el marcador de posición **{{body}}** por el siguiente
         }
     ],
     "uiAttributes": {
-        "documentationLink": "https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=es",
+        "documentationLink": "https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en",
         "category": "streaming",
         "connectionType": "Server-to-server",
         "frequency": "Streaming"

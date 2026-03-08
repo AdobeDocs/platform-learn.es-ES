@@ -6,11 +6,11 @@ doc-type: article
 feature-set: Experience Platform
 feature: Server API,API,Data Collection,Integrations
 level: Beginner
-role: User, Data Engineer, Developer
+role: User, Developer
 solution: Data Collection
 topic: Integrations
 exl-id: 9607e641-b0d5-49c1-b319-32ed0720e715
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '2086'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Al hacer clic en un vínculo, el explorador realiza una solicitud a un servidor 
 
 La mayoría de los navegadores tienen una &quot;barra de direcciones&quot; que muestra parte o toda la &quot;dirección&quot; de una página web. Cuando el navegador &quot;obtiene&quot; la página para el enlace en el que hemos hecho clic, muestra la &quot;dirección&quot; de la página en esta barra de direcciones. Entonces, ¿cuál es la &quot;dirección&quot; de una página web?
 
-Ese(a) `https://business.adobe.com/es/products/experience-platform/adobe-experience-platform.html` de arriba es la dirección de una página en la web y se llama URL o Localizador uniforme de recursos. Las direcciones URL pueden hacer referencia a una página como esta, a un archivo de imagen, a un vídeo u otros tipos de archivo.
+Ese(a) `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` de arriba es la dirección de una página en la web y se llama URL o Localizador uniforme de recursos. Las direcciones URL pueden hacer referencia a una página como esta, a un archivo de imagen, a un vídeo u otros tipos de archivo.
 
 ![Partes de una dirección URL](../assets/api101-url-parts.jpg)
 
@@ -69,7 +69,7 @@ Es muy común ver que el término _host_ hace referencia a un nombre de dominio 
 
 **Origen**
 
-Origen es otro término que hay que tener en cuenta que está estrechamente relacionado con las partes de una dirección URL. En un nivel básico, un origen es aproximadamente `scheme` más `host` más `domain` como `https://business.adobe.com/es`. Los distintos valores suelen representar orígenes diferentes, como `https://business.adobe.com/es` y `http://business.adobe.com/es`, no son el mismo origen porque tienen esquemas diferentes. `https://www.adobe.com` y `https://business.adobe.com/es` tampoco son el mismo origen en muchos usos debido a los diferentes subdominios.
+Origen es otro término que hay que tener en cuenta que está estrechamente relacionado con las partes de una dirección URL. En un nivel básico, un origen es aproximadamente `scheme` más `host` más `domain` como `https://business.adobe.com`. Los distintos valores suelen representar orígenes diferentes, como `https://business.adobe.com` y `http://business.adobe.com`, no son el mismo origen porque tienen esquemas diferentes. `https://www.adobe.com` y `https://business.adobe.com` tampoco son el mismo origen en muchos usos debido a los diferentes subdominios.
 
 **Ruta**
 
@@ -85,7 +85,7 @@ Es habitual que una página web incluya contenido o recursos de otros hosts o fu
 
 ## Usos comunes de las API web
 
-Aparte de la hora del día, el tiempo o el contenido personalizado, hay muchos usos para las API web. Las plataformas de medios sociales como Twitter, TikTok, Facebook, LinkedIn, Snapchat, Pinterest y otras tienen una variedad de API que los programadores pueden utilizar con sus aplicaciones. Y, por supuesto, el Adobe también tiene [una amplia variedad de API](https://developer.adobe.com/apis) que los programadores utilizan para que su software pueda interactuar con los productos y servicios del Adobe. Los productos y servicios de software acceden a otros productos y servicios de software a través de estas API.
+Aparte de la hora del día, el tiempo o el contenido personalizado, hay muchos usos para las API web. Las plataformas de medios sociales como Twitter, TikTok, Facebook, LinkedIn, Snapchat, Pinterest y otras tienen una variedad de API que los programadores pueden utilizar con sus aplicaciones. Y, por supuesto, Adobe también tiene [una amplia variedad de API](https://developer.adobe.com/apis) que los programadores utilizan para que su software pueda interactuar con los productos y servicios de Adobe. Los productos y servicios de software acceden a otros productos y servicios de software a través de estas API.
 
 ## API de ejemplo
 
@@ -133,13 +133,13 @@ Hay varios más, pero esta es una lista de los métodos más comunes al trabajar
 
 Ahora que tiene los términos, conceptos y pasos básicos involucrados con las API, podemos ver un ejemplo de solicitud de API en la práctica.
 
-La página del ejemplo de nuestro explorador tiene una dirección URL de `https://business.adobe.com/es/products/experience-platform/adobe-experience-platform.html`. Cuando se hace clic en el vínculo de Adobe Experience Platform, el explorador realiza una solicitud `GET` para esta página. Como tenemos el navegador para hacer el trabajo por nosotros, todo lo que tenemos que hacer es hacer clic, pero si un programador quiere que esa solicitud se produzca en una aplicación de software, tiene que proporcionar todos los detalles necesarios para que la solicitud de API se cumpla con éxito.
+La página del ejemplo de nuestro explorador tiene una dirección URL de `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html`. Cuando se hace clic en el vínculo de Adobe Experience Platform, el explorador realiza una solicitud `GET` para esta página. Como tenemos el navegador para hacer el trabajo por nosotros, todo lo que tenemos que hacer es hacer clic, pero si un programador quiere que esa solicitud se produzca en una aplicación de software, tiene que proporcionar todos los detalles necesarios para que la solicitud de API se cumpla con éxito.
 
 Este es el aspecto que podría tener el código:
 
 ```js
 fetch(
-  "https://business.adobe.com/es/products/experience-platform/adobe-experience-platform.html",
+  "https://business.adobe.com/products/experience-platform/adobe-experience-platform.html",
   {
     headers: {
       accept:

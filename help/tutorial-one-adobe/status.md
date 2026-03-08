@@ -3,7 +3,7 @@ title: Estado del contenido
 description: Estado del contenido
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 877965ea9e83d39faff4d05eeb7dd66eb8cbac5a
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 10%
@@ -18,7 +18,7 @@ A continuación se muestra una descripción general del estado del contenido en 
 
 | Nombre | Última actualización | Trabajando al 100% | Observaciones | Inversión de tiempo |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [0. Primeros pasos &#x200B;](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 06/04/2025 | Sí | - | 45 min |
+| [0. Primeros pasos ](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 06/04/2025 | Sí | - | 45 min |
 
 ## Flujo de trabajo y planificación
 

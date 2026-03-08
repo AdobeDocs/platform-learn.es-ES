@@ -4,9 +4,9 @@ description: 'Ingesta y análisis de datos de Google Analytics en Adobe Experien
 kt: 5342
 doc-type: tutorial
 exl-id: 9380c621-34b0-4d14-baf6-9b6fedd63d5f
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '3114'
+source-wordcount: '3110'
 ht-degree: 2%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 2%
 
 ## Objetivos
 
-- Conecte nuestro conjunto de datos de BigQuery a Customer Journey Analytics (CJA)
+- Conexión de nuestro conjunto de datos de BigQuery a Customer Journey Analytics (CJA)
 - Conecte y únase a Google Analytics con datos de fidelidad.
 - Familiarícese con la IU de CJA
 
-## 1.2.5.1 Crear una conexión
+## 1.2.5.1 crear una conexión
 
 Vaya a [analytics.adobe.com](https://analytics.adobe.com) para obtener acceso a Customer Journey Analytics.
 
@@ -71,7 +71,7 @@ Entonces, estarás aquí. Haga clic en **Guardar**.
 
 ![demostración](./images/d4.png)
 
-Después de haber creado su **conexión**, es posible que pasen unas horas antes de que sus datos estén disponibles en CJA.
+Después de haber creado su **conexión**, es posible que pasen unas horas antes de que los datos estén disponibles en CJA.
 
 A continuación, verá la conexión en la lista de conexiones disponibles.
 
@@ -110,8 +110,8 @@ Escriba el mismo valor para la descripción: `--aepUserLdap-- - GA + Loyalty Dat
 Antes de realizar cualquier análisis o visualización, es necesario crear una vista de datos con todos los campos, dimensiones y métricas y su configuración de atribución.
 
 | Campo | Convención de nomenclatura |
-| ----------------- |-------------|  
-| Nombre de conexión | `--aepUserLdap-- - GA + Loyalty Data View` | vangeluw: GA + vista de datos de fidelización |
+| ----------------- |-------------|
+| Nombre de conexión | `--aepUserLdap-- - GA + Loyalty Data View` \| vangeluw: GA + vista de datos de fidelización |
 | Descripción | `--aepUserLdap-- - GA + Loyalty Data View` |
 | ID externo | `--aepUserLdap--GA` |
 
@@ -146,7 +146,7 @@ Agregue los siguientes componentes a la vista de datos. Asegúrese también de a
 | Dimensión | web.webPageDetails.name | Título de página | `web.webPageDetails.name` |
 | Dimensión | Proveedor | Explorador | `environment.browserDetails.vendor` |
 | Dimensión | Tipo | Device Type | `device.type` |
-| Dimensión | loyaltyId | ID de fidelización | `_experienceplatform.identification.core.loyaltyId` |
+| Dimensión | loyaltyId | ID de lealtad | `_experienceplatform.identification.core.loyaltyId` |
 | Dimensión | commerce.order.payments.transactionID | El ID de transacción | `commerce.order.payments.transactionID` |
 | Dimensión | eventType | Tipo de evento | `eventType` |
 | Dimensión | timestamp | Marca de tiempo | `timestamp` |
@@ -183,7 +183,7 @@ En la pantalla **Configuración**, no se requieren cambios. Haga clic en **Guard
 
 Ya está listo para analizar los datos de Google Analytics en Adobe Analytics Analysis Workspace. Vamos a pasar al siguiente ejercicio.
 
-## 1.2.5.3 Creación del proyecto
+## 1.2.5.3 Crear su proyecto
 
 En Customer Journey Analytics, ve a **Workspace**. Haga clic en **Crear proyecto**
 
@@ -200,14 +200,14 @@ Ahora tiene un proyecto en blanco:
 Primero, guarde el proyecto y asígnele un nombre. Puede utilizar el siguiente comando para guardar:
 
 | Sistema operativo | Método abreviado |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | Windows | Control + S |
 | Mac | Comando + S |
 
 Verás esta ventana emergente. Utilice esta convención de nombres:
 
 | Nombre | Descripción |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | `--aepUserLdap-- – GA + Loyalty Workspace` | `--aepUserLdap-- – GA + Loyalty Workspace` |
 
 A continuación, haga clic en **Guardar**.
@@ -238,7 +238,7 @@ En primer lugar, seleccione el intervalo de fechas correcto (**Hoy**) en el lado
 
 >[!NOTE]
 >
->Si acaba de crear la **conexión de datos** y la **vista de datos**, es posible que tenga que esperar un par de horas. CJA necesita algo de tiempo para rellenar los datos históricos cuando hay una gran cantidad de registros de datos.
+>Si acaba de crear la **conexión de datos** y la **vista de datos**, es posible que tenga que esperar un par de horas. CJA necesita tiempo para rellenar los datos históricos cuando hay una gran cantidad de registros de datos.
 
 Vamos a arrastrar y soltar algunas dimensiones y métricas para analizar los canales de marketing. Primero use la dimensión **Canal de marketing** y arrástrela y suéltela en el lienzo de la **tabla de forma libre**. (Haga clic en **Mostrar todo** en caso de que no vea la métrica inmediatamente en el menú Métricas)
 
@@ -338,27 +338,27 @@ Podemos seguir dividiendo las filas con segmentos o intervalos de fechas especí
 
 Lograr el mismo resultado final con SQL y, a continuación, una herramienta de visualización de terceros es todo un desafío. Especialmente cuando haces preguntas y tratas de obtener las respuestas sobre la marcha. Customer Journey Analytics no tiene este desafío y permite a los analistas de datos consultar los datos de forma flexible y en tiempo real.
 
-## 1.2.5.3.2 Análisis de canal o de abandonos
+## 1.2.5.3.2 Análisis de abandonos o Funnel
 
-Los canales son un excelente mecanismo para comprender los pasos principales de un recorrido del cliente. Estos pasos también pueden proceder de interacciones sin conexión (por ejemplo, desde el centro de llamadas) y, a continuación, puede combinarlos con puntos de contacto digitales en el mismo canal.
+Los canales son un excelente mecanismo para comprender los pasos principales de un recorrido del cliente. Estos pasos también pueden proceder de interacciones sin conexión (por ejemplo, desde el centro de llamadas) y, a continuación, puede combinarlos con puntos de contacto digitales en la misma funnel.
 
 Customer Journey Analytics le permite hacer eso y mucho más. Si recuerda el Módulo 13, hemos sido capaces de hacer clic con el botón derecho y hacer cosas como:
 
 - Analizar a dónde van los usuarios después de un paso de visitas en el orden previsto
-- Cree un segmento a partir de cualquier punto del canal
+- Cree un segmento desde cualquier punto de funnel
 - Consulte Tendencia en cualquier fase de una visualización de gráfico de líneas
 
 
-Veamos otra cosa que puede hacer: ¿Cómo se compensa mi canal de Recorrido del cliente este mes con el mes anterior? ¿Qué hay de móvil frente a escritorio?
+Veamos otra cosa que puede hacer: ¿Cómo va mi Funnel de Recorrido del cliente este mes frente al mes anterior? ¿Qué hay de móvil frente a escritorio?
 
 A continuación creará dos paneles:
 
-- Análisis de canal (enero)
-- Análisis de canal (febrero)
+- Análisis de funnel (enero)
+- Análisis de funnel (febrero)
 
-Verá que estamos comparando un embudo en diferentes periodos de tiempo (enero y febrero) divididos por Tipo de dispositivo.
+Verá que estamos comparando una funnel en diferentes periodos de tiempo (enero y febrero) divididos por Tipo de dispositivo.
 
-Este tipo de análisis no es posible dentro de la interfaz de usuario de Google Analytics o es muy limitado. Por lo tanto, CJA añade mucho valor a los datos capturados por Google Analytics.
+Este tipo de análisis no es posible dentro de la interfaz de usuario de Google Analytics o es muy limitado. De modo que, una vez más, CJA añade mucho valor a los datos capturados por Google Analytics.
 
 Para crear la primera visualización de abandonos. Cierre el panel actual para empezar con uno nuevo.
 
@@ -374,9 +374,9 @@ Ahora seleccione la visualización **Visitas en el orden previsto**.
 
 ![demostración](./images/pro36.png)
 
-Como analista, imagine que desea comprender lo que está sucediendo con su canal de comercio electrónico principal: Inicio > Búsqueda interna > Detalles del producto > Cierre de compra > Compra.
+Como analista, imagine que desea comprender lo que está sucediendo con su funnel de comercio electrónico principal: Inicio > Búsqueda interna > Detalles del producto > Cierre de compra > Compra.
 
-Empecemos por añadir algunos pasos nuevos al canal. Para ello, abra la dimensión **Nombre de página**.
+Empecemos por agregar algunos pasos nuevos a funnel. Para ello, abra la dimensión **Nombre de página**.
 
 ![demostración](./images/pro37.png)
 
@@ -429,9 +429,9 @@ Al final, tendrá una visualización más avanzada:
 Customer Journey Analytics le permite hacer eso y mucho más. Al hacer clic con el botón derecho en cualquier lugar de la visita en orden previsto, puede...
 
 - Analizar a dónde van los usuarios desde un paso de abandonos
-- Cree un segmento a partir de cualquier punto del canal
+- Cree un segmento desde cualquier punto de funnel
 - Tendencia de cualquier paso en una visualización de Línea
-- Compare cualquier embudo con diferentes periodos de tiempo de forma visual.
+- Compare cualquier funnel con diferentes periodos de tiempo de forma visual.
 
 Por ejemplo, haga clic con el botón derecho en cualquier paso de la visita en el orden previsto para ver algunas de estas opciones de análisis.
 
@@ -526,7 +526,7 @@ Ahora dispone de un potente kit para analizar canales y explorar rutas de compor
 
 No olvide guardar los cambios.
 
-## 1.2.5.4 Compartir el proyecto
+## 1.2.5.4 compartir el proyecto
 
 >[!IMPORTANT]
 >

@@ -4,9 +4,9 @@ description: 'Ingesta y análisis de datos de Google Analytics en Adobe Experien
 kt: 5342
 doc-type: tutorial
 exl-id: ba830c8c-e3e6-4e7e-ab53-5b7eb031ad29
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '677'
 ht-degree: 0%
 
 ---
@@ -32,13 +32,13 @@ El conector Source GCP/BigQuery debe usarse para...
 - realice un seguimiento del comportamiento de todos los clientes en el sitio web y cargue esos datos en Adobe Experience Platform para análisis, ciencia de datos y casos de uso de personalización que no requieran activación en tiempo real.
 - cargar datos históricos de Google Analytics en Adobe Experience Platform, para casos de uso de análisis y ciencia de datos
 
-## 1.2.1.2 Su cuenta de Google
+## 1.2.1.2 su cuenta de Google
 
 >[!NOTE]
 >
 >Para este ejercicio, necesita acceder a un entorno de Google Cloud Platform. Si todavía no tiene acceso a GCP, cree una nueva cuenta con su dirección de correo electrónico personal.
 
-## 1.2.1.3 Seleccionar o crear un proyecto
+## 1.2.1.3: seleccione o cree un proyecto
 
 Vaya a [https://console.cloud.google.com/](https://console.cloud.google.com/).
 

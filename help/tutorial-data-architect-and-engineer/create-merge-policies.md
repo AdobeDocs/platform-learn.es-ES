@@ -3,7 +3,7 @@ title: Crear políticas de combinación
 seo-title: Create merge policies | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Crear políticas de combinación
 description: En esta lección, debe crear políticas de combinación para determinar cómo se combinan los datos en los perfiles.
-role: Data Architect, Data Engineer
+role: Developer
 feature: Profiles
 jira: KT-4348
 audience: data architect
@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: 48a38fd96ea9072d207173a1b51153c6498090e0
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '991'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Nos ceñiremos a la interfaz de usuario para esta lección, pero también existe
 **Los arquitectos de datos** deberán crear políticas de combinación fuera de este tutorial.
 
 Antes de comenzar los ejercicios, vea este breve vídeo para obtener más información sobre las políticas de combinación:
->[!VIDEO](https://video.tv.adobe.com/v/345075?captions=spa&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on&enablevpops)
 
 ## Permisos necesarios
 
@@ -68,7 +68,7 @@ Ahora, ¿qué sucede si no le gusta esa política de combinación predeterminada
 1. En la pantalla Políticas de combinación, seleccione el botón **[!UICONTROL Crear política de combinación]** en la esquina superior derecha
 1. Como **[!UICONTROL Nombre]**, escriba `Loyalty Prioritized`
 1. Como **[!UICONTROL Esquema]**, seleccione **[!UICONTROL Perfil XDM]** (tenga en cuenta que su clase personalizada, como es datos de registro, también está disponible para políticas de combinación)
-1. Para la vinculación de ID **[!UICONTROL 1, seleccione]** Gráfico privado **&#x200B;**
+1. Para la vinculación de ID **[!UICONTROL 1, seleccione]** Gráfico privado ****
 1. Para **[!UICONTROL Combinar atributos]**, seleccione **[!UICONTROL Prioridad de conjuntos de datos]**
 1. Arrastre y suelte `Luma Loyalty Dataset` y `Luma CRM Dataset` en el panel **[!UICONTROL Conjunto de datos]**.
 1. Asegúrese de que `Luma Loyalty Dataset` esté en la parte superior arrastrándolo y soltándolo encima de `Luma CRM Dataset`
@@ -140,7 +140,7 @@ Un caso de uso clave de las políticas de combinación es la gobernanza de datos
 
 ## Recursos adicionales
 
-* [Documentación de políticas de combinación](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=es)
+* [Documentación de políticas de combinación](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)
 * [Referencia de la API de políticas de combinación (parte de la API del perfil del cliente en tiempo real)](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
 
 Ahora pasemos al [marco de control de datos](apply-data-governance-framework.md).

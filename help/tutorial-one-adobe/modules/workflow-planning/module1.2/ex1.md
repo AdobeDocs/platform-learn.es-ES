@@ -4,7 +4,7 @@ description: Introducción a Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 0867d7fd-4d12-46d8-a5ae-bb8db1575635
-source-git-commit: da966703aed5342000c19732b6b48682c3958c7f
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1099'
 ht-degree: 1%
@@ -32,7 +32,7 @@ ht-degree: 1%
 A continuación se muestran los objetos y conceptos principales de Workfront:
 
 | Nombre | Última actualización |
-| ---------------------- | ------------ | 
+| ---------------------- | ------------ |
 | Portafolio | Colección de proyectos que tienen características unificadoras. Estos proyectos suelen competir por los mismos recursos, presupuesto o franja horaria. |
 | Programa | Un subconjunto dentro de un portafolio, donde proyectos similares pueden agruparse para lograr un beneficio bien definido. |
 | Proyecto | Una gran cantidad de trabajo que debe completarse dentro de un marco de tiempo específico y debe utilizar un presupuesto y un número de recursos específicos. Para hacerlo manejable, se divide el proyecto en una serie de tareas. Completar todas las tareas significa la finalización del proyecto. |
@@ -70,7 +70,7 @@ Abra el menú desplegable **Repositorio de Experience Manager** y seleccione su 
 En **Metadatos**, configure la siguiente asignación:
 
 | Campo de Workfront | Campo de Experience Manager Assets |
-| --------------- | ------------------------------ | 
+| --------------- | ------------------------------ |
 | **Documento** > **Nombre** | **wm:documentName** |
 | **Proyecto** > **Nombre** | **wm:projectName** |
 | **Proyecto** > **Descripción** | **wm:projectDescription** |
