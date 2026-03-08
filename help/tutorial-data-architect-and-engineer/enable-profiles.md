@@ -125,7 +125,7 @@ Los conjuntos de datos también deben habilitarse para el perfil y el proceso es
 1. Alternar el conmutador **[!UICONTROL Perfil]**
 1. En el modal de confirmación, presione el botón **[!UICONTROL Habilitar]** para confirmar
 
-   ![ cambio de perfil](assets/profile-loyalty-enableDataset.png)
+   ![&#x200B; cambio de perfil](assets/profile-loyalty-enableDataset.png)
 
 Repita los pasos anteriores para estos otros conjuntos de datos:
 

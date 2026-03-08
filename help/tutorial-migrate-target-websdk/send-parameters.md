@@ -169,7 +169,7 @@ En las etiquetas, utilice primero un elemento de datos [!UICONTROL XDM object] p
 
 ![Asignación a un campo XDM en un elemento de datos de objeto XDM](assets/params-tags-pageName.png){zoomable="yes"}
 
-E incluya su [!UICONTROL objeto XDM] en su [!UICONTROL evento Send] [!UICONTROL acción] (se pueden [!UICONTROL combinar ] varios [objetos XDM](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+E incluya su [!UICONTROL objeto XDM] en su [!UICONTROL evento Send] [!UICONTROL acción] (se pueden [!UICONTROL combinar &#x200B;] varios [objetos XDM](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
 
 ![Incluyendo un elemento de datos de objeto XDM en un evento de envío](assets/params-tags-sendEvent.png){zoomable="yes"}
 
@@ -349,7 +349,7 @@ En las etiquetas, utilice primero un elemento de datos [!UICONTROL XDM object] p
 
 ![Asignación a un campo XDM en un elemento de datos de objeto XDM](assets/params-tags-purchase.png){zoomable="yes"}
 
-E incluya su [!UICONTROL objeto XDM] en su [!UICONTROL evento Send] [!UICONTROL acción] (se pueden [!UICONTROL combinar ] varios [objetos XDM](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+E incluya su [!UICONTROL objeto XDM] en su [!UICONTROL evento Send] [!UICONTROL acción] (se pueden [!UICONTROL combinar &#x200B;] varios [objetos XDM](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
 
 ![Incluyendo un elemento de datos de objeto XDM en un evento de envío](assets/params-tags-sendEvent-purchase.png){zoomable="yes"}
 
