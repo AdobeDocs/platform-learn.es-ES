@@ -19,7 +19,7 @@ ht-degree: 2%
 Aprenda a transmitir datos en tiempo real desde una fuente de almacenamiento en la nube a Platform y a utilizar los datos en tiempo real para la participación de los clientes.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/331943?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3410102?captions=spa&learn=on&enablevpops)
 
 ## Recursos adicionales
 

@@ -50,7 +50,7 @@ En este ejercicio, crea un área de nombres de identidad para el campo de identi
 
 Antes de comenzar los ejercicios, vea este breve vídeo para obtener más información sobre la identidad en Adobe Experience Platform:
 
->[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3422777?captions=spa&learn=on&enablevpops)
 
 Ahora, cree un área de nombres para el ID de Luma CRM:
 
