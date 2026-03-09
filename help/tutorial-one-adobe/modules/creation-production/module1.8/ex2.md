@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 39854816-4572-46e5-8fe4-861da1eb41cf
-source-git-commit: 8f746831d4a1481f8ccc14539273c4b16ca5170b
+source-git-commit: 726d2d9e6a6faff88128e31d60c95b83ef346406
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Escriba el nombre: `Final Deliverables` y pulse **entrar**. Esta carpeta se util
 
 ![WF](./images/wffio3.png)
 
-## 1.8.2.2: crear un nuevo recurso con Adobe Firefly Services y Adobe Express
+## 1.8.2.2: crear un nuevo recurso con Adobe Firefly y Adobe Express
 
 >[!NOTE]
 >
