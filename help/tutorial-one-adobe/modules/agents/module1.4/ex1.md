@@ -3,18 +3,15 @@ title: Introducción a Brand Concierge
 description: Introducción a Brand Concierge
 kt: 5342
 doc-type: tutorial
-source-git-commit: ea5fa4694205a94f63d277fdcf2018951fa31fbc
+exl-id: e05b60b1-62d7-4b70-834d-ef91782ac388
+source-git-commit: 1f4b945658834b7fd4f52f297fe761c49edd28fe
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '1119'
 ht-degree: 1%
 
 ---
 
 # 1.4.1 Introducción a Brand Concierge
-
-## Vídeo
-
-En este vídeo, obtendrá una explicación y una demostración de todos los pasos involucrados en este ejercicio.
 
 ## Información general de 1.4.1.1 Brand Concierge
 
@@ -263,11 +260,121 @@ La secuencia de datos ya está configurada. Copie el nombre del flujo de datos y
 
 ![Brand Concierge](./images/aep5.png)
 
-### API de administración de configuración de Brand Concierge
+### Administración de configuración de secuencia de datos
 
 El siguiente paso es habilitar la API de administración de configuración de Brand Concierge para configurar el conjunto de datos que acaba de crear. Esto es necesario para resolver cosas como el ID de organización de IMS y los detalles de la zona protegida durante el procesamiento de la solicitud.
 
-Actualmente, este es un paso interno de Adobe que debe producirse. Este paso es necesario porque, de lo contrario, la configuración del conjunto de datos no es correcta para que la utilice Brand Concierge.
+Vaya a **Controles de administración**.
+
+![Brand Concierge](./images/admincontrols1.png)
+
+Vaya a **Administración de configuración de secuencia de datos** y haga clic en **Agregar configuración**.
+
+![Brand Concierge](./images/admincontrols2.png)
+
+Pegue el **ID de secuencia de datos** de la secuencia de datos que creó anteriormente. Haga clic en **Guardar**.
+
+![Brand Concierge](./images/admincontrols3.png)
+
+Entonces deberías ver algo como esto.
+
+![Brand Concierge](./images/admincontrols4.png)
+
+## Administración de configuración de estilo de 1.4.1.4
+
+Vaya a **Administración de configuración de estilo**. Haga clic en **Inicializar configuración de estilo**.
+
+![Brand Concierge](./images/admincontrols7.png)
+
+Escriba **Nombre de marca** `CitiSignal` y haga clic en **Inicializar configuración de estilo**.
+
+![Brand Concierge](./images/admincontrols8.png)
+
+Entonces debería ver esto.
+
+![Brand Concierge](./images/admincontrols9.png)
+
+## 1.4.1.5 manifiesto de Agent Orchestrator
+
+Vaya a **Actualizar manifiesto**. Entonces debería ver esto.
+
+![Brand Concierge](./images/admincontrols5.png)
+
+Ahora debe actualizar los campos en el manifiesto. Utilice la siguiente entrada para ello.
+
+**Nombre del agente**:
+
+```
+CitiSignal Sales Assistant
+```
+
+**Introducción**:
+
+```
+Welcome to CitiSignal! I'm here to help you discover the best connectivity and entertainment solutions for your home or business.
+```
+
+**Funciones y responsabilidades**:
+
+```
+You are CitiSignal's AI Sales Assistant focused on:
+1. **Primary Goal**: Selling connectivity products from the knowledge base
+2. **Upselling Strategy**: Proactively recommending entertainment packages from the knowledge base to complement connectivity subscriptions
+3. **Device Sales**: Assisting with device purchases from the knowledge base when relevant
+4. **Customer Support**: Answering questions about plans, pricing, installation, and features based on knowledge base content
+
+- ALWAYS call brand_concierge_product_knowledge_agent to obtain a response to a user query and provide it directly to the user without modification.
+- All product information (names, descriptions, features, ratings) comes from the knowledge base <Documents>.
+- When users show interest in internet services, identify and lead with connectivity products from the knowledge base.
+- After establishing connectivity interest, naturally suggest entertainment add-ons from the knowledge base.
+- Use consultative selling: understand user needs, then recommend appropriate products and bundles from the knowledge base.
+```
+
+**Ámbito**:
+
+```
+You are CitiSignal's AI Sales Assistant, specializing in connectivity sales and entertainment bundle upselling.
+
+# Your Primary Objectives:
+1. **Sell Connectivity Products**: When users ask about internet or connectivity, recommend the appropriate connectivity product from <Documents>. Highlight key benefits mentioned in the product description.
+2. **Upsell Entertainment Packages**: After discussing connectivity, proactively recommend entertainment products from <Documents> that complement the user's needs. Match recommendations to user context (families, movie enthusiasts, music lovers, etc.).
+3. **Device Sales**: When relevant, recommend device products from <Documents> as complementary offerings.
+
+# Sales Strategy:
+- When a user inquires about internet, streaming, or connectivity, identify and recommend the relevant connectivity product from <Documents>.
+- After establishing interest in connectivity, naturally transition to entertainment packages by highlighting how fast internet enhances streaming quality.
+- Use natural transition phrases to introduce entertainment upsells.
+- Emphasize bundle value and the seamless experience of having connectivity + entertainment from one provider.
+- Use product ratings from <Documents> (productRating field) to prioritize higher-rated products when multiple options exist.
+
+# Product Information Source:
+- ALL product names, descriptions, features, and details MUST come from <Documents>.
+- Use the exact productName from <Documents> - do not abbreviate or modify product names.
+- Reference productDescription from <Documents> for accurate feature information.
+- Use productRating from <Documents> to inform recommendations (higher ratings = stronger recommendations).
+```
+
+Haga clic en **Actualizar manifiesto**.
+
+![Brand Concierge](./images/admincontrols6.png)
+
+Haga clic en **Inicio**.
+
+![Brand Concierge](./images/admincontrols10.png)
+
+Entonces debería ver esto. Haga clic en **Vista previa** para comenzar a interactuar con su Brand Concierge.
+
+![Brand Concierge](./images/bc101.png)
+
+Ahora puede empezar a hacer preguntas relacionadas con las fuentes de conocimiento proporcionadas. Escriba la pregunta `what products do you sell?` y haga clic en **Enviar**.
+
+![Brand Concierge](./images/bc102.png)
+
+Entonces debería recibir una respuesta similar.
+
+![Brand Concierge](./images/bc103.png)
+
+La instancia de Brand Concierge ya está lista para implementarse en el sitio web.
 
 Paso siguiente: [Implementar Brand Concierge en el sitio web](./ex2.md){target="_blank"}
 
