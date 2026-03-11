@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f2447270-3ca1-4c60-abf4-c1276a2a8750
-source-git-commit: 5fe2f1c413f54dd1e3c67d78460d7f2a84248005
+source-git-commit: 008a7dd61fb6fd82a29779a2a72673b92b3a8634
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '260'
 ht-degree: 1%
 
 ---
@@ -46,6 +46,10 @@ En este vídeo, obtendrá una explicación y una demostración de todos los paso
 [1.7.1 Introducción a los flujos de trabajo personalizados de Firefly](./ex1.md){target="_blank"}
 
 En este ejercicio, empezará a utilizar Workflow Builder.
+
+[1.7.2 Ejecutar el flujo de trabajo personalizado mediante programación](./ex2.md){target="_blank"}
+
+En este ejercicio, ejecutará el flujo de trabajo personalizado mediante programación con Postman y Workfront Fusion.
 
 ![Perspectivas técnicas](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 

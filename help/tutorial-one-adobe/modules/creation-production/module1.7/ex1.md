@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 7d9ad7ec-7744-4ba6-9c11-c434e6cdef09
-source-git-commit: 5fe2f1c413f54dd1e3c67d78460d7f2a84248005
+source-git-commit: a3a78b12f8244c8288eb0fffc82ad769776eb118
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1374'
 ht-degree: 0%
 
 ---
@@ -249,8 +249,20 @@ Después de un par de minutos, debería ver que los recursos creados están disp
 
 ![Flujos de trabajo personalizados de Firefly](./images/ffcw58.png)
 
+Vuelva al flujo de trabajo. Haga clic en **Publicar**.
+
+![Flujos de trabajo personalizados de Firefly](./images/ffcw59.png)
+
+Entonces debería ver esto.
+
+![Flujos de trabajo personalizados de Firefly](./images/ffcw60.png)
+
+El flujo de trabajo se ha publicado y ahora se puede ejecutar mediante programación como parte del siguiente ejercicio.
+
 ## Pasos siguientes
 
-Volver a [Generador de flujos de trabajo](./workflowbuilder.md){target="_blank"}
+Ir a [1.7.2 Ejecutar el flujo de trabajo personalizado mediante programación](./ex2.md){target="_blank"}
+
+Volver a [flujos de trabajo personalizados de Firefly](./workflowbuilder.md){target="_blank"}
 
 Volver a [Todos los módulos](./../../../overview.md){target="_blank"}

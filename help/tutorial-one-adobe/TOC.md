@@ -4,10 +4,10 @@ breadcrumb-title: Un tutorial técnico de Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 27804d5124fb1024c515b9ab22e5bbd40c4c80b3
+source-git-commit: 008a7dd61fb6fd82a29779a2a72673b92b3a8634
 workflow-type: tm+mt
-source-wordcount: '1550'
-ht-degree: 4%
+source-wordcount: '1557'
+ht-degree: 3%
 
 ---
 
@@ -117,6 +117,7 @@ ht-degree: 4%
    + 1.7 Flujos de trabajo personalizados de Firefly {#crpr7}
       + [Información general](/help/tutorial-one-adobe/modules/creation-production/module1.7/workflowbuilder.md)
       + [1.7.1 Introducción a los flujos de trabajo personalizados de Firefly](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
+      + [1.7.2 Ejecutar el flujo de trabajo personalizado mediante programación](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex2.md)
    + 1.8 Revisión y aprobación unificadas con Workfront, Frame.io y gestión de almacenamiento empresarial {#crpr8}
       + [Información general](/help/tutorial-one-adobe/modules/creation-production/module1.8/esm.md)
       + [1.8.1 Introducción a Workfront, Frame.io y ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex1.md)
