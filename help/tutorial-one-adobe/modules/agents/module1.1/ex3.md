@@ -4,9 +4,9 @@ description: Adobe Marketing Agent para Microsoft 365 CopilotCopilot
 kt: 5342
 doc-type: tutorial
 exl-id: 9cab0e72-4d46-46ee-8dee-e5ca83889523
-source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
+source-git-commit: 8231a25dbb45ab707bb0f4788000e5868cacb662
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '984'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Seleccione **Cargar una aplicación personalizada**.
 
 ![ChatGPT](./images/copilot4.png)
 
-Seleccione el archivo de manifiesto que le proporcionó su instructor y haga clic en **Abrir**.
+Seleccione el archivo de manifiesto proporcionado por el instructor y haga clic en **Abrir**.
 
 ![ChatGPT](./images/copilot5.png)
 
@@ -173,11 +173,11 @@ Luego debería ver esto, que profundiza en las tendencias específicas de la fib
 
 ![Agent Orchestrator](./images/copilot21.png)
 
-## 1.1.3.4: correlacionar pedidos con preferencias de contenido
+## 1.1.3.4 correlacionar pedidos con preferencias de contenido
 
 **Intención**
 
-Pruebe la hipótesis de que una preferencia por un género específico (por ejemplo, ciencia ficción, deportes, teatro) predice el comportamiento de actualización de banda ancha, especialmente para las necesidades de banda ancha alta.
+Pon a prueba la hipótesis de que una preferencia por un género específico (por ejemplo, SciFi, Deportes, Drama) predice el comportamiento de actualización de banda ancha, especialmente para las necesidades de ancho de banda alto.
 
 En primer lugar, debe averiguar qué campo se utiliza para almacenar la preferencia de género.
 
@@ -189,19 +189,19 @@ Which field is used to store the preferred genre
 
 ![Agent Orchestrator](./images/copilot22.png)
 
-Debería ver esto, lo que muestra que el campo usado para el género es **_experienceplatform.individualCharacteristic.preferences.ferredGenre**.
+Debería ver esto, que muestra que el campo utilizado para el género es **_experienceplatform.individualCharacteristics.preferences.preferredGenre**.
 
-![Agent Orchestrator](./images/copilot23.png)
+![Agente Orchestrator](./images/copilot23.png)
 
-Con esa información, puede empezar a explorar en profundidad los datos de compra.
+Con esa información, puedes empezar a profundizar en los datos de compra.
 
-Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
+Escriba el siguiente **Mensaje** y haga clic en el botón **enviar**.
 
 ```javascript
 Show me ordersYTD by preferredGenre for the last 4 months
 ```
 
-![Agent Orchestrator](./images/copilot24.png)
+![Agente Orchestrator](./images/copilot24.png)
 
 Entonces debería ver esto. Haga clic en **Ver datos**.
 
@@ -215,33 +215,33 @@ Entonces debería ver esto.
 
 **Intención**
 
-Descubra qué recorridos activos o finalizados recientemente incluyen &quot;Fibra&quot; en el título, por ejemplo, &quot;Actualización de fibra NYC - Septiembre&quot;, &quot;Prueba de fibra - Paquete de transmisión&quot;.
+Descubre qué recorridos activos o concluidos recientemente incluyen &quot;Fiber&quot; en el título, por ejemplo, &quot;Fiber Upgrade NYC - Sept&quot;, &quot;Fiber Trial - Streaming Bundle&quot;.
 
-Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
+Escriba el siguiente **Mensaje** y haga clic en el botón **enviar**.
 
 ```javascript
 What journeys exist? 
 ```
 
-![Agent Orchestrator](./images/copilot28.png)
+![Agente Orchestrator](./images/copilot28.png)
 
-A continuación, debería ver una lista de recorridos.
+Entonces debería ver una lista de los viajes.
 
 ![Agent Orchestrator](./images/copilot29.png)
 
-Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
+Escriba el siguiente **Mensaje** y haga clic en el botón **enviar**.
 
 ```javascript
 Which of these journeys has 'Fiber' in its name?
 ```
 
-![Agent Orchestrator](./images/copilot31.png)
+![Agente Orchestrator](./images/copilot31.png)
 
-Entonces debería ver esto.
+Entonces deberías ver esto.
 
-![Agent Orchestrator](./images/copilot33.png)
+![Agente Orchestrator](./images/copilot33.png)
 
-Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
+Escriba el siguiente **Mensaje** y haga clic en el botón **enviar**.
 
 ```javascript
 Show me the details of the journey 'CitiSignal - Fiber Max Launch Promotion'
@@ -283,7 +283,7 @@ Ahora has completado este laboratorio.
 
 ## Pasos siguientes
 
-Ir a [Adobe Marketing Agent para Google Gemini](./ex4.md){target="_blank"}
+Vaya a [Adobe Marketing Agent for Google Gemini Enterprise](./ex4.md){target="_blank"}
 
 Volver a [Agent Orchestrator](./agentorchestrator.md){target="_blank"}
 
