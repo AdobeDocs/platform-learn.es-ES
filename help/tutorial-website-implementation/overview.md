@@ -3,9 +3,9 @@ title: Implementación de Experience Cloud en sitios web con etiquetas
 description: La implementación de Experience Cloud en sitios web con etiquetas es el punto de partida perfecto para desarrolladores de front-end o especialistas en marketing técnico que deseen aprender a implementar las soluciones de Adobe Experience Cloud en su sitio web.
 recommendations: catalog, noDisplay
 exl-id: 1b95f0b2-3062-49d1-9b0b-e6824a54008f
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 935b8d18b6aef506fc5f48c64331803fe8a7ea9e
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '828'
 ht-degree: 36%
 
 ---
@@ -16,9 +16,9 @@ _Implementar Experience Cloud en sitios web con etiquetas_ es el punto de partid
 
 Cada lección contiene ejercicios prácticos e información fundamental para ayudarle a implementar Experience Cloud y comprender su valor.  Se proporcionan sitios de muestra para completar el tutorial, lo que le permite aprender las técnicas subyacentes en un entorno seguro. Después de completar este tutorial, debe estar preparado para empezar a implementar todas las soluciones de marketing a través de las etiquetas en su propio sitio web.
 
->[!INFO]
+>[!WARNING]
 >
->Este tutorial utiliza extensiones y bibliotecas específicas de la aplicación (AppMeasurement.js para Adobe Analytics, at.js para Adobe Target). Si desea implementar Adobe Experience Platform Web SDK, consulte el tutorial [Implementar Adobe Experience Cloud con Web SDK](/help/tutorial-web-sdk/overview.md).
+> Este tutorial y sus ejercicios en el sitio web de Luma ya no se mantienen y dependen de bibliotecas de JavaScript más antiguas. Para conocer las prácticas recomendadas actuales, use el [tutorial Implementar Adobe Experience Cloud con Web SDK](https://experienceleague.adobe.com/es/docs/platform-learn/implement-web-sdk/overview).
 
 
 Tras completar esta formación, debe ser capaz de:
@@ -39,13 +39,6 @@ Tras completar esta formación, debe ser capaz de:
 
 * Publicar cambios mediante entornos de desarrollo, ensayo y producción
 
->[!NOTE]
->
->Adobe Experience Platform Launch se está integrando en Adobe Experience Platform como un conjunto de tecnologías de recopilación de datos. Se han implementado varios cambios terminológicos en la interfaz que debe tener en cuenta al utilizar este contenido:
->
-> * Platform Launch (lado del cliente) ahora es **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=es)**
-> * El lado del servidor de Platform Launch ahora es **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=es)**
-> * Ahora, las configuraciones de Edge son **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=es)**
 
 >[!NOTE]
 >
@@ -55,7 +48,7 @@ Tras completar esta formación, debe ser capaz de:
 
 En estas lecciones, se da por hecho que dispone de un Adobe ID y de los permisos necesarios para completar los ejercicios. Si no es así, es posible que deba ponerse en contacto con el administrador de Experience Cloud para solicitar acceso.
 
-* Para las etiquetas, debe tener permiso para desarrollar, aprobar, publicar, gestionar extensiones y entornos. Para obtener más información sobre los permisos de usuario de etiquetas, consulte [la documentación](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=es).
+* Para las etiquetas, debe tener permiso para desarrollar, aprobar, publicar, gestionar extensiones y entornos. Para obtener más información sobre los permisos de usuario de etiquetas, consulte [la documentación](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
 * Para Adobe Analytics, debe conocer su servidor de seguimiento y qué grupos de informes desea utilizar para completar este tutorial.
 * Para Audience Manager, debe conocer su subdominio de Audience Manager (también conocido como &quot;nombre de socio&quot;, &quot;ID de socio&quot; o &quot;subdominio de socio&quot;)
 
@@ -76,7 +69,7 @@ Las etiquetas también son una plataforma que permite a los proveedores externos
 
 >[!WARNING]
 >
-> Se espera que el sitio web de Luma utilizado en este tutorial se sustituya durante la semana del 16 de febrero de 2026. Es posible que el trabajo realizado como parte de este tutorial no sea aplicable al nuevo sitio web.
+> Este tutorial y sus ejercicios en el sitio web de Luma ya no se mantienen y dependen de bibliotecas de JavaScript más antiguas. Para conocer las prácticas recomendadas actuales, use el [tutorial Implementar Adobe Experience Cloud con Web SDK](https://experienceleague.adobe.com/es/docs/platform-learn/implement-web-sdk/overview).
 
 En estas lecciones, debe implementar Adobe Experience Cloud en un sitio web de venta minorista ficticio denominado Luma. El [sitio de Luma](https://luma.enablementadobe.com/content/luma/us/en.html) tiene una capa de datos y una funcionalidad enriquecidas que permiten crear una implementación realista. Debe crear su propia propiedad de etiquetas, en su propia organización de Experience Cloud, y asignarla a nuestro sitio de Luma alojado mediante Experience Cloud Debugger.
 
@@ -130,7 +123,7 @@ En estas lecciones, debe implementar Adobe Experience Cloud en un sitio web de v
    <body>
        <h1>Tags: Sample HTML Page</h1>
        <p>This is a very simple page to demonstrate basic implementation concepts of Tags</p>
-       <p>See <a href="https://docs.adobe.com/content/help/es-ES/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
+       <p>See <a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
    </body>
    </html>
    ```

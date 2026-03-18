@@ -2,10 +2,10 @@
 title: Cambiar entornos de etiquetas con Adobe Experience Cloud Debugger
 description: Aprenda a utilizar Experience Cloud Debugger para cargar distintos códigos de incrustación de etiquetas. Esta lección forma parte del tutorial Implementación de Experience Cloud en sitios web.
 exl-id: 29972a00-e5e0-4fe0-a71c-c2ca106938be
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 935b8d18b6aef506fc5f48c64331803fe8a7ea9e
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 23%
+source-wordcount: '567'
+ht-degree: 21%
 
 ---
 
@@ -16,17 +16,10 @@ En esta lección, usará la [extensión de Adobe Experience Platform Debugger](h
 
 >[!WARNING]
 >
-> Se espera que el sitio web de Luma utilizado en este tutorial se sustituya durante la semana del 16 de febrero de 2026. Es posible que el trabajo realizado como parte de este tutorial no sea aplicable al nuevo sitio web.
+> Este tutorial y sus ejercicios en el sitio web de Luma ya no se mantienen y dependen de bibliotecas de JavaScript más antiguas. Para conocer las prácticas recomendadas actuales, use el [tutorial Implementar Adobe Experience Cloud con Web SDK](https://experienceleague.adobe.com/es/docs/platform-learn/implement-web-sdk/overview).
 
 Esta técnica se denomina cambio de entorno y será útil más adelante, cuando trabaje con etiquetas en su propio sitio web. Podrá cargar su sitio web de producción en su navegador, pero con su entorno de etiquetas *development*. Esto permite realizar y validar cambios de etiquetas con seguridad en de forma independiente de las revisiones de código normales.  Después de todo, esta separación de las versiones de etiquetas de marketing de las versiones de código normal es una de las principales razones por las que los clientes utilizan etiquetas.
 
->[!NOTE]
->
->Adobe Experience Platform Launch se está integrando en Adobe Experience Platform como un conjunto de tecnologías de recopilación de datos. Se han implementado varios cambios terminológicos en la interfaz que debe tener en cuenta al utilizar este contenido:
->
-> * Platform Launch (lado del cliente) ahora es **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=es)**
-> * El lado del servidor de Platform Launch ahora es **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=es)**
-> * Ahora, las configuraciones de Edge son **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=es)**
 
 ## Objetivos de aprendizaje
 
