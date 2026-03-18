@@ -48,7 +48,7 @@ Tras completar esta formación, debe ser capaz de:
 
 En estas lecciones, se da por hecho que dispone de un Adobe ID y de los permisos necesarios para completar los ejercicios. Si no es así, es posible que deba ponerse en contacto con el administrador de Experience Cloud para solicitar acceso.
 
-* Para las etiquetas, debe tener permiso para desarrollar, aprobar, publicar, gestionar extensiones y entornos. Para obtener más información sobre los permisos de usuario de etiquetas, consulte [la documentación](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+* Para las etiquetas, debe tener permiso para desarrollar, aprobar, publicar, gestionar extensiones y entornos. Para obtener más información sobre los permisos de usuario de etiquetas, consulte [la documentación](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=es).
 * Para Adobe Analytics, debe conocer su servidor de seguimiento y qué grupos de informes desea utilizar para completar este tutorial.
 * Para Audience Manager, debe conocer su subdominio de Audience Manager (también conocido como &quot;nombre de socio&quot;, &quot;ID de socio&quot; o &quot;subdominio de socio&quot;)
 
@@ -123,7 +123,7 @@ En estas lecciones, debe implementar Adobe Experience Cloud en un sitio web de v
    <body>
        <h1>Tags: Sample HTML Page</h1>
        <p>This is a very simple page to demonstrate basic implementation concepts of Tags</p>
-       <p>See <a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
+       <p>See <a href="https://docs.adobe.com/content/help/es-ES/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
    </body>
    </html>
    ```

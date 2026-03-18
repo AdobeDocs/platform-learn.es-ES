@@ -12,7 +12,7 @@ ht-degree: 69%
 
 # Añadir Adobe Analytics
 
-En esta lección, debe implementar la [extensión de Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html) y creará reglas para enviar datos a Adobe Analytics.
+En esta lección, debe implementar la [extensión de Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=es) y creará reglas para enviar datos a Adobe Analytics.
 
 
 >[!WARNING]
@@ -39,7 +39,7 @@ Se pueden implementar muchas cosas para Analytics en etiquetas. Esta lección no
 
 Ya debería haber completado las lecciones de [Configurar etiquetas](create-a-property.md) y [Agregar el servicio de identidad](id-service.md).
 
-Además, necesita al menos un ID de grupo de informes y un servidor de seguimiento. Si no dispone de un grupo de informes de prueba o desarrollo que pueda utilizar para este tutorial, cree uno. Si no está seguro de cómo hacerlo, consulte [la documentación](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite). Puede recuperar un servidor de seguimiento desde su implementación actual, su asesor de Adobe o su representante del servicio de atención al cliente.
+Además, necesita al menos un ID de grupo de informes y un servidor de seguimiento. Si no dispone de un grupo de informes de prueba o desarrollo que pueda utilizar para este tutorial, cree uno. Si no está seguro de cómo hacerlo, consulte [la documentación](https://experienceleague.adobe.com/es/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite). Puede recuperar un servidor de seguimiento desde su implementación actual, su asesor de Adobe o su representante del servicio de atención al cliente.
 
 ## Añadir la extensión de Analytics
 
@@ -424,7 +424,7 @@ En realidad va a llamar a dos complementos en este código, pero uno de ellos es
 
 El objetivo de este complemento es evitar que los valores se dupliquen erróneamente en el código cuando un visitante actualiza una página o utiliza el botón Atrás del navegador para regresar a una página en la que se estableció un valor. En esta lección, se usa para evitar que el evento `clickthrough` se duplique.
 
-El código de este complemento está disponible en la [documentación de Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html), pero se incluye aquí para facilitar el proceso de copiar y pegar.
+El código de este complemento está disponible en la [documentación de Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html?lang=es), pero se incluye aquí para facilitar el proceso de copiar y pegar.
 
 1. Copie el siguiente código
 

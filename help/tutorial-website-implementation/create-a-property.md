@@ -22,7 +22,7 @@ Una propiedad es básicamente un contenedor que se rellena con extensiones, regl
 
 ## Requisitos previos
 
-Para completar las siguientes lecciones, debe tener permiso para desarrollar, aprobar, publicar y administrar extensiones y entornos en etiquetas. Si no puede completar estos pasos porque ninguna de las opciones de la interfaz de usuario está disponible, póngase en contacto con su administrador de Experience Cloud para solicitar el acceso. Para obtener más información sobre los permisos de usuario de etiquetas, consulte [la documentación](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+Para completar las siguientes lecciones, debe tener permiso para desarrollar, aprobar, publicar y administrar extensiones y entornos en etiquetas. Si no puede completar estos pasos porque ninguna de las opciones de la interfaz de usuario está disponible, póngase en contacto con su administrador de Experience Cloud para solicitar el acceso. Para obtener más información sobre los permisos de usuario de etiquetas, consulte [la documentación](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=es).
 
 
 ## Objetivos de aprendizaje
@@ -49,7 +49,7 @@ Ahora debería ver la pantalla de `Tags Properties` (si nunca se han creado prop
 
 ## Crear una propiedad
 
-Una propiedad es básicamente un contenedor que se rellena con extensiones, reglas, elementos de datos y bibliotecas al implementar etiquetas en el sitio. Una propiedad puede ser cualquier conjunto de uno o varios dominios y subdominios. Puede administrar y rastrear estos recursos de manera similar. Por ejemplo, supongamos que tiene varios sitios web basados en una plantilla y quiere rastrear los mismos recursos en todos. Puede aplicar una propiedad a varios dominios. Para obtener más información sobre la creación de propiedades, consulte [“Empresas y propiedades”](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html) en la documentación del producto.
+Una propiedad es básicamente un contenedor que se rellena con extensiones, reglas, elementos de datos y bibliotecas al implementar etiquetas en el sitio. Una propiedad puede ser cualquier conjunto de uno o varios dominios y subdominios. Puede administrar y rastrear estos recursos de manera similar. Por ejemplo, supongamos que tiene varios sitios web basados en una plantilla y quiere rastrear los mismos recursos en todos. Puede aplicar una propiedad a varios dominios. Para obtener más información sobre la creación de propiedades, consulte [“Empresas y propiedades”](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=es) en la documentación del producto.
 
 **Para crear una propiedad**
 

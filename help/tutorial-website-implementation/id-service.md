@@ -12,7 +12,7 @@ ht-degree: 62%
 
 # Añadir el servicio de identidad de Adobe Experience Platform
 
-Esta lección le guiará por los pasos necesarios para implementar la [extensión del servicio de identidad de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html) y enviar los ID de cliente.
+Esta lección le guiará por los pasos necesarios para implementar la [extensión del servicio de identidad de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=es) y enviar los ID de cliente.
 
 El [servicio de identidad de Adobe Experience Platform](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=es) establece un identificador de visitante común en todas las soluciones de Adobe para potenciar las funciones de Experience Cloud, como el uso compartido de audiencias entre soluciones. También puede enviar sus propios ID de cliente al servicio para permitir integraciones y segmentaciones en todos los dispositivos con los sistemas de administración de la relación con los clientes (CRM).
 
@@ -90,11 +90,11 @@ La extensión del servicio de ID es una de las pocas extensiones de etiqueta que
    1. Busque la cookie “AMCV_” en el lado derecho. Es posible que haya visto varias desde que ha cargado el sitio de Luma usando tanto su propiedad de etiqueta codificada como también la asignada a la suya propia.
       ![Verifique la cookie “AMCV_”](images/idservice-AMCVCookie.png)
 
-¡Ya está! ¡Ha añadido su primera extensión! Para obtener más información sobre las opciones de configuración del servicio de identidad, consulte [la documentación](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html).
+¡Ya está! ¡Ha añadido su primera extensión! Para obtener más información sobre las opciones de configuración del servicio de identidad, consulte [la documentación](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html?lang=es).
 
 ## Envío de los ID de cliente
 
-A continuación, enviará un [ID de cliente](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html) al servicio de identidad. Esto le permite [integrar su CRM](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=es) con Experience Cloud, así como rastrear a los visitantes entre dispositivos.
+A continuación, enviará un [ID de cliente](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=es) al servicio de identidad. Esto le permite [integrar su CRM](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=es) con Experience Cloud, así como rastrear a los visitantes entre dispositivos.
 
 En la lección anterior [Añadir elementos de datos, reglas y bibliotecas](add-data-elements-rules.md) ha creado un elemento de datos y lo ha utilizado en una regla. Ahora se utilizan las mismas técnicas para enviar un ID de cliente cuando se autentica al visitante.
 
