@@ -4,15 +4,15 @@ breadcrumb-title: Un tutorial técnico de Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 8231a25dbb45ab707bb0f4788000e5868cacb662
+source-git-commit: 7850713bf116c8a9aa9dc4e055d0e501aa783cb0
 workflow-type: tm+mt
-source-wordcount: '1558'
+source-wordcount: '1562'
 ht-degree: 3%
 
 ---
 
 
-# Tutorial técnico sobre un Adobe {#tutorial-one-adobe}
+# Un tutorial técnico de Adobe {#tutorial-one-adobe}
 
 + [Información general del tutorial](/help/tutorial-one-adobe/overview.md)
 + [Estado del contenido](/help/tutorial-one-adobe/status.md)
@@ -22,7 +22,7 @@ ht-degree: 3%
    + Introducción {#gettingstarted}
       + [Información general](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/getting-started.md)
       + [Instalación de la extensión de Chrome para la documentación de Experience League](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex1.md)
-      + [Usar Sistema de demostración siguiente para configurar la propiedad de cliente de recopilación de datos de Adobe Experience Platform](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex2.md)
+      + [Utilice Demo System Next para configurar la propiedad de cliente de recopilación de datos de Adobe Experience Platform](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex2.md)
       + [Crear su secuencia de datos](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex3.md)
       + [Uso del sitio web](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex4.md)
       + [Uso de la aplicación móvil](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex5.md)
@@ -32,7 +32,7 @@ ht-degree: 3%
       + [Aplicaciones para instalar](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex9.md)
 
 + IA agéntica {#agents}
-   + 1.1 Agente Orchestrator {#agents1}
+   + 1.1 Agent Orchestrator {#agents1}
       + [Información general](/help/tutorial-one-adobe/modules/agents/module1.1/agentorchestrator.md)
       + [1.1.1 Introducción a Agent Orchestrator](/help/tutorial-one-adobe/modules/agents/module1.1/ex1.md)
       + [1.1.2 Adobe Marketing Agent para ChatGPT Enterprise](/help/tutorial-one-adobe/modules/agents/module1.1/ex2.md)
@@ -52,10 +52,10 @@ ht-degree: 3%
       + [1.5.3 Adobe Analytics y Claude.ai con servidor MCP](/help/tutorial-one-adobe/modules/agents/module1.5/ex3.md)
    + 1.6 AEM y agentes {#agents6}
       + [Información general](/help/tutorial-one-adobe/modules/agents/module1.6/aemagents.md)
-      + [1.6.1 Introducción a los agentes AEM](/help/tutorial-one-adobe/modules/agents/module1.6/ex1.md)
-      + [1.6.2 AEM Servidores y cursores MCP](/help/tutorial-one-adobe/modules/agents/module1.6/ex2.md)
-      + [1.6.3 Escalar fragmentos de contenido con ChatGPT y MCP Server](/help/tutorial-one-adobe/modules/agents/module1.6/ex3.md)
-   + 1.7 Herramientas de desarrollo inteligentes para Adobe Commerce {#agents7}
+      + [1.6.1 Introducción a AEM Agents](/help/tutorial-one-adobe/modules/agents/module1.6/ex1.md)
+      + [1.6.2 Servidores y cursor MCP de AEM](/help/tutorial-one-adobe/modules/agents/module1.6/ex2.md)
+      + [1.6.3 Escalar fragmentos de contenido con el servidor ChatGPT y MCP](/help/tutorial-one-adobe/modules/agents/module1.6/ex3.md)
+   + 1.7 Herramientas inteligentes para desarrolladores para Adobe Commerce {#agents7}
       + [Información general](/help/tutorial-one-adobe/modules/agents/module1.7/aiassisteddev.md)
       + [1.7.1 Configuración del entorno de desarrollo](/help/tutorial-one-adobe/modules/agents/module1.7/ex1.md)
       + [1.7.2 Use el cursor para desarrollar su proyecto](/help/tutorial-one-adobe/modules/agents/module1.7/ex2.md)
@@ -79,20 +79,20 @@ ht-degree: 3%
       + [1.1.1 Introducción a Firefly Services](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex1.md)
       + [1.1.2 Optimizar los procesos de Firefly con Microsoft Azure y las direcciones URL prefirmadas](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex2.md)
       + [1.1.3 Uso de las API de Photoshop](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex3.md)
-      + [1.1.4 API de modelos personalizados de Firefly](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex4.md)
+      + [API de modelos personalizados de Firefly 1.1.4](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex4.md)
       + [Resumen y beneficios](/help/tutorial-one-adobe/modules/creation-production/module1.1/summary.md)
    + 1.2 Automatización del flujo de trabajo de Creative con Workfront Fusion {#crpr2}
       + [Información general](/help/tutorial-one-adobe/modules/creation-production/module1.2/automation.md)
       + [1.2.1 Introducción a Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex1.md)
       + [1.2.2 Automatización mediante conectores](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex2.md)
       + [1.2.3 Frame.io y Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex3.md)
-      + [1.2.4 Frame.io a Workfront Fusion a AEM Assets](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex4.md)
+      + [1.2.4 Frame.io a Workfront Fusion para AEM Assets](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex4.md)
       + [Resumen y beneficios](/help/tutorial-one-adobe/modules/creation-production/module1.2/summary.md)
    + 1.3 GenStudio for Performance Marketing {#crpr3}
       + [Información general](/help/tutorial-one-adobe/modules/creation-production/module1.3/genstudio.md)
       + [1.3.1 Configuración: marcas](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex1.md)
-      + [1.3.2 Configuración: Personas, productos y plantillas](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex2.md)
-      + [1.3.3 Activación de la campaña en Meta](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex3.md)
+      + [1.3.2 Configuración: personalidades, productos y plantillas](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex2.md)
+      + [1.3.3 Activación de Campaign en Meta](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex3.md)
       + [1.3.4 Crear experiencia de correo electrónico para AJO](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex4.md)
       + [Resumen y beneficios](/help/tutorial-one-adobe/modules/creation-production/module1.3/summary.md)
    + 1.4 Adobe Express y Adobe Experience Cloud {#crpr4}
@@ -109,14 +109,14 @@ ht-degree: 3%
       + [Resumen y beneficios](/help/tutorial-one-adobe/modules/creation-production/module1.5/summary.md)
    + 1.6 GenStudio for Performance Marketing: extensibilidad {#crpr6}
       + [Información general](/help/tutorial-one-adobe/modules/creation-production/module1.6/genstudioext.md)
-      + [1.6.1 E/S de Adobe y App Builder](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex1.md)
-      + [1.6.2 Crear su cubo de AWS S3](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex2.md)
-      + [1.6.3 Crear e implementar su aplicación de DAM externa](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex3.md)
-      + [1.6.4 Publish su aplicación de forma privada](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex4.md)
+      + [1.6.1 Adobe IO y App Builder](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex1.md)
+      + [1.6.2 Crear el contenedor de AWS S3](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex2.md)
+      + [1.6.3 Creación e implementación de la aplicación DAM externa](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex3.md)
+      + [1.6.4 Publicar la aplicación de forma privada](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex4.md)
       + [Resumen y beneficios](/help/tutorial-one-adobe/modules/creation-production/module1.6/summary.md)
-   + 1.7 Flujos de trabajo personalizados de Firefly {#crpr7}
+   + 1.7 Firefly Creative Production for Enterprise {#crpr7}
       + [Información general](/help/tutorial-one-adobe/modules/creation-production/module1.7/workflowbuilder.md)
-      + [1.7.1 Introducción a los flujos de trabajo personalizados de Firefly](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
+      + [1.7.1 Introducción a Firefly Creative Production for Enterprise](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
       + [1.7.2 Ejecutar el flujo de trabajo personalizado mediante programación](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex2.md)
    + 1.8 Revisión y aprobación unificadas con Workfront, Frame.io y gestión de almacenamiento empresarial {#crpr8}
       + [Información general](/help/tutorial-one-adobe/modules/creation-production/module1.8/esm.md)
@@ -141,7 +141,7 @@ ht-degree: 3%
       + [Resumen y beneficios](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/summary.md)
    + 1.3 Adobe Experience Manager Forms con Edge Delivery Services {#assetm5}
       + [Información general](/help/tutorial-one-adobe/modules/asset-mgmt/module1.3/aemforms.md)
-      + [1.3.1 Crear su primer formulario](/help/tutorial-one-adobe/modules/asset-mgmt/module1.3/ex1.md)
+      + [1.3.1 Creación de su primer formulario](/help/tutorial-one-adobe/modules/asset-mgmt/module1.3/ex1.md)
    + 1.4 Adobe Experience Manager Assets y Dynamic Media {#assetm4}
       + [Información general](/help/tutorial-one-adobe/modules/asset-mgmt/module1.4/aemassetsdm.md)
       + [1.4.1 Creación de recursos y plantilla de medios dinámicos](/help/tutorial-one-adobe/modules/asset-mgmt/module1.4/ex1.md)
@@ -155,10 +155,10 @@ ht-degree: 3%
 
 + Envío y activación {#activation}
    + Recopilación de datos {#dc}
-      + 1.1 Recopilación de datos de Adobe Experience Platform y SDK web {#dc11}
+      + 1.1 Recopilación de datos de Adobe Experience Platform y Web SDK {#dc11}
          + [Información general](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/data-ingestion-launch-web-sdk.md)
-         + [1.1.1 Conceptos de la recopilación de datos Adobe Experience Platform](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/ex1.md)
-         + [1.1.2 Edge Network, secuencias de datos y recopilación de datos del servidor](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/ex2.md)
+         + [1.1.1 Explicación de la recopilación de datos de Adobe Experience Platform](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/ex1.md)
+         + [1.1.2 Recopilación de datos de Edge Network, flujos de datos y servidores](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/ex2.md)
          + [1.1.3 Introducción a la recopilación de datos de Adobe Experience Platform](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/ex3.md)
          + [1.1.4 Recopilación de datos web del lado del cliente](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/ex4.md)
          + [1.1.5 Implementación de Adobe Analytics y Adobe Audience Manager](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/ex5.md)
@@ -201,7 +201,7 @@ ht-degree: 3%
          + [Información general](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/segment-activation-microsoft-azure-eventhub.md)
          + [2.4.1 Configuración del entorno](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex1.md)
          + [2.4.2 Configuración del entorno de Microsoft Azure EventHub](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex2.md)
-         + [2.4.3 Configurar el destino del Centro de eventos de Azure en Adobe Experience Platform](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex3.md)
+         + [2.4.3 Configuración del destino del centro de eventos de Azure en Adobe Experience Platform](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex3.md)
          + [2.4.4 Crear audiencias](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex4.md)
          + [2.4.5 Activar la audiencia](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex5.md)
          + [2.4.6 Creación de su proyecto de Microsoft Azure](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex6.md)
@@ -209,7 +209,7 @@ ht-degree: 3%
       + Conexiones Real-Time CDP 2.5: Reenvío de eventos{#rtcdp25}
          + [Información general](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/aep-data-collection-ssf.md)
          + [2.5.1 Crear una propiedad de reenvío de eventos de recopilación de datos de Adobe Experience Platform](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/ex1.md)
-         + [2.5.2 Actualice su flujo de datos para que los datos estén disponibles para su propiedad de Adobe Experience Platform Data Collection Server](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/ex2.md)
+         + [2.5.2 Actualizar el flujo de datos para que los datos estén disponibles para la propiedad del servidor de recopilación de datos de Adobe Experience Platform](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/ex2.md)
          + [2.5.3 Crear y configurar un webhook personalizado](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/ex3.md)
          + [2.5.4 Reenviar eventos a GCP Pub/Sub](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/ex4.md)
          + [2.5.5 Reenviar eventos a AWS Kinesis y AWS S3](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/ex5.md)
@@ -261,21 +261,21 @@ ht-degree: 3%
       + 3.8 Adobe Journey Optimizer: Campañas {#ajo38}
          + [Información general](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/ajocampaigns.md)
          + [3.8.1 Configuración de la base de datos relacional](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/ex1.md)
-         + [3.8.2 Crear su campaña orquestada](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/ex2.md)
+         + [3.8.2 Creación de una campaña orquestada](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/ex2.md)
 
 + Informes e información {#reporting}
    + Customer Journey Analytics  {#cjab2c}
-      + 1.1 Customer Journey Analytics: Cree un panel con Analysis Workspace {#cja1}
+      + 1.1 Customer Journey Analytics: Crear un tablero con Analysis Workspace {#cja1}
          + [Información general](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/customer-journey-analytics-build-a-dashboard.md)
          + [1.1.1 Customer Journey Analytics 101](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/ex1.md)
-         + [1.1.2 Conectar conjuntos de datos de Adobe Experience Platform en Customer Journey Analytics](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/ex2.md)
+         + [1.1.2 Conexión de conjuntos de datos de Adobe Experience Platform en Customer Journey Analytics](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/ex2.md)
          + [1.1.3 Crear una vista de datos](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/ex3.md)
-         + [1.1.4 Preparación de datos en el Customer Journey Analytics](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/ex4.md)
-         + [1.1.5 Visualización con el Customer Journey Analytics](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/ex5.md)
+         + [1.1.4 Preparación de datos en Customer Journey Analytics](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/ex4.md)
+         + [1.1.5 Visualización mediante Customer Journey Analytics](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/ex5.md)
          + [Resumen y beneficios](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/summary.md)
-      + 1.2 Customer Journey Analytics: ingesta y análisis de datos de Google Analytics en Adobe Experience Platform con BigQuery Source Connector {#cja2}
+      + 1.2 Customer Journey Analytics: Ingesta y análisis de datos de Google Analytics en Adobe Experience Platform con el conector de Source de BigQuery {#cja2}
          + [Información general](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-2/customer-journey-analytics-bigquery-gcp.md)
-         + [1.2.1 Empezar a usar la plataforma Google Cloud](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-2/ex1.md)
+         + [1.2.1 Empezar a utilizar Google Cloud Platform](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-2/ex1.md)
          + [1.2.2 Cree su primera consulta en BigQuery](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-2/ex2.md)
          + [1.2.3 Conexión de GCP y BigQuery con Adobe Experience Platform](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-2/ex3.md)
          + [1.2.4 Carga de datos de BigQuery en Adobe Experience Platform](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-2/ex4.md)
