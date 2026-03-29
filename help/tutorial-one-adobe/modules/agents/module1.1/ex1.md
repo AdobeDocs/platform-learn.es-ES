@@ -4,7 +4,7 @@ description: Introducción a Agent Orchestrator
 kt: 5342
 doc-type: tutorial
 exl-id: a5000a5d-5540-49bb-b737-aaca1ab0ddd7
-source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
+source-git-commit: 8face7d2c69d1830e5151625d013fe86b83c31b3
 workflow-type: tm+mt
 source-wordcount: '1403'
 ht-degree: 0%
@@ -58,7 +58,7 @@ Obtenga un impulso de nivel superior sobre la demanda de categorías (móvil, fi
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
 ```javascript
-Show me purchases by mainCategory over the last 2 months.
+Show me purchases by mainCategory over the last 7 months.
 ```
 
 ![Agent Orchestrator](./images/ao4.png)
@@ -70,7 +70,7 @@ Debería ver lo siguiente:
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
 ```javascript
-Show me purchases by mainCategory = Fiber over the last 2 months per week
+Show me purchases by mainCategory = Fiber over the last 7 months per week
 ```
 
 ![Agent Orchestrator](./images/ao6.png)
@@ -104,7 +104,7 @@ Con esa información, puede empezar a explorar en profundidad los datos de compr
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
 ```javascript
-Show me ordersYTD by preferredGenre for the last 2 months
+Show me ordersYTD by preferredGenre for the last 7 months
 ```
 
 ![Agent Orchestrator](./images/ao8.png)

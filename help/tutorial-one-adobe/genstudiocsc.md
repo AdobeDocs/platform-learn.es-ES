@@ -3,9 +3,9 @@ title: GenStudio Tech Labs
 description: GenStudio Tech Labs
 doc-type: multipage-overview
 exl-id: be6284eb-60c8-49d7-bde1-d8dc148a07c2
-source-git-commit: 245bb4738d72ee52ef7e99fcb099953153b7b781
+source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '691'
 ht-degree: 1%
 
 ---
@@ -34,9 +34,7 @@ En este vídeo, aprenderá sobre la arquitectura detrás de la parte de GenStudi
 
 >[!VIDEO](https://video.tv.adobe.com/v/3481414?quality=12&learn=on)
 
-Descargue la siguiente imagen de descripción general de arquitectura:
-
-![Perspectivas técnicas](./assets/images/architecture_content.jpg)
+Descargue la imagen de descripción general de arquitectura [aquí](./assets/images/architecture_content.jpg).
 
 ## GenStudio Tech Labs
 

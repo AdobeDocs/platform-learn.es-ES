@@ -3,9 +3,9 @@ title: Laboratorios técnicos de inteligencia artificial automática
 description: Laboratorios técnicos de inteligencia artificial automática
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
+source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '555'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,7 @@ En este vídeo, aprenderá acerca de la arquitectura detrás de la IA agente, pa
 
 >[!VIDEO](https://video.tv.adobe.com/v/3481416?quality=12&learn=on)
 
-Descargue la siguiente imagen de descripción general de arquitectura:
-
-![Perspectivas técnicas](./assets/images/architecture_agentic.jpg)
+Descargue la imagen de descripción general de arquitectura [aquí](./assets/images/architecture_agentic.jpg).
 
 ### Primeros pasos
 
