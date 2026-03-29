@@ -1,11 +1,11 @@
 ---
-title: Panorama general de los laboratorios técnicos de inteligencia artificial
-description: Panorama general de los laboratorios técnicos de inteligencia artificial
+title: Laboratorios técnicos de inteligencia artificial automática
+description: Laboratorios técnicos de inteligencia artificial automática
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
+source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,23 @@ ht-degree: 0%
 
 ![Perspectivas técnicas](./assets/images/techinsiders.png){width="50px" align="left"}
 
-## Información general - Trabajo en curso
+## Arquitectura de IA agéntica
+
+En este vídeo, aprenderá acerca de la arquitectura detrás de la IA agente, parte del tutorial de One Adobe.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3481416?quality=12&learn=on)
+
+Descargue la siguiente imagen de descripción general de arquitectura:
+
+![Perspectivas técnicas](./assets/images/architecture_agentic.jpg)
+
+### Primeros pasos
+
+[Introducción](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"}
+
+En este módulo básico, preparará todo para que pueda acceder y utilizar el entorno de demostración.
+
+### Laboratorios técnicos de inteligencia artificial automática
 
 [1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md)
 
@@ -26,6 +42,8 @@ Aprenda a utilizar los agentes de Adobe Experience Platform y Agent Orchestrator
 - Identificación de audiencias de alta tendencia
 - Validar el rendimiento del recorrido
 - Cree un nuevo recorrido para el despliegue de CitiSignal Fiber Max
+
+También aprenderá a utilizar Adobe Marketing Agent en combinación con herramientas como Microsoft 365 Copilot, ChatGPT for Enterprise, Google Gemini Enterprise y Claude.
 
 [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
 

@@ -4,9 +4,9 @@ breadcrumb-title: Un tutorial técnico de Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 7850713bf116c8a9aa9dc4e055d0e501aa783cb0
+source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1577'
 ht-degree: 3%
 
 ---
@@ -15,8 +15,10 @@ ht-degree: 3%
 # Un tutorial técnico de Adobe {#tutorial-one-adobe}
 
 + [Información general del tutorial](/help/tutorial-one-adobe/overview.md)
-+ [Estado del contenido](/help/tutorial-one-adobe/status.md)
 + [Arquitectura](/help/tutorial-one-adobe/architecture.md)
++ [Laboratorios de inteligencia artificial aplicada a agentes](/help/tutorial-one-adobe/ai.md)
++ [GenStudio Labs](/help/tutorial-one-adobe/genstudiocsc.md)
++ [AEP y Apps Labs](/help/tutorial-one-adobe/aepapps.md)
 
 + Introducción {#gettingstarted}
    + Introducción {#gettingstarted}
@@ -38,6 +40,7 @@ ht-degree: 3%
       + [1.1.2 Adobe Marketing Agent para ChatGPT Enterprise](/help/tutorial-one-adobe/modules/agents/module1.1/ex2.md)
       + [1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
       + [1.1.4 Adobe Marketing Agent para Google Gemini Enterprise](/help/tutorial-one-adobe/modules/agents/module1.1/ex4.md)
+      + [1.1.5 Adobe Marketing Agent para Claude](/help/tutorial-one-adobe/modules/agents/module1.1/ex5.md)
    + 1.2 Introducción a los agentes y la IA {#agents2}
       + [Información general](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
       + [1.2.1 Introducción a la inteligencia artificial aplicada a la agencia](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
@@ -298,3 +301,5 @@ ht-degree: 3%
          + [Información general](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
          + [3.1.1 Introducción a Content Analytics](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
          + [Resumen y beneficios](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
+
++ [Estado del contenido](/help/tutorial-one-adobe/status.md)
