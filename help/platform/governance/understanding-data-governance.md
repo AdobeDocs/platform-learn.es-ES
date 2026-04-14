@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-3991
 thumbnail: 29708.jpg
 exl-id: 3a02aee4-a23c-4757-b910-d61a9e871774
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 18%
@@ -18,13 +18,14 @@ ht-degree: 18%
 
 Aprenda a tomar el control completo de los datos desde el punto en el que se recopilan en las fuentes de datos hasta el momento en el que se asocian a destinos fuera de Adobe Experience Platform. La gobernanza de datos es un marco de trabajo fácilmente ampliable profundamente incrustado en los flujos de trabajo de uso de datos. El marco de trabajo se basa en tres aspectos clave: etiquetas, políticas y aplicación. Para obtener más información, visite la [documentación de control de datos](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/32682?captions=spa&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
 
 ## Demostración
 
 Consulte y demostración completa de la capacidad de control de datos en Adobe Experience Platform.
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * introduction-to-data-governance.md
 -->
@@ -35,7 +36,7 @@ Consulte y demostración completa de la capacidad de control de datos en Adobe E
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="introduction-to-data-governance.md" title="Demostración completa del control de datos" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/41323?captions=spa&format=jpeg&nocache=1740179989077" alt="Demostración completa del control de datos"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36653?format=jpeg&nocache=1740179989077" alt="Demostración completa del control de datos"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -60,7 +61,8 @@ Consulte y demostración completa de la capacidad de control de datos en Adobe E
 
 Obtenga información sobre cómo las etiquetas, las políticas y las acciones de marketing se unen para automatizar la gobernanza de datos en Experience Platform.
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * classify-data-using-labels.md
 * create-data-usage-policies.md{description=Learn how to create and manage data usage policies.}
@@ -73,7 +75,7 @@ Obtenga información sobre cómo las etiquetas, las políticas y las acciones de
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="classify-data-using-labels.md" title="Clasificación de datos mediante etiquetas" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3422794?captions=spa&format=jpeg&nocache=1740179989358" alt="Clasificación de datos mediante etiquetas"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29709?format=jpeg&nocache=1740179989358" alt="Clasificación de datos mediante etiquetas"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -96,7 +98,7 @@ Obtenga información sobre cómo las etiquetas, las políticas y las acciones de
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-data-usage-policies.md" title="Creación de políticas de uso de datos" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/37128?captions=spa&format=jpeg&nocache=1740179989347" alt="Creación de políticas de uso de datos"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32977?format=jpeg&nocache=1740179989347" alt="Creación de políticas de uso de datos"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -144,7 +146,8 @@ Obtenga información sobre cómo las etiquetas, las políticas y las acciones de
 
 Obtenga información sobre cómo Experience Platform respeta el consentimiento del cliente.
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * integrate-with-iab-transparency-and-consent-framework-2.md{title=Integrate IAB's Transparency and Consent Framework 2.0}{description=See a demo of how Adobe's Real-Time Customer Data Platform helps brands honor consumers' consent as they engage on digital properties.}
 * enforce-consent.md{description=Learn how to enforce consent in Adobe Experience Platform.}
@@ -156,7 +159,7 @@ Obtenga información sobre cómo Experience Platform respeta el consentimiento d
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="integrate-with-iab-transparency-and-consent-framework-2.md" title="Integración del marco de transparencia y consentimiento 2.0 de IAB" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/326482?captions=spa&format=jpeg&nocache=1740179989597" alt="Integración del marco de transparencia y consentimiento 2.0 de IAB"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/38346?format=jpeg&nocache=1740179989597" alt="Integración del marco de transparencia y consentimiento 2.0 de IAB"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -179,7 +182,7 @@ Obtenga información sobre cómo Experience Platform respeta el consentimiento d
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="enforce-consent.md" title="Aplicar consentimiento" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3412098?captions=spa&format=jpeg&nocache=1740179989584" alt="Aplicar consentimiento"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345677?format=jpeg&nocache=1740179989584" alt="Aplicar consentimiento"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

@@ -8,7 +8,7 @@ feature: Profiles
 jira: KT-4348
 thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: c7af96b9b062974c125c2c94c3516b7b8c30a533
 workflow-type: tm+mt
 source-wordcount: '1085'
 ht-degree: 0%
@@ -26,21 +26,22 @@ Con el Perfil del cliente en tiempo real, puede ver una vista integral de cada c
 
 Por increíble que suene todo eso, no necesitas activar *todos tus datos* para el perfil. De hecho, solo debe habilitar los datos que necesite para casos de uso de activación. Habilite los datos que desee utilizar para casos de uso de marketing, integraciones de centros de llamadas, etc., en los que necesite un acceso rápido a un perfil de cliente sólido. Si solo carga datos para su análisis, probablemente no debería habilitarse para el perfil.
 
-Existen [protecciones importantes para los datos del perfil del cliente en tiempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=es) que debe revisar al decidir cuáles de sus propios datos debe habilitar para el perfil.
+Existen [protecciones importantes para los datos del perfil del cliente en tiempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) que debe revisar al decidir cuáles de sus propios datos debe habilitar para el perfil.
 
 <!--is this accurate. Are there other considerations to point out? -->
 
 **Los arquitectos de datos** tendrán que habilitar el perfil del cliente en tiempo real fuera de este tutorial.
 
 Antes de comenzar los ejercicios, vea este breve vídeo para obtener más información acerca del Perfil del cliente en tiempo real:
->[!VIDEO](https://video.tv.adobe.com/v/31833?captions=spa&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&enablevpops)
 
 ## Permisos necesarios
 
 En la lección [Configurar permisos](configure-permissions.md), configuró todos los controles de acceso necesarios para completar esta lección.
 
 
-<!--* Permission items **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]** and **[!UICONTROL Manage Schemas]**
+<!--
+* Permission items **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]** and **[!UICONTROL Manage Schemas]**
 * Permission items **[!UICONTROL Data Management]** > **[!UICONTROL View Datasets]** and **[!UICONTROL Manage Datasets]**
 * Permission item **[!UICONTROL Sandboxes]** > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile
@@ -125,7 +126,7 @@ Los conjuntos de datos también deben habilitarse para el perfil y el proceso es
 1. Alternar el conmutador **[!UICONTROL Perfil]**
 1. En el modal de confirmación, presione el botón **[!UICONTROL Habilitar]** para confirmar
 
-   ![&#x200B; cambio de perfil](assets/profile-loyalty-enableDataset.png)
+   ![ cambio de perfil](assets/profile-loyalty-enableDataset.png)
 
 Repita los pasos anteriores para estos otros conjuntos de datos:
 

@@ -8,7 +8,7 @@ feature: Schemas
 jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: c7af96b9b062974c125c2c94c3516b7b8c30a533
 workflow-type: tm+mt
 source-wordcount: '2619'
 ht-degree: 1%
@@ -43,22 +43,24 @@ Key terms:
 **Los arquitectos de datos** tendrán que crear esquemas fuera de este tutorial, pero **los ingenieros de datos** trabajarán de cerca con los esquemas creados por el arquitecto de datos.
 
 Antes de comenzar los ejercicios, vea este breve vídeo para obtener más información sobre los esquemas y el modelo de datos de experiencia (XDM):
->[!VIDEO](https://video.tv.adobe.com/v/38506?captions=spa&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on&enablevpops)
 
 >[!TIP]
 >
-> Para profundizar en el modelado de datos en Experience Platform, recomendamos ver la lista de reproducción [Modelar los datos de la experiencia del cliente con XDM](https://experienceleague.adobe.com/es/playlists/experience-platform-model-your-customer-experience-data-with-xdm), disponible de forma gratuita en Experience League.
+> Para profundizar en el modelado de datos en Experience Platform, recomendamos ver la lista de reproducción [Modelar los datos de la experiencia del cliente con XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm), disponible de forma gratuita en Experience League.
 
 ## Permisos necesarios
 
 En la lección [Configurar permisos](configure-permissions.md), configuró todos los controles de acceso necesarios para completar esta lección.
 
-<!--, specifically:
+<!--
+, specifically:
 
 * Permission items **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]** and **[!UICONTROL Manage Schemas]**
 * Permission item **[!UICONTROL Sandboxes]** > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile
-* Developer-role access to the `Luma Tutorial Platform` product profile (for API)-->
+* Developer-role access to the `Luma Tutorial Platform` product profile (for API)
+-->
 
 
 <!--
@@ -86,7 +88,7 @@ En este ejercicio, crearemos un esquema para los datos de fidelidad de Luma.
 
 Una vez creado el esquema, se le redirigirá al Editor de esquemas, donde puede agregar campos al esquema. Puede agregar campos individuales directamente al esquema o utilizar grupos de campos. Es importante tener en cuenta que todos los campos individuales siguen estando asociados a una clase o grupo de campos. Puede elegir entre un gran conjunto de grupos de campos estándar del sector proporcionados por Adobe o crear los suyos propios. A medida que empiece a modelar sus propios datos en Experience Platform, conviene familiarizarse con los grupos de campos estándar del sector que proporciona Adobe. Siempre que sea posible, se recomienda utilizarlos, ya que a veces alimentan servicios descendentes, como inteligencia artificial aplicada al cliente, inteligencia artificial aplicada a la atribución y Adobe Analytics.
 
-Al trabajar con sus propios datos, un paso significativo será determinar cuáles de sus propios datos deben capturarse en Platform y cómo deben modelarse. Este gran tema se analiza con más detalle en la lista de reproducción [Modelar los datos de la experiencia del cliente con XDM](https://experienceleague.adobe.com/es/playlists/experience-platform-model-your-customer-experience-data-with-xdm). En este tutorial, solo le guiaré a través de la implementación de algunos esquemas predeterminados.
+Al trabajar con sus propios datos, un paso significativo será determinar cuáles de sus propios datos deben capturarse en Platform y cómo deben modelarse. Este gran tema se analiza con más detalle en la lista de reproducción [Modelar los datos de la experiencia del cliente con XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm). En este tutorial, solo le guiaré a través de la implementación de algunos esquemas predeterminados.
 
 Para agregar grupos de campos:
 
@@ -358,7 +360,7 @@ En primer lugar, se debe crear un esquema para el catálogo de productos de Luma
    1. productName: Nombre del producto: String
    1. productCategory: Categoría del producto: Cadena
    1. productColor: Product Color: String
-   1. productSKU: Product SKU: String | Requerido
+   1. productSKU: Product SKU: String | Necesario
    1. productSize: Tamaño del producto: Cadena
    1. productPrice: Precio del producto: Doble
 1. **[!UICONTROL Guardar]** el esquema

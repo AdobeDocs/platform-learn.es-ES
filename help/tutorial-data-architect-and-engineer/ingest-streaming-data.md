@@ -8,7 +8,7 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: c7af96b9b062974c125c2c94c3516b7b8c30a533
 workflow-type: tm+mt
 source-wordcount: '3316'
 ht-degree: 0%
@@ -38,13 +38,13 @@ Hay dos tareas principales que debemos completar en la interfaz de recopilación
 
 Antes de comenzar los ejercicios, vea estos dos vídeos cortos para obtener más información sobre la ingesta de datos de flujo continuo y Web SDK:
 
->[!VIDEO](https://video.tv.adobe.com/v/31628?captions=spa&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/37261?captions=spa&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
 
 >[!NOTE]
 >
->Aunque este tutorial se centra en la ingesta de transmisión desde sitios web con Web SDK, también puede transmitir datos mediante [Mobile SDK](https://experienceleague.adobe.com/es/docs/platform-learn/implement-mobile-sdk/overview), [Edge Network Server API](https://experienceleague.adobe.com/es/docs/platform-learn/data-collection/server-api/overview) y [HTTP API](https://experienceleague.adobe.com/es/docs/experience-platform/sources/connectors/streaming/http).
+>Aunque este tutorial se centra en la ingesta de transmisión desde sitios web con Web SDK, también puede transmitir datos mediante [Mobile SDK](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview), [Edge Network Server API](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/server-api/overview) y [HTTP API](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/streaming/http).
 
 ## Permisos necesarios
 
@@ -63,7 +63,8 @@ En la lección [Configurar permisos](configure-permissions.md), configuró todos
 * User-role access to the `Luma Tutorial Platform` product profile
 -->
 
-<!--## Create a streaming source
+<!--
+## Create a streaming source
 
 1. Log into the [Experience Platform  user interface](https://experience.adobe.com/platform/)
 1. Go to **[!UICONTROL Sources]** in the left navigation
@@ -77,8 +78,7 @@ En la lección [Configurar permisos](configure-permissions.md), configuró todos
     ![Select your dataset](assets/websdk-source-selectDataset.png)
 1. On the **[!UICONTROL Dataflow detail]** step, select the **[!UICONTROL Next]** button:
     ![Select Next](assets/websdk-source-dataflowName.png)
-    <!--What is a good practice for naming the data flow vs the source-->
-<!--
+    What is a good practice for naming the data flow vs the source
 1. On the **[!UICONTROL Review]** step, review your source details and select the **[!UICONTROL Finish]** button:
     ![Select Finish](assets/websdk-source-review.png)
 -->
@@ -263,7 +263,7 @@ Experience Platform Debugger es una extensión disponible para Chrome que le ayu
 
 Si nunca antes ha utilizado Debugger (y este es diferente del antiguo Adobe Experience Cloud Debugger), puede que desee ver este vídeo de información general de cinco minutos:
 
->[!VIDEO](https://video.tv.adobe.com/v/35998?captions=spa&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 ### Abra el sitio web de Luma.
 
@@ -356,7 +356,7 @@ Ahora asignaremos el nombre de página al SDK web.
 >[!IMPORTANT]
 >
 >Para completar esta tarea, debemos asegurarnos de que el usuario tenga acceso primero a la zona protegida de producción. Si todavía no tiene acceso a la zona protegida de Prod desde un perfil de producto diferente, abra rápidamente su perfil de `Luma Tutorial Platform` y agregue el elemento de permiso **[!UICONTROL Zonas protegidas]** > **[!UICONTROL Prod]**. Después, haga una SHIFT-Reload en la página Elementos de datos para borrar la caché
->![Agregar la zona protegida de producción &#x200B;](assets/websdk-property-permissionToLoadSchema.png)
+>![Agregar la zona protegida de producción ](assets/websdk-property-permissionToLoadSchema.png)
 
 En la página **[!UICONTROL Elementos de datos]**:
 

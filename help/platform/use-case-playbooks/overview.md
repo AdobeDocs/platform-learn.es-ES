@@ -9,24 +9,25 @@ duration: 141
 last-substantial-update: 2024-01-27T00:00:00Z
 jira: KT-14806
 exl-id: 66d8992b-e812-4a5c-a696-45f29106aaab
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '183'
-ht-degree: 25%
+ht-degree: 28%
 
 ---
 
 # Resumen de casos de uso
 
-Más información sobre cómo los libros de casos de uso pueden ayudar a los clientes de Real-time Customer Data Platform y Journey Optimizer a obtener una relación tiempo-valor más rápida. Los libros de casos de uso son un catálogo de docenas de plantillas que abarcan varios sectores y objetivos de marketing. Los libros de reproducción generan recursos técnicos como audiencias, recorridos y esquemas, que luego se pueden personalizar y publicar en otros entornos limitados. Para obtener más información, consulte la [Documentación de manuales de casos de uso](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html?lang=es).
+Más información sobre cómo los libros de casos de uso pueden ayudar a los clientes de Real-time Customer Data Platform y Journey Optimizer a obtener una relación tiempo-valor más rápida. Los libros de casos de uso son un catálogo de docenas de plantillas que abarcan varios sectores y objetivos de marketing. Los libros de reproducción generan recursos técnicos como audiencias, recorridos y esquemas, que luego se pueden personalizar y publicar en otros entornos limitados. Para obtener más información, consulte la [Documentación de manuales de casos de uso](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/3441818/?learn=on&enablevpops&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3426896/?learn=on&enablevpops)
 
-## Introducción 
+## Introducción
 
 Aprenda a configurar la cuenta de Platform para los libros de reproducción de casos de uso y, a continuación, cree y publique la primera instancia de un libro de reproducción.
 
-<!-- CARDS
+<!--
+CARDS
 * configure-a-playbook-sandbox.md
 * create-and-publish-a-playbook-instance.md
 -->
@@ -37,7 +38,7 @@ Aprenda a configurar la cuenta de Platform para los libros de reproducción de c
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-a-playbook-sandbox.md" title="Configuración de una zona protegida de manual" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449829/?format=jpeg&nocache=1739379898120&captions=spa" alt="Configuración de una zona protegida de manual"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3426987/?format=jpeg&nocache=1739379898120" alt="Configuración de una zona protegida de manual"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -45,7 +46,7 @@ Aprenda a configurar la cuenta de Platform para los libros de reproducción de c
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="configure-a-playbook-sandbox.md" target="_blank" rel="referrer" title="Configuración de una zona protegida de manual">Configurar una zona protegida de libros de reproducción</a>
+                        <a href="configure-a-playbook-sandbox.md" target="_blank" rel="referrer" title="Configuración de una zona protegida de manual">Configuración de una zona protegida del manual de tácticas</a>
                     </p>
                     <p class="is-size-6">Aprenda a configurar una zona protegida para libros de reproducción de casos de uso.</p>
                 </div>

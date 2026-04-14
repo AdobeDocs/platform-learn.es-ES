@@ -4,7 +4,7 @@ description: Más información sobre Adobe Experience Platform
 doc-type: overview-page
 mini-toc-levels: 1
 exl-id: 5f84b0b4-b100-45dc-bcac-2dcc127c87f3
-source-git-commit: 14ec4ea743d1f323d29f9ab84506355d25c91452
+source-git-commit: c7af96b9b062974c125c2c94c3516b7b8c30a533
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 7%
@@ -30,7 +30,7 @@ Adobe Experience Platform es el sistema más potente, flexible y abierto del mer
 <tr>
   <td>
     <a href="intro-to-platform/a-customer-experience-powered-by-experience-platform.md">
-      <img alt="Una experiencia del cliente basada en vídeo para Experience Platform" src="assets/thumb_A-Customer-Experience.jpg" />
+      <img alt="Una experiencia del cliente con tecnología de vídeo de Experience Platform" src="assets/thumb_A-Customer-Experience.jpg" />
     </a>
     <div>
       <a href="intro-to-platform/a-customer-experience-powered-by-experience-platform.md">
@@ -93,7 +93,8 @@ Adobe Experience Platform es el sistema más potente, flexible y abierto del mer
     <p>
     <em>Build segments based on your data.</em>
     <p>
-  </td>-->
+  </td>
+  -->
 </tr>
 </table>
 

@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-2699
 thumbnail: 27106.jpg
 exl-id: 8fcdb16f-26e1-4fb8-8e2b-1a1a3acccfe1
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 19%
@@ -18,11 +18,12 @@ ht-degree: 19%
 
 Las funciones de ingesta de datos de Adobe Experience Platform le permiten reunir sus datos en una plataforma abierta y escalable para administrar perfiles de clientes en tiempo real. Para obtener más información, visite la [Documentación sobre ingesta de datos](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/346830?captions=spa&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on&enablevpops)
 
 ## Métodos de ingesta de datos
 
-<!-- CARDS
+<!--
+CARDS
 
 * ../sources/overview.md
 * ../../data-collection/web-sdk/overview.md
@@ -35,7 +36,7 @@ Las funciones de ingesta de datos de Adobe Experience Platform le permiten reuni
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/overview.md" title="Información general de fuentes" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32686?captions=spa&format=jpeg&nocache=1740414616559" alt="Información general de fuentes"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29694?format=jpeg&nocache=1740414616559" alt="Información general de fuentes"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -58,7 +59,7 @@ Las funciones de ingesta de datos de Adobe Experience Platform le permiten reuni
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../../data-collection/web-sdk/overview.md" title="Información general sobre Adobe Experience Platform Web SDK y Edge Network" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/37261?captions=spa&format=jpeg&nocache=1740414616573" alt="Información general sobre Adobe Experience Platform Web SDK y Edge Network"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34141?format=jpeg&nocache=1740414616573" alt="Información general sobre Adobe Experience Platform Web SDK y Edge Network"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -81,7 +82,8 @@ Las funciones de ingesta de datos de Adobe Experience Platform le permiten reuni
 
 ## Velocidades de ingesta de datos
 
-<!-- CARDS
+<!--
+CARDS
 
 * batch-ingestion-overview.md
 * understanding-streaming-ingestion.md
@@ -95,7 +97,7 @@ Las funciones de ingesta de datos de Adobe Experience Platform le permiten reuni
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="batch-ingestion-overview.md" title="Resumen de ingesta de datos por lotes" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345660?captions=spa&format=jpeg&nocache=1740414616813" alt="Resumen de ingesta de datos por lotes"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/330995?format=jpeg&nocache=1740414616813" alt="Resumen de ingesta de datos por lotes"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -118,7 +120,7 @@ Las funciones de ingesta de datos de Adobe Experience Platform le permiten reuni
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="understanding-streaming-ingestion.md" title="Resumen de ingesta de datos de streaming" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/31628?captions=spa&format=jpeg&nocache=1740414616825" alt="Resumen de ingesta de datos de streaming"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/28425?format=jpeg&nocache=1740414616825" alt="Resumen de ingesta de datos de streaming"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -141,7 +143,7 @@ Las funciones de ingesta de datos de Adobe Experience Platform le permiten reuni
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../../data-collection/web-sdk/overview.md" title="Información general sobre Adobe Experience Platform Web SDK y Edge Network" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/37261?captions=spa&format=jpeg&nocache=1740414616799" alt="Información general sobre Adobe Experience Platform Web SDK y Edge Network"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34141?format=jpeg&nocache=1740414616799" alt="Información general sobre Adobe Experience Platform Web SDK y Edge Network"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -164,7 +166,8 @@ Las funciones de ingesta de datos de Adobe Experience Platform le permiten reuni
 
 ## Ingesta de datos de fuentes comunes de terceros
 
-<!-- CARDS
+<!--
+CARDS
 
 * ../sources/ingest-data-from-crm.md
 * ../sources/ingest-data-from-cloud-storage.md
@@ -178,7 +181,7 @@ Las funciones de ingesta de datos de Adobe Experience Platform le permiten reuni
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-crm.md" title="Ingesta de datos mediante conectores de Source de CRM" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32646?captions=spa&format=jpeg&nocache=1740414616941" alt="Ingesta de datos mediante conectores de Source de CRM"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29711?format=jpeg&nocache=1740414616941" alt="Ingesta de datos mediante conectores de Source de CRM"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -201,7 +204,7 @@ Las funciones de ingesta de datos de Adobe Experience Platform le permiten reuni
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-cloud-storage.md" title="Ingesta de datos mediante los conectores Source de Cloud Storage" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32642?captions=spa&format=jpeg&nocache=1740414616962" alt="Ingesta de datos mediante los conectores Source de Cloud Storage"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29695?format=jpeg&nocache=1740414616962" alt="Ingesta de datos mediante los conectores Source de Cloud Storage"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -224,7 +227,7 @@ Las funciones de ingesta de datos de Adobe Experience Platform le permiten reuni
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/streaming-ingestion-source-connector.md" title="Transmisión de datos mediante conectores de Source" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3410102?captions=spa&format=jpeg&nocache=1740414616930" alt="Transmisión de datos mediante conectores de Source"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331943?format=jpeg&nocache=1740414616930" alt="Transmisión de datos mediante conectores de Source"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -247,7 +250,7 @@ Las funciones de ingesta de datos de Adobe Experience Platform le permiten reuni
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/streaming-ingestion-http-api.md" title="Ingesta de datos mediante el extremo de la API HTTP de conexión de flujo continuo" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3410927?captions=spa&format=jpeg&nocache=1740414616952" alt="Ingesta de datos mediante el extremo de la API HTTP de conexión de flujo continuo"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331028?format=jpeg&nocache=1740414616952" alt="Ingesta de datos mediante el extremo de la API HTTP de conexión de flujo continuo"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -270,7 +273,8 @@ Las funciones de ingesta de datos de Adobe Experience Platform le permiten reuni
 
 ## Ingesta de datos de fuentes comunes de Adobe
 
-<!-- CARDS
+<!--
+CARDS
 
 * ../sources/ingest-data-from-adobe-analytics.md
 * ../sources/ingest-data-from-marketo.md
@@ -284,7 +288,7 @@ Las funciones de ingesta de datos de Adobe Experience Platform le permiten reuni
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-adobe-analytics.md" title="Ingesta de datos mediante el conector de origen de Adobe Analytics" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430250?captions=spa&format=jpeg&nocache=1740414617197" alt="Ingesta de datos mediante el conector de origen de Adobe Analytics"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29687?format=jpeg&nocache=1740414617197" alt="Ingesta de datos mediante el conector de origen de Adobe Analytics"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -307,7 +311,7 @@ Las funciones de ingesta de datos de Adobe Experience Platform le permiten reuni
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-marketo.md" title="Ingesta de datos desde Marketo Engage" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451863?captions=spa&format=jpeg&nocache=1740414617186" alt="Ingesta de datos desde Marketo Engage"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3419550?format=jpeg&nocache=1740414617186" alt="Ingesta de datos desde Marketo Engage"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -330,7 +334,7 @@ Las funciones de ingesta de datos de Adobe Experience Platform le permiten reuni
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-aam.md" title="Ingesta de datos mediante el conector de datos de Adobe Audience Manager" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346983/?captions=spa&format=jpeg&nocache=1740414617207" alt="Ingesta de datos mediante el conector de datos de Adobe Audience Manager"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331214/?format=jpeg&nocache=1740414617207" alt="Ingesta de datos mediante el conector de datos de Adobe Audience Manager"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

@@ -5,10 +5,11 @@ solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimiz
 feature: Data Hygiene
 role: Developer
 level: Intermediate
-source-git-commit: 9c15708f7300672caa963c0635179dd2855e5fed
+exl-id: 8a0c825a-68d2-4885-8cb6-981a79994327
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '389'
-ht-degree: 22%
+ht-degree: 24%
 
 ---
 
@@ -36,7 +37,8 @@ holistic fashion.
 
 La función de preparación de datos le ayuda a introducir únicamente los campos que necesita de una fuente de datos.
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * data-prep-for-data-hygiene.md
 -->
@@ -47,7 +49,7 @@ La función de preparación de datos le ayuda a introducir únicamente los campo
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="data-prep-for-data-hygiene.md" title="Preparación de datos para la higiene de datos" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449278/?format=jpeg&nocache=1740251397387&captions=spa" alt="Preparación de datos para la higiene de datos"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3429485/?format=jpeg&nocache=1740251397387" alt="Preparación de datos para la higiene de datos"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -71,7 +73,8 @@ La función de preparación de datos le ayuda a introducir únicamente los campo
 ## Eliminación de datos en el sistema
 
 Existen muchas funciones que le ayudarán a eliminar los datos del sistema. Puede eliminar conjuntos de datos completos bajo demanda o según una programación, caducar registros y perfiles con configuración de tiempo de vida, eliminar perfiles individuales y cumplir solicitudes de privacidad.
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * delete-datasets-and-batches.md
 * ../data-lifecycle/expire-datasets.md
@@ -109,7 +112,7 @@ Existen muchas funciones que le ayudarán a eliminar los datos del sistema. Pued
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../data-lifecycle/expire-datasets.md" title="Programar eliminaciones de conjuntos de datos" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430304?format=jpeg&nocache=1740251397716&captions=spa" alt="Programar eliminaciones de conjuntos de datos"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345065?format=jpeg&nocache=1740251397716" alt="Programar eliminaciones de conjuntos de datos"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -132,7 +135,7 @@ Existen muchas funciones que le ayudarán a eliminar los datos del sistema. Pued
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="pseudonymous-profile-and-event-expiration.md" title="Caducidad de perfil seudónimo y evento de experiencia" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449856?format=jpeg&nocache=1740251397705&captions=spa" alt="Caducidad de perfil seudónimo y evento de experiencia"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3428361?format=jpeg&nocache=1740251397705" alt="Caducidad de perfil seudónimo y evento de experiencia"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -178,7 +181,7 @@ Existen muchas funciones que le ayudarán a eliminar los datos del sistema. Pued
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../privacy/introduction-to-privacy-services.md" title="Introducción a Privacy Service" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3445714?format=jpeg&nocache=1740251397727&captions=spa" alt="Introducción a Privacy Service"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/336074?format=jpeg&nocache=1740251397727" alt="Introducción a Privacy Service"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -205,7 +208,8 @@ Existen muchas funciones que le ayudarán a eliminar los datos del sistema. Pued
 
 ## Ajuste de los datos en el sistema
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * ../profiles/update-a-specific-attribute-with-upsert.md
 -->
@@ -216,7 +220,7 @@ Existen muchas funciones que le ayudarán a eliminar los datos del sistema. Pued
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../profiles/update-a-specific-attribute-with-upsert.md" title="Actualización de atributos de perfil específicos mediante upsert" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443444/?format=jpeg&nocache=1740251398874&captions=spa" alt="Actualización de atributos de perfil específicos mediante upsert"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416133/?format=jpeg&nocache=1740251398874" alt="Actualización de atributos de perfil específicos mediante upsert"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
