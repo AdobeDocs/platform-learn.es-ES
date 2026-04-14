@@ -18,7 +18,7 @@ ht-degree: 15%
 
 En este vídeo se explica cómo Adobe Experience Platform organiza y actualiza los perfiles de clientes en tiempo real, y cómo puede acceder a ellos y utilizarlos. Para obtener más información, visite la [Documentación del perfil del cliente en tiempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31833?captions=spa&learn=on&enablevpops)
 
 ## Arquitectura y características
 
@@ -36,7 +36,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="overview-diagram.md" title="Diagrama de Visión General del Perfil del Cliente en Tiempo Real" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33600?format=jpeg&nocache=1740415066741" alt="Diagrama de Visión General del Perfil del Cliente en Tiempo Real"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36788?captions=spa&format=jpeg&nocache=1740415066741" alt="Diagrama de Visión General del Perfil del Cliente en Tiempo Real"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -59,7 +59,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-merge-policies.md" title="Crear políticas de combinación" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/330433?format=jpeg&nocache=1740415066765" alt="Crear políticas de combinación"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345075?captions=spa&format=jpeg&nocache=1740415066765" alt="Crear políticas de combinación"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -82,7 +82,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="union-schemas-overview.md" title="Resumen de esquemas de unión" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/329940?format=jpeg&nocache=1740415066755" alt="Resumen de esquemas de unión"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342821?captions=spa&format=jpeg&nocache=1740415066755" alt="Resumen de esquemas de unión"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -105,7 +105,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-a-computed-attribute-for-sum-of-purchases.md" title="Cree un atributo calculado para la suma de las compras" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3425899?format=jpeg&nocache=1740415066775" alt="Cree un atributo calculado para la suma de las compras"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443554?captions=spa&format=jpeg&nocache=1740415066775" alt="Cree un atributo calculado para la suma de las compras"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -141,7 +141,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="bring-data-into-the-real-time-customer-profile.md" title="Introducción de datos en el Perfil del cliente en tiempo real" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/27301?format=jpeg&nocache=1740415067018" alt="Introducción de datos en el Perfil del cliente en tiempo real"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34379?captions=spa&format=jpeg&nocache=1740415067018" alt="Introducción de datos en el Perfil del cliente en tiempo real"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -187,7 +187,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="update-a-specific-attribute-with-upsert.md" title="Actualización de atributos de perfil específicos mediante upsert" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416133/?format=jpeg&nocache=1740415067029" alt="Actualización de atributos de perfil específicos mediante upsert"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443444/?captions=spa&format=jpeg&nocache=1740415067029" alt="Actualización de atributos de perfil específicos mediante upsert"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -221,7 +221,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="view-account-profiles.md" title="Ver perfiles de cuenta" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/338251?format=jpeg&nocache=1740415067214" alt="Ver perfiles de cuenta"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446580?captions=spa&format=jpeg&nocache=1740415067214" alt="Ver perfiles de cuenta"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

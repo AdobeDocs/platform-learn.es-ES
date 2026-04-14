@@ -18,7 +18,7 @@ ht-degree: 18%
 
 Aprenda a tomar el control completo de los datos desde el punto en el que se recopilan en las fuentes de datos hasta el momento en el que se asocian a destinos fuera de Adobe Experience Platform. La gobernanza de datos es un marco de trabajo fácilmente ampliable profundamente incrustado en los flujos de trabajo de uso de datos. El marco de trabajo se basa en tres aspectos clave: etiquetas, políticas y aplicación. Para obtener más información, visite la [documentación de control de datos](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32682?captions=spa&learn=on&enablevpops)
 
 ## Demostración
 
@@ -36,7 +36,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="introduction-to-data-governance.md" title="Demostración completa del control de datos" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36653?format=jpeg&nocache=1740179989077" alt="Demostración completa del control de datos"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/41323?captions=spa&format=jpeg&nocache=1740179989077" alt="Demostración completa del control de datos"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -75,7 +75,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="classify-data-using-labels.md" title="Clasificación de datos mediante etiquetas" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29709?format=jpeg&nocache=1740179989358" alt="Clasificación de datos mediante etiquetas"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3422794?captions=spa&format=jpeg&nocache=1740179989358" alt="Clasificación de datos mediante etiquetas"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -98,7 +98,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-data-usage-policies.md" title="Creación de políticas de uso de datos" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32977?format=jpeg&nocache=1740179989347" alt="Creación de políticas de uso de datos"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/37128?captions=spa&format=jpeg&nocache=1740179989347" alt="Creación de políticas de uso de datos"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -159,7 +159,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="integrate-with-iab-transparency-and-consent-framework-2.md" title="Integración del marco de transparencia y consentimiento 2.0 de IAB" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/38346?format=jpeg&nocache=1740179989597" alt="Integración del marco de transparencia y consentimiento 2.0 de IAB"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/326482?captions=spa&format=jpeg&nocache=1740179989597" alt="Integración del marco de transparencia y consentimiento 2.0 de IAB"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -182,7 +182,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="enforce-consent.md" title="Aplicar consentimiento" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345677?format=jpeg&nocache=1740179989584" alt="Aplicar consentimiento"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3412098?captions=spa&format=jpeg&nocache=1740179989584" alt="Aplicar consentimiento"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

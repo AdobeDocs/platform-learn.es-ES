@@ -18,7 +18,7 @@ ht-degree: 15%
 
 Obtenga información acerca de las funciones clave de la resolución de identidades en Adobe Experience Platform: recopilación de identidades, gráficos de identidades y API. Descubra cómo el servicio de identidad vincula identidades desconectadas para ofrecer una experiencia conectada coherente mediante la construcción de un perfil unificado. Para obtener más información, visite la [documentación del servicio de identidad](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=es).
 
->[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3422777?captions=spa&learn=on&enablevpops)
 
 ## Configuración de identidades
 
@@ -33,7 +33,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="label-ingest-and-verify-identity-data.md" title="Etiquetado, ingesta y verificación de datos de identidad" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/28167?format=jpeg&nocache=1740414775790" alt="Etiquetado, ingesta y verificación de datos de identidad"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/31673?captions=spa&format=jpeg&nocache=1740414775790" alt="Etiquetado, ingesta y verificación de datos de identidad"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -67,7 +67,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="identity-graph-linking-rules/graph-simulation.md" title="Reglas de vinculación de gráficos de identidad: simulación de gráficos" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444032/?format=jpeg&nocache=1740414776009" alt="Reglas de vinculación de gráficos de identidad: simulación de gráficos"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444046/?captions=spa&format=jpeg&nocache=1740414776009" alt="Reglas de vinculación de gráficos de identidad: simulación de gráficos"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -101,7 +101,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="view-identity-graphs.md" title="Ver gráficos de identidad" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331030?format=jpeg&nocache=1740414776113" alt="Ver gráficos de identidad"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345653?captions=spa&format=jpeg&nocache=1740414776113" alt="Ver gráficos de identidad"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

@@ -36,7 +36,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="add-users.md" title="Agregar usuarios" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/336081?format=jpeg&nocache=1740173302150" alt="Agregar usuarios"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475976?captions=spa&format=jpeg&nocache=1740173302150" alt="Agregar usuarios"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -59,7 +59,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="add-developers.md" title="Adición de desarrolladores" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3426407?format=jpeg&nocache=1740173302176" alt="Adición de desarrolladores"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446401?captions=spa&format=jpeg&nocache=1740173302176" alt="Adición de desarrolladores"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -82,7 +82,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="add-product-administrators.md" title="Adición de administradores" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333860?format=jpeg&nocache=1740173302208" alt="Adición de administradores"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475944?captions=spa&format=jpeg&nocache=1740173302208" alt="Adición de administradores"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -105,7 +105,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-attribute-based-access-control.md" title="Configuración del control de acceso basado en atributos" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345641?format=jpeg&nocache=1740173302190" alt="Configuración del control de acceso basado en atributos"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451831?captions=spa&format=jpeg&nocache=1740173302190" alt="Configuración del control de acceso basado en atributos"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -128,7 +128,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/es/docs/platform-learn/data-collection/users-and-permissions" title="Añadir usuarios a la recopilación de datos" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/28734/?format=jpeg&nocache=1740173302543" alt="Añadir usuarios a la recopilación de datos"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33398/?captions=spa&format=jpeg&nocache=1740173302543" alt="Añadir usuarios a la recopilación de datos"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -166,7 +166,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-sandboxes.md" title="Usar zonas protegidas" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29838/?format=jpeg&nocache=1740173302789" alt="Usar zonas protegidas"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430293/?captions=spa&format=jpeg&nocache=1740173302789" alt="Usar zonas protegidas"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -189,7 +189,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="copy-objects-between-sandboxes.md" title="Copiar configuraciones entre zonas protegidas" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3424763/?format=jpeg&nocache=1740173302776" alt="Copiar configuraciones entre zonas protegidas"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446086/?captions=spa&format=jpeg&nocache=1740173302776" alt="Copiar configuraciones entre zonas protegidas"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -212,7 +212,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="share-packages-across-orgs.md" title="Uso compartido de paquetes entre organizaciones de IMS" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435815/?format=jpeg&nocache=1740173302764" alt="Uso compartido de paquetes entre organizaciones de IMS"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443920/?captions=spa&format=jpeg&nocache=1740173302764" alt="Uso compartido de paquetes entre organizaciones de IMS"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -281,7 +281,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-alerts.md" title="Uso de alertas" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/336218?format=jpeg&nocache=1740173305172" alt="Uso de alertas"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3423918?captions=spa&format=jpeg&nocache=1740173305172" alt="Uso de alertas"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

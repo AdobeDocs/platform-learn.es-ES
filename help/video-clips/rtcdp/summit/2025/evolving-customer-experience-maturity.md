@@ -20,4 +20,4 @@ ht-degree: 0%
 Explore los marcos de trabajo rastrear, caminar y ejecutar para avanzar datos, audiencias, recorridos, mediciones y personalización de contenido.
 
 <!-- 85_S651_3442537_240_evolving-customer-experience-maturity -->
->[!VIDEO](https://video.tv.adobe.com/v/3458293/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460171/?captions=spa&learn=on&enablevpops=true)

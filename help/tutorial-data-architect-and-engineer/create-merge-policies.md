@@ -32,7 +32,7 @@ Nos ceñiremos a la interfaz de usuario para esta lección, pero también existe
 
 Antes de comenzar los ejercicios, vea este breve vídeo para obtener más información sobre las políticas de combinación:
 
->[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/345075?captions=spa&learn=on&enablevpops)
 
 ## Permisos necesarios
 

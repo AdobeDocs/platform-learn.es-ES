@@ -49,7 +49,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="data-prep-for-data-hygiene.md" title="Preparación de datos para la higiene de datos" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3429485/?format=jpeg&nocache=1740251397387" alt="Preparación de datos para la higiene de datos"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449278/?captions=spa&format=jpeg&nocache=1740251397387" alt="Preparación de datos para la higiene de datos"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -112,7 +112,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../data-lifecycle/expire-datasets.md" title="Programar eliminaciones de conjuntos de datos" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345065?format=jpeg&nocache=1740251397716" alt="Programar eliminaciones de conjuntos de datos"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430304?captions=spa&format=jpeg&nocache=1740251397716" alt="Programar eliminaciones de conjuntos de datos"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -135,7 +135,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="pseudonymous-profile-and-event-expiration.md" title="Caducidad de perfil seudónimo y evento de experiencia" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3428361?format=jpeg&nocache=1740251397705" alt="Caducidad de perfil seudónimo y evento de experiencia"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449856?captions=spa&format=jpeg&nocache=1740251397705" alt="Caducidad de perfil seudónimo y evento de experiencia"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -181,7 +181,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../privacy/introduction-to-privacy-services.md" title="Introducción a Privacy Service" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/336074?format=jpeg&nocache=1740251397727" alt="Introducción a Privacy Service"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3445714?captions=spa&format=jpeg&nocache=1740251397727" alt="Introducción a Privacy Service"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -220,7 +220,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../profiles/update-a-specific-attribute-with-upsert.md" title="Actualización de atributos de perfil específicos mediante upsert" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416133/?format=jpeg&nocache=1740251398874" alt="Actualización de atributos de perfil específicos mediante upsert"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443444/?captions=spa&format=jpeg&nocache=1740251398874" alt="Actualización de atributos de perfil específicos mediante upsert"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
