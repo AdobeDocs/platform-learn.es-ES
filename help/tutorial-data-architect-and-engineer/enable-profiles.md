@@ -26,7 +26,7 @@ Con el Perfil del cliente en tiempo real, puede ver una vista integral de cada c
 
 Por increíble que suene todo eso, no necesitas activar *todos tus datos* para el perfil. De hecho, solo debe habilitar los datos que necesite para casos de uso de activación. Habilite los datos que desee utilizar para casos de uso de marketing, integraciones de centros de llamadas, etc., en los que necesite un acceso rápido a un perfil de cliente sólido. Si solo carga datos para su análisis, probablemente no debería habilitarse para el perfil.
 
-Existen [protecciones importantes para los datos del perfil del cliente en tiempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) que debe revisar al decidir cuáles de sus propios datos debe habilitar para el perfil.
+Existen [protecciones importantes para los datos del perfil del cliente en tiempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=es) que debe revisar al decidir cuáles de sus propios datos debe habilitar para el perfil.
 
 <!--is this accurate. Are there other considerations to point out? -->
 

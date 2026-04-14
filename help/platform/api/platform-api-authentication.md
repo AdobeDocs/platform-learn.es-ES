@@ -26,7 +26,7 @@ La capacidad de [Adobe Developer Console](https://developer.adobe.com/console/ho
 
 >[!IMPORTANT]
 >
->Para acceder a [Adobe Developer Console](https://developer.adobe.com/console/home), debes ser [administrador del sistema](https://helpx.adobe.com/enterprise/using/admin-roles.html) o [desarrollador](https://helpx.adobe.com/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) en [Adobe Admin Console](https://adminconsole.adobe.com).
+>Para acceder a [Adobe Developer Console](https://developer.adobe.com/console/home), debes ser [administrador del sistema](https://helpx.adobe.com/es/enterprise/using/admin-roles.html) o [desarrollador](https://helpx.adobe.com/es/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) en [Adobe Admin Console](https://adminconsole.adobe.com).
 >
 > Después de crear la credencial de la API, un administrador del sistema debe asociarla con una función en Experience Platform.
 >
