@@ -4,9 +4,9 @@ description: Introducción a Agent Orchestrator
 kt: 5342
 doc-type: tutorial
 exl-id: a5000a5d-5540-49bb-b737-aaca1ab0ddd7
-source-git-commit: 8face7d2c69d1830e5151625d013fe86b83c31b3
+source-git-commit: 7e0214226eaee0586d036d46de39c08046d43893
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1418'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ En este vídeo, obtendrá una explicación y una demostración de todos los paso
 
 Vaya a [https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
 
-Entonces debería ver esto. Asegúrese de que se encuentra en la organización **Experience Platform International**.
+Entonces debería ver esto. Asegúrese de que se encuentra en la organización `--aepImsOrgName--`.
 
 ![Agent Orchestrator](./images/ao1.png)
 
@@ -37,11 +37,11 @@ Establezca el contexto en:
 
 La configuración de Source de documentación ayuda a dar preferencia a qué conjunto de documentos de Experience League comprobar si hay preguntas relacionadas con el conocimiento del producto o Experience League.
 
-- **Espacio aislado**: **Prod - Accelerate (VA7)**
+- **Espacio aislado**: **Producto - Un Adobe (VA7)**
 
 La configuración de la zona protegida ayuda a identificar qué simulador de pruebas debe consultar el asistente al hacer preguntas.
 
-- **Vista de datos**: **Acelerar B2C 2026**
+- **Vista de datos**: **Vista de datos unificada del cliente de AdobeOne**
 
 La configuración de vista de datos ayuda a identificar qué vista de datos debe ver el asistente de IA al hacer preguntas.
 
@@ -58,7 +58,7 @@ Obtenga un impulso de nivel superior sobre la demanda de categorías (móvil, fi
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
 ```javascript
-Show me purchases by mainCategory over the last 7 months.
+Show me purchases by mainCategory over the last 2 months.
 ```
 
 ![Agent Orchestrator](./images/ao4.png)
@@ -70,7 +70,7 @@ Debería ver lo siguiente:
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
 ```javascript
-Show me purchases by mainCategory = Fiber over the last 7 months per week
+Show me purchases by mainCategory = Fiber over the last 2 months per week
 ```
 
 ![Agent Orchestrator](./images/ao6.png)
@@ -95,7 +95,7 @@ Which field is used to store the preferred genre?
 
 ![Agent Orchestrator](./images/ao7a.png)
 
-Debería ver esto, lo que muestra que el campo usado para el género es **_experienceplatform.individualCharacteristic.preferences.ferredGenre**.
+Debería ver esto, lo que muestra que el campo usado para el género es **`--aepTenantId--.individualCharacteristics.telco.mediaPreferences.favouriteGenre`**.
 
 ![Agent Orchestrator](./images/ao7b.png)
 
@@ -104,7 +104,7 @@ Con esa información, puede empezar a explorar en profundidad los datos de compr
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
 ```javascript
-Show me ordersYTD by preferredGenre for the last 7 months
+Show me ordersYTD by preferred genre for the last 2 months
 ```
 
 ![Agent Orchestrator](./images/ao8.png)
@@ -131,7 +131,7 @@ What journeys exist?
 
 ![Agent Orchestrator](./images/ao12.png)
 
-Entonces debería ver esto. Haga clic en **Mostrar más**.
+Entonces debería ver esto. Haga clic en **Mostrar todos los resultados**.
 
 ![Agent Orchestrator](./images/ao13.png)
 
@@ -151,7 +151,19 @@ Which of these journeys has 'Fiber' in its name?
 
 ![Agent Orchestrator](./images/ao14.png)
 
-Entonces debería ver esto. Haga clic en el vínculo de uno de los recorridos y seleccione **Detalles del Recorrido**.
+Entonces deberías ver algo como esto.
+
+![Agent Orchestrator](./images/ao14a.png)
+
+Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
+
+```javascript
+give more details about the first one
+```
+
+![Agent Orchestrator](./images/ao14b.png)
+
+Entonces debería ver esto. Haga clic en el vínculo para abrir el recorrido.
 
 ![Agent Orchestrator](./images/ao15.png)
 
