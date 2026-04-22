@@ -4,7 +4,7 @@ description: AI Assistant y Agent Orchestrator
 kt: 5342
 doc-type: tutorial
 exl-id: a5000a5d-5540-49bb-b737-aaca1ab0ddd7
-source-git-commit: 67ea511c48f2393fd671e4218852c8c3312eb440
+source-git-commit: 765d080e8a3bfe774478eaabfdb5c099701597df
 workflow-type: tm+mt
 source-wordcount: '1387'
 ht-degree: 0%
@@ -53,7 +53,7 @@ Obtenga un impulso de nivel superior sobre la demanda de categorías (móvil, fi
 
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
-```javascript
+```
 Show me purchases by mainCategory over the last 2 months.
 ```
 
@@ -65,7 +65,7 @@ Debería ver lo siguiente:
 
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
-```javascript
+```
 Show me purchases by mainCategory = Fiber over the last 2 months per week
 ```
 
@@ -85,7 +85,7 @@ En primer lugar, debe averiguar qué campo se utiliza para almacenar la preferen
 
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
-```javascript
+```
 Which field is used to store the preferred genre?
 ```
 
@@ -99,7 +99,7 @@ Con esa información, puede empezar a explorar en profundidad los datos de compr
 
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
-```javascript
+```
 Show me purchases by preferred genre for the last 2 months
 ```
 
@@ -121,7 +121,7 @@ Descubra qué recorridos activos o finalizados recientemente incluyen &quot;Fibr
 
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
-```javascript
+```
 What journeys exist? 
 ```
 
@@ -141,7 +141,7 @@ Esto generará un archivo CSV para usted que contiene todos los resultados del a
 
 Haga clic en para cerrar el panel derecho. Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
-```javascript
+```
 Which of these journeys has 'Fiber' in its name?
 ```
 
@@ -153,7 +153,7 @@ Entonces deberías ver algo como esto.
 
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
-```javascript
+```
 give more details about the first one
 ```
 
@@ -175,7 +175,7 @@ Comprenda la definición de la semilla del recorrido &quot;CitiSignal - Promoci�
 
 Escriba el **indicador** siguiente:
 
-```javascript
+```
 Which audiences are used by the journey named
 ```
 
@@ -199,7 +199,7 @@ Desea comprender las visitas en el orden previsto de rendimiento de la recorrido
 
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
-```javascript
+```
 Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey
 ```
 
@@ -229,7 +229,7 @@ En base a los hallazgos e investigaciones anteriores, existe una correlación en
 
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
-```javascript
+```
 Create an audience that combines people with an average download usage per month of over 2000 GB and a preferred genre of sci-fi or fantasy.
 ```
 
@@ -283,7 +283,7 @@ Busque cualquier audiencia denominada con &quot;descargadores masivos&quot;, def
 
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
-```javascript
+```
 Is there an audience that has "heavy downloaders" in the title?
 ```
 
@@ -297,7 +297,7 @@ Ahora desea ver todas sus audiencias y cuánto han cambiado en los últimos día
 
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
-```javascript
+```
 List how much all my audiences changed over the last few days.
 ```
 
@@ -319,7 +319,7 @@ Ya existen algunas audiencias para &quot;descargadores pesados&quot;. Vamos a ve
 
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
-```javascript
+```
 Which of the above are used in a journey? 
 ```
 
@@ -331,7 +331,7 @@ Entonces debería ver algo similar a esto.
 
 Ahora debería comprobar si ese recorrido está activo. Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
-```javascript
+```
 Are these journeys active? 
 ```
 
@@ -353,8 +353,8 @@ Heavy Downloaders ∩ Preferencia de ciencia ficción.
 
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
-```javascript
-Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_kbaa_5207bf. The journey is for the rollout of fiber broadband. There will 2 versions of an email  based on  a split of the audience based on who is in the "Eligble for Fiber upgrade" audience.  After 3 days, profiles from both email treatments who have not purchased fibre max will be sent a follow up email. 
+```
+Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference. The journey is for the rollout of fiber broadband. There will 2 versions of an email  based on  a split of the audience based on who is in the "Eligble for Fiber upgrade" audience.  After 3 days, profiles from both email treatments who have not purchased fibre max will be sent a follow up email. 
 ```
 
 ![Agent Orchestrator](./images/aocj1.png)
@@ -395,7 +395,7 @@ Entonces debería ver esto.
 
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
-```javascript
+```
 How can I manage journey conflicts?
 ```
 
@@ -411,7 +411,7 @@ Desplácese hacia abajo y seleccione **Fuentes** para comprobar que la informaci
 
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
-```javascript
+```
 List any conflicts for the journey +CitiSignal Fiber Max
 ```
 
@@ -431,7 +431,7 @@ Revise la información de conflictos potenciales de recorrido.
 
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
-```javascript
+```
 How are the experiments performing for the journey named 'CitiSignal - Fiber Max Launch Promotion'?
 ```
 

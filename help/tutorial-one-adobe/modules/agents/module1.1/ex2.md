@@ -4,21 +4,14 @@ description: Adobe Marketing Agent para ChatGPT Enterprise
 kt: 5342
 doc-type: tutorial
 exl-id: 0aa0cef5-bc1d-4cb6-be09-a5964686c963
-source-git-commit: 8face7d2c69d1830e5151625d013fe86b83c31b3
+source-git-commit: 765d080e8a3bfe774478eaabfdb5c099701597df
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '739'
 ht-degree: 0%
 
 ---
 
 # 1.1.2 Adobe Marketing Agent para ChatGPT Enterprise
-
-[!BADGE Beta]
-
-+++Detalles de Beta
-Al utilizar Adobe Marketing Agent para ChatGPT Enterprise Beta, Usted reconoce por la presente que Beta se proporciona &quot;tal cual&quot; sin garantía de ningún tipo. Adobe no tiene obligación de mantener, corregir, actualizar, cambiar, modificar o apoyar de otro modo Beta. Se recomienda tener precaución y no confiar en modo alguno en el correcto funcionamiento o rendimiento de dichos Beta y/o materiales de acompañamiento. Beta se considera información confidencial de Adobe.  Cualquier &quot;comentario&quot; (información sobre Beta, incluidos, entre otros, problemas o defectos que encuentre al utilizar Beta, sugerencias, mejoras y recomendaciones) proporcionado por usted a Adobe se asigna a Adobe, incluidos todos los derechos, el título y el interés en y para dichos comentarios.
-
-+++
 
 ## Vídeo
 
@@ -57,7 +50,7 @@ Haga clic en **Crear aplicación**.
 Rellene los campos de esta manera:
 
 - **Nombre**: `Adobe Marketing Agent`
-- **URL del servidor MCP**: consulte con su representante de Adobe
+- **URL del servidor MCP**: `https://aep-ai-ama.adobe.io/mcp`
 - **Autenticación**: `OAuth`
 
 Marque la casilla de verificación de **Entiendo y deseo continuar**.
@@ -88,61 +81,27 @@ Antes de seguir interactuando con Adobe Marketing Agent a través de ChatGPT, se
 
 Para este ejercicio, el contexto debe configurarse para utilizar:
 
-- **Espacio aislado**: **Prod - Accelerate (VA7)**
+- **Organización de IMS**: `--aepImsOrgName--`.
+
+- **Espacio Aislado**: **Producto - Un Adobe**
 
 La configuración de Zona protegida ayuda a identificar qué zona protegida debe ver ChatGPT al hacer preguntas.
 
-- **Vista de datos**: **Acelerar B2C 2026**
+- **Vista de datos**: **AdobeOne - Vista de datos unificada del cliente**
 
 La configuración de Vista de datos ayuda a identificar qué vista de datos debe ver ChatGPT al hacer preguntas.
 
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
 ```javascript
-list sandboxes
+change context
 ```
 
 ![Agent Orchestrator](./images/chatgpt11.png)
 
-Debería ver una lista similar de las zonas protegidas disponibles. La zona protegida actual de este ejemplo está configurada en **prod**.
-
-Para cambiar eso a la zona protegida que necesita usarse, ingrese el siguiente **indicador** y haga clic en el botón **enviar**.
-
-```javascript
-switch to sandbox accelerate
-```
+Debería ver una ventana similar que muestre la selección actual de Organización, Zona protegida y Vista de datos. Cambie estos campos a la organización, zona protegida y vista de datos correctos en función de la información anterior.
 
 ![Agent Orchestrator](./images/chatgpt12.png)
-
-Entonces debería ver esto. Haga clic en **Establecer contexto**.
-
-![Agent Orchestrator](./images/chatgpt13.png)
-
-Entonces debería ver esto. Escriba el **indicador** siguiente y haga clic en el botón **enviar** para establecer la vista de datos que se va a usar.
-
-```javascript
-list dataviews
-```
-
-![Agent Orchestrator](./images/chatgpt14.png)
-
-Debería ver una lista similar de vistas de datos disponibles.
-
-Para establecer la vista de datos que debe usarse, ingrese el siguiente **indicador** y haga clic en el botón **enviar**.
-
-```javascript
-switch to Accelerate 2026 B2C
-```
-
-![Agent Orchestrator](./images/chatgpt15.png)
-
-Entonces debería ver esto. Haga clic en **Establecer contexto**.
-
-![Agent Orchestrator](./images/chatgpt16.png)
-
-Entonces debería ver esto.
-
-![Agent Orchestrator](./images/chatgpt17.png)
 
 El contexto ahora está configurado correctamente, por lo que puede empezar a enviar mensajes específicos a continuación.
 
@@ -155,7 +114,7 @@ Obtenga un impulso de nivel superior sobre la demanda de categorías (móvil, fi
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
 ```javascript
-Show me purchases by mainCategory over the last 7 months.
+Show me purchases by mainCategory over the last 2 months.
 ```
 
 ![Agent Orchestrator](./images/chatgpt18.png)
@@ -167,7 +126,7 @@ Debería ver lo siguiente:
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
 ```javascript
-Show me purchases by mainCategory = Fiber over the last 7 months per week
+Show me purchases by mainCategory = Fiber over the last 2 months per week
 ```
 
 ![Agent Orchestrator](./images/chatgpt20.png)
@@ -187,12 +146,12 @@ En primer lugar, debe averiguar qué campo se utiliza para almacenar la preferen
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
 ```javascript
-Which field is used to store the preferred genre in the sandbox accelerate?
+Which field is used to store the preferred genre?
 ```
 
 ![Agent Orchestrator](./images/chatgpt22.png)
 
-Debería ver esto, lo que muestra que el campo usado para el género es **_experienceplatform.individualCharacteristic.preferences.ferredGenre**.
+Debería ver esto, lo que muestra que el campo usado para el género es **`--aepTenantId--.individualCharacteristics.telco.mediaPreferences.favouriteGenre`**.
 
 ![Agent Orchestrator](./images/chatgpt23.png)
 
@@ -201,22 +160,14 @@ Con esa información, puede empezar a explorar en profundidad los datos de compr
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
 ```javascript
-Show me ordersYTD by preferredGenre for the last 7 months
+Show me purchases by favouriteGenre for the last 2 months
 ```
 
 ![Agent Orchestrator](./images/chatgpt24.png)
 
-Entonces debería ver esto. Haga clic en **Referencia**.
-
-![Agent Orchestrator](./images/chatgpt25.png)
-
 Entonces debería ver esto.
 
-![Agent Orchestrator](./images/chatgpt26.png)
-
-Desplácese hacia abajo para ver más información.
-
-![Agent Orchestrator](./images/chatgpt27.png)
+![Agent Orchestrator](./images/chatgpt25.png)
 
 ## 1.1.2.5 identificar Recorridos de fibra existentes
 
@@ -232,13 +183,9 @@ What journeys exist?
 
 ![Agent Orchestrator](./images/chatgpt28.png)
 
-Entonces debería ver esto. Haga clic en **Referencia**.
+Entonces debería ver esto.
 
 ![Agent Orchestrator](./images/chatgpt29.png)
-
-A continuación, debería ver una lista de recorridos.
-
-![Agent Orchestrator](./images/chatgpt30.png)
 
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
@@ -248,17 +195,9 @@ Which of these journeys has 'Fiber' in its name?
 
 ![Agent Orchestrator](./images/chatgpt31.png)
 
-Entonces debería ver esto. Haga clic en **Referencia**.
-
-![Agent Orchestrator](./images/chatgpt32.png)
-
 Entonces debería ver esto.
 
-![Agent Orchestrator](./images/chatgpt33.png)
-
-Desplácese hacia abajo para ver más detalles.
-
-![Agent Orchestrator](./images/chatgpt34.png)
+![Agent Orchestrator](./images/chatgpt32.png)
 
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
