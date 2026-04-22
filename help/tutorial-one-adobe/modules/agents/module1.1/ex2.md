@@ -4,7 +4,7 @@ description: Adobe Marketing Agent para ChatGPT Enterprise
 kt: 5342
 doc-type: tutorial
 exl-id: 0aa0cef5-bc1d-4cb6-be09-a5964686c963
-source-git-commit: 765d080e8a3bfe774478eaabfdb5c099701597df
+source-git-commit: 312af1518edd28b4eee577e4ab6b97943a56538d
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 0%
@@ -93,7 +93,7 @@ La configuración de Vista de datos ayuda a identificar qué vista de datos debe
 
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
-```javascript
+```
 change context
 ```
 
@@ -113,7 +113,7 @@ Obtenga un impulso de nivel superior sobre la demanda de categorías (móvil, fi
 
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
-```javascript
+```
 Show me purchases by mainCategory over the last 2 months.
 ```
 
@@ -125,7 +125,7 @@ Debería ver lo siguiente:
 
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
-```javascript
+```
 Show me purchases by mainCategory = Fiber over the last 2 months per week
 ```
 
@@ -145,7 +145,7 @@ En primer lugar, debe averiguar qué campo se utiliza para almacenar la preferen
 
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
-```javascript
+```
 Which field is used to store the preferred genre?
 ```
 
@@ -159,7 +159,7 @@ Con esa información, puede empezar a explorar en profundidad los datos de compr
 
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
-```javascript
+```
 Show me purchases by favouriteGenre for the last 2 months
 ```
 
@@ -177,7 +177,7 @@ Descubra qué recorridos activos o finalizados recientemente incluyen &quot;Fibr
 
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
-```javascript
+```
 What journeys exist? 
 ```
 
@@ -189,7 +189,7 @@ Entonces debería ver esto.
 
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
-```javascript
+```
 Which of these journeys has 'Fiber' in its name?
 ```
 
@@ -201,7 +201,7 @@ Entonces debería ver esto.
 
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
-```javascript
+```
 show me the details of the journey 'CitiSignal - Fiber Max Launch Promotion'
 ```
 
@@ -219,7 +219,7 @@ Desea comprender las visitas en el orden previsto de rendimiento de la recorrido
 
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
-```javascript
+```
 Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey
 ```
 
