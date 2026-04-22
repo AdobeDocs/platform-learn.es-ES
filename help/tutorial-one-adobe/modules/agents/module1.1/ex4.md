@@ -4,9 +4,9 @@ description: Adobe Marketing Agent para Google Gemini Enterprise
 kt: 5342
 doc-type: tutorial
 exl-id: 62b0b307-599b-4165-819b-cac61a8c5d28
-source-git-commit: c1e6d2110ca242ae8b4ff62cbdc5838392ec130e
+source-git-commit: 8e6a4b67dc8c1ec19d81a25a6c1a51f17255fc6e
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1035'
 ht-degree: 0%
 
 ---
@@ -197,11 +197,11 @@ Antes de seguir interactuando con Adobe Marketing Agent a través de Copilot, se
 
 Para este ejercicio, el contexto debe configurarse para utilizar:
 
-- **Espacio aislado**: **Prod - Accelerate (VA7)**
+- **Espacio aislado**: **Producto - Un Adobe (VA7)**
 
   La configuración de la zona protegida ayuda a identificar qué simulador de pruebas de IA debe consultar al hacer preguntas.
 
-- **Vista de datos**: **Acelerar B2C 2026**
+- **Vista de datos**: **AdobeOne - Vista de datos unificada del cliente**
 
 La configuración de vista de datos ayuda a identificar qué vista de datos debe ver el asistente de IA al hacer preguntas.
 
@@ -213,19 +213,27 @@ list sandboxes
 
 ![Agent Orchestrator](./images/gemini28.png)
 
-Entonces debería ver algo similar a esto. Escriba el comando `switch to sandbox accelerate` y haga clic en el botón **Enviar**.
+Entonces debería ver algo similar a esto. Escriba el siguiente comando y haga clic en el botón **Enviar**.
+
+```
+switch to sandbox One Adobe
+```
 
 ![Agent Orchestrator](./images/geminilab10.png)
 
 Entonces debería ver esto. Para cambiar la vista de datos, escriba el siguiente comando y haga clic en el botón **enviar**.
 
-```javascript
+```
 list dataviews
 ```
 
 ![Agent Orchestrator](./images/geminilab11.png)
 
-Entonces debería ver algo similar a esto. Escriba el comando `switch dataview to Accelerate 2026 B2C` y haga clic en el botón **Enviar**.
+Entonces debería ver algo similar a esto. Escriba el siguiente comando y haga clic en el botón **Enviar**.
+
+```
+switch to AdobeOne - Unified Customer Data View
+```
 
 ![Agent Orchestrator](./images/geminilab12.png)
 
@@ -242,7 +250,7 @@ Obtenga un impulso de nivel superior sobre la demanda de categorías (móvil, fi
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
 ```javascript
-Show me purchases by mainCategory over the last 7 months.
+Show me purchases by mainCategory over the last 2 months until today
 ```
 
 ![Agent Orchestrator](./images/geminilab18.png)
@@ -254,7 +262,7 @@ Debería ver lo siguiente:
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
 ```javascript
-Show me purchases by mainCategory = Fiber over the last 7 months broken down by week
+Show me purchases by mainCategory = Fiber over the last 2 months until today, broken down by week
 ```
 
 ![Agent Orchestrator](./images/geminilab20.png)
@@ -279,7 +287,7 @@ Which field is used to store the preferred genre
 
 ![Agent Orchestrator](./images/geminilab22.png)
 
-Debería ver esto, lo que muestra que el campo usado para el género es **_experienceplatform.individualCharacteristic.preferences.ferredGenre**.
+Debería ver esto, lo que muestra que el campo usado para el género es **`--aepTenantId--.individualCharacteristics.telco.mediaPreferences.favouriteGenre`**.
 
 ![Agent Orchestrator](./images/geminilab23.png)
 
@@ -288,7 +296,7 @@ Con esa información, puede empezar a explorar en profundidad los datos de compr
 Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
 
 ```javascript
-Show me ordersYTD by preferredGenre for the last 7 months
+Show me purchases by preferred genre for the last 2 months until today
 ```
 
 ![Agent Orchestrator](./images/geminilab24.png)
