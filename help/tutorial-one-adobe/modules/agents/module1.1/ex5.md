@@ -3,9 +3,10 @@ title: Adobe Marketing Agent para Claude
 description: Adobe Marketing Agent para Claude
 kt: 5342
 doc-type: tutorial
-source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
+exl-id: 2563ca77-699b-4cd3-af51-1105cea03c79
+source-git-commit: 2339a3a9c122a3e757c59eec3a9be54acf8d9c1e
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '570'
 ht-degree: 1%
 
 ---
@@ -14,8 +15,8 @@ ht-degree: 1%
 
 [!BADGE Beta]
 
-+++Detalles de Beta
-Al utilizar Adobe Marketing Agent con Claude Beta, por la presente reconoce que Beta se proporciona &quot;tal cual&quot; sin garantía de ningún tipo. Adobe no tiene obligación de mantener, corregir, actualizar, cambiar, modificar o apoyar de otro modo Beta. Se recomienda tener precaución y no confiar en modo alguno en el correcto funcionamiento o rendimiento de dichos Beta y/o materiales de acompañamiento. Beta se considera información confidencial de Adobe.  Cualquier &quot;comentario&quot; (información sobre Beta, incluidos, entre otros, problemas o defectos que encuentre al utilizar Beta, sugerencias, mejoras y recomendaciones) proporcionado por usted a Adobe se asigna a Adobe, incluidos todos los derechos, el título y el interés en y para dichos comentarios.
++++Beta Details
+By using the Adobe Marketing Agent with Claude Beta, You hereby acknowledge that the Beta is provided “as is” without warranty of any kind. Adobe shall have no obligation to maintain, correct, update, change, modify or otherwise support the Beta. You are advised to use caution and not to rely in any way on the correct functioning or performance of such Beta and/or accompanying materials. The Beta is considered Confidential Information of Adobe.  Any “Feedback” (information regarding the Beta including but not limited to problems or defects you encounter while using the Beta, suggestions, improvements, and recommendations) provided by You to Adobe is hereby assigned to Adobe including all rights, title, and interest in and to such Feedback.
 
 +++
 
@@ -26,7 +27,7 @@ Para seguir los pasos de este laboratorio como se documenta a continuación, se 
 - Acceso a Real-Time CDP, Journey Optimizer y Customer Journey Analytics
 - Acceso al asistente de IA en Adobe Experience Cloud
 - Acceso a AEP Agent Orchestrator
-- Acceso a Claude
+- Access to Claude
 
 ## Vídeo
 
@@ -43,7 +44,7 @@ Este laboratorio está en desarrollo.
 >El uso de Adobe Marketing Agent en Claude.ai requiere lo siguiente:
 >- una versión de pago de Claude.ai
 
-Vaya a [https://claude.ai/](https://claude.ai/){target="_blank"} e inicie sesión con los detalles de su cuenta. Una vez que haya iniciado sesión, debería ver esto.
+Go to [https://claude.ai/](https://claude.ai/){target="_blank"} and log in using your account details. Once you&#39;re logged in, you should see this.
 
 ![Claude.ai](./images/claude1.png)
 
@@ -55,24 +56,24 @@ Vaya a **Conectores** y haga clic en **Ir a Personalizar**.
 
 ![Claude.ai](./images/claude2a.png)
 
-Haga clic en **+** y luego seleccione **Agregar conector personalizado**.
+Click **+** and then select **Add custom connector**.
 
 ![Claude.ai](./images/claude3.png)
 
-Rellene los campos de esta manera:
+Fill out the fields like this:
 
-- **Nombre**: `Adobe Marketing Agent`
-- **URL del servidor MCP**: consulte con su representante de Adobe
+- **Name**: `Adobe Marketing Agent`
+- **MCP Server URL**: ask your Adobe representative
 
 Haga clic en **Agregar**.
 
 ![Claude.ai](./images/claude4.png)
 
-Entonces debería ver esto. Haga clic en **+** para iniciar una nueva conversación.
+You should then see this. Click **+** to start a new chat.
 
 ![Claude.ai](./images/claude5.png)
 
-Haz clic en el icono **+**, ve a **Conectores** y asegúrate de que **Adobe Marketing Agent** esté habilitado**.
+Click the **+** icon, go to **Connectors** and make sure **Adobe Marketing Agent** is enabled.
 
 ![Claude.ai](./images/claude6.png)
 
@@ -88,7 +89,7 @@ login to Adobe Marketing Agent
 
 ![Claude.ai](./images/claude7.png)
 
-Seleccionar **Permitir siempre**.
+Select **Always allow**.
 
 ![Claude.ai](./images/claude8.png)
 
@@ -104,11 +105,11 @@ Haga clic en **Permitir acceso**.
 
 ![Claude.ai](./images/claude8c.png)
 
-Después de autenticarse correctamente, debería ver esto. Vuelve con Claude.
+Después de autenticarse correctamente, debería ver esto. Go back to Claude.
 
 ![Claude.ai](./images/claude8d.png)
 
-Escriba el siguiente comando y haga clic en **enviar**.
+Enter the following command and click **send**.
 
 ```javascript
 logged in
@@ -127,9 +128,9 @@ change context
 
 Seleccione **Organización**. También puede repetir este comando para cambiar la zona protegida y la vista de datos más adelante.
 
-![Claude.ai y CJA](./images/claude10.png)
+![Claude.ai &amp; CJA](./images/claude10.png)
 
-Escriba el nombre de su instancia y haga clic en **enviar**.
+Enter the name of your instance and click **send**.
 
 ![Claude.ai y CJA](./images/claude11.png)
 
@@ -137,19 +138,19 @@ Seleccionar **Permitir siempre**.
 
 ![Claude.ai y CJA](./images/claude12.png)
 
-Entonces deberías ver algo como esto.
+You should then see something like this.
 
-![Claude.ai y CJA](./images/claude13.png)
+![Claude.ai &amp; CJA](./images/claude13.png)
 
-Si la zona protegida aún no está configurada correctamente, puede utilizar el siguiente comando para cambiar a la zona protegida que necesita utilizar. Haga clic en **enviar**. También puede usar el comando `change context` anterior y seleccionar **zona protegida**
+If the sandbox isn&#39;t set properly yet, you can use the following command to change to the sandbox you need to use. Click **send**. Alternatively, you can use the above command `change context` and then select **sandbox**
 
 ```javascript
 change sandbox to --aepSandboxName--
 ```
 
-![Claude.ai y CJA](./images/claude14.png)
+![Claude.ai &amp; CJA](./images/claude14.png)
 
-Si la vista de datos aún no está configurada correctamente, puede utilizar el siguiente comando para cambiar a la zona protegida que necesita utilizar (reemplace XXX en el siguiente comando por el nombre de su vista de datos). Haga clic en **enviar**. También puede usar el comando `change context` anterior y seleccionar **vista de datos**
+If the dataview isn&#39;t set properly yet, you can use the following command to change to the sandbox you need to use (replace XXX in the below command by the name of your dataview). Haga clic en **enviar**. También puede usar el comando `change context` anterior y seleccionar **vista de datos**
 
 ```javascript
 change dataview to XXX
@@ -161,6 +162,6 @@ Una vez que **Organization**, **Sandbox** y **Dataview** estén correctamente co
 
 ## Pasos siguientes
 
-Volver a [Agent Orchestrator](./agentorchestrator.md){target="_blank"}
+Go back to [Agent Orchestrator](./agentorchestrator.md){target="_blank"}
 
 [Volver a todos los módulos](./../../../overview.md){target="_blank"}

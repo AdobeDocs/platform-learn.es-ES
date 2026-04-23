@@ -4,9 +4,9 @@ description: Adobe Marketing Agent para ChatGPT Enterprise
 kt: 5342
 doc-type: tutorial
 exl-id: 0aa0cef5-bc1d-4cb6-be09-a5964686c963
-source-git-commit: 312af1518edd28b4eee577e4ab6b97943a56538d
+source-git-commit: d732dd6abdacc0ebcfa0ab8a09a49dc4b0f2b56b
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
@@ -50,10 +50,10 @@ Haga clic en **Crear aplicación**.
 Rellene los campos de esta manera:
 
 - **Nombre**: `Adobe Marketing Agent`
-- **URL del servidor MCP**: `https://aep-ai-ama.adobe.io/mcp`
+- **URL del servidor MCP**: pregunte a su representante de Adobe
 - **Autenticación**: `OAuth`
 
-Marque la casilla de verificación de **Entiendo y deseo continuar**.
+Check the checkbox for **I understand and want to continue**.
 
 Haga clic en **Crear**.
 
@@ -67,9 +67,9 @@ Una vez que haya iniciado sesión correctamente, debería ver que su Adobe Marke
 
 ![ChatGPT](./images/chatgpt8.png)
 
-## 1.1.2.2: establecer contexto en Adobe Marketing Agent
+## 1.1.2.2 Set context in Adobe Marketing Agent
 
-Cierre esta ventana.
+Close this window.
 
 ![Agent Orchestrator](./images/chatgpt9.png)
 
@@ -77,15 +77,15 @@ Entonces debería ver esto. Haz clic en el icono **+**, ve a **Más** y luego se
 
 ![Agent Orchestrator](./images/chatgpt10.png)
 
-Antes de seguir interactuando con Adobe Marketing Agent a través de ChatGPT, se debe establecer el contexto.
+Before interacting further with Adobe Marketing Agent through ChatGPT, the context needs to be set.
 
-Para este ejercicio, el contexto debe configurarse para utilizar:
+For this exercise, the context needs to be set to use:
 
-- **Organización de IMS**: `--aepImsOrgName--`.
+- **IMS Org**: `--aepImsOrgName--`.
 
-- **Espacio Aislado**: **Producto - Un Adobe**
+- **Sandbox**: **Prod - One Adobe**
 
-La configuración de Zona protegida ayuda a identificar qué zona protegida debe ver ChatGPT al hacer preguntas.
+The Sandbox setting helps to identify which sandbox ChatGPT should look at when asking questions.
 
 - **Vista de datos**: **AdobeOne - Vista de datos unificada del cliente**
 
@@ -103,15 +103,15 @@ Debería ver una ventana similar que muestre la selección actual de Organizaci�
 
 ![Agent Orchestrator](./images/chatgpt12.png)
 
-El contexto ahora está configurado correctamente, por lo que puede empezar a enviar mensajes específicos a continuación.
+Your context is now properly set, so you can start sending specific prompts next.
 
-## 1.1.2.3 Comience con las tendencias generales de compra para anclar el contexto y ampliar el alcance de la fibra
+## 1.1.2.3 Start with overall purchase trends to anchor context and zoom into fiber
 
-**Intención**
+**Intent**
 
-Obtenga un impulso de nivel superior sobre la demanda de categorías (móvil, fijo, Internet, TV, fibra), específicamente durante los últimos 60 días. Esto establece líneas de base para la estacionalidad, los efectos de promoción y la variación regional después del despliegue en Nueva York.
+Get a toplevel pulse on category demand—Mobile, Landline, Internet, TV, Fiber—specifically for the most recent 60 days. This sets baselines for seasonality, promo effects, and regional variance after the New York rollout.
 
-Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
+Enter the following **Prompt** and click the **send** button.
 
 ```
 Show me purchases by mainCategory over the last 2 months.
@@ -119,11 +119,11 @@ Show me purchases by mainCategory over the last 2 months.
 
 ![Agent Orchestrator](./images/chatgpt18.png)
 
-Debería ver lo siguiente:
+You should then see this:
 
 ![Agent Orchestrator](./images/chatgpt19.png)
 
-Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
+Enter the following **Prompt** and click the **send** button.
 
 ```
 Show me purchases by mainCategory = Fiber over the last 2 months per week
@@ -195,11 +195,11 @@ Which of these journeys has 'Fiber' in its name?
 
 ![Agent Orchestrator](./images/chatgpt31.png)
 
-Entonces debería ver esto.
+You should then see this.
 
 ![Agent Orchestrator](./images/chatgpt32.png)
 
-Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
+Enter the following **Prompt** and click the **send** button.
 
 ```
 show me the details of the journey 'CitiSignal - Fiber Max Launch Promotion'
@@ -215,9 +215,9 @@ Entonces debería ver esto.
 
 **Intención**
 
-Desea comprender las visitas en el orden previsto de rendimiento de la recorrido para saber si hay algún nodo o condición dentro de la recorrido que esté experimentando la pérdida de un gran porcentaje de perfiles. Esto resulta útil para saber si se necesitan ajustes adicionales en el recorrido.
+Desea comprender las visitas en el orden previsto de rendimiento de la recorrido para saber si hay algún nodo o condición dentro de la recorrido que esté experimentando la pérdida de un gran porcentaje de perfiles. This is helpful in understanding if additional adjustments are needed in the journey.
 
-Escriba el **indicador** siguiente y haga clic en el botón **enviar**.
+Enter the following **Prompt** and click the **send** button.
 
 ```
 Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey
@@ -229,7 +229,7 @@ Entonces debería ver esto.
 
 ![Agent Orchestrator](./images/chatgpt38.png)
 
-Desplácese un poco hacia abajo. Ahora puede revisar la tabla inspeccionando cada nodo y sus respectivos números de entrada, números de visitas en el orden previsto y tasa de visitas en el orden previsto.
+Desplácese un poco hacia abajo. You can now review the table by inspecting each node and its respective enter numbers, fallout numbers, and fallout rate.
 
 ![Agent Orchestrator](./images/chatgpt39.png)
 
