@@ -4,9 +4,9 @@ description: Introducción a Brand Concierge
 kt: 5342
 doc-type: tutorial
 exl-id: e05b60b1-62d7-4b70-834d-ef91782ac388
-source-git-commit: 463636444922fcb8a1c4b538bd09901e665b039e
+source-git-commit: a333ddbf1ed0c51dd9ae1d9a5eff3f0c569a1d1f
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1255'
 ht-degree: 1%
 
 ---
@@ -136,15 +136,38 @@ Entonces debería ver esto. Escriba `CitiSignal website` como nombre para la fue
 
 Ahora necesita cargar un archivo .csv que contenga los enlaces de su sitio web. Descargue el sitio web [CitiSignal vincula el archivo CSV](./assets/citisignal-website-links.csv) con su escritorio.
 
+![Brand Concierge](./images/bc8z.png)
+
 Haga clic en **Examinar archivos**.
 
 ![Brand Concierge](./images/bc8.png)
 
 Abra el archivo **citisignal-website-links.csv** y actualice los vínculos para que apunten a su propio sitio web de Citisignal.
 
+Si está realizando este laboratorio técnico como parte de las entregas de Tech Insiders Tech Lab, se le ha concedido acceso a un sitio web de demostración existente basado en un número asignado. Estos sitios web de demostración incluyen un dominio personalizado similar a este, donde XX representa el número que se le ha dado:
+
+**https://techinsidersXX.adobedemosystem.com/** (para aprendizaje en persona)
+
+o
+
+**https://techinsidersodXX.adobedemosystem.com/** (para formación bajo demanda)
+
+En la siguiente imagen, debe reemplazar la URL base por la URL del sitio web.
+
+Los vínculos a los productos del archivo siguiente están relacionados con los productos que configuró como parte del ejercicio 1 en el módulo
+[1.5 Adobe Commerce as a Cloud Service](./../../../modules/asset-mgmt/module1.5/accs.md){target="_blank"}.
+
 ![Brand Concierge](./images/bc8a.png)
 
-Seleccione el archivo **citisignal-website-links.csv** que acaba de descargar y editar. Haga clic en **Abrir**.
+Si su número es **1**, el archivo debería tener el aspecto siguiente:
+
+![Brand Concierge](./images/bc8b.png)
+
+Si tu número es **90**, el archivo debería tener el aspecto siguiente:
+
+![Brand Concierge](./images/bc8c.png)
+
+Una vez que haya actualizado el archivo como se le indicó anteriormente, seleccione ese archivo **citisignal-website-links.csv** a continuación. Haga clic en **Abrir**.
 
 ![Brand Concierge](./images/bc9.png)
 
