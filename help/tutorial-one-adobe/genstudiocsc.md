@@ -3,10 +3,10 @@ title: GenStudio Tech Labs
 description: GenStudio Tech Labs
 doc-type: multipage-overview
 exl-id: be6284eb-60c8-49d7-bde1-d8dc148a07c2
-source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
+source-git-commit: 2a552768bb4d0fcc46cb91e0e4afae247b946b16
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 1%
+source-wordcount: '697'
+ht-degree: 0%
 
 ---
 
@@ -40,9 +40,9 @@ Descargue la imagen de descripción general de arquitectura [aquí](./assets/ima
 
 A continuación se muestran los Tech Labs que participará en este taller de capacitación técnica.
 
-### Primeros pasos
+### Primeros pasos: GenStudio
 
-[Introducción](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"}
+[Introducción](./modules/getting-started/gettingstarted-genstudio/getting-started-genstudio.md){target="_blank"}
 
 En este módulo básico, preparará todo para que pueda acceder y utilizar el entorno de demostración.
 
@@ -58,7 +58,7 @@ En este módulo, configurará y utilizará Adobe Workfront para administrar los 
 
 ### Creación y producción
 
-[1.1 Información general de Adobe Firefly Services](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
+[1.1 Descripción general de Adobe Firefly Services](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
 
 En este módulo, utilizará las API de Adobe Firefly Services, las API de Photoshop y los servicios de almacenamiento de Microsoft Azure para generar imágenes y almacenarlas mediante programación.
 
@@ -78,7 +78,7 @@ En este módulo, utilizará Adobe Express para crear imágenes y vídeos, y comp
 
 En este módulo, utilizará Adobe Frame.io en combinación con Adobe Premiere Pro para colaborar y revisar imágenes y vídeos.
 
-[1.6 GenStudio for Performance Marketing - Extensibilidad](./modules/creation-production/module1.6/genstudioext.md){target="_blank"}
+[1.6 GenStudio for Performance Marketing: extensibilidad](./modules/creation-production/module1.6/genstudioext.md){target="_blank"}
 
 En este módulo, creará una aplicación personalizada para ampliar la capacidad en GenStudio for Performance Marketing mediante Adobe IO y App Builder.
 
@@ -86,7 +86,7 @@ En este módulo, creará una aplicación personalizada para ampliar la capacidad
 
 En este módulo, utilizará flujos de trabajo personalizados en Firefly para resolver casos de uso repetibles de diseño creativo y automatización.
 
-[1.8 Revisión y aprobación unificadas con Workfront, Frame.io y administración de almacenamiento empresarial](./modules/creation-production/module1.8/esm.md){target="_blank"}
+[1.8 Revisión y aprobación unificadas con Workfront, Frame.io y gestión de almacenamiento empresarial](./modules/creation-production/module1.8/esm.md){target="_blank"}
 
 En este módulo, conectará las funcionalidades de administración de proyectos y trabajo de Workfront directamente con la experiencia de colaboración y revisión en tiempo real de Frame.io.
 

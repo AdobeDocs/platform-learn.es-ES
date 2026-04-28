@@ -3,9 +3,9 @@ title: Laboratorios técnicos de inteligencia artificial automática
 description: Laboratorios técnicos de inteligencia artificial automática
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
+source-git-commit: 2a552768bb4d0fcc46cb91e0e4afae247b946b16
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '566'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,9 @@ En este vídeo, aprenderá acerca de la arquitectura detrás de la IA agente, pa
 
 Descargue la imagen de descripción general de arquitectura [aquí](./assets/images/architecture_agentic.jpg).
 
-### Primeros pasos
+### Primeros pasos: IA agente
 
-[Introducción](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"}
+[Introducción](./modules/getting-started/gettingstarted-agenticai/getting-started-agentic-ai.md){target="_blank"}
 
 En este módulo básico, preparará todo para que pueda acceder y utilizar el entorno de demostración.
 
