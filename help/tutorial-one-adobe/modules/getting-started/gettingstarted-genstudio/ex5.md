@@ -33,7 +33,7 @@ Abra la aplicación **Adobe Creative Cloud** y vaya a **Aplicaciones**. Instale 
 
 ## Adobe Premiere Pro
 
-Instale la versión de Adobe Premiere Pro Beta en su equipo desde [https://helpx.adobe.com/premiere-pro/using/premiere-pro-beta.html](https://helpx.adobe.com/premiere-pro/using/premiere-pro-beta.html)
+Instale la versión de Adobe Premiere Pro Beta en su equipo desde [https://helpx.adobe.com/es/premiere-pro/using/premiere-pro-beta.html](https://helpx.adobe.com/es/premiere-pro/using/premiere-pro-beta.html)
 
 ![Nueva integración de Adobe I/O](./images/prpro.png)
 
