@@ -3,9 +3,10 @@ title: 'Introducción: Instale la extensión de Chrome para la documentación de
 description: 'Introducción: Instale la extensión de Chrome para la documentación de Experience League'
 kt: 5342
 doc-type: tutorial
-source-git-commit: bdade61b2f64a5138807a47f73d8006ce9c564fc
+exl-id: a6057d20-b005-47c9-b294-263eaaf78084
+source-git-commit: 5884a7ae45251c4827ecd799990c93366a7a6662
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '700'
 ht-degree: 1%
 
 ---
@@ -23,7 +24,7 @@ A continuación se puede encontrar un ejemplo de estos valores. Actualmente, est
 | Nombre | Clave | Ejemplo |
 |:-------------:| :---------------:| :---------------:|
 | ID de organización IMS | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
-| Nombre de organización IMS | `--aepImsOrgName--` | `Experience Platform International` |
+| Nombre de organización IMS | `--aepImsOrgName--` | `Adobe Tech Insiders` |
 | ID de inquilino de AEP | `--aepTenantId--` | `_experienceplatform` |
 | Nombre de zona protegida AEP | `--aepSandboxName--` | `one-adobe` |
 | LDAP del perfil del alumno | `--aepUserLdap--` | `vangeluw` |
@@ -58,7 +59,7 @@ En el menú de **extensiones**, haga clic en el icono de **pieza del rompecabeza
 
 ## Configuración de la extensión de Chrome
 
-Vaya a [https://experienceleague.adobe.com/es/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/es/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} y, a continuación, haga clic en el icono de la extensión para abrirla.
+Vaya a [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} y, a continuación, haga clic en el icono de la extensión para abrirla.
 
 ![DSN](./images/tuthome.png)
 
@@ -70,9 +71,21 @@ Introduzca los valores como se indica a continuación, todos ellos relacionados 
 
 ![DSN](./images/c8.png)
 
-**Su LDAP**
+Si va a asistir a uno de los eventos siguientes, utilice los valores que se indican a continuación.
 
-Este es el nombre de usuario que se utilizará como parte del tutorial. En este ejemplo, el LDAP se basa en la dirección de correo electrónico de este usuario. La dirección de correo electrónico es **vangeluw@adobe.com**, por lo que el LDAP se convierte en **vangeluw**.
+| Nombre | Partner Tech Labs Nueva Orleans | Taller presencial de Tech Insiders | Habilitación de Tech Insiders On-Demand |
+|:-------------:| :---------------:| :---------------:|:---------------:|
+| ID de organización IMS | `907075E95BF479EC0A495C73@AdobeOrg` | `907075E95BF479EC0A495C73@AdobeOrg` | `0B6930256441790E0A495FFE@AdobeOrg` |
+| Nombre de organización IMS | `Adobe Tech Insiders` | `Adobe Tech Insiders` | `CXO Enablement Training LAB` |
+| ID de inquilino de AEP | `_experienceplatform` | `_experienceplatform` | `_acsultimatesupport` |
+| Nombre de zona protegida AEP | `one-adobe` | `one-adobe` | `one-adobe` |
+| LDAP del perfil del alumno | `XXX` | `XXX` | `XXX` |
+
+**Su perfil de alumno LDAP**
+
+Este es el nombre de usuario que se utilizará como parte del tutorial. En este ejemplo, el LDAP se basa en la dirección de correo electrónico de este usuario. Si la dirección de correo electrónico es **vangeluw@adobe.com**, el LDAP se convierte en **vangeluw**.
+
+Si va a asistir al evento de Partner Tech Labs en Nueva Orleans, aplique la misma lógica y utilice la primera parte de su dirección de correo electrónico como LDAP.
 
 El LDAP se utiliza para garantizar que la configuración que va a realizar esté vinculada a usted y no entre en conflicto con otros usuarios que puedan estar utilizando la misma instancia y zona protegida que está utilizando.
 
@@ -91,7 +104,7 @@ Después de activar la configuración, verá un punto verde junto a las iniciale
 
 ## Verificar contenido del tutorial
 
-Como prueba, ve a [esta página](https://experienceleague.adobe.com/es/docs/platform-learn/tutorial-one-adobe/agents/agents1/ex1){target="_blank"}.
+Como prueba, ve a [esta página](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/agents/agents1/ex1){target="_blank"}.
 
 Ahora debería ver que todas las **variables de entorno** de esta página han sido reemplazadas por sus valores verdaderos, según el entorno activado en la extensión de Chrome.
 

@@ -2,9 +2,10 @@
 title: 'Primeros pasos: IA agente: utilice su sitio web de AEM y su zona protegida de AEP'
 description: 'Primeros pasos: IA agente: utilice su sitio web de AEM y su zona protegida de AEP'
 doc-type: multipage-overview
-source-git-commit: bdade61b2f64a5138807a47f73d8006ce9c564fc
+exl-id: bace13f5-51e4-4b1f-99fa-88f4756e79d3
+source-git-commit: 5884a7ae45251c4827ecd799990c93366a7a6662
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '734'
 ht-degree: 0%
 
 ---
@@ -30,9 +31,11 @@ Cuando obtuvo acceso al entorno de habilitación, se le asignó un número. Este
 >
 >Todas las capturas de pantalla a continuación utilizan el número 1 solo con fines ilustrativos. Debe utilizar el número que se le asignó como parte del correo electrónico que recibió al seguir los pasos a continuación.
 
-El programa de AEM utiliza el número que se le asignó en su nombre. El nombre del programa de AEM debe ser:
+El programa de AEM utiliza el número que se le asignó en su nombre. El nombre del programa de AEM debe ser uno de los siguientes:
 
-- **Perspectivas técnicas - AEM + ACCS X**, donde X significa el número que se le asignó.
+- **`Tech Insiders - AEM + ACCS X`**, donde X significa el número que se le asignó.
+- **`Tech Insiders On Demand - AEM + ACCS X`**, donde X significa el número que se le asignó.
+- **`--aepUserLdap-- - CitiSignal AEM+ACCS`**, en este caso no tiene un número porque está usando su propio programa de AEM que creó usted mismo.
 
 ![DSN](./images/aem1.png)
 
@@ -70,14 +73,14 @@ Como parte del proceso de incorporación antes del inicio de sus sesiones de Tec
 
 Para acceder al sitio web, puede utilizar estas direcciones URL predeterminadas:
 
-- **https://main--techinsidersX-citisignal-aem-accs--woutervangeluwe.aem.page/**
-- **https://main--techinsidersX-citisignal-aem-accs--woutervangeluwe.aem.live/**
+- **`https://main--techinsidersX-citisignal-aem-accs--woutervangeluwe.aem.page/`**
+- **`https://main--techinsidersX-citisignal-aem-accs--woutervangeluwe.aem.live/`**
 
 Debe reemplazar la X de estas direcciones URL por el número que se le asignó.
 
 Además, se ha creado un nombre de dominio personalizado para cada sitio web, al que puede acceder mediante esta dirección URL:
 
-- **https://techinsidersX.adobedemosystem.com/**
+- **`https://techinsidersX.adobedemosystem.com/`**
 
 Debe reemplazar la X de estas direcciones URL por el número que se le asignó.
 
