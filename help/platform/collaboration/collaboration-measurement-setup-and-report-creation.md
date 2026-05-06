@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Obtenga información sobre cómo configurar las mediciones en Real-Time CDP Collaboration. Esta guía cubre los datos de eventos de incorporación para permitir la creación de informes vinculados a los datos de campañas de editores. La medición precisa le ayuda a analizar el rendimiento de las campañas y a optimizar las estrategias futuras. Vea el vídeo incrustado para ver los pasos y las perspectivas detallados.
 
->[!VIDEO](https://video.tv.adobe.com/v/3486343/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3486349/?captions=spa&learn=on&enablevpops)
